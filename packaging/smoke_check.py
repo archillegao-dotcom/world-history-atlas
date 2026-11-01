@@ -5,6 +5,7 @@
 import gzip
 import json
 import sys
+import urllib.error
 import urllib.request
 from pathlib import Path
 
@@ -43,8 +44,18 @@ def main():
     home = Path(sys.argv[2])
 
     html = fetch(base + "/", 60)
-    if "世界历史地图".encode() not in html:
-        raise SystemExit("GET / did not return the atlas page")
+    if "世界历史地图".encode() not in html or "quitBtn".encode() not in html:
+        raise SystemExit("GET / did not return the atlas page with a quit button")
+    quit_page = fetch(base + "/quit", 30)
+    if "退出".encode() not in quit_page:
+        raise SystemExit("GET /quit did not return the quit page")
+    blocked = urllib.request.Request(base + "/api/shutdown", data=b"", method="POST")
+    try:
+        urllib.request.urlopen(blocked, timeout=15)
+        raise SystemExit("POST /api/shutdown without the local header was accepted")
+    except urllib.error.HTTPError as e:
+        if e.code != 403:
+            raise SystemExit(f"POST /api/shutdown without header returned HTTP {e.code}")
 
     meta = load_json(base + "/api/meta", 180)
     by_id = {m["id"]: m for m in meta.get("modules") or []}

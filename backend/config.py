@@ -59,7 +59,7 @@ DATA_DIR = Path(os.environ.get("WHA_DATA_DIR", _data_default()))
 FRONTEND_DIR = Path(os.environ.get("WHA_FRONTEND_DIR", APP_ROOT / "frontend"))
 BASEMAP_DIR = DATA_DIR / "basemaps"
 OPEN_BROWSER = os.environ.get("WHA_OPEN_BROWSER", "0") == "1"
-APP_VERSION = "0.4.0"
+APP_VERSION = "0.4.1"
 AUTO_UPDATE = os.environ.get("WHA_AUTO_UPDATE", "1") == "1"
 UPDATE_MINUTES = max(5, int(os.environ.get("WHA_UPDATE_MINUTES", "60")))
 

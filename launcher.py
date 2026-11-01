@@ -182,42 +182,126 @@ def _open_browser_when_ready(url, port):
         pass
 
 
+def is_app_translocated(path):
+    """macOS 从“下载”里直接打开未签名 App 时，会把它拷到临时目录再运行，例如
+    /private/var/folders/.../T/AppTranslocation/<UUID>/d/WorldHistoryAtlas.app/...
+    这个路径只对当前进程有效。交给「终端」再 exec 时，目录往往已经没了，于是
+    launch.command 报 No such file or directory / cannot execute。
+    """
+    if not path:
+        return False
+    raw = str(path)
+    if "AppTranslocation" in raw:
+        return True
+    try:
+        resolved = os.path.realpath(raw)
+    except OSError:
+        return False
+    return "AppTranslocation" in resolved
+
+
+def _stdin_isatty():
+    try:
+        return sys.stdin is not None and sys.stdin.isatty()
+    except Exception:  # noqa: BLE001
+        return False
+
+
+def should_relaunch_in_terminal(*, frozen, platform, executable, isatty, no_terminal):
+    """只有「稳定路径上的 .app、且当前没有终端」才交给「终端」。
+    App Translocation 下必须留在当前进程里，浏览器照常打开。"""
+    if no_terminal or not frozen or platform != "darwin" or isatty:
+        return False
+    executable = str(executable or "")
+    if ".app/Contents/MacOS/" not in executable:
+        return False
+    if is_app_translocated(executable):
+        return False
+    return True
+
+
 def _terminal_relaunch_script(executable, argv):
     """终端真正会执行的脚本。
 
     `open -a Terminal <二进制>` 并不能稳定地跑一个裸可执行文件。.command 可以，
     而且 exec 让服务留在这个窗口里，关掉窗口就是退出。
     带上 --no-terminal，新进程不会再把自己打开一次。
+    绝不把 App Translocation 的临时路径写进这个脚本。
     """
+    executable = str(executable)
+    if is_app_translocated(executable):
+        raise ValueError("refusing to relaunch a translocated app path")
     args = [x for x in argv if not str(x).startswith("-psn")]
     if "--no-terminal" not in args:
         args.append("--no-terminal")
-    cmd = " ".join(shlex.quote(p) for p in [str(executable), *args])
-    return "#!/bin/bash\nexec " + cmd + "\n"
+    cmd = " ".join(shlex.quote(p) for p in [executable, *args])
+    script = "#!/bin/bash\nexec " + cmd + "\n"
+    if "AppTranslocation" in script:
+        raise ValueError("refusing to write a launch script that points at App Translocation")
+    return script
 
 
-def _mac_relaunch_in_terminal(home):
-    """从访达打开 .app 时没有控制台。把内部的二进制交给「终端」，用户能看到状态，关掉窗口即退出。
-    成功交给终端时返回 True。"""
-    if not (FROZEN and sys.platform == "darwin" and ".app/Contents/MacOS/" in sys.executable):
+def scrub_translocated_launch_command(home):
+    """删掉旧版写坏的 launch.command（里面是已经失效的 AppTranslocation 路径）。"""
+    script = Path(home) / "launch.command"
+    try:
+        text = script.read_text(encoding="utf-8", errors="replace")
+    except OSError:
+        return False
+    if "AppTranslocation" not in text:
         return False
     try:
-        if sys.stdin is not None and sys.stdin.isatty():
-            return False  # 已经在终端里（或是 .command 拉起的子进程）
-    except Exception:  # noqa: BLE001
-        pass
+        script.unlink()
+    except OSError:
+        return False
+    return True
+
+
+def try_terminal_relaunch(home, *, executable, argv, frozen, platform, isatty, opener):
+    """成功把进程交给终端时返回 True。调用方此时应该直接退出。
+    返回 False 时调用方要在当前进程里把服务跑起来（并打开浏览器）。"""
+    home = Path(home)
+    scrub_translocated_launch_command(home)
+    if not should_relaunch_in_terminal(
+        frozen=frozen, platform=platform, executable=executable, isatty=isatty, no_terminal=False,
+    ):
+        return False
     marker = home / ".terminal_relaunch"
     try:
         if marker.exists() and time.time() - marker.stat().st_mtime < 20:
             return False  # 防止死循环：终端启动后仍然没有 tty
+        body = _terminal_relaunch_script(executable, argv)
         home.mkdir(parents=True, exist_ok=True)
         marker.write_text(str(time.time()), encoding="utf-8")
         script = home / "launch.command"
-        script.write_text(_terminal_relaunch_script(sys.executable, sys.argv[1:]), encoding="utf-8")
+        script.write_text(body, encoding="utf-8")
         os.chmod(script, 0o755)
-        return subprocess.run(["open", "-a", "Terminal", str(script)], timeout=30).returncode == 0
+        return opener(script) == 0
     except Exception:  # noqa: BLE001
         return False
+
+
+def _mac_relaunch_in_terminal(home):
+    """从访达打开 .app 时没有控制台。路径稳定时把二进制交给「终端」，关掉窗口即退出。
+    成功交给终端时返回 True。App Translocation、或终端没能打开时返回 False，由当前进程继续。"""
+    def opener(script):
+        return subprocess.run(["open", "-a", "Terminal", str(script)], timeout=30).returncode
+
+    ok = try_terminal_relaunch(
+        home,
+        executable=sys.executable,
+        argv=sys.argv[1:],
+        frozen=FROZEN,
+        platform=sys.platform,
+        isatty=_stdin_isatty(),
+        opener=opener,
+    )
+    if not ok and should_relaunch_in_terminal(
+        frozen=FROZEN, platform=sys.platform, executable=sys.executable,
+        isatty=_stdin_isatty(), no_terminal=False,
+    ):
+        print(">> terminal relaunch failed: staying in this process", flush=True)
+    return ok
 
 
 def _use_certifi():
@@ -251,6 +335,11 @@ def main():
 
     home = user_home(a.home)
     info_file = home / "server.json"
+    # 0.4.0 可能留下一个指向 App Translocation 临时目录的 launch.command，先删掉。
+    try:
+        scrub_translocated_launch_command(home)
+    except Exception:  # noqa: BLE001
+        pass
     # 再点一次只打开浏览器，不要再开一个终端窗口。
     existing = _existing_server(info_file)
     if existing:
@@ -263,6 +352,10 @@ def main():
         return
     if not a.no_terminal and _mac_relaunch_in_terminal(home):
         return
+    if is_app_translocated(sys.executable):
+        # 从「下载」直接双击时走这里：不打开终端，服务就在当前进程里，浏览器照常弹出。
+        # 这一行只用 ASCII，方便日志检索。退出请用网页上的「退出」。
+        print(">> App Translocation: staying in this process", flush=True)
     if a.no_terminal:
         # 冒烟测试和终端里的子进程走这里。这一行故意只用 ASCII，方便 CI 在日志里查找。
         print(">> --no-terminal: staying in this process", flush=True)
@@ -297,16 +390,18 @@ def main():
     print(f"  浏览器地址：{url}")
     print(f"  只读历史数据：{data}")
     print(f"  每日新闻与缓存：{home}")
-    print("  ★ 关闭此窗口即可退出（或按 Ctrl+C）。")
+    print("  ★ 关闭此窗口即可退出（或按 Ctrl+C）。没有这个窗口时，请点网页右上角「退出」。")
     print("=" * 60, flush=True)
 
     if not a.no_browser:
         threading.Thread(target=_open_browser_when_ready, args=(url, port), daemon=True).start()
 
     import uvicorn
-    from backend.app import app
+    from backend.app import app, set_shutdown
+    server = uvicorn.Server(uvicorn.Config(app, log_level="warning"))
+    set_shutdown(lambda: setattr(server, "should_exit", True))
     try:
-        uvicorn.Server(uvicorn.Config(app, log_level="warning")).run(sockets=[sock])
+        server.run(sockets=[sock])
     finally:
         try:
             if json.loads(info_file.read_text(encoding="utf-8")).get("pid") == os.getpid():

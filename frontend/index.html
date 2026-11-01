@@ -28,6 +28,7 @@
   <button id="todayBtn" title="跳到今天">今天</button>
   <button id="worldBtn" title="查看全世界在这一天前后的事件与人物">🌍 全世界</button>
   <button id="aboutBtn">数据说明</button>
+  <button id="quitBtn" type="button" title="退出软件。没有终端窗口时用这个按钮关闭。">退出</button>
   <span id="updateStatus"></span>
 </header>
 
@@ -65,5 +66,14 @@
 </div></div>
 <script src="vendor/leaflet/leaflet.js"></script>
 <script src="app.js"></script>
+<script>
+document.getElementById("quitBtn").addEventListener("click", async () => {
+  if (!confirm("退出世界历史地图？")) return;
+  try {
+    await fetch("/api/shutdown", {method: "POST", headers: {"X-WHA-Shutdown": "1"}});
+  } catch (e) {}
+  document.body.innerHTML = '<p style="font:16px/1.5 sans-serif;padding:24px">世界历史地图已退出。可以关闭这个标签页。</p>';
+});
+</script>
 </body>
 </html>

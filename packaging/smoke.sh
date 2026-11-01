@@ -5,6 +5,12 @@
 set -euo pipefail
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 cd "$ROOT"
+# 不依赖打包结果：App Translocation 路径绝不能写进 launch.command。
+if command -v python >/dev/null 2>&1; then
+  python packaging/test_launcher_translocation.py
+else
+  python3 packaging/test_launcher_translocation.py
+fi
 
 RUNNER_OS="${RUNNER_OS:-}"
 if [ -z "$RUNNER_OS" ]; then

@@ -15,9 +15,11 @@ from __future__ import annotations
 
 import json
 import os
+import threading
+import time
 
 from fastapi import Request, FastAPI, HTTPException, Query
-from fastapi.responses import FileResponse, JSONResponse, Response
+from fastapi.responses import FileResponse, HTMLResponse, JSONResponse, Response
 from fastapi.staticfiles import StaticFiles
 
 from . import config
@@ -169,6 +171,64 @@ def module_query(mid: str, date: str, snap: int | None = None, fid: int | None =
 from .details import router as details_router  # noqa: E402
 
 app.include_router(details_router)
+
+_shutdown_cb = None
+
+
+def set_shutdown(fn) -> None:
+    """launcher 把 uvicorn 的 should_exit 接进来。没接时（run.py）就直接结束进程。"""
+    global _shutdown_cb
+    _shutdown_cb = fn
+
+
+_QUIT_HTML = """<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8">
+<title>退出世界历史地图</title>
+<body style="font:16px/1.5 sans-serif;padding:32px;max-width:40em">
+<h1>退出世界历史地图</h1>
+<p>从「下载」文件夹直接打开时，macOS 经常不弹出终端窗口。软件仍在运行。点下面的按钮即可退出。</p>
+<p>如果屏幕上有一个终端窗口，关掉那个窗口也会退出。</p>
+<button id="q" style="font-size:16px;padding:8px 16px">退出软件</button>
+<p id="m"></p>
+<script>
+document.getElementById("q").onclick = async () => {
+  document.getElementById("m").textContent = "正在退出…";
+  try {
+    await fetch("/api/shutdown", {method: "POST", headers: {"X-WHA-Shutdown": "1"}});
+  } catch (e) {}
+  document.getElementById("m").textContent = "已退出。可以关闭这个标签页。";
+};
+</script>
+</body>
+</html>
+"""
+
+
+@app.get("/quit")
+def quit_page():
+    """没有终端窗口时的退出页。本身不结束进程，避免被别的网页用链接悄悄关掉。"""
+    return HTMLResponse(_QUIT_HTML)
+
+
+@app.post("/api/shutdown")
+def shutdown(request: Request):
+    """只接受本机、且带自定义头的请求。普通跨站表单发不出这个头，所以别的网站关不掉它。"""
+    host = request.client.host if request.client else ""
+    if host not in ("127.0.0.1", "::1"):
+        raise HTTPException(403, "only localhost")
+    if request.headers.get("x-wha-shutdown") != "1":
+        raise HTTPException(403, "missing shutdown header")
+
+    def _stop():
+        time.sleep(0.3)
+        if _shutdown_cb:
+            _shutdown_cb()
+        else:
+            os._exit(0)
+
+    threading.Thread(target=_stop, daemon=True).start()
+    return {"ok": True, "message": "正在退出"}
 
 
 @app.get("/")
