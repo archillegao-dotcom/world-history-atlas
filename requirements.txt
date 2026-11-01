@@ -1,5 +1,7 @@
 fastapi>=0.110
 uvicorn>=0.27
 shapely>=2.0
+certifi>=2024.0.0  # 免安装版的 HTTPS 证书（每日新闻、维基百科摘要）
+tzdata>=2024.1     # Windows 免安装版里 zoneinfo 需要的时区数据
 requests>=2.31   # 仅数据构建脚本 tools/ 需要
 opencc-python-reimplemented>=0.1.7  # 仅数据构建脚本需要（繁→简）

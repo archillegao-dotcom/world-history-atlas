@@ -21,7 +21,9 @@ from __future__ import annotations
 
 import importlib
 import pkgutil
+import sys
 from dataclasses import dataclass, field
+from pathlib import Path
 from typing import Any
 
 from .geo import BasemapStore
@@ -84,12 +86,30 @@ class Registry:
         self.modules[m.id] = m
 
     def discover(self, package: str = "backend.modules") -> None:
-        """导入 backend/modules 下所有不以 _ 开头的模块文件并注册其中的 MODULE / MODULES。"""
+        """导入 backend/modules 下所有不以 _ 开头的模块文件并注册其中的 MODULE / MODULES。
+
+        源码运行时 pkgutil 能看到这些文件。PyInstaller 把字节码放进 PYZ 后，
+        pkgutil 常常是空的，所以再扫一遍 sys._MEIPASS/backend/modules（打包时作为数据放进去的 .py）。
+        """
         pkg = importlib.import_module(package)
-        for info in sorted(pkgutil.iter_modules(pkg.__path__), key=lambda i: i.name):
-            if info.name.startswith("_"):
+        names: set[str] = set()
+        for info in pkgutil.iter_modules(pkg.__path__):
+            if not info.name.startswith("_"):
+                names.add(info.name)
+        folders = [Path(p) for p in pkg.__path__]
+        if getattr(sys, "frozen", False):
+            folders.append(Path(getattr(sys, "_MEIPASS", "")) / "backend" / "modules")
+        for folder in folders:
+            if not folder.is_dir():
                 continue
-            mod = importlib.import_module(f"{package}.{info.name}")
+            for py in folder.glob("*.py"):
+                if py.name.startswith("_"):  # _common.py、__init__.py 都不是内容模块
+                    continue
+                names.add(py.stem)
+        if not names:
+            raise RuntimeError(f"没有找到内容模块（{package}）")
+        for name in sorted(names):
+            mod = importlib.import_module(f"{package}.{name}")
             for m in ([getattr(mod, "MODULE")] if hasattr(mod, "MODULE") else []) + list(getattr(mod, "MODULES", [])):
                 self.register(m)
 

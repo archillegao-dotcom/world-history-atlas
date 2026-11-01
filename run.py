@@ -1,5 +1,6 @@
 """
-启动入口（启动脚本与将来 PyInstaller 打包都调用它）。
+源码启动入口（start.sh / start.command / start.bat 调用它）。
+免安装版不走这里，入口是 launcher.py。
   python run.py            # 默认 127.0.0.1:8790；端口被占用时自动顺延
   WHA_PORT=8800 python run.py
 """

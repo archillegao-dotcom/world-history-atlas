@@ -6,7 +6,58 @@
 
 > 只使用公开的真实数据，不编造任何事件、人物或日期。每一条内容都附有来源链接（Wikidata / 维基百科 / 新闻来源）。
 
-## 怎么打开
+## 免安装版（推荐，不需要安装 Python）
+
+在本仓库的 **Releases** 页面（或 Actions 里构建出的 Artifacts）下载对应压缩包。解压后直接打开，**不需要安装 Python**。
+
+| 系统 | 下载 | 打开方式 |
+|---|---|---|
+| macOS（M1/M2/M3/M4 芯片） | `WorldHistoryAtlas-macos-arm64.zip` | 双击解压得到 `WorldHistoryAtlas.app`，建议拖到“应用程序”文件夹 |
+| macOS（Intel 芯片） | `WorldHistoryAtlas-macos-x64.zip` | 同上 |
+| Windows 10/11 | `WorldHistoryAtlas-windows-x64.zip` | 右键 → “全部解压缩”，打开解压出的 `WorldHistoryAtlas` 文件夹，双击 `WorldHistoryAtlas.exe` |
+
+> 不确定 Mac 是哪种芯片：点屏幕左上角的苹果图标 → “关于本机”，“芯片”写 Apple M… 就选 arm64，写 Intel 就选 x64。
+>
+> 最低系统版本不是“打包那台电脑的系统版本”。每个 App 会按实际带上的库声明自己的最低 macOS 版本（写在 Release 说明里，也写在 App 的“最低系统版本”里）。Apple 芯片的包不能在 Intel Mac 上运行；Intel 包可以在 Intel Mac 上运行，也可以在 Apple 芯片的 Mac 上通过 Rosetta 2 运行。
+
+启动后会弹出一个 **黑色窗口**（Mac 上是“终端”窗口），并自动打开浏览器 http://localhost:8790/ （端口被占用时会自动换一个，窗口里会显示实际地址）。
+**使用期间不要关闭这个黑色窗口；关闭它就是退出软件。** 再次双击时如果软件已在运行，只会重新打开浏览器页面。
+
+### Mac 第一次打开（软件未经 Apple 签名，系统会拦截一次）
+
+1. 第一次 **不要直接双击**：在“访达”里 **按住 Control 键点按（或右键）`WorldHistoryAtlas.app` → 选“打开”** → 在弹窗里再点 **“打开”**。
+2. 如果弹窗里没有“打开”按钮（较新的 macOS 15/26 常见）：先双击一次让它被拦截，然后打开
+   **系统设置 → 隐私与安全性**，在页面下方找到“已阻止使用 WorldHistoryAtlas”，点 **“仍要打开”**，输入开机密码确认，再双击一次即可。
+3. 只需做一次，以后直接双击。系统可能询问是否允许“终端”运行，点“好”。
+4. 仍然打不开（提示“已损坏”）时，可在“终端”里执行下面一行后再双击（把路径换成 app 实际位置）：
+   `xattr -dr com.apple.quarantine /Applications/WorldHistoryAtlas.app`
+
+### Windows 第一次打开
+
+Windows 可能弹出蓝色的 “Windows 已保护你的电脑”（SmartScreen）：点 **“更多信息” → “仍要运行”**。
+杀毒软件如误报，请选择“允许”。务必先**解压**再运行，不要在压缩包里直接双击。
+
+### 数据保存在哪里
+
+历史地图、事件、人物都在软件包里，**只读**，程序不会改这些文件。
+每天自动更新的「每日新闻」和维基百科摘要缓存写在你的用户目录（第一次启动会放一份说明文件进去，已有文件不会被覆盖）：
+
+- macOS：`~/Library/Application Support/WorldHistoryAtlas`（访达 → 前往 → 前往文件夹，粘贴此路径）
+- Windows：`%APPDATA%\WorldHistoryAtlas`（在资源管理器地址栏粘贴）
+- Linux：`~/.local/share/WorldHistoryAtlas`
+
+删掉这个文件夹会清掉已下载的更新和缓存，不会删掉软件自带的历史数据。
+
+### 自己打包（开发者）
+
+```
+pip install -r requirements.txt pyinstaller
+python packaging/build.py          # 生成 dist/WorldHistoryAtlas(.app) 和 dist/WorldHistoryAtlas-<系统>-<架构>.zip
+```
+推送 `v*` 标签（如 `git tag v0.4.0 && git push origin v0.4.0`）后，GitHub Actions（`.github/workflows/build.yml`）会自动在
+macOS（Apple 芯片 + Intel）和 Windows 上构建。两个 macOS 压缩包会先挂到 Release（Windows 失败不会挡住这次发布）；Windows 构建成功后再把 Windows 压缩包补到同一个 Release。也可在 Actions 页面手动运行 “Build apps”（手动运行只产生可下载的 Artifacts，不发布 Release）。
+
+## 从源码打开（需要已安装 Python）
 
 | 系统 | 操作 |
 |---|---|
@@ -128,7 +179,8 @@ Maddison 和世界银行都按**现代国家**统计（Maddison 的历史数值�
 
 应用运行期间，后台线程每 60 分钟（可配置）抓取**最近 3 天**的维基百科每日页面（当天的页面一天里会不断补充）。
 如果电脑很久没有打开，下次启动会自动补抓缺失的日期（一次最多 400 天）。没有网络时静默跳过，下次再试。
-新数据写入 `data/live/`（不可写时用系统用户目录，例如 macOS 的 `~/Library/Application Support/WorldHistoryAtlas`），不会改动附带的数据。
+从源码运行时，新数据写入 `data/live/`（这个目录不可写时用系统用户目录）。
+免安装版始终写入 `~/Library/Application Support/WorldHistoryAtlas`（Windows 是 `%APPDATA%\WorldHistoryAtlas`），不会改动软件包里的数据。
 
 环境变量：`WHA_AUTO_UPDATE=0` 关闭自动更新；`WHA_UPDATE_MINUTES=30` 改为每 30 分钟。
 请求遵守 MediaWiki API 规范：带 User-Agent、串行、每次最多 50 页、间隔 ≥1 秒。
@@ -136,9 +188,12 @@ Maddison 和世界银行都按**现代国家**统计（Maddison 的历史数值�
 ## 目录结构
 
 ```
-world_history/
-├─ start.command / start.sh / start.bat   启动脚本
-├─ run.py                                  启动入口（将来 PyInstaller 打包也用它）
+（仓库根目录就是程序目录）
+├─ start.command / start.sh / start.bat   源码启动脚本（需要本机已安装 Python）
+├─ run.py                                  源码启动入口
+├─ launcher.py                             免安装版入口（用户数据目录、自动选端口、打开浏览器）
+├─ packaging/                              PyInstaller 配置、打包脚本、冒烟测试
+├─ .github/workflows/build.yml             macOS / Windows 自动打包与发布
 ├─ requirements.txt
 ├─ backend/
 │  ├─ config.py        路径/端口等配置（都可用环境变量覆盖：WHA_PORT、WHA_DATA_DIR、WHA_USER_DATA_DIR …）

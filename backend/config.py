@@ -1,14 +1,19 @@
 """
-集中配置：所有路径与端口都从这里取，均可用环境变量覆盖，便于将来 PyInstaller 打包
-（打包后 sys._MEIPASS 指向解包目录；数据目录可放在可执行文件旁边，单独更新）。
+集中配置：所有路径与端口都从这里取，均可用环境变量覆盖。
 
 环境变量 / Env overrides:
   WHA_HOST          监听地址，默认 127.0.0.1
   WHA_PORT          端口，默认 8790
-  WHA_DATA_DIR      数据目录（basemaps/ events.json.gz people_*.json.gz）
+  WHA_DATA_DIR      只读历史数据（basemaps/ events.json.xz …）。
+                    源码运行默认是仓库里的 data/；免安装版默认是软件包内的数据（只读种子）。
   WHA_FRONTEND_DIR  前端静态文件目录
-  WHA_OPEN_BROWSER  1=启动后自动打开浏览器（启动脚本默认开启）
-  WHA_USER_DATA_DIR 自动更新数据（每日新闻）写入的目录；默认 DATA_DIR/live（不可写时用系统用户数据目录）
+  WHA_OPEN_BROWSER  1=启动后自动打开浏览器（启动脚本默认开启；免安装版由 launcher.py 打开）
+  WHA_USER_DATA_DIR 可写目录：每日新闻更新与维基百科缓存。
+                    源码运行默认 data/live（写不进去时改用下面的用户目录）。
+                    免安装版一律用用户目录，不往软件包里写：
+                      macOS   ~/Library/Application Support/WorldHistoryAtlas
+                      Windows %APPDATA%\\WorldHistoryAtlas
+                      Linux   ~/.local/share/WorldHistoryAtlas
   WHA_AUTO_UPDATE   1=后台自动抓取每日新闻（默认 1），0=关闭（完全离线）
   WHA_UPDATE_MINUTES 自动更新间隔（分钟，默认 60）
 """
@@ -18,9 +23,11 @@ import os
 import sys
 from pathlib import Path
 
+APP_NAME = "WorldHistoryAtlas"
+
 
 def _app_root() -> Path:
-    # PyInstaller onefile/onedir: 资源解包在 sys._MEIPASS
+    # PyInstaller onefile/onedir：资源在 sys._MEIPASS（只读种子数据、前端）
     if getattr(sys, "frozen", False):
         return Path(getattr(sys, "_MEIPASS", Path(sys.executable).parent))
     return Path(__file__).resolve().parents[1]
@@ -29,12 +36,20 @@ def _app_root() -> Path:
 APP_ROOT = _app_root()
 
 
+def per_user_dir() -> Path:
+    """免安装版（以及 data/live 不可写时）的个人数据目录。"""
+    home = Path.home()
+    if sys.platform == "darwin":
+        return home / "Library" / "Application Support" / APP_NAME
+    if os.name == "nt":
+        base = os.environ.get("APPDATA")
+        return (Path(base) if base else home / "AppData" / "Roaming") / APP_NAME
+    return Path(os.environ.get("XDG_DATA_HOME") or home / ".local" / "share") / APP_NAME
+
+
 def _data_default() -> Path:
-    # 打包后优先使用可执行文件旁边的 data/（便于单独更新数据）
-    if getattr(sys, "frozen", False):
-        side = Path(sys.executable).parent / "data"
-        if side.exists():
-            return side
+    # 打包后的历史数据在软件包里，只读。不要改用可执行文件旁边的 data/：
+    # 用户把 App 解压到自己的文件夹时那个位置往往可写，更新会写进软件包。
     return APP_ROOT / "data"
 
 
@@ -50,21 +65,17 @@ UPDATE_MINUTES = max(5, int(os.environ.get("WHA_UPDATE_MINUTES", "60")))
 
 
 def _user_data_default() -> Path:
+    if getattr(sys, "frozen", False):
+        return per_user_dir()
     cand = DATA_DIR / "live"
     try:
         cand.mkdir(parents=True, exist_ok=True)
         probe = cand / ".write_test"
-        probe.write_text("ok")
+        probe.write_text("ok", encoding="utf-8")
         probe.unlink()
         return cand
     except OSError:
-        pass
-    home = Path.home()
-    if sys.platform == "darwin":
-        return home / "Library" / "Application Support" / "WorldHistoryAtlas"
-    if os.name == "nt":
-        return Path(os.environ.get("APPDATA", home)) / "WorldHistoryAtlas"
-    return home / ".local" / "share" / "WorldHistoryAtlas"
+        return per_user_dir()
 
 
-USER_DATA_DIR = Path(os.environ.get("WHA_USER_DATA_DIR", _user_data_default()))
+USER_DATA_DIR = Path(os.environ["WHA_USER_DATA_DIR"]).expanduser() if os.environ.get("WHA_USER_DATA_DIR") else _user_data_default()

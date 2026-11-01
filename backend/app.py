@@ -14,6 +14,7 @@ API:
 from __future__ import annotations
 
 import json
+import os
 
 from fastapi import Request, FastAPI, HTTPException, Query
 from fastapi.responses import FileResponse, JSONResponse, Response
@@ -27,20 +28,31 @@ from .timeutil import parse_date
 
 app = FastAPI(title="世界历史地图 World History Atlas", version=config.APP_VERSION)
 
-basemaps = BasemapStore()
-ctx = Context(data_dir=config.DATA_DIR, basemaps=basemaps)
-registry = Registry()
-registry.discover("backend.modules")
-registry.load_all(ctx)
+basemaps: BasemapStore | None = None
+ctx: Context | None = None
+registry: Registry | None = None
 
 
 def _on_news_update(years):
-    m = registry.modules.get("news")
+    m = registry.modules.get("news") if registry else None
     if m:
         m.invalidate(years)
 
 
-scheduler.start(on_update=_on_news_update)
+def boot() -> None:
+    """加载历史数据并启动每日新闻调度。导入本模块就会调用（服务进程如此）。"""
+    global basemaps, ctx, registry
+    basemaps = BasemapStore()
+    ctx = Context(data_dir=config.DATA_DIR, basemaps=basemaps)
+    registry = Registry()
+    registry.discover("backend.modules")
+    registry.load_all(ctx)
+    scheduler.start(on_update=_on_news_update)
+
+
+# PyInstaller 分析依赖时会导入本模块。那时不要把全部数据装进内存，也不要去写 data/live。
+if os.environ.get("WHA_PYINSTALLER_ANALYZE") != "1":
+    boot()
 
 SOURCES = [
     {"name": "historical-basemaps (A. Ourednik)", "url": "https://github.com/aourednik/historical-basemaps",
