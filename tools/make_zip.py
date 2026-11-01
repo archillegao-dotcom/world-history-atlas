@@ -21,7 +21,7 @@ ROOT = Path(__file__).resolve().parent.parent
 OUT = Path(sys.argv[1]) if len(sys.argv) > 1 else Path("/workspace/world_history_app.zip")
 PREFIX = "world_history"
 EXCLUDE_DIRS = {".venv", "screenshots", "logs", "__pycache__", ".git"}
-EXCLUDE_DATA = {"cache", "basemaps_raw", "live", "wiki_cache", "econ_raw"}
+EXCLUDE_DATA = {"cache", "basemaps_raw", "live", "wiki_cache", "econ_raw", "xcheck_raw"}
 
 
 def recompress(path: str) -> bytes:

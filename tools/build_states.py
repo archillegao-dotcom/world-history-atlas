@@ -23,14 +23,26 @@ import sys
 
 from wdsparql import DATA, cached, parse_point, parse_time, pick_zh, qid, simplifier, v, write_gz
 
-STATE_ROOTS = "wd:Q6256 wd:Q3024240 wd:Q7275 wd:Q1250464 wd:Q3624078 wd:Q48349 wd:Q417175 wd:Q28171280 wd:Q164950"
+STATE_ROOTS = ("wd:Q6256 wd:Q3024240 wd:Q7275 wd:Q1250464 wd:Q3624078 wd:Q48349 wd:Q417175 wd:Q28171280 wd:Q164950 "
+               # 殖民地、总督辖区（如 秘鲁总督辖区）、保护国、附庸国：近代历史地图上的许多多边形对应这些条目
+               "wd:Q133156 wd:Q12356456 wd:Q20203507 wd:Q164142 wd:Q1371288")
+# 「国家」类（用于识别下级行政区：只属于「一级行政区/联邦州」而不属于这些类的条目标为 sub，不作为地图候选）
+STATEHOOD_ROOTS = "wd:Q6256 wd:Q3024240 wd:Q3624078 wd:Q48349 wd:Q417175 wd:Q133156 wd:Q164142 wd:Q1371288 wd:Q12356456"
 STATE_MIN_SL = 5
 ALLIANCE_ROOTS = "wd:Q878249 wd:Q100906234 wd:Q1778834 wd:Q1127126"
 OFFICE_MAX_HOLDERS = 400
 t2s = simplifier()
 RANKS = {"http://wikiba.se/ontology#PreferredRank": 0, "http://wikiba.se/ontology#NormalRank": 1}
 
-S_CORE = (f"VALUES ?r {{ {STATE_ROOTS} }} ?s wdt:P31/wdt:P279* ?r; wikibase:sitelinks ?ssl. "
+# 特殊地位领土（香港/澳门特别行政区、海外领地、皇家属地……）及其前身（英属香港、葡属澳门……）：
+# 由 tools/build_territories.py --qids 生成，这些条目不一定属于上面的「国家/政权」类，单独并入。
+_TQ = DATA / "territory_qids.json"
+TERRITORY_QIDS = json.loads(_TQ.read_text(encoding="utf-8")) if _TQ.exists() else []
+_EX = DATA / "curated" / "extra_states.json"
+TERRITORY_QIDS = sorted(set(TERRITORY_QIDS) | set(json.loads(_EX.read_text(encoding="utf-8"))["qids"] if _EX.exists() else []))
+_S_BASE = (f"{{ VALUES ?r {{ {STATE_ROOTS} }} ?s wdt:P31/wdt:P279* ?r. }}" +
+           (f" UNION {{ VALUES ?s {{ {' '.join('wd:' + x for x in TERRITORY_QIDS)} }} }}" if TERRITORY_QIDS else ""))
+S_CORE = (f"{_S_BASE} ?s wikibase:sitelinks ?ssl. "
           f"FILTER(?ssl >= {STATE_MIN_SL}) FILTER NOT EXISTS {{ ?s wdt:P31 wd:Q5 }}")
 
 
@@ -91,8 +103,27 @@ def labels_for(name, core, subj, recs, with_alias=False):
 
 def life(name, core, subj, recs):
     for prop, fld in (("P571", "from"), ("P576", "to"), ("P569", "born"), ("P570", "died")):
-        rows = q(f"{name}_{prop}", core, f"?{subj} ?t ?tp ?rank",
-                 f"?{subj} p:{prop} ?st. ?st wikibase:rank ?rank; psv:{prop} ?tv. ?tv wikibase:timeValue ?t; wikibase:timePrecision ?tp.")
+        part = prop in ("P571", "P576")
+        # 成立/解散时间可能带「适用部分」限定 P518（如「中华民国(1912–1949)」：1949-12-07 适用于中国大陆，
+        # 1971 年适用于联合国席位）。带 P518 的值只说明某一部分的变化，不作为政权整体的起止，
+        # 只有当某政权所有值都带 P518 时才采用其中最早（解散）/最早（成立）的一个。
+        rows = q(f"{name}_{prop}{'_p518' if part else ''}", core, f"?{subj} ?t ?tp ?rank" + (" ?part" if part else ""),
+                 f"?{subj} p:{prop} ?st. ?st wikibase:rank ?rank; psv:{prop} ?tv. ?tv wikibase:timeValue ?t; wikibase:timePrecision ?tp."
+                 + (" OPTIONAL { ?st pq:P518 ?part. }" if part else ""))
+        if part:
+            whole = {qid(v(b, subj)) for b in rows if not v(b, "part")}
+            partial = [b for b in rows if v(b, "part") and qid(v(b, subj)) not in whole]
+            rows = [b for b in rows if not v(b, "part")]
+            first = {}
+            for b in partial:
+                t = parse_time(v(b, "t"), v(b, "tp"))
+                k = qid(v(b, subj))
+                if t and v(b, "rank") in RANKS and (k not in first or t["y"] < first[k][0]["y"]):
+                    first[k] = (t, b)
+            rows += [b for _, b in first.values()]
+            for k, (t, b) in first.items():
+                if k in recs:
+                    recs[k].setdefault("_partial", []).append(prop)
         for b in rows:
             r = recs.get(qid(v(b, subj)))
             t = parse_time(v(b, "t"), v(b, "tp"))
@@ -107,8 +138,10 @@ def life(name, core, subj, recs):
                 if RANKS[v(b, "rank")] == 0:
                     r["_p" + fld] = True
     for r in recs.values():
-        for k in [k for k in r if k.startswith("_p")]:
+        for k in [k for k in r if k.startswith("_p") and k != "_partial"]:
             del r[k]
+        if "_partial" in r:
+            r["partial_dates"] = sorted(set(r.pop("_partial")))
 
 
 # ------------------------------------------------------------------ states
@@ -117,6 +150,16 @@ def build_states():
     for b in q("st_core", S_CORE, "?s ?ssl", ""):
         recs[qid(v(b, "s"))] = {"id": qid(v(b, "s")), "sl": int(v(b, "ssl"))}
     print("states:", len(recs), flush=True)
+    # 下级行政区（一级行政区 Q10864048、联邦州 Q107390，如「墨西哥州」「巴伐利亚州」）：经「state」(Q7275) 类混入，
+    # 名称常与国家相同（Mexico），标记 sub=True，运行时不作为地图多边形的候选（除非 Natural Earth 自带此 ID）
+    subn = {qid(v(b, "s")) for b in q("st_subnational", S_CORE, "?s", "VALUES ?sr { wd:Q10864048 wd:Q107390 } ?s wdt:P31/wdt:P279* ?sr.")}
+    stateh = {qid(v(b, "s")) for b in q("st_statehood", S_CORE, "?s", f"VALUES ?hr {{ {STATEHOOD_ROOTS} }} ?s wdt:P31/wdt:P279* ?hr.")}
+    nsub = 0
+    for k, r in recs.items():
+        if k in subn and k not in stateh:
+            r["sub"] = True
+            nsub += 1
+    print("subnational (excluded from map matching):", nsub, flush=True)
     labels_for("st", S_CORE, "s", recs, with_alias=True)
     life("st", S_CORE, "s", recs)
     # 首都（含起止）与首都坐标
@@ -320,7 +363,11 @@ def main():
     write_gz(DATA / "offices.json.gz", sorted(offices.values(), key=lambda r: -r["sl"]))
     write_gz(DATA / "orgs.json.gz", list(orgs.values()))
     write_gz(DATA / "persons.json.gz", list(persons.values()))
-    write_gz(DATA / "alliances.json.gz", sorted(alliances.values(), key=lambda r: -r["sl"]))
+    import importlib.util as _ilu   # 人工修正 + 丢弃倒序成员区间
+    _sp = _ilu.spec_from_file_location("apply_alliance_fixes", __import__("pathlib").Path(__file__).resolve().parent / "dev" / "apply_alliance_fixes.py")
+    _m = _ilu.module_from_spec(_sp); _sp.loader.exec_module(_m); _fix_al = _m.apply
+    _al_out, _, _ = _fix_al(sorted(alliances.values(), key=lambda r: -r["sl"]))
+    write_gz(DATA / "alliances.json.gz", _al_out)
 
 
 if __name__ == "__main__":

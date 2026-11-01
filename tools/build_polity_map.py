@@ -34,6 +34,10 @@ SLACK = 30
 NAME_ALIASES = {
     "English territory": ["Kingdom of England"],
     "Chinese warlords": ["Republic of China"],
+    # historical-basemaps 1920/1930 快照把中国本部标为「Chinese Warlords」（大写 W），同样对应中华民国
+    "Chinese Warlords": ["Republic of China"],
+    # 满洲：1932-03-01 之前属中华民国，1932–1945 为满洲国（存在期过滤保证各自只在其存在期成为候选）
+    "Manchuria": ["Republic of China", "Manchukuo"],
     "Castile": ["Crown of Castile"],
     "Aragón": ["Crown of Aragon"],
     "Shogun Japan (Kamakura)": ["Kamakura shogunate"],
@@ -42,6 +46,27 @@ NAME_ALIASES = {
     # 1611–1721 年间的瑞典（存在期过滤保证只在这一时期成为候选）
     "Sweden": ["Swedish Empire"],
     "Spain": ["Spanish Empire"],
+    # 以下按英文维基条目名在 Wikidata 中查得 QID（存在期过滤保证各自只在其存在期成为候选）
+    "Japan": ["Q1154406", "Q205662", "Q736839"],                       # 室町（足利）幕府 1336–1573、江户幕府 1603–1867、镰仓幕府
+    "Shogun Japan (Kamakura)": ["Kamakura shogunate", "Q1154406"],      # 1400 年快照仍标「镰仓」：1336 年以后为室町幕府
+    "Japan (Warring States)": ["Q1154406", "Q11634225", "Q205662"],    # 室町幕府（至 1573）、丰臣政权、江户幕府
+    "Tibet": ["Q126416", "Q729540", "Q17500081", "Q2444884"],          # 帕木竹巴 1354–1618、藏巴汗 1565–1642、甘丹颇章 1642–1959、西藏(1912–1951)
+    "Tufan Empire": ["Q2431480"],                                       # 吐蕃 618–842
+    "Mexihcah (Triple Alliance)": ["Q2608489"],                         # 阿兹特克帝国
+    "Viceroyalty of New Spain": ["Q170603"],
+    "Viceroyalty of Peru": ["Q211435"],
+    "Viceroyalty of New Granada": ["Q8965"],
+    "Algiers": ["Q3045696"],                                            # 阿尔及尔摄政国 1516–1830
+    "Algeria": ["Q218272"], "Algeria (FR)": ["Q218272"], "Algeria (France)": ["Q218272"],   # 法属阿尔及利亚 1830–1962
+    "French West Africa": ["Q210682"], "French Equatorial Africa": ["Q271894"],
+    "Rupert's Land": ["Q738395"],
+    "Khazars": ["Q2090473"],                                            # 可萨汗国
+    "Cuman-Kipchak confederation": ["Q1122052"],
+    "Quazaq Khanate": ["Q1433867"],                                     # 哈萨克汗国
+    "Luisiana": ["Q658054"], "Louisiana": ["Q658054"],                  # 法属路易斯安那
+    "New France": ["Q170604"],
+    "Dutch East Indies": ["Q188161"],
+    "Portuguese India": ["Q323904"],
 }
 
 
@@ -111,7 +136,12 @@ def main():
             if len(ab) >= 5:  # 缩写太短（如 S.K.）容易误配（斯洛伐克 SK），不用
                 names.add(ab)
             names.discard("")
-            names |= {norm(x) for x in NAME_ALIASES.get(p.get("NAME"), [])}
+            names |= {norm(x) for x in NAME_ALIASES.get(p.get("NAME"), []) if not re.fullmatch(r"Q\d+", x)}
+            for x in NAME_ALIASES.get(p.get("NAME"), []):
+                if re.fullmatch(r"Q\d+", x) and x in sid:
+                    s_ = sid[x]
+                    if overlaps(y(s_.get("from")), y(s_.get("to")), snap, nxt):
+                        add(s_, "name", 110 + math.log10(s_["sl"] + 1))
             # Natural Earth 快照自带 QID
             if p.get("QID"):
                 cands[p["QID"]] = [p["QID"], "naturalearth", 200]

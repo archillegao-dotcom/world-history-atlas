@@ -16,7 +16,7 @@ if not (SEED / "events.json.xz").is_file() or not (SEED / "basemaps" / "index.js
     raise SystemExit("build/seed_data missing — run: python packaging/build.py")
 if not (ROOT / "frontend" / "index.html").is_file():
     raise SystemExit("frontend/index.html missing")
-VERSION = os.environ.get("WHA_VERSION", "0.4.0").lstrip("v") or "0.4.0"
+VERSION = os.environ.get("WHA_VERSION", "0.5.0").lstrip("v") or "0.5.0"
 
 # 分析阶段会 import backend.app。那个导入会装载全部历史数据，这里跳过。
 os.environ["WHA_PYINSTALLER_ANALYZE"] = "1"
@@ -34,7 +34,8 @@ hiddenimports = (collect_submodules("uvicorn") + collect_submodules("backend.mod
                  + collect_submodules("backend.live")
                  + ["backend.app", "backend.config", "backend.geo", "backend.registry",
                     "backend.datafile", "backend.timeutil", "backend.polity", "backend.details",
-                    "backend.econ", "certifi", "tzdata", "shapely", "shapely.geometry"])
+                    "backend.econ", "backend.control_zones", "backend.official",
+                    "backend.territory_info", "backend.transitions", "certifi", "tzdata", "shapely", "shapely.geometry"])
 excludes = ["tkinter", "_tkinter", "IPython", "jupyter", "notebook", "pytest",
             "PyQt5", "PyQt6", "PySide2", "PySide6", "matplotlib", "PIL",
             "scipy", "pandas", "requests", "opencc"]

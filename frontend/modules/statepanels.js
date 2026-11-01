@@ -22,7 +22,7 @@
     root.querySelectorAll("[data-treaty]").forEach((a) => (a.onclick = (e) => { e.preventDefault(); WHA.showTreaty(a.dataset.treaty); }));
   }
   const summaryHtml = (s, label) => s ? `<div class="wsum">${s.thumb ? `<img src="${esc(s.thumb)}" alt="">` : ""}
-      <p>${esc(s.extract)}</p><div class="src">摘要来源：<a href="${esc(s.url)}" target="_blank" rel="noopener">${s.lang === "zh" ? "中文维基百科" : "English Wikipedia"}「${esc(s.title)}」</a>（CC BY-SA）</div></div>`
+      <p>${esc(s.extract)}</p>${s.mt && s.orig ? `<details class="s"><summary>英文原文</summary>${esc(s.orig)}</details>` : ""}<div class="src">${s.mt ? "机器翻译（Argos Translate，离线）自" : "摘要来源："}<a href="${esc(s.url)}" target="_blank" rel="noopener">${s.lang === "zh" ? "中文维基百科" : "English Wikipedia"}「${esc(s.title)}」</a>（CC BY-SA）</div></div>`
     : `<div class="note">${label || "没有取得维基百科摘要（可能离线，或该条目没有维基百科页面）。"}</div>`;
 
   // 候选政权切换（地图区域可能对应多个 Wikidata 政权，例如同名的不同时期政权）
@@ -39,13 +39,24 @@
     const box = document.createElement("div");
     box.className = "mod-state";
     let h = altSelector(r);
+    if (r.territory) {
+      const t = r.territory;
+      h += `<div class="terr-box"><b>特殊地位：${esc(t.type)}</b>${t.sovereign ? `（主权国：${esc(t.sovereign)}）` : ""}<div class="s">${esc(t.explain)}
+        <a href="${esc(t.url)}" target="_blank" rel="noopener">说明来源</a></div>` +
+        (t.geom_note ? `<div class="s">${esc(t.geom_note)}</div>` : "") +
+        (t.history?.length ? `<div class="s">地位变化（Wikidata）：${t.history.map((x) => `${esc(x.name)} ${span(x.from, x.to)}`).join("；")}</div>` : "") + `</div>`;
+    }
+    if (r.state_note) h += `<div class="note">${esc(r.state_note)}</div>`;
+    if (r.merged?.length) h += `<div class="note">同一国家在 Wikidata 中还有以下条目（同名或当时首都相同），其记录一并显示：${r.merged.map((x) => esc(x.name)).join("、")}</div>`;
+    if (r.eras?.length) h += `<h4>年号</h4>` + r.eras.map((e) => `<span class="chip">${esc(e.name)} <small>${span(e.from, e.to)}</small></span>`).join(" ");
     if (r.heads?.length) {
-      h += `<h4>元首与政府首脑</h4>` + r.heads.map((x) => `<div class="item"><div class="t">${esc(x.role)}：${P(x.person)}</div>
+      h += `<h4>元首与政府首脑</h4>` + r.heads.map((x) => `<div class="item"><div class="t">${esc(x.role)}：${P(x.person)}${x.src ? ` <small>（条目：${esc(x.src)}）</small>` : ""}</div>
         <div class="d">任期 ${span(x.from, x.to)}${x.to ? "" : "（未记录卸任时间）"}</div>${x.person?.desc ? `<div class="s">${esc(x.person.desc)}</div>` : ""}</div>`).join("");
     }
     if (r.offices?.length) {
-      h += `<h4>重要职位（点职位看机构介绍）</h4>` + r.offices.map((o) => `<div class="item"><div class="t">${O(o.office)}</div>
-        ${o.holders.map((x) => `<div class="d">${P(x.person)} · ${span(x.from, x.to)}${x.to ? "" : "（未记录卸任时间）"}</div>`).join("")}</div>`).join("");
+      h += `<h4>君主与重要职位（点职位看机构介绍）</h4>` + r.offices.map((o) => `<div class="item"><div class="t">${O(o.office)}${o.virtual && o.juris ? ` <small>（${esc(o.juris)}）</small>` : (o.src ? ` <small>（条目：${esc(o.src)}）</small>` : "")}</div>
+        ${o.holders.map((x) => `<div class="d">${P(x.person)} · ${span(x.from, x.to)}${x.to ? (x.to_note ? `<small>（卸任时间取自${esc(x.to_note)}）</small>` : "") : "（未记录卸任时间）"}</div>` +
+          (x.legend ? `<div class="note">${esc(x.legend)}</div>` : "")).join("")}</div>`).join("");
     }
     if (!r.heads?.length && !r.offices?.length) h += `<div class="empty">没有找到所选日期的任职记录。</div>`;
     if (r.undated_offices?.length) h += `<h4>任期未记录的职位</h4><div class="note">以下职位在 Wikidata 中有任职者，但多数没有记录任期，无法判断所选日期谁在任（点开可看历任者）：</div>` +
@@ -144,7 +155,10 @@
     <h2>${esc(t.name)}</h2>${t.en && t.en !== t.name ? `<div class="en">${esc(t.en)}</div>` : ""}${t.desc ? `<div class="s">${esc(t.desc)}</div>` : ""}
     <div class="s">类型：${t.types.map(esc).join("、") || "—"}</div>
     <table class="kv"><tr><th>签订</th><td>${esc(t.signed || "未记录")}</td></tr><tr><th>生效</th><td>${esc(t.effective || "未记录")}</td></tr>
-      ${t.start ? `<tr><th>开始</th><td>${esc(t.start)}</td></tr>` : ""}<tr><th>终止</th><td>${esc(t.end || "未记录")}</td></tr></table>
+      ${t.start ? `<tr><th>开始</th><td>${esc(t.start)}</td></tr>` : ""}<tr><th>终止</th><td>${esc(t.end || "未记录")}</td></tr>
+      <tr><th>签订地点</th><td>${esc((t.location || []).map((x) => x.name).join("、") || "未记录")}</td></tr>
+      ${t.countries?.length ? `<tr><th>所属国家</th><td>${esc(t.countries.join("、"))}</td></tr>` : ""}</table>
+    ${t.name_mt ? '<div class="note">条约名称为机器翻译的「译名」（Wikidata 与维基百科都没有中文名称）。</div>' : ""}
     ${summaryHtml(t.summary)}
     <h4>签署方 / 参与方（${t.parties.length}${t.others ? `；另有 ${t.others} 个签署人或无法对应到政权的签署方` : ""}）</h4>
     <table class="kv">${t.parties.map((p) => `<tr><td>${esc(p.name)}</td><td class="d">${esc(p.via)}${p.rep ? `：${P(p.rep)}` : ""}</td></tr>`).join("") || "<tr><td>Wikidata 没有记录能对应到政权的签署方</td></tr>"}</table>

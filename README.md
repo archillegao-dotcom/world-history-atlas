@@ -1,10 +1,26 @@
-# 世界历史地图 · World History Atlas（v0.4）
+# 世界历史地图 · World History Atlas（v0.5.0）
 
 一个在本机运行的「世界历史地图」：拖动时间轴，地图边界随历史变化；点击某个国家/政权，
 就能看到那一天（或那一年）前后在那里发生的**事件**、**每日新闻**，以及当时在世的**文学家、哲学家、政治家**。
 地图上还会标出**当时已经存在的主要城市**（★ = 当时的国家首都）。
 
 > 只使用公开的真实数据，不编造任何事件、人物或日期。每一条内容都附有来源链接（Wikidata / 维基百科 / 新闻来源）。
+
+## 更新记录
+
+### v0.5.0（2026-11-02）
+- **全面审计与修正**：`tools/audit.py` 检查全部日期 × 区域；政权存在期违规、领导人任期违规均降为 0；修正首都无起止导致的错位（如 220 年北京）、同盟成员倒序等。报告见 `AUDIT_REPORT.md`。
+- **按日期的政权更替**：快照之间的重大更替按日期切换（1949-10-01 中华人民共和国、1945 年满洲国终止、1125 年辽亡于金等）；政权分裂时注明后继者。
+- **实际控制区**：1949–1961 年中华民国控制的岛屿与西南、西藏/昌都、缅北国民革命军残部；1125–1234 年金朝全境（含辽朝故地）。
+- **战争前线**（新图层）：俄乌战争 2014 年基线 + 2022-02-24 起逐日占领区与灰色区（ISW/CTP、DeepStateMap），数据截至 2026-11-01。
+- **中文化**：Wikidata 中文标签 / 中文维基条目名优先，缺失时离线机器翻译并标注「（译名）」「（机器翻译）」，保留英文原文。
+- **君主与古代职位**：前现代君主汇总；中国历代按朝代时间轴显示君主。
+- **特殊地位地区**：香港、澳门、格陵兰、波多黎各等按存在期单独显示（如 1997-07-01 起香港特别行政区与行政长官）。
+- **官方历任名单**：立法院、总统府、日本首相官邸、英国政府的历任名单并入，逐条附来源网址。
+- 用 Seshat 核对政权起止年；同一政权的不同多边形同色。
+
+### v0.4.1
+- 免安装版（PyInstaller，macOS arm64/Intel 与 Windows）、App Translocation 修复、网页右上角「退出」按钮。
 
 ## 免安装版（推荐，不需要安装 Python）
 
@@ -177,6 +193,35 @@ Maddison 和世界银行都按**现代国家**统计（Maddison 的历史数值�
 - 同盟条约喂给阵营地图：Wikidata 的同盟条目自身没有成员、但与某些条约互相引用时，用条约签署方作成员；类型名含 alliance 的条约本身也作为阵营。
   **英葡同盟**在 Wikidata 中与 1373 年英葡条约、1386 年温莎条约之间没有任何链接，本应用按英文维基百科条目的说明人工关联（`tools/build_treaties.py` 中的 `CURATED_LINKS`，只此一例），成员仍只取两份条约在 Wikidata 中记录的签署方/参与方（英格兰王国、英格兰、葡萄牙）。
 
+## v0.5 新增：按日期判断政权、领导人与核对（详见 `AUDIT_REPORT.md`）
+
+- **按日期的政权更替**（`data/transitions.json.gz`，`tools/build_transitions.py`）：两张边界快照之间发生的重大更替按**日期**切换，
+  例如 1949-10-01 起中国大陆为「中华人民共和国」、台湾仍为「中华民国」；1945-08 后不再显示「满洲国」。界面左下角注明使用的快照，以及叠加了哪些「边界过渡修正」（可点开查看）。
+- **特殊地位地区**（`data/territories.json.gz`，`tools/build_territories.py`）：香港、澳门、格陵兰、波多黎各等按 Wikidata 的存在期单独显示
+  （如 1990 年香港 →「英属香港」及港督；1997-07-01 起 →「香港特别行政区」及行政长官）。
+- **存在期过滤**（`backend/polity.py`）：地图区域只对应到**当时确实存在**的政权（上古不会出现「仲家」或「罗马」；史前只显示考古文化/人群）。
+  没有存在期记录的候选不当作强匹配；少数 Wikidata 存在期明显有误的条目在 `data/curated/lifespan_overrides.json` 中更正，并注明出处。
+- **君主与古代职位**（`data/rulers.json.gz`，`tools/build_rulers.py`）：从 Wikidata 的「君主」类职位、王朝成员、P1906/P1313 等记录汇总前现代君主；
+  中国历代按 `data/curated/china_dynasties.json`（朝代、起止年与国际通行的学术年表一致）显示朝代时间轴。
+- **核对来源**：国际学界数据库 **Seshat Global History Databank**（Equinox-2020）用于核对政权起止年（`tools/xcheck_seshat.py`，结果在 `data/xcheck/`）；
+  与 Wikidata 不一致时在政权面板注明。**以国际学术/考古共识为主**；中国或其他传统史书的说法只作「补充说明」，不覆盖数值。
+- **官方历任名单**（`tools/build_official_offices.py` → `data/official_offices.json.gz`，运行时由 `backend/official.py` 并入）：
+  立法院（ly.gov.tw）历任院长、总统府历任总统、日本首相官邸（kantei.go.jp）历代内阁、英国政府（gov.uk）历任首相。
+  规则：Wikidata 已有任期 → 只核对；Wikidata 缺任期 → 用官方任期补上；Wikidata 完全没有、且官方精确到日的 → 新增。每条都保存来源网址，**不推测**。
+- **中文化**（`tools/enrich_text.py`）：条约、同盟、政权、职位、资源点、人物、事件等，先用 Wikidata 中文标签 / 中文维基条目名；
+  都没有时用**离线机器翻译**（Argos Translate / OPUS-MT 英→中），名称后标「（译名）」、简介后标「（机器翻译）」，并在详情里保留英文原文。
+  机器翻译有质量把关（乱码、重复、长度异常的一律不用，保留英文），但译名仍可能不准确，请以原文为准。
+  条约简介：优先中文维基百科首段，没有时用英文维基百科首段（机器翻译 + 原文）。
+- **审计**：`tools/audit.py` 检查全部日期 × 区域的存在期、领导人、政权性质、同盟、条约、城市、事件、经济数据；`tools/spotcheck.py` 随机抽查 40 个面板与维基百科对照。
+
+- **实际控制区**（`data/curated/control_zones.json` → `tools/build_control_zones.py` → `data/control_zones.json.gz`；图层「实际控制区」）：
+  快照之间按日期显示的次国家级控制范围，例如 1950 年仍由中华民国控制的海南岛、舟山、万山群岛、大陈岛、金门、马祖，1950–1961 年缅甸掸邦的国民革命军残部，
+  以及 1125–1234 年金朝全境（辽朝故地 + 淮河—秦岭以北）。每条注明日期来源；范围不精确的标「大致范围」。
+- **战争前线**（`data/war_fronts/`，图层「战争前线」，默认关闭）：俄乌战争逐日的俄军控制区与灰色区，
+  2022-02-24 至 04-02 用 ISW/CTP「Assessed Control of Terrain」，2022-04-03 起用 DeepStateMap 公开历史快照，2014–2022 为克里米亚与顿巴斯的近似基线。
+  只用真实数据集，不插值；其他战争的数据调研见 `data/war_fronts/CANDIDATES.md`。
+- **政权分裂**：一个政权在两张快照之间分裂为多个后继者时（如西罗马帝国、法蒂玛王朝），面板注明「已分裂为……」，不把整个多边形算给其中一个。
+
 ## 每日新闻自动更新
 
 应用运行期间，后台线程每 60 分钟（可配置）抓取**最近 3 天**的维基百科每日页面（当天的页面一天里会不断补充）。
@@ -207,6 +252,10 @@ Maddison 和世界银行都按**现代国家**统计（Maddison 的历史数值�
 │  ├─ details.py       人物页面 / 机构卡片 / 阵营面板接口
 │  ├─ datafile.py      读取 .json.gz / .json.xz 数据文件
 │  ├─ econ.py          经济数据与取值/插值规则
+│  ├─ transitions.py   快照之间按日期的政权更替
+│  ├─ control_zones.py 实际控制区的日期与加载
+│  ├─ territory_info.py 特殊地位地区
+│  ├─ official.py      官方历任名单并入
 │  ├─ live/            每日新闻抓取、解析与后台调度；wiki.py 维基百科摘要（在线 + 缓存）
 │  └─ modules/         ★ 内容模块：每个文件一个模块，自动发现
 │     ├─ events.py               事件
@@ -220,6 +269,8 @@ Maddison 和世界银行都按**现代国家**统计（Maddison 的历史数值�
 │     ├─ layer_alliances.py      地图图层：阵营地图
 │     ├─ layer_economy.py        地图图层：经济（现代国界分级设色）
 │     ├─ layer_resources.py      地图图层：资源点
+│     ├─ layer_control_zones.py  地图图层：实际控制区
+│     ├─ layer_war_fronts.py     地图图层：战争前线
 │     ├─ econ_panel.py           民生经济
 │     ├─ spirits.py              国家精神（条约与同盟）
 │     ├─ _people_base.py         人物类模块的通用实现
@@ -230,6 +281,8 @@ Maddison 和世界银行都按**现代国家**统计（Maddison 的历史数值�
 │  ├─ modules/alliances.js       阵营图层（着色、图例）
 │  ├─ modules/statepanels.js     政权性质/领导人/国家精神面板、人物页面、机构卡片、阵营面板、条约详情
 │  ├─ modules/economy.js         经济图层、资源图层、民生经济面板（趋势图）
+│  ├─ modules/control_zones.js   实际控制区图层
+│  ├─ modules/war_fronts.js      战争前线图层
 │  └─ vendor/leaflet/            本地 Leaflet
 ├─ data/                         数据（可与程序分开更新）
 └─ tools/                        数据构建脚本（需要联网）
@@ -298,11 +351,25 @@ python tools/build_wikidata.py            # 事件 + 人物 + 国家表（几分
 python tools/build_places.py              # 城市 + 地名表
 python tools/build_polity_names.py        # 政权中文名
 python tools/build_current_events.py --from 1995-01-01   # 每日新闻回填（约 10 分钟）
-python tools/build_states.py              # 政权、职位、人物、阵营（约 10 分钟）
-python tools/build_polity_map.py          # 地图区域 → 政权候选（几秒）
-python tools/build_treaties.py            # 条约（并把同盟条约追加到阵营数据；须在 build_states 之后）
 python tools/build_resources.py           # 资源点
 .venv/bin/pip install openpyxl && python tools/build_econ.py   # Maddison 2023 + 世界银行 + 现代国家重叠（约 2 分钟）
+# —— 以下顺序不能颠倒（v0.5）——
+python tools/build_territories.py --qids  # 1. 特殊地位地区的 QID 列表（build_states 要用）
+python tools/build_states.py              # 2. 政权、职位、人物、阵营（约 10 分钟）
+python tools/build_territories.py         # 3. 特殊地位地区的边界与存在期
+python tools/build_polity_map.py          # 4. 地图区域 → 政权候选
+python tools/build_treaties.py            # 5. 条约（并把同盟条约追加到阵营数据）
+python tools/build_rulers.py              # 6. 君主与古代职位
+python tools/xcheck_seshat.py             # 7. 与 Seshat 核对政权起止
+python tools/build_control_zones.py       # 8a. 实际控制区（须在 build_transitions 之前）
+python tools/build_transitions.py         # 8. 按日期的政权更替（含 as_polity 控制区）
+python tools/build_official_offices.py    # 9. 官方历任名单（有缓存，可中断后继续；每次请求间隔 1.5 秒）
+python tools/build_war_fronts_ukraine.py  # 9a. 战争前线：俄乌战争（读取 ukraine_front 项目的处理结果，路径见脚本开头）
+# 10. 中文化（必须最后运行；需要单独的 Python 环境安装 argostranslate 与英→中模型）
+python3 -m venv mtvenv && mtvenv/bin/pip install argostranslate
+mtvenv/bin/argospm update && mtvenv/bin/argospm install translate-en_zh
+mtvenv/bin/python tools/enrich_text.py    # 维基百科首段 + 机器翻译（有缓存，可重复运行）
+python tools/audit.py --baseline <旧版本目录>   # 审计，结果写到 data/audit/
 python tools/make_zip.py                  # 打包（数据改用 .xz 压缩，内容不变）
 ```
 
@@ -326,4 +393,19 @@ python tools/make_zip.py                  # 打包（数据改用 .xz 压缩，�
 
 ## 许可
 
-代码供个人学习使用。数据许可：historical-basemaps GPL-3.0；Wikidata CC0；维基百科内容 CC BY-SA 4.0；Natural Earth 公有领域；Leaflet BSD-2-Clause。
+代码供个人学习使用。数据许可：
+
+| 来源 | 许可 |
+|---|---|
+| historical-basemaps（A. Ourednik） | GPL-3.0 |
+| Wikidata | CC0 |
+| 维基百科（摘要、首段） | CC BY-SA 4.0（已附原文链接） |
+| Natural Earth | 公有领域 |
+| Maddison Project Database 2023 | CC BY 4.0 |
+| 世界银行 WDI | CC BY 4.0 |
+| Seshat Global History Databank（Equinox-2020） | CC BY-NC-SA 4.0 —— **仅限非商业用途**；本应用只附带比对结果 |
+| 机器翻译模型 Argos Translate en→zh 1.9（源自 OPUS-MT，Tiedemann & Thottingal 2020） | CC BY 4.0（模型）；Argos Translate 程序 MIT |
+| 官方名单（ly.gov.tw、president.gov.tw、kantei.go.jp、gov.uk） | 政府公开信息；gov.uk 为 Open Government Licence v3.0。只摘录姓名与任期，并逐条附来源网址 |
+| Leaflet | BSD-2-Clause |
+| ISW / AEI Critical Threats Project（Assessed Control of Terrain） | © ISW & CTP，注明出处 |
+| DeepStateMap | © DeepStateMap，公开数据，注明出处 |

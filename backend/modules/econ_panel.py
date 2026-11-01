@@ -33,7 +33,7 @@ class EconPanel(ContentModule):
         if polity is None:
             return {"items": [], "total": 0, "note": "请点击一个地区。"}
         snap, fid = params.get("snap"), polity["props"]["fid"]
-        ov = [[S.ne_iso[str(fid)], 1.0]] if snap == 2011 and str(fid) in S.ne_iso else S.overlap.get(str(snap), {}).get(str(fid), [])
+        ov = S.overlap_for(ctx.basemaps, snap).get(str(fid), [])
         main = [x for x in ov if x[1] >= 0.15][:3] or ov[:1]
         y = date.y
         countries = []

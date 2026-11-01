@@ -41,11 +41,11 @@ class EconomyLayer(LayerModule):
                 vals[iso] = r
         xs = sorted(r["v"] for r in vals.values())
         breaks = [xs[int(len(xs) * k / 7)] for k in range(1, 7)] if len(xs) >= 7 else xs
-        snap = ctx.basemaps.snapshot_for(y)
+        snap = ctx.basemaps.snapshot_at(date)
         return {"indicator": ind, "meta": S.indicators[ind], "source": S.source_of(ind),
                 "indicators": [{"id": k, "zh": m["zh"]} for k, m in S.indicators.items()],
                 "values": vals, "breaks": breaks, "ne_iso": S.ne_iso,
-                "overlap": S.overlap.get(str(snap), {}) if snap != 2011 else {k: [[v, 1.0]] for k, v in S.ne_iso.items()},
+                "overlap": S.overlap_for(ctx.basemaps, snap),
                 "names": {iso: S.name(iso) for iso in vals}, "snapshot": snap, "total": len(vals),
                 "note": "数值按现代国界统计（历史时期为「今天这一范围」的估计）。虚线边框 = 插值或沿用最近数据。"}
 

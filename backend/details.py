@@ -126,7 +126,7 @@ def office(oid: str, date: str | None = None):
             "juris": [{"id": s, "name": R.state_name(s)} for s in o.get("juris", [])],
             "summary": wiki.summary(o.get("zhwiki"), o.get("enwiki")), "orgs": orgs,
             "holders": [{"person": R.person_brief(h["p"]), "from": _t(h.get("from")), "to": _t(h.get("to"))} for h in holders],
-            "links": [{"label": "Wikidata", "url": f"https://www.wikidata.org/wiki/{oid}"}]}
+            "links": [{"label": "Wikidata", "url": f"https://www.wikidata.org/wiki/{oid.split('@')[0]}"}]}
 
 
 @router.get("/api/alliance/{aid}")
@@ -181,26 +181,51 @@ def state(sid: str):
 
 
 @router.get("/api/snapshot_names/{snap}")
-def snapshot_names(snap: int):
+def snapshot_names(snap: str, date: str | None = None):
     """该快照每个多边形在快照年份对应的政权中文名（来自解析到的 Wikidata 政权，只取「强」候选）。
     用于地图悬停提示和面板标题，避免把现代国名（如「中华人民共和国」）套到历史时期。"""
+    from .geo import norm_snap
     R = resolver(_ctx())
-    d = HDate(snap if snap != 0 else 1, 0, 0)
+    snap = norm_snap(snap)
+    if date:
+        d = parse_date(date)
+    elif isinstance(snap, str):
+        d = _ctx().basemaps.trans.parse(snap)[1]
+    else:
+        d = HDate(snap if snap != 0 else 1, 0, 0)
     out = {}
     for fid in _ctx().basemaps.features(snap):
-        c = R.strong(snap, fid, d)
-        if c and c[0]["state"].get("zh"):
-            out[str(fid)] = {"zh": c[0]["state"]["zh"], "qid": c[0]["state"]["id"]}
+        cands = R.resolve(snap, fid, d)
+        c = R.primary(cands, d)
+        if c and (c["state"].get("zh") or c["state"].get("en")):
+            out[str(fid)] = {"zh": c["state"].get("zh") or c["state"]["en"], "qid": c["state"]["id"], "method": c["method"]}
+        elif R.split_names(cands) and d.y >= -500:
+            # 已分裂：旧政权解散后由几个政权分有，底图边界要到下一张快照才更新
+            out[str(fid)] = {"kind": "split", "parts": R.split_names(cands)[:5]}
+        else:
+            # 没有当时存在的政权：史前/上古多为考古文化或人群分布，标为「文化/地区」
+            out[str(fid)] = {"kind": "culture" if d.y < -500 or not cands else "region"}
     return out
 
 
 @router.get("/api/polity_states")
-def polity_states(snap: int, fid: int, date: str):
+def polity_states(snap: str, fid: int, date: str):
     R = resolver(_ctx())
     d = parse_date(date)
     return [{"id": c["state"]["id"], "name": c["state"].get("zh") or c["state"].get("en"), "method": c["method"],
              "method_zh": METHOD_ZH.get(c["method"], c["method"]), "score": c["score"]}
             for c in R.resolve(snap, fid, d)]
+
+
+def _stored_summary(r):
+    """tools/enrich_text.py 预先取得的维基百科导言（离线可用）；英文导言附机器翻译。"""
+    sm = r.get("summary")
+    if not sm or not (sm.get("text") or sm.get("en")):
+        return None
+    zh = sm.get("src") == "zh.wikipedia"
+    return {"lang": "zh" if zh else "en", "title": r.get("zhwiki") if zh else r.get("enwiki"),
+            "extract": sm.get("text") or sm.get("en"), "orig": None if zh else sm.get("en"), "mt": bool(sm.get("mt")),
+            "url": sm.get("url"), "thumb": None}
 
 
 @router.get("/api/treaty/{tid}")
@@ -232,5 +257,8 @@ def treaty(tid: str):
             "types": [t.get("zh") or t.get("en") for t in r.get("types", [])],
             "signed": _t(r.get("signed")), "effective": _t(r.get("effective")), "start": _t(r.get("start") or r.get("inception")),
             "end": _t(tend(r)), "parties": parties, "others": others,
-            "summary": wiki.summary(r.get("zhwiki"), r.get("enwiki")), "links": links,
+            "summary": _stored_summary(r) or wiki.summary(r.get("zhwiki"), r.get("enwiki")), "links": links,
+            "location": [{"name": x.get("zh") or x.get("en"), "coord": x.get("coord")} for x in r.get("location", [])],
+            "countries": [R.state_name(c) for c in r.get("countries", [])],
+            "name_mt": bool(r.get("zh_mt")),
             "has_text": bool(r.get("zhws") or r.get("enws") or r.get("fulltext"))}

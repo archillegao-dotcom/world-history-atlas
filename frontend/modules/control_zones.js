@@ -1,0 +1,35 @@
+/*
+ * 地图图层「实际控制区」（后端：backend/modules/layer_control_zones.py；数据：data/curated/control_zones.json）。
+ * 范围画成虚线（不拦截点击，下面的政权多边形照常可点）；标签可点开说明（日期来源、是否为大致范围）。
+ */
+(() => {
+  "use strict";
+  const COLOR = { holdout: "#1f5fbf", de_facto: "#8a5a00", occupied: "#b02a2a", armed_presence: "#6a3d9a", war_zone: "#d35400" };
+  let group = null, map = null;
+  const fmt = (s) => (s ? s.replace(/^(-?\d+)-(\d+)-(\d+)$/, "$1年$2月$3日").replace(/^(-?\d+)-(\d+)$/, "$1年$2月").replace(/^(-?\d+)$/, "$1年") : "");
+
+  WHA.registerLayer("control_zones", {
+    init(m) {
+      map = m;
+      if (!map.getPane("zones")) { const p = map.createPane("zones"); p.style.zIndex = 450; p.style.pointerEvents = "none"; }
+      group = L.layerGroup().addTo(map);
+    },
+    update(res) {
+      group.clearLayers();
+      for (const z of res.items || []) {
+        const c = COLOR[z.kind] || "#333";
+        L.geoJSON(z.geom, { pane: "zones", interactive: false,
+          style: { color: c, weight: 2, dashArray: "6 4", fillColor: c, fillOpacity: z.as_polity ? 0.08 : 0.15 } }).addTo(group);
+        const tip = `<b>${WHA.esc(z.name)}</b>${z.approx ? "（大致范围）" : ""}<br>${WHA.esc(z.kind_zh)} · 控制方：${WHA.esc(z.controller.zh)}` +
+          `<br>${fmt(z.from) || "?"} – ${z.until ? fmt(z.until) : "至今"}` +
+          (z.dates_note ? `<div style="max-width:320px;white-space:normal"><small>${WHA.esc(z.dates_note)}</small></div>` : "") +
+          (z.note ? `<div style="max-width:320px;white-space:normal"><small>${WHA.esc(z.note)}</small></div>` : "") +
+          `<small>来源：${z.sources.map((u) => `<a href="${WHA.esc(u)}" target="_blank" rel="noopener">${WHA.esc(decodeURIComponent(u.replace(/^https?:\/\//, "")).slice(0, 48))}</a>`).join("；")}</small>`;
+        const icon = L.divIcon({ className: "zone-label", iconSize: null, iconAnchor: [0, 8],
+          html: `<span style="color:${c};font-weight:600;font-size:12px;text-shadow:0 0 3px #fff,0 0 3px #fff;white-space:nowrap">◇ ${WHA.esc(z.name)}${z.approx ? "<small>（大致范围）</small>" : ""}</span>` });
+        L.marker([z.label[1], z.label[0]], { icon, keyboard: false, zIndexOffset: 800 }).bindPopup(tip, { maxWidth: 360 }).addTo(group);
+      }
+    },
+    clear() { group && group.clearLayers(); },
+  });
+})();

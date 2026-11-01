@@ -22,7 +22,7 @@ import json
 import re
 
 from build_states import ALLIANCE_ROOTS, labels_for, q
-from wdsparql import DATA, cached, parse_time, pick_zh, qid, simplifier, v, write_gz
+from wdsparql import DATA, cached, parse_point, parse_time, pick_zh, qid, simplifier, v, write_gz
 
 t2s = simplifier()
 TREATY = "wd:Q131569"
@@ -97,6 +97,29 @@ def main():
                 recs[qid(v(b, "t"))][fld] = v(b, "title")
         for b in q(f"tr{k}_P953", core, "?t ?u", "?t wdt:P953 ?u."):
             recs[qid(v(b, "t"))].setdefault("fulltext", v(b, "u"))
+        # 签订地点 P1071（含中英文名与坐标）
+        for b in q(f"tr{k}_P1071", core, "?t ?loc ?lz ?le ?co",
+                   '?t wdt:P1071 ?loc. OPTIONAL { ?loc rdfs:label ?lz. FILTER(LANG(?lz) IN ("zh-hans","zh-cn","zh")) } '
+                   'OPTIONAL { ?loc rdfs:label ?le. FILTER(LANG(?le) = "en") } OPTIONAL { ?loc wdt:P625 ?co. }'):
+            r = recs[qid(v(b, "t"))]
+            lid = qid(v(b, "loc"))
+            locs = r.setdefault("location", [])
+            cur = next((x for x in locs if x["id"] == lid), None)
+            if cur is None:
+                cur = {"id": lid}
+                locs.append(cur)
+            if v(b, "lz") and not cur.get("zh"):
+                cur["zh"] = t2s(v(b, "lz"))
+            if v(b, "le"):
+                cur.setdefault("en", v(b, "le"))
+            if v(b, "co") and "coord" not in cur:
+                cur["coord"] = parse_point(v(b, "co"))
+        # 条约所属国家 P17（另存一份，签署方缺失时上面已并入 parties）
+        for b in q(f"tr{k}_P17", core, "?t ?p", "?t wdt:P17 ?p."):
+            r = recs[qid(v(b, "t"))]
+            r.setdefault("countries", [])
+            if qid(v(b, "p")) not in r["countries"]:
+                r["countries"].append(qid(v(b, "p")))
     # 类型名
     tids = sorted({c for s in types.values() for c in s})
     tl = {}

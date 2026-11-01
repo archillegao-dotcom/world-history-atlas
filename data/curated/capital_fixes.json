@@ -1,0 +1,1150 @@
+{
+ "_doc": "城市「首都所属」(Wikidata P1376) 的人工修正：键为城市 QID，值为 {所属政权 QID: [{from, to}] 或 []}；替换该城市对该政权的全部首都记录（[] 表示删除）。日期 to 为不含。每条注明来源。backend/modules/layer_cities.py 读取。",
+ "Q956": {
+  "Q12060881": {
+   "periods": [
+    {
+     "from": {
+      "y": 1272,
+      "m": 0,
+      "d": 0,
+      "p": 9
+     },
+     "to": {
+      "y": 1368,
+      "m": 0,
+      "d": 0,
+      "p": 9
+     }
+    },
+    {
+     "from": {
+      "y": 1421,
+      "m": 0,
+      "d": 0,
+      "p": 9
+     },
+     "to": {
+      "y": 1912,
+      "m": 0,
+      "d": 0,
+      "p": 9
+     }
+    }
+   ],
+   "note": "北京作为「帝制中国」(Q12060881) 首都的记录在 Wikidata 中没有起止时间，导致前 220 年起一直显示为首都。按国际通行史实改为：元大都 1272–1368；明 1421 年迁都北京至清 1912 年（1368–1421 年明朝首都为南京）。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/History_of_Beijing",
+    "https://en.wikipedia.org/wiki/Khanbaliq"
+   ]
+  },
+  "Q5066": {
+   "periods": [
+    {
+     "from": {
+      "y": 1153,
+      "m": 0,
+      "d": 0,
+      "p": 9
+     },
+     "to": {
+      "y": 1215,
+      "m": 0,
+      "d": 0,
+      "p": 9
+     }
+    }
+   ],
+   "note": "金海陵王 1153 年迁都中都（今北京），1215 年蒙古攻陷中都。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Historical_capitals_of_China",
+    "https://en.wikipedia.org/wiki/Zhongdu"
+   ]
+  }
+ },
+ "Q18808": {
+  "Q28370": {
+   "periods": [
+    {
+     "from": {
+      "y": 427,
+      "m": 0,
+      "d": 0,
+      "p": 9
+     },
+     "to": {
+      "y": 668,
+      "m": 0,
+      "d": 0,
+      "p": 9
+     }
+    }
+   ],
+   "note": "高句丽 427 年由国内城迁都平壤（长寿王），668 年亡于唐—新罗联军；Wikidata 的起始年 37 年是高句丽建国年而非迁都年。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Goguryeo",
+    "https://en.wikipedia.org/wiki/Pyongyang"
+   ]
+  }
+ },
+ "Q3616": {
+  "Q794": {
+   "periods": [
+    {
+     "from": {
+      "y": 1786,
+      "m": 0,
+      "d": 0,
+      "p": 9
+     },
+     "to": null
+    }
+   ],
+   "note": "德黑兰 1786 年起由卡扎尔王朝阿迦·穆罕默德汗定为首都；Wikidata 用伊朗国家条目的起始年（前 550 年）推断，导致古代也显示为首都。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Tehran"
+   ]
+  }
+ },
+ "Q597": {
+  "Q45": {
+   "periods": [
+    {
+     "from": {
+      "y": 1255,
+      "m": 0,
+      "d": 0,
+      "p": 9
+     },
+     "to": null
+    }
+   ],
+   "note": "里斯本约 1255 年取代科英布拉成为葡萄牙首都。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Lisbon"
+   ]
+  }
+ },
+ "Q1748": {
+  "Q35": {
+   "periods": [
+    {
+     "from": {
+      "y": 1443,
+      "m": 0,
+      "d": 0,
+      "p": 9
+     },
+     "to": null
+    }
+   ],
+   "note": "哥本哈根 1443 年起为丹麦首都。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Copenhagen"
+   ]
+  },
+  "Q756617": {
+   "periods": [
+    {
+     "from": {
+      "y": 1443,
+      "m": 0,
+      "d": 0,
+      "p": 9
+     },
+     "to": null
+    }
+   ],
+   "note": "同上（丹麦王国）。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Copenhagen"
+   ]
+  }
+ },
+ "Q585": {
+  "Q20": {
+   "periods": [
+    {
+     "from": {
+      "y": 1299,
+      "m": 0,
+      "d": 0,
+      "p": 9
+     },
+     "to": {
+      "y": 1537,
+      "m": 0,
+      "d": 0,
+      "p": 9
+     }
+    },
+    {
+     "from": {
+      "y": 1814,
+      "m": 0,
+      "d": 0,
+      "p": 9
+     },
+     "to": null
+    }
+   ],
+   "note": "哈康五世约 1299 年以奥斯陆为挪威首都；1537 年起挪威并入丹麦—挪威由哥本哈根统治；1814 年起克里斯蒂安尼亚（奥斯陆）再为挪威首都。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Oslo",
+    "https://en.wikipedia.org/wiki/History_of_Oslo"
+   ]
+  }
+ },
+ "Q2280": {
+  "Q184": {
+   "periods": [
+    {
+     "from": {
+      "y": 1991,
+      "m": 8,
+      "d": 25,
+      "p": 11
+     },
+     "to": null
+    }
+   ],
+   "note": "白俄罗斯共和国 1991-08-25 宣布独立，明斯克为首都（此前为白俄罗斯苏维埃社会主义共和国首都，另有条目）。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Minsk",
+    "https://en.wikipedia.org/wiki/Belarus"
+   ]
+  }
+ },
+ "Q3711": {
+  "Q403": {
+   "periods": [
+    {
+     "from": {
+      "y": 1841,
+      "m": 0,
+      "d": 0,
+      "p": 9
+     },
+     "to": null
+    }
+   ],
+   "note": "贝尔格莱德 1841 年起为塞尔维亚公国首都（此前为克拉古耶瓦茨）；Wikidata 用塞尔维亚条目起始年 780 年推断。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Belgrade",
+    "https://en.wikipedia.org/wiki/Kragujevac"
+   ]
+  }
+ },
+ "Q5838": {
+  "Q889": {
+   "periods": [
+    {
+     "from": {
+      "y": 1776,
+      "m": 0,
+      "d": 0,
+      "p": 9
+     },
+     "to": null
+    }
+   ],
+   "note": "1776 年杜兰尼王朝帖木儿沙把首都由坎大哈迁到喀布尔。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Kabul"
+   ]
+  }
+ },
+ "Q216": {
+  "Q49683": {
+   "periods": [
+    {
+     "from": {
+      "y": 1323,
+      "m": 0,
+      "d": 0,
+      "p": 9
+     },
+     "to": {
+      "y": 1795,
+      "m": 0,
+      "d": 0,
+      "p": 9
+     }
+    }
+   ],
+   "note": "维尔纽斯 1323 年首见于格迪米纳斯的书信，作为立陶宛大公国首都；1795 年第三次瓜分波兰—立陶宛后终止。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Vilnius",
+    "https://en.wikipedia.org/wiki/History_of_Vilnius"
+   ]
+  },
+  "Q37": {
+   "periods": [
+    {
+     "from": {
+      "y": 1918,
+      "m": 2,
+      "d": 16,
+      "p": 11
+     },
+     "to": {
+      "y": 1920,
+      "m": 10,
+      "d": 9,
+      "p": 11
+     }
+    },
+    {
+     "from": {
+      "y": 1939,
+      "m": 10,
+      "d": 28,
+      "p": 11
+     },
+     "to": {
+      "y": 1940,
+      "m": 6,
+      "d": 15,
+      "p": 11
+     }
+    },
+    {
+     "from": {
+      "y": 1990,
+      "m": 3,
+      "d": 11,
+      "p": 11
+     },
+     "to": null
+    }
+   ],
+   "note": "现代立陶宛：1918-02-16 独立宣言以维尔纽斯为首都；1920-10-09 热利戈夫斯基兵变后被波兰控制，考纳斯为临时首都；1939-10 交还立陶宛，1940-06 苏联占领；1990-03-11 恢复独立。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Vilnius",
+    "https://en.wikipedia.org/wiki/Kaunas",
+    "https://en.wikipedia.org/wiki/Żeligowski%27s_Mutiny"
+   ]
+  }
+ },
+ "Q5826": {
+  "Q1069609": {
+   "periods": [
+    {
+     "from": {
+      "y": -1046,
+      "m": 0,
+      "d": 0,
+      "p": 9
+     },
+     "to": {
+      "y": -771,
+      "m": 0,
+      "d": 0,
+      "p": 9
+     }
+    }
+   ],
+   "note": "西周都城丰镐，在今西安西南。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Historical_capitals_of_China"
+   ]
+  },
+  "Q7183": {
+   "periods": [
+    {
+     "from": {
+      "y": -221,
+      "m": 0,
+      "d": 0,
+      "p": 9
+     },
+     "to": {
+      "y": -206,
+      "m": 0,
+      "d": 0,
+      "p": 9
+     }
+    }
+   ],
+   "note": "秦都咸阳，在今西安西北（与西安市区相邻，地图上以西安代表）。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Historical_capitals_of_China"
+   ]
+  },
+  "Q1072949": {
+   "periods": [
+    {
+     "from": {
+      "y": -200,
+      "m": 0,
+      "d": 0,
+      "p": 9
+     },
+     "to": {
+      "y": 9,
+      "m": 0,
+      "d": 0,
+      "p": 9
+     }
+    }
+   ],
+   "note": "西汉前 200 年起定都长安。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Historical_capitals_of_China"
+   ]
+  },
+  "Q504769": {
+   "periods": [
+    {
+     "from": {
+      "y": 9,
+      "m": 0,
+      "d": 0,
+      "p": 9
+     },
+     "to": {
+      "y": 23,
+      "m": 0,
+      "d": 0,
+      "p": 9
+     }
+    }
+   ],
+   "note": "新朝都长安（常安）。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Historical_capitals_of_China"
+   ]
+  },
+  "Q1471995": {
+   "periods": [
+    {
+     "from": {
+      "y": 351,
+      "m": 0,
+      "d": 0,
+      "p": 9
+     },
+     "to": {
+      "y": 385,
+      "m": 0,
+      "d": 0,
+      "p": 9
+     }
+    }
+   ],
+   "note": "前秦都长安。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Historical_capitals_of_China"
+   ]
+  },
+  "Q1143164": {
+   "periods": [
+    {
+     "from": {
+      "y": 535,
+      "m": 0,
+      "d": 0,
+      "p": 9
+     },
+     "to": {
+      "y": 557,
+      "m": 0,
+      "d": 0,
+      "p": 9
+     }
+    }
+   ],
+   "note": "西魏都长安。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Historical_capitals_of_China"
+   ]
+  },
+  "Q551067": {
+   "periods": [
+    {
+     "from": {
+      "y": 557,
+      "m": 0,
+      "d": 0,
+      "p": 9
+     },
+     "to": {
+      "y": 581,
+      "m": 0,
+      "d": 0,
+      "p": 9
+     }
+    }
+   ],
+   "note": "北周都长安。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Historical_capitals_of_China"
+   ]
+  },
+  "Q7405": {
+   "periods": [
+    {
+     "from": {
+      "y": 582,
+      "m": 0,
+      "d": 0,
+      "p": 9
+     },
+     "to": {
+      "y": 618,
+      "m": 0,
+      "d": 0,
+      "p": 9
+     }
+    }
+   ],
+   "note": "隋 582 年营建大兴城（长安）。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Historical_capitals_of_China"
+   ]
+  },
+  "Q9683": {
+   "periods": [
+    {
+     "from": {
+      "y": 618,
+      "m": 0,
+      "d": 0,
+      "p": 9
+     },
+     "to": {
+      "y": 904,
+      "m": 0,
+      "d": 0,
+      "p": 9
+     }
+    }
+   ],
+   "note": "唐都长安；904 年朱温挟唐昭宗迁洛阳。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Historical_capitals_of_China"
+   ]
+  }
+ },
+ "Q187136": {
+  "Q7209": {
+   "periods": [],
+   "note": "删除 Wikidata 中「汉朝（前 206–220）以洛阳为首都」的无日期记录：西汉都长安，东汉才都洛阳（见 Q1147037）。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Historical_capitals_of_China"
+   ]
+  },
+  "Q307066": {
+   "periods": [
+    {
+     "from": {
+      "y": -770,
+      "m": 0,
+      "d": 0,
+      "p": 9
+     },
+     "to": {
+      "y": -256,
+      "m": 0,
+      "d": 0,
+      "p": 9
+     }
+    }
+   ],
+   "note": "东周都洛邑（王城/成周），在今洛阳。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Historical_capitals_of_China"
+   ]
+  },
+  "Q1147037": {
+   "periods": [
+    {
+     "from": {
+      "y": 25,
+      "m": 0,
+      "d": 0,
+      "p": 9
+     },
+     "to": {
+      "y": 190,
+      "m": 0,
+      "d": 0,
+      "p": 9
+     }
+    }
+   ],
+   "note": "东汉都洛阳；190 年董卓挟汉献帝迁长安。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Historical_capitals_of_China"
+   ]
+  },
+  "Q1145470": {
+   "periods": [
+    {
+     "from": {
+      "y": 265,
+      "m": 0,
+      "d": 0,
+      "p": 9
+     },
+     "to": {
+      "y": 311,
+      "m": 0,
+      "d": 0,
+      "p": 9
+     }
+    }
+   ],
+   "note": "西晋都洛阳；311 年永嘉之乱洛阳陷落。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Historical_capitals_of_China"
+   ]
+  },
+  "Q875305": {
+   "periods": [
+    {
+     "from": {
+      "y": 493,
+      "m": 0,
+      "d": 0,
+      "p": 9
+     },
+     "to": {
+      "y": 534,
+      "m": 0,
+      "d": 0,
+      "p": 9
+     }
+    }
+   ],
+   "note": "北魏孝文帝 493 年由平城迁都洛阳；534 年分裂。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Historical_capitals_of_China"
+   ]
+  },
+  "Q835435": {
+   "periods": [
+    {
+     "from": {
+      "y": 690,
+      "m": 0,
+      "d": 0,
+      "p": 9
+     },
+     "to": {
+      "y": 705,
+      "m": 0,
+      "d": 0,
+      "p": 9
+     }
+    }
+   ],
+   "note": "武周以洛阳为神都。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Historical_capitals_of_China"
+   ]
+  },
+  "Q1143126": {
+   "periods": [
+    {
+     "from": {
+      "y": 923,
+      "m": 0,
+      "d": 0,
+      "p": 9
+     },
+     "to": {
+      "y": 936,
+      "m": 0,
+      "d": 0,
+      "p": 9
+     }
+    }
+   ],
+   "note": "后唐都洛阳。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Historical_capitals_of_China"
+   ]
+  }
+ },
+ "Q16666": {
+  "Q274488": {
+   "periods": [
+    {
+     "from": {
+      "y": 229,
+      "m": 0,
+      "d": 0,
+      "p": 9
+     },
+     "to": {
+      "y": 280,
+      "m": 0,
+      "d": 0,
+      "p": 9
+     }
+    }
+   ],
+   "note": "孙权 229 年称帝，迁都建业。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Historical_capitals_of_China"
+   ]
+  },
+  "Q306928": {
+   "periods": [
+    {
+     "from": {
+      "y": 317,
+      "m": 0,
+      "d": 0,
+      "p": 9
+     },
+     "to": {
+      "y": 420,
+      "m": 0,
+      "d": 0,
+      "p": 9
+     }
+    }
+   ],
+   "note": "东晋都建康。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Historical_capitals_of_China"
+   ]
+  },
+  "Q49697": {
+   "periods": [
+    {
+     "from": {
+      "y": 420,
+      "m": 0,
+      "d": 0,
+      "p": 9
+     },
+     "to": {
+      "y": 479,
+      "m": 0,
+      "d": 0,
+      "p": 9
+     }
+    }
+   ],
+   "note": "刘宋都建康。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Historical_capitals_of_China"
+   ]
+  },
+  "Q62456": {
+   "periods": [
+    {
+     "from": {
+      "y": 479,
+      "m": 0,
+      "d": 0,
+      "p": 9
+     },
+     "to": {
+      "y": 502,
+      "m": 0,
+      "d": 0,
+      "p": 9
+     }
+    }
+   ],
+   "note": "南齐都建康。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Historical_capitals_of_China"
+   ]
+  },
+  "Q1069868": {
+   "periods": [
+    {
+     "from": {
+      "y": 502,
+      "m": 0,
+      "d": 0,
+      "p": 9
+     },
+     "to": {
+      "y": 552,
+      "m": 0,
+      "d": 0,
+      "p": 9
+     }
+    },
+    {
+     "from": {
+      "y": 555,
+      "m": 0,
+      "d": 0,
+      "p": 9
+     },
+     "to": {
+      "y": 557,
+      "m": 0,
+      "d": 0,
+      "p": 9
+     }
+    }
+   ],
+   "note": "梁都建康（552–555 年梁元帝都江陵）。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Historical_capitals_of_China"
+   ]
+  },
+  "Q62454": {
+   "periods": [
+    {
+     "from": {
+      "y": 557,
+      "m": 0,
+      "d": 0,
+      "p": 9
+     },
+     "to": {
+      "y": 589,
+      "m": 0,
+      "d": 0,
+      "p": 9
+     }
+    }
+   ],
+   "note": "陈都建康；589 年隋灭陈。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Historical_capitals_of_China"
+   ]
+  },
+  "Q1326742": {
+   "periods": [
+    {
+     "from": {
+      "y": 937,
+      "m": 0,
+      "d": 0,
+      "p": 9
+     },
+     "to": {
+      "y": 976,
+      "m": 0,
+      "d": 0,
+      "p": 9
+     }
+    }
+   ],
+   "note": "南唐都金陵（江宁府）。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Historical_capitals_of_China"
+   ]
+  },
+  "Q9903": {
+   "periods": [
+    {
+     "from": {
+      "y": 1368,
+      "m": 0,
+      "d": 0,
+      "p": 9
+     },
+     "to": {
+      "y": 1421,
+      "m": 0,
+      "d": 0,
+      "p": 9
+     }
+    }
+   ],
+   "note": "明初都南京（应天府），1421 年迁都北京。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Historical_capitals_of_China"
+   ]
+  }
+ },
+ "Q208471": {
+  "Q783489": {
+   "periods": [
+    {
+     "from": {
+      "y": 907,
+      "m": 0,
+      "d": 0,
+      "p": 9
+     },
+     "to": {
+      "y": 909,
+      "m": 0,
+      "d": 0,
+      "p": 9
+     }
+    },
+    {
+     "from": {
+      "y": 913,
+      "m": 0,
+      "d": 0,
+      "p": 9
+     },
+     "to": {
+      "y": 923,
+      "m": 0,
+      "d": 0,
+      "p": 9
+     }
+    }
+   ],
+   "note": "后梁都开封（东都）；909–913 年在洛阳。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Historical_capitals_of_China"
+   ]
+  },
+  "Q1154540": {
+   "periods": [
+    {
+     "from": {
+      "y": 938,
+      "m": 0,
+      "d": 0,
+      "p": 9
+     },
+     "to": {
+      "y": 947,
+      "m": 0,
+      "d": 0,
+      "p": 9
+     }
+    }
+   ],
+   "note": "后晋 938 年迁都开封。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Historical_capitals_of_China"
+   ]
+  },
+  "Q1069829": {
+   "periods": [
+    {
+     "from": {
+      "y": 947,
+      "m": 0,
+      "d": 0,
+      "p": 9
+     },
+     "to": {
+      "y": 951,
+      "m": 0,
+      "d": 0,
+      "p": 9
+     }
+    }
+   ],
+   "note": "后汉都开封。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Historical_capitals_of_China"
+   ]
+  },
+  "Q1154556": {
+   "periods": [
+    {
+     "from": {
+      "y": 951,
+      "m": 0,
+      "d": 0,
+      "p": 9
+     },
+     "to": {
+      "y": 960,
+      "m": 0,
+      "d": 0,
+      "p": 9
+     }
+    }
+   ],
+   "note": "后周都开封。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Historical_capitals_of_China"
+   ]
+  },
+  "Q319460": {
+   "periods": [
+    {
+     "from": {
+      "y": 960,
+      "m": 0,
+      "d": 0,
+      "p": 9
+     },
+     "to": {
+      "y": 1127,
+      "m": 0,
+      "d": 0,
+      "p": 9
+     }
+    }
+   ],
+   "note": "北宋都东京开封府，1127 年靖康之变陷落。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Historical_capitals_of_China"
+   ]
+  },
+  "Q5066": {
+   "periods": [
+    {
+     "from": {
+      "y": 1214,
+      "m": 0,
+      "d": 0,
+      "p": 9
+     },
+     "to": {
+      "y": 1233,
+      "m": 0,
+      "d": 0,
+      "p": 9
+     }
+    }
+   ],
+   "note": "金宣宗 1214 年由中都迁开封（南京），1233 年开封陷落。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Historical_capitals_of_China"
+   ]
+  }
+ },
+ "Q4970": {
+  "Q1147043": {
+   "periods": [
+    {
+     "from": {
+      "y": 1138,
+      "m": 0,
+      "d": 0,
+      "p": 9
+     },
+     "to": {
+      "y": 1276,
+      "m": 0,
+      "d": 0,
+      "p": 9
+     }
+    }
+   ],
+   "note": "南宋 1138 年定临安为行在（实际首都），1276 年元军入临安。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Historical_capitals_of_China"
+   ]
+  }
+ },
+ "Q404529": {
+  "Q7209": {
+   "periods": [
+    {
+     "from": {
+      "y": 196,
+      "m": 0,
+      "d": 0,
+      "p": 9
+     },
+     "to": {
+      "y": 220,
+      "m": 0,
+      "d": 0,
+      "p": 9
+     }
+    }
+   ],
+   "note": "许昌（许都）196 年曹操迎汉献帝迁都于此，至 220 年东汉亡；Wikidata 记录无起止，原按整个汉朝（前 206 起）显示。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Historical_capitals_of_China",
+    "https://en.wikipedia.org/wiki/Xuchang"
+   ]
+  }
+ },
+ "Q30002": {
+  "Q865": {
+   "periods": [
+    {
+     "from": {
+      "y": 1949,
+      "m": 11,
+      "d": 29,
+      "p": 11
+     },
+     "to": {
+      "y": 1949,
+      "m": 12,
+      "d": 10,
+      "p": 11
+     }
+    }
+   ],
+   "note": "中华民国政府 1949-11-29 由重庆迁成都，12 月迁台北；Wikidata 记录只有终止年 1949、无开始，原来会从古代起一直显示为首都。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Chengdu",
+    "https://en.wikipedia.org/wiki/Retreat_of_the_government_of_the_Republic_of_China_to_Taiwan"
+   ]
+  },
+  "Q320925": {
+   "periods": [
+    {
+     "from": {
+      "y": 221,
+      "m": 0,
+      "d": 0,
+      "p": 9
+     },
+     "to": {
+      "y": 263,
+      "m": 0,
+      "d": 0,
+      "p": 9
+     }
+    }
+   ],
+   "note": "蜀汉都成都（221–263）。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Historical_capitals_of_China"
+   ]
+  },
+  "Q571453": {
+   "periods": [
+    {
+     "from": {
+      "y": 907,
+      "m": 0,
+      "d": 0,
+      "p": 9
+     },
+     "to": {
+      "y": 925,
+      "m": 0,
+      "d": 0,
+      "p": 9
+     }
+    }
+   ],
+   "note": "前蜀都成都。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Historical_capitals_of_China"
+   ]
+  },
+  "Q526507": {
+   "periods": [
+    {
+     "from": {
+      "y": 934,
+      "m": 0,
+      "d": 0,
+      "p": 9
+     },
+     "to": {
+      "y": 965,
+      "m": 0,
+      "d": 0,
+      "p": 9
+     }
+    }
+   ],
+   "note": "后蜀都成都。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Historical_capitals_of_China"
+   ]
+  }
+ }
+}

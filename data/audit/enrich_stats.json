@@ -1,0 +1,50 @@
+{
+ "applied": {
+  "treaties": {
+   "names": 4017,
+   "descs": 4846
+  },
+  "alliances": {
+   "names": 18,
+   "descs": 47
+  },
+  "rulers.offices": {
+   "names": 724,
+   "descs": 1224
+  },
+  "ruler_persons": {
+   "names": 5131,
+   "descs": 4937
+  },
+  "states": {
+   "names": 1335,
+   "descs": 3921
+  },
+  "offices": {
+   "names": 645,
+   "descs": 1998
+  },
+  "resources": {
+   "names": 3357,
+   "descs": 3126
+  },
+  "orgs": {
+   "names": 204,
+   "descs": 502
+  },
+  "cities": {
+   "names": 124,
+   "descs": 0
+  },
+  "persons": {
+   "names": 19490,
+   "descs": 27294
+  },
+  "events": {
+   "names": 29942,
+   "descs": 55670
+  }
+ },
+ "mt_model": "1.9",
+ "generated": "2026-11-01 22:48"
+}

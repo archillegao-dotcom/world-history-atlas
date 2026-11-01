@@ -1,0 +1,179 @@
+{
+ "generated": "2026-11-01T23:25:13",
+ "sets": {
+  "条约": {
+   "name": {
+    "native": 1715,
+    "mt": 4017,
+    "none": 489,
+    "empty": 0,
+    "total": 6221,
+    "zh_pct": 92.1,
+    "native_pct": 27.6,
+    "mt_pct": 64.6
+   },
+   "desc": {
+    "native": 348,
+    "mt": 4846,
+    "none": 35,
+    "empty": 992,
+    "total": 6221,
+    "zh_pct": 83.5,
+    "native_pct": 5.6,
+    "mt_pct": 77.9
+   },
+   "summary": {
+    "native": 1028,
+    "mt": 1505,
+    "none": 0,
+    "empty": 3688,
+    "total": 6221,
+    "zh_pct": 40.7,
+    "native_pct": 16.5,
+    "mt_pct": 24.2
+   }
+  },
+  "政权（全部）": {
+   "name": {
+    "native": 4354,
+    "mt": 1335,
+    "none": 109,
+    "empty": 0,
+    "total": 5798,
+    "zh_pct": 98.1,
+    "native_pct": 75.1,
+    "mt_pct": 23.0
+   },
+   "desc": {
+    "native": 1659,
+    "mt": 3921,
+    "none": 55,
+    "empty": 163,
+    "total": 5798,
+    "zh_pct": 96.2,
+    "native_pct": 28.6,
+    "mt_pct": 67.6
+   }
+  },
+  "政权（地图用到的）": {
+   "name": {
+    "native": 2682,
+    "mt": 408,
+    "none": 32,
+    "empty": 0,
+    "total": 3122,
+    "zh_pct": 99.0,
+    "native_pct": 85.9,
+    "mt_pct": 13.1
+   },
+   "desc": {
+    "native": 1221,
+    "mt": 1823,
+    "none": 32,
+    "empty": 46,
+    "total": 3122,
+    "zh_pct": 97.5,
+    "native_pct": 39.1,
+    "mt_pct": 58.4
+   }
+  },
+  "职位": {
+   "name": {
+    "native": 3941,
+    "mt": 1369,
+    "none": 87,
+    "empty": 0,
+    "total": 5397,
+    "zh_pct": 98.4,
+    "native_pct": 73.0,
+    "mt_pct": 25.4
+   },
+   "desc": {
+    "native": 1601,
+    "mt": 3222,
+    "none": 23,
+    "empty": 551,
+    "total": 5397,
+    "zh_pct": 89.4,
+    "native_pct": 29.7,
+    "mt_pct": 59.7
+   }
+  },
+  "阵营": {
+   "name": {
+    "native": 60,
+    "mt": 18,
+    "none": 0,
+    "empty": 0,
+    "total": 78,
+    "zh_pct": 100.0,
+    "native_pct": 76.9,
+    "mt_pct": 23.1
+   },
+   "desc": {
+    "native": 26,
+    "mt": 47,
+    "none": 0,
+    "empty": 5,
+    "total": 78,
+    "zh_pct": 93.6,
+    "native_pct": 33.3,
+    "mt_pct": 60.3
+   },
+   "summary": {
+    "native": 55,
+    "mt": 20,
+    "none": 0,
+    "empty": 3,
+    "total": 78,
+    "zh_pct": 96.2,
+    "native_pct": 70.5,
+    "mt_pct": 25.6
+   }
+  },
+  "人物（领导人）": {
+   "name": {
+    "native": 20010,
+    "mt": 19490,
+    "none": 1360,
+    "empty": 0,
+    "total": 40860,
+    "zh_pct": 96.7,
+    "native_pct": 49.0,
+    "mt_pct": 47.7
+   },
+   "desc": {
+    "native": 10500,
+    "mt": 27294,
+    "none": 894,
+    "empty": 2172,
+    "total": 40860,
+    "zh_pct": 92.5,
+    "native_pct": 25.7,
+    "mt_pct": 66.8
+   }
+  },
+  "事件": {
+   "name": {
+    "native": 40635,
+    "mt": 29942,
+    "none": 1622,
+    "empty": 0,
+    "total": 72199,
+    "zh_pct": 97.8,
+    "native_pct": 56.3,
+    "mt_pct": 41.5
+   },
+   "desc": {
+    "native": 7969,
+    "mt": 55670,
+    "none": 1252,
+    "empty": 7308,
+    "total": 72199,
+    "zh_pct": 88.1,
+    "native_pct": 11.0,
+    "mt_pct": 77.1
+   }
+  }
+ }
+}

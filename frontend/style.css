@@ -108,3 +108,6 @@ a.wl { color: #1a4f8a; text-decoration: none; border-bottom: 1px dotted #1a4f8a;
 .spirit.k-经贸 { border-left-color: #2f855a; } .spirit.k-经贸 .k { background: #2f855a; }
 .spirit.k-领土 { border-left-color: #6b46c1; } .spirit.k-领土 .k { background: #6b46c1; }
 .spirit .d { font-size: 11px; }
+
+/* 特殊地位领土说明框 */
+.terr-box { background: #f4efe2; border-left: 3px solid #b08a3c; padding: 6px 8px; margin: 6px 0; font-size: 13px; }

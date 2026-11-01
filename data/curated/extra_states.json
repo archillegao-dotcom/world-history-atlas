@@ -1,0 +1,10 @@
+{
+  "_doc": "不属于 build_states.py 中「国家/政权」类、但历史地图多边形需要对应的 Wikidata 条目（按英文维基条目名查得 QID）。存在期仍取 Wikidata P571/P576。",
+  "qids": {
+    "Q210682": "French West Africa（法属西非，1895–1958）",
+    "Q271894": "French Equatorial Africa（法属赤道非洲，1910–1958）",
+    "Q738395": "Rupert's Land（鲁珀特地区，1670–1870）",
+    "Q1122052": "Cumania（库曼，1000?–1241）",
+    "Q2088324": "Colonial Brazil（殖民地巴西，1500–1815）"
+  }
+}

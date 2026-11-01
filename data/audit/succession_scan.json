@@ -1,0 +1,5333 @@
+[
+ {
+  "snap": 1300,
+  "next": 1400,
+  "NAME": "Great Khanate",
+  "area": 1165.9,
+  "was": [
+   "Q7313",
+   "元朝"
+  ],
+  "dead_by": 1369,
+  "snap_at": "1300@13330712",
+  "now": [
+   "Q9903",
+   "明朝",
+   "dynasty"
+  ]
+ },
+ {
+  "snap": 1900,
+  "next": 1914,
+  "NAME": "Manchu Empire",
+  "area": 1147.0,
+  "was": [
+   "Q8733",
+   "清朝"
+  ],
+  "dead_by": 1913,
+  "snap_at": "1900@19111201",
+  "now": [
+   "Q13426199",
+   "中华民国",
+   "dynasty"
+  ]
+ },
+ {
+  "snap": 1500,
+  "next": 1530,
+  "NAME": "Kalmar Union",
+  "area": 792.8,
+  "was": [
+   "Q62623",
+   "卡尔马联合"
+  ],
+  "dead_by": 1524,
+  "snap_at": "1500@15210828",
+  "now": null
+ },
+ {
+  "snap": 1930,
+  "next": 1938,
+  "NAME": "Brazil",
+  "area": 700.2,
+  "was": [
+   "Q2414171",
+   "巴西第一共和国"
+  ],
+  "dead_by": 1931,
+  "snap_at": "1930@18990101",
+  "now": [
+   "Q155",
+   "巴西",
+   "wiki-title"
+  ]
+ },
+ {
+  "snap": 1960,
+  "next": 1994,
+  "NAME": "Brazil",
+  "area": 700.2,
+  "was": [
+   "Q210542",
+   "巴西第二共和国"
+  ],
+  "dead_by": 1965,
+  "snap_at": "1960@19640921",
+  "now": [
+   "Q155",
+   "巴西",
+   "wiki-title"
+  ]
+ },
+ {
+  "snap": 1800,
+  "next": 1815,
+  "NAME": "Viceroyalty of Brazil",
+  "area": 674.4,
+  "was": [
+   "Q2920081",
+   "巴西总督府（译名）"
+  ],
+  "dead_by": 1809,
+  "snap_at": "1800@18080101",
+  "now": [
+   "Q11876909",
+   "巴西国（译名）",
+   "name"
+  ]
+ },
+ {
+  "snap": 1815,
+  "next": 1878,
+  "NAME": "Viceroyalty of Brazil",
+  "area": 674.4,
+  "was": [
+   "Q3932042",
+   "巴西王国"
+  ],
+  "dead_by": 1826,
+  "snap_at": "1815@18220107",
+  "now": [
+   "Q217230",
+   "巴西帝国",
+   "name"
+  ]
+ },
+ {
+  "snap": 1880,
+  "next": 1900,
+  "NAME": "Kingdom of Brazil",
+  "area": 668.5,
+  "was": [
+   "Q217230",
+   "巴西帝国"
+  ],
+  "dead_by": 1890,
+  "snap_at": "1880@18850529",
+  "now": [
+   "Q2414171",
+   "巴西第一共和国",
+   "capital+name"
+  ]
+ },
+ {
+  "snap": 1600,
+  "next": 1650,
+  "NAME": "Ming Chinese Empire",
+  "area": 621.5,
+  "was": [
+   "Q9903",
+   "明朝"
+  ],
+  "dead_by": 1645,
+  "snap_at": "1600@16320101",
+  "now": [
+   "Q8733",
+   "清朝",
+   "dynasty"
+  ]
+ },
+ {
+  "snap": -400,
+  "next": -323,
+  "NAME": "Achaemenid Empire",
+  "area": 595.5,
+  "was": [
+   "Q389688",
+   "阿契美尼德帝国"
+  ],
+  "dead_by": -328,
+  "snap_at": "-400",
+  "now": null
+ },
+ {
+  "snap": 1920,
+  "next": 1930,
+  "NAME": "Chinese Warlords",
+  "area": 532.3,
+  "was": [
+   "Q11061992",
+   "广州中华民国政府"
+  ],
+  "dead_by": 1924,
+  "snap_at": "1920@19231029",
+  "now": [
+   "Q13426199",
+   "中华民国",
+   "name"
+  ]
+ },
+ {
+  "snap": 1938,
+  "next": 1945,
+  "NAME": "Chinese warlords",
+  "area": 532.3,
+  "was": [
+   "Q708865",
+   "中华民国维新政府"
+  ],
+  "dead_by": 1941,
+  "snap_at": "1938@19400721",
+  "now": [
+   "Q2308761",
+   "国民政府",
+   "name"
+  ]
+ },
+ {
+  "snap": 1945,
+  "next": 1960,
+  "NAME": "China",
+  "area": 532.3,
+  "was": [
+   "Q2308761",
+   "国民政府"
+  ],
+  "dead_by": 1948,
+  "snap_at": "1945@19480509",
+  "now": [
+   "Q13426199",
+   "中华民国",
+   "name"
+  ]
+ },
+ {
+  "snap": 800,
+  "next": 900,
+  "NAME": "Tibetan Empire",
+  "area": 435.9,
+  "was": [
+   "Q2431480",
+   "吐蕃"
+  ],
+  "dead_by": 843,
+  "snap_at": "800",
+  "now": null
+ },
+ {
+  "snap": 600,
+  "next": 700,
+  "NAME": "Göktürks",
+  "area": 398.0,
+  "was": [
+   "Q205466",
+   "突厥汗国"
+  ],
+  "dead_by": 658,
+  "snap_at": "600",
+  "now": null
+ },
+ {
+  "snap": 200,
+  "next": 300,
+  "NAME": "Han",
+  "area": 390.6,
+  "was": [
+   "Q1147037",
+   "东汉"
+  ],
+  "dead_by": 221,
+  "snap_at": "200",
+  "now": [
+   "Q320930",
+   "曹魏",
+   "dynasty"
+  ]
+ },
+ {
+  "snap": -1,
+  "next": 100,
+  "NAME": "Han",
+  "area": 386.0,
+  "was": [
+   "Q1072949",
+   "西汉"
+  ],
+  "dead_by": 10,
+  "snap_at": "-1",
+  "now": [
+   "Q504769",
+   "新朝",
+   "dynasty"
+  ]
+ },
+ {
+  "snap": 600,
+  "next": 700,
+  "NAME": "Sui Empire",
+  "area": 373.5,
+  "was": [
+   "Q7405",
+   "隋朝"
+  ],
+  "dead_by": 619,
+  "snap_at": "600",
+  "now": [
+   "Q9683",
+   "唐朝",
+   "dynasty"
+  ]
+ },
+ {
+  "snap": 1530,
+  "next": 1600,
+  "NAME": "Tsardom of Muscovy",
+  "area": 372.6,
+  "was": [
+   "Q170770",
+   "莫斯科公国"
+  ],
+  "dead_by": 1548,
+  "snap_at": "1530@12790319",
+  "now": [
+   "Q186096",
+   "俄罗斯沙皇国",
+   "wiki-title"
+  ]
+ },
+ {
+  "snap": 700,
+  "next": 800,
+  "NAME": "Sui Empire",
+  "area": 371.0,
+  "was": [
+   "Q835435",
+   "武周"
+  ],
+  "dead_by": 705,
+  "snap_at": "700",
+  "now": [
+   "Q9683",
+   "唐朝",
+   "dynasty"
+  ]
+ },
+ {
+  "snap": 1300,
+  "next": 1400,
+  "NAME": "Ilkhanate",
+  "area": 369.1,
+  "was": [
+   "Q178084",
+   "伊利汗国"
+  ],
+  "dead_by": 1336,
+  "snap_at": "1300@13330712",
+  "now": null
+ },
+ {
+  "snap": 300,
+  "next": 400,
+  "NAME": "Jin",
+  "area": 352.0,
+  "was": [
+   "Q1145470",
+   "西晋"
+  ],
+  "dead_by": 317,
+  "snap_at": "300",
+  "now": [
+   "Q306928",
+   "东晋",
+   "dynasty"
+  ]
+ },
+ {
+  "snap": 1500,
+  "next": 1530,
+  "NAME": "White Horde",
+  "area": 329.6,
+  "was": [
+   "Q2553863",
+   "白帐汗国"
+  ],
+  "dead_by": 1501,
+  "snap_at": "1500@12790319",
+  "now": null
+ },
+ {
+  "snap": 500,
+  "next": 600,
+  "NAME": "Ruanruan",
+  "area": 314.0,
+  "was": [
+   "Q155361",
+   "柔然"
+  ],
+  "dead_by": 556,
+  "snap_at": "500",
+  "now": null
+ },
+ {
+  "snap": 600,
+  "next": 700,
+  "NAME": "Sasanian Empire",
+  "area": 311.6,
+  "was": [
+   "Q2571688",
+   "马次邦亚美尼亚"
+  ],
+  "dead_by": 643,
+  "snap_at": "600",
+  "now": [
+   "Q83891",
+   "萨珊王朝",
+   "wiki-title"
+  ]
+ },
+ {
+  "snap": 900,
+  "next": 1000,
+  "NAME": "Tang Empire",
+  "area": 308.9,
+  "was": [
+   "Q9683",
+   "唐朝"
+  ],
+  "dead_by": 908,
+  "snap_at": "900",
+  "now": [
+   "Q783489",
+   "后梁",
+   "dynasty"
+  ]
+ },
+ {
+  "snap": 1815,
+  "next": 1878,
+  "NAME": "Russian Empire",
+  "area": 291.0,
+  "was": [
+   "Q910495",
+   "俄属北美"
+  ],
+  "dead_by": 1868,
+  "snap_at": "1815@18671109",
+  "now": [
+   "Q34266",
+   "俄罗斯帝国",
+   "wiki-title"
+  ]
+ },
+ {
+  "snap": 1945,
+  "next": 1960,
+  "NAME": "India",
+  "area": 283.3,
+  "was": [
+   "Q112660052",
+   "英属印度（译名）"
+  ],
+  "dead_by": 1948,
+  "snap_at": "1945@19480509",
+  "now": [
+   "Q1775277",
+   "印度联邦",
+   "capital+name"
+  ]
+ },
+ {
+  "snap": 1100,
+  "next": 1200,
+  "NAME": "Song Empire",
+  "area": 283.1,
+  "was": [
+   "Q319460",
+   "北宋"
+  ],
+  "dead_by": 1128,
+  "snap_at": "1100@11270101",
+  "now": [
+   "Q1147043",
+   "南宋",
+   "dynasty"
+  ]
+ },
+ {
+  "snap": 900,
+  "next": 1000,
+  "NAME": "Khazars",
+  "area": 277.9,
+  "was": [
+   "Q2090473",
+   "可萨汗国"
+  ],
+  "dead_by": 970,
+  "snap_at": "900@9620207",
+  "now": null
+ },
+ {
+  "snap": 400,
+  "next": 500,
+  "NAME": "Jin",
+  "area": 261.9,
+  "was": [
+   "Q306928",
+   "东晋"
+  ],
+  "dead_by": 421,
+  "snap_at": "400",
+  "now": [
+   "Q49697",
+   "刘宋",
+   "dynasty"
+  ]
+ },
+ {
+  "snap": 400,
+  "next": 500,
+  "NAME": "Western Roman Empire",
+  "area": 261.8,
+  "was": [
+   "Q42834",
+   "西罗马帝国"
+  ],
+  "dead_by": 477,
+  "snap_at": "400",
+  "now": null
+ },
+ {
+  "snap": -200,
+  "next": -100,
+  "NAME": "Mauryan Empire",
+  "area": 247.8,
+  "was": [
+   "Q62943",
+   "孔雀王朝"
+  ],
+  "dead_by": -183,
+  "snap_at": "-200",
+  "now": null
+ },
+ {
+  "snap": 1715,
+  "next": 1783,
+  "NAME": "Safavid Empire",
+  "area": 243.9,
+  "was": [
+   "Q18234383",
+   "萨法维帝国"
+  ],
+  "dead_by": 1736,
+  "snap_at": "1715@17211102",
+  "now": [
+   "Q161205",
+   "萨非王朝",
+   "name"
+  ]
+ },
+ {
+  "snap": 500,
+  "next": 600,
+  "NAME": "Jin Empire",
+  "area": 240.0,
+  "was": [
+   "Q62456",
+   "南齐"
+  ],
+  "dead_by": 503,
+  "snap_at": "500",
+  "now": [
+   "Q1069868",
+   "梁",
+   "dynasty"
+  ]
+ },
+ {
+  "snap": 1815,
+  "next": 1878,
+  "NAME": "Viceroyalty of Peru",
+  "area": 238.9,
+  "was": [
+   "Q211435",
+   "秘鲁总督区"
+  ],
+  "dead_by": 1825,
+  "snap_at": "1815@18220107",
+  "now": null
+ },
+ {
+  "snap": 1800,
+  "next": 1815,
+  "NAME": "Viceroyalty of the Río de la Plata",
+  "area": 225.4,
+  "was": [
+   "Q210551",
+   "拉普拉塔总督辖区"
+  ],
+  "dead_by": 1811,
+  "snap_at": "1800@18110328",
+  "now": [
+   "Q738144",
+   "拉普拉塔联合省",
+   "successor"
+  ]
+ },
+ {
+  "snap": 1815,
+  "next": 1878,
+  "NAME": "United Provinces of the Río de la Plata",
+  "area": 225.4,
+  "was": [
+   "Q738144",
+   "拉普拉塔联合省"
+  ],
+  "dead_by": 1832,
+  "snap_at": "1815@18300705",
+  "now": [
+   "Q77",
+   "乌拉圭",
+   "capital"
+  ]
+ },
+ {
+  "snap": 1100,
+  "next": 1200,
+  "NAME": "Almoravid dynasty",
+  "area": 219.6,
+  "was": [
+   "Q75613",
+   "穆拉比特王朝"
+  ],
+  "dead_by": 1148,
+  "snap_at": "1100@11270101",
+  "now": null
+ },
+ {
+  "snap": 500,
+  "next": 600,
+  "NAME": "Gupta Empire",
+  "area": 218.8,
+  "was": [
+   "Q11774",
+   "笈多王朝"
+  ],
+  "dead_by": 551,
+  "snap_at": "500",
+  "now": null
+ },
+ {
+  "snap": 1815,
+  "next": 1878,
+  "NAME": "Maratha Confederacy",
+  "area": 215.7,
+  "was": [
+   "Q83618",
+   "马拉塔帝国"
+  ],
+  "dead_by": 1819,
+  "snap_at": "1815@17650510",
+  "now": null
+ },
+ {
+  "snap": 1960,
+  "next": 1994,
+  "NAME": "Sudan",
+  "area": 209.6,
+  "was": [
+   "Q3486796",
+   "苏丹历史"
+  ],
+  "dead_by": 1969,
+  "snap_at": "1960@19670301",
+  "now": [
+   "Q5866728",
+   "苏丹民主共和国",
+   "capital+name"
+  ]
+ },
+ {
+  "snap": 1600,
+  "next": 1650,
+  "NAME": "Tibet",
+  "area": 197.6,
+  "was": [
+   "Q729540",
+   "藏巴汗"
+  ],
+  "dead_by": 1643,
+  "snap_at": "1600@16320101",
+  "now": null
+ },
+ {
+  "snap": 1100,
+  "next": 1200,
+  "NAME": "Seljuk Empire",
+  "area": 195.6,
+  "was": [
+   "Q3708094",
+   "塞尔柱帝国"
+  ],
+  "dead_by": 1194,
+  "snap_at": "1100@11620813",
+  "now": [
+   "Q3708255",
+   "塞尔柱王朝",
+   "name"
+  ]
+ },
+ {
+  "snap": -300,
+  "next": -200,
+  "NAME": "Zhou states",
+  "area": 184.5,
+  "was": [
+   "Q307066",
+   "东周"
+  ],
+  "dead_by": -254,
+  "snap_at": "-300",
+  "now": [
+   "Q34756",
+   "秦国",
+   "dynasty"
+  ]
+ },
+ {
+  "snap": 1930,
+  "next": 1938,
+  "NAME": "Xinjiang",
+  "area": 174.4,
+  "was": [
+   "Q10921952",
+   "哈密札萨克和硕亲王"
+  ],
+  "dead_by": 1931,
+  "snap_at": "1930@18990101",
+  "now": null
+ },
+ {
+  "snap": 1945,
+  "next": 1960,
+  "NAME": "Xinjiang",
+  "area": 174.4,
+  "was": [
+   "Q10988528",
+   "东突厥斯坦第二共和国"
+  ],
+  "dead_by": 1946,
+  "snap_at": "1945@19460618",
+  "now": null
+ },
+ {
+  "snap": 1100,
+  "next": 1200,
+  "NAME": "Fatimid Caliphate",
+  "area": 170.6,
+  "was": [
+   "Q160307",
+   "法蒂玛王朝"
+  ],
+  "dead_by": 1172,
+  "snap_at": "1100@11620813",
+  "now": null
+ },
+ {
+  "snap": -1500,
+  "next": -1000,
+  "NAME": "Sinic",
+  "area": 169.4,
+  "was": [
+   "Q128938",
+   "商朝"
+  ],
+  "dead_by": -1044,
+  "snap_at": "-1500",
+  "now": [
+   "Q1069609",
+   "西周",
+   "dynasty"
+  ]
+ },
+ {
+  "snap": -1000,
+  "next": -700,
+  "NAME": "Sinic",
+  "area": 169.4,
+  "was": [
+   "Q1069609",
+   "西周"
+  ],
+  "dead_by": -769,
+  "snap_at": "-1000",
+  "now": [
+   "Q307066",
+   "东周",
+   "dynasty"
+  ]
+ },
+ {
+  "snap": -200,
+  "next": -100,
+  "NAME": "Bactria",
+  "area": 167.2,
+  "was": [
+   "Q488880",
+   "大夏"
+  ],
+  "dead_by": -123,
+  "snap_at": "-200",
+  "now": null
+ },
+ {
+  "snap": 700,
+  "next": 800,
+  "NAME": "Umayyad Caliphate",
+  "area": 165.6,
+  "was": [
+   "Q8575586",
+   "倭马亚哈里发国"
+  ],
+  "dead_by": 751,
+  "snap_at": "700@7500701",
+  "now": null
+ },
+ {
+  "snap": 1715,
+  "next": 1783,
+  "NAME": "Sweden",
+  "area": 162.7,
+  "was": [
+   "Q739032",
+   "瑞属利沃尼亚"
+  ],
+  "dead_by": 1722,
+  "snap_at": "1715@17211102",
+  "now": [
+   "Q34",
+   "瑞典",
+   "wiki-title"
+  ]
+ },
+ {
+  "snap": 200,
+  "next": 300,
+  "NAME": "Parthian Empire",
+  "area": 161.4,
+  "was": [
+   "Q1986139",
+   "安息帝国"
+  ],
+  "dead_by": 225,
+  "snap_at": "200",
+  "now": null
+ },
+ {
+  "snap": -100,
+  "next": -1,
+  "NAME": "Seleucid Kingdom",
+  "area": 153.6,
+  "was": [
+   "Q93180",
+   "塞琉古帝国"
+  ],
+  "dead_by": -61,
+  "snap_at": "-100",
+  "now": null
+ },
+ {
+  "snap": 1920,
+  "next": 1930,
+  "NAME": "Iran",
+  "area": 152.5,
+  "was": [
+   "Q63158027",
+   "卡扎尔王朝"
+  ],
+  "dead_by": 1926,
+  "snap_at": "1920@19260108",
+  "now": [
+   "Q107258515",
+   "伊朗王国",
+   "capital+name"
+  ]
+ },
+ {
+  "snap": 1400,
+  "next": 1492,
+  "NAME": "Novgorod",
+  "area": 149.1,
+  "was": [
+   "Q151536",
+   "诺夫哥罗德共和国"
+  ],
+  "dead_by": 1479,
+  "snap_at": "1400@14630501",
+  "now": null
+ },
+ {
+  "snap": 1960,
+  "next": 1994,
+  "NAME": "Libya",
+  "area": 147.2,
+  "was": [
+   "Q31454",
+   "利比亚王国"
+  ],
+  "dead_by": 1970,
+  "snap_at": "1960@19670301",
+  "now": [
+   "Q2347668",
+   "利比亚阿拉伯共和国",
+   "coord+name"
+  ]
+ },
+ {
+  "snap": 500,
+  "next": 600,
+  "NAME": "Toba Wei",
+  "area": 143.2,
+  "was": [
+   "Q875305",
+   "北魏"
+  ],
+  "dead_by": 536,
+  "snap_at": "500",
+  "now": [
+   "Q307069",
+   "东魏",
+   "dynasty"
+  ]
+ },
+ {
+  "snap": 800,
+  "next": 900,
+  "NAME": "Carolingian Empire",
+  "area": 141.1,
+  "was": [
+   "Q31929",
+   "加洛林帝国"
+  ],
+  "dead_by": 888,
+  "snap_at": "800",
+  "now": null
+ },
+ {
+  "snap": 1500,
+  "next": 1530,
+  "NAME": "Mamluke Sultanate",
+  "area": 135.5,
+  "was": [
+   "Q282428",
+   "马木留克王朝"
+  ],
+  "dead_by": 1518,
+  "snap_at": "1500@15110825",
+  "now": null
+ },
+ {
+  "snap": 1945,
+  "next": 1960,
+  "NAME": "Manchuria",
+  "area": 132.5,
+  "was": [
+   "Q30623",
+   "满洲国"
+  ],
+  "dead_by": 1946,
+  "snap_at": "1945@19460618",
+  "now": [
+   "Q2308761",
+   "国民政府",
+   "name"
+  ]
+ },
+ {
+  "snap": -1500,
+  "next": -1000,
+  "NAME": "Zhoa",
+  "area": 114.3,
+  "was": [
+   "Q128938",
+   "商朝"
+  ],
+  "dead_by": -1044,
+  "snap_at": "-1500",
+  "now": [
+   "Q1069609",
+   "西周",
+   "dynasty"
+  ]
+ },
+ {
+  "snap": -1000,
+  "next": -700,
+  "NAME": "Zhoa",
+  "area": 114.3,
+  "was": [
+   "Q1069609",
+   "西周"
+  ],
+  "dead_by": -769,
+  "snap_at": "-1000",
+  "now": [
+   "Q307066",
+   "东周",
+   "dynasty"
+  ]
+ },
+ {
+  "snap": 1000,
+  "next": 1100,
+  "NAME": "Ghaznavid Emirate",
+  "area": 114.1,
+  "was": [
+   "Q12844800",
+   "加兹纳维王朝"
+  ],
+  "dead_by": 1013,
+  "snap_at": "1000",
+  "now": null
+ },
+ {
+  "snap": 1960,
+  "next": 1994,
+  "NAME": "South Africa",
+  "area": 113.6,
+  "was": [
+   "Q193619",
+   "南非联邦"
+  ],
+  "dead_by": 1961,
+  "snap_at": "1960@19610427",
+  "now": [
+   "Q258",
+   "南非",
+   "wiki-title"
+  ]
+ },
+ {
+  "snap": 1880,
+  "next": 1900,
+  "NAME": "Colombia",
+  "area": 113.4,
+  "was": [
+   "Q1061488",
+   "哥伦比亚合众国"
+  ],
+  "dead_by": 1887,
+  "snap_at": "1880@18850529",
+  "now": [
+   "Q739",
+   "哥伦比亚",
+   "wiki-title"
+  ]
+ },
+ {
+  "snap": -100,
+  "next": -1,
+  "NAME": "Roman Republic",
+  "area": 112.8,
+  "was": [
+   "Q17167",
+   "罗马共和国"
+  ],
+  "dead_by": -27,
+  "snap_at": "-100",
+  "now": [
+   "Q2277",
+   "罗马帝国",
+   "name"
+  ]
+ },
+ {
+  "snap": 400,
+  "next": 500,
+  "NAME": "Sixteen Kingdoms",
+  "area": 111.7,
+  "was": [
+   "Q1534482",
+   "后燕"
+  ],
+  "dead_by": 410,
+  "snap_at": "400",
+  "now": [
+   "Q1539360",
+   "北凉",
+   "dynasty"
+  ]
+ },
+ {
+  "snap": 400,
+  "next": 500,
+  "NAME": "Hunnic Empire",
+  "area": 107.2,
+  "was": [
+   "Q10295972",
+   "匈帝国"
+  ],
+  "dead_by": 485,
+  "snap_at": "400",
+  "now": null
+ },
+ {
+  "snap": 1960,
+  "next": 1994,
+  "NAME": "Chad",
+  "area": 106.7,
+  "was": [
+   "Q5501708",
+   "法属乍得"
+  ],
+  "dead_by": 1961,
+  "snap_at": "1960@19610427",
+  "now": [
+   "Q657",
+   "乍得",
+   "wiki-title"
+  ]
+ },
+ {
+  "snap": 1200,
+  "next": 1279,
+  "NAME": "Sultanate of Delhi",
+  "area": 105.0,
+  "was": [
+   "Q199443",
+   "古尔王朝"
+  ],
+  "dead_by": 1216,
+  "snap_at": "1200@12040101",
+  "now": [
+   "Q229411",
+   "德里苏丹国",
+   "wiki-title"
+  ]
+ },
+ {
+  "snap": 1530,
+  "next": 1600,
+  "NAME": "Khanate of Sibir",
+  "area": 104.4,
+  "was": [
+   "Q190513",
+   "西伯利亚汗国"
+  ],
+  "dead_by": 1599,
+  "snap_at": "1530@15910312",
+  "now": null
+ },
+ {
+  "snap": 1300,
+  "next": 1400,
+  "NAME": "Norway",
+  "area": 100.9,
+  "was": [
+   "Q2196956",
+   "挪威世袭王国"
+  ],
+  "dead_by": 1398,
+  "snap_at": "1300@13330712",
+  "now": [
+   "Q20",
+   "挪威",
+   "wiki-title"
+  ]
+ },
+ {
+  "snap": 1960,
+  "next": 1994,
+  "NAME": "Niger",
+  "area": 100.3,
+  "was": [
+   "Q5148520",
+   "尼日尔殖民地"
+  ],
+  "dead_by": 1961,
+  "snap_at": "1960@19610427",
+  "now": [
+   "Q1032",
+   "尼日尔",
+   "wiki-title"
+  ]
+ },
+ {
+  "snap": 1530,
+  "next": 1600,
+  "NAME": "Inca Empire",
+  "area": 99.2,
+  "was": [
+   "Q28573",
+   "印加帝国"
+  ],
+  "dead_by": 1534,
+  "snap_at": "1530@12790319",
+  "now": null
+ },
+ {
+  "snap": 1938,
+  "next": 1945,
+  "NAME": "Ethiopia (Italy)",
+  "area": 93.0,
+  "was": [
+   "Q3348640",
+   "义属衣索比亚"
+  ],
+  "dead_by": 1941,
+  "snap_at": "1938@19400721",
+  "now": [
+   "Q207521",
+   "阿比西尼亚帝国",
+   "capital+name"
+  ]
+ },
+ {
+  "snap": 1960,
+  "next": 1994,
+  "NAME": "Ethiopia",
+  "area": 93.0,
+  "was": [
+   "Q2603305",
+   "埃塞俄比亚和厄立特里亚联邦"
+  ],
+  "dead_by": 1963,
+  "snap_at": "1960@19620806",
+  "now": [
+   "Q207521",
+   "阿比西尼亚帝国",
+   "capital+name"
+  ]
+ },
+ {
+  "snap": 1945,
+  "next": 1960,
+  "NAME": "Egypt",
+  "area": 90.4,
+  "was": [
+   "Q124943",
+   "埃及王国"
+  ],
+  "dead_by": 1953,
+  "snap_at": "1945@19511224",
+  "now": [
+   "Q3087763",
+   "埃及共和国",
+   "name"
+  ]
+ },
+ {
+  "snap": 1960,
+  "next": 1994,
+  "NAME": "Pakistan",
+  "area": 88.4,
+  "was": [
+   "Q2342822",
+   "西巴基斯坦"
+  ],
+  "dead_by": 1971,
+  "snap_at": "1960@19701201",
+  "now": [
+   "Q843",
+   "巴基斯坦",
+   "wiki-title"
+  ]
+ },
+ {
+  "snap": 1960,
+  "next": 1994,
+  "NAME": "Mauritania",
+  "area": 88.3,
+  "was": [
+   "Q5148343",
+   "茅利塔尼亚殖民地"
+  ],
+  "dead_by": 1961,
+  "snap_at": "1960@19610427",
+  "now": [
+   "Q1025",
+   "毛里塔尼亚",
+   "wiki-title"
+  ]
+ },
+ {
+  "snap": 300,
+  "next": 400,
+  "NAME": "Gupta Empire",
+  "area": 87.3,
+  "was": [
+   "Q17150787",
+   "巴尔希瓦王朝（译名）"
+  ],
+  "dead_by": 351,
+  "snap_at": "300",
+  "now": [
+   "Q11774",
+   "笈多王朝",
+   "wiki-title"
+  ]
+ },
+ {
+  "snap": 200,
+  "next": 300,
+  "NAME": "Suren Kingdom",
+  "area": 86.3,
+  "was": [
+   "Q1255614",
+   "印度-帕提亚王国"
+  ],
+  "dead_by": 227,
+  "snap_at": "200",
+  "now": null
+ },
+ {
+  "snap": 1900,
+  "next": 1914,
+  "NAME": "Sokoto Caliphate",
+  "area": 83.6,
+  "was": [
+   "Q600524",
+   "索科托哈里发国"
+  ],
+  "dead_by": 1904,
+  "snap_at": "1900@19020531",
+  "now": [
+   "Q585408",
+   "北尼日利亚保护国",
+   "capital"
+  ]
+ },
+ {
+  "snap": 1530,
+  "next": 1600,
+  "NAME": "Kazan Khanate",
+  "area": 79.6,
+  "was": [
+   "Q186537",
+   "喀山汗国"
+  ],
+  "dead_by": 1553,
+  "snap_at": "1530@12790319",
+  "now": null
+ },
+ {
+  "snap": 1200,
+  "next": 1279,
+  "NAME": "Xixia",
+  "area": 78.6,
+  "was": [
+   "Q7427",
+   "西夏"
+  ],
+  "dead_by": 1228,
+  "snap_at": "1200@12260117",
+  "now": [
+   "Q12557",
+   "蒙古帝国",
+   "dynasty"
+  ]
+ },
+ {
+  "snap": 1945,
+  "next": 1960,
+  "NAME": "Venezuela",
+  "area": 75.8,
+  "was": [
+   "Q5848651",
+   "委内瑞拉合众国"
+  ],
+  "dead_by": 1954,
+  "snap_at": "1945@19540101",
+  "now": [
+   "Q21296156",
+   "委内瑞拉共和国",
+   "name"
+  ]
+ },
+ {
+  "snap": 1000,
+  "next": 1100,
+  "NAME": "Caliphate of Córdoba",
+  "area": 72.6,
+  "was": [
+   "Q171740",
+   "后倭马亚王朝"
+  ],
+  "dead_by": 1032,
+  "snap_at": "1000",
+  "now": [
+   "Q1994569",
+   "锡尔夫的泰法（译名）",
+   "successor"
+  ]
+ },
+ {
+  "snap": 1914,
+  "next": 1920,
+  "NAME": "German South-West Africa",
+  "area": 70.2,
+  "was": [
+   "Q153665",
+   "德属西南非洲"
+  ],
+  "dead_by": 1916,
+  "snap_at": "1914@19160610",
+  "now": [
+   "Q953068",
+   "西南非",
+   "capital"
+  ]
+ },
+ {
+  "snap": 1960,
+  "next": 1994,
+  "NAME": "Namibia",
+  "area": 70.2,
+  "was": [
+   "Q953068",
+   "西南非"
+  ],
+  "dead_by": 1991,
+  "snap_at": "1960@19901115",
+  "now": [
+   "Q1030",
+   "纳米比亚",
+   "wiki-title"
+  ]
+ },
+ {
+  "snap": 1200,
+  "next": 1279,
+  "NAME": "Volga Bulgars",
+  "area": 67.9,
+  "was": [
+   "Q185488",
+   "伏尔加保加利亚"
+  ],
+  "dead_by": 1241,
+  "snap_at": "1200@12340301",
+  "now": null
+ },
+ {
+  "snap": 1200,
+  "next": 1279,
+  "NAME": "Almohad Caliphate",
+  "area": 67.5,
+  "was": [
+   "Q199688",
+   "穆瓦希德王朝"
+  ],
+  "dead_by": 1270,
+  "snap_at": "1200@12340301",
+  "now": null
+ },
+ {
+  "snap": 1914,
+  "next": 1920,
+  "NAME": "Kamerun",
+  "area": 67.2,
+  "was": [
+   "Q655939",
+   "新喀麦隆"
+  ],
+  "dead_by": 1917,
+  "snap_at": "1914@19160610",
+  "now": [
+   "Q668294",
+   "德属喀麦隆",
+   "wiki-title"
+  ]
+ },
+ {
+  "snap": 1815,
+  "next": 1878,
+  "NAME": "France",
+  "area": 63.4,
+  "was": [
+   "Q207162",
+   "波旁复辟"
+  ],
+  "dead_by": 1831,
+  "snap_at": "1815@18300705",
+  "now": [
+   "Q58202",
+   "七月王朝",
+   "name"
+  ]
+ },
+ {
+  "snap": 1960,
+  "next": 1994,
+  "NAME": "Zambia",
+  "area": 63.3,
+  "was": [
+   "Q953903",
+   "北罗得西亚"
+  ],
+  "dead_by": 1965,
+  "snap_at": "1960@19640921",
+  "now": [
+   "Q953",
+   "赞比亚",
+   "wiki-title"
+  ]
+ },
+ {
+  "snap": 1783,
+  "next": 1800,
+  "NAME": "France",
+  "area": 62.9,
+  "was": [
+   "Q70972",
+   "法兰西王国"
+  ],
+  "dead_by": 1792,
+  "snap_at": "1783@17911226",
+  "now": [
+   "Q69323",
+   "法兰西王国",
+   "name"
+  ]
+ },
+ {
+  "snap": 1920,
+  "next": 1930,
+  "NAME": "Afghanistan",
+  "area": 62.9,
+  "was": [
+   "Q1335260",
+   "阿富汗酋长国"
+  ],
+  "dead_by": 1927,
+  "snap_at": "1920@19270412",
+  "now": [
+   "Q1138904",
+   "阿富汗王国",
+   "name"
+  ]
+ },
+ {
+  "snap": 1960,
+  "next": 1994,
+  "NAME": "Afghanistan",
+  "area": 62.9,
+  "was": [
+   "Q1138904",
+   "阿富汗王国"
+  ],
+  "dead_by": 1974,
+  "snap_at": "1960@19740101",
+  "now": [
+   "Q1415128",
+   "阿富汗共和国",
+   "name"
+  ]
+ },
+ {
+  "snap": 2000,
+  "next": 2010,
+  "NAME": "Afghanistan",
+  "area": 62.9,
+  "was": [
+   "Q427941",
+   "阿富汗伊斯兰酋长国"
+  ],
+  "dead_by": 2002,
+  "snap_at": "2000@19991220",
+  "now": [
+   "Q1415585",
+   "阿富汗伊斯兰国",
+   "capital+name"
+  ]
+ },
+ {
+  "snap": -300,
+  "next": -200,
+  "NAME": "Qin",
+  "area": 57.3,
+  "was": [
+   "Q34756",
+   "秦国"
+  ],
+  "dead_by": -219,
+  "snap_at": "-300",
+  "now": [
+   "Q7183",
+   "秦朝",
+   "dynasty"
+  ]
+ },
+ {
+  "snap": 1945,
+  "next": 1960,
+  "NAME": "Burma",
+  "area": 57.1,
+  "was": [
+   "Q704358",
+   "缅甸国"
+  ],
+  "dead_by": 1946,
+  "snap_at": "1945@19460618",
+  "now": [
+   "Q2376315",
+   "英属缅甸",
+   "capital"
+  ]
+ },
+ {
+  "snap": 1960,
+  "next": 1994,
+  "NAME": "Burma",
+  "area": 57.1,
+  "was": [
+   "Q7233551",
+   "缅甸联邦"
+  ],
+  "dead_by": 1962,
+  "snap_at": "1960@19620630",
+  "now": [
+   "Q13072974",
+   "缅甸联邦社会主义共和国",
+   "capital+name"
+  ]
+ },
+ {
+  "snap": -400,
+  "next": -323,
+  "NAME": "Magadha",
+  "area": 56.9,
+  "was": [
+   "Q234009",
+   "摩揭陀"
+  ],
+  "dead_by": -343,
+  "snap_at": "-400",
+  "now": null
+ },
+ {
+  "snap": -100,
+  "next": -1,
+  "NAME": "Ptolemaic Kingdom",
+  "area": 56.2,
+  "was": [
+   "Q2320005",
+   "托勒密王国"
+  ],
+  "dead_by": -28,
+  "snap_at": "-100",
+  "now": null
+ },
+ {
+  "snap": 900,
+  "next": 1000,
+  "NAME": "East Francia",
+  "area": 55.9,
+  "was": [
+   "Q153080",
+   "东法兰克王国"
+  ],
+  "dead_by": 963,
+  "snap_at": "900@9620207",
+  "now": null
+ },
+ {
+  "snap": 1100,
+  "next": 1200,
+  "NAME": "Western Chalukyas",
+  "area": 55.4,
+  "was": [
+   "Q14624218",
+   "西遮娄其"
+  ],
+  "dead_by": 1190,
+  "snap_at": "1100@11620813",
+  "now": null
+ },
+ {
+  "snap": 900,
+  "next": 1000,
+  "NAME": "Idrisid Caliphate",
+  "area": 54.8,
+  "was": [
+   "Q431575",
+   "伊德里斯王朝"
+  ],
+  "dead_by": 975,
+  "snap_at": "900@9620207",
+  "now": null
+ },
+ {
+  "snap": 200,
+  "next": 300,
+  "NAME": "Satavahanihara",
+  "area": 54.6,
+  "was": [
+   "Q5257",
+   "百乘王朝"
+  ],
+  "dead_by": 221,
+  "snap_at": "200",
+  "now": null
+ },
+ {
+  "snap": 900,
+  "next": 1000,
+  "NAME": "Rashtrakuta",
+  "area": 53.9,
+  "was": [
+   "Q856691",
+   "罗湿陀罗拘陀"
+  ],
+  "dead_by": 983,
+  "snap_at": "900@9620207",
+  "now": null
+ },
+ {
+  "snap": 1938,
+  "next": 1945,
+  "NAME": "Spain",
+  "area": 53.0,
+  "was": [
+   "Q5560770",
+   "西班牙国 (1936年-1939年)"
+  ],
+  "dead_by": 1939,
+  "snap_at": "1938@19380101",
+  "now": [
+   "Q13474305",
+   "佛朗哥时期",
+   "capital+name"
+  ]
+ },
+ {
+  "snap": 1960,
+  "next": 1994,
+  "NAME": "Spain",
+  "area": 53.0,
+  "was": [
+   "Q13474305",
+   "佛朗哥时期"
+  ],
+  "dead_by": 1976,
+  "snap_at": "1960@19751125",
+  "now": [
+   "Q29",
+   "西班牙",
+   "wiki-title"
+  ]
+ },
+ {
+  "snap": 1930,
+  "next": 1938,
+  "NAME": "Spain",
+  "area": 52.4,
+  "was": [
+   "Q1044536",
+   "西班牙波旁王朝复辟"
+  ],
+  "dead_by": 1932,
+  "snap_at": "1930@19320624",
+  "now": [
+   "Q178038",
+   "西班牙第二共和国",
+   "name"
+  ]
+ },
+ {
+  "snap": 1960,
+  "next": 1994,
+  "NAME": "Somalia",
+  "area": 52.1,
+  "was": [
+   "Q616221",
+   "索马里托管地"
+  ],
+  "dead_by": 1961,
+  "snap_at": "1960@19610427",
+  "now": [
+   "Q1045",
+   "索马里",
+   "wiki-title"
+  ]
+ },
+ {
+  "snap": 1300,
+  "next": 1400,
+  "NAME": "Srivijaya Empire",
+  "area": 52.0,
+  "was": [
+   "Q234197",
+   "三佛齐"
+  ],
+  "dead_by": 1378,
+  "snap_at": "1300@13330712",
+  "now": null
+ },
+ {
+  "snap": 1700,
+  "next": 1715,
+  "NAME": "Spain",
+  "area": 51.6,
+  "was": [
+   "Q600093",
+   "西班牙哈布斯堡王朝"
+  ],
+  "dead_by": 1701,
+  "snap_at": "1700@17000101",
+  "now": [
+   "Q29",
+   "西班牙",
+   "wiki-title"
+  ]
+ },
+ {
+  "snap": 1815,
+  "next": 1878,
+  "NAME": "Spain",
+  "area": 51.6,
+  "was": [
+   "Q15238138",
+   "西班牙王国（译名）"
+  ],
+  "dead_by": 1834,
+  "snap_at": "1815@18330103",
+  "now": [
+   "Q29",
+   "西班牙",
+   "wiki-title"
+  ]
+ },
+ {
+  "snap": 1880,
+  "next": 1900,
+  "NAME": null,
+  "area": 51.5,
+  "was": [
+   "Q568712",
+   "瓦苏卢帝国"
+  ],
+  "dead_by": 1899,
+  "snap_at": "1880@18990101",
+  "now": null
+ },
+ {
+  "snap": 1960,
+  "next": 1994,
+  "NAME": "Botswana",
+  "area": 51.5,
+  "was": [
+   "Q747314",
+   "贝专纳"
+  ],
+  "dead_by": 1967,
+  "snap_at": "1960@19670301",
+  "now": [
+   "Q963",
+   "博茨瓦纳",
+   "wiki-title"
+  ]
+ },
+ {
+  "snap": 1945,
+  "next": 1960,
+  "NAME": "Central African Republic",
+  "area": 51.4,
+  "was": [
+   "Q1421888",
+   "乌班吉沙里"
+  ],
+  "dead_by": 1959,
+  "snap_at": "1945@19590310",
+  "now": [
+   "Q929",
+   "中非共和国",
+   "wiki-title"
+  ]
+ },
+ {
+  "snap": 900,
+  "next": 1000,
+  "NAME": "Emirate of Córdoba",
+  "area": 51.2,
+  "was": [
+   "Q1337854",
+   "科尔多瓦酋长国"
+  ],
+  "dead_by": 930,
+  "snap_at": "900@9090326",
+  "now": null
+ },
+ {
+  "snap": 1300,
+  "next": 1400,
+  "NAME": "Hungary",
+  "area": 47.2,
+  "was": [
+   "Q1470101",
+   "匈牙利王国 (1000–1301)"
+  ],
+  "dead_by": 1301,
+  "snap_at": "1300@12790319",
+  "now": [
+   "Q16056854",
+   "匈牙利王国",
+   "name"
+  ]
+ },
+ {
+  "snap": 900,
+  "next": 1000,
+  "NAME": "West Francia",
+  "area": 47.0,
+  "was": [
+   "Q46370",
+   "西法兰克王国"
+  ],
+  "dead_by": 988,
+  "snap_at": "900@9620207",
+  "now": null
+ },
+ {
+  "snap": 500,
+  "next": 600,
+  "NAME": "Vakataka",
+  "area": 46.8,
+  "was": [
+   "Q1501306",
+   "伐迦陀迦"
+  ],
+  "dead_by": 501,
+  "snap_at": "500",
+  "now": null
+ },
+ {
+  "snap": 1100,
+  "next": 1200,
+  "NAME": "Tiahuanaco Empire",
+  "area": 43.9,
+  "was": [
+   "Q1307407",
+   "蒂亚瓦纳科文化"
+  ],
+  "dead_by": 1151,
+  "snap_at": "1100@11270101",
+  "now": null
+ },
+ {
+  "snap": 1600,
+  "next": 1650,
+  "NAME": "Nogai Horde",
+  "area": 43.9,
+  "was": [
+   "Q631210",
+   "诺盖汗国"
+  ],
+  "dead_by": 1635,
+  "snap_at": "1600@16320101",
+  "now": null
+ },
+ {
+  "snap": 1100,
+  "next": 1200,
+  "NAME": "Poland",
+  "area": 42.9,
+  "was": [
+   "Q104863335",
+   "波兰公国（译名）"
+  ],
+  "dead_by": 1139,
+  "snap_at": "1100@11270101",
+  "now": [
+   "Q616915",
+   "波兰公国（译名）",
+   "name"
+  ]
+ },
+ {
+  "snap": -700,
+  "next": -500,
+  "NAME": "Hittites",
+  "area": 42.7,
+  "was": [
+   "Q770281",
+   "新赫梯人"
+  ],
+  "dead_by": -699,
+  "snap_at": "-700",
+  "now": null
+ },
+ {
+  "snap": 1945,
+  "next": 1960,
+  "NAME": "Iraq",
+  "area": 42.6,
+  "was": [
+   "Q149805",
+   "伊拉克王国"
+  ],
+  "dead_by": 1959,
+  "snap_at": "1945@19590310",
+  "now": [
+   "Q3041595",
+   "伊拉克第一共和国",
+   "capital+name"
+  ]
+ },
+ {
+  "snap": 1960,
+  "next": 1994,
+  "NAME": "Iraq",
+  "area": 42.6,
+  "was": [
+   "Q3041595",
+   "伊拉克第一共和国"
+  ],
+  "dead_by": 1969,
+  "snap_at": "1960@19670301",
+  "now": [
+   "Q3108185",
+   "伊拉克共和国",
+   "name"
+  ]
+ },
+ {
+  "snap": 2000,
+  "next": 2010,
+  "NAME": "Iraq",
+  "area": 42.6,
+  "was": [
+   "Q3108185",
+   "伊拉克共和国"
+  ],
+  "dead_by": 2003,
+  "snap_at": "2000@19991220",
+  "now": [
+   "Q796",
+   "伊拉克",
+   "wiki-title"
+  ]
+ },
+ {
+  "snap": 1500,
+  "next": 1530,
+  "NAME": "Imperial Hungary",
+  "area": 42.4,
+  "was": [
+   "Q16056854",
+   "匈牙利王国"
+  ],
+  "dead_by": 1527,
+  "snap_at": "1500@15260421",
+  "now": [
+   "Q253094",
+   "匈牙利王国 (1538–1867)",
+   "name"
+  ]
+ },
+ {
+  "snap": 1938,
+  "next": 1945,
+  "NAME": "Siam",
+  "area": 42.4,
+  "was": [
+   "Q1081620",
+   "暹罗"
+  ],
+  "dead_by": 1940,
+  "snap_at": "1938@19380101",
+  "now": [
+   "Q869",
+   "泰国",
+   "name"
+  ]
+ },
+ {
+  "snap": 1815,
+  "next": 1878,
+  "NAME": "Kaarta",
+  "area": 42.1,
+  "was": [
+   "Q924833",
+   "卡尔塔"
+  ],
+  "dead_by": 1855,
+  "snap_at": "1815@18530101",
+  "now": null
+ },
+ {
+  "snap": 1000,
+  "next": 1100,
+  "NAME": "Bulgar Khanate",
+  "area": 40.8,
+  "was": [
+   "Q203817",
+   "保加利亚第一帝国"
+  ],
+  "dead_by": 1019,
+  "snap_at": "1000",
+  "now": null
+ },
+ {
+  "snap": 1900,
+  "next": 1914,
+  "NAME": "Morocco",
+  "area": 39.2,
+  "was": [
+   "Q12183875",
+   "谢里夫帝国（译名）"
+  ],
+  "dead_by": 1912,
+  "snap_at": "1900@19111201",
+  "now": [
+   "Q907234",
+   "法属摩洛哥",
+   "capital+name"
+  ]
+ },
+ {
+  "snap": 1945,
+  "next": 1960,
+  "NAME": "Morocco",
+  "area": 39.2,
+  "was": [
+   "Q907234",
+   "法属摩洛哥"
+  ],
+  "dead_by": 1956,
+  "snap_at": "1945@19560320",
+  "now": [
+   "Q1028",
+   "摩洛哥",
+   "wiki-title"
+  ]
+ },
+ {
+  "snap": 300,
+  "next": 400,
+  "NAME": "Han Zhao",
+  "area": 38.7,
+  "was": [
+   "Q1145470",
+   "西晋"
+  ],
+  "dead_by": 317,
+  "snap_at": "300",
+  "now": [
+   "Q1574107",
+   "汉赵",
+   "dynasty"
+  ]
+ },
+ {
+  "snap": 1930,
+  "next": 1938,
+  "NAME": "Italian Somaliland",
+  "area": 38.6,
+  "was": [
+   "Q319984",
+   "意属索马里兰"
+  ],
+  "dead_by": 1937,
+  "snap_at": "1930@19330315",
+  "now": null
+ },
+ {
+  "snap": -700,
+  "next": -500,
+  "NAME": "Elam",
+  "area": 38.1,
+  "was": [
+   "Q128904",
+   "埃兰"
+  ],
+  "dead_by": -537,
+  "snap_at": "-700",
+  "now": null
+ },
+ {
+  "snap": 1960,
+  "next": 1994,
+  "NAME": "Cameroon",
+  "area": 37.6,
+  "was": [
+   "Q1028835",
+   "英属喀麦隆"
+  ],
+  "dead_by": 1962,
+  "snap_at": "1960@19620630",
+  "now": [
+   "Q30744169",
+   "喀麦隆联邦共和国（译名）",
+   "capital+name"
+  ]
+ },
+ {
+  "snap": 900,
+  "next": 1000,
+  "NAME": "Balhae",
+  "area": 37.0,
+  "was": [
+   "Q28322",
+   "渤海国"
+  ],
+  "dead_by": 927,
+  "snap_at": "900@9090326",
+  "now": [
+   "Q703195",
+   "后渤海",
+   "capital+name"
+  ]
+ },
+ {
+  "snap": 1100,
+  "next": 1200,
+  "NAME": "Huari Empire",
+  "area": 35.3,
+  "was": [
+   "Q923516",
+   "瓦里帝国"
+  ],
+  "dead_by": 1101,
+  "snap_at": "1100",
+  "now": null
+ },
+ {
+  "snap": 1300,
+  "next": 1400,
+  "NAME": "Seljuk Caliphate",
+  "area": 35.1,
+  "was": [
+   "Q3708255",
+   "塞尔柱王朝"
+  ],
+  "dead_by": 1309,
+  "snap_at": "1300@12790319",
+  "now": null
+ },
+ {
+  "snap": 900,
+  "next": 1000,
+  "NAME": "Nan Chao",
+  "area": 34.8,
+  "was": [
+   "Q1045322",
+   "南诏"
+  ],
+  "dead_by": 903,
+  "snap_at": "900",
+  "now": null
+ },
+ {
+  "snap": 1600,
+  "next": 1650,
+  "NAME": "Vijayanagara",
+  "area": 34.8,
+  "was": [
+   "Q167639",
+   "毗奢耶那伽罗王朝"
+  ],
+  "dead_by": 1647,
+  "snap_at": "1600@16320101",
+  "now": null
+ },
+ {
+  "snap": 1900,
+  "next": 1914,
+  "NAME": "Papua New Guinea",
+  "area": 34.5,
+  "was": [
+   "Q2645837",
+   "英属新几内亚（译名）"
+  ],
+  "dead_by": 1902,
+  "snap_at": "1900@19020531",
+  "now": null
+ },
+ {
+  "snap": 1945,
+  "next": 1960,
+  "NAME": "Papua New Guinea",
+  "area": 34.5,
+  "was": [
+   "Q1443945",
+   "纽几内亚领地"
+  ],
+  "dead_by": 1950,
+  "snap_at": "1945@19500517",
+  "now": [
+   "Q2301972",
+   "巴布亚新几内亚领地",
+   "capital"
+  ]
+ },
+ {
+  "snap": 1960,
+  "next": 1994,
+  "NAME": "Papua New Guinea",
+  "area": 34.5,
+  "was": [
+   "Q2301972",
+   "巴布亚新几内亚领地"
+  ],
+  "dead_by": 1976,
+  "snap_at": "1960@19751125",
+  "now": [
+   "Q691",
+   "巴布亚新几内亚",
+   "wiki-title"
+  ]
+ },
+ {
+  "snap": 1000,
+  "next": 1100,
+  "NAME": "Buyid Emirate",
+  "area": 34.1,
+  "was": [
+   "Q273874",
+   "白益王朝"
+  ],
+  "dead_by": 1063,
+  "snap_at": "1000",
+  "now": null
+ },
+ {
+  "snap": 1200,
+  "next": 1279,
+  "NAME": "Khwarazmian dynasty",
+  "area": 34.1,
+  "was": [
+   "Q63134381",
+   "花剌子模帝国"
+  ],
+  "dead_by": 1232,
+  "snap_at": "1200@12260117",
+  "now": null
+ },
+ {
+  "snap": 1938,
+  "next": 1945,
+  "NAME": "Italy",
+  "area": 34.1,
+  "was": [
+   "Q48742118",
+   "法西斯意大利"
+  ],
+  "dead_by": 1944,
+  "snap_at": "1938@19400721",
+  "now": [
+   "Q153660",
+   "意大利社会共和国",
+   "name"
+  ]
+ },
+ {
+  "snap": 500,
+  "next": 600,
+  "NAME": "Himyarite Kingdom",
+  "area": 33.6,
+  "was": [
+   "Q289577",
+   "希木叶尔"
+  ],
+  "dead_by": 526,
+  "snap_at": "500",
+  "now": null
+ },
+ {
+  "snap": 1400,
+  "next": 1492,
+  "NAME": "Aymara kingdoms",
+  "area": 33.6,
+  "was": [
+   "Q6104778",
+   "艾马拉诸领地"
+  ],
+  "dead_by": 1439,
+  "snap_at": "1400@12790319",
+  "now": null
+ },
+ {
+  "snap": -100,
+  "next": -1,
+  "NAME": "Numidia",
+  "area": 33.2,
+  "was": [
+   "Q102679",
+   "努米底亚"
+  ],
+  "dead_by": -44,
+  "snap_at": "-100",
+  "now": null
+ },
+ {
+  "snap": 1200,
+  "next": 1279,
+  "NAME": "Angevin Empire",
+  "area": 32.3,
+  "was": [
+   "Q538677",
+   "安茹帝国"
+  ],
+  "dead_by": 1243,
+  "snap_at": "1200@12340301",
+  "now": [
+   "Q106151",
+   "金雀花王朝",
+   "name"
+  ]
+ },
+ {
+  "snap": 1920,
+  "next": 1930,
+  "NAME": "Syria (France)",
+  "area": 32.1,
+  "was": [
+   "Q146600",
+   "阿拉伯叙利亚王国"
+  ],
+  "dead_by": 1921,
+  "snap_at": "1920@19210318",
+  "now": [
+   "Q858",
+   "叙利亚",
+   "name"
+  ]
+ },
+ {
+  "snap": 1930,
+  "next": 1938,
+  "NAME": "Syria (France)",
+  "area": 32.1,
+  "was": [
+   "Q146880",
+   "叙利亚省"
+  ],
+  "dead_by": 1931,
+  "snap_at": "1930@18990101",
+  "now": [
+   "Q139708",
+   "法属叙利亚和黎巴嫩托管地",
+   "capital+name"
+  ]
+ },
+ {
+  "snap": 500,
+  "next": 600,
+  "NAME": "Funan",
+  "area": 30.2,
+  "was": [
+   "Q867782",
+   "扶南"
+  ],
+  "dead_by": 551,
+  "snap_at": "500",
+  "now": null
+ },
+ {
+  "snap": 1880,
+  "next": 1900,
+  "NAME": "Madagascar",
+  "area": 30.0,
+  "was": [
+   "Q1071439",
+   "伊默里纳王国"
+  ],
+  "dead_by": 1898,
+  "snap_at": "1880@18980101",
+  "now": null
+ },
+ {
+  "snap": -700,
+  "next": -500,
+  "NAME": "Urartu",
+  "area": 29.9,
+  "was": [
+   "Q185068",
+   "乌拉尔图"
+  ],
+  "dead_by": -588,
+  "snap_at": "-700",
+  "now": null
+ },
+ {
+  "snap": -2000,
+  "next": -1500,
+  "NAME": "Egypt",
+  "area": 29.1,
+  "was": [
+   "Q191324",
+   "中王国时期"
+  ],
+  "dead_by": -1779,
+  "snap_at": "-2000",
+  "now": [
+   "Q11768",
+   "古埃及",
+   "coord+name"
+  ]
+ },
+ {
+  "snap": 1800,
+  "next": 1815,
+  "NAME": "Hausa States",
+  "area": 29.0,
+  "was": [
+   "Q1591030",
+   "豪萨城邦"
+  ],
+  "dead_by": 1809,
+  "snap_at": "1800@18080101",
+  "now": [
+   "Q4154364",
+   "达马加拉姆苏丹国",
+   "capital"
+  ]
+ },
+ {
+  "snap": 700,
+  "next": 800,
+  "NAME": "Maitraka Kingdom",
+  "area": 28.8,
+  "was": [
+   "Q6737189",
+   "迈特拉卡王朝"
+  ],
+  "dead_by": 768,
+  "snap_at": "700@7500701",
+  "now": null
+ },
+ {
+  "snap": 1960,
+  "next": 1994,
+  "NAME": "Yugoslavia",
+  "area": 28.6,
+  "was": [
+   "Q1290149",
+   "南斯拉夫联邦人民共和国"
+  ],
+  "dead_by": 1963,
+  "snap_at": "1960@19620806",
+  "now": [
+   "Q36704",
+   "南斯拉夫",
+   "wiki-title"
+  ]
+ },
+ {
+  "snap": 1960,
+  "next": 1994,
+  "NAME": "Vietnam",
+  "area": 28.2,
+  "was": [
+   "Q180573",
+   "越南共和国"
+  ],
+  "dead_by": 1975,
+  "snap_at": "1960@19750625",
+  "now": [
+   "Q1072362",
+   "南越南共和国",
+   "capital+name"
+  ]
+ },
+ {
+  "snap": 1530,
+  "next": 1600,
+  "NAME": "Adal",
+  "area": 27.7,
+  "was": [
+   "Q2365048",
+   "阿达尔苏丹国"
+  ],
+  "dead_by": 1578,
+  "snap_at": "1530@15730904",
+  "now": null
+ },
+ {
+  "snap": 1945,
+  "next": 1960,
+  "NAME": "Yugoslavia",
+  "area": 27.5,
+  "was": [
+   "Q1277557",
+   "民主联邦南斯拉夫"
+  ],
+  "dead_by": 1946,
+  "snap_at": "1945@19460618",
+  "now": [
+   "Q1290149",
+   "南斯拉夫联邦人民共和国",
+   "capital+name"
+  ]
+ },
+ {
+  "snap": 1650,
+  "next": 1700,
+  "NAME": "Dutch Brazil",
+  "area": 27.4,
+  "was": [
+   "Q221357",
+   "荷属巴西"
+  ],
+  "dead_by": 1655,
+  "snap_at": "1650@16511212",
+  "now": null
+ },
+ {
+  "snap": 1530,
+  "next": 1600,
+  "NAME": "Astrakhan Khanate",
+  "area": 26.9,
+  "was": [
+   "Q210163",
+   "阿斯特拉罕汗国"
+  ],
+  "dead_by": 1557,
+  "snap_at": "1530@15570101",
+  "now": null
+ },
+ {
+  "snap": 1945,
+  "next": 1960,
+  "NAME": "Romania",
+  "area": 26.9,
+  "was": [
+   "Q203493",
+   "罗马尼亚王国"
+  ],
+  "dead_by": 1948,
+  "snap_at": "1945@19480509",
+  "now": [
+   "Q2685298",
+   "罗马尼亚人民共和国",
+   "capital+name"
+  ]
+ },
+ {
+  "snap": 1960,
+  "next": 1994,
+  "NAME": "Romania",
+  "area": 26.9,
+  "was": [
+   "Q2685298",
+   "罗马尼亚人民共和国"
+  ],
+  "dead_by": 1966,
+  "snap_at": "1960@19650804",
+  "now": [
+   "Q842794",
+   "罗马尼亚社会主义共和国",
+   "capital+name"
+  ]
+ },
+ {
+  "snap": 1960,
+  "next": 1994,
+  "NAME": "Malaysia",
+  "area": 26.2,
+  "was": [
+   "Q5589708",
+   "砂拉越直辖殖民地"
+  ],
+  "dead_by": 1964,
+  "snap_at": "1960@19631212",
+  "now": [
+   "Q833",
+   "马来西亚",
+   "wiki-title"
+  ]
+ },
+ {
+  "snap": 1530,
+  "next": 1600,
+  "NAME": "Shan states",
+  "area": 26.0,
+  "was": [
+   "Q4765854",
+   "掸族各邦"
+  ],
+  "dead_by": 1564,
+  "snap_at": "1530@15570101",
+  "now": null
+ },
+ {
+  "snap": 900,
+  "next": 1000,
+  "NAME": "Axum",
+  "area": 25.7,
+  "was": [
+   "Q139377",
+   "阿克苏姆帝国"
+  ],
+  "dead_by": 961,
+  "snap_at": "900@9090326",
+  "now": null
+ },
+ {
+  "snap": -2000,
+  "next": -1500,
+  "NAME": "Xia",
+  "area": 25.0,
+  "was": [
+   "Q169705",
+   "夏朝"
+  ],
+  "dead_by": -1594,
+  "snap_at": "-2000",
+  "now": [
+   "Q128938",
+   "商朝",
+   "dynasty"
+  ]
+ },
+ {
+  "snap": 1800,
+  "next": 1815,
+  "NAME": "Đại Việt",
+  "area": 25.0,
+  "was": [
+   "Q1034173",
+   "西山朝"
+  ],
+  "dead_by": 1803,
+  "snap_at": "1800@18030219",
+  "now": [
+   "Q430309",
+   "大越",
+   "wiki-title"
+  ]
+ },
+ {
+  "snap": 1000,
+  "next": 1100,
+  "NAME": "Pratiharas",
+  "area": 24.9,
+  "was": [
+   "Q5324",
+   "瞿折罗-普腊蒂哈腊王朝"
+  ],
+  "dead_by": 1037,
+  "snap_at": "1000",
+  "now": null
+ },
+ {
+  "snap": 1960,
+  "next": 1994,
+  "NAME": "Western Sahara",
+  "area": 23.6,
+  "was": [
+   "Q689837",
+   "西属撒哈拉"
+  ],
+  "dead_by": 1976,
+  "snap_at": "1960@19751125",
+  "now": [
+   "Q40362",
+   "阿拉伯撒哈拉民主共和国",
+   "capital"
+  ]
+ },
+ {
+  "snap": 1715,
+  "next": 1783,
+  "NAME": "Illinois",
+  "area": 23.5,
+  "was": [
+   "Q2554770",
+   "伊利诺伊郡"
+  ],
+  "dead_by": 1766,
+  "snap_at": "1715@17650510",
+  "now": null
+ },
+ {
+  "snap": 1945,
+  "next": 1960,
+  "NAME": "Burkina Faso",
+  "area": 22.9,
+  "was": [
+   "Q797440",
+   "法属上沃尔特"
+  ],
+  "dead_by": 1959,
+  "snap_at": "1945@19590310",
+  "now": [
+   "Q965",
+   "布基纳法索",
+   "wiki-title"
+  ]
+ },
+ {
+  "snap": 1880,
+  "next": 1900,
+  "NAME": "Romania",
+  "area": 22.7,
+  "was": [
+   "Q958291",
+   "罗马尼亚联合公国"
+  ],
+  "dead_by": 1881,
+  "snap_at": "1880@18810512",
+  "now": [
+   "Q444912",
+   "罗马尼亚旧王国（译名）",
+   "capital+name"
+  ]
+ },
+ {
+  "snap": -200,
+  "next": -100,
+  "NAME": "Min-Yue",
+  "area": 22.5,
+  "was": [
+   "Q1936158",
+   "闽越"
+  ],
+  "dead_by": -108,
+  "snap_at": "-200",
+  "now": null
+ },
+ {
+  "snap": 1914,
+  "next": 1920,
+  "NAME": "Romania",
+  "area": 22.0,
+  "was": [
+   "Q444912",
+   "罗马尼亚旧王国（译名）"
+  ],
+  "dead_by": 1919,
+  "snap_at": "1914@19190108",
+  "now": [
+   "Q203493",
+   "罗马尼亚王国",
+   "name"
+  ]
+ },
+ {
+  "snap": 1400,
+  "next": 1492,
+  "NAME": "Khmer Empire",
+  "area": 21.6,
+  "was": [
+   "Q201705",
+   "高棉帝国"
+  ],
+  "dead_by": 1432,
+  "snap_at": "1400@12790319",
+  "now": null
+ },
+ {
+  "snap": 1945,
+  "next": 1960,
+  "NAME": "Guinea",
+  "area": 20.9,
+  "was": [
+   "Q797433",
+   "法属几内亚"
+  ],
+  "dead_by": 1959,
+  "snap_at": "1945@19590310",
+  "now": [
+   "Q1006",
+   "几内亚",
+   "wiki-title"
+  ]
+ },
+ {
+  "snap": 1600,
+  "next": 1650,
+  "NAME": "Ahmadnagar",
+  "area": 20.1,
+  "was": [
+   "Q400998",
+   "艾哈迈德讷格尔王朝"
+  ],
+  "dead_by": 1637,
+  "snap_at": "1600@16320101",
+  "now": null
+ },
+ {
+  "snap": 900,
+  "next": 1000,
+  "NAME": "Great Moravia",
+  "area": 19.7,
+  "was": [
+   "Q193152",
+   "大摩拉维亚公国"
+  ],
+  "dead_by": 908,
+  "snap_at": "900",
+  "now": null
+ },
+ {
+  "snap": 1880,
+  "next": 1900,
+  "NAME": "Imerina",
+  "area": 19.7,
+  "was": [
+   "Q1071439",
+   "伊默里纳王国"
+  ],
+  "dead_by": 1898,
+  "snap_at": "1880@18980101",
+  "now": [
+   "Q5501842",
+   "法属马达加斯加",
+   "capital"
+  ]
+ },
+ {
+  "snap": 1880,
+  "next": 1900,
+  "NAME": "Kong Empire",
+  "area": 19.7,
+  "was": [
+   "Q1587244",
+   "孔格帝国"
+  ],
+  "dead_by": 1899,
+  "snap_at": "1880@18990101",
+  "now": null
+ },
+ {
+  "snap": 1945,
+  "next": 1960,
+  "NAME": "Laos",
+  "area": 19.7,
+  "was": [
+   "Q1320058",
+   "老挝保护国"
+  ],
+  "dead_by": 1955,
+  "snap_at": "1945@19550301",
+  "now": [
+   "Q870055",
+   "老挝王国",
+   "name"
+  ]
+ },
+ {
+  "snap": 1960,
+  "next": 1994,
+  "NAME": "Laos",
+  "area": 19.7,
+  "was": [
+   "Q870055",
+   "老挝王国"
+  ],
+  "dead_by": 1976,
+  "snap_at": "1960@19751125",
+  "now": [
+   "Q819",
+   "老挝",
+   "wiki-title"
+  ]
+ },
+ {
+  "snap": 1960,
+  "next": 1994,
+  "NAME": "Uganda",
+  "area": 19.5,
+  "was": [
+   "Q1097943",
+   "英属乌干达保护国"
+  ],
+  "dead_by": 1963,
+  "snap_at": "1960@19620806",
+  "now": [
+   "Q7877575",
+   "乌干达 (英联邦王国)",
+   "name"
+  ]
+ },
+ {
+  "snap": 1880,
+  "next": 1900,
+  "NAME": "Philippines",
+  "area": 19.2,
+  "was": [
+   "Q2721139",
+   "菲律宾都督府"
+  ],
+  "dead_by": 1898,
+  "snap_at": "1880@18980101",
+  "now": [
+   "Q928",
+   "菲律宾",
+   "wiki-title"
+  ]
+ },
+ {
+  "snap": 1945,
+  "next": 1960,
+  "NAME": "Philippines",
+  "area": 19.2,
+  "was": [
+   "Q146328",
+   "菲律宾自治领"
+  ],
+  "dead_by": 1947,
+  "snap_at": "1945@19470503",
+  "now": [
+   "Q5870215",
+   "第三共和国",
+   "capital+name"
+  ]
+ },
+ {
+  "snap": 1945,
+  "next": 1960,
+  "NAME": "Gold Coast",
+  "area": 19.2,
+  "was": [
+   "Q503623",
+   "英属黄金海岸"
+  ],
+  "dead_by": 1958,
+  "snap_at": "1945@19560320",
+  "now": [
+   "Q117",
+   "加纳",
+   "capital"
+  ]
+ },
+ {
+  "snap": 1960,
+  "next": 1994,
+  "NAME": "Philippines",
+  "area": 19.2,
+  "was": [
+   "Q5870215",
+   "第三共和国"
+  ],
+  "dead_by": 1974,
+  "snap_at": "1960@19740101",
+  "now": [
+   "Q928",
+   "菲律宾",
+   "wiki-title"
+  ]
+ },
+ {
+  "snap": 1945,
+  "next": 1960,
+  "NAME": "Syria",
+  "area": 19.1,
+  "was": [
+   "Q139708",
+   "法属叙利亚和黎巴嫩托管地"
+  ],
+  "dead_by": 1947,
+  "snap_at": "1945@19470503",
+  "now": [
+   "Q146885",
+   "叙利亚共和国 (1930-58)",
+   "capital+name"
+  ]
+ },
+ {
+  "snap": 1960,
+  "next": 1994,
+  "NAME": "Syria",
+  "area": 19.1,
+  "was": [
+   "Q146885",
+   "叙利亚共和国 (1930-58)"
+  ],
+  "dead_by": 1964,
+  "snap_at": "1960@19631212",
+  "now": [
+   "Q131404661",
+   "叙利亚复兴党政权",
+   "name"
+  ]
+ },
+ {
+  "snap": 1300,
+  "next": 1400,
+  "NAME": "Poland",
+  "area": 17.9,
+  "was": [
+   "Q616915",
+   "波兰公国（译名）"
+  ],
+  "dead_by": 1320,
+  "snap_at": "1300@12790319",
+  "now": [
+   "Q1515009",
+   "大波兰公爵",
+   "capital+name"
+  ]
+ },
+ {
+  "snap": 1945,
+  "next": 1960,
+  "NAME": "Senegal",
+  "area": 17.7,
+  "was": [
+   "Q5502051",
+   "法属塞内加尔"
+  ],
+  "dead_by": 1947,
+  "snap_at": "1945@19470503",
+  "now": [
+   "Q210682",
+   "法属西非",
+   "predecessor"
+  ]
+ },
+ {
+  "snap": 1650,
+  "next": 1700,
+  "NAME": "Golkonda",
+  "area": 17.5,
+  "was": [
+   "Q19805959",
+   "戈尔孔达的苏丹国"
+  ],
+  "dead_by": 1688,
+  "snap_at": "1650@16511212",
+  "now": null
+ },
+ {
+  "snap": -1000,
+  "next": -700,
+  "NAME": "Assyria",
+  "area": 17.3,
+  "was": [
+   "Q12642600",
+   "中亚述帝国"
+  ],
+  "dead_by": -909,
+  "snap_at": "-1000",
+  "now": [
+   "Q10914393",
+   "新亚述帝国",
+   "capital+name"
+  ]
+ },
+ {
+  "snap": -700,
+  "next": -500,
+  "NAME": "Assyria",
+  "area": 17.3,
+  "was": [
+   "Q10914393",
+   "新亚述帝国"
+  ],
+  "dead_by": -607,
+  "snap_at": "-700",
+  "now": null
+ },
+ {
+  "snap": 1930,
+  "next": 1938,
+  "NAME": "Armenia",
+  "area": 17.1,
+  "was": [
+   "Q150061",
+   "亚拉拉特库德共和国"
+  ],
+  "dead_by": 1931,
+  "snap_at": "1930@18990101",
+  "now": null
+ },
+ {
+  "snap": -100,
+  "next": -1,
+  "NAME": "Roman Republic",
+  "area": 17.0,
+  "was": [
+   "Q17167",
+   "罗马共和国"
+  ],
+  "dead_by": -27,
+  "snap_at": "-100",
+  "now": [
+   "Q2277",
+   "罗马帝国",
+   "name"
+  ]
+ },
+ {
+  "snap": 400,
+  "next": 500,
+  "NAME": "Northern Liang",
+  "area": 17.0,
+  "was": [
+   "Q1539360",
+   "北凉"
+  ],
+  "dead_by": 440,
+  "snap_at": "400",
+  "now": null
+ },
+ {
+  "snap": 1200,
+  "next": 1279,
+  "NAME": "Ghana",
+  "area": 17.0,
+  "was": [
+   "Q206789",
+   "加纳帝国"
+  ],
+  "dead_by": 1201,
+  "snap_at": "1200@11270101",
+  "now": null
+ },
+ {
+  "snap": 1960,
+  "next": 1994,
+  "NAME": "Guyana",
+  "area": 17.0,
+  "was": [
+   "Q918126",
+   "英属圭亚那"
+  ],
+  "dead_by": 1967,
+  "snap_at": "1960@19670301",
+  "now": [
+   "Q734",
+   "圭亚那",
+   "wiki-title"
+  ]
+ },
+ {
+  "snap": 1914,
+  "next": 1920,
+  "NAME": "Uruguay",
+  "area": 16.9,
+  "was": [
+   "Q8842946",
+   "乌拉圭东岸省"
+  ],
+  "dead_by": 1918,
+  "snap_at": "1914@19180528",
+  "now": [
+   "Q77",
+   "乌拉圭",
+   "wiki-title"
+  ]
+ },
+ {
+  "snap": -200,
+  "next": -100,
+  "NAME": "Nan-Yue",
+  "area": 16.3,
+  "was": [
+   "Q827040",
+   "南越国"
+  ],
+  "dead_by": -109,
+  "snap_at": "-200",
+  "now": null
+ },
+ {
+  "snap": -200,
+  "next": -100,
+  "NAME": "Macedon and Hellenic League",
+  "area": 16.0,
+  "was": [
+   "Q83958",
+   "马其顿王国"
+  ],
+  "dead_by": -165,
+  "snap_at": "-200",
+  "now": null
+ },
+ {
+  "snap": 1000,
+  "next": 1100,
+  "NAME": "Armenia",
+  "area": 16.0,
+  "was": [
+   "Q2622868",
+   "亚美尼亚"
+  ],
+  "dead_by": 1046,
+  "snap_at": "1000",
+  "now": null
+ },
+ {
+  "snap": 1960,
+  "next": 1994,
+  "NAME": "Czechoslovakia",
+  "area": 15.9,
+  "was": [
+   "Q11178782",
+   "捷克斯洛伐克共和国（译名）"
+  ],
+  "dead_by": 1961,
+  "snap_at": "1960@19610427",
+  "now": [
+   "Q853348",
+   "捷克斯洛伐克社会主义共和国",
+   "name"
+  ]
+ },
+ {
+  "snap": 1900,
+  "next": 1914,
+  "NAME": "Lozi",
+  "area": 15.8,
+  "was": [
+   "Q20312596",
+   "西北罗德西亚"
+  ],
+  "dead_by": 1912,
+  "snap_at": "1900@19111201",
+  "now": null
+ },
+ {
+  "snap": 100,
+  "next": 200,
+  "NAME": "Nabatean Kingdom",
+  "area": 15.5,
+  "was": [
+   "Q11029653",
+   "纳巴泰王国"
+  ],
+  "dead_by": 107,
+  "snap_at": "100",
+  "now": null
+ },
+ {
+  "snap": 1945,
+  "next": 1960,
+  "NAME": "Cambodia",
+  "area": 15.1,
+  "was": [
+   "Q3173090",
+   "柬埔寨保护国"
+  ],
+  "dead_by": 1954,
+  "snap_at": "1945@19540101",
+  "now": [
+   "Q2638486",
+   "柬埔寨王国",
+   "name"
+  ]
+ },
+ {
+  "snap": 1960,
+  "next": 1994,
+  "NAME": "Cambodia",
+  "area": 15.1,
+  "was": [
+   "Q2638486",
+   "柬埔寨王国"
+  ],
+  "dead_by": 1971,
+  "snap_at": "1960@19701201",
+  "now": [
+   "Q424",
+   "柬埔寨",
+   "wiki-title"
+  ]
+ },
+ {
+  "snap": 500,
+  "next": 600,
+  "NAME": "Burgundians",
+  "area": 14.6,
+  "was": [
+   "Q13590051",
+   "勃艮第人王国"
+  ],
+  "dead_by": 535,
+  "snap_at": "500",
+  "now": null
+ },
+ {
+  "snap": 1600,
+  "next": 1650,
+  "NAME": "Malacca",
+  "area": 14.6,
+  "was": [
+   "Q2988343",
+   "第一个殖民地"
+  ],
+  "dead_by": 1642,
+  "snap_at": "1600@16320101",
+  "now": [
+   "Q949314",
+   "荷属马六甲",
+   "capital+name"
+  ]
+ },
+ {
+  "snap": 100,
+  "next": 200,
+  "NAME": "Dacia",
+  "area": 13.6,
+  "was": [
+   "Q173082",
+   "达契亚"
+  ],
+  "dead_by": 107,
+  "snap_at": "100",
+  "now": null
+ },
+ {
+  "snap": 2000,
+  "next": 2010,
+  "NAME": "Nepal",
+  "area": 13.5,
+  "was": [
+   "Q1078602",
+   "尼泊尔王国"
+  ],
+  "dead_by": 2008,
+  "snap_at": "2000@20070715",
+  "now": [
+   "Q837",
+   "尼泊尔",
+   "wiki-title"
+  ]
+ },
+ {
+  "snap": 700,
+  "next": 800,
+  "NAME": "Chen-La",
+  "area": 13.4,
+  "was": [
+   "Q1057118",
+   "真腊"
+  ],
+  "dead_by": 707,
+  "snap_at": "700",
+  "now": null
+ },
+ {
+  "snap": 1815,
+  "next": 1878,
+  "NAME": "Spain",
+  "area": 13.3,
+  "was": [
+   "Q15238138",
+   "西班牙王国（译名）"
+  ],
+  "dead_by": 1834,
+  "snap_at": "1815@18330103",
+  "now": [
+   "Q29",
+   "西班牙",
+   "wiki-title"
+  ]
+ },
+ {
+  "snap": 1300,
+  "next": 1400,
+  "NAME": "Bulgar Khanate",
+  "area": 13.0,
+  "was": [
+   "Q420759",
+   "保加利亚第二帝国"
+  ],
+  "dead_by": 1397,
+  "snap_at": "1300@13330712",
+  "now": null
+ },
+ {
+  "snap": 1530,
+  "next": 1600,
+  "NAME": "Bengal",
+  "area": 12.6,
+  "was": [
+   "Q4083686",
+   "孟加拉苏丹国"
+  ],
+  "dead_by": 1577,
+  "snap_at": "1530@15730904",
+  "now": null
+ },
+ {
+  "snap": -700,
+  "next": -500,
+  "NAME": "Babylonia",
+  "area": 12.4,
+  "was": [
+   "Q47690",
+   "巴比伦尼亚"
+  ],
+  "dead_by": -537,
+  "snap_at": "-700",
+  "now": null
+ },
+ {
+  "snap": 600,
+  "next": 700,
+  "NAME": "Nobatia",
+  "area": 12.4,
+  "was": [
+   "Q568523",
+   "诺巴"
+  ],
+  "dead_by": 651,
+  "snap_at": "600",
+  "now": null
+ },
+ {
+  "snap": 1945,
+  "next": 1960,
+  "NAME": "Annam",
+  "area": 12.4,
+  "was": [
+   "Q10828323",
+   "安南保护国"
+  ],
+  "dead_by": 1950,
+  "snap_at": "1945@19500517",
+  "now": null
+ },
+ {
+  "snap": 900,
+  "next": 1000,
+  "NAME": "Croatian kingdom",
+  "area": 12.3,
+  "was": [
+   "Q2576305",
+   "克罗地亚公国"
+  ],
+  "dead_by": 926,
+  "snap_at": "900@9090326",
+  "now": [
+   "Q858841",
+   "克罗地亚王国 (925–1102)",
+   "name"
+  ]
+ },
+ {
+  "snap": 1900,
+  "next": 1914,
+  "NAME": "Shona",
+  "area": 12.3,
+  "was": [
+   "Q2753015",
+   "东北罗德西亚"
+  ],
+  "dead_by": 1912,
+  "snap_at": "1900@19111201",
+  "now": null
+ },
+ {
+  "snap": 1930,
+  "next": 1938,
+  "NAME": "Greece",
+  "area": 12.2,
+  "was": [
+   "Q265824",
+   "希腊第二共和国"
+  ],
+  "dead_by": 1936,
+  "snap_at": "1930@19330315",
+  "now": [
+   "Q209065",
+   "希腊王国",
+   "name"
+  ]
+ },
+ {
+  "snap": 1960,
+  "next": 1994,
+  "NAME": "Greece",
+  "area": 11.8,
+  "was": [
+   "Q209065",
+   "希腊王国"
+  ],
+  "dead_by": 1973,
+  "snap_at": "1960@19730101",
+  "now": [
+   "Q41",
+   "希腊",
+   "wiki-title"
+  ]
+ },
+ {
+  "snap": 1945,
+  "next": 1960,
+  "NAME": "Hungary",
+  "area": 11.4,
+  "was": [
+   "Q600018",
+   "匈牙利王国"
+  ],
+  "dead_by": 1946,
+  "snap_at": "1945@19460618",
+  "now": [
+   "Q28",
+   "匈牙利",
+   "wiki-title"
+  ]
+ },
+ {
+  "snap": 1960,
+  "next": 1994,
+  "NAME": "Hungary",
+  "area": 11.4,
+  "was": [
+   "Q16410",
+   "匈牙利人民共和国"
+  ],
+  "dead_by": 1990,
+  "snap_at": "1960@19860101",
+  "now": [
+   "Q28",
+   "匈牙利",
+   "wiki-title"
+  ]
+ },
+ {
+  "snap": 500,
+  "next": 600,
+  "NAME": "Suebi",
+  "area": 11.2,
+  "was": [
+   "Q1048918",
+   "苏维汇王国"
+  ],
+  "dead_by": 586,
+  "snap_at": "500",
+  "now": null
+ },
+ {
+  "snap": 1650,
+  "next": 1700,
+  "NAME": "Mali",
+  "area": 11.0,
+  "was": [
+   "Q184536",
+   "马里帝国"
+  ],
+  "dead_by": 1671,
+  "snap_at": "1650@16511212",
+  "now": null
+ },
+ {
+  "snap": 1400,
+  "next": 1492,
+  "NAME": "Sukhothai",
+  "area": 10.9,
+  "was": [
+   "Q863279",
+   "素可泰王国"
+  ],
+  "dead_by": 1439,
+  "snap_at": "1400@12790319",
+  "now": null
+ },
+ {
+  "snap": 1930,
+  "next": 1938,
+  "NAME": "Eritrea",
+  "area": 10.8,
+  "was": [
+   "Q1232988",
+   "意属厄立特里亚"
+  ],
+  "dead_by": 1937,
+  "snap_at": "1930@19330315",
+  "now": null
+ },
+ {
+  "snap": 900,
+  "next": 1000,
+  "NAME": "Mercia",
+  "area": 10.5,
+  "was": [
+   "Q105092",
+   "麦西亚王国"
+  ],
+  "dead_by": 919,
+  "snap_at": "900@9090326",
+  "now": null
+ },
+ {
+  "snap": 1920,
+  "next": 1930,
+  "NAME": "Hail",
+  "area": 10.3,
+  "was": [
+   "Q5362837",
+   "杰贝勒沙马尔酋长国"
+  ],
+  "dead_by": 1922,
+  "snap_at": "1920@19220315",
+  "now": null
+ },
+ {
+  "snap": 2000,
+  "next": 2010,
+  "NAME": "Serbia",
+  "area": 9.9,
+  "was": [
+   "Q838261",
+   "南斯拉夫联盟共和国"
+  ],
+  "dead_by": 2003,
+  "snap_at": "2000@19991220",
+  "now": [
+   "Q37024",
+   "塞尔维亚和黑山",
+   "capital+name"
+  ]
+ },
+ {
+  "snap": 1900,
+  "next": 1914,
+  "NAME": "Portugal",
+  "area": 9.8,
+  "was": [
+   "Q45670",
+   "葡萄牙王国"
+  ],
+  "dead_by": 1911,
+  "snap_at": "1900@19100829",
+  "now": [
+   "Q45",
+   "葡萄牙",
+   "wiki-title"
+  ]
+ },
+ {
+  "snap": 1960,
+  "next": 1994,
+  "NAME": "Benin",
+  "area": 9.5,
+  "was": [
+   "Q798431",
+   "达荷美共和国"
+  ],
+  "dead_by": 1976,
+  "snap_at": "1960@19751125",
+  "now": [
+   "Q862701",
+   "贝宁人民共和国",
+   "capital+name"
+  ]
+ },
+ {
+  "snap": 1400,
+  "next": 1492,
+  "NAME": "Bosnia",
+  "area": 9.4,
+  "was": [
+   "Q2980623",
+   "波斯尼亚王国"
+  ],
+  "dead_by": 1463,
+  "snap_at": "1400@14630501",
+  "now": null
+ },
+ {
+  "snap": 1400,
+  "next": 1492,
+  "NAME": "Sukhothai",
+  "area": 9.2,
+  "was": [
+   "Q863279",
+   "素可泰王国"
+  ],
+  "dead_by": 1439,
+  "snap_at": "1400@12790319",
+  "now": null
+ },
+ {
+  "snap": 1920,
+  "next": 1930,
+  "NAME": "Lithuania",
+  "area": 9.2,
+  "was": [
+   "Q76236",
+   "立陶宛-白俄罗斯苏维埃社会主义共和国"
+  ],
+  "dead_by": 1921,
+  "snap_at": "1920@19210318",
+  "now": [
+   "Q523380",
+   "中立陶宛共和国",
+   "capital+name"
+  ]
+ },
+ {
+  "snap": 1938,
+  "next": 1945,
+  "NAME": "Latvia",
+  "area": 9.2,
+  "was": [
+   "Q2369784",
+   "拉脱维亚战争间（译名）"
+  ],
+  "dead_by": 1940,
+  "snap_at": "1938@19380101",
+  "now": [
+   "Q211",
+   "拉脱维亚",
+   "wiki-title"
+  ]
+ },
+ {
+  "snap": 1960,
+  "next": 1994,
+  "NAME": "Malawi",
+  "area": 9.2,
+  "was": [
+   "Q1649306",
+   "尼亚萨兰"
+  ],
+  "dead_by": 1965,
+  "snap_at": "1960@19640921",
+  "now": [
+   "Q6741448",
+   "马拉维 (英联邦王国)",
+   "name"
+  ]
+ },
+ {
+  "snap": 1530,
+  "next": 1600,
+  "NAME": "Pegu",
+  "area": 8.9,
+  "was": [
+   "Q1572529",
+   "勃固王朝"
+  ],
+  "dead_by": 1553,
+  "snap_at": "1530@12790319",
+  "now": null
+ },
+ {
+  "snap": 1945,
+  "next": 1960,
+  "NAME": "Cuba",
+  "area": 8.7,
+  "was": [
+   "Q14905932",
+   "古巴共和国"
+  ],
+  "dead_by": 1959,
+  "snap_at": "1945@19590310",
+  "now": [
+   "Q241",
+   "古巴",
+   "wiki-title"
+  ]
+ },
+ {
+  "snap": -200,
+  "next": -100,
+  "NAME": "Carthage",
+  "area": 8.5,
+  "was": [
+   "Q6343",
+   "迦太基"
+  ],
+  "dead_by": -144,
+  "snap_at": "-200",
+  "now": null
+ },
+ {
+  "snap": 900,
+  "next": 1000,
+  "NAME": "Asturias",
+  "area": 8.2,
+  "was": [
+   "Q231392",
+   "阿斯图里亚斯王国"
+  ],
+  "dead_by": 925,
+  "snap_at": "900@9090326",
+  "now": null
+ },
+ {
+  "snap": 1914,
+  "next": 1920,
+  "NAME": "Togoland",
+  "area": 8.2,
+  "was": [
+   "Q161062",
+   "多哥兰"
+  ],
+  "dead_by": 1915,
+  "snap_at": "1914@19141219",
+  "now": null
+ },
+ {
+  "snap": 1279,
+  "next": 1300,
+  "NAME": "Chola Empire",
+  "area": 8.0,
+  "was": [
+   "Q6806806",
+   "乔拉帝国（译名）"
+  ],
+  "dead_by": 1280,
+  "snap_at": "1279@12790319",
+  "now": null
+ },
+ {
+  "snap": 900,
+  "next": 1000,
+  "NAME": "Serbia",
+  "area": 7.6,
+  "was": [
+   "Q13107370",
+   "塞尔维亚公国"
+  ],
+  "dead_by": 970,
+  "snap_at": "900@9620207",
+  "now": null
+ },
+ {
+  "snap": 1650,
+  "next": 1700,
+  "NAME": "Bijapur",
+  "area": 7.4,
+  "was": [
+   "Q83821",
+   "阿迪勒·沙阿王朝"
+  ],
+  "dead_by": 1687,
+  "snap_at": "1650@16511212",
+  "now": null
+ },
+ {
+  "snap": -1,
+  "next": 100,
+  "NAME": "Odrysian Kingdom",
+  "area": 7.3,
+  "was": [
+   "Q870517",
+   "奥德里西亚王国"
+  ],
+  "dead_by": 47,
+  "snap_at": "-1",
+  "now": null
+ },
+ {
+  "snap": 1400,
+  "next": 1492,
+  "NAME": "Beylik of Aydin",
+  "area": 7.3,
+  "was": [
+   "Q717112",
+   "艾登王朝"
+  ],
+  "dead_by": 1427,
+  "snap_at": "1400@12790319",
+  "now": null
+ },
+ {
+  "snap": 1100,
+  "next": 1200,
+  "NAME": "Toltec Empire",
+  "area": 7.2,
+  "was": [
+   "Q17523945",
+   "托尔特克帝国"
+  ],
+  "dead_by": 1123,
+  "snap_at": "1100",
+  "now": null
+ },
+ {
+  "snap": 1815,
+  "next": 1878,
+  "NAME": "Oman",
+  "area": 7.2,
+  "was": [
+   "Q22684779",
+   "阿曼帝国"
+  ],
+  "dead_by": 1862,
+  "snap_at": "1815@18610317",
+  "now": [
+   "Q157734",
+   "马斯喀特苏丹国",
+   "name"
+  ]
+ },
+ {
+  "snap": 1815,
+  "next": 1878,
+  "NAME": "Oudh",
+  "area": 7.1,
+  "was": [
+   "Q18129046",
+   "奥德土邦"
+  ],
+  "dead_by": 1860,
+  "snap_at": "1815@18590609",
+  "now": null
+ },
+ {
+  "snap": 1945,
+  "next": 1960,
+  "NAME": "French Guiana",
+  "area": 6.7,
+  "was": [
+   "Q1663537",
+   "伊尼诺（译名）"
+  ],
+  "dead_by": 1947,
+  "snap_at": "1945@19470503",
+  "now": [
+   "Q3769",
+   "法属圭亚那",
+   "name"
+  ]
+ },
+ {
+  "snap": 500,
+  "next": 600,
+  "NAME": "Kadambas",
+  "area": 6.6,
+  "was": [
+   "Q1479952",
+   "卡丹巴"
+  ],
+  "dead_by": 526,
+  "snap_at": "500",
+  "now": null
+ },
+ {
+  "snap": 1400,
+  "next": 1492,
+  "NAME": "Chimú Empire",
+  "area": 6.5,
+  "was": [
+   "Q581741",
+   "奇穆王国"
+  ],
+  "dead_by": 1471,
+  "snap_at": "1400@14630501",
+  "now": null
+ },
+ {
+  "snap": 1900,
+  "next": 1914,
+  "NAME": "Congo",
+  "area": 6.4,
+  "was": [
+   "Q76048",
+   "刚果自由邦"
+  ],
+  "dead_by": 1908,
+  "snap_at": "1900@19060216",
+  "now": [
+   "Q16687295",
+   "刚果保护国（译名）",
+   "coord+name"
+  ]
+ },
+ {
+  "snap": 700,
+  "next": 800,
+  "NAME": "Visigothic Kingdom",
+  "area": 6.3,
+  "was": [
+   "Q126936",
+   "西哥特王国"
+  ],
+  "dead_by": 719,
+  "snap_at": "700",
+  "now": null
+ },
+ {
+  "snap": 1880,
+  "next": 1900,
+  "NAME": "Lunda",
+  "area": 6.2,
+  "was": [
+   "Q1796223",
+   "伦达帝国"
+  ],
+  "dead_by": 1885,
+  "snap_at": "1880@18850529",
+  "now": null
+ },
+ {
+  "snap": 1880,
+  "next": 1900,
+  "NAME": "Teke",
+  "area": 6.2,
+  "was": [
+   "Q4778463",
+   "安济库王国"
+  ],
+  "dead_by": 1893,
+  "snap_at": "1880@18911220",
+  "now": null
+ },
+ {
+  "snap": 1600,
+  "next": 1650,
+  "NAME": "Prussia",
+  "area": 6.1,
+  "was": [
+   "Q153091",
+   "普鲁士公国"
+  ],
+  "dead_by": 1619,
+  "snap_at": "1600@16120101",
+  "now": [
+   "Q157367",
+   "勃兰登堡-普鲁士",
+   "capital+name"
+  ]
+ },
+ {
+  "snap": 1880,
+  "next": 1900,
+  "NAME": "Serbia",
+  "area": 5.8,
+  "was": [
+   "Q684030",
+   "塞尔维亚公国"
+  ],
+  "dead_by": 1883,
+  "snap_at": "1880@18810512",
+  "now": [
+   "Q241748",
+   "塞尔维亚王国",
+   "name"
+  ]
+ },
+ {
+  "snap": 1783,
+  "next": 1800,
+  "NAME": "Arakan",
+  "area": 5.3,
+  "was": [
+   "Q10791211",
+   "妙乌王国"
+  ],
+  "dead_by": 1786,
+  "snap_at": "1783@17650510",
+  "now": null
+ },
+ {
+  "snap": 1815,
+  "next": 1878,
+  "NAME": "Kingdom of Sardinia",
+  "area": 5.2,
+  "was": [
+   "Q2577303",
+   "撒丁王国"
+  ],
+  "dead_by": 1861,
+  "snap_at": "1815@18610317",
+  "now": [
+   "Q165154",
+   "萨丁尼亚王国",
+   "wiki-title"
+  ]
+ },
+ {
+  "snap": 1945,
+  "next": 1960,
+  "NAME": "Cochin China",
+  "area": 5.2,
+  "was": [
+   "Q19955896",
+   "法属交趾支那"
+  ],
+  "dead_by": 1950,
+  "snap_at": "1945@19500517",
+  "now": [
+   "Q1193879",
+   "越南国",
+   "capital"
+  ]
+ },
+ {
+  "snap": 1900,
+  "next": 1914,
+  "NAME": "Kuba",
+  "area": 5.0,
+  "was": [
+   "Q209327",
+   "库巴王国"
+  ],
+  "dead_by": 1901,
+  "snap_at": "1900@19010101",
+  "now": null
+ },
+ {
+  "snap": 1650,
+  "next": 1700,
+  "NAME": "Massachusetts Bay",
+  "area": 4.9,
+  "was": [
+   "Q1191350",
+   "马萨诸塞湾殖民地"
+  ],
+  "dead_by": 1692,
+  "snap_at": "1650@16511212",
+  "now": [
+   "Q2079909",
+   "马萨诸塞湾省",
+   "name"
+  ]
+ },
+ {
+  "snap": 1700,
+  "next": 1715,
+  "NAME": "Prussia",
+  "area": 4.9,
+  "was": [
+   "Q157367",
+   "勃兰登堡-普鲁士"
+  ],
+  "dead_by": 1702,
+  "snap_at": "1700@17000101",
+  "now": [
+   "Q589662",
+   "皇家普鲁士",
+   "coord+name"
+  ]
+ },
+ {
+  "snap": 1715,
+  "next": 1783,
+  "NAME": "Prussia",
+  "area": 4.9,
+  "was": [
+   "Q589662",
+   "皇家普鲁士"
+  ],
+  "dead_by": 1773,
+  "snap_at": "1715@17711021",
+  "now": [
+   "Q38872",
+   "普鲁士",
+   "wiki-title"
+  ]
+ },
+ {
+  "snap": -300,
+  "next": -200,
+  "NAME": "Yue",
+  "area": 4.7,
+  "was": [
+   "Q1137403",
+   "越国"
+  ],
+  "dead_by": -220,
+  "snap_at": "-300",
+  "now": null
+ },
+ {
+  "snap": -1,
+  "next": 100,
+  "NAME": "Judea",
+  "area": 4.7,
+  "was": [
+   "Q1613773",
+   "四帝共治制 (犹太)"
+  ],
+  "dead_by": 45,
+  "snap_at": "-1",
+  "now": null
+ },
+ {
+  "snap": 1500,
+  "next": 1530,
+  "NAME": "Pskov",
+  "area": 4.7,
+  "was": [
+   "Q317078",
+   "普斯科夫共和国"
+  ],
+  "dead_by": 1511,
+  "snap_at": "1500@15020708",
+  "now": null
+ },
+ {
+  "snap": 1815,
+  "next": 1878,
+  "NAME": "       ",
+  "area": 4.4,
+  "was": [
+   "Q15864",
+   "荷兰联合王国"
+  ],
+  "dead_by": 1839,
+  "snap_at": "1815@18380101",
+  "now": [
+   "Q29999",
+   "荷兰王国",
+   "name"
+  ]
+ },
+ {
+  "snap": 600,
+  "next": 700,
+  "NAME": "Paekche",
+  "area": 4.3,
+  "was": [
+   "Q28428",
+   "百济"
+  ],
+  "dead_by": 661,
+  "snap_at": "600",
+  "now": null
+ },
+ {
+  "snap": 1900,
+  "next": 1914,
+  "NAME": "Asante",
+  "area": 4.2,
+  "was": [
+   "Q722071",
+   "阿散蒂王国"
+  ],
+  "dead_by": 1903,
+  "snap_at": "1900@19020531",
+  "now": null
+ },
+ {
+  "snap": 1530,
+  "next": 1600,
+  "NAME": "Florence",
+  "area": 4.1,
+  "was": [
+   "Q148540",
+   "佛罗伦萨共和国"
+  ],
+  "dead_by": 1570,
+  "snap_at": "1530@15570101",
+  "now": null
+ },
+ {
+  "snap": 1783,
+  "next": 1800,
+  "NAME": "Austrian Netherlands",
+  "area": 4.0,
+  "was": [
+   "Q700283",
+   "奥属尼德兰"
+  ],
+  "dead_by": 1798,
+  "snap_at": "1783@17980412",
+  "now": null
+ },
+ {
+  "snap": 1500,
+  "next": 1530,
+  "NAME": "Alwa",
+  "area": 3.7,
+  "was": [
+   "Q449639",
+   "阿勒底亚"
+  ],
+  "dead_by": 1505,
+  "snap_at": "1500@15020708",
+  "now": null
+ },
+ {
+  "snap": 1300,
+  "next": 1400,
+  "NAME": "Georgia",
+  "area": 3.5,
+  "was": [
+   "Q56089236",
+   "西格鲁吉亚王国（译名）"
+  ],
+  "dead_by": 1331,
+  "snap_at": "1300@12790319",
+  "now": [
+   "Q154667",
+   "格鲁吉亚王国",
+   "name"
+  ]
+ },
+ {
+  "snap": 1400,
+  "next": 1492,
+  "NAME": "Georgia",
+  "area": 3.5,
+  "was": [
+   "Q154667",
+   "格鲁吉亚王国"
+  ],
+  "dead_by": 1467,
+  "snap_at": "1400@14630501",
+  "now": null
+ },
+ {
+  "snap": 1900,
+  "next": 1914,
+  "NAME": "Ibadan",
+  "area": 3.4,
+  "was": [
+   "Q849623",
+   "奥约帝国"
+  ],
+  "dead_by": 1906,
+  "snap_at": "1900@19060216",
+  "now": null
+ },
+ {
+  "snap": 1100,
+  "next": 1200,
+  "NAME": "Croatia",
+  "area": 3.3,
+  "was": [
+   "Q858841",
+   "克罗地亚王国 (925–1102)"
+  ],
+  "dead_by": 1103,
+  "snap_at": "1100",
+  "now": [
+   "Q1789596",
+   "匈牙利治下的克罗地亚",
+   "capital+name"
+  ]
+ },
+ {
+  "snap": 1800,
+  "next": 1815,
+  "NAME": "Venetia",
+  "area": 3.2,
+  "was": [
+   "Q5404684",
+   "七人社区联合会（译名）"
+  ],
+  "dead_by": 1807,
+  "snap_at": "1800@18061219",
+  "now": null
+ },
+ {
+  "snap": 1815,
+  "next": 1878,
+  "NAME": "Venetia",
+  "area": 3.2,
+  "was": [
+   "Q209857",
+   "伦巴第-威尼西亚王国"
+  ],
+  "dead_by": 1867,
+  "snap_at": "1815@18670608",
+  "now": [
+   "Q306696",
+   "滨海奥地利",
+   "capital"
+  ]
+ },
+ {
+  "snap": 1880,
+  "next": 1900,
+  "NAME": "Taiwan",
+  "area": 3.2,
+  "was": [
+   "Q391189",
+   "台湾清治时期"
+  ],
+  "dead_by": 1896,
+  "snap_at": "1880@18950124",
+  "now": [
+   "Q137816",
+   "台湾日据时期",
+   "name"
+  ]
+ },
+ {
+  "snap": 1920,
+  "next": 1930,
+  "NAME": "Albania",
+  "area": 3.0,
+  "was": [
+   "Q187035",
+   "阿尔巴尼亚亲王国"
+  ],
+  "dead_by": 1925,
+  "snap_at": "1920@19241126",
+  "now": [
+   "Q1923781",
+   "阿尔巴尼亚共和国",
+   "name"
+  ]
+ },
+ {
+  "snap": 1938,
+  "next": 1945,
+  "NAME": "Albania",
+  "area": 3.0,
+  "was": [
+   "Q1048340",
+   "阿尔巴尼亚王国"
+  ],
+  "dead_by": 1939,
+  "snap_at": "1938@19380101",
+  "now": [
+   "Q1448131",
+   "意大利占领",
+   "name"
+  ]
+ },
+ {
+  "snap": 1960,
+  "next": 1994,
+  "NAME": "Albania",
+  "area": 3.0,
+  "was": [
+   "Q467864",
+   "阿尔巴尼亚社会主义人民共和国"
+  ],
+  "dead_by": 1992,
+  "snap_at": "1960@19920427",
+  "now": [
+   "Q222",
+   "阿尔巴尼亚",
+   "wiki-title"
+  ]
+ },
+ {
+  "snap": 1945,
+  "next": 1960,
+  "NAME": "Israel",
+  "area": 2.9,
+  "was": [
+   "Q193714",
+   "英属巴勒斯坦托管地"
+  ],
+  "dead_by": 1948,
+  "snap_at": "1945@19480509",
+  "now": [
+   "Q801",
+   "以色列",
+   "wiki-title"
+  ]
+ },
+ {
+  "snap": 1000,
+  "next": 1100,
+  "NAME": "Duchy of Benevento",
+  "area": 2.8,
+  "was": [
+   "Q267816",
+   "贝内文托公国"
+  ],
+  "dead_by": 1082,
+  "snap_at": "1000",
+  "now": null
+ },
+ {
+  "snap": -500,
+  "next": -400,
+  "NAME": "Kosala",
+  "area": 2.7,
+  "was": [
+   "Q756854",
+   "拘萨罗"
+  ],
+  "dead_by": -499,
+  "snap_at": "-500",
+  "now": null
+ },
+ {
+  "snap": 900,
+  "next": 1000,
+  "NAME": "Britany",
+  "area": 2.7,
+  "was": [
+   "Q771193",
+   "布列塔尼王国"
+  ],
+  "dead_by": 940,
+  "snap_at": "900@9090326",
+  "now": [
+   "Q71747",
+   "布列塔尼公国",
+   "name"
+  ]
+ },
+ {
+  "snap": 1500,
+  "next": 1530,
+  "NAME": "Ryazan",
+  "area": 2.7,
+  "was": [
+   "Q269109",
+   "梁赞大公"
+  ],
+  "dead_by": 1522,
+  "snap_at": "1500@15210828",
+  "now": null
+ },
+ {
+  "snap": 1530,
+  "next": 1600,
+  "NAME": "Britany",
+  "area": 2.7,
+  "was": [
+   "Q71747",
+   "布列塔尼公国"
+  ],
+  "dead_by": 1548,
+  "snap_at": "1530@12790319",
+  "now": null
+ },
+ {
+  "snap": 1815,
+  "next": 1878,
+  "NAME": "Tuscany",
+  "area": 2.7,
+  "was": [
+   "Q154849",
+   "托斯卡纳大公国"
+  ],
+  "dead_by": 1861,
+  "snap_at": "1815@18610317",
+  "now": [
+   "Q172579",
+   "意大利王国",
+   "capital"
+  ]
+ },
+ {
+  "snap": 1400,
+  "next": 1492,
+  "NAME": "Sukhothai",
+  "area": 2.6,
+  "was": [
+   "Q863279",
+   "素可泰王国"
+  ],
+  "dead_by": 1439,
+  "snap_at": "1400@12790319",
+  "now": null
+ },
+ {
+  "snap": 1000,
+  "next": 1100,
+  "NAME": "Emirate of Sicily",
+  "area": 2.5,
+  "was": [
+   "Q1250763",
+   "西西里埃米尔国"
+  ],
+  "dead_by": 1073,
+  "snap_at": "1000",
+  "now": null
+ },
+ {
+  "snap": 1400,
+  "next": 1492,
+  "NAME": "Trebizond",
+  "area": 2.5,
+  "was": [
+   "Q178913",
+   "特拉比松帝国"
+  ],
+  "dead_by": 1462,
+  "snap_at": "1400@14530607",
+  "now": null
+ },
+ {
+  "snap": 1800,
+  "next": 1815,
+  "NAME": "Lombardy",
+  "area": 2.5,
+  "was": [
+   "Q213353",
+   "奇萨尔皮尼共和国"
+  ],
+  "dead_by": 1802,
+  "snap_at": "1800@18010101",
+  "now": [
+   "Q723118",
+   "意大利共和国",
+   "capital"
+  ]
+ },
+ {
+  "snap": 1815,
+  "next": 1878,
+  "NAME": "Lombardy",
+  "area": 2.5,
+  "was": [
+   "Q209857",
+   "伦巴第-威尼西亚王国"
+  ],
+  "dead_by": 1867,
+  "snap_at": "1815@18670608",
+  "now": null
+ },
+ {
+  "snap": 1900,
+  "next": 1914,
+  "NAME": "Montenegro",
+  "area": 2.5,
+  "was": [
+   "Q779011",
+   "黑山公国"
+  ],
+  "dead_by": 1911,
+  "snap_at": "1900@19100829",
+  "now": [
+   "Q386496",
+   "黑山王国",
+   "name"
+  ]
+ },
+ {
+  "snap": 800,
+  "next": 900,
+  "NAME": "Carolingian Empire",
+  "area": 2.4,
+  "was": [
+   "Q31929",
+   "加洛林帝国"
+  ],
+  "dead_by": 888,
+  "snap_at": "800",
+  "now": null
+ },
+ {
+  "snap": 1600,
+  "next": 1650,
+  "NAME": "Bidar",
+  "area": 2.4,
+  "was": [
+   "Q669317",
+   "比德尔苏丹国"
+  ],
+  "dead_by": 1620,
+  "snap_at": "1600@16120101",
+  "now": null
+ },
+ {
+  "snap": 1815,
+  "next": 1878,
+  "NAME": "Kingdom of Sardinia",
+  "area": 2.3,
+  "was": [
+   "Q2577303",
+   "撒丁王国"
+  ],
+  "dead_by": 1861,
+  "snap_at": "1815@18610317",
+  "now": [
+   "Q165154",
+   "萨丁尼亚王国",
+   "wiki-title"
+  ]
+ },
+ {
+  "snap": 1880,
+  "next": 1900,
+  "NAME": "Zululand",
+  "area": 2.3,
+  "was": [
+   "Q729768",
+   "祖鲁王国"
+  ],
+  "dead_by": 1898,
+  "snap_at": "1880@18980101",
+  "now": null
+ },
+ {
+  "snap": 1815,
+  "next": 1878,
+  "NAME": "Haiti",
+  "area": 2.2,
+  "was": [
+   "Q1472105",
+   "海地王国"
+  ],
+  "dead_by": 1821,
+  "snap_at": "1815@18190927",
+  "now": [
+   "Q95408244",
+   "海地共和国",
+   "name"
+  ]
+ },
+ {
+  "snap": -200,
+  "next": -100,
+  "NAME": "Pergamon",
+  "area": 1.9,
+  "was": [
+   "Q2022162",
+   "帕加马王国"
+  ],
+  "dead_by": -131,
+  "snap_at": "-200",
+  "now": null
+ },
+ {
+  "snap": 1815,
+  "next": 1878,
+  "NAME": "Tuʻi Tonga Empire",
+  "area": 1.9,
+  "was": [
+   "Q842390",
+   "图依汤加帝国"
+  ],
+  "dead_by": 1827,
+  "snap_at": "1815@18220107",
+  "now": null
+ },
+ {
+  "snap": 1900,
+  "next": 1914,
+  "NAME": "Oyo",
+  "area": 1.8,
+  "was": [
+   "Q849623",
+   "奥约帝国"
+  ],
+  "dead_by": 1906,
+  "snap_at": "1900@19060216",
+  "now": null
+ },
+ {
+  "snap": 1100,
+  "next": 1200,
+  "NAME": "Syunik",
+  "area": 1.7,
+  "was": [
+   "Q3653113",
+   "休尼克王国"
+  ],
+  "dead_by": 1171,
+  "snap_at": "1100@11620813",
+  "now": null
+ },
+ {
+  "snap": 1800,
+  "next": 1815,
+  "NAME": "Württemberg",
+  "area": 1.6,
+  "was": [
+   "Q2227570",
+   "符腾堡公国"
+  ],
+  "dead_by": 1804,
+  "snap_at": "1800@18030219",
+  "now": [
+   "Q2172530",
+   "符腾堡选侯国",
+   "capital+name"
+  ]
+ },
+ {
+  "snap": 1920,
+  "next": 1930,
+  "NAME": null,
+  "area": 1.6,
+  "was": [
+   "Q12560",
+   "奥斯曼帝国"
+  ],
+  "dead_by": 1923,
+  "snap_at": "1920@19221230",
+  "now": null
+ },
+ {
+  "snap": 1960,
+  "next": 1994,
+  "NAME": "Fiji",
+  "area": 1.6,
+  "was": [
+   "Q5148320",
+   "斐济殖民地"
+  ],
+  "dead_by": 1971,
+  "snap_at": "1960@19701201",
+  "now": [
+   "Q5291089",
+   "斐济自治领",
+   "coord+name"
+  ]
+ },
+ {
+  "snap": 900,
+  "next": 1000,
+  "NAME": "Wessex",
+  "area": 1.5,
+  "was": [
+   "Q105313",
+   "西撒克逊王国"
+  ],
+  "dead_by": 928,
+  "snap_at": "900@9090326",
+  "now": null
+ },
+ {
+  "snap": 900,
+  "next": 1000,
+  "NAME": "Northumbria",
+  "area": 1.5,
+  "was": [
+   "Q107299",
+   "诺森布里亚"
+  ],
+  "dead_by": 955,
+  "snap_at": "900@9090326",
+  "now": null
+ },
+ {
+  "snap": 1100,
+  "next": 1200,
+  "NAME": "Kakheti-Hereti",
+  "area": 1.4,
+  "was": [
+   "Q7216494",
+   "卡赫季王国"
+  ],
+  "dead_by": 1105,
+  "snap_at": "1100",
+  "now": null
+ },
+ {
+  "snap": 1650,
+  "next": 1700,
+  "NAME": "Dutch Formosa",
+  "area": 1.4,
+  "was": [
+   "Q699446",
+   "台湾荷兰统治时期"
+  ],
+  "dead_by": 1663,
+  "snap_at": "1650@16511212",
+  "now": null
+ },
+ {
+  "snap": 1945,
+  "next": 1960,
+  "NAME": "Bahamas",
+  "area": 1.1,
+  "was": [
+   "Q920396",
+   "英属西印度"
+  ],
+  "dead_by": 1959,
+  "snap_at": "1945@19590310",
+  "now": null
+ },
+ {
+  "snap": 1815,
+  "next": 1878,
+  "NAME": "Modena",
+  "area": 1.0,
+  "was": [
+   "Q252580",
+   "摩德纳和雷焦公国"
+  ],
+  "dead_by": 1860,
+  "snap_at": "1815@18590609",
+  "now": null
+ },
+ {
+  "snap": 1880,
+  "next": 1900,
+  "NAME": "Benin",
+  "area": 1.0,
+  "was": [
+   "Q171203",
+   "贝宁帝国"
+  ],
+  "dead_by": 1898,
+  "snap_at": "1880@18980101",
+  "now": null
+ },
+ {
+  "snap": 800,
+  "next": 900,
+  "NAME": "Essex",
+  "area": 0.9,
+  "was": [
+   "Q110888",
+   "埃塞克斯王国"
+  ],
+  "dead_by": 826,
+  "snap_at": "800",
+  "now": null
+ },
+ {
+  "snap": 1400,
+  "next": 1492,
+  "NAME": "Cyprus",
+  "area": 0.9,
+  "was": [
+   "Q213638",
+   "塞浦路斯王国"
+  ],
+  "dead_by": 1490,
+  "snap_at": "1400@14630501",
+  "now": null
+ },
+ {
+  "snap": 1815,
+  "next": 1878,
+  "NAME": "Palatinate",
+  "area": 0.9,
+  "was": [
+   "Q547629",
+   "利希滕贝格公国"
+  ],
+  "dead_by": 1835,
+  "snap_at": "1815@18330103",
+  "now": null
+ },
+ {
+  "snap": 1815,
+  "next": 1878,
+  "NAME": "Schleswig",
+  "area": 0.8,
+  "was": [
+   "Q26167",
+   "石勒苏益格"
+  ],
+  "dead_by": 1867,
+  "snap_at": "1815@18670608",
+  "now": null
+ },
+ {
+  "snap": 1960,
+  "next": 1994,
+  "NAME": "Gambia, The",
+  "area": 0.8,
+  "was": [
+   "Q3557236",
+   "冈比亚殖民地"
+  ],
+  "dead_by": 1965,
+  "snap_at": "1960@19640921",
+  "now": [
+   "Q1005",
+   "冈比亚",
+   "wiki-title"
+  ]
+ },
+ {
+  "snap": 1815,
+  "next": 1878,
+  "NAME": "Mecklenburg-Strelitz",
+  "area": 0.6,
+  "was": [
+   "Q2751106",
+   "梅克伦堡-施特雷利茨公国"
+  ],
+  "dead_by": 1816,
+  "snap_at": "1815@17650510",
+  "now": [
+   "Q835005",
+   "梅克伦堡-斯塔加德（译名）",
+   "capital+name"
+  ]
+ },
+ {
+  "snap": 800,
+  "next": 900,
+  "NAME": "Kent",
+  "area": 0.5,
+  "was": [
+   "Q328818",
+   "肯特王国"
+  ],
+  "dead_by": 872,
+  "snap_at": "800",
+  "now": null
+ },
+ {
+  "snap": 1815,
+  "next": 1878,
+  "NAME": "Republic of Kraków",
+  "area": 0.5,
+  "was": [
+   "Q501303",
+   "克拉科夫自由市"
+  ],
+  "dead_by": 1847,
+  "snap_at": "1815@18430101",
+  "now": null
+ },
+ {
+  "snap": 1100,
+  "next": 1200,
+  "NAME": "Emirate of Tiflis",
+  "area": 0.3,
+  "was": [
+   "Q1337828",
+   "第比利斯埃米尔国"
+  ],
+  "dead_by": 1123,
+  "snap_at": "1100",
+  "now": null
+ },
+ {
+  "snap": 1715,
+  "next": 1783,
+  "NAME": "Oldenburg",
+  "area": 0.3,
+  "was": [
+   "Q170390",
+   "奥尔登堡公国"
+  ],
+  "dead_by": 1775,
+  "snap_at": "1715@17750115",
+  "now": [
+   "Q697084",
+   "奥尔登堡公国",
+   "name"
+  ]
+ },
+ {
+  "snap": 1783,
+  "next": 1800,
+  "NAME": "Luxembourg",
+  "area": 0.3,
+  "was": [
+   "Q2719360",
+   "卢森堡公国"
+  ],
+  "dead_by": 1796,
+  "snap_at": "1783@17951024",
+  "now": null
+ },
+ {
+  "snap": 1815,
+  "next": 1878,
+  "NAME": "Nassau",
+  "area": 0.3,
+  "was": [
+   "Q339952",
+   "奥伦治—拿骚世家"
+  ],
+  "dead_by": 1816,
+  "snap_at": "1815@17650510",
+  "now": [
+   "Q836680",
+   "拿骚",
+   "name"
+  ]
+ },
+ {
+  "snap": 1815,
+  "next": 1878,
+  "NAME": "Anhalt",
+  "area": 0.3,
+  "was": [
+   "Q264970",
+   "安哈尔特-克滕"
+  ],
+  "dead_by": 1864,
+  "snap_at": "1815@18610317",
+  "now": [
+   "Q16550783",
+   "安哈尔特公国",
+   "name"
+  ]
+ },
+ {
+  "snap": 1800,
+  "next": 1815,
+  "NAME": "Hanover",
+  "area": 0.2,
+  "was": [
+   "Q168651",
+   "黑森-卡塞尔"
+  ],
+  "dead_by": 1804,
+  "snap_at": "1800@18030219",
+  "now": null
+ },
+ {
+  "snap": 1960,
+  "next": 1994,
+  "NAME": "Samoa",
+  "area": 0.2,
+  "was": [
+   "Q7988268",
+   "西萨摩亚托管地"
+  ],
+  "dead_by": 1963,
+  "snap_at": "1960@19620806",
+  "now": [
+   "Q683",
+   "萨摩亚",
+   "wiki-title"
+  ]
+ },
+ {
+  "snap": 1400,
+  "next": 1492,
+  "NAME": "Hokuzan",
+  "area": 0.1,
+  "was": [
+   "Q55523",
+   "北山王国"
+  ],
+  "dead_by": 1417,
+  "snap_at": "1400@12790319",
+  "now": null
+ },
+ {
+  "snap": 1800,
+  "next": 1815,
+  "NAME": "Anhalt",
+  "area": 0.1,
+  "was": [
+   "Q16155815",
+   "安哈特亲王国"
+  ],
+  "dead_by": 1807,
+  "snap_at": "1800@18061219",
+  "now": null
+ },
+ {
+  "snap": 1815,
+  "next": 1878,
+  "NAME": "Wetzlar",
+  "area": 0.1,
+  "was": [
+   "Q836680",
+   "拿骚"
+  ],
+  "dead_by": 1867,
+  "snap_at": "1815@18670608",
+  "now": null
+ },
+ {
+  "snap": -400,
+  "next": -323,
+  "NAME": "Magadha",
+  "area": 0.0,
+  "was": [
+   "Q234009",
+   "摩揭陀"
+  ],
+  "dead_by": -343,
+  "snap_at": "-400",
+  "now": null
+ },
+ {
+  "snap": -400,
+  "next": -323,
+  "NAME": "Magadha",
+  "area": 0.0,
+  "was": [
+   "Q234009",
+   "摩揭陀"
+  ],
+  "dead_by": -343,
+  "snap_at": "-400",
+  "now": null
+ },
+ {
+  "snap": 1400,
+  "next": 1492,
+  "NAME": "Nanzan",
+  "area": 0.0,
+  "was": [
+   "Q55522",
+   "南山王国"
+  ],
+  "dead_by": 1430,
+  "snap_at": "1400@12790319",
+  "now": null
+ },
+ {
+  "snap": 1400,
+  "next": 1492,
+  "NAME": "Chūzan",
+  "area": 0.0,
+  "was": [
+   "Q55521",
+   "中山王国"
+  ],
+  "dead_by": 1430,
+  "snap_at": "1400@12790319",
+  "now": null
+ },
+ {
+  "snap": 1500,
+  "next": 1530,
+  "NAME": "Bahmani Kingdom",
+  "area": 0.0,
+  "was": [
+   "Q374521",
+   "巴赫曼尼苏丹国"
+  ],
+  "dead_by": 1528,
+  "snap_at": "1500@15260421",
+  "now": null
+ },
+ {
+  "snap": 1530,
+  "next": 1600,
+  "NAME": "Tsardom of Muscovy",
+  "area": 0.0,
+  "was": [
+   "Q170770",
+   "莫斯科公国"
+  ],
+  "dead_by": 1548,
+  "snap_at": "1530@12790319",
+  "now": [
+   "Q186096",
+   "俄罗斯沙皇国",
+   "wiki-title"
+  ]
+ },
+ {
+  "snap": 1815,
+  "next": 1878,
+  "NAME": "Lübeck",
+  "area": 0.0,
+  "was": [
+   "Q313175",
+   "劳恩堡公国"
+  ],
+  "dead_by": 1877,
+  "snap_at": "1815@18710101",
+  "now": null
+ },
+ {
+  "snap": 1914,
+  "next": 1920,
+  "NAME": "United States Virgin Islands",
+  "area": 0.0,
+  "was": [
+   "Q829655",
+   "丹麦属西印度群岛"
+  ],
+  "dead_by": 1918,
+  "snap_at": "1914@19180528",
+  "now": [
+   "Q11703",
+   "美属维尔京群岛",
+   "wiki-title"
+  ]
+ },
+ {
+  "snap": 1945,
+  "next": 1960,
+  "NAME": "Grenada",
+  "area": 0.0,
+  "was": [
+   "Q2660774",
+   "英属向风群岛"
+  ],
+  "dead_by": 1959,
+  "snap_at": "1945@19590310",
+  "now": null
+ }
+]

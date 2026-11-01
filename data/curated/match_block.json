@@ -1,0 +1,8 @@
+{
+  "_doc": "人工核对的「名称匹配」排除表：底图多边形名称（NAME）→ 不应匹配的 Wikidata 政权。只在 Wikidata 别名把一个地区名挂到另一个政治实体上时使用，每条注明理由与来源。",
+  "Canaan": {
+    "block": ["Q41642"],
+    "note": "Wikidata「腓尼基」(Q41642) 把「Canaan」列为别名，但迦南是黎凡特南部青铜时代诸城邦所在的地区（Q163329，不是单一政权）；腓尼基指其北部沿海城邦，通常从约公元前 1500/1200 年起才称腓尼基。historical-basemaps 的「Canaan」多边形因此只显示地区名，不对应政权。",
+    "sources": ["https://en.wikipedia.org/wiki/Canaan", "https://en.wikipedia.org/wiki/Phoenicia", "https://www.wikidata.org/wiki/Q41642"]
+  }
+}

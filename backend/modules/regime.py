@@ -10,7 +10,7 @@ from ..live import wiki
 from ..polity import valid_at
 from ..registry import ContentModule
 from ._common import fmt_time
-from ._state_common import METHOD_ZH, pick_state, resolver
+from ._state_common import split_note, METHOD_ZH, pick_state, resolver
 from .leaders import _holding
 
 
@@ -35,7 +35,7 @@ class RegimeModule(ContentModule):
             return {"items": [], "total": 0, "note": "请在地图上点击一个国家/政权。"}
         if not st:
             return {"items": [], "total": 0, "alternatives": alts,
-                    "note": "没能把这个地图区域对应到 Wikidata 中当时存在的政权。"}
+                    "note": split_note(params) or "没能把这个地图区域对应到 Wikidata 中当时存在的政权。"}
         dk = date.key()
 
         def at_date(lst):

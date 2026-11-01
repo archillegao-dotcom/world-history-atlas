@@ -73,7 +73,7 @@ class AlliancesLayer(LayerModule):
 
     def layer_query(self, ctx, date, params):
         R = resolver(ctx)
-        snap = ctx.basemaps.snapshot_for(date.y)
+        snap = ctx.basemaps.snapshot_at(date)
         # 多边形 → 当时存在的候选政权 QID
         fids = {}
         for fid in ctx.basemaps.features(snap):

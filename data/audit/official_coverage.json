@@ -1,0 +1,862 @@
+{
+ "generated": "2026-11-01T23:17:42",
+ "rows": [
+  {
+   "country": "中华民国",
+   "office": "Q887003",
+   "name": "中华民国总统",
+   "span": [
+    1917,
+    2026
+   ],
+   "holders_before": 15,
+   "holders_after": 15,
+   "before": 82.3,
+   "after": 82.3,
+   "sources": [
+    "https://www.president.gov.tw/Page/81",
+    "https://www.wikidata.org/wiki/Q887003"
+   ]
+  },
+  {
+   "country": "中华民国",
+   "office": "Q702650",
+   "name": "中华民国行政院院长",
+   "span": [
+    1913,
+    2026
+   ],
+   "holders_before": 49,
+   "holders_after": 49,
+   "before": 88.8,
+   "after": 88.8,
+   "sources": []
+  },
+  {
+   "country": "中华民国",
+   "office": "Q7241342",
+   "name": "立法院长",
+   "span": [
+    1948,
+    2026
+   ],
+   "holders_before": 5,
+   "holders_after": 13,
+   "before": 44.3,
+   "after": 97.4,
+   "sources": [
+    "https://www.ly.gov.tw/Pages/List.aspx?nodeid=6569"
+   ]
+  },
+  {
+   "country": "中华人民共和国",
+   "office": "Q655407",
+   "name": "中华人民共和国主席",
+   "span": [
+    1954,
+    2026
+   ],
+   "holders_before": 7,
+   "holders_after": 7,
+   "before": 79.7,
+   "after": 79.7,
+   "sources": [
+    "https://www.wikidata.org/wiki/Q655407"
+   ]
+  },
+  {
+   "country": "中华人民共和国",
+   "office": "Q4122271",
+   "name": "中华人民共和国国务院总理",
+   "span": [
+    1954,
+    2026
+   ],
+   "holders_before": 7,
+   "holders_after": 7,
+   "before": 89.4,
+   "after": 89.4,
+   "sources": [
+    "https://www.wikidata.org/wiki/Q4122271"
+   ]
+  },
+  {
+   "country": "中华人民共和国",
+   "office": "Q849418",
+   "name": "中国共产党中央委员会总书记",
+   "span": [
+    1921,
+    2026
+   ],
+   "holders_before": 11,
+   "holders_after": 11,
+   "before": 55.7,
+   "after": 55.7,
+   "sources": [
+    "https://www.wikidata.org/wiki/Q849418"
+   ]
+  },
+  {
+   "country": "中华人民共和国",
+   "office": "Q2708520",
+   "name": "中国共产党中央委员会主席",
+   "span": [
+    1922,
+    1982
+   ],
+   "holders_before": 4,
+   "holders_after": 4,
+   "before": 65.9,
+   "after": 65.9,
+   "sources": [
+    "https://www.wikidata.org/wiki/Q2708520"
+   ]
+  },
+  {
+   "country": "美国",
+   "office": "Q11696",
+   "name": "美国总统",
+   "span": [
+    1789,
+    2026
+   ],
+   "holders_before": 49,
+   "holders_after": 49,
+   "before": 100.0,
+   "after": 100.0,
+   "sources": [
+    "https://www.wikidata.org/wiki/Q11696"
+   ]
+  },
+  {
+   "country": "美国",
+   "office": "Q14213",
+   "name": "美国国务卿",
+   "span": [
+    1789,
+    2026
+   ],
+   "holders_before": 119,
+   "holders_after": 119,
+   "before": 99.9,
+   "after": 99.9,
+   "sources": [
+    "https://history.state.gov/departmenthistory/people/principalofficers/secretary"
+   ]
+  },
+  {
+   "country": "英国",
+   "office": "Q14211",
+   "name": "英国首相",
+   "span": [
+    1721,
+    2026
+   ],
+   "holders_before": 85,
+   "holders_after": 85,
+   "before": 99.8,
+   "after": 99.8,
+   "sources": [
+    "https://www.gov.uk/government/history/past-prime-ministers"
+   ]
+  },
+  {
+   "country": "英国",
+   "office": "Q9134365",
+   "name": "英国君主",
+   "span": [
+    1927,
+    2026
+   ],
+   "holders_before": 5,
+   "holders_after": 5,
+   "before": 100.0,
+   "after": 100.0,
+   "sources": []
+  },
+  {
+   "country": "法国",
+   "office": "Q191954",
+   "name": "法国总统",
+   "span": [
+    1848,
+    2026
+   ],
+   "holders_before": 32,
+   "holders_after": 32,
+   "before": 86.2,
+   "after": 86.2,
+   "sources": [
+    "https://www.elysee.fr/la-presidence/les-presidents-de-la-republique"
+   ]
+  },
+  {
+   "country": "法国",
+   "office": "Q1587677",
+   "name": "法国总理",
+   "span": [
+    1642,
+    2026
+   ],
+   "holders_before": 36,
+   "holders_after": 36,
+   "before": 23.7,
+   "after": 23.7,
+   "sources": []
+  },
+  {
+   "country": "德国",
+   "office": "Q56022",
+   "name": "联邦总理",
+   "span": [
+    1894,
+    1945
+   ],
+   "holders_before": 14,
+   "holders_after": 14,
+   "before": 45.5,
+   "after": 45.5,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Chancellor_of_Germany"
+   ]
+  },
+  {
+   "country": "德国",
+   "office": "Q25223",
+   "name": "德国联邦总统",
+   "span": [
+    1949,
+    2026
+   ],
+   "holders_before": 12,
+   "holders_after": 12,
+   "before": 99.7,
+   "after": 99.7,
+   "sources": [
+    "https://en.wikipedia.org/wiki/President_of_Germany"
+   ]
+  },
+  {
+   "country": "俄罗斯/苏联",
+   "office": "Q218295",
+   "name": "俄罗斯总统",
+   "span": [
+    1991,
+    2026
+   ],
+   "holders_before": 5,
+   "holders_after": 5,
+   "before": 99.0,
+   "after": 99.0,
+   "sources": [
+    "https://www.wikidata.org/wiki/Q218295"
+   ]
+  },
+  {
+   "country": "俄罗斯/苏联",
+   "office": "Q842386",
+   "name": "俄罗斯总理",
+   "span": [
+    1804,
+    2026
+   ],
+   "holders_before": 30,
+   "holders_after": 30,
+   "before": 22.0,
+   "after": 22.0,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Prime_Minister_of_Russia"
+   ]
+  },
+  {
+   "country": "俄罗斯/苏联",
+   "office": "Q462189",
+   "name": "苏联部长会议主席",
+   "span": [
+    1923,
+    1991
+   ],
+   "holders_before": 0,
+   "holders_after": 12,
+   "before": 0.0,
+   "after": 100.0,
+   "sources": [
+    "https://www.wikidata.org/wiki/Q462189",
+    "https://en.wikipedia.org/wiki/Premier_of_the_Soviet_Union"
+   ]
+  },
+  {
+   "country": "俄罗斯/苏联",
+   "office": "Q1048744",
+   "name": "苏联共产党中央委员会总书记",
+   "span": [
+    1922,
+    1991
+   ],
+   "holders_before": 0,
+   "holders_after": 7,
+   "before": 0.0,
+   "after": 71.8,
+   "sources": [
+    "https://www.wikidata.org/wiki/Q1048744",
+    "https://en.wikipedia.org/wiki/General_Secretary_of_the_Communist_Party_of_the_Soviet_Union"
+   ]
+  },
+  {
+   "country": "俄罗斯/苏联",
+   "office": "Q135215773",
+   "name": "苏联最高苏维埃主席团主席（译名）",
+   "span": [
+    1938,
+    1989
+   ],
+   "holders_before": 14,
+   "holders_after": 14,
+   "before": 100.0,
+   "after": 100.0,
+   "sources": []
+  },
+  {
+   "country": "日本",
+   "office": "Q274948",
+   "name": "日本内阁总理大臣",
+   "span": [
+    1885,
+    2026
+   ],
+   "holders_before": 108,
+   "holders_after": 108,
+   "before": 99.9,
+   "after": 99.9,
+   "sources": [
+    "https://www.kantei.go.jp/jp/rekidainaikaku/index.html"
+   ]
+  },
+  {
+   "country": "日本",
+   "office": "Q208233",
+   "name": "天皇",
+   "span": [
+    -658,
+    2026
+   ],
+   "holders_before": 122,
+   "holders_after": 122,
+   "before": 94.5,
+   "after": 94.5,
+   "sources": []
+  },
+  {
+   "country": "韩国",
+   "office": "Q6296418",
+   "name": "韩国总统",
+   "span": [
+    1948,
+    2026
+   ],
+   "holders_before": 19,
+   "holders_after": 19,
+   "before": 99.3,
+   "after": 99.3,
+   "sources": [
+    "https://en.wikipedia.org/wiki/President_of_South_Korea"
+   ]
+  },
+  {
+   "country": "韩国",
+   "office": "Q15407843",
+   "name": "大韩民国国务总理",
+   "span": [
+    1948,
+    2026
+   ],
+   "holders_before": 30,
+   "holders_after": 30,
+   "before": 52.8,
+   "after": 52.8,
+   "sources": [
+    "https://www.wikidata.org/wiki/Q15407843"
+   ]
+  },
+  {
+   "country": "澳门（葡治）",
+   "office": "Q907213",
+   "name": "澳门总督",
+   "span": [
+    1623,
+    1999
+   ],
+   "holders_before": 0,
+   "holders_after": 107,
+   "before": 0.0,
+   "after": 81.5,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Governor_of_Macau"
+   ]
+  }
+ ],
+ "merge_stats": {
+  "Q7241342": {
+   "office": "立法院院长",
+   "before": {
+    "holders": 16,
+    "dated": 5
+   },
+   "after": {
+    "holders": 18,
+    "dated": 13
+   },
+   "official": 19,
+   "matched": 17,
+   "filled": 6,
+   "added": 2,
+   "agree": 11,
+   "conflict": [],
+   "unmatched": []
+  },
+  "Q887003": {
+   "office": "中华民国总统",
+   "before": {
+    "holders": 21,
+    "dated": 15
+   },
+   "after": {
+    "holders": 21,
+    "dated": 15
+   },
+   "official": 7,
+   "matched": 6,
+   "filled": 0,
+   "added": 0,
+   "agree": 6,
+   "conflict": [],
+   "unmatched": [
+    "蔣中正"
+   ]
+  },
+  "Q274948": {
+   "office": "日本内阁总理大臣",
+   "before": {
+    "holders": 108,
+    "dated": 108
+   },
+   "after": {
+    "holders": 108,
+    "dated": 108
+   },
+   "official": 104,
+   "matched": 104,
+   "filled": 0,
+   "added": 0,
+   "agree": 104,
+   "conflict": [],
+   "unmatched": []
+  },
+  "Q14211": {
+   "office": "英国首相",
+   "before": {
+    "holders": 90,
+    "dated": 85
+   },
+   "after": {
+    "holders": 90,
+    "dated": 85
+   },
+   "official": 80,
+   "matched": 79,
+   "filled": 0,
+   "added": 0,
+   "agree": 79,
+   "conflict": [],
+   "unmatched": [
+    "The Rt Hon Rishi Sunak MP"
+   ]
+  },
+  "Q191954": {
+   "office": "法国总统",
+   "before": {
+    "holders": 35,
+    "dated": 32
+   },
+   "after": {
+    "holders": 35,
+    "dated": 32
+   },
+   "official": 25,
+   "matched": 23,
+   "filled": 0,
+   "added": 0,
+   "agree": 23,
+   "conflict": [],
+   "unmatched": [
+    "Jacques Chirac",
+    "Louis-Napoléon Bonaparte"
+   ]
+  },
+  "Q14213": {
+   "office": "美国国务卿",
+   "before": {
+    "holders": 122,
+    "dated": 119
+   },
+   "after": {
+    "holders": 122,
+    "dated": 119
+   },
+   "official": 73,
+   "matched": 70,
+   "filled": 0,
+   "added": 0,
+   "agree": 70,
+   "conflict": [],
+   "unmatched": [
+    "Alexander Meigs Haig Jr.",
+    "James Addison Baker III",
+    "Hillary Rodham Clinton"
+   ]
+  },
+  "Q907213": {
+   "office": "澳门总督",
+   "before": {
+    "holders": 0,
+    "dated": 0
+   },
+   "after": {
+    "holders": 107,
+    "dated": 107
+   },
+   "official": 143,
+   "matched": 0,
+   "filled": 0,
+   "added": 107,
+   "agree": 0,
+   "conflict": [],
+   "unmatched": [
+    "Jerónimo da Silveira",
+    "Domingos da Câmara de Noronha",
+    "Sebastião Lobo da Silveira",
+    "Luís de Carvalho e Sousa",
+    "Diogo Coutinho Docem",
+    "João Pereira (governor)",
+    "João de Sousa Pereira",
+    "Manuel Tavares Bocarro",
+    "António de Castro Sande",
+    "Diogo de Melo Sampaio",
+    "Francisco Xavier de Castro",
+    "João Cabral de Estefique",
+    "Francisco Augusto Ferreira da Silva",
+    "José Emílio Santana da Cunha Castelo Branco",
+    "Francisco Diogo de Sá",
+    "João Marques Vidal",
+    "José Maria Martins Pereira",
+    "Fernando Augusto Vieira de Matos",
+    "Joaquim Augusto dos Santos",
+    "Luís António de Magalhães Correia",
+    "Rodrigo José Rodrigues",
+    "Joaquim Augusto dos Santos",
+    "Hugo Carvalho de Lacerda Castelo Branco",
+    "João Pereira Magalhães",
+    "João Pereira Magalhães",
+    "João Pereira Barbosa",
+    "António Joaquim Ferreira da Silva",
+    "João Pinto Crisóstomo",
+    "José Rodrigues Moutinho",
+    "Samuel da Conceição Vieira",
+    "Aires Pinto Ribeiro",
+    "João Carlos Guedes Quinhones de Portugal da Silveira",
+    "Manuel Peixoto Nunes",
+    "Eduardo Luís de Sousa Gentil Beça",
+    "Carlos Augusto Pulido Valente Monjardino",
+    "Francisco Murteira Nabo"
+   ]
+  },
+  "Q462189": {
+   "office": "苏联部长会议主席",
+   "before": {
+    "holders": 1,
+    "dated": 0
+   },
+   "after": {
+    "holders": 1,
+    "dated": 0
+   },
+   "official": 0,
+   "matched": 0,
+   "filled": 0,
+   "added": 0,
+   "agree": 0,
+   "conflict": [],
+   "unmatched": []
+  },
+  "Q1048744": {
+   "office": "苏联共产党中央委员会总书记",
+   "before": {
+    "holders": 0,
+    "dated": 0
+   },
+   "after": {
+    "holders": 7,
+    "dated": 7
+   },
+   "official": 7,
+   "matched": 0,
+   "filled": 0,
+   "added": 7,
+   "agree": 0,
+   "conflict": [],
+   "unmatched": []
+  },
+  "Q2708520": {
+   "office": "中国共产党中央委员会主席",
+   "before": {
+    "holders": 6,
+    "dated": 4
+   },
+   "after": {
+    "holders": 6,
+    "dated": 4
+   },
+   "official": 4,
+   "matched": 4,
+   "filled": 0,
+   "added": 0,
+   "agree": 4,
+   "conflict": [],
+   "unmatched": []
+  },
+  "Q655407": {
+   "office": "中华人民共和国主席",
+   "before": {
+    "holders": 8,
+    "dated": 7
+   },
+   "after": {
+    "holders": 8,
+    "dated": 7
+   },
+   "official": 7,
+   "matched": 7,
+   "filled": 0,
+   "added": 0,
+   "agree": 7,
+   "conflict": [],
+   "unmatched": []
+  },
+  "Q4122271": {
+   "office": "中华人民共和国国务院总理",
+   "before": {
+    "holders": 8,
+    "dated": 7
+   },
+   "after": {
+    "holders": 8,
+    "dated": 7
+   },
+   "official": 7,
+   "matched": 7,
+   "filled": 0,
+   "added": 0,
+   "agree": 7,
+   "conflict": [],
+   "unmatched": []
+  },
+  "Q849418": {
+   "office": "中国共产党中央委员会总书记",
+   "before": {
+    "holders": 14,
+    "dated": 11
+   },
+   "after": {
+    "holders": 14,
+    "dated": 11
+   },
+   "official": 10,
+   "matched": 10,
+   "filled": 0,
+   "added": 0,
+   "agree": 10,
+   "conflict": [],
+   "unmatched": []
+  },
+  "Q887003#wikidata_p39_Q887003": {
+   "office": "中华民国总统",
+   "before": {
+    "holders": 21,
+    "dated": 15
+   },
+   "after": {
+    "holders": 21,
+    "dated": 15
+   },
+   "official": 15,
+   "matched": 15,
+   "filled": 0,
+   "added": 0,
+   "agree": 15,
+   "conflict": [],
+   "unmatched": []
+  },
+  "Q11696": {
+   "office": "美国总统",
+   "before": {
+    "holders": 65,
+    "dated": 49
+   },
+   "after": {
+    "holders": 65,
+    "dated": 49
+   },
+   "official": 49,
+   "matched": 49,
+   "filled": 0,
+   "added": 0,
+   "agree": 49,
+   "conflict": [],
+   "unmatched": []
+  },
+  "Q15407843": {
+   "office": "大韩民国国务总理",
+   "before": {
+    "holders": 50,
+    "dated": 30
+   },
+   "after": {
+    "holders": 50,
+    "dated": 30
+   },
+   "official": 30,
+   "matched": 30,
+   "filled": 0,
+   "added": 0,
+   "agree": 30,
+   "conflict": [],
+   "unmatched": []
+  },
+  "Q218295": {
+   "office": "俄罗斯总统",
+   "before": {
+    "holders": 5,
+    "dated": 5
+   },
+   "after": {
+    "holders": 5,
+    "dated": 5
+   },
+   "official": 5,
+   "matched": 5,
+   "filled": 0,
+   "added": 0,
+   "agree": 5,
+   "conflict": [],
+   "unmatched": []
+  },
+  "Q462189#wiki_Q462189": {
+   "office": "苏联部长会议主席",
+   "before": {
+    "holders": 1,
+    "dated": 0
+   },
+   "after": {
+    "holders": 13,
+    "dated": 12
+   },
+   "official": 12,
+   "matched": 0,
+   "filled": 0,
+   "added": 12,
+   "agree": 0,
+   "conflict": [],
+   "unmatched": []
+  },
+  "Q1048744#wiki_Q1048744": {
+   "office": "苏联共产党中央委员会总书记",
+   "before": {
+    "holders": 7,
+    "dated": 7
+   },
+   "after": {
+    "holders": 7,
+    "dated": 7
+   },
+   "official": 0,
+   "matched": 0,
+   "filled": 0,
+   "added": 0,
+   "agree": 0,
+   "conflict": [],
+   "unmatched": []
+  },
+  "Q56022": {
+   "office": "德国联邦总理",
+   "before": {
+    "holders": 14,
+    "dated": 14
+   },
+   "after": {
+    "holders": 14,
+    "dated": 14
+   },
+   "official": 0,
+   "matched": 0,
+   "filled": 0,
+   "added": 0,
+   "agree": 0,
+   "conflict": [],
+   "unmatched": []
+  },
+  "Q25223": {
+   "office": "德国联邦总统",
+   "before": {
+    "holders": 12,
+    "dated": 12
+   },
+   "after": {
+    "holders": 12,
+    "dated": 12
+   },
+   "official": 0,
+   "matched": 0,
+   "filled": 0,
+   "added": 0,
+   "agree": 0,
+   "conflict": [],
+   "unmatched": []
+  },
+  "Q6296418": {
+   "office": "韩国总统",
+   "before": {
+    "holders": 19,
+    "dated": 19
+   },
+   "after": {
+    "holders": 19,
+    "dated": 19
+   },
+   "official": 0,
+   "matched": 0,
+   "filled": 0,
+   "added": 0,
+   "agree": 0,
+   "conflict": [],
+   "unmatched": []
+  },
+  "Q842386": {
+   "office": "俄罗斯总理",
+   "before": {
+    "holders": 30,
+    "dated": 30
+   },
+   "after": {
+    "holders": 30,
+    "dated": 30
+   },
+   "official": 0,
+   "matched": 0,
+   "filled": 0,
+   "added": 0,
+   "agree": 0,
+   "conflict": [],
+   "unmatched": []
+  }
+ }
+}

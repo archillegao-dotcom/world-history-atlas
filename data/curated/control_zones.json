@@ -1,0 +1,763 @@
+{
+ "_doc": [
+  "次国家级「实际控制区」：带日期范围的多边形（谁在何时实际控制某地），供地图叠加层与 war_fronts 等模块复用。",
+  "字段：id；group（所属冲突/主题）；name_zh/name_en；controller {qid, zh}（实际控制方，Wikidata 条目）；kind：",
+  "  holdout（某政权在对方主体领土内仍控制的区域）、de_facto（事实独立/自治）、occupied（军事占领/接管）、armed_presence（武装存在，不是主权控制）、war_zone（交战区）；",
+  "from / until：ISO 日期，可只写到月或年；from 当日起有效，until 为控制结束（换手）的日期，当日起不再显示；只写到月/年的 until 表示「在该月/该年内结束」，显示到该月/年末。",
+  "as_polity：true 时该区域在地图上作为一个单独政权多边形参与点击/面板（解析为 controller），false 时只作为叠加层显示。",
+  "geometry：几何规格（tools/build_control_zones.py 解析）：admin1（Natural Earth 1:10m 一级行政区 ISO 3166-2 代码）、",
+  "  admin0_parts {a3, bbox, max_area}（Natural Earth 1:10m 国家多边形中落在 bbox 内的岛屿部分）、basemap {snap, name}（historical-basemaps 快照多边形）、",
+  "  polygon（手绘近似多边形 [[经度, 纬度], …]）；可加 intersect_bbox [minx, miny, maxx, maxy] 与 minus（另一个几何规格）。",
+  "approx：true 表示范围为近似（地图上标注「大致范围」）；dates_note / note：日期与范围的说明；sources：来源网址（国际学术/百科来源为主，中文资料只作辅助）。",
+  "  union [规格, …]：在以上结果上再并入其他几何规格。"
+ ],
+ "zones": [
+  {
+   "id": "ccw_roc_southwest_1949",
+   "group": "chinese_civil_war",
+   "kind": "holdout",
+   "as_polity": true,
+   "name_zh": "中华民国政府控制区（西南）",
+   "name_en": "ROC-held Southwest China (1949)",
+   "controller": {
+    "qid": "Q865",
+    "zh": "中华民国"
+   },
+   "from": "1949-10-01",
+   "until": "1949-12",
+   "geometry": {
+    "admin1": [
+     "CN-SC",
+     "CN-CQ",
+     "CN-GZ",
+     "CN-YN"
+    ]
+   },
+   "approx": true,
+   "dates_note": "中华人民共和国 1949-10-01 成立时，西南四省（四川、西康、贵州、云南）仍由中华民国政府控制，重庆 1949 年 11 月下旬前为其陪都/临时首都；共军 1949-11-01 发起西南战役，1949-12-09 云南卢汉、12-11 西康刘文辉等起义，12 月成都战役结束后西南大陆为中华人民共和国控制。各省失守日期不同，这里统一显示到 1949 年 12 月底。",
+   "note": "范围用现代四川、重庆、贵州、云南省界近似（1949 年的西康省今分属四川与西藏东部）；交战期间实际控制线不断变化。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Chongqing",
+    "https://en.wikipedia.org/wiki/Chengdu_campaign",
+    "https://zh.wikipedia.org/wiki/西南战役"
+   ]
+  },
+  {
+   "id": "ccw_roc_hainan_1950",
+   "group": "chinese_civil_war",
+   "kind": "holdout",
+   "as_polity": true,
+   "name_zh": "海南岛（中华民国控制）",
+   "name_en": "Hainan Island (ROC-held)",
+   "controller": {
+    "qid": "Q865",
+    "zh": "中华民国"
+   },
+   "from": "1949-10-01",
+   "until": "1950-05-01",
+   "geometry": {
+    "admin0_parts": {
+     "a3": [
+      "CHN"
+     ],
+     "bbox": [
+      108.4,
+      18.0,
+      111.3,
+      20.3
+     ],
+     "max_area": 4.0
+    }
+   },
+   "approx": false,
+   "dates_note": "共军 1950-04-16 登陆，5 月 1 日宣布占领全岛（英文维基「Battle of Hainan Island」）。",
+   "note": "中华民国军队控制沿海，岛内腹地有中共琼崖纵队活动；岛屿形状取自 Natural Earth。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Battle_of_Hainan_Island"
+   ]
+  },
+  {
+   "id": "ccw_roc_zhoushan_1950",
+   "group": "chinese_civil_war",
+   "kind": "holdout",
+   "as_polity": true,
+   "name_zh": "舟山群岛（中华民国控制）",
+   "name_en": "Zhoushan Islands (ROC-held)",
+   "controller": {
+    "qid": "Q865",
+    "zh": "中华民国"
+   },
+   "from": "1949-10-01",
+   "until": "1950-05-17",
+   "geometry": {
+    "admin0_parts": {
+     "a3": [
+      "CHN"
+     ],
+     "bbox": [
+      121.55,
+      29.55,
+      123.3,
+      31.0
+     ],
+     "max_area": 0.2
+    }
+   },
+   "approx": false,
+   "dates_note": "国民革命军 1950 年 5 月中旬撤出，舟山 1950-05-17 为共军占领（英文维基「Zhoushan」）。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Zhoushan"
+   ]
+  },
+  {
+   "id": "ccw_roc_wanshan_1950",
+   "group": "chinese_civil_war",
+   "kind": "holdout",
+   "as_polity": true,
+   "name_zh": "万山群岛（中华民国控制）",
+   "name_en": "Wanshan Archipelago (ROC-held)",
+   "controller": {
+    "qid": "Q865",
+    "zh": "中华民国"
+   },
+   "from": "1949-10-01",
+   "until": "1950-08-07",
+   "geometry": {
+    "admin0_parts": {
+     "a3": [
+      "CHN"
+     ],
+     "bbox": [
+      113.55,
+      21.75,
+      114.45,
+      22.2
+     ],
+     "max_area": 0.05
+    }
+   },
+   "approx": false,
+   "dates_note": "万山群岛战役 1950-05-25 开始，1950-08-07 最后一个岛（蚊尾洲）失守（英文维基「Wanshan Archipelago Campaign」）。各岛失守日期不同。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Wanshan_Archipelago_Campaign"
+   ]
+  },
+  {
+   "id": "ccw_roc_dachen_1955",
+   "group": "chinese_civil_war",
+   "kind": "holdout",
+   "as_polity": true,
+   "name_zh": "大陈岛（中华民国控制）",
+   "name_en": "Dachen Islands (ROC-held)",
+   "controller": {
+    "qid": "Q865",
+    "zh": "中华民国"
+   },
+   "from": "1949-10-01",
+   "until": "1955-02",
+   "geometry": {
+    "polygon": [
+     [
+      121.84,
+      28.43
+     ],
+     [
+      121.87,
+      28.41
+     ],
+     [
+      121.93,
+      28.43
+     ],
+     [
+      121.95,
+      28.48
+     ],
+     [
+      121.92,
+      28.52
+     ],
+     [
+      121.87,
+      28.52
+     ],
+     [
+      121.84,
+      28.48
+     ],
+     [
+      121.84,
+      28.43
+     ]
+    ]
+   },
+   "approx": true,
+   "dates_note": "1955-01-20 一江山岛失守后，美国海军于 1955 年 2 月协助撤离大陈岛军民（英文维基「Dachen Islands」「Battle of Yijiangshan Islands」）。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Dachen_Islands",
+    "https://en.wikipedia.org/wiki/Battle_of_Yijiangshan_Islands"
+   ],
+   "note": "Natural Earth 1:10m 不含大陈岛（上、下大陈岛约在东经 121.9°、北纬 28.45°–28.5°）：用手绘多边形标出大致范围。"
+  },
+  {
+   "id": "ccw_roc_kinmen",
+   "group": "chinese_civil_war",
+   "kind": "holdout",
+   "as_polity": false,
+   "name_zh": "金门（中华民国控制）",
+   "name_en": "Kinmen (ROC-held)",
+   "controller": {
+    "qid": "Q865",
+    "zh": "中华民国"
+   },
+   "from": "1949-10-01",
+   "geometry": {
+    "admin1": [
+     "TW-KIN"
+    ]
+   },
+   "approx": false,
+   "dates_note": "1949-10-25 古宁头战役后一直由中华民国控制至今（大小嶝等岛 1949 年 10 月被共军占领，不在此范围）。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Kinmen"
+   ]
+  },
+  {
+   "id": "ccw_roc_matsu",
+   "group": "chinese_civil_war",
+   "kind": "holdout",
+   "as_polity": false,
+   "name_zh": "马祖列岛（中华民国控制）",
+   "name_en": "Matsu Islands (ROC-held)",
+   "controller": {
+    "qid": "Q865",
+    "zh": "中华民国"
+   },
+   "from": "1949-10-01",
+   "geometry": {
+    "admin0_parts": {
+     "a3": [
+      "TWN",
+      "CHN"
+     ],
+     "bbox": [
+      119.85,
+      25.9,
+      120.55,
+      26.42
+     ],
+     "max_area": 0.02
+    }
+   },
+   "approx": false,
+   "dates_note": "国共内战后由中华民国控制至今（连江县）。",
+   "note": "岛屿取自 Natural Earth 国家多边形中落在马祖列岛范围内的部分。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Matsu_Islands"
+   ]
+  },
+  {
+   "id": "tibet_de_facto_1912_1951",
+   "group": "tibet",
+   "kind": "de_facto",
+   "as_polity": false,
+   "name_zh": "西藏（噶厦政府，事实独立）",
+   "name_en": "Tibet (Ganden Phodrang, de facto independent)",
+   "controller": {
+    "qid": "Q2444884",
+    "zh": "西藏（1912–1951）"
+   },
+   "from": "1912",
+   "until": "1951-05-23",
+   "geometry": {
+    "basemap": {
+     "snap": 1945,
+     "name": "Tibet"
+    }
+   },
+   "approx": true,
+   "dates_note": "清朝灭亡后西藏噶厦政府事实独立（Wikidata Q2444884 起于 1912 年）；1951-05-23 签订《十七条协议》，中华人民共和国取得主权（英文维基「Seventeen Point Agreement」）。噶厦政府在协议后继续存在至 1959 年 3 月。",
+   "note": "范围取自 historical-basemaps 1945 年快照的「Tibet」多边形（近似）。",
+   "sources": [
+    "https://www.wikidata.org/wiki/Q2444884",
+    "https://en.wikipedia.org/wiki/Seventeen_Point_Agreement"
+   ]
+  },
+  {
+   "id": "tibet_chamdo_1950",
+   "group": "tibet",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "昌都地区（共军控制）",
+   "name_en": "Chamdo (PLA-controlled)",
+   "controller": {
+    "qid": "Q148",
+    "zh": "中华人民共和国"
+   },
+   "from": "1950-10-24",
+   "until": "1959-03-10",
+   "geometry": {
+    "admin1": [
+     "CN-XZ"
+    ],
+    "intersect_bbox": [
+     93.6,
+     28.5,
+     99.2,
+     33.0
+    ]
+   },
+   "approx": true,
+   "dates_note": "昌都战役 1950-10-06 至 10-24（英文维基「Battle of Chamdo」），此后昌都地区由中华人民共和国设立的昌都解放委员会管理；1959 年 3 月噶厦政府解散后整个西藏由中华人民共和国直接管治，此区域不再单独显示。",
+   "note": "范围按现代西藏自治区东部（约东经 93.6° 以东）近似，大致对应今昌都市。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Battle_of_Chamdo"
+   ]
+  },
+  {
+   "id": "kmt_burma_1950_1961",
+   "group": "chinese_civil_war",
+   "kind": "armed_presence",
+   "as_polity": false,
+   "name_zh": "国民革命军残部（李弥部）活动区（缅甸掸邦）",
+   "name_en": "KMT remnant forces in Shan State, Burma",
+   "controller": {
+    "qid": "Q865",
+    "zh": "中华民国（国民革命军残部）"
+   },
+   "from": "1950",
+   "until": "1961-04-17",
+   "geometry": {
+    "admin1": [
+     "MM-17"
+    ],
+    "intersect_bbox": [
+     97.9,
+     19.8,
+     100.2,
+     22.4
+    ]
+   },
+   "approx": true,
+   "dates_note": "1950 年国民革命军残部（李弥指挥，「云南反共救国军」）退入缅甸掸邦，多次反攻云南失败；1960–1961 年中缅联合军事行动后，台湾于 1961-03-31 至 04-17 撤走约 4,400 人（英文维基「Kuomintang in Burma」）。",
+   "note": "这是武装存在，不是主权控制，缅甸对掸邦的主权不变；范围按掸邦东部（孟萨、景栋一带）近似。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Kuomintang_in_Burma"
+   ]
+  },
+  {
+   "id": "jin_former_liao_1125",
+   "group": "jin_song",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "金朝（辽朝故地）",
+   "name_en": "Jin dynasty (former Liao lands)",
+   "controller": {
+    "qid": "Q5066",
+    "zh": "金朝"
+   },
+   "from": "1125",
+   "until": "1127-01-01",
+   "geometry": {
+    "basemap": {
+     "snap": 1100,
+     "name": "Liao"
+    }
+   },
+   "approx": true,
+   "dates_note": "1125 年金朝俘获辽天祚帝，辽朝灭亡（具体月份未记录，按年初起算）；辽宗室耶律大石 1124 年西迁，在中亚建立西辽（喀喇契丹），不在此范围内。1127 年 1 月起并入「金朝（辽朝故地 + 淮河—秦岭以北）」。金朝 1115 年起逐步攻占辽地（1120 年上京、1122 年南京），此前的变化未反映。",
+   "note": "范围取 historical-basemaps 1100 年快照的「Liao」多边形（大致范围）。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Liao_dynasty",
+    "https://en.wikipedia.org/wiki/Emperor_Tianzuo_of_Liao",
+    "https://en.wikipedia.org/wiki/Qara_Khitai",
+    "https://www.wikidata.org/wiki/Q4958"
+   ]
+  },
+  {
+   "id": "jin_north_china_1127",
+   "group": "jin_song",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "金朝（辽朝故地 + 淮河—秦岭以北）",
+   "name_en": "Jin dynasty realm (former Liao lands and North China)",
+   "controller": {
+    "qid": "Q5066",
+    "zh": "金朝"
+   },
+   "from": "1127-01",
+   "until": "1234-02",
+   "geometry": {
+    "basemap": {
+     "snap": 1100,
+     "name": "Song Empire"
+    },
+    "minus": {
+     "polygon": [
+      [
+       95,
+       34.6
+      ],
+      [
+       104.5,
+       34.3
+      ],
+      [
+       106.2,
+       34.4
+      ],
+      [
+       107.1,
+       34.3
+      ],
+      [
+       108.5,
+       33.9
+      ],
+      [
+       109.9,
+       33.6
+      ],
+      [
+       110.9,
+       33.0
+      ],
+      [
+       111.8,
+       32.4
+      ],
+      [
+       113.0,
+       32.3
+      ],
+      [
+       113.7,
+       32.0
+      ],
+      [
+       114.5,
+       32.0
+      ],
+      [
+       115.5,
+       32.4
+      ],
+      [
+       116.5,
+       32.5
+      ],
+      [
+       117.4,
+       32.85
+      ],
+      [
+       118.3,
+       33.0
+      ],
+      [
+       119.0,
+       33.4
+      ],
+      [
+       119.6,
+       33.9
+      ],
+      [
+       120.6,
+       34.2
+      ],
+      [
+       126,
+       34.2
+      ],
+      [
+       126,
+       15
+      ],
+      [
+       95,
+       15
+      ],
+      [
+       95,
+       34.6
+      ]
+     ]
+    },
+    "union": [
+     {
+      "basemap": {
+       "snap": 1100,
+       "name": "Liao"
+      }
+     }
+    ]
+   },
+   "approx": true,
+   "dates_note": "1127 年 1 月金军攻破北宋都城汴京（靖康之变），北宋灭亡；宋金边界在 1127–1141 年间多次变动（含金扶植的伪齐 1130–1137），1141 年签订、1142-10-11 正式批准的《绍兴和议》把边界定在淮河—秦岭一线（西段至大散关）。金朝于 1234 年 2 月（蔡州陷落）灭亡。1211 年起蒙古逐步攻占金朝北部（1215 年中都陷落），此区域未反映这一变化。",
+   "note": "historical-basemaps 的 1100 与 1200 年快照都把淮河以北仍画作宋朝，这里用 1100 年快照的宋朝多边形减去淮河—秦岭线以南部分，再并上同一快照的辽朝多边形（1125 年辽亡后归金），作为金朝全境；分界线按《绍兴和议》的淮河—大散关一线手工近似（唐、邓、商州划归金）。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Treaty_of_Shaoxing",
+    "https://en.wikipedia.org/wiki/Jingkang_incident",
+    "https://en.wikipedia.org/wiki/Jin_dynasty_(1115%E2%80%931234)",
+    "https://www.wikidata.org/wiki/Q5066"
+   ]
+  },
+  {
+   "id": "mongol_north_china_1234",
+   "group": "jin_song",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "蒙古帝国控制的原金朝领土",
+   "name_en": "Former Jin lands under the Mongol Empire",
+   "controller": {
+    "qid": "Q12557",
+    "zh": "蒙古帝国"
+   },
+   "from": "1234-02",
+   "until": "1271-12-18",
+   "geometry": {
+    "basemap": {
+     "snap": 1100,
+     "name": "Song Empire"
+    },
+    "minus": {
+     "polygon": [
+      [
+       95,
+       34.6
+      ],
+      [
+       104.5,
+       34.3
+      ],
+      [
+       106.2,
+       34.4
+      ],
+      [
+       107.1,
+       34.3
+      ],
+      [
+       108.5,
+       33.9
+      ],
+      [
+       109.9,
+       33.6
+      ],
+      [
+       110.9,
+       33.0
+      ],
+      [
+       111.8,
+       32.4
+      ],
+      [
+       113.0,
+       32.3
+      ],
+      [
+       113.7,
+       32.0
+      ],
+      [
+       114.5,
+       32.0
+      ],
+      [
+       115.5,
+       32.4
+      ],
+      [
+       116.5,
+       32.5
+      ],
+      [
+       117.4,
+       32.85
+      ],
+      [
+       118.3,
+       33.0
+      ],
+      [
+       119.0,
+       33.4
+      ],
+      [
+       119.6,
+       33.9
+      ],
+      [
+       120.6,
+       34.2
+      ],
+      [
+       126,
+       34.2
+      ],
+      [
+       126,
+       15
+      ],
+      [
+       95,
+       15
+      ],
+      [
+       95,
+       34.6
+      ]
+     ]
+    },
+    "union": [
+     {
+      "basemap": {
+       "snap": 1100,
+       "name": "Liao"
+      }
+     }
+    ]
+   },
+   "approx": true,
+   "dates_note": "1234 年 2 月蔡州陷落、金朝灭亡后，原金朝在淮河—秦岭以北的领土归蒙古帝国；1271-12-18 忽必烈建国号「大元」，此后见元朝控制区。1235 年起蒙古对南宋的进攻（含 1236 年后的四川战事）未反映在范围中。",
+   "note": "范围沿用金朝控制区（1100 年快照宋朝多边形中淮河—秦岭线以北部分）。 并含原辽朝故地（满洲、内蒙古东部、燕云）。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mongol%E2%80%93Jin_War",
+    "https://en.wikipedia.org/wiki/Mongol_conquest_of_the_Song_dynasty",
+    "https://en.wikipedia.org/wiki/Yuan_dynasty"
+   ]
+  },
+  {
+   "id": "yuan_north_china_1271",
+   "group": "jin_song",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "元朝（灭宋前，原金朝领土）",
+   "name_en": "Former Jin lands under the Yuan dynasty",
+   "controller": {
+    "qid": "Q7313",
+    "zh": "元朝"
+   },
+   "from": "1271-12-18",
+   "until": "1279-03-19",
+   "geometry": {
+    "basemap": {
+     "snap": 1100,
+     "name": "Song Empire"
+    },
+    "minus": {
+     "polygon": [
+      [
+       95,
+       34.6
+      ],
+      [
+       104.5,
+       34.3
+      ],
+      [
+       106.2,
+       34.4
+      ],
+      [
+       107.1,
+       34.3
+      ],
+      [
+       108.5,
+       33.9
+      ],
+      [
+       109.9,
+       33.6
+      ],
+      [
+       110.9,
+       33.0
+      ],
+      [
+       111.8,
+       32.4
+      ],
+      [
+       113.0,
+       32.3
+      ],
+      [
+       113.7,
+       32.0
+      ],
+      [
+       114.5,
+       32.0
+      ],
+      [
+       115.5,
+       32.4
+      ],
+      [
+       116.5,
+       32.5
+      ],
+      [
+       117.4,
+       32.85
+      ],
+      [
+       118.3,
+       33.0
+      ],
+      [
+       119.0,
+       33.4
+      ],
+      [
+       119.6,
+       33.9
+      ],
+      [
+       120.6,
+       34.2
+      ],
+      [
+       126,
+       34.2
+      ],
+      [
+       126,
+       15
+      ],
+      [
+       95,
+       15
+      ],
+      [
+       95,
+       34.6
+      ]
+     ]
+    },
+    "union": [
+     {
+      "basemap": {
+       "snap": 1100,
+       "name": "Liao"
+      }
+     }
+    ]
+   },
+   "approx": true,
+   "dates_note": "1271-12-18 忽必烈定国号「大元」；1273 年襄阳陷落、1276 年临安投降、1279-03-19 崖山海战后南宋灭亡（historical-basemaps 1279 年快照起由快照本身显示元朝）。南宋 1273–1279 年间失去的长江流域未反映在范围中。",
+   "note": "范围沿用金朝控制区（1100 年快照宋朝多边形中淮河—秦岭线以北部分）。 并含原辽朝故地（满洲、内蒙古东部、燕云）。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mongol%E2%80%93Jin_War",
+    "https://en.wikipedia.org/wiki/Mongol_conquest_of_the_Song_dynasty",
+    "https://en.wikipedia.org/wiki/Yuan_dynasty"
+   ]
+  }
+ ]
+}

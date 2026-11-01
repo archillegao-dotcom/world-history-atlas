@@ -1,0 +1,1903 @@
+[
+ {
+  "date": "2000-10-18",
+  "snap": "2000@19860101",
+  "polygon": "Senegal",
+  "state": "Q1041",
+  "state_zh": "塞内加尔",
+  "state_en": "Senegal",
+  "enwiki": "Senegal",
+  "life": [
+   {
+    "y": 1960,
+    "m": 0,
+    "d": 0,
+    "p": 9
+   },
+   null
+  ],
+  "heads": [],
+  "offices": [
+   [
+    "塞内加尔总统",
+    [
+     "阿卜杜拉耶·瓦德"
+    ]
+   ],
+   [
+    "塞内加尔总理",
+    [
+     "穆斯塔法·尼亚斯"
+    ]
+   ]
+  ],
+  "alts": [
+   [
+    "塞内加尔",
+    "wiki-title"
+   ]
+  ],
+  "wiki": {
+   "title": "Senegal",
+   "extract": "Senegal, officially the Republic of Senegal, is the westernmost country of mainland West Africa, situated along the Atlantic Ocean coast. It borders Mauritania to the north, Mali to the east, Guinea to the southeast and Guinea-Bissau to the southwest. Senegal nearly surrounds the Gambia, a country occupying a narrow strip of land along the banks of the Gambia River, which separates Senegal's southern region of Casamance from the rest of the country. It also shares a maritime border with Cape Verde. The capital and largest city of Senegal is Dakar.",
+   "url": "https://en.wikipedia.org/wiki/Senegal"
+  }
+ },
+ {
+  "date": "1930-01-20",
+  "snap": "1930@18990101",
+  "polygon": "Iran",
+  "state": "Q107258515",
+  "state_zh": "伊朗王国",
+  "state_en": "Pahlavi Iran",
+  "enwiki": "Pahlavi Iran",
+  "life": [
+   {
+    "y": 1925,
+    "m": 12,
+    "d": 15,
+    "p": 11
+   },
+   {
+    "y": 1979,
+    "m": 3,
+    "d": 31,
+    "p": 11
+   }
+  ],
+  "heads": [],
+  "offices": [],
+  "alts": [
+   [
+    "伊朗王国",
+    "capital+name"
+   ],
+   [
+    "波斯",
+    "capital"
+   ],
+   [
+    "巴列维王朝",
+    "capital"
+   ]
+  ],
+  "wiki": {
+   "title": "Pahlavi Iran",
+   "extract": "The Imperial State of Iran, known in the Western world as the Imperial State of Persia until 1935 and commonly referred to as Pahlavi Iran, was the Iranian state under the rule of the Pahlavi dynasty. It existed from the establishment of the dynasty in 1925 until its overthrow during the Iranian Revolution in 1979.",
+   "url": "https://en.wikipedia.org/wiki/Pahlavi_Iran"
+  }
+ },
+ {
+  "date": "1986-06-07",
+  "snap": "1960@19811101",
+  "polygon": "Sweden",
+  "state": "Q34",
+  "state_zh": "瑞典",
+  "state_en": "Sweden",
+  "enwiki": "Sweden",
+  "life": [
+   {
+    "y": 900,
+    "m": 0,
+    "d": 0,
+    "p": 8
+   },
+   null
+  ],
+  "heads": [
+   [
+    "国家元首",
+    "卡尔十六世·古斯塔夫",
+    "Carl XVI Gustaf of Sweden"
+   ]
+  ],
+  "offices": [
+   [
+    "瑞典首相",
+    [
+     "英瓦尔·卡尔松"
+    ]
+   ],
+   [
+    "瑞典外交大臣",
+    [
+     "Sten Andersson"
+    ]
+   ],
+   [
+    "王宫大总管",
+    [
+     "Sten Rudholm",
+     "Per Sköld"
+    ]
+   ]
+  ],
+  "alts": [
+   [
+    "瑞典",
+    "wiki-title"
+   ],
+   [
+    "耶姆特兰共和国",
+    "coord"
+   ]
+  ],
+  "wiki": {
+   "title": "Sweden",
+   "extract": "Sweden, formally the Kingdom of Sweden, is a Nordic country located on the Scandinavian Peninsula in Northern Europe. It borders Norway to the west and north, Finland to the east, and shares a maritime border with Denmark to the south. At 450,295 square kilometres (173,860 sq mi) and with a population of 10.6 million, Sweden is the largest and most populous Nordic country, and is the fifth-largest country in Europe. Its capital and largest city is Stockholm. The population density is 25.5 inhabitants per square kilometre (66/sq mi), and 88% of Swedes reside in urban areas, mostly in the southern and central portions of the country. Sweden's urban areas together cover 1.5% of its land area. Sweden has a diverse climate owing to the length of the country, which ranges from 55°N to 69°N.",
+   "url": "https://en.wikipedia.org/wiki/Sweden"
+  }
+ },
+ {
+  "date": "1954-02-13",
+  "snap": "1945@19511224",
+  "polygon": "Bulgaria",
+  "state": "Q121932",
+  "state_zh": "保加利亚人民共和国",
+  "state_en": "People's Republic of Bulgaria",
+  "enwiki": "People's Republic of Bulgaria",
+  "life": [
+   {
+    "y": 1946,
+    "m": 9,
+    "d": 15,
+    "p": 11
+   },
+   {
+    "y": 1990,
+    "m": 11,
+    "d": 15,
+    "p": 11
+   }
+  ],
+  "heads": [],
+  "offices": [],
+  "alts": [
+   [
+    "保加利亚人民共和国",
+    "capital+name"
+   ]
+  ],
+  "wiki": {
+   "title": "People's Republic of Bulgaria",
+   "extract": "The People's Republic of Bulgaria was the Bulgarian state that existed from 1946 to 1990, ruled by the Bulgarian Communist Party together with its coalition partner, the Bulgarian Agrarian People's Union. Bulgaria was a close ally and one of the most loyal satellite states of the Soviet Union during the Cold War, sometimes being called the 16th Soviet Republic rather than an independent country. Bulgaria was also part of Comecon as well as a member of the Warsaw Pact. The Bulgarian resistance movement during World War II deposed the Tsardom of Bulgaria administration in the Bulgarian coup d'état of 1944 which ended the country's alliance with the Axis powers and led to the People's Republic in 1946.",
+   "url": "https://en.wikipedia.org/wiki/People's_Republic_of_Bulgaria"
+  }
+ },
+ {
+  "date": "1950-09-09",
+  "snap": "1945@19500101",
+  "polygon": "Canada",
+  "state": "Q16",
+  "state_zh": "加拿大",
+  "state_en": "Canada",
+  "enwiki": "Canada",
+  "life": [
+   {
+    "y": 1867,
+    "m": 7,
+    "d": 1,
+    "p": 11
+   },
+   null
+  ],
+  "heads": [
+   [
+    "国家元首",
+    "乔治六世",
+    "George VI"
+   ],
+   [
+    "政府首脑",
+    "路易斯·圣劳伦特",
+    "Louis St. Laurent"
+   ]
+  ],
+  "offices": [
+   [
+    "加拿大总理",
+    [
+     "路易斯·圣劳伦特"
+    ]
+   ],
+   [
+    "加拿大总督",
+    [
+     "哈罗德·亚历山大，第一代突尼斯的亚历山大伯爵"
+    ]
+   ],
+   [
+    "王室法律顾问",
+    [
+     "Kenneth Palmer"
+    ]
+   ]
+  ],
+  "alts": [
+   [
+    "加拿大",
+    "wiki-title"
+   ]
+  ],
+  "wiki": {
+   "title": "Canada",
+   "extract": "Canada is a country in North America. Its ten provinces and three territories extend from the Atlantic Ocean to the Pacific Ocean and northward into the Arctic Ocean, making it the second-largest country by total area, with the longest coastline of any country. Its border with the United States is the longest international land border. The country is characterized by a wide range of both meteorologic and geological regions. With a population of over 41 million, it has widely varying population densities, with the majority residing in its urban areas and large areas being sparsely populated. Its capital is Ottawa and its three largest metropolitan areas are Toronto, Montreal, and Vancouver.",
+   "url": "https://en.wikipedia.org/wiki/Canada"
+  }
+ },
+ {
+  "date": "1965-09-26",
+  "snap": "1960@19650804",
+  "polygon": "Mali",
+  "state": "Q912",
+  "state_zh": "马里共和国",
+  "state_en": "Mali",
+  "enwiki": "Mali",
+  "life": [
+   {
+    "y": 1960,
+    "m": 9,
+    "d": 22,
+    "p": 11
+   },
+   null
+  ],
+  "heads": [],
+  "offices": [
+   [
+    "马里总统",
+    [
+     "莫迪博·凯塔"
+    ]
+   ]
+  ],
+  "alts": [
+   [
+    "马里共和国",
+    "wiki-title"
+   ]
+  ],
+  "wiki": {
+   "title": "Mali",
+   "extract": "Mali, officially the Republic of Mali, is a landlocked country in West Africa. It is the eighth-largest country in Africa and the 23rd largest country in the world, with an area of 1,240,192 square kilometres (478,841 sq mi). It is bordered to the north by Algeria, to the east by Niger, to the northwest by Mauritania, to the south by Burkina Faso and Ivory Coast, and to the west by Guinea and Senegal. The population is about 25.20 million, 47.19% of which are estimated to be under age 15 in 2024. Its capital and largest city is Bamako. French was the official language until 2022, when its official status was revoked to working language.",
+   "url": "https://en.wikipedia.org/wiki/Mali"
+  }
+ },
+ {
+  "date": "1986-08-23",
+  "snap": "1960@19860101",
+  "polygon": "Benin",
+  "state": "Q862701",
+  "state_zh": "贝宁人民共和国",
+  "state_en": "People's Republic of Benin",
+  "enwiki": "People's Republic of Benin",
+  "life": [
+   {
+    "y": 1975,
+    "m": 11,
+    "d": 30,
+    "p": 11
+   },
+   {
+    "y": 1990,
+    "m": 12,
+    "d": 2,
+    "p": 11
+   }
+  ],
+  "heads": [],
+  "offices": [
+   [
+    "贝宁总统",
+    [
+     "马蒂厄·克雷库"
+    ]
+   ]
+  ],
+  "alts": [
+   [
+    "贝宁人民共和国",
+    "capital+name"
+   ],
+   [
+    "贝宁",
+    "wiki-title"
+   ]
+  ],
+  "wiki": {
+   "title": "People's Republic of Benin",
+   "extract": "The People's Republic of Benin was a Marxist-Leninist state located in the Gulf of Guinea on the African continent, which became present-day Benin in 1990. The People's Republic was established on 30 November 1975, after the 1972 coup d'état led by Marxist and nationalist general Mathieu Kérékou in the Republic of Dahomey. It was governed under a one-party state led by the People’s Revolutionary Party of Benin, which effectively lasted until 1 March 1990, with the adoption of a new constitution, and the abolition of Marxism–Leninism in the nation in 1989.",
+   "url": "https://en.wikipedia.org/wiki/People's_Republic_of_Benin"
+  }
+ },
+ {
+  "date": "1985-05-18",
+  "snap": "1960@19811101",
+  "polygon": "Mozambique",
+  "state": "Q1029",
+  "state_zh": "莫桑比克",
+  "state_en": "Mozambique",
+  "enwiki": "Mozambique",
+  "life": [
+   {
+    "y": 1975,
+    "m": 6,
+    "d": 25,
+    "p": 11
+   },
+   null
+  ],
+  "heads": [],
+  "offices": [
+   [
+    "莫桑比克总统",
+    [
+     "萨莫拉·马谢尔"
+    ]
+   ],
+   [
+    "First Lady of Mozambique",
+    [
+     "格拉萨·马谢尔"
+    ]
+   ]
+  ],
+  "alts": [
+   [
+    "莫桑比克",
+    "wiki-title"
+   ]
+  ],
+  "wiki": {
+   "title": "Mozambique",
+   "extract": "Mozambique, officially the Republic of Mozambique, is a country in Southeast Africa bordered by the Indian Ocean to the east, Tanzania to the north, Malawi and Zambia to the northwest, Zimbabwe to the west, and Eswatini and South Africa to the south and southwest. The sovereign state is separated from the Comoros, Mayotte, and Madagascar through the Mozambique Channel to the east. The capital and largest city is Maputo.",
+   "url": "https://en.wikipedia.org/wiki/Mozambique"
+  }
+ },
+ {
+  "date": "2003-07-14",
+  "snap": "2000@19860101",
+  "polygon": "Kazakhstan",
+  "state": "Q232",
+  "state_zh": "哈萨克斯坦",
+  "state_en": "Kazakhstan",
+  "enwiki": "Kazakhstan",
+  "life": [
+   {
+    "y": 1991,
+    "m": 0,
+    "d": 0,
+    "p": 9
+   },
+   null
+  ],
+  "heads": [
+   [
+    "国家元首",
+    "努尔苏丹·纳扎尔巴耶夫",
+    "Nursultan Nazarbayev"
+   ]
+  ],
+  "offices": [
+   [
+    "哈萨克斯坦总统",
+    [
+     "努尔苏丹·纳扎尔巴耶夫"
+    ]
+   ],
+   [
+    "哈萨克斯坦总理",
+    [
+     "达尼亚尔·肯热塔耶维奇·艾哈迈托夫"
+    ]
+   ],
+   [
+    "哈萨克斯坦国务部长",
+    [
+     "伊曼加利·塔斯马加姆别托夫"
+    ]
+   ]
+  ],
+  "alts": [
+   [
+    "哈萨克斯坦",
+    "wiki-title"
+   ]
+  ],
+  "wiki": {
+   "title": "Kazakhstan",
+   "extract": "Kazakhstan, officially the Republic of Kazakhstan, is a landlocked country situated primarily in Central Asia, with a portion of its territory extending into Eastern Europe. It borders Russia to the north and west, China to the east, Kyrgyzstan to the southeast, Uzbekistan to the south, and Turkmenistan to the southwest, and it has a coastline along the Caspian Sea. The capital is Astana, and the country's largest city and principal cultural and economic center is Almaty, which served as the capital until 1997.",
+   "url": "https://en.wikipedia.org/wiki/Kazakhstan"
+  }
+ },
+ {
+  "date": "2002-09-16",
+  "snap": "2000@19860101",
+  "polygon": "Benin",
+  "state": "Q962",
+  "state_zh": "贝宁",
+  "state_en": "Benin",
+  "enwiki": "Benin",
+  "life": [
+   {
+    "y": 1960,
+    "m": 8,
+    "d": 1,
+    "p": 11
+   },
+   null
+  ],
+  "heads": [
+   [
+    "国家元首",
+    "马蒂厄·克雷库",
+    "Mathieu Kérékou"
+   ]
+  ],
+  "offices": [
+   [
+    "贝宁总统",
+    [
+     "马蒂厄·克雷库"
+    ]
+   ]
+  ],
+  "alts": [
+   [
+    "贝宁",
+    "wiki-title"
+   ]
+  ],
+  "wiki": {
+   "title": "Benin",
+   "extract": "Benin, officially the Republic of Benin, formerly known as Dahomey, is a country in West Africa. It is bordered by Togo to the west, Nigeria to the east, Burkina Faso to the northwest, and Niger to the northeast. The majority of its population lives on the southern coastline of the Bight of Benin, part of the Gulf of Guinea in the northernmost tropical portion of the Atlantic Ocean. The capital is Porto-Novo, and the seat of government is in Cotonou, the most populous city and economic capital. Benin covers an area of 112,622 km2 (43,484 sq mi), and its population in 2026 was estimated to be approximately 15 million. It is a tropical country with an economy heavily dependent on agriculture and the exports of palm oil and cotton.",
+   "url": "https://en.wikipedia.org/wiki/Benin"
+  }
+ },
+ {
+  "date": "2003-07-18",
+  "snap": "2000@19860101",
+  "polygon": "Vietnam",
+  "state": "Q881",
+  "state_zh": "越南",
+  "state_en": "Vietnam",
+  "enwiki": "Vietnam",
+  "life": [
+   {
+    "y": 1804,
+    "m": 0,
+    "d": 0,
+    "p": 9
+   },
+   null
+  ],
+  "heads": [],
+  "offices": [
+   [
+    "越南社会主义共和国主席",
+    [
+     "陈德良"
+    ]
+   ],
+   [
+    "越南总理",
+    [
+     "潘文凯"
+    ]
+   ],
+   [
+    "越南共产党中央委员会总书记",
+    [
+     "农德孟"
+    ]
+   ]
+  ],
+  "alts": [
+   [
+    "越南",
+    "wiki-title"
+   ]
+  ],
+  "wiki": {
+   "title": "Vietnam",
+   "extract": "Vietnam, officially the Socialist Republic of Viet Nam (SRV), is a country at the eastern edge of Mainland Southeast Asia. With an area of about 331,000 square kilometres and a population of over 102 million, it is the world's 16th-most populous country. One of two communist states in Southeast Asia, Vietnam is bordered by China to the north, and Laos and Cambodia to the west; it lies along the Gulf of Thailand to the southwest and the South China Sea to the east, where it has shared and disputed maritime borders with other countries. Its capital is Hanoi, while its largest city is Ho Chi Minh City.",
+   "url": "https://en.wikipedia.org/wiki/Vietnam"
+  }
+ },
+ {
+  "date": "1662-08-26",
+  "snap": "1650@16511212",
+  "polygon": "Sardinia-Piedmont",
+  "state": "Q55599391",
+  "state_zh": null,
+  "state_en": "Kingdom of Sardinia",
+  "enwiki": "Kingdom of Sardinia (1324–1720)",
+  "life": [
+   {
+    "y": 1324,
+    "m": 0,
+    "d": 0,
+    "p": 9
+   },
+   {
+    "y": 1848,
+    "m": 0,
+    "d": 0,
+    "p": 9
+   }
+  ],
+  "heads": [],
+  "offices": [
+   [
+    "King of Sardinia",
+    [
+     "腓力四世"
+    ]
+   ]
+  ],
+  "alts": [
+   [
+    "Kingdom of Sardinia",
+    "name"
+   ],
+   [
+    "萨丁尼亚王国",
+    "name"
+   ],
+   [
+    "萨伏依公国",
+    "capital"
+   ]
+  ],
+  "wiki": {
+   "title": "Kingdom of Sardinia (1324–1720)",
+   "extract": "The Kingdom of Sardinia was a feudal state in Southern Europe created in the early 14th century and a possession of the Crown of Aragon first and then of the Spanish Empire until 1708, then of the Habsburgs until 1717, and then of the Spanish Empire again until 1720.",
+   "url": "https://en.wikipedia.org/wiki/Kingdom_of_Sardinia_(1324%E2%80%931720)"
+  }
+ },
+ {
+  "date": "1988-12-26",
+  "snap": "1960@19860101",
+  "polygon": "Greenland",
+  "state": "Q223",
+  "state_zh": "格陵兰",
+  "state_en": "Greenland",
+  "enwiki": "Greenland",
+  "life": [
+   null,
+   null
+  ],
+  "heads": [
+   [
+    "国家元首",
+    "玛格丽特二世",
+    "Margrethe II of Denmark"
+   ],
+   [
+    "政府首脑",
+    "约纳坦·莫茨费尔特",
+    "Jonathan Motzfeldt"
+   ]
+  ],
+  "offices": [
+   [
+    "格陵兰总理",
+    [
+     "约纳坦·莫茨费尔特"
+    ]
+   ],
+   [
+    "丹麦格陵兰高级专员",
+    [
+     "Torben Hede Pedersen"
+    ]
+   ]
+  ],
+  "alts": [
+   [
+    "格陵兰",
+    "wiki-title"
+   ]
+  ],
+  "wiki": {
+   "title": "Greenland",
+   "extract": "Greenland is an autonomous territory of the Kingdom of Denmark and is the largest of the kingdom's three constituent parts by land area, the others being Denmark proper and the Faroe Islands. Citizens of Greenland are citizens of Denmark. They are thus citizens of the European Union (EU), although Greenland is not part of the EU. It is the world's largest island and lies between the Arctic and Atlantic oceans, east of the Canadian Arctic Archipelago. It shares a small 1.2-kilometre (0.75 mi) border with Canada on Hans Island. The capital and largest city is Nuuk. Kaffeklubben Island off the northern coast is the world's northernmost undisputed point of land – Cape Morris Jesup on the main island was thought to be so until the 1960s. Economically, Greenland is heavily reliant on aid from Denmark, which has averaged 5.4 billion kr. annually in the period 2019–2023, amounting to more than 20% of the territory's gross domestic product.",
+   "url": "https://en.wikipedia.org/wiki/Greenland"
+  }
+ },
+ {
+  "date": "1974-09-27",
+  "snap": "1960@19740101",
+  "polygon": "Panama",
+  "state": "Q804",
+  "state_zh": "巴拿马",
+  "state_en": "Panama",
+  "enwiki": "Panama",
+  "life": [
+   {
+    "y": 1903,
+    "m": 0,
+    "d": 0,
+    "p": 9
+   },
+   null
+  ],
+  "heads": [],
+  "offices": [],
+  "alts": [
+   [
+    "巴拿马",
+    "wiki-title"
+   ]
+  ],
+  "wiki": {
+   "title": "Panama",
+   "extract": "Panama, officially the Republic of Panama, is a country located at the southern end of Central America in North America, bordering South America. It is bordered by Costa Rica to the west, Colombia to the southeast, the Caribbean Sea to the north, and the Pacific Ocean to the south. Its capital and largest city is Panama City, whose metropolitan area is home to nearly half of the country's over 4 million inhabitants.",
+   "url": "https://en.wikipedia.org/wiki/Panama"
+  }
+ },
+ {
+  "date": "1842-11-12",
+  "snap": "1815@18420101",
+  "polygon": "Annam",
+  "state": "Q6500483",
+  "state_zh": "阮朝",
+  "state_en": "Nguyen dynasty",
+  "enwiki": "Nguyễn dynasty",
+  "life": [
+   {
+    "y": 1802,
+    "m": 6,
+    "d": 1,
+    "p": 11
+   },
+   {
+    "y": 1945,
+    "m": 8,
+    "d": 30,
+    "p": 11
+   }
+  ],
+  "heads": [],
+  "offices": [
+   [
+    "钦差大臣",
+    [
+     "伊里布"
+    ]
+   ]
+  ],
+  "alts": [
+   [
+    "阮朝",
+    "name"
+   ],
+   [
+    "越南",
+    "capital"
+   ]
+  ],
+  "wiki": {
+   "title": "Nguyễn dynasty",
+   "extract": "The Nguyễn dynasty was the last Vietnamese dynasty, preceded by the Nguyễn lords and ruling unified Vietnam independently from 1802 until the start of the French protectorate in 1883. Its emperors were members of the House of Nguyễn Phúc. During its existence, the Nguyễn empire expanded into modern-day Southern Vietnam, Cambodia, and Laos through a continuation of the centuries-long Nam tiến and Siamese–Vietnamese wars. With the French conquest of Vietnam, the Nguyễn dynasty was forced to give up sovereignty over parts of Southern Vietnam (Cochinchina) to France in 1862 and 1874, and after 1883 the Nguyễn dynasty only nominally ruled the French protectorates of Annam as well as Tonkin. Backed by Imperial Japan, in 1945 the last Nguyễn emperor Bảo Đại abolished the protectorate treaty with France and proclaimed the Empire of Vietnam for a short time until 25 August 1945.",
+   "url": "https://en.wikipedia.org/wiki/Nguy%E1%BB%85n_dynasty"
+  }
+ },
+ {
+  "date": "-859-11-19",
+  "snap": "-1000",
+  "polygon": "Hittites",
+  "state": "Q770281",
+  "state_zh": "新赫梯人",
+  "state_en": "Neo-Hittite states",
+  "enwiki": "Neo-Hittite states",
+  "life": [
+   {
+    "y": -1201,
+    "m": 0,
+    "d": 0,
+    "p": 7
+   },
+   {
+    "y": -701,
+    "m": 0,
+    "d": 0,
+    "p": 7
+   }
+  ],
+  "heads": [],
+  "offices": [],
+  "alts": [
+   [
+    "新赫梯人",
+    "coord+name"
+   ],
+   [
+    "亚述",
+    "capital"
+   ],
+   [
+    "Quwê",
+    "capital"
+   ],
+   [
+    "比特阿古西",
+    "capital"
+   ]
+  ],
+  "wiki": {
+   "title": "Neo-Hittite states",
+   "extract": "The states called Neo-Hittite, Syro-Hittite, or Luwian-Aramean were Luwian and Aramean regional polities of the Iron Age, situated in southeastern parts of modern Turkey and northwestern parts of modern Syria, known in ancient times as lands of Hatti and Aram. They arose following the collapse of the Hittite New Kingdom in the 12th century BCE, and lasted until they were subdued by the Assyrian Empire in the 8th century BCE. They are grouped together by scholars on the basis of several cultural criteria that are recognized as similar and shared between both societies: northern (Luwian) and southern (Aramean). Cultural exchange between those societies is seen as a specific regional phenomenon, particularly in light of significant linguistic distinctions between the two main regional languages, with Luwian belonging to the Anatolian group of Indo-European languages and Aramaic belonging to the Northwest Semitic group of Semitic languages. Several questions related to the regional grouping of Luwian and Aramaean states are viewed differently among scholars, including some views that are critical towards such grouping in general.",
+   "url": "https://en.wikipedia.org/wiki/Neo-Hittite_states"
+  }
+ },
+ {
+  "date": "1988-12-05",
+  "snap": "1960@19860101",
+  "polygon": "Morocco",
+  "state": "Q1028",
+  "state_zh": "摩洛哥",
+  "state_en": "Morocco",
+  "enwiki": "Morocco",
+  "life": [
+   {
+    "y": 789,
+    "m": 0,
+    "d": 0,
+    "p": 9
+   },
+   null
+  ],
+  "heads": [],
+  "offices": [
+   [
+    "摩洛哥首相",
+    [
+     "阿泽丁·拉腊基"
+    ]
+   ],
+   [
+    "King of Morocco",
+    [
+     "哈桑二世"
+    ]
+   ]
+  ],
+  "alts": [
+   [
+    "摩洛哥",
+    "wiki-title"
+   ]
+  ],
+  "wiki": {
+   "title": "Morocco",
+   "extract": "Morocco, officially the Kingdom of Morocco, is a country in North Africa. It has coastlines on the Mediterranean Sea to the north and the Atlantic Ocean to the west, and has land borders with Algeria to the east; the Spanish exclaves of Ceuta, Melilla and Peñón de Vélez de la Gomera along the north, which it claims together with several small Spanish-controlled islands; and the disputed territory of Western Sahara to the south, partly occupied by Morocco since 1975. Morocco also claims to share a border with Mauritania through the disputed territory of Western Sahara. It has a population of approximately 37 million. Its capital is Rabat, while its largest city is Casablanca.",
+   "url": "https://en.wikipedia.org/wiki/Morocco"
+  }
+ },
+ {
+  "date": "1975-03-20",
+  "snap": "1960@19750312",
+  "polygon": "Yemen",
+  "state": "Q199841",
+  "state_zh": "也门民主人民共和国",
+  "state_en": "South Yemen",
+  "enwiki": "South Yemen",
+  "life": [
+   {
+    "y": 1967,
+    "m": 11,
+    "d": 30,
+    "p": 11
+   },
+   {
+    "y": 1990,
+    "m": 5,
+    "d": 22,
+    "p": 11
+   }
+  ],
+  "heads": [
+   [
+    "国家元首",
+    "萨勒姆·鲁巴伊·阿里",
+    "Salim Rubaya Ali"
+   ]
+  ],
+  "offices": [
+   [
+    "南也门总统",
+    [
+     "萨勒姆·鲁巴伊·阿里"
+    ]
+   ],
+   [
+    null,
+    [
+     "阿卜杜勒·法塔赫·伊斯梅尔"
+    ]
+   ]
+  ],
+  "alts": [
+   [
+    "也门民主人民共和国",
+    "name"
+   ],
+   [
+    "阿拉伯也门共和国",
+    "capital+name"
+   ]
+  ],
+  "wiki": {
+   "title": "South Yemen",
+   "extract": "South Yemen, officially the People's Democratic Republic of Yemen (PDRY), abbreviated to Democratic Yemen, was a country in South Arabia that existed in what is now southeast Yemen from 1967 until its unification with the Yemen Arab Republic in 1990. The sole communist state in the Middle East and the Arab world, it comprised the southern and eastern governorates of the present-day Republic of Yemen, including the islands of Perim, Kamaran, and the Socotra Archipelago. It shared ill-defined and often disputed borders with the Yemen Arab Republic to the northwest, Saudi Arabia to the north, Oman to the east. Its capital and largest city was Aden.",
+   "url": "https://en.wikipedia.org/wiki/South_Yemen"
+  }
+ },
+ {
+  "date": "1543-07-22",
+  "snap": "1530@12040101",
+  "polygon": "Oyo",
+  "state": "Q849623",
+  "state_zh": "奥约帝国",
+  "state_en": "Oyo Empire",
+  "enwiki": "Oyo Empire",
+  "life": [
+   {
+    "y": 1400,
+    "m": 0,
+    "d": 0,
+    "p": 9
+   },
+   {
+    "y": 1905,
+    "m": 0,
+    "d": 0,
+    "p": 9
+   }
+  ],
+  "heads": [],
+  "offices": [],
+  "alts": [
+   [
+    "奥约帝国",
+    "name"
+   ]
+  ],
+  "wiki": {
+   "title": "Oyo Empire",
+   "extract": "The Oyo Empire was a Yoruba empire in West Africa. It was located in present-day western Nigeria and Benin. It grew to become the largest Yoruba-speaking state through the organizational and administrative efforts of the Yoruba people, trade, as well as the military use of cavalry. The Oyo Empire was one of the most politically important states in Western Africa from the late-16th to the early 18th century and held sway not only over most of the other kingdoms in Yorubaland, but also over nearby African states, notably the Fon Kingdom of Dahomey in modern Benin to its west.",
+   "url": "https://en.wikipedia.org/wiki/Oyo_Empire"
+  }
+ },
+ {
+  "date": "1302-10-10",
+  "snap": "1300@12040101",
+  "polygon": "Hungary",
+  "state": "Q16056854",
+  "state_zh": "匈牙利王国",
+  "state_en": "Kingdom of Hungary",
+  "enwiki": "Kingdom of Hungary (1301–1526)",
+  "life": [
+   {
+    "y": 1301,
+    "m": 1,
+    "d": 22,
+    "p": 11
+   },
+   {
+    "y": 1526,
+    "m": 11,
+    "d": 21,
+    "p": 11
+   }
+  ],
+  "heads": [],
+  "offices": [
+   [
+    "现有王位觊觎者列表",
+    [
+     "安茹的查理·马特尔"
+    ]
+   ],
+   [
+    "匈牙利国王",
+    [
+     "瓦茨拉夫三世"
+    ]
+   ],
+   [
+    "master of the treasury",
+    [
+     "Henrik Kőszegi"
+    ]
+   ]
+  ],
+  "alts": [
+   [
+    "匈牙利王国",
+    "name"
+   ],
+   [
+    "匈牙利治下的克罗地亚",
+    "capital+name"
+   ],
+   [
+    "匈牙利王国",
+    "name"
+   ],
+   [
+    "匈牙利",
+    "wiki-title"
+   ]
+  ],
+  "wiki": {
+   "title": "Kingdom of Hungary (1301–1526)",
+   "extract": "In the Late Middle Ages, the Kingdom of Hungary, a country in Central Europe, experienced a period of interregnum in the early 14th century. Royal power was restored under Charles I (1308–1342), a scion of the Capetian House of Anjou. Gold and silver mines opened in his reign produced about one third of the world's total production up until the 1490s. The kingdom reached the peak of its power under Louis the Great (1342–1382) who led military campaigns against Lithuania, southern Italy and other faraway territories.",
+   "url": "https://en.wikipedia.org/wiki/Kingdom_of_Hungary_(1301%E2%80%931526)"
+  }
+ },
+ {
+  "date": "1949-03-17",
+  "snap": "1945@19480509",
+  "polygon": "Hungary",
+  "state": "Q28",
+  "state_zh": "匈牙利",
+  "state_en": "Hungary",
+  "enwiki": "Hungary",
+  "life": [
+   {
+    "y": 1000,
+    "m": 0,
+    "d": 0,
+    "p": 9
+   },
+   null
+  ],
+  "heads": [],
+  "offices": [
+   [
+    "匈牙利总理",
+    [
+     "道比·伊什特万"
+    ]
+   ],
+   [
+    "匈牙利外交部长",
+    [
+     "拉伊克·拉斯洛"
+    ]
+   ],
+   [
+    "匈牙利国防部长",
+    [
+     "法尔卡什·米哈伊"
+    ]
+   ]
+  ],
+  "alts": [
+   [
+    "匈牙利",
+    "wiki-title"
+   ]
+  ],
+  "wiki": {
+   "title": "Hungary",
+   "extract": "Hungary is a landlocked country in Central Europe. Spanning much of the Carpathian Basin, it is bordered by Slovakia to the north, Ukraine to the northeast, Romania to the east and southeast, Serbia to the south, Croatia and Slovenia to the southwest, and Austria to the west. Hungary lies within the Danube River's drainage basin and is dominated by great lowland plains. It has a population of over 9.5 million, consisting mostly of ethnic Hungarians (Magyars) and a significant Romani minority. Hungarian is the official language and among the few in Europe outside the Indo-European family. Budapest is the country's capital, largest city, and cultural and economic centre.",
+   "url": "https://en.wikipedia.org/wiki/Hungary"
+  }
+ },
+ {
+  "date": "1901-02-13",
+  "snap": "1900@19010101",
+  "polygon": "Sweden–Norway",
+  "state": "Q62589",
+  "state_zh": "瑞典－挪威联盟",
+  "state_en": "Union between Sweden and Norway",
+  "enwiki": "Union between Sweden and Norway",
+  "life": [
+   {
+    "y": 1814,
+    "m": 11,
+    "d": 4,
+    "p": 11
+   },
+   {
+    "y": 1905,
+    "m": 6,
+    "d": 7,
+    "p": 11
+   }
+  ],
+  "heads": [],
+  "offices": [],
+  "alts": [
+   [
+    "瑞典－挪威联盟",
+    "wiki-title"
+   ],
+   [
+    "挪威",
+    "capital"
+   ],
+   [
+    "瑞典",
+    "coord"
+   ]
+  ],
+  "wiki": {
+   "title": "Union between Sweden and Norway",
+   "extract": "Sweden and Norway or Sweden–Norway, officially the United Kingdoms of Sweden and Norway, and known as the United Kingdoms, was a personal union of the separate kingdoms of Sweden and Norway under a common monarch and common foreign policy that lasted from 1814 until its peaceful dissolution in 1905.",
+   "url": "https://en.wikipedia.org/wiki/Union_between_Sweden_and_Norway"
+  }
+ },
+ {
+  "date": "1973-10-26",
+  "snap": "1960@19730101",
+  "polygon": "Ireland",
+  "state": "Q27",
+  "state_zh": "爱尔兰",
+  "state_en": "Ireland",
+  "enwiki": "Republic of Ireland",
+  "life": [
+   {
+    "y": 1937,
+    "m": 12,
+    "d": 29,
+    "p": 11
+   },
+   null
+  ],
+  "heads": [],
+  "offices": [
+   [
+    "爱尔兰总理",
+    [
+     "利亚姆·科斯格雷夫"
+    ]
+   ],
+   [
+    "爱尔兰总统",
+    [
+     "厄斯金·汉密尔顿·奇尔德斯"
+    ]
+   ],
+   [
+    "爱尔兰副总理",
+    [
+     "布伦丹·科里什"
+    ]
+   ]
+  ],
+  "alts": [
+   [
+    "爱尔兰",
+    "wiki-title"
+   ]
+  ],
+  "wiki": {
+   "title": "Republic of Ireland",
+   "extract": "Ireland, also known as the Republic of Ireland, is a country in Northwestern Europe. It consists of 26 of the 32 counties of the island of Ireland, with a population of about 5.5 million. Its capital and largest city is Dublin, on the eastern side of the island, with a population of over 1.5 million. The sovereign state shares its only land border with Northern Ireland, which is part of the United Kingdom. It is otherwise surrounded by the Atlantic Ocean, with the Celtic Sea to the south, St George's Channel to the south-east and the Irish Sea to the east. It is a unitary, parliamentary republic. The legislature, the Oireachtas, consists of a lower house, Dáil Éireann; an upper house, Seanad Éireann; and an elected president who serves as the largely ceremonial head of state, but with some important powers and duties. The head of government is the Taoiseach, elected by the Dáil and appointed by the president, who appoints other government ministers.",
+   "url": "https://en.wikipedia.org/wiki/Republic_of_Ireland"
+  }
+ },
+ {
+  "date": "1904-04-21",
+  "snap": "1900@19020531",
+  "polygon": "Russian Empire",
+  "state": "Q34266",
+  "state_zh": "俄罗斯帝国",
+  "state_en": "Russian Empire",
+  "enwiki": "Russian Empire",
+  "life": [
+   {
+    "y": 1721,
+    "m": 11,
+    "d": 2,
+    "p": 11
+   },
+   {
+    "y": 1917,
+    "m": 9,
+    "d": 14,
+    "p": 11
+   }
+  ],
+  "heads": [
+   [
+    "国家元首",
+    "尼古拉二世",
+    "Nicholas II of Russia"
+   ]
+  ],
+  "offices": [
+   [
+    "全俄罗斯皇帝",
+    [
+     "尼古拉二世"
+    ]
+   ],
+   [
+    "fliegel-adjutant",
+    [
+     "Friedrich von Zoller"
+    ]
+   ]
+  ],
+  "alts": [
+   [
+    "俄罗斯帝国",
+    "wiki-title"
+   ],
+   [
+    "俄罗斯",
+    "capital"
+   ]
+  ],
+  "wiki": {
+   "title": "Russian Empire",
+   "extract": "The Russian Empire was an empire that extended across northern Eurasia from 1721 until the proclamation of the Russian Republic in 1917, forming the final era of Tsarist Russia and the wider Russian monarchy. At its height in the late 19th century, it covered about 22,800,000 km2 (8,800,000 sq mi), roughly one-sixth of the world's landmass, making it the third-largest empire in history, behind only the British and Mongol empires.",
+   "url": "https://en.wikipedia.org/wiki/Russian_Empire"
+  }
+ },
+ {
+  "date": "1934-07-18",
+  "snap": "1930@19330315",
+  "polygon": "Sierra Leone",
+  "state": "Q30059027",
+  "state_zh": "英属塞拉利昂殖民地保护国",
+  "state_en": "Sierra Leone Colony and Protectorate",
+  "enwiki": "Sierra Leone Colony and Protectorate",
+  "life": [
+   {
+    "y": 1808,
+    "m": 1,
+    "d": 1,
+    "p": 11
+   },
+   {
+    "y": 1961,
+    "m": 4,
+    "d": 27,
+    "p": 11
+   }
+  ],
+  "heads": [],
+  "offices": [],
+  "alts": [
+   [
+    "英属塞拉利昂殖民地保护国",
+    "name"
+   ]
+  ],
+  "wiki": {
+   "title": "Sierra Leone Colony and Protectorate",
+   "extract": "The Colony and Protectorate of Sierra Leone was the British colonial administration in Sierra Leone from 1808 to 1961, part of the British Empire from the abolitionism era until the decolonisation era. The Crown colony, which included the area surrounding Freetown, was established in 1808. The protectorate was established in 1896 and included the interior of what is today known as Sierra Leone.",
+   "url": "https://en.wikipedia.org/wiki/Sierra_Leone_Colony_and_Protectorate"
+  }
+ },
+ {
+  "date": "1956-02-17",
+  "snap": "1945@19560101",
+  "polygon": "Togo",
+  "state": "Q797214",
+  "state_zh": "法属多哥兰",
+  "state_en": "French Togoland",
+  "enwiki": "French Togoland",
+  "life": [
+   {
+    "y": 1916,
+    "m": 12,
+    "d": 27,
+    "p": 11
+   },
+   {
+    "y": 1960,
+    "m": 4,
+    "d": 27,
+    "p": 11
+   }
+  ],
+  "heads": [],
+  "offices": [],
+  "alts": [
+   [
+    "法属多哥兰",
+    "capital+name"
+   ]
+  ],
+  "wiki": {
+   "title": "French Togoland",
+   "extract": "French Togoland, officially the French Mandate for Togoland during the League of Nations period and then Togoland under French Administration during the UN trusteeship period, was a French colonial League of Nations mandate from 1922 to 1946, and a UN trust territory from 1946 to 1960 in French West Africa. In 1960 it became the independent Togolese Republic.",
+   "url": "https://en.wikipedia.org/wiki/French_Togoland"
+  }
+ },
+ {
+  "date": "1969-11-06",
+  "snap": "1960@19670301",
+  "polygon": "Mali",
+  "state": "Q912",
+  "state_zh": "马里共和国",
+  "state_en": "Mali",
+  "enwiki": "Mali",
+  "life": [
+   {
+    "y": 1960,
+    "m": 9,
+    "d": 22,
+    "p": 11
+   },
+   null
+  ],
+  "heads": [],
+  "offices": [
+   [
+    "第一夫人",
+    [
+     "Mariam Sissoko"
+    ]
+   ],
+   [
+    "马里总统",
+    [
+     "穆萨·特拉奥雷"
+    ]
+   ],
+   [
+    "马里外交部长",
+    [
+     "Sori Coulibaly"
+    ]
+   ]
+  ],
+  "alts": [
+   [
+    "马里共和国",
+    "wiki-title"
+   ]
+  ],
+  "wiki": {
+   "title": "Mali",
+   "extract": "Mali, officially the Republic of Mali, is a landlocked country in West Africa. It is the eighth-largest country in Africa and the 23rd largest country in the world, with an area of 1,240,192 square kilometres (478,841 sq mi). It is bordered to the north by Algeria, to the east by Niger, to the northwest by Mauritania, to the south by Burkina Faso and Ivory Coast, and to the west by Guinea and Senegal. The population is about 25.20 million, 47.19% of which are estimated to be under age 15 in 2024. Its capital and largest city is Bamako. French was the official language until 2022, when its official status was revoked to working language.",
+   "url": "https://en.wikipedia.org/wiki/Mali"
+  }
+ },
+ {
+  "date": "1869-03-21",
+  "snap": "1815@18671109",
+  "polygon": "Ecuador",
+  "state": "Q736",
+  "state_zh": "厄瓜多尔",
+  "state_en": "Ecuador",
+  "enwiki": "Ecuador",
+  "life": [
+   {
+    "y": 1840,
+    "m": 2,
+    "d": 16,
+    "p": 11
+   },
+   null
+  ],
+  "heads": [],
+  "offices": [],
+  "alts": [
+   [
+    "厄瓜多尔",
+    "wiki-title"
+   ]
+  ],
+  "wiki": {
+   "title": "Ecuador",
+   "extract": "Ecuador, officially the Republic of Ecuador, is a country in northwestern South America, bordered by Colombia on the north, Peru on the east and south, and the Pacific Ocean on the west. It also includes the Galápagos Province which contains the Galápagos Islands in the Pacific, about 1,000 kilometers west of the mainland. The country's capital is Quito, and the largest city is Guayaquil.",
+   "url": "https://en.wikipedia.org/wiki/Ecuador"
+  }
+ },
+ {
+  "date": "1532-01-14",
+  "snap": "1530@12040101",
+  "polygon": "Tsardom of Muscovy",
+  "state": "Q170770",
+  "state_zh": "莫斯科公国",
+  "state_en": "Grand Principality of Moscow",
+  "enwiki": "Grand Principality of Moscow",
+  "life": [
+   {
+    "y": 1263,
+    "m": 0,
+    "d": 0,
+    "p": 9
+   },
+   {
+    "y": 1547,
+    "m": 0,
+    "d": 0,
+    "p": 9
+   }
+  ],
+  "heads": [],
+  "offices": [],
+  "alts": [
+   [
+    "莫斯科公国",
+    "name"
+   ],
+   [
+    "卡西姆汗国",
+    "capital"
+   ],
+   [
+    "大彼尔姆公国",
+    "capital"
+   ],
+   [
+    "沃罗登公国",
+    "capital"
+   ]
+  ],
+  "wiki": {
+   "title": "Grand Principality of Moscow",
+   "extract": "The Grand Principality of Moscow, before 1389 the Principality of Moscow, also known by the exonym Muscovy, was a late medieval Russian monarchy. Its capital was the city of Moscow. Originally established as an appanage principality in the 13th century, Moscow became the leading Russian principality and was transformed into a centralized Russian state in the late 15th century, laying the groundwork for Tsarist Russia.",
+   "url": "https://en.wikipedia.org/wiki/Grand_Principality_of_Moscow"
+  }
+ },
+ {
+  "date": "1949-07-08",
+  "snap": "1945@19490523",
+  "polygon": "Uganda",
+  "state": "Q1097943",
+  "state_zh": "英属乌干达保护国",
+  "state_en": "Uganda Protectorate",
+  "enwiki": "Protectorate of Uganda",
+  "life": [
+   {
+    "y": 1894,
+    "m": 0,
+    "d": 0,
+    "p": 9
+   },
+   {
+    "y": 1962,
+    "m": 0,
+    "d": 0,
+    "p": 9
+   }
+  ],
+  "heads": [],
+  "offices": [
+   [
+    "王室法律顾问",
+    [
+     "Guy Henderson"
+    ]
+   ]
+  ],
+  "alts": [
+   [
+    "英属乌干达保护国",
+    "name"
+   ],
+   [
+    "布干达",
+    "capital+name"
+   ],
+   [
+    "安科累王国",
+    "capital"
+   ]
+  ],
+  "wiki": {
+   "title": "Protectorate of Uganda",
+   "extract": "The Protectorate of Uganda was a protectorate of the British Empire from 1894 to 1962. In 1893 the Imperial British East Africa Company transferred its administration rights of territory consisting mainly of the Kingdom of Buganda to the British government.",
+   "url": "https://en.wikipedia.org/wiki/Protectorate_of_Uganda"
+  }
+ },
+ {
+  "date": "1293-03-06",
+  "snap": "1279@12040101",
+  "polygon": "Hafsid Caliphate",
+  "state": "Q752662",
+  "state_zh": "哈夫斯王朝",
+  "state_en": "Hafsid dynasty",
+  "enwiki": "Hafsid dynasty",
+  "life": [
+   {
+    "y": 1229,
+    "m": 0,
+    "d": 0,
+    "p": 9
+   },
+   {
+    "y": 1574,
+    "m": 0,
+    "d": 0,
+    "p": 9
+   }
+  ],
+  "heads": [],
+  "offices": [],
+  "alts": [
+   [
+    "哈夫斯王朝",
+    "wiki-title"
+   ],
+   [
+    "扎亚尼德王朝",
+    "capital"
+   ],
+   [
+    "特莱姆森王国",
+    "capital"
+   ],
+   [
+    "伊夫里基亚",
+    "coord"
+   ]
+  ],
+  "wiki": {
+   "title": "Hafsid dynasty",
+   "extract": "The Hafsid dynasty was a Sunni Muslim dynasty of Berber descent that ruled Ifriqiya from 1229 to 1574. The dynasty was founded by Abu Zakariya Yahya, who was initially appointed governor of the region by the Almohad caliph before declaring his independence.",
+   "url": "https://en.wikipedia.org/wiki/Hafsid_dynasty"
+  }
+ },
+ {
+  "date": "2013-05-26",
+  "snap": "2011@20110101",
+  "polygon": "Senegal",
+  "state": "Q1041",
+  "state_zh": "塞内加尔",
+  "state_en": "Senegal",
+  "enwiki": "Senegal",
+  "life": [
+   {
+    "y": 1960,
+    "m": 0,
+    "d": 0,
+    "p": 9
+   },
+   null
+  ],
+  "heads": [
+   [
+    "国家元首",
+    "马基·萨勒",
+    "Macky Sall"
+   ]
+  ],
+  "offices": [
+   [
+    "塞内加尔总统",
+    [
+     "马基·萨勒"
+    ]
+   ],
+   [
+    "塞内加尔总理",
+    [
+     "阿布杜·姆巴耶"
+    ]
+   ],
+   [
+    "塞内加尔外交部长",
+    [
+     "Mankeur Ndiaye"
+    ]
+   ]
+  ],
+  "alts": [
+   [
+    "塞内加尔",
+    "naturalearth"
+   ]
+  ],
+  "wiki": {
+   "title": "Senegal",
+   "extract": "Senegal, officially the Republic of Senegal, is the westernmost country of mainland West Africa, situated along the Atlantic Ocean coast. It borders Mauritania to the north, Mali to the east, Guinea to the southeast and Guinea-Bissau to the southwest. Senegal nearly surrounds the Gambia, a country occupying a narrow strip of land along the banks of the Gambia River, which separates Senegal's southern region of Casamance from the rest of the country. It also shares a maritime border with Cape Verde. The capital and largest city of Senegal is Dakar.",
+   "url": "https://en.wikipedia.org/wiki/Senegal"
+  }
+ },
+ {
+  "date": "1953-05-11",
+  "snap": "1945@19511224",
+  "polygon": "Mozambique (Portugal)",
+  "state": "Q889394",
+  "state_zh": "葡属东非",
+  "state_en": "Portuguese Mozambique",
+  "enwiki": "Portuguese Mozambique",
+  "life": [
+   {
+    "y": 1498,
+    "m": 0,
+    "d": 0,
+    "p": 9
+   },
+   {
+    "y": 1975,
+    "m": 6,
+    "d": 25,
+    "p": 11
+   }
+  ],
+  "heads": [],
+  "offices": [],
+  "alts": [
+   [
+    "葡属东非",
+    "wiki-title"
+   ]
+  ],
+  "wiki": {
+   "title": "Portuguese Mozambique",
+   "extract": "Portuguese Mozambique or Portuguese East Africa were the common terms by which Mozambique was designated during the period in which it was a Portuguese overseas province. Portuguese Mozambique originally constituted a string of Portuguese possessions along the south-east African coast, and later became a unified province, which now forms the Republic of Mozambique.",
+   "url": "https://en.wikipedia.org/wiki/Portuguese_Mozambique"
+  }
+ },
+ {
+  "date": "219-03-18",
+  "snap": "200",
+  "polygon": "Himyarite Kingdom",
+  "state": "Q289577",
+  "state_zh": "希木叶尔",
+  "state_en": "Himyarite kingdom",
+  "enwiki": "Himyar",
+  "life": [
+   {
+    "y": -110,
+    "m": 0,
+    "d": 0,
+    "p": 9
+   },
+   {
+    "y": 525,
+    "m": 0,
+    "d": 0,
+    "p": 9
+   }
+  ],
+  "heads": [],
+  "offices": [],
+  "alts": [
+   [
+    "希木叶尔",
+    "wiki-title"
+   ],
+   [
+    "示巴王国",
+    "capital"
+   ]
+  ],
+  "wiki": {
+   "title": "Himyar",
+   "extract": "Himyar was a South Arabian kingdom whose original heartland lay in the southern highlands of present-day Yemen. From this core, Himyar expanded at the expense of the other South Arabian kingdoms and, by the late third century CE, had established its supremacy over most of South Arabia, its rulers subsequently extended their authority into parts of the Arabian interior. Until around 110 BCE, Himyar formed part of the Qatabanian kingdom, after which it emerged as an independent kingdom. Its capital was the ancient city of Ẓafār, in the Yemeni highlands. Political power later shifted toward Sanaa, which became the principal center of the kingdom by late antiquity. Himyarite rulers were associated with dhū-Raydān, and their royal titulature initially styled them as kings of Sabaʾ and dhū-Raydān.",
+   "url": "https://en.wikipedia.org/wiki/Himyar"
+  }
+ },
+ {
+  "date": "-153-01-21",
+  "snap": "-200",
+  "polygon": "Bosporan Kingdom",
+  "state": "Q321371",
+  "state_zh": "博斯普鲁斯王国",
+  "state_en": "Bosporan Kingdom",
+  "enwiki": "Bosporan Kingdom",
+  "life": [
+   {
+    "y": -437,
+    "m": 0,
+    "d": 0,
+    "p": 9
+   },
+   {
+    "y": 370,
+    "m": 0,
+    "d": 0,
+    "p": 9
+   }
+  ],
+  "heads": [],
+  "offices": [],
+  "alts": [
+   [
+    "博斯普鲁斯王国",
+    "wiki-title"
+   ],
+   [
+    "提里塔克",
+    "coord"
+   ]
+  ],
+  "wiki": {
+   "title": "Bosporan Kingdom",
+   "extract": "The Bosporan Kingdom, also known as the Kingdom of the Cimmerian Bosporus, was an ancient Greco-Scythian state located in eastern Crimea and the Taman Peninsula on the shores of the Cimmerian Bosporus, centered in the present-day Strait of Kerch. It was the first truly 'Hellenistic' state, in the sense that a mixed population adopted the Greek language and civilization, under aristocratic consolidated leadership. Under the Spartocid dynasty, the aristocracy of the kingdom adopted a double nature of presenting themselves as archons to Greek subjects and as kings to barbarians, which some historians consider unique in ancient history. The Bosporan Kingdom became the longest surviving Roman client kingdom. The 1st and 2nd centuries AD saw a period of a new golden age of the Bosporan state. It was briefly incorporated as part of the Roman province of Moesia Inferior from AD 63 to 68 under Emperor Nero, before being restored as a Roman client kingdom. At the end of the 2nd century AD, King Sauromates II inflicted a critical defeat on the Scythians and included all the territories of the Crimean Peninsula in the structure of his state.",
+   "url": "https://en.wikipedia.org/wiki/Bosporan_Kingdom"
+  }
+ },
+ {
+  "date": "1970-08-26",
+  "snap": "1960@19700723",
+  "polygon": "Australia",
+  "state": "Q408",
+  "state_zh": "澳大利亚",
+  "state_en": "Australia",
+  "enwiki": "Australia",
+  "life": [
+   {
+    "y": 1901,
+    "m": 1,
+    "d": 1,
+    "p": 11
+   },
+   null
+  ],
+  "heads": [
+   [
+    "国家元首",
+    "保罗·哈斯勒克",
+    "Paul Hasluck"
+   ],
+   [
+    "国家元首",
+    "伊丽莎白二世",
+    "Elizabeth II"
+   ]
+  ],
+  "offices": [
+   [
+    "澳大利亚总理",
+    [
+     "约翰·戈顿"
+    ]
+   ],
+   [
+    "澳大利亚总督",
+    [
+     "保罗·哈斯勒克"
+    ]
+   ],
+   [
+    "陆军部长",
+    [
+     "马尔科姆·弗雷泽",
+     "安德鲁·皮考克"
+    ]
+   ]
+  ],
+  "alts": [
+   [
+    "澳大利亚",
+    "wiki-title"
+   ],
+   [
+    "赫特河公国",
+    "coord"
+   ]
+  ],
+  "wiki": {
+   "title": "Australia",
+   "extract": "Australia, officially the Commonwealth of Australia, is a country comprising the mainland of the Australian continent, the island of Tasmania and numerous smaller islands. It has a land area of 7,688,287 km2 (2,968,464 sq mi), making it the sixth-largest country in the world, and is the world's flattest and driest inhabited continent. It is a megadiverse country, and its size gives it a wide variety of landscapes and climates, including large deserts centrally and tropical rainforests along the coast.",
+   "url": "https://en.wikipedia.org/wiki/Australia"
+  }
+ },
+ {
+  "date": "662-11-14",
+  "snap": "600",
+  "polygon": "Visigothic Kingdom",
+  "state": "Q126936",
+  "state_zh": "西哥特王国",
+  "state_en": "Visigothic Kingdom",
+  "enwiki": "Visigothic Kingdom",
+  "life": [
+   {
+    "y": 476,
+    "m": 0,
+    "d": 0,
+    "p": 9
+   },
+   {
+    "y": 718,
+    "m": 0,
+    "d": 0,
+    "p": 9
+   }
+  ],
+  "heads": [],
+  "offices": [
+   [
+    "西哥特国王",
+    [
+     "拉斯文思"
+    ]
+   ]
+  ],
+  "alts": [
+   [
+    "西哥特王国",
+    "wiki-title"
+   ],
+   [
+    "加利西亚王国",
+    "capital"
+   ],
+   [
+    "托莱多西哥特王国",
+    "capital"
+   ]
+  ],
+  "wiki": {
+   "title": "Visigothic Kingdom",
+   "extract": "The Visigothic Kingdom, Visigothic Spain or Kingdom of the Goths was a barbarian kingdom that occupied what is now southwestern France and the Iberian Peninsula from the 5th to the 8th century. One of the Germanic successor states to the Western Roman Empire, it was originally created by the settlement of the Visigoths under King Wallia in the province of Gallia Aquitania in southwest Gaul by the Roman government and then extended by conquest over all of Hispania. The Kingdom maintained independence from the Eastern Roman or Byzantine Empire, whose attempts to re-establish Roman authority in Hispania were only partially successful and short-lived.",
+   "url": "https://en.wikipedia.org/wiki/Visigothic_Kingdom"
+  }
+ },
+ {
+  "date": "2014-01-12",
+  "snap": "2011@20110101",
+  "polygon": "Brazil",
+  "state": "Q155",
+  "state_zh": "巴西",
+  "state_en": "Brazil",
+  "enwiki": "Brazil",
+  "life": [
+   {
+    "y": 1822,
+    "m": 9,
+    "d": 7,
+    "p": 11
+   },
+   null
+  ],
+  "heads": [
+   [
+    "国家元首",
+    "迪尔玛·罗塞夫",
+    "Dilma Rousseff"
+   ]
+  ],
+  "offices": [
+   [
+    "巴西总统",
+    [
+     "迪尔玛·罗塞夫"
+    ]
+   ],
+   [
+    "巴西副总统",
+    [
+     "米歇尔·特梅尔"
+    ]
+   ],
+   [
+    "民政院首席部长",
+    [
+     "格列西·霍夫曼"
+    ]
+   ]
+  ],
+  "alts": [
+   [
+    "巴西",
+    "naturalearth"
+   ]
+  ],
+  "wiki": {
+   "title": "Brazil",
+   "extract": "Brazil, officially the Federative Republic of Brazil, is the largest country in South America. It is also the world's fifth-largest country by area and the seventh-largest by population, with over 214 million people. Brazil is a federation composed of 26 states and a Federal District, which hosts the capital, Brasília. Its most populous city is São Paulo, followed by Rio de Janeiro. Brazil has the largest Lusophone population in the world and is the only Portuguese-speaking country in the Americas, where it is the official language.",
+   "url": "https://en.wikipedia.org/wiki/Brazil"
+  }
+ },
+ {
+  "date": "2001-01-21",
+  "snap": "2000@19860101",
+  "polygon": "Argentina",
+  "state": "Q414",
+  "state_zh": "阿根廷",
+  "state_en": "Argentina",
+  "enwiki": "Argentina",
+  "life": [
+   {
+    "y": 1816,
+    "m": 7,
+    "d": 9,
+    "p": 11
+   },
+   null
+  ],
+  "heads": [],
+  "offices": [
+   [
+    "阿根廷总统",
+    [
+     "费尔南多·德拉鲁阿"
+    ]
+   ],
+   [
+    "内阁首席部长",
+    [
+     "克里斯蒂安·科伦坡"
+    ]
+   ]
+  ],
+  "alts": [
+   [
+    "阿根廷",
+    "wiki-title"
+   ]
+  ],
+  "wiki": {
+   "title": "Argentina",
+   "extract": "Argentina, officially the Argentine Republic, is a country in the far south of South America. It covers an area of 2,780,085 km2 (1,073,397 mi2), making it the second-largest country in South America, after Brazil, the fourth-largest country in the Americas, and the eighth-largest country in the world. Argentina shares the bulk of the Southern Cone with Chile to the west and is bordered by Bolivia and Paraguay to the north, Brazil to the northeast, Uruguay the South Atlantic Ocean to the east, and the Drake Passage to the south. Argentina is a federal state divided into twenty-three provinces, and one autonomous city, which is the federal capital and largest city of the nation, Buenos Aires. The provinces and the capital have their own constitutions but exist under a federal system. Argentina claims sovereignty over the Falkland Islands, South Georgia and the South Sandwich Islands, the Southern Patagonian Ice Field, and a part of Antarctica.",
+   "url": "https://en.wikipedia.org/wiki/Argentina"
+  }
+ },
+ {
+  "date": "1231-12-04",
+  "snap": "1200@12260117",
+  "polygon": "Norway",
+  "state": "Q2196956",
+  "state_zh": "挪威世袭王国",
+  "state_en": "Kingdom of Norway",
+  "enwiki": "Kingdom of Norway (872–1397)",
+  "life": [
+   {
+    "y": 872,
+    "m": 0,
+    "d": 0,
+    "p": 9
+   },
+   {
+    "y": 1397,
+    "m": 0,
+    "d": 0,
+    "p": 9
+   }
+  ],
+  "heads": [],
+  "offices": [
+   [
+    "挪威国王",
+    [
+     "候昆四世"
+    ]
+   ]
+  ],
+  "alts": [
+   [
+    "挪威世袭王国",
+    "name"
+   ],
+   [
+    "挪威",
+    "wiki-title"
+   ],
+   [
+    "冰岛自由邦",
+    "capital"
+   ]
+  ],
+  "wiki": {
+   "title": "Kingdom of Norway (872–1397)",
+   "extract": "The term Norwegian Realm and Old Kingdom of Norway refer to the Kingdom of Norway's peak of power in the 13th century after a long period of civil war before 1240. The kingdom was a loosely unified state including the territory of modern-day Norway, modern-day Swedish territory of Jämtland, Herjedalen, Ranrike (Bohuslän) and Idre and Särna, as well as Norway's overseas possessions which had been settled by Norwegian seafarers for centuries before being annexed or incorporated into the kingdom as 'tax territories'. To the North, Norway also bordered extensive tax territories on the mainland. Norway, whose expansionism starts from the very foundation of the Kingdom in 872, reached the peak of its power in the years between 1240 and 1319.",
+   "url": "https://en.wikipedia.org/wiki/Kingdom_of_Norway_(872%E2%80%931397)"
+  }
+ }
+]

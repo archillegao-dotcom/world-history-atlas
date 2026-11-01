@@ -1,0 +1,13 @@
+{
+  "_doc": "同盟成员期的人工修正：Wikidata 一个陈述带多个起止限定词时 SPARQL 会做笛卡尔积，产生倒序/错配区间。这里给出替换该成员全部记录的正确区间（to 为不含）。build_states.py 与 tools/dev/apply_alliance_fixes.py 读取。",
+  "Q318693": {
+    "Q265": {
+      "members": [
+        {"from": {"y": 1992, "m": 5, "d": 15, "p": 11}, "to": {"y": 1999, "m": 0, "d": 0, "p": 9}},
+        {"from": {"y": 2006, "m": 0, "d": 0, "p": 9}, "to": {"y": 2012, "m": 6, "d": 28, "p": 11}}
+      ],
+      "note": "乌兹别克斯坦：1992-05-15 签署《集体安全条约》；1999 年未续约退出；2006 年作为正式成员加入集安组织；2012-06-28 通知暂停成员资格。",
+      "sources": ["https://en.wikipedia.org/wiki/Collective_Security_Treaty_Organization"]
+    }
+  }
+}

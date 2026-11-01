@@ -72,6 +72,10 @@ SOURCES = [
      "use": "2011 年至今的现代国家边界"},
     {"name": "QLever (Univ. Freiburg) Wikidata SPARQL", "url": "https://qlever.dev/wikidata", "license": "—",
      "use": "构建数据时查询 Wikidata 的端点"},
+    {"name": "ISW/CTP Russian Assessed Control of Terrain", "url": "https://www.arcgis.com/home/item.html?id=963c5626435e49b98ae1db399859d04e",
+     "license": "© ISW & AEI Critical Threats Project（注明出处）", "use": "战争前线：俄乌战争 2022-02-24 至 04-02 的俄军控制区"},
+    {"name": "DeepStateMap", "url": "https://deepstatemap.live/", "license": "© DeepStateMap（公开数据，注明出处）",
+     "use": "战争前线：俄乌战争 2022-04-03 起逐日的占领区与灰色区；2014–2022 基线"},
     {"name": "Leaflet", "url": "https://leafletjs.com/", "license": "BSD-2-Clause", "use": "地图显示"},
 ]
 
@@ -92,20 +96,22 @@ def meta():
 @app.get("/api/snapshot")
 def snapshot(date: str):
     d = _date(date)
-    s = basemaps.snapshot_for(d.y)
-    return {"date": date, "date_zh": d.label_zh(), "snapshot": s, "next": basemaps.next_snapshot(s)}
+    s = basemaps.snapshot_at(d)
+    base = basemaps.base_of(s)
+    return {"date": date, "date_zh": d.label_zh(), "snapshot": s, "base": base, "next": basemaps.next_snapshot(base),
+            "transitions": basemaps.notes(s)}
 
 
 @app.get("/api/basemap/{snap}")
-def basemap(snap: int):
-    if snap not in basemaps.years:
+def basemap(snap: str):
+    if not basemaps.valid(snap):
         raise HTTPException(404, "没有这个快照")
     return Response(basemaps.raw_bytes(snap), media_type="application/geo+json",
                     headers={"Content-Encoding": "gzip", "Cache-Control": "max-age=86400"})
 
 
 @app.get("/api/polity")
-def polity(snap: int, fid: int):
+def polity(snap: str, fid: int):
     p = basemaps.polity(snap, fid)
     if not p:
         raise HTTPException(404, "没有这个政权")
@@ -115,7 +121,7 @@ def polity(snap: int, fid: int):
 @app.get("/api/locate")
 def locate(date: str, lon: float, lat: float):
     d = _date(date)
-    s = basemaps.snapshot_for(d.y)
+    s = basemaps.snapshot_at(d)
     p = basemaps.locate(s, lon, lat)
     return {"snapshot": s, "polity": p["props"] if p else None}
 
@@ -151,13 +157,17 @@ def layer_query(mid: str, date: str, request: Request, limit: int | None = Query
 
 
 @app.get("/api/modules/{mid}")
-def module_query(mid: str, date: str, snap: int | None = None, fid: int | None = None,
+def module_query(mid: str, date: str, snap: str | None = None, fid: int | None = None,
                  span: float | None = None, limit: int | None = Query(None, le=500), state: str | None = None):
     m = registry.modules.get(mid)
     if not m or m.kind != "panel":
         raise HTTPException(404, f"未知模块 {mid}")
     d = _date(date)
-    s = snap if snap is not None else basemaps.snapshot_for(d.y)
+    s = basemaps.snapshot_at(d) if snap is None else snap
+    if not basemaps.valid(s):
+        raise HTTPException(404, "没有这个快照")
+    from .geo import norm_snap
+    s = norm_snap(s)
     pol = None
     if fid is not None:
         pol = basemaps.polity(s, fid)
@@ -171,6 +181,7 @@ def module_query(mid: str, date: str, snap: int | None = None, fid: int | None =
 from .details import router as details_router  # noqa: E402
 
 app.include_router(details_router)
+
 
 _shutdown_cb = None
 

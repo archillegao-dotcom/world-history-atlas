@@ -48,14 +48,20 @@
   // ---------------------------------------------------------------- 状态
   let zhNames = {};
   // 政权显示名：有可靠中文名时「中文（English）」，否则英文原名
+  // 注意：静态名称表只用于「从属于」等附注；多边形本身的名称以按日期解析的结果（snapNames）为准，
+  // 解析不到当时存在的政权时显示底图原名并标为「文化/地区」，不套用后世政权名（例如史前不显示「古埃及」）
   const pname = (n) => (!n ? "未命名区域" : zhNames[n]?.zh ? `${zhNames[n].zh}（${n}）` : n);
   // 按快照解析的中文名（来自当时存在的 Wikidata 政权）优先；没有时退回静态名称表
   const snapNames = {};
   const pnameF = (p) => {
     const z = p && snapNames[state.snap]?.[String(p.fid)];
-    return !p?.NAME ? "未命名区域" : z ? (z.zh === p.NAME ? z.zh : `${z.zh}（${p.NAME}）`) : pname(p.NAME);
+    if (!p?.NAME && !p?.NAME_ZH) return "未命名区域";
+    if (z?.zh) return z.zh === p.NAME ? z.zh : `${z.zh}（${p.NAME}）`;
+    if (p.NAME_ZH && p.TERRITORY) return `${p.NAME_ZH}（${p.NAME}）`;
+    if (z?.kind === "split") return `${p.NAME}（已分裂为 ${z.parts.join("、")} 等；边界到下一张快照才更新）`;
+    return `${p.NAME}（${z?.kind === "culture" ? "文化/地区，底图名称" : "底图名称，未对应到当时存在的政权"}）`;
   };
-  const qidF = (p) => (p && snapNames[state.snap]?.[String(p.fid)]?.qid) || zhNames[p?.NAME]?.qid;
+  const qidF = (p) => (p && snapNames[state.snap]?.[String(p.fid)]?.qid) || null;
   const pnameN = (n) => { const f = geoCache[state.snap]?.features.find((x) => x.properties.NAME === n); return f ? pnameF(f.properties) : pname(n); };
   const state = { date: { y: 1789, m: 7, d: 14 }, snap: null, next: null, fid: null, world: false, tab: null, playing: null, meta: null };
   const renderers = {};
@@ -83,11 +89,12 @@
   const geoCache = {};
 
   const hue = (s) => { let h = 0; for (const c of s || "") h = (h * 31 + c.charCodeAt(0)) >>> 0; return h % 360; };
+  // 填色按「当日解析出的政权」（同一政权的多个多边形同色，如 1125 年后的辽朝故地与金朝控制区）；殖民地仍按宗主国
   const styleFor = (f, selected) => {
     const n = f.properties.NAME;
     const base = {
       color: selected ? "#8a1c00" : "#6b5a48", weight: selected ? 2.5 : 0.6, opacity: 0.9,
-      fillColor: n ? `hsl(${hue(f.properties.SUBJECTO || n)}, 45%, ${selected ? 62 : 74}%)` : "#ddd6c8",
+      fillColor: n ? `hsl(${hue(f.properties.SUBJECTO || qidF(f.properties) || n)}, 45%, ${selected ? 62 : 74}%)` : "#ddd6c8",
       fillOpacity: selected ? 0.85 : 0.75,
     };
     // 图层模块（如「阵营地图」）可以通过 WHA.setFillOverride(fn) 改写多边形填色
@@ -99,7 +106,8 @@
   const fillOverrides = {};
 
   async function loadSnapshot(snap) {
-    if (!geoCache[snap]) [geoCache[snap], snapNames[snap]] = await Promise.all([api(`/api/basemap/${snap}`), api(`/api/snapshot_names/${snap}`).catch(() => ({}))]);
+    if (!geoCache[snap]) geoCache[snap] = await api(`/api/basemap/${snap}`);
+    await loadNames(snap);
     const gj = geoCache[snap];
     if (layer) map.removeLayer(layer);
     layer = L.geoJSON(gj, {
@@ -112,6 +120,15 @@
       },
     }).addTo(map);
     layer.bringToBack();
+  }
+
+  // 多边形名称按所选日期解析（同一张快照内朝代/政权也会变化，如 900 年快照内唐→后梁）
+  let namesKey = null;
+  async function loadNames(snap) {
+    const key = `${snap}|${state.date.y}|${state.date.m}`;
+    if (key === namesKey) return;
+    namesKey = key;
+    snapNames[snap] = await api(`/api/snapshot_names/${snap}?date=${dateParam(state.date)}`).catch(() => ({}));
   }
 
   // ---------------------------------------------------------------- 日期控件
@@ -153,6 +170,7 @@
       // 换快照后原来的政权 fid 不再有效：用政权名称在新快照中找同名政权，找不到就关闭面板
       const oldName = state.fid != null && geoCache[state.snap] ? featByFid(state.snap, state.fid)?.properties.NAME : null;
       state.snap = s.snapshot;
+      state.base = s.base;
       state.next = s.next;
       await loadSnapshot(s.snapshot);
       if (oldName) {
@@ -163,6 +181,10 @@
       }
     }
     state.next = s.next;
+    state.base = s.base;
+    state.transitions = s.transitions || [];
+    await loadNames(state.snap);
+    restyle();   // 同一快照内政权可能随日期变化（填色按解析出的政权）
     updateEraNote();
     updateHash();
     if (refreshPanel && (state.fid != null || state.world)) refreshPanelData();
@@ -201,15 +223,19 @@
 
   function updateEraNote() {
     const y = state.date.y;
-    const snapMeta = state.meta.snapshots.find((x) => x.year === state.snap) || {};
+    const base = state.base ?? state.snap;
+    const snapMeta = state.meta.snapshots.find((x) => x.year === base) || {};
     const nxt = state.next != null ? `，下一张：${yearZh(state.next)}` : "";
     let html = snapMeta.label && snapMeta.label.startsWith("现代")
       ? `<b>边界：${esc(snapMeta.label)}</b>，用于 2011 年至今（边界变化以 Natural Earth 版本为准，争议地区按其“事实控制”画法）。`
-      : `<b>边界快照：${yearZh(state.snap)}</b>${nxt}。地图显示不晚于所选日期的最近一张快照，两张快照之间的变化不会显示。`;
-    if (y < -3000) html = `<b>史前时期（文字出现以前）</b>：地图上是 historical-basemaps 对考古文化与人群分布的粗略复原，不是国家边界；快照非常稀疏（当前：${yearZh(state.snap)}${state.next != null ? "，下一张：" + yearZh(state.next) : ""}）。Wikidata 中此时期几乎没有精确到年的事件和人物。`;
+      : `<b>边界快照：${yearZh(base)}</b>${nxt}。地图显示不晚于所选日期的最近一张快照` +
+        (state.transitions?.length ? `，并按真实日期叠加了 ${state.transitions.length} 项过渡修正（<a href="#" id="transList">查看</a>）。` : "；两张快照之间没有记录到的变化不会显示。");
+    if (y < -3000) html = `<b>史前时期（文字出现以前）</b>：地图上是 historical-basemaps 对考古文化与人群分布的粗略复原，不是国家边界（名称标为「文化/地区」）；快照非常稀疏（当前：${yearZh(base)}${state.next != null ? "，下一张：" + yearZh(state.next) : ""}）。Wikidata 中此时期几乎没有精确到年的事件和人物。`;
     else if (y < -500) html += "<br>上古时期：许多日期是估计值，人物生卒年常常只精确到世纪。";
     if (state.date.m && state.date.d) html += "<br>已精确到日：事件列表会把<b>当天</b>发生的事件排在最前（仅限 Wikidata 记录到日的事件）。";
     $("eraNote").innerHTML = html;
+    const tl = $("transList");
+    if (tl) tl.onclick = (e) => { e.preventDefault(); WHA.openDetail("边界过渡修正", `<ul>${state.transitions.map((t) => `<li>${esc(t)}</li>`).join("")}</ul><p class="note">修正规则：Wikidata 中精确到月/日的成立（P571）与解散（P576）日期落在两张快照之间时，从该日期起用下一张快照中对应的范围；特殊地位领土用 Natural Earth 1:10m 范围。</p>`); };
   }
 
   // ---------------------------------------------------------------- 侧边栏
@@ -232,7 +258,7 @@
     const p = f?.properties;
     $("polityName").textContent = state.world ? "全世界" : pnameF(p);
     $("polityMeta").innerHTML = state.world ? `${dateZh(state.date)} 前后 · 全球范围` :
-      `${dateZh(state.date)} · 边界快照 ${yearZh(state.snap)}` +
+      `${dateZh(state.date)} · 边界快照 ${yearZh(state.base ?? state.snap)}${String(state.snap).includes("@") ? "（含过渡修正）" : ""}` +
       (p?.SUBJECTO && p.SUBJECTO !== p.NAME ? `<br>从属于：${esc(pnameN(p.SUBJECTO))}` : "") +
       (p?.PARTOF && p.PARTOF !== p.NAME && p.PARTOF !== p.SUBJECTO ? ` · 属于：${esc(pnameN(p.PARTOF))}` : "") +
       (qidF(p) ? ` · <a href="https://www.wikidata.org/wiki/${qidF(p)}" target="_blank">Wikidata</a>` : "") +

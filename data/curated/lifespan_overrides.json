@@ -1,0 +1,8 @@
+{
+  "_doc": "人工核对的存在期修正：Wikidata 原值保留在面板注释中。只在 Wikidata 的值指代另一个政治实体（如同名地区的更早阶段）时使用，每条必须注明来源。",
+  "Q14773": {
+    "from": {"y": 1999, "m": 12, "d": 20, "p": 11},
+    "note": "Wikidata 中「澳门」(Q14773) 的成立时间 1557 年指葡萄牙人入居澳门；作为「澳门特别行政区」，从 1999-12-20 起存在（此前由「葡属澳门」Q3916279 表示，其 P576 = 1999-12-20）。",
+    "sources": ["https://www.wikidata.org/wiki/Q3916279", "https://en.wikipedia.org/wiki/Transfer_of_sovereignty_over_Macau"]
+  }
+}

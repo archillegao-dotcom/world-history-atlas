@@ -86,6 +86,38 @@ class EconStore:
         except Exception:  # noqa: BLE001
             pass
 
+    def overlap_for(self, basemaps, snap) -> dict:
+        """快照中每个多边形 → [[ISO3, 面积比例], ...]。过渡快照按多边形来源取对应快照的预计算结果；
+        特殊地位领土（香港、澳门、格陵兰……）直接用 Natural Earth 中同一 Wikidata 条目的 ISO3。"""
+        from .geo import norm_snap
+        snap = norm_snap(snap)
+        if snap == 2011:
+            return {k: [[v, 1.0]] for k, v in self.ne_iso.items()}
+        if not isinstance(snap, str):
+            return self.overlap.get(str(snap), {})
+        if not hasattr(self, "_qid_iso"):
+            self._qid_iso = {}
+            for fid, f in basemaps.features(2011).items():
+                if f["props"].get("QID") and str(fid) in self.ne_iso:
+                    self._qid_iso[f["props"]["QID"]] = self.ne_iso[str(fid)]
+        out = {}
+        for fid in basemaps.features(snap):
+            s0, f0 = basemaps.origin(snap, fid)
+            if s0 == "terr":
+                if basemaps.trans.terr[f0].get("zone"):   # 实际控制区（如 1950 年的海南岛）：没有单独的经济数据
+                    continue
+                iso = self._qid_iso.get(basemaps.trans.terr[f0]["id"])
+                if iso:
+                    out[str(fid)] = [[iso, 1.0]]
+            elif s0 == 2011:
+                if str(f0) in self.ne_iso:
+                    out[str(fid)] = [[self.ne_iso[str(f0)], 1.0]]
+            else:
+                ov = self.overlap.get(str(s0), {}).get(str(f0))
+                if ov:
+                    out[str(fid)] = ov
+        return out
+
     def name(self, iso: str) -> str:
         return getattr(self, "zh", {}).get(iso) or (self.mpd.get(iso) or {}).get("name") or iso
 

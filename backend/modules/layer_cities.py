@@ -31,15 +31,35 @@ class CitiesLayer(LayerModule):
 
     def load(self, ctx):
         self.recs = []
+        import json
+        fx_path = Path(ctx.data_dir) / "curated" / "capital_fixes.json"
+        fixes = json.loads(fx_path.read_text(encoding="utf-8")) if fx_path.exists() else {}
+        self.n_capital_fixes = 0
         for r in load_records(Path(ctx.data_dir) / "cities.json.gz"):
             start = rec_key(r.get("from"))
-            evidence = [rec_key(c.get("from")) or rec_key(c.get("state_from")) for c in r.get("capital", [])]
+            fx = fixes.get(r.get("id"))
+            fixed_caps = [{"from": per["from"]} for f in (fx or {}).values() if isinstance(f, dict) for per in f.get("periods", [])]
+            evidence = [rec_key(c.get("from")) or rec_key(c.get("state_from")) for c in r.get("capital", []) + fixed_caps]
             evidence += [rec_key(n.get("from")) for n in r.get("names", [])]
             evidence = [e for e in evidence if e is not None]
             if start is None:
                 start = min(evidence) if evidence else NO_INCEPTION_FROM
                 r["_inferred"] = bool(evidence)
             r["_from"] = start
+            # 存在证据同时用修正前与修正后的首都记录（城市本身早已存在，只是作为首都的时间需要修正）
+            if fx:   # data/curated/capital_fixes.json：替换某城市对某政权的首都记录（Wikidata 缺起止时间或年份有误）
+                caps = []
+                for c in r.get("capital", []):
+                    if c.get("of") in fx:
+                        continue
+                    caps.append(c)
+                for of, f in fx.items():
+                    old = next((c for c in r.get("capital", []) if c.get("of") == of), {})
+                    for per in f.get("periods", []):
+                        caps.append({"of": of, "from": per["from"], "to": per["to"],
+                                     "state_from": old.get("state_from"), "state_to": old.get("state_to"), "curated": True})
+                        self.n_capital_fixes += 1
+                r["capital"] = caps
             r["_to"] = rec_key(r.get("to"))
             self.recs.append(r)
         self.recs.sort(key=lambda r: -r.get("score", 0))
@@ -70,7 +90,9 @@ class CitiesLayer(LayerModule):
             cap = False
             for c in r.get("capital", []):
                 if c.get("from") or c.get("to"):
-                    ok = self._valid(dk, c.get("from"), c.get("to"))
+                    # 只有终止时间、没有开始时间：开始时间取所属政权的成立时间（否则会从远古起一直显示为首都）
+                    ok = self._valid(dk, c.get("from") or c.get("state_from"), c.get("to")) and \
+                        (c.get("from") or c.get("state_from") or not c.get("to"))
                 else:  # 无限定：用所属国家的存在期；国家存在期未知则不判定为首都
                     ok = (c.get("state_from") or c.get("state_to")) and self._valid(dk, c.get("state_from"), c.get("state_to"))
                 if ok:

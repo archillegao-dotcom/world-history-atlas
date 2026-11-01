@@ -20,6 +20,7 @@ from backend import config  # noqa: E402
 def free_port(host: str, start: int) -> int:
     for p in range(start, start + 20):
         with socket.socket() as s:
+            s.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)   # 刚关闭的端口（TIME_WAIT）也能重新使用
             try:
                 s.bind((host, p))
                 return p

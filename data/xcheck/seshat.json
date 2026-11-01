@@ -1,0 +1,1315 @@
+{
+"source": "Seshat Equinox-2020 (CC BY-NC-SA 4.0)",
+"tolerance_years": 50,
+"records": {
+"Q201038": {
+"name": "罗马王政时代",
+"seshat": [
+"Roman Kingdom",
+-716,
+-510,
+[
+"ItRomRg"
+]
+],
+"wikidata": [
+-753,
+-509
+],
+"diff_start": -37,
+"diff_end": 1,
+"status": "agree"
+},
+"Q17167": {
+"name": "罗马共和国",
+"seshat": [
+"Roman Republic",
+-509,
+-265,
+[
+"ItRomER"
+]
+],
+"wikidata": [
+-509,
+-27
+],
+"diff_start": 0,
+"diff_end": 238,
+"status": "conflict"
+},
+"Q583038": {
+"name": "东哥德王国",
+"seshat": [
+"Ostrogothic Kingdom",
+493,
+554,
+[
+"ItOstrg"
+]
+],
+"wikidata": [
+493,
+553
+],
+"diff_start": 0,
+"diff_end": -1,
+"status": "agree"
+},
+"Q31929": {
+"name": "加洛林帝国",
+"seshat": [
+"Carolingian Empire I",
+752,
+986,
+[
+"FrCarlE",
+"FrCarlL"
+]
+],
+"wikidata": [
+800,
+887
+],
+"diff_start": 48,
+"diff_end": -99,
+"status": "conflict"
+},
+"Q62389": {
+"name": "冰岛自由邦",
+"seshat": [
+"Icelandic Commonwealth",
+930,
+1261,
+[
+"IsCommw"
+]
+],
+"wikidata": [
+930,
+1262
+],
+"diff_start": 0,
+"diff_end": 1,
+"status": "agree"
+},
+"Q2196956": {
+"name": "挪威世袭王国",
+"seshat": [
+"Kingdom of Norway",
+1262,
+1380,
+[
+"NorKing"
+]
+],
+"wikidata": [
+872,
+1397
+],
+"diff_start": -390,
+"diff_end": 17,
+"status": "conflict"
+},
+"Q12544": {
+"name": "拜占庭帝国",
+"seshat": [
+"Byzantine Empire I",
+632,
+1203,
+[
+"TrByzM1",
+"TrByzM2",
+"TrByzM3"
+]
+],
+"wikidata": [
+395,
+1453
+],
+"diff_start": -237,
+"diff_end": 250,
+"status": "conflict"
+},
+"Q603771": {
+"name": "克里特埃米尔国",
+"seshat": [
+"The Emirate of Crete",
+824,
+960,
+[
+"GrCrEmr"
+]
+],
+"wikidata": [
+820,
+961
+],
+"diff_start": -4,
+"diff_end": 1,
+"status": "agree"
+},
+"Q4948": {
+"name": "威尼斯共和国",
+"seshat": [
+"Republic of Venice III",
+1204,
+1669,
+[
+"ItVenR3",
+"ItVenR4"
+]
+],
+"wikidata": [
+697,
+1797
+],
+"diff_start": -507,
+"diff_end": 128,
+"status": "conflict"
+},
+"Q12560": {
+"name": "奥斯曼帝国",
+"seshat": [
+"Ottoman Empire III",
+1421,
+1838,
+[
+"TrOttm2",
+"TrOttm3",
+"TrOttm4"
+]
+],
+"wikidata": [
+1299,
+1922
+],
+"diff_start": -122,
+"diff_end": 84,
+"status": "conflict"
+},
+"Q389688": {
+"name": "阿契美尼德帝国",
+"seshat": [
+"Achaemenid Empire",
+-550,
+-329,
+[
+"IrAchae"
+]
+],
+"wikidata": [
+-550,
+-330
+],
+"diff_start": 0,
+"diff_end": -1,
+"status": "agree"
+},
+"Q2320005": {
+"name": "托勒密王国",
+"seshat": [
+"Ptolemaic Kingdom I",
+-305,
+-32,
+[
+"EgPtol1",
+"EgPtol2"
+]
+],
+"wikidata": [
+-305,
+-30
+],
+"diff_start": 0,
+"diff_end": 2,
+"status": "agree"
+},
+"Q8575586": {
+"name": "倭马亚哈里发国",
+"seshat": [
+"Umayyad Caliphate",
+661,
+750,
+[
+"SyCalUm"
+]
+],
+"wikidata": [
+661,
+750
+],
+"diff_start": 0,
+"diff_end": 0,
+"status": "agree"
+},
+"Q12536": {
+"name": "阿拔斯王朝",
+"seshat": [
+"Abbasid Caliphate I",
+750,
+1207,
+[
+"IqAbbs1",
+"IqAbbs2"
+]
+],
+"wikidata": [
+750,
+1258
+],
+"diff_start": 0,
+"diff_end": 51,
+"status": "conflict"
+},
+"Q160307": {
+"name": "法蒂玛王朝",
+"seshat": [
+"Fatimid Caliphate",
+970,
+1170,
+[
+"TnFatim"
+]
+],
+"wikidata": [
+909,
+1171
+],
+"diff_start": -61,
+"diff_end": 1,
+"status": "conflict"
+},
+"Q206789": {
+"name": "加纳帝国",
+"seshat": [
+"Ghana Empire I",
+1000,
+1202,
+[
+"MrWagdL",
+"MrWagdM"
+]
+],
+"wikidata": [
+100,
+1200
+],
+"diff_start": -900,
+"diff_end": -2,
+"status": "conflict"
+},
+"Q184536": {
+"name": "马里帝国",
+"seshat": [
+"Mali Empire",
+1235,
+1410,
+[
+"MlMali*"
+]
+],
+"wikidata": [
+1235,
+1670
+],
+"diff_start": 0,
+"diff_end": 260,
+"status": "conflict"
+},
+"Q722071": {
+"name": "阿散蒂王国",
+"seshat": [
+"Ashanti Empire",
+1702,
+1895,
+[
+"GhAshnL"
+]
+],
+"wikidata": [
+1670,
+1902
+],
+"diff_start": -32,
+"diff_end": 7,
+"status": "agree"
+},
+"Q4461035": {
+"name": "阿卡德帝国",
+"seshat": [
+"Akkadian Empire",
+-2350,
+-2113,
+[
+"IqAkkad"
+]
+],
+"wikidata": [
+-2334,
+-2083
+],
+"diff_start": 16,
+"diff_end": 30,
+"status": "agree"
+},
+"Q10914393": {
+"name": "新亚述帝国",
+"seshat": [
+"Neo-Assyrian Empire",
+-729,
+-627,
+[
+"IqNAssr"
+]
+],
+"wikidata": [
+-911,
+-609
+],
+"diff_start": -182,
+"diff_end": 18,
+"status": "conflict"
+},
+"Q624887": {
+"name": "新巴比伦帝国",
+"seshat": [
+"Neo-Babylonian Empire",
+-626,
+-539,
+[
+"IqNeoBb"
+]
+],
+"wikidata": [
+-626,
+-539
+],
+"diff_start": 0,
+"diff_end": 0,
+"status": "agree"
+},
+"Q93180": {
+"name": "塞琉古帝国",
+"seshat": [
+"Seleucid Empire",
+-312,
+-104,
+[
+"IrSeleu"
+]
+],
+"wikidata": [
+-312,
+-63
+],
+"diff_start": 0,
+"diff_end": 41,
+"status": "agree"
+},
+"Q1986139": {
+"name": "安息帝国",
+"seshat": [
+"Parthian Empire I",
+-143,
+219,
+[
+"IrPart1",
+"IrPart2"
+]
+],
+"wikidata": [
+-247,
+224
+],
+"diff_start": -104,
+"diff_end": 5,
+"status": "conflict"
+},
+"Q3708094": {
+"name": "塞尔柱帝国",
+"seshat": [
+"Seljuk Empire",
+1056,
+1190,
+[
+"IrSeljq"
+]
+],
+"wikidata": [
+1037,
+1194
+],
+"diff_start": -19,
+"diff_end": 4,
+"status": "agree"
+},
+"Q178084": {
+"name": "伊利汗国",
+"seshat": [
+"Il-khanate",
+1263,
+1335,
+[
+"IrIlkhn"
+]
+],
+"wikidata": [
+1256,
+1335
+],
+"diff_start": -7,
+"diff_end": 0,
+"status": "agree"
+},
+"Q484195": {
+"name": "帖木尔帝国",
+"seshat": [
+"Timurid Empire",
+1370,
+1526,
+[
+"UzTimur"
+]
+],
+"wikidata": [
+1370,
+1507
+],
+"diff_start": 0,
+"diff_end": -19,
+"status": "agree"
+},
+"Q1077960": {
+"name": "阿万王朝",
+"seshat": [
+"Elam - Awan Dynasty I",
+-2675,
+-2251,
+[
+"IrAwanE"
+]
+],
+"wikidata": [
+-2700,
+-2150
+],
+"diff_start": -25,
+"diff_end": 101,
+"status": "conflict"
+},
+"Q1275158": {
+"name": "埃利迈斯",
+"seshat": [
+"Elymais II",
+25,
+215,
+[
+"IrElym2"
+]
+],
+"wikidata": [
+-147,
+224
+],
+"diff_start": -172,
+"diff_end": 9,
+"status": "conflict"
+},
+"Q975405": {
+"name": "鲁姆苏丹国",
+"seshat": [
+"Sultanate of Rum",
+1093,
+1243,
+[
+"TrRum**"
+]
+],
+"wikidata": [
+1077,
+1307
+],
+"diff_start": -16,
+"diff_end": 64,
+"status": "conflict"
+},
+"Q207017": {
+"name": "齐亚德王朝",
+"seshat": [
+"Ziyadid Dynasty",
+869,
+1037,
+[
+"YeZiyad"
+]
+],
+"wikidata": [
+null,
+null
+],
+"diff_start": null,
+"diff_end": null,
+"status": "partial"
+},
+"Q488880": {
+"name": "大夏",
+"seshat": [
+"Greco-Bactrian Kingdom",
+-248,
+-130,
+[
+"AfGrBct"
+]
+],
+"wikidata": [
+-250,
+-125
+],
+"diff_start": -2,
+"diff_end": 5,
+"status": "agree"
+},
+"Q25979": {
+"name": "贵霜帝国",
+"seshat": [
+"Kushan Empire",
+30,
+319,
+[
+"AfKushn"
+]
+],
+"wikidata": [
+30,
+375
+],
+"diff_start": 0,
+"diff_end": 56,
+"status": "conflict"
+},
+"Q12150341": {
+"name": "萨曼帝国",
+"seshat": [
+"Samanid Empire",
+876,
+990,
+[
+"UzSamnd"
+]
+],
+"wikidata": [
+819,
+999
+],
+"diff_start": -57,
+"diff_end": 9,
+"status": "conflict"
+},
+"Q577668": {
+"name": "布哈拉汗国",
+"seshat": [
+"Khanate of Bukhara",
+1599,
+1747,
+[
+"UzJanid"
+]
+],
+"wikidata": [
+1500,
+1785
+],
+"diff_start": -99,
+"diff_end": 38,
+"status": "conflict"
+},
+"Q155361": {
+"name": "柔然",
+"seshat": [
+"Rouran Khaganate",
+300,
+551,
+[
+"MnRourn"
+]
+],
+"wikidata": [
+330,
+555
+],
+"diff_start": 30,
+"diff_end": 4,
+"status": "agree"
+},
+"Q12557": {
+"name": "蒙古帝国",
+"seshat": [
+"Mongol Empire",
+1206,
+1300,
+[
+"MnMngKh"
+]
+],
+"wikidata": [
+1206,
+1368
+],
+"diff_start": 0,
+"diff_end": 68,
+"status": "conflict"
+},
+"Q229411": {
+"name": "德里苏丹国",
+"seshat": [
+"Delhi Sultanate",
+1206,
+1525,
+[
+"InDelh*"
+]
+],
+"wikidata": [
+1206,
+1526
+],
+"diff_start": 0,
+"diff_end": 1,
+"status": "agree"
+},
+"Q27260": {
+"name": "萨玛王朝",
+"seshat": [
+"Sind - Samma Dynasty",
+1340,
+1519,
+[
+"PkSind2"
+]
+],
+"wikidata": [
+1335,
+1520
+],
+"diff_start": -5,
+"diff_end": 1,
+"status": "agree"
+},
+"Q33296": {
+"name": "莫卧儿帝国",
+"seshat": [
+"Mughal Empire",
+1526,
+1803,
+[
+"InMugl*"
+]
+],
+"wikidata": [
+1526,
+1857
+],
+"diff_start": 0,
+"diff_end": 54,
+"status": "conflict"
+},
+"Q467627": {
+"name": "杜兰尼帝国",
+"seshat": [
+"Durrani Empire",
+1748,
+1826,
+[
+"AfDurrn"
+]
+],
+"wikidata": [
+1747,
+1826
+],
+"diff_start": -1,
+"diff_end": 0,
+"status": "agree"
+},
+"Q1147823": {
+"name": "加哈达瓦拉",
+"seshat": [
+"Gahadavala",
+1090,
+1202,
+[
+"InGhdvl"
+]
+],
+"wikidata": [
+1089,
+1197
+],
+"diff_start": -1,
+"diff_end": -5,
+"status": "agree"
+},
+"Q167639": {
+"name": "毗奢耶那伽罗王朝",
+"seshat": [
+"Vijayanagara Empire",
+1337,
+1646,
+[
+"InVijay"
+]
+],
+"wikidata": [
+1336,
+1646
+],
+"diff_start": -1,
+"diff_end": 0,
+"status": "agree"
+},
+"Q402145": {
+"name": "马打兰国",
+"seshat": [
+"Mataram Sultanate",
+1568,
+1703,
+[
+"IdMatrm"
+]
+],
+"wikidata": [
+1586,
+1755
+],
+"diff_start": 18,
+"diff_end": 52,
+"status": "conflict"
+},
+"Q1069609": {
+"name": "西周",
+"seshat": [
+"Western Zhou",
+-1045,
+-795,
+[
+"CnWZhou"
+]
+],
+"wikidata": [
+-1046,
+-771
+],
+"diff_start": -1,
+"diff_end": 24,
+"status": "agree"
+},
+"Q1072949": {
+"name": "西汉",
+"seshat": [
+"Western Han",
+-202,
+9,
+[
+"CnWHan*"
+]
+],
+"wikidata": [
+-202,
+9
+],
+"diff_start": 0,
+"diff_end": 0,
+"status": "agree"
+},
+"Q1147037": {
+"name": "东汉",
+"seshat": [
+"Eastern Han",
+25,
+219,
+[
+"CnEHan*"
+]
+],
+"wikidata": [
+25,
+220
+],
+"diff_start": 0,
+"diff_end": 1,
+"status": "agree"
+},
+"Q875305": {
+"name": "北魏",
+"seshat": [
+"Northern Wei",
+386,
+557,
+[
+"CnNWei*"
+]
+],
+"wikidata": [
+386,
+535
+],
+"diff_start": 0,
+"diff_end": -22,
+"status": "agree"
+},
+"Q7405": {
+"name": "隋朝",
+"seshat": [
+"Sui Dynasty",
+581,
+617,
+[
+"CnSui**"
+]
+],
+"wikidata": [
+581,
+618
+],
+"diff_start": 0,
+"diff_end": 1,
+"status": "agree"
+},
+"Q7313": {
+"name": "元朝",
+"seshat": [
+"Yuan Dynasty",
+1271,
+1367,
+[
+"CnYuan*"
+]
+],
+"wikidata": [
+1271,
+1368
+],
+"diff_start": 0,
+"diff_end": 1,
+"status": "agree"
+},
+"Q9903": {
+"name": "明朝",
+"seshat": [
+"Ming Dynasty",
+1368,
+1643,
+[
+"CnMing*"
+]
+],
+"wikidata": [
+1368,
+1644
+],
+"diff_start": 0,
+"diff_end": 1,
+"status": "agree"
+},
+"Q736839": {
+"name": "镰仓幕府",
+"seshat": [
+"Kamakura Shogunate",
+1185,
+1333,
+[
+"JpKamak"
+]
+],
+"wikidata": [
+1200,
+1333
+],
+"diff_start": 15,
+"diff_end": 0,
+"status": "agree"
+},
+"Q1154406": {
+"name": "室町幕府",
+"seshat": [
+"Ashikaga Shogunate",
+1336,
+1466,
+[
+"JpAshik"
+]
+],
+"wikidata": [
+1336,
+1573
+],
+"diff_start": 0,
+"diff_end": 107,
+"status": "conflict"
+},
+"Q205662": {
+"name": "江户幕府",
+"seshat": [
+"Tokugawa Shogunate",
+1603,
+1868,
+[
+"JpTokgw"
+]
+],
+"wikidata": [
+1603,
+1867
+],
+"diff_start": 0,
+"diff_end": -1,
+"status": "agree"
+},
+"Q80702": {
+"name": "西班牙帝国",
+"seshat": [
+"Spanish Empire",
+1521,
+1700,
+[
+"EsHabsb"
+]
+],
+"wikidata": [
+1402,
+1976
+],
+"diff_start": -119,
+"diff_end": 276,
+"status": "conflict"
+},
+"Q2608489": {
+"name": "阿兹特克联盟",
+"seshat": [
+"Aztec Empire",
+1427,
+1519,
+[
+"MxAztec"
+]
+],
+"wikidata": [
+1325,
+1521
+],
+"diff_start": -102,
+"diff_end": 2,
+"status": "conflict"
+},
+"Q923516": {
+"name": "瓦里帝国",
+"seshat": [
+"Wari Empire",
+650,
+999,
+[
+"PeWari*"
+]
+],
+"wikidata": [
+600,
+1100
+],
+"diff_start": -50,
+"diff_end": 101,
+"status": "conflict"
+},
+"Q28573": {
+"name": "印加帝国",
+"seshat": [
+"Inca Empire",
+1400,
+1531,
+[
+"PeInca*"
+]
+],
+"wikidata": [
+1438,
+1533
+],
+"diff_start": 38,
+"diff_end": 2,
+"status": "agree"
+}
+},
+"unmatched": [
+"Ak Koyunlu",
+"Akan - Pre-Ashanti",
+"Aksum I",
+"Amorite Babylonia",
+"Ancient Khwarazm",
+"Andronovo",
+"Archaic Basin of Mexico",
+"Archaic Crete",
+"Atlantic Complex",
+"Ayutthaya",
+"Ayyubid Sultanate",
+"Badarian",
+"Bamana kingdom",
+"Bazi Dynasty",
+"Bronze Age Cambodia",
+"Buyid Confederation",
+"Cahokia - Early Woodland",
+"Cahokia - Emergent Mississippian I",
+"Cahokia - Late Woodland I",
+"Cahokia - Lohman-Stirling",
+"Cahokia - Middle Woodland",
+"Cahokia - Moorehead",
+"Cahokia - Sand Prairie",
+"Canaan",
+"Chagatai Khaganate",
+"Chalcolithic Middle Ganga",
+"Chalukyas of Badami",
+"Chalukyas of Kalyani",
+"Chenla",
+"Chuuk - Early Truk",
+"Chuuk - Late Truk",
+"Classic Basin of Mexico",
+"Classical Angkor",
+"Classical Crete",
+"Cuzco - Early Intermediate I",
+"Cuzco - Late Formative",
+"Cuzco - Late Intermediate I",
+"Deccan - Neolithic",
+"Dynasty of E",
+"Early Angkor",
+"Early Bronze Age Beaker Culture",
+"Early Dynastic",
+"Early Formative Basin of Mexico",
+"Early Garo",
+"Early Illinois Confederation",
+"Early Jomon",
+"Early Merovingian",
+"Early Mongols",
+"Early Monte Alban I",
+"Early Qing",
+"Early Tang Dynasty",
+"Early Xiongnu",
+"East Roman Empire",
+"Eastern Turk Khaganate",
+"Egypt - Classic Old Kingdom",
+"Egypt - Dynasty 0",
+"Egypt - Dynasty I",
+"Egypt - Inter-Occupation Period",
+"Egypt - Kushite Period",
+"Egypt - Late Old Kingdom",
+"Egypt - Mamluk Sultanate I（人工排除：同名不同实体）",
+"Egypt - Middle Kingdom",
+"Egypt - New Kingdom Ramesside Period",
+"Egypt - New Kingdom Thutmosid Period",
+"Egypt - Period of the Regions",
+"Egypt - Saite Period",
+"Egypt - Thebes-Hyksos Period",
+"Egypt - Thebes-Libyan Period",
+"Egypt - Tulunid-Ikhshidid Period",
+"Elam - Crisis Period",
+"Elam - Early Sukkalmah",
+"Elam - Igihalkid Period",
+"Elam - Kidinuid Period",
+"Elam - Late Sukkalmah",
+"Elam - Shimashki Period",
+"Elam - Shutrukid Period",
+"Elam I",
+"Epiclassic Basin of Mexico",
+"Era of the War Lords",
+"Erligang",
+"Erlitou",
+"Exarchate of Ravenna",
+"Final Jomon",
+"Final Postpalatial Crete",
+"Formative Period",
+"French Kingdom - Early Bourbon",
+"French Kingdom - Early Valois",
+"French Kingdom - Late Bourbon",
+"French Kingdom - Late Capetian",
+"French Kingdom - Late Valois",
+"Funan I",
+"Geometric Crete",
+"Gupta Dynasty",
+"Gurjar",
+"Hallstatt A-B1",
+"Hallstatt B2-3",
+"Hallstatt C",
+"Hallstatt D",
+"Hatti - New Kingdom",
+"Hatti - Old Kingdom",
+"Hawaii I（同名不同实体）",
+"Hellenistic  Crete",
+"Hepthalite Empire",
+"Himyar I",
+"Hmong - Early Chinese",
+"Hoysala Kingdom",
+"Iban - Brooke Raj and Colonial",
+"Iban - Pre-Brooke",
+"Incipient Jomon",
+"Indo-Greek Kingdom",
+"Initial Formative Basin of Mexico",
+"Initial Jomon",
+"Iron Age Cambodia",
+"Isin-Larsa",
+"Japan - Azuchi, Momoyama",
+"Japan - Sengoku Jidai",
+"Java - Buni Culture",
+"Jenne-jeno I",
+"Jin State - Spring and Autumn Period",
+"Jivaro - Ecuadorian",
+"Kachi Plain - Aceramic Neolithic",
+"Kachi Plain - Chalcolithic",
+"Kachi Plain - Post-Urban Period",
+"Kachi Plain - Pre-Urban Period",
+"Kachi Plain - Proto-Historic Period",
+"Kachi Plain - Urban Period I",
+"Kadamba Empire",
+"Kalingga Kingdom",
+"Kampili Kingdom",
+"Kanauj",
+"Kansai - Asuka Period",
+"Kansai - Heian Period",
+"Kansai - Kofun Period",
+"Kansai - Nara Period",
+"Kansai - Yayoi Period",
+"Kara-Khanids",
+"Kassite Babylonia",
+"Kediri Kingdom",
+"Kenaan",
+"Khitan 2",
+"Khmer Kingdom",
+"Kidarite Kingdom",
+"Kingdom of Ayodhya",
+"Kingdom of Hawaii - Kamehameha Period",
+"Kingdom of Lydia",
+"Kingdom of Lysimachus",
+"Kingdom of Saba and Dhu Raydan",
+"Koktepe I",
+"Konya Plain - Ceramic Neolithic",
+"Konya Plain - Early Bronze Age",
+"Konya Plain - Early Chalcolithic",
+"Konya Plain - Early Neolithic",
+"Konya Plain - Late Bronze Age II",
+"Konya Plain - Late Chalcolithic",
+"Konya Plain - Late Neolithic",
+"La Tene A-B1",
+"La Tene B2-C1",
+"La Tene C2-D",
+"Late Angkor",
+"Late Cappadocia",
+"Late Formative Basin of Mexico",
+"Late Garo",
+"Late Jomon",
+"Late Mongols",
+"Late Qing",
+"Late Roman Republic",
+"Late Shang",
+"Late Xiongnu",
+"Later Jin",
+"Later Tang Dynasty",
+"Latium - Bronze Age",
+"Latium - Copper Age",
+"Latium - Iron Age",
+"Longshan",
+"Maghada",
+"Mahajanapada era",
+"Majapahit Kingdom",
+"Mauryan Empire",
+"Medang Kingdom",
+"Middle Bronze Age in Central Anatolia",
+"Middle Formative Basin of Mexico",
+"Middle Jomon",
+"Middle Merovingian",
+"Middle Postclassic Basin of Mexico",
+"Middle Roman Republic",
+"Monopalatial Crete",
+"Monte Alban II",
+"Monte Alban IIIB and IV",
+"Monte Alban Late I",
+"Naqada I",
+"Neguanje",
+"Neo-Hittite Kingdoms",
+"Neolithic Crete",
+"Neolithic Middle Ganga",
+"New Palace Crete",
+"Northern Song",
+"Oaxaca - Rosario",
+"Oaxaca - San Jose",
+"Oaxaca - Tierras Largas",
+"Oneota",
+"Orokaiva - Colonial",
+"Orokaiva - Pre-Colonial",
+"Ottoman Emirate",
+"Papal States - High Medieval Period",
+"Papal States - Medieval Period I",
+"Papal States - Renaissance Period",
+"Peiligang",
+"Phrygian Kingdom",
+"Post-Mauryan Kingdoms",
+"Postpalatial Crete",
+"Pre-Ceramic Period",
+"Prepalatial Crete",
+"Principality of Ghur",
+"Proto-Carolingian",
+"Proto-French Kingdom",
+"Proto-Iroquois Confederacy",
+"Qajar",
+"Qatabanian Commonwealth",
+"Rashtrakuta Empire",
+"Rasulids",
+"Rattanakosin",
+"Republic of St Peter I",
+"Roman Empire - Dominate",
+"Roman Empire - Principate",
+"Saadi Sultanate",
+"Sabaean Commonwealth",
+"Safavid Empire",
+"Sakha - Early",
+"Sakha - Late",
+"Sarazm",
+"Sasanid Empire II",
+"Sassanid Empire I",
+"Satavahana Empire",
+"Second British Empire",
+"Second Dynasty of Isin",
+"Second Turk Khaganate",
+"Segou Kingdom",
+"Shiwei",
+"Sind - Abbasid-Fatimid Period",
+"Sogdiana - City-States Period",
+"Songhai Empire - Askiya Dynasty",
+"Southern Mesopotamia Neolithic",
+"Sunga Empire",
+"Susa I",
+"Susiana - Early Ubaid",
+"Susiana - Late Ubaid",
+"Susiana - Muhammad Jaffar",
+"Susiana A",
+"Susiana B",
+"Tabal Kingdoms",
+"Tahirids",
+"Tairona",
+"Terminal Formative Basin of Mexico",
+"The Old Palace Crete",
+"Tocharians",
+"Toltecs",
+"Ubaid",
+"Uigur Khaganate",
+"Uruk",
+"Vakataka Kingdom",
+"Wei State - Warring States Period",
+"Western Jin",
+"Western Roman Empire - Late Antiquity",
+"Western Turk Khaganate",
+"Xianbei Confederation",
+"Xiongnu Imperial Confederation",
+"Yangshao",
+"Yehuda",
+"Yemen - Qasimid Dynasty",
+"Yisrael",
+"Zungharian Empire"
+]
+}
