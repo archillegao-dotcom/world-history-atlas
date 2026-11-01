@@ -1,0 +1,387 @@
+[
+ {
+  "year": -123000,
+  "file": "-123000.geojson.gz",
+  "features": 157,
+  "source": "https://raw.githubusercontent.com/aourednik/historical-basemaps/master/geojson/world_bc123000.geojson",
+  "label": "historical-basemaps"
+ },
+ {
+  "year": -10000,
+  "file": "-10000.geojson.gz",
+  "features": 135,
+  "source": "https://raw.githubusercontent.com/aourednik/historical-basemaps/master/geojson/world_bc10000.geojson",
+  "label": "historical-basemaps"
+ },
+ {
+  "year": -8000,
+  "file": "-8000.geojson.gz",
+  "features": 134,
+  "source": "https://raw.githubusercontent.com/aourednik/historical-basemaps/master/geojson/world_bc8000.geojson",
+  "label": "historical-basemaps"
+ },
+ {
+  "year": -5000,
+  "file": "-5000.geojson.gz",
+  "features": 279,
+  "source": "https://raw.githubusercontent.com/aourednik/historical-basemaps/master/geojson/world_bc5000.geojson",
+  "label": "historical-basemaps"
+ },
+ {
+  "year": -4000,
+  "file": "-4000.geojson.gz",
+  "features": 136,
+  "source": "https://raw.githubusercontent.com/aourednik/historical-basemaps/master/geojson/world_bc4000.geojson",
+  "label": "historical-basemaps"
+ },
+ {
+  "year": -3000,
+  "file": "-3000.geojson.gz",
+  "features": 138,
+  "source": "https://raw.githubusercontent.com/aourednik/historical-basemaps/master/geojson/world_bc3000.geojson",
+  "label": "historical-basemaps"
+ },
+ {
+  "year": -2000,
+  "file": "-2000.geojson.gz",
+  "features": 145,
+  "source": "https://raw.githubusercontent.com/aourednik/historical-basemaps/master/geojson/world_bc2000.geojson",
+  "label": "historical-basemaps"
+ },
+ {
+  "year": -1500,
+  "file": "-1500.geojson.gz",
+  "features": 163,
+  "source": "https://raw.githubusercontent.com/aourednik/historical-basemaps/master/geojson/world_bc1500.geojson",
+  "label": "historical-basemaps"
+ },
+ {
+  "year": -1000,
+  "file": "-1000.geojson.gz",
+  "features": 163,
+  "source": "https://raw.githubusercontent.com/aourednik/historical-basemaps/master/geojson/world_bc1000.geojson",
+  "label": "historical-basemaps"
+ },
+ {
+  "year": -700,
+  "file": "-700.geojson.gz",
+  "features": 174,
+  "source": "https://raw.githubusercontent.com/aourednik/historical-basemaps/master/geojson/world_bc700.geojson",
+  "label": "historical-basemaps"
+ },
+ {
+  "year": -500,
+  "file": "-500.geojson.gz",
+  "features": 189,
+  "source": "https://raw.githubusercontent.com/aourednik/historical-basemaps/master/geojson/world_bc500.geojson",
+  "label": "historical-basemaps"
+ },
+ {
+  "year": -400,
+  "file": "-400.geojson.gz",
+  "features": 190,
+  "source": "https://raw.githubusercontent.com/aourednik/historical-basemaps/master/geojson/world_bc400.geojson",
+  "label": "historical-basemaps"
+ },
+ {
+  "year": -323,
+  "file": "-323.geojson.gz",
+  "features": 149,
+  "source": "https://raw.githubusercontent.com/aourednik/historical-basemaps/master/geojson/world_bc323.geojson",
+  "label": "historical-basemaps"
+ },
+ {
+  "year": -300,
+  "file": "-300.geojson.gz",
+  "features": 155,
+  "source": "https://raw.githubusercontent.com/aourednik/historical-basemaps/master/geojson/world_bc300.geojson",
+  "label": "historical-basemaps"
+ },
+ {
+  "year": -200,
+  "file": "-200.geojson.gz",
+  "features": 183,
+  "source": "https://raw.githubusercontent.com/aourednik/historical-basemaps/master/geojson/world_bc200.geojson",
+  "label": "historical-basemaps"
+ },
+ {
+  "year": -100,
+  "file": "-100.geojson.gz",
+  "features": 196,
+  "source": "https://raw.githubusercontent.com/aourednik/historical-basemaps/master/geojson/world_bc100.geojson",
+  "label": "historical-basemaps"
+ },
+ {
+  "year": -1,
+  "file": "-1.geojson.gz",
+  "features": 385,
+  "source": "https://raw.githubusercontent.com/aourednik/historical-basemaps/master/geojson/world_bc1.geojson",
+  "label": "historical-basemaps"
+ },
+ {
+  "year": 100,
+  "file": "100.geojson.gz",
+  "features": 440,
+  "source": "https://raw.githubusercontent.com/aourednik/historical-basemaps/master/geojson/world_100.geojson",
+  "label": "historical-basemaps"
+ },
+ {
+  "year": 200,
+  "file": "200.geojson.gz",
+  "features": 317,
+  "source": "https://raw.githubusercontent.com/aourednik/historical-basemaps/master/geojson/world_200.geojson",
+  "label": "historical-basemaps"
+ },
+ {
+  "year": 300,
+  "file": "300.geojson.gz",
+  "features": 429,
+  "source": "https://raw.githubusercontent.com/aourednik/historical-basemaps/master/geojson/world_300.geojson",
+  "label": "historical-basemaps"
+ },
+ {
+  "year": 400,
+  "file": "400.geojson.gz",
+  "features": 330,
+  "source": "https://raw.githubusercontent.com/aourednik/historical-basemaps/master/geojson/world_400.geojson",
+  "label": "historical-basemaps"
+ },
+ {
+  "year": 500,
+  "file": "500.geojson.gz",
+  "features": 205,
+  "source": "https://raw.githubusercontent.com/aourednik/historical-basemaps/master/geojson/world_500.geojson",
+  "label": "historical-basemaps"
+ },
+ {
+  "year": 600,
+  "file": "600.geojson.gz",
+  "features": 204,
+  "source": "https://raw.githubusercontent.com/aourednik/historical-basemaps/master/geojson/world_600.geojson",
+  "label": "historical-basemaps"
+ },
+ {
+  "year": 700,
+  "file": "700.geojson.gz",
+  "features": 253,
+  "source": "https://raw.githubusercontent.com/aourednik/historical-basemaps/master/geojson/world_700.geojson",
+  "label": "historical-basemaps"
+ },
+ {
+  "year": 800,
+  "file": "800.geojson.gz",
+  "features": 225,
+  "source": "https://raw.githubusercontent.com/aourednik/historical-basemaps/master/geojson/world_800.geojson",
+  "label": "historical-basemaps"
+ },
+ {
+  "year": 900,
+  "file": "900.geojson.gz",
+  "features": 244,
+  "source": "https://raw.githubusercontent.com/aourednik/historical-basemaps/master/geojson/world_900.geojson",
+  "label": "historical-basemaps"
+ },
+ {
+  "year": 1000,
+  "file": "1000.geojson.gz",
+  "features": 264,
+  "source": "https://raw.githubusercontent.com/aourednik/historical-basemaps/master/geojson/world_1000.geojson",
+  "label": "historical-basemaps"
+ },
+ {
+  "year": 1100,
+  "file": "1100.geojson.gz",
+  "features": 235,
+  "source": "https://raw.githubusercontent.com/aourednik/historical-basemaps/master/geojson/world_1100.geojson",
+  "label": "historical-basemaps"
+ },
+ {
+  "year": 1200,
+  "file": "1200.geojson.gz",
+  "features": 285,
+  "source": "https://raw.githubusercontent.com/aourednik/historical-basemaps/master/geojson/world_1200.geojson",
+  "label": "historical-basemaps"
+ },
+ {
+  "year": 1279,
+  "file": "1279.geojson.gz",
+  "features": 247,
+  "source": "https://raw.githubusercontent.com/aourednik/historical-basemaps/master/geojson/world_1279.geojson",
+  "label": "historical-basemaps"
+ },
+ {
+  "year": 1300,
+  "file": "1300.geojson.gz",
+  "features": 237,
+  "source": "https://raw.githubusercontent.com/aourednik/historical-basemaps/master/geojson/world_1300.geojson",
+  "label": "historical-basemaps"
+ },
+ {
+  "year": 1400,
+  "file": "1400.geojson.gz",
+  "features": 233,
+  "source": "https://raw.githubusercontent.com/aourednik/historical-basemaps/master/geojson/world_1400.geojson",
+  "label": "historical-basemaps"
+ },
+ {
+  "year": 1492,
+  "file": "1492.geojson.gz",
+  "features": 1946,
+  "source": "https://raw.githubusercontent.com/aourednik/historical-basemaps/master/geojson/world_1492.geojson",
+  "label": "historical-basemaps"
+ },
+ {
+  "year": 1500,
+  "file": "1500.geojson.gz",
+  "features": 291,
+  "source": "https://raw.githubusercontent.com/aourednik/historical-basemaps/master/geojson/world_1500.geojson",
+  "label": "historical-basemaps"
+ },
+ {
+  "year": 1530,
+  "file": "1530.geojson.gz",
+  "features": 494,
+  "source": "https://raw.githubusercontent.com/aourednik/historical-basemaps/master/geojson/world_1530.geojson",
+  "label": "historical-basemaps"
+ },
+ {
+  "year": 1600,
+  "file": "1600.geojson.gz",
+  "features": 866,
+  "source": "https://raw.githubusercontent.com/aourednik/historical-basemaps/master/geojson/world_1600.geojson",
+  "label": "historical-basemaps"
+ },
+ {
+  "year": 1650,
+  "file": "1650.geojson.gz",
+  "features": 778,
+  "source": "https://raw.githubusercontent.com/aourednik/historical-basemaps/master/geojson/world_1650.geojson",
+  "label": "historical-basemaps"
+ },
+ {
+  "year": 1700,
+  "file": "1700.geojson.gz",
+  "features": 782,
+  "source": "https://raw.githubusercontent.com/aourednik/historical-basemaps/master/geojson/world_1700.geojson",
+  "label": "historical-basemaps"
+ },
+ {
+  "year": 1715,
+  "file": "1715.geojson.gz",
+  "features": 758,
+  "source": "https://raw.githubusercontent.com/aourednik/historical-basemaps/master/geojson/world_1715.geojson",
+  "label": "historical-basemaps"
+ },
+ {
+  "year": 1783,
+  "file": "1783.geojson.gz",
+  "features": 641,
+  "source": "https://raw.githubusercontent.com/aourednik/historical-basemaps/master/geojson/world_1783.geojson",
+  "label": "historical-basemaps"
+ },
+ {
+  "year": 1800,
+  "file": "1800.geojson.gz",
+  "features": 627,
+  "source": "https://raw.githubusercontent.com/aourednik/historical-basemaps/master/geojson/world_1800.geojson",
+  "label": "historical-basemaps"
+ },
+ {
+  "year": 1815,
+  "file": "1815.geojson.gz",
+  "features": 436,
+  "source": "https://raw.githubusercontent.com/aourednik/historical-basemaps/master/geojson/world_1815.geojson",
+  "label": "historical-basemaps"
+ },
+ {
+  "year": 1878,
+  "file": "1878.geojson.gz",
+  "features": 239,
+  "source": "https://raw.githubusercontent.com/aourednik/historical-basemaps/master/geojson/world_1878.geojson",
+  "label": "historical-basemaps"
+ },
+ {
+  "year": 1880,
+  "file": "1880.geojson.gz",
+  "features": 236,
+  "source": "https://raw.githubusercontent.com/aourednik/historical-basemaps/master/geojson/world_1880.geojson",
+  "label": "historical-basemaps"
+ },
+ {
+  "year": 1900,
+  "file": "1900.geojson.gz",
+  "features": 270,
+  "source": "https://raw.githubusercontent.com/aourednik/historical-basemaps/master/geojson/world_1900.geojson",
+  "label": "historical-basemaps"
+ },
+ {
+  "year": 1914,
+  "file": "1914.geojson.gz",
+  "features": 177,
+  "source": "https://raw.githubusercontent.com/aourednik/historical-basemaps/master/geojson/world_1914.geojson",
+  "label": "historical-basemaps"
+ },
+ {
+  "year": 1920,
+  "file": "1920.geojson.gz",
+  "features": 205,
+  "source": "https://raw.githubusercontent.com/aourednik/historical-basemaps/master/geojson/world_1920.geojson",
+  "label": "historical-basemaps"
+ },
+ {
+  "year": 1930,
+  "file": "1930.geojson.gz",
+  "features": 200,
+  "source": "https://raw.githubusercontent.com/aourednik/historical-basemaps/master/geojson/world_1930.geojson",
+  "label": "historical-basemaps"
+ },
+ {
+  "year": 1938,
+  "file": "1938.geojson.gz",
+  "features": 254,
+  "source": "https://raw.githubusercontent.com/aourednik/historical-basemaps/master/geojson/world_1938.geojson",
+  "label": "historical-basemaps"
+ },
+ {
+  "year": 1945,
+  "file": "1945.geojson.gz",
+  "features": 227,
+  "source": "https://raw.githubusercontent.com/aourednik/historical-basemaps/master/geojson/world_1945.geojson",
+  "label": "historical-basemaps"
+ },
+ {
+  "year": 1960,
+  "file": "1960.geojson.gz",
+  "features": 197,
+  "source": "https://raw.githubusercontent.com/aourednik/historical-basemaps/master/geojson/world_1960.geojson",
+  "label": "historical-basemaps"
+ },
+ {
+  "year": 1994,
+  "file": "1994.geojson.gz",
+  "features": 240,
+  "source": "https://raw.githubusercontent.com/aourednik/historical-basemaps/master/geojson/world_1994.geojson",
+  "label": "historical-basemaps"
+ },
+ {
+  "year": 2000,
+  "file": "2000.geojson.gz",
+  "features": 240,
+  "source": "https://raw.githubusercontent.com/aourednik/historical-basemaps/master/geojson/world_2000.geojson",
+  "label": "historical-basemaps"
+ },
+ {
+  "year": 2010,
+  "file": "2010.geojson.gz",
+  "features": 240,
+  "source": "https://raw.githubusercontent.com/aourednik/historical-basemaps/master/geojson/world_2010.geojson",
+  "label": "historical-basemaps"
+ },
+ {
+  "year": 2011,
+  "file": "2011.geojson.gz",
+  "features": 242,
+  "source": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_50m_admin_0_countries.geojson",
+  "label": "现代边界（Natural Earth 5.x，约 2020 年代）"
+ }
+]

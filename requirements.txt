@@ -1,0 +1,5 @@
+fastapi>=0.110
+uvicorn>=0.27
+shapely>=2.0
+requests>=2.31   # 仅数据构建脚本 tools/ 需要
+opencc-python-reimplemented>=0.1.7  # 仅数据构建脚本需要（繁→简）

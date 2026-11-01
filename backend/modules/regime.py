@@ -1,0 +1,102 @@
+"""
+模块「政权性质」：所选日期该政权的政体（P122，按起止限定）、意识形态（P1142）、
+当时国家元首/政府首脑所属政党（P102，按起止限定）、首都（P36，按起止限定）、存在期、国旗，
+以及中文维基百科条目首句作为定义（在线获取并缓存；离线时显示 Wikidata 简介）。
+另列出该政权当时所属的阵营/同盟（来自阵营数据）。
+"""
+from __future__ import annotations
+
+from ..live import wiki
+from ..polity import valid_at
+from ..registry import ContentModule
+from ._common import fmt_time
+from ._state_common import METHOD_ZH, pick_state, resolver
+from .leaders import _holding
+
+
+class RegimeModule(ContentModule):
+    id = "regime"
+    title = "政权性质"
+    order = 7
+    description = "政体、执政党、意识形态与维基百科定义"
+    frontend = "modules/statepanels.js"
+    source = "Wikidata（P122 政体、P1142 意识形态、P102 所属政党、P36 首都）；维基百科条目首句（CC BY-SA）"
+
+    def load(self, ctx):
+        self.R = resolver(ctx)
+
+    def stats(self):
+        return {"states": len(self.R.states), "mapped_polygons": sum(len(v) for v in self.R.map.values())}
+
+    def query(self, ctx, polity, date, params):
+        R = resolver(ctx)
+        st, alts = pick_state(ctx, polity, date, params)
+        if polity is None:
+            return {"items": [], "total": 0, "note": "请在地图上点击一个国家/政权。"}
+        if not st:
+            return {"items": [], "total": 0, "alternatives": alts,
+                    "note": "没能把这个地图区域对应到 Wikidata 中当时存在的政权。"}
+        dk = date.key()
+
+        def at_date(lst):
+            dated = [x for x in lst if x.get("from") or x.get("to")]
+            hits = [x for x in dated if valid_at(dk, x.get("from"), x.get("to"))]
+            undated = [x for x in lst if not (x.get("from") or x.get("to"))]
+            return hits, undated
+
+        group = [st] + [x for x in params.get("_strong", []) if x["id"] != st["id"]]
+
+        def first(field):
+            """在主要政权及同名政权中找第一个有该字段（按日期有效）的：返回 (有效值, 无时间值, 来源政权)。"""
+            for s_ in group:
+                h, u = at_date(s_.get(field, []))
+                if h:
+                    return h, [], s_
+            for s_ in group:
+                h, u = at_date(s_.get(field, []))
+                if u:
+                    return [], u, s_
+            return [], [], st
+
+        gov_hit, gov_und, gov_src = first("gov")
+        caps_hit, caps_und, _ = first("capitals")
+        ideo_hit, ideo_und, ideo_src = first("ideology")
+        # 执政党：当时元首/首脑所属政党（P102 带时间的按时间，否则列出并注明未注明时间）
+        parties = []
+        seenp = set()
+        for fld, role in (("hos", "国家元首"), ("hog", "政府首脑")):
+            for h in _holding([{"from": x.get("from"), "to": x.get("to"), "p": x["v"]} for s_ in group for x in s_.get(fld, [])], dk):
+                if (role, h["p"]) in seenp:
+                    continue
+                seenp.add((role, h["p"]))
+                p = R.persons.get(h["p"], {})
+                ph, pu = at_date(p.get("party", []))
+                for x in ph + (pu if not ph else []):
+                    parties.append({"role": role, "person": R.person_brief(h["p"]), "party": x.get("zh") or x.get("en"),
+                                    "party_id": x["v"], "dated": x in ph})
+        blocs = []
+        act = ctx.shared.get("alliances_active")
+        if act:
+            ids = {x["id"] for x in group}
+            blocs = [{"id": a["id"], "name": a["name"]} for a in act(ctx, date) if ids & set(a["members"])]
+        summ = wiki.summary(st.get("zhwiki"), st.get("enwiki")) if params.get("online", True) else None
+        term = lambda x: {"id": x["v"], "name": x.get("zh") or x.get("en") or x["v"], "en": x.get("en")}
+        return {"items": [], "total": 1, "kind": "regime",
+                "state": {"id": st["id"], "name": st.get("zh") or st.get("en"), "en": st.get("en"),
+                          "desc": st.get("desc"), "from": fmt_time(st.get("from")) if st.get("from") else None,
+                          "to": fmt_time(st.get("to")) if st.get("to") else None,
+                          "flag": wiki.commons_thumb(st.get("flag"), 160),
+                          "zhwiki": st.get("zhwiki"), "enwiki": st.get("enwiki")},
+                "alternatives": [{**a, "method_zh": METHOD_ZH.get(a["method"], a["method"])} for a in alts],
+                "gov": [term(x) for x in gov_hit], "gov_undated": [term(x) for x in gov_und] if not gov_hit else [],
+                "ideology": [term(x) for x in ideo_hit + ideo_und],
+                "gov_from": None if gov_src is st else f'{gov_src.get("zh") or gov_src.get("en")}，{gov_src["id"]}',
+                "ideology_from": None if ideo_src is st else f'{ideo_src.get("zh") or ideo_src.get("en")}，{ideo_src["id"]}',
+                "capital": [x.get("name") for x in (caps_hit or caps_und)][:3],
+                "parties": parties, "blocs": blocs,
+                "definition": wiki.first_sentence(summ["extract"]) if summ else None,
+                "definition_src": summ and {"lang": summ["lang"], "url": summ["url"], "title": summ["title"]},
+                "note": "政体等字段以 Wikidata 为准；没有时间限定的值单独标出（可能不适用于所选日期）。"}
+
+
+MODULE = RegimeModule()

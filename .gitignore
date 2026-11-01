@@ -1,0 +1,27 @@
+# virtual environments
+.venv/
+venv/
+env/
+
+# PyInstaller
+build/
+dist/
+*.spec.bak
+
+# Python caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.cache/
+
+# writable runtime data (daily news updates, wiki summary cache)
+data/live/
+wiki_cache/
+update_state.json
+
+# logs and OS junk
+*.log
+.DS_Store
+Thumbs.db

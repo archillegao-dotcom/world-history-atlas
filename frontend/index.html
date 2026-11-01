@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>世界历史地图 · World History Atlas</title>
+<!-- 所有资源均为本地文件，运行时不依赖 CDN / 网络 -->
+<link rel="stylesheet" href="vendor/leaflet/leaflet.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header id="topbar">
+  <div class="brand">世界历史地图 <span>World History Atlas</span></div>
+  <div class="datebox">
+    <label class="bc"><input type="checkbox" id="isBC"> 公元前</label>
+    <input type="number" id="yearIn" min="1" max="123000" title="年份">
+    <span>年</span>
+    <select id="monthIn" title="月（可不选）"></select>
+    <select id="dayIn" title="日（可不选）"></select>
+    <button id="goBtn" title="跳转到这个日期">跳转</button>
+    <button id="prevBtn" title="上一步（年或日）">◀</button>
+    <button id="nextBtn" title="下一步（年或日）">▶</button>
+    <button id="playBtn" title="播放 / 暂停">▶ 播放</button>
+    <select id="speedIn" title="播放速度">
+      <option value="900">慢</option><option value="450" selected>中</option><option value="180">快</option>
+    </select>
+  </div>
+  <button id="todayBtn" title="跳到今天">今天</button>
+  <button id="worldBtn" title="查看全世界在这一天前后的事件与人物">🌍 全世界</button>
+  <button id="aboutBtn">数据说明</button>
+  <span id="updateStatus"></span>
+</header>
+
+<main>
+  <div id="map"></div>
+  <aside id="panel" class="hidden">
+    <div class="panel-head">
+      <button id="closePanel" title="关闭">✕</button>
+      <h2 id="polityName">—</h2>
+      <div id="polityMeta"></div>
+    </div>
+    <nav id="tabs"></nav>
+    <div id="tabBody"></div>
+  </aside>
+  <div id="eraNote"></div>
+  <div id="legend"></div>
+</main>
+
+<footer id="timeline">
+  <div id="dateLabel"></div>
+  <input type="range" id="slider" min="0" max="10000" step="1">
+  <div id="ticks"></div>
+</footer>
+
+<div id="about" class="modal hidden"><div class="modal-body">
+  <button class="modal-close" id="aboutClose">✕</button>
+  <h2>数据说明</h2>
+  <div id="aboutBody"></div>
+</div></div>
+
+<!-- 详情窗口：人物页面 / 机构卡片 / 阵营面板（由模块脚本填充） -->
+<div id="detail" class="modal hidden"><div class="modal-body detail-body">
+  <button class="modal-close" id="detailClose">✕</button>
+  <div id="detailBody"></div>
+</div></div>
+<script src="vendor/leaflet/leaflet.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

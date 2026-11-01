@@ -1,0 +1,171 @@
+# 用 PyInstaller 打免安装包（用户的电脑不需要安装 Python）。
+#  - 推送 v1.0.0 这样的标签 → 构建并把 zip 挂到 GitHub Release
+#  - Actions 页 > “Build apps” > Run workflow → 只构建，zip 作为 Artifact 下载
+#
+# macOS（arm64 和 Intel）两个任务一结束就发布。
+# Windows 并行跑，不能挡住这次 macOS 发布；它的 zip 只有在成功之后才补挂上去。
+name: Build apps
+
+on:
+  push:
+    tags: ["v*"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-macos:
+    name: build (${{ matrix.name }})
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: macos-latest        # Apple 芯片（arm64）。macos-latest 是 macOS 26。
+            name: macos-arm64
+          - os: macos-15-intel      # Intel Mac（x86_64）。macos-13 已退役。
+            name: macos-x64
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 45
+    env:
+      WHA_VERSION: ${{ github.ref_type == 'tag' && github.ref_name || '0.4.0' }}
+      PYTHONUTF8: "1"
+      PYTHONIOENCODING: utf-8
+      PYTHONUNBUFFERED: "1"
+      # 从源码编译时的下限。预编译轮子保留自己的最低版本；
+      # packaging/build.py 会从二进制里把真正的要求读出来。
+      MACOSX_DEPLOYMENT_TARGET: "11.0"
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r requirements.txt pyinstaller
+
+      - name: Build (seed data + PyInstaller + zip)
+        run: python packaging/build.py
+
+      - name: Smoke test (unpacked ditto zip, --no-terminal)
+        shell: bash
+        run: bash packaging/smoke.sh
+
+      - name: Rename zip
+        shell: bash
+        run: |
+          ls -la dist
+          f=$(ls dist/WorldHistoryAtlas-*.zip | head -n1)
+          dest="dist/WorldHistoryAtlas-${{ matrix.name }}.zip"
+          if [ "$f" != "$dest" ]; then mv "$f" "$dest"; fi
+          test -f "$dest"
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: WorldHistoryAtlas-${{ matrix.name }}
+          path: dist/WorldHistoryAtlas-${{ matrix.name }}.zip
+          if-no-files-found: error
+          retention-days: 30
+
+  build-windows:
+    name: build (windows-x64)
+    runs-on: windows-latest
+    timeout-minutes: 45
+    env:
+      WHA_VERSION: ${{ github.ref_type == 'tag' && github.ref_name || '0.4.0' }}
+      PYTHONUTF8: "1"
+      PYTHONIOENCODING: utf-8
+      PYTHONUNBUFFERED: "1"
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r requirements.txt pyinstaller
+
+      - name: Build (seed data + PyInstaller + zip)
+        run: python packaging/build.py
+
+      - name: Smoke test
+        shell: bash
+        run: bash packaging/smoke.sh
+
+      - name: Rename zip
+        shell: bash
+        run: |
+          ls -la dist
+          f=$(ls dist/WorldHistoryAtlas-*.zip | head -n1)
+          dest="dist/WorldHistoryAtlas-windows-x64.zip"
+          if [ "$f" != "$dest" ]; then mv "$f" "$dest"; fi
+          test -f "$dest"
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: WorldHistoryAtlas-windows-x64
+          path: dist/WorldHistoryAtlas-windows-x64.zip
+          if-no-files-found: error
+          retention-days: 30
+
+  release-macos:
+    name: release (macOS)
+    needs: build-macos
+    if: ${{ !cancelled() && github.ref_type == 'tag' }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: WorldHistoryAtlas-macos-*
+          path: out
+          merge-multiple: true
+
+      - name: Require both macOS zips and write notes
+        run: |
+          ls -la out
+          test -f out/WorldHistoryAtlas-macos-arm64.zip
+          test -f out/WorldHistoryAtlas-macos-x64.zip
+          python3 packaging/release_notes.py out > notes.md
+          cat notes.md
+
+      - uses: softprops/action-gh-release@v2
+        with:
+          name: WorldHistoryAtlas ${{ github.ref_name }}
+          body_path: notes.md
+          files: |
+            out/WorldHistoryAtlas-macos-arm64.zip
+            out/WorldHistoryAtlas-macos-x64.zip
+          fail_on_unmatched_files: true
+
+  release-windows:
+    name: release (Windows)
+    needs: [build-windows, release-macos]
+    if: ${{ !cancelled() && github.ref_type == 'tag' && needs.build-windows.result == 'success' && needs.release-macos.result == 'success' }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: WorldHistoryAtlas-*
+          path: out
+          merge-multiple: true
+
+      - name: Attach the Windows zip and refresh the notes
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          test -f out/WorldHistoryAtlas-windows-x64.zip
+          gh release upload "${{ github.ref_name }}" out/WorldHistoryAtlas-windows-x64.zip --clobber
+          python3 packaging/release_notes.py out > notes.md
+          gh release edit "${{ github.ref_name }}" --notes-file notes.md
