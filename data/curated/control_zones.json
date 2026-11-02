@@ -9,7 +9,8 @@
   "  admin0_parts {a3, bbox, max_area}（Natural Earth 1:10m 国家多边形中落在 bbox 内的岛屿部分）、basemap {snap, name}（historical-basemaps 快照多边形）、",
   "  polygon（手绘近似多边形 [[经度, 纬度], …]）；可加 intersect_bbox [minx, miny, maxx, maxy] 与 minus（另一个几何规格）。",
   "approx：true 表示范围为近似（地图上标注「大致范围」）；dates_note / note：日期与范围的说明；sources：来源网址（国际学术/百科来源为主，中文资料只作辅助）。",
-  "  union [规格, …]：在以上结果上再并入其他几何规格。"
+  "  union [规格, …]：在以上结果上再并入其他几何规格。",
+  "geometry 另可用 cshapes {gw:[…], date}（CShapes 2.0 该日期有效的行）与 intersect（与另一几何规格求交）。"
  ],
  "zones": [
   {
@@ -758,6 +759,11414 @@
     "https://en.wikipedia.org/wiki/Mongol_conquest_of_the_Song_dynasty",
     "https://en.wikipedia.org/wiki/Yuan_dynasty"
    ]
+  },
+  {
+   "id": "sjw_manchuria_1931",
+   "group": "sino_japanese_war",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "日本关东军占领区（中国东北）",
+   "name_en": "Kwantung Army-occupied Manchuria",
+   "controller": {
+    "qid": "Q188712",
+    "zh": "大日本帝国"
+   },
+   "from": "1931-09-19",
+   "until": "1932-03-01",
+   "geometry": {
+    "basemap": {
+     "snap": 1930,
+     "name": "Manchuria"
+    }
+   },
+   "approx": true,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Japanese_invasion_of_Manchuria",
+    "https://en.wikipedia.org/wiki/Mukden_incident"
+   ],
+   "note": "范围用 historical-basemaps 1930 年「Manchuria」多边形近似，按完成占领后的范围显示（其间各地失守日期不同）。",
+   "dates_note": "1931-09-18 九一八事变后关东军逐步占领东北：沈阳 09-19、吉林 09-21、齐齐哈尔 11-19、锦州 1932-01-03、哈尔滨 1932-02-05；1932-03-01 成立满洲国。"
+  },
+  {
+   "id": "sjw_jehol_1933",
+   "group": "sino_japanese_war",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "满洲国（热河省，1933 年 3 月起）",
+   "name_en": "Manchukuo (Jehol)",
+   "controller": {
+    "qid": "Q30623",
+    "zh": "满洲国"
+   },
+   "from": "1933-03-04",
+   "until": "1945-08-19",
+   "geometry": {
+    "polygon": [
+     [
+      116.4,
+      41.0
+     ],
+     [
+      117.4,
+      40.6
+     ],
+     [
+      118.5,
+      40.2
+     ],
+     [
+      119.7,
+      40.1
+     ],
+     [
+      120.4,
+      40.6
+     ],
+     [
+      121.6,
+      41.5
+     ],
+     [
+      121.0,
+      42.6
+     ],
+     [
+      120.4,
+      43.5
+     ],
+     [
+      119.5,
+      44.6
+     ],
+     [
+      118.0,
+      44.8
+     ],
+     [
+      117.2,
+      44.0
+     ],
+     [
+      116.5,
+      43.0
+     ],
+     [
+      116.0,
+      42.0
+     ]
+    ]
+   },
+   "approx": true,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Operation_Nekka",
+    "https://en.wikipedia.org/wiki/Rehe_Province"
+   ],
+   "note": "热河省范围为手绘近似（±50 km）。",
+   "dates_note": "热河作战：日军与满洲国军 1933-02-23 进攻，03-04 承德失守，热河并入满洲国；1945-08 苏联对日作战后满洲国瓦解（溥仪 08-18 宣布退位）。"
+  },
+  {
+   "id": "sjw_east_hebei",
+   "group": "sino_japanese_war",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "冀东防共自治政府",
+   "name_en": "East Hebei Autonomous Council",
+   "controller": {
+    "qid": "Q707917",
+    "zh": "冀东防共自治政府"
+   },
+   "from": "1935-11-25",
+   "until": "1938-02-01",
+   "geometry": {
+    "polygon": [
+     [
+      116.6,
+      39.6
+     ],
+     [
+      116.9,
+      40.4
+     ],
+     [
+      117.5,
+      40.25
+     ],
+     [
+      118.5,
+      40.2
+     ],
+     [
+      119.6,
+      40.05
+     ],
+     [
+      119.4,
+      39.4
+     ],
+     [
+      118.6,
+      39.1
+     ],
+     [
+      117.8,
+      39.2
+     ],
+     [
+      117.2,
+      39.4
+     ]
+    ]
+   },
+   "approx": true,
+   "sources": [
+    "https://en.wikipedia.org/wiki/East_Hebei_Autonomous_Council"
+   ],
+   "note": "22 县范围为手绘近似（长城以南、通州以东至山海关）。",
+   "dates_note": "1935-11-25 殷汝耕在通州成立「冀东防共自治委员会」（12 月改称政府），辖冀东 22 县；1938-02-01 并入中华民国临时政府。"
+  },
+  {
+   "id": "sjw_north_chahar",
+   "group": "sino_japanese_war",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "蒙古军政府（察北）",
+   "name_en": "Mongol Military Government (North Chahar)",
+   "controller": {
+    "qid": "Q85883982",
+    "zh": "蒙古军政府"
+   },
+   "from": "1936-05-12",
+   "until": "1937-10-28",
+   "geometry": {
+    "polygon": [
+     [
+      113.6,
+      41.5
+     ],
+     [
+      114.0,
+      42.8
+     ],
+     [
+      115.5,
+      43.5
+     ],
+     [
+      116.6,
+      44.5
+     ],
+     [
+      117.2,
+      44.0
+     ],
+     [
+      116.5,
+      43.0
+     ],
+     [
+      116.0,
+      42.0
+     ],
+     [
+      115.4,
+      41.4
+     ],
+     [
+      114.5,
+      41.2
+     ]
+    ]
+   },
+   "approx": true,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mengjiang",
+    "https://en.wikipedia.org/wiki/Qin–Doihara_Agreement"
+   ],
+   "note": "察北范围为手绘近似（±80 km）。",
+   "dates_note": "1935-06《秦土协定》后察哈尔北部由日本扶植的德王势力控制；1936-05-12 成立蒙古军政府；1937-10-28 改组为蒙古联盟自治政府。"
+  },
+  {
+   "id": "sjw_mengjiang_1937",
+   "group": "sino_japanese_war",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "蒙古联盟自治政府（日本扶植）",
+   "name_en": "Mongol United Autonomous Government",
+   "controller": {
+    "qid": "Q11621245",
+    "zh": "蒙古联盟自治政府"
+   },
+   "from": "1937-10-28",
+   "until": "1939-09-01",
+   "geometry": {
+    "polygon": [
+     [
+      109.6,
+      40.2
+     ],
+     [
+      109.6,
+      41.8
+     ],
+     [
+      111.0,
+      42.6
+     ],
+     [
+      111.9,
+      43.6
+     ],
+     [
+      113.0,
+      44.5
+     ],
+     [
+      114.5,
+      45.3
+     ],
+     [
+      116.5,
+      46.0
+     ],
+     [
+      117.8,
+      45.6
+     ],
+     [
+      117.5,
+      44.5
+     ],
+     [
+      117.2,
+      44.0
+     ],
+     [
+      116.5,
+      43.0
+     ],
+     [
+      116.0,
+      42.0
+     ],
+     [
+      116.2,
+      41.0
+     ],
+     [
+      115.8,
+      40.4
+     ],
+     [
+      115.4,
+      40.1
+     ],
+     [
+      114.4,
+      39.6
+     ],
+     [
+      113.4,
+      39.3
+     ],
+     [
+      112.2,
+      38.9
+     ],
+     [
+      111.5,
+      39.2
+     ],
+     [
+      111.0,
+      39.8
+     ],
+     [
+      110.4,
+      40.1
+     ]
+    ]
+   },
+   "approx": true,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mengjiang"
+   ],
+   "note": "范围为手绘近似：察哈尔、绥远（包头以东）与晋北大同一带；河套地区仍由傅作义部（国民革命军）控制。",
+   "dates_note": "日军 1937-08/10 占领张家口、大同、归绥（呼和浩特）、包头；10-28 成立蒙古联盟自治政府（另有察南、晋北两自治政府，1937-11 组成蒙疆联合委员会），1939-09-01 合并为蒙疆联合自治政府。"
+  },
+  {
+   "id": "sjw_mengjiang",
+   "group": "sino_japanese_war",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "蒙疆联合自治政府（日本扶植）",
+   "name_en": "Mengjiang United Autonomous Government",
+   "controller": {
+    "qid": "Q697837",
+    "zh": "蒙疆联合自治政府"
+   },
+   "from": "1939-09-01",
+   "until": "1945-08-19",
+   "geometry": {
+    "polygon": [
+     [
+      109.6,
+      40.2
+     ],
+     [
+      109.6,
+      41.8
+     ],
+     [
+      111.0,
+      42.6
+     ],
+     [
+      111.9,
+      43.6
+     ],
+     [
+      113.0,
+      44.5
+     ],
+     [
+      114.5,
+      45.3
+     ],
+     [
+      116.5,
+      46.0
+     ],
+     [
+      117.8,
+      45.6
+     ],
+     [
+      117.5,
+      44.5
+     ],
+     [
+      117.2,
+      44.0
+     ],
+     [
+      116.5,
+      43.0
+     ],
+     [
+      116.0,
+      42.0
+     ],
+     [
+      116.2,
+      41.0
+     ],
+     [
+      115.8,
+      40.4
+     ],
+     [
+      115.4,
+      40.1
+     ],
+     [
+      114.4,
+      39.6
+     ],
+     [
+      113.4,
+      39.3
+     ],
+     [
+      112.2,
+      38.9
+     ],
+     [
+      111.5,
+      39.2
+     ],
+     [
+      111.0,
+      39.8
+     ],
+     [
+      110.4,
+      40.1
+     ]
+    ]
+   },
+   "approx": true,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Mengjiang"
+   ],
+   "note": "范围为手绘近似（±80 km）。",
+   "dates_note": "1939-09-01 成立，首都张家口；1945-08 苏蒙联军进攻后瓦解。"
+  },
+  {
+   "id": "sjw_Q188712_1937-08-15_0",
+   "group": "sino_japanese_war",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "日军占领区（华北）",
+   "name_en": "日军占领区（华北）",
+   "controller": {
+    "qid": "Q188712",
+    "zh": "日军占领区"
+   },
+   "from": "1937-08-15",
+   "until": "1937-11-12",
+   "geometry": {
+    "polygon": [
+     [
+      100.0,
+      34.3
+     ],
+     [
+      100.0,
+      42.5
+     ],
+     [
+      125.0,
+      42.5
+     ],
+     [
+      125.0,
+      34.3
+     ]
+    ],
+    "intersect": {
+     "polygon": [
+      [
+       115.4,
+       40.1
+      ],
+      [
+       115.8,
+       40.4
+      ],
+      [
+       116.2,
+       40.9
+      ],
+      [
+       117.3,
+       40.6
+      ],
+      [
+       118.5,
+       40.2
+      ],
+      [
+       119.7,
+       40.1
+      ],
+      [
+       119.3,
+       39.3
+      ],
+      [
+       118.0,
+       39.0
+      ],
+      [
+       117.6,
+       38.5
+      ],
+      [
+       117.5,
+       38.0
+      ],
+      [
+       116.5,
+       37.3
+      ],
+      [
+       115.0,
+       37.6
+      ],
+      [
+       114.2,
+       38.2
+      ],
+      [
+       114.0,
+       38.8
+      ],
+      [
+       114.5,
+       39.5
+      ],
+      [
+       115.0,
+       39.9
+      ]
+     ]
+    }
+   },
+   "approx": true,
+   "sources": [
+    "https://dhc.westpoint.edu/atlases/（USMA 历史系 Chinese Civil War 地图集：Japanese Occupation, 1940）",
+    "https://dhc.westpoint.edu/atlases/（USMA 历史系 Chinese Civil War 地图集：Situation at the End of World War II）",
+    "https://en.wikipedia.org/wiki/Second_Sino-Japanese_War",
+    "https://en.wikipedia.org/wiki/Japanese-occupied_areas_of_China",
+    "https://en.wikipedia.org/wiki/Battle_of_Beiping–Tianjin",
+    "https://en.wikipedia.org/wiki/Battle_of_Taiyuan"
+   ],
+   "note": "日军实际控制的是城市与铁路沿线（「点和线」），乡村多为国民革命军游击区与共军敌后根据地；色块为大致范围（±50–150 km）。",
+   "dates_note": "日占区节点：1937-08 至 11 上旬：平津（07-29/30）、保定（09-24）、石家庄（10-10）、德州（10-03）。政权：日军直接军事管制（1937-12-14 成立中华民国临时政府）。"
+  },
+  {
+   "id": "sjw_Q188712_1937-08-15_3",
+   "group": "sino_japanese_war",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "日军占领区（华中/华南）",
+   "name_en": "日军占领区（华中/华南）",
+   "controller": {
+    "qid": "Q188712",
+    "zh": "日军占领区"
+   },
+   "from": "1937-08-15",
+   "until": "1937-11-12",
+   "geometry": {
+    "polygon": [
+     [
+      100.0,
+      17.0
+     ],
+     [
+      100.0,
+      34.3
+     ],
+     [
+      125.0,
+      34.3
+     ],
+     [
+      125.0,
+      17.0
+     ]
+    ],
+    "intersect": {
+     "polygon": [
+      [
+       115.4,
+       40.1
+      ],
+      [
+       115.8,
+       40.4
+      ],
+      [
+       116.2,
+       40.9
+      ],
+      [
+       117.3,
+       40.6
+      ],
+      [
+       118.5,
+       40.2
+      ],
+      [
+       119.7,
+       40.1
+      ],
+      [
+       119.3,
+       39.3
+      ],
+      [
+       118.0,
+       39.0
+      ],
+      [
+       117.6,
+       38.5
+      ],
+      [
+       117.5,
+       38.0
+      ],
+      [
+       116.5,
+       37.3
+      ],
+      [
+       115.0,
+       37.6
+      ],
+      [
+       114.2,
+       38.2
+      ],
+      [
+       114.0,
+       38.8
+      ],
+      [
+       114.5,
+       39.5
+      ],
+      [
+       115.0,
+       39.9
+      ]
+     ]
+    }
+   },
+   "approx": true,
+   "sources": [
+    "https://dhc.westpoint.edu/atlases/（USMA 历史系 Chinese Civil War 地图集：Japanese Occupation, 1940）",
+    "https://dhc.westpoint.edu/atlases/（USMA 历史系 Chinese Civil War 地图集：Situation at the End of World War II）",
+    "https://en.wikipedia.org/wiki/Second_Sino-Japanese_War",
+    "https://en.wikipedia.org/wiki/Japanese-occupied_areas_of_China",
+    "https://en.wikipedia.org/wiki/Battle_of_Beiping–Tianjin",
+    "https://en.wikipedia.org/wiki/Battle_of_Taiyuan"
+   ],
+   "note": "日军实际控制的是城市与铁路沿线（「点和线」），乡村多为国民革命军游击区与共军敌后根据地；色块为大致范围（±50–150 km）。",
+   "dates_note": "日占区节点：1937-08 至 11 上旬：平津（07-29/30）、保定（09-24）、石家庄（10-10）、德州（10-03）。政权：日军直接军事管制（上海另有「大道市政府」等地方伪组织）。"
+  },
+  {
+   "id": "sjw_Q188712_1937-11-12_0",
+   "group": "sino_japanese_war",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "日军占领区（华北）",
+   "name_en": "日军占领区（华北）",
+   "controller": {
+    "qid": "Q188712",
+    "zh": "日军占领区"
+   },
+   "from": "1937-11-12",
+   "until": "1937-12-14",
+   "geometry": {
+    "polygon": [
+     [
+      100.0,
+      34.3
+     ],
+     [
+      100.0,
+      42.5
+     ],
+     [
+      125.0,
+      42.5
+     ],
+     [
+      125.0,
+      34.3
+     ]
+    ],
+    "intersect": {
+     "polygon": [
+      [
+       115.4,
+       40.1
+      ],
+      [
+       115.8,
+       40.4
+      ],
+      [
+       116.2,
+       40.9
+      ],
+      [
+       117.3,
+       40.6
+      ],
+      [
+       118.5,
+       40.2
+      ],
+      [
+       119.7,
+       40.1
+      ],
+      [
+       119.3,
+       39.3
+      ],
+      [
+       118.0,
+       39.0
+      ],
+      [
+       117.6,
+       38.5
+      ],
+      [
+       118.5,
+       38.0
+      ],
+      [
+       119.0,
+       37.3
+      ],
+      [
+       120.5,
+       37.8
+      ],
+      [
+       122.6,
+       37.4
+      ],
+      [
+       120.3,
+       36.0
+      ],
+      [
+       119.2,
+       35.0
+      ],
+      [
+       118.0,
+       35.0
+      ],
+      [
+       117.7,
+       34.7
+      ],
+      [
+       116.5,
+       35.4
+      ],
+      [
+       115.5,
+       36.0
+      ],
+      [
+       114.35,
+       36.0
+      ],
+      [
+       113.9,
+       35.3
+      ],
+      [
+       113.4,
+       35.4
+      ],
+      [
+       112.5,
+       35.0
+      ],
+      [
+       110.5,
+       35.0
+      ],
+      [
+       110.5,
+       36.5
+      ],
+      [
+       111.0,
+       37.5
+      ],
+      [
+       111.4,
+       38.6
+      ],
+      [
+       112.2,
+       38.9
+      ],
+      [
+       113.4,
+       39.3
+      ],
+      [
+       114.4,
+       39.6
+      ]
+     ],
+     "union": [
+      {
+       "polygon": [
+        [
+         121.9,
+         31.7
+        ],
+        [
+         120.9,
+         32.1
+        ],
+        [
+         119.4,
+         32.4
+        ],
+        [
+         118.6,
+         32.1
+        ],
+        [
+         118.2,
+         31.4
+        ],
+        [
+         118.4,
+         31.0
+        ],
+        [
+         118.6,
+         30.9
+        ],
+        [
+         119.6,
+         30.5
+        ],
+        [
+         120.2,
+         30.2
+        ],
+        [
+         121.0,
+         30.6
+        ],
+        [
+         121.9,
+         30.85
+        ]
+       ]
+      }
+     ]
+    }
+   },
+   "approx": true,
+   "sources": [
+    "https://dhc.westpoint.edu/atlases/（USMA 历史系 Chinese Civil War 地图集：Japanese Occupation, 1940）",
+    "https://dhc.westpoint.edu/atlases/（USMA 历史系 Chinese Civil War 地图集：Situation at the End of World War II）",
+    "https://en.wikipedia.org/wiki/Second_Sino-Japanese_War",
+    "https://en.wikipedia.org/wiki/Japanese-occupied_areas_of_China",
+    "https://en.wikipedia.org/wiki/Battle_of_Shanghai",
+    "https://en.wikipedia.org/wiki/Battle_of_Nanking",
+    "https://en.wikipedia.org/wiki/Battle_of_Xuzhou"
+   ],
+   "note": "日军实际控制的是城市与铁路沿线（「点和线」），乡村多为国民革命军游击区与共军敌后根据地；色块为大致范围（±50–150 km）。",
+   "dates_note": "日占区节点：1937-11 至 1938-05：太原（11-08）、上海（11-12）、南京（12-13）、杭州（12-24）、济南（12-27）、青岛（1938-01-10）、徐州（05-19）。政权：日军直接军事管制（1937-12-14 成立中华民国临时政府）。"
+  },
+  {
+   "id": "sjw_Q704714_1937-12-14_1",
+   "group": "sino_japanese_war",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "中华民国临时政府（北平，日本扶植）",
+   "name_en": "中华民国临时政府（北平，日本扶植）",
+   "controller": {
+    "qid": "Q704714",
+    "zh": "中华民国临时政府"
+   },
+   "from": "1937-12-14",
+   "until": "1938-06-06",
+   "geometry": {
+    "polygon": [
+     [
+      100.0,
+      34.3
+     ],
+     [
+      100.0,
+      42.5
+     ],
+     [
+      125.0,
+      42.5
+     ],
+     [
+      125.0,
+      34.3
+     ]
+    ],
+    "intersect": {
+     "polygon": [
+      [
+       115.4,
+       40.1
+      ],
+      [
+       115.8,
+       40.4
+      ],
+      [
+       116.2,
+       40.9
+      ],
+      [
+       117.3,
+       40.6
+      ],
+      [
+       118.5,
+       40.2
+      ],
+      [
+       119.7,
+       40.1
+      ],
+      [
+       119.3,
+       39.3
+      ],
+      [
+       118.0,
+       39.0
+      ],
+      [
+       117.6,
+       38.5
+      ],
+      [
+       118.5,
+       38.0
+      ],
+      [
+       119.0,
+       37.3
+      ],
+      [
+       120.5,
+       37.8
+      ],
+      [
+       122.6,
+       37.4
+      ],
+      [
+       120.3,
+       36.0
+      ],
+      [
+       119.2,
+       35.0
+      ],
+      [
+       118.0,
+       35.0
+      ],
+      [
+       117.7,
+       34.7
+      ],
+      [
+       116.5,
+       35.4
+      ],
+      [
+       115.5,
+       36.0
+      ],
+      [
+       114.35,
+       36.0
+      ],
+      [
+       113.9,
+       35.3
+      ],
+      [
+       113.4,
+       35.4
+      ],
+      [
+       112.5,
+       35.0
+      ],
+      [
+       110.5,
+       35.0
+      ],
+      [
+       110.5,
+       36.5
+      ],
+      [
+       111.0,
+       37.5
+      ],
+      [
+       111.4,
+       38.6
+      ],
+      [
+       112.2,
+       38.9
+      ],
+      [
+       113.4,
+       39.3
+      ],
+      [
+       114.4,
+       39.6
+      ]
+     ],
+     "union": [
+      {
+       "polygon": [
+        [
+         121.9,
+         31.7
+        ],
+        [
+         120.9,
+         32.1
+        ],
+        [
+         119.4,
+         32.4
+        ],
+        [
+         118.6,
+         32.1
+        ],
+        [
+         118.2,
+         31.4
+        ],
+        [
+         118.4,
+         31.0
+        ],
+        [
+         118.6,
+         30.9
+        ],
+        [
+         119.6,
+         30.5
+        ],
+        [
+         120.2,
+         30.2
+        ],
+        [
+         121.0,
+         30.6
+        ],
+        [
+         121.9,
+         30.85
+        ]
+       ]
+      }
+     ]
+    }
+   },
+   "approx": true,
+   "sources": [
+    "https://dhc.westpoint.edu/atlases/（USMA 历史系 Chinese Civil War 地图集：Japanese Occupation, 1940）",
+    "https://dhc.westpoint.edu/atlases/（USMA 历史系 Chinese Civil War 地图集：Situation at the End of World War II）",
+    "https://en.wikipedia.org/wiki/Second_Sino-Japanese_War",
+    "https://en.wikipedia.org/wiki/Japanese-occupied_areas_of_China",
+    "https://en.wikipedia.org/wiki/Battle_of_Shanghai",
+    "https://en.wikipedia.org/wiki/Battle_of_Nanking",
+    "https://en.wikipedia.org/wiki/Battle_of_Xuzhou",
+    "https://en.wikipedia.org/wiki/Provisional_Government_of_the_Republic_of_China_(1937–1940)"
+   ],
+   "note": "日军实际控制的是城市与铁路沿线（「点和线」），乡村多为国民革命军游击区与共军敌后根据地；色块为大致范围（±50–150 km）。",
+   "dates_note": "日占区节点：1937-11 至 1938-05：太原（11-08）、上海（11-12）、南京（12-13）、杭州（12-24）、济南（12-27）、青岛（1938-01-10）、徐州（05-19）。政权：1937-12-14 王克敏在北平成立，1940-03-30 并入汪精卫政权（改称华北政务委员会）。"
+  },
+  {
+   "id": "sjw_Q188712_1937-11-12_3",
+   "group": "sino_japanese_war",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "日军占领区（华中/华南）",
+   "name_en": "日军占领区（华中/华南）",
+   "controller": {
+    "qid": "Q188712",
+    "zh": "日军占领区"
+   },
+   "from": "1937-11-12",
+   "until": "1938-03-28",
+   "geometry": {
+    "polygon": [
+     [
+      100.0,
+      17.0
+     ],
+     [
+      100.0,
+      34.3
+     ],
+     [
+      125.0,
+      34.3
+     ],
+     [
+      125.0,
+      17.0
+     ]
+    ],
+    "intersect": {
+     "polygon": [
+      [
+       115.4,
+       40.1
+      ],
+      [
+       115.8,
+       40.4
+      ],
+      [
+       116.2,
+       40.9
+      ],
+      [
+       117.3,
+       40.6
+      ],
+      [
+       118.5,
+       40.2
+      ],
+      [
+       119.7,
+       40.1
+      ],
+      [
+       119.3,
+       39.3
+      ],
+      [
+       118.0,
+       39.0
+      ],
+      [
+       117.6,
+       38.5
+      ],
+      [
+       118.5,
+       38.0
+      ],
+      [
+       119.0,
+       37.3
+      ],
+      [
+       120.5,
+       37.8
+      ],
+      [
+       122.6,
+       37.4
+      ],
+      [
+       120.3,
+       36.0
+      ],
+      [
+       119.2,
+       35.0
+      ],
+      [
+       118.0,
+       35.0
+      ],
+      [
+       117.7,
+       34.7
+      ],
+      [
+       116.5,
+       35.4
+      ],
+      [
+       115.5,
+       36.0
+      ],
+      [
+       114.35,
+       36.0
+      ],
+      [
+       113.9,
+       35.3
+      ],
+      [
+       113.4,
+       35.4
+      ],
+      [
+       112.5,
+       35.0
+      ],
+      [
+       110.5,
+       35.0
+      ],
+      [
+       110.5,
+       36.5
+      ],
+      [
+       111.0,
+       37.5
+      ],
+      [
+       111.4,
+       38.6
+      ],
+      [
+       112.2,
+       38.9
+      ],
+      [
+       113.4,
+       39.3
+      ],
+      [
+       114.4,
+       39.6
+      ]
+     ],
+     "union": [
+      {
+       "polygon": [
+        [
+         121.9,
+         31.7
+        ],
+        [
+         120.9,
+         32.1
+        ],
+        [
+         119.4,
+         32.4
+        ],
+        [
+         118.6,
+         32.1
+        ],
+        [
+         118.2,
+         31.4
+        ],
+        [
+         118.4,
+         31.0
+        ],
+        [
+         118.6,
+         30.9
+        ],
+        [
+         119.6,
+         30.5
+        ],
+        [
+         120.2,
+         30.2
+        ],
+        [
+         121.0,
+         30.6
+        ],
+        [
+         121.9,
+         30.85
+        ]
+       ]
+      }
+     ]
+    }
+   },
+   "approx": true,
+   "sources": [
+    "https://dhc.westpoint.edu/atlases/（USMA 历史系 Chinese Civil War 地图集：Japanese Occupation, 1940）",
+    "https://dhc.westpoint.edu/atlases/（USMA 历史系 Chinese Civil War 地图集：Situation at the End of World War II）",
+    "https://en.wikipedia.org/wiki/Second_Sino-Japanese_War",
+    "https://en.wikipedia.org/wiki/Japanese-occupied_areas_of_China",
+    "https://en.wikipedia.org/wiki/Battle_of_Shanghai",
+    "https://en.wikipedia.org/wiki/Battle_of_Nanking",
+    "https://en.wikipedia.org/wiki/Battle_of_Xuzhou"
+   ],
+   "note": "日军实际控制的是城市与铁路沿线（「点和线」），乡村多为国民革命军游击区与共军敌后根据地；色块为大致范围（±50–150 km）。",
+   "dates_note": "日占区节点：1937-11 至 1938-05：太原（11-08）、上海（11-12）、南京（12-13）、杭州（12-24）、济南（12-27）、青岛（1938-01-10）、徐州（05-19）。政权：日军直接军事管制（上海另有「大道市政府」等地方伪组织）。"
+  },
+  {
+   "id": "sjw_Q708865_1938-03-28_4",
+   "group": "sino_japanese_war",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "中华民国维新政府（南京，日本扶植）",
+   "name_en": "中华民国维新政府（南京，日本扶植）",
+   "controller": {
+    "qid": "Q708865",
+    "zh": "中华民国维新政府"
+   },
+   "from": "1938-03-28",
+   "until": "1938-06-06",
+   "geometry": {
+    "polygon": [
+     [
+      115.5,
+      28.0
+     ],
+     [
+      115.5,
+      34.3
+     ],
+     [
+      125.0,
+      34.3
+     ],
+     [
+      125.0,
+      28.0
+     ]
+    ],
+    "intersect": {
+     "polygon": [
+      [
+       115.4,
+       40.1
+      ],
+      [
+       115.8,
+       40.4
+      ],
+      [
+       116.2,
+       40.9
+      ],
+      [
+       117.3,
+       40.6
+      ],
+      [
+       118.5,
+       40.2
+      ],
+      [
+       119.7,
+       40.1
+      ],
+      [
+       119.3,
+       39.3
+      ],
+      [
+       118.0,
+       39.0
+      ],
+      [
+       117.6,
+       38.5
+      ],
+      [
+       118.5,
+       38.0
+      ],
+      [
+       119.0,
+       37.3
+      ],
+      [
+       120.5,
+       37.8
+      ],
+      [
+       122.6,
+       37.4
+      ],
+      [
+       120.3,
+       36.0
+      ],
+      [
+       119.2,
+       35.0
+      ],
+      [
+       118.0,
+       35.0
+      ],
+      [
+       117.7,
+       34.7
+      ],
+      [
+       116.5,
+       35.4
+      ],
+      [
+       115.5,
+       36.0
+      ],
+      [
+       114.35,
+       36.0
+      ],
+      [
+       113.9,
+       35.3
+      ],
+      [
+       113.4,
+       35.4
+      ],
+      [
+       112.5,
+       35.0
+      ],
+      [
+       110.5,
+       35.0
+      ],
+      [
+       110.5,
+       36.5
+      ],
+      [
+       111.0,
+       37.5
+      ],
+      [
+       111.4,
+       38.6
+      ],
+      [
+       112.2,
+       38.9
+      ],
+      [
+       113.4,
+       39.3
+      ],
+      [
+       114.4,
+       39.6
+      ]
+     ],
+     "union": [
+      {
+       "polygon": [
+        [
+         121.9,
+         31.7
+        ],
+        [
+         120.9,
+         32.1
+        ],
+        [
+         119.4,
+         32.4
+        ],
+        [
+         118.6,
+         32.1
+        ],
+        [
+         118.2,
+         31.4
+        ],
+        [
+         118.4,
+         31.0
+        ],
+        [
+         118.6,
+         30.9
+        ],
+        [
+         119.6,
+         30.5
+        ],
+        [
+         120.2,
+         30.2
+        ],
+        [
+         121.0,
+         30.6
+        ],
+        [
+         121.9,
+         30.85
+        ]
+       ]
+      }
+     ]
+    }
+   },
+   "approx": true,
+   "sources": [
+    "https://dhc.westpoint.edu/atlases/（USMA 历史系 Chinese Civil War 地图集：Japanese Occupation, 1940）",
+    "https://dhc.westpoint.edu/atlases/（USMA 历史系 Chinese Civil War 地图集：Situation at the End of World War II）",
+    "https://en.wikipedia.org/wiki/Second_Sino-Japanese_War",
+    "https://en.wikipedia.org/wiki/Japanese-occupied_areas_of_China",
+    "https://en.wikipedia.org/wiki/Battle_of_Shanghai",
+    "https://en.wikipedia.org/wiki/Battle_of_Nanking",
+    "https://en.wikipedia.org/wiki/Battle_of_Xuzhou",
+    "https://en.wikipedia.org/wiki/Reformed_Government_of_the_Republic_of_China"
+   ],
+   "note": "日军实际控制的是城市与铁路沿线（「点和线」），乡村多为国民革命军游击区与共军敌后根据地；色块为大致范围（±50–150 km）。",
+   "dates_note": "日占区节点：1937-11 至 1938-05：太原（11-08）、上海（11-12）、南京（12-13）、杭州（12-24）、济南（12-27）、青岛（1938-01-10）、徐州（05-19）。政权：1938-03-28 梁鸿志在南京成立，辖苏、浙、皖日占区；1940-03-30 并入汪精卫政权。"
+  },
+  {
+   "id": "sjw_Q188712_1938-03-28_5",
+   "group": "sino_japanese_war",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "日军占领区（华中/华南）",
+   "name_en": "日军占领区（华中/华南）",
+   "controller": {
+    "qid": "Q188712",
+    "zh": "日军占领区"
+   },
+   "from": "1938-03-28",
+   "until": "1938-06-06",
+   "geometry": {
+    "polygon": [
+     [
+      100.0,
+      17.0
+     ],
+     [
+      100.0,
+      34.3
+     ],
+     [
+      115.5,
+      34.3
+     ],
+     [
+      115.5,
+      28.0
+     ],
+     [
+      125.0,
+      28.0
+     ],
+     [
+      125.0,
+      17.0
+     ]
+    ],
+    "intersect": {
+     "polygon": [
+      [
+       115.4,
+       40.1
+      ],
+      [
+       115.8,
+       40.4
+      ],
+      [
+       116.2,
+       40.9
+      ],
+      [
+       117.3,
+       40.6
+      ],
+      [
+       118.5,
+       40.2
+      ],
+      [
+       119.7,
+       40.1
+      ],
+      [
+       119.3,
+       39.3
+      ],
+      [
+       118.0,
+       39.0
+      ],
+      [
+       117.6,
+       38.5
+      ],
+      [
+       118.5,
+       38.0
+      ],
+      [
+       119.0,
+       37.3
+      ],
+      [
+       120.5,
+       37.8
+      ],
+      [
+       122.6,
+       37.4
+      ],
+      [
+       120.3,
+       36.0
+      ],
+      [
+       119.2,
+       35.0
+      ],
+      [
+       118.0,
+       35.0
+      ],
+      [
+       117.7,
+       34.7
+      ],
+      [
+       116.5,
+       35.4
+      ],
+      [
+       115.5,
+       36.0
+      ],
+      [
+       114.35,
+       36.0
+      ],
+      [
+       113.9,
+       35.3
+      ],
+      [
+       113.4,
+       35.4
+      ],
+      [
+       112.5,
+       35.0
+      ],
+      [
+       110.5,
+       35.0
+      ],
+      [
+       110.5,
+       36.5
+      ],
+      [
+       111.0,
+       37.5
+      ],
+      [
+       111.4,
+       38.6
+      ],
+      [
+       112.2,
+       38.9
+      ],
+      [
+       113.4,
+       39.3
+      ],
+      [
+       114.4,
+       39.6
+      ]
+     ],
+     "union": [
+      {
+       "polygon": [
+        [
+         121.9,
+         31.7
+        ],
+        [
+         120.9,
+         32.1
+        ],
+        [
+         119.4,
+         32.4
+        ],
+        [
+         118.6,
+         32.1
+        ],
+        [
+         118.2,
+         31.4
+        ],
+        [
+         118.4,
+         31.0
+        ],
+        [
+         118.6,
+         30.9
+        ],
+        [
+         119.6,
+         30.5
+        ],
+        [
+         120.2,
+         30.2
+        ],
+        [
+         121.0,
+         30.6
+        ],
+        [
+         121.9,
+         30.85
+        ]
+       ]
+      }
+     ]
+    }
+   },
+   "approx": true,
+   "sources": [
+    "https://dhc.westpoint.edu/atlases/（USMA 历史系 Chinese Civil War 地图集：Japanese Occupation, 1940）",
+    "https://dhc.westpoint.edu/atlases/（USMA 历史系 Chinese Civil War 地图集：Situation at the End of World War II）",
+    "https://en.wikipedia.org/wiki/Second_Sino-Japanese_War",
+    "https://en.wikipedia.org/wiki/Japanese-occupied_areas_of_China",
+    "https://en.wikipedia.org/wiki/Battle_of_Shanghai",
+    "https://en.wikipedia.org/wiki/Battle_of_Nanking",
+    "https://en.wikipedia.org/wiki/Battle_of_Xuzhou"
+   ],
+   "note": "日军实际控制的是城市与铁路沿线（「点和线」），乡村多为国民革命军游击区与共军敌后根据地；色块为大致范围（±50–150 km）。",
+   "dates_note": "日占区节点：1937-11 至 1938-05：太原（11-08）、上海（11-12）、南京（12-13）、杭州（12-24）、济南（12-27）、青岛（1938-01-10）、徐州（05-19）。政权：武汉、广州等地由日军直接管制。"
+  },
+  {
+   "id": "sjw_Q704714_1938-06-06_1",
+   "group": "sino_japanese_war",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "中华民国临时政府（北平，日本扶植）",
+   "name_en": "中华民国临时政府（北平，日本扶植）",
+   "controller": {
+    "qid": "Q704714",
+    "zh": "中华民国临时政府"
+   },
+   "from": "1938-06-06",
+   "until": "1938-10-21",
+   "geometry": {
+    "polygon": [
+     [
+      100.0,
+      34.3
+     ],
+     [
+      100.0,
+      42.5
+     ],
+     [
+      125.0,
+      42.5
+     ],
+     [
+      125.0,
+      34.3
+     ]
+    ],
+    "intersect": {
+     "polygon": [
+      [
+       115.4,
+       40.1
+      ],
+      [
+       115.8,
+       40.4
+      ],
+      [
+       116.2,
+       40.9
+      ],
+      [
+       117.3,
+       40.6
+      ],
+      [
+       118.5,
+       40.2
+      ],
+      [
+       119.7,
+       40.1
+      ],
+      [
+       119.3,
+       39.3
+      ],
+      [
+       118.0,
+       39.0
+      ],
+      [
+       117.6,
+       38.5
+      ],
+      [
+       118.5,
+       38.0
+      ],
+      [
+       119.0,
+       37.3
+      ],
+      [
+       120.5,
+       37.8
+      ],
+      [
+       122.6,
+       37.4
+      ],
+      [
+       120.3,
+       36.0
+      ],
+      [
+       119.2,
+       35.0
+      ],
+      [
+       119.3,
+       34.6
+      ],
+      [
+       120.3,
+       34.3
+      ],
+      [
+       120.5,
+       33.4
+      ],
+      [
+       121.0,
+       32.6
+      ],
+      [
+       121.9,
+       31.7
+      ],
+      [
+       121.9,
+       30.85
+      ],
+      [
+       121.0,
+       30.6
+      ],
+      [
+       120.2,
+       30.2
+      ],
+      [
+       119.6,
+       30.5
+      ],
+      [
+       118.6,
+       30.9
+      ],
+      [
+       117.6,
+       30.6
+      ],
+      [
+       117.05,
+       30.45
+      ],
+      [
+       116.5,
+       30.5
+      ],
+      [
+       116.6,
+       31.2
+      ],
+      [
+       117.0,
+       32.0
+      ],
+      [
+       116.3,
+       33.0
+      ],
+      [
+       115.4,
+       33.6
+      ],
+      [
+       114.6,
+       34.3
+      ],
+      [
+       114.3,
+       34.8
+      ],
+      [
+       113.9,
+       35.3
+      ],
+      [
+       113.4,
+       35.4
+      ],
+      [
+       112.5,
+       35.0
+      ],
+      [
+       110.5,
+       35.0
+      ],
+      [
+       110.5,
+       36.5
+      ],
+      [
+       111.0,
+       37.5
+      ],
+      [
+       111.4,
+       38.6
+      ],
+      [
+       112.2,
+       38.9
+      ],
+      [
+       113.4,
+       39.3
+      ],
+      [
+       114.4,
+       39.6
+      ]
+     ]
+    }
+   },
+   "approx": true,
+   "sources": [
+    "https://dhc.westpoint.edu/atlases/（USMA 历史系 Chinese Civil War 地图集：Japanese Occupation, 1940）",
+    "https://dhc.westpoint.edu/atlases/（USMA 历史系 Chinese Civil War 地图集：Situation at the End of World War II）",
+    "https://en.wikipedia.org/wiki/Second_Sino-Japanese_War",
+    "https://en.wikipedia.org/wiki/Japanese-occupied_areas_of_China",
+    "https://en.wikipedia.org/wiki/Battle_of_Xuzhou",
+    "https://en.wikipedia.org/wiki/Battle_of_Wuhan",
+    "https://en.wikipedia.org/wiki/Provisional_Government_of_the_Republic_of_China_(1937–1940)"
+   ],
+   "note": "日军实际控制的是城市与铁路沿线（「点和线」），乡村多为国民革命军游击区与共军敌后根据地；色块为大致范围（±50–150 km）。",
+   "dates_note": "日占区节点：1938-06 至 10：开封（06-06）、安庆（06-12）、九江（07-26），津浦线贯通。政权：1937-12-14 王克敏在北平成立，1940-03-30 并入汪精卫政权（改称华北政务委员会）。"
+  },
+  {
+   "id": "sjw_Q708865_1938-06-06_4",
+   "group": "sino_japanese_war",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "中华民国维新政府（南京，日本扶植）",
+   "name_en": "中华民国维新政府（南京，日本扶植）",
+   "controller": {
+    "qid": "Q708865",
+    "zh": "中华民国维新政府"
+   },
+   "from": "1938-06-06",
+   "until": "1938-10-21",
+   "geometry": {
+    "polygon": [
+     [
+      115.5,
+      28.0
+     ],
+     [
+      115.5,
+      34.3
+     ],
+     [
+      125.0,
+      34.3
+     ],
+     [
+      125.0,
+      28.0
+     ]
+    ],
+    "intersect": {
+     "polygon": [
+      [
+       115.4,
+       40.1
+      ],
+      [
+       115.8,
+       40.4
+      ],
+      [
+       116.2,
+       40.9
+      ],
+      [
+       117.3,
+       40.6
+      ],
+      [
+       118.5,
+       40.2
+      ],
+      [
+       119.7,
+       40.1
+      ],
+      [
+       119.3,
+       39.3
+      ],
+      [
+       118.0,
+       39.0
+      ],
+      [
+       117.6,
+       38.5
+      ],
+      [
+       118.5,
+       38.0
+      ],
+      [
+       119.0,
+       37.3
+      ],
+      [
+       120.5,
+       37.8
+      ],
+      [
+       122.6,
+       37.4
+      ],
+      [
+       120.3,
+       36.0
+      ],
+      [
+       119.2,
+       35.0
+      ],
+      [
+       119.3,
+       34.6
+      ],
+      [
+       120.3,
+       34.3
+      ],
+      [
+       120.5,
+       33.4
+      ],
+      [
+       121.0,
+       32.6
+      ],
+      [
+       121.9,
+       31.7
+      ],
+      [
+       121.9,
+       30.85
+      ],
+      [
+       121.0,
+       30.6
+      ],
+      [
+       120.2,
+       30.2
+      ],
+      [
+       119.6,
+       30.5
+      ],
+      [
+       118.6,
+       30.9
+      ],
+      [
+       117.6,
+       30.6
+      ],
+      [
+       117.05,
+       30.45
+      ],
+      [
+       116.5,
+       30.5
+      ],
+      [
+       116.6,
+       31.2
+      ],
+      [
+       117.0,
+       32.0
+      ],
+      [
+       116.3,
+       33.0
+      ],
+      [
+       115.4,
+       33.6
+      ],
+      [
+       114.6,
+       34.3
+      ],
+      [
+       114.3,
+       34.8
+      ],
+      [
+       113.9,
+       35.3
+      ],
+      [
+       113.4,
+       35.4
+      ],
+      [
+       112.5,
+       35.0
+      ],
+      [
+       110.5,
+       35.0
+      ],
+      [
+       110.5,
+       36.5
+      ],
+      [
+       111.0,
+       37.5
+      ],
+      [
+       111.4,
+       38.6
+      ],
+      [
+       112.2,
+       38.9
+      ],
+      [
+       113.4,
+       39.3
+      ],
+      [
+       114.4,
+       39.6
+      ]
+     ]
+    }
+   },
+   "approx": true,
+   "sources": [
+    "https://dhc.westpoint.edu/atlases/（USMA 历史系 Chinese Civil War 地图集：Japanese Occupation, 1940）",
+    "https://dhc.westpoint.edu/atlases/（USMA 历史系 Chinese Civil War 地图集：Situation at the End of World War II）",
+    "https://en.wikipedia.org/wiki/Second_Sino-Japanese_War",
+    "https://en.wikipedia.org/wiki/Japanese-occupied_areas_of_China",
+    "https://en.wikipedia.org/wiki/Battle_of_Xuzhou",
+    "https://en.wikipedia.org/wiki/Battle_of_Wuhan",
+    "https://en.wikipedia.org/wiki/Reformed_Government_of_the_Republic_of_China"
+   ],
+   "note": "日军实际控制的是城市与铁路沿线（「点和线」），乡村多为国民革命军游击区与共军敌后根据地；色块为大致范围（±50–150 km）。",
+   "dates_note": "日占区节点：1938-06 至 10：开封（06-06）、安庆（06-12）、九江（07-26），津浦线贯通。政权：1938-03-28 梁鸿志在南京成立，辖苏、浙、皖日占区；1940-03-30 并入汪精卫政权。"
+  },
+  {
+   "id": "sjw_Q188712_1938-06-06_5",
+   "group": "sino_japanese_war",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "日军占领区（华中/华南）",
+   "name_en": "日军占领区（华中/华南）",
+   "controller": {
+    "qid": "Q188712",
+    "zh": "日军占领区"
+   },
+   "from": "1938-06-06",
+   "until": "1938-10-21",
+   "geometry": {
+    "polygon": [
+     [
+      100.0,
+      17.0
+     ],
+     [
+      100.0,
+      34.3
+     ],
+     [
+      115.5,
+      34.3
+     ],
+     [
+      115.5,
+      28.0
+     ],
+     [
+      125.0,
+      28.0
+     ],
+     [
+      125.0,
+      17.0
+     ]
+    ],
+    "intersect": {
+     "polygon": [
+      [
+       115.4,
+       40.1
+      ],
+      [
+       115.8,
+       40.4
+      ],
+      [
+       116.2,
+       40.9
+      ],
+      [
+       117.3,
+       40.6
+      ],
+      [
+       118.5,
+       40.2
+      ],
+      [
+       119.7,
+       40.1
+      ],
+      [
+       119.3,
+       39.3
+      ],
+      [
+       118.0,
+       39.0
+      ],
+      [
+       117.6,
+       38.5
+      ],
+      [
+       118.5,
+       38.0
+      ],
+      [
+       119.0,
+       37.3
+      ],
+      [
+       120.5,
+       37.8
+      ],
+      [
+       122.6,
+       37.4
+      ],
+      [
+       120.3,
+       36.0
+      ],
+      [
+       119.2,
+       35.0
+      ],
+      [
+       119.3,
+       34.6
+      ],
+      [
+       120.3,
+       34.3
+      ],
+      [
+       120.5,
+       33.4
+      ],
+      [
+       121.0,
+       32.6
+      ],
+      [
+       121.9,
+       31.7
+      ],
+      [
+       121.9,
+       30.85
+      ],
+      [
+       121.0,
+       30.6
+      ],
+      [
+       120.2,
+       30.2
+      ],
+      [
+       119.6,
+       30.5
+      ],
+      [
+       118.6,
+       30.9
+      ],
+      [
+       117.6,
+       30.6
+      ],
+      [
+       117.05,
+       30.45
+      ],
+      [
+       116.5,
+       30.5
+      ],
+      [
+       116.6,
+       31.2
+      ],
+      [
+       117.0,
+       32.0
+      ],
+      [
+       116.3,
+       33.0
+      ],
+      [
+       115.4,
+       33.6
+      ],
+      [
+       114.6,
+       34.3
+      ],
+      [
+       114.3,
+       34.8
+      ],
+      [
+       113.9,
+       35.3
+      ],
+      [
+       113.4,
+       35.4
+      ],
+      [
+       112.5,
+       35.0
+      ],
+      [
+       110.5,
+       35.0
+      ],
+      [
+       110.5,
+       36.5
+      ],
+      [
+       111.0,
+       37.5
+      ],
+      [
+       111.4,
+       38.6
+      ],
+      [
+       112.2,
+       38.9
+      ],
+      [
+       113.4,
+       39.3
+      ],
+      [
+       114.4,
+       39.6
+      ]
+     ]
+    }
+   },
+   "approx": true,
+   "sources": [
+    "https://dhc.westpoint.edu/atlases/（USMA 历史系 Chinese Civil War 地图集：Japanese Occupation, 1940）",
+    "https://dhc.westpoint.edu/atlases/（USMA 历史系 Chinese Civil War 地图集：Situation at the End of World War II）",
+    "https://en.wikipedia.org/wiki/Second_Sino-Japanese_War",
+    "https://en.wikipedia.org/wiki/Japanese-occupied_areas_of_China",
+    "https://en.wikipedia.org/wiki/Battle_of_Xuzhou",
+    "https://en.wikipedia.org/wiki/Battle_of_Wuhan"
+   ],
+   "note": "日军实际控制的是城市与铁路沿线（「点和线」），乡村多为国民革命军游击区与共军敌后根据地；色块为大致范围（±50–150 km）。",
+   "dates_note": "日占区节点：1938-06 至 10：开封（06-06）、安庆（06-12）、九江（07-26），津浦线贯通。政权：武汉、广州等地由日军直接管制。"
+  },
+  {
+   "id": "sjw_Q704714_1938-10-21_1",
+   "group": "sino_japanese_war",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "中华民国临时政府（北平，日本扶植）",
+   "name_en": "中华民国临时政府（北平，日本扶植）",
+   "controller": {
+    "qid": "Q704714",
+    "zh": "中华民国临时政府"
+   },
+   "from": "1938-10-21",
+   "until": "1939-03-27",
+   "geometry": {
+    "polygon": [
+     [
+      100.0,
+      34.3
+     ],
+     [
+      100.0,
+      42.5
+     ],
+     [
+      125.0,
+      42.5
+     ],
+     [
+      125.0,
+      34.3
+     ]
+    ],
+    "intersect": {
+     "polygon": [
+      [
+       115.4,
+       40.1
+      ],
+      [
+       115.8,
+       40.4
+      ],
+      [
+       116.2,
+       40.9
+      ],
+      [
+       117.3,
+       40.6
+      ],
+      [
+       118.5,
+       40.2
+      ],
+      [
+       119.7,
+       40.1
+      ],
+      [
+       119.3,
+       39.3
+      ],
+      [
+       118.0,
+       39.0
+      ],
+      [
+       117.6,
+       38.5
+      ],
+      [
+       118.5,
+       38.0
+      ],
+      [
+       119.0,
+       37.3
+      ],
+      [
+       120.5,
+       37.8
+      ],
+      [
+       122.6,
+       37.4
+      ],
+      [
+       120.3,
+       36.0
+      ],
+      [
+       119.2,
+       35.0
+      ],
+      [
+       119.3,
+       34.6
+      ],
+      [
+       120.3,
+       34.3
+      ],
+      [
+       120.5,
+       33.4
+      ],
+      [
+       121.0,
+       32.6
+      ],
+      [
+       121.9,
+       31.7
+      ],
+      [
+       121.9,
+       30.85
+      ],
+      [
+       121.0,
+       30.6
+      ],
+      [
+       120.2,
+       30.2
+      ],
+      [
+       119.6,
+       30.5
+      ],
+      [
+       118.6,
+       30.9
+      ],
+      [
+       117.6,
+       30.6
+      ],
+      [
+       117.05,
+       30.45
+      ],
+      [
+       116.5,
+       30.5
+      ],
+      [
+       117.6,
+       30.6
+      ],
+      [
+       116.0,
+       29.7
+      ],
+      [
+       115.0,
+       29.8
+      ],
+      [
+       114.0,
+       29.4
+      ],
+      [
+       113.1,
+       29.3
+      ],
+      [
+       112.9,
+       30.0
+      ],
+      [
+       113.4,
+       30.9
+      ],
+      [
+       113.8,
+       31.7
+      ],
+      [
+       114.07,
+       32.12
+      ],
+      [
+       114.6,
+       32.4
+      ],
+      [
+       115.4,
+       33.6
+      ],
+      [
+       114.6,
+       34.3
+      ],
+      [
+       114.3,
+       34.8
+      ],
+      [
+       113.9,
+       35.3
+      ],
+      [
+       113.4,
+       35.4
+      ],
+      [
+       112.5,
+       35.0
+      ],
+      [
+       110.5,
+       35.0
+      ],
+      [
+       110.5,
+       36.5
+      ],
+      [
+       111.0,
+       37.5
+      ],
+      [
+       111.4,
+       38.6
+      ],
+      [
+       112.2,
+       38.9
+      ],
+      [
+       113.4,
+       39.3
+      ],
+      [
+       114.4,
+       39.6
+      ]
+     ],
+     "union": [
+      {
+       "polygon": [
+        [
+         113.0,
+         23.4
+        ],
+        [
+         113.6,
+         23.5
+        ],
+        [
+         114.2,
+         23.1
+        ],
+        [
+         114.1,
+         22.56
+        ],
+        [
+         113.6,
+         22.5
+        ],
+        [
+         113.0,
+         22.8
+        ]
+       ]
+      },
+      {
+       "polygon": [
+        [
+         117.95,
+         24.35
+        ],
+        [
+         117.95,
+         24.6
+        ],
+        [
+         118.25,
+         24.6
+        ],
+        [
+         118.25,
+         24.35
+        ]
+       ]
+      }
+     ]
+    }
+   },
+   "approx": true,
+   "sources": [
+    "https://dhc.westpoint.edu/atlases/（USMA 历史系 Chinese Civil War 地图集：Japanese Occupation, 1940）",
+    "https://dhc.westpoint.edu/atlases/（USMA 历史系 Chinese Civil War 地图集：Situation at the End of World War II）",
+    "https://en.wikipedia.org/wiki/Second_Sino-Japanese_War",
+    "https://en.wikipedia.org/wiki/Japanese-occupied_areas_of_China",
+    "https://en.wikipedia.org/wiki/Battle_of_Wuhan",
+    "https://en.wikipedia.org/wiki/Canton_Operation",
+    "https://en.wikipedia.org/wiki/Battle_of_Amoy",
+    "https://en.wikipedia.org/wiki/Provisional_Government_of_the_Republic_of_China_(1937–1940)"
+   ],
+   "note": "日军实际控制的是城市与铁路沿线（「点和线」），乡村多为国民革命军游击区与共军敌后根据地；色块为大致范围（±50–150 km）。",
+   "dates_note": "日占区节点：1938-10 至 1939-03：广州（10-21）、武汉（10-25）、岳阳（11-11）；厦门（1938-05）。政权：1937-12-14 王克敏在北平成立，1940-03-30 并入汪精卫政权（改称华北政务委员会）。"
+  },
+  {
+   "id": "sjw_Q708865_1938-10-21_4",
+   "group": "sino_japanese_war",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "中华民国维新政府（南京，日本扶植）",
+   "name_en": "中华民国维新政府（南京，日本扶植）",
+   "controller": {
+    "qid": "Q708865",
+    "zh": "中华民国维新政府"
+   },
+   "from": "1938-10-21",
+   "until": "1939-03-27",
+   "geometry": {
+    "polygon": [
+     [
+      115.5,
+      28.0
+     ],
+     [
+      115.5,
+      34.3
+     ],
+     [
+      125.0,
+      34.3
+     ],
+     [
+      125.0,
+      28.0
+     ]
+    ],
+    "intersect": {
+     "polygon": [
+      [
+       115.4,
+       40.1
+      ],
+      [
+       115.8,
+       40.4
+      ],
+      [
+       116.2,
+       40.9
+      ],
+      [
+       117.3,
+       40.6
+      ],
+      [
+       118.5,
+       40.2
+      ],
+      [
+       119.7,
+       40.1
+      ],
+      [
+       119.3,
+       39.3
+      ],
+      [
+       118.0,
+       39.0
+      ],
+      [
+       117.6,
+       38.5
+      ],
+      [
+       118.5,
+       38.0
+      ],
+      [
+       119.0,
+       37.3
+      ],
+      [
+       120.5,
+       37.8
+      ],
+      [
+       122.6,
+       37.4
+      ],
+      [
+       120.3,
+       36.0
+      ],
+      [
+       119.2,
+       35.0
+      ],
+      [
+       119.3,
+       34.6
+      ],
+      [
+       120.3,
+       34.3
+      ],
+      [
+       120.5,
+       33.4
+      ],
+      [
+       121.0,
+       32.6
+      ],
+      [
+       121.9,
+       31.7
+      ],
+      [
+       121.9,
+       30.85
+      ],
+      [
+       121.0,
+       30.6
+      ],
+      [
+       120.2,
+       30.2
+      ],
+      [
+       119.6,
+       30.5
+      ],
+      [
+       118.6,
+       30.9
+      ],
+      [
+       117.6,
+       30.6
+      ],
+      [
+       117.05,
+       30.45
+      ],
+      [
+       116.5,
+       30.5
+      ],
+      [
+       117.6,
+       30.6
+      ],
+      [
+       116.0,
+       29.7
+      ],
+      [
+       115.0,
+       29.8
+      ],
+      [
+       114.0,
+       29.4
+      ],
+      [
+       113.1,
+       29.3
+      ],
+      [
+       112.9,
+       30.0
+      ],
+      [
+       113.4,
+       30.9
+      ],
+      [
+       113.8,
+       31.7
+      ],
+      [
+       114.07,
+       32.12
+      ],
+      [
+       114.6,
+       32.4
+      ],
+      [
+       115.4,
+       33.6
+      ],
+      [
+       114.6,
+       34.3
+      ],
+      [
+       114.3,
+       34.8
+      ],
+      [
+       113.9,
+       35.3
+      ],
+      [
+       113.4,
+       35.4
+      ],
+      [
+       112.5,
+       35.0
+      ],
+      [
+       110.5,
+       35.0
+      ],
+      [
+       110.5,
+       36.5
+      ],
+      [
+       111.0,
+       37.5
+      ],
+      [
+       111.4,
+       38.6
+      ],
+      [
+       112.2,
+       38.9
+      ],
+      [
+       113.4,
+       39.3
+      ],
+      [
+       114.4,
+       39.6
+      ]
+     ],
+     "union": [
+      {
+       "polygon": [
+        [
+         113.0,
+         23.4
+        ],
+        [
+         113.6,
+         23.5
+        ],
+        [
+         114.2,
+         23.1
+        ],
+        [
+         114.1,
+         22.56
+        ],
+        [
+         113.6,
+         22.5
+        ],
+        [
+         113.0,
+         22.8
+        ]
+       ]
+      },
+      {
+       "polygon": [
+        [
+         117.95,
+         24.35
+        ],
+        [
+         117.95,
+         24.6
+        ],
+        [
+         118.25,
+         24.6
+        ],
+        [
+         118.25,
+         24.35
+        ]
+       ]
+      }
+     ]
+    }
+   },
+   "approx": true,
+   "sources": [
+    "https://dhc.westpoint.edu/atlases/（USMA 历史系 Chinese Civil War 地图集：Japanese Occupation, 1940）",
+    "https://dhc.westpoint.edu/atlases/（USMA 历史系 Chinese Civil War 地图集：Situation at the End of World War II）",
+    "https://en.wikipedia.org/wiki/Second_Sino-Japanese_War",
+    "https://en.wikipedia.org/wiki/Japanese-occupied_areas_of_China",
+    "https://en.wikipedia.org/wiki/Battle_of_Wuhan",
+    "https://en.wikipedia.org/wiki/Canton_Operation",
+    "https://en.wikipedia.org/wiki/Battle_of_Amoy",
+    "https://en.wikipedia.org/wiki/Reformed_Government_of_the_Republic_of_China"
+   ],
+   "note": "日军实际控制的是城市与铁路沿线（「点和线」），乡村多为国民革命军游击区与共军敌后根据地；色块为大致范围（±50–150 km）。",
+   "dates_note": "日占区节点：1938-10 至 1939-03：广州（10-21）、武汉（10-25）、岳阳（11-11）；厦门（1938-05）。政权：1938-03-28 梁鸿志在南京成立，辖苏、浙、皖日占区；1940-03-30 并入汪精卫政权。"
+  },
+  {
+   "id": "sjw_Q188712_1938-10-21_5",
+   "group": "sino_japanese_war",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "日军占领区（华中/华南）",
+   "name_en": "日军占领区（华中/华南）",
+   "controller": {
+    "qid": "Q188712",
+    "zh": "日军占领区"
+   },
+   "from": "1938-10-21",
+   "until": "1939-03-27",
+   "geometry": {
+    "polygon": [
+     [
+      100.0,
+      17.0
+     ],
+     [
+      100.0,
+      34.3
+     ],
+     [
+      115.5,
+      34.3
+     ],
+     [
+      115.5,
+      28.0
+     ],
+     [
+      125.0,
+      28.0
+     ],
+     [
+      125.0,
+      17.0
+     ]
+    ],
+    "intersect": {
+     "polygon": [
+      [
+       115.4,
+       40.1
+      ],
+      [
+       115.8,
+       40.4
+      ],
+      [
+       116.2,
+       40.9
+      ],
+      [
+       117.3,
+       40.6
+      ],
+      [
+       118.5,
+       40.2
+      ],
+      [
+       119.7,
+       40.1
+      ],
+      [
+       119.3,
+       39.3
+      ],
+      [
+       118.0,
+       39.0
+      ],
+      [
+       117.6,
+       38.5
+      ],
+      [
+       118.5,
+       38.0
+      ],
+      [
+       119.0,
+       37.3
+      ],
+      [
+       120.5,
+       37.8
+      ],
+      [
+       122.6,
+       37.4
+      ],
+      [
+       120.3,
+       36.0
+      ],
+      [
+       119.2,
+       35.0
+      ],
+      [
+       119.3,
+       34.6
+      ],
+      [
+       120.3,
+       34.3
+      ],
+      [
+       120.5,
+       33.4
+      ],
+      [
+       121.0,
+       32.6
+      ],
+      [
+       121.9,
+       31.7
+      ],
+      [
+       121.9,
+       30.85
+      ],
+      [
+       121.0,
+       30.6
+      ],
+      [
+       120.2,
+       30.2
+      ],
+      [
+       119.6,
+       30.5
+      ],
+      [
+       118.6,
+       30.9
+      ],
+      [
+       117.6,
+       30.6
+      ],
+      [
+       117.05,
+       30.45
+      ],
+      [
+       116.5,
+       30.5
+      ],
+      [
+       117.6,
+       30.6
+      ],
+      [
+       116.0,
+       29.7
+      ],
+      [
+       115.0,
+       29.8
+      ],
+      [
+       114.0,
+       29.4
+      ],
+      [
+       113.1,
+       29.3
+      ],
+      [
+       112.9,
+       30.0
+      ],
+      [
+       113.4,
+       30.9
+      ],
+      [
+       113.8,
+       31.7
+      ],
+      [
+       114.07,
+       32.12
+      ],
+      [
+       114.6,
+       32.4
+      ],
+      [
+       115.4,
+       33.6
+      ],
+      [
+       114.6,
+       34.3
+      ],
+      [
+       114.3,
+       34.8
+      ],
+      [
+       113.9,
+       35.3
+      ],
+      [
+       113.4,
+       35.4
+      ],
+      [
+       112.5,
+       35.0
+      ],
+      [
+       110.5,
+       35.0
+      ],
+      [
+       110.5,
+       36.5
+      ],
+      [
+       111.0,
+       37.5
+      ],
+      [
+       111.4,
+       38.6
+      ],
+      [
+       112.2,
+       38.9
+      ],
+      [
+       113.4,
+       39.3
+      ],
+      [
+       114.4,
+       39.6
+      ]
+     ],
+     "union": [
+      {
+       "polygon": [
+        [
+         113.0,
+         23.4
+        ],
+        [
+         113.6,
+         23.5
+        ],
+        [
+         114.2,
+         23.1
+        ],
+        [
+         114.1,
+         22.56
+        ],
+        [
+         113.6,
+         22.5
+        ],
+        [
+         113.0,
+         22.8
+        ]
+       ]
+      },
+      {
+       "polygon": [
+        [
+         117.95,
+         24.35
+        ],
+        [
+         117.95,
+         24.6
+        ],
+        [
+         118.25,
+         24.6
+        ],
+        [
+         118.25,
+         24.35
+        ]
+       ]
+      }
+     ]
+    }
+   },
+   "approx": true,
+   "sources": [
+    "https://dhc.westpoint.edu/atlases/（USMA 历史系 Chinese Civil War 地图集：Japanese Occupation, 1940）",
+    "https://dhc.westpoint.edu/atlases/（USMA 历史系 Chinese Civil War 地图集：Situation at the End of World War II）",
+    "https://en.wikipedia.org/wiki/Second_Sino-Japanese_War",
+    "https://en.wikipedia.org/wiki/Japanese-occupied_areas_of_China",
+    "https://en.wikipedia.org/wiki/Battle_of_Wuhan",
+    "https://en.wikipedia.org/wiki/Canton_Operation",
+    "https://en.wikipedia.org/wiki/Battle_of_Amoy"
+   ],
+   "note": "日军实际控制的是城市与铁路沿线（「点和线」），乡村多为国民革命军游击区与共军敌后根据地；色块为大致范围（±50–150 km）。",
+   "dates_note": "日占区节点：1938-10 至 1939-03：广州（10-21）、武汉（10-25）、岳阳（11-11）；厦门（1938-05）。政权：武汉、广州等地由日军直接管制。"
+  },
+  {
+   "id": "sjw_Q704714_1939-03-27_1",
+   "group": "sino_japanese_war",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "中华民国临时政府（北平，日本扶植）",
+   "name_en": "中华民国临时政府（北平，日本扶植）",
+   "controller": {
+    "qid": "Q704714",
+    "zh": "中华民国临时政府"
+   },
+   "from": "1939-03-27",
+   "until": "1940-03-30",
+   "geometry": {
+    "polygon": [
+     [
+      100.0,
+      34.3
+     ],
+     [
+      100.0,
+      42.5
+     ],
+     [
+      125.0,
+      42.5
+     ],
+     [
+      125.0,
+      34.3
+     ]
+    ],
+    "intersect": {
+     "polygon": [
+      [
+       115.4,
+       40.1
+      ],
+      [
+       115.8,
+       40.4
+      ],
+      [
+       116.2,
+       40.9
+      ],
+      [
+       117.3,
+       40.6
+      ],
+      [
+       118.5,
+       40.2
+      ],
+      [
+       119.7,
+       40.1
+      ],
+      [
+       119.3,
+       39.3
+      ],
+      [
+       118.0,
+       39.0
+      ],
+      [
+       117.6,
+       38.5
+      ],
+      [
+       118.5,
+       38.0
+      ],
+      [
+       119.0,
+       37.3
+      ],
+      [
+       120.5,
+       37.8
+      ],
+      [
+       122.6,
+       37.4
+      ],
+      [
+       120.3,
+       36.0
+      ],
+      [
+       119.2,
+       35.0
+      ],
+      [
+       119.3,
+       34.6
+      ],
+      [
+       120.3,
+       34.3
+      ],
+      [
+       120.5,
+       33.4
+      ],
+      [
+       121.0,
+       32.6
+      ],
+      [
+       121.9,
+       31.7
+      ],
+      [
+       121.9,
+       30.85
+      ],
+      [
+       121.0,
+       30.6
+      ],
+      [
+       120.2,
+       30.2
+      ],
+      [
+       119.6,
+       30.5
+      ],
+      [
+       118.6,
+       30.9
+      ],
+      [
+       117.6,
+       30.6
+      ],
+      [
+       117.05,
+       30.45
+      ],
+      [
+       116.5,
+       30.5
+      ],
+      [
+       117.6,
+       30.6
+      ],
+      [
+       117.0,
+       29.6
+      ],
+      [
+       116.3,
+       28.8
+      ],
+      [
+       115.9,
+       28.4
+      ],
+      [
+       115.5,
+       28.7
+      ],
+      [
+       114.6,
+       29.0
+      ],
+      [
+       113.1,
+       29.3
+      ],
+      [
+       112.3,
+       29.8
+      ],
+      [
+       111.3,
+       30.6
+      ],
+      [
+       111.5,
+       31.1
+      ],
+      [
+       112.6,
+       31.0
+      ],
+      [
+       113.4,
+       30.9
+      ],
+      [
+       113.8,
+       31.7
+      ],
+      [
+       114.07,
+       32.12
+      ],
+      [
+       114.6,
+       32.4
+      ],
+      [
+       115.4,
+       33.6
+      ],
+      [
+       114.6,
+       34.3
+      ],
+      [
+       114.3,
+       34.8
+      ],
+      [
+       113.9,
+       35.3
+      ],
+      [
+       113.4,
+       35.4
+      ],
+      [
+       112.5,
+       35.0
+      ],
+      [
+       110.5,
+       35.0
+      ],
+      [
+       110.5,
+       36.5
+      ],
+      [
+       111.0,
+       37.5
+      ],
+      [
+       111.4,
+       38.6
+      ],
+      [
+       112.2,
+       38.9
+      ],
+      [
+       113.4,
+       39.3
+      ],
+      [
+       114.4,
+       39.6
+      ]
+     ],
+     "union": [
+      {
+       "polygon": [
+        [
+         113.0,
+         23.4
+        ],
+        [
+         113.6,
+         23.5
+        ],
+        [
+         114.2,
+         23.1
+        ],
+        [
+         114.1,
+         22.56
+        ],
+        [
+         113.6,
+         22.5
+        ],
+        [
+         113.0,
+         22.8
+        ]
+       ]
+      },
+      {
+       "polygon": [
+        [
+         117.95,
+         24.35
+        ],
+        [
+         117.95,
+         24.6
+        ],
+        [
+         118.25,
+         24.6
+        ],
+        [
+         118.25,
+         24.35
+        ]
+       ]
+      },
+      {
+       "polygon": [
+        [
+         116.4,
+         23.2
+        ],
+        [
+         116.4,
+         23.6
+        ],
+        [
+         117.0,
+         23.6
+        ],
+        [
+         117.0,
+         23.2
+        ]
+       ]
+      },
+      {
+       "admin1": [
+        "CN-HI"
+       ],
+       "intersect_bbox": [
+        108.5,
+        18.0,
+        111.2,
+        20.2
+       ]
+      }
+     ]
+    }
+   },
+   "approx": true,
+   "sources": [
+    "https://dhc.westpoint.edu/atlases/（USMA 历史系 Chinese Civil War 地图集：Japanese Occupation, 1940）",
+    "https://dhc.westpoint.edu/atlases/（USMA 历史系 Chinese Civil War 地图集：Situation at the End of World War II）",
+    "https://en.wikipedia.org/wiki/Second_Sino-Japanese_War",
+    "https://en.wikipedia.org/wiki/Japanese-occupied_areas_of_China",
+    "https://en.wikipedia.org/wiki/Battle_of_Nanchang",
+    "https://en.wikipedia.org/wiki/Japanese_invasion_of_Hainan_Island",
+    "https://en.wikipedia.org/wiki/Battle_of_Zaoyang–Yichang",
+    "https://dhc.westpoint.edu/atlases/（USMA 历史系 Chinese Civil War 地图集：Japanese Occupation, 1940）",
+    "https://en.wikipedia.org/wiki/Provisional_Government_of_the_Republic_of_China_(1937–1940)"
+   ],
+   "note": "日军实际控制的是城市与铁路沿线（「点和线」），乡村多为国民革命军游击区与共军敌后根据地；色块为大致范围（±50–150 km）。",
+   "dates_note": "日占区节点：1939-03 至 1944-04 的大致稳定范围：南昌（1939-03-27）、海南岛（1939-02-10）、汕头（1939-06-21）、宜昌（1940-06-12）；南宁 1939-11 至 1940-10、福州 1941-04 至 09 等短期占领未画。政权：1937-12-14 王克敏在北平成立，1940-03-30 并入汪精卫政权（改称华北政务委员会）。"
+  },
+  {
+   "id": "sjw_Q10905486_1940-03-30_2",
+   "group": "sino_japanese_war",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "华北政务委员会（汪精卫政权辖下，日军控制）",
+   "name_en": "华北政务委员会（汪精卫政权辖下，日军控制）",
+   "controller": {
+    "qid": "Q10905486",
+    "zh": "华北政务委员会"
+   },
+   "from": "1940-03-30",
+   "until": "1944-04-19",
+   "geometry": {
+    "polygon": [
+     [
+      100.0,
+      34.3
+     ],
+     [
+      100.0,
+      42.5
+     ],
+     [
+      125.0,
+      42.5
+     ],
+     [
+      125.0,
+      34.3
+     ]
+    ],
+    "intersect": {
+     "polygon": [
+      [
+       115.4,
+       40.1
+      ],
+      [
+       115.8,
+       40.4
+      ],
+      [
+       116.2,
+       40.9
+      ],
+      [
+       117.3,
+       40.6
+      ],
+      [
+       118.5,
+       40.2
+      ],
+      [
+       119.7,
+       40.1
+      ],
+      [
+       119.3,
+       39.3
+      ],
+      [
+       118.0,
+       39.0
+      ],
+      [
+       117.6,
+       38.5
+      ],
+      [
+       118.5,
+       38.0
+      ],
+      [
+       119.0,
+       37.3
+      ],
+      [
+       120.5,
+       37.8
+      ],
+      [
+       122.6,
+       37.4
+      ],
+      [
+       120.3,
+       36.0
+      ],
+      [
+       119.2,
+       35.0
+      ],
+      [
+       119.3,
+       34.6
+      ],
+      [
+       120.3,
+       34.3
+      ],
+      [
+       120.5,
+       33.4
+      ],
+      [
+       121.0,
+       32.6
+      ],
+      [
+       121.9,
+       31.7
+      ],
+      [
+       121.9,
+       30.85
+      ],
+      [
+       121.0,
+       30.6
+      ],
+      [
+       120.2,
+       30.2
+      ],
+      [
+       119.6,
+       30.5
+      ],
+      [
+       118.6,
+       30.9
+      ],
+      [
+       117.6,
+       30.6
+      ],
+      [
+       117.05,
+       30.45
+      ],
+      [
+       116.5,
+       30.5
+      ],
+      [
+       117.6,
+       30.6
+      ],
+      [
+       117.0,
+       29.6
+      ],
+      [
+       116.3,
+       28.8
+      ],
+      [
+       115.9,
+       28.4
+      ],
+      [
+       115.5,
+       28.7
+      ],
+      [
+       114.6,
+       29.0
+      ],
+      [
+       113.1,
+       29.3
+      ],
+      [
+       112.3,
+       29.8
+      ],
+      [
+       111.3,
+       30.6
+      ],
+      [
+       111.5,
+       31.1
+      ],
+      [
+       112.6,
+       31.0
+      ],
+      [
+       113.4,
+       30.9
+      ],
+      [
+       113.8,
+       31.7
+      ],
+      [
+       114.07,
+       32.12
+      ],
+      [
+       114.6,
+       32.4
+      ],
+      [
+       115.4,
+       33.6
+      ],
+      [
+       114.6,
+       34.3
+      ],
+      [
+       114.3,
+       34.8
+      ],
+      [
+       113.9,
+       35.3
+      ],
+      [
+       113.4,
+       35.4
+      ],
+      [
+       112.5,
+       35.0
+      ],
+      [
+       110.5,
+       35.0
+      ],
+      [
+       110.5,
+       36.5
+      ],
+      [
+       111.0,
+       37.5
+      ],
+      [
+       111.4,
+       38.6
+      ],
+      [
+       112.2,
+       38.9
+      ],
+      [
+       113.4,
+       39.3
+      ],
+      [
+       114.4,
+       39.6
+      ]
+     ],
+     "union": [
+      {
+       "polygon": [
+        [
+         113.0,
+         23.4
+        ],
+        [
+         113.6,
+         23.5
+        ],
+        [
+         114.2,
+         23.1
+        ],
+        [
+         114.1,
+         22.56
+        ],
+        [
+         113.6,
+         22.5
+        ],
+        [
+         113.0,
+         22.8
+        ]
+       ]
+      },
+      {
+       "polygon": [
+        [
+         117.95,
+         24.35
+        ],
+        [
+         117.95,
+         24.6
+        ],
+        [
+         118.25,
+         24.6
+        ],
+        [
+         118.25,
+         24.35
+        ]
+       ]
+      },
+      {
+       "polygon": [
+        [
+         116.4,
+         23.2
+        ],
+        [
+         116.4,
+         23.6
+        ],
+        [
+         117.0,
+         23.6
+        ],
+        [
+         117.0,
+         23.2
+        ]
+       ]
+      },
+      {
+       "admin1": [
+        "CN-HI"
+       ],
+       "intersect_bbox": [
+        108.5,
+        18.0,
+        111.2,
+        20.2
+       ]
+      }
+     ]
+    }
+   },
+   "approx": true,
+   "sources": [
+    "https://dhc.westpoint.edu/atlases/（USMA 历史系 Chinese Civil War 地图集：Japanese Occupation, 1940）",
+    "https://dhc.westpoint.edu/atlases/（USMA 历史系 Chinese Civil War 地图集：Situation at the End of World War II）",
+    "https://en.wikipedia.org/wiki/Second_Sino-Japanese_War",
+    "https://en.wikipedia.org/wiki/Japanese-occupied_areas_of_China",
+    "https://en.wikipedia.org/wiki/Battle_of_Nanchang",
+    "https://en.wikipedia.org/wiki/Japanese_invasion_of_Hainan_Island",
+    "https://en.wikipedia.org/wiki/Battle_of_Zaoyang–Yichang",
+    "https://dhc.westpoint.edu/atlases/（USMA 历史系 Chinese Civil War 地图集：Japanese Occupation, 1940）",
+    "https://en.wikipedia.org/wiki/North_China_Political_Council"
+   ],
+   "note": "日军实际控制的是城市与铁路沿线（「点和线」），乡村多为国民革命军游击区与共军敌后根据地；色块为大致范围（±50–150 km）。",
+   "dates_note": "日占区节点：1939-03 至 1944-04 的大致稳定范围：南昌（1939-03-27）、海南岛（1939-02-10）、汕头（1939-06-21）、宜昌（1940-06-12）；南宁 1939-11 至 1940-10、福州 1941-04 至 09 等短期占领未画。政权：名义上隶属南京汪精卫政权，实际自治并受日军华北方面军控制。"
+  },
+  {
+   "id": "sjw_Q708865_1939-03-27_4",
+   "group": "sino_japanese_war",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "中华民国维新政府（南京，日本扶植）",
+   "name_en": "中华民国维新政府（南京，日本扶植）",
+   "controller": {
+    "qid": "Q708865",
+    "zh": "中华民国维新政府"
+   },
+   "from": "1939-03-27",
+   "until": "1940-03-30",
+   "geometry": {
+    "polygon": [
+     [
+      115.5,
+      28.0
+     ],
+     [
+      115.5,
+      34.3
+     ],
+     [
+      125.0,
+      34.3
+     ],
+     [
+      125.0,
+      28.0
+     ]
+    ],
+    "intersect": {
+     "polygon": [
+      [
+       115.4,
+       40.1
+      ],
+      [
+       115.8,
+       40.4
+      ],
+      [
+       116.2,
+       40.9
+      ],
+      [
+       117.3,
+       40.6
+      ],
+      [
+       118.5,
+       40.2
+      ],
+      [
+       119.7,
+       40.1
+      ],
+      [
+       119.3,
+       39.3
+      ],
+      [
+       118.0,
+       39.0
+      ],
+      [
+       117.6,
+       38.5
+      ],
+      [
+       118.5,
+       38.0
+      ],
+      [
+       119.0,
+       37.3
+      ],
+      [
+       120.5,
+       37.8
+      ],
+      [
+       122.6,
+       37.4
+      ],
+      [
+       120.3,
+       36.0
+      ],
+      [
+       119.2,
+       35.0
+      ],
+      [
+       119.3,
+       34.6
+      ],
+      [
+       120.3,
+       34.3
+      ],
+      [
+       120.5,
+       33.4
+      ],
+      [
+       121.0,
+       32.6
+      ],
+      [
+       121.9,
+       31.7
+      ],
+      [
+       121.9,
+       30.85
+      ],
+      [
+       121.0,
+       30.6
+      ],
+      [
+       120.2,
+       30.2
+      ],
+      [
+       119.6,
+       30.5
+      ],
+      [
+       118.6,
+       30.9
+      ],
+      [
+       117.6,
+       30.6
+      ],
+      [
+       117.05,
+       30.45
+      ],
+      [
+       116.5,
+       30.5
+      ],
+      [
+       117.6,
+       30.6
+      ],
+      [
+       117.0,
+       29.6
+      ],
+      [
+       116.3,
+       28.8
+      ],
+      [
+       115.9,
+       28.4
+      ],
+      [
+       115.5,
+       28.7
+      ],
+      [
+       114.6,
+       29.0
+      ],
+      [
+       113.1,
+       29.3
+      ],
+      [
+       112.3,
+       29.8
+      ],
+      [
+       111.3,
+       30.6
+      ],
+      [
+       111.5,
+       31.1
+      ],
+      [
+       112.6,
+       31.0
+      ],
+      [
+       113.4,
+       30.9
+      ],
+      [
+       113.8,
+       31.7
+      ],
+      [
+       114.07,
+       32.12
+      ],
+      [
+       114.6,
+       32.4
+      ],
+      [
+       115.4,
+       33.6
+      ],
+      [
+       114.6,
+       34.3
+      ],
+      [
+       114.3,
+       34.8
+      ],
+      [
+       113.9,
+       35.3
+      ],
+      [
+       113.4,
+       35.4
+      ],
+      [
+       112.5,
+       35.0
+      ],
+      [
+       110.5,
+       35.0
+      ],
+      [
+       110.5,
+       36.5
+      ],
+      [
+       111.0,
+       37.5
+      ],
+      [
+       111.4,
+       38.6
+      ],
+      [
+       112.2,
+       38.9
+      ],
+      [
+       113.4,
+       39.3
+      ],
+      [
+       114.4,
+       39.6
+      ]
+     ],
+     "union": [
+      {
+       "polygon": [
+        [
+         113.0,
+         23.4
+        ],
+        [
+         113.6,
+         23.5
+        ],
+        [
+         114.2,
+         23.1
+        ],
+        [
+         114.1,
+         22.56
+        ],
+        [
+         113.6,
+         22.5
+        ],
+        [
+         113.0,
+         22.8
+        ]
+       ]
+      },
+      {
+       "polygon": [
+        [
+         117.95,
+         24.35
+        ],
+        [
+         117.95,
+         24.6
+        ],
+        [
+         118.25,
+         24.6
+        ],
+        [
+         118.25,
+         24.35
+        ]
+       ]
+      },
+      {
+       "polygon": [
+        [
+         116.4,
+         23.2
+        ],
+        [
+         116.4,
+         23.6
+        ],
+        [
+         117.0,
+         23.6
+        ],
+        [
+         117.0,
+         23.2
+        ]
+       ]
+      },
+      {
+       "admin1": [
+        "CN-HI"
+       ],
+       "intersect_bbox": [
+        108.5,
+        18.0,
+        111.2,
+        20.2
+       ]
+      }
+     ]
+    }
+   },
+   "approx": true,
+   "sources": [
+    "https://dhc.westpoint.edu/atlases/（USMA 历史系 Chinese Civil War 地图集：Japanese Occupation, 1940）",
+    "https://dhc.westpoint.edu/atlases/（USMA 历史系 Chinese Civil War 地图集：Situation at the End of World War II）",
+    "https://en.wikipedia.org/wiki/Second_Sino-Japanese_War",
+    "https://en.wikipedia.org/wiki/Japanese-occupied_areas_of_China",
+    "https://en.wikipedia.org/wiki/Battle_of_Nanchang",
+    "https://en.wikipedia.org/wiki/Japanese_invasion_of_Hainan_Island",
+    "https://en.wikipedia.org/wiki/Battle_of_Zaoyang–Yichang",
+    "https://dhc.westpoint.edu/atlases/（USMA 历史系 Chinese Civil War 地图集：Japanese Occupation, 1940）",
+    "https://en.wikipedia.org/wiki/Reformed_Government_of_the_Republic_of_China"
+   ],
+   "note": "日军实际控制的是城市与铁路沿线（「点和线」），乡村多为国民革命军游击区与共军敌后根据地；色块为大致范围（±50–150 km）。",
+   "dates_note": "日占区节点：1939-03 至 1944-04 的大致稳定范围：南昌（1939-03-27）、海南岛（1939-02-10）、汕头（1939-06-21）、宜昌（1940-06-12）；南宁 1939-11 至 1940-10、福州 1941-04 至 09 等短期占领未画。政权：1938-03-28 梁鸿志在南京成立，辖苏、浙、皖日占区；1940-03-30 并入汪精卫政权。"
+  },
+  {
+   "id": "sjw_Q188712_1939-03-27_5",
+   "group": "sino_japanese_war",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "日军占领区（华中/华南）",
+   "name_en": "日军占领区（华中/华南）",
+   "controller": {
+    "qid": "Q188712",
+    "zh": "日军占领区"
+   },
+   "from": "1939-03-27",
+   "until": "1940-03-30",
+   "geometry": {
+    "polygon": [
+     [
+      100.0,
+      17.0
+     ],
+     [
+      100.0,
+      34.3
+     ],
+     [
+      115.5,
+      34.3
+     ],
+     [
+      115.5,
+      28.0
+     ],
+     [
+      125.0,
+      28.0
+     ],
+     [
+      125.0,
+      17.0
+     ]
+    ],
+    "intersect": {
+     "polygon": [
+      [
+       115.4,
+       40.1
+      ],
+      [
+       115.8,
+       40.4
+      ],
+      [
+       116.2,
+       40.9
+      ],
+      [
+       117.3,
+       40.6
+      ],
+      [
+       118.5,
+       40.2
+      ],
+      [
+       119.7,
+       40.1
+      ],
+      [
+       119.3,
+       39.3
+      ],
+      [
+       118.0,
+       39.0
+      ],
+      [
+       117.6,
+       38.5
+      ],
+      [
+       118.5,
+       38.0
+      ],
+      [
+       119.0,
+       37.3
+      ],
+      [
+       120.5,
+       37.8
+      ],
+      [
+       122.6,
+       37.4
+      ],
+      [
+       120.3,
+       36.0
+      ],
+      [
+       119.2,
+       35.0
+      ],
+      [
+       119.3,
+       34.6
+      ],
+      [
+       120.3,
+       34.3
+      ],
+      [
+       120.5,
+       33.4
+      ],
+      [
+       121.0,
+       32.6
+      ],
+      [
+       121.9,
+       31.7
+      ],
+      [
+       121.9,
+       30.85
+      ],
+      [
+       121.0,
+       30.6
+      ],
+      [
+       120.2,
+       30.2
+      ],
+      [
+       119.6,
+       30.5
+      ],
+      [
+       118.6,
+       30.9
+      ],
+      [
+       117.6,
+       30.6
+      ],
+      [
+       117.05,
+       30.45
+      ],
+      [
+       116.5,
+       30.5
+      ],
+      [
+       117.6,
+       30.6
+      ],
+      [
+       117.0,
+       29.6
+      ],
+      [
+       116.3,
+       28.8
+      ],
+      [
+       115.9,
+       28.4
+      ],
+      [
+       115.5,
+       28.7
+      ],
+      [
+       114.6,
+       29.0
+      ],
+      [
+       113.1,
+       29.3
+      ],
+      [
+       112.3,
+       29.8
+      ],
+      [
+       111.3,
+       30.6
+      ],
+      [
+       111.5,
+       31.1
+      ],
+      [
+       112.6,
+       31.0
+      ],
+      [
+       113.4,
+       30.9
+      ],
+      [
+       113.8,
+       31.7
+      ],
+      [
+       114.07,
+       32.12
+      ],
+      [
+       114.6,
+       32.4
+      ],
+      [
+       115.4,
+       33.6
+      ],
+      [
+       114.6,
+       34.3
+      ],
+      [
+       114.3,
+       34.8
+      ],
+      [
+       113.9,
+       35.3
+      ],
+      [
+       113.4,
+       35.4
+      ],
+      [
+       112.5,
+       35.0
+      ],
+      [
+       110.5,
+       35.0
+      ],
+      [
+       110.5,
+       36.5
+      ],
+      [
+       111.0,
+       37.5
+      ],
+      [
+       111.4,
+       38.6
+      ],
+      [
+       112.2,
+       38.9
+      ],
+      [
+       113.4,
+       39.3
+      ],
+      [
+       114.4,
+       39.6
+      ]
+     ],
+     "union": [
+      {
+       "polygon": [
+        [
+         113.0,
+         23.4
+        ],
+        [
+         113.6,
+         23.5
+        ],
+        [
+         114.2,
+         23.1
+        ],
+        [
+         114.1,
+         22.56
+        ],
+        [
+         113.6,
+         22.5
+        ],
+        [
+         113.0,
+         22.8
+        ]
+       ]
+      },
+      {
+       "polygon": [
+        [
+         117.95,
+         24.35
+        ],
+        [
+         117.95,
+         24.6
+        ],
+        [
+         118.25,
+         24.6
+        ],
+        [
+         118.25,
+         24.35
+        ]
+       ]
+      },
+      {
+       "polygon": [
+        [
+         116.4,
+         23.2
+        ],
+        [
+         116.4,
+         23.6
+        ],
+        [
+         117.0,
+         23.6
+        ],
+        [
+         117.0,
+         23.2
+        ]
+       ]
+      },
+      {
+       "admin1": [
+        "CN-HI"
+       ],
+       "intersect_bbox": [
+        108.5,
+        18.0,
+        111.2,
+        20.2
+       ]
+      }
+     ]
+    }
+   },
+   "approx": true,
+   "sources": [
+    "https://dhc.westpoint.edu/atlases/（USMA 历史系 Chinese Civil War 地图集：Japanese Occupation, 1940）",
+    "https://dhc.westpoint.edu/atlases/（USMA 历史系 Chinese Civil War 地图集：Situation at the End of World War II）",
+    "https://en.wikipedia.org/wiki/Second_Sino-Japanese_War",
+    "https://en.wikipedia.org/wiki/Japanese-occupied_areas_of_China",
+    "https://en.wikipedia.org/wiki/Battle_of_Nanchang",
+    "https://en.wikipedia.org/wiki/Japanese_invasion_of_Hainan_Island",
+    "https://en.wikipedia.org/wiki/Battle_of_Zaoyang–Yichang",
+    "https://dhc.westpoint.edu/atlases/（USMA 历史系 Chinese Civil War 地图集：Japanese Occupation, 1940）"
+   ],
+   "note": "日军实际控制的是城市与铁路沿线（「点和线」），乡村多为国民革命军游击区与共军敌后根据地；色块为大致范围（±50–150 km）。",
+   "dates_note": "日占区节点：1939-03 至 1944-04 的大致稳定范围：南昌（1939-03-27）、海南岛（1939-02-10）、汕头（1939-06-21）、宜昌（1940-06-12）；南宁 1939-11 至 1940-10、福州 1941-04 至 09 等短期占领未画。政权：武汉、广州等地由日军直接管制。"
+  },
+  {
+   "id": "sjw_Q696242_1940-03-30_6",
+   "group": "sino_japanese_war",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "汪精卫政权（「中华民国国民政府」，南京，日本扶植）",
+   "name_en": "汪精卫政权（「中华民国国民政府」，南京，日本扶植）",
+   "controller": {
+    "qid": "Q696242",
+    "zh": "汪精卫政权"
+   },
+   "from": "1940-03-30",
+   "until": "1944-04-19",
+   "geometry": {
+    "polygon": [
+     [
+      100.0,
+      17.0
+     ],
+     [
+      100.0,
+      34.3
+     ],
+     [
+      125.0,
+      34.3
+     ],
+     [
+      125.0,
+      17.0
+     ]
+    ],
+    "intersect": {
+     "polygon": [
+      [
+       115.4,
+       40.1
+      ],
+      [
+       115.8,
+       40.4
+      ],
+      [
+       116.2,
+       40.9
+      ],
+      [
+       117.3,
+       40.6
+      ],
+      [
+       118.5,
+       40.2
+      ],
+      [
+       119.7,
+       40.1
+      ],
+      [
+       119.3,
+       39.3
+      ],
+      [
+       118.0,
+       39.0
+      ],
+      [
+       117.6,
+       38.5
+      ],
+      [
+       118.5,
+       38.0
+      ],
+      [
+       119.0,
+       37.3
+      ],
+      [
+       120.5,
+       37.8
+      ],
+      [
+       122.6,
+       37.4
+      ],
+      [
+       120.3,
+       36.0
+      ],
+      [
+       119.2,
+       35.0
+      ],
+      [
+       119.3,
+       34.6
+      ],
+      [
+       120.3,
+       34.3
+      ],
+      [
+       120.5,
+       33.4
+      ],
+      [
+       121.0,
+       32.6
+      ],
+      [
+       121.9,
+       31.7
+      ],
+      [
+       121.9,
+       30.85
+      ],
+      [
+       121.0,
+       30.6
+      ],
+      [
+       120.2,
+       30.2
+      ],
+      [
+       119.6,
+       30.5
+      ],
+      [
+       118.6,
+       30.9
+      ],
+      [
+       117.6,
+       30.6
+      ],
+      [
+       117.05,
+       30.45
+      ],
+      [
+       116.5,
+       30.5
+      ],
+      [
+       117.6,
+       30.6
+      ],
+      [
+       117.0,
+       29.6
+      ],
+      [
+       116.3,
+       28.8
+      ],
+      [
+       115.9,
+       28.4
+      ],
+      [
+       115.5,
+       28.7
+      ],
+      [
+       114.6,
+       29.0
+      ],
+      [
+       113.1,
+       29.3
+      ],
+      [
+       112.3,
+       29.8
+      ],
+      [
+       111.3,
+       30.6
+      ],
+      [
+       111.5,
+       31.1
+      ],
+      [
+       112.6,
+       31.0
+      ],
+      [
+       113.4,
+       30.9
+      ],
+      [
+       113.8,
+       31.7
+      ],
+      [
+       114.07,
+       32.12
+      ],
+      [
+       114.6,
+       32.4
+      ],
+      [
+       115.4,
+       33.6
+      ],
+      [
+       114.6,
+       34.3
+      ],
+      [
+       114.3,
+       34.8
+      ],
+      [
+       113.9,
+       35.3
+      ],
+      [
+       113.4,
+       35.4
+      ],
+      [
+       112.5,
+       35.0
+      ],
+      [
+       110.5,
+       35.0
+      ],
+      [
+       110.5,
+       36.5
+      ],
+      [
+       111.0,
+       37.5
+      ],
+      [
+       111.4,
+       38.6
+      ],
+      [
+       112.2,
+       38.9
+      ],
+      [
+       113.4,
+       39.3
+      ],
+      [
+       114.4,
+       39.6
+      ]
+     ],
+     "union": [
+      {
+       "polygon": [
+        [
+         113.0,
+         23.4
+        ],
+        [
+         113.6,
+         23.5
+        ],
+        [
+         114.2,
+         23.1
+        ],
+        [
+         114.1,
+         22.56
+        ],
+        [
+         113.6,
+         22.5
+        ],
+        [
+         113.0,
+         22.8
+        ]
+       ]
+      },
+      {
+       "polygon": [
+        [
+         117.95,
+         24.35
+        ],
+        [
+         117.95,
+         24.6
+        ],
+        [
+         118.25,
+         24.6
+        ],
+        [
+         118.25,
+         24.35
+        ]
+       ]
+      },
+      {
+       "polygon": [
+        [
+         116.4,
+         23.2
+        ],
+        [
+         116.4,
+         23.6
+        ],
+        [
+         117.0,
+         23.6
+        ],
+        [
+         117.0,
+         23.2
+        ]
+       ]
+      },
+      {
+       "admin1": [
+        "CN-HI"
+       ],
+       "intersect_bbox": [
+        108.5,
+        18.0,
+        111.2,
+        20.2
+       ]
+      }
+     ]
+    }
+   },
+   "approx": true,
+   "sources": [
+    "https://dhc.westpoint.edu/atlases/（USMA 历史系 Chinese Civil War 地图集：Japanese Occupation, 1940）",
+    "https://dhc.westpoint.edu/atlases/（USMA 历史系 Chinese Civil War 地图集：Situation at the End of World War II）",
+    "https://en.wikipedia.org/wiki/Second_Sino-Japanese_War",
+    "https://en.wikipedia.org/wiki/Japanese-occupied_areas_of_China",
+    "https://en.wikipedia.org/wiki/Battle_of_Nanchang",
+    "https://en.wikipedia.org/wiki/Japanese_invasion_of_Hainan_Island",
+    "https://en.wikipedia.org/wiki/Battle_of_Zaoyang–Yichang",
+    "https://dhc.westpoint.edu/atlases/（USMA 历史系 Chinese Civil War 地图集：Japanese Occupation, 1940）",
+    "https://en.wikipedia.org/wiki/Wang_Jingwei_regime"
+   ],
+   "note": "日军实际控制的是城市与铁路沿线（「点和线」），乡村多为国民革命军游击区与共军敌后根据地；色块为大致范围（±50–150 km）。",
+   "dates_note": "日占区节点：1939-03 至 1944-04 的大致稳定范围：南昌（1939-03-27）、海南岛（1939-02-10）、汕头（1939-06-21）、宜昌（1940-06-12）；南宁 1939-11 至 1940-10、福州 1941-04 至 09 等短期占领未画。政权：1940-03-30 汪精卫在南京成立，1944-11 汪死后由陈公博代理，1945-08-16 宣布解散。"
+  },
+  {
+   "id": "sjw_Q10905486_1944-04-19_2",
+   "group": "sino_japanese_war",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "华北政务委员会（汪精卫政权辖下，日军控制）",
+   "name_en": "华北政务委员会（汪精卫政权辖下，日军控制）",
+   "controller": {
+    "qid": "Q10905486",
+    "zh": "华北政务委员会"
+   },
+   "from": "1944-04-19",
+   "until": "1944-08-08",
+   "geometry": {
+    "polygon": [
+     [
+      100.0,
+      34.3
+     ],
+     [
+      100.0,
+      42.5
+     ],
+     [
+      125.0,
+      42.5
+     ],
+     [
+      125.0,
+      34.3
+     ]
+    ],
+    "intersect": {
+     "polygon": [
+      [
+       115.4,
+       40.1
+      ],
+      [
+       115.8,
+       40.4
+      ],
+      [
+       116.2,
+       40.9
+      ],
+      [
+       117.3,
+       40.6
+      ],
+      [
+       118.5,
+       40.2
+      ],
+      [
+       119.7,
+       40.1
+      ],
+      [
+       119.3,
+       39.3
+      ],
+      [
+       118.0,
+       39.0
+      ],
+      [
+       117.6,
+       38.5
+      ],
+      [
+       118.5,
+       38.0
+      ],
+      [
+       119.0,
+       37.3
+      ],
+      [
+       120.5,
+       37.8
+      ],
+      [
+       122.6,
+       37.4
+      ],
+      [
+       120.3,
+       36.0
+      ],
+      [
+       119.2,
+       35.0
+      ],
+      [
+       119.3,
+       34.6
+      ],
+      [
+       120.3,
+       34.3
+      ],
+      [
+       120.5,
+       33.4
+      ],
+      [
+       121.0,
+       32.6
+      ],
+      [
+       121.9,
+       31.7
+      ],
+      [
+       121.9,
+       30.85
+      ],
+      [
+       121.0,
+       30.6
+      ],
+      [
+       120.2,
+       30.2
+      ],
+      [
+       119.6,
+       30.5
+      ],
+      [
+       118.6,
+       30.9
+      ],
+      [
+       117.6,
+       30.6
+      ],
+      [
+       117.05,
+       30.45
+      ],
+      [
+       116.5,
+       30.5
+      ],
+      [
+       117.6,
+       30.6
+      ],
+      [
+       117.0,
+       29.6
+      ],
+      [
+       116.3,
+       28.8
+      ],
+      [
+       115.9,
+       28.4
+      ],
+      [
+       115.5,
+       28.7
+      ],
+      [
+       114.6,
+       29.0
+      ],
+      [
+       113.1,
+       29.3
+      ],
+      [
+       112.3,
+       29.8
+      ],
+      [
+       111.3,
+       30.6
+      ],
+      [
+       111.5,
+       31.1
+      ],
+      [
+       112.6,
+       31.0
+      ],
+      [
+       113.4,
+       30.9
+      ],
+      [
+       113.8,
+       31.7
+      ],
+      [
+       114.07,
+       32.12
+      ],
+      [
+       114.6,
+       32.4
+      ],
+      [
+       115.4,
+       33.6
+      ],
+      [
+       114.6,
+       34.3
+      ],
+      [
+       114.3,
+       34.8
+      ],
+      [
+       113.9,
+       35.3
+      ],
+      [
+       113.4,
+       35.4
+      ],
+      [
+       112.5,
+       35.0
+      ],
+      [
+       110.5,
+       35.0
+      ],
+      [
+       110.5,
+       36.5
+      ],
+      [
+       111.0,
+       37.5
+      ],
+      [
+       111.4,
+       38.6
+      ],
+      [
+       112.2,
+       38.9
+      ],
+      [
+       113.4,
+       39.3
+      ],
+      [
+       114.4,
+       39.6
+      ]
+     ],
+     "union": [
+      {
+       "polygon": [
+        [
+         114.3,
+         34.8
+        ],
+        [
+         113.6,
+         34.75
+        ],
+        [
+         112.45,
+         34.65
+        ],
+        [
+         111.2,
+         34.75
+        ],
+        [
+         111.0,
+         34.2
+        ],
+        [
+         112.0,
+         33.6
+        ],
+        [
+         113.0,
+         33.1
+        ],
+        [
+         114.0,
+         32.6
+        ],
+        [
+         114.6,
+         32.4
+        ]
+       ]
+      },
+      {
+       "polygon": [
+        [
+         113.0,
+         23.4
+        ],
+        [
+         113.6,
+         23.5
+        ],
+        [
+         114.2,
+         23.1
+        ],
+        [
+         114.1,
+         22.56
+        ],
+        [
+         113.6,
+         22.5
+        ],
+        [
+         113.0,
+         22.8
+        ]
+       ]
+      },
+      {
+       "polygon": [
+        [
+         117.95,
+         24.35
+        ],
+        [
+         117.95,
+         24.6
+        ],
+        [
+         118.25,
+         24.6
+        ],
+        [
+         118.25,
+         24.35
+        ]
+       ]
+      },
+      {
+       "polygon": [
+        [
+         116.4,
+         23.2
+        ],
+        [
+         116.4,
+         23.6
+        ],
+        [
+         117.0,
+         23.6
+        ],
+        [
+         117.0,
+         23.2
+        ]
+       ]
+      },
+      {
+       "admin1": [
+        "CN-HI"
+       ],
+       "intersect_bbox": [
+        108.5,
+        18.0,
+        111.2,
+        20.2
+       ]
+      }
+     ]
+    }
+   },
+   "approx": true,
+   "sources": [
+    "https://dhc.westpoint.edu/atlases/（USMA 历史系 Chinese Civil War 地图集：Japanese Occupation, 1940）",
+    "https://dhc.westpoint.edu/atlases/（USMA 历史系 Chinese Civil War 地图集：Situation at the End of World War II）",
+    "https://en.wikipedia.org/wiki/Second_Sino-Japanese_War",
+    "https://en.wikipedia.org/wiki/Japanese-occupied_areas_of_China",
+    "https://en.wikipedia.org/wiki/Operation_Ichi-Go",
+    "https://en.wikipedia.org/wiki/Battle_of_Central_Henan",
+    "https://en.wikipedia.org/wiki/North_China_Political_Council"
+   ],
+   "note": "日军实际控制的是城市与铁路沿线（「点和线」），乡村多为国民革命军游击区与共军敌后根据地；色块为大致范围（±50–150 km）。",
+   "dates_note": "日占区节点：1944-04 至 08：一号作战第一阶段（豫中会战：郑州 04-22、洛阳 05-25），平汉线贯通；长沙 06-18 失守、衡阳 08-08 失守。政权：名义上隶属南京汪精卫政权，实际自治并受日军华北方面军控制。"
+  },
+  {
+   "id": "sjw_Q696242_1944-04-19_6",
+   "group": "sino_japanese_war",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "汪精卫政权（「中华民国国民政府」，南京，日本扶植）",
+   "name_en": "汪精卫政权（「中华民国国民政府」，南京，日本扶植）",
+   "controller": {
+    "qid": "Q696242",
+    "zh": "汪精卫政权"
+   },
+   "from": "1944-04-19",
+   "until": "1944-08-08",
+   "geometry": {
+    "polygon": [
+     [
+      100.0,
+      17.0
+     ],
+     [
+      100.0,
+      34.3
+     ],
+     [
+      125.0,
+      34.3
+     ],
+     [
+      125.0,
+      17.0
+     ]
+    ],
+    "intersect": {
+     "polygon": [
+      [
+       115.4,
+       40.1
+      ],
+      [
+       115.8,
+       40.4
+      ],
+      [
+       116.2,
+       40.9
+      ],
+      [
+       117.3,
+       40.6
+      ],
+      [
+       118.5,
+       40.2
+      ],
+      [
+       119.7,
+       40.1
+      ],
+      [
+       119.3,
+       39.3
+      ],
+      [
+       118.0,
+       39.0
+      ],
+      [
+       117.6,
+       38.5
+      ],
+      [
+       118.5,
+       38.0
+      ],
+      [
+       119.0,
+       37.3
+      ],
+      [
+       120.5,
+       37.8
+      ],
+      [
+       122.6,
+       37.4
+      ],
+      [
+       120.3,
+       36.0
+      ],
+      [
+       119.2,
+       35.0
+      ],
+      [
+       119.3,
+       34.6
+      ],
+      [
+       120.3,
+       34.3
+      ],
+      [
+       120.5,
+       33.4
+      ],
+      [
+       121.0,
+       32.6
+      ],
+      [
+       121.9,
+       31.7
+      ],
+      [
+       121.9,
+       30.85
+      ],
+      [
+       121.0,
+       30.6
+      ],
+      [
+       120.2,
+       30.2
+      ],
+      [
+       119.6,
+       30.5
+      ],
+      [
+       118.6,
+       30.9
+      ],
+      [
+       117.6,
+       30.6
+      ],
+      [
+       117.05,
+       30.45
+      ],
+      [
+       116.5,
+       30.5
+      ],
+      [
+       117.6,
+       30.6
+      ],
+      [
+       117.0,
+       29.6
+      ],
+      [
+       116.3,
+       28.8
+      ],
+      [
+       115.9,
+       28.4
+      ],
+      [
+       115.5,
+       28.7
+      ],
+      [
+       114.6,
+       29.0
+      ],
+      [
+       113.1,
+       29.3
+      ],
+      [
+       112.3,
+       29.8
+      ],
+      [
+       111.3,
+       30.6
+      ],
+      [
+       111.5,
+       31.1
+      ],
+      [
+       112.6,
+       31.0
+      ],
+      [
+       113.4,
+       30.9
+      ],
+      [
+       113.8,
+       31.7
+      ],
+      [
+       114.07,
+       32.12
+      ],
+      [
+       114.6,
+       32.4
+      ],
+      [
+       115.4,
+       33.6
+      ],
+      [
+       114.6,
+       34.3
+      ],
+      [
+       114.3,
+       34.8
+      ],
+      [
+       113.9,
+       35.3
+      ],
+      [
+       113.4,
+       35.4
+      ],
+      [
+       112.5,
+       35.0
+      ],
+      [
+       110.5,
+       35.0
+      ],
+      [
+       110.5,
+       36.5
+      ],
+      [
+       111.0,
+       37.5
+      ],
+      [
+       111.4,
+       38.6
+      ],
+      [
+       112.2,
+       38.9
+      ],
+      [
+       113.4,
+       39.3
+      ],
+      [
+       114.4,
+       39.6
+      ]
+     ],
+     "union": [
+      {
+       "polygon": [
+        [
+         114.3,
+         34.8
+        ],
+        [
+         113.6,
+         34.75
+        ],
+        [
+         112.45,
+         34.65
+        ],
+        [
+         111.2,
+         34.75
+        ],
+        [
+         111.0,
+         34.2
+        ],
+        [
+         112.0,
+         33.6
+        ],
+        [
+         113.0,
+         33.1
+        ],
+        [
+         114.0,
+         32.6
+        ],
+        [
+         114.6,
+         32.4
+        ]
+       ]
+      },
+      {
+       "polygon": [
+        [
+         113.0,
+         23.4
+        ],
+        [
+         113.6,
+         23.5
+        ],
+        [
+         114.2,
+         23.1
+        ],
+        [
+         114.1,
+         22.56
+        ],
+        [
+         113.6,
+         22.5
+        ],
+        [
+         113.0,
+         22.8
+        ]
+       ]
+      },
+      {
+       "polygon": [
+        [
+         117.95,
+         24.35
+        ],
+        [
+         117.95,
+         24.6
+        ],
+        [
+         118.25,
+         24.6
+        ],
+        [
+         118.25,
+         24.35
+        ]
+       ]
+      },
+      {
+       "polygon": [
+        [
+         116.4,
+         23.2
+        ],
+        [
+         116.4,
+         23.6
+        ],
+        [
+         117.0,
+         23.6
+        ],
+        [
+         117.0,
+         23.2
+        ]
+       ]
+      },
+      {
+       "admin1": [
+        "CN-HI"
+       ],
+       "intersect_bbox": [
+        108.5,
+        18.0,
+        111.2,
+        20.2
+       ]
+      }
+     ]
+    }
+   },
+   "approx": true,
+   "sources": [
+    "https://dhc.westpoint.edu/atlases/（USMA 历史系 Chinese Civil War 地图集：Japanese Occupation, 1940）",
+    "https://dhc.westpoint.edu/atlases/（USMA 历史系 Chinese Civil War 地图集：Situation at the End of World War II）",
+    "https://en.wikipedia.org/wiki/Second_Sino-Japanese_War",
+    "https://en.wikipedia.org/wiki/Japanese-occupied_areas_of_China",
+    "https://en.wikipedia.org/wiki/Operation_Ichi-Go",
+    "https://en.wikipedia.org/wiki/Battle_of_Central_Henan",
+    "https://en.wikipedia.org/wiki/Wang_Jingwei_regime"
+   ],
+   "note": "日军实际控制的是城市与铁路沿线（「点和线」），乡村多为国民革命军游击区与共军敌后根据地；色块为大致范围（±50–150 km）。",
+   "dates_note": "日占区节点：1944-04 至 08：一号作战第一阶段（豫中会战：郑州 04-22、洛阳 05-25），平汉线贯通；长沙 06-18 失守、衡阳 08-08 失守。政权：1940-03-30 汪精卫在南京成立，1944-11 汪死后由陈公博代理，1945-08-16 宣布解散。"
+  },
+  {
+   "id": "sjw_Q10905486_1944-08-08_2",
+   "group": "sino_japanese_war",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "华北政务委员会（汪精卫政权辖下，日军控制）",
+   "name_en": "华北政务委员会（汪精卫政权辖下，日军控制）",
+   "controller": {
+    "qid": "Q10905486",
+    "zh": "华北政务委员会"
+   },
+   "from": "1944-08-08",
+   "until": "1944-11-10",
+   "geometry": {
+    "polygon": [
+     [
+      100.0,
+      34.3
+     ],
+     [
+      100.0,
+      42.5
+     ],
+     [
+      125.0,
+      42.5
+     ],
+     [
+      125.0,
+      34.3
+     ]
+    ],
+    "intersect": {
+     "polygon": [
+      [
+       115.4,
+       40.1
+      ],
+      [
+       115.8,
+       40.4
+      ],
+      [
+       116.2,
+       40.9
+      ],
+      [
+       117.3,
+       40.6
+      ],
+      [
+       118.5,
+       40.2
+      ],
+      [
+       119.7,
+       40.1
+      ],
+      [
+       119.3,
+       39.3
+      ],
+      [
+       118.0,
+       39.0
+      ],
+      [
+       117.6,
+       38.5
+      ],
+      [
+       118.5,
+       38.0
+      ],
+      [
+       119.0,
+       37.3
+      ],
+      [
+       120.5,
+       37.8
+      ],
+      [
+       122.6,
+       37.4
+      ],
+      [
+       120.3,
+       36.0
+      ],
+      [
+       119.2,
+       35.0
+      ],
+      [
+       119.3,
+       34.6
+      ],
+      [
+       120.3,
+       34.3
+      ],
+      [
+       120.5,
+       33.4
+      ],
+      [
+       121.0,
+       32.6
+      ],
+      [
+       121.9,
+       31.7
+      ],
+      [
+       121.9,
+       30.85
+      ],
+      [
+       121.0,
+       30.6
+      ],
+      [
+       120.2,
+       30.2
+      ],
+      [
+       119.6,
+       30.5
+      ],
+      [
+       118.6,
+       30.9
+      ],
+      [
+       117.6,
+       30.6
+      ],
+      [
+       117.05,
+       30.45
+      ],
+      [
+       116.5,
+       30.5
+      ],
+      [
+       117.6,
+       30.6
+      ],
+      [
+       117.0,
+       29.6
+      ],
+      [
+       116.3,
+       28.8
+      ],
+      [
+       115.9,
+       28.4
+      ],
+      [
+       115.5,
+       28.7
+      ],
+      [
+       114.6,
+       29.0
+      ],
+      [
+       113.1,
+       29.3
+      ],
+      [
+       112.3,
+       29.8
+      ],
+      [
+       111.3,
+       30.6
+      ],
+      [
+       111.5,
+       31.1
+      ],
+      [
+       112.6,
+       31.0
+      ],
+      [
+       113.4,
+       30.9
+      ],
+      [
+       113.8,
+       31.7
+      ],
+      [
+       114.07,
+       32.12
+      ],
+      [
+       114.6,
+       32.4
+      ],
+      [
+       115.4,
+       33.6
+      ],
+      [
+       114.6,
+       34.3
+      ],
+      [
+       114.3,
+       34.8
+      ],
+      [
+       113.9,
+       35.3
+      ],
+      [
+       113.4,
+       35.4
+      ],
+      [
+       112.5,
+       35.0
+      ],
+      [
+       110.5,
+       35.0
+      ],
+      [
+       110.5,
+       36.5
+      ],
+      [
+       111.0,
+       37.5
+      ],
+      [
+       111.4,
+       38.6
+      ],
+      [
+       112.2,
+       38.9
+      ],
+      [
+       113.4,
+       39.3
+      ],
+      [
+       114.4,
+       39.6
+      ]
+     ],
+     "union": [
+      {
+       "polygon": [
+        [
+         114.3,
+         34.8
+        ],
+        [
+         113.6,
+         34.75
+        ],
+        [
+         112.45,
+         34.65
+        ],
+        [
+         111.2,
+         34.75
+        ],
+        [
+         111.0,
+         34.2
+        ],
+        [
+         112.0,
+         33.6
+        ],
+        [
+         113.0,
+         33.1
+        ],
+        [
+         114.0,
+         32.6
+        ],
+        [
+         114.6,
+         32.4
+        ]
+       ]
+      },
+      {
+       "polygon": [
+        [
+         113.1,
+         29.3
+        ],
+        [
+         112.6,
+         28.6
+        ],
+        [
+         112.9,
+         28.2
+        ],
+        [
+         112.6,
+         26.9
+        ],
+        [
+         113.0,
+         26.5
+        ],
+        [
+         113.7,
+         27.0
+        ],
+        [
+         113.5,
+         28.2
+        ],
+        [
+         114.0,
+         29.0
+        ]
+       ]
+      },
+      {
+       "polygon": [
+        [
+         113.0,
+         23.4
+        ],
+        [
+         113.6,
+         23.5
+        ],
+        [
+         114.2,
+         23.1
+        ],
+        [
+         114.1,
+         22.56
+        ],
+        [
+         113.6,
+         22.5
+        ],
+        [
+         113.0,
+         22.8
+        ]
+       ]
+      },
+      {
+       "polygon": [
+        [
+         117.95,
+         24.35
+        ],
+        [
+         117.95,
+         24.6
+        ],
+        [
+         118.25,
+         24.6
+        ],
+        [
+         118.25,
+         24.35
+        ]
+       ]
+      },
+      {
+       "polygon": [
+        [
+         116.4,
+         23.2
+        ],
+        [
+         116.4,
+         23.6
+        ],
+        [
+         117.0,
+         23.6
+        ],
+        [
+         117.0,
+         23.2
+        ]
+       ]
+      },
+      {
+       "admin1": [
+        "CN-HI"
+       ],
+       "intersect_bbox": [
+        108.5,
+        18.0,
+        111.2,
+        20.2
+       ]
+      }
+     ]
+    }
+   },
+   "approx": true,
+   "sources": [
+    "https://dhc.westpoint.edu/atlases/（USMA 历史系 Chinese Civil War 地图集：Japanese Occupation, 1940）",
+    "https://dhc.westpoint.edu/atlases/（USMA 历史系 Chinese Civil War 地图集：Situation at the End of World War II）",
+    "https://en.wikipedia.org/wiki/Second_Sino-Japanese_War",
+    "https://en.wikipedia.org/wiki/Japanese-occupied_areas_of_China",
+    "https://en.wikipedia.org/wiki/Operation_Ichi-Go",
+    "https://en.wikipedia.org/wiki/Battle_of_Changsha_(1944)",
+    "https://en.wikipedia.org/wiki/Defense_of_Hengyang",
+    "https://en.wikipedia.org/wiki/North_China_Political_Council"
+   ],
+   "note": "日军实际控制的是城市与铁路沿线（「点和线」），乡村多为国民革命军游击区与共军敌后根据地；色块为大致范围（±50–150 km）。",
+   "dates_note": "日占区节点：1944-08 至 11：长衡会战后粤汉线北段（长沙、衡阳）。政权：名义上隶属南京汪精卫政权，实际自治并受日军华北方面军控制。"
+  },
+  {
+   "id": "sjw_Q696242_1944-08-08_6",
+   "group": "sino_japanese_war",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "汪精卫政权（「中华民国国民政府」，南京，日本扶植）",
+   "name_en": "汪精卫政权（「中华民国国民政府」，南京，日本扶植）",
+   "controller": {
+    "qid": "Q696242",
+    "zh": "汪精卫政权"
+   },
+   "from": "1944-08-08",
+   "until": "1944-11-10",
+   "geometry": {
+    "polygon": [
+     [
+      100.0,
+      17.0
+     ],
+     [
+      100.0,
+      34.3
+     ],
+     [
+      125.0,
+      34.3
+     ],
+     [
+      125.0,
+      17.0
+     ]
+    ],
+    "intersect": {
+     "polygon": [
+      [
+       115.4,
+       40.1
+      ],
+      [
+       115.8,
+       40.4
+      ],
+      [
+       116.2,
+       40.9
+      ],
+      [
+       117.3,
+       40.6
+      ],
+      [
+       118.5,
+       40.2
+      ],
+      [
+       119.7,
+       40.1
+      ],
+      [
+       119.3,
+       39.3
+      ],
+      [
+       118.0,
+       39.0
+      ],
+      [
+       117.6,
+       38.5
+      ],
+      [
+       118.5,
+       38.0
+      ],
+      [
+       119.0,
+       37.3
+      ],
+      [
+       120.5,
+       37.8
+      ],
+      [
+       122.6,
+       37.4
+      ],
+      [
+       120.3,
+       36.0
+      ],
+      [
+       119.2,
+       35.0
+      ],
+      [
+       119.3,
+       34.6
+      ],
+      [
+       120.3,
+       34.3
+      ],
+      [
+       120.5,
+       33.4
+      ],
+      [
+       121.0,
+       32.6
+      ],
+      [
+       121.9,
+       31.7
+      ],
+      [
+       121.9,
+       30.85
+      ],
+      [
+       121.0,
+       30.6
+      ],
+      [
+       120.2,
+       30.2
+      ],
+      [
+       119.6,
+       30.5
+      ],
+      [
+       118.6,
+       30.9
+      ],
+      [
+       117.6,
+       30.6
+      ],
+      [
+       117.05,
+       30.45
+      ],
+      [
+       116.5,
+       30.5
+      ],
+      [
+       117.6,
+       30.6
+      ],
+      [
+       117.0,
+       29.6
+      ],
+      [
+       116.3,
+       28.8
+      ],
+      [
+       115.9,
+       28.4
+      ],
+      [
+       115.5,
+       28.7
+      ],
+      [
+       114.6,
+       29.0
+      ],
+      [
+       113.1,
+       29.3
+      ],
+      [
+       112.3,
+       29.8
+      ],
+      [
+       111.3,
+       30.6
+      ],
+      [
+       111.5,
+       31.1
+      ],
+      [
+       112.6,
+       31.0
+      ],
+      [
+       113.4,
+       30.9
+      ],
+      [
+       113.8,
+       31.7
+      ],
+      [
+       114.07,
+       32.12
+      ],
+      [
+       114.6,
+       32.4
+      ],
+      [
+       115.4,
+       33.6
+      ],
+      [
+       114.6,
+       34.3
+      ],
+      [
+       114.3,
+       34.8
+      ],
+      [
+       113.9,
+       35.3
+      ],
+      [
+       113.4,
+       35.4
+      ],
+      [
+       112.5,
+       35.0
+      ],
+      [
+       110.5,
+       35.0
+      ],
+      [
+       110.5,
+       36.5
+      ],
+      [
+       111.0,
+       37.5
+      ],
+      [
+       111.4,
+       38.6
+      ],
+      [
+       112.2,
+       38.9
+      ],
+      [
+       113.4,
+       39.3
+      ],
+      [
+       114.4,
+       39.6
+      ]
+     ],
+     "union": [
+      {
+       "polygon": [
+        [
+         114.3,
+         34.8
+        ],
+        [
+         113.6,
+         34.75
+        ],
+        [
+         112.45,
+         34.65
+        ],
+        [
+         111.2,
+         34.75
+        ],
+        [
+         111.0,
+         34.2
+        ],
+        [
+         112.0,
+         33.6
+        ],
+        [
+         113.0,
+         33.1
+        ],
+        [
+         114.0,
+         32.6
+        ],
+        [
+         114.6,
+         32.4
+        ]
+       ]
+      },
+      {
+       "polygon": [
+        [
+         113.1,
+         29.3
+        ],
+        [
+         112.6,
+         28.6
+        ],
+        [
+         112.9,
+         28.2
+        ],
+        [
+         112.6,
+         26.9
+        ],
+        [
+         113.0,
+         26.5
+        ],
+        [
+         113.7,
+         27.0
+        ],
+        [
+         113.5,
+         28.2
+        ],
+        [
+         114.0,
+         29.0
+        ]
+       ]
+      },
+      {
+       "polygon": [
+        [
+         113.0,
+         23.4
+        ],
+        [
+         113.6,
+         23.5
+        ],
+        [
+         114.2,
+         23.1
+        ],
+        [
+         114.1,
+         22.56
+        ],
+        [
+         113.6,
+         22.5
+        ],
+        [
+         113.0,
+         22.8
+        ]
+       ]
+      },
+      {
+       "polygon": [
+        [
+         117.95,
+         24.35
+        ],
+        [
+         117.95,
+         24.6
+        ],
+        [
+         118.25,
+         24.6
+        ],
+        [
+         118.25,
+         24.35
+        ]
+       ]
+      },
+      {
+       "polygon": [
+        [
+         116.4,
+         23.2
+        ],
+        [
+         116.4,
+         23.6
+        ],
+        [
+         117.0,
+         23.6
+        ],
+        [
+         117.0,
+         23.2
+        ]
+       ]
+      },
+      {
+       "admin1": [
+        "CN-HI"
+       ],
+       "intersect_bbox": [
+        108.5,
+        18.0,
+        111.2,
+        20.2
+       ]
+      }
+     ]
+    }
+   },
+   "approx": true,
+   "sources": [
+    "https://dhc.westpoint.edu/atlases/（USMA 历史系 Chinese Civil War 地图集：Japanese Occupation, 1940）",
+    "https://dhc.westpoint.edu/atlases/（USMA 历史系 Chinese Civil War 地图集：Situation at the End of World War II）",
+    "https://en.wikipedia.org/wiki/Second_Sino-Japanese_War",
+    "https://en.wikipedia.org/wiki/Japanese-occupied_areas_of_China",
+    "https://en.wikipedia.org/wiki/Operation_Ichi-Go",
+    "https://en.wikipedia.org/wiki/Battle_of_Changsha_(1944)",
+    "https://en.wikipedia.org/wiki/Defense_of_Hengyang",
+    "https://en.wikipedia.org/wiki/Wang_Jingwei_regime"
+   ],
+   "note": "日军实际控制的是城市与铁路沿线（「点和线」），乡村多为国民革命军游击区与共军敌后根据地；色块为大致范围（±50–150 km）。",
+   "dates_note": "日占区节点：1944-08 至 11：长衡会战后粤汉线北段（长沙、衡阳）。政权：1940-03-30 汪精卫在南京成立，1944-11 汪死后由陈公博代理，1945-08-16 宣布解散。"
+  },
+  {
+   "id": "sjw_Q10905486_1944-11-10_2",
+   "group": "sino_japanese_war",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "华北政务委员会（汪精卫政权辖下，日军控制）",
+   "name_en": "华北政务委员会（汪精卫政权辖下，日军控制）",
+   "controller": {
+    "qid": "Q10905486",
+    "zh": "华北政务委员会"
+   },
+   "from": "1944-11-10",
+   "until": "1945-08-16",
+   "geometry": {
+    "polygon": [
+     [
+      100.0,
+      34.3
+     ],
+     [
+      100.0,
+      42.5
+     ],
+     [
+      125.0,
+      42.5
+     ],
+     [
+      125.0,
+      34.3
+     ]
+    ],
+    "intersect": {
+     "polygon": [
+      [
+       115.4,
+       40.1
+      ],
+      [
+       115.8,
+       40.4
+      ],
+      [
+       116.2,
+       40.9
+      ],
+      [
+       117.3,
+       40.6
+      ],
+      [
+       118.5,
+       40.2
+      ],
+      [
+       119.7,
+       40.1
+      ],
+      [
+       119.3,
+       39.3
+      ],
+      [
+       118.0,
+       39.0
+      ],
+      [
+       117.6,
+       38.5
+      ],
+      [
+       118.5,
+       38.0
+      ],
+      [
+       119.0,
+       37.3
+      ],
+      [
+       120.5,
+       37.8
+      ],
+      [
+       122.6,
+       37.4
+      ],
+      [
+       120.3,
+       36.0
+      ],
+      [
+       119.2,
+       35.0
+      ],
+      [
+       119.3,
+       34.6
+      ],
+      [
+       120.3,
+       34.3
+      ],
+      [
+       120.5,
+       33.4
+      ],
+      [
+       121.0,
+       32.6
+      ],
+      [
+       121.9,
+       31.7
+      ],
+      [
+       121.9,
+       30.85
+      ],
+      [
+       121.0,
+       30.6
+      ],
+      [
+       120.2,
+       30.2
+      ],
+      [
+       119.6,
+       30.5
+      ],
+      [
+       118.6,
+       30.9
+      ],
+      [
+       117.6,
+       30.6
+      ],
+      [
+       117.05,
+       30.45
+      ],
+      [
+       116.5,
+       30.5
+      ],
+      [
+       117.6,
+       30.6
+      ],
+      [
+       117.0,
+       29.6
+      ],
+      [
+       116.3,
+       28.8
+      ],
+      [
+       115.9,
+       28.4
+      ],
+      [
+       115.5,
+       28.7
+      ],
+      [
+       114.6,
+       29.0
+      ],
+      [
+       113.1,
+       29.3
+      ],
+      [
+       112.3,
+       29.8
+      ],
+      [
+       111.3,
+       30.6
+      ],
+      [
+       111.5,
+       31.1
+      ],
+      [
+       112.6,
+       31.0
+      ],
+      [
+       113.4,
+       30.9
+      ],
+      [
+       113.8,
+       31.7
+      ],
+      [
+       114.07,
+       32.12
+      ],
+      [
+       114.6,
+       32.4
+      ],
+      [
+       115.4,
+       33.6
+      ],
+      [
+       114.6,
+       34.3
+      ],
+      [
+       114.3,
+       34.8
+      ],
+      [
+       113.9,
+       35.3
+      ],
+      [
+       113.4,
+       35.4
+      ],
+      [
+       112.5,
+       35.0
+      ],
+      [
+       110.5,
+       35.0
+      ],
+      [
+       110.5,
+       36.5
+      ],
+      [
+       111.0,
+       37.5
+      ],
+      [
+       111.4,
+       38.6
+      ],
+      [
+       112.2,
+       38.9
+      ],
+      [
+       113.4,
+       39.3
+      ],
+      [
+       114.4,
+       39.6
+      ]
+     ],
+     "union": [
+      {
+       "polygon": [
+        [
+         114.3,
+         34.8
+        ],
+        [
+         113.6,
+         34.75
+        ],
+        [
+         112.45,
+         34.65
+        ],
+        [
+         111.2,
+         34.75
+        ],
+        [
+         111.0,
+         34.2
+        ],
+        [
+         112.0,
+         33.6
+        ],
+        [
+         113.0,
+         33.1
+        ],
+        [
+         114.0,
+         32.6
+        ],
+        [
+         114.6,
+         32.4
+        ]
+       ]
+      },
+      {
+       "polygon": [
+        [
+         113.1,
+         29.3
+        ],
+        [
+         112.6,
+         28.6
+        ],
+        [
+         112.9,
+         28.2
+        ],
+        [
+         112.6,
+         26.9
+        ],
+        [
+         113.0,
+         26.5
+        ],
+        [
+         113.7,
+         27.0
+        ],
+        [
+         113.5,
+         28.2
+        ],
+        [
+         114.0,
+         29.0
+        ]
+       ]
+      },
+      {
+       "polygon": [
+        [
+         112.6,
+         26.9
+        ],
+        [
+         111.0,
+         26.0
+        ],
+        [
+         110.3,
+         25.3
+        ],
+        [
+         109.4,
+         24.3
+        ],
+        [
+         108.3,
+         22.8
+        ],
+        [
+         107.0,
+         22.0
+        ],
+        [
+         107.4,
+         21.7
+        ],
+        [
+         108.5,
+         22.2
+        ],
+        [
+         109.2,
+         23.4
+        ],
+        [
+         110.4,
+         24.2
+        ],
+        [
+         111.6,
+         25.0
+        ],
+        [
+         113.0,
+         26.5
+        ]
+       ]
+      },
+      {
+       "polygon": [
+        [
+         113.0,
+         23.4
+        ],
+        [
+         113.6,
+         23.5
+        ],
+        [
+         114.2,
+         23.1
+        ],
+        [
+         114.1,
+         22.56
+        ],
+        [
+         113.6,
+         22.5
+        ],
+        [
+         113.0,
+         22.8
+        ]
+       ]
+      },
+      {
+       "polygon": [
+        [
+         117.95,
+         24.35
+        ],
+        [
+         117.95,
+         24.6
+        ],
+        [
+         118.25,
+         24.6
+        ],
+        [
+         118.25,
+         24.35
+        ]
+       ]
+      },
+      {
+       "polygon": [
+        [
+         116.4,
+         23.2
+        ],
+        [
+         116.4,
+         23.6
+        ],
+        [
+         117.0,
+         23.6
+        ],
+        [
+         117.0,
+         23.2
+        ]
+       ]
+      },
+      {
+       "admin1": [
+        "CN-HI"
+       ],
+       "intersect_bbox": [
+        108.5,
+        18.0,
+        111.2,
+        20.2
+       ]
+      }
+     ]
+    }
+   },
+   "approx": true,
+   "sources": [
+    "https://dhc.westpoint.edu/atlases/（USMA 历史系 Chinese Civil War 地图集：Japanese Occupation, 1940）",
+    "https://dhc.westpoint.edu/atlases/（USMA 历史系 Chinese Civil War 地图集：Situation at the End of World War II）",
+    "https://en.wikipedia.org/wiki/Second_Sino-Japanese_War",
+    "https://en.wikipedia.org/wiki/Japanese-occupied_areas_of_China",
+    "https://en.wikipedia.org/wiki/Operation_Ichi-Go",
+    "https://en.wikipedia.org/wiki/Battle_of_Guilin–Liuzhou",
+    "https://dhc.westpoint.edu/atlases/（USMA 历史系 Chinese Civil War 地图集：Situation at the End of World War II）",
+    "https://en.wikipedia.org/wiki/North_China_Political_Council"
+   ],
+   "note": "日军实际控制的是城市与铁路沿线（「点和线」），乡村多为国民革命军游击区与共军敌后根据地；色块为大致范围（±50–150 km）。",
+   "dates_note": "日占区节点：1944-11 至 1945-08：桂柳会战（桂林、柳州 11-10/11，南宁 11-24），12 月打通至法属印度支那的「大陆交通线」；1945-05 起日军自广西逐步撤出（南宁 05-26、柳州 06-30、桂林 07-28 被国民革命军收复，未画）。政权：名义上隶属南京汪精卫政权，实际自治并受日军华北方面军控制。"
+  },
+  {
+   "id": "sjw_Q696242_1944-11-10_6",
+   "group": "sino_japanese_war",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "汪精卫政权（「中华民国国民政府」，南京，日本扶植）",
+   "name_en": "汪精卫政权（「中华民国国民政府」，南京，日本扶植）",
+   "controller": {
+    "qid": "Q696242",
+    "zh": "汪精卫政权"
+   },
+   "from": "1944-11-10",
+   "until": "1945-08-16",
+   "geometry": {
+    "polygon": [
+     [
+      100.0,
+      17.0
+     ],
+     [
+      100.0,
+      34.3
+     ],
+     [
+      125.0,
+      34.3
+     ],
+     [
+      125.0,
+      17.0
+     ]
+    ],
+    "intersect": {
+     "polygon": [
+      [
+       115.4,
+       40.1
+      ],
+      [
+       115.8,
+       40.4
+      ],
+      [
+       116.2,
+       40.9
+      ],
+      [
+       117.3,
+       40.6
+      ],
+      [
+       118.5,
+       40.2
+      ],
+      [
+       119.7,
+       40.1
+      ],
+      [
+       119.3,
+       39.3
+      ],
+      [
+       118.0,
+       39.0
+      ],
+      [
+       117.6,
+       38.5
+      ],
+      [
+       118.5,
+       38.0
+      ],
+      [
+       119.0,
+       37.3
+      ],
+      [
+       120.5,
+       37.8
+      ],
+      [
+       122.6,
+       37.4
+      ],
+      [
+       120.3,
+       36.0
+      ],
+      [
+       119.2,
+       35.0
+      ],
+      [
+       119.3,
+       34.6
+      ],
+      [
+       120.3,
+       34.3
+      ],
+      [
+       120.5,
+       33.4
+      ],
+      [
+       121.0,
+       32.6
+      ],
+      [
+       121.9,
+       31.7
+      ],
+      [
+       121.9,
+       30.85
+      ],
+      [
+       121.0,
+       30.6
+      ],
+      [
+       120.2,
+       30.2
+      ],
+      [
+       119.6,
+       30.5
+      ],
+      [
+       118.6,
+       30.9
+      ],
+      [
+       117.6,
+       30.6
+      ],
+      [
+       117.05,
+       30.45
+      ],
+      [
+       116.5,
+       30.5
+      ],
+      [
+       117.6,
+       30.6
+      ],
+      [
+       117.0,
+       29.6
+      ],
+      [
+       116.3,
+       28.8
+      ],
+      [
+       115.9,
+       28.4
+      ],
+      [
+       115.5,
+       28.7
+      ],
+      [
+       114.6,
+       29.0
+      ],
+      [
+       113.1,
+       29.3
+      ],
+      [
+       112.3,
+       29.8
+      ],
+      [
+       111.3,
+       30.6
+      ],
+      [
+       111.5,
+       31.1
+      ],
+      [
+       112.6,
+       31.0
+      ],
+      [
+       113.4,
+       30.9
+      ],
+      [
+       113.8,
+       31.7
+      ],
+      [
+       114.07,
+       32.12
+      ],
+      [
+       114.6,
+       32.4
+      ],
+      [
+       115.4,
+       33.6
+      ],
+      [
+       114.6,
+       34.3
+      ],
+      [
+       114.3,
+       34.8
+      ],
+      [
+       113.9,
+       35.3
+      ],
+      [
+       113.4,
+       35.4
+      ],
+      [
+       112.5,
+       35.0
+      ],
+      [
+       110.5,
+       35.0
+      ],
+      [
+       110.5,
+       36.5
+      ],
+      [
+       111.0,
+       37.5
+      ],
+      [
+       111.4,
+       38.6
+      ],
+      [
+       112.2,
+       38.9
+      ],
+      [
+       113.4,
+       39.3
+      ],
+      [
+       114.4,
+       39.6
+      ]
+     ],
+     "union": [
+      {
+       "polygon": [
+        [
+         114.3,
+         34.8
+        ],
+        [
+         113.6,
+         34.75
+        ],
+        [
+         112.45,
+         34.65
+        ],
+        [
+         111.2,
+         34.75
+        ],
+        [
+         111.0,
+         34.2
+        ],
+        [
+         112.0,
+         33.6
+        ],
+        [
+         113.0,
+         33.1
+        ],
+        [
+         114.0,
+         32.6
+        ],
+        [
+         114.6,
+         32.4
+        ]
+       ]
+      },
+      {
+       "polygon": [
+        [
+         113.1,
+         29.3
+        ],
+        [
+         112.6,
+         28.6
+        ],
+        [
+         112.9,
+         28.2
+        ],
+        [
+         112.6,
+         26.9
+        ],
+        [
+         113.0,
+         26.5
+        ],
+        [
+         113.7,
+         27.0
+        ],
+        [
+         113.5,
+         28.2
+        ],
+        [
+         114.0,
+         29.0
+        ]
+       ]
+      },
+      {
+       "polygon": [
+        [
+         112.6,
+         26.9
+        ],
+        [
+         111.0,
+         26.0
+        ],
+        [
+         110.3,
+         25.3
+        ],
+        [
+         109.4,
+         24.3
+        ],
+        [
+         108.3,
+         22.8
+        ],
+        [
+         107.0,
+         22.0
+        ],
+        [
+         107.4,
+         21.7
+        ],
+        [
+         108.5,
+         22.2
+        ],
+        [
+         109.2,
+         23.4
+        ],
+        [
+         110.4,
+         24.2
+        ],
+        [
+         111.6,
+         25.0
+        ],
+        [
+         113.0,
+         26.5
+        ]
+       ]
+      },
+      {
+       "polygon": [
+        [
+         113.0,
+         23.4
+        ],
+        [
+         113.6,
+         23.5
+        ],
+        [
+         114.2,
+         23.1
+        ],
+        [
+         114.1,
+         22.56
+        ],
+        [
+         113.6,
+         22.5
+        ],
+        [
+         113.0,
+         22.8
+        ]
+       ]
+      },
+      {
+       "polygon": [
+        [
+         117.95,
+         24.35
+        ],
+        [
+         117.95,
+         24.6
+        ],
+        [
+         118.25,
+         24.6
+        ],
+        [
+         118.25,
+         24.35
+        ]
+       ]
+      },
+      {
+       "polygon": [
+        [
+         116.4,
+         23.2
+        ],
+        [
+         116.4,
+         23.6
+        ],
+        [
+         117.0,
+         23.6
+        ],
+        [
+         117.0,
+         23.2
+        ]
+       ]
+      },
+      {
+       "admin1": [
+        "CN-HI"
+       ],
+       "intersect_bbox": [
+        108.5,
+        18.0,
+        111.2,
+        20.2
+       ]
+      }
+     ]
+    }
+   },
+   "approx": true,
+   "sources": [
+    "https://dhc.westpoint.edu/atlases/（USMA 历史系 Chinese Civil War 地图集：Japanese Occupation, 1940）",
+    "https://dhc.westpoint.edu/atlases/（USMA 历史系 Chinese Civil War 地图集：Situation at the End of World War II）",
+    "https://en.wikipedia.org/wiki/Second_Sino-Japanese_War",
+    "https://en.wikipedia.org/wiki/Japanese-occupied_areas_of_China",
+    "https://en.wikipedia.org/wiki/Operation_Ichi-Go",
+    "https://en.wikipedia.org/wiki/Battle_of_Guilin–Liuzhou",
+    "https://dhc.westpoint.edu/atlases/（USMA 历史系 Chinese Civil War 地图集：Situation at the End of World War II）",
+    "https://en.wikipedia.org/wiki/Wang_Jingwei_regime"
+   ],
+   "note": "日军实际控制的是城市与铁路沿线（「点和线」），乡村多为国民革命军游击区与共军敌后根据地；色块为大致范围（±50–150 km）。",
+   "dates_note": "日占区节点：1944-11 至 1945-08：桂柳会战（桂林、柳州 11-10/11，南宁 11-24），12 月打通至法属印度支那的「大陆交通线」；1945-05 起日军自广西逐步撤出（南宁 05-26、柳州 06-30、桂林 07-28 被国民革命军收复，未画）。政权：1940-03-30 汪精卫在南京成立，1944-11 汪死后由陈公博代理，1945-08-16 宣布解散。"
+  },
+  {
+   "id": "sjw_ccp_sgn",
+   "group": "sino_japanese_war",
+   "kind": "de_facto",
+   "as_polity": true,
+   "name_zh": "陕甘宁边区（中共根据地，大致范围）",
+   "name_en": "Shaan-Gan-Ning Border Region",
+   "controller": {
+    "qid": "Q5970542",
+    "zh": "陕甘宁边区"
+   },
+   "from": "1937-09-06",
+   "until": "1947-03-19",
+   "geometry": {
+    "polygon": [
+     [
+      106.9,
+      35.3
+     ],
+     [
+      106.5,
+      36.2
+     ],
+     [
+      106.9,
+      37.0
+     ],
+     [
+      107.3,
+      37.9
+     ],
+     [
+      108.0,
+      37.6
+     ],
+     [
+      109.0,
+      37.6
+     ],
+     [
+      109.5,
+      38.0
+     ],
+     [
+      110.6,
+      38.0
+     ],
+     [
+      110.6,
+      37.3
+     ],
+     [
+      110.4,
+      36.4
+     ],
+     [
+      110.0,
+      35.8
+     ],
+     [
+      109.2,
+      35.6
+     ],
+     [
+      108.6,
+      35.2
+     ],
+     [
+      107.7,
+      34.9
+     ]
+    ]
+   },
+   "approx": true,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Shaan-Gan-Ning_Border_Region",
+    "https://zh.wikipedia.org/wiki/陕甘宁边区"
+   ],
+   "note": "共军根据地（中共领导的边区政府）的范围随战事不断变化，这里只按核心山区画出大致范围（粗略，±100 km），不代表边界。",
+   "dates_note": "1937-09-06 陕甘宁边区政府成立（首府延安）；1947-03-19 国民革命军胡宗南部攻占延安（1948-04 共军收复，未画）。"
+  },
+  {
+   "id": "sjw_ccp_jcj",
+   "group": "sino_japanese_war",
+   "kind": "de_facto",
+   "as_polity": true,
+   "name_zh": "晋察冀边区（中共根据地，大致范围）",
+   "name_en": "Jin-Cha-Ji Border Region",
+   "controller": {
+    "qid": "Q11089353",
+    "zh": "晋察冀边区"
+   },
+   "from": "1938-01-10",
+   "until": "1945-08-16",
+   "geometry": {
+    "polygon": [
+     [
+      113.0,
+      38.2
+     ],
+     [
+      113.3,
+      39.2
+     ],
+     [
+      114.2,
+      39.7
+     ],
+     [
+      115.3,
+      39.9
+     ],
+     [
+      115.6,
+      39.4
+     ],
+     [
+      115.0,
+      38.9
+     ],
+     [
+      114.6,
+      38.4
+     ],
+     [
+      114.0,
+      38.0
+     ],
+     [
+      113.4,
+      37.9
+     ]
+    ]
+   },
+   "approx": true,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Jin-Cha-Ji_Border_Region",
+    "https://zh.wikipedia.org/wiki/晋察冀边区"
+   ],
+   "note": "共军根据地（中共领导的边区政府）的范围随战事不断变化，这里只按核心山区画出大致范围（粗略，±100 km），不代表边界。",
+   "dates_note": "1938-01-10 晋察冀边区临时行政委员会在阜平成立，核心为五台山—太行山北段。"
+  },
+  {
+   "id": "sjw_ccp_jjly",
+   "group": "sino_japanese_war",
+   "kind": "de_facto",
+   "as_polity": true,
+   "name_zh": "晋冀鲁豫边区（中共根据地，大致范围）",
+   "name_en": "Jin-Ji-Lu-Yu Border Region",
+   "controller": {
+    "qid": "Q11089315",
+    "zh": "晋冀鲁豫边区"
+   },
+   "from": "1941-07-07",
+   "until": "1945-08-16",
+   "geometry": {
+    "polygon": [
+     [
+      112.6,
+      36.0
+     ],
+     [
+      112.8,
+      37.3
+     ],
+     [
+      113.5,
+      37.8
+     ],
+     [
+      114.0,
+      37.6
+     ],
+     [
+      114.1,
+      36.8
+     ],
+     [
+      113.9,
+      36.0
+     ],
+     [
+      113.4,
+      35.5
+     ],
+     [
+      112.8,
+      35.5
+     ]
+    ]
+   },
+   "approx": true,
+   "sources": [
+    "https://zh.wikipedia.org/wiki/晋冀鲁豫边区"
+   ],
+   "note": "共军根据地（中共领导的边区政府）的范围随战事不断变化，这里只按核心山区画出大致范围（粗略，±100 km），不代表边界。（只画太行山区，冀南、冀鲁豫平原部分未画。）",
+   "dates_note": "以太行山南段为核心的根据地 1937–38 年形成，1941-07-07 晋冀鲁豫边区政府成立。"
+  },
+  {
+   "id": "sjw_ccp_js",
+   "group": "sino_japanese_war",
+   "kind": "de_facto",
+   "as_polity": true,
+   "name_zh": "晋绥边区（中共根据地，大致范围）",
+   "name_en": "Jin-Sui Border Region",
+   "controller": {
+    "qid": "Q24841584",
+    "zh": "晋绥边区"
+   },
+   "from": "1940-02-01",
+   "until": "1945-08-16",
+   "geometry": {
+    "polygon": [
+     [
+      110.6,
+      38.0
+     ],
+     [
+      110.9,
+      39.4
+     ],
+     [
+      111.6,
+      39.6
+     ],
+     [
+      112.2,
+      38.9
+     ],
+     [
+      112.0,
+      38.0
+     ],
+     [
+      111.6,
+      37.3
+     ],
+     [
+      111.0,
+      37.2
+     ],
+     [
+      110.6,
+      37.3
+     ]
+    ]
+   },
+   "approx": true,
+   "sources": [
+    "https://zh.wikipedia.org/wiki/晋绥边区"
+   ],
+   "note": "共军根据地（中共领导的边区政府）的范围随战事不断变化，这里只按核心山区画出大致范围（粗略，±100 km），不代表边界。",
+   "dates_note": "1940 年初晋西北行政公署成立（1943 年改称晋绥边区），核心为晋西北兴县一带。"
+  },
+  {
+   "id": "ccw_soviet_manchuria",
+   "group": "ccw_manchuria",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "苏军占领下的中国东北",
+   "name_en": "Soviet-occupied Manchuria",
+   "controller": {
+    "qid": "Q15132619",
+    "zh": "苏联红军（东北）"
+   },
+   "from": "1945-08-19",
+   "until": "1946-05-03",
+   "geometry": {
+    "basemap": {
+     "snap": 1930,
+     "name": "Manchuria"
+    },
+    "union": [
+     {
+      "polygon": [
+       [
+        116.4,
+        41.0
+       ],
+       [
+        117.4,
+        40.6
+       ],
+       [
+        118.5,
+        40.2
+       ],
+       [
+        119.7,
+        40.1
+       ],
+       [
+        120.4,
+        40.6
+       ],
+       [
+        121.6,
+        41.5
+       ],
+       [
+        121.0,
+        42.6
+       ],
+       [
+        120.4,
+        43.5
+       ],
+       [
+        119.5,
+        44.6
+       ],
+       [
+        118.0,
+        44.8
+       ],
+       [
+        117.2,
+        44.0
+       ],
+       [
+        116.5,
+        43.0
+       ],
+       [
+        116.0,
+        42.0
+       ]
+      ]
+     }
+    ]
+   },
+   "approx": true,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Soviet_occupation_of_Manchuria",
+    "https://en.wikipedia.org/wiki/Soviet_invasion_of_Manchuria"
+   ],
+   "note": "范围为 1930 年快照的东北 + 热河（近似）。",
+   "dates_note": "苏联 1945-08-09 对日作战，08-19 前后占领东北各大城市；按《中苏友好同盟条约》应于 3 个月内撤军，实际 1946-05-03 撤完。"
+  },
+  {
+   "id": "ccw_ne_ccp_1946",
+   "group": "ccw_manchuria",
+   "kind": "de_facto",
+   "as_polity": true,
+   "name_zh": "东北解放区（共军控制，大致范围）",
+   "name_en": "CCP-held northern Manchuria",
+   "controller": {
+    "qid": "Q97179246",
+    "zh": "东北行政委员会"
+   },
+   "from": "1946-06-07",
+   "until": "1947-05-13",
+   "geometry": {
+    "polygon": [
+     [
+      115.0,
+      53.6
+     ],
+     [
+      135.5,
+      53.6
+     ],
+     [
+      135.5,
+      42.9
+     ],
+     [
+      131.0,
+      42.9
+     ],
+     [
+      129.0,
+      43.0
+     ],
+     [
+      127.5,
+      43.5
+     ],
+     [
+      126.6,
+      44.4
+     ],
+     [
+      125.8,
+      44.6
+     ],
+     [
+      124.0,
+      45.4
+     ],
+     [
+      119.0,
+      46.5
+     ],
+     [
+      115.0,
+      47.0
+     ]
+    ],
+    "intersect": {
+     "basemap": {
+      "snap": 1930,
+      "name": "Manchuria"
+     }
+    }
+   },
+   "approx": true,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Chinese_Civil_War",
+    "https://en.wikipedia.org/wiki/Siping_campaign",
+    "https://zh.wikipedia.org/wiki/东北行政委员会_(1946年—1949年)"
+   ],
+   "note": "以松花江为界的手绘近似（±100 km）；国民革命军控制区仍显示为「中华民国」。",
+   "dates_note": "苏军撤出后国共争夺东北；1946-06-07 东北停战令后大致以松花江为界：共军控制哈尔滨（1946-04-28 进入）及松花江以北、吉林东部，国民革命军控制长春、沈阳及南满；1946-08 东北各省市行政联合办事处成立（后称东北行政委员会）。"
+  },
+  {
+   "id": "ccw_ne_ccp_1947",
+   "group": "ccw_manchuria",
+   "kind": "de_facto",
+   "as_polity": true,
+   "name_zh": "东北解放区（共军控制，大致范围）",
+   "name_en": "CCP-held Manchuria",
+   "controller": {
+    "qid": "Q97179246",
+    "zh": "东北行政委员会"
+   },
+   "from": "1947-05-13",
+   "until": "1948-03-13",
+   "geometry": {
+    "basemap": {
+     "snap": 1930,
+     "name": "Manchuria"
+    },
+    "minus": {
+     "polygon": [
+      [
+       119.8,
+       40.1
+      ],
+      [
+       121.0,
+       40.6
+      ],
+      [
+       121.3,
+       41.3
+      ],
+      [
+       122.0,
+       41.6
+      ],
+      [
+       123.0,
+       42.0
+      ],
+      [
+       123.85,
+       42.4
+      ],
+      [
+       124.35,
+       43.3
+      ],
+      [
+       125.3,
+       44.0
+      ],
+      [
+       126.55,
+       44.0
+      ],
+      [
+       126.7,
+       43.7
+      ],
+      [
+       125.5,
+       43.6
+      ],
+      [
+       124.6,
+       43.0
+      ],
+      [
+       124.1,
+       42.1
+      ],
+      [
+       123.5,
+       41.4
+      ],
+      [
+       123.3,
+       40.6
+      ],
+      [
+       122.3,
+       40.3
+      ],
+      [
+       121.5,
+       40.0
+      ],
+      [
+       120.5,
+       39.8
+      ]
+     ]
+    }
+   },
+   "approx": true,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Chinese_Civil_War",
+    "https://en.wikipedia.org/wiki/Liaoshen_campaign"
+   ],
+   "note": "国民革命军控制走廊为沿铁路的手绘近似（宽约 50–100 km）。",
+   "dates_note": "1947 年夏季、秋季、冬季攻势后，国民革命军只控制北宁、中长铁路沿线的长春—四平—沈阳—锦州走廊（四平 1948-03-13 失守）。"
+  },
+  {
+   "id": "ccw_ne_ccp_1948",
+   "group": "ccw_manchuria",
+   "kind": "de_facto",
+   "as_polity": true,
+   "name_zh": "东北解放区（共军控制，大致范围）",
+   "name_en": "CCP-held Manchuria",
+   "controller": {
+    "qid": "Q97179246",
+    "zh": "东北行政委员会"
+   },
+   "from": "1948-03-13",
+   "until": "1948-11-02",
+   "geometry": {
+    "basemap": {
+     "snap": 1930,
+     "name": "Manchuria"
+    },
+    "minus": {
+     "polygon": [
+      [
+       119.8,
+       40.1
+      ],
+      [
+       121.0,
+       40.6
+      ],
+      [
+       121.3,
+       41.3
+      ],
+      [
+       122.0,
+       41.6
+      ],
+      [
+       123.0,
+       42.0
+      ],
+      [
+       123.7,
+       42.1
+      ],
+      [
+       123.6,
+       41.5
+      ],
+      [
+       123.3,
+       40.9
+      ],
+      [
+       122.3,
+       40.4
+      ],
+      [
+       121.5,
+       40.0
+      ],
+      [
+       120.5,
+       39.8
+      ]
+     ],
+     "union": [
+      {
+       "polygon": [
+        [
+         125.1,
+         43.75
+        ],
+        [
+         125.1,
+         44.05
+        ],
+        [
+         125.5,
+         44.05
+        ],
+        [
+         125.5,
+         43.75
+        ]
+       ]
+      }
+     ]
+    }
+   },
+   "approx": true,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Liaoshen_campaign",
+    "https://en.wikipedia.org/wiki/Siege_of_Changchun"
+   ],
+   "dates_note": "1948-03 后国民革命军只剩被围的长春（1948-10-19 投降）与沈阳—锦州走廊；辽沈战役锦州 10-15、沈阳 11-02 失守，东北全境由共军控制。"
+  },
+  {
+   "id": "ccw_ne_ccp_1948b",
+   "group": "ccw_manchuria",
+   "kind": "de_facto",
+   "as_polity": true,
+   "name_zh": "东北解放区（共军控制）",
+   "name_en": "CCP-held Manchuria",
+   "controller": {
+    "qid": "Q97179246",
+    "zh": "东北行政委员会"
+   },
+   "from": "1948-11-02",
+   "until": "1949-10-01",
+   "geometry": {
+    "basemap": {
+     "snap": 1930,
+     "name": "Manchuria"
+    }
+   },
+   "approx": true,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Liaoshen_campaign"
+   ],
+   "dates_note": "辽沈战役结束（1948-11-02）至中华人民共和国成立（1949-10-01；东北人民政府 1949-08 成立）。"
+  },
+  {
+   "id": "bahrain_protectorate",
+   "group": "colonies_misc",
+   "kind": "regime",
+   "as_polity": true,
+   "name_zh": "巴林及其属地（英国保护国）",
+   "name_en": "Bahrain and its Dependencies",
+   "controller": {
+    "qid": "Q17061755",
+    "zh": "巴林及其属地（英国保护国）"
+   },
+   "from": "1886-01-01",
+   "until": "1971-08-15",
+   "geometry": {
+    "admin0_parts": {
+     "a3": [
+      "BHR"
+     ],
+     "bbox": [
+      50.2,
+      25.5,
+      50.9,
+      26.4
+     ]
+    }
+   },
+   "approx": true,
+   "dates_note": "1861、1880、1892 年条约使巴林成为英国保护国；1971-08-15 独立。1886 年以前由底图负责。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/History_of_Bahrain_(1783–1971)",
+    "https://en.wikipedia.org/wiki/Bahrain"
+   ],
+   "note": "范围取 Natural Earth 今国界（含小岛）；CShapes 2.0 在独立前不收录该地区，这里补上殖民/托管政权。"
+  },
+  {
+   "id": "stp_portuguese",
+   "group": "colonies_misc",
+   "kind": "regime",
+   "as_polity": true,
+   "name_zh": "葡属圣多美和普林西比",
+   "name_en": "Portuguese São Tomé and Príncipe",
+   "controller": {
+    "qid": "Q7232692",
+    "zh": "葡属圣多美和普林西比"
+   },
+   "from": "1886-01-01",
+   "until": "1975-07-12",
+   "geometry": {
+    "admin0_parts": {
+     "a3": [
+      "STP"
+     ],
+     "bbox": [
+      6.3,
+      -0.2,
+      7.6,
+      1.8
+     ]
+    }
+   },
+   "approx": true,
+   "dates_note": "葡萄牙殖民地，1975-07-12 独立。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Portuguese_São_Tomé_and_Príncipe"
+   ],
+   "note": "范围取 Natural Earth 今国界（含小岛）；CShapes 2.0 在独立前不收录该地区，这里补上殖民/托管政权。"
+  },
+  {
+   "id": "new_hebrides",
+   "group": "colonies_misc",
+   "kind": "regime",
+   "as_polity": true,
+   "name_zh": "新赫布里底群岛（英法共管）",
+   "name_en": "New Hebrides",
+   "controller": {
+    "qid": "Q752431",
+    "zh": "新赫布里底群岛（英法共管）"
+   },
+   "from": "1907-12-02",
+   "until": "1980-07-30",
+   "geometry": {
+    "admin0_parts": {
+     "a3": [
+      "VUT"
+     ],
+     "bbox": [
+      166.0,
+      -20.5,
+      170.5,
+      -12.9
+     ]
+    }
+   },
+   "approx": true,
+   "dates_note": "1906 年英法共管协定，Wikidata 记为 1907-12-02 成立；1980-07-30 以瓦努阿图独立。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/New_Hebrides"
+   ],
+   "note": "范围取 Natural Earth 今国界（含小岛）；CShapes 2.0 在独立前不收录该地区，这里补上殖民/托管政权。"
+  },
+  {
+   "id": "gilbert_ellice",
+   "group": "colonies_misc",
+   "kind": "regime",
+   "as_polity": true,
+   "name_zh": "吉尔伯特和埃利斯群岛殖民地",
+   "name_en": "Gilbert and Ellice Islands",
+   "controller": {
+    "qid": "Q1050859",
+    "zh": "吉尔伯特和埃利斯群岛殖民地"
+   },
+   "from": "1916-01-12",
+   "until": "1976-10-01",
+   "geometry": {
+    "admin0_parts": {
+     "a3": [
+      "KIR",
+      "TUV"
+     ],
+     "bbox": [
+      172.0,
+      -11.0,
+      180.0,
+      4.0
+     ]
+    }
+   },
+   "approx": true,
+   "dates_note": "1916-01-12 由保护国改为殖民地；1976-10-01 埃利斯群岛（图瓦卢）分出。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Gilbert_and_Ellice_Islands"
+   ],
+   "note": "范围取 Natural Earth 今国界（含小岛）；CShapes 2.0 在独立前不收录该地区，这里补上殖民/托管政权。只画吉尔伯特群岛与埃利斯群岛；巴纳巴、菲尼克斯群岛、莱恩群岛未画。1976 年后到独立前（图瓦卢 1978-10-01、基里巴斯 1979-07-12）没有补。"
+  },
+  {
+   "id": "south_seas_mandate",
+   "group": "colonies_misc",
+   "kind": "regime",
+   "as_polity": true,
+   "name_zh": "南洋群岛（日本委任统治地）",
+   "name_en": "South Seas Mandate",
+   "controller": {
+    "qid": "Q718763",
+    "zh": "南洋群岛（日本委任统治地）"
+   },
+   "from": "1919-06-28",
+   "until": "1947-07-18",
+   "geometry": {
+    "admin0_parts": {
+     "a3": [
+      "FSM",
+      "MHL",
+      "PLW"
+     ],
+     "bbox": [
+      130.0,
+      0.0,
+      173.0,
+      13.0
+     ]
+    }
+   },
+   "approx": true,
+   "dates_note": "1919-06-28 凡尔赛和约把德属密克罗尼西亚交给日本委任统治；1944 年起美军陆续占领（未逐岛画出）；1947-07-18 改为美国托管的太平洋群岛托管地。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/South_Seas_Mandate",
+    "https://en.wikipedia.org/wiki/Trust_Territory_of_the_Pacific_Islands"
+   ],
+   "note": "范围取 Natural Earth 今国界（含小岛）；CShapes 2.0 在独立前不收录该地区，这里补上殖民/托管政权。今北马里亚纳群岛部分未画；马绍尔群岛最北的比卡尔、博卡克环礁未画。"
+  },
+  {
+   "id": "ttpi",
+   "group": "colonies_misc",
+   "kind": "regime",
+   "as_polity": true,
+   "name_zh": "太平洋群岛托管地（美国托管）",
+   "name_en": "Trust Territory of the Pacific Islands",
+   "controller": {
+    "qid": "Q129237",
+    "zh": "太平洋群岛托管地（美国托管）"
+   },
+   "from": "1947-07-18",
+   "until": "1986-10-21",
+   "geometry": {
+    "admin0_parts": {
+     "a3": [
+      "FSM",
+      "MHL",
+      "PLW"
+     ],
+     "bbox": [
+      130.0,
+      0.0,
+      173.0,
+      13.0
+     ]
+    }
+   },
+   "approx": true,
+   "dates_note": "1947-07-18 美国托管协定生效；1986-10-21 马绍尔群岛、1986-11-03 密克罗尼西亚联邦与美国的自由联系条约生效（帕劳 1994-10-01）。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Trust_Territory_of_the_Pacific_Islands"
+   ],
+   "note": "范围取 Natural Earth 今国界（含小岛）；CShapes 2.0 在独立前不收录该地区，这里补上殖民/托管政权。统一到 1986-10-21 结束；之后的帕劳（1986–1994 仍属托管地）没有单独补。"
+  },
+  {
+   "id": "nauru_trust",
+   "group": "colonies_misc",
+   "kind": "regime",
+   "as_polity": true,
+   "name_zh": "瑙鲁托管地",
+   "name_en": "Trust Territory of Nauru",
+   "controller": {
+    "qid": "Q21816219",
+    "zh": "瑙鲁托管地"
+   },
+   "from": "1947-11-01",
+   "until": "1968-01-31",
+   "geometry": {
+    "admin0_parts": {
+     "a3": [
+      "NRU"
+     ],
+     "bbox": [
+      166.8,
+      -0.7,
+      167.1,
+      -0.4
+     ]
+    }
+   },
+   "approx": true,
+   "dates_note": "1947-11-01 联合国托管（澳大利亚、新西兰、英国，澳大利亚管理）；1968-01-31 独立。1920–1947 年的国际联盟委任统治、1942–1945 年日本占领没有补。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Trust_Territory_of_Nauru",
+    "https://en.wikipedia.org/wiki/History_of_Nauru"
+   ],
+   "note": "范围取 Natural Earth 今国界（含小岛）；CShapes 2.0 在独立前不收录该地区，这里补上殖民/托管政权。"
+  },
+  {
+   "id": "seychelles_british",
+   "group": "colonies_misc",
+   "kind": "regime",
+   "as_polity": true,
+   "name_zh": "大英帝国（塞舌尔）",
+   "name_en": "British Empire (Seychelles)",
+   "controller": {
+    "qid": "Q8680",
+    "zh": "大英帝国（塞舌尔）"
+   },
+   "from": "1886-01-01",
+   "until": "1976-06-29",
+   "geometry": {
+    "admin0_parts": {
+     "a3": [
+      "SYC"
+     ],
+     "bbox": [
+      46.0,
+      -10.0,
+      56.5,
+      -3.5
+     ]
+    }
+   },
+   "approx": true,
+   "dates_note": "英国属地：1903-08-31 前为毛里求斯的属地，之后为英国直辖殖民地；1976-06-29 独立。Wikidata 没有单独的「塞舌尔殖民地」条目，这里显示大英帝国。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Seychelles",
+    "https://en.wikipedia.org/wiki/History_of_Seychelles"
+   ],
+   "note": "范围取 Natural Earth 今国界（含小岛）；CShapes 2.0 在独立前不收录该地区，这里补上殖民/托管政权。"
+  },
+  {
+   "id": "kuwait_protectorate",
+   "group": "colonies_misc",
+   "kind": "regime",
+   "as_polity": true,
+   "name_zh": "科威特酋长国（英国保护国）",
+   "name_en": "Sheikhdom of Kuwait",
+   "controller": {
+    "qid": "Q3480281",
+    "zh": "科威特酋长国（英国保护国）"
+   },
+   "from": "1899-01-23",
+   "until": "1961-06-19",
+   "geometry": {
+    "admin0_parts": {
+     "a3": [
+      "KWT"
+     ],
+     "bbox": [
+      46.5,
+      28.5,
+      48.6,
+      30.2
+     ]
+    }
+   },
+   "approx": true,
+   "dates_note": "1899 年 1 月英科协定使科威特成为英国保护国；1961-06-19 英国保护结束、独立。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Sheikhdom_of_Kuwait"
+   ],
+   "note": "范围取 Natural Earth 今国界（含小岛）；CShapes 2.0 在独立前不收录该地区，这里补上殖民/保护国政权。"
+  },
+  {
+   "id": "gilbert_ellice_line",
+   "group": "colonies_misc",
+   "kind": "regime",
+   "as_polity": true,
+   "name_zh": "吉尔伯特和埃利斯群岛殖民地",
+   "name_en": "Gilbert and Ellice Islands (Line Islands)",
+   "controller": {
+    "qid": "Q1050859",
+    "zh": "吉尔伯特和埃利斯群岛殖民地"
+   },
+   "from": "1916-01-12",
+   "until": "1979-07-12",
+   "geometry": {
+    "admin0_parts": {
+     "a3": [
+      "KIR"
+     ],
+     "bbox": [
+      -162.0,
+      -12.0,
+      -150.0,
+      7.0
+     ]
+    }
+   },
+   "approx": true,
+   "dates_note": "1916 年英国兼并范宁岛、华盛顿岛并入吉尔伯特和埃利斯群岛殖民地（圣诞岛 1919 年并入）；1976 年后为吉尔伯特群岛殖民地，1979-07-12 随基里巴斯独立。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Line_Islands",
+    "https://en.wikipedia.org/wiki/Gilbert_and_Ellice_Islands"
+   ],
+   "note": "范围取 Natural Earth 今国界（含小岛）；CShapes 2.0 在独立前不收录该地区，这里补上殖民/保护国政权。只画莱恩群岛（基里巴斯东部）；1976–1979 年的「吉尔伯特群岛殖民地」仍显示同一条目。"
+  },
+  {
+   "id": "windward_islands",
+   "group": "colonies_misc",
+   "kind": "regime",
+   "as_polity": true,
+   "name_zh": "英属向风群岛",
+   "name_en": "British Windward Islands",
+   "controller": {
+    "qid": "Q2660774",
+    "zh": "英属向风群岛"
+   },
+   "from": "1833-01-01",
+   "until": "1940-01-01",
+   "geometry": {
+    "admin0_parts": {
+     "a3": [
+      "LCA",
+      "VCT",
+      "GRD"
+     ],
+     "bbox": [
+      -61.9,
+      11.9,
+      -60.8,
+      14.2
+     ]
+    }
+   },
+   "approx": true,
+   "dates_note": "1833 年设立的英国殖民地行政组合；1940 年多米尼克由背风群岛划入。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/British_Windward_Islands"
+   ],
+   "note": "范围取 Natural Earth 今国界（含小岛）；CShapes 2.0 在独立前不收录该地区，这里补上殖民/保护国政权。"
+  },
+  {
+   "id": "windward_islands_dma",
+   "group": "colonies_misc",
+   "kind": "regime",
+   "as_polity": true,
+   "name_zh": "英属向风群岛",
+   "name_en": "British Windward Islands",
+   "controller": {
+    "qid": "Q2660774",
+    "zh": "英属向风群岛"
+   },
+   "from": "1940-01-01",
+   "until": "1958-01-03",
+   "geometry": {
+    "admin0_parts": {
+     "a3": [
+      "LCA",
+      "VCT",
+      "GRD",
+      "DMA"
+     ],
+     "bbox": [
+      -61.9,
+      11.9,
+      -60.8,
+      15.7
+     ]
+    }
+   },
+   "approx": true,
+   "dates_note": "1940 年起含多米尼克；1958-01-03 并入西印度联邦。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/British_Windward_Islands"
+   ],
+   "note": "范围取 Natural Earth 今国界（含小岛）；CShapes 2.0 在独立前不收录该地区，这里补上殖民/保护国政权。"
+  },
+  {
+   "id": "leeward_islands",
+   "group": "colonies_misc",
+   "kind": "regime",
+   "as_polity": true,
+   "name_zh": "英属背风群岛",
+   "name_en": "British Leeward Islands",
+   "controller": {
+    "qid": "Q1796551",
+    "zh": "英属背风群岛"
+   },
+   "from": "1833-01-01",
+   "until": "1940-01-01",
+   "geometry": {
+    "admin0_parts": {
+     "a3": [
+      "KNA",
+      "ATG",
+      "DMA"
+     ],
+     "bbox": [
+      -63.0,
+      15.1,
+      -61.1,
+      17.8
+     ]
+    }
+   },
+   "approx": true,
+   "dates_note": "1833–1940 年含多米尼克（1872–1956 年称背风群岛联邦殖民地）。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/British_Leeward_Islands"
+   ],
+   "note": "范围取 Natural Earth 今国界（含小岛）；CShapes 2.0 在独立前不收录该地区，这里补上殖民/保护国政权。"
+  },
+  {
+   "id": "leeward_islands2",
+   "group": "colonies_misc",
+   "kind": "regime",
+   "as_polity": true,
+   "name_zh": "英属背风群岛",
+   "name_en": "British Leeward Islands",
+   "controller": {
+    "qid": "Q1796551",
+    "zh": "英属背风群岛"
+   },
+   "from": "1940-01-01",
+   "until": "1958-01-03",
+   "geometry": {
+    "admin0_parts": {
+     "a3": [
+      "KNA",
+      "ATG"
+     ],
+     "bbox": [
+      -63.0,
+      16.9,
+      -61.1,
+      17.8
+     ]
+    }
+   },
+   "approx": true,
+   "dates_note": "1940 年多米尼克划归向风群岛；1958-01-03 并入西印度联邦。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/British_Leeward_Islands"
+   ],
+   "note": "范围取 Natural Earth 今国界（含小岛）；CShapes 2.0 在独立前不收录该地区，这里补上殖民/保护国政权。"
+  },
+  {
+   "id": "west_indies_fed",
+   "group": "colonies_misc",
+   "kind": "regime",
+   "as_polity": true,
+   "name_zh": "西印度联邦",
+   "name_en": "West Indies Federation",
+   "controller": {
+    "qid": "Q652560",
+    "zh": "西印度联邦"
+   },
+   "from": "1958-01-03",
+   "until": "1962-05-31",
+   "geometry": {
+    "admin0_parts": {
+     "a3": [
+      "LCA",
+      "VCT",
+      "GRD",
+      "DMA",
+      "KNA",
+      "ATG"
+     ],
+     "bbox": [
+      -63.0,
+      11.9,
+      -60.8,
+      17.8
+     ]
+    }
+   },
+   "approx": true,
+   "dates_note": "英国在加勒比的殖民地联邦，1958-01-03 至 1962-05-31。只画东加勒比的小岛（牙买加、特立尼达等由底图负责）。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/West_Indies_Federation"
+   ],
+   "note": "范围取 Natural Earth 今国界（含小岛）；CShapes 2.0 在独立前不收录该地区，这里补上殖民/保护国政权。"
+  },
+  {
+   "id": "lca_colony",
+   "group": "colonies_misc",
+   "kind": "regime",
+   "as_polity": true,
+   "name_zh": "圣卢西亚殖民地",
+   "name_en": "Colony of Saint Lucia",
+   "controller": {
+    "qid": "Q15238409",
+    "zh": "圣卢西亚殖民地"
+   },
+   "from": "1962-05-31",
+   "until": "1967-03-01",
+   "geometry": {
+    "admin0_parts": {
+     "a3": [
+      "LCA"
+     ],
+     "bbox": [
+      -61.1,
+      13.6,
+      -60.8,
+      14.2
+     ]
+    }
+   },
+   "approx": true,
+   "dates_note": "西印度联邦解散后为英国直辖殖民地，1967-03-01 成为西印度联系邦。",
+   "sources": [
+    "https://www.wikidata.org/wiki/Q15238409"
+   ],
+   "note": "范围取 Natural Earth 今国界（含小岛）；CShapes 2.0 在独立前不收录该地区，这里补上殖民/保护国政权。"
+  },
+  {
+   "id": "kna_colony",
+   "group": "colonies_misc",
+   "kind": "regime",
+   "as_polity": true,
+   "name_zh": "圣克里斯托弗-尼维斯-安圭拉",
+   "name_en": "Saint Christopher-Nevis-Anguilla",
+   "controller": {
+    "qid": "Q1637975",
+    "zh": "圣克里斯托弗-尼维斯-安圭拉"
+   },
+   "from": "1962-05-31",
+   "until": "1967-02-27",
+   "geometry": {
+    "admin0_parts": {
+     "a3": [
+      "KNA"
+     ],
+     "bbox": [
+      -62.95,
+      17.0,
+      -62.5,
+      17.5
+     ]
+    }
+   },
+   "approx": true,
+   "dates_note": "西印度联邦解散后为英国直辖殖民地，1967 年成为联系邦（之后由现代国界接续）。",
+   "sources": [
+    "https://www.wikidata.org/wiki/Q1637975"
+   ],
+   "note": "范围取 Natural Earth 今国界（含小岛）；CShapes 2.0 在独立前不收录该地区，这里补上殖民/保护国政权。"
+  },
+  {
+   "id": "wias_dma",
+   "group": "colonies_misc",
+   "kind": "regime",
+   "as_polity": true,
+   "name_zh": "西印度联系邦（多米尼克）",
+   "name_en": "West Indies Associated States (Dominica)",
+   "controller": {
+    "qid": "Q7985529",
+    "zh": "西印度联系邦（多米尼克）"
+   },
+   "from": "1967-03-01",
+   "until": "1978-11-03",
+   "geometry": {
+    "admin0_parts": {
+     "a3": [
+      "DMA"
+     ],
+     "bbox": [
+      -61.6,
+      15.1,
+      -61.2,
+      15.7
+     ]
+    }
+   },
+   "approx": true,
+   "dates_note": "1967-03-01 成为与英国自由联系的邦，1978-11-03 独立。1962–1967 年未补。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/West_Indies_Associated_States"
+   ],
+   "note": "范围取 Natural Earth 今国界（含小岛）；CShapes 2.0 在独立前不收录该地区，这里补上殖民/保护国政权。"
+  },
+  {
+   "id": "wias_vct",
+   "group": "colonies_misc",
+   "kind": "regime",
+   "as_polity": true,
+   "name_zh": "西印度联系邦（圣文森特）",
+   "name_en": "West Indies Associated States (Saint Vincent)",
+   "controller": {
+    "qid": "Q7985529",
+    "zh": "西印度联系邦（圣文森特）"
+   },
+   "from": "1969-10-27",
+   "until": "1979-10-27",
+   "geometry": {
+    "admin0_parts": {
+     "a3": [
+      "VCT"
+     ],
+     "bbox": [
+      -61.5,
+      12.5,
+      -61.1,
+      13.4
+     ]
+    }
+   },
+   "approx": true,
+   "dates_note": "1969-10-27 成为联系邦，1979-10-27 独立。1962–1969 年未补。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/West_Indies_Associated_States"
+   ],
+   "note": "范围取 Natural Earth 今国界（含小岛）；CShapes 2.0 在独立前不收录该地区，这里补上殖民/保护国政权。"
+  },
+  {
+   "id": "pac_hk",
+   "group": "ww2_asia",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "日占香港",
+   "name_en": "Japanese occupation of Hong Kong",
+   "controller": {
+    "qid": "Q701967",
+    "zh": "日占香港"
+   },
+   "from": "1941-12-25",
+   "until": "1945-08-30",
+   "geometry": {
+    "admin0_parts": {
+     "a3": [
+      "HKG"
+     ],
+     "bbox": [
+      113.8,
+      22.1,
+      114.5,
+      22.6
+     ]
+    }
+   },
+   "approx": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Japanese_occupation_of_Hong_Kong"
+   ],
+   "dates_note": "1941-12-25「黑色圣诞」港督杨慕琦投降；1945-08-30 英国海军夏悫少将抵港接收。"
+  },
+  {
+   "id": "pac_malaya",
+   "group": "ww2_asia",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "日占马来亚",
+   "name_en": "Japanese occupation of Malaya",
+   "controller": {
+    "qid": "Q713768",
+    "zh": "日占马来亚"
+   },
+   "from": "1942-01-31",
+   "until": "1945-09-12",
+   "geometry": {
+    "cshapes": {
+     "gw": [
+      821,
+      822
+     ],
+     "date": "1942-01-01"
+    },
+    "union": [
+     {
+      "admin0_parts": {
+       "a3": [
+        "MYS"
+       ],
+       "bbox": [
+        99.5,
+        1.2,
+        104.6,
+        6.8
+       ],
+       "max_area": 20
+      }
+     }
+    ]
+   },
+   "approx": true,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Japanese_occupation_of_Malaya",
+    "https://en.wikipedia.org/wiki/Malayan_campaign"
+   ],
+   "note": "边界取 CShapes 1942 年马来联邦/马来属邦范围。",
+   "dates_note": "日军 1941-12-08 在哥打巴鲁登陆，1942-01-31 占领马来半岛全境（柔佛）；1945-09-12 新加坡受降，英国恢复统治（英军军政府）。"
+  },
+  {
+   "id": "pac_singapore",
+   "group": "ww2_asia",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "昭南岛（日占新加坡）",
+   "name_en": "Japanese occupation of Singapore",
+   "controller": {
+    "qid": "Q715645",
+    "zh": "日占新加坡"
+   },
+   "from": "1942-02-15",
+   "until": "1945-09-12",
+   "geometry": {
+    "admin0_parts": {
+     "a3": [
+      "SGP"
+     ],
+     "bbox": [
+      103.5,
+      1.1,
+      104.2,
+      1.5
+     ]
+    }
+   },
+   "approx": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Japanese_occupation_of_Singapore",
+    "https://en.wikipedia.org/wiki/Fall_of_Singapore"
+   ],
+   "dates_note": "1942-02-15 英军白思华中将投降；1945-09-12 日军在新加坡市政厅向蒙巴顿投降。"
+  },
+  {
+   "id": "pac_borneo",
+   "group": "ww2_asia",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "日占英属婆罗洲",
+   "name_en": "Japanese occupation of British Borneo",
+   "controller": {
+    "qid": "Q15243087",
+    "zh": "日占英属婆罗洲"
+   },
+   "from": "1942-01-19",
+   "until": "1945-09-10",
+   "geometry": {
+    "cshapes": {
+     "gw": [
+      823,
+      824,
+      835
+     ],
+     "date": "1942-01-01"
+    }
+   },
+   "approx": true,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Japanese_occupation_of_British_Borneo"
+   ],
+   "dates_note": "日军 1941-12-16 登陆，古晋 12-24、北婆罗洲首府 1942-01-19 失守；1945-06 起澳军登陆，1945-09-10 日军投降。"
+  },
+  {
+   "id": "pac_dei",
+   "group": "ww2_asia",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "日占荷属东印度",
+   "name_en": "Japanese occupation of the Dutch East Indies",
+   "controller": {
+    "qid": "Q702310",
+    "zh": "日占荷属东印度"
+   },
+   "from": "1942-03-09",
+   "until": "1945-08-17",
+   "geometry": {
+    "cshapes": {
+     "gw": [
+      850
+     ],
+     "date": "1942-01-01"
+    }
+   },
+   "approx": true,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Japanese_occupation_of_the_Dutch_East_Indies",
+    "https://en.wikipedia.org/wiki/Dutch_East_Indies_campaign"
+   ],
+   "note": "荷属新几内亚南部（梅劳克等）始终未被占领，这里整片显示（近似）。",
+   "dates_note": "荷属东印度军 1942-03-08/09 在爪哇投降；1945-08-15 日本投降，08-17 苏加诺宣布印度尼西亚独立。"
+  },
+  {
+   "id": "pac_philippines",
+   "group": "ww2_asia",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "日占菲律宾",
+   "name_en": "Japanese occupation of the Philippines",
+   "controller": {
+    "qid": "Q3175954",
+    "zh": "日占菲律宾"
+   },
+   "from": "1942-05-06",
+   "until": "1945-07-05",
+   "geometry": {
+    "cshapes": {
+     "gw": [
+      840
+     ],
+     "date": "1942-01-01"
+    }
+   },
+   "approx": true,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Japanese_occupation_of_the_Philippines",
+    "https://en.wikipedia.org/wiki/Philippines_campaign_(1944–1945)"
+   ],
+   "note": "1944-10 至 1945-07 美军逐岛收复，这里未逐岛细分（近似）。",
+   "dates_note": "科雷希多 1942-05-06 投降；第二菲律宾共和国（日本扶植）1943-10-14 成立；美军 1944-10-20 莱特岛登陆、1945-03-03 收复马尼拉，1945-07-05 麦克阿瑟宣布菲律宾解放（山区日军抵抗至 08-15 后）。"
+  },
+  {
+   "id": "pac_burma",
+   "group": "ww2_asia",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "日占缅甸",
+   "name_en": "Japanese occupation of Burma",
+   "controller": {
+    "qid": "Q1521499",
+    "zh": "日占缅甸"
+   },
+   "from": "1942-05-20",
+   "until": "1943-08-01",
+   "geometry": {
+    "cshapes": {
+     "gw": [
+      775
+     ],
+     "date": "1942-01-01"
+    }
+   },
+   "approx": true,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Japanese_occupation_of_Burma",
+    "https://en.wikipedia.org/wiki/Burma_campaign"
+   ],
+   "dates_note": "1942-03-08 仰光、05-01 曼德勒失守，05-20 前后英军撤入印度；1943-08-01 成立日本扶植的「缅甸国」。"
+  },
+  {
+   "id": "pac_burma_state",
+   "group": "ww2_asia",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "缅甸国（日本扶植）",
+   "name_en": "State of Burma",
+   "controller": {
+    "qid": "Q704358",
+    "zh": "缅甸国"
+   },
+   "from": "1943-08-01",
+   "until": "1945-05-03",
+   "geometry": {
+    "cshapes": {
+     "gw": [
+      775
+     ],
+     "date": "1942-01-01"
+    }
+   },
+   "approx": true,
+   "sources": [
+    "https://en.wikipedia.org/wiki/State_of_Burma",
+    "https://en.wikipedia.org/wiki/Burma_campaign"
+   ],
+   "note": "1944–45 年缅北已逐步被盟军收复，这里未细分（近似）。",
+   "dates_note": "巴莫政府 1943-08-01 成立；1944–45 年盟军反攻（密支那 1944-08-03、曼德勒 1945-03-20），1945-05-03 收复仰光。"
+  },
+  {
+   "id": "pac_indochina",
+   "group": "ww2_asia",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "法属印度支那（维希法国管治，日军进驻）",
+   "name_en": "French Indochina under Japanese occupation",
+   "controller": {
+    "qid": "Q362078",
+    "zh": "二战中的法属印度支那"
+   },
+   "from": "1941-07-28",
+   "until": "1945-03-09",
+   "geometry": {
+    "cshapes": {
+     "gw": [
+      811,
+      812,
+      815
+     ],
+     "date": "1942-01-01"
+    }
+   },
+   "approx": true,
+   "sources": [
+    "https://en.wikipedia.org/wiki/French_Indochina_in_World_War_II",
+    "https://en.wikipedia.org/wiki/Japanese_invasion_of_French_Indochina"
+   ],
+   "dates_note": "日军 1940-09-22 进驻北部（东京），1941-07-28 进驻南部；法国维希政府的总督府继续行政管理，直到 1945-03-09 日军发动「明号作战」政变。"
+  },
+  {
+   "id": "pac_vietnam_empire",
+   "group": "ww2_asia",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "越南帝国（日本扶植）",
+   "name_en": "Empire of Vietnam",
+   "controller": {
+    "qid": "Q701337",
+    "zh": "越南帝国"
+   },
+   "from": "1945-03-11",
+   "until": "1945-08-25",
+   "geometry": {
+    "cshapes": {
+     "gw": [
+      815
+     ],
+     "date": "1942-01-01"
+    }
+   },
+   "approx": true,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Empire_of_Vietnam"
+   ],
+   "dates_note": "保大帝 1945-03-11 宣布独立；1945-08-25 退位（八月革命）。"
+  },
+  {
+   "id": "pac_kampuchea",
+   "group": "ww2_asia",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "柬埔寨王国（日本扶植）",
+   "name_en": "Kingdom of Kampuchea (1945)",
+   "controller": {
+    "qid": "Q16673775",
+    "zh": "柬埔寨王国 (1945年)"
+   },
+   "from": "1945-03-13",
+   "until": "1945-10-16",
+   "geometry": {
+    "cshapes": {
+     "gw": [
+      811
+     ],
+     "date": "1942-01-01"
+    }
+   },
+   "approx": true,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Kingdom_of_Kampuchea_(1945)"
+   ],
+   "dates_note": "西哈努克 1945-03-13 宣布独立；1945-10-16 法国恢复控制。"
+  },
+  {
+   "id": "pac_laos",
+   "group": "ww2_asia",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "日军控制下的老挝（琅勃拉邦王国）",
+   "name_en": "Laos under Japanese control",
+   "controller": {
+    "qid": "Q338248",
+    "zh": "琅勃拉邦王国"
+   },
+   "from": "1945-03-09",
+   "until": "1945-08-30",
+   "geometry": {
+    "cshapes": {
+     "gw": [
+      812
+     ],
+     "date": "1942-01-01"
+    }
+   },
+   "approx": true,
+   "sources": [
+    "https://en.wikipedia.org/wiki/French_Indochina_in_World_War_II"
+   ],
+   "dates_note": "日军 1945-03-09 政变后控制老挝，西萨旺冯国王 04-08 宣布独立；日本投降后 1945-08-30 前后失效。"
+  },
+  {
+   "id": "pac_timor",
+   "group": "ww2_asia",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "日占帝汶",
+   "name_en": "Japanese occupation of Timor",
+   "controller": {
+    "qid": "Q188712",
+    "zh": "大日本帝国"
+   },
+   "from": "1942-02-20",
+   "until": "1945-09-11",
+   "geometry": {
+    "cshapes": {
+     "gw": [
+      860
+     ],
+     "date": "1942-01-01"
+    },
+    "union": [
+     {
+      "admin0_parts": {
+       "a3": [
+        "TLS"
+       ],
+       "bbox": [
+        124.0,
+        -9.6,
+        127.5,
+        -8.1
+       ]
+      }
+     }
+    ]
+   },
+   "approx": true,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Battle_of_Timor"
+   ],
+   "dates_note": "日军 1942-02-19/20 登陆帝汶；1945-09-11 帝汶日军在古邦向澳军投降（荷属西帝汶已包含在荷属东印度中）。"
+  },
+  {
+   "id": "pac_andaman",
+   "group": "ww2_asia",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "日占安达曼和尼科巴群岛",
+   "name_en": "Japanese occupation of the Andaman and Nicobar Islands",
+   "controller": {
+    "qid": "Q4065239",
+    "zh": "日占安达曼和尼科巴群岛"
+   },
+   "from": "1942-03-23",
+   "until": "1945-10-09",
+   "geometry": {
+    "admin1": [
+     "IN-AN"
+    ]
+   },
+   "approx": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Japanese_occupation_of_the_Andaman_and_Nicobar_Islands"
+   ],
+   "dates_note": "日军 1942-03-23 占领布莱尔港；1945-10-09 日军投降。"
+  },
+  {
+   "id": "pac_guam",
+   "group": "ww2_asia",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "日占关岛",
+   "name_en": "Japanese occupation of Guam",
+   "controller": {
+    "qid": "Q6158903",
+    "zh": "日占关岛"
+   },
+   "from": "1941-12-10",
+   "until": "1944-08-10",
+   "geometry": {
+    "admin0_parts": {
+     "a3": [
+      "GUM"
+     ],
+     "bbox": [
+      144.5,
+      13.2,
+      145.0,
+      13.7
+     ]
+    }
+   },
+   "approx": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Japanese_occupation_of_Guam"
+   ],
+   "dates_note": "1941-12-10 美军守备队投降；1944-07-21 美军登陆，08-10 收复。"
+  },
+  {
+   "id": "pac_nauru",
+   "group": "ww2_asia",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "日占瑙鲁",
+   "name_en": "Japanese occupation of Nauru",
+   "controller": {
+    "qid": "Q2072172",
+    "zh": "日占瑙鲁"
+   },
+   "from": "1942-08-26",
+   "until": "1945-09-13",
+   "geometry": {
+    "admin0_parts": {
+     "a3": [
+      "NRU"
+     ],
+     "bbox": [
+      166.8,
+      -0.6,
+      167.0,
+      -0.45
+     ]
+    }
+   },
+   "approx": false,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Japanese_occupation_of_Nauru"
+   ],
+   "dates_note": "日军 1942-08-26 登陆；1945-09-13 向澳军投降。"
+  },
+  {
+   "id": "pac_gilberts",
+   "group": "ww2_asia",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "日占吉尔伯特群岛",
+   "name_en": "Japanese occupation of the Gilbert Islands",
+   "controller": {
+    "qid": "Q65270011",
+    "zh": "日占吉尔伯特群岛"
+   },
+   "from": "1941-12-10",
+   "until": "1943-11-23",
+   "geometry": {
+    "admin0_parts": {
+     "a3": [
+      "KIR"
+     ],
+     "bbox": [
+      172.0,
+      -3.0,
+      177.5,
+      4.0
+     ]
+    }
+   },
+   "approx": true,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Japanese_occupation_of_the_Gilbert_Islands"
+   ],
+   "dates_note": "日军 1941-12-10 占领马金、塔拉瓦；1943-11-20/23 美军攻占塔拉瓦、马金。"
+  },
+  {
+   "id": "ww2_fr_zone_libre",
+   "group": "ww2_europe",
+   "kind": "regime",
+   "as_polity": true,
+   "name_zh": "法国非占领区（维希政府直接管辖，「自由区」）",
+   "name_en": "Zone libre (Vichy France)",
+   "controller": {
+    "qid": "Q69808",
+    "zh": "维希法国"
+   },
+   "from": "1940-06-25",
+   "until": "1942-11-11",
+   "geometry": {
+    "polygon": [
+     [
+      5.9,
+      46.14
+     ],
+     [
+      5.83,
+      46.11
+     ],
+     [
+      5.95,
+      46.3
+     ],
+     [
+      6.0,
+      46.37
+     ],
+     [
+      6.06,
+      46.48
+     ],
+     [
+      6.03,
+      46.52
+     ],
+     [
+      5.96,
+      46.58
+     ],
+     [
+      5.91,
+      46.75
+     ],
+     [
+      5.74,
+      46.87
+     ],
+     [
+      5.6,
+      46.98
+     ],
+     [
+      5.48,
+      47.02
+     ],
+     [
+      5.41,
+      46.97
+     ],
+     [
+      5.15,
+      46.93
+     ],
+     [
+      5.02,
+      46.9
+     ],
+     [
+      4.85,
+      46.78
+     ],
+     [
+      4.7,
+      46.71
+     ],
+     [
+      4.4,
+      46.66
+     ],
+     [
+      4.3,
+      46.5
+     ],
+     [
+      4.13,
+      46.42
+     ],
+     [
+      3.98,
+      46.46
+     ],
+     [
+      3.96,
+      46.44
+     ],
+     [
+      3.68,
+      46.47
+     ],
+     [
+      3.36,
+      46.52
+     ],
+     [
+      3.33,
+      46.55
+     ],
+     [
+      3.22,
+      46.67
+     ],
+     [
+      3.04,
+      46.81
+     ],
+     [
+      3.04,
+      46.9
+     ],
+     [
+      2.73,
+      46.97
+     ],
+     [
+      2.37,
+      47.01
+     ],
+     [
+      2.29,
+      47.02
+     ],
+     [
+      2.1,
+      47.12
+     ],
+     [
+      2.07,
+      47.22
+     ],
+     [
+      1.93,
+      47.26
+     ],
+     [
+      1.9,
+      47.27
+     ],
+     [
+      1.55,
+      47.27
+     ],
+     [
+      1.13,
+      47.34
+     ],
+     [
+      1.07,
+      47.33
+     ],
+     [
+      0.99,
+      47.33
+     ],
+     [
+      0.85,
+      47.13
+     ],
+     [
+      0.82,
+      47.04
+     ],
+     [
+      0.8,
+      46.92
+     ],
+     [
+      0.86,
+      46.82
+     ],
+     [
+      0.81,
+      46.79
+     ],
+     [
+      0.65,
+      46.57
+     ],
+     [
+      0.53,
+      46.48
+     ],
+     [
+      0.53,
+      46.28
+     ],
+     [
+      0.5,
+      46.12
+     ],
+     [
+      0.36,
+      46.09
+     ],
+     [
+      0.44,
+      45.99
+     ],
+     [
+      0.47,
+      45.89
+     ],
+     [
+      0.45,
+      45.75
+     ],
+     [
+      0.42,
+      45.48
+     ],
+     [
+      0.38,
+      45.47
+     ],
+     [
+      0.31,
+      45.25
+     ],
+     [
+      0.25,
+      45.13
+     ],
+     [
+      0.19,
+      45.01
+     ],
+     [
+      0.03,
+      44.85
+     ],
+     [
+      -0.05,
+      44.85
+     ],
+     [
+      -0.08,
+      44.69
+     ],
+     [
+      -0.25,
+      44.55
+     ],
+     [
+      -0.21,
+      44.43
+     ],
+     [
+      -0.26,
+      44.29
+     ],
+     [
+      -0.23,
+      44.03
+     ],
+     [
+      -0.38,
+      43.89
+     ],
+     [
+      -0.46,
+      43.76
+     ],
+     [
+      -0.5,
+      43.66
+     ],
+     [
+      -0.65,
+      43.62
+     ],
+     [
+      -0.67,
+      43.55
+     ],
+     [
+      -0.77,
+      43.49
+     ],
+     [
+      -0.92,
+      43.47
+     ],
+     [
+      -0.94,
+      43.4
+     ],
+     [
+      -1.03,
+      43.33
+     ],
+     [
+      -1.09,
+      43.22
+     ],
+     [
+      -1.24,
+      43.16
+     ],
+     [
+      -1.28,
+      43.11
+     ],
+     [
+      -1.3,
+      43.05
+     ],
+     [
+      -1.3,
+      41.0
+     ],
+     [
+      10.0,
+      41.0
+     ],
+     [
+      10.0,
+      46.0
+     ],
+     [
+      7.0,
+      46.6
+     ],
+     [
+      6.3,
+      46.45
+     ],
+     [
+      6.15,
+      46.2
+     ]
+    ],
+    "intersect": {
+     "cshapes": {
+      "gw": [
+       220
+      ],
+      "date": "1940-01-01"
+     }
+    }
+   },
+   "approx": true,
+   "precision": "分界线按沿线城镇连线，约 ±5–15 km",
+   "note": "1940-06-22 停战协定第 2 条：分界线以北、以西由德军占领，以南以东为非占领区，由贝当政府（1940-07-10 起「法兰西国」，驻维希）直接管辖。阿尔萨斯—摩泽尔被德国事实吞并、北部两省归德军驻布鲁塞尔军政府管辖（见 Stanford 底图）；意大利 1940 年只占领芒通等边境小块（未画）。",
+   "dates_note": "分界线 1940-06-25 生效；1942-11-11 德军越过分界线（安东行动）。",
+   "sources": [
+    "https://fr.wikipedia.org/wiki/Ligne_de_d%C3%A9marcation_(France)",
+    "https://en.wikipedia.org/wiki/Zone_libre",
+    "https://en.wikipedia.org/wiki/Armistice_of_22_June_1940",
+    "https://en.wikipedia.org/wiki/Case_Anton"
+   ]
+  },
+  {
+   "id": "ww2_fr_zone_sud",
+   "group": "ww2_europe",
+   "kind": "regime",
+   "as_polity": true,
+   "name_zh": "维希法国（原非占领区，1942-11-11 起德、意军队占领）",
+   "name_en": "Vichy France (former zone libre, occupied from Nov 1942)",
+   "controller": {
+    "qid": "Q69808",
+    "zh": "维希法国"
+   },
+   "from": "1942-11-11",
+   "until": "1944-08-25",
+   "geometry": {
+    "polygon": [
+     [
+      5.9,
+      46.14
+     ],
+     [
+      5.83,
+      46.11
+     ],
+     [
+      5.95,
+      46.3
+     ],
+     [
+      6.0,
+      46.37
+     ],
+     [
+      6.06,
+      46.48
+     ],
+     [
+      6.03,
+      46.52
+     ],
+     [
+      5.96,
+      46.58
+     ],
+     [
+      5.91,
+      46.75
+     ],
+     [
+      5.74,
+      46.87
+     ],
+     [
+      5.6,
+      46.98
+     ],
+     [
+      5.48,
+      47.02
+     ],
+     [
+      5.41,
+      46.97
+     ],
+     [
+      5.15,
+      46.93
+     ],
+     [
+      5.02,
+      46.9
+     ],
+     [
+      4.85,
+      46.78
+     ],
+     [
+      4.7,
+      46.71
+     ],
+     [
+      4.4,
+      46.66
+     ],
+     [
+      4.3,
+      46.5
+     ],
+     [
+      4.13,
+      46.42
+     ],
+     [
+      3.98,
+      46.46
+     ],
+     [
+      3.96,
+      46.44
+     ],
+     [
+      3.68,
+      46.47
+     ],
+     [
+      3.36,
+      46.52
+     ],
+     [
+      3.33,
+      46.55
+     ],
+     [
+      3.22,
+      46.67
+     ],
+     [
+      3.04,
+      46.81
+     ],
+     [
+      3.04,
+      46.9
+     ],
+     [
+      2.73,
+      46.97
+     ],
+     [
+      2.37,
+      47.01
+     ],
+     [
+      2.29,
+      47.02
+     ],
+     [
+      2.1,
+      47.12
+     ],
+     [
+      2.07,
+      47.22
+     ],
+     [
+      1.93,
+      47.26
+     ],
+     [
+      1.9,
+      47.27
+     ],
+     [
+      1.55,
+      47.27
+     ],
+     [
+      1.13,
+      47.34
+     ],
+     [
+      1.07,
+      47.33
+     ],
+     [
+      0.99,
+      47.33
+     ],
+     [
+      0.85,
+      47.13
+     ],
+     [
+      0.82,
+      47.04
+     ],
+     [
+      0.8,
+      46.92
+     ],
+     [
+      0.86,
+      46.82
+     ],
+     [
+      0.81,
+      46.79
+     ],
+     [
+      0.65,
+      46.57
+     ],
+     [
+      0.53,
+      46.48
+     ],
+     [
+      0.53,
+      46.28
+     ],
+     [
+      0.5,
+      46.12
+     ],
+     [
+      0.36,
+      46.09
+     ],
+     [
+      0.44,
+      45.99
+     ],
+     [
+      0.47,
+      45.89
+     ],
+     [
+      0.45,
+      45.75
+     ],
+     [
+      0.42,
+      45.48
+     ],
+     [
+      0.38,
+      45.47
+     ],
+     [
+      0.31,
+      45.25
+     ],
+     [
+      0.25,
+      45.13
+     ],
+     [
+      0.19,
+      45.01
+     ],
+     [
+      0.03,
+      44.85
+     ],
+     [
+      -0.05,
+      44.85
+     ],
+     [
+      -0.08,
+      44.69
+     ],
+     [
+      -0.25,
+      44.55
+     ],
+     [
+      -0.21,
+      44.43
+     ],
+     [
+      -0.26,
+      44.29
+     ],
+     [
+      -0.23,
+      44.03
+     ],
+     [
+      -0.38,
+      43.89
+     ],
+     [
+      -0.46,
+      43.76
+     ],
+     [
+      -0.5,
+      43.66
+     ],
+     [
+      -0.65,
+      43.62
+     ],
+     [
+      -0.67,
+      43.55
+     ],
+     [
+      -0.77,
+      43.49
+     ],
+     [
+      -0.92,
+      43.47
+     ],
+     [
+      -0.94,
+      43.4
+     ],
+     [
+      -1.03,
+      43.33
+     ],
+     [
+      -1.09,
+      43.22
+     ],
+     [
+      -1.24,
+      43.16
+     ],
+     [
+      -1.28,
+      43.11
+     ],
+     [
+      -1.3,
+      43.05
+     ],
+     [
+      -1.3,
+      41.0
+     ],
+     [
+      10.0,
+      41.0
+     ],
+     [
+      10.0,
+      46.0
+     ],
+     [
+      7.0,
+      46.6
+     ],
+     [
+      6.3,
+      46.45
+     ],
+     [
+      6.15,
+      46.2
+     ]
+    ],
+    "intersect": {
+     "cshapes": {
+      "gw": [
+       220
+      ],
+      "date": "1940-01-01"
+     }
+    }
+   },
+   "approx": true,
+   "precision": "分界线按沿线城镇连线，约 ±5–15 km",
+   "note": "1942-11-11 起德军占领原非占领区（改称「南区」），意大利占领罗讷河以东大部和科西嘉（至 1943-09，未单独画出）；维希政府名义上继续管辖，1943-03-01 分界线撤销。1944-08-15 盟军在普罗旺斯登陆，1944-08-25 巴黎解放后由临时政府接管。",
+   "dates_note": "1942-11-11 安东行动；1944-08-25 巴黎解放（各地解放日期不同，以盟军战线层为准）。",
+   "sources": [
+    "https://fr.wikipedia.org/wiki/Ligne_de_d%C3%A9marcation_(France)",
+    "https://en.wikipedia.org/wiki/Zone_libre",
+    "https://en.wikipedia.org/wiki/Armistice_of_22_June_1940",
+    "https://en.wikipedia.org/wiki/Case_Anton"
+   ]
+  },
+  {
+   "id": "byz_constantinople_1453",
+   "group": "europe_19c",
+   "kind": "holdout",
+   "as_polity": true,
+   "name_zh": "拜占庭帝国（君士坦丁堡，近似范围）",
+   "name_en": "Byzantine Empire (Constantinople, approx.)",
+   "controller": {
+    "qid": "Q12544",
+    "zh": "拜占庭帝国"
+   },
+   "from": "1400-01-01",
+   "until": "1453-05-29",
+   "geometry": {
+    "polygon": [
+     [
+      28.45,
+      40.96
+     ],
+     [
+      29.0,
+      40.99
+     ],
+     [
+      29.05,
+      41.12
+     ],
+     [
+      29.12,
+      41.24
+     ],
+     [
+      28.7,
+      41.32
+     ],
+     [
+      28.45,
+      41.2
+     ],
+     [
+      28.45,
+      40.96
+     ]
+    ]
+   },
+   "approx": true,
+   "dates_note": "1453-05-29 奥斯曼军攻陷君士坦丁堡（OpenStax World History Vol.1 §17.1；英文维基「Fall of Constantinople」）。historical-basemaps 1400 年快照把君士坦丁堡画入奥斯曼多边形，这里只标出城区及欧洲一侧近郊（狄奥多西城墙以西约 30 km 内），亚洲一侧此时已属奥斯曼。",
+   "sources": [
+    "https://openstax.org/books/world-history-volume-1/pages/17-1-the-ottomans-and-the-mongols",
+    "https://en.wikipedia.org/wiki/Fall_of_Constantinople"
+   ],
+   "note": "范围为近似（±20 km）；1400 年以前用底图自身的多边形。摩里亚专制国未单独画出。"
+  },
+  {
+   "id": "german_empire_1871",
+   "group": "europe_19c",
+   "kind": "regime",
+   "as_polity": true,
+   "name_zh": "德意志帝国",
+   "name_en": "German Empire",
+   "controller": {
+    "qid": "Q43287",
+    "zh": "德意志帝国"
+   },
+   "from": "1871-01-18",
+   "until": "1878-01-01",
+   "geometry": {
+    "basemap": {
+     "snap": 1878,
+     "name": "Germany"
+    }
+   },
+   "approx": true,
+   "dates_note": "1871-01-18 凡尔赛宫宣告成立德意志帝国（OpenStax World History Vol.2 §7.4）。1815 年快照仍画着普鲁士、巴伐利亚等各邦，1878 年快照起才是统一的德国多边形：这段时间用 1878 年快照的德国范围标出。",
+   "sources": [
+    "https://openstax.org/books/world-history-volume-2/pages/7-4-nationalism-liberalism-conservatism-and-the-political-order",
+    "https://en.wikipedia.org/wiki/Proclamation_of_the_German_Empire"
+   ],
+   "note": "边界取 1878 年快照（含阿尔萨斯-洛林），精度同 historical-basemaps。"
+  },
+  {
+   "id": "kwantung_russia",
+   "group": "europe_19c",
+   "kind": "leased",
+   "as_polity": true,
+   "name_zh": "俄国关东州（旅大租借地）",
+   "name_en": "Russian Dalian (Kwantung Oblast)",
+   "controller": {
+    "qid": "Q7382031",
+    "zh": "俄国关东州"
+   },
+   "from": "1898-03-27",
+   "until": "1905-09-05",
+   "geometry": {
+    "polygon": [
+     [
+      121.0,
+      38.68
+     ],
+     [
+      121.4,
+      38.72
+     ],
+     [
+      121.75,
+      38.82
+     ],
+     [
+      122.1,
+      39.0
+     ],
+     [
+      122.45,
+      39.3
+     ],
+     [
+      122.45,
+      39.45
+     ],
+     [
+      121.55,
+      39.45
+     ],
+     [
+      121.3,
+      39.1
+     ],
+     [
+      121.0,
+      38.68
+     ]
+    ],
+    "intersect": {
+     "cshapes": {
+      "gw": [
+       710
+      ],
+      "date": "1900-01-01"
+     }
+    }
+   },
+   "approx": true,
+   "dates_note": "1898-03-27《旅大租地条约》（Pavlov Agreement）；1905-09-05《朴茨茅斯和约》转让日本（旅顺 1905-01-02 已被日军攻占）。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Russian_Dalian",
+    "https://en.wikipedia.org/wiki/Kwantung_Leased_Territory",
+    "https://openstax.org/books/world-history-volume-2/pages/9-3-colonial-empires"
+   ],
+   "note": "北界按普兰店湾—皮口一线近似（±15 km）。"
+  },
+  {
+   "id": "kwantung_japan",
+   "group": "europe_19c",
+   "kind": "leased",
+   "as_polity": true,
+   "name_zh": "日本关东州（租借地）",
+   "name_en": "Kwantung Leased Territory",
+   "controller": {
+    "qid": "Q678658",
+    "zh": "关东州"
+   },
+   "from": "1905-09-05",
+   "until": "1945-08-22",
+   "geometry": {
+    "polygon": [
+     [
+      121.0,
+      38.68
+     ],
+     [
+      121.4,
+      38.72
+     ],
+     [
+      121.75,
+      38.82
+     ],
+     [
+      122.1,
+      39.0
+     ],
+     [
+      122.45,
+      39.3
+     ],
+     [
+      122.45,
+      39.45
+     ],
+     [
+      121.55,
+      39.45
+     ],
+     [
+      121.3,
+      39.1
+     ],
+     [
+      121.0,
+      38.68
+     ]
+    ],
+    "intersect": {
+     "cshapes": {
+      "gw": [
+       710
+      ],
+      "date": "1900-01-01"
+     }
+    }
+   },
+   "approx": true,
+   "dates_note": "1905-09-05《朴茨茅斯和约》；1945-08-22 苏军进入旅顺、大连。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Russian_Dalian",
+    "https://en.wikipedia.org/wiki/Kwantung_Leased_Territory",
+    "https://openstax.org/books/world-history-volume-2/pages/9-3-colonial-empires"
+   ],
+   "note": "北界按普兰店湾—皮口一线近似（±15 km）。"
+  },
+  {
+   "id": "ccw_ccp_1949_1",
+   "group": "wars_misc",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "共军控制区（1949 年，省级近似）",
+   "name_en": "Communist-held area (1949, province-level approx.)",
+   "controller": {
+    "qid": "Q17427",
+    "zh": "中国共产党"
+   },
+   "from": "1949-01-31",
+   "until": "1949-04-23",
+   "geometry": {
+    "admin1": [
+     "CN-BJ",
+     "CN-TJ",
+     "CN-HE",
+     "CN-SD",
+     "CN-HA",
+     "CN-SX"
+    ]
+   },
+   "approx": true,
+   "dates_note": "1949-01-31 共军进入北平（平津战役结束）；山东、河南、河北、山西大部此前已归共军（太原 1949-04-24）。以省为单位、按省会易手日期近似；省内各地易手时间不一。1949-10-01 起显示中华人民共和国。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Pingjin_campaign",
+    "https://en.wikipedia.org/wiki/Yangtze_River_Crossing_campaign",
+    "https://en.wikipedia.org/wiki/Chinese_Civil_War"
+   ],
+   "note": "精度：省级。东北另见 ccw_manchuria 组。"
+  },
+  {
+   "id": "ccw_ccp_1949_2",
+   "group": "wars_misc",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "共军控制区（1949 年，省级近似）",
+   "name_en": "Communist-held area (1949, province-level approx.)",
+   "controller": {
+    "qid": "Q17427",
+    "zh": "中国共产党"
+   },
+   "from": "1949-04-23",
+   "until": "1949-05-27",
+   "geometry": {
+    "admin1": [
+     "CN-BJ",
+     "CN-TJ",
+     "CN-HE",
+     "CN-SD",
+     "CN-HA",
+     "CN-SX",
+     "CN-JS",
+     "CN-AH"
+    ]
+   },
+   "approx": true,
+   "dates_note": "1949-01-31 共军进入北平（平津战役结束）；山东、河南、河北、山西大部此前已归共军（太原 1949-04-24）；1949-04-23 共军渡江攻占南京。以省为单位、按省会易手日期近似；省内各地易手时间不一。1949-10-01 起显示中华人民共和国。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Pingjin_campaign",
+    "https://en.wikipedia.org/wiki/Yangtze_River_Crossing_campaign",
+    "https://en.wikipedia.org/wiki/Chinese_Civil_War"
+   ],
+   "note": "精度：省级。东北另见 ccw_manchuria 组。"
+  },
+  {
+   "id": "ccw_ccp_1949_3",
+   "group": "wars_misc",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "共军控制区（1949 年，省级近似）",
+   "name_en": "Communist-held area (1949, province-level approx.)",
+   "controller": {
+    "qid": "Q17427",
+    "zh": "中国共产党"
+   },
+   "from": "1949-05-27",
+   "until": "1949-08-26",
+   "geometry": {
+    "admin1": [
+     "CN-BJ",
+     "CN-TJ",
+     "CN-HE",
+     "CN-SD",
+     "CN-HA",
+     "CN-SX",
+     "CN-JS",
+     "CN-AH",
+     "CN-SH",
+     "CN-ZJ",
+     "CN-HB",
+     "CN-JX",
+     "CN-SN"
+    ]
+   },
+   "approx": true,
+   "dates_note": "1949-01-31 共军进入北平（平津战役结束）；山东、河南、河北、山西大部此前已归共军（太原 1949-04-24）；1949-04-23 共军渡江攻占南京；杭州 5-3、武汉 5-16、西安 5-20、南昌 5-22、上海 5-27。以省为单位、按省会易手日期近似；省内各地易手时间不一。1949-10-01 起显示中华人民共和国。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Pingjin_campaign",
+    "https://en.wikipedia.org/wiki/Yangtze_River_Crossing_campaign",
+    "https://en.wikipedia.org/wiki/Chinese_Civil_War"
+   ],
+   "note": "精度：省级。东北另见 ccw_manchuria 组。"
+  },
+  {
+   "id": "ccw_ccp_1949_4",
+   "group": "wars_misc",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "共军控制区（1949 年，省级近似）",
+   "name_en": "Communist-held area (1949, province-level approx.)",
+   "controller": {
+    "qid": "Q17427",
+    "zh": "中国共产党"
+   },
+   "from": "1949-08-26",
+   "until": "1949-09-25",
+   "geometry": {
+    "admin1": [
+     "CN-BJ",
+     "CN-TJ",
+     "CN-HE",
+     "CN-SD",
+     "CN-HA",
+     "CN-SX",
+     "CN-JS",
+     "CN-AH",
+     "CN-SH",
+     "CN-ZJ",
+     "CN-HB",
+     "CN-JX",
+     "CN-SN",
+     "CN-HN",
+     "CN-FJ",
+     "CN-GS"
+    ]
+   },
+   "approx": true,
+   "dates_note": "1949-01-31 共军进入北平（平津战役结束）；山东、河南、河北、山西大部此前已归共军（太原 1949-04-24）；1949-04-23 共军渡江攻占南京；杭州 5-3、武汉 5-16、西安 5-20、南昌 5-22、上海 5-27；长沙 8-4（和平易手）、福州 8-17、兰州 8-26。以省为单位、按省会易手日期近似；省内各地易手时间不一。1949-10-01 起显示中华人民共和国。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Pingjin_campaign",
+    "https://en.wikipedia.org/wiki/Yangtze_River_Crossing_campaign",
+    "https://en.wikipedia.org/wiki/Chinese_Civil_War"
+   ],
+   "note": "精度：省级。东北另见 ccw_manchuria 组。"
+  },
+  {
+   "id": "ccw_ccp_1949_5",
+   "group": "wars_misc",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "共军控制区（1949 年，省级近似）",
+   "name_en": "Communist-held area (1949, province-level approx.)",
+   "controller": {
+    "qid": "Q17427",
+    "zh": "中国共产党"
+   },
+   "from": "1949-09-25",
+   "until": "1949-10-01",
+   "geometry": {
+    "admin1": [
+     "CN-BJ",
+     "CN-TJ",
+     "CN-HE",
+     "CN-SD",
+     "CN-HA",
+     "CN-SX",
+     "CN-JS",
+     "CN-AH",
+     "CN-SH",
+     "CN-ZJ",
+     "CN-HB",
+     "CN-JX",
+     "CN-SN",
+     "CN-HN",
+     "CN-FJ",
+     "CN-GS",
+     "CN-QH",
+     "CN-NX",
+     "CN-XJ"
+    ]
+   },
+   "approx": true,
+   "dates_note": "1949-01-31 共军进入北平（平津战役结束）；山东、河南、河北、山西大部此前已归共军（太原 1949-04-24）；1949-04-23 共军渡江攻占南京；杭州 5-3、武汉 5-16、西安 5-20、南昌 5-22、上海 5-27；长沙 8-4（和平易手）、福州 8-17、兰州 8-26；西宁 9-5、银川 9-23、新疆 9-25 和平易手。以省为单位、按省会易手日期近似；省内各地易手时间不一。1949-10-01 起显示中华人民共和国。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Pingjin_campaign",
+    "https://en.wikipedia.org/wiki/Yangtze_River_Crossing_campaign",
+    "https://en.wikipedia.org/wiki/Chinese_Civil_War"
+   ],
+   "note": "精度：省级。东北另见 ccw_manchuria 组。"
+  },
+  {
+   "id": "korea_rok_south_of_38",
+   "group": "wars_misc",
+   "kind": "holdout",
+   "as_polity": true,
+   "name_zh": "大韩民国（三八线以南、今停战线以北）",
+   "name_en": "Republic of Korea (south of 38th parallel)",
+   "controller": {
+    "qid": "Q884",
+    "zh": "大韩民国"
+   },
+   "from": "1948-08-15",
+   "until": "1950-06-25",
+   "geometry": {
+    "cshapes": {
+     "gw": [
+      731
+     ],
+     "date": "1960-01-01"
+    },
+    "intersect_bbox": [
+     124.0,
+     33.0,
+     131.5,
+     38.0
+    ]
+   },
+   "approx": false,
+   "dates_note": "1948–1950 南北以北纬 38 度线为界（开城、瓮津半岛属大韩民国）；CShapes 对 1948–53 年使用 1953 年停战线。1950-06-25 战争爆发后战线反复移动，本数据不画战时战线。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/38th_parallel_north",
+    "https://en.wikipedia.org/wiki/Korean_Demilitarized_Zone"
+   ],
+   "note": "北纬 38 度线为精确界线。"
+  },
+  {
+   "id": "korea_dprk_north_of_38",
+   "group": "wars_misc",
+   "kind": "holdout",
+   "as_polity": true,
+   "name_zh": "朝鲜民主主义人民共和国（三八线以北、今停战线以南）",
+   "name_en": "DPRK (north of 38th parallel)",
+   "controller": {
+    "qid": "Q423",
+    "zh": "朝鲜民主主义人民共和国"
+   },
+   "from": "1948-09-09",
+   "until": "1950-06-25",
+   "geometry": {
+    "cshapes": {
+     "gw": [
+      732
+     ],
+     "date": "1960-01-01"
+    },
+    "intersect_bbox": [
+     124.0,
+     38.0,
+     131.5,
+     39.5
+    ]
+   },
+   "approx": false,
+   "dates_note": "1948–1950 年三八线以北（含襄阳、杆城一带，停战后归大韩民国）。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/38th_parallel_north",
+    "https://en.wikipedia.org/wiki/Korean_Demilitarized_Zone"
+   ],
+   "note": "北纬 38 度线为精确界线。"
+  },
+  {
+   "id": "cyprus_tr_1974",
+   "group": "wars_misc",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "土耳其占领区（塞浦路斯北部）",
+   "name_en": "Turkish-occupied northern Cyprus",
+   "controller": {
+    "qid": "Q43",
+    "zh": "土耳其"
+   },
+   "from": "1974-08-16",
+   "until": "1975-02-13",
+   "geometry": {
+    "admin0_parts": {
+     "a3": [
+      "CYN"
+     ],
+     "bbox": [
+      32.2,
+      34.9,
+      34.7,
+      35.8
+     ]
+    }
+   },
+   "approx": true,
+   "dates_note": "1974-08-16 第二阶段停火线（阿提拉线）。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Turkish_invasion_of_Cyprus",
+    "https://en.wikipedia.org/wiki/Turkish_Federated_State_of_Cyprus",
+    "https://en.wikipedia.org/wiki/Northern_Cyprus"
+   ],
+   "note": "范围取 Natural Earth 北塞浦路斯（今界）。"
+  },
+  {
+   "id": "cyprus_tfsc",
+   "group": "wars_misc",
+   "kind": "de_facto",
+   "as_polity": true,
+   "name_zh": "塞浦路斯土族邦",
+   "name_en": "Turkish Federated State of Cyprus",
+   "controller": {
+    "qid": "Q784851",
+    "zh": "塞浦路斯土族邦"
+   },
+   "from": "1975-02-13",
+   "until": "1983-11-15",
+   "geometry": {
+    "admin0_parts": {
+     "a3": [
+      "CYN"
+     ],
+     "bbox": [
+      32.2,
+      34.9,
+      34.7,
+      35.8
+     ]
+    }
+   },
+   "approx": true,
+   "dates_note": "1975-02-13 宣布成立。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Turkish_invasion_of_Cyprus",
+    "https://en.wikipedia.org/wiki/Turkish_Federated_State_of_Cyprus",
+    "https://en.wikipedia.org/wiki/Northern_Cyprus"
+   ],
+   "note": "仅土耳其承认。"
+  },
+  {
+   "id": "cyprus_trnc",
+   "group": "wars_misc",
+   "kind": "de_facto",
+   "as_polity": true,
+   "name_zh": "北塞浦路斯土耳其共和国",
+   "name_en": "Turkish Republic of Northern Cyprus",
+   "controller": {
+    "qid": "Q23681",
+    "zh": "北塞浦路斯"
+   },
+   "from": "1983-11-15",
+   "until": null,
+   "geometry": {
+    "admin0_parts": {
+     "a3": [
+      "CYN"
+     ],
+     "bbox": [
+      32.2,
+      34.9,
+      34.7,
+      35.8
+     ]
+    }
+   },
+   "approx": true,
+   "dates_note": "1983-11-15 宣布独立，仅土耳其承认；国际上视为塞浦路斯共和国领土。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Turkish_invasion_of_Cyprus",
+    "https://en.wikipedia.org/wiki/Turkish_Federated_State_of_Cyprus",
+    "https://en.wikipedia.org/wiki/Northern_Cyprus"
+   ],
+   "note": "事实控制，非国际承认。"
+  },
+  {
+   "id": "falklands_arg_1982",
+   "group": "wars_misc",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "阿根廷占领（马岛战争）",
+   "name_en": "Argentine occupation of the Falkland Islands",
+   "controller": {
+    "qid": "Q414",
+    "zh": "阿根廷"
+   },
+   "from": "1982-04-02",
+   "until": "1982-06-14",
+   "geometry": {
+    "admin0_parts": {
+     "a3": [
+      "FLK"
+     ],
+     "bbox": [
+      -62,
+      -53,
+      -57,
+      -50.8
+     ]
+    }
+   },
+   "approx": false,
+   "dates_note": "1982-04-02 阿根廷登陆；1982-06-14 斯坦利港守军投降。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Falklands_War"
+   ],
+   "note": "南乔治亚岛（4-03—4-25）未单独画出。"
+  },
+  {
+   "id": "csa_1861",
+   "group": "europe_19c",
+   "kind": "de_facto",
+   "as_polity": true,
+   "name_zh": "美利坚联盟国",
+   "name_en": "Confederate States of America",
+   "controller": {
+    "qid": "Q81931",
+    "zh": "美利坚联盟国"
+   },
+   "from": "1861-02-08",
+   "until": "1865-05-10",
+   "geometry": {
+    "admin1": [
+     "US-SC",
+     "US-MS",
+     "US-FL",
+     "US-AL",
+     "US-GA",
+     "US-LA",
+     "US-TX",
+     "US-VA",
+     "US-AR",
+     "US-NC",
+     "US-TN"
+    ]
+   },
+   "approx": true,
+   "dates_note": "1861-02-08 蒙哥马利临时宪法成立联盟国；1865-05-10 杰斐逊·戴维斯被俘，联盟国政府瓦解。按 11 个脱离州的今州界近似（弗吉尼亚不含西弗吉尼亚）。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Confederate_States_of_America",
+    "https://en.wikipedia.org/wiki/Origins_of_the_American_Civil_War"
+   ],
+   "note": "未画出联邦军逐年占领的地区（如 1862-04 起的新奥尔良、田纳西西部）；印第安领地、亚利桑那领地等联盟国主张区未画。"
+  },
+  {
+   "id": "nl_french_empire_1810",
+   "group": "europe_19c",
+   "kind": "annexed",
+   "as_polity": true,
+   "name_zh": "法兰西第一帝国（并入的荷兰）",
+   "name_en": "First French Empire (annexed Holland)",
+   "controller": {
+    "qid": "Q71084",
+    "zh": "法兰西第一帝国"
+   },
+   "from": "1810-07-09",
+   "until": "1813-11-30",
+   "geometry": {
+    "basemap": {
+     "snap": 1800,
+     "name": "Batavian Republic"
+    }
+   },
+   "approx": true,
+   "dates_note": "1810-07-09 拿破仑以朗布依埃敕令把荷兰王国并入法兰西帝国；1813-11-30 威廉（后来的威廉一世）在斯赫弗宁根登陆，荷兰恢复独立。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Kingdom_of_Holland",
+    "https://en.wikipedia.org/wiki/Sovereign_Principality_of_the_United_Netherlands"
+   ],
+   "note": "范围取 1800 年快照的巴达维亚共和国多边形（historical-basemaps），精度同底图。"
+  },
+  {
+   "id": "hanover_prussia_1866",
+   "group": "europe_19c",
+   "kind": "annexed",
+   "as_polity": true,
+   "name_zh": "普鲁士王国（汉诺威省）",
+   "name_en": "Kingdom of Prussia (Province of Hanover)",
+   "controller": {
+    "qid": "Q27306",
+    "zh": "普鲁士王国"
+   },
+   "from": "1866-09-20",
+   "until": "1871-01-18",
+   "geometry": {
+    "basemap": {
+     "snap": 1815,
+     "name": "Hanover"
+    }
+   },
+   "approx": true,
+   "dates_note": "普奥战争后，1866-09-20 普鲁士吞并汉诺威王国，设汉诺威省；1871-01-18 起显示德意志帝国。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Kingdom_of_Hanover",
+    "https://en.wikipedia.org/wiki/Province_of_Hanover"
+   ],
+   "note": "范围取 1815 年快照的汉诺威王国多边形，精度同底图。"
+  },
+  {
+   "id": "alsace_france_1815",
+   "group": "europe_19c",
+   "kind": "regime",
+   "as_polity": true,
+   "name_zh": "法国（阿尔萨斯）",
+   "name_en": "France (Alsace)",
+   "controller": {
+    "qid": "Q142",
+    "zh": "法国"
+   },
+   "from": "1815-11-20",
+   "until": "1871-01-18",
+   "geometry": {
+    "admin1": [
+     "FR-67",
+     "FR-68"
+    ]
+   },
+   "approx": true,
+   "dates_note": "1815-11-20 第二次巴黎条约后阿尔萨斯仍属法国，直到 1871 年普法战争后割让（1871-05-10 法兰克福条约）。1815 年快照把斯特拉斯堡一带画进巴登，这里按今上莱茵省、下莱茵省修正。1871-01-18 起由「德意志帝国」控制区接管。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Alsace",
+    "https://en.wikipedia.org/wiki/Treaty_of_Frankfurt_(1871)"
+   ],
+   "note": "底图边界修正；1871-01-18 至 05-10 法理上仍属法国，但已被德军占领。洛林（摩泽尔）部分未修正。"
+  },
+  {
+   "id": "mexico_north_1821",
+   "group": "europe_19c",
+   "kind": "regime",
+   "as_polity": true,
+   "name_zh": "墨西哥（上加利福尼亚、新墨西哥）",
+   "name_en": "Mexico (Alta California, Santa Fe de Nuevo México)",
+   "controller": {
+    "qid": "Q96",
+    "zh": "墨西哥"
+   },
+   "from": "1821-09-28",
+   "until": "1848-02-02",
+   "geometry": {
+    "admin1": [
+     "US-CA",
+     "US-NV",
+     "US-UT",
+     "US-AZ",
+     "US-NM"
+    ]
+   },
+   "approx": true,
+   "dates_note": "1821-09-28 墨西哥独立；1848-02-02《瓜达卢佩-伊达尔戈条约》割让给美国（1846 年起美军已占领加利福尼亚、新墨西哥）。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Alta_California",
+    "https://en.wikipedia.org/wiki/Treaty_of_Guadalupe_Hidalgo",
+    "https://en.wikipedia.org/wiki/Mexican_Cession"
+   ],
+   "note": "按今美国州界近似：不含科罗拉多、怀俄明的割让部分；亚利桑那南部（加兹登购地，1853 年才归美国）在 1848–1853 年未单独画出。"
+  },
+  {
+   "id": "it_occ_france_1942",
+   "group": "ww2_europe_misc",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "意大利占领区（法国东南部）",
+   "name_en": "Italian occupation of France",
+   "controller": {
+    "qid": "Q2570590",
+    "zh": "意大利占领区（法国东南部）"
+   },
+   "from": "1942-11-11",
+   "until": "1943-09-08",
+   "geometry": {
+    "admin1": [
+     "FR-06",
+     "FR-83",
+     "FR-04",
+     "FR-05",
+     "FR-73",
+     "FR-74",
+     "FR-26",
+     "FR-38",
+     "FR-2A",
+     "FR-2B"
+    ]
+   },
+   "approx": true,
+   "dates_note": "1942-11-11 德意军队进占维希法国（安东行动），意大利占领罗讷河以东的普罗旺斯与科西嘉；1943-09-08 意大利停战，德军接管。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Italian_occupation_of_France"
+   ],
+   "note": "按省（département）近似：滨海阿尔卑斯、瓦尔、上普罗旺斯阿尔卑斯、上阿尔卑斯、萨瓦、上萨瓦、德龙、伊泽尔与科西嘉两省；德龙、伊泽尔实际只占东部，土伦 1942-11-27 起由德军控制，未细分。1940-06 至 1942-11 的芒通一带小块占领区（不足一个省）没有画。"
+  },
+  {
+   "id": "johor_1855",
+   "group": "princely_states",
+   "kind": "regime",
+   "as_polity": true,
+   "name_zh": "柔佛（自治苏丹国，英国影响下）",
+   "name_en": "Johor (self-governing, under British influence)",
+   "controller": {
+    "qid": "Q183032",
+    "zh": "柔佛苏丹国"
+   },
+   "from": "1855-03-10",
+   "until": "1885-12-11",
+   "approx": true,
+   "dates_note": "1855-03-10 天猛公取得柔佛大陆统治权；与海峡殖民地关系密切但仍自治；1885-12-11 英柔条约后由英国负责外交。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Johor"
+   ],
+   "note": "范围取 Natural Earth 今一级行政区（大致范围）；底图把该地画在英属马来亚 / 荷属东印度整体之内，这里补上可点击的苏丹国。",
+   "geometry": {
+    "admin1": [
+     "MY-01"
+    ]
+   }
+  },
+  {
+   "id": "johor_1885",
+   "group": "princely_states",
+   "kind": "regime",
+   "as_polity": true,
+   "name_zh": "柔佛苏丹国（英国保护，外交由英国负责）",
+   "name_en": "Sultanate of Johor (British protection, 1885 treaty)",
+   "controller": {
+    "qid": "Q183032",
+    "zh": "柔佛苏丹国"
+   },
+   "from": "1885-12-11",
+   "until": "1914-05-12",
+   "approx": true,
+   "dates_note": "1885-12-11 英柔条约：英国负责外交并提供保护，内政自治；1914-05-12 接受英国总顾问，成为马来属邦。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Johor"
+   ],
+   "note": "范围取 Natural Earth 今一级行政区（大致范围）；底图把该地画在英属马来亚 / 荷属东印度整体之内，这里补上可点击的苏丹国。",
+   "geometry": {
+    "admin1": [
+     "MY-01"
+    ]
+   }
+  },
+  {
+   "id": "johor_1914",
+   "group": "princely_states",
+   "kind": "regime",
+   "as_polity": true,
+   "name_zh": "柔佛苏丹国（英国保护国，马来属邦）",
+   "name_en": "Sultanate of Johor (Unfederated Malay State)",
+   "controller": {
+    "qid": "Q183032",
+    "zh": "柔佛苏丹国"
+   },
+   "from": "1914-05-12",
+   "until": "1942-01-31",
+   "approx": true,
+   "dates_note": "1914-05-12 起为英国保护国（马来属邦）；1942-01-31 日军占领柔佛全境。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Johor",
+    "https://en.wikipedia.org/wiki/Unfederated_Malay_States",
+    "https://en.wikipedia.org/wiki/Japanese_occupation_of_Malaya"
+   ],
+   "note": "范围取 Natural Earth 今一级行政区（大致范围）；底图把该地画在英属马来亚 / 荷属东印度整体之内，这里补上可点击的苏丹国。",
+   "geometry": {
+    "admin1": [
+     "MY-01"
+    ]
+   }
+  },
+  {
+   "id": "perak_1874",
+   "group": "princely_states",
+   "kind": "regime",
+   "as_polity": true,
+   "name_zh": "霹雳苏丹国（英国驻扎官制度）",
+   "name_en": "Sultanate of Perak (British Residential system)",
+   "controller": {
+    "qid": "Q188953",
+    "zh": "霹雳苏丹国"
+   },
+   "from": "1874-01-20",
+   "until": "1895-07-01",
+   "approx": true,
+   "dates_note": "1874-01-20 邦咯条约：接受英国驻扎官，苏丹仍为名义君主；1895-07-01 加入马来联邦。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Pangkor_Treaty_of_1874"
+   ],
+   "note": "范围取 Natural Earth 今一级行政区（大致范围）；底图把该地画在英属马来亚 / 荷属东印度整体之内，这里补上可点击的苏丹国。",
+   "geometry": {
+    "admin1": [
+     "MY-08"
+    ]
+   }
+  },
+  {
+   "id": "perak_1895",
+   "group": "princely_states",
+   "kind": "regime",
+   "as_polity": true,
+   "name_zh": "霹雳苏丹国（英国保护国，马来联邦）",
+   "name_en": "Sultanate of Perak (Federated Malay States)",
+   "controller": {
+    "qid": "Q188953",
+    "zh": "霹雳苏丹国"
+   },
+   "from": "1895-07-01",
+   "until": "1941-12",
+   "approx": true,
+   "dates_note": "1895-07-01 起为马来联邦成员（英国保护国）；1941 年 12 月日军占领。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Federated_Malay_States",
+    "https://en.wikipedia.org/wiki/Japanese_occupation_of_Malaya"
+   ],
+   "note": "范围取 Natural Earth 今一级行政区（大致范围）；底图把该地画在英属马来亚 / 荷属东印度整体之内，这里补上可点击的苏丹国。",
+   "geometry": {
+    "admin1": [
+     "MY-08"
+    ]
+   }
+  },
+  {
+   "id": "selangor_1874",
+   "group": "princely_states",
+   "kind": "regime",
+   "as_polity": true,
+   "name_zh": "雪兰莪苏丹国（英国驻扎官制度）",
+   "name_en": "Sultanate of Selangor (British Residential system)",
+   "controller": {
+    "qid": "Q189710",
+    "zh": "雪兰莪苏丹国"
+   },
+   "from": "1874",
+   "until": "1895-07-01",
+   "approx": true,
+   "dates_note": "1874 年苏丹阿卜杜勒·萨马德接受英国驻扎官（首任驻扎官 1875 年初到任）；1895-07-01 加入马来联邦。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Selangor"
+   ],
+   "note": "范围取 Natural Earth 今一级行政区（大致范围）；底图把该地画在英属马来亚 / 荷属东印度整体之内，这里补上可点击的苏丹国。",
+   "geometry": {
+    "admin1": [
+     "MY-10",
+     "MY-14",
+     "MY-16"
+    ]
+   }
+  },
+  {
+   "id": "selangor_1895",
+   "group": "princely_states",
+   "kind": "regime",
+   "as_polity": true,
+   "name_zh": "雪兰莪苏丹国（英国保护国，马来联邦）",
+   "name_en": "Sultanate of Selangor (Federated Malay States)",
+   "controller": {
+    "qid": "Q189710",
+    "zh": "雪兰莪苏丹国"
+   },
+   "from": "1895-07-01",
+   "until": "1942-01-11",
+   "approx": true,
+   "dates_note": "1895-07-01 起为马来联邦成员；1942-01-11 日军占领吉隆坡。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Federated_Malay_States",
+    "https://en.wikipedia.org/wiki/Selangor",
+    "https://en.wikipedia.org/wiki/Japanese_occupation_of_Malaya"
+   ],
+   "note": "范围取 Natural Earth 今一级行政区（大致范围）；底图把该地画在英属马来亚 / 荷属东印度整体之内，这里补上可点击的苏丹国。",
+   "geometry": {
+    "admin1": [
+     "MY-10",
+     "MY-14",
+     "MY-16"
+    ]
+   }
+  },
+  {
+   "id": "selangor_1942",
+   "group": "princely_states",
+   "kind": "regime",
+   "as_polity": true,
+   "name_zh": "雪兰莪（日本占领下）",
+   "name_en": "Selangor (Japanese occupation)",
+   "controller": {
+    "qid": "Q189710",
+    "zh": "雪兰莪苏丹国"
+   },
+   "from": "1942-01-11",
+   "until": "1945-09-12",
+   "approx": true,
+   "dates_note": "1942-01-11 日军占领吉隆坡；日方另立苏丹（见面板的空位期/对立君主案例）；1945-09-12 日军在新加坡投降。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Selangor",
+    "https://en.wikipedia.org/wiki/Japanese_occupation_of_Malaya"
+   ],
+   "note": "范围取 Natural Earth 今一级行政区（大致范围）；底图把该地画在英属马来亚 / 荷属东印度整体之内，这里补上可点击的苏丹国。",
+   "geometry": {
+    "admin1": [
+     "MY-10",
+     "MY-14",
+     "MY-16"
+    ]
+   }
+  },
+  {
+   "id": "yogya_1830",
+   "group": "princely_states",
+   "kind": "regime",
+   "as_polity": true,
+   "name_zh": "日惹苏丹国（荷属东印度自治土邦）",
+   "name_en": "Sultanate of Yogyakarta (self-governing principality, Dutch East Indies)",
+   "controller": {
+    "qid": "Q2114397",
+    "zh": "日惹苏丹国"
+   },
+   "from": "1830-03-28",
+   "until": "1942-03-08",
+   "approx": true,
+   "dates_note": "1755 年建国；1830 年爪哇战争结束后大片领土被荷兰吞并，作为荷属东印度的自治土邦保留；1942-03-08 荷属东印度投降。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Yogyakarta_Sultanate"
+   ],
+   "note": "范围取 Natural Earth 今一级行政区（大致范围）；底图把该地画在英属马来亚 / 荷属东印度整体之内，这里补上可点击的苏丹国。",
+   "geometry": {
+    "admin1": [
+     "ID-YO"
+    ]
+   }
+  },
+  {
+   "id": "yogya_1942",
+   "group": "princely_states",
+   "kind": "regime",
+   "as_polity": true,
+   "name_zh": "日惹苏丹国（日本占领下）",
+   "name_en": "Sultanate of Yogyakarta (Japanese occupation)",
+   "controller": {
+    "qid": "Q2114397",
+    "zh": "日惹苏丹国"
+   },
+   "from": "1942-03-08",
+   "until": "1945-08-17",
+   "approx": true,
+   "dates_note": "1942-03-08 荷属东印度投降，日本占领；1945-08-17 印度尼西亚宣布独立，苏丹随即宣布日惹归属共和国。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Yogyakarta_Sultanate",
+    "https://en.wikipedia.org/wiki/Japanese_occupation_of_the_Dutch_East_Indies"
+   ],
+   "note": "范围取 Natural Earth 今一级行政区（大致范围）；底图把该地画在英属马来亚 / 荷属东印度整体之内，这里补上可点击的苏丹国。",
+   "geometry": {
+    "admin1": [
+     "ID-YO"
+    ]
+   }
   }
  ]
 }

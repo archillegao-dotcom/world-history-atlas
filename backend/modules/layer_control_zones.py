@@ -11,7 +11,7 @@ from .. import control_zones as CZ
 from ..registry import LayerModule
 
 KIND_ZH = {"holdout": "残余控制区", "de_facto": "事实独立", "occupied": "军事占领/接管", "armed_presence": "武装存在（非主权控制）",
-           "war_zone": "交战区"}
+           "war_zone": "交战区", "leased": "租借地", "annexed": "吞并", "regime": "政权（统一/更替）"}
 
 
 class ControlZonesLayer(LayerModule):

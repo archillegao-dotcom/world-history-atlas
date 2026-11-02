@@ -1,3 +1,24 @@
+# v0.6.1 说明（在 v0.6.0 基础上，2026-11-02；未推送、未发布）
+
+- 版本号：`backend/config.py` `APP_VERSION = "0.6.1"`；`packaging/world_history_atlas.spec` 与 `.github/workflows/build.yml` 默认版本 0.6.0 → 0.6.1。
+- spec 的 hiddenimports 增加 `backend.interregna`（空位期/摄政/共治）、`backend.zh`（中文名补译）、`backend.geolock`（几何合成线程锁）。
+- 新的 curated 数据：`interregna.json`、`extra_offices.json`（幕府将军/关白/摄政/执权/护国公/北洋总统与国务总理）、`office_links.json`、`name_candidates.json`、`zh_labels.json`、`zh_basemap_names.json`、`zh_manual.json`。
+- 修复服务器在并发请求同一边界时崩溃（GEOS double free）：几何合成加锁。
+
+---
+
+# v0.6.0 说明（在 v0.5.0 合并包基础上，2026-11-02）
+
+v0.5.0 已经把本地源码与仓库 v0.4.1 的打包/退出改动合好；v0.6.0 继续以本地源码为主，没有再从仓库拉取新代码。
+
+- 版本号：`backend/config.py` `APP_VERSION = "0.6.0"`；`packaging/world_history_atlas.spec` 默认 `WHA_VERSION` 0.5.0 → 0.6.0；`.github/workflows/build.yml` 手动运行时的默认版本 `'0.5.0'` → `'0.6.0'`（打标签时仍用标签名）。
+- spec 的 hiddenimports 增加 v0.6 新模块：`backend.cshapes`、`backend.ww2`、`backend.flags`、`backend.regimes`、`backend.china_eras`。
+- 新的运行时数据（发布包里都是 `.xz`，由 `datafile.read_json` 读取）：`cshapes.json`（CShapes 2.0）、`ww2_europe.json`（Stanford）、`transitions.json`、`control_zones.json`、`flags.json`、`china_eras.json`；`curated/` 下的 JSON 原样复制。
+- 首次打开某个 1886 年以后的日期时，边界要合成几秒到十几秒，结果写到用户目录的 `cache/cs_compose/`，之后直接读取。
+- 测试结果见 `AUDIT_REPORT.md`，已知缺口见 `KNOWN_ISSUES.md`。
+
+---
+
 # v0.5.0 合并说明（本地 /workspace/world_history → GitHub archillegao-dotcom/world-history-atlas，基线 main = v0.4.1）
 
 本上传包已经把两边合好：**以本地 v0.5 源码为主，重新套上了仓库里 v0.4.1 独有的打包/退出改动**。

@@ -1,0 +1,172 @@
+[
+{
+"gw": 530,
+"name": "Ethiopia",
+"status": "independent",
+"years": [
+1886,
+1995,
+110
+]
+},
+{
+"gw": 678,
+"name": "Yemen (Arab Republic of Yemen)",
+"status": "independent",
+"years": [
+1919,
+1962,
+44
+]
+},
+{
+"gw": 690,
+"name": "Kuwait",
+"status": "independent",
+"years": [
+1961,
+1990,
+30
+]
+},
+{
+"gw": 680,
+"name": "Yemen, People's Republic of",
+"status": "independent",
+"years": [
+1968,
+1989,
+22
+]
+},
+{
+"gw": 291,
+"name": "Danzig",
+"status": "mandate",
+"years": [
+1919,
+1937,
+19
+]
+},
+{
+"gw": 580,
+"name": "Madagascar (Malagasy)",
+"status": "independent",
+"years": [
+1886,
+1896,
+11
+]
+},
+{
+"gw": 572,
+"name": "Swaziland (Eswatini)",
+"status": "colony",
+"years": [
+1895,
+1901,
+7
+]
+},
+{
+"gw": null,
+"name": "Andorra",
+"status": null,
+"years": [
+1938,
+1944,
+7
+]
+},
+{
+"gw": null,
+"name": "Monaco",
+"status": null,
+"years": [
+1938,
+1944,
+7
+]
+},
+{
+"gw": null,
+"name": "San Marino",
+"status": null,
+"years": [
+1938,
+1944,
+7
+]
+},
+{
+"gw": null,
+"name": "Liechtenstein",
+"status": null,
+"years": [
+1938,
+1944,
+7
+]
+},
+{
+"gw": 817,
+"name": "Vietnam, Republic of",
+"status": "independent",
+"years": [
+1954,
+1955,
+2
+]
+},
+{
+"gw": 205,
+"name": "Ireland",
+"status": "independent",
+"years": [
+1922,
+1922,
+1
+]
+},
+{
+"gw": 640,
+"name": "Turkey (Ottoman Empire)",
+"status": "independent",
+"years": [
+1923,
+1923,
+1
+]
+},
+{
+"gw": null,
+"name": "Germany (allied_held)",
+"status": null,
+"years": [
+1944,
+1944,
+1
+]
+},
+{
+"gw": 760,
+"name": "Bhutan",
+"status": "independent",
+"years": [
+1949,
+1949,
+1
+]
+},
+{
+"gw": 781,
+"name": "Maldives",
+"status": "independent",
+"years": [
+1965,
+1965,
+1
+]
+}
+]

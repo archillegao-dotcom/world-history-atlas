@@ -130,7 +130,13 @@ def locate(date: str, lon: float, lat: float):
 def polity_names():
     """英文政权名 -> {qid, zh}（由 tools/build_polity_names.py 生成；没有可靠中文名时 zh 为 null）。"""
     f = config.DATA_DIR / "polity_names.json"
-    return json.loads(f.read_text(encoding="utf-8")) if f.exists() else {}
+    out = json.loads(f.read_text(encoding="utf-8")) if f.exists() else {}
+    # v0.6.1：补上底图/CShapes 原名的中文名（data/curated/zh_basemap_names.json）
+    from .zh import basemap_names
+    for n, z in basemap_names(config.DATA_DIR).items():
+        if not (out.get(n) or {}).get("zh"):
+            out[n] = {**(out.get(n) or {"qid": None}), "zh": z, "zh_src": "补译"}
+    return out
 
 
 @app.get("/api/live/status")

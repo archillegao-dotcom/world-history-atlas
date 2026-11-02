@@ -1,10 +1,10 @@
 """把运行时数据拷到发布暂存目录，并把 .json.gz / .geojson.gz 重新压缩为 .xz（与仓库 v0.4.1 的约定一致）。
 用法：python tools/dev/stage_data_xz.py <src_data> <dest_data>"""
-import gzip, lzma, shutil, sys
+import gzip, lzma, os, shutil, sys
 from concurrent.futures import ProcessPoolExecutor
 from pathlib import Path
 
-SKIP = {"basemaps_raw", "cache", "econ_raw", "xcheck_raw", "live", "wiki_cache", "__pycache__"}
+SKIP = {"basemaps_raw", "cache", "econ_raw", "xcheck_raw", "live", "wiki_cache", "__pycache__", "cshapes_raw", "ww2_raw"}
 
 def conv(a):
     src, dst = a
@@ -27,7 +27,7 @@ def main(src, dst):
             jobs.append((str(p), str(out.with_name(p.name[:-3] + ".xz"))))
         else:
             shutil.copy2(p, out)
-    with ProcessPoolExecutor() as ex:
+    with ProcessPoolExecutor(max_workers=int(os.environ.get("XZ_WORKERS", "0")) or None) as ex:
         list(ex.map(conv, jobs, chunksize=16))
     print("converted", len(jobs))
 

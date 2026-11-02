@@ -1,0 +1,1629 @@
+{
+"_doc": "没有中文也没有英文标签的人物、职位、组织（多为只在 Wikidata 有条目的地方官员）：取 Wikidata 任一语言的标签作为原名，\n显示为「原名（暂无通用译名）」，不再显示裸 QID。→ data/curated/orig_labels.json",
+"labels": {
+"Q122508759": {
+"label": "Aleksander Wahanowski",
+"lang": "pl"
+},
+"Q1226140": {
+"label": "Országos Közegészségügyi Intézet",
+"lang": "hu"
+},
+"Q122745967": {
+"label": "Mikołaj Jundziłłowicz",
+"lang": "pl"
+},
+"Q122748090": {
+"label": "Melchior Kamieński",
+"lang": "pl"
+},
+"Q12275264": {
+"label": "Виктор Михайлов",
+"lang": "bg"
+},
+"Q122916594": {
+"label": "Jakub Piasecki",
+"lang": "pl"
+},
+"Q12292233": {
+"label": "Consiliul de Regență al Principatului Bulgariei",
+"lang": "ro"
+},
+"Q122965857": {
+"label": "Jan Krasicki",
+"lang": "pl"
+},
+"Q123162": {
+"label": "Uwe Döring",
+"lang": "mul"
+},
+"Q12316988": {
+"label": "Hofmarskallatet",
+"lang": "da"
+},
+"Q123174135": {
+"label": "Agnieszka Nowakowska-Arendt",
+"lang": "mul"
+},
+"Q123180864": {
+"label": "Zuzanna Anna Bernaciak",
+"lang": "mul"
+},
+"Q123180873": {
+"label": "Katarzyna Ludmiła Rudólff-Kanabaj",
+"lang": "mul"
+},
+"Q123213208": {
+"label": "Paweł Grzegorz Raźny",
+"lang": "mul"
+},
+"Q123213376": {
+"label": "Jakub Dreliszak",
+"lang": "mul"
+},
+"Q123214518": {
+"label": "Agata Stejbach",
+"lang": "mul"
+},
+"Q123214945": {
+"label": "Anna Maria Forney",
+"lang": "mul"
+},
+"Q123216055": {
+"label": "Klaudia Elżbieta Rajmann",
+"lang": "mul"
+},
+"Q123244334": {
+"label": "Jan Kazimierz Piasecki",
+"lang": "pl"
+},
+"Q123244341": {
+"label": "Adam Mikosza",
+"lang": "pl"
+},
+"Q123244365": {
+"label": "Gabriel Dominik Szankowski Sawaniewski",
+"lang": "pl"
+},
+"Q123244460": {
+"label": "Gabriel Kimbar",
+"lang": "pl"
+},
+"Q123245545": {
+"label": "Jan Hlebowicz",
+"lang": "pl"
+},
+"Q123246059": {
+"label": "Jan Narbutt",
+"lang": "pl"
+},
+"Q123262905": {
+"label": "Tomasz Nowek",
+"lang": "pl"
+},
+"Q123281471": {
+"label": "Stanisław Zabrzeziński",
+"lang": "pl"
+},
+"Q123339536": {
+"label": "Olizar Kierdej",
+"lang": "pl"
+},
+"Q123376592": {
+"label": "Bazyli Drewiński",
+"lang": "pl"
+},
+"Q123384523": {
+"label": "Wencław Mikołajewicz",
+"lang": "pl"
+},
+"Q123384658": {
+"label": "Stanisław Komorowski",
+"lang": "pl"
+},
+"Q123401568": {
+"label": "Jurij Petkowicz Jedko",
+"lang": "pl"
+},
+"Q123418394": {
+"label": "Bogusław Wolbek",
+"lang": "pl"
+},
+"Q123418413": {
+"label": "Władysław Müllenheim",
+"lang": "pl"
+},
+"Q123425493": {
+"label": "Aleksy Dunin",
+"lang": "pl"
+},
+"Q123425542": {
+"label": "Jan Ogiński",
+"lang": "pl"
+},
+"Q123425629": {
+"label": "Paweł Pieczyhojski",
+"lang": "pl"
+},
+"Q123428219": {
+"label": "Erazm Kraczewski",
+"lang": "pl"
+},
+"Q123428404": {
+"label": "Jurij Borowski",
+"lang": "mul"
+},
+"Q123448899": {
+"label": "Jarosz Korycki",
+"lang": "pl"
+},
+"Q123448917": {
+"label": "Jerzy Wołczkowicz",
+"lang": "pl"
+},
+"Q123455831": {
+"label": "Antoni Borzęcki",
+"lang": "pl"
+},
+"Q123455885": {
+"label": "Юрый Драслаўскі",
+"lang": "be"
+},
+"Q123455889": {
+"label": "Ян Камянецкі",
+"lang": "be"
+},
+"Q123455894": {
+"label": "Мікалай Пузялеўскі",
+"lang": "be"
+},
+"Q123459999": {
+"label": "Fedko Mieleszkowicz",
+"lang": "pl"
+},
+"Q123461194": {
+"label": "Antoni Józef Krasicki",
+"lang": "pl"
+},
+"Q123461678": {
+"label": "Mikołaj Karaczon",
+"lang": "pl"
+},
+"Q123461696": {
+"label": "Grzegorz Rahoza",
+"lang": "pl"
+},
+"Q123461697": {
+"label": "Wasyl Rahoza",
+"lang": "pl"
+},
+"Q123461777": {
+"label": "Jan Korsak",
+"lang": "pl"
+},
+"Q13028998": {
+"label": "Waśko Doroszkowicz",
+"lang": "pl"
+},
+"Q13030444": {
+"label": "Gerwazy Ludwik Oskierko",
+"lang": "es"
+},
+"Q13031211": {
+"label": "Ławryn Woyna",
+"lang": "es"
+},
+"Q130323610": {
+"label": "Richard Riley",
+"lang": "mul"
+},
+"Q130358865": {
+"label": "Michał Wahanowski",
+"lang": "pl"
+},
+"Q130360977": {
+"label": "Bohdan Puzyna",
+"lang": "pl"
+},
+"Q130456794": {
+"label": "Kirik Karęga",
+"lang": "pl"
+},
+"Q130457563": {
+"label": "Marcjan Bogusław Rymkiewicz Polski",
+"lang": "pl"
+},
+"Q130458056": {
+"label": "Mikołaj Kieżgajło",
+"lang": "pl"
+},
+"Q13050680": {
+"label": "Adde Bagratuni",
+"lang": "es"
+},
+"Q130516301": {
+"label": "Niemira Hrymalicz",
+"lang": "pl"
+},
+"Q130532528": {
+"label": "Olechno Sakowicz",
+"lang": "pl"
+},
+"Q130640059": {
+"label": "Bünyad Sərdar oğlu Sərdarov",
+"lang": "mul"
+},
+"Q131273438": {
+"label": "Кацярына Адамаўна Серафіновіч",
+"lang": "be"
+},
+"Q131310508": {
+"label": "Jan Montygerdowicz",
+"lang": "pl"
+},
+"Q13133952": {
+"label": "Secretario del Tesoro de Lituania",
+"lang": "es"
+},
+"Q13134163": {
+"label": "Сяргей Гурулёў",
+"lang": "be"
+},
+"Q131351750": {
+"label": "Olivier Foll",
+"lang": "mul"
+},
+"Q131376309": {
+"label": "Nicolai Christian Carøe",
+"lang": "mul"
+},
+"Q13141194": {
+"label": "İsmail Muhammed Paşa",
+"lang": "tr"
+},
+"Q13141627": {
+"label": "Хасан Рюстем-паша",
+"lang": "ru"
+},
+"Q13141903": {
+"label": "عبد الحميد صادق باشا",
+"lang": "ar"
+},
+"Q13141949": {
+"label": "عمر لطفي باشا",
+"lang": "ar"
+},
+"Q13142021": {
+"label": "قاسم رسمي باشا",
+"lang": "ar"
+},
+"Q131440612": {
+"label": "Andrzej Kazimierz Skorobohaty",
+"lang": "pl"
+},
+"Q131540142": {
+"label": "Michał Kazimierz Kociełł",
+"lang": "pl"
+},
+"Q131553185": {
+"label": "Rafał Wyszotrawka",
+"lang": "pl"
+},
+"Q131612191": {
+"label": "Ilhom Sattorov",
+"lang": "mul"
+},
+"Q131612281": {
+"label": "Nargiza Nematova",
+"lang": "mul"
+},
+"Q131612387": {
+"label": "Dilfuza Uralova",
+"lang": "mul"
+},
+"Q131619732": {
+"label": "Wilhelm Suno Engström",
+"lang": "mul"
+},
+"Q131626500": {
+"label": "Jan Kazimierz Połubiński",
+"lang": "pl"
+},
+"Q131736609": {
+"label": "Quintus Venidius Rufus",
+"lang": "mul"
+},
+"Q131747187": {
+"label": "Gustaf Boheman",
+"lang": "mul"
+},
+"Q131751679": {
+"label": "Piotr Narbut",
+"lang": "pl"
+},
+"Q131757080": {
+"label": "Poul Christian Stemann Rosenørn",
+"lang": "mul"
+},
+"Q131839710": {
+"label": "Gusti Syamsir Alam",
+"lang": "mul"
+},
+"Q131885227": {
+"label": "Bernadette McIntyre",
+"lang": "mul"
+},
+"Q132258871": {
+"label": "Trần Văn Huyến",
+"lang": "vi"
+},
+"Q132453016": {
+"label": "Marcus Flavius Carminius Athenagoras",
+"lang": "mul"
+},
+"Q132453927": {
+"label": "Gaius Porcius Priscus Longinus",
+"lang": "mul"
+},
+"Q132454126": {
+"label": "Titus Flavius Philinus",
+"lang": "mul"
+},
+"Q132491350": {
+"label": "ignotus",
+"lang": "mul"
+},
+"Q132674012": {
+"label": "Jacob Claudius Pingel",
+"lang": "mul"
+},
+"Q132721396": {
+"label": "ignotus",
+"lang": "mul"
+},
+"Q132734645": {
+"label": "Gnaeus Pompeius Ant. Amoenus",
+"lang": "mul"
+},
+"Q132734669": {
+"label": "ignotus",
+"lang": "mul"
+},
+"Q132734703": {
+"label": "Lucius Gavius Aelianus",
+"lang": "mul"
+},
+"Q132776205": {
+"label": "Publius Cassius Dexter Augus[tanus Alpin]us Bellicius Sollers Metilius [...]us Rutilianus",
+"lang": "mul"
+},
+"Q132776515": {
+"label": "ignotus",
+"lang": "mul"
+},
+"Q134396630": {
+"label": "ناصر الداود",
+"lang": "ar"
+},
+"Q134435967": {
+"label": "محمد علي الأعرج",
+"lang": "ar"
+},
+"Q134460248": {
+"label": "Wiktory Józef Chełchowski",
+"lang": "pl"
+},
+"Q134496842": {
+"label": "Sultan Ismail Nasiruddin",
+"lang": "id"
+},
+"Q134611594": {
+"label": "G‘anijon Soliyev",
+"lang": "uz"
+},
+"Q134611631": {
+"label": "Yusufjon Husayinov",
+"lang": "uz"
+},
+"Q134611704": {
+"label": "Vosiljon Nazarov",
+"lang": "uz"
+},
+"Q134613511": {
+"label": "Andreas Stiernhöök",
+"lang": "mul"
+},
+"Q134621416": {
+"label": "Alibek Tursunov",
+"lang": "uz"
+},
+"Q134622834": {
+"label": "Marek Wnuczko",
+"lang": "pl"
+},
+"Q134671186": {
+"label": "G‘ayratali Mamadaliyev",
+"lang": "uz"
+},
+"Q134862140": {
+"label": "Lasse Boje Nielsen",
+"lang": "mul"
+},
+"Q134995410": {
+"label": "Kazimierz Szumlański",
+"lang": "pl"
+},
+"Q135139611": {
+"label": "Francisco Obregón",
+"lang": "mul"
+},
+"Q135152941": {
+"label": "Jérémy Michel",
+"lang": "mul"
+},
+"Q135193875": {
+"label": "Francisco de Camargo",
+"lang": "mul"
+},
+"Q135205912": {
+"label": "Hikmatillo Latipov",
+"lang": "uz"
+},
+"Q135219086": {
+"label": "Mash’albek Tojiboyev",
+"lang": "uz"
+},
+"Q135226065": {
+"label": "Baxtiyor Mamatkarimov",
+"lang": "uz"
+},
+"Q135268473": {
+"label": "Jasurbek Abdurayimov",
+"lang": "uz"
+},
+"Q1353607": {
+"label": "Juan Manuel de Mendoza y Luna",
+"lang": "mul"
+},
+"Q135438376": {
+"label": "Emmanuel Grout",
+"lang": "mul"
+},
+"Q135447645": {
+"label": "Erland Kafle",
+"lang": "sv"
+},
+"Q135449226": {
+"label": "Նժդեհ Իսկանդարյան",
+"lang": "hy"
+},
+"Q135450593": {
+"label": "Peter von Schaeij",
+"lang": "sv"
+},
+"Q135455628": {
+"label": "يحيى القرالة",
+"lang": "ar"
+},
+"Q135457612": {
+"label": "Albert Huyn de Vernéville",
+"lang": "mul"
+},
+"Q135465985": {
+"label": "Sadbarxon Mamitova",
+"lang": "uz"
+},
+"Q135471103": {
+"label": "Johan Lilliemarck",
+"lang": "sv"
+},
+"Q135471227": {
+"label": "Jöns Nordenhielm",
+"lang": "sv"
+},
+"Q135602844": {
+"label": "Nicolai Emil Hansen",
+"lang": "da"
+},
+"Q135615306": {
+"label": "Ole Christian Lund",
+"lang": "da"
+},
+"Q135658297": {
+"label": "G‘ofurjon Abdurahmonov",
+"lang": "uz"
+},
+"Q135684941": {
+"label": "Abdul Halim Ali",
+"lang": "ms"
+},
+"Q135726704": {
+"label": "Qayum Sobirov",
+"lang": "uz"
+},
+"Q135914472": {
+"label": "Jean Martial Adou",
+"lang": "fr"
+},
+"Q135915096": {
+"label": "Валерий Батаевич Темирбаев",
+"lang": "ru"
+},
+"Q135962980": {
+"label": "Johan Christian Wibe Stockfleth",
+"lang": "da"
+},
+"Q135983650": {
+"label": "Mikita Andrejewicz",
+"lang": "pl"
+},
+"Q136008511": {
+"label": "Jantje Wowiling Sajow",
+"lang": "id"
+},
+"Q136090099": {
+"label": "Аляксей Мікалаевіч Нявераў",
+"lang": "be"
+},
+"Q136192024": {
+"label": "Henry Christian Gad",
+"lang": "da"
+},
+"Q136192050": {
+"label": "Christian Carl Boech",
+"lang": "da"
+},
+"Q136192064": {
+"label": "Rasmus Bondesen Brorson",
+"lang": "da"
+},
+"Q136202800": {
+"label": "Karel František Alexandr Orlík z Laziska",
+"lang": "cs"
+},
+"Q136225746": {
+"label": "Allahare Dimini",
+"lang": "fr"
+},
+"Q136235879": {
+"label": "Paulus Henuk",
+"lang": "id"
+},
+"Q136240169": {
+"label": "Claes Gustaf Nikanor Livijn",
+"lang": "sv"
+},
+"Q136324735": {
+"label": "Jan Piet Mongula",
+"lang": "id"
+},
+"Q136444139": {
+"label": "Marcjan Morykoni",
+"lang": "pl"
+},
+"Q137885675": {
+"label": "Agnès Mazin-Bottier",
+"lang": "mul"
+},
+"Q137896159": {
+"label": "Ahmad Dahlan",
+"lang": "id"
+},
+"Q138035209": {
+"label": "José María Puppo",
+"lang": "mul"
+},
+"Q138107703": {
+"label": "Carol Vercarre",
+"lang": "mul"
+},
+"Q138297509": {
+"label": "Samuel Ehrenstedt",
+"lang": "sv"
+},
+"Q138335578": {
+"label": "Piotr Celestyn Borkowski",
+"lang": "pl"
+},
+"Q138341979": {
+"label": "Philippe Frizon",
+"lang": "mul"
+},
+"Q138341981": {
+"label": "Olivia Glajzer",
+"lang": "mul"
+},
+"Q138352114": {
+"label": "Erik Andreas Ribu",
+"lang": "mul"
+},
+"Q138372868": {
+"label": "Hans Andreas Høegh-Omdal",
+"lang": "mul"
+},
+"Q138507115": {
+"label": "Daniel Franciszek Zabielski",
+"lang": "pl"
+},
+"Q138610010": {
+"label": "Романов, Игорь Матвеевич",
+"lang": "ru"
+},
+"Q138645268": {
+"label": "Józef Jan Ladziński",
+"lang": "pl"
+},
+"Q138646268": {
+"label": "Barbara Żechowska",
+"lang": "pl"
+},
+"Q138829482": {
+"label": "José Vallés Fortuño",
+"lang": "mul"
+},
+"Q138829835": {
+"label": "Lorenzo Gallardo González",
+"lang": "mul"
+},
+"Q138830440": {
+"label": "Santiago del Valle y Aldabalde",
+"lang": "es"
+},
+"Q139198890": {
+"label": "Alfonso II Del Carretto",
+"lang": "mul"
+},
+"Q139231387": {
+"label": "Fabian von Reichenbach",
+"lang": "mul"
+},
+"Q139253787": {
+"label": "Svante Horn",
+"lang": "sv"
+},
+"Q139529982": {
+"label": "Augusto Bianco",
+"lang": "it"
+},
+"Q139566905": {
+"label": "Piotr Janowicz",
+"lang": "pl"
+},
+"Q139578380": {
+"label": "Giuseppe Valleris",
+"lang": "it"
+},
+"Q139595250": {
+"label": "Judite Blanc",
+"lang": "fr"
+},
+"Q139599582": {
+"label": "Marcin Maciejowic",
+"lang": "pl"
+},
+"Q139622797": {
+"label": "Dawid Mickiewicz",
+"lang": "pl"
+},
+"Q139680866": {
+"label": "富小路敬直",
+"lang": "ja"
+},
+"Q139832371": {
+"label": "Jacques Delebois",
+"lang": "mul"
+},
+"Q139941100": {
+"label": "Dzierzek Łopaciński",
+"lang": "pl"
+},
+"Q139942951": {
+"label": "Fedor Manowski",
+"lang": "pl"
+},
+"Q139968485": {
+"label": "Nicolas Luxen",
+"lang": "mul"
+},
+"Q139980036": {
+"label": "Augustinus Josephus Aloysius van Rijckevorsel",
+"lang": "mul"
+},
+"Q139996220": {
+"label": "Johan Engelbert Hallencreutz",
+"lang": "sv"
+},
+"Q139996264": {
+"label": "Mårten Schnack",
+"lang": "sv"
+},
+"Q140027851": {
+"label": "Abraham Vilhelm Burman",
+"lang": "sv"
+},
+"Q140030343": {
+"label": "Armelle Hammoumi Müller",
+"lang": "mul"
+},
+"Q140030505": {
+"label": "Vincent Roué",
+"lang": "mul"
+},
+"Q140076546": {
+"label": "Gustaf Lemoine",
+"lang": "sv"
+},
+"Q140088318": {
+"label": "Johann Ernst von Tschammer",
+"lang": "mul"
+},
+"Q140165993": {
+"label": "Eustachy Jan Burba",
+"lang": "pl"
+},
+"Q140235145": {
+"label": "Petrus Thebesius",
+"lang": "mul"
+},
+"Q140316268": {
+"label": "Jacques Poinas",
+"lang": "mul"
+},
+"Q140372968": {
+"label": "Aleksander Michał Moszyński",
+"lang": "pl"
+},
+"Q140427768": {
+"label": "Луцій Валерій Ацискул",
+"lang": "uk"
+},
+"Q140447924": {
+"label": "Johan Ehrenskiöld",
+"lang": "sv"
+},
+"Q140473429": {
+"label": "William Leece Drinkwater",
+"lang": "mul"
+},
+"Q140546503": {
+"label": "Mikołaj Wilpiszewski",
+"lang": "pl"
+},
+"Q140673744": {
+"label": "Fredrik Valdemar Nikolai Beichmann",
+"lang": "mul"
+},
+"Q140753189": {
+"label": "Oksana Budna-Kaczor",
+"lang": "mul"
+},
+"Q140762103": {
+"label": "Olga Abramova",
+"lang": "en"
+},
+"Q140961272": {
+"label": "Finn Backer Midbøe",
+"lang": "mul"
+},
+"Q140962064": {
+"label": "Stephen Stephensen",
+"lang": "mul"
+},
+"Q141016824": {
+"label": "Orsolya Surján",
+"lang": "en"
+},
+"Q141069585": {
+"label": "Conrad J. Harhoff",
+"lang": "da"
+},
+"Q141080528": {
+"label": "Anders Örtendahl",
+"lang": "sv"
+},
+"Q141126487": {
+"label": "Herman A.A. Lange",
+"lang": "nl"
+},
+"Q141136857": {
+"label": "François-Xavier Mabin",
+"lang": "mul"
+},
+"Q141141723": {
+"label": "Victor Cuciureanu",
+"lang": "ro"
+},
+"Q141143935": {
+"label": "Luis Arévalo Pelluz",
+"lang": "ca"
+},
+"Q141156449": {
+"label": "Romain Fanchonna",
+"lang": "mul"
+},
+"Q141276599": {
+"label": "Meena Tripathi",
+"lang": "en"
+},
+"Q141276699": {
+"label": "Urvashi Pandey",
+"lang": "en"
+},
+"Q141316987": {
+"label": "Pouya Zangeneh",
+"lang": "en"
+},
+"Q141367916": {
+"label": "Cúria règia de la Corona d'Aragó",
+"lang": "ca"
+},
+"Q141389313": {
+"label": "Sten Hagberg",
+"lang": "mul"
+},
+"Q141422834": {
+"label": "Gustavo Lara Salazar",
+"lang": "es"
+},
+"Q141447015": {
+"label": "Bilgehan Potoğlu",
+"lang": "en"
+},
+"Q141497559": {
+"label": "Mary Bosede Aiyetoro",
+"lang": "en"
+},
+"Q141529234": {
+"label": "Isaac N. Mwinlaaru",
+"lang": "en"
+},
+"Q141548227": {
+"label": "Rohit Joshi",
+"lang": "mul"
+},
+"Q141550125": {
+"label": "Birgit van Houtert",
+"lang": "en"
+},
+"Q141560875": {
+"label": "Jens Olav Sæther",
+"lang": "en"
+},
+"Q141561082": {
+"label": "Mohammad Yasin",
+"lang": "id"
+},
+"Q141580292": {
+"label": "Soedjirno",
+"lang": "id"
+},
+"Q141600337": {
+"label": "Fery Insani",
+"lang": "id"
+},
+"Q141603624": {
+"label": "Lutek z Tokar",
+"lang": "pl"
+},
+"Q141611922": {
+"label": "Tomasz Trąbczyński",
+"lang": "pl"
+},
+"Q141617840": {
+"label": "Jean-Eustache Lanoullier de Boisclerc",
+"lang": "fr"
+},
+"Q141636231": {
+"label": "Louis-Alexandre de Morgan",
+"lang": "mul"
+},
+"Q141638185": {
+"label": "Octavian Bordan",
+"lang": "mul"
+},
+"Q141658396": {
+"label": "Philipp von Eselsberg",
+"lang": "mul"
+},
+"Q141747820": {
+"label": "Benoit Marin-Cudraz",
+"lang": "mul"
+},
+"Q141764291": {
+"label": "Roni Omba",
+"lang": "id"
+},
+"Q141779355": {
+"label": "張泰階",
+"lang": "zh"
+},
+"Q141782981": {
+"label": "William Joaquín Ramírez Solórzano",
+"lang": "mul"
+},
+"Q141913373": {
+"label": "Jaroslav Žantovský",
+"lang": "mul"
+},
+"Q141925442": {
+"label": "Alexej Voltr",
+"lang": "mul"
+},
+"Q141925445": {
+"label": "Jaroslav Vlček",
+"lang": "mul"
+},
+"Q141960048": {
+"label": "Václav Moravec",
+"lang": "mul"
+},
+"Q1440395": {
+"label": "Staatsanwaltschaft",
+"lang": "de"
+},
+"Q14629447": {
+"label": "John W. Heavey",
+"lang": "mul"
+},
+"Q14629448": {
+"label": "Jesse McI. Carter",
+"lang": "mul"
+},
+"Q14872975": {
+"label": "Νικόλαος Εφέσιος",
+"lang": "el"
+},
+"Q14918195": {
+"label": "Piotr Kmita z Wiśnicza",
+"lang": "pl"
+},
+"Q1508383": {
+"label": "George Turman",
+"lang": "mul"
+},
+"Q1560091": {
+"label": "Michael Ludwig",
+"lang": "mul"
+},
+"Q15635335": {
+"label": "Николаос Маврудис",
+"lang": "ru"
+},
+"Q15652611": {
+"label": "पवन बंसल",
+"lang": "hi"
+},
+"Q15787669": {
+"label": "Benjamin F. Pankey",
+"lang": "mul"
+},
+"Q15816124": {
+"label": "Hugh Beistle Woodward",
+"lang": "mul"
+},
+"Q15843302": {
+"label": "Rue J. Alexander",
+"lang": "mul"
+},
+"Q15854660": {
+"label": "William H. Duckworth",
+"lang": "mul"
+},
+"Q16011792": {
+"label": "Dudley Bartlett",
+"lang": "mul"
+},
+"Q16013071": {
+"label": "Benjamin H. Read",
+"lang": "mul"
+},
+"Q16047366": {
+"label": "یدالله عضدی",
+"lang": "fa"
+},
+"Q16048894": {
+"label": "اسماعیل ثقةالملک",
+"lang": "fa"
+},
+"Q16051134": {
+"label": "میرزا علی قائم‌مقام",
+"lang": "fa"
+},
+"Q16053357": {
+"label": "عنایت‌الله سمیعی",
+"lang": "fa"
+},
+"Q16054298": {
+"label": "Allen E. Stebbins",
+"lang": "mul"
+},
+"Q16062076": {
+"label": "Γιώργος Σταυρόπουλος",
+"lang": "el"
+},
+"Q1607049": {
+"label": "Henry Molleston",
+"lang": "mul"
+},
+"Q16074522": {
+"label": "محسن انصاری",
+"lang": "fa"
+},
+"Q16112842": {
+"label": "Stjepan Iločki",
+"lang": "es"
+},
+"Q161861": {
+"label": "Quintín Paredes",
+"lang": "mul"
+},
+"Q16318401": {
+"label": "Archibald E. Spriggs",
+"lang": "mul"
+},
+"Q16327193": {
+"label": "Αρχιεπίσκοπος Κύπρου Φιλόθεος",
+"lang": "el"
+},
+"Q16328308": {
+"label": "Ιοβίνος",
+"lang": "el"
+},
+"Q16331983": {
+"label": "Φίλων Φίλωνος",
+"lang": "el"
+},
+"Q16335083": {
+"label": "Gordon McOmber",
+"lang": "mul"
+},
+"Q16335100": {
+"label": "Paul Cannon",
+"lang": "mul"
+},
+"Q16335106": {
+"label": "George M. Gosman",
+"lang": "mul"
+},
+"Q16335115": {
+"label": "Frank A. Hazelbaker",
+"lang": "mul"
+},
+"Q16376921": {
+"label": "ფრანსისკო ხიმენეს რუბიო",
+"lang": "ka"
+},
+"Q16512388": {
+"label": "Αντώνιος Π. Αργυρός",
+"lang": "el"
+},
+"Q16514922": {
+"label": "Αθανάσιος Α΄  Επίσκοπος Αθηνών",
+"lang": "el"
+},
+"Q16518535": {
+"label": "Theodore Sedgwick",
+"lang": "mul"
+},
+"Q16528196": {
+"label": "Ambroży Pampowski",
+"lang": "de"
+},
+"Q16586745": {
+"label": "Paweł Józef Olszewski",
+"lang": "es"
+},
+"Q16636485": {
+"label": "Герман I Писимандр",
+"lang": "ru"
+},
+"Q16657185": {
+"label": "Frank Denver",
+"lang": "mul"
+},
+"Q16703084": {
+"label": "Теодор Сулименко",
+"lang": "ru"
+},
+"Q16721477": {
+"label": "Феліпе Нері Медіна",
+"lang": "uk"
+},
+"Q16721491": {
+"label": "Ференц, Богдан Васильевич",
+"lang": "ru"
+},
+"Q16721671": {
+"label": "Франсіско Гомес",
+"lang": "uk"
+},
+"Q16739410": {
+"label": "Louis C. de Baca",
+"lang": "mul"
+},
+"Q16739526": {
+"label": "Joseph Poujade",
+"lang": "mul"
+},
+"Q16739549": {
+"label": "Edward G. Sargent",
+"lang": "mul"
+},
+"Q1681716": {
+"label": "Jan Dittrich",
+"lang": "mul"
+},
+"Q16887111": {
+"label": "John Milton Worth",
+"lang": "mul"
+},
+"Q16985886": {
+"label": "Caleb J. McNulty",
+"lang": "mul"
+},
+"Q17095639": {
+"label": "Ludwik Jakub Chomiński",
+"lang": "es"
+},
+"Q17096068": {
+"label": "Daniel Żytkiewicz",
+"lang": "es"
+},
+"Q1723774": {
+"label": "Kanishka III",
+"lang": "mul"
+},
+"Q17321270": {
+"label": "Donald McMurchie",
+"lang": "mul"
+},
+"Q17322135": {
+"label": "Hans Ustrud",
+"lang": "mul"
+},
+"Q17322338": {
+"label": "Howard C. Shober",
+"lang": "mul"
+},
+"Q17322609": {
+"label": "John E. McDougall",
+"lang": "mul"
+},
+"Q17325511": {
+"label": "Odell K. Whitney",
+"lang": "mul"
+},
+"Q17401783": {
+"label": "Ιωάννης πρωτοσπαθάριος και κατεπάνω της Ρας",
+"lang": "el"
+},
+"Q7915666": {
+"label": "Vargrave Richards",
+"lang": "mul"
+},
+"Q7922114": {
+"label": "Vernon E. Megee",
+"lang": "mul"
+},
+"Q7940522": {
+"label": "Volney V. Smith",
+"lang": "mul"
+},
+"Q8007469": {
+"label": "William D. Hansen",
+"lang": "mul"
+},
+"Q8010404": {
+"label": "William H. Forwood",
+"lang": "mul"
+},
+"Q8014198": {
+"label": "William L. Nyland",
+"lang": "mul"
+},
+"Q8019603": {
+"label": "William Tyler Page",
+"lang": "mul"
+},
+"Q80435985": {
+"label": "Axel Juhl-Jørgensen",
+"lang": "da"
+},
+"Q81316955": {
+"label": "Κωνσταντίνος Ταρχανειώτης",
+"lang": "el"
+},
+"Q81410733": {
+"label": "Νικηφόρος Καντακουζηνός",
+"lang": "el"
+},
+"Q81620416": {
+"label": "José de Parres Sobrino",
+"lang": "mul"
+},
+"Q819674": {
+"label": "Berggeschworener",
+"lang": "de"
+},
+"Q82053806": {
+"label": "Miguel Ángel Villarroya",
+"lang": "mul"
+},
+"Q82319617": {
+"label": "Γεώργιος Στρατηγός",
+"lang": "el"
+},
+"Q82995722": {
+"label": "Ιωάννης Ταρχανειώτης (στρατηγός)",
+"lang": "el"
+},
+"Q83408641": {
+"label": "Пётр Мікалаевіч Ціханоўскі",
+"lang": "be"
+},
+"Q84310730": {
+"label": "Бельский, Валерий Иванович",
+"lang": "ru"
+},
+"Q84559360": {
+"label": "Riḍwān Bannīgaš",
+"lang": "mul"
+},
+"Q84724346": {
+"label": "Мусуков, Алий Тахирович",
+"lang": "ru"
+},
+"Q85952452": {
+"label": "Πτολεμαίος Νιος",
+"lang": "mul"
+},
+"Q85967550": {
+"label": "Avdo Hasanbegović",
+"lang": "mul"
+},
+"Q85969828": {
+"label": "حمیدرضا برادران شرکا",
+"lang": "fa"
+},
+"Q87588847": {
+"label": "Publius Alfius Maximus Numerius Licinianus",
+"lang": "mul"
+},
+"Q878840": {
+"label": "Francisco Ruiz-Tagle",
+"lang": "mul"
+},
+"Q883261": {
+"label": "Earl L. Brewer",
+"lang": "mul"
+},
+"Q88665553": {
+"label": "Iwan Sołtan",
+"lang": "pl"
+},
+"Q89063364": {
+"label": "Winslow S. Pierce",
+"lang": "mul"
+},
+"Q9025037": {
+"label": "Luis Díez de Aux y Armendáriz",
+"lang": "mul"
+},
+"Q9061652": {
+"label": "Ponç IV de Cabrera",
+"lang": "mul"
+},
+"Q91308": {
+"label": "Richard von Greiffenklau zu Vollrads",
+"lang": "mul"
+},
+"Q91351216": {
+"label": "Stefan Olędzki",
+"lang": "nl"
+},
+"Q9139996": {
+"label": "Adam Małachowski",
+"lang": "mul"
+},
+"Q9156959": {
+"label": "Antoni Kossowski",
+"lang": "es"
+},
+"Q9160638": {
+"label": "Artur Jabłoński",
+"lang": "mul"
+},
+"Q91637840": {
+"label": "Robin L. Garrell",
+"lang": "mul"
+},
+"Q9164562": {
+"label": "Balcer Stanisławski",
+"lang": "es"
+},
+"Q9201012": {
+"label": "Damaskin (arcybiskup Cypru)",
+"lang": "pl"
+},
+"Q9209626": {
+"label": "Domarat Kobylański",
+"lang": "pl"
+},
+"Q9212970": {
+"label": "Dunin ze Skrzyńska",
+"lang": "pl"
+},
+"Q9262335": {
+"label": "Franciszek Dubrawski",
+"lang": "fr"
+},
+"Q92805131": {
+"label": "Григорий Васильевич Протосовицкий",
+"lang": "ru"
+},
+"Q9291674": {
+"label": "Hermolaus Ligęza",
+"lang": "es"
+},
+"Q9291994": {
+"label": "Hienadź Ławicki",
+"lang": "fr"
+},
+"Q9292033": {
+"label": "Hieronim Bużeński",
+"lang": "de"
+},
+"Q9293123": {
+"label": "Hińcza z Rogowa",
+"lang": "pl"
+},
+"Q929317": {
+"label": "Jonathan M. Davis",
+"lang": "mul"
+},
+"Q92961673": {
+"label": "Mikołaj Dołmat Isajkowski",
+"lang": "nl"
+},
+"Q9337671": {
+"label": "skarbny",
+"lang": "pl"
+},
+"Q9356762": {
+"label": "Teodor Dzierżek",
+"lang": "pl"
+},
+"Q9356852": {
+"label": "Teodor Wessel",
+"lang": "mul"
+},
+"Q9370451": {
+"label": "Walerian Stanisław Judycki",
+"lang": "es"
+},
+"Q9377421": {
+"label": "wojski Wielkiego Księstwa Litewskiego",
+"lang": "pl"
+},
+"Q9382097": {
+"label": "Władysław Michał Skoraszewski",
+"lang": "es"
+},
+"Q9382245": {
+"label": "Władysław Rey",
+"lang": "es"
+},
+"Q9394405": {
+"label": "łowczy nadworny litewski",
+"lang": "pl"
+},
+"Q9394451": {
+"label": "łożniczy",
+"lang": "pl"
+},
+"Q94443754": {
+"label": "Agostino Franciotti",
+"lang": "mul"
+},
+"Q94940928": {
+"label": "Nicolaus von Burghaus",
+"lang": "mul"
+},
+"Q96036839": {
+"label": "Bohusz Słupica",
+"lang": "nl"
+},
+"Q96083140": {
+"label": "Stanisław Sobocki",
+"lang": "nl"
+},
+"Q96093959": {
+"label": "Pełka Kościelec z Kościelca, h. Zabawa",
+"lang": "nl"
+},
+"Q96095489": {
+"label": "Mikołaj Piotrowski",
+"lang": "nl"
+},
+"Q96335511": {
+"label": "Nasław",
+"lang": "nl"
+},
+"Q96702120": {
+"label": "Christophe Abad",
+"lang": "mul"
+},
+"Q97006744": {
+"label": "Jan Kunat Wyrozębski",
+"lang": "pl"
+},
+"Q97044156": {
+"label": "יאיר קולס",
+"lang": "he"
+},
+"Q97205238": {
+"label": "محمدعلی همایون‌جاه",
+"lang": "fa"
+},
+"Q97260279": {
+"label": "စောခွေးမင်း",
+"lang": "my"
+},
+"Q97260352": {
+"label": "ပိတ်တောင်းမင်း",
+"lang": "my"
+},
+"Q97260354": {
+"label": "ပိတ်သုံမင်း",
+"lang": "my"
+},
+"Q97260424": {
+"label": "ရွှေအုန်းသီးမင်း",
+"lang": "my"
+},
+"Q97260444": {
+"label": "သေဉ်လည်ပိုက်",
+"lang": "my"
+},
+"Q97274514": {
+"label": "Солодченко Сергій Вікторович",
+"lang": "uk"
+},
+"Q97460764": {
+"label": "Jerzy Wawrzyniec Zemiłła",
+"lang": "nl"
+},
+"Q97486088": {
+"label": "မြင်းကျွေးမင်း",
+"lang": "my"
+},
+"Q97928563": {
+"label": "Mikołaj Ocieski",
+"lang": "nl"
+},
+"Q98104730": {
+"label": "Bianco d’Antonio",
+"lang": "fr"
+},
+"Q98104828": {
+"label": "Domenic’Antonio Bartolotti",
+"lang": "fr"
+},
+"Q98104964": {
+"label": "Francesco di Niccolò",
+"lang": "fr"
+},
+"Q98105000": {
+"label": "Giacomo d’Antonio Sammaritani",
+"lang": "fr"
+},
+"Q98105129": {
+"label": "Giovanni di Nino de’ Gherardi",
+"lang": "fr"
+},
+"Q98105281": {
+"label": "Marc’Antonio Ceccoli",
+"lang": "fr"
+},
+"Q98105283": {
+"label": "Marc’Antonio Gozi",
+"lang": "fr"
+},
+"Q98105284": {
+"label": "Marc’Antonio Tassini",
+"lang": "fr"
+},
+"Q98105285": {
+"label": "Marc’Aurelio Brancuti",
+"lang": "fr"
+},
+"Q98105348": {
+"label": "Marino d’Antonio Giannini",
+"lang": "fr"
+},
+"Q98105399": {
+"label": "Martino di Guerolo de’ Pistorj",
+"lang": "fr"
+},
+"Q98105475": {
+"label": "Niccolò di Giove",
+"lang": "fr"
+},
+"Q98105476": {
+"label": "Niccolò di Michelino",
+"lang": "fr"
+},
+"Q98105477": {
+"label": "Niccolò di Sabattino",
+"lang": "fr"
+},
+"Q98105478": {
+"label": "Niccolò di Sante di Biagio",
+"lang": "fr"
+},
+"Q98105480": {
+"label": "Nicolò di Giove",
+"lang": "fr"
+},
+"Q98105497": {
+"label": "Paol’Antonio Onofri",
+"lang": "fr"
+},
+"Q98105657": {
+"label": "Simone di Menghino de’ Calcigni",
+"lang": "fr"
+},
+"Q98108424": {
+"label": "tribunado consular",
+"lang": "es"
+},
+"Q98116704": {
+"label": "Аляксандр Сяргеевіч Карпіцкі",
+"lang": "be"
+},
+"Q98152487": {
+"label": "Jan Schroetter h. własnego",
+"lang": "nl"
+},
+"Q98213477": {
+"label": "Bohdan Bohuszewicz Słupica",
+"lang": "nl"
+},
+"Q98510963": {
+"label": "Долоасп",
+"lang": "ru"
+},
+"Q98915727": {
+"label": "Étienne Rufz de Lavison",
+"lang": "mul"
+},
+"Q99767818": {
+"label": "Юрый Мікалаевіч Дзеркач",
+"lang": "be"
+},
+"Q99767942": {
+"label": "Алена Валяр’янаўна Панцюхова",
+"lang": "be"
+},
+"Q99768045": {
+"label": "Анатоль Тадэвушавіч Шчасны",
+"lang": "be"
+},
+"Q99769144": {
+"label": "Аляксандр Андрэевіч Ляхаў",
+"lang": "be"
+},
+"Q99837867": {
+"label": "Александр Николаевич Шишко",
+"lang": "ru"
+},
+"Q99861219": {
+"label": "Іван Іванавіч Галаваты",
+"lang": "mul"
+},
+"Q99884002": {
+"label": "Суконко, Олег Григорьевич",
+"lang": "ru"
+}
+}
+}

@@ -50,16 +50,18 @@
   // 政权显示名：有可靠中文名时「中文（English）」，否则英文原名
   // 注意：静态名称表只用于「从属于」等附注；多边形本身的名称以按日期解析的结果（snapNames）为准，
   // 解析不到当时存在的政权时显示底图原名并标为「文化/地区」，不套用后世政权名（例如史前不显示「古埃及」）
-  const pname = (n) => (!n ? "未命名区域" : zhNames[n]?.zh ? `${zhNames[n].zh}（${n}）` : n);
+  // v0.6.1：只显示中文名（原名在面板副标题「底图名称」里小字显示）；没有中文名的标「暂无通用译名」
+  const pname = (n) => (!n ? "未命名区域" : zhNames[n]?.zh ? zhNames[n].zh : /[\u4e00-\u9fff]/.test(n) ? n : `${n}（暂无通用译名）`);
   // 按快照解析的中文名（来自当时存在的 Wikidata 政权）优先；没有时退回静态名称表
   const snapNames = {};
   const pnameF = (p) => {
     const z = p && snapNames[state.snap]?.[String(p.fid)];
     if (!p?.NAME && !p?.NAME_ZH) return "未命名区域";
-    if (z?.zh) return z.zh === p.NAME ? z.zh : `${z.zh}（${p.NAME}）`;
+    if (z?.zh) return z.zh;   // 标题只用中文；底图原名（英文）放在下方说明行
     if (p.NAME_ZH && p.TERRITORY) return `${p.NAME_ZH}（${p.NAME}）`;
-    if (z?.kind === "split") return `${p.NAME}（已分裂为 ${z.parts.join("、")} 等；边界到下一张快照才更新）`;
-    return `${p.NAME}（${z?.kind === "culture" ? "文化/地区，底图名称" : "底图名称，未对应到当时存在的政权"}）`;
+    const t = z?.title || p.NAME;   // 底图原名的中文译名（没有时为「原名（暂无通用译名）」）
+    if (z?.kind === "split") return `${t}（已分裂为 ${z.parts.join("、")} 等；边界到下一张快照才更新）`;
+    return `${t}（${z?.kind === "culture" ? "文化/地区" : "未对应到当时存在的政权"}）`;
   };
   const qidF = (p) => (p && snapNames[state.snap]?.[String(p.fid)]?.qid) || null;
   const pnameN = (n) => { const f = geoCache[state.snap]?.features.find((x) => x.properties.NAME === n); return f ? pnameF(f.properties) : pname(n); };
@@ -75,6 +77,12 @@
     restyle: () => restyle(),
     tooltipExtra: {},   // 图层可在政权悬停提示后追加内容：WHA.tooltipExtra[id] = (props) => html 或 ""
     refreshPanel: () => refreshPanelData(), setDate: (d) => setDate(d),
+    map: null,   // 测试用：Playwright 通过 WHA.map 把经纬度换成屏幕坐标
+    // 按坐标选中所在的政权多边形（城市标记、小国标记点击时用）
+    selectAt: async (lat, lon) => {
+      const r = await api(`/api/locate?date=${dateParam(state.date)}&lat=${lat}&lon=${lon}`).catch(() => null);
+      if (r && r.polity && r.snapshot === state.snap) selectPolity(r.polity.fid);
+    },
     openDetail: (html) => { $("detailBody").innerHTML = html; $("detail").classList.remove("hidden"); $("detailBody").scrollTop = 0; return $("detailBody"); },
   };
   const panelMods = () => state.meta.modules.filter((m) => (m.kind || "panel") === "panel");
@@ -82,6 +90,7 @@
 
   // ---------------------------------------------------------------- 地图
   const map = L.map("map", { worldCopyJump: true, minZoom: 2, maxZoom: 8, zoomSnap: 0.5, attributionControl: true }).setView([30, 20], 2.5);
+  WHA.map = map;
   map.attributionControl.setPrefix('<a href="https://leafletjs.com">Leaflet</a>');
   map.attributionControl.addAttribution('边界：<a href="https://github.com/aourednik/historical-basemaps" target="_blank">historical-basemaps</a> (GPL-3.0) · 事件/人物：<a href="https://www.wikidata.org" target="_blank">Wikidata</a> (CC0)');
   let layer = null;
@@ -105,9 +114,14 @@
   // 多个图层可同时改写填色：按注册顺序叠加（后注册的覆盖前面的同名样式）
   const fillOverrides = {};
 
+  let tinyLayer = null;
+  // 快速连续换日期时，较早发出的请求可能后返回：只画最后一次请求的快照，否则旧快照的多边形会盖在地图上、点击选中错误的政权
+  let snapSeq = 0;
   async function loadSnapshot(snap) {
+    const my = ++snapSeq;
     if (!geoCache[snap]) geoCache[snap] = await api(`/api/basemap/${snap}`);
     await loadNames(snap);
+    if (my !== snapSeq) return false;
     const gj = geoCache[snap];
     if (layer) map.removeLayer(layer);
     layer = L.geoJSON(gj, {
@@ -116,10 +130,46 @@
         const p = f.properties;
         l.bindTooltip(() => esc(pnameF(p)) + (p.SUBJECTO && p.SUBJECTO !== p.NAME ? `<br><small>从属于：${esc(pnameN(p.SUBJECTO))}</small>` : "") +
           Object.values(WHA.tooltipExtra).map((fn) => fn(p) || "").join(""), { sticky: true });
-        l.on("click", () => selectPolity(p.fid));
+        // 点到没有对应政权的底图多边形（文化/地区）时，按坐标解析：小岛的底图多边形可能压在殖民地分区之上（如 1950 年圣基茨属英属背风群岛）
+        l.on("click", async (e) => {
+          if (snapNames[state.snap]?.[String(p.fid)]?.qid) return selectPolity(p.fid);
+          const r = await api(`/api/locate?date=${dateParam(state.date)}&lat=${e.latlng.lat}&lon=${e.latlng.lng}`).catch(() => null);
+          selectPolity(r && r.polity && r.snapshot === state.snap ? r.polity.fid : p.fid);
+        });
       },
     }).addTo(map);
-    layer.bringToBack();
+    layer._whaSnap = snap;
+    // 整组放到其他图层下面。FeatureGroup.bringToBack() 会逐个移到最底层，把要素顺序整个颠倒，
+    // 使先画的大国多边形盖住后加的实际控制区/领地多边形（如 1944 年桂林点到中华民国）：倒序逐个移动以保持原顺序。
+    const ls = layer.getLayers();
+    for (let i = ls.length - 1; i >= 0; i--) if (ls[i].bringToBack) ls[i].bringToBack();
+    // 微型国家/小岛：多边形在世界尺度下只有几个像素，另加最小尺寸的可点击圆点（与多边形同一选中逻辑）
+    if (tinyLayer) map.removeLayer(tinyLayer);
+    tinyLayer = L.layerGroup();
+    // 圆点放在单独的图层面板（z-index 650，高于城市点 600 与控制区标签），世界尺度下点击优先选中微型国家（梵蒂冈不再点到意大利/罗马城点，澳门不再点到香港）；
+    // 面积小的后画（在上面）
+    if (!map.getPane("tiny")) map.createPane("tiny").style.zIndex = 650;
+    const tinyList = [];
+    layer.eachLayer((l) => {
+      const b = l.getBounds?.();
+      if (!b || !b.isValid()) return;
+      const p = l.feature.properties;
+      if (b.getEast() - b.getWest() > 1.2 || b.getNorth() - b.getSouth() > 1.2) return;
+      const c = p.LABEL_X != null ? [p.LABEL_Y, p.LABEL_X] : b.getCenter();
+      const mk = L.circleMarker(c, { pane: "tiny", radius: 5, weight: 1.5, color: "#555", fillColor: styleFor(l.feature, false).fillColor || "#ddd", fillOpacity: 0.9, className: "tiny-polity" });
+      mk.bindTooltip(() => esc(pnameF(p)), { sticky: true });
+      // 按坐标解析（与点地图同一路径）：小岛的底图多边形可能被实际控制区/殖民地分区覆盖（如 1950 年多米尼克属英属向风群岛）
+      mk.on("click", async (e) => {
+        L.DomEvent.stopPropagation(e);
+        const ll = mk.getLatLng();
+        const r = await api(`/api/locate?date=${dateParam(state.date)}&lat=${ll.lat}&lon=${ll.lng}`).catch(() => null);
+        selectPolity(r && r.polity && r.snapshot === state.snap ? r.polity.fid : p.fid);
+      });
+      mk.feature = l.feature;
+      tinyList.push([(b.getEast() - b.getWest()) * (b.getNorth() - b.getSouth()), mk]);
+    });
+    tinyList.sort((a, b) => b[0] - a[0]).forEach(([, mk]) => tinyLayer.addLayer(mk));
+    tinyLayer.addTo(map);
   }
 
   // 多边形名称按所选日期解析（同一张快照内朝代/政权也会变化，如 900 年快照内唐→后梁）
@@ -162,17 +212,21 @@
     return { y, m, d };
   }
 
+  let dateSeq = 0;
   async function setDate(dt, { refreshPanel = true } = {}) {
+    const mySeq = ++dateSeq;
     state.date = dt;
     fillDateControls();
     const s = await api(`/api/snapshot?date=${dateParam(dt)}`);
-    if (s.snapshot !== state.snap) {
+    if (mySeq !== dateSeq) return;   // 已经换成更新的日期
+    if (s.snapshot !== state.snap || !layer || layer._whaSnap !== s.snapshot) {
       // 换快照后原来的政权 fid 不再有效：用政权名称在新快照中找同名政权，找不到就关闭面板
       const oldName = state.fid != null && geoCache[state.snap] ? featByFid(state.snap, state.fid)?.properties.NAME : null;
       state.snap = s.snapshot;
       state.base = s.base;
       state.next = s.next;
       await loadSnapshot(s.snapshot);
+      if (mySeq !== dateSeq) return;
       if (oldName) {
         const f = geoCache[state.snap].features.find((x) => x.properties.NAME === oldName);
         state.fid = f ? f.properties.fid : null;
@@ -193,7 +247,26 @@
 
   // ---------------------------------------------------------------- 地图图层（模块）
   let layerTimer = null, layerSeq = 0;
-  function scheduleLayers() { clearTimeout(layerTimer); layerTimer = setTimeout(updateLayers, state.playing ? 50 : 200); }
+  // 自动打开的图层：俄乌战争前线在 2014-02-20 以后、乌克兰在视野内时自动显示（用户手动关过则不再自动打开）
+  const AUTO_LAYERS = [{ id: "war_fronts", from: [2014, 2, 20], bbox: [22.0, 44.0, 40.5, 52.5] }];
+  const layerUser = {};
+  function autoLayers() {
+    if (!map) return;
+    const b = map.getBounds();
+    for (const a of AUTO_LAYERS) {
+      if (layerUser[a.id] || !layers[a.id]) continue;
+      const d = state.date, k = d.y * 10000 + (d.m || 7) * 100 + (d.d || 1), k0 = a.from[0] * 10000 + a.from[1] * 100 + a.from[2];
+      const inView = b.getWest() < a.bbox[2] && b.getEast() > a.bbox[0] && b.getSouth() < a.bbox[3] && b.getNorth() > a.bbox[1];
+      const want = k >= k0 && inView;
+      if (want !== !!layerOn[a.id]) {
+        layerOn[a.id] = want;
+        const el = document.querySelector(`#layerCtl input[data-id="${a.id}"]`);
+        if (el) el.checked = want;
+        if (!want) layers[a.id].clear();
+      }
+    }
+  }
+  function scheduleLayers() { autoLayers(); clearTimeout(layerTimer); layerTimer = setTimeout(updateLayers, state.playing ? 50 : 200); }
   async function updateLayers() {
     const seq = ++layerSeq;
     for (const m of layerMods()) {
@@ -216,7 +289,9 @@
     const on = want != null ? new Set(want.split(",")) : null;
     for (const m of layerMods()) { layerOn[m.id] = on ? on.has(m.id) : !!m.default_on; layers[m.id]?.init?.(map); }
     box.innerHTML = "图层：" + layerMods().map((m) => `<label title="${esc(m.description)}"><input type="checkbox" data-id="${m.id}" ${layerOn[m.id] ? "checked" : ""}> ${esc(m.title)}</label>`).join("");
-    box.querySelectorAll("input").forEach((el) => el.addEventListener("change", () => { layerOn[el.dataset.id] = el.checked; updateLayers(); updateHash(); }));
+    box.querySelectorAll("input").forEach((el) => el.addEventListener("change", () => { layerOn[el.dataset.id] = el.checked; layerUser[el.dataset.id] = true; updateLayers(); updateHash(); }));
+    if (want != null) for (const m of layerMods()) layerUser[m.id] = true;   // URL 指定了图层：不自动开关
+    map.on("moveend", () => { const before = JSON.stringify(layerOn); autoLayers(); if (JSON.stringify(layerOn) !== before) updateLayers(); });
   }
 
   const featByFid = (snap, fid) => geoCache[snap]?.features.find((f) => f.properties.fid === fid);
@@ -239,7 +314,10 @@
   }
 
   // ---------------------------------------------------------------- 侧边栏
-  function restyle() { if (layer) layer.eachLayer((l) => l.setStyle(styleFor(l.feature, state.fid === l.feature.properties.fid && !state.world))); }
+  function restyle() {
+    if (layer) layer.eachLayer((l) => l.setStyle && l.setStyle(styleFor(l.feature, state.fid === l.feature.properties.fid && !state.world)));
+    if (tinyLayer) tinyLayer.eachLayer((m) => { const sel = state.fid === m.feature.properties.fid && !state.world; m.setStyle({ fillColor: styleFor(m.feature, false).fillColor || "#ddd", color: sel ? "#8a1c00" : "#555", weight: sel ? 2.5 : 1.5 }); });
+  }
   function closePanel() { $("panel").classList.add("hidden"); state.fid = null; state.world = false; markers.clearLayers(); restyle(); updateHash(); }
 
   function selectPolity(fid) {
@@ -259,6 +337,7 @@
     $("polityName").textContent = state.world ? "全世界" : pnameF(p);
     $("polityMeta").innerHTML = state.world ? `${dateZh(state.date)} 前后 · 全球范围` :
       `${dateZh(state.date)} · 边界快照 ${yearZh(state.base ?? state.snap)}${String(state.snap).includes("@") ? "（含过渡修正）" : ""}` +
+      (p?.NAME && (snapNames[state.snap]?.[String(p.fid)]?.zh || snapNames[state.snap]?.[String(p.fid)]?.title) ? ` · <span class="basename" title="边界数据中该多边形的原名">底图名称：${esc(p.NAME)}</span>` : "") +
       (p?.SUBJECTO && p.SUBJECTO !== p.NAME ? `<br>从属于：${esc(pnameN(p.SUBJECTO))}` : "") +
       (p?.PARTOF && p.PARTOF !== p.NAME && p.PARTOF !== p.SUBJECTO ? ` · 属于：${esc(pnameN(p.PARTOF))}` : "") +
       (qidF(p) ? ` · <a href="https://www.wikidata.org/wiki/${qidF(p)}" target="_blank">Wikidata</a>` : "") +
@@ -271,10 +350,11 @@
     await Promise.all(mods.map(async (m) => {
       try { results[m.id] = await api(`/api/modules/${m.id}?${q}`); } catch (e) { results[m.id] = { items: [], total: 0, note: "出错：" + e.message }; }
       if (seq === reqSeq) { renderTabs(); if (m.id === state.tab) renderBody(); }
+      // 标题用所选日期解析到的 Wikidata 政权中文名（比按快照年份的名称更准确，如 1948 年 6 月的「中华民国」）；
+      // 政权模块一返回就更新，不等其他模块（事件、人物等可能要几秒）
+      const rs = m.id === "regime" ? results.regime?.state : null;
+      if (seq === reqSeq && rs && p && rs.name) $("polityName").textContent = rs.name;
     }));
-    // 标题用所选日期解析到的 Wikidata 政权中文名（比按快照年份的名称更准确，如 1948 年 6 月的「中华民国」）
-    const rs = results.regime?.state;
-    if (seq === reqSeq && rs && p && rs.name && rs.name !== p.NAME) $("polityName").textContent = `${rs.name}（${p.NAME}）`;
   }
 
   function renderTabs() {

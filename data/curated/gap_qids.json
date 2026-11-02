@@ -1,0 +1,1179 @@
+{
+"_doc": "gap_fixes.py 解析的英文维基条目 → QID（wbgetentities 核对：存在、P31=Q5 人类、标签）",
+"qids": {
+"Abu Bakar of Johor": "Q2637695",
+"Abu Bakr Shah": "Q2822165",
+"Abu Sa'id Qansuh": "Q2875062",
+"Adolf, King of the Romans": "Q160101",
+"Al-Ashraf Janbalat": "Q2386612",
+"Al-Aziz Jamal al-Din Yusuf": "Q557903",
+"Al-Mu'ayyad Ahmad": "Q4702918",
+"Al-Mu'ayyad Shaykh": "Q286551",
+"Al-Mu'tazz": "Q281989",
+"Al-Musta'in": "Q284157",
+"Al-Muzaffar Ahmad": "Q2829259",
+"Alauddin Khalji": "Q335362",
+"Alexis of Russia": "Q7731",
+"Alfonso II of Naples": "Q436753",
+"Alfonso V of Aragon": "Q312304",
+"An-Nasir Muhammad ibn Qaitbay": "Q3042922",
+"António, Prior of Crato": "Q321325",
+"Arcadius": "Q159369",
+"Bahram V": "Q299271",
+"Barquq": "Q248996",
+"Barsbay": "Q557812",
+"Bernard of Italy": "Q333319",
+"Blanche I of Navarre": "Q233865",
+"Bolesław III Wrymouth": "Q53441",
+"Boran": "Q271300",
+"Béla III of Hungary": "Q86978",
+"Carloman of Bavaria": "Q157084",
+"Casimir I the Restorer": "Q53455",
+"Charlemagne": "Q3044",
+"Charles II of Spain": "Q36174",
+"Charles IV, Holy Roman Emperor": "Q155669",
+"Charles IX of Sweden": "Q52939",
+"Charles V, Holy Roman Emperor": "Q32500",
+"Charles VI, Holy Roman Emperor": "Q150665",
+"Charles the Bald": "Q71231",
+"Charles the Fat": "Q150712",
+"Cheng Heng": "Q953209",
+"Christian Michelsen": "Q319645",
+"Christopher of Bavaria": "Q58056",
+"Conrad II, Holy Roman Emperor": "Q152256",
+"Daulat Khan Lodi": "Q1102569",
+"Dimitrios Voulgaris": "Q708383",
+"Dzeliwe": "Q273259",
+"Elizabeth of Luxembourg": "Q167401",
+"Emperor Min of Jin": "Q7382",
+"Ferdinand I of Aragon": "Q47412",
+"Ferdinand I of Naples": "Q437838",
+"Ferdinand I of the Two Sicilies": "Q312325",
+"Ferdinand I, Holy Roman Emperor": "Q150611",
+"Ferdinand II of Aragon": "Q12860",
+"Ferdinand II of Naples": "Q708932",
+"Ferdinand III, Holy Roman Emperor": "Q150575",
+"Firuz Shah Tughlaq": "Q455442",
+"Frederick of Naples": "Q264060",
+"Frederick the Fair": "Q124950",
+"George of Poděbrady": "Q159679",
+"Ghiyath al-Din Tughluq": "Q1391172",
+"Hamengkubuwono IX": "Q76227",
+"Harold Harefoot": "Q188627",
+"Henry III, Holy Roman Emperor": "Q153023",
+"Henry IV, Holy Roman Emperor": "Q60094",
+"Henry VII, Holy Roman Emperor": "Q152717",
+"Hugh of Italy": "Q378763",
+"Hugh the Great": "Q317933",
+"Islam Shah Suri": "Q2191504",
+"Jakub Uchański": "Q1679695",
+"Jan Wężyk": "Q4110451",
+"Jigme Dorji Wangchuck": "Q298020",
+"Joanna II of Naples": "Q236933",
+"Joanna of Castile": "Q171136",
+"Jobst of Moravia": "Q158181",
+"John Hunyadi": "Q242688",
+"John de Soules (Guardian of Scotland)": "Q1702247",
+"Jon Svaleson Smør": "Q6271657",
+"Kavad I": "Q244071",
+"Kazimierz Florian Czartoryski": "Q4108725",
+"Khizr Khan": "Q2741754",
+"Ladislaus of Naples": "Q317593",
+"Ladislaus the Posthumous": "Q116382",
+"Leopold II, Holy Roman Emperor": "Q151321",
+"Lothair I": "Q150735",
+"Lothair III, Holy Roman Emperor": "Q77189",
+"Louis I of Hungary": "Q53998",
+"Louis II of Italy": "Q215204",
+"Louis IV, Holy Roman Emperor": "Q57161",
+"Louis XII": "Q58514",
+"Luis María de Borbón y Vallabriga": "Q1379524",
+"Maciej Łubieński": "Q4110494",
+"Mahmud Shah II": "Q3277857",
+"Maria Christina of Austria": "Q538125",
+"Mary, Queen of Hungary": "Q154412",
+"Matthias, Holy Roman Emperor": "Q152157",
+"Michał Stefan Radziejowski": "Q1929502",
+"Mieszko II Lambert": "Q28468",
+"Mikołaj Prażmowski": "Q11780870",
+"Muhammad bin Tughluq": "Q381830",
+"Musa Ghiatuddin Riayat Shah of Selangor": "Q6939922",
+"Norodom Sihanouk": "Q160318",
+"Ntfombi": "Q444261",
+"Olav Engelbrektsson": "Q2007127",
+"Oliver Cromwell": "Q44279",
+"Otto III, Holy Roman Emperor": "Q151090",
+"Pepin of Italy": "Q299645",
+"Philip II of Spain": "Q34417",
+"Philip III of Spain": "Q34464",
+"Philip IV of Spain": "Q691402",
+"Philip V of Spain": "Q170467",
+"Qaitbay": "Q557847",
+"Qutbuddin Mubarak Shah": "Q3179907",
+"Radama II": "Q218628",
+"Rasoherina": "Q225533",
+"René of Anjou": "Q170353",
+"Richard Cromwell": "Q203980",
+"Robert the Bruce": "Q187312",
+"Rudolph II of Burgundy": "Q442257",
+"Sayf al-Din Khushqadam": "Q2086849",
+"Sharafuddin of Selangor": "Q3542702",
+"Sher Shah Suri": "Q83680",
+"Shihabuddin Omar": "Q16863366",
+"Sigismund, Holy Roman Emperor": "Q57124",
+"Sikandar Shah Suri": "Q3348836",
+"Svante Nilsson (regent of Sweden)": "Q384917",
+"Taksin": "Q320097",
+"Tekle Giyorgis II": "Q59761",
+"Temenggong Daeng Ibrahim": "Q20448002",
+"Teodor Andrzej Potocki": "Q1383476",
+"Timurbugha": "Q301612",
+"Tughluq Khan": "Q3104923",
+"Urraca of León and Castile": "Q128701",
+"Wenceslaus IV of Bohemia": "Q152148",
+"William Wallace": "Q82457",
+"Władysław Aleksander Łubieński": "Q3894129",
+"Władysław I Herman": "Q54046",
+"Yusuf Sharifuddin Muzaffar Shah of Perak": "Q12709897",
+"Al-Ashraf Qansuh al-Ghawri": "Q286337",
+"Al-Mansur Uthman": "Q2829237",
+"An-Nasir Hasan": "Q288557",
+"Bolesław II the Generous": "Q53440",
+"Charles VIII of Sweden": "Q310433",
+"Empress Shulü Ping": "Q907847",
+"Gustav I of Sweden": "Q52947",
+"Honorius (emperor)": "Q159798",
+"John III Comyn, Lord of Badenoch": "Q1351307",
+"Khusro Khan": "Q3776964",
+"Mạc Đăng Doanh": "Q854994",
+"Rupert, King of Germany": "Q57326",
+"Sayf ad-Din Bilbay": "Q2875064",
+"Sayf ad-Din Inal": "Q286532",
+"Sayf ad-Din Jaqmaq": "Q647942",
+"Sayf ad-Din Tatar": "Q2875067",
+"Tuman bay II": "Q557896",
+"Zbigniew of Poland": "Q167992"
+},
+"check": {
+"Q1102569": {
+"en": "Daulat Khan Lodi",
+"zh": "Daulat Khan Lodi",
+"human": true,
+"enwiki": "Daulat Khan Lodi"
+},
+"Q116382": {
+"en": "Ladislaus the Posthumous",
+"zh": "拉斯洛五世",
+"human": true,
+"enwiki": "Ladislaus the Posthumous"
+},
+"Q11780870": {
+"en": "Mikołaj Jan Prażmowski",
+"zh": "Mikołaj Jan Prażmowski",
+"human": true,
+"enwiki": "Mikołaj Prażmowski"
+},
+"Q124950": {
+"en": "Frederick the Fair",
+"zh": "腓特烈三世",
+"human": true,
+"enwiki": "Frederick the Fair"
+},
+"Q12709897": {
+"en": "Yusuf Sharifuddin Muzaffar Shah of Perak",
+"zh": "Yusuf Sharifuddin Muzaffar Shah of Perak",
+"human": true,
+"enwiki": "Yusuf Sharifuddin Muzaffar Shah of Perak"
+},
+"Q12860": {
+"en": "Ferdinand II of Aragon",
+"zh": "斐迪南二世",
+"human": true,
+"enwiki": "Ferdinand II of Aragon"
+},
+"Q128701": {
+"en": "Urraca of León",
+"zh": "乌拉卡",
+"human": true,
+"enwiki": "Urraca of León and Castile"
+},
+"Q1351307": {
+"en": "John III Comyn, Lord of Badenoch",
+"zh": "約翰三世·康明",
+"human": true,
+"enwiki": "John Comyn III of Badenoch"
+},
+"Q1379524": {
+"en": "Luis María de Borbón y Vallabriga, 14th Count of Chinchón",
+"zh": "路易斯·馬利亞·德·波旁-瓦拉布里亞",
+"human": true,
+"enwiki": "Luis María de Borbón y Vallabriga"
+},
+"Q1383476": {
+"en": "Teodor Andrzej Potocki",
+"zh": "Teodor Andrzej Potocki",
+"human": true,
+"enwiki": "Teodor Andrzej Potocki"
+},
+"Q1391172": {
+"en": "Ghiyath al-Din Tughluq",
+"zh": "Ghiyath al-Din Tughluq",
+"human": true,
+"enwiki": "Ghiyath al-Din Tughluq"
+},
+"Q150575": {
+"en": "Ferdinand III, Holy Roman Emperor",
+"zh": "斐迪南三世",
+"human": true,
+"enwiki": "Ferdinand III, Holy Roman Emperor"
+},
+"Q150611": {
+"en": "Ferdinand I, Holy Roman Emperor",
+"zh": "斐迪南一世",
+"human": true,
+"enwiki": "Ferdinand I, Holy Roman Emperor"
+},
+"Q150665": {
+"en": "Charles VI, Holy Roman Emperor",
+"zh": "查理六世",
+"human": true,
+"enwiki": "Charles VI, Holy Roman Emperor"
+},
+"Q150712": {
+"en": "Charles the Fat",
+"zh": "胖子查理",
+"human": true,
+"enwiki": "Charles the Fat"
+},
+"Q150735": {
+"en": "Lothair I",
+"zh": "洛泰尔一世",
+"human": true,
+"enwiki": "Lothair I"
+},
+"Q151090": {
+"en": "Otto III",
+"zh": "奥托三世",
+"human": true,
+"enwiki": "Otto III, Holy Roman Emperor"
+},
+"Q151321": {
+"en": "Leopold II, Holy Roman Emperor",
+"zh": "利奥波德二世",
+"human": true,
+"enwiki": "Leopold II, Holy Roman Emperor"
+},
+"Q152148": {
+"en": "Wenceslaus IV of Bohemia",
+"zh": "瓦茨拉夫四世",
+"human": true,
+"enwiki": "Wenceslaus IV of Bohemia"
+},
+"Q152157": {
+"en": "Matthias, Holy Roman Emperor",
+"zh": "马蒂亚斯",
+"human": true,
+"enwiki": "Matthias, Holy Roman Emperor"
+},
+"Q152256": {
+"en": "Conrad II",
+"zh": "康拉德二世",
+"human": true,
+"enwiki": "Conrad II, Holy Roman Emperor"
+},
+"Q152463": {
+"en": "Louis the German",
+"zh": "日耳曼人路易",
+"human": true,
+"enwiki": "Louis the German"
+},
+"Q152717": {
+"en": "Henry VII, Holy Roman Emperor",
+"zh": "亨利七世",
+"human": true,
+"enwiki": "Henry VII, Holy Roman Emperor"
+},
+"Q153023": {
+"en": "Henry III",
+"zh": "亨利三世",
+"human": true,
+"enwiki": "Henry III, Holy Roman Emperor"
+},
+"Q154412": {
+"en": "Mary I of Hungary",
+"zh": "瑪麗",
+"human": true,
+"enwiki": "Mary, Queen of Hungary"
+},
+"Q155669": {
+"en": "Charles IV",
+"zh": "查理四世",
+"human": true,
+"enwiki": "Charles IV, Holy Roman Emperor"
+},
+"Q157084": {
+"en": "Carloman of Bavaria",
+"zh": "卡洛曼",
+"human": true,
+"enwiki": "Carloman of Bavaria"
+},
+"Q158181": {
+"en": "Jobst of Moravia",
+"zh": "约斯伯特",
+"human": true,
+"enwiki": "Jobst of Moravia"
+},
+"Q159369": {
+"en": "Arcadius",
+"zh": "阿卡狄奥斯",
+"human": true,
+"enwiki": "Arcadius"
+},
+"Q159679": {
+"en": "George of Poděbrady",
+"zh": "波傑布拉德的乔治",
+"human": true,
+"enwiki": "George of Poděbrady"
+},
+"Q159798": {
+"en": "Honorius",
+"zh": "弗拉维乌斯·奥古斯都·霍诺留",
+"human": true,
+"enwiki": "Honorius"
+},
+"Q160101": {
+"en": "Adolf, King of the Romans",
+"zh": "阿道夫一世",
+"human": true,
+"enwiki": "Adolf, King of the Romans"
+},
+"Q160318": {
+"en": "Norodom Sihanouk",
+"zh": "诺罗敦·西哈努克",
+"human": true,
+"enwiki": "Norodom Sihanouk"
+},
+"Q167401": {
+"en": "Elizabeth of Luxembourg",
+"zh": "卢森堡的伊丽莎白",
+"human": true,
+"enwiki": "Elizabeth of Luxembourg"
+},
+"Q1679695": {
+"en": "Jakub Uchański",
+"zh": "Jakub Uchański",
+"human": true,
+"enwiki": "Jakub Uchański"
+},
+"Q167992": {
+"en": "Zbigniew of Poland",
+"zh": "茲比格涅夫",
+"human": true,
+"enwiki": "Zbigniew (duke of Poland)"
+},
+"Q16863366": {
+"en": "Shihab-ud-din Omar",
+"zh": "Shihab-ud-din Omar",
+"human": true,
+"enwiki": "Shihabuddin Omar"
+},
+"Q1702247": {
+"en": "John de Soules (died 1310)",
+"zh": "約翰·德·蘇勒",
+"human": true,
+"enwiki": "John de Soules (Guardian of Scotland)"
+},
+"Q170353": {
+"en": "René of Anjou",
+"zh": "安茹公爵那不勒斯国王雷内一世",
+"human": true,
+"enwiki": "René of Anjou"
+},
+"Q170467": {
+"en": "Philip V of Spain",
+"zh": "费利佩五世",
+"human": true,
+"enwiki": "Philip V of Spain"
+},
+"Q171136": {
+"en": "Juana I of Castile",
+"zh": "胡安娜",
+"human": true,
+"enwiki": "Joanna of Castile"
+},
+"Q187312": {
+"en": "Robert I of Scotland",
+"zh": "罗伯特·布鲁斯",
+"human": true,
+"enwiki": "Robert the Bruce"
+},
+"Q188627": {
+"en": "Harold Harefoot",
+"zh": "飞毛腿哈罗德",
+"human": true,
+"enwiki": "Harold Harefoot"
+},
+"Q1929502": {
+"en": "Michał Stefan Radziejowski",
+"zh": "彌額爾·斯德望·拉傑約夫斯基",
+"human": true,
+"enwiki": "Michał Stefan Radziejowski"
+},
+"Q2007127": {
+"en": "Olav Engelbrektsson",
+"zh": "Olav Engelbrektsson",
+"human": true,
+"enwiki": "Olav Engelbrektsson"
+},
+"Q203980": {
+"en": "Richard Cromwell",
+"zh": "理查·克伦威尔",
+"human": true,
+"enwiki": "Richard Cromwell"
+},
+"Q20448002": {
+"en": "Temenggong Daeng Ibrahim",
+"zh": "天猛公达因·依布拉欣",
+"human": true,
+"enwiki": "Temenggong Daeng Ibrahim"
+},
+"Q20452145": {
+"en": "Syed Saffi of Perlis",
+"zh": "Syed Saffi of Perlis",
+"human": true,
+"enwiki": null
+},
+"Q2086849": {
+"en": "Az-Zâhir Sayf ad-Dîn Khuchqadam",
+"zh": "Az-Zâhir Sayf ad-Dîn Khuchqadam",
+"human": true,
+"enwiki": "Sayf al-Din Khushqadam"
+},
+"Q215204": {
+"en": "Louis II of Italy",
+"zh": "路易二世",
+"human": true,
+"enwiki": "Louis II of Italy"
+},
+"Q218628": {
+"en": "Radama II",
+"zh": "拉達馬二世",
+"human": true,
+"enwiki": "Radama II"
+},
+"Q2191504": {
+"en": "Islam Shah Suri",
+"zh": "Islam Shah Suri",
+"human": true,
+"enwiki": "Islam Shah Suri"
+},
+"Q225533": {
+"en": "Rasoherina I of Madagascar",
+"zh": "臘左赫里納",
+"human": true,
+"enwiki": "Rasoherina"
+},
+"Q233865": {
+"en": "Blanche I of Navarre",
+"zh": "布兰卡一世",
+"human": true,
+"enwiki": "Blanche I of Navarre"
+},
+"Q236933": {
+"en": "Joanna II of Naples",
+"zh": "乔万娜二世",
+"human": true,
+"enwiki": "Joanna II of Naples"
+},
+"Q2386612": {
+"en": "Al-Ashraf Abu al-Nasir Janbalat",
+"zh": "Al-Ashraf Abu al-Nasir Janbalat",
+"human": true,
+"enwiki": "Al-Ashraf Janbalat"
+},
+"Q2415965": {
+"en": "Kettil Karlsson",
+"zh": "凯蒂尔·卡尔松",
+"human": true,
+"enwiki": "Kettil Karlsson (Vasa)"
+},
+"Q2425529": {
+"en": "Bengt Jönsson (Oxenstierna)",
+"zh": "本特·约恩松",
+"human": true,
+"enwiki": "Bengt Jönsson (Oxenstierna)"
+},
+"Q2425574": {
+"en": "Nils Jönsson (Oxenstierna)",
+"zh": "尼尔斯·约恩松",
+"human": true,
+"enwiki": "Nils Jönsson (Oxenstierna)"
+},
+"Q242688": {
+"en": "John Hunyadi",
+"zh": "匈雅提·亚诺什",
+"human": true,
+"enwiki": "John Hunyadi"
+},
+"Q244071": {
+"en": "Kavad I",
+"zh": "卡瓦德一世",
+"human": true,
+"enwiki": "Kavad I"
+},
+"Q248996": {
+"en": "Barquq",
+"zh": "塞义夫丁·巴库克",
+"human": true,
+"enwiki": "Barquq"
+},
+"Q2637695": {
+"en": "Abu Bakar of Johor",
+"zh": "苏丹阿布·巴卡",
+"human": true,
+"enwiki": "Abu Bakar of Johor"
+},
+"Q264060": {
+"en": "Frederick IV of Naples",
+"zh": "費德里哥 (那不勒斯)",
+"human": true,
+"enwiki": "Frederick of Naples"
+},
+"Q271300": {
+"en": "Boran",
+"zh": "宝蓝",
+"human": true,
+"enwiki": "Boran"
+},
+"Q273259": {
+"en": "Dzeliwe of Eswatini",
+"zh": "泽莉维",
+"human": true,
+"enwiki": "Dzeliwe"
+},
+"Q2741754": {
+"en": "Khizr Khan",
+"zh": "Khizr Khan",
+"human": true,
+"enwiki": "Khizr Khan"
+},
+"Q281989": {
+"en": "Al-Mu'tazz",
+"zh": "穆阿台兹",
+"human": true,
+"enwiki": "Al-Mu'tazz"
+},
+"Q2822165": {
+"en": "Abu Bakr Shah",
+"zh": "Abu Bakr Shah",
+"human": true,
+"enwiki": "Abu Bakr Shah"
+},
+"Q2829237": {
+"en": "Al-Mansur Fakhr-ad-Din Uthman",
+"zh": "Al-Mansur Fakhr-ad-Din Uthman",
+"human": true,
+"enwiki": "Al-Mansur Fakhr al-Din Uthman"
+},
+"Q2829259": {
+"en": "Al-Mudhàffar Àhmad",
+"zh": "Al-Mudhàffar Àhmad",
+"human": true,
+"enwiki": "Al-Muzaffar Ahmad"
+},
+"Q284157": {
+"en": "Al-Musta'in",
+"zh": "穆斯塔因一世",
+"human": true,
+"enwiki": "Al-Musta'in"
+},
+"Q28468": {
+"en": "Mieszko II",
+"zh": "梅什科二世",
+"human": true,
+"enwiki": "Mieszko II Lambert"
+},
+"Q286337": {
+"en": "Al-Ashraf Qansuh Al-Ghuri",
+"zh": "阿什拉夫·坎苏·高里",
+"human": true,
+"enwiki": "Al-Ashraf Qansuh al-Ghuri"
+},
+"Q286532": {
+"en": "Sayf ad-Din Inal",
+"zh": "賽義夫·阿爾丁·伊納勒",
+"human": true,
+"enwiki": "Sayf al-Din Inal"
+},
+"Q286551": {
+"en": "Shaykh al-Mahmudi",
+"zh": "Shaykh al-Mahmudi",
+"human": true,
+"enwiki": "Al-Mu'ayyad Shaykh"
+},
+"Q2875062": {
+"en": "Abu Sa'id Qansuh",
+"zh": "Abu Sa'id Qansuh",
+"human": true,
+"enwiki": "Abu Sa'id Qansuh"
+},
+"Q2875064": {
+"en": "Az-Zahir Yalbay",
+"zh": "Az-Zahir Yalbay",
+"human": true,
+"enwiki": "Sayf al-Din Bilbay"
+},
+"Q2875067": {
+"en": "Sayf ad-Din Tatar",
+"zh": "Sayf ad-Din Tatar",
+"human": true,
+"enwiki": "Sayf al-Din Tatar"
+},
+"Q288557": {
+"en": "An-Nàssir Hàssan",
+"zh": "巴德尔丁·哈桑",
+"human": true,
+"enwiki": "Al-Nasir Hasan"
+},
+"Q298020": {
+"en": "Jigme Dorji Wangchuck",
+"zh": "吉格梅·多吉·旺楚克",
+"human": true,
+"enwiki": "Jigme Dorji Wangchuck"
+},
+"Q2988059": {
+"en": "Lê Nhân Tông",
+"zh": "黎仁宗",
+"human": true,
+"enwiki": "Lê Nhân Tông"
+},
+"Q299271": {
+"en": "Bahram V",
+"zh": "巴赫拉姆五世",
+"human": true,
+"enwiki": "Bahram V"
+},
+"Q299645": {
+"en": "Pepin of Italy",
+"zh": "丕平露·卡洛曼",
+"human": true,
+"enwiki": "Pepin of Italy"
+},
+"Q301612": {
+"en": "Adh-Dhàhir Timurbughà",
+"zh": "Adh-Dhàhir Timurbughà",
+"human": true,
+"enwiki": "Timurbugha"
+},
+"Q3042922": {
+"en": "An-Nasir Muhammad ibn Qaitbay",
+"zh": "An-Nasir Muhammad ibn Qaitbay",
+"human": true,
+"enwiki": "An-Nasir Muhammad ibn Qaitbay"
+},
+"Q3044": {
+"en": null,
+"zh": "查理大帝",
+"human": true,
+"enwiki": "Charlemagne"
+},
+"Q310433": {
+"en": "Karl Knutsson",
+"zh": "卡尔八世",
+"human": true,
+"enwiki": "Karl Knutsson"
+},
+"Q3104923": {
+"en": "Tughluq Khan",
+"zh": "吉亞斯丁二世",
+"human": true,
+"enwiki": "Tughluq Khan"
+},
+"Q312304": {
+"en": "Alfonso V of Aragon",
+"zh": "阿方索五世",
+"human": true,
+"enwiki": "Alfonso V of Aragon"
+},
+"Q312325": {
+"en": "Ferdinand I of the Two Sicilies",
+"zh": "费迪南多一世",
+"human": true,
+"enwiki": "Ferdinand I of the Two Sicilies"
+},
+"Q317593": {
+"en": "Ladislaus of Naples",
+"zh": "拉迪斯劳",
+"human": true,
+"enwiki": "Ladislaus of Naples"
+},
+"Q317933": {
+"en": "Hugh the Great",
+"zh": "伟大的于格",
+"human": true,
+"enwiki": "Hugh the Great"
+},
+"Q3179907": {
+"en": "Qutb ud din Mubarak Shah",
+"zh": "Qutb ud din Mubarak Shah",
+"human": true,
+"enwiki": "Qutbuddin Mubarak Shah"
+},
+"Q319645": {
+"en": "Christian Michelsen",
+"zh": "克里斯蒂安·米切尔森",
+"human": true,
+"enwiki": "Christian Michelsen"
+},
+"Q320097": {
+"en": "Taksin",
+"zh": "郑昭",
+"human": true,
+"enwiki": "Taksin"
+},
+"Q321325": {
+"en": "António, Prior of Crato",
+"zh": "克拉图修道长安东尼奥",
+"human": true,
+"enwiki": "António, Prior of Crato"
+},
+"Q32500": {
+"en": "Charles V, Holy Roman Emperor",
+"zh": "查理五世",
+"human": true,
+"enwiki": "Charles V, Holy Roman Emperor"
+},
+"Q327441": {
+"en": "Aybak",
+"zh": "伊兹丁·艾伯克",
+"human": true,
+"enwiki": "Aybak"
+},
+"Q3277857": {
+"en": "Nàssir-ad-Din Mahmud Xah Tughluq",
+"zh": "Nàssir-ad-Din Mahmud Xah Tughluq",
+"human": true,
+"enwiki": "Mahmud Shah II"
+},
+"Q333319": {
+"en": "Bernard of Italy",
+"zh": "義大利的伯納德",
+"human": true,
+"enwiki": "Bernard of Italy"
+},
+"Q3348836": {
+"en": "Sikandar Shah Suri",
+"zh": "Sikandar Shah Suri",
+"human": true,
+"enwiki": "Sikandar Shah Suri"
+},
+"Q335362": {
+"en": "Alauddin Khalji",
+"zh": "阿拉烏丁·卡爾吉",
+"human": true,
+"enwiki": "Alauddin Khalji"
+},
+"Q34417": {
+"en": "Philip II of Spain",
+"zh": "腓力二世",
+"human": true,
+"enwiki": "Philip II of Spain"
+},
+"Q34464": {
+"en": "Philip III of Spain",
+"zh": "腓力三世",
+"human": true,
+"enwiki": "Philip III of Spain"
+},
+"Q3542702": {
+"en": "Sharafuddin I of Selangor",
+"zh": "苏丹沙拉夫丁·伊德里斯·沙",
+"human": true,
+"enwiki": "Sharafuddin of Selangor"
+},
+"Q36174": {
+"en": "Charles II of Spain",
+"zh": "卡洛斯二世",
+"human": true,
+"enwiki": "Charles II of Spain"
+},
+"Q3776964": {
+"en": "Khusrau Khan",
+"zh": "Khusrau Khan",
+"human": true,
+"enwiki": "Khusrau Khan"
+},
+"Q378763": {
+"en": "Hugh of Italy",
+"zh": "阿爾勒伯爵于格",
+"human": true,
+"enwiki": "Hugh of Italy"
+},
+"Q381830": {
+"en": "Muhammad ibn Tughluq",
+"zh": "穆罕默德·宾·图格鲁克",
+"human": true,
+"enwiki": "Muhammad bin Tughluq"
+},
+"Q384917": {
+"en": "Svante Nilsson",
+"zh": "斯萬特·尼爾松",
+"human": true,
+"enwiki": "Svante Nilsson (regent of Sweden)"
+},
+"Q3894129": {
+"en": "Władysław Aleksander Łubieński",
+"zh": "Władysław Aleksander Łubieński",
+"human": true,
+"enwiki": "Władysław Aleksander Łubieński"
+},
+"Q4108725": {
+"en": "Kazimierz Florian Czartoryski",
+"zh": "Kazimierz Florian Czartoryski",
+"human": true,
+"enwiki": "Kazimierz Florian Czartoryski"
+},
+"Q4110451": {
+"en": "Jan Wężyk",
+"zh": "Jan Wężyk",
+"human": true,
+"enwiki": "Jan Wężyk"
+},
+"Q4110494": {
+"en": "Maciej Łubieński",
+"zh": "Maciej Łubieński",
+"human": true,
+"enwiki": "Maciej Łubieński"
+},
+"Q436753": {
+"en": "Alfonso II of Naples",
+"zh": "阿方索二世",
+"human": true,
+"enwiki": "Alfonso II of Naples"
+},
+"Q437838": {
+"en": "Ferdinand I of Naples",
+"zh": "那不勒斯的費迪南一世",
+"human": true,
+"enwiki": "Ferdinand I of Naples"
+},
+"Q442257": {
+"en": "Rudolph II of Burgundy",
+"zh": "上勃艮第的魯道夫二世",
+"human": true,
+"enwiki": "Rudolph II of Burgundy"
+},
+"Q44279": {
+"en": "Oliver Cromwell",
+"zh": "奥利弗·克伦威尔",
+"human": true,
+"enwiki": "Oliver Cromwell"
+},
+"Q444261": {
+"en": "Ntombi of Swaziland",
+"zh": "恩通比",
+"human": true,
+"enwiki": "Ntfombi"
+},
+"Q447046": {
+"en": "Engelbrekt Engelbrektsson",
+"zh": "恩格尔布雷克特·恩格尔布雷克特松",
+"human": true,
+"enwiki": "Engelbrekt Engelbrektsson"
+},
+"Q452506": {
+"en": "Sten Sture the Elder",
+"zh": "老斯滕·斯圖雷",
+"human": true,
+"enwiki": "Sten Sture the Elder"
+},
+"Q455442": {
+"en": "Firuz Shah Tughlaq",
+"zh": "菲魯茲·沙",
+"human": true,
+"enwiki": "Firuz Shah Tughlaq"
+},
+"Q4702918": {
+"en": "Al-Mu'ayyad Ahmad",
+"zh": "Al-Mu'ayyad Ahmad",
+"human": true,
+"enwiki": "Al-Mu'ayyad Ahmad"
+},
+"Q47412": {
+"en": "Ferdinand I of Aragon",
+"zh": "费尔南多一世 (阿拉贡)",
+"human": true,
+"enwiki": "Ferdinand I of Aragon"
+},
+"Q52939": {
+"en": "Charles IX of Sweden",
+"zh": "卡尔九世",
+"human": true,
+"enwiki": "Charles IX of Sweden"
+},
+"Q52947": {
+"en": "Gustav I of Sweden",
+"zh": "古斯塔夫一世",
+"human": true,
+"enwiki": "Gustav Vasa"
+},
+"Q53440": {
+"en": "Bolesław II the Generous",
+"zh": "波列斯瓦夫二世",
+"human": true,
+"enwiki": "Bolesław II the Bold"
+},
+"Q53441": {
+"en": "Bolesław III Wrymouth",
+"zh": "波列斯瓦夫三世",
+"human": true,
+"enwiki": "Bolesław III Wrymouth"
+},
+"Q53455": {
+"en": "Casimir I the Restorer",
+"zh": "卡齊米日一世",
+"human": true,
+"enwiki": "Casimir I the Restorer"
+},
+"Q538125": {
+"en": "Maria Christina of Austria",
+"zh": "奥地利女大公玛丽亚·克里斯蒂娜",
+"human": true,
+"enwiki": "Maria Christina of Austria"
+},
+"Q53998": {
+"en": "Louis I of Hungary",
+"zh": "拉约什一世",
+"human": true,
+"enwiki": "Louis I of Hungary"
+},
+"Q54046": {
+"en": "Władysław I Herman",
+"zh": "瓦迪斯瓦夫一世",
+"human": true,
+"enwiki": "Władysław I Herman"
+},
+"Q541674": {
+"en": "Sten Sture the Younger",
+"zh": "小斯滕·斯圖雷",
+"human": true,
+"enwiki": "Sten Sture the Younger"
+},
+"Q557812": {
+"en": "Barsbay",
+"zh": "巴爾斯拜",
+"human": true,
+"enwiki": "Barsbay"
+},
+"Q557847": {
+"en": "Qaitbay",
+"zh": "卡伊特拜",
+"human": true,
+"enwiki": "Qaitbay"
+},
+"Q557896": {
+"en": "Tuman bay II",
+"zh": "图曼·贝伊二世",
+"human": true,
+"enwiki": "Tuman Bay II"
+},
+"Q557903": {
+"en": "Al-Aziz Yússuf",
+"zh": "Al-Aziz Yússuf",
+"human": true,
+"enwiki": "Al-Aziz Jamal al-Din Yusuf"
+},
+"Q57124": {
+"en": "Sigismund",
+"zh": "西吉斯蒙德",
+"human": true,
+"enwiki": "Sigismund, Holy Roman Emperor"
+},
+"Q57161": {
+"en": "Louis IV of Bavaria",
+"zh": "路易四世",
+"human": true,
+"enwiki": "Louis IV, Holy Roman Emperor"
+},
+"Q57326": {
+"en": "Rupert",
+"zh": "鲁普雷希特",
+"human": true,
+"enwiki": "Rupert, King of the Romans"
+},
+"Q58056": {
+"en": "Christopher of Bavaria",
+"zh": "克里斯托弗三世",
+"human": true,
+"enwiki": "Christopher of Bavaria"
+},
+"Q581346": {
+"en": "Erik Axelsson Tott",
+"zh": "埃里克·阿克塞尔松·托特",
+"human": true,
+"enwiki": "Erik Axelsson Tott"
+},
+"Q58514": {
+"en": "Louis XII of France",
+"zh": "路易十二",
+"human": true,
+"enwiki": "Louis XII"
+},
+"Q59761": {
+"en": "Tekle Giyorgis II",
+"zh": "特克莱·乔治斯二世",
+"human": true,
+"enwiki": "Tekle Giyorgis II"
+},
+"Q60094": {
+"en": "Henry IV",
+"zh": "亨利四世",
+"human": true,
+"enwiki": "Henry IV, Holy Roman Emperor"
+},
+"Q6271657": {
+"en": "Jon Svaleson Smør",
+"zh": "Jon Svaleson Smør",
+"human": true,
+"enwiki": "Jon Svaleson Smør"
+},
+"Q6327151": {
+"en": "Sigurd Jonsson",
+"zh": "Sigurd Jonsson",
+"human": true,
+"enwiki": "Sigurd Jonsson"
+},
+"Q647942": {
+"en": "Sayf ad-Din Jaqmaq",
+"zh": "Sayf ad-Din Jaqmaq",
+"human": true,
+"enwiki": "Sayf al-Din Jaqmaq"
+},
+"Q691402": {
+"en": "Philip IV of Spain",
+"zh": "腓力四世",
+"human": true,
+"enwiki": "Philip IV of Spain"
+},
+"Q6939922": {
+"en": "Musa Ghiatuddin Riayat Shah of Selangor",
+"zh": "苏丹慕沙·基阿图丁沙",
+"human": true,
+"enwiki": "Musa Ghiatuddin Riayat Shah of Selangor"
+},
+"Q708383": {
+"en": "Dimitrios Voulgaris",
+"zh": "德米特里奥斯·武尔加里斯",
+"human": true,
+"enwiki": "Dimitrios Voulgaris"
+},
+"Q708932": {
+"en": "Ferdinand II of Naples",
+"zh": "那不勒斯的斐迪南多二世",
+"human": true,
+"enwiki": "Ferdinand II of Naples"
+},
+"Q71231": {
+"en": "Charles the Bald",
+"zh": "秃头查理",
+"human": true,
+"enwiki": "Charles the Bald"
+},
+"Q7250": {
+"en": "Wang Mang",
+"zh": "王莽",
+"human": true,
+"enwiki": "Wang Mang"
+},
+"Q7382": {
+"en": "Emperor Min of Jin",
+"zh": "晋愍帝",
+"human": true,
+"enwiki": "Emperor Min of Jin"
+},
+"Q76227": {
+"en": "Hamengkubuwono IX",
+"zh": "哈孟库布沃诺九世",
+"human": true,
+"enwiki": "Hamengkubuwono IX"
+},
+"Q77189": {
+"en": "Lothair III",
+"zh": "苏普林堡王朝",
+"human": true,
+"enwiki": "Lothair III, Holy Roman Emperor"
+},
+"Q7731": {
+"en": "Alexei I of Russia",
+"zh": "阿列克谢一世",
+"human": true,
+"enwiki": "Alexis of Russia"
+},
+"Q82457": {
+"en": "William Wallace",
+"zh": "威廉·華萊士",
+"human": true,
+"enwiki": "William Wallace"
+},
+"Q83680": {
+"en": "Sher Shah Suri",
+"zh": "舍尔沙",
+"human": true,
+"enwiki": "Sher Shah Suri"
+},
+"Q854994": {
+"en": "Mạc Thái Tông",
+"zh": "莫太宗",
+"human": true,
+"enwiki": "Mạc Thái Tông"
+},
+"Q855703": {
+"en": "Mạc Thái Tổ",
+"zh": "莫太祖",
+"human": true,
+"enwiki": "Mạc Đăng Dung"
+},
+"Q8659": {
+"en": "Khutughtu Khan",
+"zh": "元明宗",
+"human": true,
+"enwiki": "Khutughtu Khan Kusala"
+},
+"Q86978": {
+"en": "Béla III of Hungary",
+"zh": "貝拉三世",
+"human": true,
+"enwiki": "Béla III of Hungary"
+},
+"Q890338": {
+"en": "Hou Jing",
+"zh": "侯景",
+"human": true,
+"enwiki": "Hou Jing"
+},
+"Q907847": {
+"en": "Shulü Ping",
+"zh": "述律平",
+"human": true,
+"enwiki": "Shulü Ping"
+},
+"Q936456": {
+"en": "Jöns Bengtsson Oxenstierna",
+"zh": "小延斯·本格特松",
+"human": true,
+"enwiki": "Jöns Bengtsson Oxenstierna"
+},
+"Q953209": {
+"en": "Cheng Heng",
+"zh": "郑兴",
+"human": true,
+"enwiki": "Cheng Heng"
+},
+"Q9738": {
+"en": "Wu Zetian",
+"zh": "武则天",
+"human": true,
+"enwiki": "Wu Zetian"
+}
+}
+}

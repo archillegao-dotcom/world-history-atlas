@@ -83,6 +83,7 @@ a.wl { color: #1a4f8a; text-decoration: none; border-bottom: 1px dotted #1a4f8a;
 .kv td { padding: 4px 0; border-bottom: 1px solid #f0e9dc; }
 .regime-head { display: flex; gap: 10px; align-items: center; margin: 6px 0; }
 .regime-head .flag { max-width: 80px; max-height: 54px; border: 1px solid #ccc; }
+.regime-chain { margin: 6px 0; font-size: 12px; } .regime-chain table.chain th { white-space: nowrap; font-weight: normal; color: #666; } .regime-chain tr.cur td { font-weight: bold; } .flag-note { color: #777; font-size: 11px; }
 .def { background: #faf6ee; border-left: 3px solid #b08a4a; padding: 6px 10px; margin: 8px 0; line-height: 1.6; }
 .altsel { max-width: 300px; }
 /* ---- 阵营图例 ---- */
@@ -111,3 +112,20 @@ a.wl { color: #1a4f8a; text-decoration: none; border-bottom: 1px dotted #1a4f8a;
 
 /* 特殊地位领土说明框 */
 .terr-box { background: #f4efe2; border-left: 3px solid #b08a3c; padding: 6px 8px; margin: 6px 0; font-size: 13px; }
+/* 城市名称不拦截点击：点在名称上等于点在其下方的多边形（避免点以色列南部选中埃及城市、点列支敦士登选中瑞士城市）；只有圆点/★可点 */
+.city-icon { pointer-events: none !important; }
+.city-icon .city-dot { pointer-events: auto; cursor: pointer; }
+
+/* 控制区标签：文字不拦截点击（小岛、小国常被标签盖住），只有「◇」可点开说明 */
+.zone-label { pointer-events: none !important; }
+.zone-label .zl-dot { pointer-events: auto; cursor: pointer; padding: 0 2px; }
+/* 空位期 / 共治 / 摄政框 */
+.inter-box { border-left: 3px solid #b5651d; background: #fdf6ec; padding: 6px 8px; margin: 6px 0; }
+.inter-box h4 { margin: 0 0 2px; color: #8a4b12; }
+.itag { display: inline-block; font-size: 11px; padding: 0 5px; border-radius: 3px; background: #b5651d; color: #fff; margin-right: 2px; }
+.inter-alt { margin-top: 6px; padding: 4px 6px; border: 1px dashed #c9a27a; background: #fffaf3; }
+
+
+/* v0.6.1：点击多边形后浏览器给 SVG 路径画的键盘焦点框（黑色矩形，如 1943 年意占法国外围）——去掉；选中状态已用红色描边表示 */
+.leaflet-container path.leaflet-interactive:focus,
+.leaflet-container .leaflet-interactive:focus { outline: none; }

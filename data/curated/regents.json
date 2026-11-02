@@ -1,0 +1,17 @@
+{
+ "_doc": "摄政/辅政者（君主年幼等情况下实际掌权者）。states：适用的政权 QID；from/to={y,m,d}（历史纪年，公元前为负）。每条注明来源。",
+ "regents": [
+  {"person": "Q7250", "zh": "王莽", "role": "大司马、辅政（6 年起「摄皇帝」，8 年称「假皇帝」）", "states": ["Q1072949", "Q7209"],
+   "from": {"y": -1, "m": 8, "d": 0}, "to": {"y": 9, "m": 1, "d": 10},
+   "src": "https://en.wikipedia.org/wiki/Wang_Mang（汉哀帝公元前 1 年 8 月去世后王莽任大司马辅政，拥立汉平帝；公元 9 年 1 月 10 日称帝建立新朝）"},
+  {"person": "Q1193185", "zh": "霍光", "role": "大司马大将军、辅政", "states": ["Q1072949", "Q7209"],
+   "from": {"y": -87, "m": 3, "d": 0}, "to": {"y": -68, "m": 0, "d": 0},
+   "src": "https://en.wikipedia.org/wiki/Huo_Guang（汉武帝前 87 年去世后受遗诏辅政，至前 68 年去世）"},
+  {"person": "Q380573", "zh": "多尔衮", "role": "摄政王", "states": ["Q8733"],
+   "from": {"y": 1643, "m": 10, "d": 8}, "to": {"y": 1650, "m": 12, "d": 31},
+   "src": "https://en.wikipedia.org/wiki/Dorgon（顺治帝 1643 年即位后任摄政王，1650 年 12 月 31 日去世）"},
+  {"person": "Q144348", "zh": "载沣", "role": "监国摄政王", "states": ["Q8733"],
+   "from": {"y": 1908, "m": 11, "d": 14}, "to": {"y": 1911, "m": 12, "d": 6},
+   "src": "https://en.wikipedia.org/wiki/Zaifeng,_Prince_Chun（宣统帝即位后任监国摄政王，1911 年 12 月 6 日辞去）"}
+ ]
+}

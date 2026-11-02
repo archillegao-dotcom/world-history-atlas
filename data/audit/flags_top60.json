@@ -1,0 +1,1518 @@
+[
+ {
+  "qid": "Q921",
+  "name": "文莱",
+  "years": 227,
+  "first": 1800,
+  "last": 2026,
+  "none": 160,
+  "dated": 67,
+  "files": {
+   "—": [
+    1800,
+    1959,
+    160
+   ],
+   "Flag of Brunei.svg": [
+    1960,
+    2026,
+    67
+   ]
+  }
+ },
+ {
+  "qid": "Q30",
+  "name": "美国",
+  "years": 227,
+  "first": 1800,
+  "last": 2026,
+  "dated": 225,
+  "none": 2,
+  "files": {
+   "Flag of the United States (1795-1818).svg": [
+    1800,
+    1818,
+    19
+   ],
+   "Flag of the United States (1818–1819).svg": [
+    1819,
+    1819,
+    1
+   ],
+   "Flag of the United States (1819–1820).svg": [
+    1820,
+    1820,
+    1
+   ],
+   "Flag of the United States (1820–1822).svg": [
+    1821,
+    1822,
+    2
+   ],
+   "Flag of the United States (1822–1836).svg": [
+    1823,
+    1836,
+    14
+   ],
+   "Flag of the United States (1836–1837).svg": [
+    1837,
+    1837,
+    1
+   ],
+   "Flag of the United States (1837–1845).svg": [
+    1838,
+    1845,
+    8
+   ],
+   "Flag of the United States (1845–1846).svg": [
+    1846,
+    1846,
+    1
+   ],
+   "Flag of the United States (1846–1847).svg": [
+    1847,
+    1847,
+    1
+   ],
+   "Flag of the United States (1847–1848).svg": [
+    1848,
+    1848,
+    1
+   ],
+   "Flag of the United States (1848–1851).svg": [
+    1849,
+    1851,
+    3
+   ],
+   "Flag of the United States (1851–1858).svg": [
+    1852,
+    1858,
+    7
+   ],
+   "Flag of the United States (1858–1859).svg": [
+    1859,
+    1859,
+    1
+   ],
+   "Flag of the United States (1859–1861).svg": [
+    1860,
+    1861,
+    2
+   ],
+   "Flag of the United States (1861–1863).svg": [
+    1862,
+    1863,
+    2
+   ],
+   "—": [
+    1864,
+    1865,
+    2
+   ],
+   "Flag of the United States (1865–1867).svg": [
+    1866,
+    1867,
+    2
+   ],
+   "Flag of the United States (1867-1877).svg": [
+    1868,
+    1877,
+    10
+   ],
+   "Flag of the United States (1877–1890).svg": [
+    1878,
+    1890,
+    13
+   ],
+   "Flag of the United States (1890–1891).svg": [
+    1891,
+    1891,
+    1
+   ],
+   "Flag of the United States (1891–1896).svg": [
+    1892,
+    1896,
+    5
+   ],
+   "Flag of the United States (1896–1908).svg": [
+    1897,
+    1908,
+    12
+   ],
+   "Flag of the United States (1908–1912).svg": [
+    1909,
+    1912,
+    4
+   ],
+   "Flag of the United States (1912-1959).svg": [
+    1913,
+    1959,
+    47
+   ],
+   "Flag of the United States (1959–1960).svg": [
+    1960,
+    1960,
+    1
+   ],
+   "Flag of the United States (DDD-F-416E specifications).svg": [
+    1961,
+    2026,
+    66
+   ]
+  }
+ },
+ {
+  "qid": "Q9676",
+  "name": "马恩岛",
+  "years": 227,
+  "first": 1800,
+  "last": 2026,
+  "undated": 227,
+  "files": {
+   "Flag of the Isle of Man.svg": [
+    1800,
+    2026,
+    227
+   ]
+  }
+ },
+ {
+  "qid": "Q1410",
+  "name": "直布罗陀",
+  "years": 227,
+  "first": 1800,
+  "last": 2026,
+  "undated": 227,
+  "files": {
+   "Flag of Gibraltar.svg": [
+    1800,
+    2026,
+    227
+   ]
+  }
+ },
+ {
+  "qid": "Q34617",
+  "name": "圣皮埃尔和密克隆",
+  "years": 227,
+  "first": 1800,
+  "last": 2026,
+  "undated": 227,
+  "files": {
+   "Flag of Saint-Pierre and Miquelon.svg": [
+    1800,
+    2026,
+    227
+   ]
+  }
+ },
+ {
+  "qid": "Q13353",
+  "name": "蒙特塞拉特",
+  "years": 227,
+  "first": 1800,
+  "last": 2026,
+  "undated": 227,
+  "files": {
+   "Flag of Montserrat.svg": [
+    1800,
+    2026,
+    227
+   ]
+  }
+ },
+ {
+  "qid": "Q23635",
+  "name": "百慕大",
+  "years": 227,
+  "first": 1800,
+  "last": 2026,
+  "none": 74,
+  "undated": 36,
+  "dated": 117,
+  "files": {
+   "—": [
+    1800,
+    1873,
+    74
+   ],
+   "Flag of Bermuda (1875–1910).svg": [
+    1874,
+    1909,
+    36
+   ],
+   "Flag of Bermuda (1910–1999).svg": [
+    1910,
+    1998,
+    89
+   ],
+   "Flag of Bermuda.svg": [
+    1999,
+    2026,
+    28
+   ]
+  }
+ },
+ {
+  "qid": "Q785",
+  "name": "泽西",
+  "years": 227,
+  "first": 1800,
+  "last": 2026,
+  "dated": 227,
+  "files": {
+   "Flag of Jersey (pre 1981).svg": [
+    1800,
+    1980,
+    181
+   ],
+   "Flag of Jersey.svg": [
+    1981,
+    2026,
+    46
+   ]
+  }
+ },
+ {
+  "qid": "Q25230",
+  "name": "根西",
+  "years": 227,
+  "first": 1800,
+  "last": 2026,
+  "none": 136,
+  "dated": 91,
+  "files": {
+   "—": [
+    1800,
+    1935,
+    136
+   ],
+   "Flag of Guernsey (1936).svg": [
+    1936,
+    1984,
+    49
+   ],
+   "Flag of Guernsey.svg": [
+    1985,
+    2026,
+    42
+   ]
+  }
+ },
+ {
+  "qid": "Q733",
+  "name": "巴拉圭",
+  "years": 216,
+  "first": 1811,
+  "last": 2026,
+  "none": 2,
+  "dated": 212,
+  "undated": 2,
+  "files": {
+   "—": [
+    1811,
+    1825,
+    2
+   ],
+   "Flag of Paraguay (1812-1826).svg": [
+    1812,
+    1824,
+    13
+   ],
+   "Flag of Paraguay (1826-1842).svg": [
+    1826,
+    1841,
+    16
+   ],
+   "Flag of Paraguay (1842–1954).svg": [
+    1842,
+    1953,
+    112
+   ],
+   "Flag of Paraguay (1954–1988).svg": [
+    1954,
+    1987,
+    34
+   ],
+   "Flag of Paraguay (1988–1990).svg": [
+    1988,
+    1989,
+    2
+   ],
+   "Flag of Paraguay (1990–2013).svg": [
+    1990,
+    2012,
+    23
+   ],
+   "Flag of Paraguay.svg": [
+    2013,
+    2026,
+    14
+   ]
+  }
+ },
+ {
+  "qid": "Q35",
+  "name": "丹麦",
+  "years": 212,
+  "first": 1815,
+  "last": 2026,
+  "undated": 212,
+  "files": {
+   "Flag of Denmark.svg": [
+    1815,
+    2026,
+    212
+   ]
+  }
+ },
+ {
+  "qid": "Q1078602",
+  "name": "尼泊尔王国",
+  "years": 208,
+  "first": 1800,
+  "last": 2007,
+  "undated": 163,
+  "none": 45,
+  "files": {
+   "Flag of Nepal (1743–1962).svg": [
+    1800,
+    1962,
+    163
+   ],
+   "—": [
+    1963,
+    2007,
+    45
+   ]
+  }
+ },
+ {
+  "qid": "Q32",
+  "name": "卢森堡",
+  "years": 207,
+  "first": 1815,
+  "last": 2026,
+  "undated": 207,
+  "files": {
+   "Flag of Luxembourg.svg": [
+    1815,
+    2026,
+    207
+   ]
+  }
+ },
+ {
+  "qid": "Q811",
+  "name": "尼加拉瓜",
+  "years": 205,
+  "first": 1822,
+  "last": 2026,
+  "none": 32,
+  "dated": 173,
+  "files": {
+   "—": [
+    1822,
+    1888,
+    32
+   ],
+   "Flag of the United Provinces of Central America.svg": [
+    1823,
+    1823,
+    1
+   ],
+   "Flag of the Federal Republic of Central America.svg": [
+    1824,
+    1838,
+    15
+   ],
+   "Flag of Nicaragua (1839-1858).svg": [
+    1839,
+    1857,
+    19
+   ],
+   "Flag of Nicaragua (1889–1893).svg": [
+    1889,
+    1892,
+    4
+   ],
+   "Flag of Nicaragua (1858-1889 and 1893-1896).svg": [
+    1893,
+    1895,
+    3
+   ],
+   "Flag of Nicaragua (1896–1908).svg": [
+    1896,
+    1908,
+    13
+   ],
+   "Flag of Nicaragua (1908–1971).svg": [
+    1909,
+    1971,
+    63
+   ],
+   "Flag of Nicaragua.svg": [
+    1972,
+    2026,
+    55
+   ]
+  }
+ },
+ {
+  "qid": "Q800",
+  "name": "哥斯达黎加",
+  "years": 205,
+  "first": 1822,
+  "last": 2026,
+  "dated": 205,
+  "files": {
+   "Flag of Costa Rica (1821–1823).svg": [
+    1822,
+    1822,
+    1
+   ],
+   "Flag of Costa Rica (1823–1824).svg": [
+    1823,
+    1823,
+    1
+   ],
+   "Flag of the United Provinces of Central America.svg": [
+    1824,
+    1824,
+    1
+   ],
+   "Flag of Costa Rica (1824–1840).svg": [
+    1825,
+    1839,
+    15
+   ],
+   "Flag of Costa Rica (1840–1842).svg": [
+    1840,
+    1842,
+    3
+   ],
+   "Flag of Costa Rica (1842–1848).svg": [
+    1843,
+    1848,
+    6
+   ],
+   "Flag of Costa Rica (1848–1906).svg": [
+    1849,
+    1906,
+    58
+   ],
+   "Flag of Costa Rica.svg": [
+    1907,
+    2026,
+    120
+   ]
+  }
+ },
+ {
+  "qid": "Q774",
+  "name": "危地马拉",
+  "years": 205,
+  "first": 1822,
+  "last": 2026,
+  "undated": 205,
+  "files": {
+   "Flag of Guatemala.svg": [
+    1822,
+    2026,
+    205
+   ]
+  }
+ },
+ {
+  "qid": "Q783",
+  "name": "洪都拉斯",
+  "years": 205,
+  "first": 1822,
+  "last": 2026,
+  "none": 2,
+  "dated": 203,
+  "files": {
+   "—": [
+    1822,
+    1824,
+    2
+   ],
+   "Flag of the United Provinces of Central America.svg": [
+    1823,
+    1823,
+    1
+   ],
+   "Flag of the Federal Republic of Central America.svg": [
+    1825,
+    1838,
+    14
+   ],
+   "Flag of Honduras (1839-1866).svg": [
+    1839,
+    1865,
+    27
+   ],
+   "Flag of Honduras (1866-1898).svg": [
+    1866,
+    1898,
+    33
+   ],
+   "Flag of Honduras (1890s yellow star variant).svg": [
+    1899,
+    1948,
+    50
+   ],
+   "Flag of Honduras (1949–2022, 2026–present).svg": [
+    1949,
+    2026,
+    74
+   ],
+   "Flag of Honduras (2022–2026).svg": [
+    2022,
+    2025,
+    4
+   ]
+  }
+ },
+ {
+  "qid": "Q1014",
+  "name": "利比里亚",
+  "years": 205,
+  "first": 1822,
+  "last": 2026,
+  "undated": 205,
+  "files": {
+   "Flag of Liberia.svg": [
+    1822,
+    2026,
+    205
+   ]
+  }
+ },
+ {
+  "qid": "Q244",
+  "name": "巴巴多斯",
+  "years": 204,
+  "first": 1815,
+  "last": 2026,
+  "none": 54,
+  "dated": 150,
+  "files": {
+   "—": [
+    1815,
+    1868,
+    54
+   ],
+   "Flag of Barbados (1870–1966).svg": [
+    1869,
+    1966,
+    90
+   ],
+   "Flag of Barbados.svg": [
+    1967,
+    2026,
+    60
+   ]
+  }
+ },
+ {
+  "qid": "Q238",
+  "name": "圣马力诺",
+  "years": 204,
+  "first": 1815,
+  "last": 2026,
+  "none": 189,
+  "dated": 15,
+  "files": {
+   "—": [
+    1815,
+    2011,
+    189
+   ],
+   "Flag of San Marino.svg": [
+    2012,
+    2026,
+    15
+   ]
+  }
+ },
+ {
+  "qid": "Q3916279",
+  "name": "葡属澳门",
+  "years": 200,
+  "first": 1800,
+  "last": 1999,
+  "none": 135,
+  "dated": 41,
+  "undated": 24,
+  "files": {
+   "—": [
+    1800,
+    1934,
+    135
+   ],
+   "Flag of the Government of Portuguese Macau (1935-1951).png": [
+    1935,
+    1950,
+    16
+   ],
+   "Flag of the Government of Portuguese Macau (1951-1976).svg": [
+    1951,
+    1975,
+    25
+   ],
+   "Flag of the Government of Portuguese Macau (1976–1999).svg": [
+    1976,
+    1999,
+    24
+   ]
+  }
+ },
+ {
+  "qid": "Q142",
+  "name": "法国",
+  "years": 194,
+  "first": 1800,
+  "last": 2026,
+  "dated": 192,
+  "none": 2,
+  "files": {
+   "Flag of France.svg": [
+    1800,
+    2026,
+    131
+   ],
+   "—": [
+    1814,
+    1974,
+    2
+   ],
+   "Flag of France (1958–1976).svg": [
+    1959,
+    1973,
+    15
+   ],
+   "Flag of France (1976–2020).svg": [
+    1975,
+    2020,
+    46
+   ]
+  }
+ },
+ {
+  "qid": "Q9648",
+  "name": "马尔维纳斯群岛",
+  "years": 194,
+  "first": 1833,
+  "last": 2026,
+  "none": 43,
+  "dated": 151,
+  "files": {
+   "—": [
+    1833,
+    1875,
+    43
+   ],
+   "Flag of the Falkland Islands (1876–1925).svg": [
+    1876,
+    1924,
+    49
+   ],
+   "Flag of the Falkland Islands (1925–1948).svg": [
+    1925,
+    1947,
+    23
+   ],
+   "Flag of the Falkland Islands (1948–1999).svg": [
+    1948,
+    1998,
+    51
+   ],
+   "Flag of the Falkland Islands.svg": [
+    1999,
+    2026,
+    28
+   ]
+  }
+ },
+ {
+  "qid": "Q96",
+  "name": "墨西哥",
+  "years": 188,
+  "first": 1822,
+  "last": 2026,
+  "dated": 167,
+  "undated": 3,
+  "none": 18,
+  "files": {
+   "Bandera del Primer Imperio Mexicano.svg": [
+    1822,
+    1822,
+    1
+   ],
+   "Bandera Histórica de la República Mexicana (1824-1918).svg": [
+    1823,
+    1892,
+    50
+   ],
+   "Imperial Standard of Mexico (1864-1867).svg": [
+    1864,
+    1866,
+    3
+   ],
+   "Flag of Mexico (1893–1916).svg": [
+    1893,
+    1915,
+    23
+   ],
+   "—": [
+    1916,
+    1933,
+    18
+   ],
+   "Flag of Mexico (1934-1968).svg": [
+    1934,
+    1968,
+    35
+   ],
+   "Flag of Mexico.svg": [
+    1969,
+    2026,
+    58
+   ]
+  }
+ },
+ {
+  "qid": "Q736",
+  "name": "厄瓜多尔",
+  "years": 187,
+  "first": 1840,
+  "last": 2026,
+  "none": 6,
+  "dated": 181,
+  "files": {
+   "—": [
+    1840,
+    1845,
+    6
+   ],
+   "Flag of Ecuador (1845–1860).svg": [
+    1846,
+    1860,
+    15
+   ],
+   "Civil flag and ensign of Ecuador.svg": [
+    1861,
+    1900,
+    40
+   ],
+   "Flag of Ecuador (1900–2009).svg": [
+    1901,
+    2009,
+    109
+   ],
+   "Flag of Ecuador.svg": [
+    2010,
+    2026,
+    17
+   ]
+  }
+ },
+ {
+  "qid": "Q792",
+  "name": "萨尔瓦多",
+  "years": 186,
+  "first": 1841,
+  "last": 2026,
+  "dated": 186,
+  "files": {
+   "Flag of El Salvador (1822–1865).svg": [
+    1841,
+    1864,
+    24
+   ],
+   "Flag of El Salvador (June 1865).svg": [
+    1865,
+    1868,
+    4
+   ],
+   "Flag of El Salvador (1869–1873).svg": [
+    1869,
+    1872,
+    4
+   ],
+   "Flag of El Salvador (1873–1875).svg": [
+    1873,
+    1874,
+    2
+   ],
+   "Flag of El Salvador (1875–1912).svg": [
+    1875,
+    1911,
+    37
+   ],
+   "Flag of El Salvador.svg": [
+    1912,
+    2026,
+    115
+   ]
+  }
+ },
+ {
+  "qid": "Q35672",
+  "name": "皮特凯恩群岛",
+  "years": 186,
+  "first": 1841,
+  "last": 2026,
+  "dated": 186,
+  "files": {
+   "Flag of the United Kingdom (1-2).svg": [
+    1841,
+    1983,
+    143
+   ],
+   "Flag of the Pitcairn Islands.svg": [
+    1984,
+    2026,
+    43
+   ]
+  }
+ },
+ {
+  "qid": "Q739",
+  "name": "哥伦比亚",
+  "years": 184,
+  "first": 1820,
+  "last": 2026,
+  "undated": 184,
+  "files": {
+   "Flag of Colombia.svg": [
+    1820,
+    2026,
+    184
+   ]
+  }
+ },
+ {
+  "qid": "Q30971",
+  "name": "法属波利尼西亚",
+  "years": 184,
+  "first": 1843,
+  "last": 2026,
+  "undated": 142,
+  "dated": 42,
+  "files": {
+   "Flag of France.svg": [
+    1843,
+    1984,
+    142
+   ],
+   "Flag of French Polynesia.svg": [
+    1985,
+    2026,
+    42
+   ]
+  }
+ },
+ {
+  "qid": "Q347",
+  "name": "列支敦士登",
+  "years": 183,
+  "first": 1807,
+  "last": 2026,
+  "undated": 183,
+  "files": {
+   "Flag of Liechtenstein.svg": [
+    1807,
+    2026,
+    183
+   ]
+  }
+ },
+ {
+  "qid": "Q77",
+  "name": "乌拉圭",
+  "years": 179,
+  "first": 1832,
+  "last": 2026,
+  "undated": 179,
+  "files": {
+   "Flag of Uruguay.svg": [
+    1832,
+    2026,
+    179
+   ]
+  }
+ },
+ {
+  "qid": "Q39",
+  "name": "瑞士",
+  "years": 178,
+  "first": 1849,
+  "last": 2026,
+  "undated": 41,
+  "dated": 137,
+  "files": {
+   "Civil Ensign of Switzerland (Pantone).svg": [
+    1849,
+    1889,
+    41
+   ],
+   "Flag of Switzerland.svg": [
+    1890,
+    2026,
+    137
+   ]
+  }
+ },
+ {
+  "qid": "Q889394",
+  "name": "葡属东非",
+  "years": 175,
+  "first": 1800,
+  "last": 1974,
+  "undated": 175,
+  "files": {
+   "Flag of Portugal (official).svg": [
+    1800,
+    1974,
+    175
+   ]
+  }
+ },
+ {
+  "qid": "Q2002279",
+  "name": "葡属几内亚",
+  "years": 174,
+  "first": 1800,
+  "last": 1973,
+  "undated": 174,
+  "files": {
+   "Flag of Portugal (official).svg": [
+    1800,
+    1973,
+    174
+   ]
+  }
+ },
+ {
+  "qid": "Q29999",
+  "name": "荷兰王国",
+  "years": 174,
+  "first": 1839,
+  "last": 2019,
+  "dated": 174,
+  "files": {
+   "Flag of the Netherlands.svg": [
+    1839,
+    2019,
+    174
+   ]
+  }
+ },
+ {
+  "qid": "Q207521",
+  "name": "阿比西尼亚帝国",
+  "years": 170,
+  "first": 1800,
+  "last": 1974,
+  "none": 96,
+  "undated": 74,
+  "files": {
+   "—": [
+    1800,
+    1895,
+    96
+   ],
+   "Flag of Ethiopia (1897–1974).svg": [
+    1896,
+    1974,
+    74
+   ]
+  }
+ },
+ {
+  "qid": "Q790",
+  "name": "海地",
+  "years": 168,
+  "first": 1859,
+  "last": 2026,
+  "dated": 168,
+  "files": {
+   "Flag of Haiti.svg": [
+    1859,
+    2026,
+    146
+   ],
+   "Flag of Haiti (1964–1986).svg": [
+    1964,
+    1985,
+    22
+   ]
+  }
+ },
+ {
+  "qid": "Q33788",
+  "name": "新喀里多尼亚",
+  "years": 168,
+  "first": 1859,
+  "last": 2026,
+  "undated": 168,
+  "files": {
+   "Flag of FLNKS.svg": [
+    1859,
+    2026,
+    168
+   ]
+  }
+ },
+ {
+  "qid": "Q16",
+  "name": "加拿大",
+  "years": 160,
+  "first": 1867,
+  "last": 2026,
+  "none": 1,
+  "dated": 159,
+  "files": {
+   "—": [
+    1867,
+    1867,
+    1
+   ],
+   "Flag of Canada (1868–1921).svg": [
+    1868,
+    1920,
+    53
+   ],
+   "Flag of Canada (1921–1957).svg": [
+    1921,
+    1956,
+    36
+   ],
+   "Flag of Canada (1957–1965).svg": [
+    1957,
+    1963,
+    7
+   ],
+   "Flag of Canada (1964).svg": [
+    1964,
+    1964,
+    1
+   ],
+   "Flag of Canada (Pantone).svg": [
+    1965,
+    2026,
+    62
+   ]
+  }
+ },
+ {
+  "qid": "Q31",
+  "name": "比利时",
+  "years": 160,
+  "first": 1867,
+  "last": 2026,
+  "dated": 160,
+  "files": {
+   "Flag of Belgium.svg": [
+    1867,
+    2026,
+    160
+   ]
+  }
+ },
+ {
+  "qid": "Q34",
+  "name": "瑞典",
+  "years": 156,
+  "first": 1800,
+  "last": 2026,
+  "undated": 156,
+  "files": {
+   "Flag of Sweden.svg": [
+    1800,
+    2026,
+    156
+   ]
+  }
+ },
+ {
+  "qid": "Q1054923",
+  "name": "英属香港",
+  "years": 154,
+  "first": 1843,
+  "last": 1996,
+  "none": 77,
+  "dated": 77,
+  "files": {
+   "—": [
+    1843,
+    1958,
+    77
+   ],
+   "Flag of Hong Kong (1871–1876).svg": [
+    1871,
+    1875,
+    5
+   ],
+   "Flag of Hong Kong (1876–1955).svg": [
+    1876,
+    1909,
+    34
+   ],
+   "Flag of Hong Kong (1959–1997).svg": [
+    1959,
+    1996,
+    38
+   ]
+  }
+ },
+ {
+  "qid": "Q30059027",
+  "name": "英属塞拉利昂殖民地保护国",
+  "years": 153,
+  "first": 1808,
+  "last": 1960,
+  "none": 80,
+  "undated": 28,
+  "dated": 45,
+  "files": {
+   "—": [
+    1808,
+    1887,
+    80
+   ],
+   "Flag of Sierra Leone (1889–1916).svg": [
+    1888,
+    1915,
+    28
+   ],
+   "Flag of Sierra Leone (1916–1961).svg": [
+    1916,
+    1960,
+    45
+   ]
+  }
+ },
+ {
+  "qid": "Q918126",
+  "name": "英属圭亚那",
+  "years": 152,
+  "first": 1814,
+  "last": 1965,
+  "none": 61,
+  "dated": 91,
+  "files": {
+   "—": [
+    1814,
+    1874,
+    61
+   ],
+   "Flag of British Guiana (1875–1906).svg": [
+    1875,
+    1905,
+    31
+   ],
+   "Flag of British Guiana (1906–1919).svg": [
+    1906,
+    1918,
+    13
+   ],
+   "Flag of British Guiana (1919–1955).svg": [
+    1919,
+    1954,
+    36
+   ],
+   "Flag of British Guiana (1955–1966).svg": [
+    1955,
+    1965,
+    11
+   ]
+  }
+ },
+ {
+  "qid": "Q157734",
+  "name": "马斯喀特苏丹国",
+  "years": 151,
+  "first": 1820,
+  "last": 1970,
+  "undated": 151,
+  "files": {
+   "Flag of Muscat.svg": [
+    1820,
+    1970,
+    151
+   ]
+  }
+ },
+ {
+  "qid": "Q7055500",
+  "name": "北格陵兰（译名）",
+  "years": 150,
+  "first": 1800,
+  "last": 1949,
+  "none": 150,
+  "files": {
+   "—": [
+    1800,
+    1949,
+    150
+   ]
+  }
+ },
+ {
+  "qid": "Q786",
+  "name": "多米尼加",
+  "years": 149,
+  "first": 1878,
+  "last": 2026,
+  "undated": 149,
+  "files": {
+   "Flag of the Dominican Republic.svg": [
+    1878,
+    2026,
+    149
+   ]
+  }
+ },
+ {
+  "qid": "Q846",
+  "name": "卡塔尔",
+  "years": 149,
+  "first": 1878,
+  "last": 2026,
+  "undated": 149,
+  "files": {
+   "Flag of Qatar.svg": [
+    1878,
+    2026,
+    149
+   ]
+  }
+ },
+ {
+  "qid": "Q419",
+  "name": "秘鲁",
+  "years": 149,
+  "first": 1878,
+  "last": 2026,
+  "undated": 149,
+  "files": {
+   "Flag of Peru.svg": [
+    1878,
+    2026,
+    149
+   ]
+  }
+ },
+ {
+  "qid": "Q750",
+  "name": "玻利维亚",
+  "years": 149,
+  "first": 1878,
+  "last": 2026,
+  "dated": 149,
+  "files": {
+   "Bandera de Bolivia (Estado).svg": [
+    1878,
+    2026,
+    149
+   ]
+  }
+ },
+ {
+  "qid": "Q298",
+  "name": "智利",
+  "years": 149,
+  "first": 1878,
+  "last": 2026,
+  "undated": 149,
+  "files": {
+   "Flag of Chile.svg": [
+    1878,
+    2026,
+    149
+   ]
+  }
+ },
+ {
+  "qid": "Q414",
+  "name": "阿根廷",
+  "years": 149,
+  "first": 1878,
+  "last": 2026,
+  "dated": 149,
+  "files": {
+   "Flag of Argentina (civil).svg": [
+    1878,
+    1985,
+    108
+   ],
+   "Flag of Argentina.svg": [
+    1986,
+    2026,
+    41
+   ]
+  }
+ },
+ {
+  "qid": "Q188161",
+  "name": "荷属东印度",
+  "years": 145,
+  "first": 1800,
+  "last": 1944,
+  "undated": 145,
+  "files": {
+   "Flag of the Netherlands.svg": [
+    1800,
+    1944,
+    145
+   ]
+  }
+ },
+ {
+  "qid": "Q1796551",
+  "name": "英属背风群岛",
+  "years": 145,
+  "first": 1815,
+  "last": 1959,
+  "none": 137,
+  "undated": 8,
+  "files": {
+   "—": [
+    1815,
+    1959,
+    137
+   ],
+   "Flag of Leeward Islands (1952–1958).svg": [
+    1951,
+    1958,
+    8
+   ]
+  }
+ },
+ {
+  "qid": "Q869",
+  "name": "泰国",
+  "years": 141,
+  "first": 1886,
+  "last": 2026,
+  "undated": 141,
+  "files": {
+   "Flag of Thailand.svg": [
+    1886,
+    2026,
+    141
+   ]
+  }
+ },
+ {
+  "qid": "Q928",
+  "name": "菲律宾",
+  "years": 141,
+  "first": 1886,
+  "last": 2026,
+  "none": 50,
+  "dated": 89,
+  "undated": 2,
+  "files": {
+   "—": [
+    1886,
+    1935,
+    50
+   ],
+   "Flag of the Philippines (navy blue).svg": [
+    1936,
+    1997,
+    60
+   ],
+   "Flag of the Philippines (1985–1986).svg": [
+    1985,
+    1986,
+    2
+   ],
+   "Flag of the Philippines.svg": [
+    1998,
+    2026,
+    29
+   ]
+  }
+ },
+ {
+  "qid": "Q235",
+  "name": "摩纳哥",
+  "years": 141,
+  "first": 1886,
+  "last": 2026,
+  "undated": 141,
+  "files": {
+   "Flag of Monaco.svg": [
+    1886,
+    2026,
+    141
+   ]
+  }
+ },
+ {
+  "qid": "Q228",
+  "name": "安道尔",
+  "years": 141,
+  "first": 1886,
+  "last": 2026,
+  "undated": 141,
+  "files": {
+   "Flag of Andorra.svg": [
+    1886,
+    2026,
+    141
+   ]
+  }
+ },
+ {
+  "qid": "Q851",
+  "name": "沙特阿拉伯",
+  "years": 140,
+  "first": 1878,
+  "last": 2026,
+  "dated": 136,
+  "none": 4,
+  "files": {
+   "Flag of Nejd (1921).svg": [
+    1878,
+    1925,
+    46
+   ],
+   "—": [
+    1933,
+    1936,
+    4
+   ],
+   "Flag of Saudi Arabia (1938–1973).svg": [
+    1937,
+    1972,
+    36
+   ],
+   "Flag of Saudi Arabia.svg": [
+    1973,
+    2026,
+    54
+   ]
+  }
+ },
+ {
+  "qid": "Q1953333",
+  "name": "库拉索及属地",
+  "years": 139,
+  "first": 1816,
+  "last": 1954,
+  "undated": 139,
+  "files": {
+   "Flag of the Netherlands.svg": [
+    1816,
+    1954,
+    139
+   ]
+  }
+ }
+]

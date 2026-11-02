@@ -28,7 +28,7 @@ def valid_at(dk: float, a: dict | None, b: dict | None, slack: float = 0.0) -> b
     return (ka is None or ka - slack <= dk) and (kb is None or dk <= kb + slack)
 
 
-STRONG = {"dynasty", "naturalearth", "wiki-title", "name", "capital+name", "coord+name", "predecessor", "successor", "territory"}
+STRONG = {"cshapes", "curated-name", "ww2", "dynasty", "naturalearth", "wiki-title", "name", "capital+name", "coord+name", "predecessor", "successor", "territory"}
 NOW_KEY = 2100.0
 
 
@@ -70,6 +70,14 @@ def alive(dk: float, s: dict) -> bool:
     if a is None and not s.get("curated"):
         return False   # 存在期未知：不作为候选（避免「仲家」这类条目出现在商代）
     ka, kb = rec_key(a), rec_key(b)
+    if dk >= 1800:
+        # 1800 年以后：只精确到年的端点按「该年 1 月 1 日 / 12 月 31 日」理解，不再放宽一年
+        # （否则 1959 年的尼日尔、1989 年的纳米比亚会在独立前就显示为独立国家）
+        if a is not None and not a.get("m"):
+            ka = float(a["y"])
+        if b is not None and not b.get("m"):
+            kb = float(b["y"]) + 0.999
+        return (ka is None or ka <= dk) and (kb is None or dk <= kb)
     return (ka is None or ka - _slack(a) <= dk) and (kb is None or dk <= kb + _slack(b))
 
 
@@ -77,6 +85,24 @@ class PolityResolver:
     def __init__(self, data_dir: Path):
         self.map = _load(data_dir / "polity_map.json.gz", {})
         self.states = {s["id"]: s for s in _load(data_dir / "states.json.gz", [])}
+        # 整理数据引用、但 states.json 没有的政权条目（占领当局、傀儡政权等；tools/build_runtime_states.py 从 Wikidata 取得）
+        _rs = data_dir / "curated" / "runtime_states.json"
+        if _rs.exists():
+            for q, r in json.loads(_rs.read_text(encoding="utf-8")).items():
+                if q.startswith("Q") and q not in self.states:
+                    # 只由带起止日期的整理图层（控制区、二战按月边界、CShapes 分期）引用：存在期以图层日期为准，Wikidata 缺起止也可作候选
+                    self.states[q] = {**r, "curated": True}
+        # 微型国家、虚构国家/地点等不是历史政权的条目（tools/build_state_exclusions.py 由 Wikidata 类别生成）：从候选中去掉
+        _ex = data_dir / "curated" / "state_exclusions.json"
+        self.excluded = {}
+        if _ex.exists():
+            _exd = json.loads(_ex.read_text(encoding="utf-8"))
+            for q, why in _exd.get("exclude", {}).items():
+                st = self.states.get(q)
+                hard = {"微型国家", "虚构国家", "虚构地点"} & set(why)
+                if st is not None and (hard or ("虚构实体" in why and not st.get("from"))):
+                    self.excluded[q] = why
+                    del self.states[q]
         # 人工核对的存在期修正（data/curated/lifespan_overrides.json，每条注明来源）
         _lo = data_dir / "curated" / "lifespan_overrides.json"
         if _lo.exists():
@@ -88,11 +114,19 @@ class PolityResolver:
                     if k in r:
                         st[f"wd_{k}"] = st.get(k)
                         st[k] = r[k]
+                if r.get("zh"):   # 面板显示名（Wikidata 中文标签指今天的行政区时，如「柔佛州」）
+                    st["wd_zh"], st["zh"] = st.get("zh"), r["zh"]
+                if r.get("current"):   # 至今仍存在（如今马来西亚各州的苏丹国）：没有终止时间是正常的
+                    st["current"] = True
                 st["curated_note"] = ((st.get("curated_note") or "") + " " + r["note"]).strip()
                 st["sources"] = st.get("sources", []) + r.get("sources", [])
         self.offices = _load(data_dir / "offices.json.gz", [])
         self.persons = {p["id"]: p for p in _load(data_dir / "persons.json.gz", [])}
         self.orgs = {o["id"]: o for o in _load(data_dir / "orgs.json.gz", [])}
+        # 中文名补译（data/curated/zh_labels.json：Wikidata 中文标签 / 中文维基条目名）
+        from .zh import fill as _zh_fill
+        for _recs in (self.states.values(), self.persons.values(), self.offices, self.orgs.values()):
+            _zh_fill(_recs, data_dir)
         # 现代仍存在的政权/领土（Natural Earth 2011 快照自带的 QID、特殊地位领土）：没有终止时间是正常的
         for fid, cs in self.map.get("2011", {}).items():
             for q, m, _ in cs:
@@ -135,6 +169,9 @@ class PolityResolver:
         fl = _load(data_dir / "ruler_fills.json.gz", {}) or {}
         for p in fl.get("persons", []):
             self.persons.setdefault(p["id"], p)
+        # 君主补充数据载入后再补译一次（已有中文的不动）
+        for _recs in (self.persons.values(), self.offices):
+            _zh_fill(_recs, data_dir)
         _ob = {o["id"]: o for o in self.offices}
         self.n_ruler_fills = 0
         for f in fl.get("fills", []):
@@ -160,6 +197,62 @@ class PolityResolver:
         for o in self.offices:
             for s in o.get("juris", []):
                 self.office_by_state.setdefault(s, []).append(o)
+        # 职位补充管辖政权（data/curated/office_links.json）
+        _ol = data_dir / "curated" / "office_links.json"
+        if _ol.exists():
+            for oid, r in json.loads(_ol.read_text(encoding="utf-8"))["links"].items():
+                o = _ob.get(oid)
+                for s in (r["states"] if o else []):
+                    if o not in self.office_by_state.setdefault(s, []):
+                        self.office_by_state[s].append(o)
+        # 补充职位：与名义君主并立的实际掌权者（幕府将军、摄政/关白、执权、护国公；data/curated/extra_offices.json，
+        # tools/curated_src/extra_offices.py 从 Wikidata 取任职记录）。同一职位原有的零散记录由完整记录取代。
+        _xo = data_dir / "curated" / "extra_offices.json"
+        if _xo.exists():
+            for r in json.loads(_xo.read_text(encoding="utf-8"))["offices"]:
+                for h in r["holders"]:
+                    if h["p"] not in self.persons:
+                        self.persons[h["p"]] = {"id": h["p"], "zh": h.get("zh"), "en": h.get("en")}
+                o = {"id": r["id"] + "@extra", "pos": r["id"], "zh": r["zh"], "en": None, "desc": r["note"], "sl": 60,
+                     "juris": r["juris"], "holders": [{"p": h["p"], "from": h["from"], "to": h["to"]} for h in r["holders"] if h.get("from")],
+                     "sources": [{"name": f"Wikidata {r['id']} 的 P39 任职声明（起止限定）", "url": r["src"]}]}
+                self.offices.append(o)
+                _ob[o["id"]] = o
+                for s in r["juris"]:
+                    lst = [x for x in self.office_by_state.get(s, []) if x.get("pos") != r["id"] and x["id"] != r["id"]]
+                    self.office_by_state[s] = lst + [o]
+            # 补充任职记录（Wikidata 缺漏、据史书补的个别君主；每条注明来源）
+            for h in json.loads(_xo.read_text(encoding="utf-8")).get("extra_holders", []):
+                o = _ob.get(h["office"])
+                if o is None:
+                    continue
+                if h["p"] not in self.persons:
+                    self.persons[h["p"]] = {"id": h["p"], "zh": h.get("zh")}
+                o["holders"] = o.get("holders", []) + [{"p": h["p"], "from": h["from"], "to": h["to"], "note": h.get("note"), "src": h.get("src")}]
+        # 底图名称的人工候选（data/curated/name_candidates.json）
+        _nc = data_dir / "curated" / "name_candidates.json"
+        _ncd = json.loads(_nc.read_text(encoding="utf-8")) if _nc.exists() else {}
+        self.name_cands = _ncd.get("names", {})
+        self.name_cands_ww2 = _ncd.get("ww2_before", {}).get("list", [])
+        # 朝代起止只精确到年时，用该朝「中国皇帝」任职记录中精确到日的首任开始 / 末任结束细化（同一年内），
+        # 避免 1644 年 7 月仍显示已亡的明朝而没有在位君主（末任结束早于朝代止年的年中）
+        for q in self.dyn.get("main", []) + self.dyn.get("secondary", []):
+            st = self.states.get(q)
+            if not st:
+                continue
+            hs = [h for o in self.office_by_state.get(q, []) if o.get("pos") == "Q268218" for h in o.get("holders", [])]
+            a, b, note = lifespan(st)
+            a2, b2 = a, b
+            if a and not a.get("m"):
+                fr = [h["from"] for h in hs if h.get("from") and h["from"].get("m") and h["from"]["y"] == a["y"]]
+                if fr:
+                    a2 = min(fr, key=rec_key)
+            if b and not b.get("m"):
+                to = [h["to"] for h in hs if h.get("to") and h["to"].get("m") and h["to"]["y"] == b["y"]]
+                if to and all(not (h.get("to") and rec_key(h["to"]) > rec_key(max(to, key=rec_key))) for h in hs if h.get("to")):
+                    b2 = max(to, key=rec_key)
+            if (a2, b2) != (a, b):
+                st["_life"] = (a2, b2, (note + "；" if note else "") + "起止细化到首任/末任君主的任职日期")
         # 官方历任名单（tools/build_official_offices.py）：补 Wikidata 缺失的任职者/任期，每条记录注明来源网址
         from .official import merge as _merge_official
         self.official_stats = _merge_official(self, data_dir)
@@ -174,6 +267,29 @@ class PolityResolver:
             if snap == "terr":   # 特殊地位领土：候选为该领土条目及其前身（P1365 链）
                 t = self.geo.trans.terr[fid]
                 return [[q, "territory", 150 - k] for k, q in enumerate(t.get("chain", []))]
+            if snap == "cs":     # CShapes 行：整理好的分期（带起止日期）> Natural Earth 现代 QID > 名称匹配；殖民地另加宗主国
+                return self._cs_cands(fid)
+            if snap == "q":      # 战线切出的占领区/解放区：直接给出政权 QID
+                return [[fid, "ww2", 600]]
+            if snap == "ww2":    # Stanford 二战按月边界的要素
+                md, kk = fid
+                W = self.geo.cs.war
+                nm, st = W.stan_feats(md)[kk][1][:2]
+                out = []
+                for c in W.stan_cands(nm, st, None):
+                    if c[0] == "gw":
+                        out += self._cs_gw_cands(c[1], None, None)
+                    else:
+                        out.append(c)
+                # 快照月内才成立的政权：成立日以前改用前身（name_candidates.json 的 ww2_before）
+                for q_new, q_old, a, b, _ in self.name_cands_ww2:
+                    if any(c[0] == q_new for c in out):
+                        out = [([q_new, c[1], c[2], b, None] if c[0] == q_new and len(c) == 3 else c) for c in out]
+                        out.insert(0, [q_old, "ww2", 700, a, b])
+                return out
+            if snap == "csx":    # 补充的微型国家 / 小岛国
+                e = self.geo.cs.extras[fid]
+                return [[e["qid"], "cshapes", 600, e.get("from"), e.get("to")]]
         base = self.map.get(str(snap), {}).get(str(fid), [])
         # 下级行政区（build_states.py 标记 sub，如「墨西哥州」）只在 Natural Earth 自带其 ID 时作为候选
         base = [c for c in base if c[1] == "naturalearth" or not (self.states.get(c[0]) or {}).get("sub")
@@ -183,7 +299,33 @@ class PolityResolver:
             blk = self.match_block.get((f or {}).get("props", {}).get("NAME"))
             if blk:
                 base = [c for c in base if c[0] not in blk]
+        if self.name_cands and self.geo is not None:
+            f = self.geo.polity(snap, fid)
+            nc = self.name_cands.get((f or {}).get("props", {}).get("NAME"))
+            if nc:
+                base = [[q, "curated-name", 550, a, b] for q, a, b, _ in nc] + base
         return self._dynasty(snap, fid) + base
+
+    def _cs_cands(self, i) -> list:
+        r = self.geo.cs.rows[i]
+        return self._cs_gw_cands(r["gw"], r["status"], r.get("owner"))
+
+    def _cs_gw_cands(self, gw, status, owner) -> list:
+        cs = self.geo.cs
+        r = {"gw": gw, "status": status or "independent", "owner": owner}
+        gi = cs.gw.get(r["gw"], {})
+        out = [[q, "cshapes", 600, a, b] for a, b, q in gi.get("periods", [])]
+        if gi.get("ne"):
+            out.append([gi["ne"][0], "name", 320])
+        out += [[q, "name", 300] for q in gi.get("names", []) if not (self.states.get(q) or {}).get("sub")]
+        if r.get("owner") and r["status"] != "independent":
+            og = cs.gw.get(r["owner"], {})
+            for a, b, q in og.get("periods", []):
+                out.append([q, "owner", 90, a, b])
+            if og.get("ne"):
+                out.append([og["ne"][0], "owner", 80])
+            out += [[q, "owner", 70] for q in og.get("names", [])]
+        return out
 
     def _dynasty(self, snap, fid) -> list:
         """中国地区多边形：按名称加入朝代候选（method="dynasty"，分数越高越优先）。"""
@@ -203,6 +345,17 @@ class PolityResolver:
                 seen.add(q)
                 out.append([q, "dynasty", 400 - k])
         return out
+
+    def _dyn_ruler(self, q, dk):
+        """朝代 q 在 dk 是否有在位的「中国皇帝」（前后 0.25 年内）；没有该朝的皇帝任职记录时返回 None。"""
+        hs = [h for o in self.office_by_state.get(q, []) if o.get("pos") == "Q268218" for h in o.get("holders", [])]
+        if not hs:
+            return None
+        for h in hs:
+            a, b = rec_key(h.get("from")), rec_key(h.get("to"))
+            if (a is None or a - 0.25 <= dk) and (b is None or dk <= b + 0.25):
+                return True
+        return False
 
     @staticmethod
     def capital_at(s: dict, dk: float):
@@ -239,10 +392,17 @@ class PolityResolver:
         前身/继承：若没有任何强候选在该日期存在，则沿 Wikidata「取代了」(P1365)/「被取代」(P1366) 找当时存在的
         前身或继承政权（继承政权要求首都在本多边形内）。"""
         dk = date.key()
+        k8 = date.y * 10000 + (date.m or 1) * 100 + (date.d or 1)
         out, raw = [], []
-        for qid, method, score in self.candidates(snap, fid):
+        for cand in self.candidates(snap, fid):
+            qid, method, score = cand[:3]
             s = self.states.get(qid)
             if not s or score < min_score:
+                continue
+            if len(cand) > 3:   # 带整理好的起止日期（CShapes 分期）：以分期为准，不再看 Wikidata 存在期
+                a, b = cand[3], cand[4]
+                if (a is None or a <= k8) and (b is None or k8 < b):
+                    out.append({"state": s, "method": method, "score": score, "strong": method in STRONG, "period": [a, b]})
                 continue
             raw.append((s, method, score))
             if alive(dk, s):
@@ -309,10 +469,12 @@ class PolityResolver:
                         return True
             return False
 
-        mrank = {"naturalearth": 0, "dynasty": 1, "territory": 1, "predecessor": 3, "successor": 3}
+        mrank = {"cshapes": -1, "curated-name": -1, "ww2": -2, "naturalearth": 0, "dynasty": 1, "territory": 1, "predecessor": 3, "successor": 3, "owner": 5}
 
         def within(c):
-            if c["method"] in ("dynasty", "territory"):
+            if c["method"] == "dynasty" and self._dyn_ruler(c["state"]["id"], dk) is False:
+                return -c["score"] + 300   # 该朝此时没有在位君主（如 581–587 年仍存续的后梁）：让位给有君主的朝代
+            if c["method"] in ("dynasty", "territory", "cshapes", "owner", "ww2", "curated-name"):
                 return -c["score"]
             if c["method"] in ("predecessor", "successor"):
                 return -c["state"].get("sl", 0)     # 多个前身/继承政权时取最主要的（维基语言版本最多）
@@ -333,6 +495,8 @@ class PolityResolver:
         """主要政权：第一个强候选；1800 年以后没有强候选时，允许「首都位于此范围」的政权——但只在首都落在此范围内的
         政权只有一个时（多个时说明旧多边形已分裂成几个国家，如 1825 年后的秘鲁总督区含智利、秘鲁、玻利维亚的首都）。"""
         p = next((c for c in cands if c["strong"]), None)
+        if p is None:   # CShapes 殖民地/保护国：本身没有对应的 Wikidata 条目时，显示宗主国（标签注明地位）
+            p = next((c for c in cands if c["method"] == "owner"), None)
         if p is None and date.y >= 1800:
             caps = [c for c in cands if c["method"] == "capital"]
             if len({c["state"]["id"] for c in caps}) == 1:
@@ -362,7 +526,8 @@ class PolityResolver:
 
     def person_brief(self, pid: str) -> dict:
         p = self.persons.get(pid, {})
-        return {"id": pid, "name": p.get("zh") or p.get("en") or pid, "en": p.get("en"), "desc": p.get("desc"),
+        from .zh import disp
+        return {"id": pid, "name": disp(p.get("zh") or p.get("en")) or f"{pid}（未记录姓名）", "en": p.get("en"), "desc": p.get("desc"),
                 "born": p.get("born"), "died": p.get("died")}
 
 

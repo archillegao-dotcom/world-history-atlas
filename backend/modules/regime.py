@@ -6,6 +6,8 @@
 """
 from __future__ import annotations
 
+from ..zh import disp as _zh_disp
+
 from ..live import wiki
 from ..polity import valid_at
 from ..registry import ContentModule
@@ -79,21 +81,37 @@ class RegimeModule(ContentModule):
         if act:
             ids = {x["id"] for x in group}
             blocs = [{"id": a["id"], "name": a["name"]} for a in act(ctx, date) if ids & set(a["members"])]
+        from ..flags import flag_at
+        chn = params.get("_chain")
+        fl_states = list(group)
+        # 同一国家链中同时「至今」的并立政权（如 1949 年以后的中华民国（宪政）与中华人民共和国）：只显示所点政权本身那一行
+        now_sel = []
+        if chn:
+            gids = {x["id"] for x in group}
+            now_sel = [r for r in chn["now"] if r.get("qid") in gids] if len(chn["now"]) > 1 else chn["now"]
+            now_sel = now_sel or chn["now"]
+            for r in now_sel:
+                if r.get("qid") in R.states and all(x["id"] != r["qid"] for x in fl_states):
+                    fl_states.insert(1, R.states[r["qid"]])
+        fl, fl_dated, fl_from, fl_src = flag_at(ctx.data_dir, fl_states, dk)
         summ = wiki.summary(st.get("zhwiki"), st.get("enwiki")) if params.get("online", True) else None
-        term = lambda x: {"id": x["v"], "name": x.get("zh") or x.get("en") or x["v"], "en": x.get("en")}
+        term = lambda x: {"id": x["v"], "name": _zh_disp(x.get("zh") or x.get("en") or x["v"]), "en": x.get("en")}
         return {"items": [], "total": 1, "kind": "regime",
-                "state": {"id": st["id"], "name": st.get("zh") or st.get("en"), "en": st.get("en"),
+                "state": {"id": st["id"], "name": _zh_disp(st.get("zh") or st.get("en")), "en": st.get("en"),
                           "desc": st.get("desc"), "from": fmt_time(st.get("from")) if st.get("from") else None,
                           "to": fmt_time(st.get("to")) if st.get("to") else None,
-                          "flag": wiki.commons_thumb(st.get("flag"), 160),
+                          "flag": wiki.commons_thumb(fl, 160), "flag_file": fl, "flag_dated": fl_dated,
+                          "flag_note": (fl_src if fl else (fl_src or "Wikidata 没有该政权的国旗记录")) if (fl_src or not fl) else None,
                           "zhwiki": st.get("zhwiki"), "enwiki": st.get("enwiki")},
                 "alternatives": [{**a, "method_zh": METHOD_ZH.get(a["method"], a["method"])} for a in alts],
                 "gov": [term(x) for x in gov_hit], "gov_undated": [term(x) for x in gov_und] if not gov_hit else [],
                 "ideology": [term(x) for x in ideo_hit + ideo_und],
                 "gov_from": None if gov_src is st else f'{gov_src.get("zh") or gov_src.get("en")}，{gov_src["id"]}',
                 "ideology_from": None if ideo_src is st else f'{ideo_src.get("zh") or ideo_src.get("en")}，{ideo_src["id"]}',
-                "capital": [x.get("name") for x in (caps_hit or caps_und)][:3],
+                "capital": [_zh_disp(x.get("name")) for x in (caps_hit or caps_und) if x.get("name")][:3],   # 没有中文/英文名称的条目不显示（否则出现「、吉隆坡」）
                 "parties": parties, "blocs": blocs,
+                "chain": chn and {"country": chn["country_zh"], "now": [r["zh"] for r in now_sel],
+                                  "rows": [{k: r.get(k) for k in ("from", "to", "zh", "qid", "parallel", "note", "src", "current")} for r in chn["rows"]]},
                 "definition": wiki.first_sentence(summ["extract"]) if summ else None,
                 "definition_src": summ and {"lang": summ["lang"], "url": summ["url"], "title": summ["title"]},
                 "note": "政体等字段以 Wikidata 为准；没有时间限定的值单独标出（可能不适用于所选日期）。"}

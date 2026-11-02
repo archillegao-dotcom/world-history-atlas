@@ -9,6 +9,8 @@ multinational military coalition、alliance、koinon 及其子类，且至少有
 """
 from __future__ import annotations
 
+from ..zh import disp as _zh_disp
+
 from pathlib import Path
 
 from ..polity import alive, valid_at
@@ -63,7 +65,7 @@ class AlliancesLayer(LayerModule):
                 if m["s"] not in mem:
                     mem.append(m["s"])
             if len(mem) >= 2 and (a.get("from") or any(m.get("from") for m in a["members"])):
-                out.append({"id": a["id"], "name": a.get("zh") or a.get("en"), "en": a.get("en"), "sl": a["sl"],
+                out.append({"id": a["id"], "name": _zh_disp(a.get("zh") or a.get("en")), "en": a.get("en"), "sl": a["sl"],
                             "members": mem, "no_end": not a.get("to")})
         return out
 

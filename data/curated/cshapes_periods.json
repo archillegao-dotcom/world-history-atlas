@@ -1,0 +1,808 @@
+{
+ "_doc": "CShapes 2.0 的 gwcode → 各时期对应的 Wikidata 政权（[起, 止(不含), QID]，日期为政体/国号更替日；来源见 sources）。没有列出的 gwcode 用名称匹配 + Natural Earth 现代 QID + 宗主国。日期来自英文维基百科相应条目（国家条目的 History/Infobox）。",
+ "sources": {
+  "365": "https://en.wikipedia.org/wiki/Russian_Empire ; https://en.wikipedia.org/wiki/Russian_Republic ; https://en.wikipedia.org/wiki/Russian_Soviet_Federative_Socialist_Republic ; https://en.wikipedia.org/wiki/Dissolution_of_the_Soviet_Union",
+  "255": "https://en.wikipedia.org/wiki/German_Empire ; https://en.wikipedia.org/wiki/Weimar_Republic ; https://en.wikipedia.org/wiki/Nazi_Germany",
+  "260": "https://en.wikipedia.org/wiki/West_Germany ; https://en.wikipedia.org/wiki/German_reunification ; https://en.wikipedia.org/wiki/Allied-occupied_Germany",
+  "265": "https://en.wikipedia.org/wiki/East_Germany ; https://en.wikipedia.org/wiki/Soviet_occupation_zone_of_Germany",
+  "640": "en.wikipedia: Government of the Grand National Assembly (abolition of sultanate 1922-11-01; republic 1923-10-29)",
+  "710": "https://en.wikipedia.org/wiki/Abdication_of_the_Qing_emperor ; https://en.wikipedia.org/wiki/Proclamation_of_the_People%27s_Republic_of_China",
+  "713": "https://en.wikipedia.org/wiki/Taiwan_under_Japanese_rule ; https://en.wikipedia.org/wiki/Retrocession_Day",
+  "730": "https://en.wikipedia.org/wiki/Korean_Empire ; https://en.wikipedia.org/wiki/Japan%E2%80%93Korea_Treaty_of_1910",
+  "731": "https://en.wikipedia.org/wiki/Soviet_Civil_Administration ; https://en.wikipedia.org/wiki/North_Korea",
+  "732": "https://en.wikipedia.org/wiki/United_States_Army_Military_Government_in_Korea ; https://en.wikipedia.org/wiki/First_Republic_of_Korea",
+  "740": "https://en.wikipedia.org/wiki/Constitution_of_Japan",
+  "750": "https://en.wikipedia.org/wiki/Dominion_of_India",
+  "770": "https://en.wikipedia.org/wiki/Dominion_of_Pakistan",
+  "300": "https://en.wikipedia.org/wiki/Dissolution_of_Austria-Hungary",
+  "305": "https://en.wikipedia.org/wiki/Republic_of_German-Austria ; https://en.wikipedia.org/wiki/First_Austrian_Republic ; https://en.wikipedia.org/wiki/Federal_State_of_Austria ; https://en.wikipedia.org/wiki/Allied-occupied_Austria",
+  "310": "https://en.wikipedia.org/wiki/Kingdom_of_Hungary_(1920%E2%80%931946) ; https://en.wikipedia.org/wiki/Second_Hungarian_Republic ; https://en.wikipedia.org/wiki/Hungarian_People%27s_Republic",
+  "345": "https://en.wikipedia.org/wiki/Kingdom_of_Yugoslavia ; https://en.wikipedia.org/wiki/Socialist_Federal_Republic_of_Yugoslavia ; https://en.wikipedia.org/wiki/Serbia_and_Montenegro",
+  "325": "https://en.wikipedia.org/wiki/1946_Italian_institutional_referendum",
+  "230": "https://en.wikipedia.org/wiki/Second_Spanish_Republic ; https://en.wikipedia.org/wiki/Francoist_Spain",
+  "235": "https://en.wikipedia.org/wiki/5_October_1910_revolution ; https://en.wikipedia.org/wiki/Estado_Novo_(Portugal) ; https://en.wikipedia.org/wiki/Carnation_Revolution",
+  "651": "https://en.wikipedia.org/wiki/Khedivate_of_Egypt ; https://en.wikipedia.org/wiki/Sultanate_of_Egypt ; https://en.wikipedia.org/wiki/Kingdom_of_Egypt ; https://en.wikipedia.org/wiki/United_Arab_Republic",
+  "630": "https://en.wikipedia.org/wiki/Pahlavi_Iran ; https://en.wikipedia.org/wiki/Iranian_Revolution",
+  "712": "https://en.wikipedia.org/wiki/Bogd_Khanate_of_Mongolia ; https://en.wikipedia.org/wiki/Mongolian_People%27s_Republic",
+  "645": "https://en.wikipedia.org/wiki/Mandatory_Iraq ; https://en.wikipedia.org/wiki/14_July_Revolution",
+  "820": "https://en.wikipedia.org/wiki/Malayan_Union ; https://en.wikipedia.org/wiki/Federation_of_Malaya ; https://en.wikipedia.org/wiki/Malaysia_Agreement",
+  "830": "https://en.wikipedia.org/wiki/Crown_Colony_of_Singapore ; https://en.wikipedia.org/wiki/Singapore_in_Malaysia ; https://en.wikipedia.org/wiki/Proclamation_of_Singapore",
+  "560": "https://en.wikipedia.org/wiki/Union_of_South_Africa",
+  "140": "https://en.wikipedia.org/wiki/Proclamation_of_the_Republic_(Brazil)",
+  "290": "https://en.wikipedia.org/wiki/Second_Polish_Republic ; https://en.wikipedia.org/wiki/Polish_People%27s_Republic ; https://en.wikipedia.org/wiki/Third_Polish_Republic",
+  "360": "https://en.wikipedia.org/wiki/Romanian_People%27s_Republic ; https://en.wikipedia.org/wiki/Romanian_revolution",
+  "355": "https://en.wikipedia.org/wiki/Kingdom_of_Bulgaria ; https://en.wikipedia.org/wiki/People%27s_Republic_of_Bulgaria",
+  "340": "https://en.wikipedia.org/wiki/Kingdom_of_Serbia",
+  "341": "https://en.wikipedia.org/wiki/Kingdom_of_Montenegro",
+  "368": "https://en.wikipedia.org/wiki/Republic_of_Lithuania_(1918%E2%80%931940)",
+  "375": "https://en.wikipedia.org/wiki/Finnish_Declaration_of_Independence",
+  "700": "https://en.wikipedia.org/wiki/Kingdom_of_Afghanistan",
+  "220": "https://en.wikipedia.org/wiki/French_Third_Republic ; https://en.wikipedia.org/wiki/Vichy_France ; https://en.wikipedia.org/wiki/Provisional_Government_of_the_French_Republic ; https://en.wikipedia.org/wiki/French_Fourth_Republic ; https://en.wikipedia.org/wiki/French_Fifth_Republic",
+  "620": "https://en.wikipedia.org/wiki/Italian_Libya ; https://en.wikipedia.org/wiki/British_Military_Administration_(Libya) ; https://en.wikipedia.org/wiki/Kingdom_of_Libya ; https://en.wikipedia.org/wiki/1969_Libyan_revolution",
+  "530": "en.wikipedia: Ethiopian Empire; Italian East Africa (1936-05-09 annexation, 1941-05-05 Haile Selassie returns to Addis Ababa); Derg (1974-09-12); People's Democratic Republic of Ethiopia (1987-09-10); Transitional Government of Ethiopia (1991-05-28 – 1995-08-21)",
+  "678": "en.wikipedia: Mutawakkilite Kingdom of Yemen; North Yemen Civil War (1962-09-26 revolution)",
+  "680": "en.wikipedia: South Yemen (independence 1967-11-30)",
+  "690": "en.wikipedia: Iraqi invasion of Kuwait (1990-08-02); Kuwait Governorate (Iraqi annexation, until liberation 1991-02-26)",
+  "291": "en.wikipedia: Free City of Danzig",
+  "580": "en.wikipedia: Merina Kingdom (annexed by France 1896-08-06)",
+  "572": "en.wikipedia: Swaziland under South African Republic protection 1894-12-10; Treaty of Vereeniging 1902-05-31",
+  "817": "en.wikipedia: State of Vietnam (Geneva 1954-07-21; Republic of Vietnam proclaimed 1955-10-26)",
+  "205": "en.wikipedia: Provisional Government of Ireland (1922-01-16); Irish Free State (1922-12-06 – 1937-12-29)"
+ },
+ "periods": {
+  "365": [
+   [
+    "1886-01-01",
+    "1917-09-14",
+    "Q34266"
+   ],
+   [
+    "1917-09-14",
+    "1917-11-07",
+    "Q139319"
+   ],
+   [
+    "1917-11-07",
+    "1922-12-30",
+    "Q2305208"
+   ],
+   [
+    "1922-12-30",
+    "1991-12-26",
+    "Q15180"
+   ],
+   [
+    "1991-12-26",
+    null,
+    "Q159"
+   ]
+  ],
+  "255": [
+   [
+    "1886-01-01",
+    "1918-11-09",
+    "Q43287"
+   ],
+   [
+    "1918-11-09",
+    "1933-01-30",
+    "Q41304"
+   ],
+   [
+    "1933-01-30",
+    "1945-06-05",
+    "Q7318"
+   ]
+  ],
+  "260": [
+   [
+    "1945-05-08",
+    "1949-05-23",
+    "Q2415901"
+   ],
+   [
+    "1949-05-23",
+    "1990-10-03",
+    "Q713750"
+   ],
+   [
+    "1990-10-03",
+    null,
+    "Q183"
+   ]
+  ],
+  "265": [
+   [
+    "1945-05-08",
+    "1949-10-07",
+    "Q55300"
+   ],
+   [
+    "1949-10-07",
+    "1990-10-03",
+    "Q16957"
+   ]
+  ],
+  "640": [
+   [
+    "1886-01-01",
+    "1922-11-01",
+    "Q12560"
+   ],
+   [
+    "1922-11-01",
+    "1923-10-29",
+    "Q2949827"
+   ],
+   [
+    "1923-10-29",
+    null,
+    "Q43"
+   ]
+  ],
+  "710": [
+   [
+    "1886-01-01",
+    "1912-02-12",
+    "Q8733"
+   ],
+   [
+    "1912-02-12",
+    "1949-10-01",
+    "Q13426199"
+   ],
+   [
+    "1949-10-01",
+    null,
+    "Q148"
+   ]
+  ],
+  "713": [
+   [
+    "1895-04-17",
+    "1945-10-25",
+    "Q137816"
+   ],
+   [
+    "1945-10-25",
+    null,
+    "Q865"
+   ]
+  ],
+  "730": [
+   [
+    "1886-01-01",
+    "1897-10-12",
+    "Q28179"
+   ],
+   [
+    "1897-10-12",
+    "1910-08-29",
+    "Q28233"
+   ],
+   [
+    "1910-08-29",
+    "1945-09-02",
+    "Q503585"
+   ]
+  ],
+  "731": [
+   [
+    "1945-10-03",
+    "1946-02-08",
+    "Q15242873"
+   ],
+   [
+    "1948-09-09",
+    null,
+    "Q423"
+   ]
+  ],
+  "732": [
+   [
+    "1945-09-08",
+    "1948-08-15",
+    "Q484104"
+   ],
+   [
+    "1948-08-15",
+    null,
+    "Q884"
+   ]
+  ],
+  "740": [
+   [
+    "1886-01-01",
+    "1947-05-03",
+    "Q188712"
+   ],
+   [
+    "1947-05-03",
+    null,
+    "Q17"
+   ]
+  ],
+  "750": [
+   [
+    "1886-01-01",
+    "1947-08-15",
+    "Q129286"
+   ],
+   [
+    "1947-08-15",
+    "1950-01-26",
+    "Q1775277"
+   ],
+   [
+    "1950-01-26",
+    null,
+    "Q668"
+   ]
+  ],
+  "770": [
+   [
+    "1947-08-14",
+    "1956-03-23",
+    "Q2006542"
+   ],
+   [
+    "1956-03-23",
+    null,
+    "Q843"
+   ]
+  ],
+  "300": [
+   [
+    "1886-01-01",
+    "1918-10-31",
+    "Q28513"
+   ]
+  ],
+  "305": [
+   [
+    "1918-11-12",
+    "1919-09-10",
+    "Q268970"
+   ],
+   [
+    "1919-09-10",
+    "1934-05-01",
+    "Q518101"
+   ],
+   [
+    "1934-05-01",
+    "1938-03-13",
+    "Q176495"
+   ],
+   [
+    "1945-04-27",
+    "1955-07-27",
+    "Q596239"
+   ],
+   [
+    "1955-07-27",
+    null,
+    "Q40"
+   ]
+  ],
+  "310": [
+   [
+    "1920-03-01",
+    "1946-02-01",
+    "Q600018"
+   ],
+   [
+    "1946-02-01",
+    "1949-08-20",
+    "Q940741"
+   ],
+   [
+    "1949-08-20",
+    "1989-10-23",
+    "Q16410"
+   ],
+   [
+    "1989-10-23",
+    null,
+    "Q28"
+   ]
+  ],
+  "345": [
+   [
+    "1918-12-01",
+    "1929-10-03",
+    "Q15102440"
+   ],
+   [
+    "1929-10-03",
+    "1945-11-29",
+    "Q191077"
+   ],
+   [
+    "1945-11-29",
+    "1992-04-27",
+    "Q83286"
+   ],
+   [
+    "1992-04-27",
+    "2003-02-04",
+    "Q838261"
+   ],
+   [
+    "2003-02-04",
+    "2006-06-05",
+    "Q37024"
+   ]
+  ],
+  "325": [
+   [
+    "1886-01-01",
+    "1946-06-02",
+    "Q172579"
+   ],
+   [
+    "1946-06-02",
+    null,
+    "Q38"
+   ]
+  ],
+  "230": [
+   [
+    "1886-01-01",
+    "1931-04-14",
+    "Q1044536"
+   ],
+   [
+    "1931-04-14",
+    "1939-04-01",
+    "Q178038"
+   ],
+   [
+    "1939-04-01",
+    "1975-11-20",
+    "Q13474305"
+   ],
+   [
+    "1975-11-20",
+    null,
+    "Q29"
+   ]
+  ],
+  "235": [
+   [
+    "1886-01-01",
+    "1910-10-05",
+    "Q45670"
+   ],
+   [
+    "1910-10-05",
+    "1926-05-28",
+    "Q167360"
+   ],
+   [
+    "1933-04-11",
+    "1974-04-25",
+    "Q824489"
+   ],
+   [
+    "1974-04-25",
+    null,
+    "Q45"
+   ]
+  ],
+  "651": [
+   [
+    "1886-01-01",
+    "1914-12-19",
+    "Q127861"
+   ],
+   [
+    "1914-12-19",
+    "1922-02-28",
+    "Q370173"
+   ],
+   [
+    "1922-02-28",
+    "1953-06-18",
+    "Q124943"
+   ],
+   [
+    "1953-06-18",
+    "1958-02-22",
+    "Q3087763"
+   ],
+   [
+    "1958-02-22",
+    "1971-09-02",
+    "Q170468"
+   ],
+   [
+    "1971-09-02",
+    null,
+    "Q79"
+   ]
+  ],
+  "630": [
+   [
+    "1886-01-01",
+    "1925-12-15",
+    "Q63158027"
+   ],
+   [
+    "1925-12-15",
+    "1979-02-11",
+    "Q107258515"
+   ],
+   [
+    "1979-02-11",
+    null,
+    "Q794"
+   ]
+  ],
+  "712": [
+   [
+    "1911-12-29",
+    "1924-11-26",
+    "Q2475921"
+   ],
+   [
+    "1924-11-26",
+    "1992-02-12",
+    "Q212056"
+   ],
+   [
+    "1992-02-12",
+    null,
+    "Q711"
+   ]
+  ],
+  "645": [
+   [
+    "1920-01-01",
+    "1932-10-03",
+    "Q146720"
+   ],
+   [
+    "1932-10-03",
+    "1958-07-14",
+    "Q149805"
+   ],
+   [
+    "1958-07-14",
+    null,
+    "Q796"
+   ]
+  ],
+  "820": [
+   [
+    "1946-04-01",
+    "1948-02-01",
+    "Q976099"
+   ],
+   [
+    "1948-02-01",
+    "1963-09-16",
+    "Q1479726"
+   ],
+   [
+    "1963-09-16",
+    null,
+    "Q833"
+   ]
+  ],
+  "830": [
+   [
+    "1946-04-01",
+    "1963-09-16",
+    "Q4373718"
+   ],
+   [
+    "1965-08-09",
+    null,
+    "Q334"
+   ]
+  ],
+  "560": [
+   [
+    "1910-05-31",
+    "1961-05-31",
+    "Q193619"
+   ],
+   [
+    "1961-05-31",
+    null,
+    "Q258"
+   ]
+  ],
+  "140": [
+   [
+    "1886-01-01",
+    "1889-11-15",
+    "Q217230"
+   ],
+   [
+    "1889-11-15",
+    "1930-11-03",
+    "Q2414171"
+   ],
+   [
+    "1930-11-03",
+    null,
+    "Q155"
+   ]
+  ],
+  "290": [
+   [
+    "1918-11-11",
+    "1945-06-28",
+    "Q207272"
+   ],
+   [
+    "1945-06-28",
+    "1989-12-31",
+    "Q211274"
+   ],
+   [
+    "1989-12-31",
+    null,
+    "Q36"
+   ]
+  ],
+  "360": [
+   [
+    "1886-01-01",
+    "1947-12-30",
+    "Q203493"
+   ],
+   [
+    "1947-12-30",
+    "1965-08-21",
+    "Q2685298"
+   ],
+   [
+    "1965-08-21",
+    "1989-12-22",
+    "Q842794"
+   ],
+   [
+    "1989-12-22",
+    null,
+    "Q218"
+   ]
+  ],
+  "355": [
+   [
+    "1886-01-01",
+    "1908-10-05",
+    "Q815731"
+   ],
+   [
+    "1908-10-05",
+    "1946-09-15",
+    "Q147909"
+   ],
+   [
+    "1946-09-15",
+    "1990-11-15",
+    "Q121932"
+   ],
+   [
+    "1990-11-15",
+    null,
+    "Q219"
+   ]
+  ],
+  "340": [
+   [
+    "1886-01-01",
+    "1918-12-01",
+    "Q241748"
+   ]
+  ],
+  "341": [
+   [
+    "1886-01-01",
+    "1910-08-28",
+    "Q779011"
+   ],
+   [
+    "1910-08-28",
+    "1918-11-26",
+    "Q386496"
+   ]
+  ],
+  "368": [
+   [
+    "1918-02-16",
+    "1940-08-03",
+    "Q8272919"
+   ],
+   [
+    "1990-03-11",
+    null,
+    "Q37"
+   ]
+  ],
+  "375": [
+   [
+    "1917-12-06",
+    null,
+    "Q33"
+   ]
+  ],
+  "700": [
+   [
+    "1886-01-01",
+    "1926-06-09",
+    "Q1335260"
+   ],
+   [
+    "1926-06-09",
+    "1973-07-17",
+    "Q1138904"
+   ]
+  ],
+  "220": [
+   [
+    "1886-01-01",
+    "1940-07-10",
+    "Q70802"
+   ],
+   [
+    "1940-07-10",
+    "1944-08-25",
+    "Q69808"
+   ],
+   [
+    "1944-08-25",
+    "1946-10-27",
+    "Q783684"
+   ],
+   [
+    "1946-10-27",
+    "1958-10-04",
+    "Q69829"
+   ],
+   [
+    "1958-10-04",
+    null,
+    "Q142"
+   ]
+  ],
+  "620": [
+   [
+    "1934-01-01",
+    "1943-05-13",
+    "Q284568"
+   ],
+   [
+    "1943-05-13",
+    "1951-12-24",
+    "Q16953965"
+   ],
+   [
+    "1951-12-24",
+    "1969-09-01",
+    "Q31454"
+   ],
+   [
+    "1969-09-01",
+    null,
+    "Q1016"
+   ]
+  ],
+  "530": [
+   [
+    "1886-01-01",
+    "1936-05-09",
+    "Q207521"
+   ],
+   [
+    "1936-05-09",
+    "1941-05-05",
+    "Q328478"
+   ],
+   [
+    "1941-05-05",
+    "1974-09-12",
+    "Q207521"
+   ],
+   [
+    "1974-09-12",
+    "1987-09-10",
+    "Q828005"
+   ],
+   [
+    "1987-09-10",
+    "1991-05-28",
+    "Q940821"
+   ],
+   [
+    "1991-05-28",
+    "1995-08-21",
+    "Q332071"
+   ],
+   [
+    "1995-08-21",
+    null,
+    "Q115"
+   ]
+  ],
+  "678": [
+   [
+    "1918-11-01",
+    "1962-09-26",
+    "Q580188"
+   ],
+   [
+    "1962-09-26",
+    null,
+    "Q267584"
+   ]
+  ],
+  "680": [
+   [
+    "1967-11-30",
+    null,
+    "Q199841"
+   ]
+  ],
+  "690": [
+   [
+    "1961-06-19",
+    "1990-08-02",
+    "Q817"
+   ],
+   [
+    "1990-08-02",
+    "1991-02-26",
+    "Q6448838"
+   ],
+   [
+    "1991-02-26",
+    null,
+    "Q817"
+   ]
+  ],
+  "291": [
+   [
+    "1919-01-01",
+    null,
+    "Q216173"
+   ]
+  ],
+  "580": [
+   [
+    "1886-01-01",
+    "1896-08-06",
+    "Q1071439"
+   ]
+  ],
+  "572": [
+   [
+    "1894-12-10",
+    "1902-05-31",
+    "Q550374"
+   ]
+  ],
+  "817": [
+   [
+    "1954-07-21",
+    "1955-10-26",
+    "Q1193879"
+   ]
+  ],
+  "205": [
+   [
+    "1922-01-16",
+    "1922-12-06",
+    "Q450799"
+   ],
+   [
+    "1922-12-06",
+    "1937-12-29",
+    "Q31747"
+   ]
+  ]
+ }
+}

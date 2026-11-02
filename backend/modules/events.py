@@ -8,6 +8,8 @@
 """
 from __future__ import annotations
 
+from ..zh import disp, fill as zh_fill
+
 from pathlib import Path
 
 from ..registry import ContentModule
@@ -35,6 +37,7 @@ class EventsModule(ContentModule):
 
     def load(self, ctx):
         self.recs = load_records(Path(ctx.data_dir) / "events.json.gz")
+        zh_fill(self.recs, ctx.data_dir, "name")
         for r in self.recs:
             r["_k"] = rec_key(r.get("start"))
             r["_e"] = rec_key(r.get("end"))
@@ -71,7 +74,7 @@ class EventsModule(ContentModule):
             # 排序：当天 > 当月 > 同一年开始 > 正在进行 > 距离（年）越近；同组内 sitelinks（知名度）高的在前
             bucket = 0 if same_day else 1 if same_month else 2 if ydist == 0 else 3 if ongoing else 4 + ydist
             out.append({
-                "id": r["id"], "title": r.get("name") or r.get("en_name") or r["id"], "title_en": r.get("en_name"),
+                "id": r["id"], "title": disp(r.get("name") or r.get("en_name")) or r["id"], "title_en": r.get("en_name"),
                 "date": fmt_time(r["start"]) + (f" — {fmt_time(r['end'])}" if r.get("end") else ""),
                 "subtitle": ("★ 当天 " if same_day else "进行中 " if ongoing and ydist else "") + (r.get("desc") or ""),
                 "coord": r.get("coord"), "match": how, "coord_src": r.get("coord_src"),

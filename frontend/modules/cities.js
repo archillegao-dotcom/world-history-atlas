@@ -35,10 +35,11 @@
         (c.capital ? "<br>★ 当时的国家首都" : "") +
         (c.hist.length ? `<br>当时官方名称：${c.hist.map(WHA.esc).join(" / ")}` : "") +
         (c.pop ? `<br>人口（Wikidata 最新）：${c.pop.toLocaleString()}` : "") +
-        (c.inferred ? "<br><small>建立时间无记录，按已知最早存在证据显示</small>" : "");
+        (c.inferred ? "<br><small>建立时间无记录，按已知最早存在证据显示</small>" : "") + "<br><small>点击：查看所在政权；Ctrl/⌘+点击：维基百科</small>";
       L.marker([c.coord[1], c.coord[0]], { icon, keyboard: false, zIndexOffset: c.capital ? 500 : 0 })
         .bindTooltip(tip, { direction: "top", offset: [0, -6] })
-        .on("click", () => c.wiki && window.open(c.wiki, "_blank"))
+        // 点击城市：选中城市所在的政权（与点击多边形相同）；按住 Ctrl/⌘ 点击则打开维基百科
+        .on("click", (e) => { if ((e.originalEvent?.ctrlKey || e.originalEvent?.metaKey) && c.wiki) window.open(c.wiki, "_blank"); else WHA.selectAt(c.coord[1], c.coord[0]); })
         .addTo(group);
     }
   }

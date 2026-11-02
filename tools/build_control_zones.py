@@ -62,6 +62,15 @@ def resolve(spec):
         B = BasemapStore()
         b = spec["basemap"]
         gs += [f["geom"] for f in B.features(b["snap"]).values() if f["props"].get("NAME") == b["name"]]
+    if "cshapes" in spec:   # CShapes 2.0 在某日期有效的行（按 gwcode）
+        c = spec["cshapes"]
+        import gzip as _gz
+        if "cs" not in _cache:
+            _cache["cs"] = json.loads(_gz.decompress((config.DATA_DIR / "cshapes.json.gz").read_bytes()))
+        k = int(c["date"].replace("-", ""))
+        for r in _cache["cs"]["rows"]:
+            if r["gw"] in c["gw"] and r["from"] <= k and (r["to"] is None or k < r["to"]):
+                gs.append(make_valid(shape(r["geom"])))
     if "polygon" in spec:
         gs.append(make_valid(shape({"type": "Polygon", "coordinates": [spec["polygon"]]})))
     if not gs:
@@ -69,6 +78,8 @@ def resolve(spec):
     g = make_valid(unary_union(gs))
     if "intersect_bbox" in spec:
         g = make_valid(g.intersection(box(*spec["intersect_bbox"])))
+    if "intersect" in spec:
+        g = make_valid(g.intersection(resolve(spec["intersect"])))
     if "minus" in spec:
         g = make_valid(g.difference(resolve(spec["minus"])))
     for u in spec.get("union", []):   # 再并上其他几何规格（如金朝 = 宋朝淮河以北 ∪ 辽朝故地）
@@ -81,6 +92,9 @@ def main():
     out = []
     for z in cur["zones"]:
         g = resolve(z["geometry"])
+        if g.is_empty or g.area < 1e-6:
+            print(f"{z['id']:32} EMPTY geometry, skipped")
+            continue
         rec = {k: v for k, v in z.items() if k != "geometry"}
         rec["geom"] = mapping(g)
         rec["bbox"] = [round(x, 4) for x in g.bounds]

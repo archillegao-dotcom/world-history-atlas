@@ -1,0 +1,14 @@
+{
+ "_doc": "人工修正的按日期国旗（优先于 Wikidata P41）。v=Commons 文件名；from/to={y,m,d,p}（to 不含）；src=来源。",
+ "exclude_patterns": ["Fictitious", "fictitious"],
+ "flags": {
+  "Q13426199": [
+   {"v": "Flag of China (1912–1928).svg", "from": {"y": 1912, "m": 1, "d": 10, "p": 11}, "to": {"y": 1928, "m": 12, "d": 17, "p": 11}, "src": "https://en.wikipedia.org/wiki/Flag_of_the_Republic_of_China（五色旗：临时参议院选定，1912–1928）"},
+   {"v": "Flag of the Republic of China.svg", "from": {"y": 1928, "m": 12, "d": 17, "p": 11}, "to": null, "src": "https://en.wikipedia.org/wiki/Flag_of_the_Republic_of_China（《中华民国国徽国旗法》1928-12-17 定青天白日满地红为国旗）"}
+  ],
+  "Q865": [
+   {"v": "Flag of China (1912–1928).svg", "from": {"y": 1912, "m": 1, "d": 10, "p": 11}, "to": {"y": 1928, "m": 12, "d": 17, "p": 11}, "src": "https://en.wikipedia.org/wiki/Flag_of_the_Republic_of_China"},
+   {"v": "Flag of the Republic of China.svg", "from": {"y": 1928, "m": 12, "d": 17, "p": 11}, "to": null, "src": "https://en.wikipedia.org/wiki/Flag_of_the_Republic_of_China（1928-12-17 起；1945-10-25 起用于台湾）"}
+  ]
+ }
+}

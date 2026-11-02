@@ -1,0 +1,8575 @@
+{{Short description|None}}
+{{more citations needed|date=November 2020}}
+{{TOC right}}
+This is a list of the '''[[Chinese era name]]s''' used by the various [[Dynasties in Chinese history|dynasties]] and regimes in the [[history of China]], sorted by [[Chinese sovereign|monarch]].
+
+The English renditions of the era names in this list are based on the [[Pinyin|Hanyu Pinyin]] system. However, some academic works utilize the [[Wade–Giles]] romanization. For instance, the era of ''Zhenguan'' ({{lang|zh-Hant|貞觀}}) during the reign of the [[Emperor Taizong of Tang]] is rendered as ''Chen-kuan'' in Wade–Giles.<ref name="Wade–Giles">{{cite book|last1=Winkler|first1=Dietmar|author-link=Dietmar W. Winkler|last2=Tang|first2=Li|title=Hidden Treasures and Intercultural Encounters: Studies on East Syriac Christianity in China and Central Asia|year=2009|url=https://books.google.com/books?id=7f9gS40A_3IC&dq=chen-kuan&pg=PA267|page=267|isbn=9783643500458}}</ref>
+
+==[[Han dynasty]]==
+===[[Han dynasty#Western Han|Western Han]]===
+{| class="wikitable"
+|-
+!Era name
+!Period of use
+!Length of use
+!Remark
+|-
+!colspan="4"|[[Emperor Wu of Han]]<br/>{{small|(r. 141–87 BCE)}}
+|-
+|Jianyuan<br/>{{lang|zh-Hant|建元}}
+|140–135 BCE
+|6 years
+|
+|-
+|Yuanguang<br/>{{lang|zh-Hant|元光}}
+|134–129 BCE
+|6 years
+|
+|-
+|Yuanshuo<br/>{{lang|zh-Hant|元朔}}
+|128–123 BCE
+|6 years
+|
+|-
+|Yuanshou<br/>{{lang|zh-Hant|元狩}}
+|122–117 BCE
+|6 years
+|
+|-
+|Yuanding<br/>{{lang|zh-Hant|元鼎}}
+|116–111 BCE
+|6 years
+|
+|-
+|Yuanfeng<br/>{{lang|zh-Hant|元封}}
+|110–105 BCE
+|6 years
+|
+|-
+|Taichu<br/>{{lang|zh-Hant|太初}}
+|104–101 BCE
+|4 years
+|
+|-
+|Tianhan<br/>{{lang|zh-Hant|天漢}}
+|100–97 BCE
+|4 years
+|
+|-
+|Taishi<br/>{{lang|zh-Hant|太始}}
+|96–93 BCE
+|4 years
+|
+|-
+|Zhenghe<br/>{{lang|zh-Hant|征和}}
+|92–89 BCE
+|4 years
+|Or ''Yanhe'' ({{lang|zh-Hant|延和}}).
+|-
+|Houyuan<br/>{{lang|zh-Hant|後元}}
+|88–87 BCE
+|2 years
+|Or ''Hou'' ({{lang|zh-Hant|後}}), ''Zhenghehouyuan'' ({{lang|zh-Hant|征和後元}}). Might not be an era name.
+|-
+!colspan="4"|[[Emperor Zhao of Han]]<br/>{{small|(r. 87–74 BCE)}}
+|-
+|Shiyuan<br/>{{lang|zh-Hant|始元}}
+|86–80 BCE
+|7 years
+|
+|-
+|Yuanfeng<br/>{{lang|zh-Hant|元鳳}}
+|80–75 BCE
+|6 years
+|
+|-
+|Yuanping<br/>{{lang|zh-Hant|元平}}
+|74 BCE
+|1 year
+|Usage continued by [[Marquis of Haihun|Liu He]] and the [[Emperor Xuan of Han]] upon their ascension to the throne.
+|-
+!colspan="4"|[[Emperor Xuan of Han]]<br/>{{small|(r. 74–48 BCE)}}
+|-
+|Benshi<br/>{{lang|zh-Hant|本始}}
+|73–70 BCE
+|4 years
+|
+|-
+|Dijie<br/>{{lang|zh-Hant|地節}}
+|69–66 BCE
+|4 years
+|
+|-
+|Yuankang<br/>{{lang|zh-Hant|元康}}
+|65–61 BCE
+|4 years 2 months
+|
+|-
+|Shenjue<br/>{{lang|zh-Hant|神爵}}
+|61–58 BCE
+|4 years
+|
+|-
+|Wufeng<br/>{{lang|zh-Hant|五鳳}}
+|57–54 BCE
+|4 years
+|
+|-
+|Ganlu<br/>{{lang|zh-Hant|甘露}}
+|53–50 BCE
+|4 years
+|
+|-
+|Huanglong<br/>{{lang|zh-Hant|黃龍}}
+|49 BCE
+|1 year
+|
+|-
+!colspan="4"|[[Emperor Yuan of Han]]<br/>{{small|(r. 48–33 BCE)}}
+|-
+|Chuyuan<br/>{{lang|zh-Hant|初元}}
+|48–44 BCE
+|5 years
+|
+|-
+|Yongguang<br/>{{lang|zh-Hant|永光}}
+|43–39 BCE
+|5 years
+|
+|-
+|Jianzhao<br/>{{lang|zh-Hant|建昭}}
+|38–34 BCE
+|5 years
+|
+|-
+|Jingning<br/>{{lang|zh-Hant|竟寧}}
+|33 BCE
+|1 year
+|Usage continued by the [[Emperor Cheng of Han]] upon his ascension to the throne.
+|-
+!colspan="4"|[[Emperor Cheng of Han]]<br/>{{small|(r. 33–7 BCE)}}
+|-
+|Jianshi<br/>{{lang|zh-Hant|建始}}
+|32–28 BCE
+|4 years 2 months
+|
+|-
+|Heping<br/>{{lang|zh-Hant|河平}}
+|28–25 BCE
+|4 years
+|Referenced the pacification of the [[Yellow River]] after its major [[29 BC Yellow River flood|29{{nbsp}}BCE flood]]
+|-
+|Yangshuo<br/>{{lang|zh-Hant|陽朔}}
+|24–21 BCE
+|4 years
+|
+|-
+|Hongjia<br/>{{lang|zh-Hant|鴻嘉}}
+|20–17 BCE
+|4 years
+|
+|-
+|Yongshi<br/>{{lang|zh-Hant|永始}}
+|16–13 BCE
+|4 years
+|
+|-
+|Yuanyan<br/>{{lang|zh-Hant|元延}}
+|12–9 BCE
+|4 years
+|
+|-
+|Suihe<br/>{{lang|zh-Hant|綏和}}
+|8–7 BCE
+|2 years
+|Usage continued by the [[Emperor Ai of Han]] upon his ascension to the throne.
+|-
+!colspan="4"|[[Emperor Ai of Han]]<br/>{{small|(r. 7–1 BCE)}}
+|-
+|Jianping<br/>{{lang|zh-Hant|建平}}
+|6–3 BCE
+|4 years
+|
+|-
+|Taichuyuanjiang<br/>{{lang|zh-Hant|太初元將}}
+|5 BCE
+|3 months
+|Or ''Taichu'' ({{lang|zh-Hant|太初}}). Subsequently, reverted to ''Jianping'' ({{lang|zh-Hant|建平}}).
+|-
+|Yuanshou<br/>{{lang|zh-Hant|元壽}}
+|2–1 BCE
+|2 years
+|Or ''Yuanshou'' ({{lang|zh-Hant|元受}}). Usage continued by the [[Emperor Ping of Han]] upon his ascension to the throne.
+|-
+!colspan="4"|[[Emperor Ping of Han]]<br/>{{small|(r. 1 BCE–6 CE)}}
+|-
+|Yuanshi<br/>{{lang|zh-Hant|元始}}
+|1–5 CE
+|5 years
+|1st year of Yuanshi is  1 CE
+|-
+!colspan="4"|[[Ruzi Ying|Liu Ying]]<br/>{{small|(r. 6–9 CE)}}
+|-
+|Jushe<br/>{{lang|zh-Hant|居攝}}
+|6–8 CE
+|3 years
+|
+|-
+|Chushi<br/>{{lang|zh-Hant|初始}}
+|8 CE
+|1 month
+|Or ''Shichu'' ({{lang|zh-Hant|始初}}).
+|}
+
+===[[Xin dynasty]]===
+{| class="wikitable"
+|-
+!Era name
+!Period of use
+!Length of use
+!Remark
+|-
+!colspan="4"|[[Wang Mang]]<br/>{{small|(r. 9–23 CE)}}
+|-
+|Shijianguo<br/>{{lang|zh-Hant|始建國}}
+|9–13 CE
+|5 years
+|Or ''Jianguo'' ({{lang|zh-Hant|建國}}).
+|-
+|Tianfeng<br/>{{lang|zh-Hant|天鳳}}
+|14–19 CE
+|6 years
+|Or ''Shijianguotianfengshangwu'' ({{lang|zh-Hant|始建國天鳳上戊}}), ''Shijianguotianfeng'' ({{lang|zh-Hant|始建國天鳳}}).
+|-
+|Dihuang<br/>{{lang|zh-Hant|地皇}}
+|20–23 CE
+|4 years
+|Or ''Shijianguodihuangshangwu'' ({{lang|zh-Hant|始建國地皇上戊}}), ''Shijianguodihuang'' ({{lang|zh-Hant|始建國地皇}}).
+|}
+
+===[[Gengshi Emperor|Xuan Han]]===
+{| class="wikitable"
+|-
+!Era name
+!Period of use
+!Length of use
+!Remark
+|-
+!colspan="4"|[[Gengshi Emperor]]<br/>{{small|(r. 23–25 CE)}}
+|-
+|Gengshi<br/>{{lang|zh-Hant|更始}}
+|23–25 CE
+|3 years
+|
+|}
+
+===[[Han dynasty#Eastern Han|Eastern Han]]===
+{| class="wikitable"
+|-
+!Era name
+!Period of use
+!Length of use
+!Remark
+|-
+!colspan="4"|[[Emperor Guangwu of Han]]<br/>{{small|(r. 25–57 CE)}}
+|-
+|Jianwu<br/>{{lang|zh-Hant|建武}}
+|25–56 CE
+|32 years
+|
+|-
+|Jianwuzhongyuan<br/>{{lang|zh-Hant|建武中元}}
+|56–57 CE
+|2 years
+|Or ''Zhongyuan'' ({{lang|zh-Hant|中元}}). Usage continued by the [[Emperor Ming of Han]] upon his ascension to the throne.
+|-
+!colspan="4"|[[Emperor Ming of Han]]<br/>{{small|(r. 57–75 CE)}}
+|-
+|Yongping<br/>{{lang|zh-Hant|永平}}
+|58–75 CE
+|18 years
+|Usage continued by the [[Emperor Zhang of Han]] upon his ascension to the throne.
+|-
+!colspan="4"|[[Emperor Zhang of Han]]<br/>{{small|(r. 75–88 CE)}}
+|-
+|Jianchu<br/>{{lang|zh-Hant|建初}}
+|76–84 CE
+|9 years
+|
+|-
+|Yuanhe<br/>{{lang|zh-Hant|元和}}
+|84–87 CE
+|4 years
+|
+|-
+|Zhanghe<br/>{{lang|zh-Hant|章和}}
+|84–87 CE
+|4 years
+|Usage continued by the [[Emperor He of Han]] upon his ascension to the throne.
+|-
+!colspan="4"|[[Emperor He of Han]]<br/>{{small|(r. 88–105 CE)}}
+|-
+|Yongyuan<br/>{{lang|zh-Hant|永元}}
+|89–105 CE
+|17 years
+|
+|-
+|Yuanxing<br/>{{lang|zh-Hant|元興}}
+|105 CE
+|9 months
+|
+|-
+!colspan="4"|[[Emperor Shang of Han]]<br/>{{small|(r. 106 CE)}}
+|-
+|Yanping<br/>{{lang|zh-Hant|延平}}
+|106 CE
+|1 year
+|Usage continued by the [[Emperor An of Han]] upon his ascension to the throne.
+|-
+!colspan="4"|[[Emperor An of Han]]<br/>{{small|(r. 106–125 CE)}}
+|-
+|Yongchu<br/>{{lang|zh-Hant|永初}}
+|107–113 CE
+|7 years
+|
+|-
+|Yuanchu<br/>{{lang|zh-Hant|元初}}
+|114–120 CE
+|7 years
+|
+|-
+|Yongning<br/>{{lang|zh-Hant|永寧}}
+|120–121 CE
+|2 years
+|
+|-
+|Jianguang<br/>{{lang|zh-Hant|建光}}
+|121–122 CE
+|2 years
+|
+|-
+|Yanguang<br/>{{lang|zh-Hant|延光}}
+|122–125 CE
+|4 years
+|Usage continued by [[Marquess of Beixiang|Liu Yi]] and the [[Emperor Shun of Han]] upon their ascension to the throne.
+|-
+!colspan="4"|[[Emperor Shun of Han]]<br/>{{small|(r. 125–144 CE)}}
+|-
+|Yongjian<br/>{{lang|zh-Hant|永建}}
+|126–132 CE
+|7 years
+|
+|-
+|Yangjia<br/>{{lang|zh-Hant|陽嘉}}
+|132–135 CE
+|4 years
+|
+|-
+|Yonghe<br/>{{lang|zh-Hant|永和}}
+|136–141 CE
+|6 years
+|
+|-
+|Han'an<br/>{{lang|zh-Hant|漢安}}
+|142–144 CE
+|3 years
+|
+|-
+|Jiankang<br/>{{lang|zh-Hant|建康}}
+|144 CE
+|9 months
+|Usage continued by the [[Emperor Chong of Han]] upon his ascension to the throne.
+|-
+!colspan="4"|[[Emperor Chong of Han]]<br/>{{small|(r. 144–145 CE)}}
+|-
+|Yongxi<br/>{{lang|zh-Hant|永憙}}
+|145 CE
+|1 year
+|Or ''Yuanjia'' ({{lang|zh-Hant|元嘉}}), ''Yongjia'' ({{lang|zh-Hant|永嘉}}), ''Yongxi'' ({{lang|zh-Hant|永熹}}). Usage continued by the [[Emperor Zhi of Han]] upon his ascension to the throne.
+|-
+!colspan="4"|[[Emperor Zhi of Han]]<br/>{{small|(r. 145–146 CE)}}
+|-
+|Benchu<br/>{{lang|zh-Hant|本初}}
+|146 CE
+|1 year
+|Usage continued by the [[Emperor Huan of Han]] upon his ascension to the throne.
+|-
+!colspan="4"|[[Emperor Huan of Han]]<br/>{{small|(r. 146–168 CE)}}
+|-
+|Jianhe<br/>{{lang|zh-Hant|建和}}
+|147–149 CE
+|3 years
+|
+|-
+|Heping<br/>{{lang|zh-Hant|和平}}
+|150 CE
+|1 year
+|
+|-
+|Yuanjia<br/>{{lang|zh-Hant|元嘉}}
+|151–153 CE
+|3 years
+|
+|-
+|Yongxing<br/>{{lang|zh-Hant|永興}}
+|153–154 CE
+|2 years
+|
+|-
+|Yongshou<br/>{{lang|zh-Hant|永壽}}
+|155–158 CE
+|4 years
+|
+|-
+|Yanxi<br/>{{lang|zh-Hant|延熹}}
+|158–167 CE
+|10 years
+|
+|-
+|Yongkang<br/>{{lang|zh-Hant|永康}}
+|167 CE
+|6 months
+|
+|-
+!colspan="4"|[[Emperor Ling of Han]]<br/>{{small|(r. 168–189 CE)}}
+|-
+|Jianning<br/>{{lang|zh-Hant|建寧}}
+|168–172 CE
+|5 years
+|
+|-
+|Xiping<br/>{{lang|zh-Hant|熹平}}
+|172–178 CE
+|7 years
+|
+|-
+|Guanghe<br/>{{lang|zh-Hant|光和}}
+|178–184 CE
+|7 years
+|
+|-
+|Zhongping<br/>{{lang|zh-Hant|中平}}
+|184–189 CE
+|6 years
+|
+|-
+!colspan="4"|[[Liu Bian]]<br/>{{small|(r. 189 CE)}}
+|-
+|Guangxi<br/>{{lang|zh-Hant|光熹}}
+|189 CE
+|5 months
+|
+|-
+|Zhaoning<br/>{{lang|zh-Hant|昭寧}}
+|189 CE
+|2 months
+|
+|-
+!colspan="4"|[[Emperor Xian of Han]]<br/>{{small|(r. 189–220 CE)}}
+|-
+|Yonghan<br/>{{lang|zh-Hant|永漢}}
+|189 CE
+|4 months
+|
+|-
+|Zhongping<br/>{{lang|zh-Hant|中平}}
+|189 CE
+|1 month
+|
+|-
+|Chuping<br/>{{lang|zh-Hant|初平}}
+|190–193 CE
+|4 years
+|
+|-
+|Xingping<br/>{{lang|zh-Hant|興平}}
+|194–195 CE
+|2 years
+|
+|-
+|[[Jian'an (Eastern Han)|Jian'an]]<br/>{{lang|zh-Hant|建安}}
+|196–220 CE
+|25 years
+|
+|-
+|Yankang<br/>{{lang|zh-Hant|延康}}
+|220 CE
+|7 months
+|
+|}
+
+===Other regimes contemporaneous with Han dynasty===
+{| class="wikitable"
+|-
+!Era name
+!Period of use
+!Length of use
+!Remark
+|-
+!colspan="4"|Kui Xiao<br/>{{small|(r. 23–34 CE)}}
+|-
+|Hanfu<br/>{{lang|zh-Hant|漢复}}
+|23–34 CE
+|12 years
+|
+|-
+!colspan="4"|[[Gongsun Shu]]<br/>{{small|(r. 25–36 CE)}}
+|-
+|Longxing<br/>{{lang|zh-Hant|龍興}}
+|25–36 CE
+|12 years
+|
+|-
+!colspan="4"|[[Liu Penzi]]<br/>{{small|(r. 25–27 CE)}}
+|-
+|Jianshi<br/>{{lang|zh-Hant|建世}}
+|25–27 CE
+|3 years
+|Or ''Jianshi'' ({{lang|zh-Hant|建始}}).
+|-
+!colspan="4"|[[Yuan Shu]]<br/>{{small|(r. 197–199 CE)}}
+|-
+|Zhongjia<br/>{{lang|zh-Hant|仲家}}
+|197-199 CE
+|3 years
+|
+|-
+!colspan="4"|Zhang Mancheng
+|-
+|Shenshang<br/>{{lang|zh-Hant|神上}}
+|''Unknown''
+|''Unknown''
+|
+|}
+
+==[[Three Kingdoms]]==
+===[[Cao Wei]]===
+{| class="wikitable"
+|-
+!Era name
+!Period of use
+!Length of use
+!Remark
+|-
+!colspan="4"|[[Cao Pi|Emperor Wen of Cao Wei]]<br/>{{small|(r. 220–226 CE)}}
+|-
+|Huangchu<br/>{{lang|zh-Hant|黃初}}
+|220–226 CE
+|7 years
+|Usage continued by the [[Cao Rui|Emperor Ming of Cao Wei]] upon his ascension to the throne.
+|-
+!colspan="4"|[[Cao Rui|Emperor Ming of Cao Wei]]<br/>{{small|(r. 226–239 CE)}}
+|-
+|Taihe<br/>{{lang|zh-Hant|太和}}
+|227–233 CE
+|7 years
+|
+|-
+|Qinglong<br/>{{lang|zh-Hant|青龍}}
+|233–237 CE
+|5 years
+|
+|-
+|Jingchu<br/>{{lang|zh-Hant|景初}}
+|237–239 CE
+|3 years
+|Usage continued by [[Cao Fang]] upon his ascension to the throne.
+|-
+!colspan="4"|[[Cao Fang]]<br/>{{small|(r. 239–254 CE)}}
+|-
+|Zhengshi<br/>{{lang|zh-Hant|正始}}
+|240–249 CE
+|10 years
+|
+|-
+|Jiaping<br/>{{lang|zh-Hant|嘉平}}
+|249–254 CE
+|6 years
+|
+|-
+!colspan="4"|[[Cao Mao]]<br/>{{small|(r. 254–260 CE)}}
+|-
+|Zhengyuan<br/>{{lang|zh-Hant|正元}}
+|254–256 CE
+|3 years
+|
+|-
+|Ganlu<br/>{{lang|zh-Hant|甘露}}
+|256–260 CE
+|5 years
+|
+|-
+!colspan="4"|[[Cao Huan|Emperor Yuan of Cao Wei]]<br/>{{small|(r. 260–266 CE)}}
+|-
+|Jingyuan<br/>{{lang|zh-Hant|景元}}
+|260–264 CE
+|5 years
+|
+|-
+|Xianxi<br/>{{lang|zh-Hant|咸熙}}
+|264–265 CE
+|2 years
+|
+|}
+
+===[[Shu Han]]===
+{| class="wikitable"
+|-
+!Era name
+!Period of use
+!Length of use
+!Remark
+|-
+!colspan="4"|[[Liu Bei|Emperor Zhaolie of Shu Han]]<br/>{{small|(r. 221–223 CE)}}
+|-
+|Zhangwu<br/>{{lang|zh-Hant|章武}}
+|221–223 CE
+|3 years
+|
+|-
+!colspan="4"|[[Liu Shan|Emperor Xiaohuai of Shu Han]]<br/>{{small|(r. 223–263 CE)}}
+|-
+|Jianxing<br/>{{lang|zh-Hant|建興}}
+|223–237 CE
+|15 years
+|
+|-
+|Yanxi<br/>{{lang|zh-Hant|延熙}}
+|238–257 CE
+|20 years
+|
+|-
+|Jingyao<br/>{{lang|zh-Hant|景耀}}
+|258–263 CE
+|6 years
+|
+|-
+|Yanxing<br/>{{lang|zh-Hant|炎興}}
+|263 CE
+|5 months
+|
+|}
+
+===[[Eastern Wu]]===
+{| class="wikitable"
+|-
+!Era name
+!Period of use
+!Length of use
+!Remark
+|-
+!colspan="4"|[[Sun Quan|Emperor Da of Eastern Wu]]<br/>{{small|(r. 222–252 CE)}}
+|-
+|Huangwu<br/>{{lang|zh-Hant|黃武}}
+|222–229 CE
+|8 years
+|
+|-
+|Huanglong<br/>{{lang|zh-Hant|黃龍}}
+|229–231 CE
+|3 years
+|
+|-
+|Jiahe<br/>{{lang|zh-Hant|嘉禾}}
+|232–238 CE
+|7 years
+|
+|-
+|Chiwu<br/>{{lang|zh-Hant|赤烏}}
+|238–251 CE
+|14 years
+|
+|-
+|Taiyuan<br/>{{lang|zh-Hant|太元}}
+|251–252 CE
+|2 years
+|
+|-
+|Shenfeng<br/>{{lang|zh-Hant|神鳳}}
+|252 CE
+|3 months
+|
+|-
+!colspan="4"|[[Sun Liang]]<br/>{{small|(r. 252–258 CE)}}
+|-
+|Jianxing<br/>{{lang|zh-Hant|建興}}
+|252–253 CE
+|2 years
+|
+|-
+|Wufeng<br/>{{lang|zh-Hant|五鳳}}
+|254–256 CE
+|3 years
+|
+|-
+|Taiping<br/>{{lang|zh-Hant|太平}}
+|256–258 CE
+|3 years
+|
+|-
+!colspan="4"|[[Sun Xiu|Emperor Jing of Eastern Wu]]<br/>{{small|(r. 258–264 CE)}}
+|-
+|Yong'an<br/>{{lang|zh-Hant|永安}}
+|258–264 CE
+|7 years
+|
+|-
+!colspan="4"|[[Sun Hao]]<br/>{{small|(r. 264–280 CE)}}
+|-
+|Yuanxing<br/>{{lang|zh-Hant|元興}}
+|264–265 CE
+|2 years
+|
+|-
+|Ganlu<br/>{{lang|zh-Hant|甘露}}
+|265–266 CE
+|2 years
+|
+|-
+|Baoding<br/>{{lang|zh-Hant|寶鼎}}
+|266–269 CE
+|4 years
+|
+|-
+|Jianheng<br/>{{lang|zh-Hant|建衡}}
+|269–271 CE
+|3 years
+|
+|-
+|Fenghuang<br/>{{lang|zh-Hant|鳳凰}}
+|272–274 CE
+|3 years
+|
+|-
+|Tiance<br/>{{lang|zh-Hant|天冊}}
+|275–276 CE
+|2 years
+|
+|-
+|Tianxi<br/>{{lang|zh-Hant|天璽}}
+|276 CE
+|6 months
+|
+|-
+|Tianji<br/>{{lang|zh-Hant|天紀}}
+|277–280 CE
+|4 years
+|
+|}
+
+===Other regimes contemporaneous with Three Kingdoms===
+{| class="wikitable"
+|-
+!Era name
+!Period of use
+!Length of use
+!Remark
+|-
+!colspan="4"|[[Gongsun Yuan]]<br/>{{small|(r. 237–238 CE)}}
+|-
+|Shaohan<br/>{{lang|zh-Hant|紹漢}}
+|237–238 CE
+|1 year 1 month
+|
+|}
+
+==[[Jin dynasty (266–420)|Jin dynasty]]==
+===[[Jin dynasty (266–420)|Western Jin]]===
+{| class="wikitable"
+|-
+!Era name
+!Period of use
+!Length of use
+!Remark
+|-
+!colspan="4"|[[Emperor Wu of Jin]]<br/>{{small|(r. 266–290 CE)}}
+|-
+|Taishi<br/>{{lang|zh-Hant|泰始}}
+|265–274 CE
+|10 years
+|
+|-
+|Xianning<br/>{{lang|zh-Hant|咸寧}}
+|275–280 CE
+|6 years
+|
+|-
+|Taikang<br/>{{lang|zh-Hant|太康}}
+|280–289 CE
+|10 years
+|
+|-
+|Taixi<br/>{{lang|zh-Hant|太熙}}
+|290 CE
+|4 months
+|
+|-
+!colspan="4"|[[Emperor Hui of Jin]]<br/>{{small|(r. 290–306 CE)}}
+|-
+|Yongxi<br/>{{lang|zh-Hant|永熙}}
+|290 CE
+|9 months
+|
+|-
+|Yongping<br/>{{lang|zh-Hant|永平}}
+|291 CE
+|3 months
+|
+|-
+|Yuankang<br/>{{lang|zh-Hant|元康}}
+|291–299 CE
+|9 years
+|
+|-
+|Yongkang<br/>{{lang|zh-Hant|永康}}
+|300–301 CE
+|2 years
+|
+|-
+|Yongning<br/>{{lang|zh-Hant|永寧}}
+|301–302 CE
+|2 years
+|
+|-
+|Tai'an<br/>{{lang|zh-Hant|太安}}
+|302–303 CE
+|2 years
+|Or ''Da'an'' ({{lang|zh-Hant|大安}}).
+|-
+|Yong'an<br/>{{lang|zh-Hant|永安}}
+|304 CE
+|8 months
+|
+|-
+|Jianwu<br/>{{lang|zh-Hant|建武}}
+|304 CE
+|5 months
+|Subsequently, reverted to ''Yong'an'' ({{lang|zh-Hant|永安}}).
+|-
+|Yongxing<br/>{{lang|zh-Hant|永興}}
+|304–306 CE
+|3 years
+|
+|-
+|Guangxi<br/>{{lang|zh-Hant|光熙}}
+|306 CE
+|7 months
+|Usage continued by the [[Emperor Huai of Jin]] upon his ascension to the throne.
+|-
+!colspan="4"|[[Emperor Huai of Jin]]<br/>{{small|(r. 306–313 CE)}}
+|-
+|Yongjia<br/>{{lang|zh-Hant|永嘉}}
+|307–313 CE
+|7 years
+|
+|-
+!colspan="4"|[[Emperor Min of Jin]]<br/>{{small|(r. 313–316 CE)}}
+|-
+|Jianxing<br/>{{lang|zh-Hant|建興}}
+|313–317 CE
+|5 years
+|{{font color|#000000|#DAF2FF|Also used by the [[Former Liang]].}}
+|}
+
+===[[Jin dynasty (266–420)#Eastern Jin|Eastern Jin]]===
+{| class="wikitable"
+|-
+!Era name
+!Period of use
+!Length of use
+!Remark
+|-
+!colspan="4"|[[Emperor Yuan of Jin]]<br/>{{small|(r. 317–323 CE)}}
+|-
+|Jianwu<br/>{{lang|zh-Hant|建武}}
+|317–318 CE
+|2 years
+|
+|-
+|Daxing<br/>{{lang|zh-Hant|大興}}
+|318–321 CE
+|4 years
+|Or ''Taixing'' ({{lang|zh-Hant|太興}}).
+|-
+|Yongchang<br/>{{lang|zh-Hant|永昌}}
+|322–323 CE
+|2 years
+|Usage continued by the [[Emperor Ming of Jin]] upon his ascension to the throne.
+|-
+!colspan="4"|[[Emperor Ming of Jin]]<br/>{{small|(r. 323–325 CE)}}
+|-
+|Taining<br/>{{lang|zh-Hant|太寧}}
+|323–326 CE
+|4 years
+|Usage continued by the [[Emperor Cheng of Jin]] upon his ascension to the throne.
+|-
+!colspan="4"|[[Emperor Cheng of Jin]]<br/>{{small|(r. 325–342 CE)}}
+|-
+|Xianhe<br/>{{lang|zh-Hant|咸和}}
+|326–334 CE
+|9 years
+|
+|-
+|Xiankang<br/>{{lang|zh-Hant|咸康}}
+|335–342 CE
+|8 years
+|Usage continued by the [[Emperor Kang of Jin]] upon his ascension to the throne.
+|-
+!colspan="4"|[[Emperor Kang of Jin]]<br/>{{small|(r. 342–344 CE)}}
+|-
+|Jianyuan<br/>{{lang|zh-Hant|建元}}
+|343–344 CE
+|2 years
+|Usage continued by the [[Emperor Mu of Jin]] upon his ascension to the throne.
+|-
+!colspan="4"|[[Emperor Mu of Jin]]<br/>{{small|(r. 344–361 CE)}}
+|-
+|Yonghe<br/>{{lang|zh-Hant|永和}}
+|345–356 CE
+|12 years
+|
+|-
+|Shengping<br/>{{lang|zh-Hant|升平}}
+|357–361 CE
+|5 years
+|Usage continued by the [[Emperor Ai of Jin]] upon his ascension to the throne. {{font color|#000000|#DAF2FF|Also used by the [[Former Liang]].}}
+|-
+!colspan="4"|[[Emperor Ai of Jin]]<br/>{{small|(r. 361–365 CE)}}
+|-
+|Longhe<br/>{{lang|zh-Hant|隆和}}
+|362–363 CE
+|2 years
+|Or ''Chonghe'' ({{lang|zh-Hant|崇和}}).
+|-
+|Xingning<br/>{{lang|zh-Hant|興寧}}
+|363–365 CE
+|3 years
+|Usage continued by [[Emperor Fei of Jin|Sima Yi]] upon his ascension to the throne.
+|-
+!colspan="4"|[[Emperor Fei of Jin|Sima Yi]]<br/>{{small|(r. 365–371 CE)}}
+|-
+|Taihe<br/>{{lang|zh-Hant|太和}}
+|366–371 CE
+|6 years
+|
+|-
+!colspan="4"|[[Emperor Jianwen of Jin]]<br/>{{small|(r. 371–372 CE)}}
+|-
+|Xian'an<br/>{{lang|zh-Hant|咸安}}
+|371–372 CE
+|2 years
+|Usage continued by the [[Emperor Xiaowu of Jin]] upon his ascension to the throne.
+|-
+!colspan="4"|[[Emperor Xiaowu of Jin]]<br/>{{small|(r. 372–396 CE)}}
+|-
+|Ningkang<br/>{{lang|zh-Hant|寧康}}
+|373–375 CE
+|3 years
+|Sometimes erroneously referred to as ''Kangning'' ({{lang|zh-Hant|康寧}}).
+|-
+|Taiyuan<br/>{{lang|zh-Hant|太元}}
+|376–396 CE
+|21 years
+|Usage continued by the [[Emperor An of Jin]] upon his ascension to the throne.
+|-
+!colspan="4"|[[Emperor An of Jin]]<br/>{{small|(r. 396–419 CE)}}
+|-
+|Long'an<br/>{{lang|zh-Hant|隆安}}
+|397–401 CE
+|5 years
+|Or ''Chong'an'' ({{lang|zh-Hant|崇安}}).
+|-
+|Yuanxing<br/>{{lang|zh-Hant|元興}}
+|402–404 CE
+|3 years
+|
+|-
+|Daheng<br/>{{lang|zh-Hant|大亨}}
+|402 CE
+|9 months
+|Subsequently, reverted to ''Long'an'' ({{lang|zh-Hant|隆安}}).
+|-
+|Yixi<br/>{{lang|zh-Hant|義熙}}
+|405–419 CE
+|15 years
+|Usage continued by the [[Emperor Gong of Jin]] upon his ascension to the throne.
+|-
+!colspan="4"|[[Emperor Gong of Jin]]<br/>{{small|(r. 419–420 CE)}}
+|-
+|Yuanxi<br/>{{lang|zh-Hant|元熙}}
+|419–420 CE
+|2 years
+|
+|}
+
+===[[Huan Xuan|Huan Chu]]===
+{| class="wikitable"
+|-
+!Era name
+!Period of use
+!Length of use
+!Remark
+|-
+!colspan="4"|[[Huan Xuan|Emperor Wudao of Huan Chu]]<br/>{{small|(r. 403–404 CE)}}
+|-
+|Yongshi<br/>{{lang|zh-Hant|永始}}
+|403–404 CE
+|2 years
+|
+|-
+!colspan="4"|Huan Qian<br/>{{small|(r. 404–405 CE)}}
+|-
+|Tiankang<br/>{{lang|zh-Hant|天康}}
+|404–405 CE
+|2 years
+|
+|}
+
+===Other regimes contemporaneous with Jin dynasty===
+{| class="wikitable"
+|-
+!Era name
+!Period of use
+!Length of use
+!Remark
+|-
+!colspan="4"|Zhao Xin<br/>{{small|(r. 300–301 CE)}}
+|-
+|Taiping<br/>{{lang|zh-Hant|太平}}
+|300–301 CE
+|2 months
+|
+|-
+!colspan="4"|[[Sima Lun]]<br/>{{small|(r. 301 CE)}}
+|-
+|Jianshi<br/>{{lang|zh-Hant|建始}}
+|301 CE
+|4 months
+|
+|-
+!colspan="4"|Qiu Shen<br/>{{small|(r. 303 CE)}}
+|-
+|Shenfeng<br/>{{lang|zh-Hant|神鳳}}
+|303 CE
+|4 months
+|
+|-
+!colspan="4"|[[Sima Bao]]<br/>{{small|(r. 319–320 CE)}}
+|-
+|Jiankang<br/>{{lang|zh-Hant|建康}}
+|319–320 CE
+|2 years
+|
+|-
+!colspan="4"|Li Hong<br/>{{small|(r. 370 CE)}}
+|-
+|Fenghuang<br/>{{lang|zh-Hant|鳳凰}}
+|370 CE
+|1 year
+|
+|}
+
+==[[Sixteen Kingdoms]]==
+===[[Former Zhao|Han-Zhao]]===
+{| class="wikitable"
+|-
+!Era name
+!Period of use
+!Length of use
+!Remark
+|-
+!colspan="4"|[[Liu Yuan (Han Zhao)|Emperor Guangwen of Han-Zhao]]<br/>{{small|(r. 304–310 CE)}}
+|-
+|Yuanxi<br/>{{lang|zh-Hant|元熙}}
+|304–308 CE
+|5 years
+|
+|-
+|Yongfeng<br/>{{lang|zh-Hant|永鳳}}
+|308–309 CE
+|2 years
+|
+|-
+|Herui<br/>{{lang|zh-Hant|河瑞}}
+|309–310 CE
+|2 years
+|Usage continued by [[Liu He (Han Zhao)|Liu He]] upon his ascension to the throne.
+|-
+!colspan="4"|[[Liu Cong (Han Zhao)|Emperor Zhaowu of Han-Zhao]]<br/>{{small|(r. 310–318 CE)}}
+|-
+|Guangxing<br/>{{lang|zh-Hant|光興}}
+|310–311 CE
+|2 years
+|
+|-
+|Jiaping<br/>{{lang|zh-Hant|嘉平}}
+|311–315 CE
+|5 years
+|
+|-
+|Jianyuan<br/>{{lang|zh-Hant|建元}}
+|315–316 CE
+|2 years
+|
+|-
+|Linjia<br/>{{lang|zh-Hant|麟嘉}}
+|316–318 CE
+|3 years
+|
+|-
+!colspan="4"|[[Liu Can|Emperor Yin of Han-Zhao]]<br/>{{small|(r. 318 CE)}}
+|-
+|Hanchang<br/>{{lang|zh-Hant|漢昌}}
+|318 CE
+|3 months
+|
+|-
+!colspan="4"|[[Liu Yao]]<br/>{{small|(r. 318–329 CE)}}
+|-
+|Guangchu<br/>{{lang|zh-Hant|光初}}
+|318–329 CE
+|12 years
+|Or ''Zuochu'' ({{lang|zh-Hant|佐初}}).
+|}
+
+===[[Cheng Han|Cheng-Han]]===
+{| class="wikitable"
+|-
+!Era name
+!Period of use
+!Length of use
+!Remark
+|-
+!colspan="4"|[[Li Te (Cheng Han)|Emperor Jing of Cheng-Han]]<br/>{{small|(r. 303 CE)}}
+|-
+|Jianchu<br/>{{lang|zh-Hant|建初}}
+|303–304 CE
+|2 years
+|Usage continued by Li Liu upon his ascension to the throne.
+|-
+!colspan="4"|[[Li Xiong|Emperor Wu of Cheng-Han]]<br/>{{small|(r. 304–334 CE)}}
+|-
+|Jianxing<br/>{{lang|zh-Hant|建興}}
+|304–306 CE
+|3 years
+|
+|-
+|Yanping<br/>{{lang|zh-Hant|晏平}}
+|306–310 CE
+|5 years
+|Or ''Xuanping'' ({{lang|zh-Hant|宣平}}).
+|-
+|Yuheng<br/>{{lang|zh-Hant|玉衡}}
+|311–334 CE
+|24 years
+|Usage continued by the [[Li Ban|Emperor Ai of Cheng-Han]] and [[Li Qi (emperor)|Li Qi]] upon their ascension to the throne.
+|-
+|Dawu<br/>{{lang|zh-Hant|大武}}
+|''Unknown''
+|''Unknown''
+|
+|-
+!colspan="4"|[[Li Qi (emperor)|Li Qi]]<br/>{{small|(r. 334–338 CE)}}
+|-
+|Yuheng<br/>{{lang|zh-Hant|玉恒}}
+|335–338 CE
+|4 years
+|
+|-
+!colspan="4"|[[Li Shou|Emperor Zhaowen of Cheng-Han]]<br/>{{small|(r. 338–343 CE)}}
+|-
+|Hanxing<br/>{{lang|zh-Hant|漢興}}
+|338–343 CE
+|6 years
+|Usage continued by [[Li Shi (emperor)|Li Shi]] upon his ascension to the throne.
+|-
+!colspan="4"|[[Li Shi (emperor)|Li Shi]]<br/>{{small|(r. 343–347 CE)}}
+|-
+|Taihe<br/>{{lang|zh-Hant|太和}}
+|344–346 CE
+|3 years
+|
+|-
+|Jianing<br/>{{lang|zh-Hant|嘉寧}}
+|346–347 CE
+|2 years
+|
+|}
+
+===[[Later Zhao]]===
+{| class="wikitable"
+|-
+!Era name
+!Period of use
+!Length of use
+!Remark
+|-
+!colspan="4"|[[Shi Le|Emperor Ming of Later Zhao]]<br/>{{small|(r. 319–333 CE)}}
+|-
+|Taihe<br/>{{lang|zh-Hant|太和}}
+|328–330 CE
+|3 years
+|
+|-
+|Jianping<br/>{{lang|zh-Hant|建平}}
+|330–333 CE
+|4 years
+|Usage continued by [[Shi Hong]] upon his ascension to the throne.
+|-
+!colspan="4"|[[Shi Hong]]<br/>{{small|(r. 333–334 CE)}}
+|-
+|Yanxi<br/>{{lang|zh-Hant|延熙}}
+|334 CE
+|1 year
+|Usage continued by the [[Shi Hu|Emperor Wu of Later Zhao]] upon his ascension to the throne.
+|-
+!colspan="4"|[[Shi Hu|Emperor Wu of Later Zhao]]<br/>{{small|(r. 334–349 CE)}}
+|-
+|Jianwu<br/>{{lang|zh-Hant|建武}}
+|335–348 CE
+|14 years
+|
+|-
+|Taining<br/>{{lang|zh-Hant|太寧}}
+|349 CE
+|1 year
+|Or ''Taining'' ({{lang|zh-Hant|泰宁}}). Usage continued by [[Shi Shi (emperor)|Shi Shi]], [[Shi Zun]], and [[Shi Jian]] upon their ascension to the throne.
+|-
+|Yongxi<br/>{{lang|zh-Hant|永熙}}
+|''Unknown''
+|''Unknown''
+|
+|-
+|Yanxing<br/>{{lang|zh-Hant|延興}}
+|''Unknown''
+|''Unknown''
+|
+|-
+!colspan="4"|[[Shi Jian]]<br/>{{small|(r. 349–350 CE)}}
+|-
+|Qinglong<br/>{{lang|zh-Hant|青龍}}
+|350 CE
+|3 months
+|
+|-
+!colspan="4"|[[Shi Zhi]]<br/>{{small|(r. 350–351 CE)}}
+|-
+|Yongning<br/>{{lang|zh-Hant|永寧}}
+|350–351 CE
+|1 year 1 month
+|
+|}
+
+===[[Former Liang]]===
+{| class="wikitable"
+|-
+!Era name
+!Period of use
+!Length of use
+!Remark
+|-
+!colspan="4"|[[Zhang Shi (Former Liang)|Prince Ming of Former Liang]]<br/>{{small|(r. 314–320 CE)}}
+|- style="background:#DAF2FF;"
+|Jianxing<br/>{{lang|zh-Hant|建興}}
+|317–320 CE
+|4 years
+|Adopted the era name of the [[Emperor Min of Jin]]. Or ''Yong'an'' ({{lang|zh-Hant|永安}}).
+|-
+!colspan="4"|[[Zhang Mao|Prince Cheng of Former Liang]]<br/>{{small|(r. 320–324 CE)}}
+|- style="background:#DAF2FF;"
+|Jianxing<br/>{{lang|zh-Hant|建興}}
+|320–324 CE
+|5 years
+|Adopted the era name of the [[Emperor Min of Jin]]. Or ''Yongyuan'' ({{lang|zh-Hant|永元}}).
+|-
+!colspan="4"|[[Zhang Jun (prince)|Prince Wen of Former Liang]]<br/>{{small|(r. 324–346 CE)}}
+|- style="background:#DAF2FF;"
+|Jianxing<br/>{{lang|zh-Hant|建興}}
+|324–346 CE
+|23 years
+|Adopted the era name of the [[Emperor Min of Jin]]. Or ''Taiyuan'' ({{lang|zh-Hant|太元}}).
+|-
+!colspan="4"|[[Zhang Chonghua|Prince Huan of Former Liang]]<br/>{{small|(r. 346–353 CE)}}
+|- style="background:#DAF2FF;"
+|Jianxing<br/>{{lang|zh-Hant|建興}}
+|346–353 CE
+|8 years
+|Adopted the era name of the [[Emperor Min of Jin]]. Or ''Yongle'' ({{lang|zh-Hant|永樂}}).
+|-
+!colspan="4"|[[Zhang Zuo|Prince Wei of Former Liang]]<br/>{{small|(r. 353–355 CE)}}
+|-
+|Heping<br/>{{lang|zh-Hant|和平}}
+|354–355 CE
+|2 years
+|
+|-
+!colspan="4"|[[Zhang Xuanjing|Prince Chong of Former Liang]]<br/>{{small|(r. 355–363 CE)}}
+|- style="background:#DAF2FF;"
+|Jianxing<br/>{{lang|zh-Hant|建興}}
+|355–361 CE
+|6 years
+|Adopted the era name of the [[Emperor Min of Jin]].
+|- style="background:#DAF2FF;"
+|Shengping<br/>{{lang|zh-Hant|升平}}
+|361–363 CE
+|3 years
+|Adopted the era name of the [[Emperor Mu of Jin]]. Or ''Taishi'' ({{lang|zh-Hant|太始}}).
+|-
+!colspan="4"|[[Zhang Tianxi]]<br/>{{small|(r. 363–376 CE)}}
+|- style="background:#DAF2FF;"
+|Shengping<br/>{{lang|zh-Hant|升平}}
+|363–376 CE
+|14 years
+|Adopted the era name of the [[Emperor Mu of Jin]]. Or ''Taiqing'' ({{lang|zh-Hant|太清}}).
+|}
+
+===[[Former Yan]]===
+{| class="wikitable"
+|-
+!Era name
+!Period of use
+!Length of use
+!Remark
+|-
+!colspan="4"|[[Murong Huang|Emperor Wenming of Former Yan]]<br/>{{small|(r. 337–348 CE)}}
+|-
+|Yanyuan<br/>{{lang|zh-Hant|燕元}}
+|''Unknown''
+|''Unknown''
+|
+|-
+!colspan="4"|[[Murong Jun|Emperor Jingzhao of Former Yan]]<br/>{{small|(r. 348–360 CE)}}
+|-
+|Yuanxi<br/>{{lang|zh-Hant|元璽}}
+|352–357 CE
+|6 years
+|
+|-
+|Guangshou<br/>{{lang|zh-Hant|光壽}}
+|357–359 CE
+|3 years
+|
+|-
+!colspan="4"|[[Murong Wei|Emperor You of Former Yan]]<br/>{{small|(r. 360–370 CE)}}
+|-
+|Jianxi<br/>{{lang|zh-Hant|建熙}}
+|360–370 CE
+|11 years
+|
+|}
+
+===[[Former Qin]]===
+{| class="wikitable"
+|-
+!Era name
+!Period of use
+!Length of use
+!Remark
+|-
+!colspan="4"|[[Fu Jian (317–355)|Emperor Jingming of Former Qin]]<br/>{{small|(r. 351–355 CE)}}
+|-
+|Huangshi<br/>{{lang|zh-Hant|皇始}}
+|351–355 CE
+|5 years
+|
+|-
+!colspan="4"|[[Fu Sheng (Former Qin)|Fu Sheng]]<br/>{{small|(r. 355–357 CE)}}
+|-
+|Shouguang<br/>{{lang|zh-Hant|壽光}}
+|355–357 CE
+|3 years
+|
+|-
+!colspan="4"|[[Fu Jian (337–385)|Emperor Xuanzhao of Former Qin]]<br/>{{small|(r. 357–385 CE)}}
+|-
+|Yongxing<br/>{{lang|zh-Hant|永興}}
+|357–359 CE
+|3 years
+|
+|-
+|Ganlu<br/>{{lang|zh-Hant|甘露}}
+|359–364 CE
+|6 years
+|
+|-
+|Jianyuan<br/>{{lang|zh-Hant|建元}}
+|365–385 CE
+|21 years
+|
+|-
+!colspan="4"|[[Fu Pi|Emperor Aiping of Former Qin]]<br/>{{small|(r. 385–386 CE)}}
+|-
+|Tai'an<br/>{{lang|zh-Hant|太安}}
+|385–386 CE
+|2 years
+|
+|-
+!colspan="4"|[[Fu Deng|Emperor Gao of Former Qin]]<br/>{{small|(r. 386–394 CE)}}
+|-
+|Taichu<br/>{{lang|zh-Hant|太初}}
+|386–394 CE
+|9 years
+|
+|-
+!colspan="4"|[[Fu Chong]]<br/>{{small|(r. 394 CE)}}
+|-
+|Yanchu<br/>{{lang|zh-Hant|延初}}
+|394 CE
+|4 months
+|
+|}
+
+===[[Later Yan]]===
+{| class="wikitable"
+|-
+!Era name
+!Period of use
+!Length of use
+!Remark
+|-
+!colspan="4"|[[Murong Chui|Emperor Chengwu of Later Yan]]<br/>{{small|(r. 384–396 CE)}}
+|-
+|Yanyuan<br/>{{lang|zh-Hant|燕元}}
+|384–386 CE
+|3 years
+|
+|-
+|Jianxing<br/>{{lang|zh-Hant|建興}}
+|386–396 CE
+|11 years
+|
+|-
+!colspan="4"|[[Murong Bao|Emperor Huimin of Later Yan]]<br/>{{small|(r. 396–398 CE)}}
+|-
+|Yongkang<br/>{{lang|zh-Hant|永康}}
+|396–398 CE
+|3 years
+|
+|-
+!colspan="4"|[[Murong Sheng|Emperor Zhaowu of Later Yan]]<br/>{{small|(r. 398–401 CE)}}
+|-
+|Jianping<br/>{{lang|zh-Hant|建平}}
+|398 CE
+|3 months
+|
+|-
+|Changle<br/>{{lang|zh-Hant|長樂}}
+|399–401 CE
+|3 years
+|
+|-
+!colspan="4"|[[Murong Xi|Emperor Zhaowen of Later Yan]]<br/>{{small|(r. 401–407 CE)}}
+|-
+|Guangshi<br/>{{lang|zh-Hant|光始}}
+|401–406 CE
+|6 years
+|
+|-
+|Jianshi<br/>{{lang|zh-Hant|建始}}
+|407 CE
+|7 months
+|
+|}
+
+===[[Later Qin]]===
+{| class="wikitable"
+|-
+!Era name
+!Period of use
+!Length of use
+!Remark
+|-
+!colspan="4"|[[Yao Chang|Emperor Wuzhao of Later Qin]]<br/>{{small|(r. 384–394 CE)}}
+|-
+|Baique<br/>{{lang|zh-Hant|白雀}}
+|384–386 CE
+|3 years
+|
+|-
+|Jianchu<br/>{{lang|zh-Hant|建初}}
+|386–394 CE
+|9 years
+|
+|-
+!colspan="4"|[[Yao Xing|Emperor Wenhuan of Later Qin]]<br/>{{small|(r. 394–416 CE)}}
+|-
+|Huangchu<br/>{{lang|zh-Hant|皇初}}
+|394–399 CE
+|6 years
+|
+|-
+|Hongshi<br/>{{lang|zh-Hant|弘始}}
+|399–416 CE
+|18 years
+|
+|-
+!colspan="4"|[[Yao Hong]]<br/>{{small|(r. 416–417 CE)}}
+|-
+|Yonghe<br/>{{lang|zh-Hant|永和}}
+|416–417 CE
+|2 years
+|
+|}
+
+===[[Western Qin]]===
+{| class="wikitable"
+|-
+!Era name
+!Period of use
+!Length of use
+!Remark
+|-
+!colspan="4"|[[Qifu Guoren|Prince Xuanlie of Western Qin]]<br/>{{small|(r. 385–388 CE)}}
+|-
+|Jianyi<br/>{{lang|zh-Hant|建義}}
+|385–388 CE
+|4 years
+|
+|-
+!colspan="4"|[[Qifu Gangui|Prince Wuyuan of Western Qin]]<br/>{{small|(r. 388–400 CE; first reign)}}
+|-
+|Taichu<br/>{{lang|zh-Hant|太初}}
+|388–400 CE
+|13 years
+|
+|-
+!colspan="4"|[[Qifu Gangui|Prince Wuyuan of Western Qin]]<br/>{{small|(r. 409–412 CE; second reign)}}
+|-
+|Gengshi<br/>{{lang|zh-Hant|更始}}
+|409–412 CE
+|4 years
+|
+|-
+!colspan="4"|[[Qifu Chipan|Prince Wenzhao of Western Qin]]<br/>{{small|(r. 412–428 CE)}}
+|-
+|Yongkang<br/>{{lang|zh-Hant|永康}}
+|412–419 CE
+|8 years
+|
+|-
+|Jianhong<br/>{{lang|zh-Hant|建弘}}
+|420–428 CE
+|9 years
+|
+|-
+!colspan="4"|[[Qifu Mumo]]<br/>{{small|(r. 428–431 CE)}}
+|-
+|Yonghong<br/>{{lang|zh-Hant|永弘}}
+|428–431 CE
+|4 years
+|
+|}
+
+===[[Later Liang (Sixteen Kingdoms)|Later Liang]]===
+{| class="wikitable"
+|-
+!Era name
+!Period of use
+!Length of use
+!Remark
+|-
+!colspan="4"|[[Lü Guang|Emperor Yiwu of Later Liang]]<br/>{{small|(r. 386–399 CE)}}
+|-
+|Tai'an<br/>{{lang|zh-Hant|太安}}
+|386–389 CE
+|4 years
+|Or ''Da'an'' ({{lang|zh-Hant|大安}}).
+|-
+|Linjia<br/>{{lang|zh-Hant|麟嘉}}
+|389–396 CE
+|8 years
+|
+|-
+|Longfei<br/>{{lang|zh-Hant|龍飛}}
+|396–399 CE
+|4 years
+|Usage continued by [[Lü Shao]] upon his ascension to the throne.
+|-
+|Chengkang<br/>{{lang|zh-Hant|承康}}
+|''Unknown''
+|''Unknown''
+|
+|-
+!colspan="4"|[[Lü Zuan|Emperor Ling of Later Liang]]<br/>{{small|(r. 399–401 CE)}}
+|-
+|Xianning<br/>{{lang|zh-Hant|咸寧}}
+|399–401 CE
+|3 years
+|
+|-
+!colspan="4"|[[Lü Long]]<br/>{{small|(r. 401–403 CE)}}
+|-
+|Shending<br/>{{lang|zh-Hant|神鼎}}
+|401–403 CE
+|3 years
+|
+|}
+
+===[[Southern Liang (Sixteen Kingdoms)|Southern Liang]]===
+{| class="wikitable"
+|-
+!Era name
+!Period of use
+!Length of use
+!Remark
+|-
+!colspan="4"|[[Tufa Wugu|Prince Wu of Wuwei]]<br/>{{small|(r. 397–399 CE)}}
+|-
+|Taichu<br/>{{lang|zh-Hant|太初}}
+|397–399 CE
+|3 years
+|
+|-
+!colspan="4"|[[Tufa Lilugu|Prince Kang of Hexi]]<br/>{{small|(r. 399–402 CE)}}
+|-
+|Jianhe<br/>{{lang|zh-Hant|建和}}
+|400–402 CE
+|3 years
+|
+|-
+!colspan="4"|[[Tufa Rutan|Prince Jing of Southern Liang]]<br/>{{small|(r. 402–414 CE)}}
+|-
+|Hongchang<br/>{{lang|zh-Hant|弘昌}}
+|402–404 CE
+|3 years
+|Or ''Hongchang'' ({{lang|zh-Hant|宏昌}}).
+|-
+|Jiaping<br/>{{lang|zh-Hant|嘉平}}
+|408–414 CE
+|7 years
+|
+|}
+
+===[[Northern Liang]]===
+{| class="wikitable"
+|-
+!Era name
+!Period of use
+!Length of use
+!Remark
+|-
+!colspan="4"|[[Duan Ye]]<br/>{{small|(r. 397–401 CE)}}
+|-
+|Shenxi<br/>{{lang|zh-Hant|神璽}}
+|397–399 CE
+|3 years
+|
+|-
+|Tianxi<br/>{{lang|zh-Hant|天璽}}
+|399–401 CE
+|3 years
+|Or ''Liuxi'' ({{lang|zh-Hant|六璽}}).
+|-
+!colspan="4"|[[Juqu Mengxun|Prince Wuxuan of Northern Liang]]<br/>{{small|(r. 401–433 CE)}}
+|-
+|Yong'an<br/>{{lang|zh-Hant|永安}}
+|401–412 CE
+|12 years
+|
+|-
+|Xuanshi<br/>{{lang|zh-Hant|玄始}}
+|412–428 CE
+|17 years
+|Or ''Yuanshi'' ({{lang|zh-Hant|元始}}).
+|-
+|Zhenxing<br/>{{lang|zh-Hant|真興}}
+|''Unknown''
+|''Unknown''
+|
+|-
+|Chengxuan<br/>{{lang|zh-Hant|承玄}}
+|428–431 CE
+|4 years
+|
+|-
+|Yihe<br/>{{lang|zh-Hant|義和}}
+|431–433 CE
+|3 years
+|
+|-
+|Chengyang<br/>{{lang|zh-Hant|承陽}}
+|''Unknown''
+|''Unknown''
+|
+|-
+|Yuanhe<br/>{{lang|zh-Hant|緣禾}}
+|''Unknown''
+|''Unknown''
+|
+|-
+!colspan="4"|[[Juqu Mujian|Prince Ai of Northern Liang]]<br/>{{small|(r. 433–439 CE)}}
+|-
+|Chenghe<br/>{{lang|zh-Hant|承和}}
+|433–439 CE
+|7 years
+|Or ''Yonghe'' ({{lang|zh-Hant|永和}}).
+|-
+|Taiyuan<br/>{{lang|zh-Hant|太緣}}
+|''Unknown''
+|''Unknown''
+|
+|-
+|Jianping<br/>{{lang|zh-Hant|建平}}
+|''Unknown''
+|''Unknown''
+|
+|-
+!colspan="4"|[[Juqu Wuhui]]<br/>{{small|(r. 442–444 CE)}}
+|-
+|Chengping<br/>{{lang|zh-Hant|承平}}
+|443–460 CE
+|18 years
+|Usage continued by [[Juqu Anzhou]] upon his ascension to the throne.
+|}
+
+===[[Southern Yan]]===
+{| class="wikitable"
+|-
+!Era name
+!Period of use
+!Length of use
+!Remark
+|-
+!colspan="4"|[[Murong De|Emperor Xianwu of Southern Yan]]<br/>{{small|(r. 398–405 CE)}}
+|-
+|Yanping<br/>{{lang|zh-Hant|燕平}}
+|398–400 CE
+|3 years
+|
+|-
+|Jianping<br/>{{lang|zh-Hant|建平}}
+|400–405 CE
+|6 years
+|
+|-
+!colspan="4"|[[Murong Chao]]<br/>{{small|(r. 405–410 CE)}}
+|-
+|Taishang<br/>{{lang|zh-Hant|太上}}
+|405–410 CE
+|6 years
+|
+|}
+
+===[[Western Liang (Sixteen Kingdoms)|Western Liang]]===
+{| class="wikitable"
+|-
+!Era name
+!Period of use
+!Length of use
+!Remark
+|-
+!colspan="4"|[[Li Gao|Prince Wuzhao of Western Liang]]<br/>{{small|(r. 400–417 CE)}}
+|-
+|Gengzi<br/>{{lang|zh-Hant|庚子}}
+|400–404 CE
+|5 years
+|
+|-
+|Jianchu<br/>{{lang|zh-Hant|建初}}
+|405–417 CE
+|13 years
+|
+|-
+!colspan="4"|[[Li Xin (Western Liang)|Li Xin]]<br/>{{small|(r. 417–420 CE)}}
+|-
+|Jiaxing<br/>{{lang|zh-Hant|嘉興}}
+|417–420 CE
+|4 years
+|
+|-
+!colspan="4"|[[Li Xun (Western Liang)|Li Xun]]<br/>{{small|(r. 420–421 CE)}}
+|-
+|Yongjian<br/>{{lang|zh-Hant|永建}}
+|420–421 CE
+|2 years
+|
+|}
+
+===[[Xia (Sixteen Kingdoms)|Hu Xia]]===
+{| class="wikitable"
+|-
+!Era name
+!Period of use
+!Length of use
+!Remark
+|-
+!colspan="4"|[[Helian Bobo|Emperor Wulie of Hu Xia]]<br/>{{small|(r. 407–425 CE)}}
+|-
+|Longsheng<br/>{{lang|zh-Hant|龍昇}}
+|407–413 CE
+|7 years
+|
+|-
+|Fengxiang<br/>{{lang|zh-Hant|鳳翔}}
+|413–418 CE
+|6 years
+|
+|-
+|Changwu<br/>{{lang|zh-Hant|昌武}}
+|418–419 CE
+|3 months
+|
+|-
+|Zhenxing<br/>{{lang|zh-Hant|真興}}
+|419–425 CE
+|7 years
+|
+|-
+!colspan="4"|[[Helian Chang]]<br/>{{small|(r. 425–428 CE)}}
+|-
+|Chengguang<br/>{{lang|zh-Hant|承光}}
+|419–425 CE
+|7 years
+|Or ''Chengyang'' ({{lang|zh-Hant|承陽}}), ''Yongguang'' ({{lang|zh-Hant|永光}}).
+|-
+!colspan="4"|[[Helian Ding]]<br/>{{small|(r. 428–431 CE)}}
+|-
+|Shengguang<br/>{{lang|zh-Hant|勝光}}
+|428–431 CE
+|4 years
+|
+|}
+
+===[[Northern Yan]]===
+{| class="wikitable"
+|-
+!Era name
+!Period of use
+!Length of use
+!Remark
+|-
+!colspan="4"|[[Gao Yun (emperor)|Emperor Huiyi of Northern Yan]]<br/>{{small|(r. 407–409 CE)}}
+|-
+|Zhengshi<br/>{{lang|zh-Hant|正始}}
+|407–409 CE
+|3 years
+|
+|-
+!colspan="4"|[[Feng Ba|Emperor Wencheng of Northern Yan]]<br/>{{small|(r. 409–430 CE)}}
+|-
+|Taiping<br/>{{lang|zh-Hant|太平}}
+|409–430 CE
+|22 years
+|Usage continued by the [[Feng Hong|Emperor Zhaocheng of Northern Yan]] upon his ascension to the throne.
+|-
+!colspan="4"|[[Feng Hong|Emperor Zhaocheng of Northern Yan]]<br/>{{small|(r. 430–436 CE)}}
+|-
+|Taixing<br/>{{lang|zh-Hant|太興}}
+|431–436 CE
+|6 years
+|
+|}
+
+===[[Dai (Sixteen Kingdoms)|Dai]]===
+{| class="wikitable"
+|-
+!Era name
+!Period of use
+!Length of use
+!Remark
+|-
+!colspan="4"|[[Tuoba Shiyijian|Tuoba Shiyiqian]]<br/>{{small|(r. 388–376 CE)}}
+|-
+|Jianguo<br/>{{lang|zh-Hant|建國}}
+|388–376 CE
+|39 years
+|
+|}
+
+===[[Ran Min|Ran Wei]]===
+{| class="wikitable"
+|-
+!Era name
+!Period of use
+!Length of use
+!Remark
+|-
+!colspan="4"|[[Ran Min|Emperor Ping of Ran Wei]]<br/>{{small|(r. 350–352 CE)}}
+|-
+|Yongxing<br/>{{lang|zh-Hant|永興}}
+|350–352 CE
+|3 years
+|
+|}
+
+===[[Western Yan]]===
+{| class="wikitable"
+|-
+!Era name
+!Period of use
+!Length of use
+!Remark
+|-
+!colspan="4"|[[Murong Hong|Emperor Liewen of Western Yan]]<br/>{{small|(r. 384 CE)}}
+|-
+|Yanxing<br/>{{lang|zh-Hant|燕興}}
+|384 CE
+|9 months
+|
+|-
+!colspan="4"|[[Murong Chong|Emperor Wei of Western Yan]]<br/>{{small|(r. 385–386 CE)}}
+|-
+|Gengshi<br/>{{lang|zh-Hant|更始}}
+|385–386 CE
+|2 years
+|
+|-
+!colspan="4"|[[Duan Sui]]<br/>{{small|(r. 386 CE)}}
+|-
+|Changping<br/>{{lang|zh-Hant|昌平}}
+|386 CE
+|2 months
+|
+|-
+!colspan="4"|[[Murong Yi]]<br/>{{small|(r. 386 CE)}}
+|-
+|Jianming<br/>{{lang|zh-Hant|建明}}
+|386 CE
+|1 month
+|
+|-
+!colspan="4"|[[Murong Yao|Emperor Wen of Western Yan]]<br/>{{small|(r. 386 CE)}}
+|-
+|Jianping<br/>{{lang|zh-Hant|建平}}
+|386 CE
+|1 month
+|
+|-
+!colspan="4"|[[Murong Zhong]]<br/>{{small|(r. 386 CE)}}
+|-
+|Jianwu<br/>{{lang|zh-Hant|建武}}
+|386 CE
+|7 months
+|
+|-
+!colspan="4"|[[Murong Yong]]<br/>{{small|(r. 386–394 CE)}}
+|-
+|Zhongxing<br/>{{lang|zh-Hant|中興}}
+|386–394 CE
+|9 years
+|
+|}
+
+===[[Zhai Wei]]===
+{| class="wikitable"
+|-
+!Era name
+!Period of use
+!Length of use
+!Remark
+|-
+!colspan="4"|[[Zhai Liao]]<br/>{{small|(r. 388–391 CE)}}
+|-
+|Jianguang<br/>{{lang|zh-Hant|建光}}
+|388–391 CE
+|4 years
+|
+|-
+!colspan="4"|[[Zhai Zhao]]<br/>{{small|(r. 391–392 CE)}}
+|-
+|Dingding<br/>{{lang|zh-Hant|定鼎}}
+|391–392 CE
+|2 years
+|Or ''Shending'' ({{lang|zh-Hant|神鼎}}).
+|}
+
+===Other regimes contemporaneous with Sixteen Kingdoms===
+{| class="wikitable"
+|-
+!Era name
+!Period of use
+!Length of use
+!Remark
+|-
+!colspan="4"|Gou Quzhi<br/>{{small|(r. 320 CE)}}
+|-
+|Pingzhao<br/>{{lang|zh-Hant|平趙}}
+|320 CE
+|1 month
+|
+|-
+!colspan="4"|Hou Ziguang<br/>{{small|(r. 337 CE)}}
+|-
+|Longxing<br/>{{lang|zh-Hant|龍興}}
+|337 CE
+|1 month
+|
+|-
+!colspan="4"|Zhang Ju<br/>{{small|(r. 352 CE)}}
+|-
+|Jianchang<br/>{{lang|zh-Hant|建昌}}
+|352 CE
+|5 months
+|
+|-
+!colspan="4"|Zhang Yu<br/>{{small|(r. 374 CE)}}
+|-
+|Heilong<br/>{{lang|zh-Hant|黑龍}}
+|374 CE
+|4 months
+|
+|-
+!colspan="4"|Zhang Dayu<br/>{{small|(r. 386–387 CE)}}
+|-
+|Fenghuang<br/>{{lang|zh-Hant|鳳凰}}
+|386 CE
+|10 months
+|
+|-
+!colspan="4"|[[Dou Chong]]<br/>{{small|(r. 393–394 CE)}}
+|-
+|Yuanguang<br/>{{lang|zh-Hant|元光}}
+|393–394 CE
+|2 years
+|
+|-
+!colspan="4"|Murong Xiang<br/>{{small|(r. 397 CE)}}
+|-
+|Jianshi<br/>{{lang|zh-Hant|建始}}
+|397 CE
+|3 months
+|
+|-
+!colspan="4"|[[Murong Lin]]<br/>{{small|(r. 397 CE)}}
+|-
+|Yanping<br/>{{lang|zh-Hant|延平}}
+|397 CE
+|4 months
+|
+|-
+!colspan="4"|[[Lan Han]]<br/>{{small|(r. 398 CE)}}
+|-
+|Qinglong<br/>{{lang|zh-Hant|青龍}}
+|398 CE
+|4 months
+|
+|-
+!colspan="4"|Wang Shi<br/>{{small|(r. 403 CE)}}
+|-
+|Taiping<br/>{{lang|zh-Hant|太平}}
+|403 CE
+|1 month
+|
+|}
+
+==[[Northern and Southern dynasties]]==
+===[[Northern Wei]]===
+{| class="wikitable"
+|-
+!Era name
+!Period of use
+!Length of use
+!Remark
+|-
+!colspan="4"|[[Emperor Daowu of Northern Wei]]<br/>{{small|(r. 386–409 CE)}}
+|-
+|Dengguo<br/>{{lang|zh-Hant|登國}}
+|386–396 CE
+|11 years
+|
+|-
+|Huangshi<br/>{{lang|zh-Hant|皇始}}
+|396–398 CE
+|3 years
+|
+|-
+|Tianxing<br/>{{lang|zh-Hant|天興}}
+|398–404 CE
+|7 years
+|
+|-
+|Tianci<br/>{{lang|zh-Hant|天賜}}
+|404–409 CE
+|6 years
+|
+|-
+!colspan="4"|[[Emperor Mingyuan of Northern Wei]]<br/>{{small|(r. 409–423 CE)}}
+|-
+|Yongxing<br/>{{lang|zh-Hant|永興}}
+|409–413 CE
+|5 years
+|
+|-
+|Shenrui<br/>{{lang|zh-Hant|神瑞}}
+|414–416 CE
+|3 years
+|
+|-
+|Taichang<br/>{{lang|zh-Hant|泰常}}
+|416–423 CE
+|8 years
+|Usage continued by the [[Emperor Taiwu of Northern Wei]] upon his ascension to the throne.
+|-
+!colspan="4"|[[Emperor Taiwu of Northern Wei]]<br/>{{small|(r. 423–452 CE)}}
+|-
+|Shiguang<br/>{{lang|zh-Hant|始光}}
+|424–428 CE
+|5 years
+|
+|-
+|Shenjia<br/>{{lang|zh-Hant|神䴥}}
+|428–431 CE
+|4 years
+|
+|-
+|Yanhe<br/>{{lang|zh-Hant|延和}}
+|432–435 CE
+|4 years
+|
+|-
+|Taiyan<br/>{{lang|zh-Hant|太延}}
+|435–440 CE
+|6 years
+|
+|-
+|Taipingzhenjun<br/>{{lang|zh-Hant|太平真君}}
+|440–451 CE
+|12 years
+|
+|-
+|Zhengping<br/>{{lang|zh-Hant|正平}}
+|451–452 CE
+|2 years
+|
+|-
+!colspan="4"|[[Tuoba Yu]]<br/>{{small|(r. 452 CE)}}
+|-
+|Chengping<br/>{{lang|zh-Hant|承平}}
+|452 CE
+|9 months
+|Sometimes erroneously referred to as ''Yongping'' ({{lang|zh-Hant|永平}}).
+|-
+!colspan="4"|[[Emperor Wencheng of Northern Wei]]<br/>{{small|(r. 452–465 CE)}}
+|-
+|Xing'an<br/>{{lang|zh-Hant|興安}}
+|452–454 CE
+|3 years
+|
+|-
+|Xingguang<br/>{{lang|zh-Hant|興光}}
+|454–455 CE
+|2 years
+|
+|-
+|Tai'an<br/>{{lang|zh-Hant|太安}}
+|455–459 CE
+|5 years
+|
+|-
+|Heping<br/>{{lang|zh-Hant|和平}}
+|460–465 CE
+|6 years
+|Usage continued by the [[Emperor Xianwen of Northern Wei]] upon his ascension to the throne.
+|-
+!colspan="4"|[[Emperor Xianwen of Northern Wei]]<br/>{{small|(r. 465–471 CE)}}
+|-
+|Tian'an<br/>{{lang|zh-Hant|天安}}
+|466–467 CE
+|2 years
+|
+|-
+|Huangxing<br/>{{lang|zh-Hant|皇興}}
+|467–471 CE
+|5 years
+|
+|-
+!colspan="4"|[[Emperor Xiaowen of Northern Wei]]<br/>{{small|(r. 471–499 CE)}}
+|-
+|Yanxing<br/>{{lang|zh-Hant|延興}}
+|471–476 CE
+|6 years
+|
+|-
+|Chengming<br/>{{lang|zh-Hant|承明}}
+|476 CE
+|7 months
+|
+|-
+|Taihe<br/>{{lang|zh-Hant|太和}}
+|477–499 CE
+|23 years
+|Usage continued by the [[Emperor Xuanwu of Northern Wei]] upon his ascension to the throne.
+|-
+!colspan="4"|[[Emperor Xuanwu of Northern Wei]]<br/>{{small|(r. 499–515 CE)}}
+|-
+|Jingming<br/>{{lang|zh-Hant|景明}}
+|500–504 CE
+|5 years
+|
+|-
+|Zhengshi<br/>{{lang|zh-Hant|正始}}
+|504–508 CE
+|5 years
+|
+|-
+|Yongping<br/>{{lang|zh-Hant|永平}}
+|508–512 CE
+|5 years
+|
+|-
+|Yanchang<br/>{{lang|zh-Hant|延昌}}
+|512–515 CE
+|4 years
+|Usage continued by the [[Emperor Xiaoming of Northern Wei]] upon his ascension to the throne.
+|-
+!colspan="4"|[[Emperor Xiaoming of Northern Wei]]<br/>{{small|(r. 515–528 CE)}}
+|-
+|Xiping<br/>{{lang|zh-Hant|熙平}}
+|516–518 CE
+|3 years
+|
+|-
+|Shengui<br/>{{lang|zh-Hant|神龜}}
+|518–520 CE
+|3 years
+|
+|-
+|Zhengguang<br/>{{lang|zh-Hant|正光}}
+|520–525 CE
+|6 years
+|
+|-
+|Xiaochang<br/>{{lang|zh-Hant|孝昌}}
+|525–528 CE
+|4 years
+|
+|-
+|Wutai<br/>{{lang|zh-Hant|武泰}}
+|528 CE
+|5 months
+|Usage continued by [[Yuan Zhao]] upon his ascension to the throne.
+|-
+!colspan="4"|[[Emperor Xiaozhuang of Northern Wei]]<br/>{{small|(r. 528–530 CE)}}
+|-
+|Jianyi<br/>{{lang|zh-Hant|建義}}
+|528 CE
+|6 months
+|
+|-
+|Yong'an<br/>{{lang|zh-Hant|永安}}
+|528–530 CE
+|3 years
+|
+|-
+!colspan="4"|[[Yuan Ye (emperor)|Yuan Ye]]<br/>{{small|(r. 530–531 CE)}}
+|-
+|Jianming<br/>{{lang|zh-Hant|建明}}
+|530–531 CE
+|2 years
+|
+|-
+!colspan="4"|[[Emperor Jiemin of Northern Wei]]<br/>{{small|(r. 531–532 CE)}}
+|-
+|Putai<br/>{{lang|zh-Hant|普泰}}
+|531 CE
+|9 months
+|Or ''Pujia'' ({{lang|zh-Hant|普嘉}}).
+|-
+!colspan="4"|[[Yuan Lang]]<br/>{{small|(r. 531–532 CE)}}
+|-
+|Zhongxing<br/>{{lang|zh-Hant|中興}}
+|531–532 CE
+|2 years
+|
+|-
+!colspan="4"|[[Emperor Xiaowu of Northern Wei]]<br/>{{small|(r. 532–535 CE)}}
+|-
+|Taichang<br/>{{lang|zh-Hant|太昌}}
+|532 CE
+|9 months
+|
+|-
+|Yongxing<br/>{{lang|zh-Hant|永興}}
+|532 CE
+|1 month
+|
+|-
+|Yongxi<br/>{{lang|zh-Hant|永熙}}
+|532–534 CE
+|3 years
+|
+|}
+
+===[[Eastern Wei]]===
+{| class="wikitable"
+|-
+!Era name
+!Period of use
+!Length of use
+!Remark
+|-
+!colspan="4"|[[Emperor Xiaojing of Eastern Wei]]<br/>{{small|(r. 534–550 CE)}}
+|-
+|Tianping<br/>{{lang|zh-Hant|天平}}
+|534–537 CE
+|4 years
+|
+|-
+|Yuanxiang<br/>{{lang|zh-Hant|元象}}
+|538–539 CE
+|2 years
+|
+|-
+|Xinghe<br/>{{lang|zh-Hant|興和}}
+|539–542 CE
+|4 years
+|
+|-
+|Wuding<br/>{{lang|zh-Hant|武定}}
+|543–550 CE
+|8 years
+|
+|}
+
+===[[Western Wei]]===
+{| class="wikitable"
+|-
+!Era name
+!Period of use
+!Length of use
+!Remark
+|-
+!colspan="4"|[[Emperor Wen of Western Wei]]<br/>{{small|(r. 535–551 CE)}}
+|-
+|Datong<br/>{{lang|zh-Hant|大統}}
+|535–551 CE
+|17 years
+|
+|-
+!colspan="4"|[[Emperor Fei of Western Wei|Yuan Qin]]<br/>{{small|(r. 551–554 CE)}}
+|-
+|Qianming<br/>{{lang|zh-Hant|乾明}}
+|''Unknown''
+|''Unknown''
+|
+|}
+
+===[[Northern Qi]]===
+{| class="wikitable"
+|-
+!Era name
+!Period of use
+!Length of use
+!Remark
+|-
+!colspan="4"|[[Emperor Wenxuan of Northern Qi]]<br/>{{small|(r. 550–559 CE)}}
+|-
+|Tianbao<br/>{{lang|zh-Hant|天保}}
+|550–559 CE
+|10 years
+|Usage continued by [[Emperor Fei of Northern Qi|Gao Yin]] upon his ascension to the throne.
+|-
+!colspan="4"|[[Emperor Fei of Northern Qi|Gao Yin]]<br/>{{small|(r. 559–560 CE)}}
+|-
+|Qianming<br/>{{lang|zh-Hant|乾明}}
+|560 CE
+|8 months
+|
+|-
+!colspan="4"|[[Emperor Xiaozhao of Northern Qi]]<br/>{{small|(r. 560–561 CE)}}
+|-
+|Huangjian<br/>{{lang|zh-Hant|皇建}}
+|560–561 CE
+|2 years
+|
+|-
+!colspan="4"|[[Emperor Wucheng of Northern Qi]]<br/>{{small|(r. 561–565 CE)}}
+|-
+|Taining<br/>{{lang|zh-Hant|太寧}}
+|561–562 CE
+|2 years
+|Or ''Daning'' ({{lang|zh-Hant|大寧}}), ''Taining'' ({{lang|zh-Hant|泰寧}}).
+|-
+|Heqing<br/>{{lang|zh-Hant|河清}}
+|562–565 CE
+|4 years
+|
+|-
+!colspan="4"|[[Gao Wei]]<br/>{{small|(r. 565–577 CE)}}
+|-
+|Tiantong<br/>{{lang|zh-Hant|天統}}
+|565–569 CE
+|5 years
+|
+|-
+|Wuping<br/>{{lang|zh-Hant|武平}}
+|570–576 CE
+|7 years
+|
+|-
+|Longhua<br/>{{lang|zh-Hant|隆化}}
+|576 CE
+|1 month
+|
+|-
+!colspan="4"|[[Gao Yanzong]]<br/>{{small|(r. 576 CE)}}
+|-
+|Dechang<br/>{{lang|zh-Hant|德昌}}
+|576 CE
+|1 month
+|
+|-
+!colspan="4"|[[Gao Heng]]<br/>{{small|(r. 577 CE)}}
+|-
+|Chengguang<br/>{{lang|zh-Hant|承光}}
+|577 CE
+|3 months
+|
+|}
+
+===[[Northern Zhou]]===
+{| class="wikitable"
+|-
+!Era name
+!Period of use
+!Length of use
+!Remark
+|-
+!colspan="4"|[[Emperor Ming of Northern Zhou]]<br/>{{small|(r. 557–560 CE)}}
+|-
+|Wucheng<br/>{{lang|zh-Hant|武成}}
+|559–560 CE
+|2 years
+|Usage continued by the [[Emperor Wu of Northern Zhou]] upon his ascension to the throne.
+|-
+|Wuding<br/>{{lang|zh-Hant|武定}}
+|''Unknown''
+|''Unknown''
+|
+|-
+!colspan="4"|[[Emperor Wu of Northern Zhou]]<br/>{{small|(r. 560–578 CE)}}
+|-
+|Baoding<br/>{{lang|zh-Hant|保定}}
+|561–565 CE
+|5 years
+|
+|-
+|Tianhe<br/>{{lang|zh-Hant|天和}}
+|566–572 CE
+|7 years
+|
+|-
+|Jiande<br/>{{lang|zh-Hant|建德}}
+|572–578 CE
+|7 years
+|
+|-
+|Xuanzheng<br/>{{lang|zh-Hant|宣政}}
+|578 CE
+|10 months
+|Usage continued by the [[Emperor Xuan of Northern Zhou]] upon his ascension to the throne.
+|-
+!colspan="4"|[[Emperor Xuan of Northern Zhou]]<br/>{{small|(r. 578–579 CE)}}
+|-
+|Dacheng<br/>{{lang|zh-Hant|大成}}
+|579 CE
+|2 months
+|
+|-
+!colspan="4"|[[Emperor Jing of Northern Zhou]]<br/>{{small|(r. 579–581 CE)}}
+|-
+|Daxiang<br/>{{lang|zh-Hant|大象}}
+|579–580 CE
+|2 years
+|
+|-
+|Dading<br/>{{lang|zh-Hant|大定}}
+|581 CE
+|2 months
+|
+|}
+
+===[[Liu Song dynasty|Liu Song]]===
+{| class="wikitable"
+|-
+!Era name
+!Period of use
+!Length of use
+!Remark
+|-
+!colspan="4"|[[Emperor Wu of Song|Emperor Wu of Liu Song]]<br/>{{small|(r. 420–422 CE)}}
+|-
+|Yongchu<br/>{{lang|zh-Hant|永初}}
+|420–422 CE
+|3 years
+|Usage continued by [[Emperor Shao of Song|Liu Yifu]] upon his ascension to the throne.
+|-
+!colspan="4"|[[Emperor Shao of Song|Liu Yifu]]<br/>{{small|(r. 422–424 CE)}}
+|-
+|Jingping<br/>{{lang|zh-Hant|景平}}
+|423–424 CE
+|2 years
+|
+|-
+!colspan="4"|[[Emperor Wen of Song|Emperor Wen of Liu Song]]<br/>{{small|(r. 424–453 CE)}}
+|-
+|Yuanjia<br/>{{lang|zh-Hant|元嘉}}
+|424–453 CE
+|30 years
+|Usage continued by the [[Emperor Xiaowu of Song|Emperor Xiaowu of Liu Song]] upon his ascension to the throne.
+|-
+!colspan="4"|[[Emperor Xiaowu of Song|Emperor Xiaowu of Liu Song]]<br/>{{small|(r. 453–464 CE)}}
+|-
+|Xiaojian<br/>{{lang|zh-Hant|孝建}}
+|454–456 CE
+|3 years
+|
+|-
+|Daming<br/>{{lang|zh-Hant|大明}}
+|457–464 CE
+|8 years
+|Usage continued by [[Liu Ziye]] upon his ascension to the throne.
+|-
+!colspan="4"|[[Liu Ziye]]<br/>{{small|(r. 464–466 CE)}}
+|-
+|Yongguang<br/>{{lang|zh-Hant|永光}}
+|465 CE
+|8 months
+|
+|-
+|Jinghe<br/>{{lang|zh-Hant|景和}}
+|465 CE
+|4 months
+|
+|-
+!colspan="4"|[[Emperor Ming of Song|Emperor Ming of Liu Song]]<br/>{{small|(r. 466–472 CE)}}
+|-
+|Taishi<br/>{{lang|zh-Hant|泰始}}
+|466–471 CE
+|6 years
+|
+|-
+|Taiyu<br/>{{lang|zh-Hant|泰豫}}
+|472 CE
+|1 year
+|Usage continued by [[Latter Deposed Emperor of Liu Song|Liu Yu]] upon his ascension to the throne.
+|-
+!colspan="4"|[[Latter Deposed Emperor of Liu Song|Liu Yu]]<br/>{{small|(r. 472–477 CE)}}
+|-
+|Yuanhui<br/>{{lang|zh-Hant|元徽}}
+|473–477 CE
+|5 years
+|
+|-
+!colspan="4"|[[Emperor Shun of Song|Emperor Shun of Liu Song]]<br/>{{small|(r. 477–479 CE)}}
+|-
+|Shengming<br/>{{lang|zh-Hant|昇明}}
+|477–479 CE
+|3 years
+|
+|}
+
+===[[Southern Qi]]===
+{| class="wikitable"
+|-
+!Era name
+!Period of use
+!Length of use
+!Remark
+|-
+!colspan="4"|[[Emperor Gao of Southern Qi]]<br/>{{small|(r. 479–482 CE)}}
+|-
+|Jianyuan<br/>{{lang|zh-Hant|建元}}
+|479–482 CE
+|4 years
+|Usage continued by the [[Emperor Wu of Southern Qi]] upon his ascension to the throne.
+|-
+!colspan="4"|[[Emperor Wu of Southern Qi]]<br/>{{small|(r. 482–493 CE)}}
+|-
+|Yongming<br/>{{lang|zh-Hant|永明}}
+|483–493 CE
+|11 years
+|Usage continued by [[Xiao Zhaoye]] upon his ascension to the throne.
+|-
+!colspan="4"|[[Xiao Zhaoye]]<br/>{{small|(r. 493–494 CE)}}
+|-
+|Longchang<br/>{{lang|zh-Hant|隆昌}}
+|494 CE
+|7 months
+|
+|-
+!colspan="4"|[[Xiao Zhaowen]]<br/>{{small|(r. 494 CE)}}
+|-
+|Yanxing<br/>{{lang|zh-Hant|延興}}
+|494 CE
+|4 months
+|
+|-
+!colspan="4"|[[Emperor Ming of Southern Qi]]<br/>{{small|(r. 494–498 CE)}}
+|-
+|Jianwu<br/>{{lang|zh-Hant|建武}}
+|494–498 CE
+|5 years
+|
+|-
+|Yongtai<br/>{{lang|zh-Hant|永泰}}
+|498 CE
+|9 months
+|Usage continued by [[Xiao Baojuan]] upon his ascension to the throne.
+|-
+!colspan="4"|[[Xiao Baojuan]]<br/>{{small|(r. 498–501 CE)}}
+|-
+|Yongyuan<br/>{{lang|zh-Hant|永元}}
+|499–501 CE
+|3 years
+|
+|-
+!colspan="4"|[[Emperor He of Southern Qi]]<br/>{{small|(r. 501–502 CE)}}
+|-
+|Zhongxing<br/>{{lang|zh-Hant|中興}}
+|501–502 CE
+|2 years
+|
+|}
+
+===[[Liang dynasty]]===
+{| class="wikitable"
+|-
+!Era name
+!Period of use
+!Length of use
+!Remark
+|-
+!colspan="4"|[[Emperor Wu of Liang]]<br/>{{small|(r. 502–549 CE)}}
+|-
+|Tianjian<br/>{{lang|zh-Hant|天監}}
+|502–519 CE
+|18 years
+|
+|-
+|Putong<br/>{{lang|zh-Hant|普通}}
+|520–527 CE
+|8 years
+|
+|-
+|Datong<br/>{{lang|zh-Hant|大通}}
+|527–529 CE
+|3 years
+|
+|-
+|Zhongdatong<br/>{{lang|zh-Hant|中大通}}
+|529–534 CE
+|6 years
+|
+|-
+|Datong<br/>{{lang|zh-Hant|大同}}
+|535–546 CE
+|12 years
+|
+|-
+|Zhongdatong<br/>{{lang|zh-Hant|中大同}}
+|546–547 CE
+|2 years
+|
+|-
+|Taiqing<br/>{{lang|zh-Hant|太清}}
+|547–549 CE
+|3 years
+|Usage continued by the [[Emperor Jianwen of Liang]] upon his ascension to the throne.
+|-
+!colspan="4"|[[Emperor Jianwen of Liang]]<br/>{{small|(r. 549–551 CE)}}
+|-
+|Dabao<br/>{{lang|zh-Hant|大寶}}
+|550–551 CE
+|2 years
+|
+|-
+!colspan="4"|[[Xiao Dong]]<br/>{{small|(r. 551 CE)}}
+|-
+|Tianzheng<br/>{{lang|zh-Hant|天正}}
+|551 CE
+|4 months
+|
+|-
+!colspan="4"|[[Emperor Yuan of Liang]]<br/>{{small|(r. 552–555 CE)}}
+|-
+|Chengsheng<br/>{{lang|zh-Hant|承聖}}
+|552–555 CE
+|4 years
+|
+|-
+!colspan="4"|[[Xiao Yuanming|Emperor Min of Liang]]<br/>{{small|(r. 555 CE)}}
+|-
+|Tiancheng<br/>{{lang|zh-Hant|天成}}
+|555 CE
+|6 months
+|
+|-
+!colspan="4"|[[Emperor Jing of Liang]]<br/>{{small|(r. 555–557 CE)}}
+|-
+|Shaotai<br/>{{lang|zh-Hant|紹泰}}
+|555–556 CE
+|2 years
+|
+|-
+|Taiping<br/>{{lang|zh-Hant|太平}}
+|556–557 CE
+|2 years
+|
+|}
+
+===[[Western Liang (555–587)|Western Liang]]===
+{| class="wikitable"
+|-
+!Era name
+!Period of use
+!Length of use
+!Remark
+|-
+!colspan="4"|[[Xiao Cha|Emperor Xuan of Western Liang]]<br/>{{small|(r. 555–562 CE)}}
+|-
+|Dading<br/>{{lang|zh-Hant|大定}}
+|555–562 CE
+|8 years
+|
+|-
+!colspan="4"|[[Xiao Kui|Emperor Ming of Western Liang]]<br/>{{small|(r. 562–585 CE)}}
+|-
+|Tianbao<br/>{{lang|zh-Hant|天保}}
+|562–585 CE
+|24 years
+|Usage continued by the [[Xiao Cong|Emperor Jing of Western Liang]] upon his ascension to the throne.
+|-
+!colspan="4"|[[Xiao Cong|Emperor Jing of Western Liang]]<br/>{{small|(r. 585–587 CE)}}
+|-
+|Guangyun<br/>{{lang|zh-Hant|廣運}}
+|586–587 CE
+|2 years
+|
+|}
+
+===[[Chen dynasty]]===
+{| class="wikitable"
+|-
+!Era name
+!Period of use
+!Length of use
+!Remark
+|-
+!colspan="4"|[[Emperor Wu of Chen]]<br/>{{small|(r. 557–559 CE)}}
+|-
+|Yongding<br/>{{lang|zh-Hant|永定}}
+|557–559 CE
+|3 years
+|Usage continued by the [[Emperor Wen of Chen]] upon his ascension to the throne.
+|-
+!colspan="4"|[[Emperor Wen of Chen]]<br/>{{small|(r. 559–566 CE)}}
+|-
+|Tianjia<br/>{{lang|zh-Hant|天嘉}}
+|560–566 CE
+|7 years
+|
+|-
+|Tiankang<br/>{{lang|zh-Hant|天康}}
+|566 CE
+|11 months
+|Usage continued by [[Emperor Fei of Chen|Chen Bozong]] upon his ascension to the throne.
+|-
+!colspan="4"|[[Emperor Fei of Chen|Chen Bozong]]<br/>{{small|(r. 566–568 CE)}}
+|-
+|Guangda<br/>{{lang|zh-Hant|光大}}
+|567–568 CE
+|2 years
+|
+|-
+!colspan="4"|[[Emperor Xuan of Chen]]<br/>{{small|(r. 568–582 CE)}}
+|-
+|Taijian<br/>{{lang|zh-Hant|太建}}
+|569–582 CE
+|14 years
+|Usage continued by [[Chen Shubao]] upon his ascension to the throne.
+|-
+!colspan="4"|[[Chen Shubao]]<br/>{{small|(r. 582–589 CE)}}
+|-
+|Zhide<br/>{{lang|zh-Hant|至德}}
+|583–586 CE
+|4 years
+|
+|-
+|Zhenming<br/>{{lang|zh-Hant|禎明}}
+|587–589 CE
+|3 years
+|
+|}
+
+===[[Goguryeo|Gaogouli]]===
+{| class="wikitable"
+|-
+!Era name
+!Period of use
+!Length of use
+!Remark
+|-
+!colspan="4"|[[Gwanggaeto the Great|King Guangkaitu of Gaogouli]]<br/>{{small|(r. 391–413 CE)}}
+|-
+|Yongle<br/>{{lang|zh-Hant|永樂}}
+|391–412 CE
+|22 years
+|
+|-
+!colspan="4"|''Unknown monarch(s)''
+|-
+|Yongkang<br/>{{lang|zh-Hant|永康}}
+|''Unknown''
+|''Unknown''
+|The 7th year of ''Yongkang'' might be 396 CE, 418 CE, 483 CE, or 551 CE.
+|-
+|Yanshou<br/>{{lang|zh-Hant|延壽}}
+|''Unknown''
+|''Unknown''
+|The 1st year of ''Yanshou'' might be 451 CE or 511 CE.
+|-
+|Jianxing<br/>{{lang|zh-Hant|建興}}
+|''Unknown''
+|''Unknown''
+|The 5th year of ''Jianxing'' might be 476 CE, 536 CE, or 596 CE.
+|-
+|Yanjia<br/>{{lang|zh-Hant|延嘉}}
+|''Unknown''
+|''Unknown''
+|The 7th year of ''Yanjia'' might be 479 CE or 539 CE.
+|}
+
+===[[Rouran Khaganate]]===
+{| class="wikitable"
+|-
+!Era name
+!Period of use
+!Length of use
+!Remark
+|-
+!colspan="4"|[[Yujiulü Yucheng|Shouluobuzhen Khagan]]<br/>{{small|(r. 464–485 CE)}}
+|-
+|Yongkang<br/>{{lang|zh-Hant|永康}}
+|464–484 CE
+|21 years
+|Usage might be from 466 CE to 484 CE, for a total length of 19 years. {{font color|#000000|#DAF2FF|Also used by [[Gaochang]].}}
+|-
+!colspan="4"|[[Yujiulü Doulun|Fumingdun Khagan]]<br/>{{small|(r. 485–492 CE)}}
+|-
+|Taiping<br/>{{lang|zh-Hant|太平}}
+|485–491 CE
+|7 years
+|
+|-
+!colspan="4"|[[Yujiulü Nagai|Houqifudaikuzhe Khagan]]<br/>{{small|(r. 492–506 CE)}}
+|-
+|Tai'an<br/>{{lang|zh-Hant|太安}}
+|492–505 CE
+|14 years
+|
+|-
+!colspan="4"|[[Yujiulü Futu|Tuohan Khagan]]<br/>{{small|(r. 506–508 CE)}}
+|-
+|Shiping<br/>{{lang|zh-Hant|始平}}
+|506–507 CE
+|2 years
+|
+|-
+!colspan="4"|[[Yujiulü Chounu|Douluofubadoufa Khagan]]<br/>{{small|(r. 508–520 CE)}}
+|-
+|Jianchang<br/>{{lang|zh-Hant|建昌}}
+|508–520 CE
+|13 years
+|
+|}
+
+===[[Chouchi|Later Chouchi]]===
+{| class="wikitable"
+|-
+!Era name
+!Period of use
+!Length of use
+!Remark
+|-
+!colspan="4"|Yang Nandang<br/>{{small|(r. 436–442 CE)}}
+|-
+|Jianyi<br/>{{lang|zh-Hant|建義}}
+|436–442 CE
+|7 years
+|
+|}
+
+===[[Gaochang]]===
+{| class="wikitable"
+|-
+!Era name
+!Period of use
+!Length of use
+!Remark
+|-
+!colspan="4"|Kan Bozhou<br/>{{small|(r. 460–477 CE)}}
+|- style="background:#DAF2FF;"
+|Yongkang<br/>{{lang|zh-Hant|永康}}
+|466–477 CE
+|12 years
+|Adopted the era name of the [[Yujiulü Yucheng|Shouluobuzhen Khagan]].
+|-
+!colspan="4"|Kan Yicheng<br/>{{small|(r. 477–478 CE)}}
+|- style="background:#DAF2FF;"
+|Yongkang<br/>{{lang|zh-Hant|永康}}
+|477–478 CE
+|2 years
+|Adopted the era name of the [[Yujiulü Yucheng|Shouluobuzhen Khagan]].
+|-
+!colspan="4"|Kan Shougui<br/>{{small|(r. 478–488 CE)}}
+|- style="background:#DAF2FF;"
+|Yongkang<br/>{{lang|zh-Hant|永康}}
+|478–485 CE
+|12 years
+|Adopted the era name of the [[Yujiulü Yucheng|Shouluobuzhen Khagan]].
+|-
+!colspan="4"|Zhang Mengming<br/>{{small|(r. 488–496 CE)}}
+|-
+|Jianchu<br/>{{lang|zh-Hant|建初}}
+|489–496 CE
+|8 years
+|Might be the era name of Kan Shougui from 489 CE to 491 CE, used for a total length of 3 years.
+|-
+!colspan="4"|Qu Jia<br/>{{small|(r. 501–525 CE)}}
+|-
+|Chengping<br/>{{lang|zh-Hant|承平}}
+|502–509 CE
+|8 years
+|Usage might be from 502 CE to 510 CE, for a total length of 9 years.
+|-
+|Yixi<br/>{{lang|zh-Hant|義熙}}
+|510–525 CE
+|16 years
+|Usage might be from 511 CE to 523 CE, for a total length of 13 years.
+|-
+!colspan="4"|Qu Guang<br/>{{small|(r. 525–530 CE)}}
+|-
+|Ganlu<br/>{{lang|zh-Hant|甘露}}
+|525–530 CE
+|6 years
+|
+|-
+!colspan="4"|Qu Jian<br/>{{small|(r. 530–548 CE)}}
+|-
+|Zhanghe<br/>{{lang|zh-Hant|章和}}
+|531–548 CE
+|18 years
+|
+|-
+!colspan="4"|Qu Xuanxi<br/>{{small|(r. 548–550 CE)}}
+|-
+|Yongping<br/>{{lang|zh-Hant|永平}}
+|549–550 CE
+|2 years
+|
+|-
+!colspan="4"|''Successor to Qu Xuanxi (name unknown)''<br/>{{small|(r. 550–555 CE)}}
+|-
+|Heping<br/>{{lang|zh-Hant|和平}}
+|551–554 CE
+|4 years
+|
+|-
+!colspan="4"|Qu Baomao<br/>{{small|(r. 555–560 CE)}}
+|-
+|Jianchang<br/>{{lang|zh-Hant|建昌}}
+|555–560 CE
+|6 years
+|
+|-
+!colspan="4"|Qu Qiangu<br/>{{small|(r. 560–601 CE)}}
+|-
+|Yanchang<br/>{{lang|zh-Hant|延昌}}
+|561–601 CE
+|41 years
+|
+|-
+!colspan="4"|Qu Boya<br/>{{small|(r. 601–613 CE; first reign)}}
+|-
+|Yanhe<br/>{{lang|zh-Hant|延和}}
+|602–613 CE
+|12 years
+|
+|-
+!colspan="4"|''Usurper (name unknown)''<br/>{{small|(r. 613–619 CE)}}
+|-
+|Yihe<br/>{{lang|zh-Hant|義和}}
+|614–619 CE
+|6 years
+|
+|-
+!colspan="4"|Qu Boya<br/>{{small|(r. 620–623 CE; second reign)}}
+|-
+|Chongguang<br/>{{lang|zh-Hant|重光}}
+|620–623 CE
+|4 years
+|Usage continued by Qu Wentai upon his ascension to the throne. Might be the era name of Qu Wentai.
+|-
+!colspan="4"|Qu Wentai<br/>{{small|(r. 623–640 CE)}}
+|-
+|Yanshou<br/>{{lang|zh-Hant|延壽}}
+|624–640 CE
+|17 years
+|Usage continued by Qu Zhisheng upon his ascension to the throne.
+|}
+
+===[[Hou Jing|Hou Han]]===
+{| class="wikitable"
+|-
+!Era name
+!Period of use
+!Length of use
+!Remark
+|-
+!colspan="4"|[[Hou Jing]]<br/>{{small|(r. 551–552 CE)}}
+|-
+|Taishi<br/>{{lang|zh-Hant|太始}}
+|551–552 CE
+|2 years
+|
+|}
+
+===Other regimes contemporaneous with Northern and Southern dynasties===
+{| class="wikitable"
+|-
+!Era name
+!Period of use
+!Length of use
+!Remark
+|-
+!colspan="4"|Baiya Lisi<br/>{{small|(r. 415–416 CE)}}
+|-
+|Jianping<br/>{{lang|zh-Hant|建平}}
+|415–416 CE
+|2 years
+|Usage continued by Liu Hu upon his ascension to the throne.
+|-
+!colspan="4"|Li Bao<br/>{{small|(r. 422–442 CE)}}
+|-
+|Longxing<br/>{{lang|zh-Hant|龍興}}
+|422–442 CE
+|21 years
+|
+|-
+!colspan="4"|Cheng Daoyang<br/>{{small|(r. 432–437 CE)}}
+|-
+|Taishi<br/>{{lang|zh-Hant|泰始}}
+|432–437 CE
+|6 years
+|
+|-
+!colspan="4"|[[Liu Shao (Liu Song)|Liu Shao]]<br/>{{small|(r. 453 CE)}}
+|-
+|Taichu<br/>{{lang|zh-Hant|太初}}
+|453 CE
+|3 months
+|
+|-
+!colspan="4"|Lu Shuang<br/>{{small|(r. 454 CE)}}
+|-
+|Jianping<br/>{{lang|zh-Hant|建平}}
+|454 CE
+|4 months
+|
+|-
+!colspan="4"|Liu Hun<br/>{{small|(r. 455 CE)}}
+|-
+|Yongguang<br/>{{lang|zh-Hant|永光}}
+|455 CE
+|1 month
+|Or ''Yuanguang'' ({{lang|zh-Hant|元光}}), ''Yunguang'' ({{lang|zh-Hant|允光}}).
+|-
+!colspan="4"|[[Liu Zixun]]<br/>{{small|(r. 466 CE)}}
+|-
+|Yijia<br/>{{lang|zh-Hant|義嘉}}
+|466 CE
+|8 months
+|
+|-
+!colspan="4"|Sima Xiaojun<br/>{{small|(r. 471 CE)}}
+|-
+|Shengjun<br/>{{lang|zh-Hant|聖君}}
+|471 CE
+|1 year
+|
+|-
+!colspan="4"|Tang Yuzhi<br/>{{small|(r. 486 CE)}}
+|-
+|Xingping<br/>{{lang|zh-Hant|興平}}
+|486 CE
+|1 year
+|
+|-
+!colspan="4"|Yong Daoxi<br/>{{small|(r. 500 CE)}}
+|-
+|Jianyi<br/>{{lang|zh-Hant|建義}}
+|500 CE
+|2 months
+|
+|-
+!colspan="4"|Fan Su'an<br/>{{small|(r. 503–504 CE)}}
+|-
+|Zhengshi<br/>{{lang|zh-Hant|正始}}
+|''Unknown''
+|''Unknown''
+|
+|-
+!colspan="4"|Lü Gou'er<br/>{{small|(r. 506 CE)}}
+|-
+|Jianming<br/>{{lang|zh-Hant|建明}}
+|506 CE
+|7 months
+|
+|-
+!colspan="4"|Chen Zhan<br/>{{small|(r. 506 CE)}}
+|-
+|Shengming<br/>{{lang|zh-Hant|聖明}}
+|506 CE
+|7 months
+|
+|-
+!colspan="4"|Emperor Wenjing of Western Wei<br/>{{small|(r. 508 CE)}}
+|-
+|Jianping<br/>{{lang|zh-Hant|建平}}
+|508 CE
+|2 months
+|
+|-
+!colspan="4"|Faqing<br/>{{small|(r. 515 CE)}}
+|-
+|Dacheng<br/>{{lang|zh-Hant|大乘}}
+|515 CE
+|3 months
+|
+|-
+!colspan="4"|Poliuhan Baling<br/>{{small|(r. 524–525 CE)}}
+|-
+|Zhenwang<br/>{{lang|zh-Hant|真王}}
+|524–525 CE
+|2 years
+|{{font color|#000000|#DAF2FF|Also used by Du Luozhou.}}
+|-
+!colspan="4"|Mozhe Niansheng<br/>{{small|(r. 524–527 CE)}}
+|-
+|Tianjian<br/>{{lang|zh-Hant|天建}}
+|524–527 CE
+|4 years
+|
+|-
+!colspan="4"|Yuan Faseng<br/>{{small|(r. 525 CE)}}
+|-
+|Tianqi<br/>{{lang|zh-Hant|天啟}}
+|525 CE
+|3 months
+|Or ''Daqi'' ({{lang|zh-Hant|大啟}}).
+|-
+!colspan="4"|Du Luozhou<br/>{{small|(r. 525 CE)}}
+|- style="background:#DAF2FF;"
+|Zhenwang<br/>{{lang|zh-Hant|真王}}
+|525–528 CE
+|4 years
+|Adopted the era name of Poliuhan Baling.
+|-
+!colspan="4"|Liu Lisheng<br/>{{small|(r. 525–535 CE)}}
+|-
+|Shenjia<br/>{{lang|zh-Hant|神嘉}}
+|525–535 CE
+|11 years
+|
+|-
+!colspan="4"|Xianyu Xiuli<br/>{{small|(r. 526 CE)}}
+|-
+|Luxing<br/>{{lang|zh-Hant|魯興}}
+|526 CE
+|8 months
+|Or ''Puxing'' ({{lang|zh-Hant|普興}}).
+|-
+!colspan="4"|Chen Shuangchi<br/>{{small|(r. 526 CE)}}
+|-
+|Shijian<br/>{{lang|zh-Hant|始建}}
+|''Unknown''
+|''Unknown''
+|
+|-
+!colspan="4"|Ge Rong<br/>{{small|(r. 526–528 CE)}}
+|-
+|Guang'an<br/>{{lang|zh-Hant|廣安}}
+|526–528 CE
+|3 years
+|
+|-
+!colspan="4"|Liu Huo, Zheng Bian<br/>{{small|(r. 527 CE)}}
+|-
+|Tianshou<br/>{{lang|zh-Hant|天授}}
+|527 CE
+|1 month
+|
+|-
+!colspan="4"|[[Xiao Baoyin]]<br/>{{small|(r. 527–528 CE)}}
+|-
+|Longxu<br/>{{lang|zh-Hant|隆緒}}
+|527–528 CE
+|2 years
+|
+|-
+!colspan="4"|Xing Gao<br/>{{small|(r. 528–529 CE)}}
+|-
+|Tiantong<br/>{{lang|zh-Hant|天統}}
+|528–529 CE
+|2 years
+|
+|-
+!colspan="4"|Moqi Chounu<br/>{{small|(r. 528–530 CE)}}
+|-
+|Shenshou<br/>{{lang|zh-Hant|神獸}}
+|528–530 CE
+|3 years
+|Or ''Shenhu'' ({{lang|zh-Hant|神虎}}), ''Shenping'' ({{lang|zh-Hant|神平}}).
+|-
+!colspan="4"|[[Yuan Hao]]<br/>{{small|(r. 529 CE)}}
+|-
+|Xiaoji<br/>{{lang|zh-Hant|孝基}}
+|529 CE
+|2 months
+|
+|-
+|Jianwu<br/>{{lang|zh-Hant|建武}}
+|529 CE
+|3 months
+|
+|-
+!colspan="4"|Yuan Yue<br/>{{small|(r. 530–532 CE)}}
+|-
+|Gengxing<br/>{{lang|zh-Hant|更興}}
+|530–532 CE
+|3 years
+|Or ''Gengxin'' ({{lang|zh-Hant|更新}}).
+|-
+!colspan="4"|Xianyu Chen<br/>{{small|(r. 535 CE)}}
+|-
+|Shangyuan<br/>{{lang|zh-Hant|上願}}
+|535 CE
+|1 year
+|
+|-
+!colspan="4"|Wang Tiaochu, Cao Erlong<br/>{{small|(r. 536 CE)}}
+|-
+|Pingdu<br/>{{lang|zh-Hant|平都}}
+|536 CE
+|1 month
+|
+|-
+!colspan="4"|Liu Jinggong<br/>{{small|(r. 542 CE)}}
+|-
+|Yonghan<br/>{{lang|zh-Hant|永漢}}
+|542 CE
+|2 months
+|
+|-
+!colspan="4"|[[Xiao Zhengde]]<br/>{{small|(r. 548–549 CE)}}
+|-
+|Zhengping<br/>{{lang|zh-Hant|正平}}
+|548–549 CE
+|2 years
+|
+|-
+!colspan="4"|[[Xiao Ji]]<br/>{{small|(r. 552–553 CE)}}
+|-
+|Tianzheng<br/>{{lang|zh-Hant|天正}}
+|552–553 CE
+|2 years
+|
+|-
+!colspan="4"|[[Xiao Zhuang]]<br/>{{small|(r. 558–560 CE)}}
+|-
+|Tianqi<br/>{{lang|zh-Hant|天啟}}
+|558–560 CE
+|3 years
+|
+|-
+!colspan="4"|Liu Moduo<br/>{{small|(r. 577 CE)}}
+|-
+|Shiping<br/>{{lang|zh-Hant|石平}}
+|577 CE
+|1 month
+|
+|-
+!colspan="4"|[[Gao Shaoyi]]<br/>{{small|(r. 578 CE)}}
+|-
+|Wuping<br/>{{lang|zh-Hant|武平}}
+|578 CE
+|1 year
+|Might be a continuation of the era name of [[Gao Wei]].
+|-
+!colspan="4"|''Unknown''
+|-
+|Antai<br/>{{lang|zh-Hant|安太}}
+|''Unknown''
+|''Unknown''
+|
+|-
+!colspan="4"|''Unknown''
+|-
+|Baique<br/>{{lang|zh-Hant|白雀}}
+|''Unknown''
+|''Unknown''
+|
+|}
+
+==[[Sui dynasty]]==
+===[[Sui dynasty]]===
+{| class="wikitable"
+|-
+!Era name
+!Period of use
+!Length of use
+!Remark
+|-
+!colspan="4"|[[Emperor Wen of Sui]]<br/>{{small|(r. 581–604 CE)}}
+|-
+|Kaihuang<br/>{{lang|zh-Hant|開皇}}
+|581–600 CE
+|20 years
+|
+|-
+|Renshou<br/>{{lang|zh-Hant|仁壽}}
+|601–604 CE
+|4 years
+|Usage continued by the [[Emperor Yang of Sui]] upon his ascension to the throne.
+|-
+!colspan="4"|[[Emperor Yang of Sui]]<br/>{{small|(r. 604–618 CE)}}
+|-
+|Daye<br/>{{lang|zh-Hant|大業}}
+|605–618 CE
+|14 years
+|
+|-
+!colspan="4"|[[Yang You]]<br/>{{small|(r. 617–618 CE)}}
+|-
+|Yining<br/>{{lang|zh-Hant|義寧}}
+|617–618 CE
+|2 years
+|
+|-
+!colspan="4"|[[Yang Tong]]<br/>{{small|(r. 618–619 CE)}}
+|-
+|Huangtai<br/>{{lang|zh-Hant|皇泰}}
+|618–619 CE
+|2 years
+|
+|}
+
+===Other regimes contemporaneous with Sui dynasty===
+{| class="wikitable"
+|-
+!Era name
+!Period of use
+!Length of use
+!Remark
+|-
+!colspan="4"|Xiang Haiming<br/>{{small|(r. 613 CE)}}
+|-
+|Bainiao<br/>{{lang|zh-Hant|白鳥}}
+|613 CE
+|1 month
+|
+|-
+!colspan="4"|Liu Jialun<br/>{{small|(r. 614 CE)}}
+|-
+|Dashi<br/>{{lang|zh-Hant|大世}}
+|614 CE
+|1 month
+|
+|-
+!colspan="4"|[[Zhu Can]]<br/>{{small|(r. 615–619 CE)}}
+|-
+|Changda<br/>{{lang|zh-Hant|昌達}}
+|615–619 CE
+|5 years
+|Usage might be from 618 CE to 619 CE, for a total length of 2 years.
+|-
+!colspan="4"|Cao Shiqi<br/>{{small|(r. 616 CE)}}
+|-
+|Shixing<br/>{{lang|zh-Hant|始興}}
+|616 CE
+|1 month
+|Or ''Tiancheng'' ({{lang|zh-Hant|天成}}).
+|-
+!colspan="4"|[[Lin Shihong]]<br/>{{small|(r. 616–622 CE)}}
+|-
+|Taiping<br/>{{lang|zh-Hant|太平}}
+|616–622 CE
+|7 years
+|Or ''Yankang'' ({{lang|zh-Hant|延康}}), ''Tiancheng'' ({{lang|zh-Hant|天成}}).
+|-
+!colspan="4"|[[Dou Jiande]]<br/>{{small|(r. 617–621 CE)}}
+|-
+|Dingchou<br/>{{lang|zh-Hant|丁丑}}
+|617–618 CE
+|2 years
+|
+|-
+|Wufeng<br/>{{lang|zh-Hant|五鳳}}
+|618–621 CE
+|4 years
+|
+|-
+!colspan="4"|[[Li Mi (Sui dynasty)|Li Mi]]<br/>{{small|(r. 617–618 CE)}}
+|-
+|Yongping<br/>{{lang|zh-Hant|永平}}
+|617–618 CE
+|2 years
+|
+|-
+!colspan="4"|[[Liu Wuzhou]]<br/>{{small|(r. 617–620 CE)}}
+|-
+|Tianxing<br/>{{lang|zh-Hant|天興}}
+|617–620 CE
+|4 years
+|
+|-
+!colspan="4"|[[Guo Zihe]]<br/>{{small|(r. 617–618 CE)}}
+|-
+|Zhengping<br/>{{lang|zh-Hant|正平}}
+|617–618 CE
+|2 years
+|Or ''Chouping'' ({{lang|zh-Hant|丑平}}).
+|-
+!colspan="4"|[[Xue Ju]]<br/>{{small|(r. 617–618 CE)}}
+|-
+|Qinxing<br/>{{lang|zh-Hant|秦興}}
+|617–618 CE
+|2 years
+|Sometimes erroneously referred to as ''Taixing'' ({{lang|zh-Hant|泰興}}).
+|-
+!colspan="4"|[[Xiao Xian]]<br/>{{small|(r. 617–621 CE)}}
+|-
+|Mingfeng<br/>{{lang|zh-Hant|鳴鳳}}
+|617–621 CE
+|5 years
+|Or ''Fengming'' ({{lang|zh-Hant|鳳鳴}}).
+|-
+!colspan="4"|[[Li Gui (warlord)|Li Gui]]<br/>{{small|(r. 617–619 CE)}}
+|-
+|Anle<br/>{{lang|zh-Hant|安樂}}
+|617–619 CE
+|3 years
+|
+|-
+!colspan="4"|Cao Wuche<br/>{{small|(r. 617 CE)}}
+|-
+|Tongsheng<br/>{{lang|zh-Hant|通聖}}
+|617 CE
+|1 month
+|
+|-
+!colspan="4"|[[Liang Shidu]]<br/>{{small|(r. 618–628 CE)}}
+|-
+|Yonglong<br/>{{lang|zh-Hant|永隆}}
+|618–628 CE
+|11 years
+|
+|}
+
+==[[Tang dynasty]]==
+===[[Tang dynasty]]===
+{| class="wikitable"
+|-
+!Era name
+!Period of use
+!Length of use
+!Remark
+|-
+!colspan="4"|[[Emperor Gaozu of Tang]]<br/>{{small|(r. 618–626 CE)}}
+|-
+|Wude<br/>{{lang|zh-Hant|武德}}
+|618–626 CE
+|9 years
+|Usage continued by the [[Emperor Taizong of Tang]] upon his ascension to the throne.
+|-
+!colspan="4"|[[Emperor Taizong of Tang]]<br/>{{small|(r. 626–649 CE)}}
+|-
+|Zhenguan<br/>{{lang|zh-Hant|貞觀}}
+|627–649 CE
+|23 years
+|Or ''Zhengguan'' ({{lang|zh-Hant|正觀}}). Usage continued by the [[Emperor Gaozong of Tang]] upon his ascension to the throne.
+|-
+!colspan="4"|[[Emperor Gaozong of Tang]]<br/>{{small|(r. 649–683 CE)}}
+|-
+|Yonghui<br/>{{lang|zh-Hant|永徽}}
+|650–655 CE
+|6 years
+|{{font color|#000000|#DAF2FF|Also used by [[Silla]].}}
+|-
+|Xianqing<br/>{{lang|zh-Hant|顯慶}}
+|656–661 CE
+|6 years
+|Or ''Mingqing'' ({{lang|zh-Hant|明慶}}), ''Guangqing'' ({{lang|zh-Hant|光慶}}). {{font color|#000000|#DAF2FF|Also used by [[Silla]].}}
+|-
+|Longshuo<br/>{{lang|zh-Hant|龍朔}}
+|661–663 CE
+|3 years
+|{{font color|#000000|#DAF2FF|Also used by [[Silla]].}}
+|-
+|Linde<br/>{{lang|zh-Hant|麟德}}
+|664–665 CE
+|2 years
+|{{font color|#000000|#DAF2FF|Also used by [[Silla]].}}
+|-
+|Qianfeng<br/>{{lang|zh-Hant|乾封}}
+|666–668 CE
+|3 years
+|{{font color|#000000|#DAF2FF|Also used by [[Silla]].}}
+|-
+|Zongzhang<br/>{{lang|zh-Hant|總章}}
+|668–670 CE
+|3 years
+|{{font color|#000000|#DAF2FF|Also used by [[Silla]].}}
+|-
+|Xianheng<br/>{{lang|zh-Hant|咸亨}}
+|670–674 CE
+|5 years
+|{{font color|#000000|#DAF2FF|Also used by [[Silla]].}}
+|-
+|Shangyuan<br/>{{lang|zh-Hant|上元}}
+|674–676 CE
+|3 years
+|{{font color|#000000|#DAF2FF|Also used by [[Silla]].}}
+|-
+|Yifeng<br/>{{lang|zh-Hant|儀鳳}}
+|676–679 CE
+|4 years
+|{{font color|#000000|#DAF2FF|Also used by [[Silla]].}}
+|-
+|Tiaolu<br/>{{lang|zh-Hant|調露}}
+|679–680 CE
+|2 years
+|{{font color|#000000|#DAF2FF|Also used by [[Silla]].}}
+|-
+|Yonglong<br/>{{lang|zh-Hant|永隆}}
+|680–681 CE
+|2 years
+|Or ''Yongchong'' ({{lang|zh-Hant|永崇}}). {{font color|#000000|#DAF2FF|Also used by [[Silla]].}}
+|-
+|Kaiyao<br/>{{lang|zh-Hant|開耀}}
+|681–682 CE
+|2 years
+|{{font color|#000000|#DAF2FF|Also used by [[Silla]].}}
+|-
+|Yongchun<br/>{{lang|zh-Hant|永淳}}
+|682–683 CE
+|2 years
+|{{font color|#000000|#DAF2FF|Also used by [[Silla]].}}
+|-
+|Hongdao<br/>{{lang|zh-Hant|弘道}}
+|683 CE
+|1 month
+|{{font color|#000000|#DAF2FF|Also used by [[Silla]].}}
+|-
+!colspan="4"|[[Emperor Zhongzong of Tang]]<br/>{{small|(r. 684 CE; first reign)}}
+|-
+|Sisheng<br/>{{lang|zh-Hant|嗣聖}}
+|684 CE
+|2 months
+|{{font color|#000000|#DAF2FF|Also used by [[Silla]].}}
+|-
+!colspan="4"|[[Emperor Ruizong of Tang]]<br/>{{small|(r. 684–690 CE; first reign)}}
+|-
+|Wenming<br/>{{lang|zh-Hant|文明}}
+|684 CE
+|7 months
+|{{font color|#000000|#DAF2FF|Also used by [[Silla]].}}
+|-
+|Guangzhai<br/>{{lang|zh-Hant|光宅}}
+|684 CE
+|4 months
+|{{font color|#000000|#DAF2FF|Also used by [[Silla]].}}
+|-
+|Chuigong<br/>{{lang|zh-Hant|垂拱}}
+|685–688 CE
+|4 years
+|{{font color|#000000|#DAF2FF|Also used by [[Silla]].}}
+|-
+|Yongchang<br/>{{lang|zh-Hant|永昌}}
+|689 CE
+|11 months
+|{{font color|#000000|#DAF2FF|Also used by [[Silla]].}}
+|-
+|Zaichu<br/>{{lang|zh-Hant|載初}}
+|689–690 CE
+|2 years
+|{{font color|#000000|#DAF2FF|Also used by [[Silla]].}}
+|}
+
+===[[Zhou dynasty (690–705)|Wu Zhou]]===
+{| class="wikitable"
+|-
+!Era name
+!Period of use
+!Length of use
+!Remark
+|-
+!colspan="4"|[[Wu Zetian|Wu Zhao]]<br/>{{small|(r. 690–705 CE)}}
+|-
+|Tianshou<br/>{{lang|zh-Hant|天授}}
+|690–692 CE
+|3 years
+|{{font color|#000000|#DAF2FF|Also used by [[Silla]].}}
+|-
+|Ruyi<br/>{{lang|zh-Hant|如意}}
+|692 CE
+|6 months
+|{{font color|#000000|#DAF2FF|Also used by [[Silla]].}}
+|-
+|Changshou<br/>{{lang|zh-Hant|長壽}}
+|692–694 CE
+|3 years
+|{{font color|#000000|#DAF2FF|Also used by [[Silla]].}}
+|-
+|Yanzai<br/>{{lang|zh-Hant|延載}}
+|694 CE
+|8 months
+|{{font color|#000000|#DAF2FF|Also used by [[Silla]].}}
+|-
+|Zhengsheng<br/>{{lang|zh-Hant|証聖}}
+|695 CE
+|9 months
+|{{font color|#000000|#DAF2FF|Also used by [[Silla]].}}
+|-
+|Tiancewansui<br/>{{lang|zh-Hant|天冊萬歲}}
+|695 CE
+|3 months
+|{{font color|#000000|#DAF2FF|Also used by [[Silla]].}}
+|-
+|Wansuidengfeng<br/>{{lang|zh-Hant|萬歲登封}}
+|695–696 CE
+|4 months
+|{{font color|#000000|#DAF2FF|Also used by [[Silla]].}}
+|-
+|Wansuitongtian<br/>{{lang|zh-Hant|萬歲通天}}
+|696–697 CE
+|2 years
+|{{font color|#000000|#DAF2FF|Also used by [[Silla]].}}
+|-
+|Shengong<br/>{{lang|zh-Hant|神功}}
+|697 CE
+|4 months
+|{{font color|#000000|#DAF2FF|Also used by [[Silla]].}}
+|-
+|Shengli<br/>{{lang|zh-Hant|聖曆}}
+|698–700 CE
+|3 years
+|{{font color|#000000|#DAF2FF|Also used by [[Silla]].}}
+|-
+|Jiushi<br/>{{lang|zh-Hant|久視}}
+|700–701 CE
+|2 years
+|{{font color|#000000|#DAF2FF|Also used by [[Silla]].}}
+|-
+|Dazu<br/>{{lang|zh-Hant|大足}}
+|701 CE
+|10 months
+|{{font color|#000000|#DAF2FF|Also used by [[Silla]].}}
+|-
+|Chang'an<br/>{{lang|zh-Hant|長安}}
+|701–704 CE
+|4 years
+|{{font color|#000000|#DAF2FF|Also used by [[Silla]].}}
+|-
+|Shenlong<br/>{{lang|zh-Hant|神龍}}
+|705–707 CE
+|3 years
+|Usage continued by the [[Emperor Zhongzong of Tang]] upon his second ascension to the throne. {{font color|#000000|#DAF2FF|Also used by [[Silla]].}}
+|}
+
+===[[Tang dynasty]] (restored)===
+{| class="wikitable"
+|-
+!Era name
+!Period of use
+!Length of use
+!Remark
+|-
+!colspan="4"|[[Emperor Zhongzong of Tang]]<br/>{{small|(r. 705–710 CE; second reign)}}
+|-
+|Jinglong<br/>{{lang|zh-Hant|景龍}}
+|707–710 CE
+|4 years
+|{{font color|#000000|#DAF2FF|Also used by [[Silla]].}}
+|-
+!colspan="4"|[[Emperor Shang of Tang]]<br/>{{small|(r. 710 CE)}}
+|-
+|Tanglong<br/>{{lang|zh-Hant|唐隆}}
+|710 CE
+|2 months
+|Or ''Tangyuan'' ({{lang|zh-Hant|唐元}}), ''Tangxing'' ({{lang|zh-Hant|唐興}}), ''Tang'an'' ({{lang|zh-Hant|唐安}}). {{font color|#000000|#DAF2FF|Also used by [[Silla]].}}
+|-
+!colspan="4"|[[Emperor Ruizong of Tang]]<br/>{{small|(r. 710–712 CE; second reign)}}
+|-
+|Jingyun<br/>{{lang|zh-Hant|景雲}}
+|710–712 CE
+|3 years
+|{{font color|#000000|#DAF2FF|Also used by [[Silla]].}}
+|-
+|Taiji<br/>{{lang|zh-Hant|太極}}
+|712 CE
+|4 months
+|{{font color|#000000|#DAF2FF|Also used by [[Silla]].}}
+|-
+|Yanhe<br/>{{lang|zh-Hant|延和}}
+|712 CE
+|4 months
+|{{font color|#000000|#DAF2FF|Also used by [[Silla]].}}
+|-
+!colspan="4"|[[Emperor Xuanzong of Tang]]<br/>{{small|(r. 712–756 CE)}}
+|-
+|Xiantian<br/>{{lang|zh-Hant|先天}}
+|712–713 CE
+|2 years
+|{{font color|#000000|#DAF2FF|Also used by [[Silla]].}}
+|-
+|Kaiyuan<br/>{{lang|zh-Hant|開元}}
+|713–741 CE
+|29 years
+|{{font color|#000000|#DAF2FF|Also used by [[Silla]].}}
+|-
+|Tianbao<br/>{{lang|zh-Hant|天寶}}
+|742–756 CE
+|15 years
+|In the 1st lunar month of the 3rd year of ''Tianbao'', the official term for "year" was switched from "{{Transliteration|zh|nián}}" ({{lang|zh-Hant|年}}) to "{{Transliteration|zh|zǎi}}" ({{lang|zh-Hant|載}}).<ref name="Zai">{{cite book|last1=Li|first1=Chongzhi|title=中国历代年号考|year=2004|page=102|isbn=7101025129}}</ref> {{font color|#000000|#DAF2FF|Also used by [[Silla]].}}
+|-
+!colspan="4"|[[Emperor Suzong of Tang]]<br/>{{small|(r. 756–762 CE)}}
+|-
+|Zhide<br/>{{lang|zh-Hant|至德}}
+|756–758 CE
+|3 years
+|The official term used for "year" was "{{Transliteration|zh|zǎi}}" ({{lang|zh-Hant|載}}). {{font color|#000000|#DAF2FF|Also used by [[Silla]].}}
+|-
+|Qianyuan<br/>{{lang|zh-Hant|乾元}}
+|758–760 CE
+|3 years
+|In the 2nd lunar month of the 1st year of ''Qianyuan'', the official term for "year" was switched from "{{Transliteration|zh|zǎi}}" ({{lang|zh-Hant|載}}) back to "{{Transliteration|zh|nián}}" ({{lang|zh-Hant|年}}).<ref name="Zai"/> {{font color|#000000|#DAF2FF|Also used by [[Silla]].}}
+|-
+|Shangyuan<br/>{{lang|zh-Hant|上元}}
+|760–761 CE
+|2 years
+|{{font color|#000000|#DAF2FF|Also used by [[Silla]].}}
+|-
+|Baoying<br/>{{lang|zh-Hant|寶應}}
+|762–763 CE
+|2 years
+|Usage continued by the [[Emperor Daizong of Tang]] upon his ascension to the throne. {{font color|#000000|#DAF2FF|Also used by [[Silla]].}}
+|-
+!colspan="4"|[[Emperor Daizong of Tang]]<br/>{{small|(r. 762–779 CE)}}
+|-
+|Guangde<br/>{{lang|zh-Hant|廣德}}
+|763–764 CE
+|2 years
+|{{font color|#000000|#DAF2FF|Also used by [[Silla]].}}
+|-
+|Yongtai<br/>{{lang|zh-Hant|永泰}}
+|765–766 CE
+|2 years
+|{{font color|#000000|#DAF2FF|Also used by [[Silla]].}}
+|-
+|Dali<br/>{{lang|zh-Hant|大曆}}
+|766–779 CE
+|14 years
+|{{font color|#000000|#DAF2FF|Also used by [[Silla]].}}
+|-
+!colspan="4"|[[Emperor Dezong of Tang]]<br/>{{small|(r. 779–805 CE)}}
+|-
+|Jianzhong<br/>{{lang|zh-Hant|建中}}
+|780–783 CE
+|4 years
+|{{font color|#000000|#DAF2FF|Also used by [[Silla]].}}
+|-
+|Xingyuan<br/>{{lang|zh-Hant|興元}}
+|784 CE
+|1 year
+|{{font color|#000000|#DAF2FF|Also used by [[Silla]].}}
+|-
+|Zhenyuan<br/>{{lang|zh-Hant|貞元}}
+|785–805 CE
+|21 years
+|{{font color|#000000|#DAF2FF|Also used by [[Silla]].}}
+|-
+!colspan="4"|[[Emperor Shunzong of Tang]]<br/>{{small|(r. 805 CE)}}
+|-
+|Yongzhen<br/>{{lang|zh-Hant|永貞}}
+|805 CE
+|5 months
+|{{font color|#000000|#DAF2FF|Also used by [[Silla]].}}
+|-
+!colspan="4"|[[Emperor Xianzong of Tang]]<br/>{{small|(r. 805–820 CE)}}
+|-
+|Yuanhe<br/>{{lang|zh-Hant|元和}}
+|806–820 CE
+|15 years
+|Usage continued by the [[Emperor Muzong of Tang]] upon his ascension to the throne. {{font color|#000000|#DAF2FF|Also used by [[Silla]].}}
+|-
+!colspan="4"|[[Emperor Muzong of Tang]]<br/>{{small|(r. 820–824 CE)}}
+|-
+|Yongxin<br/>{{lang|zh-Hant|永新}}
+|820 CE
+|1 year
+|Subsequently, reverted to ''Yuanhe'' ({{lang|zh-Hant|元和}}). {{font color|#000000|#DAF2FF|Also used by [[Silla]].}}
+|-
+|Changqing<br/>{{lang|zh-Hant|長慶}}
+|821–824 CE
+|4 years
+|Usage continued by the [[Emperor Jingzong of Tang]] upon his ascension to the throne. {{font color|#000000|#DAF2FF|Also used by [[Silla]].}}
+|-
+!colspan="4"|[[Emperor Jingzong of Tang]]<br/>{{small|(r. 824–826 CE)}}
+|-
+|Baoli<br/>{{lang|zh-Hant|寶歷}}
+|825–827 CE
+|3 years
+|Usage continued by the [[Emperor Wenzong of Tang]] upon his ascension to the throne. {{font color|#000000|#DAF2FF|Also used by [[Silla]].}}
+|-
+!colspan="4"|[[Emperor Wenzong of Tang]]<br/>{{small|(r. 826–840 CE)}}
+|-
+|Dahe<br/>{{lang|zh-Hant|大和}}
+|827–835 CE
+|9 years
+|Or ''Taihe'' ({{lang|zh-Hant|太和}}). {{font color|#000000|#DAF2FF|Also used by [[Silla]].}}
+|-
+|Kaicheng<br/>{{lang|zh-Hant|開成}}
+|836–840 CE
+|5 years
+|Usage continued by the [[Emperor Wuzong of Tang]] upon his ascension to the throne. {{font color|#000000|#DAF2FF|Also used by [[Silla]].}}
+|-
+!colspan="4"|[[Emperor Wuzong of Tang]]<br/>{{small|(r. 840–846 CE)}}
+|-
+|Huichang<br/>{{lang|zh-Hant|會昌}}
+|841–846 CE
+|6 years
+|Usage continued by the [[Emperor Xuanzong of Tang (9th century)|Emperor Xuanzong of Tang]] upon his ascension to the throne. {{font color|#000000|#DAF2FF|Also used by [[Silla]].}}
+|-
+!colspan="4"|[[Emperor Xuanzong of Tang (9th century)|Emperor Xuanzong of Tang]]<br/>{{small|(r. 846–859 CE)}}
+|-
+|Dazhong<br/>{{lang|zh-Hant|大中}}
+|847–860 CE
+|14 years
+|Usage continued by the [[Emperor Yizong of Tang]] upon his ascension to the throne. {{font color|#000000|#DAF2FF|Also used by [[Silla]].}}
+|-
+!colspan="4"|[[Emperor Yizong of Tang]]<br/>{{small|(r. 859–873 CE)}}
+|-
+|Xiantong<br/>{{lang|zh-Hant|咸通}}
+|860–874 CE
+|15 years
+|Usage continued by the [[Emperor Xizong of Tang]] upon his ascension to the throne. {{font color|#000000|#DAF2FF|Also used by [[Silla]].}}
+|-
+!colspan="4"|[[Emperor Xizong of Tang]]<br/>{{small|(r. 873–888 CE)}}
+|-
+|Qianfu<br/>{{lang|zh-Hant|乾符}}
+|874–879 CE
+|6 years
+|{{font color|#000000|#DAF2FF|Also used by [[Silla]].}}
+|-
+|Guangming<br/>{{lang|zh-Hant|廣明}}
+|880–881 CE
+|2 years
+|{{font color|#000000|#DAF2FF|Also used by [[Silla]].}}
+|-
+|Zhonghe<br/>{{lang|zh-Hant|中和}}
+|881–885 CE
+|5 years
+|{{font color|#000000|#DAF2FF|Also used by [[Silla]].}}
+|-
+|Guangqi<br/>{{lang|zh-Hant|光啟}}
+|885–888 CE
+|4 years
+|{{font color|#000000|#DAF2FF|Also used by [[Silla]].}}
+|-
+|Wende<br/>{{lang|zh-Hant|文德}}
+|888 CE
+|11 months
+|Usage continued by the [[Emperor Zhaozong of Tang]] upon his ascension to the throne. {{font color|#000000|#DAF2FF|Also used by [[Silla]].}}
+|-
+!colspan="4"|[[Emperor Zhaozong of Tang]]<br/>{{small|(r. 888–904 CE)}}
+|-
+|Longji<br/>{{lang|zh-Hant|龍紀}}
+|889 CE
+|1 year
+|{{font color|#000000|#DAF2FF|Also used by [[Silla]].}}
+|-
+|Dashun<br/>{{lang|zh-Hant|大順}}
+|890–891 CE
+|2 years
+|{{font color|#000000|#DAF2FF|Also used by [[Silla]].}}
+|-
+|Jingfu<br/>{{lang|zh-Hant|景福}}
+|892–893 CE
+|2 years
+|{{font color|#000000|#DAF2FF|Also used by [[Silla]].}}
+|-
+|Qianning<br/>{{lang|zh-Hant|乾寧}}
+|894–898 CE
+|5 years
+|{{font color|#000000|#DAF2FF|Also used by [[Silla]].}}
+|-
+|Guanghua<br/>{{lang|zh-Hant|光化}}
+|898–901 CE
+|4 years
+|{{font color|#000000|#DAF2FF|Also used by [[Silla]].}}
+|-
+|Tianfu<br/>{{lang|zh-Hant|天復}}
+|901–904 CE
+|4 years
+|{{font color|#000000|#DAF2FF|Also used by the [[Yang Wu]], the [[Former Shu]], and [[Silla]].}}
+|-
+|Tianyou<br/>{{lang|zh-Hant|天祐}}
+|904–907 CE
+|4 years
+|Usage continued by the [[Emperor Ai of Tang]] upon his ascension to the throne. {{font color|#000000|#DAF2FF|Also used by the [[Yang Wu]], the [[Former Shu]], the [[Jin (Later Tang precursor)|Former Jin]], [[Qi (Li Maozhen's state)|Qi]], [[Wuyue]], and [[Silla]].}}
+|}
+
+===[[Balhae|Bohai]]===
+{| class="wikitable"
+|-
+!Era name
+!Period of use
+!Length of use
+!Remark
+|-
+!colspan="4"|[[Mu of Balhae|King Wu of Bohai]]<br/>{{small|(r. 719–737 CE)}}
+|-
+|Ren'an<br/>{{lang|zh-Hant|仁安}}
+|720–737 CE
+|18 years
+|Usage might be from 718 CE to 737 CE, for a total length of 20 years; or from 719 CE to 737 CE, for a total length of 19 years.
+|-
+!colspan="4"|[[Mun of Balhae|King Wen of Bohai]]<br/>{{small|(r. 737–793 CE)}}
+|-
+|Daxing<br/>{{lang|zh-Hant|大興}}
+|738–794 CE
+|57 years
+|Usage might be from 737 CE to 774 CE, then from 786 CE to 793 CE, for a total length of 45 years; or from 737 CE to 774 CE, then from 785 CE to 793 CE, for a total length of 46 years.
+|-
+|Baoli<br/>{{lang|zh-Hant|寶曆}}
+|774–785 CE
+|12 years
+|Usage might be from 774 CE to 786 CE, for a total length of 13 years. Subsequently, reverted to ''Daxing'' ({{lang|zh-Hant|大興}}).
+|-
+!colspan="4"|[[Seong of Balhae|King Cheng of Bohai]]<br/>{{small|(r. 793–794 CE)}}
+|-
+|Zhongxing<br/>{{lang|zh-Hant|中興}}
+|794 CE
+|1 year
+|
+|-
+!colspan="4"|[[Gang of Balhae|King Kang of Bohai]]<br/>{{small|(r. 794–809 CE)}}
+|-
+|Zhengli<br/>{{lang|zh-Hant|正曆}}
+|795–809 CE
+|15 years
+|Usage might be from 794 CE to 808 CE, for a total length of 15 years; or from 795 CE to 807 CE, for a total length of 13 years.
+|-
+!colspan="4"|[[Jeong of Balhae|King Ding of Bohai]]<br/>{{small|(r. 809–812 CE)}}
+|-
+|Yongde<br/>{{lang|zh-Hant|永德}}
+|810–812 CE
+|3 years
+|Usage might be from 808 CE to 812 CE, for a total length of 5 years; or from 808 CE to 811 CE, for a total length of 4 years.
+|-
+!colspan="4"|[[Hui of Balhae|King Xi of Bohai]]<br/>{{small|(r. 812–817 CE)}}
+|-
+|Zhuque<br/>{{lang|zh-Hant|朱雀}}
+|813–817 CE
+|5 years
+|Usage might be from 812 CE to 817 CE, for a total length of 6 years; or from 812 CE to 816 CE, for a total length of 5 years.
+|-
+!colspan="4"|[[Gan of Balhae|King Jian of Bohai]]<br/>{{small|(r. 817–818 CE)}}
+|-
+|Taishi<br/>{{lang|zh-Hant|太始}}
+|818 CE
+|1 year
+|Usage might be from 813 CE to 817 CE, for a total length of 5 years; or from 817 CE to 818 CE, for a total length of 2 years.
+|-
+!colspan="4"|[[Seon of Balhae|King Xuan of Bohai]]<br/>{{small|(r. 818–830 CE)}}
+|-
+|Jianxing<br/>{{lang|zh-Hant|建興}}
+|819–830 CE
+|12 years
+|Usage might be from 818 CE to 830 CE, for a total length of 13 years.
+|-
+!colspan="4"|[[Dae Ijin|Da Yizhen]]<br/>{{small|(r. 830–857 CE)}}
+|-
+|Xianhe<br/>{{lang|zh-Hant|咸和}}
+|831–857 CE
+|27 years
+|
+|}
+
+===[[Nanzhao]]===
+{| class="wikitable"
+|-
+!Era name
+!Period of use
+!Length of use
+!Remark
+|-
+!colspan="4"|King Shenwu of Nanzhao<br/>{{small|(r. 748–779 CE)}}
+|-
+|Zanpuzhong<br/>{{lang|zh-Hant|贊普鐘}}
+|752–768 CE
+|17 years
+|
+|-
+|Changshou<br/>{{lang|zh-Hant|長壽}}
+|769–779 CE
+|11 years
+|
+|-
+!colspan="4"|King Xiaohuan of Nanzhao<br/>{{small|(r. 779–808 CE)}}
+|-
+|Jianlong<br/>{{lang|zh-Hant|見龍}}
+|780–783 CE
+|4 years
+|
+|-
+|Shangyuan<br/>{{lang|zh-Hant|上元}}
+|784 CE–?
+|''Unknown''
+|
+|-
+|Yuanfeng<br/>{{lang|zh-Hant|元封}}
+|?–808 CE
+|''Unknown''
+|
+|-
+!colspan="4"|King Xiaohui of Nanzhao<br/>{{small|(r. 808–809 CE)}}
+|-
+|Yingdao<br/>{{lang|zh-Hant|應道}}
+|809 CE
+|1 year
+|
+|-
+!colspan="4"|King You of Nanzhao<br/>{{small|(r. 809–816 CE)}}
+|-
+|Longxing<br/>{{lang|zh-Hant|龍興}}
+|810–816 CE
+|7 years
+|
+|-
+!colspan="4"|King Jing of Nanzhao<br/>{{small|(r. 816–823 CE)}}
+|-
+|Quanyi<br/>{{lang|zh-Hant|全義}}
+|816–819 CE
+|4 years
+|
+|-
+|Dafeng<br/>{{lang|zh-Hant|大豐}}
+|820–823 CE
+|4 years
+|
+|-
+!colspan="4"|King Zhaocheng of Nanzhao<br/>{{small|(r. 823–859 CE)}}
+|-
+|Baohe<br/>{{lang|zh-Hant|保和}}
+|824–839 CE
+|16 years
+|Or ''Baohe'' ({{lang|zh-Hant|保合}}).
+|-
+|Tianqi<br/>{{lang|zh-Hant|天啟}}
+|840–859 CE
+|20 years
+|
+|-
+!colspan="4"|Emperor Jingzhuang of Dali<br/>{{small|(r. 859–877 CE)}}
+|-
+|Jianji<br/>{{lang|zh-Hant|建極}}
+|860–877 CE
+|18 years
+|
+|-
+!colspan="4"|Emperor Wuxuan of Dafengmin<br/>{{small|(r. 877–897 CE)}}
+|-
+|Zhenming<br/>{{lang|zh-Hant|貞明}}
+|878 CE–?
+|''Unknown''
+|Or ''Zhenmingchengzhidatong'' ({{lang|zh-Hant|貞明承智大同}}).
+|-
+|Chengzhi<br/>{{lang|zh-Hant|承智}}
+|''Unknown''
+|''Unknown''
+|Or ''Zhenmingchengzhidatong'' ({{lang|zh-Hant|貞明承智大同}}).
+|-
+|Datong<br/>{{lang|zh-Hant|大同}}
+|?–888 CE
+|''Unknown''
+|Or ''Zhenmingchengzhidatong'' ({{lang|zh-Hant|貞明承智大同}}).
+|-
+|Cuoye<br/>{{lang|zh-Hant|嵯耶}}
+|889–897 CE
+|9 years
+|
+|-
+!colspan="4"|Emperor Xiao'ai of Dafengmin<br/>{{small|(r. 897–902 CE)}}
+|-
+|Zhongxing<br/>{{lang|zh-Hant|中興}}
+|897–902 CE
+|6 years
+|
+|}
+
+===[[Yan (An–Shi)|Yan]]===
+{| class="wikitable"
+|-
+!Era name
+!Period of use
+!Length of use
+!Remark
+|-
+!colspan="4"|[[An Lushan|Emperor Guanglie of Yan]]<br/>{{small|(r. 756–757 CE)}}
+|-
+|Shengwu<br/>{{lang|zh-Hant|聖武}}
+|756–757 CE
+|2 years
+|
+|-
+!colspan="4"|[[An Qingxu]]<br/>{{small|(r. 757–759 CE)}}
+|-
+|Zaichu<br/>{{lang|zh-Hant|載初}}
+|757 CE
+|9 months
+|
+|-
+|Tiancheng<br/>{{lang|zh-Hant|天成}}
+|758–759 CE
+|2 years
+|Or ''Tianhe'' ({{lang|zh-Hant|天和}}), ''Zhicheng'' ({{lang|zh-Hant|至成}}).
+|-
+!colspan="4"|[[Shi Siming|Emperor Zhaowu of Yan]]<br/>{{small|(r. 759–761 CE)}}
+|-
+|Yingtian<br/>{{lang|zh-Hant|應天}}
+|759 CE
+|3 months
+|
+|-
+|Shuntian<br/>{{lang|zh-Hant|順天}}
+|759–761 CE
+|3 years
+|
+|-
+!colspan="4"|[[Shi Chaoyi]]<br/>{{small|(r. 761–763 CE)}}
+|-
+|Xiansheng<br/>{{lang|zh-Hant|顯聖}}
+|761–763 CE
+|3 years
+|
+|}
+
+===[[Tibetan Empire]]===
+{| class="wikitable"
+|-
+!Era name
+!Period of use
+!Length of use
+!Remark
+|-
+!colspan="4"|[[Ralpacan]]<br/>{{small|(r. 816–838 CE)}}
+|-
+|Yitai<br/>{{lang|zh-Hant|彝泰}}
+|815–838 CE
+|24 years
+|
+|}
+
+===[[Kingdom of Khotan]]===
+{| class="wikitable"
+|-
+!Era name
+!Period of use
+!Length of use
+!Remark
+|-
+!colspan="4"|[[Viśa' Saṃbhava]]<br/>{{small|(r. 912–966 CE)}}
+|-
+|Tongqing<br/>{{lang|zh-Hant|同慶}}
+|912–966 CE
+|55 years
+|Or ''Kaiqing'' ({{lang|zh-Hant|開慶}}).
+|-
+!colspan="4"|Viśa' Śūra<br/>{{small|(r. 966–977 CE)}}
+|-
+|Tianzun<br/>{{lang|zh-Hant|天尊}}
+|967–977 CE
+|11 years
+|
+|-
+!colspan="4"|Viśa' Dharma<br/>{{small|(r. 977–985 CE)}}
+|-
+|Zhongxing<br/>{{lang|zh-Hant|中興}}
+|978–985 CE
+|8 years
+|
+|-
+!colspan="4"|Viśa' Sangrāma<br/>{{small|(r. 985–999 CE)}}
+|-
+|Tianxing<br/>{{lang|zh-Hant|天興}}
+|986–999 CE
+|14 years
+|
+|-
+!colspan="4"|''Unknown''
+|-
+|Tianshou<br/>{{lang|zh-Hant|天壽}}
+|999–1001 CE
+|3 years
+|Usage might be from 999 CE to 1005 CE, for a total length of 7 years.
+|}
+
+===Other regimes contemporaneous with Tang dynasty===
+{| class="wikitable"
+|-
+!Era name
+!Period of use
+!Length of use
+!Remark
+|-
+!colspan="4"|[[Yuwen Huaji]]<br/>{{small|(r. 618–619 CE)}}
+|-
+|Tianshou<br/>{{lang|zh-Hant|天壽}}
+|618–619 CE
+|2 years
+|
+|-
+!colspan="4"|[[Gao Kaidao]]<br/>{{small|(r. 618–624 CE)}}
+|-
+|Shixing<br/>{{lang|zh-Hant|始興}}
+|618–624 CE
+|7 years
+|Or ''Tiancheng'' ({{lang|zh-Hant|天成}}).
+|-
+!colspan="4"|Gao Tancheng<br/>{{small|(r. 618 CE)}}
+|-
+|Falun<br/>{{lang|zh-Hant|法輪}}
+|618 CE
+|1 month
+|
+|-
+!colspan="4"|[[Shen Faxing]]<br/>{{small|(r. 618–621 CE)}}
+|-
+|Yankang<br/>{{lang|zh-Hant|延康}}
+|619–620 CE
+|2 years
+|
+|-
+!colspan="4"|[[Wang Shichong]]<br/>{{small|(r. 619–621 CE)}}
+|-
+|Kaiming<br/>{{lang|zh-Hant|開明}}
+|619–621 CE
+|3 years
+|
+|-
+!colspan="4"|[[Li Zitong]]<br/>{{small|(r. 619–621 CE)}}
+|-
+|Mingzheng<br/>{{lang|zh-Hant|明政}}
+|619–621 CE
+|3 years
+|
+|-
+!colspan="4"|[[Liu Heita]]<br/>{{small|(r. 622–623 CE)}}
+|-
+|Tianzao<br/>{{lang|zh-Hant|天造}}
+|622–623 CE
+|2 years
+|
+|-
+!colspan="4"|[[Fu Gongshi]]<br/>{{small|(r. 623–624 CE)}}
+|-
+|Tianming<br/>{{lang|zh-Hant|天明}}
+|623–624 CE
+|2 years
+|
+|-
+|Qiande<br/>{{lang|zh-Hant|乾德}}
+|''Unknown''
+|''Unknown''
+|
+|-
+!colspan="4"|Wang Mosha<br/>{{small|(r. 623 CE)}}
+|-
+|Jintong<br/>{{lang|zh-Hant|進通}}
+|623 CE
+|1 year
+|
+|-
+!colspan="4"|[[Li Chongfu]]<br/>{{small|(r. 710 CE)}}
+|-
+|Zhongyuankefu<br/>{{lang|zh-Hant|中元克復}}
+|710 CE
+|2 months
+|Or ''Zhongzongkefu'' ({{lang|zh-Hant|中宗克復}}).
+|-
+!colspan="4"|Duan Zizhang<br/>{{small|(r. 761 CE)}}
+|-
+|Huanglong<br/>{{lang|zh-Hant|黃龍}}
+|761 CE
+|3 months
+|
+|-
+!colspan="4"|Li Zhen<br/>{{small|(r. 761 CE)}}
+|-
+|Zhengde<br/>{{lang|zh-Hant|正德}}
+|761 CE
+|1 year
+|
+|-
+!colspan="4"|Yuan Chao<br/>{{small|(r. 762–763 CE)}}
+|-
+|Baosheng<br/>{{lang|zh-Hant|寶勝}}
+|762–763 CE
+|2 years
+|Or ''Shengguo'' ({{lang|zh-Hant|升國}}).
+|-
+!colspan="4"|[[Zhu Ci]]<br/>{{small|(r. 783–784 CE)}}
+|-
+|Yingtian<br/>{{lang|zh-Hant|應天}}
+|783 CE
+|3 months
+|
+|-
+|Tianhuang<br/>{{lang|zh-Hant|天皇}}
+|784 CE
+|6 months
+|
+|-
+!colspan="4"|[[Li Xilie]]<br/>{{small|(r. 784–786 CE)}}
+|-
+|Wucheng<br/>{{lang|zh-Hant|武成}}
+|784–786 CE
+|3 years
+|
+|-
+!colspan="4"|Qiu Fu<br/>{{small|(r. 860 CE)}}
+|-
+|Luoping<br/>{{lang|zh-Hant|羅平}}
+|860 CE
+|7 months
+|
+|-
+!colspan="4"|[[Huang Chao]]<br/>{{small|(r. 878–884 CE)}}
+|-
+|Wangba<br/>{{lang|zh-Hant|王霸}}
+|878–880 CE
+|3 years
+|
+|-
+|Jintong<br/>{{lang|zh-Hant|金統}}
+|880–884 CE
+|5 years
+|
+|-
+!colspan="4"|[[Li Yun (Tang dynasty)|Li Yun]]<br/>{{small|(r. 886 CE)}}
+|-
+|Jianzhen<br/>{{lang|zh-Hant|建貞}}
+|886 CE
+|3 months
+|Or ''Yongzhen'' ({{lang|zh-Hant|永貞}}).
+|-
+!colspan="4"|[[Dong Chang (warlord)|Dong Chang]]<br/>{{small|(r. 895–896 CE)}}
+|-
+|Shuntian<br/>{{lang|zh-Hant|順天}}
+|895–896 CE
+|2 years
+|Or ''Dasheng'' ({{lang|zh-Hant|大聖}}), ''Tiance'' ({{lang|zh-Hant|天冊}}), ''Tiansheng'' ({{lang|zh-Hant|天聖}}).
+|-
+!colspan="4"|Prince Pu of Tang dynasty
+|-
+|Tianshou<br/>{{lang|zh-Hant|天壽}}
+|''Unknown''
+|''Unknown''
+|
+|}
+
+==[[Five Dynasties and Ten Kingdoms period|Five Dynasties and Ten Kingdoms]]==
+===[[Later Liang (Five Dynasties)|Later Liang]]===
+{| class="wikitable"
+|-
+!Era name
+!Period of use
+!Length of use
+!Remark
+|-
+!colspan="4"|[[Zhu Wen|Emperor Taizu of Later Liang]]<br/>{{small|(r. 907–912 CE)}}
+|-
+|Kaiping<br/>{{lang|zh-Hant|開平}}
+|907–911 CE
+|5 years
+|{{font color|#000000|#DAF2FF|Also used by [[Min Kingdom|Min]] and [[Silla]].}}
+|-
+|Qianhua<br/>{{lang|zh-Hant|乾化}}
+|911–913 CE
+|3 years
+|Usage later restored during the reign of [[Zhu Youzhen]]. {{font color|#000000|#DAF2FF|Also used by [[Wuyue]], [[Min Kingdom|Min]], and [[Silla]].}}
+|-
+!colspan="4"|[[Zhu Yougui]]<br/>{{small|(r. 912–913 CE)}}
+|-
+|Fengli<br/>{{lang|zh-Hant|鳳曆}}
+|913 CE
+|2 months
+|{{font color|#000000|#DAF2FF|Also used by [[Wuyue]] and [[Silla]].}}
+|-
+!colspan="4"|[[Zhu Youzhen]]<br/>{{small|(r. 913–923 CE)}}
+|-
+|Qianhua<br/>{{lang|zh-Hant|乾化}}
+|913–915 CE
+|3 years
+|Restored the era name of the [[Zhu Wen|Emperor Taizu of Later Liang]]. {{font color|#000000|#DAF2FF|Also used by [[Wuyue]], [[Min Kingdom|Min]], and [[Silla]].}}
+|-
+|Zhenming<br/>{{lang|zh-Hant|貞明}}
+|915–921 CE
+|7 years
+|{{font color|#000000|#DAF2FF|Also used by [[Wuyue]], [[Min Kingdom|Min]], and [[Silla]].}}
+|-
+|Longde<br/>{{lang|zh-Hant|龍德}}
+|921–923 CE
+|3 years
+|{{font color|#000000|#DAF2FF|Also used by [[Wuyue]], [[Min Kingdom|Min]], and [[Silla]].}}
+|}
+
+===[[Later Tang]]===
+{| class="wikitable"
+|-
+!Era name
+!Period of use
+!Length of use
+!Remark
+|-
+!colspan="4"|[[Li Cunxu|Emperor Zhuangzong of Later Tang]]<br/>{{small|(r. 923–926 CE; as Emperor of Later Tang)}}
+|-
+|Tongguang<br/>{{lang|zh-Hant|同光}}
+|923–926 CE
+|4 years
+|{{font color|#000000|#DAF2FF|Also used by [[Min Kingdom|Min]], [[Jingnan]] and [[Silla]].}}
+|-
+!colspan="4"|[[Li Siyuan|Emperor Mingzong of Later Tang]]<br/>{{small|(r. 926–933 CE)}}
+|-
+|Tiancheng<br/>{{lang|zh-Hant|天成}}
+|926–930 CE
+|5 years
+|{{font color|#000000|#DAF2FF|Also used by the [[Ma Chu]], [[Min Kingdom|Min]], [[Jingnan]] and [[Silla]].}}
+|-
+|Changxing<br/>{{lang|zh-Hant|長興}}
+|930–933 CE
+|4 years
+|{{font color|#000000|#DAF2FF|Also used by the [[Ma Chu]], [[Min Kingdom|Min]], [[Jingnan]], [[Silla]], and [[Goryeo]].}}
+|-
+!colspan="4"|[[Li Conghou|Emperor Min of Later Tang]]<br/>{{small|(r. 933–934 CE)}}
+|-
+|Yingshun<br/>{{lang|zh-Hant|應順}}
+|934 CE
+|4 months
+|{{font color|#000000|#DAF2FF|Also used by the [[Ma Chu]], [[Wuyue]], [[Jingnan]], [[Silla]], and [[Goryeo]].}}
+|-
+!colspan="4"|[[Li Congke]]<br/>{{small|(r. 934–937 CE)}}
+|-
+|Qingtai<br/>{{lang|zh-Hant|清泰}}
+|934–936 CE
+|3 years
+|{{font color|#000000|#DAF2FF|Also used by the [[Ma Chu]], [[Wuyue]], [[Jingnan]], [[Silla]], and [[Goryeo]].}}
+|}
+
+===[[Later Jin (Five Dynasties)|Later Jin]]===
+{| class="wikitable"
+|-
+!Era name
+!Period of use
+!Length of use
+!Remark
+|-
+!colspan="4"|[[Shi Jingtang|Emperor Gaozu of Later Jin]]<br/>{{small|(r. 936–942 CE)}}
+|-
+|Tianfu<br/>{{lang|zh-Hant|天福}}
+|936–944 CE
+|9 years
+|Usage continued by the [[Shi Chonggui|Emperor Chu of Later Jin]] upon his ascension to the throne. {{font color|#000000|#DAF2FF|Also used by the [[Later Han (Five Dynasties)|Later Han]], the [[Ma Chu]], [[Wuyue]], [[Jingnan]], and [[Goryeo]].}}
+|-
+!colspan="4"|[[Shi Chonggui|Emperor Chu of Later Jin]]<br/>{{small|(r. 942–947 CE)}}
+|-
+|Kaiyun<br/>{{lang|zh-Hant|開運}}
+|944–946 CE
+|3 years
+|{{font color|#000000|#DAF2FF|Also used by the [[Ma Chu]], [[Wuyue]], [[Jingnan]], and [[Goryeo]].}}
+|}
+
+===[[Later Han (Five Dynasties)|Later Han]]===
+{| class="wikitable"
+|-
+!Era name
+!Period of use
+!Length of use
+!Remark
+|-
+!colspan="4"|[[Liu Zhiyuan|Emperor Gaozu of Later Han]]<br/>{{small|(r. 947–948 CE)}}
+|- style="background:#DAF2FF;"
+|Tianfu<br/>{{lang|zh-Hant|天福}}
+|947 CE
+|1 year
+|Adopted the era name of the [[Shi Jingtang|Emperor Gaozu of Later Jin]].
+|-
+|Qianyou<br/>{{lang|zh-Hant|乾祐}}
+|948–950 CE
+|3 years
+|Usage continued by the [[Liu Chengyou|Emperor Yin of Later Han]] upon his ascension to the throne. {{font color|#000000|#DAF2FF|Also used by the [[Ma Chu]], [[Wuyue]], [[Jingnan]], the [[Northern Han]], and [[Goryeo]].}}
+|}
+
+===[[Later Zhou]]===
+{| class="wikitable"
+|-
+!Era name
+!Period of use
+!Length of use
+!Remark
+|-
+!colspan="4"|[[Guo Wei|Emperor Taizu of Later Zhou]]<br/>{{small|(r. 951–954 CE)}}
+|-
+|Guangshun<br/>{{lang|zh-Hant|廣順}}
+|951–953 CE
+|3 years
+|{{font color|#000000|#DAF2FF|Also used by [[Wuyue]], [[Jingnan]], and [[Goryeo]].}}
+|-
+|Xiande<br/>{{lang|zh-Hant|顯德}}
+|954–960 CE
+|7 years
+|Usage continued by the [[Chai Rong|Emperor Shizong of Later Zhou]] and the [[Guo Zongxun|Emperor Gong of Later Zhou]] upon their ascension to the throne. {{font color|#000000|#DAF2FF|Also used by [[Wuyue]], [[Jingnan]], the [[Southern Tang]], and [[Goryeo]].}}
+|}
+
+===[[Former Shu]]===
+{| class="wikitable"
+|-
+!Era name
+!Period of use
+!Length of use
+!Remark
+|-
+!colspan="4"|[[Wang Jian (Former Shu)|Emperor Gaozu of Former Shu]]<br/>{{small|(r. 907–918 CE)}}
+|- style="background:#DAF2FF;"
+|Tianfu<br/>{{lang|zh-Hant|天復}}
+|907 CE
+|1 month
+|Adopted the era name of the [[Emperor Zhaozong of Tang]].
+|-
+|Wucheng<br/>{{lang|zh-Hant|武成}}
+|908–910 CE
+|3 years
+|
+|-
+|Yongping<br/>{{lang|zh-Hant|永平}}
+|911–915 CE
+|5 years
+|
+|-
+|Tongzheng<br/>{{lang|zh-Hant|通正}}
+|916 CE
+|1 year
+|
+|-
+|Tianhan<br/>{{lang|zh-Hant|天漢}}
+|917 CE
+|1 year
+|
+|-
+|Guangtian<br/>{{lang|zh-Hant|光天}}
+|918 CE
+|1 year
+|Or ''Guangda'' ({{lang|zh-Hant|光大}}), ''Guangda'' ({{lang|zh-Hant|廣大}}). Usage continued by [[Wang Zongyan|Wang Yan]] upon his ascension to the throne.
+|-
+!colspan="4"|[[Wang Zongyan|Wang Yan]]<br/>{{small|(r. 918–925 CE)}}
+|-
+|Qiande<br/>{{lang|zh-Hant|乾德}}
+|919–924 CE
+|6 years
+|
+|-
+|Xiankang<br/>{{lang|zh-Hant|咸康}}
+|925 CE
+|11 months
+|
+|}
+
+===[[Yang Wu]]===
+{| class="wikitable"
+|-
+!Era name
+!Period of use
+!Length of use
+!Remark
+|-
+!colspan="4"|[[Yang Xingmi|Emperor Taizu of Yang Wu]]<br/>{{small|(r. 902–905 CE)}}
+|- style="background:#DAF2FF;"
+|Tianfu<br/>{{lang|zh-Hant|天復}}
+|902–904 CE
+|3 years
+|Adopted the era name of the [[Emperor Zhaozong of Tang]].
+|- style="background:#DAF2FF;"
+|Tianyou<br/>{{lang|zh-Hant|天祐}}
+|904–905 CE
+|2 years
+|Adopted the era name of the [[Emperor Zhaozong of Tang]].
+|-
+!colspan="4"|[[Yang Wo|Emperor Liezu of Yang Wu]]<br/>{{small|(r. 905–908 CE)}}
+|- style="background:#DAF2FF;"
+|Tianyou<br/>{{lang|zh-Hant|天祐}}
+|905–908 CE
+|4 years
+|Adopted the era name of the [[Emperor Zhaozong of Tang]].
+|-
+!colspan="4"|[[Yang Longyan|Emperor Gaozu of Yang Wu]]<br/>{{small|(r. 908–920 CE)}}
+|- style="background:#DAF2FF;"
+|Tianyou<br/>{{lang|zh-Hant|天祐}}
+|908–919 CE
+|12 years
+|Adopted the era name of the [[Emperor Zhaozong of Tang]].
+|-
+|Wuyi<br/>{{lang|zh-Hant|武義}}
+|919–921 CE
+|3 years
+|Or ''Banyi'' ({{lang|zh-Hant|頒義}}). Usage continued by the [[Yang Pu|Emperor Rui of Yang Wu]] upon his ascension to the throne.
+|-
+!colspan="4"|[[Yang Pu|Emperor Rui of Yang Wu]]<br/>{{small|(r. 920–937 CE)}}
+|-
+|Shunyi<br/>{{lang|zh-Hant|順義}}
+|921–927 CE
+|7 years
+|
+|-
+|Qianzhen<br/>{{lang|zh-Hant|乾貞}}
+|927–929 CE
+|3 years
+|{{font color|#000000|#DAF2FF|Also used by [[Jingnan]].}}
+|-
+|Dahe<br/>{{lang|zh-Hant|大和}}
+|929–935 CE
+|7 years
+|
+|-
+|Tianzuo<br/>{{lang|zh-Hant|天祚}}
+|935–937 CE
+|3 years
+|
+|}
+
+===[[Ma Chu]]===
+{| class="wikitable"
+|-
+!Era name
+!Period of use
+!Length of use
+!Remark
+|-
+!colspan="4"|[[Ma Yin|King Wumu of Ma Chu]]<br/>{{small|(r. 907–930 CE)}}
+|- style="background:#DAF2FF;"
+|Tiancheng<br/>{{lang|zh-Hant|天成}}
+|927–930 CE
+|4 years
+|Adopted the era name of the [[Li Siyuan|Emperor Mingzong of Later Tang]].
+|-
+!colspan="4"|[[Ma Xisheng|King Hengyang of Ma Chu]]<br/>{{small|(r. 930–932 CE)}}
+|- style="background:#DAF2FF;"
+|Changxing<br/>{{lang|zh-Hant|長興}}
+|930–932 CE
+|3 years
+|Adopted the era name of the [[Li Siyuan|Emperor Mingzong of Later Tang]].
+|-
+!colspan="4"|[[Ma Xifan|King Wenzhao of Ma Chu]]<br/>{{small|(r. 932–947 CE)}}
+|- style="background:#DAF2FF;"
+|Changxing<br/>{{lang|zh-Hant|長興}}
+|930–932 CE
+|3 years
+|Adopted the era name of the [[Li Siyuan|Emperor Mingzong of Later Tang]].
+|- style="background:#DAF2FF;"
+|Yingshun<br/>{{lang|zh-Hant|應順}}
+|934 CE
+|4 months
+|Adopted the era name of the [[Li Conghou|Emperor Min of Later Tang]].
+|- style="background:#DAF2FF;"
+|Qingtai<br/>{{lang|zh-Hant|清泰}}
+|934–936 CE
+|3 years
+|Adopted the era name of [[Li Congke]].
+|- style="background:#DAF2FF;"
+|Tianfu<br/>{{lang|zh-Hant|天福}}
+|936–944 CE
+|9 years
+|Adopted the era name of the [[Shi Jingtang|Emperor Gaozu of Later Jin]].
+|- style="background:#DAF2FF;"
+|Kaiyun<br/>{{lang|zh-Hant|開運}}
+|944–946 CE
+|3 years
+|Adopted the era name of the [[Shi Chonggui|Emperor Chu of Later Jin]].
+|-
+!colspan="4"|[[Ma Xiguang]]<br/>{{small|(r. 947–950 CE)}}
+|- style="background:#DAF2FF;"
+|Tianfu<br/>{{lang|zh-Hant|天福}}
+|947 CE
+|1 month
+|Adopted the era name of the [[Shi Jingtang|Emperor Gaozu of Later Jin]].
+|- style="background:#DAF2FF;"
+|Qianyou<br/>{{lang|zh-Hant|乾祐}}
+|948–950 CE
+|3 years
+|Adopted the era name of the [[Liu Zhiyuan|Emperor Gaozu of Later Han]].
+|-
+!colspan="4"|[[Ma Xi'e|King Gongxiao of Ma Chu]]<br/>{{small|(r. 950–951 CE)}}
+|- style="background:#DAF2FF;"
+|Baoda<br/>{{lang|zh-Hant|保大}}
+|950–951 CE
+|2 years
+|Adopted the era name of the [[Li Jing (Southern Tang)|Emperor Yuanzong of Southern Tang]].
+|}
+
+===[[Wuyue]]===
+{| class="wikitable"
+|-
+!Era name
+!Period of use
+!Length of use
+!Remark
+|-
+!colspan="4"|[[Qian Liu|King Taizu of Wuyue]]<br/>{{small|(r. 907–932 CE)}}
+|- style="background:#DAF2FF;"
+|Tianyou<br/>{{lang|zh-Hant|天祐}}
+|907 CE
+|1 month
+|Adopted the era name of the [[Emperor Zhaozong of Tang]].
+|-
+|Tianbao<br/>{{lang|zh-Hant|天寶}}
+|908–912 CE
+|5 years
+|
+|- style="background:#DAF2FF;"
+|Fengli<br/>{{lang|zh-Hant|鳳曆}}
+|913 CE
+|1 month
+|Adopted the era name of [[Zhu Yougui]].
+|- style="background:#DAF2FF;"
+|Qianhua<br/>{{lang|zh-Hant|乾化}}
+|913–915 CE
+|3 years
+|Adopted the era name of the [[Zhu Wen|Emperor Taizu of Later Liang]].
+|- style="background:#DAF2FF;"
+|Zhenming<br/>{{lang|zh-Hant|貞明}}
+|915–921 CE
+|7 years
+|Adopted the era name of [[Zhu Youzhen]].
+|- style="background:#DAF2FF;"
+|Longde<br/>{{lang|zh-Hant|龍德}}
+|921–923 CE
+|3 years
+|Adopted the era name of [[Zhu Youzhen]].
+|-
+|Baoda<br/>{{lang|zh-Hant|寶大}}
+|924–925 CE
+|2 years
+|Or ''Baotai'' ({{lang|zh-Hant|寶太}}).
+|-
+|Baozheng<br/>{{lang|zh-Hant|寶正}}
+|926–931 CE
+|6 years
+|Or ''Baozhen'' ({{lang|zh-Hant|寶貞}}), ''Baozhen'' ({{lang|zh-Hant|保貞}}).
+|-
+|Guangchu<br/>{{lang|zh-Hant|廣初}}
+|''Unknown''
+|''Unknown''
+|
+|-
+|Zhengming<br/>{{lang|zh-Hant|正明}}
+|''Unknown''
+|''Unknown''
+|
+|-
+!colspan="4"|[[Qian Yuanguan|King Shizong of Wuyue]]<br/>{{small|(r. 932–941 CE)}}
+|- style="background:#DAF2FF;"
+|Changxing<br/>{{lang|zh-Hant|長興}}
+|932–933 CE
+|2 years
+|Adopted the era name of the [[Li Siyuan|Emperor Mingzong of Later Tang]].
+|- style="background:#DAF2FF;"
+|Yingshun<br/>{{lang|zh-Hant|應順}}
+|934 CE
+|4 months
+|Adopted the era name of the [[Li Conghou|Emperor Min of Later Tang]].
+|- style="background:#DAF2FF;"
+|Qingtai<br/>{{lang|zh-Hant|清泰}}
+|934–936 CE
+|3 years
+|Adopted the era name of [[Li Congke]].
+|- style="background:#DAF2FF;"
+|Tianfu<br/>{{lang|zh-Hant|天福}}
+|936–941 CE
+|6 years
+|Adopted the era name of the [[Shi Jingtang|Emperor Gaozu of Later Jin]].
+|-
+!colspan="4"|[[Qian Hongzuo|King Chengzong of Wuyue]]<br/>{{small|(r. 941–947 CE)}}
+|- style="background:#DAF2FF;"
+|Tianfu<br/>{{lang|zh-Hant|天福}}
+|941–944 CE
+|4 years
+|Adopted the era name of the [[Shi Jingtang|Emperor Gaozu of Later Jin]].
+|- style="background:#DAF2FF;"
+|Kaiyun<br/>{{lang|zh-Hant|開運}}
+|944–946 CE
+|3 years
+|Adopted the era name of the [[Shi Chonggui|Emperor Chu of Later Jin]].
+|-
+!colspan="4"|[[Qian Hongzong|King Zhongxun of Wuyue]]<br/>{{small|(r. 947–948 CE)}}
+|- style="background:#DAF2FF;"
+|Tianfu<br/>{{lang|zh-Hant|天福}}
+|947 CE
+|1 year
+|Adopted the era name of the [[Shi Jingtang|Emperor Gaozu of Later Jin]].
+|-
+!colspan="4"|[[Qian Chu|King Zhongyi of Qin]]<br/>{{small|(r. 948–978 CE)}}
+|- style="background:#DAF2FF;"
+|Qianyou<br/>{{lang|zh-Hant|乾祐}}
+|948–950 CE
+|3 years
+|Adopted the era name of the [[Liu Zhiyuan|Emperor Gaozu of Later Han]].
+|- style="background:#DAF2FF;"
+|Guangshun<br/>{{lang|zh-Hant|廣順}}
+|951–953 CE
+|3 years
+|Adopted the era name of the [[Guo Wei|Emperor Taizu of Later Zhou]].
+|- style="background:#DAF2FF;"
+|Xiande<br/>{{lang|zh-Hant|顯德}}
+|954–960 CE
+|7 years
+|Adopted the era name of the [[Guo Wei|Emperor Taizu of Later Zhou]].
+|- style="background:#DAF2FF;"
+|Jianlong<br/>{{lang|zh-Hant|建隆}}
+|960–963 CE
+|4 years
+|Adopted the era name of the [[Emperor Taizu of Song]].
+|- style="background:#DAF2FF;"
+|Qiande<br/>{{lang|zh-Hant|乾德}}
+|963–968 CE
+|6 years
+|Adopted the era name of the [[Emperor Taizu of Song]].
+|- style="background:#DAF2FF;"
+|Kaibao<br/>{{lang|zh-Hant|開寶}}
+|968–976 CE
+|9 years
+|Adopted the era name of the [[Emperor Taizu of Song]].
+|- style="background:#DAF2FF;"
+|Taipingxingguo<br/>{{lang|zh-Hant|太平興國}}
+|976–978 CE
+|3 years
+|Adopted the era name of the [[Emperor Taizong of Song]].
+|}
+
+===[[Min Kingdom|Min]]===
+{| class="wikitable"
+|-
+!Era name
+!Period of use
+!Length of use
+!Remark
+|-
+!colspan="4"|[[Wang Shenzhi|Emperor Taizu of Min]]<br/>{{small|(r. 909–925 CE)}}
+|- style="background:#DAF2FF;"
+|Kaiping<br/>{{lang|zh-Hant|開平}}
+|909–911 CE
+|3 years
+|Adopted the era name of the [[Zhu Wen|Emperor Taizu of Later Liang]].
+|- style="background:#DAF2FF;"
+|Qianhua<br/>{{lang|zh-Hant|乾化}}
+|911–915 CE
+|5 years
+|Adopted the era name of the [[Zhu Wen|Emperor Taizu of Later Liang]].
+|- style="background:#DAF2FF;"
+|Zhenming<br/>{{lang|zh-Hant|貞明}}
+|915–921 CE
+|7 years
+|Adopted the era name of [[Zhu Youzhen]].
+|- style="background:#DAF2FF;"
+|Longde<br/>{{lang|zh-Hant|龍德}}
+|921–923 CE
+|3 years
+|Adopted the era name of [[Zhu Youzhen]].
+|- style="background:#DAF2FF;"
+|Tongguang<br/>{{lang|zh-Hant|同光}}
+|923–925 CE
+|3 years
+|Adopted the era name of the [[Li Cunxu|Emperor Zhuangzong of Later Tang]].
+|-
+!colspan="4"|[[Wang Yanhan]]<br/>{{small|(r. 925–926 CE)}}
+|- style="background:#DAF2FF;"
+|Tiancheng<br/>{{lang|zh-Hant|天成}}
+|926 CE
+|1 year
+|Adopted the era name of the [[Li Siyuan|Emperor Mingzong of Later Tang]].
+|-
+!colspan="4"|[[Wang Yanjun|Emperor Huizong of Min]]<br/>{{small|(r. 926–935 CE)}}
+|- style="background:#DAF2FF;"
+|Tiancheng<br/>{{lang|zh-Hant|天成}}
+|926–930 CE
+|5 years
+|Adopted the era name of the [[Li Siyuan|Emperor Mingzong of Later Tang]].
+|- style="background:#DAF2FF;"
+|Changxing<br/>{{lang|zh-Hant|長興}}
+|930–932 CE
+|3 years
+|Adopted the era name of the [[Li Siyuan|Emperor Mingzong of Later Tang]].
+|-
+|Longqi<br/>{{lang|zh-Hant|龍啟}}
+|933–934 CE
+|2 years
+|
+|-
+|Yonghe<br/>{{lang|zh-Hant|永和}}
+|935–936 CE
+|2 years
+|
+|-
+!colspan="4"|[[Wang Jipeng|Emperor Kangzong of Min]]<br/>{{small|(r. 935–939 CE)}}
+|-
+|Tongwen<br/>{{lang|zh-Hant|通文}}
+|936–939 CE
+|4 years
+|
+|-
+!colspan="4"|[[Wang Yanxi|Emperor Jingzong of Min]]<br/>{{small|(r. 939–944 CE)}}
+|-
+|Yonglong<br/>{{lang|zh-Hant|永隆}}
+|939–944 CE
+|6 years
+|
+|-
+!colspan="4"|[[Wang Yanzheng|Tiande Emperor]]<br/>{{small|(r. 943–945 CE)}}
+|-
+|Tiande<br/>{{lang|zh-Hant|天德}}
+|943–945 CE
+|3 years
+|
+|}
+
+===[[Southern Han]]===
+{| class="wikitable"
+|-
+!Era name
+!Period of use
+!Length of use
+!Remark
+|-
+!colspan="4"|[[Liu Yan (emperor)|Emperor Gaozu of Southern Han]]<br/>{{small|(r. 917–942 CE)}}
+|-
+|Qianheng<br/>{{lang|zh-Hant|乾亨}}
+|917–925 CE
+|9 years
+|
+|-
+|Bailong<br/>{{lang|zh-Hant|白龍}}
+|925–928 CE
+|4 years
+|
+|-
+|Dayou<br/>{{lang|zh-Hant|大有}}
+|928–942 CE
+|15 years
+|
+|-
+!colspan="4"|[[Liu Bin (Southern Han)|Emperor Shang of Southern Han]]<br/>{{small|(r. 942–943 CE)}}
+|-
+|Guangtian<br/>{{lang|zh-Hant|光天}}
+|942–943 CE
+|2 years
+|
+|-
+!colspan="4"|[[Liu Sheng (Southern Han)|Emperor Zhongzong of Southern Han]]<br/>{{small|(r. 943–958 CE)}}
+|-
+|Yingqian<br/>{{lang|zh-Hant|應乾}}
+|943 CE
+|8 months
+|
+|-
+|Qianhe<br/>{{lang|zh-Hant|乾和}}
+|943–958 CE
+|16 years
+|
+|-
+!colspan="4"|[[Liu Chang (Southern Han)|Liu Chang]]<br/>{{small|(r. 958–971 CE)}}
+|-
+|Dabao<br/>{{lang|zh-Hant|大寶}}
+|958–971 CE
+|14 years
+|
+|}
+
+===[[Jingnan]]===
+{| class="wikitable"
+|-
+!Era name
+!Period of use
+!Length of use
+!Remark
+|-
+!colspan="4"|[[Gao Jixing|Prince Wuxin of Chu]]<br/>{{small|(r. 924–929 CE)}}
+|- style="background:#DAF2FF;"
+|Tongguang<br/>{{lang|zh-Hant|同光}}
+|924–926 CE
+|3 years
+|Adopted the era name of the [[Li Cunxu|Emperor Zhuangzong of Later Tang]].
+|- style="background:#DAF2FF;"
+|Tiancheng<br/>{{lang|zh-Hant|天成}}
+|926–928 CE
+|3 years
+|Adopted the era name of the [[Li Siyuan|Emperor Mingzong of Later Tang]].
+|- style="background:#DAF2FF;"
+|Qianzhen<br/>{{lang|zh-Hant|乾貞}}
+|928 CE
+|7 months
+|Adopted the era name of the [[Yang Pu|Emperor Rui of Yang Wu]].
+|-
+!colspan="4"|[[Gao Conghui|Prince Wenxian of Nanping]]<br/>{{small|(r. 929–948 CE)}}
+|- style="background:#DAF2FF;"
+|Qianzhen<br/>{{lang|zh-Hant|乾貞}}
+|929 CE
+|6 months
+|Adopted the era name of the [[Yang Pu|Emperor Rui of Yang Wu]].
+|- style="background:#DAF2FF;"
+|Tiancheng<br/>{{lang|zh-Hant|天成}}
+|929–930 CE
+|2 years
+|Adopted the era name of the [[Li Siyuan|Emperor Mingzong of Later Tang]].
+|- style="background:#DAF2FF;"
+|Changxing<br/>{{lang|zh-Hant|長興}}
+|930–933 CE
+|4 years
+|Adopted the era name of the [[Li Siyuan|Emperor Mingzong of Later Tang]].
+|- style="background:#DAF2FF;"
+|Yingshun<br/>{{lang|zh-Hant|應順}}
+|934 CE
+|4 months
+|Adopted the era name of the [[Li Siyuan|Emperor Mingzong of Later Tang]].
+|- style="background:#DAF2FF;"
+|Qingtai<br/>{{lang|zh-Hant|清泰}}
+|934–936 CE
+|3 years
+|Adopted the era name of [[Li Congke]].
+|- style="background:#DAF2FF;"
+|Tianfu<br/>{{lang|zh-Hant|天福}}
+|936–944 CE
+|9 years
+|Adopted the era name of the [[Shi Jingtang|Emperor Gaozu of Later Jin]].
+|- style="background:#DAF2FF;"
+|Kaiyun<br/>{{lang|zh-Hant|開運}}
+|944–946 CE
+|3 years
+|Adopted the era name of the [[Shi Chonggui|Emperor Chu of Later Jin]].
+|- style="background:#DAF2FF;"
+|Tianfu<br/>{{lang|zh-Hant|天福}}
+|947 CE
+|1 year
+|Adopted the era name of the [[Shi Jingtang|Emperor Gaozu of Later Jin]].
+|- style="background:#DAF2FF;"
+|Qianyou<br/>{{lang|zh-Hant|乾祐}}
+|948 CE
+|10 months
+|Adopted the era name of the [[Liu Zhiyuan|Emperor Gaozu of Later Han]].
+|-
+!colspan="4"|[[Gao Baorong|Prince Zhenyi of Nanping]]<br/>{{small|(r. 948–960 CE)}}
+|- style="background:#DAF2FF;"
+|Qianyou<br/>{{lang|zh-Hant|乾祐}}
+|948–950 CE
+|3 years
+|Adopted the era name of the [[Liu Zhiyuan|Emperor Gaozu of Later Han]].
+|- style="background:#DAF2FF;"
+|Guangshun<br/>{{lang|zh-Hant|廣順}}
+|951–953 CE
+|3 years
+|Adopted the era name of the [[Guo Wei|Emperor Taizu of Later Zhou]].
+|- style="background:#DAF2FF;"
+|Xiande<br/>{{lang|zh-Hant|顯德}}
+|954–960 CE
+|7 years
+|Adopted the era name of the [[Guo Wei|Emperor Taizu of Later Zhou]].
+|-
+!colspan="4"|[[Gao Baoxu]]<br/>{{small|(r. 960–962 CE)}}
+|- style="background:#DAF2FF;"
+|Jianlong<br/>{{lang|zh-Hant|建隆}}
+|960–962 CE
+|3 years
+|Adopted the era name of the [[Emperor Taizu of Song]].
+|-
+!colspan="4"|[[Gao Jichong]]<br/>{{small|(r. 962–963 CE)}}
+|- style="background:#DAF2FF;"
+|Jianlong<br/>{{lang|zh-Hant|建隆}}
+|962–963 CE
+|2 years
+|Adopted the era name of the [[Emperor Taizu of Song]].
+|}
+
+===[[Later Shu]]===
+{| class="wikitable"
+|-
+!Era name
+!Period of use
+!Length of use
+!Remark
+|-
+!colspan="4"|[[Meng Zhixiang|Emperor Gaozu of Later Shu]]<br/>{{small|(r. 934 CE)}}
+|-
+|Mingde<br/>{{lang|zh-Hant|明德}}
+|934–937 CE
+|4 years
+|Usage continued by [[Meng Chang]] upon his ascension to the throne.
+|-
+!colspan="4"|[[Meng Chang]]<br/>{{small|(r. 934–965 CE)}}
+|-
+|Guangzheng<br/>{{lang|zh-Hant|廣政}}
+|938–965 CE
+|28 years
+|
+|}
+
+===[[Southern Tang]]===
+{| class="wikitable"
+|-
+!Era name
+!Period of use
+!Length of use
+!Remark
+|-
+!colspan="4"|[[Li Bian|Emperor Liezu of Southern Tang]]<br/>{{small|(r. 937–943 CE)}}
+|-
+|Shengyuan<br/>{{lang|zh-Hant|昇元}}
+|937–943 CE
+|7 years
+|Or ''Shengyuan'' ({{lang|zh-Hant|升元}}).
+|-
+!colspan="4"|[[Li Jing (Southern Tang)|Emperor Yuanzong of Southern Tang]]<br/>{{small|(r. 943–961 CE)}}
+|-
+|Baoda<br/>{{lang|zh-Hant|保大}}
+|943–957 CE
+|15 years
+|{{font color|#000000|#DAF2FF|Also used by the [[Ma Chu]].}}
+|-
+|Zhongxing<br/>{{lang|zh-Hant|中興}}
+|958 CE
+|2 months
+|
+|-
+|Jiaotai<br/>{{lang|zh-Hant|交泰}}
+|958 CE
+|3 months
+|
+|- style="background:#DAF2FF;"
+|Xiande<br/>{{lang|zh-Hant|顯德}}
+|958–961 CE
+|4 years
+|Adopted the era name of the [[Guo Wei|Emperor Taizu of Later Zhou]] for external purposes. The era name ''Jiaotai'' ({{lang|zh-Hant|交泰}}) remained in use for domestic purposes.
+|-
+!colspan="4"|[[Li Yu (Southern Tang)|Li Yu]]<br/>{{small|(r. 961–975 CE)}}
+|- style="background:#DAF2FF;"
+|Xiande<br/>{{lang|zh-Hant|顯德}}
+|961–962 CE
+|2 years
+|Adopted the era name of the [[Guo Wei|Emperor Taizu of Later Zhou]] for external purposes. The era name ''Jiaotai'' ({{lang|zh-Hant|交泰}}) remained in use for domestic purposes.
+|- style="background:#DAF2FF;"
+|Jianlong<br/>{{lang|zh-Hant|建隆}}
+|963 CE
+|1 year
+|Adopted the era name of the [[Emperor Taizu of Song]].
+|- style="background:#DAF2FF;"
+|Qiande<br/>{{lang|zh-Hant|乾德}}
+|963–968 CE
+|6 years
+|Adopted the era name of the [[Emperor Taizu of Song]].
+|- style="background:#DAF2FF;"
+|Kaibao<br/>{{lang|zh-Hant|開寶}}
+|968–975 CE
+|8 years
+|Adopted the era name of the [[Emperor Taizu of Song]].
+|}
+
+===[[Northern Han]]===
+{| class="wikitable"
+|-
+!Era name
+!Period of use
+!Length of use
+!Remark
+|-
+!colspan="4"|[[Liu Chong|Emperor Shizu of Northern Han]]<br/>{{small|(r. 951–954 CE)}}
+|- style="background:#DAF2FF;"
+|Qianyou<br/>{{lang|zh-Hant|乾祐}}
+|951–954 CE
+|4 years
+|Adopted the era name of the [[Liu Zhiyuan|Emperor Gaozu of Later Han]].
+|-
+!colspan="4"|[[Liu Jun (Northern Han)|Emperor Ruizong of Northern Han]]<br/>{{small|(r. 954–968 CE)}}
+|- style="background:#DAF2FF;"
+|Qianyou<br/>{{lang|zh-Hant|乾祐}}
+|954–956 CE
+|3 years
+|Adopted the era name of the [[Liu Zhiyuan|Emperor Gaozu of Later Han]].
+|-
+|Tianhui<br/>{{lang|zh-Hant|天會}}
+|957–973 CE
+|17 years
+|Usage continued by Liu Ji'en and the [[Liu Jiyuan|Emperor Yingwu of Northern Han]] upon their ascension to the throne.
+|-
+!colspan="4"|[[Liu Jiyuan|Emperor Yingwu of Northern Han]]<br/>{{small|(r. 968–979 CE)}}
+|-
+|Guangyun<br/>{{lang|zh-Hant|廣運}}
+|974–979 CE
+|6 years
+|
+|}
+
+===[[Qi (Li Maozhen's state)|Qi]]===
+{| class="wikitable"
+|-
+!Era name
+!Period of use
+!Length of use
+!Remark
+|-
+!colspan="4"|[[Li Maozhen]]<br/>{{small|(r. 901–924 CE)}}
+|- style="background:#DAF2FF;"
+|Tianyou<br/>{{lang|zh-Hant|天祐}}
+|904–924 CE
+|21 years
+|Adopted the era name of the [[Emperor Zhaozong of Tang]].
+|}
+
+===[[Dachanghe]]===
+{| class="wikitable"
+|-
+!Era name
+!Period of use
+!Length of use
+!Remark
+|-
+!colspan="4"|Emperor Huan of Dachanghe<br/>{{small|(r. 902–909 CE)}}
+|-
+|Anguo<br/>{{lang|zh-Hant|安國}}
+|903–909 CE
+|7 years
+|
+|-
+!colspan="4"|Emperor Suwen of Dachanghe<br/>{{small|(r. 909–926 CE)}}
+|-
+|Shiyuan<br/>{{lang|zh-Hant|始元}}
+|910 CE–?
+|''Unknown''
+|Or ''Xiaozhi'' ({{lang|zh-Hant|孝治}}).
+|-
+|Tianruijingxing<br/>{{lang|zh-Hant|天瑞景星}}
+|''Unknown''
+|''Unknown''
+|Or ''Tianrui'' ({{lang|zh-Hant|天瑞}}).
+|-
+|Anhe<br/>{{lang|zh-Hant|安和}}
+|''Unknown''
+|''Unknown''
+|
+|-
+|Zhenyou<br/>{{lang|zh-Hant|貞祐}}
+|''Unknown''
+|''Unknown''
+|
+|-
+|Chuli<br/>{{lang|zh-Hant|初歷}}
+|?–926 CE
+|''Unknown''
+|
+|-
+!colspan="4"|Emperor Gonghui of Dachanghe<br/>{{small|(r. 926–928 CE)}}
+|-
+|Tianying<br/>{{lang|zh-Hant|天應}}
+|927 CE
+|1 year
+|
+|}
+
+===Datianxing===
+{| class="wikitable"
+|-
+!Era name
+!Period of use
+!Length of use
+!Remark
+|-
+!colspan="4"|Emperor Daokang of Datianxing<br/>{{small|(r. 928–929 CE)}}
+|-
+|Zunsheng<br/>{{lang|zh-Hant|尊聖}}
+|928–929 CE
+|2 years
+|
+|}
+
+===Dayining===
+{| class="wikitable"
+|-
+!Era name
+!Period of use
+!Length of use
+!Remark
+|-
+!colspan="4"|Emperor Sugong of Dayining<br/>{{small|(r. 929–930 CE)}}
+|-
+|Xingsheng<br/>{{lang|zh-Hant|興聖}}
+|930 CE
+|1 year
+|
+|-
+!colspan="4"|Yang Zhao<br/>{{small|(r. 930–937 CE)}}
+|-
+|Daming<br/>{{lang|zh-Hant|大明}}
+|931–937 CE
+|7 years
+|
+|-
+|Dingxin<br/>{{lang|zh-Hant|鼎新}}
+|''Unknown''
+|''Unknown''
+|
+|-
+|Guangsheng<br/>{{lang|zh-Hant|光聖}}
+|''Unknown''
+|''Unknown''
+|Or ''Kesheng'' ({{lang|zh-Hant|克聖}}).
+|}
+
+===[[Jin (Later Tang precursor)|Former Jin]]===
+{| class="wikitable"
+|-
+!Era name
+!Period of use
+!Length of use
+!Remark
+|-
+!colspan="4"|[[Li Keyong]]<br/>{{small|(r. 896–908 CE)}}
+|- style="background:#DAF2FF;"
+|Tianyou<br/>{{lang|zh-Hant|天祐}}
+|904–908 CE
+|5 years
+|Adopted the era name of the [[Emperor Zhaozong of Tang]].
+|-
+!colspan="4"|[[Li Cunxu]]<br/>{{small|(r. 908–923 CE; as Prince of Former Jin)}}
+|- style="background:#DAF2FF;"
+|Tianyou<br/>{{lang|zh-Hant|天祐}}
+|908–923 CE
+|16 years
+|Adopted the era name of the [[Emperor Zhaozong of Tang]].
+|}
+
+===[[Yan (Five Dynasties period)|Yan]]===
+{| class="wikitable"
+|-
+!Era name
+!Period of use
+!Length of use
+!Remark
+|-
+!colspan="4"|[[Liu Shouguang]]<br/>{{small|(r. 911–914 CE)}}
+|-
+|Yingtian<br/>{{lang|zh-Hant|應天}}
+|911–913 CE
+|3 years
+|
+|}
+
+===Other regimes contemporaneous with Five Dynasties and Ten Kingdoms===
+{| class="wikitable"
+|-
+!Era name
+!Period of use
+!Length of use
+!Remark
+|-
+!colspan="4"|''Unknown''
+|-
+|Anguoshengzhi<br/>{{lang|zh-Hant|安國聖治}}
+|''Unknown''
+|''Unknown''
+|Might be the era name of the Emperor Huan of Dachanghe.
+|-
+! colspan="4" |Emperor Taizu of Pang (庞太祖)
+(r. 922–924 CE)
+|-
+|Jisheng
+继圣
+|922–924 CE
+|2 years
+|First and last Emperor of Pang. 
+|-
+!colspan="4"|[[Zhang Yuxian]]<br/>{{small|(r. 942–943 CE)}}
+|-
+|Yongle<br/>{{lang|zh-Hant|永樂}}
+|942–943 CE
+|2 years
+|Or ''Changle'' ({{lang|zh-Hant|長樂}}).
+|}
+
+==[[Liao dynasty]]==
+===[[Liao dynasty]]===
+{| class="wikitable"
+|-
+!Era name
+!Period of use
+!Length of use
+!Remark
+|-
+!colspan="4"|[[Abaoji|Emperor Taizu of Liao]]<br/>{{small|(r. 916–926 CE)}}
+|-
+|Shence<br/>{{lang|zh-Hant|神冊}}
+|916–922 CE
+|7 years
+|
+|-
+|Tianzan<br/>{{lang|zh-Hant|天贊}}
+|922–926 CE
+|5 years
+|
+|-
+|Tianxian<br/>{{lang|zh-Hant|天顯}}
+|926–938 CE
+|13 years
+|Usage continued by the [[Emperor Taizong of Liao]] upon his ascension to the throne.
+|-
+!colspan="4"|[[Emperor Taizong of Liao]]<br/>{{small|(r. 927–947 CE)}}
+|-
+|Huitong<br/>{{lang|zh-Hant|會同}}
+|938–947 CE
+|10 years
+|
+|-
+|Datong<br/>{{lang|zh-Hant|大同}}
+|947 CE
+|8 months
+|Usage continued by the [[Emperor Shizong of Liao]] upon his ascension to the throne.
+|-
+!colspan="4"|[[Emperor Shizong of Liao]]<br/>{{small|(r. 947–951 CE)}}
+|-
+|Tianlu<br/>{{lang|zh-Hant|天祿}}
+|947–951 CE
+|5 years
+|
+|-
+!colspan="4"|[[Emperor Muzong of Liao]]<br/>{{small|(r. 951–969 CE)}}
+|-
+|Yingli<br/>{{lang|zh-Hant|應曆}}
+|951–969 CE
+|19 years
+|
+|-
+!colspan="4"|[[Emperor Jingzong of Liao]]<br/>{{small|(r. 969–982 CE)}}
+|-
+|Baoning<br/>{{lang|zh-Hant|保寧}}
+|969–979 CE
+|11 years
+|
+|-
+|Qianheng<br/>{{lang|zh-Hant|乾亨}}
+|979–983 CE
+|5 years
+|Usage continued by the [[Emperor Shengzong of Liao]] upon his ascension to the throne.
+|-
+!colspan="4"|[[Emperor Shengzong of Liao]]<br/>{{small|(r. 982–1031 CE)}}
+|-
+|Tonghe<br/>{{lang|zh-Hant|統和}}
+|983–1012 CE
+|30 years
+|{{font color|#000000|#DAF2FF|Also used by [[Goryeo]].}}
+|-
+|Kaitai<br/>{{lang|zh-Hant|開泰}}
+|1012–1021 CE
+|10 years
+|{{font color|#000000|#DAF2FF|Also used by [[Goryeo]].}}
+|-
+|Taiping<br/>{{lang|zh-Hant|太平}}
+|1021–1031 CE
+|11 years
+|{{font color|#000000|#DAF2FF|Also used by [[Goryeo]].}}
+|-
+!colspan="4"|[[Emperor Xingzong of Liao]]<br/>{{small|(r. 1031–1055 CE)}}
+|-
+|Jingfu<br/>{{lang|zh-Hant|景福}}
+|1031–1032 CE
+|2 years
+|
+|-
+|Chongxi<br/>{{lang|zh-Hant|重熙}}
+|1032–1055 CE
+|24 years
+|Or ''Chonghe'' ({{lang|zh-Hant|重和}}), ''Chongxi'' ({{lang|zh-Hant|崇熙}}). {{font color|#000000|#DAF2FF|Also used by [[Goryeo]].}}
+|-
+!colspan="4"|[[Emperor Daozong of Liao]]<br/>{{small|(r. 1055–1101 CE)}}
+|-
+|Qingning<br/>{{lang|zh-Hant|清寧}}
+|1055–1064 CE
+|10 years
+|{{font color|#000000|#DAF2FF|Also used by [[Goryeo]].}}
+|-
+|Xianyong<br/>{{lang|zh-Hant|咸雍}}
+|1065–1074 CE
+|10 years
+|{{font color|#000000|#DAF2FF|Also used by [[Goryeo]].}}
+|-
+|Dakang<br/>{{lang|zh-Hant|大康}}
+|1075–1084 CE
+|10 years
+|Or ''Taikang'' ({{lang|zh-Hant|太康}}). {{font color|#000000|#DAF2FF|Also used by [[Goryeo]].}}
+|-
+|Da'an<br/>{{lang|zh-Hant|大安}}
+|1085–1094 CE
+|10 years
+|{{font color|#000000|#DAF2FF|Also used by [[Goryeo]].}}
+|-
+|Shouchang<br/>{{lang|zh-Hant|壽昌}}
+|1095–1101 CE
+|7 years
+|Or ''Shoulong'' ({{lang|zh-Hant|壽隆}}), ''Shengchang'' ({{lang|zh-Hant|盛昌}}). {{font color|#000000|#DAF2FF|Also used by [[Goryeo]].}}
+|-
+!colspan="4"|[[Emperor Tianzuo of Liao]]<br/>{{small|(r. 1101–1125 CE)}}
+|-
+|Qiantong<br/>{{lang|zh-Hant|乾統}}
+|1101–1110 CE
+|10 years
+|Or ''Qiantong'' ({{lang|zh-Hant|乾通}}). {{font color|#000000|#DAF2FF|Also used by [[Goryeo]].}}
+|-
+|Tianqing<br/>{{lang|zh-Hant|天慶}}
+|1111–1120 CE
+|10 years
+|{{font color|#000000|#DAF2FF|Also used by [[Goryeo]].}}
+|-
+|Baoda<br/>{{lang|zh-Hant|保大}}
+|1121–1125 CE
+|5 years
+|
+|}
+
+===[[Dongdan Kingdom|Dongdan]]===
+{| class="wikitable"
+|-
+!Era name
+!Period of use
+!Length of use
+!Remark
+|-
+!colspan="4"|[[Yelü Bei]]<br/>{{small|(r. 926–937 CE)}}
+|-
+|Ganlu<br/>{{lang|zh-Hant|甘露}}
+|926–936 CE
+|11 years
+|
+|}
+
+===[[Jeongan|Ding'an]]===
+{| class="wikitable"
+|-
+!Era name
+!Period of use
+!Length of use
+!Remark
+|-
+!colspan="4"|Wu Xuanming<br/>{{small|(r. 976–986 CE)}}
+|-
+|Yuanxing<br/>{{lang|zh-Hant|元興}}
+|976 CE–?
+|''Unknown''
+|
+|}
+
+===[[Xingliao]]===
+{| class="wikitable"
+|-
+!Era name
+!Period of use
+!Length of use
+!Remark
+|-
+!colspan="4"|[[Da Yanlin]]<br/>{{small|(r. 1029–1030 CE)}}
+|-
+|Tianqing<br/>{{lang|zh-Hant|天慶}}
+|1029–1030 CE
+|2 years
+|
+|}
+
+===[[Northern Liao]]===
+{| class="wikitable"
+|-
+!Era name
+!Period of use
+!Length of use
+!Remark
+|-
+!colspan="4"|Emperor Xuanzong of Northern Liao<br/>{{small|(r. 1122 CE)}}
+|-
+|Jianfu<br/>{{lang|zh-Hant|建福}}
+|1122 CE
+|4 months
+|Or ''Tianfu'' ({{lang|zh-Hant|天福}}).
+|-
+!colspan="4"|Xiao Puxiannü<br/>{{small|(r. 1122 CE; as regent)}}
+|-
+|Dexing<br/>{{lang|zh-Hant|德興}}
+|1122 CE
+|7 months
+|
+|-
+!colspan="4"|Yelü Yali<br/>{{small|(r. 1123 CE)}}
+|-
+|Shenli<br/>{{lang|zh-Hant|神曆}}
+|1123 CE
+|6 months
+|
+|}
+
+===[[Qara Khitai|Western Liao]]===
+{| class="wikitable"
+|-
+!Era name
+!Period of use
+!Length of use
+!Remark
+|-
+!colspan="4"|[[Yelü Dashi|Emperor Dezong of Western Liao]]<br/>{{small|(r. 1124–1143 CE)}}
+|-
+|Yanqing<br/>{{lang|zh-Hant|延慶}}
+|1124–1133 CE
+|10 years
+|Usage might be from 1125 CE to 1133 CE, for a total length of 9 years.
+|-
+|Kangguo<br/>{{lang|zh-Hant|康國}}
+|1134–1143 CE
+|10 years
+|Usage might be from 1127 CE to 1136 CE, for a total length of 10 years.
+|-
+!colspan="4"|[[Xiao Tabuyan]]<br/>{{small|(r. 1143–1150 CE; as regent)}}
+|-
+|Xianqing<br/>{{lang|zh-Hant|咸清}}
+|1144–1150 CE
+|7 years
+|Usage might be from 1136 CE to 1142 CE, for a total length of 7 years.
+|-
+|Gantian<br/>{{lang|zh-Hant|感天}}
+|''Unknown''
+|''Unknown''
+|
+|-
+!colspan="4"|[[Yelü Yilie|Emperor Renzong of Western Liao]]<br/>{{small|(r. 1150–1163 CE)}}
+|-
+|Shaoxing<br/>{{lang|zh-Hant|紹興}}
+|1151–1163 CE
+|13 years
+|Usage might be from 1142 CE to 1154 CE, for a total length of 13 years.
+|-
+|Xuxing<br/>{{lang|zh-Hant|續興}}
+|''Unknown''
+|''Unknown''
+|
+|-
+|Muxing<br/>{{lang|zh-Hant|穆興}}
+|''Unknown''
+|''Unknown''
+|
+|-
+!colspan="4"|[[Yelü Pusuwan]]<br/>{{small|(r. 1163–1177 CE; as regent)}}
+|-
+|Chongfu<br/>{{lang|zh-Hant|崇福}}
+|1164–1177 CE
+|14 years
+|Usage might be from 1154 CE to 1168 CE, for a total length of 15 years.
+|-
+|Huangde<br/>{{lang|zh-Hant|皇德}}
+|''Unknown''
+|''Unknown''
+|
+|-
+|Zhongde<br/>{{lang|zh-Hant|重德}}
+|''Unknown''
+|''Unknown''
+|
+|-
+!colspan="4"|[[Yelü Zhilugu]]<br/>{{small|(r. 1177–1211 CE)}}
+|-
+|Tianxi<br/>{{lang|zh-Hant|天禧}}
+|1178–1211 CE
+|34 years
+|Or ''Tianxi'' ({{lang|zh-Hant|天喜}}). Usage might be from 1168 CE to 1201 CE, for a total length of 34 years.
+|}
+
+===Other regimes contemporaneous with Liao dynasty===
+{| class="wikitable"
+|-
+!Era name
+!Period of use
+!Length of use
+!Remark
+|-
+!colspan="4"|Gao Yongchang<br/>{{small|(r. 1116 CE)}}
+|-
+|Longji<br/>{{lang|zh-Hant|隆基}}
+|1116 CE
+|4 months
+|Or ''Yingshun'' ({{lang|zh-Hant|應順}}).
+|-
+!colspan="4"|Huilibao<br/>{{small|(r. 1123 CE)}}
+|-
+|Tianfu<br/>{{lang|zh-Hant|天復}}
+|1123 CE
+|8 months
+|
+|-
+!colspan="4"|Xiao Gan<br/>{{small|(r. 1123 CE)}}
+|-
+|Tiansi<br/>{{lang|zh-Hant|天嗣}}
+|1123 CE
+|1 year
+|Or ''Tianxing'' ({{lang|zh-Hant|天興}}), ''Tianfu'' ({{lang|zh-Hant|天阜}}).
+|}
+
+==[[Song dynasty]]==
+===[[Song dynasty#Northern Song, 960–1127|Northern Song]]===
+{| class="wikitable"
+|-
+!Era name
+!Period of use
+!Length of use
+!Remark
+|-
+!colspan="4"|[[Emperor Taizu of Song]]<br/>{{small|(r. 960–976 CE)}}
+|-
+|Jianlong<br/>{{lang|zh-Hant|建隆}}
+|960–963 CE
+|4 years
+|{{font color|#000000|#DAF2FF|Also used by [[Wuyue]], [[Jingnan]], and the [[Southern Tang]].}}
+|-
+|Qiande<br/>{{lang|zh-Hant|乾德}}
+|963–968 CE
+|6 years
+|{{font color|#000000|#DAF2FF|Also used by [[Wuyue]], the [[Southern Tang]], and [[Goryeo]].}}
+|-
+|Kaibao<br/>{{lang|zh-Hant|開寶}}
+|968–976 CE
+|9 years
+|Usage continued by the [[Emperor Taizong of Song]] upon his ascension to the throne. {{font color|#000000|#DAF2FF|Also used by [[Wuyue]], the [[Southern Tang]], and [[Goryeo]].}}
+|-
+!colspan="4"|[[Emperor Taizong of Song]]<br/>{{small|(r. 976–997 CE)}}
+|-
+|Taipingxingguo<br/>{{lang|zh-Hant|太平興國}}
+|976–984 CE
+|9 years
+|{{font color|#000000|#DAF2FF|Also used by [[Wuyue]] and [[Goryeo]].}}
+|-
+|Yongxi<br/>{{lang|zh-Hant|雍熙}}
+|984–987 CE
+|4 years
+|{{font color|#000000|#DAF2FF|Also used by [[Goryeo]].}}
+|-
+|Duangong<br/>{{lang|zh-Hant|端拱}}
+|988–989 CE
+|2 years
+|{{font color|#000000|#DAF2FF|Also used by [[Goryeo]].}}
+|-
+|Chunhua<br/>{{lang|zh-Hant|淳化}}
+|990–994 CE
+|5 years
+|{{font color|#000000|#DAF2FF|Also used by [[Goryeo]].}}
+|-
+|Zhidao<br/>{{lang|zh-Hant|至道}}
+|995–997 CE
+|3 years
+|Usage continued by the [[Emperor Zhenzong|Emperor Zhenzong of Song]] upon his ascension to the throne. {{font color|#000000|#DAF2FF|Also used by [[Goryeo]].}}
+|-
+!colspan="4"|[[Emperor Zhenzong|Emperor Zhenzong of Song]]<br/>{{small|(r. 997–1022 CE)}}
+|-
+|Xianping<br/>{{lang|zh-Hant|咸平}}
+|998–1003 CE
+|6 years
+|
+|-
+|Jingde<br/>{{lang|zh-Hant|景德}}
+|1004–1007 CE
+|4 years
+|
+|-
+|Dazhongxiangfu<br/>{{lang|zh-Hant|大中祥符}}
+|1008–1016 CE
+|9 years
+|{{font color|#000000|#DAF2FF|Also used by [[Goryeo]].}}
+|-
+|Tianxi<br/>{{lang|zh-Hant|天禧}}
+|1017–1021 CE
+|5 years
+|{{font color|#000000|#DAF2FF|Also used by [[Goryeo]].}}
+|-
+|Qianxing<br/>{{lang|zh-Hant|乾興}}
+|1022 CE
+|1 year
+|Usage continued by the [[Emperor Renzong of Song]] upon his ascension to the throne. {{font color|#000000|#DAF2FF|Also used by [[Goryeo]].}}
+|-
+!colspan="4"|[[Emperor Renzong of Song]]<br/>{{small|(r. 1022–1063 CE)}}
+|-
+|Tiansheng<br/>{{lang|zh-Hant|天聖}}
+|1023–1032 CE
+|10 years
+|
+|-
+|Mingdao<br/>{{lang|zh-Hant|明道}}
+|1032–1033 CE
+|2 years
+|
+|-
+|Jingyou<br/>{{lang|zh-Hant|景祐}}
+|1034–1038 CE
+|5 years
+|
+|-
+|Baoyuan<br/>{{lang|zh-Hant|寶元}}
+|1038–1040 CE
+|3 years
+|
+|-
+|Kangding<br/>{{lang|zh-Hant|康定}}
+|1040–1041 CE
+|2 years
+|
+|-
+|Qingli<br/>{{lang|zh-Hant|慶曆}}
+|1041–1048 CE
+|8 years
+|
+|-
+|Huangyou<br/>{{lang|zh-Hant|皇祐}}
+|1049–1054 CE
+|6 years
+|
+|-
+|Zhihe<br/>{{lang|zh-Hant|至和}}
+|1054–1056 CE
+|3 years
+|
+|-
+|Jiayou<br/>{{lang|zh-Hant|嘉祐}}
+|1056–1063 CE
+|8 years
+|Usage continued by the [[Emperor Yingzong of Song]] upon his ascension to the throne.
+|-
+!colspan="4"|[[Emperor Yingzong of Song]]<br/>{{small|(r. 1063–1067 CE)}}
+|-
+|Zhiping<br/>{{lang|zh-Hant|治平}}
+|1064–1067 CE
+|4 years
+|Usage continued by the [[Emperor Shenzong of Song]] upon his ascension to the throne.
+|-
+!colspan="4"|[[Emperor Shenzong of Song]]<br/>{{small|(r. 1067–1085 CE)}}
+|-
+|Xining<br/>{{lang|zh-Hant|熙寧}}
+|1068–1077 CE
+|10 years
+|
+|-
+|Yuanfeng<br/>{{lang|zh-Hant|元豐}}
+|1078–1085 CE
+|8 years
+|Usage continued by the [[Emperor Zhezong|Emperor Zhezong of Song]] upon his ascension to the throne.
+|-
+!colspan="4"|[[Emperor Zhezong|Emperor Zhezong of Song]]<br/>{{small|(r. 1085–1110 CE)}}
+|-
+|Yuanyou<br/>{{lang|zh-Hant|元祐}}
+|1086–1094 CE
+|9 years
+|
+|-
+|Shaosheng<br/>{{lang|zh-Hant|紹聖}}
+|1094–1098 CE
+|5 years
+|
+|-
+|Yuanfu<br/>{{lang|zh-Hant|元符}}
+|1098–1100 CE
+|3 years
+|Usage continued by the [[Emperor Huizong of Song]] upon his ascension to the throne.
+|-
+!colspan="4"|[[Emperor Huizong of Song]]<br/>{{small|(r. 1100–1125 CE)}}
+|-
+|Jianzhongjingguo<br/>{{lang|zh-Hant|建中靖國}}
+|1101 CE
+|1 year
+|
+|-
+|Chongning<br/>{{lang|zh-Hant|崇寧}}
+|1102–1106 CE
+|5 years
+|
+|-
+|Daguan<br/>{{lang|zh-Hant|大觀}}
+|1107–1110 CE
+|4 years
+|
+|-
+|Zhenghe<br/>{{lang|zh-Hant|政和}}
+|1111–1118 CE
+|8 years
+|
+|-
+|Chonghe<br/>{{lang|zh-Hant|重和}}
+|1118–1119 CE
+|2 years
+|
+|-
+|Xuanhe<br/>{{lang|zh-Hant|宣和}}
+|1119–1125 CE
+|7 years
+|Usage continued by the [[Emperor Qinzong|Emperor Qinzong of Song]] upon his ascension to the throne.
+|-
+!colspan="4"|[[Emperor Qinzong|Emperor Qinzong of Song]]<br/>{{small|(r. 1126–1127 CE)}}
+|-
+|Jingkang<br/>{{lang|zh-Hant|靖康}}
+|1126–1127 CE
+|2 years
+|
+|}
+
+===[[Song dynasty#Southern Song, 1127–1279|Southern Song]]===
+{| class="wikitable"
+|-
+!Era name
+!Period of use
+!Length of use
+!Remark
+|-
+!colspan="4"|[[Emperor Gaozong of Song]]<br/>{{small|(r. 1127–1162 CE)}}
+|-
+|Jianyan<br/>{{lang|zh-Hant|建炎}}
+|1127–1130 CE
+|4 years
+|
+|-
+|Shaoxing<br/>{{lang|zh-Hant|紹興}}
+|1131–1162 CE
+|32 years
+|Usage continued by the [[Emperor Xiaozong of Song]] upon his ascension to the throne.
+|-
+!colspan="4"|[[Emperor Xiaozong of Song]]<br/>{{small|(r. 1162–1189 CE)}}
+|-
+|Longxing<br/>{{lang|zh-Hant|隆興}}
+|1163–1164 CE
+|2 years
+|
+|-
+|Qiandao<br/>{{lang|zh-Hant|乾道}}
+|1165–1173 CE
+|9 years
+|
+|-
+|Chunxi<br/>{{lang|zh-Hant|淳熙}}
+|1174–1189 CE
+|16 years
+|Originally proposed as ''Chunxi'' ({{lang|zh-Hant|純熙}}). Or ''Chunxi'' ({{lang|zh-Hant|湻熙}}). Usage continued by the [[Emperor Guangzong of Song]] upon his ascension to the throne.
+|-
+!colspan="4"|[[Emperor Guangzong of Song]]<br/>{{small|(r. 1189–1194 CE)}}
+|-
+|Shaoxi<br/>{{lang|zh-Hant|紹熙}}
+|1190–1194 CE
+|5 years
+|Usage continued by the [[Emperor Ningzong|Emperor Ningzong of Song]] upon his ascension to the throne.
+|-
+!colspan="4"|[[Emperor Ningzong|Emperor Ningzong of Song]]<br/>{{small|(r. 1194–1224 CE)}}
+|-
+|Qingyuan<br/>{{lang|zh-Hant|慶元}}
+|1195–1200 CE
+|6 years
+|
+|-
+|Jiatai<br/>{{lang|zh-Hant|嘉泰}}
+|1201–1204 CE
+|4 years
+|
+|-
+|Kaixi<br/>{{lang|zh-Hant|開禧}}
+|1205–1207 CE
+|3 years
+|
+|-
+|Jiading<br/>{{lang|zh-Hant|嘉定}}
+|1208–1224 CE
+|17 years
+|Usage continued by the [[Emperor Lizong|Emperor Lizong of Song]] upon his ascension to the throne.
+|-
+!colspan="4"|[[Emperor Lizong|Emperor Lizong of Song]]<br/>{{small|(r. 1224–1264 CE)}}
+|-
+|Baoqing<br/>{{lang|zh-Hant|寶慶}}
+|1225–1227 CE
+|3 years
+|
+|-
+|Shaoding<br/>{{lang|zh-Hant|紹定}}
+|1228–1233 CE
+|6 years
+|
+|-
+|Duanping<br/>{{lang|zh-Hant|端平}}
+|1234–1236 CE
+|3 years
+|
+|-
+|Jiaxi<br/>{{lang|zh-Hant|嘉熙}}
+|1237–1240 CE
+|4 years
+|
+|-
+|Chunyou<br/>{{lang|zh-Hant|淳祐}}
+|1241–1252 CE
+|12 years
+|
+|-
+|Baoyou<br/>{{lang|zh-Hant|寶祐}}
+|1253–1258 CE
+|6 years
+|
+|-
+|Kaiqing<br/>{{lang|zh-Hant|開慶}}
+|1259 CE
+|1 year
+|
+|-
+|Jingding<br/>{{lang|zh-Hant|景定}}
+|1260–1264 CE
+|5 years
+|Usage continued by the [[Emperor Duzong|Emperor Duzong of Song]] upon his ascension to the throne.
+|-
+!colspan="4"|[[Emperor Duzong|Emperor Duzong of Song]]<br/>{{small|(r. 1264–1274 CE)}}
+|-
+|Xianchun<br/>{{lang|zh-Hant|咸淳}}
+|1265–1274 CE
+|10 years
+|Usage continued by the [[Emperor Gong of Song]] upon his ascension to the throne.
+|-
+!colspan="4"|[[Emperor Gong of Song]]<br/>{{small|(r. 1274–1276 CE)}}
+|-
+|Deyou<br/>{{lang|zh-Hant|德祐}}
+|1275–1276 CE
+|2 years
+|
+|-
+!colspan="4"|[[Emperor Duanzong|Emperor Duanzong of Song]]<br/>{{small|(r. 1276–1278 CE)}}
+|-
+|Jingyan<br/>{{lang|zh-Hant|景炎}}
+|1276–1278 CE
+|3 years
+|
+|-
+!colspan="4"|[[Zhao Bing]]<br/>{{small|(r. 1278–1279 CE)}}
+|-
+|Xiangxing<br/>{{lang|zh-Hant|祥興}}
+|1278–1279 CE
+|2 years
+|{{font color|#000000|#DAF2FF|Also used by Huang Hua.}}
+|}
+
+===[[Dali Kingdom|Former Dali]]===
+{| class="wikitable"
+|-
+!Era name
+!Period of use
+!Length of use
+!Remark
+|-
+!colspan="4"|[[Duan Siping|Emperor Taizu of Dali]]<br/>{{small|(r. 937–944 CE)}}
+|-
+|Wende<br/>{{lang|zh-Hant|文德}}
+|938 CE–?
+|''Unknown''
+|
+|-
+|Shenwu<br/>{{lang|zh-Hant|神武}}
+|?–944 CE
+|''Unknown''
+|
+|-
+!colspan="4"|Emperor Wenjing of Dali<br/>{{small|(r. 944–945 CE)}}
+|-
+|Wenjing<br/>{{lang|zh-Hant|文經}}
+|945 CE
+|1 year
+|Sometimes erroneously referred to as ''Wenjingwulüe'' ({{lang|zh-Hant|文經武略}}).
+|-
+!colspan="4"|Emperor Shengci of Dali<br/>{{small|(r. 945–951 CE)}}
+|-
+|Zhizhi<br/>{{lang|zh-Hant|至治}}
+|946–951 CE
+|6 years
+|Or ''Zhizhi'' ({{lang|zh-Hant|致治}}). Sometimes erroneously referred to as ''Zhuzhi'' ({{lang|zh-Hant|主治}}).
+|-
+!colspan="4"|Emperor Guangci of Dali<br/>{{small|(r. 952–968 CE)}}
+|-
+|Mingde<br/>{{lang|zh-Hant|明德}}
+|952 CE–?
+|''Unknown''
+|
+|-
+|Guangde<br/>{{lang|zh-Hant|廣德}}
+|?–967 CE
+|''Unknown''
+|
+|-
+|Shunde<br/>{{lang|zh-Hant|順德}}
+|968 CE
+|1 year
+|Or ''Shengde'' ({{lang|zh-Hant|聖德}}).
+|-
+!colspan="4"|Emperor Yingdao of Dali<br/>{{small|(r. 968–985 CE)}}
+|-
+|Mingzheng<br/>{{lang|zh-Hant|明政}}
+|969–985 CE
+|17 years
+|Or ''Mingzheng'' ({{lang|zh-Hant|明正}}).
+|-
+!colspan="4"|Emperor Zhaoming of Dali<br/>{{small|(r. 985–1009 CE)}}
+|-
+|Guangming<br/>{{lang|zh-Hant|廣明}}
+|986 CE–?
+|''Unknown''
+|
+|-
+|Mingtong<br/>{{lang|zh-Hant|明統}}
+|''Unknown''
+|''Unknown''
+|
+|-
+|Mingsheng<br/>{{lang|zh-Hant|明聖}}
+|''Unknown''
+|''Unknown''
+|
+|-
+|Mingde<br/>{{lang|zh-Hant|明德}}
+|''Unknown''
+|''Unknown''
+|
+|-
+|Mingzhi<br/>{{lang|zh-Hant|明治}}
+|''Unknown''
+|''Unknown''
+|
+|-
+|Mingfa<br/>{{lang|zh-Hant|明法}}
+|''Unknown''
+|''Unknown''
+|
+|-
+|Mingying<br/>{{lang|zh-Hant|明應}}
+|1006 CE–?
+|''Unknown''
+|
+|-
+|Mingyun<br/>{{lang|zh-Hant|明運}}
+|?–1009 CE
+|''Unknown''
+|
+|-
+!colspan="4"|Emperor Xuansu of Dali<br/>{{small|(r. 1009–1022 CE)}}
+|-
+|Mingqi<br/>{{lang|zh-Hant|明啟}}
+|1010–1022 CE
+|13 years
+|Or ''Qimingtiansheng'' ({{lang|zh-Hant|啟明天聖}}).
+|-
+|Qianxing<br/>{{lang|zh-Hant|乾興}}
+|''Unknown''
+|''Unknown''
+|
+|-
+!colspan="4"|Emperor Bingyi of Dali<br/>{{small|(r. 1022–1026 CE)}}
+|-
+|Mingtong<br/>{{lang|zh-Hant|明通}}
+|1023–1026 CE
+|4 years
+|Or ''Mingtongtiansheng'' ({{lang|zh-Hant|明通天聖}}).
+|-
+!colspan="4"|Emperor Shengde of Dali<br/>{{small|(r. 1026–1041 CE)}}
+|-
+|Zhengzhi<br/>{{lang|zh-Hant|正治}}
+|1027–1041 CE
+|15 years
+|
+|-
+!colspan="4"|Emperor Tianming of Dali<br/>{{small|(r. 1041–1044 CE)}}
+|-
+|Shengming<br/>{{lang|zh-Hant|聖明}}
+|1042 CE–?
+|''Unknown''
+|
+|-
+|Tianming<br/>{{lang|zh-Hant|天明}}
+|?–1044 CE
+|''Unknown''
+|
+|-
+!colspan="4"|Emperor Xingzong of Dali<br/>{{small|(r. 1044–1075 CE)}}
+|-
+|Bao'an<br/>{{lang|zh-Hant|保安}}
+|1045–1052 CE
+|8 years
+|
+|-
+|Zheng'an<br/>{{lang|zh-Hant|政安}}
+|1053 CE–?
+|''Unknown''
+|Or ''Zheng'an'' ({{lang|zh-Hant|正安}}).
+|-
+|Zhengde<br/>{{lang|zh-Hant|正德}}
+|''Unknown''
+|''Unknown''
+|Or ''Zhengde'' ({{lang|zh-Hant|政德}}).
+|-
+|Baode<br/>{{lang|zh-Hant|保德}}
+|?–1074 CE
+|''Unknown''
+|
+|-
+|Tai'an<br/>{{lang|zh-Hant|太安}}
+|''Unknown''
+|''Unknown''
+|
+|-
+|Minghou<br/>{{lang|zh-Hant|明侯}}
+|''Unknown''
+|''Unknown''
+|
+|-
+!colspan="4"|Emperor Shangde of Dali<br/>{{small|(r. 1075–1080 CE)}}
+|-
+|Shangde<br/>{{lang|zh-Hant|上德}}
+|1076 CE
+|1 year
+|
+|-
+|Guang'an<br/>{{lang|zh-Hant|廣安}}
+|1077–1080 CE
+|4 years
+|
+|-
+!colspan="4"|Emperor Shangming of Dali<br/>{{small|(r. 1080–1081 CE)}}
+|-
+|Shangming<br/>{{lang|zh-Hant|上明}}
+|1081 CE
+|1 year
+|
+|-
+!colspan="4"|[[Duan Zhengming|Emperor Baoding of Dali]]<br/>{{small|(r. 1081–1094 CE)}}
+|-
+|Baoli<br/>{{lang|zh-Hant|保立}}
+|1082 CE
+|1 year
+|Or ''Baoding'' ({{lang|zh-Hant|保定}}).
+|-
+|Jian'an<br/>{{lang|zh-Hant|建安}}
+|1083–1091 CE
+|9 years
+|
+|-
+|Tianyou<br/>{{lang|zh-Hant|天祐}}
+|1091–1094 CE
+|4 years
+|
+|}
+
+===[[Gao Shengtai|Dazhong Kingdom]]===
+{| class="wikitable"
+|-
+!Era name
+!Period of use
+!Length of use
+!Remark
+|-
+!colspan="4"|[[Gao Shengtai|Emperor Biaozheng of Dazhong]]<br/>{{small|(r. 1094–1096 CE)}}
+|-
+|Shangzhi<br/>{{lang|zh-Hant|上治}}
+|1095 CE
+|1 year
+|
+|}
+
+===[[Dali Kingdom|Later Dali]]===
+{| class="wikitable"
+|-
+!Era name
+!Period of use
+!Length of use
+!Remark
+|-
+!colspan="4"|[[Duan Zhengchun|Emperor Zhongzong of Dali]]<br/>{{small|(r. 1096–1108 CE)}}
+|-
+|Tianshou<br/>{{lang|zh-Hant|天授}}
+|1096 CE
+|1 year
+|
+|-
+|Mingkai<br/>{{lang|zh-Hant|明開}}
+|1097–1103 CE
+|7 years
+|Or ''Kaiming'' ({{lang|zh-Hant|開明}}).
+|-
+|Tianzheng<br/>{{lang|zh-Hant|天政}}
+|1103–1104 CE
+|2 years
+|Or ''Tianzheng'' ({{lang|zh-Hant|天正}}).
+|-
+|Wen'an<br/>{{lang|zh-Hant|文安}}
+|1104–1108 CE
+|5 years
+|
+|-
+!colspan="4"|[[Duan Yu|Emperor Xianzong of Dali]]<br/>{{small|(r. 1108–1147 CE)}}
+|-
+|Rixin<br/>{{lang|zh-Hant|日新}}
+|1109–1110 CE
+|2 years
+|
+|-
+|Wenzhi<br/>{{lang|zh-Hant|文治}}
+|1110 CE–?
+|''Unknown''
+|
+|-
+|Yongjia<br/>{{lang|zh-Hant|永嘉}}
+|?–1128 CE
+|''Unknown''
+|Sometimes erroneously referred to as ''Wenjia'' ({{lang|zh-Hant|文嘉}}).
+|-
+|Baotian<br/>{{lang|zh-Hant|保天}}
+|1129–1137 CE
+|9 years
+|Or ''Tianbao'' ({{lang|zh-Hant|天保}}).
+|-
+|Guangyun<br/>{{lang|zh-Hant|廣運}}
+|1138–1147 CE
+|10 years
+|
+|-
+!colspan="4"|Emperor Jingzong of Dali<br/>{{small|(r. 1147–1171 CE)}}
+|-
+|Yongzhen<br/>{{lang|zh-Hant|永貞}}
+|1148 CE
+|1 year
+|
+|-
+|Dabao<br/>{{lang|zh-Hant|大寶}}
+|1149–1156 CE
+|8 years
+|Or ''Tianbao'' ({{lang|zh-Hant|天寶}}).
+|-
+|Longxing<br/>{{lang|zh-Hant|龍興}}
+|1157–1161 CE
+|5 years
+|
+|-
+|Shengming<br/>{{lang|zh-Hant|盛明}}
+|1162 CE–?
+|''Unknown''
+|
+|-
+|Jiande<br/>{{lang|zh-Hant|建德}}
+|?–1171 CE
+|''Unknown''
+|
+|-
+!colspan="4"|[[Duan Zhixing|Emperor Xuanzong of Dali]]<br/>{{small|(r. 1172–1200 CE)}}
+|-
+|Lizhen<br/>{{lang|zh-Hant|利貞}}
+|1172–1174 CE
+|4 years
+|
+|-
+|Shengde<br/>{{lang|zh-Hant|盛德}}
+|1176–1180 CE
+|5 years
+|
+|-
+|Jiahui<br/>{{lang|zh-Hant|嘉會}}
+|1181–1184 CE
+|4 years
+|
+|-
+|Yuanheng<br/>{{lang|zh-Hant|元亨}}
+|1185–1195 CE
+|11 years
+|Sometimes erroneously referred to as ''Hengli'' ({{lang|zh-Hant|亨利}}).
+|-
+|Ding'an<br/>{{lang|zh-Hant|定安}}
+|1195–1200 CE
+|6 years
+|Sometimes erroneously referred to as ''Anding'' ({{lang|zh-Hant|安定}}).
+|-
+|Hengshi<br/>{{lang|zh-Hant|亨時}}
+|''Unknown''
+|''Unknown''
+|
+|-
+!colspan="4"|Emperor Yingzong of Dali<br/>{{small|(r. 1200–1204 CE)}}
+|-
+|Fengli<br/>{{lang|zh-Hant|鳳曆}}
+|1200 CE–?
+|''Unknown''
+|
+|-
+|Yuanshou<br/>{{lang|zh-Hant|元壽}}
+|?–1204 CE
+|''Unknown''
+|
+|-
+!colspan="4"|Emperor Shenzong of Dali<br/>{{small|(r. 1204–1238 CE)}}
+|-
+|Tiankai<br/>{{lang|zh-Hant|天開}}
+|1205–1225 CE
+|21 years
+|
+|-
+|Tianfu<br/>{{lang|zh-Hant|天輔}}
+|1226 CE
+|1 year
+|
+|-
+|Renshou<br/>{{lang|zh-Hant|仁壽}}
+|1227–1238 CE
+|12 years
+|
+|-
+!colspan="4"|Emperor Xiaoyi of Dali<br/>{{small|(r. 1238–1251 CE)}}
+|-
+|Daolong<br/>{{lang|zh-Hant|道隆}}
+|1239–1251 CE
+|13 years
+|
+|-
+!colspan="4"|Duan Xingzhi<br/>{{small|(r. 1251–1254 CE)}}
+|-
+|Tianding<br/>{{lang|zh-Hant|天定}}
+|1251–1254 CE
+|4 years
+|
+|}
+
+===[[Ziqi (kingdom)|Ziqi Kingdom]]===
+{| class="wikitable"
+|-
+!Era name
+!Period of use
+!Length of use
+!Remark
+|-
+!colspan="4"|Axie<br/>{{small|(r. 1161–1205 CE)}}
+|-
+|Qianzhen<br/>{{lang|zh-Hant|乾貞}}
+|1176 CE
+|1 year
+|
+|}
+
+===Other regimes contemporaneous with Song dynasty===
+{| class="wikitable"
+|-
+!Era name
+!Period of use
+!Length of use
+!Remark
+|-
+!colspan="4"|Duan Sikuang
+|-
+|Shunde<br/>{{lang|zh-Hant|順德}}
+|''Unknown''
+|''Unknown''
+|
+|-
+!colspan="4"|Gao Guanyinlong
+|-
+|Xingzheng<br/>{{lang|zh-Hant|興正}}
+|''Unknown''
+|''Unknown''
+|
+|-
+!colspan="4"|Gao Guanyinzheng
+|-
+|Zhide<br/>{{lang|zh-Hant|至德}}
+|''Unknown''
+|''Unknown''
+|
+|-
+!colspan="4"|''Unknown''
+|-
+|Daben<br/>{{lang|zh-Hant|大本}}
+|''Unknown''
+|''Unknown''
+|
+|-
+!colspan="4"|''Unknown''
+|-
+|Zhongyuan<br/>{{lang|zh-Hant|鍾元}}
+|''Unknown''
+|''Unknown''
+|
+|-
+!colspan="4"|''Unknown''
+|-
+|Longde<br/>{{lang|zh-Hant|隆德}}
+|''Unknown''
+|''Unknown''
+|
+|-
+!colspan="4"|''Unknown''
+|-
+|Yongdao<br/>{{lang|zh-Hant|永道}}
+|''Unknown''
+|''Unknown''
+|
+|-
+!colspan="4"|Li Shun<br/>{{small|(r. 994 CE)}}
+|-
+|Yingyun<br/>{{lang|zh-Hant|應運}}
+|994 CE
+|5 months
+|
+|-
+!colspan="4"|Wang Jun<br/>{{small|(r. 1000 CE)}}
+|-
+|Huashun<br/>{{lang|zh-Hant|化順}}
+|1000 CE
+|10 months
+|
+|-
+!colspan="4"|[[Wang Ze]]<br/>{{small|(r. 1047–1048 CE)}}
+|-
+|Desheng<br/>{{lang|zh-Hant|得聖}}
+|1047–1048 CE
+|4 months
+|Or ''Desheng'' ({{lang|zh-Hant|得勝}}), ''Desheng'' ({{lang|zh-Hant|德勝}}), ''Detian'' ({{lang|zh-Hant|得天}}).
+|-
+!colspan="4"|[[Nong Zhigao]]<br/>{{small|(r. 1041–1055 CE)}}
+|-
+|Jingrui<br/>{{lang|zh-Hant|景瑞}}
+|1049–1052 CE
+|4 years
+|
+|-
+|Qili<br/>{{lang|zh-Hant|啟歷}}
+|1052–1053 CE
+|2 years
+|
+|-
+|Duanyi<br/>{{lang|zh-Hant|端懿}}
+|''Unknown''
+|''Unknown''
+|
+|-
+|Dali<br/>{{lang|zh-Hant|大歷}}
+|''Unknown''
+|''Unknown''
+|
+|-
+!colspan="4"|Zhao Shen<br/>{{small|(r. 1102 CE)}}
+|-
+|Longxing<br/>{{lang|zh-Hant|隆興}}
+|1102 CE
+|1 year
+|Or ''Longxing'' ({{lang|zh-Hant|龍興}}).
+|-
+!colspan="4"|[[Fang La]]<br/>{{small|(r. 1120–1121 CE)}}
+|-
+|Yongle<br/>{{lang|zh-Hant|永樂}}
+|1120–1121 CE
+|2 years
+|
+|-
+!colspan="4"|[[Zhao Fu]]<br/>{{small|(r. 1129 CE)}}
+|-
+|Mingshou<br/>{{lang|zh-Hant|明受}}
+|1129 CE
+|2 months
+|
+|-
+!colspan="4"|Zhong Xiang<br/>{{small|(r. 1130 CE)}}
+|-
+|Tianzai<br/>{{lang|zh-Hant|天載}}
+|1130 CE
+|2 months
+|Or ''Tianzhan'' ({{lang|zh-Hant|天戰}}).
+|-
+!colspan="4"|Li Herong
+|-
+|Zhengfa<br/>{{lang|zh-Hant|正法}}
+|1127 CE
+|1 year
+|{{font color|#000000|#DAF2FF|Also used by Lei Jin.}}
+|-
+!colspan="4"|Lei Jin
+|- style="background:#DAF2FF;"
+|Zhengfa<br/>{{lang|zh-Hant|正法}}
+|1127 CE
+|1 year
+|Adopted the era name of Li Herong.
+|-
+|Renzhi<br/>{{lang|zh-Hant|人知}}
+|1130 CE
+|1 year
+|Or ''Renhe'' ({{lang|zh-Hant|人和}}).
+|-
+!colspan="4"|Li Pobei
+|-
+|Taiping<br/>{{lang|zh-Hant|太平}}
+|''Unknown''
+|''Unknown''
+|
+|-
+!colspan="4"|Liu Yu<br/>{{small|(r. 1130–1137 CE)}}
+|-
+|Fuchang<br/>{{lang|zh-Hant|阜昌}}
+|1130–1137 CE
+|8 years
+|
+|-
+!colspan="4"|Yang Yao<br/>{{small|(r. 1133–1135 CE)}}
+|-
+|Dashengtianwang<br/>{{lang|zh-Hant|大聖天王}}
+|1133–1135 CE
+|3 years
+|Or ''Datianshengzheng'' ({{lang|zh-Hant|大天聖正}}).
+|-
+|Gengxu<br/>{{lang|zh-Hant|庚戌}}
+|''Unknown''
+|''Unknown''
+|
+|-
+!colspan="4"|Wang Fa'en<br/>{{small|(r. 1141 CE)}}
+|-
+|Luoping<br/>{{lang|zh-Hant|羅平}}
+|1141 CE
+|1 month
+|
+|-
+!colspan="4"|Li Jie<br/>{{small|(r. 1179 CE)}}
+|-
+|Luoping<br/>{{lang|zh-Hant|羅平}}
+|1179 CE
+|5 months
+|
+|-
+!colspan="4"|Wu Xi<br/>{{small|(r. 1207 CE)}}
+|-
+|Zhuanyun<br/>{{lang|zh-Hant|轉運}}
+|1207 CE
+|2 months
+|
+|-
+!colspan="4"|Liao Sen<br/>{{small|(r. 1229 CE)}}
+|-
+|Zhongde<br/>{{lang|zh-Hant|重德}}
+|1229 CE
+|1 year
+|
+|-
+!colspan="4"|Chen Wan
+|-
+|Tianzhan<br/>{{lang|zh-Hant|天戰}}
+|''Unknown''
+|''Unknown''
+|
+|}
+
+==[[Western Xia]]==
+{| class="wikitable"
+|-
+!Era name
+!Period of use
+!Length of use
+!Remark
+|-
+!colspan="4"|[[Emperor Jingzong of Western Xia]]<br/>{{small|(r. 1038–1048 CE)}}
+|-
+|Xiandao<br/>{{lang|zh-Hant|顯道}}
+|1032–1034 CE
+|3 years
+|Derived from the era name ''Mingdao'' ({{lang|zh-Hant|明道}}) of the [[Emperor Renzong of Song]].
+|-
+|Kaiyun<br/>{{lang|zh-Hant|開運}}
+|1034 CE
+|1 month
+|
+|-
+|Guangyun<br/>{{lang|zh-Hant|廣運}}
+|1034–1036 CE
+|3 years
+|
+|-
+|Daqing<br/>{{lang|zh-Hant|大慶}}
+|1036–1038 CE
+|3 years
+|
+|-
+|Tianshoulifayanzuo<br/>{{lang|zh-Hant|天授禮法延祚}}
+|1038–1048 CE
+|11 years
+|Or ''Tianshou'' ({{lang|zh-Hant|天授}}), ''Tianshoulifayanzuo'' ({{lang|zh-Hant|天授理法延祚}}). Usage continued by the [[Emperor Yizong of Western Xia]] upon his ascension to the throne.
+|-
+|Guangxi<br/>{{lang|zh-Hant|廣熙}}
+|''Unknown''
+|''Unknown''
+|
+|-
+|Guangmin<br/>{{lang|zh-Hant|廣民}}
+|''Unknown''
+|''Unknown''
+|
+|-
+!colspan="4"|[[Emperor Yizong of Western Xia]]<br/>{{small|(r. 1048–1067 CE)}}
+|-
+|Yansiningguo<br/>{{lang|zh-Hant|延嗣寧國}}
+|1049 CE
+|1 year
+|Or ''Ningguo'' ({{lang|zh-Hant|寧國}}).
+|-
+|Tianyouchuisheng<br/>{{lang|zh-Hant|天祐垂聖}}
+|1050–1052 CE
+|3 years
+|Or ''Chuisheng'' ({{lang|zh-Hant|垂聖}}).
+|-
+|Fushengchengdao<br/>{{lang|zh-Hant|福聖承道}}
+|1053–1056 CE
+|4 years
+|Or ''Fusheng'' ({{lang|zh-Hant|福聖}}), ''Chengdao'' ({{lang|zh-Hant|承道}}).
+|-
+|Duodu<br/>{{lang|zh-Hant|奲都}}
+|1057–1062 CE
+|6 years
+|
+|-
+|Gonghua<br/>{{lang|zh-Hant|拱化}}
+|1063–1067 CE
+|5 years
+|Usage continued by the [[Emperor Huizong of Western Xia]] upon his ascension to the throne.
+|-
+!colspan="4"|[[Emperor Huizong of Western Xia]]<br/>{{small|(r. 1067–1086 CE)}}
+|-
+|Qiandao<br/>{{lang|zh-Hant|乾道}}
+|1068–1069 CE
+|2 years
+|Usage might be from 1067 CE to 1068 CE, for a total length of 2 years.
+|-
+|Tiancilishengguoqing<br/>{{lang|zh-Hant|天賜禮盛國慶}}
+|1070–1074 CE
+|5 years
+|Or ''Tianciguoqing'' ({{lang|zh-Hant|天賜國慶}}). Usage might be from 1069 CE to 1074 CE, for a total length of 6 years.
+|-
+|Da'an<br/>{{lang|zh-Hant|大安}}
+|1075–1085 CE
+|11 years
+|
+|-
+|Tian'anliding<br/>{{lang|zh-Hant|天安禮定}}
+|1086 CE
+|7 months
+|
+|-
+|Xi'an<br/>{{lang|zh-Hant|西安}}
+|''Unknown''
+|''Unknown''
+|
+|-
+!colspan="4"|[[Emperor Chongzong of Western Xia]]<br/>{{small|(r. 1086–1139 CE)}}
+|-
+|Tianyizhiping<br/>{{lang|zh-Hant|天儀治平}}
+|1086–1089 CE
+|4 years
+|
+|-
+|Tianyoumin'an<br/>{{lang|zh-Hant|天祐民安}}
+|1090–1097 CE
+|8 years
+|
+|-
+|Yong'an<br/>{{lang|zh-Hant|永安}}
+|1098–1100 CE
+|3 years
+|
+|-
+|Zhenguan<br/>{{lang|zh-Hant|貞觀}}
+|1101–1113 CE
+|13 years
+|
+|-
+|Yongning<br/>{{lang|zh-Hant|雍寧}}
+|1114–1118 CE
+|5 years
+|
+|-
+|Yuande<br/>{{lang|zh-Hant|元德}}
+|1119–1127 CE
+|9 years
+|Or ''Tiande'' ({{lang|zh-Hant|天德}}).
+|-
+|Zhengde<br/>{{lang|zh-Hant|正德}}
+|1127–1134 CE
+|8 years
+|
+|-
+|Dade<br/>{{lang|zh-Hant|大德}}
+|1135–1139 CE
+|5 years
+|Usage continued by the [[Emperor Renzong of Western Xia]] upon his ascension to the throne.
+|-
+!colspan="4"|[[Emperor Renzong of Western Xia]]<br/>{{small|(r. 1139–1193 CE)}}
+|-
+|Daqing<br/>{{lang|zh-Hant|大慶}}
+|1140–1143 CE
+|4 years
+|
+|-
+|Renqing<br/>{{lang|zh-Hant|人慶}}
+|1144–1148 CE
+|5 years
+|
+|-
+|Tiansheng<br/>{{lang|zh-Hant|天盛}}
+|1149–1169 CE
+|21 years
+|
+|-
+|Qianyou<br/>{{lang|zh-Hant|乾祐}}
+|1170–1193 CE
+|24 years
+|Usage continued by the [[Emperor Huanzong of Western Xia]] upon his ascension to the throne.
+|-
+!colspan="4"|[[Emperor Huanzong of Western Xia]]<br/>{{small|(r. 1193–1206 CE)}}
+|-
+|Tianqing<br/>{{lang|zh-Hant|天慶}}
+|1194–1206 CE
+|13 years
+|
+|-
+!colspan="4"|[[Emperor Xiangzong of Western Xia]]<br/>{{small|(r. 1206–1211 CE)}}
+|-
+|Yingtian<br/>{{lang|zh-Hant|應天}}
+|1206–1209 CE
+|4 years
+|
+|-
+|Huangjian<br/>{{lang|zh-Hant|皇建}}
+|1210–1211 CE
+|2 years
+|
+|-
+!colspan="4"|[[Emperor Shenzong of Western Xia]]<br/>{{small|(r. 1211–1223 CE)}}
+|-
+|Guangding<br/>{{lang|zh-Hant|光定}}
+|1211–1223 CE
+|13 years
+|
+|-
+!colspan="4"|[[Emperor Xianzong of Western Xia]]<br/>{{small|(r. 1223–1226 CE)}}
+|-
+|Qianding<br/>{{lang|zh-Hant|乾定}}
+|1223–1226 CE
+|4 years
+|
+|-
+!colspan="4"|[[Emperor Mo of Western Xia|Li Xian]]<br/>{{small|(r. 1226–1227 CE)}}
+|-
+|Baoyi<br/>{{lang|zh-Hant|寶義}}
+|1226–1227 CE
+|2 years
+|
+|-
+|Baoqing<br/>{{lang|zh-Hant|寶慶}}
+|''Unknown''
+|''Unknown''
+|
+|-
+|Guangxi<br/>{{lang|zh-Hant|廣僖}}
+|''Unknown''
+|''Unknown''
+|
+|-
+|Qingping<br/>{{lang|zh-Hant|清平}}
+|''Unknown''
+|''Unknown''
+|
+|}
+
+==[[Jin dynasty (1115–1234)|Jin dynasty]]==
+===[[Jin dynasty (1115–1234)|Jin dynasty]]===
+{| class="wikitable"
+|-
+!Era name
+!Period of use
+!Length of use
+!Remark
+|-
+!colspan="4"|[[Emperor Taizu of Jin]]<br/>{{small|(r. 1115–1123 CE)}}
+|-
+|Shouguo<br/>{{lang|zh-Hant|收國}}
+|1115–1116 CE
+|2 years
+|
+|-
+|Tianfu<br/>{{lang|zh-Hant|天輔}}
+|1117–1123 CE
+|7 years
+|
+|-
+!colspan="4"|[[Emperor Taizong of Jin]]<br/>{{small|(r. 1123–1135 CE)}}
+|-
+|Tianhui<br/>{{lang|zh-Hant|天會}}
+|1123–1137 CE
+|15 years
+|Usage continued by the [[Emperor Xizong of Jin]] upon his ascension to the throne.
+|-
+!colspan="4"|[[Emperor Xizong of Jin]]<br/>{{small|(r. 1135–1150 CE)}}
+|-
+|Tianjuan<br/>{{lang|zh-Hant|天眷}}
+|1138–1140 CE
+|3 years
+|
+|-
+|Huangtong<br/>{{lang|zh-Hant|皇統}}
+|1141–1149 CE
+|9 years
+|{{font color|#000000|#DAF2FF|Also used by [[Goryeo]].}}
+|-
+!colspan="4"|[[Wanyan Liang]]<br/>{{small|(r. 1150–1161 CE)}}
+|-
+|Tiande<br/>{{lang|zh-Hant|天德}}
+|1149–1153 CE
+|5 years
+|{{font color|#000000|#DAF2FF|Also used by [[Goryeo]].}}
+|-
+|Zhenyuan<br/>{{lang|zh-Hant|貞元}}
+|1153–1156 CE
+|4 years
+|{{font color|#000000|#DAF2FF|Also used by [[Goryeo]].}}
+|-
+|Zhenglong<br/>{{lang|zh-Hant|正隆}}
+|1156–1161 CE
+|6 years
+|{{font color|#000000|#DAF2FF|Also used by [[Goryeo]].}}
+|-
+!colspan="4"|[[Emperor Shizong of Jin]]<br/>{{small|(r. 1161–1189 CE)}}
+|-
+|Dading<br/>{{lang|zh-Hant|大定}}
+|1161–1189 CE
+|29 years
+|{{font color|#000000|#DAF2FF|Also used by [[Goryeo]].}}
+|-
+|Xingqing<br/>{{lang|zh-Hant|興慶}}
+|''Unknown''
+|''Unknown''
+|
+|-
+!colspan="4"|[[Emperor Zhangzong of Jin]]<br/>{{small|(r. 1189–1208 CE)}}
+|-
+|Mingchang<br/>{{lang|zh-Hant|明昌}}
+|1190–1196 CE
+|7 years
+|{{font color|#000000|#DAF2FF|Also used by [[Goryeo]].}}
+|-
+|Cheng'an<br/>{{lang|zh-Hant|承安}}
+|1196–1200 CE
+|5 years
+|{{font color|#000000|#DAF2FF|Also used by [[Goryeo]].}}
+|-
+|Taihe<br/>{{lang|zh-Hant|泰和}}
+|1201–1208 CE
+|8 years
+|{{font color|#000000|#DAF2FF|Also used by [[Goryeo]].}}
+|-
+|Tianding<br/>{{lang|zh-Hant|天定}}
+|''Unknown''
+|''Unknown''
+|
+|-
+!colspan="4"|[[Wanyan Yongji]]<br/>{{small|(r. 1208–1213 CE)}}
+|-
+|Da'an<br/>{{lang|zh-Hant|大安}}
+|1209–1211 CE
+|3 years
+|{{font color|#000000|#DAF2FF|Also used by [[Goryeo]].}}
+|-
+|Chongqing<br/>{{lang|zh-Hant|崇慶}}
+|1212–1213 CE
+|2 years
+|{{font color|#000000|#DAF2FF|Also used by [[Goryeo]].}}
+|-
+|Zhining<br/>{{lang|zh-Hant|至寧}}
+|1213 CE
+|5 months
+|{{font color|#000000|#DAF2FF|Also used by [[Goryeo]].}}
+|-
+!colspan="4"|[[Emperor Xuanzong of Jin]]<br/>{{small|(r. 1213–1224 CE)}}
+|-
+|Zhenyou<br/>{{lang|zh-Hant|貞祐}}
+|1213–1217 CE
+|5 years
+|{{font color|#000000|#DAF2FF|Also used by [[Goryeo]].}}
+|-
+|Xingding<br/>{{lang|zh-Hant|興定}}
+|1217–1222 CE
+|6 years
+|{{font color|#000000|#DAF2FF|Also used by [[Goryeo]].}}
+|-
+|Yuanguang<br/>{{lang|zh-Hant|元光}}
+|1222–1223 CE
+|2 years
+|{{font color|#000000|#DAF2FF|Also used by [[Goryeo]].}}
+|-
+!colspan="4"|[[Emperor Aizong of Jin]]<br/>{{small|(r. 1224–1234 CE)}}
+|-
+|Zhengda<br/>{{lang|zh-Hant|正大}}
+|1224–1231 CE
+|8 years
+|
+|-
+|Kaixing<br/>{{lang|zh-Hant|開興}}
+|1232 CE
+|4 months
+|
+|-
+|Tianxing<br/>{{lang|zh-Hant|天興}}
+|1232–1234 CE
+|3 years
+|
+|-
+!colspan="4"|[[Emperor Mo of Jin|Wanyan Chenglin]]<br/>{{small|(r. 1234 CE)}}
+|-
+|Shengchang<br/>{{lang|zh-Hant|盛昌}}
+|''Unknown''
+|''Unknown''
+|
+|}
+
+===[[Eastern Liao]]===
+{| class="wikitable"
+|-
+!Era name
+!Period of use
+!Length of use
+!Remark
+|-
+!colspan="4"|Yelü Liuge<br/>{{small|(r. 1213–1220 CE)}}
+|-
+|Yuantong<br/>{{lang|zh-Hant|元統}}
+|1213–1216 CE
+|4 years
+|
+|}
+
+===[[Later Liao]]===
+{| class="wikitable"
+|-
+!Era name
+!Period of use
+!Length of use
+!Remark
+|-
+!colspan="4"|Yelü Sibu<br/>{{small|(r. 1216 CE)}}
+|-
+|Tianwei<br/>{{lang|zh-Hant|天威}}
+|1216 CE
+|1 year
+|Or ''Tiancheng'' ({{lang|zh-Hant|天成}}).
+|-
+!colspan="4"|Yelü Qinu<br/>{{small|(r. 1216 CE; as regent)}}
+|-
+|Tianyou<br/>{{lang|zh-Hant|天祐}}
+|1216 CE
+|1 year
+|
+|-
+!colspan="4"|Yelü Jinshan<br/>{{small|(r. 1216–1217 CE)}}
+|-
+|Tiande<br/>{{lang|zh-Hant|天德}}
+|1216 CE
+|1 year
+|Or ''Tianhui'' ({{lang|zh-Hant|天會}}), ''Tiancheng'' ({{lang|zh-Hant|天成}}).
+|}
+
+===[[Eastern Xia]]===
+{| class="wikitable"
+|-
+!Era name
+!Period of use
+!Length of use
+!Remark
+|-
+!colspan="4"|[[Puxian Wannu]]<br/>{{small|(r. 1215–1233 CE)}}
+|-
+|Tiantai<br/>{{lang|zh-Hant|天泰}}
+|1215–1223 CE
+|9 years
+|
+|-
+|Datong<br/>{{lang|zh-Hant|大同}}
+|1224–1233 CE
+|10 years
+|
+|}
+
+===Other regimes contemporaneous with Jin dynasty===
+{| class="wikitable"
+|-
+!Era name
+!Period of use
+!Length of use
+!Remark
+|-
+!colspan="4"|Aoluo<br/>{{small|(r. 1147 CE)}}
+|-
+|Tianxing<br/>{{lang|zh-Hant|天興}}
+|1147 CE
+|1 year
+|
+|-
+!colspan="4"|Wanyan Yunwen
+|-
+|Tiantong<br/>{{lang|zh-Hant|天統}}
+|''Unknown''
+|''Unknown''
+|
+|-
+!colspan="4"|Yelü Wogan<br/>{{small|(r. 1161–1162 CE)}}
+|-
+|Tianzheng<br/>{{lang|zh-Hant|天正}}
+|1161 CE
+|1 month
+|
+|-
+!colspan="4"|Yelü Deshou<br/>{{small|(r. 1196 CE)}}
+|-
+|Shensheng<br/>{{lang|zh-Hant|身聖}}
+|1196 CE
+|1 month
+|
+|-
+!colspan="4"|Liu Yongchang<br/>{{small|(r. 1214 CE)}}
+|-
+|Tianci<br/>{{lang|zh-Hant|天賜}}
+|1214 CE
+|1 year
+|
+|-
+!colspan="4"|Yang An'er<br/>{{small|(r. 1214 CE)}}
+|-
+|Tianshun<br/>{{lang|zh-Hant|天順}}
+|1214 CE
+|8 months
+|
+|-
+!colspan="4"|Zhang Zhi<br/>{{small|(r. 1215–1217 CE)}}
+|-
+|Xinglong<br/>{{lang|zh-Hant|興隆}}
+|1216–1217 CE
+|2 years
+|Or ''Xinglong'' ({{lang|zh-Hant|興龍}}).
+|-
+!colspan="4"|Hao Ding<br/>{{small|(r. 1216 CE)}}
+|-
+|Shuntian<br/>{{lang|zh-Hant|順天}}
+|1216 CE
+|1 year
+|
+|}
+
+==[[Yuan dynasty]]==
+===[[Yuan dynasty]]===
+{| class="wikitable"
+|-
+!Era name
+!Period of use
+!Length of use
+!Remark
+|-
+!colspan="4"|[[Kublai Khan|Emperor Shizu of Yuan]]<br/>{{small|(r. 1260–1294 CE)}}
+|-
+|Zhongtong<br/>{{lang|zh-Hant|中統}}
+|1260–1264 CE
+|5 years
+|{{font color|#000000|#DAF2FF|Also used by [[Goryeo]].}}
+|-
+|Zhiyuan<br/>{{lang|zh-Hant|至元}}
+|1264–1294 CE
+|31 years
+|{{font color|#000000|#DAF2FF|Also used by [[Goryeo]].}}
+|-
+!colspan="4"|[[Temür Khan|Emperor Chengzong of Yuan]]<br/>{{small|(r. 1294–1307 CE)}}
+|-
+|Yuanzhen<br/>{{lang|zh-Hant|元貞}}
+|1295–1297 CE
+|3 years
+|{{font color|#000000|#DAF2FF|Also used by [[Goryeo]].}}
+|-
+|Dade<br/>{{lang|zh-Hant|大德}}
+|1297–1307 CE
+|11 years
+|Usage continued by the [[Külüg Khan|Emperor Wuzong of Yuan]] upon his ascension to the throne. {{font color|#000000|#DAF2FF|Also used by [[Goryeo]].}}
+|-
+!colspan="4"|[[Külüg Khan|Emperor Wuzong of Yuan]]<br/>{{small|(r. 1307–1311 CE)}}
+|-
+|Zhida<br/>{{lang|zh-Hant|至大}}
+|1308–1311 CE
+|4 years
+|Usage continued by the [[Ayurbarwada Buyantu Khan|Emperor Renzong of Yuan]] upon his ascension to the throne. {{font color|#000000|#DAF2FF|Also used by [[Goryeo]].}}
+|-
+!colspan="4"|[[Ayurbarwada Buyantu Khan|Emperor Renzong of Yuan]]<br/>{{small|(r. 1311–1320 CE)}}
+|-
+|Huangqing<br/>{{lang|zh-Hant|皇慶}}
+|1312–1313 CE
+|2 years
+|{{font color|#000000|#DAF2FF|Also used by [[Goryeo]].}}
+|-
+|Yanyou<br/>{{lang|zh-Hant|延祐}}
+|1314–1320 CE
+|7 years
+|Usage continued by the [[Gegeen Khan|Emperor Yingzong of Yuan]] upon his ascension to the throne. {{font color|#000000|#DAF2FF|Also used by [[Goryeo]].}}
+|-
+!colspan="4"|[[Gegeen Khan|Emperor Yingzong of Yuan]]<br/>{{small|(r. 1320–1323 CE)}}
+|-
+|Zhizhi<br/>{{lang|zh-Hant|至治}}
+|1321–1323 CE
+|3 years
+|Usage continued by the [[Yesün Temür (Yuan dynasty)|Taiding Emperor]] upon his ascension to the throne. {{font color|#000000|#DAF2FF|Also used by [[Goryeo]].}}
+|-
+!colspan="4"|[[Yesün Temür (Yuan dynasty)|Taiding Emperor]]<br/>{{small|(r. 1323–1328 CE)}}
+|-
+|Taiding<br/>{{lang|zh-Hant|泰定}}
+|1324–1328 CE
+|5 years
+|{{font color|#000000|#DAF2FF|Also used by [[Goryeo]].}}
+|-
+|Zhihe<br/>{{lang|zh-Hant|致和}}
+|1328 CE
+|8 months
+|{{font color|#000000|#DAF2FF|Also used by [[Goryeo]].}}
+|-
+!colspan="4"|[[Ragibagh Khan|Tianshun Emperor]]<br/>{{small|(r. 1328 CE)}}
+|-
+|Tianshun<br/>{{lang|zh-Hant|天順}}
+|1328 CE
+|2 months
+|{{font color|#000000|#DAF2FF|Also used by [[Goryeo]].}}
+|-
+!colspan="4"|[[Jayaatu Khan Tugh Temür|Emperor Wenzong of Yuan]]<br/>{{small|(r. 1328–1329 CE; first reign)}}
+|-
+|Tianli<br/>{{lang|zh-Hant|天歷}}
+|1328–1330 CE
+|3 years
+|Usage continued by the [[Khutughtu Khan Kusala|Emperor Mingzong of Yuan]] upon his ascension to the throne. {{font color|#000000|#DAF2FF|Also used by [[Goryeo]].}}
+|-
+!colspan="4"|[[Jayaatu Khan Tugh Temür|Emperor Wenzong of Yuan]]<br/>{{small|(r. 1329–1332 CE; second reign)}}
+|-
+|Zhishun<br/>{{lang|zh-Hant|至順}}
+|1330–1333 CE
+|4 years
+|Usage continued by the [[Rinchinbal Khan|Emperor Ningzong of Yuan]] and the [[Toghon Temür|Emperor Huizong of Yuan]] upon their ascension to the throne. {{font color|#000000|#DAF2FF|Also used by [[Goryeo]].}}
+|-
+!colspan="4"|[[Toghon Temür|Emperor Huizong of Yuan]]<br/>{{small|(r. 1333–1370 CE)}}
+|-
+|Yuantong<br/>{{lang|zh-Hant|元統}}
+|1333–1335 CE
+|3 years
+|{{font color|#000000|#DAF2FF|Also used by [[Goryeo]].}}
+|-
+|Zhiyuan<br/>{{lang|zh-Hant|至元}}
+|1335–1340 CE
+|6 years
+|{{font color|#000000|#DAF2FF|Also used by [[Goryeo]].}}
+|-
+|[[Zhizheng]]<br/>{{lang|zh-Hant|至正}}
+|1341–1370 CE
+|30 years
+|{{font color|#000000|#DAF2FF|Also used by [[Goryeo]].}}
+|}
+
+===[[Northern Yuan]]===
+{| class="wikitable"
+|-
+!Era name
+!Period of use
+!Length of use
+!Remark
+|-
+!colspan="4"|[[Biligtü Khan Ayushiridara|Emperor Zhaozong of Northern Yuan]]<br/>{{small|(r. 1370–1378 CE)}}
+|-
+|Xuanguang<br/>{{lang|zh-Hant|宣光}}
+|1371–1379 CE
+|9 years
+|Usage continued by the [[Uskhal Khan Tögüs Temür|Tianyuan Emperor]] upon his ascension to the throne. {{font color|#000000|#DAF2FF|Also used by [[Goryeo]].}}
+|-
+!colspan="4"|[[Uskhal Khan Tögüs Temür|Tianyuan Emperor]]<br/>{{small|(r. 1378–1388 CE)}}
+|-
+|Tianyuan<br/>{{lang|zh-Hant|天元}}
+|1379–1388 CE
+|10 years
+|
+|-
+!colspan="4"|[[Esen Taishi|Choros Esen]]<br/>{{small|(r. 1453–1457 CE)}}
+|-
+|Tianyuan<br/>{{lang|zh-Hant|添元}}
+|1453–1457 CE
+|5 years
+|Or ''Tianyuan'' ({{lang|zh-Hant|天元}}).
+|}
+
+===[[Xu Shouhui|Tianwan]]===
+{| class="wikitable"
+|-
+!Era name
+!Period of use
+!Length of use
+!Remark
+|-
+!colspan="4"|[[Xu Shouhui]]<br/>{{small|(r. 1351–1360 CE)}}
+|-
+|Zhiping<br/>{{lang|zh-Hant|治平}}
+|1351–1355 CE
+|5 years
+|Usage might be from 1351 CE to 1354 CE, for a total length of 4 years.
+|-
+|Taiping<br/>{{lang|zh-Hant|太平}}
+|1356–1358 CE
+|3 years
+|Usage might be in 1358 CE, for a total length of 1 year.
+|-
+|Tianqi<br/>{{lang|zh-Hant|天啟}}
+|1356–1359 CE
+|4 years
+|{{font color|#000000|#DAF2FF|Also used by the [[Ming Xia]].}}
+|-
+|Tianding<br/>{{lang|zh-Hant|天定}}
+|1359–1360 CE
+|2 years
+|
+|}
+
+===[[Zhang Shicheng|Zhang Zhou]]===
+{| class="wikitable"
+|-
+!Era name
+!Period of use
+!Length of use
+!Remark
+|-
+!colspan="4"|[[Zhang Shicheng]]<br/>{{small|(r. 1354–1367 CE)}}
+|-
+|Tianyou<br/>{{lang|zh-Hant|天佑}}
+|1354–1357 CE
+|4 years
+|Or ''Tianyou'' ({{lang|zh-Hant|天祐}}).
+|}
+
+===Han Song===
+{| class="wikitable"
+|-
+!Era name
+!Period of use
+!Length of use
+!Remark
+|-
+!colspan="4"|[[Han Lin'er]]<br/>{{small|(r. 1355–1366 CE)}}
+|-
+|[[Longfeng (Han Lin'er)|Longfeng]]<br/>{{lang|zh-Hant|龍鳳}}
+|1355–1366 CE
+|12 years
+|
+|}
+
+===[[Chen Han]]===
+{| class="wikitable"
+|-
+!Era name
+!Period of use
+!Length of use
+!Remark
+|-
+!colspan="4"|[[Chen Youliang]]<br/>{{small|(r. 1360–1363 CE)}}
+|-
+|Dayi<br/>{{lang|zh-Hant|大義}}
+|1360–1363 CE
+|4 years
+|
+|-
+|Dading<br/>{{lang|zh-Hant|大定}}
+|''Unknown''
+|''Unknown''
+|
+|-
+!colspan="4"|[[Chen Li (emperor)|Chen Li]]<br/>{{small|(r. 1363–1364 CE)}}
+|-
+|Deshou<br/>{{lang|zh-Hant|德壽}}
+|1363–1364 CE
+|2 years
+|
+|}
+
+===[[Ming Xia]]===
+{| class="wikitable"
+|-
+!Era name
+!Period of use
+!Length of use
+!Remark
+|-
+!colspan="4"|[[Ming Yuzhen|Emperor Taizu of Ming Xia]]<br/>{{small|(r. 1361–1366 CE)}}
+|- style="background:#DAF2FF;"
+|Tianqi<br/>{{lang|zh-Hant|天啟}}
+|1361–1362 CE
+|2 years
+|Adopted the era name of [[Xu Shouhui]].
+|-
+|Tiantong<br/>{{lang|zh-Hant|天統}}
+|1363–1366 CE
+|4 years
+|
+|-
+!colspan="4"|Ming Sheng<br/>{{small|(r. 1366–1371 CE)}}
+|-
+|Kaixi<br/>{{lang|zh-Hant|開熙}}
+|1367–1371 CE
+|5 years
+|
+|}
+
+===Other regimes contemporaneous with Yuan dynasty===
+{| class="wikitable"
+|-
+!Era name
+!Period of use
+!Length of use
+!Remark
+|-
+!colspan="4"|Du Keyong<br/>{{small|(r. 1280 CE)}}
+|-
+|Wancheng<br/>{{lang|zh-Hant|萬乘}}
+|1280 CE
+|1 month
+|
+|-
+!colspan="4"|Chen Diaoyan<br/>{{small|(r. 1281 CE)}}
+|-
+|Changtai<br/>{{lang|zh-Hant|昌泰}}
+|1281 CE
+|4 months
+|
+|-
+!colspan="4"|Lin Guifang, Zhao Liangkou<br/>{{small|(r. 1283 CE)}}
+|-
+|Yankang<br/>{{lang|zh-Hant|延康}}
+|1283 CE
+|1 month
+|
+|-
+!colspan="4"|Huang Hua<br/>{{small|(r. 1283–1284 CE)}}
+|- style="background:#DAF2FF;"
+|Xiangxing<br/>{{lang|zh-Hant|祥興}}
+|1283–1284 CE
+|2 years
+|Adopted the era name of [[Zhao Bing]].
+|-
+!colspan="4"|Yang Zhenlong<br/>{{small|(r. 1289 CE)}}
+|-
+|Anding<br/>{{lang|zh-Hant|安定}}
+|1289 CE
+|9 months
+|
+|-
+!colspan="4"|Chen Kongya<br/>{{small|(r. 1297 CE)}}
+|-
+|Zhengzhi<br/>{{lang|zh-Hant|正治}}
+|1297 CE
+|1 month
+|
+|-
+!colspan="4"|Zhu Guangqing<br/>{{small|(r. 1337 CE)}}
+|-
+|Chifu<br/>{{lang|zh-Hant|赤符}}
+|1337 CE
+|7 months
+|
+|-
+!colspan="4"|Zhao Pusheng
+|-
+|Zhengshuo<br/>{{lang|zh-Hant|正朔}}
+|''Unknown''
+|''Unknown''
+|
+|}
+
+==[[Ming dynasty]]==
+{{Main|List of Ming dynasty era names}}
+===[[Ming dynasty]]===
+{| class="wikitable"
+|-
+!Era name
+!Period of use
+!Length of use
+!Remark
+|-
+!colspan="4"|[[Hongwu Emperor]]<br/>{{small|(r. 1368–1398 CE)}}
+|-
+|[[Hongwu]]<br/>{{lang|zh-Hant|洪武}}
+|1368–1398 CE
+|31 years
+|Usage continued by the [[Jianwen Emperor]] upon his ascension to the throne. Usage later restored during the reign of the [[Yongle Emperor]]. {{font color|#000000|#DAF2FF|Also used by [[Goryeo]], [[Joseon]], the [[Chūzan|Satto dynasty]], the [[King of Sanhoku|Haniji dynasty]], and the [[Ōzato Dynasty|Ōzato dynasty]].}}
+|-
+!colspan="4"|[[Jianwen Emperor]]<br/>{{small|(r. 1398–1402 CE)}}
+|-
+|Jianwen<br/>{{lang|zh-Hant|建文}}
+|1399–1402 CE
+|4 years
+|{{font color|#000000|#DAF2FF|Also used by [[Joseon]], the [[Chūzan|Satto dynasty]], the [[King of Sanhoku|Haniji dynasty]], and the [[Ōzato Dynasty|Ōzato dynasty]].}}
+|-
+!colspan="4"|[[Yongle Emperor]]<br/>{{small|(r. 1402–1424 CE)}}
+|-
+|[[Hongwu]]<br/>{{lang|zh-Hant|洪武}}
+|1402 CE
+|7 months
+|Restored the era name of the [[Hongwu Emperor]]. {{font color|#000000|#DAF2FF|Also used by [[Joseon]], the [[Chūzan|Satto dynasty]], the [[King of Sanhoku|Haniji dynasty]], and the [[Ōzato Dynasty|Ōzato dynasty]].}}
+|-
+|Yongle<br/>{{lang|zh-Hant|永樂}}
+|1403–1424 CE
+|22 years
+|Usage continued by the [[Hongxi Emperor]] upon his ascension to the throne. {{font color|#000000|#DAF2FF|Also used by [[Joseon]], the [[Satto dynasty]] of [[Chūzan]], the [[Haniji dynasty]] of [[Hokuzan]], the [[Ōzato dynasty]] of [[Nanzan]], and the [[First Shō dynasty]] of [[Ryūkyū Kingdom]].}}
+|-
+!colspan="4"|[[Hongxi Emperor]]<br/>{{small|(r. 1424–1425 CE)}}
+|-
+|[[Hongxi]]<br/>{{lang|zh-Hant|洪熙}}
+|1425 CE
+|1 year
+|Usage continued by the [[Xuande Emperor]] upon his ascension to the throne. {{font color|#000000|#DAF2FF|Also used by [[Joseon]], the [[Ōzato dynasty]] of [[Nanzan]], and the [[First Shō dynasty]] of [[Ryūkyū Kingdom]].}}
+|-
+!colspan="4"|[[Xuande Emperor]]<br/>{{small|(r. 1425–1435 CE)}}
+|-
+|[[Xuande]]<br/>{{lang|zh-Hant|宣德}}
+|1426–1435 CE
+|10 years
+|Usage continued by the [[Emperor Yingzong of Ming]] upon his ascension to the throne. {{font color|#000000|#DAF2FF|Also used by [[Joseon]], the [[Ōzato dynasty]] of [[Nanzan]], and the [[First Shō dynasty]] of [[Ryūkyū Kingdom]].}}
+|-
+!colspan="4"|[[Emperor Yingzong of Ming]]<br/>{{small|(r. 1435–1449 CE; first reign)}}
+|-
+|[[Zhengtong (era)|Zhengtong]]<br/>{{lang|zh-Hant|正統}}
+|1436–1449 CE
+|14 years
+|Usage continued by the [[Jingtai Emperor]] upon his ascension to the throne. {{font color|#000000|#DAF2FF|Also used by [[Joseon]] and the [[First Shō dynasty]] of [[Ryūkyū Kingdom]].}}
+|-
+!colspan="4"|[[Jingtai Emperor]]<br/>{{small|(r. 1449–1457 CE)}}
+|-
+|[[Jingtai (era)|Jingtai]]<br/>{{lang|zh-Hant|景泰}}
+|1450–1457 CE
+|8 years
+|{{font color|#000000|#DAF2FF|Also used by [[Joseon]] and the [[First Shō dynasty]] of [[Ryūkyū Kingdom]].}}
+|-
+!colspan="4"|[[Emperor Yingzong of Ming]]<br/>{{small|(r. 1457–1464 CE; second reign)}}
+|-
+|[[Tianshun (Ming dynasty)|Tianshun]]<br/>{{lang|zh-Hant|天順}}
+|1457–1464 CE
+|8 years
+|Usage continued by the [[Chenghua Emperor]] upon his ascension to the throne. {{font color|#000000|#DAF2FF|Also used by [[Joseon]] and the [[First Shō dynasty]] of [[Ryūkyū Kingdom]].}}
+|-
+!colspan="4"|[[Chenghua Emperor]]<br/>{{small|(r. 1464–1487 CE)}}
+|-
+|[[Chenghua (era)|Chenghua]]<br/>{{lang|zh-Hant|成化}}
+|1465–1487 CE
+|23 years
+|Usage continued by the [[Hongzhi Emperor]] upon his ascension to the throne. {{font color|#000000|#DAF2FF|Also used by [[Joseon]], the [[First Shō dynasty|First]] and the [[Second Shō dynasty]] of [[Ryūkyū Kingdom]].}}
+|-
+!colspan="4"|[[Hongzhi Emperor]]<br/>{{small|(r. 1487–1505 CE)}}
+|-
+|[[Hongzhi (era)|Hongzhi]]<br/>{{lang|zh-Hant|弘治}}
+|1488–1505 CE
+|18 years
+|Usage continued by the [[Zhengde Emperor]] upon his ascension to the throne. {{font color|#000000|#DAF2FF|Also used by [[Joseon]] and the [[Second Shō dynasty]] of [[Ryūkyū Kingdom]].}}
+|-
+!colspan="4"|[[Zhengde Emperor]]<br/>{{small|(r. 1505–1521 CE)}}
+|-
+|[[Zhengde]]<br/>{{lang|zh-Hant|正德}}
+|1506–1521 CE
+|16 years
+|Usage continued by the [[Jiajing Emperor]] upon his ascension to the throne. {{font color|#000000|#DAF2FF|Also used by [[Joseon]] and the [[Second Shō dynasty]] of [[Ryūkyū Kingdom]].}}
+|-
+!colspan="4"|[[Jiajing Emperor]]<br/>{{small|(r. 1521–1566 CE)}}
+|-
+|[[Jiajing]]<br/>{{lang|zh-Hant|嘉靖}}
+|1522–1566 CE
+|45 years
+|{{font color|#000000|#DAF2FF|Also used by [[Joseon]] and the [[Second Shō dynasty]] of [[Ryūkyū Kingdom]].}}
+|-
+!colspan="4"|[[Longqing Emperor]]<br/>{{small|(r. 1567–1572 CE)}}
+|-
+|[[Longqing]]<br/>{{lang|zh-Hant|隆慶}}
+|1567–1572 CE
+|6 years
+|Usage continued by the [[Wanli Emperor]] upon his ascension to the throne. {{font color|#000000|#DAF2FF|Also used by [[Joseon]] and the [[Second Shō dynasty]] of [[Ryūkyū Kingdom]].}}
+|-
+!colspan="4"|[[Wanli Emperor]]<br/>{{small|(r. 1572–1620 CE)}}
+|-
+|[[Wanli (era)|Wanli]]<br/>{{lang|zh-Hant|萬曆}}
+|1573–1620 CE
+|48 years
+|{{font color|#000000|#DAF2FF|Also used by [[Joseon]] and the [[Second Shō dynasty]] of [[Ryūkyū Kingdom]].}}
+|-
+!colspan="4"|[[Taichang Emperor]]<br/>{{small|(r. 1620 CE)}}
+|-
+|[[Taichang (era)|Taichang]]<br/>{{lang|zh-Hant|泰昌}}
+|1620–1621 CE
+|4 months
+|Usage continued by the [[Tianqi Emperor]] upon his ascension to the throne. {{font color|#000000|#DAF2FF|Also used by [[Joseon]] and the [[Second Shō dynasty]] of [[Ryūkyū Kingdom]].}}
+|-
+!colspan="4"|[[Tianqi Emperor]]<br/>{{small|(r. 1620–1627 CE)}}
+|-
+|[[Tianqi (era)|Tianqi]]<br/>{{lang|zh-Hant|天啟}}
+|1621–1627 CE
+|7 years
+|Usage continued by the [[Chongzhen Emperor]] upon his ascension to the throne. {{font color|#000000|#DAF2FF|Also used by [[Joseon]] and the [[Second Shō dynasty]] of [[Ryūkyū Kingdom]].}}
+|-
+!colspan="4"|[[Chongzhen Emperor]]<br/>{{small|(r. 1627–1644 CE)}}
+|-
+|[[Chongzhen]]<br/>{{lang|zh-Hant|崇禎}}
+|1628–1644 CE
+|17 years
+|{{font color|#000000|#DAF2FF|Also used by [[Joseon]] and the [[Second Shō dynasty]] of [[Ryūkyū Kingdom]].}}
+|}
+
+===[[Southern Ming]]===
+{| class="wikitable"
+|-
+!Era name
+!Period of use
+!Length of use
+!Remark
+|-
+!colspan="4"|[[Zhu Yousong|Hongguang Emperor]]<br/>{{small|(r. 1644–1645 CE)}}
+|-
+|[[Hongguang]]<br/>{{lang|zh-Hant|弘光}}
+|1645 CE
+|5 months
+|{{font color|#000000|#DAF2FF|Also used by the [[Second Shō dynasty]] of [[Ryūkyū Kingdom]].}}
+|-
+!colspan="4"|[[Zhu Yujian|Longwu Emperor]]<br/>{{small|(r. 1645–1646 CE)}}
+|-
+|[[Longwu]]<br/>{{lang|zh-Hant|隆武}}
+|1645–1646 CE
+|2 years
+|{{font color|#000000|#DAF2FF|Also used by the [[Second Shō dynasty]] of [[Ryūkyū Kingdom]] and Zhang Huashan.}}
+|-
+!colspan="4"|[[Zhu Hengjia]]<br/>{{small|(r. 1645 CE; as regent)}}
+|-
+|[[Xingye (Zhu Hengjia)|Xingye]]<br/>{{lang|zh-Hant|興業}}
+|1645 CE
+|1 month
+|
+|-
+!colspan="4"|[[Zhu Yihai]]<br/>{{small|(r. 1645–1653 CE; as regent)}}
+|-
+|[[Jianguo Lu]]<br/>{{lang|zh-Hant|監國魯}}
+|1646–1653 CE
+|8 years
+|Not an actual era name, but used in place of an era name and served a similar function; ''Jianguo'' literally means "regency" and ''Lu'' was derived from Zhi Yihai's noble title "Prince of Lu".
+|-
+!colspan="4"|[[Zhu Yuyue|Shaowu Emperor]]<br/>{{small|(r. 1646–1647 CE)}}
+|-
+|Shaowu<br/>{{lang|zh-Hant|紹武}}
+|''did not use''
+|''did not use''
+|The era name ''Shaowu'' was originally planned to supersede ''[[Longwu]]'' ({{lang|zh-Hant|隆武}}) in 1647 CE, but the Shaowu Emperor's reign ended before the era name was put into effective use.
+|-
+!colspan="4"|[[Zhu Youlang|Yongli Emperor]]<br/>{{small|(r. 1646–1662 CE)}}
+|-
+|[[Zhu Youlang|Yongli]]<br/>{{lang|zh-Hant|永曆}}
+|1647–1662 CE
+|16 years
+|{{font color|#000000|#DAF2FF|Also used by the [[Kingdom of Tungning]] and Wang Guangtai.}}
+|-
+!colspan="4"|[[Zhu Benli|Dingwu Emperor]]<br/>{{small|(r. 1646–1664 CE)}}
+|-
+|[[Dingwu (era)|Dingwu]]<br/>{{lang|zh-Hant|定武}}
+|1646–1663 CE
+|18 years
+|
+|-
+!colspan="4"|[[Zhu Changqing]]<br/>{{small|(r. 1648–1649 CE; as regent)}}
+|-
+|[[Dongwu (Zhu Changqing)|Dongwu]]<br/>{{lang|zh-Hant|東武}}
+|1648 CE
+|1 year
+|
+|}
+
+===[[Shun dynasty]]===
+{| class="wikitable"
+|-
+!Era name
+!Period of use
+!Length of use
+!Remark
+|-
+!colspan="4"|[[Li Zicheng]]<br/>{{small|(r. 1644–1645 CE)}}
+|-
+|Yongchang<br/>{{lang|zh-Hant|永昌}}
+|1644–1645 CE
+|2 years
+|{{font color|#000000|#DAF2FF|Also used by Gong Wencai.}}
+|}
+
+===[[Kingdom of Tungning]]===
+{| class="wikitable"
+|-
+!Era name
+!Period of use
+!Length of use
+!Remark
+|-
+!colspan="4"|[[Koxinga|Zheng Chenggong]]<br/>{{small|(r. 1662 CE)}}
+|- style="background:#DAF2FF;"
+|[[Zhu Youlang|Yongli]]<br/>{{lang|zh-Hant|永曆}}
+|1662 CE
+|1 year
+|Adopted the era name of the [[Zhu Youlang|Yongli Emperor]].
+|-
+!colspan="4"|Zheng Xi<br/>{{small|(r. 1662 CE; as regent)}}
+|- style="background:#DAF2FF;"
+|[[Zhu Youlang|Yongli]]<br/>{{lang|zh-Hant|永曆}}
+|1662 CE
+|1 year
+|Adopted the era name of the [[Zhu Youlang|Yongli Emperor]].
+|-
+!colspan="4"|[[Zheng Jing]]<br/>{{small|(r. 1662–1681 CE)}}
+|- style="background:#DAF2FF;"
+|[[Zhu Youlang|Yongli]]<br/>{{lang|zh-Hant|永曆}}
+|1662–1681 CE
+|20 years
+|Adopted the era name of the [[Zhu Youlang|Yongli Emperor]].
+|-
+!colspan="4"|[[Zheng Kezang]]<br/>{{small|(r. 1681 CE; as regent)}}
+|- style="background:#DAF2FF;"
+|[[Zhu Youlang|Yongli]]<br/>{{lang|zh-Hant|永曆}}
+|1681 CE
+|1 year
+|Adopted the era name of the [[Zhu Youlang|Yongli Emperor]].
+|-
+!colspan="4"|[[Zheng Keshuang]]<br/>{{small|(r. 1681–1683 CE)}}
+|- style="background:#DAF2FF;"
+|[[Zhu Youlang|Yongli]]<br/>{{lang|zh-Hant|永曆}}
+|1681–1683 CE
+|3 years
+|Adopted the era name of the [[Zhu Youlang|Yongli Emperor]].
+|}
+
+===Other regimes contemporaneous with Ming dynasty===
+{| class="wikitable"
+|-
+!Era name
+!Period of use
+!Length of use
+!Remark
+|-
+!colspan="4"|Peng Yulin<br/>{{small|(r. 1386 CE)}}
+|-
+|Tianding<br/>{{lang|zh-Hant|天定}}
+|1386 CE
+|1 year
+|
+|-
+!colspan="4"|Tian Jiucheng<br/>{{small|(r. 1397 CE)}}
+|-
+|Longfeng<br/>{{lang|zh-Hant|龍鳳}}
+|1397 CE
+|1 year
+|
+|-
+!colspan="4"|Phạm Ngọc<br/>{{small|(r. 1417–1420 CE)}}
+|-
+|Yongning<br/>{{lang|zh-Hant|永寧}}
+|1417–1420 CE
+|4 years
+|
+|-
+!colspan="4"|Lê Ngạ<br/>{{small|(r. 1420 CE)}}
+|-
+|Yongtian<br/>{{lang|zh-Hant|永天}}
+|1420 CE
+|1 year
+|
+|-
+!colspan="4"|Chen Jianhu<br/>{{small|(r. 1448–1449 CE)}}
+|-
+|Taiding<br/>{{lang|zh-Hant|泰定}}
+|1448–1449 CE
+|2 years
+|
+|-
+!colspan="4"|Huang Xiaoyang<br/>{{small|(r. 1449–1450 CE)}}
+|-
+|Dongyang<br/>{{lang|zh-Hant|東陽}}
+|1449–1450 CE
+|2 years
+|
+|-
+!colspan="4"|Zhu Huizha<br/>{{small|(r. 1451 CE)}}
+|-
+|Xuanyuan<br/>{{lang|zh-Hant|玄元}}
+|1451 CE
+|1 month
+|Or ''Xuanwu'' ({{lang|zh-Hant|玄武}}), ''Xuanwu'' ({{lang|zh-Hant|𢆯武}}), ''Yuanwu'' ({{lang|zh-Hant|元武}}).
+|-
+!colspan="4"|Li Zhen<br/>{{small|(r. 1456 CE)}}
+|-
+|Tianshun<br/>{{lang|zh-Hant|天順}}
+|1456 CE
+|1 year
+|
+|-
+!colspan="4"|Wang Bin<br/>{{small|(r. 1457 CE)}}
+|-
+|Tianxiu<br/>{{lang|zh-Hant|天繡}}
+|1457 CE–?
+|''Unknown''
+|
+|-
+!colspan="4"|Li Tianbao<br/>{{small|(r. 1460 CE)}}
+|-
+|Wulie<br/>{{lang|zh-Hant|武烈}}
+|1460 CE
+|1 year
+|
+|-
+!colspan="4"|Liu Tong<br/>{{small|(r. 1465–1466 CE)}}
+|-
+|Desheng<br/>{{lang|zh-Hant|德勝}}
+|1465–1466 CE
+|2 years
+|
+|-
+!colspan="4"|Cao Fu<br/>{{small|(r. 1511–1512 CE)}}
+|-
+|Mingzheng<br/>{{lang|zh-Hant|明正}}
+|1511 CE
+|1 year
+|
+|-
+!colspan="4"|[[Zhu Chenhao]]<br/>{{small|(r. 1519 CE)}}
+|-
+|[[Shunde (Zhu Chenhao)|Shunde]]<br/>{{lang|zh-Hant|順德}}
+|1519 CE
+|2 months
+|
+|-
+!colspan="4"|Duan Chang<br/>{{small|(r. 1520 CE)}}
+|-
+|Dashunpingding<br/>{{lang|zh-Hant|大順平定}}
+|1520 CE
+|1 year
+|Or ''Dashun'' ({{lang|zh-Hant|大順}}), ''Pingding'' ({{lang|zh-Hant|平定}}).
+|-
+!colspan="4"|Tian Bin<br/>{{small|(r. 1546 CE)}}
+|-
+|Tianyuan<br/>{{lang|zh-Hant|天淵}}
+|1546 CE
+|1 year
+|
+|-
+!colspan="4"|Zhang Lian<br/>{{small|(r. 1560–1562 CE)}}
+|-
+|Zaoli<br/>{{lang|zh-Hant|造歷}}
+|1560–1562 CE
+|3 years
+|
+|-
+|Longfei<br/>{{lang|zh-Hant|龍飛}}
+|''Unknown''
+|''Unknown''
+|
+|-
+!colspan="4"|Cai Boguan<br/>{{small|(r. 1565–1566 CE)}}
+|-
+|Dabao<br/>{{lang|zh-Hant|大寶}}
+|1565–1566 CE
+|2 months
+|
+|-
+!colspan="4"|Li Xin<br/>{{small|(r. 1619 CE)}}
+|-
+|Hongwu<br/>{{lang|zh-Hant|洪武}}
+|1619 CE
+|1 month
+|
+|-
+!colspan="4"|Li Wen<br/>{{small|(r. 1619 CE)}}
+|-
+|Zhenhun<br/>{{lang|zh-Hant|真混}}
+|1619 CE
+|1 month
+|Or ''Tianzhenhun'' ({{lang|zh-Hant|天真混}}).
+|-
+!colspan="4"|She Chongming<br/>{{small|(r. 1621–1629 CE)}}
+|-
+|Ruiying<br/>{{lang|zh-Hant|瑞應}}
+|1621 CE
+|1 month
+|
+|-
+!colspan="4"|Moqi De<br/>{{small|(r. 1622 CE)}}
+|-
+|Xuanjing<br/>{{lang|zh-Hant|玄靜}}
+|1622 CE
+|1 year
+|Or ''Xuanjing'' ({{lang|zh-Hant|𢆯靜}}), ''Yuanjing'' ({{lang|zh-Hant|元靜}}).
+|-
+!colspan="4"|Xu Hongru<br/>{{small|(r. 1622 CE)}}
+|-
+|Dachengxingsheng<br/>{{lang|zh-Hant|大成興勝}}
+|1622 CE
+|6 months
+|Or ''Dachengxingsheng'' ({{lang|zh-Hant|大乘興勝}}), ''Dachengxingsheng'' ({{lang|zh-Hant|大成興盛}}), ''Dachengxingsheng'' ({{lang|zh-Hant|大乘興盛}}), ''Xingsheng'' ({{lang|zh-Hant|興勝}}).
+|-
+!colspan="4"|Zhang Weiyuan<br/>{{small|(r. 1628 CE)}}
+|-
+|Yongxing<br/>{{lang|zh-Hant|永興}}
+|1628 CE
+|1 year
+|
+|-
+!colspan="4"|Gao Yingxiang<br/>{{small|(r. 1635 CE)}}
+|-
+|Xingwu<br/>{{lang|zh-Hant|興武}}
+|1635 CE
+|1 year
+|
+|-
+!colspan="4"|Zhang Puwei<br/>{{small|(r. 1637–1638 CE)}}
+|-
+|Tianyun<br/>{{lang|zh-Hant|天運}}
+|1637 CE
+|1 year
+|
+|-
+!colspan="4"|[[Zhang Xianzhong]]<br/>{{small|(r. 1644–1646 CE)}}
+|-
+|Dashun<br/>{{lang|zh-Hant|大順}}
+|1644–1646 CE
+|3 years
+|Sometimes erroneously referred to as ''Tianshun'' ({{lang|zh-Hant|天順}}).
+|-
+|Yiwu<br/>{{lang|zh-Hant|義武}}
+|''Unknown''
+|''Unknown''
+|
+|-
+!colspan="4"|Zhu Cilang<br/>{{small|(r. 1644 CE)}}
+|-
+|Yixing<br/>{{lang|zh-Hant|義興}}
+|1644 CE
+|1 month
+|
+|-
+!colspan="4"|Ma Xiang
+|-
+|Yuanmingdabao<br/>{{lang|zh-Hant|圓明大寶}}
+|''Unknown''
+|''Unknown''
+|
+|-
+!colspan="4"|Xingwu
+|-
+|Hongrun<br/>{{lang|zh-Hant|宏閏}}
+|''Unknown''
+|''Unknown''
+|
+|-
+!colspan="4"|Mingben
+|-
+|Yong'an<br/>{{lang|zh-Hant|湧安}}
+|''Unknown''
+|''Unknown''
+|
+|}
+
+==[[Qing dynasty]]==
+===[[Later Jin (1616–1636)|Later Jin]]===
+{| class="wikitable"
+|-
+!Era name
+!Period of use
+!Length of use
+!Remark
+|-
+!colspan="4"|[[Nurhaci|Tianming Khan]]<br/>{{small|(r. 1616–1626 CE)}}
+|-
+|Tianming<br/>{{lang|zh-Hant|天命}}
+|1616–1626 CE
+|11 years
+|
+|-
+!colspan="4"|[[Hong Taiji|Tiancong Khan]]<br/>{{small|(r. 1626–1636 CE; as Khan of Later Jin)}}
+|-
+|Tiancong<br/>{{lang|zh-Hant|天聰}}
+|1627–1636 CE
+|10 years
+|
+|}
+
+===[[Qing dynasty]]===
+{| class="wikitable"
+|-
+!Era name
+!Period of use
+!Length of use
+!Remark
+|-
+!colspan="4"|[[Hong Taiji|Emperor Taizong of Qing]]<br/>{{small|(r. 1636–1643 CE; as Emperor of Qing)}}
+|-
+|Chongde<br/>{{lang|zh-Hant|崇德}}
+|1636–1643 CE
+|8 years
+|Usage continued by the [[Shunzhi Emperor]] upon his ascension to the throne. {{font color|#000000|#DAF2FF|Also used by [[Joseon]].}}
+|-
+!colspan="4"|[[Shunzhi Emperor]]<br/>{{small|(r. 1643–1661 CE)}}
+|-
+|Shunzhi<br/>{{lang|zh-Hant|順治}}
+|1644–1661 CE
+|18 years
+|Usage continued by the [[Kangxi Emperor]] upon his ascension to the throne. {{font color|#000000|#DAF2FF|Also used by [[Joseon]] and the [[Second Shō dynasty]] of [[Ryūkyū Kingdom]].}}
+|-
+!colspan="4"|[[Kangxi Emperor]]<br/>{{small|(r. 1661–1722 CE)}}
+|-
+|Kangxi<br/>{{lang|zh-Hant|康熙}}
+|1662–1722 CE
+|61 years
+|Usage continued by the [[Yongzheng Emperor]] upon his ascension to the throne. {{font color|#000000|#DAF2FF|Also used by [[Joseon]] and the [[Second Shō dynasty]] of [[Ryūkyū Kingdom]].}}
+|-
+!colspan="4"|[[Yongzheng Emperor]]<br/>{{small|(r. 1722–1735 CE)}}
+|-
+|Yongzheng<br/>{{lang|zh-Hant|雍正}}
+|1723–1735 CE
+|13 years
+|Usage continued by the [[Qianlong Emperor]] upon his ascension to the throne. {{font color|#000000|#DAF2FF|Also used by [[Joseon]] and the [[Second Shō dynasty]] of [[Ryūkyū Kingdom]].}}
+|-
+!colspan="4"|[[Qianlong Emperor]]<br/>{{small|(r. 1735–1796 CE)}}
+|-
+|Qianlong<br/>{{lang|zh-Hant|乾隆}}
+|1736–1795 CE
+|60 years
+|Usage continued within the [[Forbidden City]] until 1799 CE, for a total length of 64 years. {{font color|#000000|#DAF2FF|Also used by [[Joseon]] and the [[Second Shō dynasty]] of [[Ryūkyū Kingdom]].}}
+|-
+!colspan="4"|[[Jiaqing Emperor]]<br/>{{small|(r. 1796–1820 CE)}}
+|-
+|Jiaqing<br/>{{lang|zh-Hant|嘉慶}}
+|1796–1820 CE
+|25 years
+|Usage continued by the [[Daoguang Emperor]] upon his ascension to the throne. {{font color|#000000|#DAF2FF|Also used by [[Joseon]] and the [[Second Shō dynasty]] of [[Ryūkyū Kingdom]].}}
+|-
+!colspan="4"|[[Daoguang Emperor]]<br/>{{small|(r. 1820–1850 CE)}}
+|-
+|Daoguang<br/>{{lang|zh-Hant|道光}}
+|1821–1850 CE
+|30 years
+|Usage continued by the [[Xianfeng Emperor]] upon his ascension to the throne. {{font color|#000000|#DAF2FF|Also used by [[Joseon]] and the [[Second Shō dynasty]] of [[Ryūkyū Kingdom]].}}
+|-
+!colspan="4"|[[Xianfeng Emperor]]<br/>{{small|(r. 1850–1861 CE)}}
+|-
+|Xianfeng<br/>{{lang|zh-Hant|咸豐}}
+|1851–1861 CE
+|11 years
+|{{font color|#000000|#DAF2FF|Also used by [[Joseon]] and the [[Second Shō dynasty]] of [[Ryūkyū Kingdom]].}}
+|-
+!colspan="4"|[[Tongzhi Emperor]]<br/>{{small|(r. 1861–1875 CE)}}
+|-
+|Tongzhi<br/>{{lang|zh-Hant|同治}}
+|1862–1875 CE
+|14 years
+|Originally proposed as ''Qixiang'' ({{lang|zh-Hant|祺祥}}). {{font color|#000000|#DAF2FF|Also used by [[Joseon]] and the [[Second Shō dynasty]] of [[Ryūkyū Kingdom]].}}
+|-
+!colspan="4"|[[Guangxu Emperor]]<br/>{{small|(r. 1875–1908 CE)}}
+|-
+|Guangxu<br/>{{lang|zh-Hant|光緒}}
+|1875–1908 CE
+|34 years
+|Usage continued by the [[Puyi|Xuantong Emperor]] upon his ascension to the throne. {{font color|#000000|#DAF2FF|Also used by [[Joseon]].}}
+|-
+!colspan="4"|[[Puyi|Xuantong Emperor]]<br/>{{small|(r. 1908–1912 CE; first reign as Emperor of Qing)}}
+|-
+|Xuantong<br/>{{lang|zh-Hant|宣統}}
+|1909–1912 CE
+|4 years
+|Usage later restored during the [[Manchu Restoration]].
+|}
+
+===Wu Zhou===
+{| class="wikitable"
+|-
+!Era name
+!Period of use
+!Length of use
+!Remark
+|-
+!colspan="4"|[[Wu Sangui|Emperor Taizu of Wu Zhou]]<br/>{{small|(r. 1678 CE)}}
+|-
+|Zhaowu<br/>{{lang|zh-Hant|昭武}}
+|1678 CE
+|6 months
+|
+|-
+|Liyong<br/>{{lang|zh-Hant|利用}}
+|''Unknown''
+|''Unknown''
+|Might not be an era name.
+|-
+!colspan="4"|Wu Shifan<br/>{{small|(r. 1678–1681 CE)}}
+|-
+|Honghua<br/>{{lang|zh-Hant|洪化}}
+|1678–1681 CE
+|4 years
+|
+|}
+
+===[[Taiping Heavenly Kingdom]]===
+{| class="wikitable"
+|-
+!Era name
+!Period of use
+!Length of use
+!Remark
+|-
+!colspan="4"|[[Hong Xiuquan]]<br/>{{small|(r. 1851–1864 CE)}}
+|-
+|Taiping Tianguo<br/>{{lang|zh-Hant|太平天國}}
+|1851–1864 CE
+|14 years
+|
+|}
+
+===Other regimes contemporaneous with Qing dynasty===
+{| class="wikitable"
+|-
+!Era name
+!Period of use
+!Length of use
+!Remark
+|-
+!colspan="4"|Qin Shangxing<br/>{{small|(r. 1644 CE)}}
+|-
+|Chongxing<br/>{{lang|zh-Hant|重興}}
+|1644 CE
+|1 year
+|
+|-
+!colspan="4"|Liu Shoufen<br/>{{small|(r. 1644 CE)}}
+|-
+|Tianding<br/>{{lang|zh-Hant|天定}}
+|1644 CE
+|1 month
+|
+|-
+!colspan="4"|Gong Wencai<br/>{{small|(r. 1644–1645 CE)}}
+|- style="background:#DAF2FF;"
+|Yongchang<br/>{{lang|zh-Hant|永昌}}
+|1644–1645 CE
+|2 years
+|Adopted the era name of [[Li Zicheng]].
+|-
+!colspan="4"|Hu Shoulong<br/>{{small|(r. 1645 CE)}}
+|-
+|Qingguang<br/>{{lang|zh-Hant|清光}}
+|1645 CE
+|1 month
+|Usage might be in 1646 CE, for a total length of 1 year.
+|-
+!colspan="4"|Jiang Erxun<br/>{{small|(r. 1647 CE)}}
+|-
+|Zhongxing<br/>{{lang|zh-Hant|中興}}
+|1647 CE
+|1 year
+|
+|-
+!colspan="4"|Wang Guangtai<br/>{{small|(r. 1647 CE)}}
+|- style="background:#DAF2FF;"
+|[[Zhu Youlang|Yongli]]<br/>{{lang|zh-Hant|永曆}}
+|1647 CE
+|1 year
+|Adopted the era name of the [[Zhu Youlang|Yongli Emperor]].
+|-
+!colspan="4"|Zhang Huashan<br/>{{small|(r. 1647 CE)}}
+|- style="background:#DAF2FF;"
+|[[Longwu]]<br/>{{lang|zh-Hant|隆武}}
+|1647 CE
+|1 month
+|Adopted the era name of the [[Zhu Yujian|Longwu Emperor]].
+|-
+!colspan="4"|[[Sun Kewang]]
+|-
+|Xingchao<br/>{{lang|zh-Hant|興朝}}
+|''Unknown''
+|''Unknown''
+|
+|-
+!colspan="4"|Zhang Jintang<br/>{{small|(r. 1648 CE)}}
+|-
+|Tianzheng<br/>{{lang|zh-Hant|天正}}
+|1648 CE
+|1 year
+|
+|-
+!colspan="4"|Xiao Weitang<br/>{{small|(r. 1661 CE)}}
+|-
+|Tianshun<br/>{{lang|zh-Hant|天順}}
+|1661 CE
+|1 year
+|
+|-
+!colspan="4"|Wang Yaozu<br/>{{small|(r. 1665 CE)}}
+|-
+|Daqing<br/>{{lang|zh-Hant|大慶}}
+|1665 CE
+|1 month
+|
+|-
+!colspan="4"|Yang Qilong<br/>{{small|(r. 1673–1680 CE)}}
+|-
+|Guangde<br/>{{lang|zh-Hant|廣德}}
+|1673–1680 CE
+|8 years
+|
+|-
+!colspan="4"|[[Geng Jingzhong]]<br/>{{small|(r. 1674–1676 CE)}}
+|-
+|Yumin<br/>{{lang|zh-Hant|裕民}}
+|1674–1676 CE
+|3 years
+|Might not be an era name.
+|-
+!colspan="4"|Wei Zhiye<br/>{{small|(r. 1704 CE)}}
+|-
+|Wenxing<br/>{{lang|zh-Hant|文興}}
+|1704 CE
+|1 year
+|
+|-
+!colspan="4"|Zhu Liufei, Li Tianji
+|-
+|Yuanxing<br/>{{lang|zh-Hant|元興}}
+|''Unknown''
+|''Unknown''
+|
+|-
+!colspan="4"|Qian Baotong<br/>{{small|(r. 1708 CE)}}
+|-
+|Yongxing<br/>{{lang|zh-Hant|永興}}
+|1708 CE
+|1 year
+|
+|-
+!colspan="4"|Zhang Nianyi<br/>{{small|(r. 1708 CE)}}
+|-
+|Tiande<br/>{{lang|zh-Hant|天德}}
+|1708 CE
+|1 year
+|
+|-
+!colspan="4"|[[Zhu Yigui]]<br/>{{small|(r. 1721 CE)}}
+|-
+|Yonghe<br/>{{lang|zh-Hant|永和}}
+|1721 CE
+|2 months
+|
+|-
+!colspan="4"|[[Lin Shuangwen]]<br/>{{small|(r. 1786–1788 CE)}}
+|-
+|Tianyun<br/>{{lang|zh-Hant|天運}}
+|1786 CE
+|1 month
+|
+|-
+|Shuntian<br/>{{lang|zh-Hant|順天}}
+|1787–1788 CE
+|2 years
+|
+|-
+!colspan="4"|Chen Zhouquan<br/>{{small|(r. 1795 CE)}}
+|-
+|Tianyun<br/>{{lang|zh-Hant|天運}}
+|1795 CE
+|1 month
+|
+|-
+!colspan="4"|Li Shu<br/>{{small|(r. 1797 CE)}}
+|-
+|Wanli<br/>{{lang|zh-Hant|萬利}}
+|1797 CE
+|1 year
+|Or ''Daqing'' ({{lang|zh-Hant|大慶}}).
+|-
+!colspan="4"|Wang Dashu<br/>{{small|(r. 1797 CE)}}
+|-
+|Daqing<br/>{{lang|zh-Hant|大慶}}
+|1797 CE
+|1 month
+|
+|-
+!colspan="4"|[[Cai Qian]]<br/>{{small|(r. 1805–1809 CE)}}
+|-
+|Guangming<br/>{{lang|zh-Hant|光明}}
+|1805–1809 CE
+|5 years
+|
+|-
+!colspan="4"|Zhu Maoli<br/>{{small|(r. 1814 CE)}}
+|-
+|Yanchao<br/>{{lang|zh-Hant|晏朝}}
+|1814 CE
+|1 year
+|
+|-
+!colspan="4"|[[Zhang Bing]]<br/>{{small|(r. 1832–1833 CE)}}
+|-
+|Tianyun<br/>{{lang|zh-Hant|天運}}
+|1832–1833 CE
+|2 years
+|
+|-
+!colspan="4"|Lin Wanqing<br/>{{small|(r. 1851 CE)}}
+|-
+|Tiande<br/>{{lang|zh-Hant|天德}}
+|1851 CE
+|1 year
+|
+|-
+!colspan="4"|Li Mingxian<br/>{{small|(r. 1853 CE)}}
+|-
+|Hongshun<br/>{{lang|zh-Hant|洪順}}
+|1853 CE
+|1 month
+|
+|-
+!colspan="4"|Huang Wei<br/>{{small|(r. 1853 CE)}}
+|-
+|Tiande<br/>{{lang|zh-Hant|天德}}
+|1853 CE
+|1 year
+|{{font color|#000000|#DAF2FF|Also used by other members of the [[Small Swords Society]].}}
+|-
+!colspan="4"|Liu Lichuan<br/>{{small|(r. 1853–1855 CE)}}
+|-
+|Tianyun<br/>{{lang|zh-Hant|天運}}
+|1853–1855 CE
+|3 years
+|Or ''Daming'' ({{lang|zh-Hant|大明}}).
+|-
+!colspan="4"|Yang Longxi<br/>{{small|(r. 1854 CE)}}
+|-
+|Jianghan<br/>{{lang|zh-Hant|江漢}}
+|1854 CE
+|1 year
+|Sometimes erroneously referred to as ''Jianghan'' ({{lang|zh-Hant|姜漢}}). {{font color|#000000|#DAF2FF|Also used by Zhu Mingyue.}}
+|-
+!colspan="4"|Chen Kai<br/>{{small|(r. 1855–1864 CE)}}
+|-
+|Hongde<br/>{{lang|zh-Hant|洪德}}
+|1855–1864 CE
+|10 years
+|
+|-
+!colspan="4"|[[Li Yonghe]]<br/>{{small|(r. 1859–1864 CE)}}
+|-
+|Shuntian<br/>{{lang|zh-Hant|順天}}
+|1860–1864 CE
+|5 years
+|
+|-
+!colspan="4"|Song Jipeng<br/>{{small|(r. 1860–1863 CE)}}
+|-
+|Tianzong<br/>{{lang|zh-Hant|天縱}}
+|1860–1863 CE
+|4 years
+|
+|-
+!colspan="4"|Zhu Mingyue<br/>{{small|(r. 1864–1868 CE)}}
+|-
+|Sitong<br/>{{lang|zh-Hant|嗣統}}
+|1864–1868 CE
+|5 years
+|
+|-
+|Huahan<br/>{{lang|zh-Hant|華漢}}
+|''Unknown''
+|''Unknown''
+|
+|- style="background:#DAF2FF;"
+|Jianghan<br/>{{lang|zh-Hant|江漢}}
+|''Unknown''
+|''Unknown''
+|Adopted the era name of Yang Longxi.
+|-
+!colspan="4"|[[Tang Jingsong]]<br/>{{small|(in office 1895 CE; as President of the [[Republic of Formosa]])}}
+|-
+|Yongqing<br/>{{lang|zh-Hant|永清}}
+|1895 CE
+|1 month
+|Usage continued by [[Liu Yongfu]] upon his assumption of office.
+|-
+!colspan="4"|Huang Guozhen<br/>{{small|(r. 1897–1898 CE)}}
+|-
+|Dajing<br/>{{lang|zh-Hant|大靖}}
+|1897–1898 CE
+|2 years
+|
+|-
+!colspan="4"|Aisin Gioro Pujun
+|-
+|Baoqing<br/>{{lang|zh-Hant|保慶}}
+|''did not use''
+|''did not use''
+|The era name ''Baoqing'' was originally planned to supersede ''Guangxu'' ({{lang|zh-Hant|光緒}}) in 1900 CE, when the [[Guangxu Emperor]] was to abdicate in favor of Aisin Gioro Pujun; this plan did not materialize.
+|-
+!colspan="4"|Hong Quanfu<br/>{{small|(r. 1902 CE)}}
+|-
+|Damingguo<br/>{{lang|zh-Hant|大明國}}
+|1902 CE
+|1 year
+|Or ''Damingshuntianguo'' ({{lang|zh-Hant|大明順天國}}).
+|-
+!colspan="4"|Gong Chuntai<br/>{{small|(r. 1906 CE)}}
+|-
+|Hande<br/>{{lang|zh-Hant|漢德}}
+|1906 CE
+|1 year
+|
+|-
+!colspan="4"|[[Bogd Khan|8th Jebtsundamba Khutuktu]]<br/>{{small|(r. 1911–1915 CE; first reign)}}
+|-
+|Gongdai<br/>{{lang|zh-Hant|共戴}}
+|1911–1915 CE
+|5 years
+|Usage later restored in 1921 CE.
+|}
+
+==[[Republic of China]]==
+{{Main|Republic of China calendar}}
+{| class="wikitable"
+|-
+!Current Calendar
+!Period of use
+!Length of use
+!Remark
+|-
+!colspan="4"|[[Republic of China]]<br/>{{small|(r. 1912–present CE)}}
+|-
+|[[Republic of China calendar|Minguo]]<br/>{{lang|zh-Hant|民國}}
+|1912–present
+|Current calendar
+|Used alongside the Gōnglì {{lang|zh-Hant|公历}} ([[Gregorian calendar]]) since 1912
+|-
+|}
+
+The Republic of China officially uses the Republic of China calendar. While not an era name, the Republic of China calendar is based on the era name system of Imperial China. The Republic of China calendar was the official calendar of [[mainland China]] between 1912 CE and 1949 CE, and has been in official use in [[Free area of the Republic of China|Taiwan]] since 1945 CE.
+
+===Other regimes contemporaneous with Republic of China===
+{| class="wikitable"
+|-
+!Era name
+!Period of use
+!Length of use
+!Remark
+|-
+!colspan="4"|[[Yuan Shikai|Hongxian Emperor]]<br/>{{small|(r. 1915–1916 CE)}}
+|-
+|Hongxian<br/>{{lang|zh-Hant|洪憲}}
+|1916 CE
+|92 days
+|
+|-
+!colspan="4"|Chadu Ruoba<br/>{{small|(r. 1917 CE)}}
+|-
+|Tongzhi<br/>{{lang|zh-Hant|通治}}
+|1917 CE
+|1 year
+|Sometimes erroneously referred to as ''Tongzhi'' ({{lang|zh-Hant|通志}}).
+|-
+!colspan="4"|[[Puyi|Xuantong Emperor]]<br/>{{small|(r. 1917 CE; second reign as Emperor of Qing)}}
+|-
+|Xuantong<br/>{{lang|zh-Hant|宣統}}
+|1917 CE
+|12 days
+|Restored the era name of 1909 CE.
+|-
+!colspan="4"|[[Bogd Khan|8th Jebtsundamba Khutuktu]]<br/>{{small|(r. 1921–1924 CE; second reign)}}
+|-
+|Gongdai<br/>{{lang|zh-Hant|共戴}}
+|1921–1924 CE
+|4 years
+|Restored the era name of 1911 CE.
+|-
+!colspan="4"|[[Puyi|Aisin Gioro Puyi]]<br/>{{small|(in office 1932–1934 CE; as Chief Executive of [[Manchukuo]])}}
+|-
+|Datong<br/>{{lang|zh-Hant|大同}}
+|1932–1934 CE
+|3 years
+|
+|-
+!colspan="4"|[[Puyi|Kangde Emperor]]<br/>{{small|(r. 1934–1945 CE; as Emperor of [[Manchukuo]])}}
+|-
+|Kangde<br/>{{lang|zh-Hant|康德}}
+|1934–1945 CE
+|12 years
+|
+|}
+
+==Unknown era names==
+This is a list of individuals who proclaimed era names, but the exact era names are not known.
+
+{| class="wikitable"
+|-
+!Era name
+!Monarch
+!Period of use
+!Length of use
+|-
+|rowspan=8|''Era names not known''
+|Ma Mian
+|144–145 CE
+|5 months
+|-
+|Song Jian
+|Late 180s–214 CE
+|Over 30 years
+|-
+|Ma Ru
+|497–501 CE
+|5 years
+|-
+|[[Li Chenghong]]
+|763 CE
+|3 months
+|-
+|[[Dae Geonhwang|Da Qianhuang]]
+|858–871 CE
+|14 years
+|-
+|[[Dae Hyeonseok|Da Xuanxi]]
+|872–893 CE
+|22 years
+|-
+|[[Dae Wihae|Da Weixie]]
+|894–906 CE
+|13 years
+|-
+|[[Dae Inseon|Da Yinzhuan]]
+|907–926 CE
+|20 years
+|}
+
+==See also==
+* [[Chinese calendar]]
+* [[Republic of China calendar]]
+* [[Chinese era name]]
+* [[Japanese era name]]
+* [[Korean era name]]
+* [[Vietnamese era name]]
+* [[North Korean calendar]]
+* [[Regnal year]]
+
+==References==
+{{Reflist}}
+
+[[Category:Chinese imperial eras|*]]
+[[Category:Chinese calendars]]

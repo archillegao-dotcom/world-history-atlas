@@ -5,6 +5,10 @@
 """
 from __future__ import annotations
 
+from .zh import disp as _zh_disp
+
+import json
+
 from fastapi import APIRouter, HTTPException
 
 from .live import wiki
@@ -62,9 +66,9 @@ def person(pid: str):
     """人物页面。"""
     R = resolver(_ctx())
     p = R.persons.get(pid) or {}
-    out = {"id": pid, "name": p.get("zh") or p.get("en"), "en": p.get("en"), "desc": p.get("desc"),
+    out = {"id": pid, "name": _zh_disp(p.get("zh") or p.get("en")), "en": p.get("en"), "desc": p.get("desc"),
            "born": _t(p.get("born")), "died": _t(p.get("died")),
-           "party": [{"name": x.get("zh") or x.get("en"), "from": _t(x.get("from")), "to": _t(x.get("to"))}
+           "party": [{"name": _zh_disp(x.get("zh") or x.get("en")), "from": _t(x.get("from")), "to": _t(x.get("to"))}
                      for x in p.get("party", [])],
            "img": wiki.commons_thumb(p.get("img")), "positions": [], "online": False, "summary": None,
            "links": [{"label": "Wikidata", "url": f"https://www.wikidata.org/wiki/{pid}"}]}
@@ -119,10 +123,10 @@ def office(oid: str, date: str | None = None):
     orgs = []
     for g in o.get("orgs", []):
         r = R.orgs.get(g, {})
-        orgs.append({"id": g, "name": r.get("zh") or r.get("en") or g, "desc": r.get("desc"),
+        orgs.append({"id": g, "name": _zh_disp(r.get("zh") or r.get("en") or g), "desc": r.get("desc"),
                      "summary": wiki.summary(r.get("zhwiki"), r.get("enwiki"))})
     holders = sorted(o.get("holders", []), key=lambda h: (h.get("from") or {"y": 99999})["y"])
-    return {"id": oid, "name": o.get("zh") or o.get("en"), "en": o.get("en"), "desc": o.get("desc"),
+    return {"id": oid, "name": _zh_disp(o.get("zh") or o.get("en")), "en": o.get("en"), "desc": o.get("desc"),
             "juris": [{"id": s, "name": R.state_name(s)} for s in o.get("juris", [])],
             "summary": wiki.summary(o.get("zhwiki"), o.get("enwiki")), "orgs": orgs,
             "holders": [{"person": R.person_brief(h["p"]), "from": _t(h.get("from")), "to": _t(h.get("to"))} for h in holders],
@@ -162,7 +166,7 @@ def alliance(aid: str, date: str | None = None):
         links.append({"label": "中文维基", "url": f"https://zh.wikipedia.org/wiki/{a['zhwiki'].replace(' ', '_')}"})
     if a.get("enwiki"):
         links.append({"label": "English Wikipedia", "url": f"https://en.wikipedia.org/wiki/{a['enwiki'].replace(' ', '_')}"})
-    return {"id": aid, "name": a.get("zh") or a.get("en"), "en": a.get("en"), "desc": a.get("desc"),
+    return {"id": aid, "name": _zh_disp(a.get("zh") or a.get("en")), "en": a.get("en"), "desc": a.get("desc"),
             "from": _t(a.get("from")), "to": _t(a.get("to")), "members": members, "leaders": leaders,
             "summary": wiki.summary(a.get("zhwiki"), a.get("enwiki")), "links": links,
             "treaties": [{"id": t, "name": (ctx.shared.get("treaties", {}).get(t) or {}).get("zh") or (ctx.shared.get("treaties", {}).get(t) or {}).get("en") or t}
@@ -176,8 +180,18 @@ def state(sid: str):
     s = R.states.get(sid)
     if not s:
         raise HTTPException(404, "没有这个政权")
-    return {"id": sid, "name": s.get("zh") or s.get("en"), "en": s.get("en"), "desc": s.get("desc"),
+    return {"id": sid, "name": _zh_disp(s.get("zh") or s.get("en")), "en": s.get("en"), "desc": s.get("desc"),
             "from": _t(s.get("from")), "to": _t(s.get("to")), "summary": wiki.summary(s.get("zhwiki"), s.get("enwiki"))}
+
+
+_pn_cache = []
+
+
+def _PN():
+    if not _pn_cache:
+        p = _ctx().data_dir / "polity_names.json"
+        _pn_cache.append(json.loads(p.read_text(encoding="utf-8")) if p.exists() else {})
+    return _pn_cache[0]
 
 
 @router.get("/api/snapshot_names/{snap}")
@@ -197,14 +211,34 @@ def snapshot_names(snap: str, date: str | None = None):
     for fid in _ctx().basemaps.features(snap):
         cands = R.resolve(snap, fid, d)
         c = R.primary(cands, d)
-        if c and (c["state"].get("zh") or c["state"].get("en")):
-            out[str(fid)] = {"zh": c["state"].get("zh") or c["state"]["en"], "qid": c["state"]["id"], "method": c["method"]}
+        lab = _ctx().basemaps.features(snap)[fid]["props"].get("LABEL_ZH")
+        if c and lab:
+            out[str(fid)] = {"zh": lab, "qid": c["state"]["id"], "method": c["method"]}
+        elif c and c["method"] == "owner":
+            # CShapes 殖民地/保护国/托管地，本身没有对应的 Wikidata 条目：显示「地区名（宗主国 + 地位）」
+            props = _ctx().basemaps.features(snap)[fid]["props"]
+            gi = _ctx().basemaps.cs.gw.get(props.get("CSHAPES"), {})
+            modern = (R.states.get((gi.get("ne") or [None])[0]) or {}).get("zh")
+            own = c["state"].get("zh") or c["state"].get("en")
+            if not modern:   # v0.6.1：多边形原名的中文名（polity_names / 中文维基链接名），没有的标「暂无通用译名」
+                from .zh import basemap_names
+                nm0 = props.get("NAME")
+                modern = (_PN().get(nm0) or {}).get("zh") or basemap_names(_ctx().data_dir).get(nm0) or _zh_disp(nm0)
+            out[str(fid)] = {"zh": f'{modern}（{own}{props.get("STATUS_ZH") or "属地"}）', "qid": c["state"]["id"], "method": "owner"}
+        elif c and (c["state"].get("zh") or c["state"].get("en")):
+            out[str(fid)] = {"zh": _zh_disp(c["state"].get("zh") or c["state"]["en"]), "qid": c["state"]["id"], "method": c["method"]}
         elif R.split_names(cands) and d.y >= -500:
             # 已分裂：旧政权解散后由几个政权分有，底图边界要到下一张快照才更新
             out[str(fid)] = {"kind": "split", "parts": R.split_names(cands)[:5]}
         else:
             # 没有当时存在的政权：史前/上古多为考古文化或人群分布，标为「文化/地区」
             out[str(fid)] = {"kind": "culture" if d.y < -500 or not cands else "region"}
+        # 底图原名的中文译名（polity_names.json 或 zh_basemap_names.json：英文维基同名条目的中文维基链接）；没有的标「暂无通用译名」
+        if "zh" not in out[str(fid)]:
+            from .zh import basemap_names, disp
+            nm = _ctx().basemaps.features(snap)[fid]["props"].get("NAME")
+            pn = (_PN().get(nm) or {}).get("zh") or basemap_names(_ctx().data_dir).get(nm)
+            out[str(fid)]["title"] = pn or disp(nm)
     return out
 
 
@@ -212,7 +246,7 @@ def snapshot_names(snap: str, date: str | None = None):
 def polity_states(snap: str, fid: int, date: str):
     R = resolver(_ctx())
     d = parse_date(date)
-    return [{"id": c["state"]["id"], "name": c["state"].get("zh") or c["state"].get("en"), "method": c["method"],
+    return [{"id": c["state"]["id"], "name": _zh_disp(c["state"].get("zh") or c["state"].get("en")), "method": c["method"],
              "method_zh": METHOD_ZH.get(c["method"], c["method"]), "score": c["score"]}
             for c in R.resolve(snap, fid, d)]
 
@@ -253,12 +287,12 @@ def treaty(tid: str):
     if r.get("fulltext"):
         links.append({"label": "全文（P953）", "url": r["fulltext"]})
     others = r.get("other_P1891", 0) + r.get("other_P710", 0)
-    return {"id": tid, "name": r.get("zh") or r.get("en"), "en": r.get("en"), "desc": r.get("desc"), "kind": kind_of(r),
+    return {"id": tid, "name": _zh_disp(r.get("zh") or r.get("en")), "en": r.get("en"), "desc": r.get("desc"), "kind": kind_of(r),
             "types": [t.get("zh") or t.get("en") for t in r.get("types", [])],
             "signed": _t(r.get("signed")), "effective": _t(r.get("effective")), "start": _t(r.get("start") or r.get("inception")),
             "end": _t(tend(r)), "parties": parties, "others": others,
             "summary": _stored_summary(r) or wiki.summary(r.get("zhwiki"), r.get("enwiki")), "links": links,
-            "location": [{"name": x.get("zh") or x.get("en"), "coord": x.get("coord")} for x in r.get("location", [])],
+            "location": [{"name": _zh_disp(x.get("zh") or x.get("en")), "coord": x.get("coord")} for x in r.get("location", [])],
             "countries": [R.state_name(c) for c in r.get("countries", [])],
             "name_mt": bool(r.get("zh_mt")),
             "has_text": bool(r.get("zhws") or r.get("enws") or r.get("fulltext"))}

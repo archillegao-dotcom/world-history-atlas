@@ -13,6 +13,8 @@
 """
 from __future__ import annotations
 
+from ..zh import disp, fill as zh_fill
+
 from pathlib import Path
 
 from ..registry import ContentModule
@@ -31,7 +33,9 @@ class PeopleModule(ContentModule):
 
     def load(self, ctx):
         self.recs = []
-        for r in load_records(Path(ctx.data_dir) / self.data_file):
+        _recs = load_records(Path(ctx.data_dir) / self.data_file)
+        zh_fill(_recs, ctx.data_dir, "name")
+        for r in _recs:
             b = rec_key(r.get("birth"))
             if b is None:
                 continue
@@ -58,7 +62,7 @@ class PeopleModule(ContentModule):
             desc = (r.get("desc") or "").lower()
             primary = not self.keywords or any(k in desc for k in self.keywords)
             out.append({
-                "id": r["id"], "title": r.get("name") or r.get("en_name") or r["id"], "title_en": r.get("en_name"),
+                "id": r["id"], "title": disp(r.get("name") or r.get("en_name")) or r["id"], "title_en": r.get("en_name"),
                 "date": f"{fmt_time(r['birth'])} — {fmt_time(r.get('death')) if r.get('death') else '?'}",
                 "subtitle": f"当时约 {age} 岁" + (f" · {r['desc']}" if r.get("desc") else ""),
                 "coord": r.get("coord"), "match": how, "links": links(r), "score": r.get("sl", 0),

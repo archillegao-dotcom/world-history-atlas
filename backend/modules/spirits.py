@@ -11,6 +11,8 @@
 """
 from __future__ import annotations
 
+from ..zh import disp as _zh_disp
+
 import collections
 from pathlib import Path
 
@@ -52,6 +54,8 @@ class SpiritsModule(ContentModule):
 
     def load(self, ctx):
         self.recs = load_records(Path(ctx.data_dir) / "treaties.json.gz")
+        from ..zh import fill as zh_fill
+        zh_fill(self.recs, ctx.data_dir)
         self.by_id = {r["id"]: r for r in self.recs}
         self.by_party = collections.defaultdict(list)
         for r in self.recs:
@@ -86,7 +90,7 @@ class SpiritsModule(ContentModule):
                 if a is None or a > dk or (b is not None and dk > b + (0.999 if not tend(r).get("m") else 0)):
                     continue
                 seen.add(r["id"])
-                card = {"id": r["id"], "name": r.get("zh") or r.get("en"), "en": r.get("en"), "kind": kind_of(r),
+                card = {"id": r["id"], "name": __import__("backend.zh", fromlist=["disp"]).disp(r.get("zh") or r.get("en")), "en": r.get("en"), "kind": kind_of(r),
                         "types": [t.get("zh") or t.get("en") for t in r.get("types", [])][:3],
                         "from": fmt_time(tstart(r)), "to": fmt_time(tend(r)) if tend(r) else None,
                         "parties": [R.state_name(p["s"]) for p in r.get("parties", [])][:12],
@@ -106,7 +110,7 @@ class SpiritsModule(ContentModule):
         n = len(dated) + len(open_) + len(blocs)
         return {"items": [], "total": n, "kind": "spirits", "blocs": blocs, "dated": dated[:60], "open": open_[:60],
                 "n_dated": len(dated), "n_open": len(open_), "matched": [{"id": k, "name": R.state_name(k), "how": v} for k, v in group.items()],
-                "state": st and {"id": st["id"], "name": st.get("zh") or st.get("en")},
+                "state": st and {"id": st["id"], "name": _zh_disp(st.get("zh") or st.get("en"))},
                 "alternatives": [{**a, "method_zh": METHOD_ZH.get(a["method"], a["method"])} for a in alts],
                 "note": "「未记录终止」表示 Wikidata 没有记录这份条约的终止/失效时间（不代表一定仍然有效）。"}
 

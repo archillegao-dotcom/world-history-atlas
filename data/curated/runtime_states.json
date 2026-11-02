@@ -1,0 +1,1256 @@
+{
+ "_doc": [
+  "补充政权条目：整理数据（二战按月边界/战线、实际控制区、CShapes 分期、补充小国）引用了、但 data/states.json.gz 里没有的 Wikidata 条目",
+  "（多为占领当局、傀儡政权、军事管理区，不属于 build_states.py 抓取的「国家/政权」类）。",
+  "从 Wikidata API 取标签（zh/en）、描述、P571/P576、P41（国旗）、P36（首都）→ data/curated/runtime_states.json（运行时由 PolityResolver 读入）。",
+  "用法：.venv/bin/python tools/build_runtime_states.py"
+ ],
+ "Q10905486": {
+  "id": "Q10905486",
+  "zh": "华北政务委员会",
+  "en": "North China Political Council",
+  "desc": null,
+  "desc_en": "wang Jingwei regime autonomous zone",
+  "from": {
+   "y": 1940,
+   "m": 3,
+   "d": 29,
+   "p": 11
+  },
+  "to": null,
+  "flag": null,
+  "enwiki": "North China Political Council",
+  "zhwiki": "华北政务委员会",
+  "sources": [
+   "https://www.wikidata.org/wiki/Q10905486"
+  ],
+  "runtime": true
+ },
+ "Q11089315": {
+  "id": "Q11089315",
+  "zh": "晋冀鲁豫边区",
+  "en": null,
+  "desc": "中共领导的敌后抗日根据地",
+  "desc_en": null,
+  "from": null,
+  "to": null,
+  "flag": null,
+  "enwiki": null,
+  "zhwiki": "晋冀鲁豫边区",
+  "sources": [
+   "https://www.wikidata.org/wiki/Q11089315"
+  ],
+  "runtime": true
+ },
+ "Q11089353": {
+  "id": "Q11089353",
+  "zh": "晋察冀边区",
+  "en": "Jin-Cha-Ji Border Area",
+  "desc": "中共在中華民國大陸時期建立的割據地方武裝和分裂政權",
+  "desc_en": "Chinese Communist Party-controlled area as an Anti-Japanese Base Area",
+  "from": {
+   "y": 1937,
+   "m": 0,
+   "d": 0,
+   "p": 9
+  },
+  "to": {
+   "y": 1950,
+   "m": 0,
+   "d": 0,
+   "p": 9
+  },
+  "flag": null,
+  "enwiki": "Jin-Cha-Ji Border Region",
+  "zhwiki": "晋察冀边区",
+  "sources": [
+   "https://www.wikidata.org/wiki/Q11089353"
+  ],
+  "runtime": true
+ },
+ "Q12100005": {
+  "id": "Q12100005",
+  "zh": "阿尔巴尼亚民主政府",
+  "en": "Democratic Government of Albania",
+  "desc": null,
+  "desc_en": "Albanian provisional government",
+  "from": {
+   "y": 1944,
+   "m": 10,
+   "d": 20,
+   "p": 11
+  },
+  "to": {
+   "y": 1946,
+   "m": 1,
+   "d": 10,
+   "p": 11
+  },
+  "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Albania%20%281944%E2%80%931946%29.svg",
+  "enwiki": "Democratic Government of Albania",
+  "zhwiki": "阿尔巴尼亚民主政府",
+  "sources": [
+   "https://www.wikidata.org/wiki/Q12100005"
+  ],
+  "runtime": true
+ },
+ "Q131744754": {
+  "id": "Q131744754",
+  "zh": "阿尔巴尼亚德占时期",
+  "en": "German occupation of Albania",
+  "desc": null,
+  "desc_en": "1943–1944 occupation during World War II",
+  "from": null,
+  "to": null,
+  "flag": null,
+  "enwiki": "Kingdom of Albania (1943–1944)",
+  "zhwiki": "阿尔巴尼亚德占时期",
+  "sources": [
+   "https://www.wikidata.org/wiki/Q131744754"
+  ],
+  "runtime": true
+ },
+ "Q15132619": {
+  "id": "Q15132619",
+  "zh": "苏联占领满洲",
+  "en": "Soviet occupation of Manchuria",
+  "desc": "海外苏军占领的土地",
+  "desc_en": "1945–46 military occupation",
+  "from": {
+   "y": 1945,
+   "m": 0,
+   "d": 0,
+   "p": 9
+  },
+  "to": {
+   "y": 1946,
+   "m": 0,
+   "d": 0,
+   "p": 9
+  },
+  "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20the%20Soviet%20Union%20%281936%20%E2%80%93%201955%29.svg",
+  "enwiki": "Soviet occupation of Manchuria",
+  "zhwiki": "蘇占滿洲",
+  "sources": [
+   "https://www.wikidata.org/wiki/Q15132619"
+  ],
+  "runtime": true
+ },
+ "Q1521499": {
+  "id": "Q1521499",
+  "zh": "日本占领缅甸",
+  "en": "Japanese occupation of Burma",
+  "desc": null,
+  "desc_en": "period of Burmese history from 1942 to 1945",
+  "from": null,
+  "to": null,
+  "flag": null,
+  "enwiki": "Japanese occupation of Burma",
+  "zhwiki": "緬甸日佔時期",
+  "sources": [
+   "https://www.wikidata.org/wiki/Q1521499"
+  ],
+  "runtime": true
+ },
+ "Q15238409": {
+  "id": "Q15238409",
+  "zh": null,
+  "en": "Colony of Saint Lucia",
+  "desc": null,
+  "desc_en": "British colony of Saint Lucia, before statehood in 1967",
+  "from": null,
+  "to": {
+   "y": 1967,
+   "m": 0,
+   "d": 0,
+   "p": 9
+  },
+  "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Saint%20Lucia%20%281939%E2%80%931967%29.svg",
+  "enwiki": null,
+  "zhwiki": null,
+  "sources": [
+   "https://www.wikidata.org/wiki/Q15238409"
+  ],
+  "runtime": true
+ },
+ "Q15243087": {
+  "id": "Q15243087",
+  "zh": "婆罗洲日占时期",
+  "en": "Japanese occupation of British Borneo",
+  "desc": "婆羅洲日據時期",
+  "desc_en": "British Borneo (Sarawak, Brunei, Labuan (island), and British North Borneo) under Japanese occupation",
+  "from": {
+   "y": 1941,
+   "m": 12,
+   "d": 15,
+   "p": 11
+  },
+  "to": {
+   "y": 1945,
+   "m": 9,
+   "d": 12,
+   "p": 11
+  },
+  "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Japan%20%281870%E2%80%931999%29.svg",
+  "enwiki": "Japanese occupation of British Borneo",
+  "zhwiki": "英屬婆羅洲日佔時期",
+  "sources": [
+   "https://www.wikidata.org/wiki/Q15243087"
+  ],
+  "runtime": true
+ },
+ "Q156031": {
+  "id": "Q156031",
+  "zh": "奥斯兰总督辖区",
+  "en": "Reichskommissariat Ostland",
+  "desc": "納粹德國專員轄區",
+  "desc_en": "administrative division of Nazi Germany in the occupied Baltic countries and parts of Belarus",
+  "from": {
+   "y": 1941,
+   "m": 0,
+   "d": 0,
+   "p": 9
+  },
+  "to": {
+   "y": 1945,
+   "m": 0,
+   "d": 0,
+   "p": 9
+  },
+  "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20the%20NSDAP%20%281920%E2%80%931945%29.svg",
+  "enwiki": "Reichskommissariat Ostland",
+  "zhwiki": "東方專員轄區",
+  "sources": [
+   "https://www.wikidata.org/wiki/Q156031"
+  ],
+  "runtime": true
+ },
+ "Q167641": {
+  "id": "Q167641",
+  "zh": "外涅斯特里亚省",
+  "en": "Transnistria Governorate",
+  "desc": null,
+  "desc_en": "governorate of the Kingdom of Romania (1941-1944)",
+  "from": {
+   "y": 1941,
+   "m": 8,
+   "d": 19,
+   "p": 11
+  },
+  "to": {
+   "y": 1944,
+   "m": 4,
+   "d": 0,
+   "p": 10
+  },
+  "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Romania.svg",
+  "enwiki": "Transnistria Governorate",
+  "zhwiki": "德涅斯特里亞省",
+  "sources": [
+   "https://www.wikidata.org/wiki/Q167641"
+  ],
+  "runtime": true
+ },
+ "Q17061755": {
+  "id": "Q17061755",
+  "zh": null,
+  "en": "Bahrain and its Dependencies",
+  "desc": null,
+  "desc_en": "Bahrain from 1789 until 1971",
+  "from": {
+   "y": 1783,
+   "m": 0,
+   "d": 0,
+   "p": 9
+  },
+  "to": {
+   "y": 1971,
+   "m": 0,
+   "d": 0,
+   "p": 9
+  },
+  "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Bahrain%20%281820%E2%80%931932%29.svg",
+  "enwiki": "Bahrain and its Dependencies",
+  "zhwiki": null,
+  "sources": [
+   "https://www.wikidata.org/wiki/Q17061755"
+  ],
+  "runtime": true
+ },
+ "Q17427": {
+  "id": "Q17427",
+  "zh": "中国共产党",
+  "en": "Chinese Communist Party",
+  "desc": "中华人民共和国政党",
+  "desc_en": "founding and ruling party of the People's Republic of China",
+  "from": {
+   "y": 1921,
+   "m": 7,
+   "d": 23,
+   "p": 11
+  },
+  "to": null,
+  "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20the%20Chinese%20Communist%20Party.svg",
+  "enwiki": "Chinese Communist Party",
+  "zhwiki": "中国共产党",
+  "sources": [
+   "https://www.wikidata.org/wiki/Q17427"
+  ],
+  "runtime": true
+ },
+ "Q18701358": {
+  "id": "Q18701358",
+  "zh": "比利时和法国北部军事管辖区",
+  "en": "Military Administration in Belgium and Northern France",
+  "desc": null,
+  "desc_en": "Nazi German administrative unit in occupied Belgium and France",
+  "from": {
+   "y": 1940,
+   "m": 5,
+   "d": 20,
+   "p": 11
+  },
+  "to": {
+   "y": 1944,
+   "m": 7,
+   "d": 13,
+   "p": 11
+  },
+  "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/War%20ensign%20of%20Germany%20%281938%E2%80%931945%29.svg",
+  "enwiki": "Military Administration in Belgium and Northern France",
+  "zhwiki": "比利時及北法蘭西軍事行政區",
+  "sources": [
+   "https://www.wikidata.org/wiki/Q18701358"
+  ],
+  "runtime": true
+ },
+ "Q189266": {
+  "id": "Q189266",
+  "zh": "苏德战争",
+  "en": "Eastern Front",
+  "desc": "第二次世界大戰中納粹德國和蘇聯的戰爭",
+  "desc_en": "1941–1945 World War II theater",
+  "from": {
+   "y": 1941,
+   "m": 6,
+   "d": 22,
+   "p": 11
+  },
+  "to": {
+   "y": 1945,
+   "m": 5,
+   "d": 7,
+   "p": 11
+  },
+  "flag": null,
+  "enwiki": "Eastern Front (World War II)",
+  "zhwiki": "苏德战争",
+  "sources": [
+   "https://www.wikidata.org/wiki/Q189266"
+  ],
+  "runtime": true
+ },
+ "Q2072172": {
+  "id": "Q2072172",
+  "zh": "日本占领诺鲁",
+  "en": "Japanese occupation of Nauru",
+  "desc": null,
+  "desc_en": "period of three years (26 August 1942 – 13 September 1945) during which Nauru, a Pacific island under Australian administration, was occupied by the Japanese military as part of its operations in the Pacific War during World War II",
+  "from": {
+   "y": 1942,
+   "m": 8,
+   "d": 26,
+   "p": 11
+  },
+  "to": {
+   "y": 1945,
+   "m": 9,
+   "d": 13,
+   "p": 11
+  },
+  "flag": null,
+  "enwiki": "Japanese occupation of Nauru",
+  "zhwiki": "瑙鲁日占时期",
+  "sources": [
+   "https://www.wikidata.org/wiki/Q2072172"
+  ],
+  "runtime": true
+ },
+ "Q21816219": {
+  "id": "Q21816219",
+  "zh": null,
+  "en": "Trust Territory of Nauru",
+  "desc": null,
+  "desc_en": "United Nations trust territory 1948 - 1968",
+  "from": {
+   "y": 1947,
+   "m": 11,
+   "d": 1,
+   "p": 11
+  },
+  "to": {
+   "y": 1968,
+   "m": 1,
+   "d": 31,
+   "p": 11
+  },
+  "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Civil%20Ensign%20of%20Australia.svg",
+  "enwiki": "Trust Territory of Nauru",
+  "zhwiki": null,
+  "sources": [
+   "https://www.wikidata.org/wiki/Q21816219"
+  ],
+  "runtime": true
+ },
+ "Q2415901": {
+  "id": "Q2415901",
+  "zh": "同盟国军事占领德国",
+  "en": "allied-occupied Germany",
+  "desc": "占领军政权",
+  "desc_en": "post-World War II Allied military occupation of Germany (1945–1949)",
+  "from": {
+   "y": 1945,
+   "m": 5,
+   "d": 9,
+   "p": 11
+  },
+  "to": {
+   "y": 1949,
+   "m": 5,
+   "d": 23,
+   "p": 11
+  },
+  "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Merchant%20flag%20of%20Germany%20%281946%E2%80%931949%29.svg",
+  "enwiki": "Allied-occupied Germany",
+  "zhwiki": "同盟國軍事佔領德國",
+  "sources": [
+   "https://www.wikidata.org/wiki/Q2415901"
+  ],
+  "runtime": true
+ },
+ "Q24841584": {
+  "id": "Q24841584",
+  "zh": "晋绥边区",
+  "en": null,
+  "desc": null,
+  "desc_en": null,
+  "from": {
+   "y": 1943,
+   "m": 0,
+   "d": 0,
+   "p": 9
+  },
+  "to": {
+   "y": 1949,
+   "m": 0,
+   "d": 0,
+   "p": 9
+  },
+  "flag": null,
+  "enwiki": null,
+  "zhwiki": "晋绥边区",
+  "sources": [
+   "https://www.wikidata.org/wiki/Q24841584"
+  ],
+  "runtime": true
+ },
+ "Q2570590": {
+  "id": "Q2570590",
+  "zh": "意占法国",
+  "en": "Italian occupation of France",
+  "desc": null,
+  "desc_en": "occupation of France by Italian Fascist Regime",
+  "from": {
+   "y": 1940,
+   "m": 0,
+   "d": 0,
+   "p": 9
+  },
+  "to": {
+   "y": 1943,
+   "m": 0,
+   "d": 0,
+   "p": 9
+  },
+  "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Italy%20%281861%E2%80%931946%29.svg",
+  "enwiki": "Italian occupation of France",
+  "zhwiki": "第二次世界大戰義大利軍事佔領法國",
+  "sources": [
+   "https://www.wikidata.org/wiki/Q2570590"
+  ],
+  "runtime": true
+ },
+ "Q2748708": {
+  "id": "Q2748708",
+  "zh": "纳粹德国占领法国",
+  "en": "German military administration in occupied France during World War II",
+  "desc": null,
+  "desc_en": "1940 interim occupation authority established by Nazi Germany during World War II",
+  "from": {
+   "y": 1940,
+   "m": 6,
+   "d": 22,
+   "p": 11
+  },
+  "to": {
+   "y": 1944,
+   "m": 8,
+   "d": 0,
+   "p": 10
+  },
+  "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Germany%20%281935%E2%80%931945%29.svg",
+  "enwiki": "German military administration in occupied France during World War II",
+  "zhwiki": "第二次世界大战德占法国军事管辖区",
+  "sources": [
+   "https://www.wikidata.org/wiki/Q2748708"
+  ],
+  "runtime": true
+ },
+ "Q2838298": {
+  "id": "Q2838298",
+  "zh": null,
+  "en": "Allied Military Government of Occupied Territories",
+  "desc": null,
+  "desc_en": "the form of military rule administered by Allied forces during and after World War II within European territories they occupied",
+  "from": null,
+  "to": null,
+  "flag": null,
+  "enwiki": "Allied Military Government of Occupied Territories",
+  "zhwiki": null,
+  "sources": [
+   "https://www.wikidata.org/wiki/Q2838298"
+  ],
+  "runtime": true
+ },
+ "Q2949827": {
+  "id": "Q2949827",
+  "zh": "大国民议会政府",
+  "en": "Government of the Grand National Assembly",
+  "desc": "土耳其独立战争期间的临时政府",
+  "desc_en": "Turkish provisional government (1920–1923)",
+  "from": {
+   "y": 1920,
+   "m": 4,
+   "d": 23,
+   "p": 11
+  },
+  "to": {
+   "y": 1923,
+   "m": 10,
+   "d": 29,
+   "p": 11
+  },
+  "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20the%20Ottoman%20Empire%20%281844%E2%80%931922%29.svg",
+  "enwiki": "Government of the Grand National Assembly",
+  "zhwiki": "大国民议会政府",
+  "sources": [
+   "https://www.wikidata.org/wiki/Q2949827"
+  ],
+  "runtime": true
+ },
+ "Q3175954": {
+  "id": "Q3175954",
+  "zh": "菲律宾日占时期",
+  "en": "Japanese occupation of the Philippines",
+  "desc": null,
+  "desc_en": "1942–1945 Japanese occupation of the Philippines during WWII",
+  "from": {
+   "y": 1942,
+   "m": 5,
+   "d": 8,
+   "p": 11
+  },
+  "to": {
+   "y": 1945,
+   "m": 7,
+   "d": 5,
+   "p": 11
+  },
+  "flag": null,
+  "enwiki": "Japanese occupation of the Philippines",
+  "zhwiki": "第二次世界大戰中的菲律賓",
+  "sources": [
+   "https://www.wikidata.org/wiki/Q3175954"
+  ],
+  "runtime": true
+ },
+ "Q332071": {
+  "id": "Q332071",
+  "zh": "埃塞俄比亚过渡政府",
+  "en": "Transitional Government of Ethiopia",
+  "desc": null,
+  "desc_en": "transitional government of Ethiopia (1991–1995)",
+  "from": {
+   "y": 1974,
+   "m": 0,
+   "d": 0,
+   "p": 9
+  },
+  "to": {
+   "y": 1995,
+   "m": 0,
+   "d": 0,
+   "p": 9
+  },
+  "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Ethiopia%20%281991%E2%80%931996%29.svg",
+  "enwiki": "Transitional Government of Ethiopia",
+  "zhwiki": "埃塞俄比亚过渡政府",
+  "sources": [
+   "https://www.wikidata.org/wiki/Q332071"
+  ],
+  "runtime": true
+ },
+ "Q335200": {
+  "id": "Q335200",
+  "zh": "挪威总督辖区",
+  "en": "Reichskommissariat Norwegen",
+  "desc": "纳粹德国在第二次世界大战期间设立的总督辖区之一",
+  "desc_en": "administrative division of Nazi Germany in occupied Norway",
+  "from": {
+   "y": 1940,
+   "m": 4,
+   "d": 24,
+   "p": 11
+  },
+  "to": {
+   "y": 1945,
+   "m": 5,
+   "d": 8,
+   "p": 11
+  },
+  "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Germany%20%281935%E2%80%931945%29.svg",
+  "enwiki": "Reichskommissariat Norwegen",
+  "zhwiki": "挪威專員轄區",
+  "sources": [
+   "https://www.wikidata.org/wiki/Q335200"
+  ],
+  "runtime": true
+ },
+ "Q362": {
+  "id": "Q362",
+  "zh": "第二次世界大战",
+  "en": "World War II",
+  "desc": "1939年—1945年全球军事冲突",
+  "desc_en": "1939–1945 global conflict",
+  "from": {
+   "y": 1939,
+   "m": 9,
+   "d": 1,
+   "p": 11
+  },
+  "to": {
+   "y": 1945,
+   "m": 9,
+   "d": 2,
+   "p": 11
+  },
+  "flag": null,
+  "enwiki": "World War II",
+  "zhwiki": "第二次世界大战",
+  "sources": [
+   "https://www.wikidata.org/wiki/Q362"
+  ],
+  "runtime": true
+ },
+ "Q362078": {
+  "id": "Q362078",
+  "zh": "第二次世界大战中的法属印度支那",
+  "en": "French Indochina in World War II",
+  "desc": null,
+  "desc_en": "events in French Indochina during World War II",
+  "from": null,
+  "to": null,
+  "flag": null,
+  "enwiki": "French Indochina in World War II",
+  "zhwiki": null,
+  "sources": [
+   "https://www.wikidata.org/wiki/Q362078"
+  ],
+  "runtime": true
+ },
+ "Q40147": {
+  "id": "Q40147",
+  "zh": "波兰民族解放委员会",
+  "en": "Polish Committee of National Liberation",
+  "desc": null,
+  "desc_en": "provisional government of Poland, proclaimed in 1944",
+  "from": {
+   "y": 1944,
+   "m": 7,
+   "d": 22,
+   "p": 11
+  },
+  "to": {
+   "y": 1944,
+   "m": 12,
+   "d": 31,
+   "p": 11
+  },
+  "flag": null,
+  "enwiki": "Polish Committee of National Liberation",
+  "zhwiki": "波兰民族解放委员会",
+  "sources": [
+   "https://www.wikidata.org/wiki/Q40147"
+  ],
+  "runtime": true
+ },
+ "Q4065239": {
+  "id": "Q4065239",
+  "zh": "日本占领安达曼群岛",
+  "en": "Japanese occupation of the Andaman and Nicobar Islands",
+  "desc": null,
+  "desc_en": "occurred in 1942 during World War II",
+  "from": null,
+  "to": null,
+  "flag": null,
+  "enwiki": "Japanese occupation of the Andaman and Nicobar Islands",
+  "zhwiki": null,
+  "sources": [
+   "https://www.wikidata.org/wiki/Q4065239"
+  ],
+  "runtime": true
+ },
+ "Q450799": {
+  "id": "Q450799",
+  "zh": null,
+  "en": "Provisional Government of Southern Ireland",
+  "desc": null,
+  "desc_en": "administrative body of Southern Ireland from January–December 1922",
+  "from": {
+   "y": 1922,
+   "m": 1,
+   "d": 16,
+   "p": 11
+  },
+  "to": {
+   "y": 1922,
+   "m": 12,
+   "d": 5,
+   "p": 11
+  },
+  "flag": null,
+  "enwiki": "Provisional Government of Ireland (1922)",
+  "zhwiki": null,
+  "sources": [
+   "https://www.wikidata.org/wiki/Q450799"
+  ],
+  "runtime": true
+ },
+ "Q46315": {
+  "id": "Q46315",
+  "zh": "乌克兰总督辖区",
+  "en": "Reichskommissariat Ukraine",
+  "desc": "納粹德國專員轄區",
+  "desc_en": "administrative division of Nazi Germany in occupied Ukraine",
+  "from": {
+   "y": 1941,
+   "m": 0,
+   "d": 0,
+   "p": 9
+  },
+  "to": {
+   "y": 1944,
+   "m": 0,
+   "d": 0,
+   "p": 9
+  },
+  "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Germany%20%281935%E2%80%931945%29.svg",
+  "enwiki": "Reichskommissariat Ukraine",
+  "zhwiki": "烏克蘭專員轄區",
+  "sources": [
+   "https://www.wikidata.org/wiki/Q46315"
+  ],
+  "runtime": true
+ },
+ "Q5450841": {
+  "id": "Q5450841",
+  "zh": null,
+  "en": "Finnish military administration in Eastern Karelia",
+  "desc": null,
+  "desc_en": "1941–1944 Finnish military administration",
+  "from": {
+   "y": 1941,
+   "m": 7,
+   "d": 15,
+   "p": 11
+  },
+  "to": {
+   "y": 1944,
+   "m": 0,
+   "d": 0,
+   "p": 9
+  },
+  "flag": null,
+  "enwiki": "Finnish military administration in Eastern Karelia",
+  "zhwiki": null,
+  "sources": [
+   "https://www.wikidata.org/wiki/Q5450841"
+  ],
+  "runtime": true
+ },
+ "Q55300": {
+  "id": "Q55300",
+  "zh": "苏联占领区",
+  "en": "Soviet occupation zone of Germany",
+  "desc": null,
+  "desc_en": "zone of Soviet occupation in postwar Germany",
+  "from": {
+   "y": 1945,
+   "m": 0,
+   "d": 0,
+   "p": 9
+  },
+  "to": {
+   "y": 1949,
+   "m": 10,
+   "d": 7,
+   "p": 11
+  },
+  "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20the%20Soviet%20Union.svg",
+  "enwiki": "Soviet occupation zone in Germany",
+  "zhwiki": "德国苏占区",
+  "sources": [
+   "https://www.wikidata.org/wiki/Q55300"
+  ],
+  "runtime": true
+ },
+ "Q596214": {
+  "id": "Q596214",
+  "zh": "荷兰总督辖区",
+  "en": "Reichskommissariat Niederlande",
+  "desc": "納粹德國專員轄區",
+  "desc_en": "administrative division of Nazi Germany in the occupied Netherlands",
+  "from": {
+   "y": 1940,
+   "m": 5,
+   "d": 14,
+   "p": 11
+  },
+  "to": {
+   "y": 1945,
+   "m": 5,
+   "d": 6,
+   "p": 11
+  },
+  "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20the%20NSDAP%20%281920%E2%80%931945%29.svg",
+  "enwiki": "Reichskommissariat Niederlande",
+  "zhwiki": "尼德蘭專員轄區",
+  "sources": [
+   "https://www.wikidata.org/wiki/Q596214"
+  ],
+  "runtime": true
+ },
+ "Q596239": {
+  "id": "Q596239",
+  "zh": "同盟国军事占领奥地利",
+  "en": "Allied-occupied Austria",
+  "desc": "占领军政权",
+  "desc_en": "post-World War II Allied occupation of Austria (1945-1955)",
+  "from": {
+   "y": 1945,
+   "m": 0,
+   "d": 0,
+   "p": 9
+  },
+  "to": {
+   "y": 1955,
+   "m": 0,
+   "d": 0,
+   "p": 9
+  },
+  "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Austria.svg",
+  "enwiki": "Allied-occupied Austria",
+  "zhwiki": "同盟國軍事佔領奧地利",
+  "sources": [
+   "https://www.wikidata.org/wiki/Q596239"
+  ],
+  "runtime": true
+ },
+ "Q5970542": {
+  "id": "Q5970542",
+  "zh": "陕甘宁边区",
+  "en": "Yan'an Soviet",
+  "desc": "中国共产党前革命根据地",
+  "desc_en": "Communist-governed Chinese base area (1937–1950)",
+  "from": {
+   "y": 1937,
+   "m": 0,
+   "d": 0,
+   "p": 9
+  },
+  "to": {
+   "y": 1950,
+   "m": 0,
+   "d": 0,
+   "p": 9
+  },
+  "flag": null,
+  "enwiki": "Yan'an Soviet",
+  "zhwiki": "陕甘宁边区",
+  "sources": [
+   "https://www.wikidata.org/wiki/Q5970542"
+  ],
+  "runtime": true
+ },
+ "Q6158903": {
+  "id": "Q6158903",
+  "zh": "关岛日占时期",
+  "en": "Japanese occupation of Guam",
+  "desc": null,
+  "desc_en": "1941–1944 occupation of Guam by Empire of Japan",
+  "from": null,
+  "to": null,
+  "flag": null,
+  "enwiki": "Japanese occupation of Guam",
+  "zhwiki": null,
+  "sources": [
+   "https://www.wikidata.org/wiki/Q6158903"
+  ],
+  "runtime": true
+ },
+ "Q6448838": {
+  "id": "Q6448838",
+  "zh": "科威特省",
+  "en": "Kuwait Governorate",
+  "desc": null,
+  "desc_en": "former Iraqi governorate",
+  "from": {
+   "y": 1990,
+   "m": 0,
+   "d": 0,
+   "p": 9
+  },
+  "to": {
+   "y": 1991,
+   "m": 2,
+   "d": 26,
+   "p": 11
+  },
+  "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Kuwait.svg",
+  "enwiki": "Kuwait Governorate",
+  "zhwiki": "科威特省 (伊拉克)",
+  "sources": [
+   "https://www.wikidata.org/wiki/Q6448838"
+  ],
+  "runtime": true
+ },
+ "Q652560": {
+  "id": "Q652560",
+  "zh": "西印度群岛联邦",
+  "en": "West Indies Federation",
+  "desc": "1958-1962年加勒比海的群岛国家",
+  "desc_en": "federation of British colonies (1958–1962)",
+  "from": {
+   "y": 1958,
+   "m": 1,
+   "d": 3,
+   "p": 11
+  },
+  "to": {
+   "y": 1962,
+   "m": 5,
+   "d": 31,
+   "p": 11
+  },
+  "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20the%20West%20Indies%20Federation%20%281958%E2%80%931962%29.svg",
+  "enwiki": "West Indies Federation",
+  "zhwiki": "西印度群島聯邦",
+  "sources": [
+   "https://www.wikidata.org/wiki/Q652560"
+  ],
+  "runtime": true
+ },
+ "Q65270011": {
+  "id": "Q65270011",
+  "zh": null,
+  "en": "Japanese occupation of the Gilbert Islands",
+  "desc": null,
+  "desc_en": "period in the history of Kiribati",
+  "from": null,
+  "to": null,
+  "flag": null,
+  "enwiki": "Japanese occupation of the Gilbert Islands",
+  "zhwiki": null,
+  "sources": [
+   "https://www.wikidata.org/wiki/Q65270011"
+  ],
+  "runtime": true
+ },
+ "Q678658": {
+  "id": "Q678658",
+  "zh": "旅大租借地",
+  "en": "Kwantung Leased Territory",
+  "desc": "位於旅順與大連的日本租借地",
+  "desc_en": "Japanese possession in Northeastern China until the end of World War II",
+  "from": {
+   "y": 1905,
+   "m": 0,
+   "d": 0,
+   "p": 9
+  },
+  "to": {
+   "y": 1945,
+   "m": 0,
+   "d": 0,
+   "p": 9
+  },
+  "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Japan%20%281870%E2%80%931999%29.svg",
+  "enwiki": "Kwantung Leased Territory",
+  "zhwiki": "关东州 (日本)",
+  "sources": [
+   "https://www.wikidata.org/wiki/Q678658"
+  ],
+  "runtime": true
+ },
+ "Q6851954": {
+  "id": "Q6851954",
+  "zh": "波兰军事管辖区",
+  "en": "Military Administration in Poland",
+  "desc": null,
+  "desc_en": "military administration of Nazi Germany in occupied parts of Poland during World War II",
+  "from": {
+   "y": 1939,
+   "m": 0,
+   "d": 0,
+   "p": 9
+  },
+  "to": null,
+  "flag": null,
+  "enwiki": "Military Administration in Poland",
+  "zhwiki": "波蘭軍事行政區",
+  "sources": [
+   "https://www.wikidata.org/wiki/Q6851954"
+  ],
+  "runtime": true
+ },
+ "Q701967": {
+  "id": "Q701967",
+  "zh": "香港日占时期",
+  "en": "Japanese occupation of Hong Kong",
+  "desc": "香港歷史時期（1941年12月25日至1945年8月15日）",
+  "desc_en": "3.7 year occupation of Hong Kong during World War II by the Japanese Empire",
+  "from": {
+   "y": 1941,
+   "m": 12,
+   "d": 25,
+   "p": 11
+  },
+  "to": {
+   "y": 1945,
+   "m": 8,
+   "d": 30,
+   "p": 11
+  },
+  "flag": null,
+  "enwiki": "Japanese occupation of Hong Kong",
+  "zhwiki": "香港日佔時期",
+  "sources": [
+   "https://www.wikidata.org/wiki/Q701967"
+  ],
+  "runtime": true
+ },
+ "Q702310": {
+  "id": "Q702310",
+  "zh": "印度尼西亚日据时期",
+  "en": "Japanese occupation of the Dutch East Indies",
+  "desc": "历史时期",
+  "desc_en": "Japanese occupation of the Dutch East Indies during World War II, 1942-1945",
+  "from": {
+   "y": 1942,
+   "m": 0,
+   "d": 0,
+   "p": 9
+  },
+  "to": {
+   "y": 1945,
+   "m": 0,
+   "d": 0,
+   "p": 9
+  },
+  "flag": null,
+  "enwiki": "Japanese occupation of the Dutch East Indies",
+  "zhwiki": "荷屬東印度日佔時期",
+  "sources": [
+   "https://www.wikidata.org/wiki/Q702310"
+  ],
+  "runtime": true
+ },
+ "Q708193": {
+  "id": "Q708193",
+  "zh": "二次大战德军占领卢森堡",
+  "en": "German occupation of Luxembourg in World War II",
+  "desc": null,
+  "desc_en": "For Luxembourg in World War II, see the appropriate article.",
+  "from": null,
+  "to": null,
+  "flag": null,
+  "enwiki": "German occupation of Luxembourg during World War II",
+  "zhwiki": null,
+  "sources": [
+   "https://www.wikidata.org/wiki/Q708193"
+  ],
+  "runtime": true
+ },
+ "Q713768": {
+  "id": "Q713768",
+  "zh": "马来西亚日据时期",
+  "en": "Japanese occupation of Malaya",
+  "desc": "马来亚历史时期",
+  "desc_en": "empire of Japan military rule in contemporary Singapore and Malaysia",
+  "from": {
+   "y": 1941,
+   "m": 0,
+   "d": 0,
+   "p": 9
+  },
+  "to": {
+   "y": 1945,
+   "m": 0,
+   "d": 0,
+   "p": 9
+  },
+  "flag": null,
+  "enwiki": "Japanese occupation of Malaya",
+  "zhwiki": "马来亚日占时期",
+  "sources": [
+   "https://www.wikidata.org/wiki/Q713768"
+  ],
+  "runtime": true
+ },
+ "Q715645": {
+  "id": "Q715645",
+  "zh": "新加坡日占时期",
+  "en": "Japanese occupation of Singapore",
+  "desc": "新加坡日本占領歷史時期",
+  "desc_en": "Japanese military rule over Singapore (1942–1945)",
+  "from": {
+   "y": 1942,
+   "m": 0,
+   "d": 0,
+   "p": 9
+  },
+  "to": {
+   "y": 1945,
+   "m": 0,
+   "d": 0,
+   "p": 9
+  },
+  "flag": null,
+  "enwiki": "Japanese occupation of Singapore",
+  "zhwiki": "新加坡日佔時期",
+  "sources": [
+   "https://www.wikidata.org/wiki/Q715645"
+  ],
+  "runtime": true
+ },
+ "Q7382031": {
+  "id": "Q7382031",
+  "zh": "达里尼",
+  "en": "Dalniy",
+  "desc": "沙俄租借地时期的大连市",
+  "desc_en": "Dalian under Kvantunskaya Oblast",
+  "from": {
+   "y": 1898,
+   "m": 0,
+   "d": 0,
+   "p": 9
+  },
+  "to": {
+   "y": 1905,
+   "m": 0,
+   "d": 0,
+   "p": 9
+  },
+  "flag": null,
+  "enwiki": "Russian Dalian",
+  "zhwiki": "达里尼市",
+  "sources": [
+   "https://www.wikidata.org/wiki/Q7382031"
+  ],
+  "runtime": true
+ },
+ "Q7985529": {
+  "id": "Q7985529",
+  "zh": "西印度群岛联合邦",
+  "en": "West Indies Associated States",
+  "desc": null,
+  "desc_en": "collective name for Caribbean islands whose status changed from being British colonies to states in free association with the UK in 1967",
+  "from": null,
+  "to": null,
+  "flag": null,
+  "enwiki": "West Indies Associated States",
+  "zhwiki": null,
+  "sources": [
+   "https://www.wikidata.org/wiki/Q7985529"
+  ],
+  "runtime": true
+ },
+ "Q828005": {
+  "id": "Q828005",
+  "zh": "德格",
+  "en": "Derg",
+  "desc": "1974-1987年埃塞俄比亚军政府",
+  "desc_en": "military junta that ruled Ethiopia from 1974 to 1987",
+  "from": {
+   "y": 1974,
+   "m": 6,
+   "d": 28,
+   "p": 11
+  },
+  "to": {
+   "y": 1987,
+   "m": 2,
+   "d": 22,
+   "p": 11
+  },
+  "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Ethiopia%20%281975%E2%80%931987%29.svg",
+  "enwiki": "Derg",
+  "zhwiki": "德尔格",
+  "sources": [
+   "https://www.wikidata.org/wiki/Q828005"
+  ],
+  "runtime": true
+ },
+ "Q85883982": {
+  "id": "Q85883982",
+  "zh": "蒙古军政府",
+  "en": "Mongol Military Government",
+  "desc": "日本扶植政权",
+  "desc_en": null,
+  "from": {
+   "y": 1935,
+   "m": 0,
+   "d": 0,
+   "p": 9
+  },
+  "to": {
+   "y": 1937,
+   "m": 0,
+   "d": 0,
+   "p": 9
+  },
+  "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Mongol%20Military%20Government%20%281936-1937%29.svg",
+  "enwiki": null,
+  "zhwiki": "蒙古军政府",
+  "sources": [
+   "https://www.wikidata.org/wiki/Q85883982"
+  ],
+  "runtime": true
+ },
+ "Q97179246": {
+  "id": "Q97179246",
+  "zh": "东北行政委员会",
+  "en": "Northeast Administrative Committee of the Republic of China",
+  "desc": null,
+  "desc_en": null,
+  "from": null,
+  "to": null,
+  "flag": null,
+  "enwiki": null,
+  "zhwiki": "东北行政委员会 (1946年—1949年)",
+  "sources": [
+   "https://www.wikidata.org/wiki/Q97179246"
+  ],
+  "runtime": true
+ }
+}

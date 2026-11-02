@@ -1,0 +1,4637 @@
+{
+ "_doc": "空位期、共治、摄政、权臣与对立君主（v0.6.1）→ data/curated/interregna.json\n每个案例：所选日期在 from–to 之间、且地图上点到 states 中的政权时，领导人面板顶部显示「实际掌权者」。\n人物的职位按史料所载的本官填写；不能核实的写「未记录」。日期取自所注来源（英文/中文维基百科条目，其依据为学界通行叙述\n与《史记》《汉书》《元史》等正史；条目全文存于 data/refs/wiki/）。日期精度：d=0 表示只精确到月，m=0 表示只精确到年。\n用法：python3 tools/curated_src/interregna.py",
+ "cases": [
+  {
+   "id": "zhou_gonghe",
+   "title": "共和行政（前841–前828）",
+   "kind": "共治",
+   "states": [
+    "Q1069609"
+   ],
+   "from": {
+    "y": -841,
+    "m": 0,
+    "d": 0
+   },
+   "to": {
+    "y": -828,
+    "m": 0,
+    "d": 0
+   },
+   "probe": {
+    "date": "-0841-07-01",
+    "lat": 34.26,
+    "lon": 108.94
+   },
+   "nominal": "周厉王（出奔在彘，名义上仍为王，前 828 年卒）",
+   "leaders": [
+    {
+     "qid": "Q9631841",
+     "zh": "周定公",
+     "office": "周公（世袭执政大臣）；《史记·周本纪》：「召公、周公二相行政，号曰『共和』」",
+     "tag": "共治"
+    },
+    {
+     "qid": "Q6846860",
+     "zh": "召穆公（召伯虎）",
+     "office": "召公（世袭执政大臣）；同上「二相」之一，曾藏匿太子静（后来的周宣王）",
+     "tag": "共治"
+    }
+   ],
+   "alt": {
+    "title": "另一说：共伯和执政（《竹书纪年》）",
+    "leaders": [
+     {
+      "qid": "Q10893753",
+      "zh": "共伯和",
+      "office": "共国国君（伯）；《古本竹书纪年》：「共伯和干王位」，「有共伯和者摄行天子事」",
+      "tag": "摄政"
+     }
+    ],
+    "note": "《古本竹书纪年》《庄子·让王》《吕氏春秋》《左传·昭公二十六年》均记共伯和执政。2011 年刊布的清华简《系年》也作「共伯和立……十又四年……宣王即位，共伯和归于宗」。因此近现代学者多从共伯和说，英文维基百科也称此说已得到《系年》印证；也有学者提出由共伯和居首、周召二公具体执政的折中说。共伯和是否即卫武公，仍是一说。",
+    "src": [
+     "https://zh.wikipedia.org/wiki/共和行政",
+     "https://en.wikipedia.org/wiki/Gonghe_Regency"
+    ]
+   },
+   "note": "前 841 年国人暴动，周厉王出奔于彘（今山西霍州），至前 828 年死于彘；其间王位由执政大臣代行，前 827 年太子静即位为周宣王。这里按《史记·周本纪》的传统说法列出周、召二公共同执政。共和元年（前 841 年）是中国历史上第一个能够确切纪年的年份：司马迁《史记·十二诸侯年表》从这一年开始逐年纪年，此前的年代没有公认的确切年份。",
+   "src": [
+    "https://en.wikipedia.org/wiki/Gonghe_Regency",
+    "https://zh.wikipedia.org/wiki/共和行政",
+    "司马迁《史记·周本纪》《十二诸侯年表》"
+   ]
+  },
+  {
+   "id": "han_74bc",
+   "title": "汉昭帝崩后的继嗣空位（前74年）",
+   "kind": "空位期",
+   "states": [
+    "Q1072949",
+    "Q7209"
+   ],
+   "from": {
+    "y": -74,
+    "m": 6,
+    "d": 5
+   },
+   "to": {
+    "y": -74,
+    "m": 9,
+    "d": 10
+   },
+   "probe": {
+    "date": "-0074-07-01",
+    "lat": 34.26,
+    "lon": 108.94
+   },
+   "nominal": null,
+   "leaders": [
+    {
+     "qid": "Q1193185",
+     "zh": "霍光",
+     "office": "大司马大将军（受汉武帝遗诏辅政）",
+     "tag": "权臣",
+     "note": "迎立昌邑王刘贺；刘贺在位 27 日（前 74 年 7 月 18 日—8 月 14 日）后，霍光与群臣奏请太后将其废黜，再迎立刘病已（汉宣帝）"
+    },
+    {
+     "qid": "Q3268394",
+     "zh": "上官皇太后",
+     "office": "皇太后（汉昭帝皇后，霍光外孙女）",
+     "tag": "名义主持",
+     "note": "废立刘贺的诏书以皇太后名义发布"
+    }
+   ],
+   "alt": null,
+   "note": "汉昭帝前 74 年 6 月 5 日驾崩无嗣，至 9 月 10 日汉宣帝即位，其间除刘贺在位的 27 日外没有皇帝。",
+   "src": [
+    "https://zh.wikipedia.org/wiki/汉昭帝",
+    "https://zh.wikipedia.org/wiki/刘贺",
+    "https://zh.wikipedia.org/wiki/汉宣帝",
+    "https://zh.wikipedia.org/wiki/霍光",
+    "https://en.wikipedia.org/wiki/Emperor_Xuan_of_Han",
+    "班固《汉书·霍光传》"
+   ]
+  },
+  {
+   "id": "han_lu",
+   "title": "吕后临朝称制（前188–前180）",
+   "kind": "临朝称制",
+   "states": [
+    "Q1072949",
+    "Q7209"
+   ],
+   "from": {
+    "y": -188,
+    "m": 9,
+    "d": 0
+   },
+   "to": {
+    "y": -180,
+    "m": 8,
+    "d": 18
+   },
+   "probe": {
+    "date": "-0185-07-01",
+    "lat": 34.26,
+    "lon": 108.94
+   },
+   "nominal": "西汉前少帝、后少帝",
+   "leaders": [
+    {
+     "qid": "Q298039",
+     "zh": "吕雉（吕后）",
+     "office": "皇太后，临朝称制",
+     "tag": "临朝称制",
+     "note": "先后立前少帝刘恭、后少帝刘弘，自己掌握朝政"
+    }
+   ],
+   "alt": null,
+   "note": "汉惠帝前 188 年秋驾崩后，吕太后以皇太后身份临朝称制，直至前 180 年 8 月去世；名义上的皇帝是两位少帝。",
+   "src": [
+    "https://en.wikipedia.org/wiki/Empress_Lü",
+    "https://zh.wikipedia.org/wiki/吕雉",
+    "司马迁《史记·吕太后本纪》"
+   ]
+  },
+  {
+   "id": "han_caocao",
+   "title": "曹操挟天子以令诸侯（197–220）",
+   "kind": "权臣",
+   "states": [
+    "Q1147037"
+   ],
+   "from": {
+    "y": 197,
+    "m": 1,
+    "d": 1
+   },
+   "to": {
+    "y": 220,
+    "m": 3,
+    "d": 15
+   },
+   "probe": {
+    "date": "0200-07-01",
+    "lat": 34.62,
+    "lon": 112.45
+   },
+   "nominal": "汉献帝（刘协）",
+   "leaders": [
+    {
+     "qid": "Q204077",
+     "zh": "曹操",
+     "office": "司空、行车骑将军、录尚书事（197 年 1 月起）；丞相（208 年起）；213 年封魏公，216 年进爵魏王",
+     "tag": "权臣"
+    }
+   ],
+   "alt": null,
+   "note": "汉献帝是名义上的皇帝，朝政由曹操掌握，至 220 年曹操去世。",
+   "src": [
+    "https://zh.wikipedia.org/wiki/曹操",
+    "https://en.wikipedia.org/wiki/Cao_Cao",
+    "陈寿《三国志·武帝纪》"
+   ]
+  },
+  {
+   "id": "tang_wu",
+   "title": "武则天临朝称制（683–690）",
+   "kind": "临朝称制",
+   "states": [
+    "Q9683"
+   ],
+   "from": {
+    "y": 683,
+    "m": 12,
+    "d": 27
+   },
+   "to": {
+    "y": 690,
+    "m": 10,
+    "d": 16
+   },
+   "probe": {
+    "date": "0686-07-01",
+    "lat": 34.62,
+    "lon": 112.45
+   },
+   "nominal": "唐中宗、唐睿宗",
+   "leaders": [
+    {
+     "qid": "Q9738",
+     "zh": "武则天",
+     "office": "皇太后，临朝称制",
+     "tag": "临朝称制",
+     "note": "684 年废唐中宗，立唐睿宗；690 年自立为帝，改国号周"
+    }
+   ],
+   "alt": null,
+   "note": "唐高宗 683 年 12 月 27 日去世后，武则天以皇太后身份临朝称制，中宗、睿宗为名义上的皇帝。",
+   "src": [
+    "https://zh.wikipedia.org/wiki/武则天",
+    "https://en.wikipedia.org/wiki/Wu_Zetian"
+   ]
+  },
+  {
+   "id": "yuan_1332",
+   "title": "元文宗崩后的继嗣空位（1332–1333）",
+   "kind": "空位期",
+   "states": [
+    "Q7313"
+   ],
+   "from": {
+    "y": 1332,
+    "m": 9,
+    "d": 2
+   },
+   "to": {
+    "y": 1333,
+    "m": 7,
+    "d": 19
+   },
+   "probe": {
+    "date": "1333-03-01",
+    "lat": 39.9,
+    "lon": 116.4
+   },
+   "nominal": null,
+   "leaders": [
+    {
+     "qid": "Q10909626",
+     "zh": "卜答失里",
+     "office": "皇后（1332 年 11 月起为皇太后），临朝摄政",
+     "tag": "摄政",
+     "note": "元文宗未立嗣；她拥立宁宗、拒立己子，最终迎立妥懽帖睦尔（元顺帝）"
+    },
+    {
+     "qid": "Q7157453",
+     "zh": "燕帖木儿",
+     "office": "中书右丞相、知枢密院事，太平王",
+     "tag": "权臣",
+     "note": "拖延妥懽帖睦尔即位约半年；1333 年夏去世",
+     "to": {
+      "y": 1333,
+      "m": 6,
+      "d": 0
+     }
+    }
+   ],
+   "alt": null,
+   "note": "元文宗 1332 年 9 月 2 日驾崩，元宁宗 10 月 23 日即位、12 月 14 日即去世，元顺帝 1333 年 7 月 19 日才在上都即位。其间（宁宗在位的两个月除外）没有皇帝，由皇后卜答失里与权臣燕帖木儿主持朝政。燕帖木儿死后掌权的伯颜，在空位期间的职位未记录。",
+   "src": [
+    "https://en.wikipedia.org/wiki/Budashiri",
+    "https://en.wikipedia.org/wiki/El_Temür",
+    "https://en.wikipedia.org/wiki/Toghon_Temür",
+    "https://zh.wikipedia.org/wiki/元宁宗",
+    "https://zh.wikipedia.org/wiki/燕铁木儿",
+    "宋濂等《元史》"
+   ]
+  },
+  {
+   "id": "ming_zhang",
+   "title": "张居正任内阁首辅（1572–1582）",
+   "kind": "权臣",
+   "states": [
+    "Q9903"
+   ],
+   "from": {
+    "y": 1572,
+    "m": 7,
+    "d": 0
+   },
+   "to": {
+    "y": 1582,
+    "m": 7,
+    "d": 9
+   },
+   "probe": {
+    "date": "1575-07-01",
+    "lat": 39.9,
+    "lon": 116.4
+   },
+   "nominal": "明神宗（万历帝）",
+   "leaders": [
+    {
+     "qid": "Q197234",
+     "zh": "张居正",
+     "office": "内阁首辅（中极殿大学士，加太师）",
+     "tag": "权臣",
+     "note": "受隆庆帝顾命，万历帝年幼时实际主持朝政"
+    }
+   ],
+   "alt": null,
+   "note": "万历帝 1572 年即位时 9 岁；张居正任首辅十年，是实际的最高决策者，至 1582 年去世。",
+   "src": [
+    "https://zh.wikipedia.org/wiki/张居正",
+    "https://en.wikipedia.org/wiki/Zhang_Juzheng"
+   ]
+  },
+  {
+   "id": "qing_four",
+   "title": "康熙初年四辅政大臣（1661–1667）",
+   "kind": "辅政",
+   "states": [
+    "Q8733"
+   ],
+   "from": {
+    "y": 1661,
+    "m": 2,
+    "d": 5
+   },
+   "to": {
+    "y": 1667,
+    "m": 8,
+    "d": 0
+   },
+   "probe": {
+    "date": "1665-07-01",
+    "lat": 39.9,
+    "lon": 116.4
+   },
+   "nominal": "康熙帝",
+   "leaders": [
+    {
+     "qid": "Q2301595",
+     "zh": "索尼",
+     "office": "辅政大臣（正黄旗，首席）",
+     "tag": "辅政",
+     "to": {
+      "y": 1667,
+      "m": 7,
+      "d": 0
+     }
+    },
+    {
+     "qid": "Q911315",
+     "zh": "苏克萨哈",
+     "office": "辅政大臣（正白旗）",
+     "tag": "辅政"
+    },
+    {
+     "qid": "Q1042959",
+     "zh": "遏必隆",
+     "office": "辅政大臣（镶黄旗）",
+     "tag": "辅政"
+    },
+    {
+     "qid": "Q1194024",
+     "zh": "鳌拜",
+     "office": "辅政大臣（镶黄旗）",
+     "tag": "辅政"
+    }
+   ],
+   "alt": null,
+   "note": "顺治帝遗诏命四大臣辅佐年幼的康熙帝，至 1667 年康熙帝亲政。",
+   "src": [
+    "https://en.wikipedia.org/wiki/Four_Regents",
+    "https://en.wikipedia.org/wiki/Oboi"
+   ]
+  },
+  {
+   "id": "qing_oboi",
+   "title": "鳌拜专权（1667–1669）",
+   "kind": "权臣",
+   "states": [
+    "Q8733"
+   ],
+   "from": {
+    "y": 1667,
+    "m": 8,
+    "d": 0
+   },
+   "to": {
+    "y": 1669,
+    "m": 6,
+    "d": 0
+   },
+   "probe": {
+    "date": "1668-07-01",
+    "lat": 39.9,
+    "lon": 116.4
+   },
+   "nominal": "康熙帝",
+   "leaders": [
+    {
+     "qid": "Q1194024",
+     "zh": "鳌拜",
+     "office": "辅政大臣、一等公",
+     "tag": "权臣",
+     "note": "1669 年被康熙帝逮捕"
+    }
+   ],
+   "alt": null,
+   "note": "康熙帝 1667 年亲政后，鳌拜仍把持朝政，直到 1669 年被捕，康熙帝才完全掌权。",
+   "src": [
+    "https://en.wikipedia.org/wiki/Oboi",
+    "https://en.wikipedia.org/wiki/Four_Regents"
+   ]
+  },
+  {
+   "id": "qing_cixi1",
+   "title": "两宫皇太后垂帘听政（1861–1873）",
+   "kind": "垂帘听政",
+   "states": [
+    "Q8733"
+   ],
+   "from": {
+    "y": 1861,
+    "m": 11,
+    "d": 0
+   },
+   "to": {
+    "y": 1873,
+    "m": 2,
+    "d": 23
+   },
+   "probe": {
+    "date": "1868-07-01",
+    "lat": 39.9,
+    "lon": 116.4
+   },
+   "nominal": "同治帝",
+   "leaders": [
+    {
+     "qid": "Q1150358",
+     "zh": "慈安太后",
+     "office": "母后皇太后（东太后），垂帘听政",
+     "tag": "共治"
+    },
+    {
+     "qid": "Q47842",
+     "zh": "慈禧太后",
+     "office": "圣母皇太后（西太后），垂帘听政",
+     "tag": "共治"
+    },
+    {
+     "qid": "Q509360",
+     "zh": "奕訢（恭亲王）",
+     "office": "议政王、领班军机大臣",
+     "tag": "辅政",
+     "note": "1865 年被革去议政王",
+     "to": {
+      "y": 1865,
+      "m": 4,
+      "d": 0
+     }
+    }
+   ],
+   "alt": null,
+   "note": "1861 年辛酉政变后，两宫皇太后在同治帝年幼期间共同垂帘听政，直至 1873 年同治帝亲政。",
+   "src": [
+    "https://zh.wikipedia.org/wiki/辛酉政变",
+    "https://zh.wikipedia.org/wiki/慈禧太后",
+    "https://zh.wikipedia.org/wiki/慈安太后",
+    "https://en.wikipedia.org/wiki/Empress_Dowager_Cixi"
+   ]
+  },
+  {
+   "id": "qing_cixi2",
+   "title": "两宫皇太后再度垂帘（1875–1889）",
+   "kind": "垂帘听政",
+   "states": [
+    "Q8733"
+   ],
+   "from": {
+    "y": 1875,
+    "m": 2,
+    "d": 25
+   },
+   "to": {
+    "y": 1889,
+    "m": 3,
+    "d": 4
+   },
+   "probe": {
+    "date": "1878-07-01",
+    "lat": 39.9,
+    "lon": 116.4
+   },
+   "nominal": "光绪帝",
+   "leaders": [
+    {
+     "qid": "Q1150358",
+     "zh": "慈安太后",
+     "office": "母后皇太后，垂帘听政",
+     "tag": "共治",
+     "note": "1881 年 4 月 8 日去世",
+     "to": {
+      "y": 1881,
+      "m": 4,
+      "d": 8
+     }
+    },
+    {
+     "qid": "Q47842",
+     "zh": "慈禧太后",
+     "office": "圣母皇太后，垂帘听政（1881 年起独自听政）",
+     "tag": "垂帘听政"
+    }
+   ],
+   "alt": null,
+   "note": "同治帝去世后光绪帝 4 岁即位，两宫皇太后再度垂帘；慈安去世后由慈禧独自听政，至 1889 年光绪帝亲政。",
+   "src": [
+    "https://zh.wikipedia.org/wiki/慈禧太后",
+    "https://zh.wikipedia.org/wiki/慈安太后",
+    "https://en.wikipedia.org/wiki/Empress_Dowager_Cixi"
+   ]
+  },
+  {
+   "id": "qing_cixi3",
+   "title": "慈禧训政（1898–1908）",
+   "kind": "垂帘听政",
+   "states": [
+    "Q8733"
+   ],
+   "from": {
+    "y": 1898,
+    "m": 9,
+    "d": 21
+   },
+   "to": {
+    "y": 1908,
+    "m": 11,
+    "d": 15
+   },
+   "probe": {
+    "date": "1900-07-01",
+    "lat": 39.9,
+    "lon": 116.4
+   },
+   "nominal": "光绪帝",
+   "leaders": [
+    {
+     "qid": "Q47842",
+     "zh": "慈禧太后",
+     "office": "皇太后，戊戌政变后「训政」",
+     "tag": "权臣",
+     "note": "软禁光绪帝于瀛台"
+    }
+   ],
+   "alt": null,
+   "note": "1898 年戊戌政变后慈禧重新训政，光绪帝被软禁，直至 1908 年两人相继去世。",
+   "src": [
+    "https://zh.wikipedia.org/wiki/慈禧太后",
+    "https://en.wikipedia.org/wiki/Empress_Dowager_Cixi"
+   ]
+  },
+  {
+   "id": "francia_737",
+   "title": "法兰克王位空缺（737–743）",
+   "kind": "空位期",
+   "states": [
+    "Q146246"
+   ],
+   "from": {
+    "y": 737,
+    "m": 0,
+    "d": 0
+   },
+   "to": {
+    "y": 743,
+    "m": 2,
+    "d": 16
+   },
+   "probe": {
+    "date": "0740-07-01",
+    "lat": 48.85,
+    "lon": 2.35
+   },
+   "nominal": null,
+   "leaders": [
+    {
+     "qid": "Q3301",
+     "zh": "查理·马特",
+     "office": "宫相（Mayor of the Palace）",
+     "tag": "宫相执政",
+     "to": {
+      "y": 741,
+      "m": 10,
+      "d": 22
+     }
+    },
+    {
+     "qid": "Q310440",
+     "zh": "卡洛曼",
+     "office": "宫相（奥斯特拉西亚）",
+     "tag": "宫相执政",
+     "from": {
+      "y": 741,
+      "m": 10,
+      "d": 22
+     }
+    },
+    {
+     "qid": "Q81212",
+     "zh": "矮子丕平",
+     "office": "宫相（纽斯特里亚）",
+     "tag": "宫相执政",
+     "from": {
+      "y": 741,
+      "m": 10,
+      "d": 22
+     }
+    }
+   ],
+   "alt": null,
+   "note": "墨洛温国王提乌德里克四世 737 年去世后，查理·马特不立新王，以宫相身份统治；他 741 年去世后由二子分任宫相，743 年 2–3 月才立希尔德里克三世为王。",
+   "src": [
+    "https://en.wikipedia.org/wiki/Childeric_III",
+    "https://en.wikipedia.org/wiki/Charles_Martel"
+   ]
+  },
+  {
+   "id": "hre_great",
+   "title": "神圣罗马帝国大空位（1250–1273）",
+   "kind": "对立君主",
+   "states": [
+    "Q12548"
+   ],
+   "from": {
+    "y": 1250,
+    "m": 12,
+    "d": 13
+   },
+   "to": {
+    "y": 1273,
+    "m": 10,
+    "d": 1
+   },
+   "probe": {
+    "date": "1260-07-01",
+    "lat": 50.11,
+    "lon": 8.68
+   },
+   "nominal": null,
+   "leaders": [
+    {
+     "qid": "Q157179",
+     "zh": "康拉德四世",
+     "office": "罗马人的国王（德意志国王）",
+     "tag": "对立国王",
+     "note": "1254 年去世",
+     "to": {
+      "y": 1254,
+      "m": 5,
+      "d": 21
+     }
+    },
+    {
+     "qid": "Q77255",
+     "zh": "荷兰的威廉",
+     "office": "罗马人的国王（对立国王，1247 年由教皇派选出）",
+     "tag": "对立国王",
+     "note": "1256 年去世",
+     "to": {
+      "y": 1256,
+      "m": 1,
+      "d": 28
+     }
+    },
+    {
+     "qid": "Q314527",
+     "zh": "康沃尔的理查",
+     "office": "罗马人的国王（1257 年当选）",
+     "tag": "对立国王",
+     "note": "1272 年去世",
+     "from": {
+      "y": 1257,
+      "m": 1,
+      "d": 0
+     },
+     "to": {
+      "y": 1272,
+      "m": 4,
+      "d": 2
+     }
+    },
+    {
+     "qid": "Q47595",
+     "zh": "卡斯蒂利亚的阿方索十世",
+     "office": "罗马人的国王（1257 年另一派选出，从未到德意志）",
+     "tag": "对立国王",
+     "from": {
+      "y": 1257,
+      "m": 4,
+      "d": 0
+     }
+    }
+   ],
+   "alt": null,
+   "note": "腓特烈二世 1250 年去世后，到 1273 年哈布斯堡的鲁道夫一世当选前，没有被普遍承认的君主（1250–1312 年也没有加冕的皇帝）。",
+   "src": [
+    "https://en.wikipedia.org/wiki/Great_Interregnum"
+   ]
+  },
+  {
+   "id": "ottoman_fetret",
+   "title": "奥斯曼空位期（1402–1413）",
+   "kind": "对立君主",
+   "states": [
+    "Q12560",
+    "Q43"
+   ],
+   "from": {
+    "y": 1402,
+    "m": 7,
+    "d": 28
+   },
+   "to": {
+    "y": 1413,
+    "m": 7,
+    "d": 5
+   },
+   "probe": {
+    "date": "1405-07-01",
+    "lat": 40.18,
+    "lon": 29.06
+   },
+   "nominal": null,
+   "leaders": [
+    {
+     "qid": "Q1095044",
+     "zh": "苏莱曼·切莱比",
+     "office": "统治鲁米利亚（都埃迪尔内），称苏丹",
+     "tag": "争位",
+     "to": {
+      "y": 1411,
+      "m": 2,
+      "d": 17
+     }
+    },
+    {
+     "qid": "Q1085744",
+     "zh": "伊萨·切莱比",
+     "office": "统治布尔萨一带",
+     "tag": "争位",
+     "note": "1403 年败于穆罕默德",
+     "to": {
+      "y": 1403,
+      "m": 0,
+      "d": 0
+     }
+    },
+    {
+     "qid": "Q168769",
+     "zh": "穆罕默德·切莱比（后来的穆罕默德一世）",
+     "office": "统治阿马西亚，后据布尔萨",
+     "tag": "争位"
+    },
+    {
+     "qid": "Q1095287",
+     "zh": "穆萨·切莱比",
+     "office": "1411 年起统治鲁米利亚",
+     "tag": "争位",
+     "from": {
+      "y": 1411,
+      "m": 2,
+      "d": 17
+     }
+    }
+   ],
+   "alt": null,
+   "note": "巴耶济德一世 1402 年 7 月 28 日在安卡拉战役被帖木儿俘虏后，诸子争位，至 1413 年 7 月 5 日穆罕默德一世获胜。",
+   "src": [
+    "https://en.wikipedia.org/wiki/Ottoman_Interregnum"
+   ]
+  },
+  {
+   "id": "mongol_toregene",
+   "title": "蒙古帝国脱列哥那摄政（1241–1246）",
+   "kind": "摄政",
+   "states": [
+    "Q12557"
+   ],
+   "from": {
+    "y": 1241,
+    "m": 12,
+    "d": 11
+   },
+   "to": {
+    "y": 1246,
+    "m": 8,
+    "d": 24
+   },
+   "probe": {
+    "date": "1244-07-01",
+    "lat": 47.2,
+    "lon": 102.8
+   },
+   "nominal": null,
+   "leaders": [
+    {
+     "qid": "Q1072396",
+     "zh": "脱列哥那",
+     "office": "窝阔台的皇后（六皇后），监国称制",
+     "tag": "摄政"
+    }
+   ],
+   "alt": null,
+   "note": "窝阔台 1241 年 12 月 11 日去世，由皇后脱列哥那监国，至 1246 年 8 月 24 日忽里勒台推举其子贵由为大汗。",
+   "src": [
+    "https://en.wikipedia.org/wiki/Töregene_Khatun"
+   ]
+  },
+  {
+   "id": "mongol_oghul",
+   "title": "蒙古帝国海迷失后摄政（1248–1251）",
+   "kind": "摄政",
+   "states": [
+    "Q12557"
+   ],
+   "from": {
+    "y": 1248,
+    "m": 4,
+    "d": 20
+   },
+   "to": {
+    "y": 1251,
+    "m": 7,
+    "d": 1
+   },
+   "probe": {
+    "date": "1250-07-01",
+    "lat": 47.2,
+    "lon": 102.8
+   },
+   "nominal": null,
+   "leaders": [
+    {
+     "qid": "Q2450507",
+     "zh": "斡兀立·海迷失",
+     "office": "贵由的皇后，监国称制",
+     "tag": "摄政"
+    }
+   ],
+   "alt": null,
+   "note": "贵由 1248 年 4 月去世，皇后海迷失监国；1251 年 7 月 1 日忽里勒台推举拖雷之子蒙哥为大汗。",
+   "src": [
+    "https://en.wikipedia.org/wiki/Oghul_Qaimish"
+   ]
+  },
+  {
+   "id": "france_1316",
+   "title": "法兰西王位空缺与摄政（1316）",
+   "kind": "摄政",
+   "states": [
+    "Q70972"
+   ],
+   "from": {
+    "y": 1316,
+    "m": 6,
+    "d": 5
+   },
+   "to": {
+    "y": 1316,
+    "m": 11,
+    "d": 20
+   },
+   "probe": {
+    "date": "1316-09-01",
+    "lat": 48.86,
+    "lon": 2.35
+   },
+   "nominal": null,
+   "leaders": [
+    {
+     "qid": "Q8433",
+     "zh": "普瓦捷伯爵腓力（后来的腓力五世）",
+     "office": "王兄，王国摄政",
+     "tag": "摄政"
+    }
+   ],
+   "alt": null,
+   "note": "路易十世 1316 年 6 月 5 日去世时王后有孕，由其弟腓力摄政；遗腹子约翰一世 11 月 15 日出生、20 日夭折，腓力即位为腓力五世。",
+   "src": [
+    "https://en.wikipedia.org/wiki/Philip_V_of_France",
+    "https://en.wikipedia.org/wiki/John_I_of_France"
+   ]
+  },
+  {
+   "id": "scotland_1",
+   "title": "苏格兰第一次空位期（1286–1292）",
+   "kind": "摄政",
+   "states": [
+    "Q230791"
+   ],
+   "from": {
+    "y": 1286,
+    "m": 3,
+    "d": 19
+   },
+   "to": {
+    "y": 1292,
+    "m": 11,
+    "d": 17
+   },
+   "probe": {
+    "date": "1290-07-01",
+    "lat": 55.95,
+    "lon": -3.19
+   },
+   "nominal": null,
+   "leaders": [
+    {
+     "qid": "Q1127515",
+     "zh": "威廉·弗雷泽",
+     "office": "圣安德鲁斯主教，苏格兰护国者（Guardian）",
+     "tag": "护国者"
+    },
+    {
+     "qid": "Q1459814",
+     "zh": "罗伯特·威沙特",
+     "office": "格拉斯哥主教，苏格兰护国者",
+     "tag": "护国者"
+    },
+    {
+     "qid": "Q524817",
+     "zh": "约翰·科明",
+     "office": "巴德诺赫领主，苏格兰护国者",
+     "tag": "护国者"
+    },
+    {
+     "qid": "Q361611",
+     "zh": "詹姆斯·斯图尔特",
+     "office": "苏格兰王室总管，苏格兰护国者",
+     "tag": "护国者"
+    }
+   ],
+   "alt": null,
+   "note": "亚历山大三世 1286 年去世，继承人挪威少女玛格丽特 1290 年在来苏格兰途中去世；1292 年由英王爱德华一世仲裁立约翰·巴利奥尔为王。其间由护国者团执政（最初 6 人，此处列出见于史料的 4 人）。",
+   "src": [
+    "https://en.wikipedia.org/wiki/Guardian_of_Scotland"
+   ]
+  },
+  {
+   "id": "portugal_1383",
+   "title": "葡萄牙空位期（1383–1385）",
+   "kind": "摄政",
+   "states": [
+    "Q45670"
+   ],
+   "from": {
+    "y": 1383,
+    "m": 10,
+    "d": 22
+   },
+   "to": {
+    "y": 1385,
+    "m": 4,
+    "d": 6
+   },
+   "probe": {
+    "date": "1384-07-01",
+    "lat": 38.72,
+    "lon": -9.14
+   },
+   "nominal": null,
+   "leaders": [
+    {
+     "qid": "Q237747",
+     "zh": "莱昂诺尔·特莱斯",
+     "office": "太后，以女儿贝亚特丽斯与卡斯蒂利亚的胡安一世之名摄政",
+     "tag": "摄政",
+     "to": {
+      "y": 1384,
+      "m": 1,
+      "d": 0
+     }
+    },
+    {
+     "qid": "Q201575",
+     "zh": "阿维斯的若昂",
+     "office": "王国守护者（Defensor do Reino），1385 年被科英布拉议会拥立为国王若昂一世",
+     "tag": "临时执政",
+     "from": {
+      "y": 1383,
+      "m": 12,
+      "d": 0
+     }
+    }
+   ],
+   "alt": null,
+   "note": "费尔南多一世 1383 年 10 月去世无子，王位在其女（嫁卡斯蒂利亚国王）与阿维斯骑士团团长若昂之间争夺，至 1385 年若昂一世即位。",
+   "src": [
+    "https://en.wikipedia.org/wiki/1383–1385_Portuguese_interregnum"
+   ]
+  },
+  {
+   "id": "russia_1610",
+   "title": "俄国七贵族执政与王位空缺（1610–1613）",
+   "kind": "临时执政",
+   "states": [
+    "Q186096"
+   ],
+   "from": {
+    "y": 1610,
+    "m": 7,
+    "d": 27
+   },
+   "to": {
+    "y": 1613,
+    "m": 2,
+    "d": 21
+   },
+   "probe": {
+    "date": "1611-07-01",
+    "lat": 55.75,
+    "lon": 37.62
+   },
+   "nominal": "瓦迪斯瓦夫（波兰王子，被推举为沙皇但从未即位）",
+   "leaders": [
+    {
+     "qid": null,
+     "zh": "七贵族（以费奥多尔·姆斯季斯拉夫斯基公爵为首）",
+     "office": "大贵族会议执政（Семибоярщина）",
+     "tag": "临时执政",
+     "note": "1610 年 8 月同意迎立波兰王子瓦迪斯瓦夫为沙皇（他从未到莫斯科即位）",
+     "to": {
+      "y": 1612,
+      "m": 11,
+      "d": 0
+     }
+    },
+    {
+     "qid": "Q15756",
+     "zh": "德米特里·波扎尔斯基",
+     "office": "第二民军统帅",
+     "tag": "临时执政",
+     "note": "1612 年与米宁收复莫斯科",
+     "from": {
+      "y": 1612,
+      "m": 0,
+      "d": 0
+     }
+    },
+    {
+     "qid": "Q469785",
+     "zh": "库兹马·米宁",
+     "office": "第二民军组织者（下诺夫哥罗德商人）",
+     "tag": "临时执政",
+     "from": {
+      "y": 1612,
+      "m": 0,
+      "d": 0
+     }
+    }
+   ],
+   "alt": null,
+   "note": "1610 年 7 月贵族废黜瓦西里·舒伊斯基，至 1613 年 2 月缙绅会议选出米哈伊尔·罗曼诺夫，俄国没有实际在位的沙皇（「混乱时期」）。",
+   "src": [
+    "https://en.wikipedia.org/wiki/Seven_Boyars"
+   ]
+  },
+  {
+   "id": "england_council",
+   "title": "英格兰空位期：国务会议（1649–1653）",
+   "kind": "临时执政",
+   "states": [
+    "Q330362",
+    "Q179876"
+   ],
+   "from": {
+    "y": 1649,
+    "m": 1,
+    "d": 30
+   },
+   "to": {
+    "y": 1653,
+    "m": 12,
+    "d": 16
+   },
+   "probe": {
+    "date": "1650-07-01",
+    "lat": 51.51,
+    "lon": -0.13
+   },
+   "nominal": null,
+   "leaders": [
+    {
+     "qid": "Q2993731",
+     "zh": "国务会议（Council of State）",
+     "office": "行政机构，由残缺议会（Rump Parliament）任命，取代国王与枢密院",
+     "tag": "集体执政",
+     "from": {
+      "y": 1649,
+      "m": 2,
+      "d": 14
+     }
+    },
+    {
+     "qid": "Q2634873",
+     "zh": "约翰·布拉德肖",
+     "office": "国务会议首任主席（1649 年 3 月 12 日起）",
+     "tag": "临时执政",
+     "from": {
+      "y": 1649,
+      "m": 3,
+      "d": 12
+     }
+    },
+    {
+     "qid": "Q44279",
+     "zh": "奥利弗·克伦威尔",
+     "office": "国务会议成员；新模范军将领（1650 年起任总司令）",
+     "tag": "权臣"
+    }
+   ],
+   "alt": null,
+   "note": "查理一世 1649 年 1 月 30 日被处决，议会废除君主制；1653 年 12 月 16 日克伦威尔就任护国公（之后见「领导人」中的护国公）。",
+   "src": [
+    "https://en.wikipedia.org/wiki/Interregnum_(England)",
+    "https://en.wikipedia.org/wiki/Council_of_State_(England)"
+   ]
+  },
+  {
+   "id": "england_1659",
+   "title": "英格兰空位期末期（1659–1660）",
+   "kind": "临时执政",
+   "states": [
+    "Q330362",
+    "Q179876"
+   ],
+   "from": {
+    "y": 1659,
+    "m": 5,
+    "d": 25
+   },
+   "to": {
+    "y": 1660,
+    "m": 5,
+    "d": 29
+   },
+   "probe": {
+    "date": "1659-10-01",
+    "lat": 51.51,
+    "lon": -0.13
+   },
+   "nominal": null,
+   "leaders": [
+    {
+     "qid": "Q1477668",
+     "zh": "残缺议会（Rump Parliament）与安全委员会",
+     "office": "复会的议会及其委员会",
+     "tag": "集体执政"
+    },
+    {
+     "qid": "Q335106",
+     "zh": "乔治·蒙克",
+     "office": "驻苏格兰英军总司令；1660 年 2 月率军进入伦敦，促成复辟",
+     "tag": "权臣",
+     "from": {
+      "y": 1660,
+      "m": 2,
+      "d": 0
+     }
+    }
+   ],
+   "alt": null,
+   "note": "理查德·克伦威尔 1659 年 5 月辞去护国公后，由复会的残缺议会与军队交替掌权，至 1660 年 5 月 29 日查理二世回到伦敦。",
+   "src": [
+    "https://en.wikipedia.org/wiki/Interregnum_(England)"
+   ]
+  },
+  {
+   "id": "byz_1042",
+   "title": "佐伊与狄奥多拉共治（1042）",
+   "kind": "共治",
+   "states": [
+    "Q12544"
+   ],
+   "from": {
+    "y": 1042,
+    "m": 4,
+    "d": 21
+   },
+   "to": {
+    "y": 1042,
+    "m": 6,
+    "d": 11
+   },
+   "probe": {
+    "date": "1042-05-01",
+    "lat": 41.01,
+    "lon": 28.97
+   },
+   "nominal": null,
+   "leaders": [
+    {
+     "qid": "Q41659",
+     "zh": "佐伊",
+     "office": "拜占庭女皇（共治）",
+     "tag": "共治"
+    },
+    {
+     "qid": "Q41666",
+     "zh": "狄奥多拉",
+     "office": "拜占庭女皇（共治）",
+     "tag": "共治"
+    }
+   ],
+   "alt": null,
+   "note": "1042 年 4 月君士坦丁堡民众推翻米海尔五世，马其顿王朝的佐伊与狄奥多拉姐妹共同执政，至 6 月佐伊再婚、君士坦丁九世即位。",
+   "src": [
+    "https://en.wikipedia.org/wiki/Zoë_Porphyrogenita"
+   ]
+  },
+  {
+   "id": "spain_1868",
+   "title": "西班牙王位空缺（1868–1871）",
+   "kind": "临时执政",
+   "states": [
+    "Q29",
+    "Q80702"
+   ],
+   "from": {
+    "y": 1868,
+    "m": 9,
+    "d": 30
+   },
+   "to": {
+    "y": 1871,
+    "m": 1,
+    "d": 2
+   },
+   "probe": {
+    "date": "1869-07-01",
+    "lat": 40.42,
+    "lon": -3.7
+   },
+   "nominal": null,
+   "leaders": [
+    {
+     "qid": "Q515741",
+     "zh": "弗朗西斯科·塞拉诺",
+     "office": "临时政府首脑（1868-10-03 起）；王国摄政（1869-06-18 起）",
+     "tag": "临时执政",
+     "from": {
+      "y": 1868,
+      "m": 10,
+      "d": 3
+     }
+    },
+    {
+     "qid": "Q379787",
+     "zh": "胡安·普里姆",
+     "office": "首相（1869 年 6 月起），1870 年 12 月遇刺身亡",
+     "tag": "权臣",
+     "from": {
+      "y": 1869,
+      "m": 6,
+      "d": 18
+     },
+     "to": {
+      "y": 1870,
+      "m": 12,
+      "d": 30
+     }
+    }
+   ],
+   "alt": null,
+   "note": "1868 年九月革命推翻伊莎贝拉二世，1869 年宪法保留君主制但王位空缺，由摄政执政，至 1871 年 1 月阿马德奥一世即位。",
+   "src": [
+    "https://en.wikipedia.org/wiki/Francisco_Serrano,_1st_Duke_of_la_Torre",
+    "https://en.wikipedia.org/wiki/Spanish_Revolution_of_1868"
+   ]
+  },
+  {
+   "id": "hungary_regency",
+   "title": "匈牙利「没有国王的王国」（1920–1944）",
+   "kind": "摄政",
+   "states": [
+    "Q600018",
+    "Q171150",
+    "Q28"
+   ],
+   "from": {
+    "y": 1920,
+    "m": 3,
+    "d": 1
+   },
+   "to": {
+    "y": 1944,
+    "m": 10,
+    "d": 16
+   },
+   "probe": {
+    "date": "1930-07-01",
+    "lat": 47.5,
+    "lon": 19.04
+   },
+   "nominal": null,
+   "leaders": [
+    {
+     "qid": "Q117144",
+     "zh": "霍尔蒂·米克洛什",
+     "office": "匈牙利王国摄政",
+     "tag": "摄政"
+    }
+   ],
+   "alt": null,
+   "note": "1920 年起匈牙利仍为王国，但国王位虚悬（协约国与邻国反对哈布斯堡复辟），由摄政霍尔蒂担任国家元首，至 1944 年 10 月被德国逼迫下台。",
+   "src": [
+    "https://en.wikipedia.org/wiki/Kingdom_of_Hungary_(1920–1946)"
+   ]
+  },
+  {
+   "id": "belgium_regency",
+   "title": "比利时摄政（1944–1950）",
+   "kind": "摄政",
+   "states": [
+    "Q31"
+   ],
+   "from": {
+    "y": 1944,
+    "m": 9,
+    "d": 20
+   },
+   "to": {
+    "y": 1950,
+    "m": 7,
+    "d": 20
+   },
+   "probe": {
+    "date": "1946-07-01",
+    "lat": 50.85,
+    "lon": 4.35
+   },
+   "nominal": "利奥波德三世（不能行使王权）",
+   "leaders": [
+    {
+     "qid": "Q445553",
+     "zh": "夏尔亲王（佛兰德伯爵）",
+     "office": "比利时摄政",
+     "tag": "摄政"
+    }
+   ],
+   "alt": null,
+   "note": "国王利奥波德三世战时投降与战后去留引发「国王问题」，其弟夏尔亲王任摄政，至 1950 年 7 月。",
+   "src": [
+    "https://en.wikipedia.org/wiki/Prince_Charles,_Count_of_Flanders"
+   ]
+  },
+  {
+   "id": "poland_1696",
+   "title": "波兰–立陶宛联邦选王空位期（1696–1697）",
+   "kind": "空位期",
+   "states": [
+    "Q172107"
+   ],
+   "from": {
+    "y": 1696,
+    "m": 6,
+    "d": 17
+   },
+   "to": {
+    "y": 1697,
+    "m": 6,
+    "d": 27
+   },
+   "probe": {
+    "date": "1697-01-01",
+    "lat": 52.23,
+    "lon": 21.01
+   },
+   "nominal": null,
+   "leaders": [
+    {
+     "qid": "Q1929502",
+     "zh": "米哈乌·斯特凡·拉杰约夫斯基",
+     "office": "格涅兹诺大主教、波兰首席主教，依法任摄政（interrex）",
+     "tag": "临时执政",
+     "note": "主持召开选王议会"
+    }
+   ],
+   "alt": null,
+   "note": "选举君主制下，国王约翰三世·索别斯基去世后到奥古斯特二世当选前，由首席主教任 interrex 代行王权。其他各次空位期的 interrex 见「领导人」中的「摄政王」职位（Wikidata 记录）。",
+   "src": [
+    "https://en.wikipedia.org/wiki/Interrex",
+    "https://en.wikipedia.org/wiki/Augustus_II_the_Strong",
+    "https://en.wikipedia.org/wiki/Augustus_III_of_Poland",
+    "https://en.wikipedia.org/wiki/John_III_Sobieski",
+    "https://en.wikipedia.org/wiki/Michał_Stefan_Radziejowski",
+    "https://en.wikipedia.org/wiki/Teodor_Andrzej_Potocki",
+    "https://en.wikipedia.org/wiki/Władysław_Aleksander_Łubieński"
+   ]
+  },
+  {
+   "id": "poland_1733",
+   "title": "波兰–立陶宛联邦选王空位期（1733–1733）",
+   "kind": "空位期",
+   "states": [
+    "Q172107"
+   ],
+   "from": {
+    "y": 1733,
+    "m": 2,
+    "d": 1
+   },
+   "to": {
+    "y": 1733,
+    "m": 9,
+    "d": 12
+   },
+   "probe": {
+    "date": "1733-05-01",
+    "lat": 52.23,
+    "lon": 21.01
+   },
+   "nominal": null,
+   "leaders": [
+    {
+     "qid": "Q1383476",
+     "zh": "特奥多尔·安杰伊·波托茨基",
+     "office": "格涅兹诺大主教、波兰首席主教，依法任摄政（interrex）",
+     "tag": "临时执政",
+     "note": "主持召开选王议会"
+    }
+   ],
+   "alt": null,
+   "note": "选举君主制下，国王奥古斯特二世去世后到斯坦尼斯瓦夫·莱什琴斯基当选前，由首席主教任 interrex 代行王权。其他各次空位期的 interrex 见「领导人」中的「摄政王」职位（Wikidata 记录）。",
+   "src": [
+    "https://en.wikipedia.org/wiki/Interrex",
+    "https://en.wikipedia.org/wiki/Augustus_II_the_Strong",
+    "https://en.wikipedia.org/wiki/Augustus_III_of_Poland",
+    "https://en.wikipedia.org/wiki/John_III_Sobieski",
+    "https://en.wikipedia.org/wiki/Michał_Stefan_Radziejowski",
+    "https://en.wikipedia.org/wiki/Teodor_Andrzej_Potocki",
+    "https://en.wikipedia.org/wiki/Władysław_Aleksander_Łubieński"
+   ]
+  },
+  {
+   "id": "poland_1763",
+   "title": "波兰–立陶宛联邦选王空位期（1763–1764）",
+   "kind": "空位期",
+   "states": [
+    "Q172107"
+   ],
+   "from": {
+    "y": 1763,
+    "m": 10,
+    "d": 5
+   },
+   "to": {
+    "y": 1764,
+    "m": 9,
+    "d": 7
+   },
+   "probe": {
+    "date": "1764-03-01",
+    "lat": 52.23,
+    "lon": 21.01
+   },
+   "nominal": null,
+   "leaders": [
+    {
+     "qid": "Q3894129",
+     "zh": "瓦迪斯瓦夫·亚历山大·乌比恩斯基",
+     "office": "格涅兹诺大主教、波兰首席主教，依法任摄政（interrex）",
+     "tag": "临时执政",
+     "note": "主持召开选王议会"
+    }
+   ],
+   "alt": null,
+   "note": "选举君主制下，国王奥古斯特三世去世后到斯坦尼斯瓦夫·奥古斯特·波尼亚托夫斯基当选前，由首席主教任 interrex 代行王权。其他各次空位期的 interrex 见「领导人」中的「摄政王」职位（Wikidata 记录）。",
+   "src": [
+    "https://en.wikipedia.org/wiki/Interrex",
+    "https://en.wikipedia.org/wiki/Augustus_II_the_Strong",
+    "https://en.wikipedia.org/wiki/Augustus_III_of_Poland",
+    "https://en.wikipedia.org/wiki/John_III_Sobieski",
+    "https://en.wikipedia.org/wiki/Michał_Stefan_Radziejowski",
+    "https://en.wikipedia.org/wiki/Teodor_Andrzej_Potocki",
+    "https://en.wikipedia.org/wiki/Władysław_Aleksander_Łubieński"
+   ]
+  },
+  {
+   "id": "insei_shirakawa",
+   "title": "院政：白河上皇（1087–1129）",
+   "kind": "院政",
+   "states": [
+    "Q17"
+   ],
+   "from": {
+    "y": 1087,
+    "m": 0,
+    "d": 0
+   },
+   "to": {
+    "y": 1129,
+    "m": 7,
+    "d": 24
+   },
+   "probe": {
+    "date": "1100-07-01",
+    "lat": 35.01,
+    "lon": 135.77
+   },
+   "nominal": null,
+   "leaders": [
+    {
+     "qid": "Q60949",
+     "zh": "白河上皇",
+     "office": "太上天皇（上皇，出家后称法皇），以「院厅」执政",
+     "tag": "院政",
+     "note": "1086 年让位给堀河天皇后以上皇身份执政 43 年，历堀河、鸟羽、崇德三代天皇。"
+    }
+   ],
+   "alt": null,
+   "note": "院政：退位的天皇以上皇身份掌握实权，在位天皇只是名义君主；同时期的摄政、关白见下方职位。",
+   "src": [
+    "https://en.wikipedia.org/wiki/Insei",
+    "https://en.wikipedia.org/wiki/Emperor_Shirakawa",
+    "https://en.wikipedia.org/wiki/Emperor_Toba",
+    "https://en.wikipedia.org/wiki/Emperor_Go-Shirakawa"
+   ]
+  },
+  {
+   "id": "insei_toba",
+   "title": "院政：鸟羽上皇（1129–1156）",
+   "kind": "院政",
+   "states": [
+    "Q17"
+   ],
+   "from": {
+    "y": 1129,
+    "m": 7,
+    "d": 24
+   },
+   "to": {
+    "y": 1156,
+    "m": 7,
+    "d": 20
+   },
+   "probe": {
+    "date": "1140-07-01",
+    "lat": 35.01,
+    "lon": 135.77
+   },
+   "nominal": null,
+   "leaders": [
+    {
+     "qid": "Q349284",
+     "zh": "鸟羽上皇",
+     "office": "太上天皇（上皇，出家后称法皇），以「院厅」执政",
+     "tag": "院政",
+     "note": "白河上皇去世后继续院政，历崇德、近卫、后白河三代天皇。"
+    }
+   ],
+   "alt": null,
+   "note": "院政：退位的天皇以上皇身份掌握实权，在位天皇只是名义君主；同时期的摄政、关白见下方职位。",
+   "src": [
+    "https://en.wikipedia.org/wiki/Insei",
+    "https://en.wikipedia.org/wiki/Emperor_Shirakawa",
+    "https://en.wikipedia.org/wiki/Emperor_Toba",
+    "https://en.wikipedia.org/wiki/Emperor_Go-Shirakawa"
+   ]
+  },
+  {
+   "id": "insei_goshirakawa",
+   "title": "院政：后白河上皇（1158–1192）",
+   "kind": "院政",
+   "states": [
+    "Q17"
+   ],
+   "from": {
+    "y": 1158,
+    "m": 8,
+    "d": 0
+   },
+   "to": {
+    "y": 1192,
+    "m": 4,
+    "d": 26
+   },
+   "probe": {
+    "date": "1170-07-01",
+    "lat": 35.01,
+    "lon": 135.77
+   },
+   "nominal": null,
+   "leaders": [
+    {
+     "qid": "Q317984",
+     "zh": "后白河上皇",
+     "office": "太上天皇（上皇，出家后称法皇），以「院厅」执政",
+     "tag": "院政",
+     "note": "1158 年让位给二条天皇后执政，历二条至后鸟羽五代天皇（1179–1181 年曾被平清盛幽禁）；他去世后实权转入镰仓幕府。"
+    }
+   ],
+   "alt": null,
+   "note": "院政：退位的天皇以上皇身份掌握实权，在位天皇只是名义君主；同时期的摄政、关白见下方职位。",
+   "src": [
+    "https://en.wikipedia.org/wiki/Insei",
+    "https://en.wikipedia.org/wiki/Emperor_Shirakawa",
+    "https://en.wikipedia.org/wiki/Emperor_Toba",
+    "https://en.wikipedia.org/wiki/Emperor_Go-Shirakawa"
+   ]
+  },
+  {
+   "id": "han_xin",
+   "title": "王莽篡汉、新朝（9–23）",
+   "kind": "篡位",
+   "states": [
+    "Q7209",
+    "Q1072949",
+    "Q504769"
+   ],
+   "from": {
+    "y": 9,
+    "m": 1,
+    "d": 10
+   },
+   "to": {
+    "y": 23,
+    "m": 10,
+    "d": 6
+   },
+   "probe": {
+    "date": "0015-06-15",
+    "lat": 34.26,
+    "lon": 108.94
+   },
+   "nominal": "无（汉朝中断）",
+   "leaders": [
+    {
+     "qid": "Q7250",
+     "zh": "王莽",
+     "office": "新朝皇帝（代汉自立，国号「新」）",
+     "tag": "篡位"
+    }
+   ],
+   "alt": null,
+   "note": "公元 9 年 1 月 10 日王莽受禅称帝，改国号为新，西汉中断；23 年 10 月绿林军攻入长安，王莽被杀。其后更始帝、光武帝相继称帝，25 年光武帝建立东汉。",
+   "src": [
+    "https://en.wikipedia.org/wiki/Xin_dynasty",
+    "https://en.wikipedia.org/wiki/Wang_Mang"
+   ]
+  },
+  {
+   "id": "tang_wuzhou",
+   "title": "武周（690–705）",
+   "kind": "改朝",
+   "states": [
+    "Q9683",
+    "Q835435"
+   ],
+   "from": {
+    "y": 690,
+    "m": 10,
+    "d": 16
+   },
+   "to": {
+    "y": 705,
+    "m": 2,
+    "d": 23
+   },
+   "probe": {
+    "date": "0700-06-15",
+    "lat": 34.62,
+    "lon": 112.45
+   },
+   "nominal": "睿宗李旦（降为皇嗣）",
+   "leaders": [
+    {
+     "qid": "Q9738",
+     "zh": "武则天",
+     "office": "武周皇帝（圣神皇帝），改国号为周",
+     "tag": "改朝"
+    }
+   ],
+   "alt": null,
+   "note": "690 年 10 月武则天废睿宗、自称皇帝，改国号为周，以洛阳为神都；705 年 2 月神龙政变，中宗复位，恢复唐朝国号。",
+   "src": [
+    "https://en.wikipedia.org/wiki/Wu_Zetian",
+    "https://en.wikipedia.org/wiki/Wu_Zhou"
+   ]
+  },
+  {
+   "id": "jin_yongjia",
+   "title": "永嘉之乱：晋怀帝被俘（311–313）",
+   "kind": "君主被俘",
+   "states": [
+    "Q1145470"
+   ],
+   "from": {
+    "y": 311,
+    "m": 7,
+    "d": 13
+   },
+   "to": {
+    "y": 313,
+    "m": 5,
+    "d": 1
+   },
+   "probe": {
+    "date": "0312-06-15",
+    "lat": 34.26,
+    "lon": 108.94
+   },
+   "nominal": "晋怀帝司马炽（被俘于平阳）",
+   "leaders": [
+    {
+     "qid": "Q7382",
+     "zh": "司马邺（晋愍帝）",
+     "office": "皇太子（312 年在长安被拥立），313 年即位",
+     "tag": "监国"
+    }
+   ],
+   "alt": null,
+   "note": "311 年洛阳陷落，晋怀帝被前赵俘至平阳，313 年 2 月被杀；同年 5 月司马邺在长安即位（晋愍帝）。其间怀帝名义上仍为皇帝。",
+   "src": [
+    "https://en.wikipedia.org/wiki/Disaster_of_Yongjia",
+    "https://en.wikipedia.org/wiki/Emperor_Huai_of_Jin",
+    "https://en.wikipedia.org/wiki/Emperor_Min_of_Jin"
+   ]
+  },
+  {
+   "id": "liang_houjing",
+   "title": "侯景篡梁（551–552）",
+   "kind": "篡位",
+   "states": [
+    "Q1069868"
+   ],
+   "from": {
+    "y": 551,
+    "m": 12,
+    "d": 0
+   },
+   "to": {
+    "y": 552,
+    "m": 4,
+    "d": 0
+   },
+   "probe": {
+    "date": "0552-02-15",
+    "lat": 32.06,
+    "lon": 118.78
+   },
+   "nominal": null,
+   "leaders": [
+    {
+     "qid": "Q890338",
+     "zh": "侯景",
+     "office": "自立为「汉」皇帝",
+     "tag": "篡位"
+    }
+   ],
+   "alt": null,
+   "note": "侯景之乱后期，侯景于 551 年 11–12 月废杀梁简文帝、豫章王萧栋，自称皇帝，国号汉；552 年 4 月被王僧辩、陈霸先击败身死，梁元帝在江陵即位。",
+   "src": [
+    "https://en.wikipedia.org/wiki/Hou_Jing",
+    "https://en.wikipedia.org/wiki/Hou_Jing_Rebellion"
+   ]
+  },
+  {
+   "id": "liao_shulu",
+   "title": "述律后称制（926–927）",
+   "kind": "临朝称制",
+   "states": [
+    "Q4958"
+   ],
+   "from": {
+    "y": 926,
+    "m": 9,
+    "d": 6
+   },
+   "to": {
+    "y": 927,
+    "m": 12,
+    "d": 0
+   },
+   "probe": {
+    "date": "0927-03-15",
+    "lat": 43.95,
+    "lon": 119.38
+   },
+   "nominal": null,
+   "leaders": [
+    {
+     "qid": "Q907847",
+     "zh": "述律平（应天皇后）",
+     "office": "皇后，太祖死后称制、主持军国大事",
+     "tag": "临朝称制"
+    }
+   ],
+   "alt": null,
+   "note": "926 年 9 月辽太祖耶律阿保机去世，皇后述律平称制摄军国事，排除长子耶律倍，927 年 12 月立次子耶律德光为帝（辽太宗）。",
+   "src": [
+    "https://en.wikipedia.org/wiki/Empress_Shulü_Ping",
+    "https://en.wikipedia.org/wiki/Emperor_Taizong_of_Liao"
+   ]
+  },
+  {
+   "id": "song_1276",
+   "title": "临安投降后的南宋王位空缺（1276）",
+   "kind": "空位期",
+   "states": [
+    "Q1147043"
+   ],
+   "from": {
+    "y": 1276,
+    "m": 2,
+    "d": 4
+   },
+   "to": {
+    "y": 1276,
+    "m": 6,
+    "d": 14
+   },
+   "probe": {
+    "date": "1276-04-15",
+    "lat": 30.25,
+    "lon": 120.17
+   },
+   "nominal": "宋恭帝（已降元）",
+   "leaders": [],
+   "alt": null,
+   "note": "1276 年 2 月临安投降，宋恭帝与谢太后北迁；益王赵昰、广王赵昺南逃，6 月 14 日赵昰在福州即位（宋端宗）。空位期间没有公认的单一摄政或掌权者，由流亡大臣（陈宜中、张世杰、陆秀夫等）理政，直到新君当选或即位。",
+   "src": [
+    "https://en.wikipedia.org/wiki/Emperor_Duanzong_of_Song",
+    "https://en.wikipedia.org/wiki/Emperor_Gong_of_Song"
+   ]
+  },
+  {
+   "id": "le_mac",
+   "title": "莫氏篡黎（1527–1533）",
+   "kind": "篡位",
+   "states": [
+    "Q10800789",
+    "Q430309"
+   ],
+   "from": {
+    "y": 1527,
+    "m": 6,
+    "d": 0
+   },
+   "to": {
+    "y": 1533,
+    "m": 0,
+    "d": 0
+   },
+   "probe": {
+    "date": "1530-06-15",
+    "lat": 21.03,
+    "lon": 105.85
+   },
+   "nominal": null,
+   "leaders": [
+    {
+     "qid": "Q855703",
+     "zh": "莫登庸（莫太祖）",
+     "office": "篡黎自立为帝（莫朝）",
+     "tag": "篡位",
+     "from": {
+      "y": 1527,
+      "m": 6,
+      "d": 0
+     },
+     "to": {
+      "y": 1529,
+      "m": 0,
+      "d": 0
+     }
+    },
+    {
+     "qid": "Q854994",
+     "zh": "莫登瀛（莫太宗）",
+     "office": "莫朝皇帝",
+     "tag": "篡位",
+     "from": {
+      "y": 1530,
+      "m": 0,
+      "d": 0
+     },
+     "to": {
+      "y": 1533,
+      "m": 0,
+      "d": 0
+     }
+    }
+   ],
+   "alt": null,
+   "note": "1527 年莫登庸逼黎恭皇禅位，建立莫朝；1533 年阮淦在哀牢拥立黎庄宗，后黎朝在清化复辟，开始南北朝时期。",
+   "src": [
+    "https://en.wikipedia.org/wiki/Mạc_dynasty",
+    "https://en.wikipedia.org/wiki/Mạc_Đăng_Dung",
+    "https://en.wikipedia.org/wiki/Lê_Trang_Tông"
+   ]
+  },
+  {
+   "id": "mughal_suri",
+   "title": "苏尔王朝取代莫卧儿（1540–1555）",
+   "kind": "篡位",
+   "states": [
+    "Q33296"
+   ],
+   "from": {
+    "y": 1540,
+    "m": 5,
+    "d": 17
+   },
+   "to": {
+    "y": 1555,
+    "m": 7,
+    "d": 23
+   },
+   "probe": {
+    "date": "1548-06-15",
+    "lat": 28.61,
+    "lon": 77.21
+   },
+   "nominal": "胡马雍（流亡）",
+   "leaders": [
+    {
+     "qid": "Q83680",
+     "zh": "舍尔沙·苏尔",
+     "office": "苏尔王朝苏丹",
+     "tag": "篡位",
+     "from": {
+      "y": 1540,
+      "m": 5,
+      "d": 17
+     },
+     "to": {
+      "y": 1545,
+      "m": 5,
+      "d": 22
+     }
+    },
+    {
+     "qid": "Q2191504",
+     "zh": "伊斯兰沙·苏尔",
+     "office": "苏尔王朝苏丹",
+     "tag": "篡位",
+     "from": {
+      "y": 1545,
+      "m": 5,
+      "d": 26
+     },
+     "to": {
+      "y": 1554,
+      "m": 11,
+      "d": 22
+     }
+    },
+    {
+     "qid": "Q3348836",
+     "zh": "西坎达尔沙·苏尔",
+     "office": "苏尔王朝苏丹",
+     "tag": "篡位",
+     "from": {
+      "y": 1554,
+      "m": 12,
+      "d": 0
+     },
+     "to": {
+      "y": 1555,
+      "m": 6,
+      "d": 22
+     }
+    }
+   ],
+   "alt": null,
+   "note": "1540 年 5 月 17 日卡瑙季之战，舍尔沙击败胡马雍，莫卧儿皇帝流亡波斯；1555 年胡马雍收复德里（7 月 23 日复位）。",
+   "src": [
+    "https://en.wikipedia.org/wiki/Sur_Empire",
+    "https://en.wikipedia.org/wiki/Humayun"
+   ]
+  },
+  {
+   "id": "thai_1767",
+   "title": "阿瑜陀耶陷落后的暹罗（1767）",
+   "kind": "军事领袖",
+   "states": [
+    "Q869"
+   ],
+   "from": {
+    "y": 1767,
+    "m": 4,
+    "d": 7
+   },
+   "to": {
+    "y": 1767,
+    "m": 12,
+    "d": 28
+   },
+   "probe": {
+    "date": "1767-09-15",
+    "lat": 13.72,
+    "lon": 100.49
+   },
+   "nominal": "无（阿瑜陀耶王朝灭亡）",
+   "leaders": [
+    {
+     "qid": "Q320097",
+     "zh": "达信（郑信）",
+     "office": "抗缅军事领袖，1767 年 11 月收复吞武里",
+     "tag": "军事领袖"
+    }
+   ],
+   "alt": null,
+   "note": "1767 年 4 月 7 日缅军攻陷阿瑜陀耶，王朝灭亡；达信在尖竹汶起兵，11 月收复吞武里，12 月 28 日称王（吞武里王朝）。",
+   "src": [
+    "https://en.wikipedia.org/wiki/Fall_of_Ayutthaya_(1767)",
+    "https://en.wikipedia.org/wiki/Taksin"
+   ]
+  },
+  {
+   "id": "pagan_1287",
+   "title": "蒲甘王位空缺（1287–1289）",
+   "kind": "空位期",
+   "states": [
+    "Q888574"
+   ],
+   "from": {
+    "y": 1287,
+    "m": 7,
+    "d": 1
+   },
+   "to": {
+    "y": 1289,
+    "m": 5,
+    "d": 30
+   },
+   "probe": {
+    "date": "1288-06-15",
+    "lat": 21.17,
+    "lon": 94.86
+   },
+   "nominal": null,
+   "leaders": [],
+   "alt": null,
+   "note": "1287 年 7 月那罗梯诃波帝被其子谋杀，蒙古入侵后蒲甘王位空缺近两年，1289 年 5 月 30 日觉苏瓦即位。空位期间没有公认的单一摄政或掌权者，由王国议会 / 大贵族会议理政，直到新君当选或即位。",
+   "src": [
+    "https://en.wikipedia.org/wiki/Narathihapate",
+    "https://en.wikipedia.org/wiki/Kyawswa_of_Pagan"
+   ]
+  },
+  {
+   "id": "johor_temenggong",
+   "title": "柔佛天猛公 / 大君执政（1855–1886）",
+   "kind": "实际统治者",
+   "states": [
+    "Q183032"
+   ],
+   "from": {
+    "y": 1855,
+    "m": 3,
+    "d": 10
+   },
+   "to": {
+    "y": 1886,
+    "m": 2,
+    "d": 13
+   },
+   "probe": {
+    "date": "1870-06-15",
+    "lat": 1.46,
+    "lon": 103.76
+   },
+   "nominal": "苏丹阿里（只保有吉桑，1877 年卒）",
+   "leaders": [
+    {
+     "qid": "Q20448002",
+     "zh": "天猛公达因·依布拉欣",
+     "office": "柔佛天猛公（实际统治者）",
+     "tag": "实际统治者",
+     "from": {
+      "y": 1855,
+      "m": 3,
+      "d": 10
+     },
+     "to": {
+      "y": 1862,
+      "m": 1,
+      "d": 31
+     }
+    },
+    {
+     "qid": "Q2637695",
+     "zh": "阿布·巴卡",
+     "office": "天猛公（1862–1868）、柔佛大君（Maharaja，1868–1886）",
+     "tag": "实际统治者",
+     "from": {
+      "y": 1862,
+      "m": 2,
+      "d": 0
+     },
+     "to": {
+      "y": 1886,
+      "m": 2,
+      "d": 13
+     }
+    }
+   ],
+   "alt": null,
+   "note": "1855 年苏丹阿里把柔佛主权让给天猛公，只保留麻坡的吉桑地区；此后柔佛由天猛公家族统治，阿布·巴卡 1868 年称大君，1886 年获英国承认为苏丹。",
+   "src": [
+    "https://en.wikipedia.org/wiki/Abu_Bakar_of_Johor",
+    "https://en.wikipedia.org/wiki/Temenggong_Daeng_Ibrahim",
+    "https://en.wikipedia.org/wiki/Ali_Iskandar_of_Johor"
+   ]
+  },
+  {
+   "id": "perak_yusuf",
+   "title": "霹雳拉惹尤素夫摄政（1877–1886）",
+   "kind": "摄政",
+   "states": [
+    "Q188953"
+   ],
+   "from": {
+    "y": 1877,
+    "m": 3,
+    "d": 0
+   },
+   "to": {
+    "y": 1886,
+    "m": 5,
+    "d": 0
+   },
+   "probe": {
+    "date": "1880-06-15",
+    "lat": 4.77,
+    "lon": 100.94
+   },
+   "nominal": "苏丹阿卜杜拉（被流放）",
+   "leaders": [
+    {
+     "qid": "Q12709897",
+     "zh": "拉惹尤素夫",
+     "office": "霹雳摄政（Regent），1886 年继位为苏丹",
+     "tag": "摄政"
+    }
+   ],
+   "alt": null,
+   "note": "霹雳战争后苏丹阿卜杜拉 1877 年被英国流放塞舌尔，王位空缺，由拉惹尤素夫任摄政，1886 年 5 月正式成为苏丹。",
+   "src": [
+    "https://en.wikipedia.org/wiki/Yusuf_Sharifuddin_Muzaffar_Shah_of_Perak",
+    "https://en.wikipedia.org/wiki/Abdullah_Muhammad_Shah_II_of_Perak"
+   ]
+  },
+  {
+   "id": "selangor_1943",
+   "title": "日占时期的雪兰莪（1942–1945）",
+   "kind": "傀儡君主",
+   "states": [
+    "Q189710"
+   ],
+   "from": {
+    "y": 1942,
+    "m": 1,
+    "d": 11
+   },
+   "to": {
+    "y": 1945,
+    "m": 9,
+    "d": 12
+   },
+   "probe": {
+    "date": "1944-06-15",
+    "lat": 3.07,
+    "lon": 101.52
+   },
+   "nominal": "苏丹希萨姆丁（被日军废黜）",
+   "leaders": [
+    {
+     "qid": "Q6939922",
+     "zh": "穆萨·吉亚图丁",
+     "office": "日军扶立的雪兰莪苏丹",
+     "tag": "傀儡君主"
+    }
+   ],
+   "alt": null,
+   "note": "日本占领马来亚期间废黜苏丹希萨姆丁，改立其兄穆萨·吉亚图丁为苏丹；1945 年英国恢复希萨姆丁的王位。",
+   "src": [
+    "https://en.wikipedia.org/wiki/Musa_Ghiatuddin_Riayat_Shah_of_Selangor",
+    "https://en.wikipedia.org/wiki/Japanese_occupation_of_Malaya"
+   ]
+  },
+  {
+   "id": "cambodia_1960",
+   "title": "柬埔寨：王位空缺，国家元首执政（1960–1970）",
+   "kind": "摄政",
+   "states": [
+    "Q2638486",
+    "Q424"
+   ],
+   "from": {
+    "y": 1960,
+    "m": 4,
+    "d": 3
+   },
+   "to": {
+    "y": 1970,
+    "m": 10,
+    "d": 9
+   },
+   "probe": {
+    "date": "1965-06-15",
+    "lat": 11.56,
+    "lon": 104.92
+   },
+   "nominal": "王后西索瓦·哥沙曼（王权象征）",
+   "leaders": [
+    {
+     "qid": "Q160318",
+     "zh": "诺罗敦·西哈努克",
+     "office": "国家元首（1960 年 6 月 20 日起）",
+     "tag": "国家元首",
+     "from": {
+      "y": 1960,
+      "m": 6,
+      "d": 20
+     },
+     "to": {
+      "y": 1970,
+      "m": 3,
+      "d": 18
+     }
+    },
+    {
+     "qid": "Q953209",
+     "zh": "郑兴",
+     "office": "代理国家元首（朗诺政变后）",
+     "tag": "国家元首",
+     "from": {
+      "y": 1970,
+      "m": 3,
+      "d": 18
+     }
+    }
+   ],
+   "alt": null,
+   "note": "苏拉玛里特国王 1960 年 4 月 3 日去世后王位不再填补，由摄政会议过渡，6 月 20 日西哈努克亲王出任国家元首，王后哥沙曼为王权象征；1970 年 3 月 18 日朗诺政变推翻西哈努克，国会主席郑兴代理国家元首，10 月 9 日成立高棉共和国、废除君主制。",
+   "src": [
+    "https://en.wikipedia.org/wiki/Norodom_Sihanouk",
+    "https://en.wikipedia.org/wiki/Sisowath_Kossamak"
+   ]
+  },
+  {
+   "id": "abbasid_865",
+   "title": "阿拔斯两哈里发并立（865–866）",
+   "kind": "对立君主",
+   "states": [
+    "Q12536"
+   ],
+   "from": {
+    "y": 865,
+    "m": 2,
+    "d": 0
+   },
+   "to": {
+    "y": 866,
+    "m": 1,
+    "d": 25
+   },
+   "probe": {
+    "date": "0865-08-15",
+    "lat": 33.34,
+    "lon": 44.4
+   },
+   "nominal": null,
+   "leaders": [
+    {
+     "qid": "Q284157",
+     "zh": "穆斯塔因",
+     "office": "哈里发（据巴格达）",
+     "tag": "对立君主"
+    },
+    {
+     "qid": "Q281989",
+     "zh": "穆阿塔兹",
+     "office": "哈里发（萨迈拉突厥军拥立）",
+     "tag": "对立君主"
+    }
+   ],
+   "alt": null,
+   "note": "865 年突厥军在萨迈拉拥立穆阿塔兹，穆斯塔因据巴格达，内战一年；866 年 1 月穆斯塔因退位。",
+   "src": [
+    "https://en.wikipedia.org/wiki/Abbasid_civil_war_(865–866)",
+    "https://en.wikipedia.org/wiki/Al-Musta'in"
+   ]
+  },
+  {
+   "id": "isis_2023",
+   "title": "伊斯兰国哈里发空缺（2023）",
+   "kind": "空位期",
+   "states": [
+    "Q18639759"
+   ],
+   "from": {
+    "y": 2023,
+    "m": 4,
+    "d": 29
+   },
+   "to": {
+    "y": 2023,
+    "m": 8,
+    "d": 3
+   },
+   "probe": {
+    "date": "2023-06-15",
+    "lat": 35.0,
+    "lon": 40.0
+   },
+   "nominal": null,
+   "leaders": [],
+   "alt": null,
+   "note": "该组织宣布其首领阿布·侯赛因 2023 年 4 月身亡，8 月 3 日才宣布继任者阿布·哈夫斯。期间没有公开的首领。",
+   "src": [
+    "https://en.wikipedia.org/wiki/Abu_al-Hussein_al-Husseini_al-Qurashi",
+    "https://en.wikipedia.org/wiki/Abu_Hafs_al-Hashimi_al-Qurashi"
+   ],
+   "nomap": "2023 年底图没有伊斯兰国控制区多边形（该组织当时已无成片控制区，不编造多边形）"
+  },
+  {
+   "id": "aragon_1410",
+   "title": "阿拉贡王位空缺（1410–1412）",
+   "kind": "摄政",
+   "states": [
+    "Q199442",
+    "Q188586",
+    "Q165154"
+   ],
+   "from": {
+    "y": 1410,
+    "m": 5,
+    "d": 31
+   },
+   "to": {
+    "y": 1412,
+    "m": 6,
+    "d": 28
+   },
+   "probe": {
+    "date": "1411-06-15",
+    "lat": 38.12,
+    "lon": 13.36
+   },
+   "nominal": null,
+   "leaders": [
+    {
+     "qid": "Q233865",
+     "zh": "纳瓦拉的布兰卡",
+     "office": "西西里王国女摄政（Vicaria）",
+     "tag": "摄政"
+    }
+   ],
+   "alt": null,
+   "note": "阿拉贡国王马丁一世 1410 年 5 月 31 日无嗣去世，王位空缺两年，1412 年 6 月卡斯佩妥协选出安特克拉的斐迪南。其间西西里由马丁一世之子的遗孀布兰卡任摄政。",
+   "src": [
+    "https://en.wikipedia.org/wiki/Compromise_of_Caspe",
+    "https://en.wikipedia.org/wiki/Blanche_I_of_Navarre"
+   ]
+  },
+  {
+   "id": "francia_840",
+   "title": "虔诚者路易诸子内战（840–843）",
+   "kind": "共治",
+   "states": [
+    "Q146246"
+   ],
+   "from": {
+    "y": 840,
+    "m": 6,
+    "d": 20
+   },
+   "to": {
+    "y": 843,
+    "m": 8,
+    "d": 10
+   },
+   "probe": {
+    "date": "0842-06-15",
+    "lat": 49.0,
+    "lon": 4.0
+   },
+   "nominal": null,
+   "leaders": [
+    {
+     "qid": "Q150735",
+     "zh": "洛泰尔一世",
+     "office": "皇帝（中法兰克）",
+     "tag": "共治"
+    },
+    {
+     "qid": "Q152463",
+     "zh": "日耳曼人路易",
+     "office": "东法兰克国王",
+     "tag": "共治"
+    },
+    {
+     "qid": "Q71231",
+     "zh": "秃头查理",
+     "office": "西法兰克国王",
+     "tag": "共治"
+    }
+   ],
+   "alt": null,
+   "note": "840 年虔诚者路易去世，三子争夺法兰克，841 年丰特努瓦之战；843 年 8 月《凡尔登条约》三分帝国。",
+   "src": [
+    "https://en.wikipedia.org/wiki/Treaty_of_Verdun",
+    "https://en.wikipedia.org/wiki/Battle_of_Fontenoy_(841)"
+   ]
+  },
+  {
+   "id": "wfrancia_884",
+   "title": "西法兰克王位空缺（884–885）",
+   "kind": "空位期",
+   "states": [
+    "Q46370",
+    "Q31929"
+   ],
+   "from": {
+    "y": 884,
+    "m": 12,
+    "d": 12
+   },
+   "to": {
+    "y": 885,
+    "m": 6,
+    "d": 0
+   },
+   "probe": {
+    "date": "0885-03-15",
+    "lat": 48.86,
+    "lon": 2.35
+   },
+   "nominal": null,
+   "leaders": [],
+   "alt": null,
+   "note": "卡洛曼二世 884 年 12 月 12 日去世，西法兰克贵族迎立胖子查理，885 年 6 月前后正式承认。空位期间没有公认的单一摄政或掌权者，由王国议会 / 大贵族会议理政，直到新君当选或即位。",
+   "src": [
+    "https://en.wikipedia.org/wiki/Carloman_II",
+    "https://en.wikipedia.org/wiki/Charles_the_Fat"
+   ]
+  },
+  {
+   "id": "wfrancia_888",
+   "title": "胖子查理被废后的西法兰克（887–888）",
+   "kind": "空位期",
+   "states": [
+    "Q46370",
+    "Q31929"
+   ],
+   "from": {
+    "y": 887,
+    "m": 11,
+    "d": 0
+   },
+   "to": {
+    "y": 888,
+    "m": 2,
+    "d": 29
+   },
+   "probe": {
+    "date": "0888-01-15",
+    "lat": 48.86,
+    "lon": 2.35
+   },
+   "nominal": null,
+   "leaders": [],
+   "alt": null,
+   "note": "887 年 11 月胖子查理被废，888 年 1 月去世；2 月 29 日巴黎伯爵厄德加冕为王。空位期间没有公认的单一摄政或掌权者，由王国议会 / 大贵族会议理政，直到新君当选或即位。",
+   "src": [
+    "https://en.wikipedia.org/wiki/Charles_the_Fat",
+    "https://en.wikipedia.org/wiki/Odo_of_France"
+   ]
+  },
+  {
+   "id": "wfrancia_936",
+   "title": "西法兰克王位空缺（936）",
+   "kind": "权臣",
+   "states": [
+    "Q46370"
+   ],
+   "from": {
+    "y": 936,
+    "m": 1,
+    "d": 14
+   },
+   "to": {
+    "y": 936,
+    "m": 6,
+    "d": 19
+   },
+   "probe": {
+    "date": "0936-03-15",
+    "lat": 48.86,
+    "lon": 2.35
+   },
+   "nominal": null,
+   "leaders": [
+    {
+     "qid": "Q317933",
+     "zh": "大于格",
+     "office": "法兰克公爵（主持迎立路易四世）",
+     "tag": "权臣"
+    }
+   ],
+   "alt": null,
+   "note": "鲁道夫 936 年 1 月 14 日去世，法兰克公爵大于格从英格兰迎回路易四世，6 月 19 日加冕。",
+   "src": [
+    "https://en.wikipedia.org/wiki/Hugh_the_Great",
+    "https://en.wikipedia.org/wiki/Louis_IV_of_France"
+   ]
+  },
+  {
+   "id": "hre_1002",
+   "title": "德意志王位空缺（1002）",
+   "kind": "空位期",
+   "states": [
+    "Q12548"
+   ],
+   "from": {
+    "y": 1002,
+    "m": 1,
+    "d": 23
+   },
+   "to": {
+    "y": 1002,
+    "m": 6,
+    "d": 7
+   },
+   "probe": {
+    "date": "1002-04-15",
+    "lat": 50.0,
+    "lon": 10.0
+   },
+   "nominal": null,
+   "leaders": [],
+   "alt": null,
+   "note": "奥托三世 1002 年 1 月 23 日去世，6 月 7 日巴伐利亚公爵亨利当选（亨利二世）。空位期间没有公认的单一摄政或掌权者，由诸侯理政，直到新君当选或即位。",
+   "src": [
+    "https://en.wikipedia.org/wiki/Henry_II,_Holy_Roman_Emperor"
+   ]
+  },
+  {
+   "id": "hre_1308",
+   "title": "德意志王位空缺（1308）",
+   "kind": "空位期",
+   "states": [
+    "Q12548"
+   ],
+   "from": {
+    "y": 1308,
+    "m": 5,
+    "d": 1
+   },
+   "to": {
+    "y": 1308,
+    "m": 11,
+    "d": 27
+   },
+   "probe": {
+    "date": "1308-08-15",
+    "lat": 50.0,
+    "lon": 10.0
+   },
+   "nominal": null,
+   "leaders": [],
+   "alt": null,
+   "note": "阿尔布雷希特一世 1308 年 5 月 1 日遇刺，11 月 27 日卢森堡的亨利当选（亨利七世）。空位期间没有公认的单一摄政或掌权者，由选帝侯理政，直到新君当选或即位。",
+   "src": [
+    "https://en.wikipedia.org/wiki/Henry_VII,_Holy_Roman_Emperor"
+   ]
+  },
+  {
+   "id": "hre_1313",
+   "title": "德意志王位空缺（1313–1314）",
+   "kind": "空位期",
+   "states": [
+    "Q12548"
+   ],
+   "from": {
+    "y": 1313,
+    "m": 8,
+    "d": 24
+   },
+   "to": {
+    "y": 1314,
+    "m": 10,
+    "d": 19
+   },
+   "probe": {
+    "date": "1314-03-15",
+    "lat": 50.0,
+    "lon": 10.0
+   },
+   "nominal": null,
+   "leaders": [],
+   "alt": null,
+   "note": "亨利七世 1313 年 8 月 24 日去世，1314 年 10 月双重选举，巴伐利亚的路易与美男子腓特烈分别当选。空位期间没有公认的单一摄政或掌权者，由选帝侯理政，直到新君当选或即位。",
+   "src": [
+    "https://en.wikipedia.org/wiki/Louis_IV,_Holy_Roman_Emperor",
+    "https://en.wikipedia.org/wiki/Frederick_the_Fair"
+   ]
+  },
+  {
+   "id": "hre_1439",
+   "title": "德意志王位空缺（1439–1440）",
+   "kind": "空位期",
+   "states": [
+    "Q12548"
+   ],
+   "from": {
+    "y": 1439,
+    "m": 10,
+    "d": 27
+   },
+   "to": {
+    "y": 1440,
+    "m": 2,
+    "d": 2
+   },
+   "probe": {
+    "date": "1440-01-15",
+    "lat": 50.0,
+    "lon": 10.0
+   },
+   "nominal": null,
+   "leaders": [],
+   "alt": null,
+   "note": "阿尔布雷希特二世 1439 年 10 月 27 日去世，1440 年 2 月 2 日腓特烈三世当选。空位期间没有公认的单一摄政或掌权者，由选帝侯理政，直到新君当选或即位。",
+   "src": [
+    "https://en.wikipedia.org/wiki/Frederick_III,_Holy_Roman_Emperor"
+   ]
+  },
+  {
+   "id": "hungary_1439",
+   "title": "匈牙利王位空缺（1439–1440）",
+   "kind": "摄政",
+   "states": [
+    "Q171150"
+   ],
+   "from": {
+    "y": 1439,
+    "m": 10,
+    "d": 27
+   },
+   "to": {
+    "y": 1440,
+    "m": 5,
+    "d": 15
+   },
+   "probe": {
+    "date": "1440-01-15",
+    "lat": 47.5,
+    "lon": 19.04
+   },
+   "nominal": null,
+   "leaders": [
+    {
+     "qid": "Q167401",
+     "zh": "卢森堡的伊丽莎白",
+     "office": "王太后，为遗腹子拉斯洛五世争取王位",
+     "tag": "摄政"
+    }
+   ],
+   "alt": null,
+   "note": "阿尔布雷希特 1439 年 10 月 27 日去世，王后伊丽莎白 1440 年 2 月生下拉斯洛五世，5 月 15 日为其加冕；同年 3 月贵族另选波兰国王瓦迪斯瓦夫三世，内战随之爆发。",
+   "src": [
+    "https://en.wikipedia.org/wiki/Elizabeth_of_Luxembourg",
+    "https://en.wikipedia.org/wiki/Ladislaus_the_Posthumous"
+   ]
+  },
+  {
+   "id": "hungary_hunyadi",
+   "title": "匈雅提·亚诺什摄政（1446–1453）",
+   "kind": "摄政",
+   "states": [
+    "Q171150"
+   ],
+   "from": {
+    "y": 1446,
+    "m": 6,
+    "d": 5
+   },
+   "to": {
+    "y": 1453,
+    "m": 1,
+    "d": 0
+   },
+   "probe": {
+    "date": "1450-06-15",
+    "lat": 47.5,
+    "lon": 19.04
+   },
+   "nominal": "拉斯洛五世（被扣留于维也纳）",
+   "leaders": [
+    {
+     "qid": "Q242688",
+     "zh": "匈雅提·亚诺什",
+     "office": "匈牙利王国摄政（Governor）",
+     "tag": "摄政"
+    }
+   ],
+   "alt": null,
+   "note": "瓦迪斯瓦夫一世 1444 年战死瓦尔纳后，国会承认年幼的拉斯洛五世，但他被腓特烈三世扣留在维也纳；1446 年 6 月国会选匈雅提为摄政，至 1453 年初拉斯洛五世亲政。",
+   "src": [
+    "https://en.wikipedia.org/wiki/John_Hunyadi",
+    "https://en.wikipedia.org/wiki/Ladislaus_the_Posthumous"
+   ]
+  },
+  {
+   "id": "hungary_1457",
+   "title": "匈牙利王位空缺（1457–1458）",
+   "kind": "空位期",
+   "states": [
+    "Q171150"
+   ],
+   "from": {
+    "y": 1457,
+    "m": 11,
+    "d": 23
+   },
+   "to": {
+    "y": 1458,
+    "m": 1,
+    "d": 24
+   },
+   "probe": {
+    "date": "1458-01-05",
+    "lat": 47.5,
+    "lon": 19.04
+   },
+   "nominal": null,
+   "leaders": [],
+   "alt": null,
+   "note": "拉斯洛五世 1457 年 11 月 23 日去世，1458 年 1 月 24 日国会选匈雅提之子马加什为王。空位期间没有公认的单一摄政或掌权者，由王国议会 / 大贵族会议理政，直到新君当选或即位。",
+   "src": [
+    "https://en.wikipedia.org/wiki/Matthias_Corvinus"
+   ]
+  },
+  {
+   "id": "hungary_1490",
+   "title": "匈牙利王位空缺（1490）",
+   "kind": "空位期",
+   "states": [
+    "Q171150"
+   ],
+   "from": {
+    "y": 1490,
+    "m": 4,
+    "d": 6
+   },
+   "to": {
+    "y": 1490,
+    "m": 7,
+    "d": 15
+   },
+   "probe": {
+    "date": "1490-05-15",
+    "lat": 47.5,
+    "lon": 19.04
+   },
+   "nominal": null,
+   "leaders": [],
+   "alt": null,
+   "note": "马加什一世 1490 年 4 月 6 日去世，7 月 15 日国会选波希米亚国王弗拉迪斯拉夫二世。空位期间没有公认的单一摄政或掌权者，由王国议会 / 大贵族会议理政，直到新君当选或即位。",
+   "src": [
+    "https://en.wikipedia.org/wiki/Vladislaus_II_of_Hungary"
+   ]
+  },
+  {
+   "id": "bohemia_1440",
+   "title": "波希米亚空位期（1439–1453）",
+   "kind": "摄政",
+   "states": [
+    "Q42585"
+   ],
+   "from": {
+    "y": 1439,
+    "m": 10,
+    "d": 27
+   },
+   "to": {
+    "y": 1453,
+    "m": 10,
+    "d": 28
+   },
+   "probe": {
+    "date": "1446-06-15",
+    "lat": 50.09,
+    "lon": 14.42
+   },
+   "nominal": "拉斯洛（未被承认，1453 年加冕）",
+   "leaders": [
+    {
+     "qid": "Q159679",
+     "zh": "波杰布拉德的伊日",
+     "office": "波希米亚王国摄政（zemský správce，1452 年起）",
+     "tag": "摄政",
+     "from": {
+      "y": 1452,
+      "m": 4,
+      "d": 27
+     }
+    }
+   ],
+   "alt": null,
+   "note": "阿尔布雷希特 1439 年去世后，波希米亚不承认遗腹子拉斯洛，由各地区贵族同盟（landfrýd）分治；1452 年议会任命波杰布拉德的伊日为摄政，1453 年 10 月 28 日拉斯洛加冕。",
+   "src": [
+    "https://en.wikipedia.org/wiki/George_of_Poděbrady",
+    "https://en.wikipedia.org/wiki/Ladislaus_the_Posthumous"
+   ],
+   "nomap": "1446 年底图在布拉格一带只有神圣罗马帝国多边形（各中世纪快照都没有波希米亚王国多边形）"
+  },
+  {
+   "id": "scotland_1296",
+   "title": "苏格兰第一次空位期（1296–1306）",
+   "kind": "摄政",
+   "states": [
+    "Q230791"
+   ],
+   "from": {
+    "y": 1296,
+    "m": 7,
+    "d": 10
+   },
+   "to": {
+    "y": 1306,
+    "m": 3,
+    "d": 25
+   },
+   "probe": {
+    "date": "1300-06-15",
+    "lat": 56.0,
+    "lon": -3.2
+   },
+   "nominal": "约翰·巴利奥尔（被废，流亡）",
+   "leaders": [
+    {
+     "qid": "Q82457",
+     "zh": "威廉·华莱士",
+     "office": "苏格兰王国守护者（Guardian）",
+     "tag": "摄政",
+     "from": {
+      "y": 1297,
+      "m": 0,
+      "d": 0
+     },
+     "to": {
+      "y": 1298,
+      "m": 12,
+      "d": 0
+     }
+    },
+    {
+     "qid": "Q187312",
+     "zh": "罗伯特·布鲁斯",
+     "office": "苏格兰王国守护者（与科明共任）",
+     "tag": "摄政",
+     "from": {
+      "y": 1298,
+      "m": 12,
+      "d": 0
+     },
+     "to": {
+      "y": 1300,
+      "m": 0,
+      "d": 0
+     }
+    },
+    {
+     "qid": "Q1351307",
+     "zh": "约翰·科明",
+     "office": "苏格兰王国守护者",
+     "tag": "摄政",
+     "from": {
+      "y": 1298,
+      "m": 12,
+      "d": 0
+     },
+     "to": {
+      "y": 1301,
+      "m": 0,
+      "d": 0
+     }
+    },
+    {
+     "qid": "Q1702247",
+     "zh": "约翰·德·苏尔斯",
+     "office": "苏格兰王国守护者",
+     "tag": "摄政",
+     "from": {
+      "y": 1301,
+      "m": 0,
+      "d": 0
+     },
+     "to": {
+      "y": 1304,
+      "m": 0,
+      "d": 0
+     }
+    }
+   ],
+   "alt": null,
+   "note": "1296 年 7 月约翰·巴利奥尔被英王爱德华一世废黜，苏格兰由英格兰占领；抵抗方先后推举「王国守护者」代行王权，1306 年 3 月 25 日罗伯特·布鲁斯加冕为王。",
+   "src": [
+    "https://en.wikipedia.org/wiki/Guardian_of_Scotland",
+    "https://en.wikipedia.org/wiki/First_Interregnum_(Scotland)"
+   ]
+  },
+  {
+   "id": "england_1035",
+   "title": "哈罗德一世摄政（1035–1037）",
+   "kind": "摄政",
+   "states": [
+    "Q179876"
+   ],
+   "from": {
+    "y": 1035,
+    "m": 11,
+    "d": 12
+   },
+   "to": {
+    "y": 1037,
+    "m": 0,
+    "d": 0
+   },
+   "probe": {
+    "date": "1036-06-15",
+    "lat": 51.5,
+    "lon": -0.12
+   },
+   "nominal": "哈德克努特（在丹麦）",
+   "leaders": [
+    {
+     "qid": "Q188627",
+     "zh": "飞毛腿哈罗德",
+     "office": "英格兰摄政（1037 年称王）",
+     "tag": "摄政"
+    }
+   ],
+   "alt": null,
+   "note": "克努特 1035 年 11 月 12 日去世，继承人哈德克努特滞留丹麦，由其异母兄哈罗德任摄政，1037 年被承认为国王（哈罗德一世）。",
+   "src": [
+    "https://en.wikipedia.org/wiki/Harold_Harefoot",
+    "https://en.wikipedia.org/wiki/Harthacnut"
+   ]
+  },
+  {
+   "id": "ireland_interregnum",
+   "title": "爱尔兰：英格兰共和国与护国公时期（1649–1660）",
+   "kind": "临时执政",
+   "states": [
+    "Q215530"
+   ],
+   "from": {
+    "y": 1649,
+    "m": 1,
+    "d": 30
+   },
+   "to": {
+    "y": 1660,
+    "m": 5,
+    "d": 29
+   },
+   "probe": {
+    "date": "1655-06-15",
+    "lat": 53.35,
+    "lon": -6.26
+   },
+   "nominal": null,
+   "leaders": [
+    {
+     "qid": "Q44279",
+     "zh": "奥利弗·克伦威尔",
+     "office": "护国公（1653–1658）",
+     "tag": "护国公",
+     "from": {
+      "y": 1653,
+      "m": 12,
+      "d": 16
+     },
+     "to": {
+      "y": 1658,
+      "m": 9,
+      "d": 3
+     }
+    },
+    {
+     "qid": "Q203980",
+     "zh": "理查·克伦威尔",
+     "office": "护国公（1658–1659）",
+     "tag": "护国公",
+     "from": {
+      "y": 1658,
+      "m": 9,
+      "d": 3
+     },
+     "to": {
+      "y": 1659,
+      "m": 5,
+      "d": 25
+     }
+    }
+   ],
+   "alt": null,
+   "note": "查理一世 1649 年 1 月 30 日被处决，爱尔兰随后被克伦威尔征服并入英格兰共和国；1649–1653 年由国务会议、1653–1659 年由护国公统治，1660 年 5 月 29 日查理二世复辟。",
+   "src": [
+    "https://en.wikipedia.org/wiki/Interregnum_(England)",
+    "https://en.wikipedia.org/wiki/Cromwellian_conquest_of_Ireland"
+   ]
+  },
+  {
+   "id": "spain_1813",
+   "title": "西班牙摄政会议（1813–1814）",
+   "kind": "摄政",
+   "states": [
+    "Q29"
+   ],
+   "from": {
+    "y": 1813,
+    "m": 12,
+    "d": 11
+   },
+   "to": {
+    "y": 1814,
+    "m": 5,
+    "d": 4
+   },
+   "probe": {
+    "date": "1814-02-15",
+    "lat": 40.42,
+    "lon": -3.7
+   },
+   "nominal": "斐迪南七世（被扣留于法国）",
+   "leaders": [
+    {
+     "qid": "Q1379524",
+     "zh": "路易斯·玛丽亚·德波旁",
+     "office": "摄政会议主席",
+     "tag": "摄政"
+    }
+   ],
+   "alt": null,
+   "note": "1813 年 12 月《瓦朗赛条约》约瑟夫·波拿巴失去西班牙王位，斐迪南七世仍被拿破仑扣留，由加的斯议会的摄政会议执政；斐迪南 1814 年 3 月回国，5 月 4 日宣布恢复专制。",
+   "src": [
+    "https://en.wikipedia.org/wiki/Luis_María_de_Borbón_y_Vallabriga",
+    "https://en.wikipedia.org/wiki/Ferdinand_VII_of_Spain"
+   ]
+  },
+  {
+   "id": "spain_1885",
+   "title": "西班牙王位待定与玛丽亚·克里斯蒂娜摄政（1885–1886）",
+   "kind": "摄政",
+   "states": [
+    "Q29"
+   ],
+   "from": {
+    "y": 1885,
+    "m": 11,
+    "d": 25
+   },
+   "to": {
+    "y": 1886,
+    "m": 5,
+    "d": 17
+   },
+   "probe": {
+    "date": "1886-02-15",
+    "lat": 40.42,
+    "lon": -3.7
+   },
+   "nominal": null,
+   "leaders": [
+    {
+     "qid": "Q538125",
+     "zh": "奥地利的玛丽亚·克里斯蒂娜",
+     "office": "王国摄政（王太后）",
+     "tag": "摄政"
+    }
+   ],
+   "alt": null,
+   "note": "阿方索十二世 1885 年 11 月 25 日去世时王后有孕，由王后摄政；1886 年 5 月 17 日遗腹子阿方索十三世出生即为国王，其母继续摄政至 1902 年。",
+   "src": [
+    "https://en.wikipedia.org/wiki/Maria_Christina_of_Austria",
+    "https://en.wikipedia.org/wiki/Alfonso_XIII"
+   ]
+  },
+  {
+   "id": "portugal_1580",
+   "title": "葡萄牙王位继承危机（1580）",
+   "kind": "对立君主",
+   "states": [
+    "Q45670"
+   ],
+   "from": {
+    "y": 1580,
+    "m": 1,
+    "d": 31
+   },
+   "to": {
+    "y": 1580,
+    "m": 8,
+    "d": 25
+   },
+   "probe": {
+    "date": "1580-07-15",
+    "lat": 38.72,
+    "lon": -9.14
+   },
+   "nominal": null,
+   "leaders": [
+    {
+     "qid": "Q321325",
+     "zh": "克拉图修道院长安东尼奥",
+     "office": "1580 年 6 月 24 日被拥立为王（未获普遍承认）",
+     "tag": "对立君主",
+     "from": {
+      "y": 1580,
+      "m": 6,
+      "d": 24
+     }
+    }
+   ],
+   "alt": null,
+   "note": "红衣主教国王恩里克 1580 年 1 月 31 日去世，由五人执政委员会理政；6 月安东尼奥在圣塔伦被拥立，8 月 25 日阿尔坎塔拉之战被西班牙军击败，腓力二世（葡萄牙腓力一世）入主。",
+   "src": [
+    "https://en.wikipedia.org/wiki/1580_Portuguese_succession_crisis",
+    "https://en.wikipedia.org/wiki/António,_Prior_of_Crato"
+   ]
+  },
+  {
+   "id": "greece_1862",
+   "title": "希腊临时政府（1862–1863）",
+   "kind": "临时执政",
+   "states": [
+    "Q209065"
+   ],
+   "from": {
+    "y": 1862,
+    "m": 10,
+    "d": 23
+   },
+   "to": {
+    "y": 1863,
+    "m": 3,
+    "d": 30
+   },
+   "probe": {
+    "date": "1863-01-15",
+    "lat": 37.98,
+    "lon": 23.73
+   },
+   "nominal": null,
+   "leaders": [
+    {
+     "qid": "Q708383",
+     "zh": "季米特里奥斯·武尔加里斯",
+     "office": "临时政府首脑",
+     "tag": "临时执政"
+    }
+   ],
+   "alt": null,
+   "note": "奥托国王 1862 年 10 月 23 日被政变废黜，临时政府执政；1863 年 3 月 30 日国民议会选丹麦王子威廉为国王（乔治一世）。",
+   "src": [
+    "https://en.wikipedia.org/wiki/23_October_1862_Revolution",
+    "https://en.wikipedia.org/wiki/George_I_of_Greece"
+   ]
+  },
+  {
+   "id": "eswatini_1982",
+   "title": "斯威士兰王太后摄政（1982–1986）",
+   "kind": "摄政",
+   "states": [
+    "Q1050"
+   ],
+   "from": {
+    "y": 1982,
+    "m": 8,
+    "d": 21
+   },
+   "to": {
+    "y": 1986,
+    "m": 4,
+    "d": 25
+   },
+   "probe": {
+    "date": "1984-06-15",
+    "lat": -26.32,
+    "lon": 31.14
+   },
+   "nominal": "王储马科塞蒂夫（后来的姆斯瓦蒂三世）",
+   "leaders": [
+    {
+     "qid": "Q273259",
+     "zh": "泽利韦",
+     "office": "王太后（Indlovukazi）、摄政",
+     "tag": "摄政",
+     "from": {
+      "y": 1982,
+      "m": 8,
+      "d": 21
+     },
+     "to": {
+      "y": 1983,
+      "m": 8,
+      "d": 10
+     }
+    },
+    {
+     "qid": "Q444261",
+     "zh": "恩通比",
+     "office": "王太后、摄政",
+     "tag": "摄政",
+     "from": {
+      "y": 1983,
+      "m": 8,
+      "d": 10
+     },
+     "to": {
+      "y": 1986,
+      "m": 4,
+      "d": 25
+     }
+    }
+   ],
+   "alt": null,
+   "note": "索布扎二世 1982 年 8 月 21 日去世，王储马科塞蒂夫年幼，先后由王太后泽利韦、恩通比摄政，1986 年 4 月 25 日马科塞蒂夫加冕为姆斯瓦蒂三世。",
+   "src": [
+    "https://en.wikipedia.org/wiki/Dzeliwe",
+    "https://en.wikipedia.org/wiki/Ntfombi",
+    "https://en.wikipedia.org/wiki/Mswati_III"
+   ]
+  },
+  {
+   "id": "norway_1481",
+   "title": "挪威王位空缺（1481–1483）",
+   "kind": "摄政",
+   "states": [
+    "Q20"
+   ],
+   "from": {
+    "y": 1481,
+    "m": 5,
+    "d": 21
+   },
+   "to": {
+    "y": 1483,
+    "m": 7,
+    "d": 20
+   },
+   "probe": {
+    "date": "1482-06-15",
+    "lat": 59.91,
+    "lon": 10.75
+   },
+   "nominal": null,
+   "leaders": [
+    {
+     "qid": "Q6271657",
+     "zh": "约恩·斯瓦莱松·斯默",
+     "office": "挪威王国摄政（riksforstander）",
+     "tag": "摄政"
+    }
+   ],
+   "alt": null,
+   "note": "克里斯蒂安一世 1481 年 5 月 21 日去世，挪威王国议会推举约恩·斯默为摄政，1483 年《哈尔姆斯塔德协议》后承认汉斯为王。",
+   "src": [
+    "https://en.wikipedia.org/wiki/Jon_Svaleson_Smør",
+    "https://en.wikipedia.org/wiki/John,_King_of_Denmark"
+   ]
+  },
+  {
+   "id": "norway_1533",
+   "title": "挪威王位空缺（1533–1537）",
+   "kind": "权臣",
+   "states": [
+    "Q20"
+   ],
+   "from": {
+    "y": 1533,
+    "m": 4,
+    "d": 10
+   },
+   "to": {
+    "y": 1537,
+    "m": 5,
+    "d": 0
+   },
+   "probe": {
+    "date": "1535-06-15",
+    "lat": 63.43,
+    "lon": 10.39
+   },
+   "nominal": null,
+   "leaders": [
+    {
+     "qid": "Q2007127",
+     "zh": "奥拉夫·恩格尔布雷克松",
+     "office": "尼达洛斯大主教、挪威王国议会领袖",
+     "tag": "权臣"
+    }
+   ],
+   "alt": null,
+   "note": "腓特烈一世 1533 年 4 月 10 日去世，丹麦陷入伯爵战争；挪威由大主教奥拉夫领导的王国议会理政，1537 年克里斯蒂安三世控制挪威，大主教出逃，挪威降为丹麦属地。",
+   "src": [
+    "https://en.wikipedia.org/wiki/Olav_Engelbrektsson",
+    "https://en.wikipedia.org/wiki/Count's_Feud"
+   ]
+  },
+  {
+   "id": "norway_1448",
+   "title": "挪威王位空缺（1448–1449）",
+   "kind": "摄政",
+   "states": [
+    "Q20"
+   ],
+   "from": {
+    "y": 1448,
+    "m": 1,
+    "d": 5
+   },
+   "to": {
+    "y": 1449,
+    "m": 11,
+    "d": 0
+   },
+   "probe": {
+    "date": "1448-09-15",
+    "lat": 59.91,
+    "lon": 10.75
+   },
+   "nominal": null,
+   "leaders": [
+    {
+     "qid": "Q6327151",
+     "zh": "西居尔·约恩松",
+     "office": "挪威王国宫相（drottsete），代行王权",
+     "tag": "摄政"
+    }
+   ],
+   "alt": null,
+   "note": "克里斯托弗 1448 年 1 月 5 日去世，西居尔·约恩松以宫相身份主持王国议会；1449 年瑞典的卡尔·克努特松与丹麦的克里斯蒂安一世争夺挪威王位。",
+   "src": [
+    "https://en.wikipedia.org/wiki/Sigurd_Jonsson",
+    "https://en.wikipedia.org/wiki/Charles_VIII_of_Sweden"
+   ]
+  },
+  {
+   "id": "norway_1648",
+   "title": "丹麦-挪威王位空缺（1648）",
+   "kind": "空位期",
+   "states": [
+    "Q20"
+   ],
+   "from": {
+    "y": 1648,
+    "m": 2,
+    "d": 28
+   },
+   "to": {
+    "y": 1648,
+    "m": 7,
+    "d": 6
+   },
+   "probe": {
+    "date": "1648-04-15",
+    "lat": 59.91,
+    "lon": 10.75
+   },
+   "nominal": null,
+   "leaders": [],
+   "alt": null,
+   "note": "克里斯蒂安四世 1648 年 2 月 28 日去世，其子腓特烈三世须先签署选举誓约，7 月 6 日才被选立。空位期间没有公认的单一摄政或掌权者，由丹麦王国议会理政，直到新君当选或即位。",
+   "src": [
+    "https://en.wikipedia.org/wiki/Frederick_III_of_Denmark"
+   ]
+  },
+  {
+   "id": "norway_1905",
+   "title": "挪威联合解体后的王位空缺（1905）",
+   "kind": "临时执政",
+   "states": [
+    "Q20"
+   ],
+   "from": {
+    "y": 1905,
+    "m": 6,
+    "d": 7
+   },
+   "to": {
+    "y": 1905,
+    "m": 11,
+    "d": 18
+   },
+   "probe": {
+    "date": "1905-09-15",
+    "lat": 59.91,
+    "lon": 10.75
+   },
+   "nominal": null,
+   "leaders": [
+    {
+     "qid": "Q319645",
+     "zh": "克里斯蒂安·米歇尔森",
+     "office": "挪威首相（议会授权政府代行王权）",
+     "tag": "临时执政"
+    }
+   ],
+   "alt": null,
+   "note": "1905 年 6 月 7 日挪威议会宣布解除与瑞典的联合，由米歇尔森政府代行王权；11 月 18 日丹麦王子卡尔被选为国王（哈康七世）。",
+   "src": [
+    "https://en.wikipedia.org/wiki/Dissolution_of_the_union_between_Norway_and_Sweden_in_1905",
+    "https://en.wikipedia.org/wiki/Christian_Michelsen"
+   ]
+  },
+  {
+   "id": "sweden_engelbrekt",
+   "title": "恩格尔布雷克特起义（1434–1436）",
+   "kind": "起义",
+   "states": [
+    "Q34",
+    "Q62623"
+   ],
+   "from": {
+    "y": 1434,
+    "m": 8,
+    "d": 0
+   },
+   "to": {
+    "y": 1436,
+    "m": 9,
+    "d": 0
+   },
+   "probe": {
+    "date": "1435-06-15",
+    "lat": 59.33,
+    "lon": 18.07
+   },
+   "nominal": "波美拉尼亚的埃里克",
+   "leaders": [
+    {
+     "qid": "Q447046",
+     "zh": "恩格尔布雷克特·恩格尔布雷克特松",
+     "office": "王国统帅（rikshövitsman）",
+     "tag": "起义领袖",
+     "to": {
+      "y": 1436,
+      "m": 5,
+      "d": 4
+     }
+    },
+    {
+     "qid": "Q310433",
+     "zh": "卡尔·克努特松",
+     "office": "王国元帅（riksmarsk）",
+     "tag": "权臣",
+     "from": {
+      "y": 1435,
+      "m": 0,
+      "d": 0
+     }
+    }
+   ],
+   "alt": null,
+   "note": "1434 年恩格尔布雷克特领导反抗卡尔马联合国王埃里克的起义，1435 年被推举为王国统帅；1436 年 5 月 4 日被杀。埃里克名义上仍为国王，1439 年被废。",
+   "src": [
+    "https://en.wikipedia.org/wiki/Engelbrekt_Engelbrektsson",
+    "https://en.wikipedia.org/wiki/Eric_of_Pomerania"
+   ]
+  },
+  {
+   "id": "sweden_1438",
+   "title": "卡尔·克努特松摄政与克里斯托弗即位（1438–1441）",
+   "kind": "摄政",
+   "states": [
+    "Q34",
+    "Q62623"
+   ],
+   "from": {
+    "y": 1438,
+    "m": 10,
+    "d": 0
+   },
+   "to": {
+    "y": 1441,
+    "m": 9,
+    "d": 13
+   },
+   "probe": {
+    "date": "1440-06-15",
+    "lat": 59.33,
+    "lon": 18.07
+   },
+   "nominal": null,
+   "leaders": [
+    {
+     "qid": "Q310433",
+     "zh": "卡尔·克努特松",
+     "office": "瑞典摄政（riksföreståndare）",
+     "tag": "摄政",
+     "to": {
+      "y": 1440,
+      "m": 9,
+      "d": 0
+     }
+    },
+    {
+     "qid": "Q58056",
+     "zh": "巴伐利亚的克里斯托弗",
+     "office": "当选国王（1440 年 9 月当选，1441 年 9 月 13 日加冕）",
+     "tag": "当选君主",
+     "from": {
+      "y": 1440,
+      "m": 9,
+      "d": 0
+     }
+    }
+   ],
+   "alt": null,
+   "note": "1438 年卡尔·克努特松任摄政，1439 年埃里克被废；1440 年 9 月王国议会选克里斯托弗为王，1441 年 9 月 13 日在乌普萨拉加冕。",
+   "src": [
+    "https://en.wikipedia.org/wiki/Regent_of_Sweden",
+    "https://en.wikipedia.org/wiki/Christopher_of_Bavaria"
+   ]
+  },
+  {
+   "id": "sweden_1448",
+   "title": "瑞典摄政（1448）",
+   "kind": "摄政",
+   "states": [
+    "Q34",
+    "Q62623"
+   ],
+   "from": {
+    "y": 1448,
+    "m": 1,
+    "d": 5
+   },
+   "to": {
+    "y": 1448,
+    "m": 6,
+    "d": 20
+   },
+   "probe": {
+    "date": "1448-03-15",
+    "lat": 59.33,
+    "lon": 18.07
+   },
+   "nominal": null,
+   "leaders": [
+    {
+     "qid": "Q2425529",
+     "zh": "本特·约恩松（乌克森谢纳）",
+     "office": "瑞典摄政（与其弟共任）",
+     "tag": "摄政"
+    },
+    {
+     "qid": "Q2425574",
+     "zh": "尼尔斯·约恩松（乌克森谢纳）",
+     "office": "瑞典摄政",
+     "tag": "摄政"
+    }
+   ],
+   "alt": null,
+   "note": "克里斯托弗 1448 年 1 月 5 日去世，乌克森谢纳兄弟任摄政，6 月 20 日卡尔·克努特松当选国王（卡尔八世）。",
+   "src": [
+    "https://en.wikipedia.org/wiki/Regent_of_Sweden"
+   ]
+  },
+  {
+   "id": "sweden_1457",
+   "title": "瑞典摄政（1457）",
+   "kind": "摄政",
+   "states": [
+    "Q34",
+    "Q62623"
+   ],
+   "from": {
+    "y": 1457,
+    "m": 2,
+    "d": 24
+   },
+   "to": {
+    "y": 1457,
+    "m": 6,
+    "d": 23
+   },
+   "probe": {
+    "date": "1457-04-15",
+    "lat": 59.33,
+    "lon": 18.07
+   },
+   "nominal": null,
+   "leaders": [
+    {
+     "qid": "Q936456",
+     "zh": "约恩斯·本特松（乌克森谢纳）",
+     "office": "乌普萨拉大主教、瑞典摄政",
+     "tag": "摄政"
+    },
+    {
+     "qid": "Q581346",
+     "zh": "埃里克·阿克塞尔松·托特",
+     "office": "瑞典摄政",
+     "tag": "摄政"
+    }
+   ],
+   "alt": null,
+   "note": "1457 年 2 月卡尔八世被大主教约恩斯·本特松逐出，大主教与托特任摄政，6 月克里斯蒂安一世当选瑞典国王。",
+   "src": [
+    "https://en.wikipedia.org/wiki/Regent_of_Sweden"
+   ]
+  },
+  {
+   "id": "sweden_1464",
+   "title": "瑞典摄政与斯图雷时代（1464–1497）",
+   "kind": "摄政",
+   "states": [
+    "Q34",
+    "Q62623"
+   ],
+   "from": {
+    "y": 1464,
+    "m": 2,
+    "d": 0
+   },
+   "to": {
+    "y": 1497,
+    "m": 10,
+    "d": 6
+   },
+   "probe": {
+    "date": "1480-06-15",
+    "lat": 59.33,
+    "lon": 18.07
+   },
+   "nominal": "（1467–1470 年为卡尔八世）",
+   "leaders": [
+    {
+     "qid": "Q2415965",
+     "zh": "凯蒂尔·卡尔松（瓦萨）",
+     "office": "林雪平主教、瑞典摄政",
+     "tag": "摄政",
+     "to": {
+      "y": 1465,
+      "m": 8,
+      "d": 11
+     }
+    },
+    {
+     "qid": "Q936456",
+     "zh": "约恩斯·本特松（乌克森谢纳）",
+     "office": "乌普萨拉大主教、瑞典摄政",
+     "tag": "摄政",
+     "from": {
+      "y": 1465,
+      "m": 8,
+      "d": 0
+     },
+     "to": {
+      "y": 1466,
+      "m": 11,
+      "d": 0
+     }
+    },
+    {
+     "qid": "Q581346",
+     "zh": "埃里克·阿克塞尔松·托特",
+     "office": "瑞典摄政",
+     "tag": "摄政",
+     "from": {
+      "y": 1466,
+      "m": 11,
+      "d": 0
+     },
+     "to": {
+      "y": 1467,
+      "m": 11,
+      "d": 12
+     }
+    },
+    {
+     "qid": "Q452506",
+     "zh": "老斯滕·斯图雷",
+     "office": "瑞典摄政（riksföreståndare）",
+     "tag": "摄政",
+     "from": {
+      "y": 1470,
+      "m": 5,
+      "d": 15
+     }
+    }
+   ],
+   "alt": null,
+   "note": "克里斯蒂安一世 1464 年失去瑞典后，瑞典由摄政统治（1467–1470 年卡尔八世第三次在位，见君主记录）；1470 年起老斯滕·斯图雷任摄政，1497 年 10 月被丹麦国王汉斯击败，汉斯即瑞典王位。",
+   "src": [
+    "https://en.wikipedia.org/wiki/Regent_of_Sweden",
+    "https://en.wikipedia.org/wiki/Sten_Sture_the_Elder"
+   ]
+  },
+  {
+   "id": "sweden_1501",
+   "title": "斯图雷家族摄政（1501–1520）",
+   "kind": "摄政",
+   "states": [
+    "Q34",
+    "Q62623"
+   ],
+   "from": {
+    "y": 1501,
+    "m": 8,
+    "d": 0
+   },
+   "to": {
+    "y": 1520,
+    "m": 2,
+    "d": 3
+   },
+   "probe": {
+    "date": "1510-06-15",
+    "lat": 59.33,
+    "lon": 18.07
+   },
+   "nominal": null,
+   "leaders": [
+    {
+     "qid": "Q452506",
+     "zh": "老斯滕·斯图雷",
+     "office": "瑞典摄政",
+     "tag": "摄政",
+     "to": {
+      "y": 1503,
+      "m": 12,
+      "d": 14
+     }
+    },
+    {
+     "qid": "Q384917",
+     "zh": "斯万特·尼尔松",
+     "office": "瑞典摄政",
+     "tag": "摄政",
+     "from": {
+      "y": 1504,
+      "m": 1,
+      "d": 21
+     },
+     "to": {
+      "y": 1512,
+      "m": 1,
+      "d": 2
+     }
+    },
+    {
+     "qid": "Q541674",
+     "zh": "小斯滕·斯图雷",
+     "office": "瑞典摄政",
+     "tag": "摄政",
+     "from": {
+      "y": 1512,
+      "m": 7,
+      "d": 23
+     }
+    }
+   ],
+   "alt": null,
+   "note": "1501 年瑞典再度脱离国王汉斯，斯图雷家族与斯万特·尼尔松相继任摄政；1520 年 2 月小斯滕·斯图雷战死，克里斯蒂安二世征服瑞典。",
+   "src": [
+    "https://en.wikipedia.org/wiki/Regent_of_Sweden"
+   ]
+  },
+  {
+   "id": "sweden_vasa",
+   "title": "古斯塔夫·瓦萨摄政（1521–1523）",
+   "kind": "摄政",
+   "states": [
+    "Q34",
+    "Q62623"
+   ],
+   "from": {
+    "y": 1521,
+    "m": 8,
+    "d": 23
+   },
+   "to": {
+    "y": 1523,
+    "m": 6,
+    "d": 6
+   },
+   "probe": {
+    "date": "1522-06-15",
+    "lat": 59.33,
+    "lon": 18.07
+   },
+   "nominal": null,
+   "leaders": [
+    {
+     "qid": "Q52947",
+     "zh": "古斯塔夫·瓦萨",
+     "office": "瑞典摄政（riksföreståndare）",
+     "tag": "摄政"
+    }
+   ],
+   "alt": null,
+   "note": "1521 年 8 月 23 日起义领袖古斯塔夫·瓦萨被推为摄政，1523 年 6 月 6 日当选国王（古斯塔夫一世），卡尔马联合瓦解。",
+   "src": [
+    "https://en.wikipedia.org/wiki/Regent_of_Sweden",
+    "https://en.wikipedia.org/wiki/Gustav_I_of_Sweden"
+   ]
+  },
+  {
+   "id": "sweden_1599",
+   "title": "卡尔公爵摄政（1599–1604）",
+   "kind": "摄政",
+   "states": [
+    "Q34",
+    "Q62623"
+   ],
+   "from": {
+    "y": 1599,
+    "m": 7,
+    "d": 24
+   },
+   "to": {
+    "y": 1604,
+    "m": 3,
+    "d": 20
+   },
+   "probe": {
+    "date": "1601-06-15",
+    "lat": 59.33,
+    "lon": 18.07
+   },
+   "nominal": "西吉斯蒙德（已被废，仍为波兰国王）",
+   "leaders": [
+    {
+     "qid": "Q52939",
+     "zh": "卡尔公爵（后来的卡尔九世）",
+     "office": "瑞典摄政（王国执政者）",
+     "tag": "摄政"
+    }
+   ],
+   "alt": null,
+   "note": "瑞典议会 1599 年 7 月 24 日废黜西吉斯蒙德，由其叔卡尔公爵执政，1604 年 3 月 20 日卡尔被承认为国王（卡尔九世）。",
+   "src": [
+    "https://en.wikipedia.org/wiki/Charles_IX_of_Sweden",
+    "https://en.wikipedia.org/wiki/War_against_Sigismund"
+   ]
+  },
+  {
+   "id": "poland_1572",
+   "title": "波兰空位期（1572–1573）",
+   "kind": "空位期",
+   "states": [
+    "Q171348",
+    "Q172107"
+   ],
+   "from": {
+    "y": 1572,
+    "m": 7,
+    "d": 7
+   },
+   "to": {
+    "y": 1573,
+    "m": 5,
+    "d": 16
+   },
+   "probe": {
+    "date": "1572-12-15",
+    "lat": 52.23,
+    "lon": 21.01
+   },
+   "nominal": null,
+   "leaders": [
+    {
+     "qid": "Q1679695",
+     "zh": "雅库布·乌汉斯基",
+     "office": "格涅兹诺大主教、波兰首席主教，空位期任临时国王（interrex）",
+     "tag": "临时国王"
+    }
+   ],
+   "alt": null,
+   "note": "波兰—立陶宛是选举君主制：国王去世或出走后，由格涅兹诺大主教以「临时国王」身份召集议会、主持选举，直到新王当选并加冕。",
+   "src": [
+    "https://en.wikipedia.org/wiki/Interrex_(Poland)",
+    "https://en.wikipedia.org/wiki/Royal_elections_in_Poland",
+    "https://en.wikipedia.org/wiki/Jakub_Uchański"
+   ]
+  },
+  {
+   "id": "poland_1574",
+   "title": "波兰空位期（1574–1575）",
+   "kind": "空位期",
+   "states": [
+    "Q171348",
+    "Q172107"
+   ],
+   "from": {
+    "y": 1574,
+    "m": 6,
+    "d": 18
+   },
+   "to": {
+    "y": 1575,
+    "m": 12,
+    "d": 14
+   },
+   "probe": {
+    "date": "1575-03-15",
+    "lat": 52.23,
+    "lon": 21.01
+   },
+   "nominal": null,
+   "leaders": [
+    {
+     "qid": "Q1679695",
+     "zh": "雅库布·乌汉斯基",
+     "office": "格涅兹诺大主教、波兰首席主教，空位期任临时国王（interrex）",
+     "tag": "临时国王"
+    }
+   ],
+   "alt": null,
+   "note": "波兰—立陶宛是选举君主制：国王去世或出走后，由格涅兹诺大主教以「临时国王」身份召集议会、主持选举，直到新王当选并加冕。",
+   "src": [
+    "https://en.wikipedia.org/wiki/Interrex_(Poland)",
+    "https://en.wikipedia.org/wiki/Royal_elections_in_Poland",
+    "https://en.wikipedia.org/wiki/Jakub_Uchański"
+   ]
+  },
+  {
+   "id": "poland_1632",
+   "title": "波兰空位期（1632）",
+   "kind": "空位期",
+   "states": [
+    "Q171348",
+    "Q172107"
+   ],
+   "from": {
+    "y": 1632,
+    "m": 4,
+    "d": 30
+   },
+   "to": {
+    "y": 1632,
+    "m": 11,
+    "d": 8
+   },
+   "probe": {
+    "date": "1632-07-15",
+    "lat": 52.23,
+    "lon": 21.01
+   },
+   "nominal": null,
+   "leaders": [
+    {
+     "qid": "Q4110451",
+     "zh": "扬·文日克",
+     "office": "格涅兹诺大主教、波兰首席主教，空位期任临时国王（interrex）",
+     "tag": "临时国王"
+    }
+   ],
+   "alt": null,
+   "note": "波兰—立陶宛是选举君主制：国王去世或出走后，由格涅兹诺大主教以「临时国王」身份召集议会、主持选举，直到新王当选并加冕。",
+   "src": [
+    "https://en.wikipedia.org/wiki/Interrex_(Poland)",
+    "https://en.wikipedia.org/wiki/Royal_elections_in_Poland",
+    "https://en.wikipedia.org/wiki/Jan_Wężyk"
+   ]
+  },
+  {
+   "id": "poland_1648",
+   "title": "波兰空位期（1648）",
+   "kind": "空位期",
+   "states": [
+    "Q171348",
+    "Q172107"
+   ],
+   "from": {
+    "y": 1648,
+    "m": 5,
+    "d": 20
+   },
+   "to": {
+    "y": 1648,
+    "m": 11,
+    "d": 20
+   },
+   "probe": {
+    "date": "1648-08-15",
+    "lat": 52.23,
+    "lon": 21.01
+   },
+   "nominal": null,
+   "leaders": [
+    {
+     "qid": "Q4110494",
+     "zh": "马切伊·武宾斯基",
+     "office": "格涅兹诺大主教、波兰首席主教，空位期任临时国王（interrex）",
+     "tag": "临时国王"
+    }
+   ],
+   "alt": null,
+   "note": "波兰—立陶宛是选举君主制：国王去世或出走后，由格涅兹诺大主教以「临时国王」身份召集议会、主持选举，直到新王当选并加冕。",
+   "src": [
+    "https://en.wikipedia.org/wiki/Interrex_(Poland)",
+    "https://en.wikipedia.org/wiki/Royal_elections_in_Poland",
+    "https://en.wikipedia.org/wiki/Maciej_Łubieński"
+   ]
+  },
+  {
+   "id": "poland_1668",
+   "title": "波兰空位期（1668–1669）",
+   "kind": "空位期",
+   "states": [
+    "Q171348",
+    "Q172107"
+   ],
+   "from": {
+    "y": 1668,
+    "m": 9,
+    "d": 16
+   },
+   "to": {
+    "y": 1669,
+    "m": 6,
+    "d": 19
+   },
+   "probe": {
+    "date": "1669-01-15",
+    "lat": 52.23,
+    "lon": 21.01
+   },
+   "nominal": null,
+   "leaders": [
+    {
+     "qid": "Q11780870",
+     "zh": "米科瓦伊·普拉日莫夫斯基",
+     "office": "格涅兹诺大主教、波兰首席主教，空位期任临时国王（interrex）",
+     "tag": "临时国王"
+    }
+   ],
+   "alt": null,
+   "note": "波兰—立陶宛是选举君主制：国王去世或出走后，由格涅兹诺大主教以「临时国王」身份召集议会、主持选举，直到新王当选并加冕。",
+   "src": [
+    "https://en.wikipedia.org/wiki/Interrex_(Poland)",
+    "https://en.wikipedia.org/wiki/Royal_elections_in_Poland",
+    "https://en.wikipedia.org/wiki/Mikołaj_Prażmowski"
+   ]
+  },
+  {
+   "id": "poland_1673",
+   "title": "波兰空位期（1673–1674）",
+   "kind": "空位期",
+   "states": [
+    "Q171348",
+    "Q172107"
+   ],
+   "from": {
+    "y": 1673,
+    "m": 11,
+    "d": 10
+   },
+   "to": {
+    "y": 1674,
+    "m": 5,
+    "d": 21
+   },
+   "probe": {
+    "date": "1674-02-15",
+    "lat": 52.23,
+    "lon": 21.01
+   },
+   "nominal": null,
+   "leaders": [
+    {
+     "qid": "Q4108725",
+     "zh": "卡齐米日·弗洛里安·恰尔托雷斯基",
+     "office": "格涅兹诺大主教、波兰首席主教，空位期任临时国王（interrex）",
+     "tag": "临时国王"
+    }
+   ],
+   "alt": null,
+   "note": "波兰—立陶宛是选举君主制：国王去世或出走后，由格涅兹诺大主教以「临时国王」身份召集议会、主持选举，直到新王当选并加冕。",
+   "src": [
+    "https://en.wikipedia.org/wiki/Interrex_(Poland)",
+    "https://en.wikipedia.org/wiki/Royal_elections_in_Poland",
+    "https://en.wikipedia.org/wiki/Kazimierz_Florian_Czartoryski"
+   ]
+  },
+  {
+   "id": "poland_1696",
+   "title": "波兰空位期（1696–1697）",
+   "kind": "空位期",
+   "states": [
+    "Q171348",
+    "Q172107"
+   ],
+   "from": {
+    "y": 1696,
+    "m": 6,
+    "d": 17
+   },
+   "to": {
+    "y": 1697,
+    "m": 9,
+    "d": 15
+   },
+   "probe": {
+    "date": "1697-01-15",
+    "lat": 52.23,
+    "lon": 21.01
+   },
+   "nominal": null,
+   "leaders": [
+    {
+     "qid": "Q1929502",
+     "zh": "米哈乌·斯特凡·拉杰约夫斯基",
+     "office": "格涅兹诺大主教、波兰首席主教，空位期任临时国王（interrex）",
+     "tag": "临时国王"
+    }
+   ],
+   "alt": null,
+   "note": "波兰—立陶宛是选举君主制：国王去世或出走后，由格涅兹诺大主教以「临时国王」身份召集议会、主持选举，直到新王当选并加冕。",
+   "src": [
+    "https://en.wikipedia.org/wiki/Interrex_(Poland)",
+    "https://en.wikipedia.org/wiki/Royal_elections_in_Poland",
+    "https://en.wikipedia.org/wiki/Michał_Stefan_Radziejowski"
+   ]
+  },
+  {
+   "id": "poland_1733",
+   "title": "波兰空位期（1733）",
+   "kind": "空位期",
+   "states": [
+    "Q171348",
+    "Q172107"
+   ],
+   "from": {
+    "y": 1733,
+    "m": 2,
+    "d": 1
+   },
+   "to": {
+    "y": 1733,
+    "m": 9,
+    "d": 12
+   },
+   "probe": {
+    "date": "1733-05-15",
+    "lat": 52.23,
+    "lon": 21.01
+   },
+   "nominal": null,
+   "leaders": [
+    {
+     "qid": "Q1383476",
+     "zh": "特奥多尔·安杰伊·波托茨基",
+     "office": "格涅兹诺大主教、波兰首席主教，空位期任临时国王（interrex）",
+     "tag": "临时国王"
+    }
+   ],
+   "alt": null,
+   "note": "波兰—立陶宛是选举君主制：国王去世或出走后，由格涅兹诺大主教以「临时国王」身份召集议会、主持选举，直到新王当选并加冕。",
+   "src": [
+    "https://en.wikipedia.org/wiki/Interrex_(Poland)",
+    "https://en.wikipedia.org/wiki/Royal_elections_in_Poland",
+    "https://en.wikipedia.org/wiki/Teodor_Andrzej_Potocki"
+   ]
+  },
+  {
+   "id": "poland_1763",
+   "title": "波兰空位期（1763–1764）",
+   "kind": "空位期",
+   "states": [
+    "Q171348",
+    "Q172107"
+   ],
+   "from": {
+    "y": 1763,
+    "m": 10,
+    "d": 5
+   },
+   "to": {
+    "y": 1764,
+    "m": 9,
+    "d": 7
+   },
+   "probe": {
+    "date": "1764-03-15",
+    "lat": 52.23,
+    "lon": 21.01
+   },
+   "nominal": null,
+   "leaders": [
+    {
+     "qid": "Q3894129",
+     "zh": "瓦迪斯瓦夫·亚历山大·武宾斯基",
+     "office": "格涅兹诺大主教、波兰首席主教，空位期任临时国王（interrex）",
+     "tag": "临时国王"
+    }
+   ],
+   "alt": null,
+   "note": "波兰—立陶宛是选举君主制：国王去世或出走后，由格涅兹诺大主教以「临时国王」身份召集议会、主持选举，直到新王当选并加冕。",
+   "src": [
+    "https://en.wikipedia.org/wiki/Interrex_(Poland)",
+    "https://en.wikipedia.org/wiki/Royal_elections_in_Poland",
+    "https://en.wikipedia.org/wiki/Władysław_Aleksander_Łubieński"
+   ]
+  },
+  {
+   "id": "poland_1444",
+   "title": "波兰王位空缺（1444–1447）",
+   "kind": "空位期",
+   "states": [
+    "Q171348"
+   ],
+   "from": {
+    "y": 1444,
+    "m": 11,
+    "d": 10
+   },
+   "to": {
+    "y": 1447,
+    "m": 6,
+    "d": 25
+   },
+   "probe": {
+    "date": "1445-06-15",
+    "lat": 50.06,
+    "lon": 19.94
+   },
+   "nominal": null,
+   "leaders": [],
+   "alt": null,
+   "note": "瓦迪斯瓦夫三世 1444 年 11 月 10 日战死瓦尔纳，波兰贵族等待其下落近两年，1446 年 6 月选其弟立陶宛大公卡齐米日，他迟至 1447 年 6 月 25 日才接受并加冕。空位期间没有公认的单一摄政或掌权者，由王国议会 / 大贵族会议理政，直到新君当选或即位。",
+   "src": [
+    "https://en.wikipedia.org/wiki/List_of_Polish_monarchs",
+    "https://en.wikipedia.org/wiki/Royal_elections_in_Poland"
+   ]
+  },
+  {
+   "id": "poland_1492",
+   "title": "波兰王位空缺（1492）",
+   "kind": "空位期",
+   "states": [
+    "Q171348"
+   ],
+   "from": {
+    "y": 1492,
+    "m": 6,
+    "d": 7
+   },
+   "to": {
+    "y": 1492,
+    "m": 8,
+    "d": 27
+   },
+   "probe": {
+    "date": "1492-07-15",
+    "lat": 50.06,
+    "lon": 19.94
+   },
+   "nominal": null,
+   "leaders": [],
+   "alt": null,
+   "note": "卡齐米日四世 1492 年 6 月 7 日去世，8 月 27 日约翰一世·阿尔布雷希特当选。空位期间没有公认的单一摄政或掌权者，由王国议会 / 大贵族会议理政，直到新君当选或即位。",
+   "src": [
+    "https://en.wikipedia.org/wiki/List_of_Polish_monarchs",
+    "https://en.wikipedia.org/wiki/Royal_elections_in_Poland"
+   ]
+  },
+  {
+   "id": "poland_1501",
+   "title": "波兰王位空缺（1501）",
+   "kind": "空位期",
+   "states": [
+    "Q171348"
+   ],
+   "from": {
+    "y": 1501,
+    "m": 6,
+    "d": 17
+   },
+   "to": {
+    "y": 1501,
+    "m": 10,
+    "d": 3
+   },
+   "probe": {
+    "date": "1501-08-15",
+    "lat": 50.06,
+    "lon": 19.94
+   },
+   "nominal": null,
+   "leaders": [],
+   "alt": null,
+   "note": "约翰一世 1501 年 6 月 17 日去世，10 月 3 日立陶宛大公亚历山大当选（12 月加冕）。空位期间没有公认的单一摄政或掌权者，由王国议会 / 大贵族会议理政，直到新君当选或即位。",
+   "src": [
+    "https://en.wikipedia.org/wiki/List_of_Polish_monarchs",
+    "https://en.wikipedia.org/wiki/Royal_elections_in_Poland"
+   ]
+  },
+  {
+   "id": "poland_1506",
+   "title": "波兰王位空缺（1506）",
+   "kind": "空位期",
+   "states": [
+    "Q171348"
+   ],
+   "from": {
+    "y": 1506,
+    "m": 8,
+    "d": 19
+   },
+   "to": {
+    "y": 1506,
+    "m": 12,
+    "d": 8
+   },
+   "probe": {
+    "date": "1506-10-15",
+    "lat": 50.06,
+    "lon": 19.94
+   },
+   "nominal": null,
+   "leaders": [],
+   "alt": null,
+   "note": "亚历山大 1506 年 8 月 19 日去世，12 月 8 日齐格蒙特一世当选（1507 年 1 月加冕）。空位期间没有公认的单一摄政或掌权者，由王国议会 / 大贵族会议理政，直到新君当选或即位。",
+   "src": [
+    "https://en.wikipedia.org/wiki/List_of_Polish_monarchs",
+    "https://en.wikipedia.org/wiki/Royal_elections_in_Poland"
+   ]
+  },
+  {
+   "id": "poland_dukes_1032",
+   "title": "波兰：王冠空缺、公爵统治（1031–1076）",
+   "kind": "公爵统治",
+   "states": [
+    "Q104863335"
+   ],
+   "from": {
+    "y": 1031,
+    "m": 0,
+    "d": 0
+   },
+   "to": {
+    "y": 1076,
+    "m": 12,
+    "d": 25
+   },
+   "probe": {
+    "date": "1050-06-15",
+    "lat": 50.06,
+    "lon": 19.94
+   },
+   "nominal": null,
+   "leaders": [
+    {
+     "qid": "Q28468",
+     "zh": "梅什科二世",
+     "office": "波兰公爵（放弃王号后，1032–1034）",
+     "tag": "公爵",
+     "from": {
+      "y": 1032,
+      "m": 0,
+      "d": 0
+     },
+     "to": {
+      "y": 1034,
+      "m": 5,
+      "d": 10
+     }
+    },
+    {
+     "qid": "Q53455",
+     "zh": "卡齐米日一世（复兴者）",
+     "office": "波兰公爵",
+     "tag": "公爵",
+     "from": {
+      "y": 1039,
+      "m": 0,
+      "d": 0
+     },
+     "to": {
+      "y": 1058,
+      "m": 11,
+      "d": 28
+     }
+    },
+    {
+     "qid": "Q53440",
+     "zh": "波列斯瓦夫二世（勇敢者）",
+     "office": "波兰公爵（1076 年加冕为王）",
+     "tag": "公爵",
+     "from": {
+      "y": 1058,
+      "m": 11,
+      "d": 28
+     },
+     "to": {
+      "y": 1076,
+      "m": 12,
+      "d": 25
+     }
+    }
+   ],
+   "alt": null,
+   "note": "梅什科二世 1031 年失去王位，1032 年复位后只称公爵；1034–1039 年波兰陷入异教徒起义与无政府状态，没有公认的统治者；1039 年起卡齐米日一世复兴国家，其子波列斯瓦夫二世 1076 年重新加冕称王。",
+   "src": [
+    "https://en.wikipedia.org/wiki/List_of_Polish_monarchs",
+    "https://en.wikipedia.org/wiki/Casimir_I_the_Restorer"
+   ]
+  },
+  {
+   "id": "poland_dukes_1079",
+   "title": "波兰：王冠空缺、公爵统治（1079–1138）",
+   "kind": "公爵统治",
+   "states": [
+    "Q104863335"
+   ],
+   "from": {
+    "y": 1079,
+    "m": 0,
+    "d": 0
+   },
+   "to": {
+    "y": 1138,
+    "m": 10,
+    "d": 28
+   },
+   "probe": {
+    "date": "1110-06-15",
+    "lat": 50.06,
+    "lon": 19.94
+   },
+   "nominal": null,
+   "leaders": [
+    {
+     "qid": "Q54046",
+     "zh": "瓦迪斯瓦夫一世·赫尔曼",
+     "office": "波兰公爵",
+     "tag": "公爵",
+     "from": {
+      "y": 1079,
+      "m": 0,
+      "d": 0
+     },
+     "to": {
+      "y": 1102,
+      "m": 6,
+      "d": 4
+     }
+    },
+    {
+     "qid": "Q167992",
+     "zh": "兹比格涅夫",
+     "office": "波兰公爵（与其弟分治）",
+     "tag": "公爵",
+     "from": {
+      "y": 1102,
+      "m": 6,
+      "d": 4
+     },
+     "to": {
+      "y": 1107,
+      "m": 0,
+      "d": 0
+     }
+    },
+    {
+     "qid": "Q53441",
+     "zh": "波列斯瓦夫三世（歪嘴）",
+     "office": "波兰公爵",
+     "tag": "公爵",
+     "from": {
+      "y": 1102,
+      "m": 6,
+      "d": 4
+     },
+     "to": {
+      "y": 1138,
+      "m": 10,
+      "d": 28
+     }
+    }
+   ],
+   "alt": null,
+   "note": "波列斯瓦夫二世 1079 年被逐后，波兰君主不再加冕，以公爵身份统治；波列斯瓦夫三世 1138 年去世后国家分裂为诸公国。",
+   "src": [
+    "https://en.wikipedia.org/wiki/List_of_Polish_monarchs",
+    "https://en.wikipedia.org/wiki/Bolesław_III_Wrymouth"
+   ]
+  },
+  {
+   "id": "hre_1024",
+   "title": "德意志王位空缺（1024）",
+   "kind": "空位期",
+   "states": [
+    "Q12548"
+   ],
+   "from": {
+    "y": 1024,
+    "m": 7,
+    "d": 13
+   },
+   "to": {
+    "y": 1024,
+    "m": 9,
+    "d": 4
+   },
+   "probe": {
+    "date": "1024-08-15",
+    "lat": 50.0,
+    "lon": 10.0
+   },
+   "nominal": null,
+   "leaders": [],
+   "alt": null,
+   "note": "亨利二世 1024 年 7 月 13 日无嗣去世，9 月 4 日康拉德二世在坎巴当选。空位期间没有公认的单一摄政或掌权者，由诸侯理政，直到新君当选或即位。",
+   "src": [
+    "https://en.wikipedia.org/wiki/Conrad_II,_Holy_Roman_Emperor"
+   ]
+  },
+  {
+   "id": "hre_1291",
+   "title": "德意志王位空缺（1291–1292）",
+   "kind": "空位期",
+   "states": [
+    "Q12548"
+   ],
+   "from": {
+    "y": 1291,
+    "m": 7,
+    "d": 15
+   },
+   "to": {
+    "y": 1292,
+    "m": 5,
+    "d": 5
+   },
+   "probe": {
+    "date": "1292-01-15",
+    "lat": 50.0,
+    "lon": 10.0
+   },
+   "nominal": null,
+   "leaders": [],
+   "alt": null,
+   "note": "鲁道夫一世 1291 年 7 月 15 日去世，选帝侯拒绝其子阿尔布雷希特，1292 年 5 月 5 日选拿骚的阿道夫。空位期间没有公认的单一摄政或掌权者，由选帝侯理政，直到新君当选或即位。",
+   "src": [
+    "https://en.wikipedia.org/wiki/Adolf,_King_of_the_Romans"
+   ]
+  },
+  {
+   "id": "hre_1410",
+   "title": "德意志王位空缺（1410）",
+   "kind": "空位期",
+   "states": [
+    "Q12548"
+   ],
+   "from": {
+    "y": 1410,
+    "m": 5,
+    "d": 18
+   },
+   "to": {
+    "y": 1410,
+    "m": 9,
+    "d": 20
+   },
+   "probe": {
+    "date": "1410-07-15",
+    "lat": 50.0,
+    "lon": 10.0
+   },
+   "nominal": null,
+   "leaders": [],
+   "alt": null,
+   "note": "鲁珀特 1410 年 5 月 18 日去世，9 月 20 日西吉斯蒙德当选，10 月 1 日摩拉维亚的约布斯特又被另一派选出。空位期间没有公认的单一摄政或掌权者，由选帝侯理政，直到新君当选或即位。",
+   "src": [
+    "https://en.wikipedia.org/wiki/Sigismund,_Holy_Roman_Emperor",
+    "https://en.wikipedia.org/wiki/Jobst_of_Moravia"
+   ]
+  },
+  {
+   "id": "yogya_1939",
+   "title": "日惹苏丹位空缺（1939–1940）",
+   "kind": "空位期",
+   "states": [
+    "Q2114397"
+   ],
+   "from": {
+    "y": 1939,
+    "m": 10,
+    "d": 22
+   },
+   "to": {
+    "y": 1940,
+    "m": 3,
+    "d": 18
+   },
+   "probe": {
+    "date": "1940-01-15",
+    "lat": -7.8,
+    "lon": 110.36
+   },
+   "nominal": null,
+   "leaders": [],
+   "alt": null,
+   "note": "哈孟库布沃诺八世 1939 年 10 月 22 日去世，继承人多罗约与荷属东印度政府就新政治契约谈判数月，1940 年 3 月 18 日即位为哈孟库布沃诺九世。空位期间没有公认的单一摄政或掌权者，由荷兰驻扎官与王室理政，直到新君当选或即位。",
+   "src": [
+    "https://en.wikipedia.org/wiki/Hamengkubuwono_IX"
+   ]
+  }
+ ]
+}

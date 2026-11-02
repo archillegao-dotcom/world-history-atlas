@@ -38,6 +38,8 @@ CATS = {
                      "https://en.wikipedia.org/wiki/Chinese_Civil_War"),
     "zone_occupied": ("军事占领/接管地区", "战争中被一方军队占领并由其设立机构管理、但尚未有正式条约或行政区划安排的地区。",
                       "https://en.wikipedia.org/wiki/Military_occupation"),
+    "zone_regime": ("当时的地位", "底图没有单独画出、在此补上的政权区域（如被画在殖民地整体之内的保护国、苏丹国）；地位与日期见下方说明（data/curated/control_zones.json，"
+                    "依据英文维基等国际通行叙述），范围为今一级行政区或国界的近似。", "https://en.wikipedia.org/wiki/Protectorate"),
     "zone_de_facto": ("事实独立/自治地区", "没有普遍国际承认、但实际自行管治的地区。", "https://en.wikipedia.org/wiki/De_facto"),
     "disputed": ("主权争议地区", "主权归属有争议的地区；联合国将西撒哈拉列为「非自治领土」。地图按 Natural Earth 的「事实控制」画法单独画出，不代表对主权的立场。",
                  "https://en.wikipedia.org/wiki/Political_status_of_Western_Sahara"),

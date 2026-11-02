@@ -1,0 +1,38 @@
+{
+ "_doc": "人工补译（v0.6.1 任务 C）：描述性的政权名称（非音译人名），按中文通行说法意译；优先于 zh_labels.json。src 注明依据。 带 override 的条目即使已有中文名也替换（原中文标签有歧义）。",
+ "labels": {
+  "Q17061755": {
+   "zh": "巴林（英国保护国）",
+   "src": "意译：Bahrain and its Dependencies（英国保护下的巴林）"
+  },
+  "Q21816219": {
+   "zh": "瑙鲁托管地",
+   "src": "意译：Trust Territory of Nauru（联合国托管地，澳英新共管）"
+  },
+  "Q15238409": {
+   "zh": "圣卢西亚殖民地",
+   "src": "意译：Colony of Saint Lucia；圣卢西亚为新华社通用译名"
+  },
+  "Q2838298": {
+   "zh": "同盟国占领区军政府",
+   "src": "意译：Allied Military Government of Occupied Territories (AMGOT)"
+  },
+  "Q450799": {
+   "zh": "南爱尔兰临时政府",
+   "src": "意译：Provisional Government of Southern Ireland (1922)"
+  },
+  "Q5450841": {
+   "zh": "芬兰东卡累利阿军事管理区",
+   "src": "意译：Finnish military administration in Eastern Karelia"
+  },
+  "Q65270011": {
+   "zh": "日本占领下的吉尔伯特群岛",
+   "src": "意译：Japanese occupation of the Gilbert Islands；吉尔伯特群岛为通用译名"
+  },
+  "Q6851954": {
+   "zh": "德军波兰军事管理区",
+   "src": "意译并消歧：Wikidata 中文标签「波蘭軍事管轄區」未说明是德国的军事管理；英文 Military Administration in Poland（德文 Militärverwaltung in Polen，1939-09-01—10-25，其后改设波兰总督府）",
+   "override": true
+  }
+ }
+}

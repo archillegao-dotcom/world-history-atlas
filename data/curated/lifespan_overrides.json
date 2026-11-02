@@ -1,8 +1,61 @@
 {
   "_doc": "人工核对的存在期修正：Wikidata 原值保留在面板注释中。只在 Wikidata 的值指代另一个政治实体（如同名地区的更早阶段）时使用，每条必须注明来源。",
   "Q14773": {
-    "from": {"y": 1999, "m": 12, "d": 20, "p": 11},
+    "from": {
+      "y": 1999,
+      "m": 12,
+      "d": 20,
+      "p": 11
+    },
     "note": "Wikidata 中「澳门」(Q14773) 的成立时间 1557 年指葡萄牙人入居澳门；作为「澳门特别行政区」，从 1999-12-20 起存在（此前由「葡属澳门」Q3916279 表示，其 P576 = 1999-12-20）。",
-    "sources": ["https://www.wikidata.org/wiki/Q3916279", "https://en.wikipedia.org/wiki/Transfer_of_sovereignty_over_Macau"]
+    "sources": [
+      "https://www.wikidata.org/wiki/Q3916279",
+      "https://en.wikipedia.org/wiki/Transfer_of_sovereignty_over_Macau"
+    ]
+  },
+  "Q183032": {
+    "from": {
+      "y": 1528,
+      "m": 0,
+      "d": 0,
+      "p": 9
+    },
+    "current": true,
+    "note": "Wikidata「柔佛」(Q183032) 没有成立时间；作为柔佛苏丹国（今马来西亚柔佛州的君主制前身）按 1528 年建国计，至今仍为君主制州（面板名称按苏丹国显示）。",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Johor_Sultanate",
+      "https://en.wikipedia.org/wiki/Johor"
+    ],
+    "zh": "柔佛苏丹国"
+  },
+  "Q188953": {
+    "from": {
+      "y": 1528,
+      "m": 0,
+      "d": 0,
+      "p": 9
+    },
+    "current": true,
+    "note": "Wikidata「霹雳」(Q188953) 没有成立时间；霹雳苏丹国约 1528 年由马六甲王子穆扎法尔沙一世建立，至今仍为君主制州（面板名称按苏丹国显示）。",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Sultan_of_Perak",
+      "https://en.wikipedia.org/wiki/Perak"
+    ],
+    "zh": "霹雳苏丹国"
+  },
+  "Q189710": {
+    "from": {
+      "y": 1766,
+      "m": 0,
+      "d": 0,
+      "p": 9
+    },
+    "current": true,
+    "note": "Wikidata「雪兰莪」(Q189710) 的成立时间 1895 年指加入马来联邦；雪兰莪苏丹国 1766 年由首任苏丹萨列胡丁建立，至今仍为君主制州（面板名称按苏丹国显示）。",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Salehuddin_of_Selangor",
+      "https://en.wikipedia.org/wiki/Selangor"
+    ],
+    "zh": "雪兰莪苏丹国"
   }
 }

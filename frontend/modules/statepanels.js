@@ -48,17 +48,27 @@
     }
     if (r.state_note) h += `<div class="note">${esc(r.state_note)}</div>`;
     if (r.merged?.length) h += `<div class="note">同一国家在 Wikidata 中还有以下条目（同名或当时首都相同），其记录一并显示：${r.merged.map((x) => esc(x.name)).join("、")}</div>`;
-    if (r.eras?.length) h += `<h4>年号</h4>` + r.eras.map((e) => `<span class="chip">${esc(e.name)} <small>${span(e.from, e.to)}</small></span>`).join(" ");
+    // 空位期 / 共治 / 摄政 / 权臣 / 对立君主：该时期实际掌权的人（按本官列出，带角色标签）
+    const IP = (p) => p.known ? P(p) : (p.id ? `<a href="https://www.wikidata.org/wiki/${esc(p.id)}" target="_blank" rel="noopener">${esc(p.name)}</a>` : esc(p.name));
+    const IL = (l) => `<div class="d"><span class="itag">${esc(l.tag)}</span> ${IP(l.person)}：${esc(l.office)}${l.from || l.to ? ` <small>（${l.from ? esc(l.from) + "起" : ""}${l.to ? (l.from ? "，" : "") + "至" + esc(l.to) : ""}）</small>` : ""}${l.note ? `<div class="s">${esc(l.note)}</div>` : ""}</div>`;
+    if (r.interregna?.length) h += r.interregna.map((c) => `<div class="item inter-box"><h4>实际掌权者 · ${esc(c.kind)}</h4><div class="t">${esc(c.title)}</div>
+      ${c.nominal ? `<div class="s">名义上的君主：${esc(c.nominal)}</div>` : ""}${c.leaders.map(IL).join("")}
+      <div class="note">${esc(c.note)}</div>
+      ${c.alt ? `<div class="inter-alt"><b>${esc(c.alt.title)}</b>${c.alt.leaders.map(IL).join("")}<div class="note">${esc(c.alt.note)}</div></div>` : ""}
+      <div class="src">来源：${c.src.map((u) => u.startsWith("http") ? `<a href="${esc(u)}" target="_blank" rel="noopener">${esc(decodeURIComponent(u.split("/wiki/")[1] || u).replace(/_/g, " "))}</a>` : esc(u)).join("；")}</div></div>`).join("");
+    if (r.regents?.length) h += `<h4>摄政 / 辅政</h4>` + r.regents.map((x) => `<div class="s">${P(x.person)}：${esc(x.role)} <small><a href="${esc((x.src || "").split("（")[0])}" target="_blank" rel="noopener">来源</a></small></div>`).join("");
+    if (r.eras?.length) h += `<h4>年号</h4>` + r.eras.map((e) => `<span class="chip" title="${esc(e.ruler ? e.ruler + " 的年号" : "")}">${esc(e.name)} <small>${span(e.from, e.to)}</small></span>`).join(" ") +
+      (r.eras.some((e) => e.src) ? `<div class="src">年号：<a href="https://en.wikipedia.org/wiki/List_of_Chinese_era_names" target="_blank" rel="noopener">English Wikipedia「List of Chinese era names」</a></div>` : "");
     if (r.heads?.length) {
       h += `<h4>元首与政府首脑</h4>` + r.heads.map((x) => `<div class="item"><div class="t">${esc(x.role)}：${P(x.person)}${x.src ? ` <small>（条目：${esc(x.src)}）</small>` : ""}</div>
-        <div class="d">任期 ${span(x.from, x.to)}${x.to ? "" : "（未记录卸任时间）"}</div>${x.person?.desc ? `<div class="s">${esc(x.person.desc)}</div>` : ""}</div>`).join("");
+        <div class="d">任期 ${span(x.from, x.to)}${x.to ? "" : "（未记录卸任时间）"}${x.note ? `（${esc(x.note)}）` : ""}</div>${x.person?.desc ? `<div class="s">${esc(x.person.desc)}</div>` : ""}</div>`).join("");
     }
     if (r.offices?.length) {
       h += `<h4>君主与重要职位（点职位看机构介绍）</h4>` + r.offices.map((o) => `<div class="item"><div class="t">${O(o.office)}${o.virtual && o.juris ? ` <small>（${esc(o.juris)}）</small>` : (o.src ? ` <small>（条目：${esc(o.src)}）</small>` : "")}</div>
         ${o.holders.map((x) => `<div class="d">${P(x.person)} · ${span(x.from, x.to)}${x.to ? (x.to_note ? `<small>（卸任时间取自${esc(x.to_note)}）</small>` : "") : "（未记录卸任时间）"}</div>` +
           (x.legend ? `<div class="note">${esc(x.legend)}</div>` : "")).join("")}</div>`).join("");
     }
-    if (!r.heads?.length && !r.offices?.length) h += `<div class="empty">没有找到所选日期的任职记录。</div>`;
+    if (!r.heads?.length && !r.offices?.length && !r.interregna?.length) h += `<div class="empty">没有找到所选日期的任职记录。</div>`;
     if (r.undated_offices?.length) h += `<h4>任期未记录的职位</h4><div class="note">以下职位在 Wikidata 中有任职者，但多数没有记录任期，无法判断所选日期谁在任（点开可看历任者）：</div>` +
       r.undated_offices.map((o) => `<span class="chip">${O(o)} <small>${o.n}人</small></span>`).join(" ");
     h += r.note ? `<div class="note">${esc(r.note)}</div>` : "";
@@ -75,7 +85,14 @@
     const s = r.state;
     if (s) {
       h += `<div class="regime-head">${s.flag ? `<img class="flag" src="${esc(s.flag)}" alt="国旗">` : ""}<div><b>${esc(s.name)}</b>${s.en && s.en !== s.name ? ` <span class="en">${esc(s.en)}</span>` : ""}
-        <div class="d">存在：${span(s.from, s.to) || "未记录"}</div></div></div>`;
+        <div class="d">存在：${span(s.from, s.to) || "未记录"}</div>
+        ${r.chain?.now?.length ? `<div class="d regime-now">所选日期的政权：<b>${r.chain.now.map(esc).join("；")}</b></div>` : ""}
+        <div class="d flag-note">${s.flag ? (s.flag_dated ? "国旗：所选日期有效（Wikidata P41 起止限定" + (s.flag_note ? "；" + esc(s.flag_note) : "") + "）" : "国旗：Wikidata 未注明使用时间") : "国旗：" + esc(s.flag_note || "未记录")}</div></div></div>`;
+      if (r.chain?.rows?.length) {
+        h += `<details class="regime-chain"${r.chain.now.length ? " open" : ""}><summary>${esc(r.chain.country)}政权更替（1800 年至今，含并立政权）</summary><table class="kv chain">` +
+          r.chain.rows.map((x) => `<tr class="${x.current ? "cur" : ""}"><th>${esc(x.from)}${x.to ? " – " + esc(x.to) : " 至今"}</th><td>${x.current ? "▶ " : ""}<a href="${esc(x.src)}" target="_blank" rel="noopener">${esc(x.zh)}</a>${x.parallel ? ' <span class="badge country">并立</span>' : ""}${x.note ? `<small>（${esc(x.note)}）</small>` : ""}</td></tr>`).join("") +
+          `</table><div class="src">日期来源：各行链接的英文维基百科条目</div></details>`;
+      }
       if (r.definition) h += `<div class="def">${esc(r.definition)}<div class="src">——<a href="${esc(r.definition_src.url)}" target="_blank" rel="noopener">${r.definition_src.lang === "zh" ? "中文维基百科" : "English Wikipedia"}「${esc(r.definition_src.title)}」</a>首句</div></div>`;
       const terms = (l) => l.map((x) => `<a href="https://www.wikidata.org/wiki/${esc(x.id)}" target="_blank">${esc(x.name)}</a>`).join("、");
       h += `<table class="kv">

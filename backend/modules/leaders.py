@@ -8,6 +8,8 @@
 """
 from __future__ import annotations
 
+from ..zh import disp as _zh_disp
+
 import re
 
 from ..polity import valid_at
@@ -64,7 +66,11 @@ def _holding(holders, dk, statement_mode=False):
         if b is not None:
             if dk <= b:
                 to = h.get("to") or {}
-                if not to.get("d") and any(a < s <= dk for s in exact_starts):
+                # v0.6.1：下一任的精确就任日必须落在本记录模糊的卸任期（卸任年/月）之内才截断；
+                # 以前只要求晚于本记录的开始，导致只精确到年的长期在位记录被前一任的精确日期整段截掉
+                # （例：巴赫拉姆五世 420–438 被沙普尔四世 420-01-22 就任截断，萨珊 421–438 年面板无君主）
+                to_lo = _start_key({"y": to.get("y"), "m": to.get("m") or 0, "d": 0}) if to.get("y") is not None else a
+                if not to.get("d") and any(max(a, to_lo) < s <= dk for s in exact_starts):
                     if single is None:
                         single = _single_holder(holders)
                     if single:
@@ -110,6 +116,14 @@ _ENVOY_ZH = re.compile(r"驻.*(大使|使馆|公使|领事|专员)")
 _SPOUSE_EN = re.compile(r"(?i)\b(first|second) (lad(y|ies)|gentlem[ae]n|spouses?)\b|\bspouses? of\b|\bconsorts?\b|\b(wife|husband) of\b"
                         r"|\b(queen'?s|king'?s|senior) counsel\b")
 _SPOUSE_ZH = re.compile(r"第一夫人|第一先生|夫人$|配偶|王后列表|^皇后$|^王后$|^可敦$|皇后列表|王室法律顾问|御用大律师|资深大律师")
+
+
+def _auto_note(params, st):
+    a = params.get("_auto")
+    if not a or a.get("to") != st["id"]:
+        return None
+    return (f"默认政权：底图名称对应的「{a['from_name']}」这一天没有在位者记录，改为显示这一天有在位君主或空位期/共治记录、"
+            f"时段更具体的候选（可在上方下拉框切换回「{a['from_name']}」）。")
 
 
 def is_envoy(o):
@@ -160,6 +174,15 @@ class LeadersModule(ContentModule):
                     heads.append({"role": role, "person": R.person_brief(h["p"]), "from": fmt_time(h.get("from")),
                                   "to": fmt_time(h.get("to")) if h.get("to") else None,
                                   "src": None if s_ is st else (s_.get("zh") or s_.get("en"))})
+        if not heads:
+            # 存续不到 30 年、且 Wikidata 只有一位没有起止时间的国家元首（如西楚：项羽）：在政权存续期内显示，并注明任期取自政权存续期
+            from ..polity import lifespan as _ls
+            from ..timeutil import rec_key as _rk
+            a_, b_, _n = _ls(st)
+            und = [x for x in st.get("hos", []) if not x.get("from") and not x.get("to")]
+            if a_ and b_ and len(und) == 1 and _rk(b_) - _rk(a_) <= 30 and not [x for x in st.get("hos", []) if x.get("from") or x.get("to")]:
+                heads.append({"role": "国家元首", "person": R.person_brief(und[0]["v"]), "from": fmt_time(a_), "to": fmt_time(b_),
+                              "src": None, "note": "Wikidata 未记录任期，取该政权存续期"})
         offices = []
         ofs, osrc = {}, {}
         for s_ in group:
@@ -173,12 +196,18 @@ class LeadersModule(ContentModule):
             hs = _holding(o.get("holders", []), dk)
             if not hs:
                 continue
-            offices.append({"office": {"id": o["id"], "name": OFFICE_NAME_ZH.get(o.get("pos")) or o.get("zh") or o.get("en"), "en": o.get("en"),
+            _u, _hs = set(), []   # v0.6.1：同一人、同一起止的重复记录（Wikidata 与补入记录重合，如萨珊巴赫拉姆五世）只列一次
+            for h in hs:
+                k_ = (h["p"], fmt_time(h.get("from")), fmt_time(h.get("to")) if h.get("to") else None)
+                if k_ not in _u:
+                    _u.add(k_); _hs.append(h)
+            hs = _hs
+            offices.append({"office": {"id": o["id"], "name": OFFICE_NAME_ZH.get(o.get("pos")) or _zh_disp(o.get("zh") or o.get("en")), "en": o.get("en"),
                                        "desc": o.get("desc")},
                             "virtual": bool(o.get("virtual")), "juris": o.get("juris_zh"), "src": osrc.get(o["id"]),
                             "holders": [{"person": R.person_brief(h["p"]), "from": fmt_time(h.get("from")),
                                          "to": fmt_time(h.get("to")) if h.get("to") else None,
-                                         "to_note": h.get("to_inferred"), "legend": legend_note(o, h)} for h in hs[:4]]})
+                                         "to_note": h.get("to_inferred"), "legend": legend_note(o, h) or h.get("note")} for h in hs[:4]]})
             if len(offices) >= 30:
                 break
         # 有任职者但都没有记录任期的职位：只列出名称（可点开机构卡片查看历任者），不猜测谁在任
@@ -188,19 +217,44 @@ class LeadersModule(ContentModule):
             if is_envoy(o):
                 continue
             if hs and not any(h.get("from") for h in hs) and len(undated) < 12:
-                undated.append({"id": o["id"], "name": o.get("zh") or o.get("en"), "n": len(hs)})
+                undated.append({"id": o["id"], "name": _zh_disp(o.get("zh") or o.get("en")), "n": len(hs)})
             elif hs and o["id"] not in {x["office"]["id"] for x in offices}:
                 nd = sum(1 for h in hs if not h.get("from"))
                 if nd * 2 >= len(hs) and len(undated) < 12:
-                    undated.append({"id": o["id"], "name": o.get("zh") or o.get("en"), "n": nd})
+                    undated.append({"id": o["id"], "name": _zh_disp(o.get("zh") or o.get("en")), "n": nd})
         # 年号（Wikidata 年号条目的起止时间；同一时间可能有多个政权的年号）
         eras = []
         for s_ in group:
             for e in R.eras_by_state.get(s_["id"], []):
                 if valid_at(dk, e.get("from"), e.get("to") or e.get("from")) or (
                         e.get("to") is None and rec_key(e["from"]) <= dk < rec_key(e["from"]) + 1):
-                    eras.append({"id": e["id"], "name": e.get("zh") or e.get("en"), "en": e.get("en"),
+                    eras.append({"id": e["id"], "name": _zh_disp(e.get("zh") or e.get("en")), "en": e.get("en"),
                                  "from": fmt_time(e.get("from")), "to": fmt_time(e.get("to")) if e.get("to") else None})
+        # 中国年号（英文维基「List of Chinese era names」，按在任君主）、君主本名、摄政/辅政者
+        from ..china_eras import eras_at, personal_name, regents_at
+        rq = [h["person"]["id"] for h in heads] + [x["person"]["id"] for o in offices for x in o["holders"]]
+        for x in [h["person"] for h in heads] + [x["person"] for o in offices for x in o["holders"]]:
+            pn = personal_name(ctx.data_dir, x.get("id"))
+            if pn and pn not in (x.get("name") or ""):
+                x["name"] = f'{x.get("name")}（{pn}）'
+                x["personal_name"] = pn
+        have = {e["name"] for e in eras}
+        for e in eras_at(ctx.data_dir, rq, date.y):
+            if e["name"] not in have and not any(e["name"] in h for h in have):
+                have.add(e["name"])
+                eras.append({"id": None, "name": e["name"], "en": e["py"], "from": f'{"公元前" + str(-e["from"]) if e["from"] < 0 else e["from"]}年',
+                             "to": f'{"公元前" + str(-e["to"]) if e["to"] < 0 else e["to"]}年', "ruler": e["ruler"], "src": e["src"]})
+        regents = [{"person": R.person_brief(r["person"]) if r["person"] in R.persons else {"id": r["person"], "name": r["zh"]},
+                    "role": r["role"], "src": r["src"]} for r in regents_at(ctx.data_dir, [x["id"] for x in group], dk)]
+        for r in regents:
+            if not r["person"].get("name"):
+                r["person"]["name"] = next(x["zh"] for x in regents_at(ctx.data_dir, [g["id"] for g in group], dk) if x["person"] == r["person"]["id"])
+        # 空位期 / 共治 / 摄政 / 权臣 / 对立君主（data/curated/interregna.json）
+        from ..interregna import cases_at
+        inter = cases_at(ctx.data_dir, [x["id"] for x in group], dk,
+                         brief=lambda q: R.person_brief(q) if q in R.persons else None)
+        ipids = {l["person"].get("id") for c in inter for l in c["leaders"]}
+        regents = [r for r in regents if r["person"].get("id") not in ipids]
         terr = None
         if polity["props"].get("TERRITORY"):
             from ..territory_info import info
@@ -209,16 +263,18 @@ class LeadersModule(ContentModule):
             chain = [R.states[q] for q in (trec.get("chain") or []) if q in R.states]
             from ..territory_info import SOV_ZH
             sov = polity["props"].get("SUBJECTO")
+            if polity["props"].get("TERR_CAT") == "zone_regime" and polity["props"].get("NAME_ZH"):
+                t = {**t, "type": f'{t["type"]}：{polity["props"]["NAME_ZH"]}'}   # 如「当时的地位：柔佛（自治苏丹国，英国影响下）」
             terr = {**t, "sovereign": SOV_ZH.get(sov, sov), "geom_note": trec.get("geom_note"),
-                    "history": [{"id": c["id"], "name": c.get("zh") or c.get("en"), "from": fmt_time(c.get("from")),
+                    "history": [{"id": c["id"], "name": _zh_disp(c.get("zh") or c.get("en")), "from": fmt_time(c.get("from")),
                                  "to": fmt_time(c.get("to")) if c.get("to") else None} for c in chain]}
-        n = len(heads) + len(offices)
+        n = len(heads) + len(offices) + sum(len(c["leaders"]) for c in inter)
         return {"items": [], "total": n, "kind": "leaders",
-                "state": {"id": st["id"], "name": st.get("zh") or st.get("en"), "en": st.get("en"), "desc": st.get("desc")},
+                "state": {"id": st["id"], "name": _zh_disp(st.get("zh") or st.get("en")), "en": st.get("en"), "desc": st.get("desc")},
                 "alternatives": [{**a, "method_zh": METHOD_ZH.get(a["method"], a["method"])} for a in alts],
-                "merged": [{"id": x["id"], "name": x.get("zh") or x.get("en")} for x in group[1:]],
-                "heads": heads, "offices": offices, "undated_offices": undated, "eras": eras[:6],
-                "state_note": " ".join(x for x in (st.get("curated_note"), st.get("xcheck_note"),
+                "merged": [{"id": x["id"], "name": _zh_disp(x.get("zh") or x.get("en"))} for x in group[1:]],
+                "heads": heads, "offices": offices, "undated_offices": undated, "eras": eras[:6], "regents": regents, "interregna": inter,
+                "state_note": " ".join(x for x in (_auto_note(params, st), st.get("curated_note"), st.get("xcheck_note"),
                                                    (LEGENDARY_STATE[st["id"]][1] if st["id"] in LEGENDARY_STATE
                                                     and date.y < LEGENDARY_STATE[st["id"]][0] else None)) if x) or None, "territory": terr,
                 "note": "数据来自 Wikidata 的职务记录；没有起止时间的任职记录不显示。" +

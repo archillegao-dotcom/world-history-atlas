@@ -1,0 +1,1629 @@
+{{Short description|none}}
+{{Distinguish|text=the [[List of premiers of the People's Republic of China]] or [[List of presidents of the Republic of China]]}}
+
+{{Politics of Taiwan}}
+
+This is a list of the [[Premier of the Republic of China|premiers of the Republic of China]] since 1912. The [[Republic of China (1912–1949)|Republic of China before 1949]] controlled [[mainland China]] as well as offshore islands. The Republic of China since 1949 has only controlled [[Taiwan]] and [[list of islands of Taiwan|nearby islands]]. The current [[Taiwan|Republic of China]] is usually known as Taiwan. In the country's history, the official title of the [[head of government]] has changed over time.
+
+{|class=wikitable
+!Year!![[Traditional Chinese characters|Chinese]]!![[Taiwanese Mandarin|Mandarin]]<br />[[Pinyin]]!![[Taiwanese Hokkien|Taiwanese]]<br />[[Pe̍h-ōe-jī]]!![[Taiwanese Hakka|Hakka]]<br />[[Pha̍k-fa-sṳ]]
+|-
+|1912–1914, 1916–1928||align=center|{{large|{{lang|zh-tw|國務總理}}}}||Guówù Zǒnglǐ||Kok-bū Chóng-lí||Koet-vu Chúng-lî
+|-
+|1914–1916||align=center|{{large|{{lang|zh-tw|政事堂國務卿}}}}||Zhèngshìtáng Guówùqīng||Chèng-sū-tông Kok-bū-khing||Chṳn-sṳ-thòng Koet-vu-khîn
+|-
+|1928–present||align=center|{{large|{{lang|zh-tw|行政院院長}}}}||Xíngzhèng Yuàn Yuànzhǎng||Hêng-chèng Īⁿ Īⁿ-tiúⁿ||Hàng-chṳn Yen Yen-tshòng
+|}
+
+Premiers, also known as Presidents of the [[Executive Yuan]], are appointed by the Presidents of the Republic of China, but some premiers were even more powerful than the presidents, during the early age of the [[Republic of China (1912–1949)|Republic of China]]. Some presidents were even expelled by the premiers they appointed.
+The title of premier in China was changed several times, so this list is divided into several sections.
+
+==List==
+{{legend2|{{party color|Nonpartisan}}|[[Independent politician|Independent]]|border=1px solid #AAAAAA}}
+{{legend2|#CD853F|[[Beiyang clique]], etc.|border=1px solid #AAAAAA}}
+{{legend2|#008000|[[Progressive Party (China)|Progressive]]|border=1px solid #AAAAAA}}
+{{legend2|#013C78|[[Communications Clique|Communications]]|border=1px solid #AAAAAA}}
+{{legend2|{{party color|Kuomintang}}|[[Kuomintang]] (Nationalist)|border=1px solid #AAAAAA}}
+{{legend2|{{party color|Democratic Progressive Party}}|[[Democratic Progressive Party|Democratic Progressive]]|border=1px solid #AAAAAA}}
+
+===Premiers of the Cabinet (1912–1914)===
+* '''Period:''' 13 March 1912 – 1 May 1914
+According to the Provisional Constitution of Republic of China, which was passed in 1912, the leader of the majority party or the majority coalition should be appointed premier by the president.
+
+{| class="wikitable" style="text-align:center"
+|-
+! No.
+! Portrait
+! width=22% |Name<br />{{small|(Birth–Death)}}
+! colspan=2 |Term of office<br />{{small|Duration in years and days}}
+! Cabinet
+! Political party
+! Legislature<br />(elected)
+! colspan=2 |[[President of the Republic of China|President]]
+|-
+! style="background:#013C78; color:white;" rowspan=2| 1
+| rowspan=2|[[File:Tang Shaoyi.jpg|80px]]
+| rowspan=2 align=center| '''[[Tang Shaoyi]]'''<br /><span style="font-size:125%;">唐紹儀</span><br /><small>(1862–1938)</small>
+| 13 March 1912 || 27 June 1912
+| rowspan=2|[[:zh:第一次唐紹儀內閣|Tang S.]] I
+| rowspan=2|[[Communications Clique]]
+| rowspan=5 align="center"| Provisional<br />(1912)
+| rowspan=13 bgcolor="#CD853F" |
+| rowspan=13| [[File:YuanShikaiPresidente1915.jpg|60px]]<br />[[Yuan Shikai]] <br /><small>([[Beiyang clique]])</small>
+|-
+! colspan=2 style="font-size:90%; font-weight:normal" | {{age in years and days|1912|3|13|1912|6|27}}
+|-
+! style="background:{{party color|Nonpartisan}}; color:black;" rowspan=2| 2
+| rowspan=2|[[File:Lou Tseng-Tsiang 01.jpg|80px]]
+| rowspan=2 align=center| '''[[Lu Zhengxiang]]'''<br /><span style="font-size:125%;">陸徵祥</span><br /><small>''Lù Zhēngxiáng''<br />(1871–1949)</small>
+| 29 June 1912 || 22 September 1912
+| rowspan=2|[[:zh:第一次陸徵祥內閣|Lu]] I
+| rowspan=2|[[Independent politician|Independent]]
+|-
+! colspan=2 style="font-size:90%; font-weight:normal" | {{age in years and days|1912|6|29|1912|9|22}}
+|-
+! rowspan=3 style="background:{{party color|Nonpartisan}}; color:black;" | 3
+| rowspan=3 | [[File:赵秉钧.jpg|80px]]
+| rowspan=3 align=center| '''[[Zhao Bingjun]]'''<br /><span style="font-size:125%;">趙秉鈞</span><br /><small>(1859–1914)</small>
+| rowspan=2 | 25 September 1912 || rowspan=2 | 16 July 1913
+| rowspan=3| [[:zh:趙秉鈞內閣|Zhao]]
+| rowspan=3| [[Independent politician|Independent]]
+|-
+| rowspan=8 align="center"| [[1912 Republic of China National Assembly election|1st (1912)]]
+|-
+! colspan=2 style="font-size:90%; font-weight:normal" | {{age in years and days|1912|9|25|1913|7|16}}
+|-
+! style="background:#CD853F; color:white;" rowspan=2| —
+| rowspan=2| [[File:DuanQirui.jpg|80px]]
+| rowspan=2 align=center| '''[[Duan Qirui]]'''<br /><span style="font-size:125%;">段祺瑞</span><br /><small>(1865–1936)<br />''acting''</small>
+| 19 July 1913 || 31 July 1913
+| rowspan=2|[[:zh:段祺瑞臨時內閣|Duan Provisional]]
+| rowspan=2|[[Beiyang clique]]
+|-
+! colspan=2 style="font-size:90%; font-weight:normal" | {{age in years and days|1913|7|19|1913|7|31}}
+|-
+! style="background:{{party color|Nonpartisan}}; color:black;" rowspan=2| 4
+| rowspan=2| [[File:Xiong Xiling2 (4to3).jpg|80px]]
+| rowspan=2 align=center| '''[[Xiong Xiling]]'''<br /><span style="font-size:125%;">熊希齡</span><br /><small>(1870–1937)</small>
+| 31 July 1913 || 12 February 1914
+| rowspan=2|[[:zh:熊希齡內閣|Xiong]]
+| rowspan=2|[[Independent politician|Independent]]
+|-
+! colspan=2 style="font-size:90%; font-weight:normal" | {{age in years and days|1913|7|31|1914|2|12}}
+|-
+! style="background:{{party color|Nonpartisan}}; color:black;" rowspan=2| —
+| rowspan=2| [[File:Sun Baoqi.jpg|80px]]
+| rowspan=2 align=center| '''[[Sun Baoqi]]'''<br /><span style="font-size:125%;">孫寶琦</span><br /><small>(1867–1931)<br />''acting''</small>
+| 12 February 1914 || 1 May 1914
+| rowspan=2|[[:zh:孫寶琦臨時內閣|Sun B. Provisional]]
+| rowspan=2|[[Independent politician|Independent]]
+|-
+! colspan=2 style="font-size:90%; font-weight:normal" | {{age in years and days|1914|2|12|1914|5|1}}
+|-
+|}
+
+===Secretaries of State (1914–1916)===
+* '''Period:''' 1 May 1914 – 21 December 1915; 22 March 1916 – 29 June 1916
+
+{| class="wikitable" style="text-align:center"
+|-
+! No.
+! Portrait
+! width=20% |Name<br />{{small|(Birth–Death)}}
+! colspan=2 |Term of office<br />{{small|Duration in years and days}}
+! Cabinet
+! Political party
+! Legislature<br />(elected)
+! colspan=2 |[[President of the Republic of China|President]]
+|-
+! style="background:#CD853F; color:white;" rowspan=2| 5
+| rowspan=2|[[File:Xu Shichang.jpg|80px]]
+| rowspan=2 align=center| '''[[Xu Shichang]]'''<br /><span style="font-size:125%;">徐世昌</span><br /><small>(1855–1939)</small>
+| 1 May 1914 || 21 December 1915
+| rowspan=2|[[:zh:第一次徐世昌內閣|Xu S.-C.]] I
+| rowspan=2|[[Beiyang clique]]
+| rowspan=9 align="center"| [[1912 Republic of China National Assembly election|1st (1912)]]
+| rowspan=7 bgcolor="#CD853F" |
+| rowspan=7| [[File:YuanShikaiPresidente1915.jpg|60px]]<br />[[Yuan Shikai]] <br /><small>([[Beiyang clique]])</small>
+|-
+! colspan=2 style="font-size:90%; font-weight:normal" | {{age in years and days|1914|5|1|1915|12|21}}
+|-
+! style="background:{{party color|Nonpartisan}}; color:black;" rowspan=2| (2)
+| rowspan=2|[[File:Lou Tseng-Tsiang 01.jpg|80px]]
+| rowspan=2 align=center| '''[[Lu Zhengxiang]]'''<br /><span style="font-size:125%;">陸徵祥</span><br /><small>''Lù Zhēngxiáng''<br />(1871–1949)</small>
+| 22 December 1915 || 22 March 1916
+| rowspan=2|[[:zh:第二次陸徵祥內閣|Lu]] II
+| rowspan=2|[[Independent politician|Independent]]
+|-
+! colspan=2 style="font-size:90%; font-weight:normal" | {{age in years and days|1915|12|22|1916|3|22}}
+|-
+! style="background:#CD853F; color:white;" rowspan=2| (5)
+| rowspan=2|[[File:Xu Shichang.jpg|80px]]
+| rowspan=2 align=center| '''[[Xu Shichang]]'''<br /><span style="font-size:125%;">徐世昌</span><br /><small>(1855–1939)</small>
+| 22 March 1916 || 22 April 1916
+| rowspan=2|[[:zh:第二次徐世昌內閣|Xu S.-C.]] II
+| rowspan=2|[[Beiyang clique]]
+|-
+! colspan=2 style="font-size:90%; font-weight:normal" | {{age in years and days|1916|3|22|1916|4|22}}
+|-
+! rowspan=3 style="background:#CD853F; color:white;" | 6
+| rowspan=3| [[File:DuanQirui.jpg|80px]]
+| rowspan=3 align=center| '''[[Duan Qirui]]'''<br /><span style="font-size:125%;">段祺瑞</span><br /><small>(1865–1936)</small>
+| rowspan=2| 22 April 1916 || rowspan=2| 29 June 1916
+| rowspan=3| [[:zh:第一次段祺瑞內閣|Duan]] I
+| rowspan=3| [[Beiyang clique]]
+|-
+! style="background:#008000;" rowspan=2|
+| rowspan=2|[[File:Li Yuanhong, bordered.jpg|60px]]<br />[[Li Yuanhong]]<br /><small>([[Progressive Party (China)|Progressive Party]])</small>
+|-
+! colspan=2 style="font-size:90%; font-weight:normal" | {{age in years and days|1916|4|22|1916|6|29}}
+|-
+|}
+
+===Premiers of the State Council (1916–1928)===
+* '''Period:''' 29 June 1916 – 3 June 1928
+
+{| class="wikitable" style="text-align:center"
+|-
+! No.
+! Portrait
+! width=18% |Name<br />{{small|(Birth–Death)}}
+! colspan=2 |Term of office<br />{{small|Duration in years and days}}
+! Cabinet
+! Political party
+! Legislature<br />(elected)
+! colspan=2 |[[President of the Republic of China|President]]
+|-
+! rowspan=2 style="background:#CD853F; color:white;" | (6)
+| rowspan=2| [[File:DuanQirui.jpg|80px]]
+| rowspan=2 align=center| '''[[Duan Qirui]]'''<br /><span style="font-size:125%;">段祺瑞</span><br /><small>(1865–1936)</small>
+| 29 June 1916 || 23 May 1917
+| rowspan=2| [[:zh:第一次段祺瑞內閣改組內閣|Duan]] I Reshuffled
+| rowspan=2| [[Beiyang clique]]
+| rowspan=15 align="center"| [[1912 Republic of China National Assembly election|1st (1912)]]
+! rowspan=9 style="background:#008000; |
+| rowspan=9| [[File:Li Yuanhong, bordered.jpg|60px]]<br/>[[Li Yuanhong]]<br/><small>([[Progressive Party (China)|Progressive Party]])</small>
+|-
+! colspan=2 style="font-size:90%; font-weight:normal" | {{age in years and days|1916|6|29|1917|5|23}}
+|-
+! style="background:{{party color|Nonpartisan}}; color:black;" rowspan=2| —
+| rowspan=2|[[File:Wu Tingfang2.jpg|80px]]
+| rowspan=2 align=center| '''[[Wu Tingfang]]'''<br /><span style="font-size:125%;">伍廷芳</span><br /><small>(1842–1922)<br/>''acting''</small>
+| 23 May 1917 || 12 June 1917
+| rowspan=2|[[:zh:伍廷芳臨時內閣|Wu T. Provisional]]
+| rowspan=2|[[Independent politician|Independent]]
+|-
+! colspan=2 style="font-size:90%; font-weight:normal" | {{age in years and days|1917|5|23|1917|6|12}}
+|-
+! style="background:#CD853F; color:white;" rowspan=2| —
+| rowspan=2|[[File:Jiang Chaozong2.jpg|80px]]
+| rowspan=2 align=center| '''[[Jiang Chaozong]]'''<br /><span style="font-size:125%;">江朝宗</span><br /><small>(1861–1943)<br/>''acting''</small>
+| 12 June 1917 || 24 June 1917
+| rowspan=2|[[:zh:江朝宗臨時內閣|Jiang C. Provisional]]
+| rowspan=2|[[Beiyang clique]]
+|-
+! colspan=2 style="font-size:90%; font-weight:normal" | {{age in years and days|1917|6|12|1917|6|24}}
+|-
+! style="background:{{party color|Nonpartisan}}; color:black;" rowspan=2| 7
+| rowspan=2|[[File:李經羲.jpg|80px]]
+| rowspan=2 align=center| '''[[Li Jingxi]]'''<br /><span style="font-size:125%;">李經羲</span><br /><small>(1857–1925)</small>
+| 25 June 1917 || 2 July 1917
+| rowspan=2|[[:zh:李經羲內閣|Li]]
+| rowspan=2|[[Independent politician|Independent]]
+|-
+! colspan=2 style="font-size:90%; font-weight:normal" | {{age in years and days|1917|6|24|1917|7|2}}
+|-
+| colspan=7 {{CNone|''During this interval, [[Zhang Xun]] was the prime minister of the [[Manchu Restoration|Restored Qing Imperial Government]].''}}
+|-
+! style="background:#CD853F; color:white;" rowspan=2| (6)
+| rowspan=2|[[File:DuanQirui.jpg|80px]]
+| rowspan=2 align=center| '''[[Duan Qirui]]'''<br /><span style="font-size:125%;">段祺瑞</span><br /><small>(1865–1936)</small>
+| 14 July 1917 || 22 November 1917
+| rowspan=4|[[:zh:第二次段祺瑞內閣|Duan]] II
+| rowspan=2|[[Anhui clique]]
+! rowspan=8 style="background:#CD853F; |
+| rowspan=8| [[File:Feng Guozhang8.jpg|60px]]<br/>[[Feng Guozhang]]<br/><small>([[Zhili clique]])<br/>''acting''</small>
+|-
+! colspan=2 style="font-size:90%; font-weight:normal" | {{age in years and days|1917|7|14|1917|11|22}}
+|-
+! style="background:#008000; color:white;" rowspan=2| —
+| rowspan=2|[[File:汪大燮.jpg|80px]]
+| rowspan=2 align=center| '''[[Wang Daxie]]'''<br /><span style="font-size:125%;">汪大燮</span><br /><small>(1859–1929)<br />''acting''</small>
+| 22 November 1917 || 30 November 1917
+
+| rowspan=2|[[Research Clique]]
+|-
+! colspan=2 style="font-size:90%; font-weight:normal" | {{age in years and days|1917|11|22|1917|11|30}}
+|-
+! style="background:#CD853F; color:white;" rowspan=2| 8
+| rowspan=2|[[File:WangShizhen.jpg|80px]]
+| rowspan=2 align=center| '''[[Wang Shizhen (Beiyang government)|Wang Shizhen]]'''<br /><span style="font-size:125%;">王士珍</span><br /><small>(1861–1930)</small>
+| 30 November 1917 || 23 March 1918
+| rowspan=2|[[:zh:王士珍內閣|Wang S.]]
+| rowspan=2|[[Zhili clique]]
+|-
+! colspan=2 style="font-size:90%; font-weight:normal" | {{age in years and days|1917|11|30|1918|3|23}}
+|-
+! style="background:#CD853F; color:white;" rowspan=2| (6)
+| rowspan=2|[[File:DuanQirui.jpg|80px]]
+| rowspan=2 align=center| '''[[Duan Qirui]]'''<br /><span style="font-size:125%;">段祺瑞</span><br /><small>(1865–1936)</small>
+| 23 March 1918 || 10 October 1918
+| rowspan=2|[[:zh:第三次段祺瑞內閣|Duan]] III
+| rowspan=2|[[Anhui clique]]
+| rowspan=42 align="center"| [[1918 Republic of China National Assembly election|2nd (1918)]]
+|-
+! colspan=2 style="font-size:90%; font-weight:normal" | {{age in years and days|1918|3|23|1918|10|10}}
+|-
+! style="background:{{party color|Nonpartisan}}; color:black;" rowspan=2| —
+| rowspan=4| [[File:Qian Nengxun.jpg|80px]]
+| rowspan=4 align=center| '''[[Qian Nengxun]]'''<br /><span style="font-size:125%;">錢能訓</span><br /><small>(1869–1924)</small>
+| 10 October 1918 || 20 December 1918
+| rowspan=2|[[:zh:錢能訓臨時內閣|Qian Provisional]]
+| rowspan=4| [[Independent politician|Independent]]
+! rowspan=24 style="background:#CD853F; |
+| rowspan=24| [[File:Xu Shichang.jpg|70px]]<br />[[Xu Shichang]]<br /><small>([[Anhui clique]])</small>
+|-
+! colspan=2 style="font-size:90%; font-weight:normal" | {{age in years and days|1918|10|10|1918|12|20}}
+|-
+! style="background:{{party color|Nonpartisan}}; color:black;" rowspan=2| 9
+| 20 December 1918 || 13 June 1919
+| rowspan=2|[[:zh:錢能訓內閣|Qian]]
+|-
+! colspan=2 style="font-size:90%; font-weight:normal" | {{age in years and days|1918|12|20|1919|6|13}}
+|-
+! style="background:{{party color|Nonpartisan}}; color:black;" rowspan=2| —
+| rowspan=2|[[File:Gong Xinzhan.jpg|80px]]
+| rowspan=2 align=center| '''[[Gong Xinzhan]]'''<br /><span style="font-size:125%;">龔心湛</span><br /><small>(1871–1943)<br />''acting''</small>
+| 13 June 1919 || 24 September 1919
+| rowspan=2|[[:zh:龔心湛臨時內閣|Gong Provisional]]
+| rowspan=2|[[Independent politician|Independent]]
+|-
+! colspan=2 style="font-size:90%; font-weight:normal" | {{age in years and days|1919|6|13|1919|9|24}}
+|-
+! style="background:#CD853F; color:white;" rowspan=2| —
+| rowspan=4| [[File:Jin Yunpeng.jpg|80px]]
+| rowspan=4 align=center| '''[[Jin Yunpeng]]'''<br /><span style="font-size:125%;">靳雲鵬</span><br /><small>(1877–1951)</small>
+| 24 September 1919 || 5 November 1919
+| rowspan=2|[[:zh:靳雲鵬臨時內閣|Jin Provisional]]
+| rowspan=4| [[Anhui clique]]
+|-
+! colspan=2 style="font-size:90%; font-weight:normal" | {{age in years and days|1919|9|24|1919|11|5}}
+|-
+! style="background:#CD853F; color:white;" rowspan=2| 10
+| 5 November 1919 || 14 May 1920
+| rowspan=2|[[:zh:第一次靳雲鵬內閣|Jin]] I
+|-
+! colspan=2 style="font-size:90%; font-weight:normal" | {{age in years and days|1919|11|5|1920|5|14}}
+|-
+! style="background:{{party color|Nonpartisan}}; color:black;" rowspan=2| —
+| rowspan=2|[[File:Sak Deng-bing2.jpg|80px]]
+| rowspan=2 align=center| '''[[Sa Zhenbing]]'''<br /><span style="font-size:125%;">薩鎮冰</span><br /><small>(1859–1952)<br />''acting''</small>
+| 2 July 1920 || 9 August 1920
+| rowspan=2|[[:zh:薩鎮冰臨時內閣|Sa Provisional]]
+| rowspan=2|[[Independent politician|Independent]]
+|-
+! colspan=2 style="font-size:90%; font-weight:normal" | {{age in years and days|1920|7|2|1920|8|9}}
+|-
+! rowspan=4 style="background:#CD853F; color:white;" | (10)
+| rowspan=4| [[File:Jin Yunpeng.jpg|80px]]
+| rowspan=4 align=center| '''[[Jin Yunpeng]]'''<br /><span style="font-size:125%;">靳雲鵬</span><br /><small>(1877–1951)</small>
+| 9 August 1920 || 14 May 1921
+| rowspan=2| [[:zh:第二次靳雲鵬內閣|Jin]] II
+| rowspan=4| [[Anhui clique]]
+|-
+! colspan=2 style="font-size:90%; font-weight:normal" | {{age in years and days|1920|8|9|1921|5|14}}
+|-
+| 14 May 1921 || 18 December 1921
+| rowspan=2| [[:zh:第三次靳雲鵬內閣|Jin]] III
+|-
+! colspan=2 style="font-size:90%; font-weight:normal" | {{age in years and days|1921|5|14|1921|12|18}}
+|-
+! rowspan=2 style="background:{{party color|Nonpartisan}}; color:black;" | —
+| rowspan=2|[[File:Yan Huiqing.jpg|80px]]
+| rowspan=2 align=center| '''[[Yan Huiqing|Yan Huiqing<br /><small>(W.W. Yan)</small>]]'''<br /><span style="font-size:125%;">顏惠慶</span><br /><small>(1877–1950)<br />''acting''</small>
+| 18 December 1921 || 24 December 1921
+| rowspan=2|[[Yan H. Provisional I]]
+| rowspan=2|[[Independent politician|Independent]]
+|-
+! colspan=2 style="font-size:90%; font-weight:normal" | {{age in years and days|1921|12|18|1921|12|24}}
+|-
+! rowspan=2 style="background:#013C78; color:white;" | 11
+| rowspan=2|[[File:LiangShiyiLibroDePutnamWeale.jpg|80px]]
+| rowspan=2 align=center| '''[[Liang Shiyi]]'''<br /><span style="font-size:125%;">梁士詒</span><br /><small>(1869–1933)</small>
+| 24 December 1921 || 25 January 1922
+| rowspan=2|[[:zh:梁士詒內閣|Liang]]
+| rowspan=2|[[Communications Clique]]
+|-
+! colspan=2 style="font-size:90%; font-weight:normal" | {{age in years and days|1921|12|24|1922|1|25}}
+|-
+! rowspan=2 style="background:{{party color|Nonpartisan}}; color:black;" | —
+| rowspan=2|[[File:Yan Huiqing.jpg|80px]]
+| rowspan=2 align=center| '''[[Yan Huiqing|Yan Huiqing<br /><small>(W.W. Yan)</small>]]'''<br /><span style="font-size:125%;">顏惠慶</span><br /><small>(1877–1950)<br />''acting''</small>
+| 25 January 1922 || 8 April 1922
+| rowspan=2|[[:zh:顏惠慶臨時內閣|Yan H. Provisional II]]
+| rowspan=2|[[Independent politician|Independent]]
+|-
+! colspan=2 style="font-size:90%; font-weight:normal" | {{age in years and days|1922|1|25|1922|4|8}}
+|-
+! rowspan=2 style="background:#013C78; color:white;" | —
+| rowspan=2|[[File:Zhou Zi qi.jpg|80px]]
+| rowspan=2 align=center| '''[[Zhou Ziqi]]'''<br /><span style="font-size:125%;">周自齊</span><br /><small>(1869–1923)<br />''acting''</small>
+| 8 April 1922 || 11 June 1922
+| rowspan=2|[[:zh:周自齊臨時內閣|Zhou Provisional]]
+| rowspan=2|[[Communications Clique]]
+|-
+! colspan=2 style="font-size:90%; font-weight:normal" | {{age in years and days|1922|4|8|1922|6|12}}
+|-
+! rowspan=2 style="background:{{party color|Nonpartisan}}; color:black;" | 12
+| rowspan=2|[[File:Yan Huiqing.jpg|80px]]
+| rowspan=2 align=center| '''[[Yan Huiqing|Yan Huiqing<br /><small>(W.W. Yan)</small>]]'''<br /><span style="font-size:125%;">顏惠慶</span><br /><small>(1877–1950)<br /></small>
+| 12 June 1922 || 5 August 1922<ref group="note" name="FO">Resigned on 31 July.</ref>
+| rowspan=2|[[:zh:第一次顏惠慶內閣|Yan H.]] I
+| rowspan=2|[[Independent politician|Independent]]
+! rowspan=14 style="background:#008000; |
+| rowspan=14| [[File:RetartoDeLiYuanhongLibroDePutnamWeale.jpg|70px]]<br />[[Li Yuanhong]]<br /><small>([[Research Clique]])</small>
+|-
+! colspan=2 style="font-size:90%; font-weight:normal" | {{age in years and days|1922|6|12|1922|8|5}}
+|-
+! rowspan=2 style="background:{{party color|Nonpartisan}}; color:black;" | —
+| rowspan=2|[[File:Wang Chonghui2.jpg|80px]]
+| rowspan=2 align=center| '''[[Wang Chonghui]]'''<br /><span style="font-size:125%;">王寵惠</span><br /><small>(1881–1958)<br />''acting''</small>
+| 31 July 1922 || 19 September 1922
+| rowspan=2|[[:zh:第二次唐紹儀內閣|Tang S.]] II
+| rowspan=2|[[Independent politician|Independent]]
+|-
+! colspan=2 style="font-size:90%; font-weight:normal" | {{age in years and days|1922|7|31|1922|9|19}}
+|-
+! rowspan=2 style="background:#013C78; color:white;" | (1)
+| rowspan=2|[[File:Tang Shaoyi.jpg|80px]]
+| rowspan=2 align=center| '''[[Tang Shaoyi]]'''<br /><span style="font-size:125%;">唐紹儀</span><br /><small>(1862–1938)</small><ref group="note" name="F1">Did not assume office.</ref>
+| 5 August 1922 || 19 September 1922
+| rowspan=2|[[:zh:第二次唐紹儀內閣|Tang S.]] II
+| rowspan=2|[[Communications Clique]]
+|-
+! colspan=2 style="font-size:90%; font-weight:normal" | {{age in years and days|1922|8|5|1922|9|19}}
+|-
+! rowspan=2 style="background:{{party color|Nonpartisan}}; color:black;" | 13
+| rowspan=2|[[File:Wang Chonghui2.jpg|80px]]
+| rowspan=2 align=center| '''[[Wang Chonghui]]'''<br /><span style="font-size:125%;">王寵惠</span><br /><small>(1881–1958)<br /></small>
+| 19 September 1922 || 29 November 1922
+| rowspan=2|[[:zh:王寵惠內閣|Wang C.]]
+| rowspan=2|[[Independent politician|Independent]]
+|-
+! colspan=2 style="font-size:90%; font-weight:normal" | {{age in years and days|1922|9|19|1922|11|29}}
+|-
+! rowspan=2 ! style="background:#008000; color:white;" rowspan=2| 14
+| rowspan=2|[[File:汪大燮.jpg|80px]]
+| rowspan=2 align=center| '''[[Wang Daxie]]'''<br /><span style="font-size:125%;">汪大燮</span><br /><small>(1859–1929)<br /></small>
+| 29 November 1922 || 11 December 1922
+| rowspan=2|[[:zh:汪大燮內閣|Wang D.]]
+| rowspan=2|[[Research Clique]]
+|-
+! colspan=2 style="font-size:90%; font-weight:normal" | {{age in years and days|1922|11|29|1922|12|11}}
+|-
+! rowspan=2 style="background:{{party color|Nonpartisan}}; color:black;" | —
+| rowspan=2|[[File:Wang Zhengting2.jpg|80px]]
+| rowspan=2 align=center| '''[[Wang Zhengting]]'''<br /><span style="font-size:125%;">王正廷</span><br /><small>(1882–1961)<br />''acting''</small>
+| 11 December 1922 || 4 January 1923
+| rowspan=2|[[:zh:王正廷臨時內閣|Wang Z. Provisional]]
+| rowspan=2|[[Independent politician|Independent]]
+|-
+! colspan=2 style="font-size:90%; font-weight:normal" | {{age in years and days|1922|12|11|1923|1|4}}
+|-
+! rowspan=2 style="background:{{party color|Nonpartisan}}; color:black;" | 15
+| rowspan=2|[[File:Zhang Shaozeng.jpg|80px]]
+| rowspan=2 align=center| '''[[Zhang Shaozeng]]'''<br /><span style="font-size:125%;">張紹曾</span><br /><small>(1879–1928)<br /></small>
+| 4 January 1923 || 13 June 1923
+| rowspan=2|[[:zh:張紹曾內閣|Zhang]]
+| rowspan=2|[[Independent politician|Independent]]
+|-
+! colspan=2 style="font-size:90%; font-weight:normal" | {{age in years and days|1923|1|4|1923|6|13}}
+|-
+! rowspan=4 style="background:#CD853F; color:white;" | —
+| rowspan=4| [[File:高凌霨.jpg|80px]]
+| rowspan=4 align=center| '''[[Gao Lingwei]]'''<br /><span style="font-size:125%;">高凌霨</span><br /><small>(1870–1940)<br />''acting''</small>
+| 14 June 1923 || 12 October 1923
+| rowspan=2| [[:zh:高凌霨攝政內閣|Gao Acting]]
+| rowspan=4| [[Zhili clique]]
+| rowspan=2 colspan=2| ''Premier as<br />acting President''
+|-
+! colspan=2 style="font-size:90%; font-weight:normal" | {{age in years and days|1923|6|14|1923|10|12}}
+|-
+| 12 October 1923 || 12 January 1924
+| rowspan=2| [[:zh:高凌霨臨時內閣|Gao Provisional]]
+| rowspan=11 align="center"| [[1912 Republic of China National Assembly election|1st (1912)]]
+! rowspan=8 style="background:#CD853F;" |
+| rowspan=8| [[File:Cao Kun.jpg|60px]]<br />[[Cao Kun]]<br /><small>([[Zhili clique]])</small>
+|-
+! colspan=2 style="font-size:90%; font-weight:normal" | {{age in years and days|1923|10|12|1924|1|12}}
+|-
+! rowspan=2 style="background:{{party color|Nonpartisan}}; color:black;" | 16
+| rowspan=2| [[File:Sun Baoqi.jpg|80px]]
+| rowspan=2 align=center| '''[[Sun Baoqi]]'''<br /><span style="font-size:125%;">孫寶琦</span><br /><small>(1867–1931)</small>
+| 12 January 1924 || 2 July 1924
+| rowspan=2|[[:zh:孫寶琦內閣|Sun B.]]
+| rowspan=2|[[Independent politician|Independent]]
+|-
+! colspan=2 style="font-size:90%; font-weight:normal" | {{age in years and days|1924|1|12|1924|7|2}}
+|-
+! rowspan=2 style="background:{{party color|Nonpartisan}}; color:black;" | —
+| rowspan=2| [[File:Portrait of Wellington Koo.jpg|80px]]
+| rowspan=2 align=center|'''[[V.K. Wellington Koo|V. S. Wellington Koo]]'''<br /><span style="font-size:125%;">顧維鈞</span><br /><small>''Gù Wéijūn''<br />(1888–1985)<br />''acting''</small>
+| 2 July 1924 || 14 September 1924
+| rowspan=2|[[:zh:顧維鈞臨時內閣|Koo Provisional]]
+| rowspan=2|[[Independent politician|Independent]]
+|-
+! colspan=2 style="font-size:90%; font-weight:normal" | {{age in years and days|1924|7|2|1924|9|14}}
+|-
+! rowspan=2 style="background:{{party color|Nonpartisan}}; color:black;" | (12)
+| rowspan=2|[[File:Yan Huiqing.jpg|80px]]
+| rowspan=2 align=center| '''[[Yan Huiqing|Yan Huiqing<br /><small>(W.W. Yan)</small>]]'''<br /><span style="font-size:125%;">顏惠慶</span><br /><small>(1877–1950)<br /></small>
+| 14 September 1924 || 31 October 1924
+| rowspan=2|[[:zh:第二次顏惠慶內閣|Yan H.]] II
+| rowspan=2|[[Independent politician|Independent]]
+|-
+! colspan=2 style="font-size:90%; font-weight:normal" | {{age in years and days|1924|9|14|1924|10|31}}
+|-
+! rowspan=2 style="background:{{party color|Kuomintang}}; color:white;"| —
+| rowspan=2|[[File:Huang Fu 03 (cropped).JPG|80px]]
+| rowspan=2 align=center| '''[[Huang Fu]]'''<br /><span style="font-size:125%;">黃郛</span><br /><small>(1880–1936)<br />''acting''</small>
+| 31 October 1924 || 24 November 1924
+| rowspan=2|[[:zh:黃郛攝政內閣|Huang Acting]]
+| rowspan=2|[[:zh:政學系|Political Science Clique]]
+| rowspan=2 colspan=2| ''Premier as<br />acting President''
+|-
+! colspan=2 style="font-size:90%; font-weight:normal" | {{age in years and days|1924|10|31|1924|11|24}}
+|-
+| colspan=7 {{CNone|''The premiership was abolished from 25 November 1924 to 26 December 1925.''}}
+! rowspan=5 style="background:#CD853F; color:white;" | 
+| rowspan=5| [[File:DuanQirui.jpg|60px]]<br />[[Duan Qirui]]<br /><small>([[Anhui clique]])</small>
+|-
+! rowspan=2 style="background:#CD853F; color:white;" | 17
+| rowspan=2|[[File:Bundesarchiv Bild 102-12299, Hsu Shih-Ying.jpg|80px]]
+| rowspan=2 align=center| '''[[Xu Shiying]]'''<br /><span style="font-size:125%;">許世英</span><br /><small>(1873–1964)</small>
+| 26 December 1925 || 4 March 1926
+| rowspan=2|[[:zh:許世英內閣|Xu S.-Y.]]
+| rowspan=2|[[Anhui clique]]
+| rowspan=16| ''Dissolved''
+|-
+! colspan=2 style="font-size:90%; font-weight:normal" | {{age in years and days|1925|12|26|1926|3|4}}
+|-
+! rowspan=2 style="background:#CD853F; color:white;" | 18
+| rowspan=2|[[File:Jia Deyao.jpg|80px]]
+| rowspan=2 align=center| '''[[Jia Deyao]]'''<br /><span style="font-size:125%;">賈德耀</span><br /><small>(1880–1941)</small>
+| 4 March 1926 || 20 April 1926
+| rowspan=2|[[:zh:賈德耀內閣|Jia]]
+| rowspan=2|[[Anhui clique]]
+|-
+! colspan=2 style="font-size:90%; font-weight:normal" | {{age in years and days|1926|3|4|1926|4|20}}
+|-
+! rowspan=2 style="background:#CD853F; color:white;" | —
+| rowspan=2|[[File:Hu Weide.jpg|80px]]
+| rowspan=2 align=center| '''[[Hu Weide]]'''<br /><span style="font-size:125%;">胡惟德</span><br /><small>(1863–1933)<br />''acting''</small>
+| 20 April 1926 || 13 May 1926
+| rowspan=2|[[:zh:胡惟德臨時攝政內閣|Hu Provisional Acting]]
+| rowspan=2|[[Zhili clique]]
+| rowspan=10 colspan=2| ''Premier as<br />acting President''
+|-
+! colspan=2 style="font-size:90%; font-weight:normal" | {{age in years and days|1926|4|20|1926|5|13}}
+|-
+! rowspan=2 style="background:{{party color|Nonpartisan}}; color:black;" | —
+| rowspan=2|[[File:Yan Huiqing.jpg|80px]]
+| rowspan=2 align=center| '''[[Yan Huiqing|Yan Huiqing<br /><small>(W.W. Yan)</small>]]'''<br /><span style="font-size:125%;">顏惠慶</span><br /><small>(1877–1950)<br />''acting''</small>
+| 13 May 1926 || 22 June 1926
+| rowspan=2|[[:zh:顏惠慶攝政內閣|Yan H. Acting]]
+| rowspan=2|[[Independent politician|Independent]]
+|-
+! colspan=2 style="font-size:90%; font-weight:normal" | {{age in years and days|1926|5|13|1926|6|22}}
+|-
+! rowspan=2 style="background:#CD853F; color:white;" | —
+| rowspan=2|[[File:Du Xigui.jpg|80px]]
+| rowspan=2 align=center| '''[[Du Xigui]]'''<br /><span style="font-size:125%;">杜錫珪</span><br /><small>(1874–1933)<br />''acting''</small>
+| 22 June 1926 || 1 October 1926
+| rowspan=2|[[:zh:杜錫珪臨時攝政內閣|Du Provisional Acting]]
+| rowspan=2|[[Zhili clique]]
+|-
+! colspan=2 style="font-size:90%; font-weight:normal" | {{age in years and days|1926|6|22|1926|10|1}}
+|-
+! rowspan=2 style="background:{{party color|Nonpartisan}}; color:black;" | —
+| rowspan=4| [[File:Portrait of Wellington Koo.jpg|80px]]
+| rowspan=4|'''[[V.K. Wellington Koo|V. S. Wellington Koo]]'''<br /><span style="font-size:125%;">顧維鈞</span><br /><small>''Gù Wéijūn''<br />(1888–1985)<br /></small>
+| 1 October 1926 || 11 January 1927
+| rowspan=2|[[:zh:顧維鈞臨時攝政內閣|Koo Provisional Acting]]
+| rowspan=4| [[Independent politician|Independent]]
+|-
+! colspan=2 style="font-size:90%; font-weight:normal" | {{age in years and days|1926|10|1|1927|1|11}}
+|-
+! rowspan=2 style="background:{{party color|Nonpartisan}}; color:black;" | 19
+| 11 January 1927 || 16 June 1927
+| rowspan=2|[[:zh:顧維鈞攝政內閣|Koo Acting]]
+|-
+! colspan=2 style="font-size:90%; font-weight:normal" | {{age in years and days|1927|1|11|1927|6|16}}
+|-
+! rowspan=2 style="background:{{party color|Nonpartisan}}; color:black;" | 20
+| rowspan=2| [[File:Pan Fu, Premier of the Republic of China.jpg|80px]]
+| rowspan=2|'''[[Pan Fu]]'''<br /><span style="font-size:125%;">潘復</span><br /><small>(1883–1936)<br /></small>
+| 20 June 1927 || 3 June 1928
+| rowspan=2|[[:zh:潘復內閣|Pan]]
+| rowspan=2|[[Independent politician|Independent]]
+! rowspan=2 style="background:#CD853F; color:white;" | 
+| rowspan=2|[[File:Zhang Zuolin3.jpg|60px]]<br />[[Zhang Zuolin]]<br /><small>([[Fengtian clique]])</small>
+|-
+! colspan=2 style="font-size:90%; font-weight:normal" | {{age in years and days|1927|6|20|1928|6|3}}
+|-
+|}
+
+=== Presidents of the Executive Yuan of the National Government (1928–1948) ===
+: '''Period:''' 25 October 1928 – 24 May 1948
+
+When [[Chiang Kai-shek]] established the [[Nationalist government#Nanjing Decade and War with Japan|Nanking Nationalist government]] in 1928, he created a presidency for the Executive Yuan instead of a premiership, in order to show the difference between his government and the previous one in [[Peking]] (then renamed Beiping). This government moved to [[Chongqing]] during the [[Sino-Japanese War (1937–1945)]] and during the [[Chinese Civil War]] relocated to [[Taipei]] where it exists today.
+
+{| class="wikitable" style="text-align:center"
+|-
+! No.
+! Portrait
+! width=22% |Name<br />{{small|(Birth–Death)}}
+! colspan=2 |Term of office<br />{{small|Duration in years and days}}
+! Cabinet
+! Political party
+! colspan=2 |[[President of the Republic of China|Chairman]]
+|-
+! rowspan=3 style="background:{{party color|Kuomintang}}; color:white;"| 21
+| rowspan=3| [[File:Tan Yankai.jpg|80px]]
+| rowspan=3 align=center| '''[[Tan Yankai]]'''<br /><span style="font-size:125%;">譚延闓<ref>Died in office.</ref></span><br /><small>''Tán Yánkǎi''<br />(1880–1930)</small>
+| rowspan=2| 25 October 1928 || rowspan=2| 22 September 1930
+| rowspan=5| [[:zh:譚延闓內閣|Tan]]
+| rowspan=3| [[Kuomintang]]
+|-
+! rowspan=6 style="background:{{party color|Kuomintang}}; color:white;"|
+| rowspan=6| [[File:Chiang 1.jpg|60px]]<br />[[Chiang Kai-shek]]<br /><small>([[Kuomintang]])</small>
+|-
+! colspan=2 style="font-size:90%; font-weight:normal" | {{age in years and days|1928|10|25|1930|9|22}}
+|-
+! rowspan=2 style="background:{{party color|Kuomintang}}; color:white;"| —
+| rowspan=2|[[File:T. V. Soong.jpg|80px]]
+| rowspan=2 align=center| '''[[Soong Tse-ven|Soong Tse-ven<br /><small>(T.V. Soong)</small>]]'''<br /><span style="font-size:125%;">宋子文</span><br /><small>''Sòng Zǐwén''<br />(1894–1971)<br />''acting''</small>
+| 25 September 1930 || 18 November 1930
+| rowspan=2|[[Kuomintang]]
+|-
+! colspan=2 style="font-size:90%; font-weight:normal" | {{age in years and days|1930|9|25|1930|11|18}}
+|-
+! rowspan=2 style="background:{{party color|Kuomintang}}; color:white;"| 22
+| rowspan=2|[[File:Chiang 1.jpg|80px]]
+| rowspan=2 align=center| '''[[Chiang Kai-shek]]'''<br /><span style="font-size:125%;">蔣中正</span><br /><small>''Jiǎng Zhōngzhèng''<br />(1887–1975)</small>
+| 18 November 1930 || 15 December 1931
+| rowspan=2|[[:zh:第一次蔣中正內閣|Chiang K.]] I
+| rowspan=2|[[Kuomintang]]
+|-
+! colspan=2 style="font-size:90%; font-weight:normal" | {{age in years and days|1930|11|18|1931|12|15}}
+|-
+! rowspan=2 style="background:{{party color|Kuomintang}}; color:white;"| —
+| rowspan=2|[[File:Chen Mingxu.jpg|80px]]
+| rowspan=2 align=center| '''[[Chen Mingshu]]'''<br /><span style="font-size:125%;">陳銘樞</span><br /><small>''Chén Míngshū''<br />(1889–1965)<br />''acting''</small>
+| 15 December 1931 || 28 December 1931
+| rowspan=2|—
+| rowspan=2|[[Kuomintang]]
+! rowspan=11 style="background:{{party color|Kuomintang}}; color:white;"|
+| rowspan=11| [[File:Lin Sen.jpg|70px]]<br />[[Lin Sen]]<br /><small>([[Kuomintang]])</small>
+|-
+! colspan=2 style="font-size:90%; font-weight:normal" | {{age in years and days|1931|12|15|1931|12|28}}
+|-
+! rowspan=2 style="background:{{party color|Kuomintang}}; color:white;"| 23
+| rowspan=2|[[File:孙科.jpg|80px]]
+| rowspan=2 align=center| '''[[Sun Fo]]'''<br /><span style="font-size:125%;">孫科</span><br /><small>''Sūn Kē''<br />(1891–1973)</small>
+| 28 December 1931 || 28 January 1932
+| rowspan=2|[[:zh:第一次孫科內閣|Sun F.]] I
+| rowspan=2|[[Kuomintang]]
+|-
+! colspan=2 style="font-size:90%; font-weight:normal" | {{age in years and days|1931|12|28|1932|1|28}}
+|-
+! rowspan=2 style="background:{{party color|Kuomintang}}; color:white;"| 24
+| rowspan=2|[[File:Wang Jingwei.png|80px]]
+| rowspan=2 align=center| '''[[Wang Jingwei]]'''<br /><span style="font-size:125%;">汪兆銘</span><br /><small>''Wāng Zhàomíng''<br />(1883–1944)</small>
+| 28 January 1932 || 1 December 1935
+| rowspan=2|[[:zh:汪兆銘內閣|Wang]]
+| rowspan=2|[[Kuomintang]]
+|-
+! colspan=2 style="font-size:90%; font-weight:normal" | {{age in years and days|1932|1|28|1935|12|1}}
+|-
+! rowspan=2 style="background:{{party color|Kuomintang}}; color:white;"| (22)
+| rowspan=2|[[File:Chiang Kai-shek.jpg|80px]]
+| rowspan=2 align=center| '''[[Chiang Kai-shek]]'''<br /><span style="font-size:125%;">蔣中正</span><br /><small>''Jiǎng Zhōngzhèng''<br />(1887–1975)</small>
+| 7 December 1935 || 1 January 1938
+| rowspan=2|[[:zh:第二次蔣中正內閣|Chiang K.]] II
+| rowspan=2|[[Kuomintang]]
+|-
+! colspan=2 style="font-size:90%; font-weight:normal" | {{age in years and days|1935|12|7|1938|1|1}}
+|-
+! rowspan=2 style="background:{{party color|Kuomintang}}; color:white;"| 25
+| rowspan=2|[[File:HHKung.jpg|80px]]
+| rowspan=2 align=center| '''[[Kung Hsiang-hsi|Kung Hsiang-hsi<br /><small>(H.H. Kung)</small>]]'''<br /><span style="font-size:125%;">孔祥熙</span><br /><small>''Kǒng Xiángxī''<br />(1881–1967)</small>
+| 1 January 1938 || 25 November 1939
+| rowspan=2|[[:zh:孔祥熙內閣|Kung]]
+| rowspan=2|[[Kuomintang]]
+|-
+! colspan=2 style="font-size:90%; font-weight:normal" | {{age in years and days|1938|1|1|1939|11|25}}
+|-
+! rowspan=3 style="background:{{party color|Kuomintang}}; color:white;"| (22)
+| rowspan=3| [[File:Chiang Kai-shek.jpg|80px]]
+| rowspan=3 align=center| '''[[Chiang Kai-shek]]'''<br /><span style="font-size:125%;">蔣中正</span><br /><small>''Jiǎng Zhōngzhèng''<br />(1887–1975)</small>
+| rowspan=2| 11 December 1939 || rowspan=2| 31 May 1945
+| rowspan=3| [[:zh:第三次蔣中正內閣|Chiang K.]] III
+| rowspan=3| [[Kuomintang]]
+|-
+! rowspan=8 style="background:{{party color|Kuomintang}}; color:white;"|
+| rowspan=8| [[File:Chiang Kai-shek.jpg|60px]]<br />[[Chiang Kai-shek]]<br /><small>([[Kuomintang]])</small>
+|-
+! colspan=2 style="font-size:90%; font-weight:normal" | {{age in years and days|1939|12|11|1945|5|31}}
+|-
+! rowspan=2 style="background:{{party color|Kuomintang}}; color:white;"| 26
+| rowspan=2|[[File:T. V. Soong.jpg|80px]]
+| rowspan=2 align=center| '''[[Soong Tse-ven|Soong Tse-ven<br /><small>(T.V. Soong)</small>]]'''<br /><span style="font-size:125%;">宋子文</span><br /><small>''Sòng Zǐwén''<br />(1894–1971)</small>
+| 31 May 1945 || 1 March 1947
+| rowspan=2|[[:zh:宋子文內閣|Soong]]
+| rowspan=2|[[Kuomintang]]
+|-
+! colspan=2 style="font-size:90%; font-weight:normal" | {{age in years and days|1945|5|31|1947|3|1}}
+|-
+! rowspan=2 style="background:{{party color|Kuomintang}}; color:white;"| —
+| rowspan=2|[[File:Chiang Kai-shek.jpg|80px]]
+| rowspan=2 align=center| '''[[Chiang Kai-shek]]'''<br /><span style="font-size:125%;">蔣中正</span><br /><small>''Jiǎng Zhōngzhèng''<br />(1887–1975)<br />''acting''</small>
+| 1 March 1947 || 23 April 1947
+| rowspan=2|—
+| rowspan=2|[[Kuomintang]]
+|-
+! colspan=2 style="font-size:90%; font-weight:normal" | {{age in years and days|1947|3|1|1947|4|18}}
+|-
+! rowspan=2 style="background:{{party color|Kuomintang}}; color:white;"| 27
+| rowspan=2|[[File:Zhang Qun.jpg|80px]]
+| rowspan=2 align=center| '''[[Zhang Qun]]'''<br /><span style="font-size:125%;">張群</span><br /><small>''Zhāng Qún''<br />(1889–1990)</small>
+| 23 April 1947 || 24 May 1948
+| rowspan=2|[[:zh:張群內閣|Zhang Qun]]
+| rowspan=2|[[Kuomintang]]
+|-
+! colspan=2 style="font-size:90%; font-weight:normal" | {{age in years and days|1947|4|23|1948|5|24}}
+|-
+|}
+
+===Presidents of the Executive Yuan (1948–present)===
+* '''Period:''' 25 May 1948 – present<ref name=list>{{cite news |title=Premiers of the Republic of China |url=https://history.ey.gov.tw/En/Director#22 |accessdate=3 July 2020 |agency=Executive Yuan }}</ref>
+
+{| class="wikitable" style="text-align:center"
+|-
+! No.
+! Portrait
+! width=18% |Name<br />{{small|(Birth–Death)}}
+! colspan=2 |Term of office<br />{{small|Duration in years and days}}
+! Cabinet
+! Political party
+! Legislature<br />(elected)
+! colspan=2 |[[President of the Republic of China|President]]
+|-
+! style="background:{{party color|Kuomintang}}; color:white;" rowspan=2| 28
+| rowspan=2| [[File:翁秘書文灝 (cropped).jpg|80px]]
+| align=center rowspan=2| '''[[Weng Wenhao]]'''<br /><span style="font-size:125%;">翁文灝</span><br /><small>''Wēng Wénhào''<br />(1889–1971)</small>
+| 25 May 1948 || 26 November 1948
+| rowspan=2| [[:zh:翁文灝內閣|Weng]]
+| rowspan=2| [[Kuomintang]]
+| style="background:#def;" rowspan=34| [[1948 Republic of China legislative election|1st (1948)]]
+! rowspan=5 style="background:{{party color|Kuomintang}}; color:white;"|
+| rowspan=5| [[File:蔣中正總統玉照.png|60px]]<br />[[Chiang Kai-shek]]<br /><small>([[Kuomintang]])</small>
+|-
+! colspan=2 style="font-size:90%; font-weight:normal" | {{age in years and days|1948|5|25|1948|11|26}}
+|-
+! style="background:{{party color|Kuomintang}}; color:white;"rowspan=2| (23)
+| rowspan=2|[[File:Sun Fo - Hong Kong - HK - c1950 cs.jpg|80px]]
+| align=center rowspan=2| '''[[Sun Fo]]'''<br /><span style="font-size:125%;">孫科</span><br /><small>''Sūn Kē''<br />(1891–1973)</small>
+| 26 November 1948 || 12 March 1949
+| rowspan=2|[[:zh:第二次孫科內閣|Sun F.]] II
+| rowspan=2|[[Kuomintang]]
+|-
+! colspan=2 style="font-size:90%; font-weight:normal" | {{age in years and days|1948|11|26|1949|3|12}}
+|-
+! rowspan=3 style="background:{{party color|Kuomintang}}; color:white;"| 29
+| rowspan=3 | [[File:Ho Ying-chin.jpg|80px]]
+| rowspan=3 align=center| '''[[He Yingqin]]'''<br /><span style="font-size:125%;">何應欽</span><br /><small>''Hé Yìngqīn''<br />(1890–1987)</small>
+| rowspan=2 | 12 March 1949 || rowspan=2 | 13 June 1949
+| rowspan=3 | [[:zh:何應欽內閣|He]]
+| rowspan=3 | [[Kuomintang]]
+|-
+! rowspan=3 style="background:{{party color|Kuomintang}}; color:white;"|
+| rowspan=3|[[File:Li Zongren4.jpg|60px]]<br />[[Li Zongren]]<br /><small>([[Kuomintang|KMT]])<br>''acting''</small>
+|-
+! colspan=2 style="font-size:90%; font-weight:normal" | {{age in years and days|1949|3|12|1949|6|13}}
+|-
+! rowspan=3 style="background:{{party color|Kuomintang}}; color:white;"| 30
+| rowspan=3 | [[File:Yan Xishan.jpg|80px]]
+| rowspan=3 align=center| '''[[Yan Xishan]]'''<br /><span style="font-size:125%;">閻錫山</span><br /><small>''Yán Xíshān''<br />(1883–1960)</small>
+| rowspan=2 |13 June 1949 || rowspan=2 |10 March 1950
+| rowspan=3 |[[:zh:閻錫山內閣|Yan X.]]
+| rowspan=3 |[[Kuomintang]]
+|-
+! rowspan=11 style="background:{{party color|Kuomintang}}; color:white;"|
+| rowspan=11| [[File:蔣中正總統玉照.png|60px]]<br />[[Chiang Kai-shek]]<br /><small>([[Kuomintang]])</small>
+|-
+! colspan=2 style="font-size:90%; font-weight:normal" | {{age in years and days|1949|6|13|1950|3|10}}
+|-
+! style="background:{{party color|Kuomintang}}; color:white;" rowspan=2 | 31
+| rowspan=2 |[[File:Chen Cheng in 1940's.jpg|80px]]
+| align=center rowspan=2 | '''[[Chen Cheng]]'''<br /><span style="font-size:125%;">陳誠</span><br /><small>''Chén Chéng''<br />(1898–1965)</small>
+| 10 March 1950 || 1 June 1954
+| rowspan=2 |[[:zh:第一次陳誠內閣|Chen C.]] I
+| rowspan=2 |[[Kuomintang]]
+|-
+! colspan=2 style="font-size:90%; font-weight:normal" | {{age in years and days|1950|3|10|1954|6|1}}
+|-
+! style="background:{{party color|Kuomintang}}; color:white;" rowspan=2 | 32
+| rowspan=2 |[[File:Yu Hung-Chun.jpg|80px]]
+| align=center rowspan=2 | '''[[Yu Hung-Chun]]'''<br /><span style="font-size:125%;">俞鴻鈞</span><br /><small>''Yú Hóngjūn''<br />(1897–1960)</small>
+| 1 June 1954 || 15 July 1958
+| rowspan=2 |[[:zh:俞鴻鈞內閣|Yu H.]]
+| rowspan=2 |[[Kuomintang]]
+|-
+! colspan=2 style="font-size:90%; font-weight:normal" | {{age in years and days|1954|6|1|1958|7|15}}
+|-
+! style="background:{{party color|Kuomintang}}; color:white;" rowspan=2 | (31)
+| rowspan=2 |[[File:Chen Cheng in 1940's.jpg|80px]]
+| align=center rowspan=2 | '''[[Chen Cheng]]'''<br /><span style="font-size:125%;">陳誠</span><br /><small>''Chén Chéng''<br />(1898–1965)</small>
+| 15 July 1958 || 16 December 1963
+| rowspan=2 |[[:zh:第二次陳誠內閣|Chen C.]] II
+| rowspan=2 |[[Kuomintang]]
+|-
+! colspan=2 style="font-size:90%; font-weight:normal" | {{age in years and days|1958|7|15|1963|12|16}}
+|-
+! style="background:{{party color|Kuomintang}}; color:white;" rowspan=2 | 33
+| rowspan=2 |[[File:President03-large.png|80px]]
+| rowspan=2 |'''[[Yen Chia-kan|Yen Chia-kan<br />{{small|(C. K. Yen)}}]]'''<br /><span style="font-size:125%;">嚴家淦</span><br /><small>''Yán Jiāgàn''<br />(1905–1993)</small>
+| 16 December 1963 || 1 June 1972
+| rowspan=2 |[[:zh:嚴家淦內閣|Yen]]
+| rowspan=2 |[[Kuomintang]]
+|-
+! colspan=2 style="font-size:90%; font-weight:normal" | {{age in years and days|1963|12|16|1972|6|1}}
+|-
+! rowspan=3 style="background:{{party color|Kuomintang}}; color:white;"| 34
+| rowspan=3|[[File:Portrait of Chiang Ching-kuo.jpg|80px]]
+| rowspan=3 align=center| '''[[Chiang Ching-kuo]]'''<br /><span style="font-size:125%;">蔣經國</span><br /><small>''Jiǎng Jīngguó''<br />(1910–1988)</small>
+| rowspan=2| 1 June 1972 || rowspan=2| 20 May 1978
+| rowspan=5| [[:zh:蔣經國內閣|Chiang C.]]
+| rowspan=3| [[Kuomintang]]
+|-
+! style="background:{{party color|Kuomintang}}; color:white;" rowspan=2|
+| rowspan=2|[[File:President03-large.png|60px]]<br />[[Yen Chia-kan]]<br /><small>([[Kuomintang]])</small>
+|-
+! colspan=2 style="font-size:90%; font-weight:normal" | {{age in years and days|1972|6|1|1978|5|20}}
+|-
+! rowspan=2 style="background:{{party color|Kuomintang}}; color:white;"| —
+| rowspan=2|[[File:徐慶鐘先生.jpg|80px]]
+| rowspan=2 align=center| '''[[Hsu Ching-chung]]'''<br /><span style="font-size:125%;">徐慶鐘</span><br /><small>''Xú Qìngzhōng''<br />(1907–1996)</small><br /><small>''(acting)''</small>
+| 20 May 1978 || 1 June 1978
+
+| rowspan=2|[[Kuomintang]]
+! rowspan=7 style="background:{{party color|Kuomintang}}; color:white;"|
+| rowspan=7|[[File:Portrait of Chiang Ching-kuo.jpg|60px]]<br />[[Chiang Ching-kuo]]<br /><small>([[Kuomintang]])</small>
+|-
+! colspan=2 style="font-size:90%; font-weight:normal" | {{age in years and days|1978|5|20|1978|6|1}}
+|-
+! style="background:{{party color|Kuomintang}}; color:white;" rowspan=2| 35
+| rowspan=2|[[File:孫運璿院長.jpg|80px]]
+| rowspan=2|'''[[Sun Yun-suan]]'''<br /><span style="font-size:125%;">孫運璿</span><br /><small>''Sūn Yùnxuán''<br />(1913–2006)</small>
+| 1 June 1978 || 24 February 1984
+| rowspan=4|[[:zh:孫運璿內閣|Sun Y.]]
+| rowspan=2|[[Kuomintang]]
+|-
+! colspan=2 style="font-size:90%; font-weight:normal" | {{age in years and days|1978|6|1|1984|2|24}}
+|-
+! rowspan=2 style="background:{{party color|Kuomintang}}; color:white;"| —
+| rowspan=2|[[File:邱創煥部長.jpg|80px]]
+| rowspan=2|'''[[Chiu Chuang-huan]]'''<br /><span style="font-size:125%;">邱創煥</span><br /><small>''Qīu Chuànghuàn''<br />(1925–2020)</small>
+| 24 February 1984 || 1 June 1984
+| rowspan=2|[[Kuomintang]]
+|-
+! colspan=2 style="font-size:90%; font-weight:normal" | {{age in years and days|1984|2|24|1984|6|1}}
+|-
+! rowspan=3 style="background:{{party color|Kuomintang}}; color:white;"| 36
+| rowspan=3| [[File:俞國華院長.jpg|80px]]
+| rowspan=3| '''[[Yu Kuo-hwa]]'''<br /><span style="font-size:125%;">俞國華</span><br /><small>''Yú Guóhuá''<br />(1914–2000)</small>
+| rowspan=2| 1 June 1984 || rowspan=2| 1 June 1989
+| rowspan=3| [[:zh:俞國華內閣|Yu K.]]
+| rowspan=3| [[Kuomintang]]
+|-
+! rowspan=10 style="background:{{party color|Kuomintang}}; color:white;"|
+| rowspan=10| [[File:李登輝總統玉照 003 cropped.jpg|60px]]<br />[[Lee Teng-hui]]<br /><small>([[Kuomintang|KMT]])</small>
+|-
+! colspan=2 style="font-size:90%; font-weight:normal" | {{age in years and days|1984|2|24|1989|6|1}}
+|-
+! rowspan=2 style="background:{{party color|Kuomintang}}; color:white;"| 37
+| rowspan=2|[[File:李煥院長.jpg|80px]]
+| rowspan=2|'''[[Lee Huan]]'''<br /><span style="font-size:125%;">李煥</span><br /><small>''Lǐ Huàn''<br />(1917–2010)</small>
+| 1 June 1989 || 1 June 1990
+| rowspan=2|[[:zh:李煥內閣|Lee]]
+| rowspan=2|[[Kuomintang]]
+|-
+! colspan=2 style="font-size:90%; font-weight:normal" | {{age in years and days|1989|6|1|1990|6|1}}
+|-
+! rowspan=2 style="background:{{party color|Kuomintang}}; color:white;"| 38
+| rowspan=2| [[File:郝柏村院長.jpg|80px]]
+| rowspan=2| '''[[Hau Pei-tsun]]'''<br /><span style="font-size:125%;">郝柏村</span><br /><small>''Hǎo Bócūn''<br />(1919–2020)</small>
+| 1 June 1990 || 27 February 1993
+| rowspan=2| [[:zh:郝柏村內閣|Hau]]
+| rowspan=2| [[Kuomintang]]
+|-
+! colspan=2 style="font-size:90%; font-weight:normal" | {{age in years and days|1990|6|1|1993|2|27}}
+|-
+! rowspan=2 style="background:{{party color|Kuomintang}}; color:white;"| 39
+| rowspan=2| [[File:連戰院長.jpg|80px]]
+| rowspan=2| '''[[Lien Chan]]'''<br /><span style="font-size:125%;">連戰</span><br /><small>''Lián Zhàn''<br />(1936–)</small>
+| 27 February 1993 || 1 September 1997
+| rowspan=2| [[:zh:連戰內閣|Lien]]
+| rowspan=2| [[Kuomintang]]
+| style="background:#def;" | [[1992 Taiwan legislative election|2nd (1992)]]
+|-
+! colspan=2 style="font-size:90%; font-weight:normal" | {{age in years and days|1993|2|27|1997|9|1}}
+| style="background:#def;" rowspan=2| [[1995 Taiwan legislative election|3rd (1995)]]
+|-
+! rowspan=2 style="background:{{party color|Kuomintang}}; color:white;"| 40
+| rowspan=2| [[File:蕭萬長院長.jpg|80px]]
+| rowspan=2| '''[[Siew Wan-chang|Siew Wan-chang<br /><small>(Vincent Siew)</small>]]'''<br /><span style="font-size:125%;">蕭萬長</span><br /><small>''Xiāo Wàncháng''<br />(1939–)</small>
+| 1 September 1997 || 20 May 2000
+| rowspan=2| [[:zh:蕭萬長內閣|Siew]]
+| rowspan=2| [[Kuomintang]]
+|-
+! colspan=2 style="font-size:90%; font-weight:normal" | {{age in years and days|1997|9|1|2000|5|20}}
+| style="background:#def;" rowspan=5| [[1998 Taiwan legislative election|4th (1998)]]
+|-
+! rowspan=2 style="background:{{party color|Kuomintang}}; color:white;"| 41
+| rowspan=2| [[File:唐飛院長.jpg|80px]]
+| rowspan=2|'''[[Tang Fei]]'''<br /><span style="font-size:125%;">唐飛</span><br /><small>''Táng Fēi''<br />(1932–)</small>
+| 20 May 2000 || 6 October 2000
+| rowspan=2|[[:zh:唐飛內閣|Tang F.]]
+| rowspan=2|[[Kuomintang]]<ref>Membership suspended.</ref>
+! rowspan=12 style="background:{{party color|Democratic Progressive Party}}; color:white;"|
+| rowspan=12| [[File:總統陳水扁先生玉照_(國民大會實錄).jpg|60px]]<br />[[Chen Shui-bian]]<br /><small>([[Democratic Progressive Party|DPP]])</small>
+|-
+! colspan=2 style="font-size:90%; font-weight:normal" | {{age in years and days|2000|5|20|2000|10|6}}
+|-
+! rowspan=2 style="background:{{party color|Democratic Progressive Party}}; color:white;"| 42
+| rowspan=2| [[File:張俊雄院長.jpg|80px]]
+| rowspan=2| '''[[Chang Chun-hsiung]]'''<br /><span style="font-size:125%;">張俊雄</span><br /><small>''Zhāng Jùnxióng''<br />(1938–2025)</small>
+| 6 October 2000 || 1 February 2002
+| rowspan=2| [[:zh:第一次張俊雄內閣|Chang C.-H.]] I
+| rowspan=2| [[Democratic Progressive Party|Democratic Progressive]]
+|-
+! colspan=2 style="font-size:90%; font-weight:normal" | {{age in years and days|2000|10|6|2002|2|1}}
+|-
+! rowspan=2 style="background:{{party color|Democratic Progressive Party}}; color:white;"| 43
+| rowspan=2|[[File:游錫堃院長.jpg|80px]]
+| rowspan=2| '''[[Yu Shyi-kun]]'''<br /><span style="font-size:125%;">游錫堃</span><br /><small>''Yóu Xíkūn''<br />(1948–)</small>
+| 1 February 2002 || 1 February 2005
+| rowspan=2|[[:zh:游錫堃內閣|Yu S.]]
+| rowspan=2|[[Democratic Progressive Party|Democratic Progressive]]
+| style="background:#ddd;" rowspan=2|[[2001 Taiwan legislative election|5th (2001)]]
+|-
+! colspan=2 style="font-size:90%; font-weight:normal" | {{age in years and days|2002|2|1|2005|2|1}}
+|-
+! rowspan=2 style="background:{{party color|Democratic Progressive Party}}; color:white;"| 44
+| rowspan=2|[[File:謝長廷院長.jpg|80px]]
+| rowspan=2|'''[[Frank Hsieh|Hsieh Chang-ting<br /><small>(Frank Hsieh)</small>]]'''<br /><span style="font-size:125%;">謝長廷</span><br /><small>''Xiè Chángtíng''<br />(1946–)</small>
+| 1 February 2005 || 25 January 2006
+| rowspan=2|[[:zh:謝長廷內閣|Hsieh]]
+| rowspan=2|[[Democratic Progressive Party|Democratic Progressive]]
+| style="background:#ddd;" rowspan=5| [[2004 Taiwan legislative election|6th (2004)]]
+|-
+! colspan=2 style="font-size:90%; font-weight:normal" | {{age in years and days|2005|2|1|2006|1|25}}
+|-
+! rowspan=2 style="background:{{party color|Democratic Progressive Party}}; color:white;"| 45
+| rowspan=2|[[File:Su Tseng-chang election infobox.jpg|80px]]
+| rowspan=2|'''[[Su Tseng-chang]]'''<br /><span style="font-size:125%;">蘇貞昌</span><br /><small>''Sū Zhēnchāng''<br />(1948–)</small>
+| 25 January 2006 || 21 May 2007
+| rowspan=2|[[First Su cabinet|Su I]]
+| rowspan=2|[[Democratic Progressive Party|Democratic Progressive]]
+|-
+! colspan=2 style="font-size:90%; font-weight:normal" | {{age in years and days|2006|1|25|2007|5|21}}
+|-
+! rowspan=2 style="background:{{party color|Democratic Progressive Party}}; color:white;"| (42)
+| rowspan=2|[[File:張俊雄院長.jpg|80px]]
+| rowspan=2| '''[[Chang Chun-hsiung]]'''<br /><span style="font-size:125%;">張俊雄</span><br /><small>''Zhāng Jùnxióng''<br />(1938–2025)</small>
+| 21 May 2007 || 20 May 2008
+| rowspan=2| [[:zh:第二次張俊雄內閣|Chang C.-H.]] II
+| rowspan=2| [[Democratic Progressive Party|Democratic Progressive]]
+|-
+! colspan=2 style="font-size:90%; font-weight:normal" | {{age in years and days|2007|5|21|2008|5|20}}
+| style="background:#def;" rowspan=5| [[2008 Taiwan legislative election|7th (2008)]]
+|-
+! rowspan=2 style="background:{{party color|Kuomintang}}; color:white;"| 46
+| rowspan=2|[[File:劉兆玄院長.jpg|80px]]
+| rowspan=2|'''[[Liu Chao-shiuan]]'''<br /><span style="font-size:125%;">劉兆玄</span><br /><small>''Liú Zhàoxuán''<br />(1943–)</small>
+| 20 May 2008 || 10 September 2009
+| rowspan=2|[[:zh:劉兆玄內閣|Liu]]
+| rowspan=2|[[Kuomintang]]
+! rowspan=12 style="background:{{party color|Kuomintang}}; color:white;"|
+| rowspan=12| [[File:中華民國第12、13任總統馬英九先生官方肖像照.jpg|60px]]<br />[[Ma Ying-jeou]]<br /><small>([[Kuomintang]])</small>
+|-
+! colspan=2 style="font-size:90%; font-weight:normal" | {{age in years and days|2008|5|20|2009|9|10}}
+|-
+! style="background:{{party color|Kuomintang}}; color:white;" rowspan=2| 47
+| rowspan=2|[[File:Wu Den-yih.jpg|80px]]
+| rowspan=2|'''[[Wu Den-yih]]'''<br /><span style="font-size:125%;">吳敦義</span><br /><small>''Wú Dūnyì''<br />(1948–)</small>
+| 10 September 2009 || 6 February 2012
+| rowspan=2|[[:zh:吳敦義內閣|Wu D.]]
+| rowspan=2|[[Kuomintang]]
+|-
+! colspan=2 style="font-size:90%; font-weight:normal" | {{age in years and days|2009|9|10|2012|2|6}}
+|-
+! rowspan=2 style="background:{{party color|Kuomintang}}; color:white;"| 48
+| rowspan=2|[[File:陳冲院長.jpg|80px]]
+| rowspan=2|'''[[Sean Chen (politician)|Chen Chun<br /><small>(Sean Chen)</small>]]'''<br /><span style="font-size:125%;">陳冲</span><br /><small>''Chén Chōng''<br />(1949–)</small>
+| 6 February 2012 || 18 February 2013
+| rowspan=2|[[:zh:陳冲內閣|S. Chen]]
+| rowspan=2|[[Kuomintang]]
+| rowspan="6" style="background:#def;" | [[2012 Taiwan legislative election|8th (2012)]]
+|-
+! colspan=2 style="font-size:90%; font-weight:normal" | {{age in years and days|2012|2|6|2013|2|18}}
+|-
+! rowspan=2 style="background:{{party color|Kuomintang}}; color:white;"| 49
+| rowspan=2|[[File:江宜樺院長.jpg|80px]]
+| rowspan=2|'''[[Jiang Yi-huah]]'''<br /><span style="font-size:125%;">江宜樺</span><br /><small>''Jiāng Yīhuá''<br />(1960–)</small>
+| 18 February 2013 || 8 December 2014
+| rowspan=2|[[:zh:江宜樺內閣|Jiang]]
+| rowspan=2|[[Kuomintang]]
+|-
+! colspan=2 style="font-size:90%; font-weight:normal" | {{age in years and days|2013|2|18|2014|12|8}}
+|-
+! rowspan=2 style="background:{{party color|Kuomintang}}; color:white;"| 50
+| rowspan=2|[[File:毛治國院長.jpg|80px]]
+| rowspan=2|'''[[Mao Chi-kuo]]'''<br /><span style="font-size:125%;">毛治國</span><br /><small>''Máo Zhìguó''<br />(1948–)</small>
+| 8 December 2014 || 1 February 2016
+| rowspan=2|[[:zh:毛治國內閣|Mao]]
+| rowspan=2|[[Kuomintang]]
+|-
+! colspan=2 style="font-size:90%; font-weight:normal" | {{age in years and days|2014|12|8|2016|2|1}}
+|-
+! rowspan=2 style="background:{{party color|Nonpartisan}}; color:black;"| 51
+| rowspan=2|[[File:張善政院長.jpg|80px]]
+| rowspan=2|'''[[Chang San-cheng|Chang San-cheng<br /><small>(Simon Chang)</small>]]'''<br /><span style="font-size:125%;">張善政</span><br /><small>''Zhāng Shànzhèng''<br />(1954–)</small>
+| 1 February 2016 || 20 May 2016
+| rowspan=2|[[Simon Chang cabinet|S. Chang]]
+| rowspan=2|[[Independent politician|Independent]]
+| style="background:#d0f0c0;" rowspan=7 |[[2016 Taiwan legislative election|9th (2016)]]
+|-
+! colspan=2 style="font-size:90%; font-weight:normal" | {{age in years and days|2016|2|1|2016|5|20}}
+|-
+! rowspan=2 style="background:{{party color|Nonpartisan}}; color:black;"| 52
+| rowspan=2|[[File:林全院長.jpg|80px]]
+| rowspan=2|'''[[Lin Chuan]]'''<br /><span style="font-size:125%;">林全</span><br /><small>''Lín Quán''<br />(1951–)</small>
+| 20 May 2016 || 8 September 2017
+| rowspan=2| [[Lin cabinet|Lin]]
+| rowspan=2| [[Independent politician|Independent]]
+! rowspan="8" style="background:{{party color|Democratic Progressive Party}}; color:white;" |
+| rowspan="8" | [[File:蔡英文官方元首肖像照 (cropped).png|60px]]<br />[[Tsai Ing-wen]]<br /><small>([[Democratic Progressive Party|DPP]])</small>
+|-
+! colspan=2 style="font-size:90%; font-weight:normal" | {{age in years and days|2016|5|20|2017|9|8}}
+|-
+! rowspan=2 style="background:{{party color|Democratic Progressive Party}}; color:white;"| 53
+| rowspan=2|[[File:賴清德院長.jpg|80px]]
+| rowspan=2|'''[[Lai Ching-te|Lai Ching-te<br /><small>(William Lai)</small>]]'''<br /><span style="font-size:125%;">賴清德</span><br /><small>''Lài Qīngdé''<br />(1958–)</small>
+| 8 September 2017 || 14 January 2019
+| rowspan=2|[[Lai cabinet|Lai]]
+| rowspan=2|[[Democratic Progressive Party|Democratic Progressive]]
+|-
+! colspan=2 style="font-size:90%; font-weight:normal" | {{age in years and days|2017|9|8|2019|1|14}}
+|-
+! style="background:{{party color|Democratic Progressive Party}}; color:white;" rowspan=2| (45)
+| rowspan=2|[[File:行政院院長蘇貞昌肖像.jpg|80px]]
+| rowspan=2|'''[[Su Tseng-chang]]'''<br /><span style="font-size:125%;">蘇貞昌</span><br /><small>''Sū Zhēnchāng''<br />(1948–)</small>
+| 14 January 2019 || 31 January 2023
+| rowspan=2|[[Second Su cabinet|Su II]]
+| rowspan=2|[[Democratic Progressive Party|Democratic Progressive]]
+|-
+! colspan=2 style="font-size:90%; font-weight:normal" | {{age in years and days|2019|1|14|2023|1|31}}
+| style="background:#d0f0c0;" rowspan=2|[[2020 Taiwan legislative election|10th (2020)]]
+
+|-
+! style="background:{{party color|Democratic Progressive Party}}; color:white;" rowspan=2| 54
+| rowspan=2|[[File:陳建仁副總統.jpg|80px]]
+| rowspan=2|'''[[Chen Chien-jen]]'''<br /><span style="font-size:125%;">陳建仁</span><br /><small>''Chén Jiànrén''<br />(1951–)</small>
+|31 January 2023 || 20 May 2024
+| rowspan=2|[[Chen Chien-jen cabinet|Chen C.J.]]
+| rowspan=2|[[Democratic Progressive Party|Democratic Progressive]]
+|-
+! colspan=2 style="font-size:90%; font-weight:normal" | {{age in years and days|2023|1|31|2024|5|20}}
+| style="background:#ddd;" rowspan=3|[[2024 Taiwan legislative election|11th (2024)]]
+|-
+! style="background:{{party color|Democratic Progressive Party}}; color:white;" rowspan=2| 55
+| rowspan=2|[[File:行政院長 卓榮泰.jpg|80px]]
+| rowspan=2|'''[[Cho Jung-tai]]'''<br /><span style="font-size:125%;">卓榮泰</span><br /><small>''Zhuó Róngtài''<br />(1959–)</small>
+|20 May 2024 || Incumbent
+| rowspan=2| [[Cho cabinet|Cho]]
+| rowspan=2|[[Democratic Progressive Party|Democratic Progressive]]
+! rowspan="2" style="background:{{party color|Democratic Progressive Party}}; color:white;" |
+| rowspan="2" | [[File:賴清德總統 1.jpg|60px]]<br />[[Lai Ching-te]]<br /><small>([[Democratic Progressive Party|DPP]])</small>
+|-
+! colspan=2 style="font-size:90%; font-weight:normal" | {{age in years and days|2024|5|20}}
+|-
+|}
+
+==Timeline==
+
+{{#tag:timeline|
+ImageSize = width:1100 height:auto barincrement:14
+PlotArea  = top:10 bottom:100 right:130 left:20
+AlignBars = late
+
+Colors     =
+  id:ind   value:gray(0.8)
+  id:Independent    value:rgb(0.7,0.7,0.7)       legend:Independent
+  id:Beiyang        value:rgb(0.804,0.522,0.247) legend:Beiyang_Clique
+  id:Communications value:rgb(0.6,0.694,0.788)   legend:Communications_Clique
+  id:Progressive    value:rgb(0.0, 0.50196, 0.0) legend:Progressive_Party/Research_Clique
+  id:KMT            value:rgb(0,0,0.6)           legend:Kuomintang
+  id:DPP            value:rgb(0.1,0.58,0.19)     legend:Democratic_Progressive_Party
+  id:vac value:tan2
+  id:gray1  value:gray(0.85)
+  id:gray2  value:gray(0.95)
+  id:grid   value:gray(0.5)
+
+DateFormat = dd/mm/yyyy
+Period     = from:1912 till:{{#time:d/m/Y}}
+TimeAxis   = orientation:horizontal
+ScaleMajor = gridcolor:gray1 unit:year increment:5 start:1915
+ScaleMinor = gridcolor:gray2 unit:year increment:1 start:1912
+
+Legend     = columns:1 left:110 top:57 columnwidth:220
+
+TextData =
+  pos:(20,57) textcolor:black fontsize:s
+  text:"Political Affiliation:"
+
+BarData =
+ bar:TangS
+ bar:Lu
+ bar:Zhao
+ bar:Duan
+ bar:Xiong
+ bar:Sun
+ bar:Xu
+ bar:WuT
+ bar:Jiangc
+ bar:Li
+ bar:WangD
+ bar:WangS
+ bar:Qian
+ bar:Gong
+ bar:Jin
+ bar:Sa
+ bar:YanH
+ bar:Liang
+ bar:Zhou
+ bar:WangC
+ bar:WangZ
+ bar:Zhang
+ bar:Gao
+ bar:Koo
+ bar:Huang
+ bar:XuS
+ bar:Jia
+ bar:Hu
+ bar:DuX
+ bar:PanFu
+ bar:Tan
+ bar:Soong
+ bar:Chiang
+ bar:Chen
+ bar:SunF
+ bar:WangJ
+ bar:Kung
+ bar:Chang
+ bar:Weng
+ bar:He
+ bar:Yan
+ bar:ChenChe
+ bar:YuH
+ bar:Wang
+ bar:Yen
+ bar:ChiangCK
+ bar:Hsu
+ bar:SunY
+ bar:YuK
+ bar:Lee
+ bar:Hau
+ bar:Lien
+ bar:Siew
+ bar:Tang
+ bar:ChangC
+ bar:YuS
+ bar:Hsieh
+ bar:Su
+ bar:Liu
+ bar:Wu
+ bar:ChenChu
+ bar:Jiang
+ bar:Mao
+ bar:ChangS
+ bar:Lin
+ bar:Lai
+ bar:ChenCJ
+ bar:Cho
+
+PlotData=
+  width:5 align:left fontsize:S shift:(5,-4) anchor:till
+
+ bar:TangS
+  from: 13/03/1912 till: 27/06/1912 color:Communications
+  from: 05/08/1922 till: 19/09/1922 color:Communications text:"[[Tang Shaoyi]]"
+ bar:Lu
+  from: 29/06/1912 till: 22/09/1912 color:Independent
+  from: 22/12/1915 till: 22/03/1916 color:Independent text:"[[Lu Zhengxiang]]"
+ bar:Zhao
+  from: 25/09/1912 till: 16/07/1913 color:Independent text:"[[Zhao Bingjun]]"
+ bar:Duan
+  from: 19/07/1913 till: 31/07/1913 color:Beiyang
+  from: 22/04/1916 till: 23/05/1917 color:Beiyang
+  from: 14/07/1917 till: 22/11/1917 color:Beiyang
+  from: 23/03/1918 till: 10/10/1918 color:Beiyang text:"[[Duan Qirui]]"
+ bar:Xiong
+  from: 31/07/1913 till: 12/02/1914 color:Independent text:"[[Xiong Xiling]]"
+ bar:Sun
+  from: 12/02/1914 till: 01/05/1914 color:Independent
+  from: 12/01/1924 till: 02/07/1924 color:Independent text:"[[Sun Baoqi]]"
+ bar:Xu
+  from: 01/05/1914 till: 21/12/1915 color:Beiyang
+  from: 22/03/1916 till: 22/04/1916 color:Beiyang text:"[[Xu Shichang]]"
+ bar:WuT
+  from: 23/05/1917 till: 12/06/1917 color:Independent text:"[[Wu Tingfang]]"
+ bar:JiangC
+  from: 12/06/1917 till: 24/06/1917 color:Beiyang text:"[[Jiang Chaozong]]"
+ bar:Li
+  from: 25/06/1917 till: 02/07/1917 color:Independent text:"[[Li Jingxi]]"
+ bar:WangD
+  from: 22/11/1917 till: 30/11/1917 color:Progressive
+  from: 29/11/1922 till:11/12/1922 color:Progressive text:"[[Wang Daxie]]"
+ bar:WangS
+  from: 30/11/1917 till: 23/03/1918 color:Beiyang text:"[[Wang Shizhen (Beiyang government)|Wang Shizhen]]"
+ bar:Qian
+  from: 10/10/1918 till: 13/06/1919 color:Independent text:"[[Qian Nengxun]]"
+ bar:Gong
+  from: 13/06/1919 till: 24/09/1919 color:Independent text:"[[Gong Xinzhan]]"
+ bar:Jin
+  from: 24/09/1919 till: 14/03/1920 color:Beiyang
+  from: 09/08/1920 till: 18/12/1921 color:Beiyang text:"[[Jin Yunpeng]]"
+ bar:Sa
+  from: 02/07/1920 till: 09/08/1920 color:Independent text:"[[Sa Zhenbing]]"
+ bar:YanH
+  from: 18/12/1921 till: 24/12/1921 color:Independent
+  from: 12/06/1922 till: 05/08/1922 color:Independent
+  from: 14/09/1924 till: 31/10/1924 color:Independent
+  from: 13/05/1926 till: 22/06/1926 color:Independent text:"[[Yan Huiqing]]"
+ bar:Liang
+  from: 24/12/1921 till: 08/04/1922 color:Communications text:"[[Liang Shiyi]]"
+ bar:Zhou
+  from: 08/04/1922 till: 11/06/1922 color:Communications text:"[[Zhou Ziqi]]"
+ bar:WangC
+  from: 19/09/1922 till: 29/11/1922 color:Independent text:"[[Wang Chonghui]]"
+ bar:WangZ
+  from: 11/12/1922 till: 04/01/1923 color:Independent text:"[[Wang Zhengting]]"
+ bar:Zhang
+  from: 04/01/1923 till: 13/06/1923 color:Independent text:"[[Zhang Shaozeng]]"
+ bar:Gao
+  from: 14/06/1923 till: 12/02/1924 color:Beiyang text:"[[Gao Lingwei]]"
+ bar:Koo
+  from: 02/07/1924 till: 14/08/1924 color:Independent
+  from: 01/10/1926 till: 16/06/1927 color:Independent text:"[[Wellington Koo]]"
+ bar:Huang
+  from: 31/10/1924 till: 24/11/1924 color:kmt text:"[[Huang Fu]]"
+ bar:XuS
+  from: 26/12/1925 till: 04/03/1926 color:Beiyang text:"[[Xu Shiying]]"
+ bar:Jia
+  from: 04/03/1926 till: 20/04/1926 color:Beiyang text:"[[Jia Deyao]]"
+ bar:Hu
+  from: 20/04/1926 till: 13/03/1926 color:Beiyang text:"[[Hu Weide]]"
+ bar:DuX
+  from: 22/06/1926 till: 01/10/1926 color:Beiyang text:"[[Du Xigui]]"
+ bar:PanFu
+  from: 20/06/1927 till: 03/06/1928 color:Independent text:"[[Pan Fu]]"
+ bar:Tan
+  from: 25/10/1928 till: 22/09/1930 color:kmt text:"[[Tan Yankai]]"
+ bar:Soong
+  from: 25/09/1930 till: 18/11/1930 color:kmt
+  from: 31/05/1945 till: 01/03/1947 color:kmt text:"[[Soong Tse-ven]]"
+ bar:Chiang
+  from: 18/11/1930 till: 15/12/1931 color:kmt
+  from: 07/12/1935 till: 01/01/1938 color:kmt
+  from: 11/12/1939 till: 31/05/1945 color:kmt
+  from: 01/03/1947 till: 23/04/1947 color:kmt text:"[[Chiang Kai-shek]]"
+ bar:Chen
+  from: 15/12/1931 till: 28/12/1931 color:kmt text:"[[Chen Mingshu]]"
+ bar:SunF
+  from: 28/12/1931 till: 28/01/1932 color:kmt 
+  from: 26/11/1948 till: 12/03/1949 color:kmt text:"[[Sun Fo]]"
+ bar:WangJ
+  from: 28/01/1932 till: 01/12/1935 color:kmt text:"[[Wang Jingwei]]"
+ bar:Kung
+  from: 01/01/1938 till: 25/11/1939 color:kmt text:"[[Kung Hsiang-hsi]]"
+ bar:Chang
+  from: 23/04/1947 till: 24/05/1948 color:kmt text:"[[Zhang Qun]]"
+ bar:Weng
+  from: 24/05/1948 till: 26/11/1948 color:kmt text:"[[Weng Wenhao]]"
+ bar:He
+  from: 12/03/1949 till: 03/06/1949 color:kmt text:"[[He Yingqin]]"
+ bar:Yan
+  from: 03/06/1949 till: 07/03/1950 color:kmt text:"[[Yan Xishan]]"
+ bar:ChenChe
+  from: 07/03/1950 till: 07/06/1954 color:kmt 
+  from: 30/06/1958 till: 01/07/1963 color:kmt 
+  from: 16/09/1963 till: 15/12/1963 color:kmt text:"[[Chen Cheng]]"
+ bar:YuH
+  from: 07/06/1954 till: 30/06/1958 color:kmt text:"[[Yu Hung-Chun]]"
+ bar:Wang
+  from: 01/07/1963 till: 16/09/1963 color:ind text:"[[Wang Yun-wu]]"
+ bar:Yen
+  from: 15/12/1963 till: 29/05/1972 color:kmt text:"[[Yen Chia-kan]]"
+ bar:ChiangCK
+  from: 29/05/1972 till: 19/05/1978 color:kmt text:"[[Chiang Ching-kuo]]"
+ bar:Hsu
+  from: 19/05/1978 till: 01/06/1978 color:kmt text:"[[Hsu Ching-chung]]"
+ bar:SunY
+  from: 01/06/1978 till: 20/05/1984 color:kmt text:"[[Sun Yun-suan]]" 
+ bar:YuK
+  from: 20/05/1984 till: 21/05/1989 color:kmt text:"[[Yu Kuo-hwa]]"
+ bar:Lee
+  from: 21/05/1989 till: 01/06/1990 color:kmt text:"[[Lee Huan]]" 
+ bar:Hau
+  from: 01/06/1990 till: 10/02/1993 color:kmt text:"[[Hau Pei-tsun]]" 
+ bar:Lien
+  from: 10/02/1993 till: 01/09/1997 color:kmt text:"[[Lien Chan]]"
+ bar:Siew
+  from: 01/09/1997 till: 20/05/2000 color:kmt text:"[[Vincent Siew]]" 
+ bar:Tang
+  from: 20/05/2000 till: 06/10/2000 color:kmt text:"[[Tang Fei]]" 
+ bar:ChangC
+  from: 06/10/2000 till: 01/02/2002 color:dpp 
+  from: 21/05/2007 till: 20/05/2008 color:dpp text:"[[Chang Chun-hsiung]]"
+ bar:YuS
+  from: 01/02/2002 till: 01/02/2005 color:dpp text:"[[Yu Shyi-kun]]"
+ bar:Hsieh
+  from: 01/02/2005 till: 25/01/2006 color:dpp text:"[[Frank Hsieh]]"
+ bar:Su
+  from: 25/01/2006 till: 21/05/2007 color:dpp 
+  from: 14/01/2019 till: 31/01/2023 color:dpp text:"[[Su Tseng-chang]]"
+ bar:Liu
+  from: 20/05/2008 till: 10/09/2009 color:kmt text:"[[Liu Chao-shiuan]]"
+ bar:Wu
+  from: 10/09/2009 till: 06/02/2012 color:kmt text:"[[Wu Den-yih]]"
+ bar:ChenChu
+  from: 06/02/2012 till: 18/02/2013 color:kmt text:"[[Sean Chen (politician)|Chen Chun]]"
+ bar:Jiang
+  from: 18/02/2013 till: 08/12/2014 color:kmt text:"[[Jiang Yi-huah]]"
+ bar:Mao
+  from: 08/12/2014 till: 01/02/2016 color:kmt text:"[[Mao Chi-kuo]]"
+ bar:ChangS
+  from: 01/02/2016 till: 20/05/2016 color:ind text:"[[Chang San-cheng]]"
+ bar:Lin
+  from: 20/05/2016 till: 07/09/2017 color:ind text:"[[Lin Chuan]]"
+ bar:Lai
+  from: 08/09/2017 till: 14/01/2019 color:dpp text:"[[William Lai]]"
+ bar:ChenCJ
+  from: 31/01/2023 till: 20/05/2024 color:dpp text:"[[Chen Chien-jen]]"
+ bar:Cho
+  from: 20/05/2024 till: {{#time:d/m/Y}} color:dpp text:"[[Cho Jung-tai]]"
+}}
+
+==Rank in length by total tenure==
+{| class="wikitable sortable"
+|-
+!Rank
+!Individual
+!colspan=2|Days 
+!Assumed office
+!Left office
+!Notes
+|-
+|rowspan="2" |1
+|rowspan="2" |[[Chen Cheng]]
+|rowspan="2" style="text-align:center;" |3524
+|style="text-align:center;"|1544
+|10 March 1950
+|1 June 1954
+|
+|-
+|style="text-align:center;"|1980
+|15 July 1958
+|16 December 1963
+|
+|-
+|rowspan="3" |2
+|rowspan="3" |[[Chiang Kai-shek]]
+|rowspan="3" style="text-align:center;" |3135
+|style="text-align:center;"|386
+|24 November 1930
+|15 December 1931
+|Pre-1947 Constitution
+|-
+|style="text-align:center;"|747
+|16 December 1935
+|1 January 1938
+|Pre-1947 Constitution
+|-
+|style="text-align:center;"|2002
+|11 December 1939
+|4 June 1945
+|Pre-1947 Constitution
+|-
+|3
+|[[Yen Chia-kan]]
+|colspan="2" style="text-align:center;" |3090
+|16 December 1963
+|1 June 1972
+|
+|-
+|4
+|[[Sun Yun-suan]]
+|colspan="2" style="text-align:center;" |2192
+|1 June 1978
+|1 June 1984
+|
+|-
+|5
+|[[Chiang Ching-kuo]]
+|colspan="2" style="text-align:center;" |2179
+|1 June 1972
+|20 May 1978
+|
+|-
+|rowspan="2" |6
+|rowspan="2" |[[Su Tseng-chang]]
+|rowspan="2" style="text-align:center"| {{#expr:483+{{age in days|2019|1|14|2023|1|31}}}}
+|style="text-align:center;"|483
+|25 January 2006
+|21 May 2007
+|
+|-
+|style="text-align:center;"| {{age in days|2019|1|14|2023|1|31}}
+|14 January 2019
+|31 January 2023
+|
+|-
+|7
+|[[Yu Kuo-hua]]
+|colspan="2" style="text-align:center;" |1826
+|1 June 1984
+|1 June 1989
+|
+|-
+|8
+|[[Lien Chan]]
+|colspan="2" style="text-align:center;" |1647
+|27 February 1993
+|1 September 1997
+|
+|-
+|9
+|[[Yu Hung-chun]]
+|colspan="2" style="text-align:center;" |1505
+|1 June 1954
+|15 July 1958
+|
+|-
+|10
+|[[Wang Jingwei]]
+|colspan="2" style="text-align:center;" |1417
+|29 January 1932
+|16 December 1935
+|Pre-1947 Constitution
+|-
+|11
+|[[Yu Shyi-kun]]
+|colspan="2" style="text-align:center;" |1096
+|1 February 2002
+|1 February 2005
+|
+|-
+|12
+|[[Hau Pei-tsun]]
+|colspan="2" style="text-align:center;" |1002
+|1 June 1990
+|27 February 1993
+|
+|-
+|13
+|[[Vincent Siew]]
+|colspan="2" style="text-align:center;" |992
+|1 September 1997
+|20 May 2000
+|
+|-
+|-bgcolor="ccccff"
+|'''14'''
+|'''[[Cho Jung-tai]]'''
+| colspan="2" style="text-align:center;" |'''{{age in days|2024|5|20}}'''
+|20 May 2024
+|''Incumbent''
+|
+|-
+|15
+|[[Wu Den-yih]]
+|colspan="2"|{{center|879}}
+|10 September 2009
+|6 February 2012
+|
+|-
+|rowspan="2" |16
+|rowspan="2" |[[Chang Chun-hsiung]]
+|rowspan="2" |{{center|848}}
+|{{center|483}}
+|6 October 2000
+|1 February 2002
+|
+|-
+|{{center|365}}
+|21 May 2007
+|20 May 2008
+|
+|-
+|17
+|[[H. H. Kung]]
+|colspan="2"|{{center|709}}
+|1 January 1938
+|11 December 1939
+|Pre-1947 Constitution
+|-
+|18
+|[[Tan Yankai]]
+|colspan="2"|{{center|697}}
+|25 October 1928
+|22 September 1930
+|Pre-1947 Constitution
+|-
+|19
+|[[Jiang Yi-huah]]
+|colspan="2"|{{center|658}}
+|18 February 2013
+|8 December 2014
+|
+|-
+|20
+|[[T. V. Soong]]
+|colspan="2"|{{center|635}}
+|4 June 1945
+|1 March 1947
+|Pre-1947 Constitution
+|
+|-
+|21
+|[[William Lai]]
+|colspan="2"|{{center|493}}
+|8 September 2017
+|14 January 2019
+|
+|-
+|22
+|[[Liu Chao-shiuan]]
+|colspan="2"|{{center|478}}
+|20 May 2008
+|10 September 2009
+|
+|-
+|23
+|[[Lin Chuan]]
+|colspan="2"|{{center|476}}
+|20 May 2016
+|8 September 2017
+|
+|-
+|24
+|[[Chen Chien-jen]]
+| colspan="2" style="text-align:center;"|{{age in days|2023|1|31|2024|5|20}}
+|31 January 2023
+|20 May 2024
+|
+|-
+|25
+|[[Mao Chi-kuo]]
+|colspan="2"|{{center|420}}
+|8 December 2014
+|1 February 2016
+|-
+|26
+|[[Zhang Qun|Chang Chun]]
+|colspan="2"|{{center|402}}
+|23 April 1947
+|29 May 1948
+|Pre-1947 Constitution
+|-
+|27
+|[[Sean Chen (politician)|Sean Chen]]
+|colspan="2"|{{center|378}}
+|6 February 2012
+|18 February 2013
+|
+|-
+|28
+|[[Lee Huan]]
+|colspan="2"|{{center|365}}
+|1 June 1989
+|1 June 1990
+|
+|-
+|29
+|[[Frank Hsieh]]
+|colspan="2"|{{center|358}}
+|1 February 2005
+|25 January 2006
+|
+|-
+|30
+|[[Yan Xishan]]
+|colspan="2"|{{center|275}}
+|13 June 1949
+|15 March 1950
+|
+|-
+|31
+|[[Weng Wenhao]]
+|colspan="2"|{{center|208}}
+|29 May 1948
+|23 December 1948
+|
+|-
+|32
+|[[Tang Fei]]
+|colspan="2"|{{center|139}}
+|20 May 2000
+|6 October 2000
+|
+|-
+|rowspan="2" |33
+|rowspan="2" |[[Sun Fo]]
+|rowspan="2" |{{center|119}}
+|{{center|28}}
+|1 January 1932
+|29 January 1932
+|Pre-1947 Constitution
+|-
+|{{center|91}}
+|23 December 1948
+|24 March 1949
+|
+|-
+|34
+|[[Chang San-cheng]]
+|colspan="2"|{{center|109}}
+|1 February 2016
+|20 May 2016
+|
+|-
+|35
+|[[He Yingqin]]
+|colspan="2"|{{center|81}}
+|24 March 1949
+|13 June 1949
+|
+|-
+|}
+
+== Notes ==
+{{NoteFoot}}
+
+== References ==
+{{reflist}}
+
+==See also==
+* [[List of presidents of the Republic of China]]
+* [[List of rulers of Taiwan]]
+* [[List of vice presidents of the Republic of China]]
+* [[Vice Premier of the Republic of China]]
+* [[List of political office-holders of the Republic of China by age]]
+
+{{Premiers of the Republic of China}}
+
+{{DEFAULTSORT:Premiers of the Republic of China}}
+[[Category:Premiers of the Republic of China| ]]
+[[Category:Premiers of the Republic of China on Taiwan| ]]
+[[Category:Lists of Taiwanese politicians|Premiers]]
+[[Category:Executive Yuan|Premiers]]
+[[Category:Political office-holders in the Republic of China on Taiwan]]
+[[Category:Political office-holders in the Republic of China (1912–1949)]]
+[[Category:Lists of leaders of China|Premiers Taiwan]]
+[[Category:Lists of heads of government|Republic of China]]
+[[Category:Lists of prime ministers by country|Republic of China]]
+[[Category:Lists of political office-holders in the Republic of China|Premier]]
+[[Category:Taiwan politics-related lists|Premiers]]

@@ -20,6 +20,8 @@ from __future__ import annotations
 
 from functools import lru_cache
 
+from .geolock import locked_lru
+
 from shapely import make_valid, prepare
 from shapely.geometry import shape
 
@@ -84,7 +86,7 @@ class Transitions:
             self._geoms[i] = g
         return self._geoms[i]
 
-    @lru_cache(maxsize=24)
+    @locked_lru(maxsize=24)
     def compose(self, vid: str):
         """-> (features {fid: {props, geom}}, origin {fid: (snap, fid)}, notes[list])"""
         base, date = self.parse(vid)

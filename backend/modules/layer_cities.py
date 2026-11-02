@@ -35,7 +35,10 @@ class CitiesLayer(LayerModule):
         fx_path = Path(ctx.data_dir) / "curated" / "capital_fixes.json"
         fixes = json.loads(fx_path.read_text(encoding="utf-8")) if fx_path.exists() else {}
         self.n_capital_fixes = 0
-        for r in load_records(Path(ctx.data_dir) / "cities.json.gz"):
+        from ..zh import fill as zh_fill
+        _recs = load_records(Path(ctx.data_dir) / "cities.json.gz")
+        zh_fill(_recs, ctx.data_dir)
+        for r in _recs:
             start = rec_key(r.get("from"))
             fx = fixes.get(r.get("id"))
             fixed_caps = [{"from": per["from"]} for f in (fx or {}).values() if isinstance(f, dict) for per in f.get("periods", [])]
@@ -79,7 +82,8 @@ class CitiesLayer(LayerModule):
         for r in self.recs:
             if r["_from"] > dk or (r["_to"] is not None and dk > r["_to"]):
                 continue
-            name = r.get("zh") or r.get("en")
+            from ..zh import disp
+            name = disp(r.get("zh") or r.get("en"))
             hist = []
             for n in r.get("names", []):
                 if self._valid(dk, n.get("from"), n.get("to")):
