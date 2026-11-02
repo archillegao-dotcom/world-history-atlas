@@ -57,6 +57,9 @@ def main():
     mac = sorted(folder.glob("WorldHistoryAtlas-macos-*.zip"))
     if not mac:
         lines.append("（这次没有 macOS 压缩包。）")
+    if not any("arm64" in z.name for z in mac):
+        lines.append("这次没有 Apple 芯片专用包：GitHub 的 arm64 构建机器把还在排队的任务取消了。请先用下面的 Intel 包，Apple 芯片的 Mac 可以通过 Rosetta 2 打开它。")
+        lines.append("")
     for z in mac:
         minos = _plist(z).get("LSMinimumSystemVersion") or "见 App 的最低系统版本"
         if "arm64" in z.name:

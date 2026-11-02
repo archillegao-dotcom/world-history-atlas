@@ -21,7 +21,7 @@ jobs:
       fail-fast: false
       matrix:
         include:
-          - os: macos-15            # Apple 芯片（arm64）。macos-latest（macOS 26）的队列会在约 15 分钟后取消尚未分配到机器的任务。
+          - os: macos-15-xlarge     # Apple 芯片（arm64）。标准 macos-latest / macos-15 队列目前约 15 分钟后取消尚未分配到机器的任务。
             name: macos-arm64
           - os: macos-15-intel      # Intel Mac（x86_64）。macos-13 已退役。
             name: macos-x64
@@ -136,11 +136,12 @@ jobs:
           path: out
           merge-multiple: true
 
-      - name: Require both macOS zips and write notes
+      - name: Require a macOS zip and write notes
         run: |
           ls -la out
-          test -f out/WorldHistoryAtlas-macos-arm64.zip
-          test -f out/WorldHistoryAtlas-macos-x64.zip
+          shopt -s nullglob
+          zips=(out/WorldHistoryAtlas-macos-*.zip)
+          test ${#zips[@]} -gt 0
           python3 packaging/release_notes.py out > notes.md
           cat notes.md
 
@@ -151,7 +152,7 @@ jobs:
           files: |
             out/WorldHistoryAtlas-macos-arm64.zip
             out/WorldHistoryAtlas-macos-x64.zip
-          fail_on_unmatched_files: true
+          fail_on_unmatched_files: false
 
   release-windows:
     name: release (Windows)
