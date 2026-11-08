@@ -31,13 +31,13 @@ async function pick(lat, lon) {
 }
 
 async function lawButton() {
-  return page.evaluate(() => [...document.querySelectorAll("#tabs button")].some((b) => b.textContent.startsWith("宪法")));
+  return page.evaluate(() => [...document.querySelectorAll("#tabs button")].some((b) => b.textContent.includes("宪法 / 基本法")));
 }
 
 async function openLaw() {
-  await page.waitForFunction(() => [...document.querySelectorAll("#tabs button")].some((b) => b.textContent.startsWith("宪法")), { timeout: 15000 });
+  await page.waitForFunction(() => [...document.querySelectorAll("#tabs button")].some((b) => b.textContent.includes("宪法 / 基本法")), { timeout: 15000 });
   const box = await page.evaluate(() => {
-    const b = [...document.querySelectorAll("#tabs button")].find((x) => x.textContent.startsWith("宪法"));
+    const b = [...document.querySelectorAll("#tabs button")].find((x) => x.textContent.includes("宪法 / 基本法"));
     b.scrollIntoView({ block: "nearest", inline: "center" });
     const r = b.getBoundingClientRect();
     return { x: r.x + r.width / 2, y: r.y + Math.min(r.height / 2, 12) };
@@ -98,8 +98,17 @@ await page.screenshot({ path: "/opt/cursor/artifacts/const-desktop-1946-paris.pn
 
 await jump(1944, 12, 1);
 await pick(52.52, 13.405);
-if (await lawButton()) problems.push("1944 柏林不该出现宪法页");
-await page.screenshot({ path: "/opt/cursor/artifacts/const-desktop-1944-berlin.png" });
+if (!(await lawButton())) problems.push("1944 柏林应显示宪法 / 基本法");
+else {
+  await openLaw();
+  const t = await headings();
+  const text = await page.evaluate(() => document.querySelector(".mod-constitution").innerText);
+  if (!t.includes("魏玛宪法")) problems.push("1944 柏林没有魏玛宪法 " + t.join("|"));
+  if (!text.includes("形式未废止，实际被架空")) problems.push("1944 柏林没有写明被架空");
+  if (t.includes("德意志联邦共和国基本法")) problems.push("1944 柏林显示了基本法");
+  if (!text.includes("不等于")) problems.push("1944 柏林没有写明未列出不等于没有");
+}
+await page.screenshot({ path: "/opt/cursor/artifacts/const7-desktop-1944-berlin.png" });
 
 await open(390, 844, "#date=1947-05-02&style=strategy&c=35.7,139.7&z=5");
 await pick(35.69, 139.69);
@@ -120,8 +129,18 @@ else {
   const t = await headings();
   if (!t.includes("日本国宪法")) problems.push("5月3日不是日本国宪法 " + t.join("|"));
   if (t.includes("大日本帝国宪法")) problems.push("5月3日仍显示帝国宪法");
+  const text = await page.evaluate(() => document.querySelector(".mod-constitution").innerText);
+  if (!text.includes("六个月经过之后的那一天起施行")) problems.push("第100条转写不对");
+  if (text.includes("满六个月的那一天施行，即1947年5月3日")) problems.push("仍把推算日期写进第100条");
+  const label = await page.evaluate(() => {
+    const b = [...document.querySelectorAll("#tabs button")].find((x) => x.textContent.includes("宪法 / 基本法"));
+    const r = b.getBoundingClientRect();
+    return { text: b.textContent, w: r.width, h: r.height, top: r.top };
+  });
+  if (!label.text.includes("宪法 / 基本法")) problems.push("页签名不对 " + label.text);
+  if (label.h < 18 || label.w < 80) problems.push("窄屏页签太小 " + JSON.stringify(label));
 }
-await page.screenshot({ path: "/opt/cursor/artifacts/const-phone-1947-05-03-tokyo.png" });
+await page.screenshot({ path: "/opt/cursor/artifacts/const7-phone-1947-tokyo.png" });
 
 await open(390, 844, "#date=2000-06-01&style=strategy&c=51.5,-0.1&z=5");
 await pick(51.5074, -0.1276);
@@ -134,6 +153,18 @@ else {
   if (text.includes("单一成文宪法") && !text.includes("没有一部")) problems.push("伦敦被写成单一成文宪法");
 }
 await page.screenshot({ path: "/opt/cursor/artifacts/const-phone-london-2000.png" });
+
+await open(1440, 900, "#date=1949-05-23&style=strategy&c=50.7,7.1&z=6");
+await pick(50.737, 7.1);
+if (!(await lawButton())) problems.push("1949-05-23 波恩没有宪法 / 基本法");
+else {
+  await openLaw();
+  const text = await page.evaluate(() => document.querySelector(".mod-constitution").innerText);
+  if (!text.includes("于公布当日结束时生效")) problems.push("波恩没有结束时生效");
+  if (!text.includes("不把5月23日全天写成尚未生效")) problems.push("波恩把5月23日全天写成尚未生效");
+  if (text.includes("生效：1949-05-24")) problems.push("波恩把5月24日写成生效日");
+}
+await page.screenshot({ path: "/opt/cursor/artifacts/const7-desktop-1949-05-23-bonn.png" });
 
 await browser.close();
 if (problems.length) {

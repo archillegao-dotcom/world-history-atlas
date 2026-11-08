@@ -89,7 +89,7 @@
     openDetail: (html) => { $("detailBody").innerHTML = html; $("detail").classList.remove("hidden"); $("detailBody").scrollTop = 0; return $("detailBody"); },
   };
   const allPanelMods = () => state.meta.modules.filter((m) => (m.kind || "panel") === "panel");
-  // 宪法页只在这一天有正在施行的文本时出现。没请求回来之前不先占一个空标签。
+  // 点选之后显示「宪法 / 基本法」。请求回来之前不先占一个空标签。页内说明：没有列出不等于没有。
   const panelMods = () => allPanelMods().filter((m) => m.id !== "constitution" || !!(results.constitution && results.constitution.shown));
   const layerMods = () => state.meta.modules.filter((m) => m.kind === "layer");
 
