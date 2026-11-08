@@ -344,7 +344,19 @@ class PolityResolver:
         if not lo <= snap <= hi:
             return []
         f = self.geo.polity(snap, fid)
-        grp = self.dyn["names"].get(f["props"].get("NAME")) if f else None
+        pname = f["props"].get("NAME") if f else None
+        # 底图拼写 Zhoa / Zhou states 是周，不是商。若套用整份「main」朝代，前1046年以前西周尚未开始，
+        # 这块会和 Sinic 一起落到商朝，看起来像两个商。这里只给周的条目，并用底图快照的年份撑住候选，
+        # 避免再沿「取代了商」退回商朝。周灭商的学术年代仍约前1046年，传统纪年（约前1122年）不是依据。
+        # https://en.wikipedia.org/wiki/Western_Zhou
+        # https://en.wikipedia.org/wiki/Xia%E2%80%93Shang%E2%80%93Zhou_Chronology_Project
+        if pname in ("Zhoa", "Zhou states"):
+            return [
+                ["Q1069609", "dynasty", 480, -15000101, -7710101],
+                ["Q307066", "dynasty", 470, -7710101, -2560101],
+                ["Q35216", "dynasty", 460, -10460101, -2560101],
+            ]
+        grp = self.dyn["names"].get(pname) if pname else None
         if not grp:
             return []
         order = (self.dyn["main"] + self.dyn["secondary"]) if grp == "main" else (grp + self.dyn["main"] + self.dyn["secondary"])

@@ -105,7 +105,7 @@ CShapes 只记录法理国家边界，不记录军事占领。v0.6.0 用控制�
 ### 已按来源改、但仍不完整
 
 - 台湾：1895-04-17 至 05-23 仍标台湾清治时期（Q391189），并注明 05-08 换约到 05-23 之间没有稳定新政权。台湾民主国按英文维基取 1895-05-23 至 10-21（[Republic of Formosa](https://en.wikipedia.org/wiki/Republic_of_Formosa)）。日治从 1895-10-21 台南开城起（[Capitulation of Tainan](https://en.wikipedia.org/wiki/Capitulation_of_Tainan)），不是从 04-17 签约日起算全岛。光复日 1945-10-25 起才标中华民国。中文维基[乙未戰爭](https://zh.wikipedia.org/wiki/%E4%B9%99%E6%9C%AA%E6%88%B0%E7%88%AD)写抵抗到 1895-11-18，一张多边形画不出由北向南的推进。
-- CShapes 里台湾殖民地行在 1945-08-15 结束，独立行从 1949-12-08 才开始。1945-08-15 至 1949-12-08 没有台湾多边形。本批不新造。
+- 台湾 1945-08-15 至 1949-12-08：第二批不再留空。CShapes 原把岛并回中国。现在日治延到 1945-10-25，10-25 至 1949-12-08 复用同一块岛，并从中国行里挖掉。澎湖不在这块里，没有另画。
 - 朝鲜：《日韩合并条约》1910-08-22 签字、08-29 公布生效。代码把 CShapes 的 1910-08-23 改到 1910-08-29。关东州没有单独的 CShapes 行；v0.6.0 已有的旅顺/大连控制区没有在本批重画。
 - 南桦太：多边形从《朴茨茅斯条约》1905-09-05 起归大日本帝国，到 1945-08-15。日军 1905-07 登陆早于这条多边形，没有另画。
 - 桂柳会战：桂林一带用原来的广西近似框，1944-11-10 至 1945-08-16 改为日军军事占领（Q188712），从汪政权色块里挖出。城市陷落：桂林 11-10、柳州 11-11、南宁 11-24（[Battle of Guilin–Liuzhou](https://en.wikipedia.org/wiki/Battle_of_Guilin%E2%80%93Liuzhou)、[Operation Ichi-Go](https://en.wikipedia.org/wiki/Operation_Ichi-Go)、[桂柳会战](https://zh.wikipedia.org/wiki/%E6%A1%82%E6%9F%B3%E4%BC%9A%E6%88%98)）。1945 年撤出（南宁 05-26、柳州 06-30、桂林 07-28）没有按城市再切。湖南、河南的一号作战走廊（长沙、衡阳、郑州一带）本批没有改，仍可能标成汪政权，待核验。
@@ -116,23 +116,22 @@ CShapes 只记录法理国家边界，不记录军事占领。v0.6.0 用控制�
 - 维希职务：Q1934893 只有德/法标签 Militärbefehlshaber，没有英/中文标签。显示 `Militärbefehlshaber（暂无通用译名）`，只出现在纳粹德国面板。维希不再列出这条，也不再列出挂在法国 Q142 / 第三共和国上的职务。在任者 Q68590 的中文名用 Wikidata 标签「奥托·冯·施蒂尔普纳格尔」（[Q68590](https://www.wikidata.org/wiki/Q68590)、[Otto von Stülpnagel](https://en.wikipedia.org/wiki/Otto_von_St%C3%BClpnagel)）。维希国家元首一行仍带「（译名）」，本批没有另找通用译名。
 - 斯洛伐克附庸的结束日写成 1945-05-08。Wikidata 的结束只有年份精度，这一天是选用的，不是逐日文献。
 
-### 本批重跑（2026-11-08，服务端口 8792，版本 0.6.2）
+### 第一批当时的复跑（后来被第二批替换）
 
+第一批在旧发布运行时上得到：`p0_1941.py` 22/22；mustpass 只跑了中日战争 10/10、二战 19/19、法国 10/10；占领区阵营 72 个快照、1516 次检查、0 处缺失；`manchuria_no_roc.py` 162 个月、311 处失败。那 311 处是旧几何：兴安南落到 China，热河又是单独一块。不是 2026-11-05 快照的结果。
+
+### 第二批复跑（2026-11-08，换回快照运行时之后，端口 8792，版本 0.6.2）
+
+- `WHA_PORT=8792 python3 tools/accept/p0_batch2.py`：16 条通过。
 - `WHA_PORT=8792 python3 tools/accept/p0_1941.py`：22/22。
-- `python3 tools/accept/api_mustpass.py 中日战争`：10/10。
-- `python3 tools/accept/api_mustpass.py 二战`：19/19（二战欧洲 17、北非 2）。
-- `python3 tools/accept/api_mustpass.py 法国`：10/10（含 5 条法国政权链和 5 条二战法国）。
-- `WHA_PORT=8792 python3 tools/accept/ww2_occupation_bloc.py`：72 个快照、1516 个占领区检查、0 个既不是轴心/同盟成员也没有附庸标签。附庸算作 client_of，不要求它同时是签署国。
-- `WHA_PORT=8792 python3 tools/accept/manchuria_no_roc.py`：162 个月，311 处失败。兴安南（44.0, 121.0）落到 China；1933-04 起热河控制区与 CShapes 满洲国是两个多边形。这是 2026-11-02「manchuria_no_roc 已通过」的记录未能复现。0.6.2 的 `tools/build_cshapes.py` 要把热河并进满洲国，但缺下面的原始底图，本批没有改几何，也没有改测试去掩盖。
-- `python3 packaging/test_launcher_translocation.py`：通过。
-- 整份 `api_mustpass.py`（119 条）、截图、战争审计、君主与空位期验收没有跑。
+- `python3 tools/accept/api_mustpass.py`：119/119。
+- `WHA_PORT=8792 python3 tools/accept/manchuria_no_roc.py`：162 个月，0 处失败。
+- `WHA_PORT=8792 python3 tools/accept/ww2_occupation_bloc.py`：72 个快照，1444 次检查，0 处缺失。次数比第一批少，是因为不再另画一块热河。
+- 没有跑截图，没有跑打包版。`packaging/test_launcher_translocation.py` 本批没有重跑（第一批通过）。
 
-### 缺文件（不能用旧数据冒充、也不能现造）
+### 数据
 
-- `data/basemaps_raw/ne_10m_admin_0_countries.geojson`
-- `data/basemaps_raw/ne_10m_admin_1_states_provinces.geojson`
-- `data/basemaps_raw/ne_10m_minor_islands.geojson`
-- `data/basemaps/1930.geojson.gz`（同名 `.xz` 在，程序读的是 xz；重建脚本打开的是 gz）
-- `data/cshapes_raw/`（现用的 `data/cshapes.json.xz` 是已发布 0.6.1 的成品，本批只在加载时改了台湾、朝鲜、南桦太的时期）
-- 《中华民国史事纪要》PDF 不在这份源码附件里。本批没有用它。
-- `ccw_roc_guangdong_1949`、`ccw_roc_guangxi_1949` 只写进了 `data/curated/control_zones.json`，没有烘进 `data/control_zones.json.xz`。缺省界原始文件，不能烘。
+- `data/basemaps_raw/` 下三个 Natural Earth 文件、`data/basemaps/1930.geojson.gz`、`data/cshapes_raw/`（CSV、geojson、codebook、gw.topojson、cshapes 包）已经放进仓库。本批没有重烘 cshapes。
+- 台湾 1945-08-15 至 1949-12-08：日治延到 1945-10-25，其后复用同一块岛，并从同期中国多边形里挖掉。澎湖仍不在这块多边形里。
+- 《中华民国史事纪要》全文仍不在仓库里。这只阻塞按卷页驱动的每日新闻，不阻塞其他修复。
+- TNO / 钢铁雄心 IV 风格的省界、地形和前线还在队列里，见 `docs/REQUIREMENTS_0.6.2.md` 的 T01。不用游戏地图当史料。M6 原生包免做。

@@ -242,4 +242,28 @@
 
 ### 本批明确没做
 
-交接清单里其余项（前 1136 重复商、法国 2000 面板、1950 细节、1911 各省、甘丹颇章、藏南/阿克赛钦、维希条约、史事纪要、悬停 GDP、宪法页、更细地图、Apple 芯片包、重复政权重跑、打包发布）都留在后面。湖南/河南一号作战、自由法国边界、台湾 1945–49 多边形空档、波罗的海 1940-06-02 截断、关东州单独行、美国等同盟加入日，本批没有改。缺 `data/basemaps_raw/` 和 `data/cshapes_raw/`，所以不能重烘控制区，也不能把热河并进满洲国。
+交接清单里其余项当时还留在后面。第一批结束时工作区没有 `data/basemaps_raw/` 和 `data/cshapes_raw/`。
+
+## 2026-11-08 第二批（欧洲/巴黎）：换回 11-05 运行时，并做法国、周/商、台湾 1945–49
+
+第一批的 311 处满洲失败是因为把 0.6.2 源码盖在已发布的 0.6.1 运行时上，热河被拆成第二块满洲国，兴安南落在旧的「Manchuria」多边形外面。不是 2026-11-05 快照本身的结果。本批换回该快照的 `cshapes`、`control_zones`、`transitions`。`ww2_europe` 解压后与仓库里的文件相同，没有换。桂林日军占领是在快照几何上挖掉原有广西折线，没有新造边界，复测仍是大日本帝国。
+
+四包原始数据已放进 `data/basemaps_raw/`、`data/basemaps/1930.geojson.gz`、`data/cshapes_raw/`。快照里的满洲国已经是两段（1932-03-01 至 1933-03-04 不含热河，1933-03-04 起含热河和黑吉辽补块）。没有重跑 `build_cshapes.py`，避免把这份快照再改偏。单独的热河控制区从整理数据里去掉，免得以后又画出两个满洲国。
+
+台湾：CShapes 在 1945-08-15 把岛屿并回中国多边形，点选会先命中中国。本批把 1945-08-15 至 1949-12-08 的中国行挖去原有台湾岛几何，并把日治多边形延到 1945-10-25、10-25 至 12-08 复用同一块岛。澎湖不在这块里。来源：[Retrocession Day](https://en.wikipedia.org/wiki/Retrocession_Day)。
+
+2000-06-01 巴黎：政权链当前行是法兰西第五共和国（1958-10-04 起），旗是 Flag of France (1976–2020)。Wikidata「法国」Q142 的起点仍是 481 年，面板注明那不是第五共和国的成立日。来源：[French Fifth Republic](https://en.wikipedia.org/wiki/French_Fifth_Republic)。
+
+前 1136 年：Sinic 多边形是商朝；Zhoa 多边形改为周，不再是第二块商。周灭商采用约前 1046 年，传统约前 1122 年不作为依据。底图是前 1500 年快照。来源：[Western Zhou](https://en.wikipedia.org/wiki/Western_Zhou)、[Xia–Shang–Zhou Chronology Project](https://en.wikipedia.org/wiki/Xia%E2%80%93Shang%E2%80%93Zhou_Chronology_Project)。
+
+TNO / 钢铁雄心 IV 风格地图仍在队列里，本批没有做。只参考视觉，不用游戏数据当史料。M6 / Apple 芯片原生包按用户指示免做，现有 Mac 包不因此取消。完整队列见 `docs/REQUIREMENTS_0.6.2.md`。
+
+### 本批命令（都在 8792、版本 0.6.2 上）
+
+- `tools/accept/p0_batch2.py`：16 条通过，退出码 0。
+- `tools/accept/p0_1941.py`：22/22。
+- `tools/accept/api_mustpass.py`：119/119。
+- `tools/accept/manchuria_no_roc.py`：162 个月，0 处失败。
+- `tools/accept/ww2_occupation_bloc.py`：72 个快照，1444 次检查，0 处缺失。
+
+没有跑截图，没有跑打包版。维希条约、1911 各省、甘丹颇章、藏南、1950 海南和李弥部、悬停经济和宪法页都还没做。

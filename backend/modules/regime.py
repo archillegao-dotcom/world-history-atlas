@@ -93,13 +93,46 @@ class RegimeModule(ContentModule):
             for r in now_sel:
                 if r.get("qid") in R.states and all(x["id"] != r["qid"] for x in fl_states):
                     fl_states.insert(1, R.states[r["qid"]])
+        # 政权链上的当前行比 Wikidata 国家总条目更具体时，面板按当前政权显示。
+        # 「法国」Q142 的起点是 481 年（只精确到年），那是把国家追溯到法兰克王国，不是第五共和国的成立日。
+        # https://en.wikipedia.org/wiki/French_Fifth_Republic
+        # https://www.wikidata.org/wiki/Q142
+        display_name = None
+        display_from = None
+        display_to = None
+        extra_note = None
+        if chn and len(now_sel) == 1 and now_sel[0].get("zh") and now_sel[0].get("qid") not in (None, st["id"]):
+            row = now_sel[0]
+            long_y = (st.get("from") or {}).get("y")
+            reg_from = row.get("from") or ""
+            reg_y = int(reg_from[:4]) if len(reg_from) >= 4 and reg_from[:4].isdigit() else None
+            # 只在国家总条目比当前政权早得多时改显示（法国 Q142 的 481 年对第五共和国）。
+            # 不改那些起点本来就在近代的国家，避免把面板标题整表换掉。
+            if long_y is not None and reg_y is not None and long_y < 800 and reg_y >= 1700:
+                display_name = row["zh"]
+                display_from = row.get("from")
+                display_to = row.get("to")
+                long_from = fmt_time(st.get("from")) if st.get("from") else "未记录"
+                extra_note = (f"所选日期的政权是{row['zh']}"
+                              + (f"（{row.get('from')} 起）" if row.get("from") else "")
+                              + f"。Wikidata 条目「{st.get('zh') or st.get('en') or st['id']}」的起点记为 {long_from}，"
+                              "那是把后来的国家追溯到更早的政治体，不是这个政权的成立日。")
+        if params.get("_dynasty_before_start"):
+            extra_note = (f"底图多边形名称是 {params['_dynasty_before_start']}（周，不是商）。"
+                          "周灭商的通行学术年代约前1046年（夏商周断代工程；另有约前1050至前1027年的估计）。"
+                          "传统纪年里的约前1122年不作为依据。这张底图是公元前1500年的快照，要到下一张才更换，"
+                          "所以前1046年以前这块仍然单独画出，不能再标成第二块商朝。"
+                          " https://en.wikipedia.org/wiki/Western_Zhou"
+                          " https://en.wikipedia.org/wiki/Xia%E2%80%93Shang%E2%80%93Zhou_Chronology_Project")
+            display_name = "周（底图名称；周灭商约前1046年）"
         fl, fl_dated, fl_from, fl_src = flag_at(ctx.data_dir, fl_states, dk)
         summ = wiki.summary(st.get("zhwiki"), st.get("enwiki")) if params.get("online", True) else None
         term = lambda x: {"id": x["v"], "name": _zh_disp(x.get("zh") or x.get("en") or x["v"]), "en": x.get("en")}
         return {"items": [], "total": 1, "kind": "regime",
-                "state": {"id": st["id"], "name": _zh_disp(st.get("zh") or st.get("en")), "en": st.get("en"),
-                          "desc": st.get("desc"), "from": fmt_time(st.get("from")) if st.get("from") else None,
-                          "to": fmt_time(st.get("to")) if st.get("to") else None,
+                "state": {"id": st["id"], "name": display_name or _zh_disp(st.get("zh") or st.get("en")), "en": st.get("en"),
+                          "desc": st.get("desc"),
+                          "from": display_from if display_from is not None else (fmt_time(st.get("from")) if st.get("from") else None),
+                          "to": display_to if display_from is not None else (fmt_time(st.get("to")) if st.get("to") else None),
                           "flag": wiki.commons_thumb(fl, 160), "flag_file": fl, "flag_dated": fl_dated,
                           "flag_note": (fl_src if fl else (fl_src or "Wikidata 没有该政权的国旗记录")) if (fl_src or not fl) else None,
                           "zhwiki": st.get("zhwiki"), "enwiki": st.get("enwiki")},
@@ -114,7 +147,7 @@ class RegimeModule(ContentModule):
                                   "rows": [{k: r.get(k) for k in ("from", "to", "zh", "qid", "parallel", "note", "src", "current")} for r in chn["rows"]]},
                 "definition": wiki.first_sentence(summ["extract"]) if summ else None,
                 "definition_src": summ and {"lang": summ["lang"], "url": summ["url"], "title": summ["title"]},
-                "note": "政体等字段以 Wikidata 为准；没有时间限定的值单独标出（可能不适用于所选日期）。"}
+                "note": " ".join(x for x in ("政体等字段以 Wikidata 为准；没有时间限定的值单独标出（可能不适用于所选日期）。", extra_note) if x)}
 
 
 MODULE = RegimeModule()

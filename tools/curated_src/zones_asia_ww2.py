@@ -95,9 +95,9 @@ Z.append(zone("sjw_manchuria_1931", "日本关东军占领区（中国东北）"
               dates_note="1931-09-18 九一八事变后关东军逐步占领东北：沈阳 09-19、吉林 09-21、齐齐哈尔 11-19、锦州 1932-01-03、哈尔滨 1932-02-05；1932-03-01 成立满洲国。",
               note="范围用 historical-basemaps 1930 年「Manchuria」多边形近似，按完成占领后的范围显示（其间各地失守日期不同）。",
               sources=[WP + "Japanese_invasion_of_Manchuria", WP + "Mukden_incident"]))
-Z.append(zone("sjw_jehol_1933", "满洲国（热河省，1933 年 3 月起）", "Manchukuo (Jehol)", "Q30623", "满洲国", "1933-03-04", "1945-08-19", poly(JEHOL),
-              dates_note="热河作战：日军与满洲国军 1933-02-23 进攻，03-04 承德失守，热河并入满洲国；1945-08 苏联对日作战后满洲国瓦解（溥仪 08-18 宣布退位）。",
-              note="热河省范围为手绘近似（±50 km）。", sources=[WP + "Operation_Nekka", WP + "Rehe_Province"]))
+# 热河不再单独做成第二块满洲国。1933-03-04 起并进 CShapes 补充多边形（tools/build_cshapes.py，
+# 来源 https://en.wikipedia.org/wiki/Battle_of_Rehe ）。单独再画一块会在地图上出现两个满洲国。
+# JEHOL 折线仍用于 1945-08 起的苏军占领东北。
 Z.append(zone("sjw_east_hebei", "冀东防共自治政府", "East Hebei Autonomous Council", "Q707917", "冀东防共自治政府", "1935-11-25", "1938-02-01", poly(EAST_HEBEI),
               dates_note="1935-11-25 殷汝耕在通州成立「冀东防共自治委员会」（12 月改称政府），辖冀东 22 县；1938-02-01 并入中华民国临时政府。",
               note="22 县范围为手绘近似（长城以南、通州以东至山海关）。", sources=[WP + "East_Hebei_Autonomous_Council"]))

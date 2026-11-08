@@ -15,7 +15,7 @@ from functools import lru_cache
 from .geolock import locked_lru
 
 from shapely import STRtree, make_valid, prepare
-from shapely.geometry import box, shape
+from shapely.geometry import box, mapping, shape
 from shapely.ops import unary_union
 
 from .datafile import read_json
@@ -25,7 +25,8 @@ from .ww2 import OFF_STAN
 
 OFF_ROW, OFF_EXTRA, OFF_TERR = 300000, 390000, 200000
 LO, HI = 18860101, 20200101
-STATUS_ZH = {"colony": "殖民地", "protectorate": "保护国", "mandate": "托管地", "occupied": "占领区", "independent": "独立国家", "N/A": "地位不明"}
+STATUS_ZH = {"colony": "殖民地", "protectorate": "保护国", "mandate": "托管地", "occupied": "占领区", "independent": "独立国家", "N/A": "地位不明",
+             "roc_province": "中华民国省份（台湾光复后，中央政府尚未迁台）"}
 
 
 def _local_diff(g, tree, geoms):
@@ -56,7 +57,10 @@ def _apply_colony_fixes(rows, gw):
     - 1895-05-23 台湾民主国宣布成立，1895-10-21 台南开城后结束。全岛一块多边形不能表示日军自北向南的推进。
     - 1895-05-08 至 05-23 没有稳定的新政权，仍标清治时期并在 sources 里说明，不标日本、不标中华民国。
     - 日治自 1895-10-21 起。中文维基「乙未战争」把战事记到 1895-11-18，此处不把 10-21 写成一切抵抗结束。
-    - 1945-10-25 台湾光复仪式之后才是中华民国。CShapes 殖民地行止于 1945-08-15、独立行起于 1949-12-08，中间没有多边形，本函数不补几何。
+    - 1945-10-25 台北受降（台湾光复）之后才是中华民国。1945-08-15 至 10-24 日本总督府仍在管治，不把投降公告日写成已经移交。
+    - CShapes 殖民地行止于 1945-08-15、独立行起于 1949-12-08（国民政府迁台）。中间若没有多边形，点击会落到别的底图上。
+      这里把殖民地行延长到 1945-10-25，并复用同一条岛屿多边形补上 1945-10-25 至 1949-12-08，不新画海岸线。
+      澎湖不在这条多边形内（约东经 120.05° 以西），不另造。
     https://en.wikipedia.org/wiki/Treaty_of_Shimonoseki
     https://en.wikipedia.org/wiki/Republic_of_Formosa
     https://en.wikipedia.org/wiki/Capitulation_of_Tainan
@@ -84,6 +88,37 @@ def _apply_colony_fixes(rows, gw):
     for code, periods in fixes.items():
         gi = gw.setdefault(code, {"names": [], "periods": [], "ne": None})
         gi["periods"] = periods
+    # 台湾岛多边形空档：复用 CShapes 已有的同一块岛屿几何。两条原始行面积相同（约 3.19），范围都是东经 120.05–122.0、北纬 21.93–25.28。
+    col = next((r for r in rows if r.get("gw") == 713 and r.get("status") == "colony" and r.get("to") == 19450815), None)
+    ind = next((r for r in rows if r.get("gw") == 713 and r.get("status") == "independent" and r.get("from") == 19491208), None)
+    if col is not None:
+        col["to"] = 19451025
+    if ind is not None and not any(r.get("gw") == 713 and r.get("from") == 19451025 and r.get("to") == 19491208 for r in rows):
+        gap = dict(ind)
+        gap["geom"] = ind["geom"]
+        gap["i"] = len(rows)
+        gap["from"] = 19451025
+        gap["to"] = 19491208
+        gap["status"] = "roc_province"
+        rows.append(gap)
+    # CShapes 在 1945-08-15 把台湾岛并回中国多边形（gw 710），点选会先命中中国、标成中华民国。
+    # 从这些中国行里挖掉已有的台湾岛几何，让上面的分期行露出来。不新画海岸线。
+    if ind is not None:
+        tw = make_valid(shape(ind["geom"]))
+        for r in list(rows):
+            if r.get("gw") != 710:
+                continue
+            a, b = r.get("from") or 0, r.get("to")
+            if b is not None and b <= 19450815:
+                continue
+            if a >= 19491208 or a < 19450815:
+                continue
+            g = make_valid(shape(r["geom"]))
+            if not g.intersects(tw):
+                continue
+            ng = make_valid(g.difference(tw))
+            if not ng.is_empty:
+                r["geom"] = mapping(ng)
 
 
 class CShapes:
