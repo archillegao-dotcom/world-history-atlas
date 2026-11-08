@@ -66,7 +66,9 @@ class Transitions:
         marks = [ymd(e["date"]) for e in ev] + [ymd(t["from"]) for _, t in tr if t.get("from")]
         # 有结束日期的修正（如满洲国）结束后，修正集合变化：把已经结束的修正的结束日期也计入标识
         marks += [ymd(e["until"]) for e in self.events if e["base"] == base and e.get("until") and tkey(e["until"]) < dk]
-        marks += [ymd(t["to"]) for t in self.terr if t.get("to") and tkey(t["to"]) < dk
+        # 领土的 to 当天起不再显示（dk < to）。结束日当天也要换快照标识，否则会沿用前一天、
+        # 仍含这块领土的合成结果。
+        marks += [ymd(t["to"]) for t in self.terr if t.get("to") and tkey(t["to"]) <= dk
                   and base not in t.get("skip_snaps", []) and (not t.get("only_snaps") or base in t["only_snaps"])]
         # 用「已生效的修正」的最晚日期标识过渡快照；同一基础快照内日期相同 ⇒ 修正集合相同
         return f"{base}@{max(marks) if marks else 0}"

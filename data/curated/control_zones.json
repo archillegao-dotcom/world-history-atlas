@@ -7,7 +7,7 @@
   "as_polity：true 时该区域在地图上作为一个单独政权多边形参与点击/面板（解析为 controller），false 时只作为叠加层显示。",
   "geometry：几何规格（tools/build_control_zones.py 解析）：admin1（Natural Earth 1:10m 一级行政区 ISO 3166-2 代码）、",
   "  admin0_parts {a3, bbox, max_area}（Natural Earth 1:10m 国家多边形中落在 bbox 内的岛屿部分）、basemap {snap, name}（historical-basemaps 快照多边形）、",
-  "  polygon（手绘近似多边形 [[经度, 纬度], …]）；可加 intersect_bbox [minx, miny, maxx, maxy] 与 minus（另一个几何规格）。",
+  "  polygon（手绘近似多边形 [[经度, 纬度], …]）、geojson（相对 data/ 的文件）；可加 intersect_bbox [minx, miny, maxx, maxy] 与 minus（另一个几何规格）。",
   "approx：true 表示范围为近似（地图上标注「大致范围」）；dates_note / note：日期与范围的说明；sources：来源网址（国际学术/百科来源为主，中文资料只作辅助）。",
   "  union [规格, …]：在以上结果上再并入其他几何规格。",
   "geometry 另可用 cshapes {gw:[…], date}（CShapes 2.0 该日期有效的行）与 intersect（与另一几何规格求交）。"
@@ -12587,6 +12587,66 @@
    "note": "1957年9月不是9月1日全区易手。更早的年份不显示这个框。",
    "sources": [
     "https://nehruarchive.in/documents/in-the-rajya-sabha-chinese-road-construction-in-ladakh-31-august-1959-z7g9y"
+   ]
+  },
+  {
+   "id": "duchy_warsaw_1807",
+   "group": "europe_19c",
+   "kind": "regime",
+   "as_polity": true,
+   "name_zh": "华沙公国",
+   "name_en": "Duchy of Warsaw",
+   "controller": {
+    "qid": "Q152115",
+    "zh": "华沙公国"
+   },
+   "from": "1807-07-09",
+   "until": "1809-10-14",
+   "geometry": {
+    "geojson": "curated/geom/duchy_warsaw_1807.geojson"
+   },
+   "approx": true,
+   "precision": 1,
+   "dates_note": "1807-07-09《蒂尔西特条约》（对普鲁士）割出这片地方。公国宪法是 1807-07-22。到 1809-10-14《申布伦条约》当天改用扩大后的范围。OpenHistoricalMap 关系 2696464 把开始日写成 1807-06-09，那天条约还没签，这里不用。",
+   "note": "1807 年的六个省：华沙、波兹南、卡利什、比得哥什、普沃茨克、沃姆扎。不含 1809 年才并入的克拉科夫、卢布林、拉多姆、谢德尔采。线来自 OpenHistoricalMap（成员未另标许可证，按项目说明为 CC0）。关系自己写了 fixme：边界线还缺出处。这里简化约 1 公里，边界精度是大致，不是实测疆界。1813 年起公国处于俄军占领下，没有另画当年的占领线。比亚韦斯托克 1807 年归俄国，但泽是自由市，这两处都不在线内。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Duchy_of_Warsaw",
+    "https://en.wikipedia.org/wiki/Treaties_of_Tilsit",
+    "https://en.wikipedia.org/wiki/Treaty_of_Sch%C3%B6nbrunn_(1809)",
+    "https://en.wikipedia.org/wiki/Congress_of_Vienna",
+    "https://en.wikipedia.org/wiki/Subdivisions_of_the_Duchy_of_Warsaw",
+    "https://www.openhistoricalmap.org/copyright",
+    "https://www.openhistoricalmap.org/relation/2696464"
+   ]
+  },
+  {
+   "id": "duchy_warsaw_1809",
+   "group": "europe_19c",
+   "kind": "regime",
+   "as_polity": true,
+   "name_zh": "华沙公国",
+   "name_en": "Duchy of Warsaw",
+   "controller": {
+    "qid": "Q152115",
+    "zh": "华沙公国"
+   },
+   "from": "1809-10-14",
+   "until": "1815-06-09",
+   "geometry": {
+    "geojson": "curated/geom/duchy_warsaw_1809.geojson"
+   },
+   "approx": true,
+   "precision": 1,
+   "dates_note": "1809-10-14《申布伦条约》并入西加利西亚。1815-06-09《维也纳会议最后议定书》当天起不再显示。OpenHistoricalMap 关系 2692577。",
+   "note": "比 1807 年的范围多出克拉科夫、卢布林、拉多姆、谢德尔采。利沃夫仍在线外。1815-06-09 起改回 1815 年快照（华沙在该快照里是俄罗斯帝国，波兹南是普鲁士，克拉科夫是克拉科夫共和国）。线来自 OpenHistoricalMap（成员未另标许可证，按项目说明为 CC0）。关系自己写了 fixme：边界线还缺出处。这里简化约 1 公里，边界精度是大致，不是实测疆界。1813 年起公国处于俄军占领下，没有另画当年的占领线。比亚韦斯托克 1807 年归俄国，但泽是自由市，这两处都不在线内。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Duchy_of_Warsaw",
+    "https://en.wikipedia.org/wiki/Treaties_of_Tilsit",
+    "https://en.wikipedia.org/wiki/Treaty_of_Sch%C3%B6nbrunn_(1809)",
+    "https://en.wikipedia.org/wiki/Congress_of_Vienna",
+    "https://en.wikipedia.org/wiki/Subdivisions_of_the_Duchy_of_Warsaw",
+    "https://www.openhistoricalmap.org/copyright",
+    "https://www.openhistoricalmap.org/relation/2692577"
    ]
   }
  ]

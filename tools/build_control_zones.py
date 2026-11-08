@@ -73,6 +73,10 @@ def resolve(spec):
                 gs.append(make_valid(shape(r["geom"])))
     if "polygon" in spec:
         gs.append(make_valid(shape({"type": "Polygon", "coordinates": [spec["polygon"]]})))
+    if "geojson" in spec:
+        gj = json.loads((config.DATA_DIR / spec["geojson"]).read_text(encoding="utf-8"))
+        geom = gj["geometry"] if isinstance(gj, dict) and gj.get("type") == "Feature" else gj
+        gs.append(make_valid(shape(geom)))
     if not gs:
         raise SystemExit(f"empty geometry: {spec}")
     g = make_valid(unary_union(gs))
