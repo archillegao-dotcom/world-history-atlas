@@ -134,4 +134,11 @@ CShapes 只记录法理国家边界，不记录军事占领。v0.6.0 用控制�
 - `data/basemaps_raw/` 下三个 Natural Earth 文件、`data/basemaps/1930.geojson.gz`、`data/cshapes_raw/`（CSV、geojson、codebook、gw.topojson、cshapes 包）已经放进仓库。本批没有重烘 cshapes。
 - 台湾 1945-08-15 至 1949-12-08：日治延到 1945-10-25，其后复用同一块岛，并从同期中国多边形里挖掉。澎湖仍不在这块多边形里。
 - 《中华民国史事纪要》全文仍不在仓库里。这只阻塞按卷页驱动的每日新闻，不阻塞其他修复。
-- TNO / 钢铁雄心 IV 风格的省界、地形和前线还在队列里，见 `docs/REQUIREMENTS_0.6.2.md` 的 T01。不用游戏地图当史料。M6 原生包免做。
+- 策略地图第三批只做了边界、标签、占领区层次和现代一级行政区参考线。地形没有数据，历史省界没有可靠来源，这两项仍缺。见 `docs/REQUIREMENTS_0.6.2.md` 的 T01。不用游戏地图当史料。M6 原生包免做。
+- 悬停经济只认所选年份的原值。民生经济面板仍会显示插值，并标明「插值」。CShapes 多边形没有预先算好的经济重叠时，按与 Natural Earth 2011 国界的面积重叠现算，仍是现代国家的范围。
+
+### 第三批复跑（2026-11-08，端口 8792，版本 0.6.2）
+
+- `p0_batch3.py` 通过；`p0_1941.py` 22/22；`p0_batch2.py` 16 条通过；`api_mustpass.py` 119/119。
+- 浏览器脚本 `browser_batch3.mjs` 用系统 Chrome 点过按钮、圆点和悬停，退出码 0，页面错误 0。
+- 本批没有重跑 `manchuria_no_roc.py`、`ww2_occupation_bloc.py` 和打包版。触屏长按没有在真机上试。

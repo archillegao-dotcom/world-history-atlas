@@ -40,6 +40,8 @@
         .bindTooltip(tip, { direction: "top", offset: [0, -6] })
         // 点击城市：选中城市所在的政权（与点击多边形相同）；按住 Ctrl/⌘ 点击则打开维基百科
         .on("click", (e) => { if ((e.originalEvent?.ctrlKey || e.originalEvent?.metaKey) && c.wiki) window.open(c.wiki, "_blank"); else WHA.selectAt(c.coord[1], c.coord[0]); })
+        .on("mouseover", (e) => WHA.hoverBeginAt && WHA.hoverBeginAt(c.coord[1], c.coord[0], e))
+        .on("mouseout", () => WHA.hoverEnd && WHA.hoverEnd())
         .addTo(group);
     }
   }

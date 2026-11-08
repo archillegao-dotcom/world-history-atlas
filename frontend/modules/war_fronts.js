@@ -20,9 +20,10 @@
       group.clearLayers();
       const wars = res.items || [];
       for (const w of wars) for (const z of w.items) {
+        const strat = document.body.classList.contains("strategy");
         L.geoJSON(z.geom, { pane: "fronts", interactive: false,
-          style: { color: COLOR[z.kind] || "#333", weight: z.kind === "occupied" ? 1.2 : 0.6, fillColor: COLOR[z.kind] || "#333",
-                   fillOpacity: z.kind === "occupied" ? 0.45 : 0.35, dashArray: z.approx ? "5 3" : null } }).addTo(group);
+          style: { color: COLOR[z.kind] || "#333", weight: z.kind === "occupied" ? (strat ? 2.4 : 1.2) : (strat ? 1.5 : 0.6), fillColor: COLOR[z.kind] || "#333",
+                   fillOpacity: z.kind === "occupied" ? (strat ? 0.58 : 0.45) : (strat ? 0.42 : 0.35), dashArray: z.approx ? "5 3" : null } }).addTo(group);
       }
       if (!wars.length) { box.innerHTML = `<b>战争前线</b><div class="note">${esc(res.note)}</div>`; box.classList.remove("hidden"); return; }
       box.innerHTML = wars.map((w) => {

@@ -18,8 +18,14 @@
       group.clearLayers();
       for (const z of res.items || []) {
         const c = COLOR[z.kind] || "#333";
+        const strat = document.body.classList.contains("strategy");
+        const hot = z.kind === "occupied" || z.kind === "war_zone" || z.kind === "de_facto";
         L.geoJSON(z.geom, { pane: "zones", interactive: false,
-          style: { color: c, weight: 2, dashArray: "6 4", fillColor: c, fillOpacity: z.as_polity ? 0.08 : 0.15 } }).addTo(group);
+          style: {
+            color: c, weight: strat ? (hot ? 3 : 2.2) : 2,
+            dashArray: strat ? (hot ? null : "3 2") : "6 4",
+            fillColor: c, fillOpacity: strat ? (hot ? 0.34 : 0.16) : (z.as_polity ? 0.08 : 0.15),
+          } }).addTo(group);
         const tip = `<b>${WHA.esc(z.name)}</b>${z.approx ? "（大致范围）" : ""}<br>${WHA.esc(z.kind_zh)} · 控制方：${WHA.esc(z.controller.zh)}` +
           `<br>${fmt(z.from) || "?"} – ${z.until ? fmt(z.until) : "至今"}` +
           (z.dates_note ? `<div style="max-width:320px;white-space:normal"><small>${WHA.esc(z.dates_note)}</small></div>` : "") +

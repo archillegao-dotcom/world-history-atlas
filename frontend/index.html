@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>世界历史地图 · World History Atlas</title>
 <!-- 所有资源均为本地文件，运行时不依赖 CDN / 网络 -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' fill='%232b2118'/%3E%3C/svg%3E">
 <link rel="stylesheet" href="vendor/leaflet/leaflet.css">
 <link rel="stylesheet" href="style.css">
 </head>
@@ -28,6 +29,7 @@
   <button id="todayBtn" title="跳到今天">今天</button>
   <button id="worldBtn" title="查看全世界在这一天前后的事件与人物">🌍 全世界</button>
   <button id="aboutBtn">数据说明</button>
+  <button id="styleBtn" type="button" aria-pressed="false" title="自己绘制的分区、边界和前线层次，参考策略游戏的读图方式。不是 TNO 或钢铁雄心的官方地图，也不使用那些游戏的图。">策略地图</button>
   <button id="quitBtn" type="button" title="退出软件。没有终端窗口时用这个按钮关闭。">退出</button>
   <span id="updateStatus"></span>
 </header>
@@ -53,6 +55,7 @@
   <div id="ticks"></div>
 </footer>
 
+<div id="econHover"></div>
 <div id="about" class="modal hidden"><div class="modal-body">
   <button class="modal-close" id="aboutClose">✕</button>
   <h2>数据说明</h2>
