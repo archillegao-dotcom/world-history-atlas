@@ -438,3 +438,7 @@ TNO / 钢铁雄心 IV 风格地图仍在队列里，本批没有做。只参考�
 ## 2026-11-08 华沙公国与库皮扬斯克（欧洲/巴黎 12:14）
 
 `war_audit.py` 86/86，进程退出码 0。华沙用 OpenHistoricalMap 两段大致范围（1807-07-09 至 1815-06-09），库皮扬斯克只补约 19 平方公里。119/119、满洲 162 个月、阵营 72 个快照、宪法和西藏检查退出码都是 0。不是整个历史内容完工。细节在 `docs/REQUIREMENTS_0.6.2.md`。
+
+## 2026-11-08 打包启动失败（欧洲/巴黎 12:58）
+
+[run 42478065977](https://github.com/archillegao-dotcom/world-history-atlas/actions/runs/42478065977) 在 `c03302f` 上 `startup_failure`，0 个任务。注解是任务级 `if` 使用了 `matrix`。已改成按输入决定矩阵里有没有 arm64。发布仍只在 tag 上。还没有 Mac 或 Windows 包。86 条和失败退出码没改。

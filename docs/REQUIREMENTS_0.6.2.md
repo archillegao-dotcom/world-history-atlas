@@ -291,3 +291,9 @@ TNO / 钢铁雄心 IV 风格地图。用户 2026-11-03 提出，2026-11-08 再�
 - `node tools/accept/browser_war_gaps.mjs`：退出码 0。截图是 1808-07-01 华沙点选和 2022-03-15 库皮扬斯克前线。
 
 这不是整个历史内容完工。还没做的仍是：Task D、书目全文、非中国逐年君主、空位期与中文名全表、1911 年各省、殖民地全表、其余短命政权条约、宪法在法德英日以外、西藏 1912 点选和 1951 数据不足、T01 与历史省界、沃夫昌斯克 2022 年 3 月中旬那块更大的评估缺口、1813 年华沙公国的占领线、真实 Mac/Windows 打包验收。史事纪要仍在这些之后。
+
+## 2026-11-08 打包启动失败（欧洲/巴黎 12:58）
+
+用户在 `c03302f` 上手动运行 Build apps。[run 42478065977](https://github.com/archillegao-dotcom/world-history-atlas/actions/runs/42478065977) 的结论是 `startup_failure`，任务数是 0，没有日志，也没有产物。页面注解：第 35 行 `Unrecognized named-value: 'matrix'`。任务级 `if` 不能读 `matrix`，所以工作流在创建任务之前就停了。这是配置错误。同一仓库在 2026-11-01 和 11-02 用 `macos-15-intel` 与 `windows-latest` 成功打过包，这次没有改这两个 runner，也没有改成付费的大号 runner。
+
+修正：手动运行且 `include_arm64` 为关时，矩阵里只有 Intel。打 tag，或手动勾选，才把 arm64 放进矩阵。发布任务仍然只在 tag 上执行。本地用 actionlint 1.7.7 检查过当前文件，退出码 0；把被拒绝的 `if` 放回去时，它报 `context "matrix" is not allowed here`。还没有新的 zip，没有文件名、大小或 SHA256。不要重跑 42478065977。86 条样本和失败即退出码 1 没有改。没有合并，没有打 tag，没有公开发布。
