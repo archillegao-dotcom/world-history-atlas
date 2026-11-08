@@ -60,20 +60,45 @@ main { flex: 1; position: relative; min-height: 0; }
 .city-name { margin-left: 3px; font-size: 11.5px; color: #222; font-weight: 600; vertical-align: middle; text-shadow: 0 0 2px #fff, 0 0 3px #fff, 0 0 3px #fff; }
 .city-name.cap { color: #8a0d10; font-size: 12.5px; }
 #styleBtn[aria-pressed="true"] { background: #c9a36a; }
-body.strategy #map {
-  background:
-    repeating-linear-gradient(0deg, rgba(70, 52, 28, .06) 0 1px, transparent 1px 36px),
-    repeating-linear-gradient(90deg, rgba(70, 52, 28, .06) 0 1px, transparent 1px 36px),
-    #d4ccbe;
+body.strategy #topbar, body.strategy #timeline { background: #1a2330; color: #e8e2d6; }
+body.strategy #topbar input, body.strategy #topbar select, body.strategy #topbar button {
+  background: #2a3646; color: #f2ece2; border-color: #526278;
 }
+body.strategy #topbar button:hover { background: #3a4a5e; }
+body.strategy #styleBtn[aria-pressed="true"] { background: #4d6278; color: #f7f1e4; }
+body.strategy #map, body.strategy .leaflet-container {
+  background:
+    repeating-linear-gradient(0deg, rgba(255,255,255,.035) 0 1px, transparent 1px 64px),
+    repeating-linear-gradient(90deg, rgba(255,255,255,.035) 0 1px, transparent 1px 64px),
+    #2a3c4e;
+}
+body.strategy #panel { background: #1c2633; color: #e7e1d6; }
+body.strategy .panel-head, body.strategy #tabs { border-color: #334155; }
+body.strategy #polityMeta, body.strategy .item .s, body.strategy .item .d { color: #d2c6b4; }
+body.strategy #closePanel, body.strategy .item .t { color: #f3eee4; }
+body.strategy #tabs button { background: #243140; color: #e7e1d6; border-color: #334155; }
+body.strategy #tabs button.active { background: #1c2633; color: #e6c98a; }
+body.strategy .note { background: #243140; color: #d9d0c2; }
+body.strategy .item { border-bottom-color: #334155; }
+body.strategy .item:hover { background: #243140; }
+body.strategy #eraNote, body.strategy #layerCtl { background: rgba(22, 30, 40, .9); color: #e6e0d4; }
+body.strategy #eraNote { max-width: 340px; }
+body.strategy #eraNote b { color: #e6c98a; }
+body.strategy .city-dot { background: #f4efe6; border-color: #12100e; width: 5px; height: 5px; }
+body.strategy .city-dot.cap { color: #e6c98a; text-shadow: 0 0 2px #000, 0 1px 2px #000; }
+body.strategy .city-name { color: #f7f1e6; text-shadow: 0 0 2px #000, 0 1px 2px #000, 0 0 4px #000; }
+body.strategy .city-name.cap { color: #f3e2b0; }
 .leaflet-div-icon.strategy-label { background: none; border: 0; width: auto !important; height: auto !important; }
 .strategy-label span {
   display: inline-block; transform: translate(-50%, -50%); white-space: nowrap;
-  font-size: 12.5px; font-weight: 700; letter-spacing: .02em; color: #1c140c;
-  text-shadow: 0 0 3px #fff, 0 0 3px #fff, 0 0 4px #fff, 1px 1px 0 #fff;
+  font-family: Palatino, "Palatino Linotype", "Songti SC", "Noto Serif CJK SC", serif;
+  font-size: 14px; font-weight: 600; letter-spacing: .06em; color: #f7f1e6;
+  text-shadow: 0 1px 2px #000, 0 0 4px #000, 1px 1px 0 #000;
   pointer-events: none;
 }
-#econHover { position: fixed; z-index: 850; display: none; width: 320px; max-width: calc(100vw - 16px); padding: 8px 10px; border-radius: 8px; background: rgba(255, 250, 240, .97); color: #24180f; box-shadow: 0 2px 10px rgba(0,0,0,.28); font-size: 12.5px; line-height: 1.45; pointer-events: none; }
+#econHover { position: fixed; z-index: 850; display: none; width: 340px; max-width: calc(100vw - 16px); padding: 8px 10px; border-radius: 8px; background: rgba(255, 250, 240, .97); color: #24180f; box-shadow: 0 2px 10px rgba(0,0,0,.28); font-size: 12.5px; line-height: 1.45; pointer-events: none; }
+body.strategy #econHover { background: rgba(22, 30, 40, .96); color: #f3eee4; }
+body.strategy #econHover .eh-year, body.strategy #econHover .eh-note { color: #cbbfaa; }
 #econHover.on { display: block; }
 #econHover b { font-size: 14px; }
 #econHover .eh-year { color: #6a5340; margin-bottom: 4px; }

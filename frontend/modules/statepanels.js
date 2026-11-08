@@ -123,8 +123,12 @@
     if (r.matched?.length) h += `<div class="s">按以下政权查找签署记录：${r.matched.map((x) => esc(x.name)).join("、")}</div>`;
     const card = (c) => `<div class="spirit k-${esc(c.kind)}" data-treaty="${esc(c.id)}"><div><span class="k">${esc(c.kind)}</span><b>${esc(c.name)}</b></div>
       <div class="d">${esc(c.from)}${c.to ? " – " + esc(c.to) : ""} · ${c.n_parties} 方${c.via && r.matched.length > 1 ? ` · 经「${esc(c.via)}」` : ""}</div>
-      <div class="d">${c.parties.slice(0, 5).map(esc).join("、")}${c.n_parties > 5 ? " 等" : ""}</div></div>`;
+      <div class="d">${c.parties.slice(0, 5).map(esc).join("、")}${c.n_parties > 5 ? " 等" : ""}</div>
+      ${c.status_zh ? `<div class="d">${esc(c.status_zh)}</div>` : ""}${c.role ? `<div class="d">${esc(c.role)}</div>` : ""}</div>`;
     if (r.blocs?.length) h += `<h4>同盟 / 阵营</h4><div class="spirit-cards">${r.blocs.map((b) => `<div class="spirit k-同盟" data-bloc="${esc(b.id)}"><div><span class="k">同盟</span><b>${esc(b.name)}</b></div><div class="d">当时 ${b.n} 个成员${b.no_end ? " · 无解散记录" : ""}</div></div>`).join("")}</div>`;
+    if (r.pending?.length) h += `<h4>已签署，尚未生效</h4><div class="spirit-cards">${r.pending.map(card).join("")}</div>`;
+    if (r.unratified?.length) h += `<h4>已签署，未批准，不作为生效条约</h4><div class="spirit-cards">${r.unratified.map(card).join("")}</div>`;
+    if (r.implemented?.length) h += `<h4>已签署并公布实施，没有议会批准</h4><div class="spirit-cards">${r.implemented.map(card).join("")}</div>`;
     if (r.dated?.length) h += `<h4>有效期内的条约（${r.n_dated}）</h4><div class="spirit-cards">${r.dated.map(card).join("")}</div>`;
     if (r.open?.length) h += `<h4>已签订、未记录终止（${r.n_open}${r.n_open > r.open.length ? `，显示 ${r.open.length}` : ""}）</h4><div class="spirit-cards">${r.open.map(card).join("")}</div>`;
     if (!r.total) h += `<div class="empty">Wikidata 中没有找到这一时期该政权签署的条约。</div>`;
@@ -174,6 +178,7 @@
     <h2>${esc(vis(t.name, "暂无通用译名"))}</h2>${t.en && t.en !== t.name ? `<div class="en">${esc(t.en)}</div>` : ""}${t.desc ? `<div class="s">${esc(t.desc)}</div>` : ""}
     <div class="s">类型：${t.types.map(esc).join("、") || "—"}</div>
     <table class="kv"><tr><th>签订</th><td>${esc(t.signed || "未记录")}</td></tr><tr><th>生效</th><td>${esc(t.effective || "未记录")}</td></tr>
+      ${t.status_zh ? `<tr><th>效力</th><td>${esc(t.status_zh)}</td></tr>` : ""}${t.fix_note ? `<tr><th>核对</th><td>${esc(t.fix_note)}</td></tr>` : ""}
       ${t.start ? `<tr><th>开始</th><td>${esc(t.start)}</td></tr>` : ""}<tr><th>终止</th><td>${esc(t.end || "未记录")}</td></tr>
       <tr><th>签订地点</th><td>${esc((t.location || []).map((x) => x.name).join("、") || "未记录")}</td></tr>
       ${t.countries?.length ? `<tr><th>所属国家</th><td>${esc(t.countries.join("、"))}</td></tr>` : ""}</table>

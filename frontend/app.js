@@ -107,9 +107,9 @@
     const n = f.properties.NAME;
     const strat = strategyOn();
     const base = strat ? {
-      color: selected ? "#6b1208" : "#241c14", weight: selected ? 2.8 : 1.35, opacity: 1,
-      fillColor: n ? `hsl(${hue(colorKey(f.properties, n))}, 52%, ${selected ? 52 : 63}%)` : "#d2c8b6",
-      fillOpacity: selected ? 0.92 : 0.84,
+      color: selected ? "#e6d3a1" : "#12100e", weight: selected ? 2.4 : 1.75, opacity: 1,
+      fillColor: n ? `hsl(${hue(colorKey(f.properties, n))}, 24%, ${selected ? 42 : 34}%)` : "#3c433c",
+      fillOpacity: 0.97,
     } : {
       color: selected ? "#8a1c00" : "#6b5a48", weight: selected ? 2.5 : 0.6, opacity: 0.9,
       fillColor: n ? `hsl(${hue(colorKey(f.properties, n))}, 45%, ${selected ? 62 : 74}%)` : "#ddd6c8",
@@ -118,8 +118,8 @@
     // 图层模块（如「阵营地图」）可以通过 WHA.setFillOverride(fn) 改写多边形填色
     let o = null;
     for (const fn of Object.values(fillOverrides)) { const x = fn(f); if (x) o = { ...(o || {}), ...x }; }
-    const out = o ? { ...base, ...o, ...(selected ? { color: strat ? "#6b1208" : "#8a1c00", weight: strat ? 2.8 : 2.5 } : {}) } : base;
-    if (strat && !selected) out.weight = Math.max(out.weight || 0, 1.35);
+    const out = o ? { ...base, ...o, ...(selected ? { color: strat ? "#e6d3a1" : "#8a1c00", weight: strat ? 2.4 : 2.5 } : {}) } : base;
+    if (strat && !selected) out.weight = Math.max(out.weight || 0, 1.75);
     return out;
   };
   // 多个图层可同时改写填色：按注册顺序叠加（后注册的覆盖前面的同名样式）
@@ -187,18 +187,19 @@
     box.style.top = y + "px";
   }
   function renderHover(feature, data) {
-    const name = esc(pnameF(feature.properties));
-    const head = `<b>${name}</b><div class="eh-year">${esc(String(data.year))} 年的全年数字，不是这一天的数字</div>`;
+    const regime = esc(pnameF(feature.properties));
+    const head = `<b>经济数字</b><div class="eh-year">地图上的政权：${regime}。下面不是这个政权自己的统计。</div>`;
+    const foot = `<div class="eh-note">${esc(data.note || "来源只在这里写一次。只有数据表里正好有所选年份才给出全年数字。")}</div>`;
     if (!data.countries || !data.countries.length) {
-      return head + `<div class="eh-empty">暂无数据</div><div class="eh-note">${esc(data.note || "")}</div>`;
+      return head + `<div class="eh-empty">暂无数据</div>` + foot;
     }
     const blocks = data.countries.map((c) => {
       const share = c.share < 0.999 ? `，约占此区域 ${Math.round(c.share * 100)}%` : "";
-      const title = `<div class="eh-cty">现代国家：${esc(c.name)}（${esc(c.iso)}）${share}</div>`;
+      const title = `<div class="eh-cty">现代国家「${esc(c.name)}」范围的序列（${esc(c.iso)}）${share}</div>`;
       if (!c.values || !c.values.length) return title + `<div class="eh-empty">暂无数据</div>`;
-      return title + c.values.map((v) => `<div class="eh-row">${esc(v.zh)}：${fmtEcon(v.v, v.unit)}<div class="eh-note">${esc(String(v.year))} 年 · ${esc(v.source)}（${esc(v.license)}） · ${esc(v.scope)}</div></div>`).join("");
+      return title + c.values.map((v) => `<div class="eh-row">${esc(v.zh)}：${fmtEcon(v.v, v.unit)} · ${esc(String(v.year))} 年</div>`).join("");
     }).join("");
-    return head + blocks + `<div class="eh-note">${esc(data.note || "")}</div>`;
+    return head + blocks + foot;
   }
   function hoverFire(feature, ev, seq) {
     const box = $("econHover");
@@ -278,6 +279,14 @@
   }
 
   let labelLayer = null, adminLayer = null, adminSeq = 0, adminTimer = null;
+  function shortPolity(name) {
+    const s = String(name || "");
+    if (s.length <= 8) return s;
+    return s.slice(0, 7) + "…";
+  }
+  function boxesOverlap(a, b) {
+    return !(a[2] < b[0] || a[0] > b[2] || a[3] < b[1] || a[1] > b[3]);
+  }
   function placeLabels() {
     if (!labelLayer) {
       if (!map.getPane("labels")) {
@@ -290,8 +299,9 @@
     labelLayer.clearLayers();
     if (!strategyOn() || !layer) return;
     const z = map.getZoom();
-    const view = map.getBounds().pad(0.08);
-    const minSpan = z < 3 ? 18 : z < 4 ? 8 : z < 5 ? 3 : z < 6.5 ? 1.2 : 0.35;
+    const view = map.getBounds();
+    const c0 = map.getCenter();
+    const minSpan = z < 3.2 ? 18 : z < 4.2 ? 3.6 : z < 5.2 ? 1.8 : z < 6.5 ? 0.9 : 0.35;
     const items = [];
     layer.eachLayer((l) => {
       const b = l.getBounds?.();
@@ -301,21 +311,34 @@
       const p = l.feature.properties;
       const c = p.LABEL_X != null ? L.latLng(p.LABEL_Y, p.LABEL_X) : b.getCenter();
       if (!view.contains(c)) return;
-      items.push({ area: w * hgt, name: pnameF(p), c });
+      const dist = Math.hypot(c.lat - c0.lat, (c.lng - c0.lng) * 0.65);
+      items.push({ area: Math.max(w, 0.2) * Math.max(hgt, 0.2), name: pnameF(p), c, dist });
     });
-    items.sort((a, b) => b.area - a.area);
-    const cap = z < 3.5 ? 18 : z < 5 ? 36 : 60;
+    const rank = (it) => Math.pow(it.area, 0.4) / (1 + it.dist / 8);
+    items.sort((a, b) => rank(b) - rank(a));
+    const cap = z < 3.2 ? 10 : z < 4.2 ? 16 : z < 5.2 ? 24 : z < 6.5 ? 36 : 48;
     const taken = [];
-    const minPx = z < 4 ? 72 : 54;
+    const used = new Set();
     for (const it of items) {
-      if (taken.length >= cap) break;
+      if (used.size >= cap) break;
+      const shown = shortPolity(it.name);
+      if (used.has(shown)) continue;
       const pt = map.latLngToContainerPoint(it.c);
-      if (taken.some((q) => Math.hypot(q.x - pt.x, q.y - pt.y) < minPx)) continue;
-      taken.push(pt);
-      const icon = L.divIcon({ className: "polity-label strategy-label", iconSize: null, iconAnchor: [0, 0], html: `<span>${esc(it.name)}</span>` });
-      L.marker(it.c, { icon, pane: "labels", interactive: false, keyboard: false }).addTo(labelLayer);
+      pt.y -= 12;
+      const wpx = Math.max(48, shown.length * 16);
+      const box = [pt.x - wpx / 2, pt.y - 12, pt.x + wpx / 2, pt.y + 12];
+      if (taken.some((q) => boxesOverlap(box, q))) continue;
+      taken.push(box);
+      used.add(shown);
+      const icon = L.divIcon({
+        className: "polity-label strategy-label", iconSize: null, iconAnchor: [0, 0],
+        html: `<span title="${esc(it.name)}">${esc(shown)}</span>`,
+      });
+      L.marker(map.containerPointToLatLng(pt), { icon, pane: "labels", interactive: false, keyboard: false }).addTo(labelLayer);
     }
+    WHA.polityLabelBoxes = taken;
   }
+  WHA.placePolityLabels = placeLabels;
   function scheduleAdmin1() { clearTimeout(adminTimer); adminTimer = setTimeout(loadAdmin1, 240); }
   async function loadAdmin1() {
     if (!adminLayer) {
@@ -326,7 +349,7 @@
       }
       adminLayer = L.geoJSON(null, {
         pane: "admin1", interactive: false,
-        style: { color: "#4a3b28", weight: 0.9, opacity: 0.85, fill: false },
+        style: { color: "#c9bfae", weight: 0.65, opacity: 0.42, fill: false },
       }).addTo(map);
     }
     if (!strategyOn() || map.getZoom() < 5) { adminLayer.clearLayers(); return; }
@@ -343,7 +366,11 @@
     if (!hoverTouch || !hoverTimer || e.pointerType === "mouse") return;
     if (Math.hypot(e.clientX - hoverTouch.x, e.clientY - hoverTouch.y) > 12) hoverEnd();
   });
-  map.on("moveend zoomend", () => { placeLabels(); scheduleAdmin1(); });
+  function syncTiny() {
+    const pane = map.getPane("tiny");
+    if (pane) pane.style.display = (!strategyOn() || map.getZoom() >= 5) ? "" : "none";
+  }
+  map.on("moveend zoomend", () => { placeLabels(); scheduleAdmin1(); syncTiny(); });
 
   let tinyLayer = null;
   // 快速连续换日期时，较早发出的请求可能后返回：只画最后一次请求的快照，否则旧快照的多边形会盖在地图上、点击选中错误的政权
@@ -404,6 +431,7 @@
     });
     tinyList.sort((a, b) => b[0] - a[0]).forEach(([, mk]) => tinyLayer.addLayer(mk));
     tinyLayer.addTo(map);
+    syncTiny();
     placeLabels();
     scheduleAdmin1();
   }
@@ -545,7 +573,7 @@
     if (y < -3000) html = `<b>史前时期（文字出现以前）</b>：地图上是 historical-basemaps 对考古文化与人群分布的粗略复原，不是国家边界（名称标为「文化/地区」）；快照非常稀疏（当前：${yearZh(base)}${state.next != null ? "，下一张：" + yearZh(state.next) : ""}）。Wikidata 中此时期几乎没有精确到年的事件和人物。`;
     else if (y < -500) html += "<br>上古时期：许多日期是估计值，人物生卒年常常只精确到世纪。";
     if (state.date.m && state.date.d) html += "<br>已精确到日：事件列表会把<b>当天</b>发生的事件排在最前（仅限 Wikidata 记录到日的事件）。";
-    if (strategyOn()) html += "<br><b>策略地图</b>是本软件自己的画法：更重的边界、分区色、前线和占领区，以及缩放后的政权名。放大后的细线是 Natural Earth 1:10m <b>现代</b>一级行政区（公有领域，已简化），不是古代或战时省界。没有可用的地形数据，所以不画地形。不是 TNO 或钢铁雄心的地图，也不使用那些游戏的图。";
+    if (strategyOn()) html += "<br>策略地图是自绘的深色分区。国名按缩放出现，全名在悬停提示里。细线是现代行政区，不是历史省界。没有地形。不是 TNO 官方地图。";
     $("eraNote").innerHTML = html;
     const tl = $("transList");
     if (tl) tl.onclick = (e) => { e.preventDefault(); WHA.openDetail("边界过渡修正", `<ul>${state.transitions.map((t) => `<li>${esc(t)}</li>`).join("")}</ul><p class="note">修正规则：Wikidata 中精确到月/日的成立（P571）与解散（P576）日期落在两张快照之间时，从该日期起用下一张快照中对应的范围；特殊地位领土用 Natural Earth 1:10m 范围。</p>`); };
@@ -556,9 +584,10 @@
     if (layer) layer.eachLayer((l) => l.setStyle && l.setStyle(styleFor(l.feature, state.fid === l.feature.properties.fid && !state.world)));
     if (tinyLayer) tinyLayer.eachLayer((m) => {
       const sel = state.fid === m.feature.properties.fid && !state.world;
-      m.setStyle({ fillColor: styleFor(m.feature, false).fillColor || "#ddd", color: sel ? "#8a1c00" : "#555", weight: sel ? 2.5 : 1.5 });
-      m.setRadius(strategyOn() ? 6 : 5);
+      m.setStyle({ fillColor: styleFor(m.feature, false).fillColor || "#ddd", color: sel ? (strategyOn() ? "#e6d3a1" : "#8a1c00") : (strategyOn() ? "#f4efe6" : "#555"), weight: sel ? 2.5 : 1.5 });
+      m.setRadius(strategyOn() ? 5 : 5);
     });
+    syncTiny();
     placeLabels();
   }
   function applyStrategy(on) {

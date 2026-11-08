@@ -47,9 +47,9 @@
    "id": "ccw_roc_hainan_1950",
    "group": "chinese_civil_war",
    "kind": "holdout",
-   "as_polity": true,
-   "name_zh": "海南岛（中华民国控制）",
-   "name_en": "Hainan Island (ROC-held)",
+   "as_polity": false,
+   "name_zh": "海南岛（位置参考，不是整岛单一实控）",
+   "name_en": "Hainan Island (locator, not one controller for the whole island)",
    "controller": {
     "qid": "Q865",
     "zh": "中华民国"
@@ -70,10 +70,13 @@
      "max_area": 4.0
     }
    },
-   "approx": false,
-   "dates_note": "共军 1950-04-16 登陆，5 月 1 日宣布占领全岛（英文维基「Battle of Hainan Island」）。",
-   "note": "中华民国军队控制沿海，岛内腹地有中共琼崖纵队活动；岛屿形状取自 Natural Earth。",
+   "approx": true,
+   "dates_note": "主攻登陆是 1950-04-16 夜、17 日上岸。海口、府城 4 月 23 日上午易手，榆林、三亚一带 4 月 30 日易手，5 月 1 日战役结束。3 月上旬的小规模登陆不画成北岸已经易手。琼崖纵队控制的腹地没有精确边界，不另画。这个轮廓只标岛屿位置，点击不会把整岛算成中华民国。城市框以外如果点到底图上的中国，那不是对岛上其余每一点的实测。",
+   "note": "岛屿形状仍取自 Natural Earth。不再把整岛做成可点击的中华民国多边形。",
    "sources": [
+    "http://www.mod.gov.cn/gfbw/gfjy_index/js_214151/4839572.html",
+    "https://www.gov.cn/lssdjt/content_1845505.htm",
+    "http://www.hinews.cn/news/system/2020/05/01/032338561.shtml",
     "https://en.wikipedia.org/wiki/Battle_of_Hainan_Island"
    ]
   },
@@ -105,7 +108,7 @@
     }
    },
    "approx": false,
-   "dates_note": "国民革命军 1950 年 5 月中旬撤出，舟山 1950-05-17 为共军占领（英文维基「Zhoushan」）。",
+   "dates_note": "1950-05-17 舟山换手，当天起不再标为中华民国。只选「1950」年、不选月份时按年中判断，已经过了换手日，所以不会显示。",
    "sources": [
     "https://en.wikipedia.org/wiki/Zhoushan"
    ]
@@ -155,7 +158,7 @@
     "zh": "中华民国"
    },
    "from": "1949-10-01",
-   "until": "1955-02",
+   "until": "1955-02-12",
    "geometry": {
     "polygon": [
      [
@@ -193,10 +196,11 @@
     ]
    },
    "approx": true,
-   "dates_note": "1955-01-20 一江山岛失守后，美国海军于 1955 年 2 月协助撤离大陈岛军民（英文维基「Dachen Islands」「Battle of Yijiangshan Islands」）。",
+   "dates_note": "撤离在 1955-02-08 至 02-12。02-12 起不再标为中华民国，不是整个 2 月。南麂 2 月 25 日撤离不是大陈。英文维基为辅助。",
    "sources": [
-    "https://en.wikipedia.org/wiki/Dachen_Islands",
-    "https://en.wikipedia.org/wiki/Battle_of_Yijiangshan_Islands"
+    "https://en.wikipedia.org/wiki/Battle_of_Dachen_Archipelago",
+    "https://history.state.gov/historicaldocuments/frus1955-57v02/d102",
+    "https://www.moc.gov.tw/en/News_Content2.aspx?n=468&s=16608"
    ],
    "note": "Natural Earth 1:10m 不含大陈岛（上、下大陈岛约在东经 121.9°、北纬 28.45°–28.5°）：用手绘多边形标出大致范围。"
   },
@@ -329,19 +333,32 @@
    "from": "1950",
    "until": "1961-04-17",
    "geometry": {
-    "admin1": [
-     "MM-17"
-    ],
-    "intersect_bbox": [
-     97.9,
-     19.8,
-     100.2,
-     22.4
+    "polygon": [
+     [
+      98.7,
+      20.3
+     ],
+     [
+      99.9,
+      20.3
+     ],
+     [
+      99.9,
+      21.5
+     ],
+     [
+      98.7,
+      21.5
+     ],
+     [
+      98.7,
+      20.3
+     ]
     ]
    },
    "approx": true,
-   "dates_note": "1950 年国民革命军残部（李弥指挥，「云南反共救国军」）退入缅甸掸邦，多次反攻云南失败；1960–1961 年中缅联合军事行动后，台湾于 1961-03-31 至 04-17 撤走约 4,400 人（英文维基「Kuomintang in Burma」）。",
-   "note": "这是武装存在，不是主权控制，缅甸对掸邦的主权不变；范围按掸邦东部（孟萨、景栋一带）近似。",
+   "dates_note": "起始只写到年，从 1950-01-01 起显示，不是要到年中才出现。1961-04-17 起不再显示。英文维基「Kuomintang in Burma」为辅助。",
+   "note": "武装存在，不是主权。不是云南全省，也不是缅甸北部全部。只画景栋、孟萨一带的大致范围。昆明不在此范围。",
    "sources": [
     "https://en.wikipedia.org/wiki/Kuomintang_in_Burma"
    ]
@@ -12111,6 +12128,145 @@
     "https://en.wikipedia.org/wiki/Japanese_occupation_of_the_Gilbert_Islands"
    ],
    "dates_note": "日军 1941-12-10 占领马金、塔拉瓦；1943-11-20/23 美军攻占塔拉瓦、马金。"
+  },
+  {
+   "group": "chinese_civil_war",
+   "kind": "holdout",
+   "as_polity": true,
+   "approx": true,
+   "controller": {
+    "qid": "Q865",
+    "zh": "中华民国"
+   },
+   "id": "ccw_roc_haikou_1950",
+   "name_zh": "海口市范围（大致范围，不是全岛）",
+   "name_en": "Haikou city extent (approximate, not the whole island)",
+   "from": "1949-10-01",
+   "until": "1950-04-23",
+   "geometry": {
+    "polygon": [
+     [
+      110.22,
+      19.96
+     ],
+     [
+      110.45,
+      19.96
+     ],
+     [
+      110.45,
+      20.14
+     ],
+     [
+      110.22,
+      20.14
+     ],
+     [
+      110.22,
+      19.96
+     ]
+    ]
+   },
+   "dates_note": "海口、府城于 1950-04-23 上午易手。这个框只盖城市附近，不是整岛。4 月 23 日起不再标为中华民国。",
+   "note": "大致范围。框外点到的政权不是对其余每一点的实测。",
+   "sources": [
+    "http://www.mod.gov.cn/gfbw/gfjy_index/js_214151/4839572.html",
+    "https://www.gov.cn/lssdjt/content_1845505.htm",
+    "http://www.hinews.cn/news/system/2020/05/01/032338561.shtml",
+    "https://en.wikipedia.org/wiki/Battle_of_Hainan_Island"
+   ]
+  },
+  {
+   "group": "chinese_civil_war",
+   "kind": "holdout",
+   "as_polity": true,
+   "approx": true,
+   "controller": {
+    "qid": "Q865",
+    "zh": "中华民国"
+   },
+   "id": "ccw_roc_sanya_1950",
+   "name_zh": "榆林、三亚一带（大致范围，不是全岛）",
+   "name_en": "Yulin and Sanya area (approximate, not the whole island)",
+   "from": "1949-10-01",
+   "until": "1950-04-30",
+   "geometry": {
+    "polygon": [
+     [
+      109.4,
+      18.15
+     ],
+     [
+      109.65,
+      18.15
+     ],
+     [
+      109.65,
+      18.38
+     ],
+     [
+      109.4,
+      18.38
+     ],
+     [
+      109.4,
+      18.15
+     ]
+    ]
+   },
+   "dates_note": "榆林一带于 1950-04-30 易手。这个框只盖该地附近，不是整岛。4 月 30 日起不再标为中华民国。",
+   "note": "大致范围。",
+   "sources": [
+    "http://www.mod.gov.cn/gfbw/gfjy_index/js_214151/4839572.html",
+    "https://www.gov.cn/lssdjt/content_1845505.htm",
+    "http://www.hinews.cn/news/system/2020/05/01/032338561.shtml",
+    "https://en.wikipedia.org/wiki/Battle_of_Hainan_Island"
+   ]
+  },
+  {
+   "group": "chinese_civil_war",
+   "kind": "holdout",
+   "as_polity": true,
+   "approx": true,
+   "controller": {
+    "qid": "Q865",
+    "zh": "中华民国"
+   },
+   "id": "ccw_roc_yijiangshan_1955",
+   "name_zh": "一江山岛（大致范围）",
+   "name_en": "Yijiangshan Islands (approximate)",
+   "from": "1949-10-01",
+   "until": "1955-01-20",
+   "geometry": {
+    "polygon": [
+     [
+      121.78,
+      28.58
+     ],
+     [
+      121.88,
+      28.58
+     ],
+     [
+      121.88,
+      28.66
+     ],
+     [
+      121.78,
+      28.66
+     ],
+     [
+      121.78,
+      28.58
+     ]
+    ]
+   },
+   "dates_note": "1955-01-18 开始进攻，19 日晚共军控制该岛。1 月 20 日起不再标为中华民国。这不是大陈岛。1 月 20 日起这个轮廓不再显示。它离大陈岛很近，轮廓结束后，点击可能因距离不到 0.15 度而落到大陈范围，直到大陈在 2 月 12 日结束。",
+   "note": "手绘大致范围，不是实测岸线。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Battle_of_Yijiangshan_Islands",
+    "https://www.moc.gov.tw/en/News_Content2.aspx?n=468&s=16608"
+   ]
   }
  ]
 }

@@ -159,7 +159,7 @@ def econ_hover(date: str, snap: str, fid: int):
         "date": date, "year": year, "annual": True, "fid": fid,
         "countries": countries,
         "empty": not any(c["values"] for c in countries),
-        "note": "数字来自 Maddison Project Database 2023（CC BY 4.0），按今天这个国家的范围估计，不是当时政权的账。只有表里正好有所选年份才给出数值；没有则是暂无数据，不用邻年或更晚的数字顶上。",
+        "note": "这是现代国家范围的序列，不是当时政权自己的账，也不是后来某个共和国的统计。来源只在这里写一次：Maddison Project Database 2023（CC BY 4.0）。只有表里正好有所选年份才给出全年数字。",
     }
 
 

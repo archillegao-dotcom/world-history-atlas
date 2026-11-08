@@ -42,7 +42,7 @@ class ControlZonesLayer(LayerModule):
                         "dates_note": z.get("dates_note"), "note": z.get("note"), "sources": z.get("sources", []),
                         "as_polity": bool(z.get("as_polity")), "label": z["_label"], "geom": z["geom"]})
         return {"items": out, "total": len(out),
-                "note": "实际控制区只覆盖已人工整理的冲突（目前：国共内战结束阶段、西藏 1912–1959）；其他地区没有画不代表没有。"}
+                "note": "实际控制区只覆盖已人工整理的冲突（目前：国共内战结束阶段、西藏 1912–1959）；其他地区没有画不代表没有。只选年份、不选月份时，按这一年的年中判断，不是 1 月 1 日，也不是全年都显示。只写到年的起始日按该年 1 月 1 日，只写到月的结束日维持到该月末。"}
 
 
 MODULE = ControlZonesLayer()

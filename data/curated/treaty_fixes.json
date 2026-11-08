@@ -16,5 +16,93 @@
       "https://www.wikidata.org/wiki/Q5035992",
       "https://zh.wikipedia.org/wiki/%E4%B9%99%E6%9C%AA%E6%88%B0%E7%88%AD"
     ]
+  },
+  "Q170360": {
+    "zh": "第二次贡比涅停战协定",
+    "en": "Armistice of 22 June 1940",
+    "types": [{"en": "armistice", "zh": "停战协定"}],
+    "signed": {"y": 1940, "m": 6, "d": 22},
+    "effective": {"y": 1940, "m": 6, "d": 25},
+    "status": "signed_then_effective",
+    "parties": [
+      {"s": "Q70802", "via": "curated"},
+      {"s": "Q7318", "via": "curated"}
+    ],
+    "countries": ["Q70802", "Q7318"],
+    "also_show": [
+      {"s": "Q69808", "how": "维希政权沿用此文件，不是签署方"},
+      {"s": "Q2748708", "how": "这几日地图上的德军占领区不是签署方；签署方是法兰西第三共和国"}
+    ],
+    "desc": "1940-06-22 在贡比涅签署，签署方是法兰西第三共和国与纳粹德国，不是 7 月 10 日以后的维希政权。生效日是 1940-06-25，所以 6 月 22 日当天尚未生效。",
+    "note": "6 月 22 日只是签署。生效在法意停战协定之后的 6 月 25 日。维希政权不是签署方。",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Armistice_of_22_June_1940",
+      "https://www.wikidata.org/wiki/Q170360"
+    ]
+  },
+  "Q2862273": {
+    "zh": "法国-意大利停战协定",
+    "en": "Franco-Italian Armistice",
+    "types": [{"en": "armistice", "zh": "停战协定"}],
+    "signed": {"y": 1940, "m": 6, "d": 24},
+    "effective": {"y": 1940, "m": 6, "d": 25},
+    "status": "signed_then_effective",
+    "parties": [
+      {"s": "Q70802", "via": "curated"},
+      {"s": "Q172579", "via": "curated"}
+    ],
+    "countries": ["Q70802", "Q172579"],
+    "also_show": [
+      {"s": "Q69808", "how": "维希政权沿用此文件，不是签署方"},
+      {"s": "Q2748708", "how": "这几日地图上的德军占领区不是签署方；签署方是法兰西第三共和国"}
+    ],
+    "desc": "1940-06-24 签署，签署方是法兰西第三共和国与意大利王国。1940-06-25 才生效。中文名用 Wikidata 已有标签，不另造译名。",
+    "note": "6 月 24 日已签署、尚未生效。",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Franco-Italian_Armistice",
+      "https://www.wikidata.org/wiki/Q2862273"
+    ]
+  },
+  "curated:paris-protocols-1941": {
+    "insert": true,
+    "zh": "巴黎议定书",
+    "en": "Paris Protocols",
+    "sl": 30,
+    "types": [{"en": "protocol", "zh": "议定书"}],
+    "signed": {"y": 1941, "m": 5, "d": 28},
+    "status": "signed_not_ratified",
+    "parties": [
+      {"s": "Q69808", "via": "curated"},
+      {"s": "Q7318", "via": "curated"}
+    ],
+    "countries": ["Q69808", "Q7318"],
+    "enwiki": "Paris Protocols",
+    "desc": "1941 年 5 月 27 日至 28 日由达尔朗与德国代表在巴黎签署的议定书。贝当未批准，不作为生效条约。后来出现的部分军事合作不等于议定书生效。",
+    "note": "导出数据里没有这份文件，故用 curated id，不发明 QID。不把它写成有效条约。",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Paris_Protocols",
+      "https://fr.wikipedia.org/wiki/Protocoles_de_Paris",
+      "https://francearchives.gouv.fr/fr/facomponent/1188ae613c29240f615307da0d7ec11547f85f79"
+    ]
+  },
+  "curated:franco-japanese-indochina-1941-07-29": {
+    "insert": true,
+    "zh": "法日印度支那议定书",
+    "en": "Protocol between France and the Empire of Japan concerning the joint defense of French Indochina",
+    "sl": 30,
+    "types": [{"en": "protocol", "zh": "议定书"}],
+    "signed": {"y": 1941, "m": 7, "d": 29},
+    "status": "published_not_ratified",
+    "parties": [
+      {"s": "Q69808", "via": "curated"},
+      {"s": "Q188712", "via": "curated"}
+    ],
+    "countries": ["Q69808", "Q188712"],
+    "desc": "全称《法国和日本帝国关于共同防御法属印度支那的议定书》。1941-07-29 在维希由达尔朗与加藤大使签署，当日公布并付诸实施，没有议会批准。这是议定书，不称作生效条约。",
+    "note": "导出数据里没有这份文件，故用 curated id，不发明 QID。中文简称取已出版的《法日印度支那议定书》，不是新造译名。",
+    "sources": [
+      "http://www.ibiblio.org/pha/monos/147/147app02.html",
+      "https://imtfe.law.virginia.edu/collections/tavenner/10/3/proof-doc-1030-text-protocol-between-france-and-japan"
+    ]
   }
 }

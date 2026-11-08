@@ -266,7 +266,7 @@ def _stored_summary(r):
 @router.get("/api/treaty/{tid}")
 def treaty(tid: str):
     """条约详情：日期、全部签署方、维基百科摘要（中文优先）、维基文库/全文链接。"""
-    from .modules.spirits import kind_of, tend, tstart
+    from .modules.spirits import STATUS_ZH, kind_of, tend, tstart
     ctx = _ctx()
     R = resolver(ctx)
     r = ctx.shared.get("treaties", {}).get(tid)
@@ -291,7 +291,8 @@ def treaty(tid: str):
     return {"id": tid, "name": _zh_disp(r.get("zh") or r.get("en")), "en": r.get("en"), "desc": r.get("desc"), "kind": kind_of(r),
             "types": [t.get("zh") or t.get("en") for t in r.get("types", [])],
             "signed": _t(r.get("signed")), "effective": _t(r.get("effective")), "start": _t(r.get("start") or r.get("inception")),
-            "end": _t(tend(r)), "parties": parties, "others": others,
+            "end": _t(tend(r)), "status": r.get("status"), "status_zh": STATUS_ZH.get(r.get("status")),
+            "fix_note": r.get("fix_note"), "parties": parties, "others": others,
             "summary": _stored_summary(r) or wiki.summary(r.get("zhwiki"), r.get("enwiki")), "links": links,
             "location": [{"name": _zh_disp(x.get("zh") or x.get("en")), "coord": x.get("coord")} for x in r.get("location", [])],
             "countries": [R.state_name(c) for c in r.get("countries", [])],
