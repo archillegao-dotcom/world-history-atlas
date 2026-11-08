@@ -25,6 +25,7 @@
 - **资料依赖**：只有这一项缺指定文件。不表示别的历史修复都要停。
 - **免做**：用户明确取消。
 - **失效**：被后来的规则代替。
+- **接口复跑通过**不等于历史验收通过。119 条、162 个月、72 个快照变绿，不能代替 Task D 的国家列表和学术核查，也不能把局部样本写成全表完成。
 
 ## T01（部分完成，不能勾完，第四批视觉没有验收通过）
 
@@ -148,3 +149,88 @@ TNO / 钢铁雄心 IV 风格地图。用户 2026-11-03 提出，2026-11-08 再�
 ## 甘丹颇章与两个声索样本（2026-11-08，不是全境画完）
 
 核查表见 `docs/TIBET_REVIEW_2026-11-08.md`。1912 年没有另画西藏，点选归中华民国仍是未修缺陷。1950 年 10 月 2 日、1951 年 5 月 23 日、9 月 9 日、10 月 26 日都没有把整块改涂。1951 年 8 月 9 日起中西部是灰色的数据不足，不是无人统治，也不是实控重建。昌都框是今天自治区东段的切块。达旺和阿克赛钦只有样本小框，小框不是实际边界，没有声索线。宪法第一批仍只覆盖法、德、英、日里写明的文本。
+
+## 2026-11-08 综合复验（欧洲/巴黎 07:54–08:06，源码 c1e277d，不是验收通过）
+
+在已运行的 Linux 源码服务 `http://127.0.0.1:8792` 上实跑。这不是 Mac 或 Windows 打包版，也没有发付费 CI，没有合并，没有打 tag。上面各节里「没有重跑」指的是当时那一批；本节才是这次的退出码。接口通过只说明抽查点与脚本断言相符，不把 Task D、书目、殖民地全表或历史省界写成已经做完。原 42 条加 T01 不是全部完成。
+
+| 命令 | 本次结果 | 退出码 |
+|---|---|---|
+| `python3 tools/accept/api_mustpass.py` | 119/119 | 0 |
+| `python3 tools/accept/manchuria_no_roc.py` | 162 个月，failures=0 | 0 |
+| `python3 tools/accept/ww2_occupation_bloc.py` | 72 个快照，1444 次占领区检查，zones-without-bloc=0 | 0 |
+| `python3 tools/accept/p0_batch2.py` | FAILS 0 | 0 |
+| `python3 tools/accept/p0_1941.py` | 22/22 | 0 |
+| `python3 tools/accept/p0_batch3.py` | FAILS 0 | 0 |
+| `python3 tools/accept/p0_batch4.py` | FAILS 0。脚本开头写明 1911 年分省独立没有做，这次也没有测成分省独立 | 0 |
+| `python3 tools/accept/p0_batch5.py` | fails=0。满洲国西缘仍是「空隙（未核实）」 | 0 |
+| `python3 tools/accept/constitutions.py` | FAIL 0。重庆、北京、德里的负例仍是「无页」 | 0 |
+| `python3 tools/accept/tibet_panel.py` | FAIL 0。1912 年拉萨仍是中华民国；1951-08-09 仍是数据不足 | 0 |
+| `python3 tools/accept/hillshade_coast.py` | water_not_neutral=0，bright_coast=0 | 0 |
+| `python3 packaging/test_launcher_translocation.py` | translocation relaunch guard ok。不启动服务，也不是打包 | 0 |
+| `python3 packaging/smoke_check.py http://127.0.0.1:8792 /tmp/wha-b2b` | version=0.6.2，modules=16，events=71778，cities=7342，巴士底日事件在。这是已经用 `launcher.py` 拉起的 Linux 源码，用户目录 `/tmp/wha-b2b` | 0 |
+| `node tools/accept/browser_reaudit.mjs` | PASS。策略/普通切换、放大后的现代参考线、窄屏、改日期、约 5 秒经济浮窗移开即取消、1944 巴黎宪法页、1944 拉萨领导人页 | 0 |
+
+这次没有跑：`book_xcheck.py`、`china_monarchs.py`、`interregna.py`、`war_audit.py`、`zh_coverage.py`、`click_un.py`、`packaging/build.py`、PyInstaller。所以不能把旧日志里的 18/18、2130/2132、84/86 写成这次的结果。那些旧数字仍只是 2026-11-02 前后的记录，是否在 c1e277d 上依旧成立，标待核。
+
+浏览器冒烟截图（这次无头 Chrome，不是手绘）：
+
+- `/opt/cursor/artifacts/reaudit-desktop-1944-strategy.png`
+- `/opt/cursor/artifacts/reaudit-desktop-1944-normal.png`
+- `/opt/cursor/artifacts/reaudit-desktop-zoom-admin.png`
+- `/opt/cursor/artifacts/reaudit-phone-1944-asia.png`
+- `/opt/cursor/artifacts/reaudit-phone-date-1950.png`
+- `/opt/cursor/artifacts/reaudit-hover-cancelled.png`
+- `/opt/cursor/artifacts/reaudit-hover-shown.png`
+- `/opt/cursor/artifacts/reaudit-desktop-1944-paris-constitution.png`
+- `/opt/cursor/artifacts/reaudit-desktop-1944-lhasa-leaders.png`
+
+`hillshade_coast.py` 只检查生成图的透明像素。手机华东和南海的岸边细碎像素没有在这次冒烟里逐段重看，仍是已知问题，没有重做栅格。
+
+### 42 条加 T01：这次能对上的状态
+
+| ID | 这次怎么对 | 仍不能写成完成的部分 |
+|---|---|---|
+| T01 | 浏览器切了策略/普通地图。展开边界说明后有「不是历史省界」「不是 TNO 官方地图」。放大后有现代行政区参考线。窄屏这次没有横向溢出 | **未验收**。历史省界未做。海岸细碎像素未重做。用户没有把 T01 当成通过 |
+| M01 | 本批没有做用语普查 | 已做待验。待核 |
+| M02 | mustpass 国旗 7/7，含 1920 北京、1935 南京 | 抽查，不是国旗全表史料验收 |
+| M03 / M22 | p0_batch2：2000 巴黎从 1958-10-04，三色旗文件名含 1976–2020 | 只是这个点 |
+| M04 | mustpass 东北 1947 为 3/3 | 抽查三点，不是东北全图学术对照 |
+| M05 | mustpass 面板 17/17，含港澳与波兰若干日期 | 不是全部特殊地位实体 |
+| M06 | 本批没有跑 `war_audit.py` | 俄乌动态未复验。已知缺口仍是 2022-03-15 库皮扬斯克当日快照，见 KNOWN_ISSUES。待核 |
+| M07 | 没有新普查 | 没有完成线 |
+| M08 | mustpass 含 1952 长春、哈尔滨为中华人民共和国。162 个月只覆盖到 1945-08 | 不是对照学术地图的全文 |
+| M09 | mustpass 新加坡 4/4 | 微型国家旧记录仍写 32/34，这次没有重测那两个缺口。待核 |
+| M10 | mustpass 苏联解体、南斯拉夫、捷克斯洛伐克、德国统一分组都是全过 | 抽查首都点，不是逐年疆域 |
+| M11 | 本批没有跑 `china_monarchs.py` | 中国部分旧记录待核。其他国家逐年君主**未做完** |
+| M12 | 没有新的欧洲疆域核查 | **整体未完成** |
+| M13 | 本批没有单跑虚构/游戏国扫描 | 已做待验。待核 |
+| M14 | `book_xcheck.py` 里仍是 OpenStax 18 条。本批没有跑 | 旧 18/18 不能当成这次结果。用户书目的完整提取、对上、冲突处理**未做** |
+| M15 | mustpass 中国 1950 为 3/3 | 海南等见 M26，不是大陆每一点 |
+| M16 | mustpass 含 1942-12-24 若干欧洲点 | 不是 1942 年每个占领区 |
+| M17 | mustpass 中日战争 10/10 | 抽查，不是把旧图全部再核一遍 |
+| M18 | 没有 COW / Gleditsch–Ward 逐年表 | **Task D 未做**。接口绿不代替国家列表和学术核查 |
+| M19 | 本批没有跑 `interregna.py`。西藏摄政在 tibet_panel 里另计 | 全球空位期待核 |
+| M20 | p0_1941 里台南开城仍是「暂无通用译名」 | `zh_coverage.py` 本批没跑。全库中文名待核。裸 QID 没有做全球扫描 |
+| M21 | 停止线仍是共享周用量 30% | 75% 规则失效 |
+| M23 | mustpass 含 1939-10-15 华沙 | 不是波兰全境逐年 |
+| M24 | 没有查古代欧洲 | **Task D1–D4 未做** |
+| M25 | p0_batch2：前 1136 年 Zhoa 是周、Sinic 是商 | 只是这个快照 |
+| M26 | p0_batch4 的海口、三亚、舟山、大陈、一江山、金门、李弥部点都过了 | 仍是写明的点，不是每一点实测。琼崖纵队仍没画 |
+| M27 | 162 个月 failures=0 | 网格点，不是东北每一寸 |
+| M28 | 本批没有单独查双苏联双色 | 待核 |
+| M29 | 72 个快照、1444 次检查为 0。脚本只要求轴心、同盟或附庸标签 | **不是** 1939–1945 逐区人工核验。那一项仍未做完 |
+| M30 | 说明 | 不是功能 |
+| M31 | p0_batch4 仍声明没做，这次也没有分省用例 | **未做**。缺边界就不编 |
+| M32 | tibet_panel FAIL 0。1944 领导人页签不是 0 | **部分完成**。1912 年点选仍归中华民国，是未修缺陷。1951-08-09 起灰色是数据不足，不是已重建实控。1941 年月份仍待考。没有新边界 |
+| M33 | 同一次 tibet_panel。达旺、阿克赛钦仍只是样本框 | 没有麦克马洪线或约翰逊线。不是全境 |
+| M34 | 本批没有检索、没有录入 | **仍排在最后**。仓库里没有这部书的全文 |
+| M35 | 浏览器：未满约 5 秒移开不出现；停留后出现；离开即消失；改日期取消未完成的悬停。p0_batch3 的接口说明也过了 | 数字仍是现代国家范围的序列，不是当时政权的账 |
+| M36 / M37 | constitutions.py FAIL 0。浏览器 1944-12-01 巴黎显示 1944-08-09 法令，类型为临时宪法/约法 | **只覆盖法、德、英、日里写明的文本**。中华民国、中华人民共和国和其他国家的宪法没有编 |
+| W1 | p0_1941：维希职务名没有裸 QID | 不是全球领导人 |
+| W2 | p0_1941 含 1941 台北、朝鲜生效日、南桦太 | 关东州仍没有单独的 CShapes 行。殖民地全表**未做完** |
+| W3 | p0_batch4 的四份法国文件按签署、生效、未批准分开，这次仍过 | 斯洛伐克、克罗地亚独立国、汪精卫政权、满洲国、意大利社会共和国的条约没有逐份编目 |
+| W4 | p0_1941：不叫「台南话」，当事方不是中华民国 | 这一条的抽查过了，不是新的译名普查 |
+| W5 | 免做 arm64 / universal2。Linux 源码能启动，见上表 smoke_check | **不能**把这次启动写成 Mac 或 Windows 打包验收。`packaging/build.py` 没有跑 |
+
+停线之后若还继续，仍不发布、不合并、不付费。可接的下一项必须仍是有界的：要么复跑上面标了「待核」的某一支旧脚本并只记录退出码，要么在已有史料足够时修一个写明的缺口。没有边界或书目就不新画、不新编。史事纪要仍在这些之后。

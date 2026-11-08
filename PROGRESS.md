@@ -418,3 +418,7 @@ TNO / 钢铁雄心 IV 风格地图仍在队列里，本批没有做。只参考�
 - `python3 tools/accept/api_mustpass.py`：119/119。这一批改过 1950-10-02 至 1959-03-28 的西藏轮廓之后跑的。后来只改了地上的短标签和昌都面板里的中文名称，没有再改几何，这两处没有重跑 119。
 - 满洲 162 个月（1932-03 至 1945-08）和阵营 72 个快照（1939-09 至 1945-08）没有重跑。它们的日期早于这块轮廓的改动。
 - `node tools/accept/browser_tibet.mjs`：系统 Chrome 无头。桌面 1440×900 点 1944-12-01 和 1951-05-23 的拉萨，再点 1951-10-26 的昌都和拉萨。手机 390×844 先看 2000-06-01 达旺一带的地图，再点开声索说明。
+
+## 2026-11-08 综合复验（欧洲/巴黎 07:54–08:06）
+
+在 c1e277d 的 Linux 源码上重跑了 119、满洲 162 个月、阵营 72 个快照，以及 p0_batch2、p0_1941、p0_batch3、p0_batch4、p0_batch5、constitutions、tibet_panel、hillshade_coast、launcher 的 translocation 检查。退出码都是 0。接着对已经用 launcher 打开的 8792 跑了 `packaging/smoke_check.py`，退出码 0。这不是 Mac 或 Windows 打包。浏览器冒烟 `browser_reaudit.mjs` 退出码 0。没有改几何，没有新查书目。对照表在 `docs/REQUIREMENTS_0.6.2.md` 末节。42 条加 T01 仍不是全部完成。没有合并，没有发布。
