@@ -26,8 +26,8 @@
       if (n >= max) break;
       const p = map.latLngToContainerPoint([c.coord[1], c.coord[0]]);
       const nameOn = !strategy || z >= 5;
-      const shown = !nameOn ? "" : (strategy && (c.name || "").length > 8 ? c.name.slice(0, 7) + "…" : c.name);
-      const w = shown ? Math.min(shown.length, strategy ? 8 : 16) * 12 + 16 : 16, h = 16;
+      const shown = !nameOn ? "" : (c.name || "");
+      const w = shown ? shown.length * 13 + 16 : 16, h = 16;
       const box = [p.x - 8, p.y - h / 2, p.x + w, p.y + h / 2];
       const hit = (q) => !(box[2] < q[0] || box[0] > q[2] || box[3] < q[1] || box[1] > q[3]);
       if (placed.some(hit) || (WHA.polityLabelBoxes || []).some(hit)) continue;

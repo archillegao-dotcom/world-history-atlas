@@ -92,10 +92,23 @@
   const layerMods = () => state.meta.modules.filter((m) => m.kind === "layer");
 
   // ---------------------------------------------------------------- 地图
-  const map = L.map("map", { worldCopyJump: true, minZoom: 2, maxZoom: 8, zoomSnap: 0.5, attributionControl: true }).setView([30, 20], 2.5);
+  const phone0 = window.matchMedia("(max-width: 720px)").matches;
+  // 打开时地图更大：桌面约看到欧洲到东亚，窄屏先给一块可读的区域。缩小和「全世界」仍在。日期变化不改这里的视角。
+  const map = L.map("map", { worldCopyJump: true, minZoom: 2, maxZoom: 8, zoomSnap: 0.5, attributionControl: true })
+    .setView(phone0 ? [36, 48] : [32, 55], phone0 ? 3 : 3.5);
   WHA.map = map;
   map.attributionControl.setPrefix('<a href="https://leafletjs.com">Leaflet</a>');
   map.attributionControl.addAttribution('边界：<a href="https://github.com/aourednik/historical-basemaps" target="_blank">historical-basemaps</a> (GPL-3.0) · 事件/人物：<a href="https://www.wikidata.org" target="_blank">Wikidata</a> (CC0)');
+  if (!map.getPane("hillshade")) {
+    const hp = map.createPane("hillshade");
+    hp.style.zIndex = 405;
+    hp.style.pointerEvents = "none";
+    hp.classList.add("hillshade-pane");
+  }
+  // Natural Earth 1:50m Shaded Relief，公有领域。水面临时去掉，只把陆地起伏叠在政权颜色上。不是历史国界。
+  L.imageOverlay("assets/ne50m_hillshade.png", [[-78, -180], [78, 180]], {
+    pane: "hillshade", opacity: 0.92, interactive: false, className: "hillshade-img",
+  }).addTo(map);
   let layer = null;
   const markers = L.layerGroup().addTo(map);
   const geoCache = {};
@@ -279,10 +292,88 @@
   }
 
   let labelLayer = null, adminLayer = null, adminSeq = 0, adminTimer = null;
+  // 地图上的短名都是核对过的叫法。括号里的地位说明可以略去，因为全名留在提示里。没有核对过的长名整段显示，不用省略号。
+  const SHORT_NAME = {
+    "法兰西共和国临时政府": "法国临时政府",
+    "法兰西共和国临时政府/盟军控制区（法国）": "法国临时政府",
+    "意大利王国/盟军控制区（意大利社会共和国）": "意王国/盟军",
+    "英军托管下的利比亚": "利比亚（英管）",
+    "苏军控制区（匈牙利）": "苏占匈牙利",
+    "苏军收复区（原东方总督辖区）": "苏军收复区",
+    "苏军与波兰民族解放委员会控制区（原波兰总督府）": "苏军·波兰",
+    "南斯拉夫民族解放运动/苏军控制区（克罗地亚独立国）": "苏军·克罗地亚",
+    "南斯拉夫民族解放运动/苏军控制区（塞尔维亚（德军军事管理区））": "苏军·塞尔维亚",
+    "南斯拉夫民族解放运动/苏军控制区（黑山（意大利军政府））": "苏军·黑山",
+    "第二次世界大战中的法属印度支那": "法属印度支那",
+    "挪威（苏军解放的芬马克）": "芬马克（苏军）",
+    "印度尼西亚日据时期": "印尼（日据）",
+    "蒙疆联合自治政府": "蒙疆",
+    "日军军事占领区（桂柳会战）": "桂柳（日军）",
+  };
   function shortPolity(name) {
     const s = String(name || "");
-    if (s.length <= 8) return s;
-    return s.slice(0, 7) + "…";
+    if (SHORT_NAME[s]) return SHORT_NAME[s];
+    const m = s.match(/^([^（(]{2,8})[（(].*(殖民地|保护国|托管地|属地|占领区|解放区|军政府)/);
+    if (m) return m[1];
+    return s;
+  }
+  function ringHas(lat, lng, ring) {
+    let inside = false;
+    for (let i = 0, j = ring.length - 1; i < ring.length; j = i++) {
+      const yi = ring[i].lat, xi = ring[i].lng, yj = ring[j].lat, xj = ring[j].lng;
+      if (Math.abs(xi - xj) > 80) continue;
+      if ((yi > lat) !== (yj > lat)) {
+        const x = xi + (xj - xi) * (lat - yi) / ((yj - yi) || 1e-12);
+        if (lng < x) inside = !inside;
+      }
+    }
+    return inside;
+  }
+  function polygonsOf(layer) {
+    const ll = layer.getLatLngs?.();
+    if (!ll || !ll.length) return [];
+    if (typeof ll[0].lat === "number") return [{ outer: ll, holes: [] }];
+    if (ll[0][0] && typeof ll[0][0].lat === "number") return [{ outer: ll[0], holes: ll.slice(1) }];
+    return ll.filter((poly) => poly && poly[0] && poly[0][0] && typeof poly[0][0].lat === "number")
+      .map((poly) => ({ outer: poly[0], holes: poly.slice(1) }));
+  }
+  function insidePoly(lat, lng, poly) {
+    return ringHas(lat, lng, poly.outer) && !poly.holes.some((h) => h && h.length > 2 && ringHas(lat, lng, h));
+  }
+  // 名称放在当前画面里、多边形内部的一段上，不用外接矩形中心（那个点会落到海里或别国）。
+  function visibleInterior(outer, holes, view) {
+    let minLat = 90, maxLat = -90, minLng = 180, maxLng = -180;
+    for (const p of outer) {
+      if (p.lat < minLat) minLat = p.lat;
+      if (p.lat > maxLat) maxLat = p.lat;
+      if (p.lng < minLng) minLng = p.lng;
+      if (p.lng > maxLng) maxLng = p.lng;
+    }
+    const south = Math.max(minLat, view.getSouth()), north = Math.min(maxLat, view.getNorth());
+    const west = Math.max(minLng, view.getWest()), east = Math.min(maxLng, view.getEast());
+    if (!(south < north) || !(west < east)) return null;
+    let best = null, bestLen = 0;
+    const lines = 9;
+    for (let i = 0; i < lines; i++) {
+      const lat = south + (north - south) * (i + 0.5) / lines;
+      const xs = [];
+      for (let a = 0, b = outer.length - 1; a < outer.length; b = a++) {
+        const y1 = outer[b].lat, y2 = outer[a].lat;
+        if (Math.abs(outer[a].lng - outer[b].lng) > 80) continue;
+        if ((y1 > lat) === (y2 > lat)) continue;
+        xs.push(outer[b].lng + (outer[a].lng - outer[b].lng) * (lat - y1) / (y2 - y1));
+      }
+      xs.sort((p, q) => p - q);
+      for (let k = 0; k + 1 < xs.length; k += 2) {
+        const a0 = Math.max(xs[k], west), a1 = Math.min(xs[k + 1], east);
+        if (a1 - a0 <= bestLen) continue;
+        const lng = (a0 + a1) / 2;
+        if (holes.some((h) => h && h.length > 2 && ringHas(lat, lng, h))) continue;
+        bestLen = a1 - a0;
+        best = L.latLng(lat, lng);
+      }
+    }
+    return best ? { c: best, span: bestLen } : null;
   }
   function boxesOverlap(a, b) {
     return !(a[2] < b[0] || a[0] > b[2] || a[3] < b[1] || a[1] > b[3]);
@@ -301,20 +392,37 @@
     const z = map.getZoom();
     const view = map.getBounds();
     const c0 = map.getCenter();
-    const minSpan = z < 3.2 ? 18 : z < 4.2 ? 3.6 : z < 5.2 ? 1.8 : z < 6.5 ? 0.9 : 0.35;
+    const minSpan = z < 3.2 ? 4 : z < 4.2 ? 1.1 : z < 5.2 ? 0.55 : z < 6.5 ? 0.28 : 0.12;
     const items = [];
     layer.eachLayer((l) => {
       const b = l.getBounds?.();
       if (!b || !b.isValid() || !view.intersects(b)) return;
-      const w = b.getEast() - b.getWest(), hgt = b.getNorth() - b.getSouth();
-      if (w < minSpan && hgt < minSpan) return;
       const p = l.feature.properties;
-      const c = p.LABEL_X != null ? L.latLng(p.LABEL_Y, p.LABEL_X) : b.getCenter();
-      if (!view.contains(c)) return;
-      const dist = Math.hypot(c.lat - c0.lat, (c.lng - c0.lng) * 0.65);
-      items.push({ area: Math.max(w, 0.2) * Math.max(hgt, 0.2), name: pnameF(p), c, dist });
+      const polys = polygonsOf(l);
+      let chosen = null, span = 0;
+      if (p.LABEL_X != null && p.LABEL_Y != null) {
+        const ll = L.latLng(p.LABEL_Y, p.LABEL_X);
+        if (view.contains(ll) && polys.some((poly) => insidePoly(ll.lat, ll.lng, poly))) { chosen = ll; span = 2; }
+      }
+      if (!chosen) {
+        for (const poly of polys) {
+          const hit = visibleInterior(poly.outer, poly.holes, view);
+          if (hit && hit.span > span) { chosen = hit.c; span = hit.span; }
+        }
+      }
+      if (!chosen || span < minSpan || !view.contains(chosen)) return;
+      const dist = Math.hypot(chosen.lat - c0.lat, (chosen.lng - c0.lng) * 0.65);
+      items.push({ area: span, name: pnameF(p), zone: p.NAME_ZH || "", terr: !!p.TERRITORY, c: chosen, dist });
     });
-    const rank = (it) => Math.pow(it.area, 0.4) / (1 + it.dist / 8);
+    // 占领区若解析成宗主国国名，会和本土抢同一个标签，国名就会标到占领区上。这种区域改用自己的名称。
+    const mains = new Set(items.filter((it) => !it.terr).map((it) => it.name));
+    for (const it of items) {
+      if (it.terr && it.zone && it.zone !== it.name && mains.has(it.name)) {
+        it.title = `${it.zone}（${it.name}）`;
+        it.name = it.zone;
+      } else it.title = it.name;
+    }
+    const rank = (it) => Math.pow(Math.max(it.area, 0.2), 0.5) / (1 + it.dist / 8);
     items.sort((a, b) => rank(b) - rank(a));
     const cap = z < 3.2 ? 10 : z < 4.2 ? 16 : z < 5.2 ? 24 : z < 6.5 ? 36 : 48;
     const taken = [];
@@ -322,17 +430,17 @@
     for (const it of items) {
       if (used.size >= cap) break;
       const shown = shortPolity(it.name);
-      if (used.has(shown)) continue;
+      if (used.has(it.name)) continue;
       const pt = map.latLngToContainerPoint(it.c);
       pt.y -= 12;
-      const wpx = Math.max(48, shown.length * 16);
-      const box = [pt.x - wpx / 2, pt.y - 12, pt.x + wpx / 2, pt.y + 12];
+      const wpx = Math.max(52, shown.length * 18);
+      const box = [pt.x - wpx / 2, pt.y - 14, pt.x + wpx / 2, pt.y + 14];
       if (taken.some((q) => boxesOverlap(box, q))) continue;
       taken.push(box);
-      used.add(shown);
+      used.add(it.name);
       const icon = L.divIcon({
         className: "polity-label strategy-label", iconSize: null, iconAnchor: [0, 0],
-        html: `<span title="${esc(it.name)}">${esc(shown)}</span>`,
+        html: `<span data-lat="${it.c.lat.toFixed(3)}" data-lng="${it.c.lng.toFixed(3)}" title="${esc(it.title || it.name)}">${esc(shown)}</span>`,
       });
       L.marker(map.containerPointToLatLng(pt), { icon, pane: "labels", interactive: false, keyboard: false }).addTo(labelLayer);
     }
@@ -553,7 +661,12 @@
     const want = WHA.initialHash.get("layers");
     const on = want != null ? new Set(want.split(",")) : null;
     for (const m of layerMods()) { layerOn[m.id] = on ? on.has(m.id) : !!m.default_on; layers[m.id]?.init?.(map); }
-    box.innerHTML = "图层：" + layerMods().map((m) => `<label title="${esc(m.description)}"><input type="checkbox" data-id="${m.id}" ${layerOn[m.id] ? "checked" : ""}> ${esc(m.title)}</label>`).join("");
+    box.classList.add("collapsed");
+    box.innerHTML = `<button type="button" id="layerToggle" aria-expanded="false">图层</button><div class="layer-body">` + layerMods().map((m) => `<label title="${esc(m.description)}"><input type="checkbox" data-id="${m.id}" ${layerOn[m.id] ? "checked" : ""}> ${esc(m.title)}</label>`).join("") + `</div>`;
+    box.querySelector("#layerToggle").addEventListener("click", () => {
+      const closed = box.classList.toggle("collapsed");
+      box.querySelector("#layerToggle").setAttribute("aria-expanded", closed ? "false" : "true");
+    });
     box.querySelectorAll("input").forEach((el) => el.addEventListener("change", () => { hoverEnd(); layerOn[el.dataset.id] = el.checked; layerUser[el.dataset.id] = true; updateLayers(); updateHash(); }));
     if (want != null) for (const m of layerMods()) layerUser[m.id] = true;   // URL 指定了图层：不自动开关
     map.on("moveend", () => { const before = JSON.stringify(layerOn); autoLayers(); if (JSON.stringify(layerOn) !== before) updateLayers(); });
@@ -573,8 +686,11 @@
     if (y < -3000) html = `<b>史前时期（文字出现以前）</b>：地图上是 historical-basemaps 对考古文化与人群分布的粗略复原，不是国家边界（名称标为「文化/地区」）；快照非常稀疏（当前：${yearZh(base)}${state.next != null ? "，下一张：" + yearZh(state.next) : ""}）。Wikidata 中此时期几乎没有精确到年的事件和人物。`;
     else if (y < -500) html += "<br>上古时期：许多日期是估计值，人物生卒年常常只精确到世纪。";
     if (state.date.m && state.date.d) html += "<br>已精确到日：事件列表会把<b>当天</b>发生的事件排在最前（仅限 Wikidata 记录到日的事件）。";
-    if (strategyOn()) html += "<br>策略地图是自绘的深色分区。国名按缩放出现，全名在悬停提示里。细线是现代行政区，不是历史省界。没有地形。不是 TNO 官方地图。";
-    $("eraNote").innerHTML = html;
+    if (strategyOn()) html += "<br>策略地图是自绘的深色分区。国名写在该日可见范围里面，全名在提示里。细线是现代行政区，不是历史省界。淡色起伏是 Natural Earth 晕渲（公有领域），只表示现代自然地形，不是历史国界。不是 TNO 官方地图。";
+    const note = $("eraNote");
+    const open = note.classList.contains("open");
+    note.innerHTML = `<button type="button" id="eraToggle" aria-expanded="${open ? "true" : "false"}">${open ? "收起说明" : "边界说明"}</button>` + (open ? `<div class="era-body">${html}</div>` : "");
+    $("eraToggle").onclick = () => { note.classList.toggle("open"); updateEraNote(); };
     const tl = $("transList");
     if (tl) tl.onclick = (e) => { e.preventDefault(); WHA.openDetail("边界过渡修正", `<ul>${state.transitions.map((t) => `<li>${esc(t)}</li>`).join("")}</ul><p class="note">修正规则：Wikidata 中精确到月/日的成立（P571）与解散（P576）日期落在两张快照之间时，从该日期起用下一张快照中对应的范围；特殊地位领土用 Natural Earth 1:10m 范围。</p>`); };
   }
@@ -594,7 +710,7 @@
     document.body.classList.toggle("strategy", !!on);
     const btn = $("styleBtn");
     if (btn) { btn.textContent = on ? "普通地图" : "策略地图"; btn.setAttribute("aria-pressed", on ? "true" : "false"); }
-    if (on && !map._whaStratAttr) map._whaStratAttr = map.attributionControl.addAttribution('策略地图为软件自绘。细线：<a href="https://www.naturalearthdata.com/" target="_blank">Natural Earth</a> 现代一级行政区（公有领域），不是历史省界，也不是地形');
+    if (on && !map._whaStratAttr) map._whaStratAttr = map.attributionControl.addAttribution('策略地图为软件自绘。细线：<a href="https://www.naturalearthdata.com/" target="_blank">Natural Earth</a> 现代一级行政区（公有领域），不是历史省界。地形：同一来源的 1:50m 晕渲（公有领域），只表示现代自然起伏');
     restyle();
     updateEraNote();
     if (WHA.updateLayers) WHA.updateLayers();
@@ -829,6 +945,11 @@
     $("closePanel").onclick = closePanel;
     $("aboutBtn").onclick = () => $("about").classList.remove("hidden");
     $("styleBtn").onclick = () => applyStrategy(!strategyOn());
+    $("mapKeyBtn").onclick = () => {
+      const on = $("mapKey").classList.toggle("open");
+      $("mapKeyBtn").setAttribute("aria-expanded", on ? "true" : "false");
+      $("mapKeyBtn").textContent = on ? "收起图例" : "图例";
+    };
     $("detailClose").onclick = () => $("detail").classList.add("hidden");
     $("detail").onclick = (e) => { if (e.target.id === "detail") $("detail").classList.add("hidden"); };
     $("aboutClose").onclick = () => $("about").classList.add("hidden");

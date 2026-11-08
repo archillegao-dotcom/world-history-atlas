@@ -2,12 +2,12 @@
 * { box-sizing: border-box; }
 html, body { margin: 0; height: 100%; font-family: -apple-system, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif; color: #222; }
 body { display: flex; flex-direction: column; }
-#topbar { display: flex; align-items: center; gap: 14px; padding: 8px 14px; background: #2b2118; color: #f5ead6; flex-wrap: wrap; }
-.brand { font-size: 19px; font-weight: 700; letter-spacing: 1px; }
+#topbar { display: flex; align-items: center; gap: 8px; padding: 4px 8px; background: #2b2118; color: #f5ead6; flex-wrap: wrap; }
+.brand { font-size: 16px; font-weight: 700; letter-spacing: 1px; }
 .brand span { font-size: 12px; font-weight: 400; opacity: .7; margin-left: 4px; }
 .datebox { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
 .datebox input[type=number] { width: 90px; }
-#topbar input, #topbar select, #topbar button { font: inherit; font-size: 14px; padding: 3px 7px; border-radius: 5px; border: 1px solid #7a6650; background: #fffaf0; color: #222; }
+#topbar input, #topbar select, #topbar button { font: inherit; font-size: 13px; padding: 2px 6px; border-radius: 5px; border: 1px solid #7a6650; background: #fffaf0; color: #222; }
 #topbar button { cursor: pointer; background: #e8d6b4; }
 #topbar button:hover { background: #f5e3c0; }
 #playBtn.playing { background: #c96; color: #fff; }
@@ -39,10 +39,12 @@ main { flex: 1; position: relative; min-height: 0; }
 .badge.country { background: #f3e6f0; color: #7a3368; }
 .empty { color: #888; padding: 20px 4px; font-size: 14px; line-height: 1.6; }
 .source { font-size: 11.5px; color: #998; margin-top: 12px; }
-#eraNote { position: absolute; left: 10px; bottom: 10px; z-index: 900; background: rgba(255,250,240,.93); padding: 7px 10px; border-radius: 6px; font-size: 12.5px; max-width: 520px; line-height: 1.5; box-shadow: 0 1px 5px rgba(0,0,0,.2); }
+#eraNote { position: absolute; left: 8px; bottom: 8px; z-index: 900; background: rgba(255,250,240,.93); padding: 4px 6px; border-radius: 6px; font-size: 12.5px; max-width: min(420px, calc(100vw - 16px)); line-height: 1.45; box-shadow: 0 1px 5px rgba(0,0,0,.2); }
+#eraNote button, #layerCtl button, #mapKey button { font: inherit; cursor: pointer; border: 1px solid #c8b89a; background: #fffaf0; border-radius: 5px; padding: 2px 8px; }
+#eraNote .era-body { margin-top: 4px; }
 #eraNote b { color: #8a3b12; }
-#timeline { background: #2b2118; color: #f5ead6; padding: 6px 18px 4px; }
-#dateLabel { text-align: center; font-size: 17px; font-weight: 700; letter-spacing: 1px; }
+#timeline { background: #2b2118; color: #f5ead6; padding: 2px 12px 2px; }
+#dateLabel { text-align: center; font-size: 15px; font-weight: 700; letter-spacing: 1px; }
 #slider { width: 100%; accent-color: #d9a35b; }
 #ticks { position: relative; height: 16px; font-size: 10.5px; opacity: .75; }
 #ticks span { position: absolute; transform: translateX(-50%); white-space: nowrap; }
@@ -92,7 +94,7 @@ body.strategy .city-name.cap { color: #f3e2b0; }
 .strategy-label span {
   display: inline-block; transform: translate(-50%, -50%); white-space: nowrap;
   font-family: Palatino, "Palatino Linotype", "Songti SC", "Noto Serif CJK SC", serif;
-  font-size: 14px; font-weight: 600; letter-spacing: .06em; color: #f7f1e6;
+  font-size: 18px; font-weight: 700; letter-spacing: .03em; color: #f7f1e6;
   text-shadow: 0 1px 2px #000, 0 0 4px #000, 1px 1px 0 #000;
   pointer-events: none;
 }
@@ -105,8 +107,23 @@ body.strategy #econHover .eh-year, body.strategy #econHover .eh-note { color: #c
 #econHover .eh-cty { margin-top: 4px; font-weight: 600; }
 #econHover .eh-empty { margin: 3px 0; }
 #econHover .eh-note { color: #6d6256; font-size: 11.5px; }
-#layerCtl { position: absolute; top: 10px; left: 54px; z-index: 900; background: rgba(255,250,240,.93); padding: 4px 9px; border-radius: 6px; font-size: 13px; box-shadow: 0 1px 5px rgba(0,0,0,.2); }
+#layerCtl { position: absolute; top: 8px; left: 52px; z-index: 900; background: rgba(255,250,240,.93); padding: 3px 6px; border-radius: 6px; font-size: 13px; box-shadow: 0 1px 5px rgba(0,0,0,.2); max-width: calc(100vw - 64px); }
+#layerCtl.collapsed .layer-body { display: none; }
+#layerCtl .layer-body { margin-top: 4px; }
 #layerCtl label { margin-right: 8px; cursor: pointer; }
+#mapKey { position: absolute; top: 8px; right: 8px; z-index: 900; background: rgba(255,250,240,.93); padding: 3px 6px; border-radius: 6px; font-size: 12.5px; max-width: min(280px, calc(100vw - 16px)); box-shadow: 0 1px 5px rgba(0,0,0,.2); }
+#mapKeyBody { display: none; margin-top: 4px; line-height: 1.45; }
+#mapKey.open #mapKeyBody { display: block; }
+#mapKey p { margin: 2px 0; }
+.swatch { display: inline-block; width: 18px; height: 8px; margin-right: 6px; vertical-align: middle; border-radius: 1px; }
+.sw-border { background: #12100e; height: 3px; }
+.sw-occ { background: transparent; border: 2px solid #b02a2a; height: 6px; }
+.sw-front { background: transparent; border-top: 3px dashed #d35400; height: 0; }
+.sw-admin { background: #c9bfae; height: 2px; opacity: .8; }
+#mapKey .k-src { color: #6d6256; font-size: 11px; }
+.hillshade-pane { mix-blend-mode: soft-light; }
+body:not(.strategy) .hillshade-pane { display: none; }
+.leaflet-control-attribution { font-size: 10px; max-width: min(560px, calc(100vw - 12px)); white-space: normal; line-height: 1.3; }
 #updateStatus { font-size: 11.5px; color: #c9b89a; margin-left: auto; }
 /* 每日新闻：正文较长，用常规字重 */
 .mod-news .item .t { font-weight: 500; font-size: 13.5px; line-height: 1.5; }
@@ -175,3 +192,19 @@ a.wl { color: #1a4f8a; text-decoration: none; border-bottom: 1px dotted #1a4f8a;
 /* v0.6.1：点击多边形后浏览器给 SVG 路径画的键盘焦点框（黑色矩形，如 1943 年意占法国外围）——去掉；选中状态已用红色描边表示 */
 .leaflet-container path.leaflet-interactive:focus,
 .leaflet-container .leaflet-interactive:focus { outline: none; }
+body.strategy #eraNote button, body.strategy #layerCtl button, body.strategy #mapKey button { background: #243140; color: #f3eee4; border-color: #526278; }
+body.strategy #mapKey { background: rgba(22, 30, 40, .92); color: #e6e0d4; }
+body.strategy #mapKey .k-src { color: #cbbfaa; }
+body.strategy .sw-border { background: #e6e0d4; }
+@media (max-width: 720px) {
+  html, body { overflow-x: hidden; }
+  .brand span, #updateStatus { display: none; }
+  .datebox input[type=number] { width: 64px; }
+  #topbar { gap: 4px; padding: 3px 6px; }
+  #ticks { display: none; }
+  #timeline { padding: 2px 8px 4px; }
+  #panel { width: 100%; max-width: 100%; }
+  .strategy-label span { font-size: 16px; }
+  .leaflet-control-attribution { max-height: 2.8em; overflow: auto; font-size: 9px; }
+  #mapKey, #eraNote, #layerCtl { max-width: calc(100vw - 12px); }
+}
