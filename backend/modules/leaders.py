@@ -106,6 +106,34 @@ LEGENDARY_STATE = {
 # Wikidata 中文标签不贴切的职位：显示用名称（只改显示，不改数据）
 OFFICE_NAME_ZH = {"Q38702033": "王（君主）"}   # Wikidata zh 标签为「中国国王」，夏商周时期的称号为「王」
 
+# 挂在长时段国家条目上、但任职者属于占领军的职位。不放进维希/战前法国/「法国」总条目的面板。
+# Q1934893 在 Wikidata 只有德文标签 Militärbefehlshaber，没有中文或英文标签，故不译职名。
+# 任职者 Q68590 奥托·冯·施蒂尔普纳格尔，1940-10-25 起（至 1942-02，只精确到月）。
+# https://www.wikidata.org/wiki/Q1934893
+# https://en.wikipedia.org/wiki/Otto_von_St%C3%BClpnagel （Military Commander in France, occupied France）
+# https://www.wikidata.org/wiki/Q68590
+OCCUPIER_OFFICE = {
+    "Q1934893@Q142": {
+        "label": "Militärbefehlshaber（暂无通用译名）",
+        "show_on": {"Q7318"},
+        "note": "德国占领军职务，Wikidata 把管辖记成法国 Q142。不列入维希法国、法兰西第三共和国或「法国」总条目。职名无中文/英文标签，保留德文原文。",
+    },
+}
+# 维希法国不并入这些条目的职位（否则会把德军职务和战前法国职务显示成维希的职位）
+ISOLATE_OFFICES_FROM = {"Q69808": {"Q142", "Q70802"}}
+
+_BARE_QID = re.compile(r"^Q\d+(@Q\d+)?$")
+
+
+def office_label(o):
+    spec = OCCUPIER_OFFICE.get(o.get("id"))
+    if spec:
+        return spec["label"]
+    nm = OFFICE_NAME_ZH.get(o.get("pos")) or _zh_disp(o.get("zh") or o.get("en"))
+    if not nm or _BARE_QID.match(str(nm)):
+        return "职位名称未记录"
+    return nm
+
 
 # 外交使节/使馆不是本国领导职位（Wikidata 常把「X 国驻华大使」的管辖区记为驻在国，导致出现在驻在国面板里）
 _ENVOY_EN = re.compile(r"(?i)\b(ambassadors?|embassy|envoys?|high commissioners? to|chargés? d'affaires|consuls?-general)\b")
@@ -185,11 +213,24 @@ class LeadersModule(ContentModule):
                               "src": None, "note": "Wikidata 未记录任期，取该政权存续期"})
         offices = []
         ofs, osrc = {}, {}
+        blocked = ISOLATE_OFFICES_FROM.get(st["id"], set())
         for s_ in group:
+            if s_["id"] in blocked:
+                continue
             for o in R.office_by_state.get(s_["id"], []):
+                spec = OCCUPIER_OFFICE.get(o["id"])
+                if spec and st["id"] not in spec["show_on"]:
+                    continue
                 if o["id"] not in ofs:
                     ofs[o["id"]] = o
                     osrc[o["id"]] = None if s_ is st else (s_.get("zh") or s_.get("en"))
+        for oid, spec in OCCUPIER_OFFICE.items():
+            if st["id"] not in spec["show_on"] or oid in ofs:
+                continue
+            o = next((x for x in R.offices if x.get("id") == oid), None)
+            if o:
+                ofs[oid] = o
+                osrc[oid] = spec["note"]
         for o in sorted(ofs.values(), key=lambda o: -o["sl"]):
             if is_envoy(o):
                 continue
@@ -202,7 +243,7 @@ class LeadersModule(ContentModule):
                 if k_ not in _u:
                     _u.add(k_); _hs.append(h)
             hs = _hs
-            offices.append({"office": {"id": o["id"], "name": OFFICE_NAME_ZH.get(o.get("pos")) or _zh_disp(o.get("zh") or o.get("en")), "en": o.get("en"),
+            offices.append({"office": {"id": o["id"], "name": office_label(o), "en": o.get("en"),
                                        "desc": o.get("desc")},
                             "virtual": bool(o.get("virtual")), "juris": o.get("juris_zh"), "src": osrc.get(o["id"]),
                             "holders": [{"person": R.person_brief(h["p"]), "from": fmt_time(h.get("from")),
@@ -217,11 +258,11 @@ class LeadersModule(ContentModule):
             if is_envoy(o):
                 continue
             if hs and not any(h.get("from") for h in hs) and len(undated) < 12:
-                undated.append({"id": o["id"], "name": _zh_disp(o.get("zh") or o.get("en")), "n": len(hs)})
+                undated.append({"id": o["id"], "name": office_label(o), "n": len(hs)})
             elif hs and o["id"] not in {x["office"]["id"] for x in offices}:
                 nd = sum(1 for h in hs if not h.get("from"))
                 if nd * 2 >= len(hs) and len(undated) < 12:
-                    undated.append({"id": o["id"], "name": _zh_disp(o.get("zh") or o.get("en")), "n": nd})
+                    undated.append({"id": o["id"], "name": office_label(o), "n": nd})
         # 年号（Wikidata 年号条目的起止时间；同一时间可能有多个政权的年号）
         eras = []
         for s_ in group:

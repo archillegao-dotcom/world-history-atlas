@@ -64,6 +64,9 @@
     return `${t}（${z?.kind === "culture" ? "文化/地区" : "未对应到当时存在的政权"}）`;
   };
   const qidF = (p) => (p && snapNames[state.snap]?.[String(p.fid)]?.qid) || null;
+  // v0.6.2：颜色按解析出的政权 QID（同一政权的 CShapes 主体、Stanford 按月多边形、底图补块同色，如 1940 年苏联不再两种颜色）；
+  // 底图标明从属于别国的多边形（SUBJECTO 与 NAME 不同，如殖民地）仍用宗主国的颜色
+  const colorKey = (p, n) => (p?.SUBJECTO && p.SUBJECTO !== p.NAME ? p.SUBJECTO : null) || qidF(p) || p?.SUBJECTO || n;
   const pnameN = (n) => { const f = geoCache[state.snap]?.features.find((x) => x.properties.NAME === n); return f ? pnameF(f.properties) : pname(n); };
   const state = { date: { y: 1789, m: 7, d: 14 }, snap: null, next: null, fid: null, world: false, tab: null, playing: null, meta: null };
   const renderers = {};
@@ -103,7 +106,7 @@
     const n = f.properties.NAME;
     const base = {
       color: selected ? "#8a1c00" : "#6b5a48", weight: selected ? 2.5 : 0.6, opacity: 0.9,
-      fillColor: n ? `hsl(${hue(f.properties.SUBJECTO || qidF(f.properties) || n)}, 45%, ${selected ? 62 : 74}%)` : "#ddd6c8",
+      fillColor: n ? `hsl(${hue(colorKey(f.properties, n))}, 45%, ${selected ? 62 : 74}%)` : "#ddd6c8",
       fillOpacity: selected ? 0.85 : 0.75,
     };
     // 图层模块（如「阵营地图」）可以通过 WHA.setFillOverride(fn) 改写多边形填色

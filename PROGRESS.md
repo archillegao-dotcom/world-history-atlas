@@ -215,3 +215,31 @@
 - 17:11 截图 v09b 11 张 + 科威特已人工看过；萨珊面板巴赫拉姆五世重复两行 → leaders 去重同人同起止。重跑 mustpass + 20_ 截图。
 - 17:12 mustpass 重跑 119/119；20_ 重拍已看（巴赫拉姆五世一行）。下一步：文档、staging、zip、smoke。
 - 17:13 文档更新（README、KNOWN_ISSUES、AUDIT_REPORT）。下一步：staging/zip/smoke。
+
+## 2026-11-08 03:54（欧洲/巴黎）0.6.2 第一批 P0，未发布
+
+工作分支 `cursor/p0-history-062-3bcf`，从已发布的 main（0.6.1，`cb79230`）分出。2026-11-05 的未发布源码附件盖上了 0.6.2 的程序、整理数据和工具；大型运行时数据（底图、cshapes、同盟、职务等成品 xz）仍用仓库里已有的，没有用空文件替换，也没有退回成「只有 0.6.1 程序」。没有合并 main，没有打 tag，没有发 Release，没有跑发布 workflow。
+
+这一批只做四项，不是整个 0.6.2。2026-11-02 写过的 mustpass 119/119、manchuria_no_roc、截图，凡本批没有重跑的，都标待复验（见 KNOWN_ISSUES 第 9、12 节）。
+
+### 这一批改了什么
+
+- 维希 1941-04-25 不再出现裸编号 `Q1934893@Q142`。该职是德军职务，Wikidata 只有德/法标签 Militärbefehlshaber，没有中文名，面板写 `Militärbefehlshaber（暂无通用译名）`，并且只挂在纳粹德国。维希不再混入法国 Q142 和第三共和国的职务。没有名称的职位显示「职位名称未记录」。来源：[Q1934893](https://www.wikidata.org/wiki/Q1934893)、[Otto von Stülpnagel](https://en.wikipedia.org/wiki/Otto_von_St%C3%BClpnagel)、[Q68590](https://www.wikidata.org/wiki/Q68590)。
+- 1941-04-25 台北是台湾日据时期 Q137816，不是中华民国。1895-04-20 仍是清治，1895-06-15 是台湾民主国，1895-10-22 台南是日治。朝鲜 1910-08-25（已签字、未生效）仍是大韩帝国，1910-08-29 起是朝鲜日治。南桦太 1910 是大日本帝国。来源：[Republic of Formosa](https://en.wikipedia.org/wiki/Republic_of_Formosa)、[乙未戰爭](https://zh.wikipedia.org/wiki/%E4%B9%99%E6%9C%AA%E6%88%B0%E7%88%AD)、日韩合并以 1910-08-29 为生效日。
+- Q5035992 不再显示「台南话（译名）」，也不再把中华民国写成当事方。名称是 `Capitulation of Tainan（暂无通用译名）`。当事方是大日本帝国与台湾民主国。来源：[Capitulation of Tainan](https://en.wikipedia.org/wiki/Capitulation_of_Tainan)、[Q5035992](https://www.wikidata.org/wiki/Q5035992)。
+- 苏联同盟成员从 1941-06-22 起，南斯拉夫王国从 1941-04-06 起。1940-11-15 两者都不是同盟国，里加是苏联且不着同盟色。满洲国、汪政权等改为附庸标签，不计入轴心签署国。1944-12-01 桂林是日军军事占领（大日本帝国），不是汪政权。来源：[Operation Barbarossa](https://en.wikipedia.org/wiki/Operation_Barbarossa)、[Anglo-Soviet Agreement](https://en.wikipedia.org/wiki/Anglo-Soviet_Agreement)、[Invasion of Yugoslavia](https://en.wikipedia.org/wiki/Invasion_of_Yugoslavia)、[Battle of Guilin–Liuzhou](https://en.wikipedia.org/wiki/Battle_of_Guilin%E2%80%93Liuzhou)、[桂柳会战](https://zh.wikipedia.org/wiki/%E6%A1%82%E6%9F%B3%E4%BC%9A%E6%88%98)。
+
+### 2026-11-08 实际跑过的命令
+
+- `WHA_PORT=8792 python3 tools/accept/p0_1941.py` → 22/22，退出码 0。
+- `python3 tools/accept/api_mustpass.py 中日战争` → 10/10。
+- `python3 tools/accept/api_mustpass.py 二战` → 19/19。
+- `python3 tools/accept/api_mustpass.py 法国` → 10/10。
+- `WHA_PORT=8792 python3 tools/accept/ww2_occupation_bloc.py` → 72 个快照，1516 次占领区检查，0 处缺失。
+- `WHA_PORT=8792 python3 tools/accept/manchuria_no_roc.py` → 162 个月，311 处失败（兴安南仍是 China；1933-04 起热河与满洲国两个多边形）。未改几何。
+- `python3 packaging/test_launcher_translocation.py` → 通过。
+- 没有跑整份 119 条 mustpass，没有跑截图。
+
+### 本批明确没做
+
+交接清单里其余项（前 1136 重复商、法国 2000 面板、1950 细节、1911 各省、甘丹颇章、藏南/阿克赛钦、维希条约、史事纪要、悬停 GDP、宪法页、更细地图、Apple 芯片包、重复政权重跑、打包发布）都留在后面。湖南/河南一号作战、自由法国边界、台湾 1945–49 多边形空档、波罗的海 1940-06-02 截断、关东州单独行、美国等同盟加入日，本批没有改。缺 `data/basemaps_raw/` 和 `data/cshapes_raw/`，所以不能重烘控制区，也不能把热河并进满洲国。

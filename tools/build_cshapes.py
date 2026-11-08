@@ -111,8 +111,23 @@ def main():
     hb = json.loads(_gz.decompress((ROOT / "data" / "basemaps" / "1930.geojson.gz").read_bytes()))
     mg = [shape(f["geometry"]) for f in hb["features"] if f["properties"].get("NAME") == "Manchuria"]
     if mg:
-        extras.append({"qid": "Q30623", "name": "Manchukuo", "name_zh": "满洲国", "from": 19320301, "to": 19450819, "_g": make_valid(unary_union(mg)),
-                       "approx": True, "src": "historical-basemaps 1930「Manchuria」（近似）", "from_src": "Wikidata Q30623 P571/P576"})
+        # v0.6.2：1930 年「Manchuria」多边形没有盖满 CShapes 的中国东北（黑河、三江、图们江一带留下中华民国碎块），
+        # 并上 Natural Earth 今黑龙江、吉林、辽宁三省；1933-03-04 起再并上热河（原来是单独的「满洲国（热河省）」区域，
+        # 地图上出现两个满洲国）。热河范围沿用 zones_asia_ww2.py 的近似折线。
+        ne1 = json.loads((ROOT / "data" / "basemaps_raw" / "ne_10m_admin_1_states_provinces.geojson").read_text(encoding="utf-8"))["features"]
+        ne_ = [shape(f["geometry"]) for f in ne1 if f["properties"].get("iso_3166_2") in ("CN-HL", "CN-JL", "CN-LN")]
+        from shapely.geometry import box as _box
+        # 兴安南省一带（今通辽、赤峰北部，1932 年起属满洲国兴安省；近似矩形，与中国 CShapes 求交前的补块）
+        base = make_valid(unary_union(mg + [make_valid(g) for g in ne_] + [_box(119.9, 43.5, 121.8, 44.5)]))
+        from shapely.geometry import Polygon as _Poly
+        jehol = _Poly([[116.4, 41.0], [117.4, 40.6], [118.5, 40.2], [119.7, 40.1], [120.4, 40.6], [121.6, 41.5], [121.0, 42.6],
+                       [120.4, 43.5], [119.5, 44.6], [118.0, 44.8], [117.2, 44.0], [116.5, 43.0], [116.0, 42.0]])
+        src = "historical-basemaps 1930「Manchuria」∪ Natural Earth 黑龙江/吉林/辽宁（近似）"
+        extras.append({"qid": "Q30623", "name": "Manchukuo", "name_zh": "满洲国", "from": 19320301, "to": 19330304, "_g": base,
+                       "approx": True, "src": src, "from_src": "Wikidata Q30623 P571/P576"})
+        extras.append({"qid": "Q30623", "name": "Manchukuo", "name_zh": "满洲国", "from": 19330304, "to": 19450819,
+                       "_g": make_valid(unary_union([base, jehol, _box(119.9, 42.5, 121.8, 43.5)])), "approx": True, "src": src + " ∪ 热河（1933-03-04 起，近似）",
+                       "from_src": "Wikidata Q30623 P571/P576；热河：https://en.wikipedia.org/wiki/Battle_of_Rehe"})
     # CShapes（沿用 Gleditsch–Ward 名单）把斯洛文尼亚、克罗地亚、波黑的独立都记为 1992-04-27（南联盟成立日）。
     # 国际通行说法：斯、克两国独立宣言 1991-06-25，三个月暂停期结束后 1991-10-08 生效；波黑 1992-03-03 宣布独立、1992-04-06 获欧共体承认。
     # 这里用 CShapes 1992-04-27 起的边界提前显示，期间从「南斯拉夫」中切出。

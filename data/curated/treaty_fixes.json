@@ -1,0 +1,20 @@
+{
+  "_doc": "有来源的条约/事件修正。无中文维基、无 Wikidata 中文标签的专名不机译，标「暂无通用译名」加原文。",
+  "Q5035992": {
+    "zh": "Capitulation of Tainan（暂无通用译名）",
+    "desc": "1895-10-21，日军进入台南，台湾民主国结束。这是军事开城，不是与中华民国签订的条约。Wikidata 无中文标签，英文维基无中文跨语言链接。",
+    "parties": [
+      {"s": "Q188712", "via": "curated"},
+      {"s": "Q319881", "via": "curated"}
+    ],
+    "countries": ["Q188712", "Q319881"],
+    "drop_mt_summary": true,
+    "note": "原数据把英文专名机译成「台南话（译名）」，并用 P17 把当事方记成中华民国 Q865。Q865 的 Wikidata 英文标签是 Taiwan，不是 1895 年的政权。",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Capitulation_of_Tainan",
+      "https://en.wikipedia.org/wiki/Republic_of_Formosa",
+      "https://www.wikidata.org/wiki/Q5035992",
+      "https://zh.wikipedia.org/wiki/%E4%B9%99%E6%9C%AA%E6%88%B0%E7%88%AD"
+    ]
+  }
+}

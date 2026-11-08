@@ -1,0 +1,8 @@
+{
+  "_doc": "persons.json 里没有、但职位记录引用到的人。只补有 Wikidata 中文标签的姓名，不译职名。",
+  "Q68590": {
+    "zh": "奥托·冯·施蒂尔普纳格尔",
+    "en": "Otto von Stülpnagel",
+    "src": "https://www.wikidata.org/wiki/Q68590"
+  }
+}

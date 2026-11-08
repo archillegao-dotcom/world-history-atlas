@@ -14,6 +14,7 @@ from __future__ import annotations
 from ..zh import disp as _zh_disp
 
 import collections
+import json
 from pathlib import Path
 
 from ..polity import alive
@@ -29,6 +30,32 @@ def tstart(r):
 
 def tend(r):
     return r.get("end") or r.get("dissolved")
+
+
+def apply_treaty_fixes(recs, data_dir):
+    """人工改掉有证据的错译、错归属。只改列出的条目，不重跑机器翻译。"""
+    p = Path(data_dir) / "curated" / "treaty_fixes.json"
+    if not p.exists():
+        return
+    fixes = json.loads(p.read_text(encoding="utf-8"))
+    by = {r.get("id"): r for r in recs if isinstance(r, dict)}
+    for tid, fx in fixes.items():
+        if tid.startswith("_"):
+            continue
+        r = by.get(tid)
+        if not r:
+            continue
+        for k in ("zh", "desc", "parties", "countries"):
+            if k in fx:
+                r[k] = fx[k]
+        r["zh_mt"] = False
+        if fx.get("drop_mt_summary") and isinstance(r.get("summary"), dict):
+            sm = r["summary"]
+            sm.pop("text", None)
+            sm["mt"] = False
+        if fx.get("note"):
+            r["fix_note"] = fx["note"]
+        r["fix_sources"] = fx.get("sources", [])
 
 
 def kind_of(r) -> str:
@@ -56,6 +83,7 @@ class SpiritsModule(ContentModule):
         self.recs = load_records(Path(ctx.data_dir) / "treaties.json.gz")
         from ..zh import fill as zh_fill
         zh_fill(self.recs, ctx.data_dir)
+        apply_treaty_fixes(self.recs, ctx.data_dir)
         self.by_id = {r["id"]: r for r in self.recs}
         self.by_party = collections.defaultdict(list)
         for r in self.recs:

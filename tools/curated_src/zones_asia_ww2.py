@@ -125,8 +125,8 @@ JSTEPS = [  # (from, until, 几何规格, 节点说明, 来源)
      "1944-04 至 08：一号作战第一阶段（豫中会战：郑州 04-22、洛阳 05-25），平汉线贯通；长沙 06-18 失守、衡阳 08-08 失守", [WP + "Operation_Ichi-Go", WP + "Battle_of_Central_Henan"]),
     ("1944-08-08", "1944-11-10", U(poly(CORE_1940), poly(HENAN_1944), poly(HUNAN_1944), poly(CANTON), poly(XIAMEN), poly(SHANTOU), HAINAN),
      "1944-08 至 11：长衡会战后粤汉线北段（长沙、衡阳）", [WP + "Operation_Ichi-Go", WP + "Battle_of_Changsha_(1944)", WP + "Defense_of_Hengyang"]),
-    ("1944-11-10", "1945-08-16", U(poly(CORE_1940), poly(HENAN_1944), poly(HUNAN_1944), poly(GUANGXI_1944), poly(CANTON), poly(XIAMEN), poly(SHANTOU), HAINAN),
-     "1944-11 至 1945-08：桂柳会战（桂林、柳州 11-10/11，南宁 11-24），12 月打通至法属印度支那的「大陆交通线」；1945-05 起日军自广西逐步撤出（南宁 05-26、柳州 06-30、桂林 07-28 被国民革命军收复，未画）",
+    ("1944-11-10", "1945-08-16", U(poly(CORE_1940), poly(HENAN_1944), poly(HUNAN_1944), poly(CANTON), poly(XIAMEN), poly(SHANTOU), HAINAN),
+     "1944-11 至 1945-08：桂柳会战的广西走廊另见 sjw_ichigo_guangxi（日军军事占领，不是汪政权行政区域）",
      [WP + "Operation_Ichi-Go", WP + "Battle_of_Guilin–Liuzhou", USMA.format("Situation at the End of World War II")]),
 ]
 REGIMES = [  # (from, until, 区域框, QID, 名称, 说明, 来源)
@@ -155,6 +155,18 @@ for jf, ju, jg, jlab, jsrc in JSTEPS:
                       dates_note=f"日占区节点：{jlab}。政权：{rnote}。",
                       note="日军实际控制的是城市与铁路沿线（「点和线」），乡村多为国民革命军游击区与共军敌后根据地；色块为大致范围（±50–150 km）。",
                       sources=SJW_SRC + jsrc + rsrc))
+
+# 桂柳会战走廊：日军军事占领，不是汪精卫政权的省政。
+# 桂林 1944-11-10、柳州 11-11、南宁 11-24 失守。1945-05 起日军撤出的逐城日期不在这一块里细分。
+# https://en.wikipedia.org/wiki/Battle_of_Guilin–Liuzhou
+# https://en.wikipedia.org/wiki/Operation_Ichi-Go
+# https://zh.wikipedia.org/wiki/桂柳会战
+Z.append(zone("sjw_ichigo_guangxi", "日军军事占领区（桂柳会战）", "Japanese military occupation during the Battle of Guilin–Liuzhou",
+              "Q188712", "大日本帝国", "1944-11-10", "1945-08-16", poly(GUANGXI_1944),
+              dates_note="桂柳会战：1944-11-10 桂林、11-11 柳州、11-24 南宁失守，由日军军事占领，不是汪精卫政权的行政区域。1945-05 起日军自广西逐步撤出（南宁 05-26、柳州 06-30、桂林 07-28 被国民革命军收复），逐城撤退未再细分。",
+              note="色块为桂柳走廊的大致范围（±50–150 km），不是省界，也不表示乡村全部被占领。",
+              sources=[WP + "Battle_of_Guilin–Liuzhou", WP + "Operation_Ichi-Go", ZWP + "桂柳会战",
+                       USMA.format("Situation at the End of World War II")]))
 
 # ---- 共军根据地（大致范围，叠加在日占区之上） ----
 SGN = [[106.9, 35.3], [106.5, 36.2], [106.9, 37.0], [107.3, 37.9], [108.0, 37.6], [109.0, 37.6], [109.5, 38.0], [110.6, 38.0], [110.6, 37.3], [110.4, 36.4],

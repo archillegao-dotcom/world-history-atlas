@@ -141,8 +141,8 @@ def polity_names():
 
 @app.get("/api/live/status")
 def live_status():
-    """每日新闻自动更新状态。"""
-    return scheduler.STATUS
+    """每日新闻自动更新状态（v0.6.2 起附带版本号：启动器据此判断已在运行的是不是同一版本）。"""
+    return {**scheduler.STATUS, "version": config.APP_VERSION}
 
 
 @app.get("/api/modules")

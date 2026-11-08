@@ -47,6 +47,45 @@ def ymd_of(d: HDate) -> int:
     return d.y * 10000 + (d.m or 1) * 100 + (d.d or 1)
 
 
+def _apply_colony_fixes(rows, gw):
+    """签约日、生效日、实控日不一致时，不沿用 CShapes 把整块多边形从签约日标成后来的国家。
+
+    台湾 gw 713：CShapes 殖民地行自 1895-04-17（《马关条约》签署）起，分期原先整段标成日治，
+    名称匹配又会把英文名 Taiwan 的中华民国 Q865 排到日治政权前面。
+    - 1895-04-17 签署，1895-05-08 在烟台换文生效。此前不是日本实控。
+    - 1895-05-23 台湾民主国宣布成立，1895-10-21 台南开城后结束。全岛一块多边形不能表示日军自北向南的推进。
+    - 1895-05-08 至 05-23 没有稳定的新政权，仍标清治时期并在 sources 里说明，不标日本、不标中华民国。
+    - 日治自 1895-10-21 起。中文维基「乙未战争」把战事记到 1895-11-18，此处不把 10-21 写成一切抵抗结束。
+    - 1945-10-25 台湾光复仪式之后才是中华民国。CShapes 殖民地行止于 1945-08-15、独立行起于 1949-12-08，中间没有多边形，本函数不补几何。
+    https://en.wikipedia.org/wiki/Treaty_of_Shimonoseki
+    https://en.wikipedia.org/wiki/Republic_of_Formosa
+    https://en.wikipedia.org/wiki/Capitulation_of_Tainan
+    https://zh.wikipedia.org/wiki/乙未戰爭
+    https://en.wikipedia.org/wiki/Retrocession_Day
+
+    朝鲜 gw 730：CShapes 把殖民地行写成 1910-08-23（签署次日）。条约 1910-08-22 签署、1910-08-29 公布生效。
+    https://en.wikipedia.org/wiki/Japan%E2%80%93Korea_Treaty_of_1910
+
+    南桦太 gw 7351：CShapes 行自 1905-09-05（《朴茨茅斯条约》签署）起，但没有分期，只会落到宗主国弱候选。
+    补成大日本帝国。日军 1905 年 7 月已登陆，多边形本身从签约日才有，不另造 7 月的边界。
+    https://en.wikipedia.org/wiki/Treaty_of_Portsmouth
+    https://en.wikipedia.org/wiki/Karafuto_Prefecture
+    """
+    for r in rows:
+        if r.get("gw") == 730 and r.get("status") == "independent" and r.get("to") == 19100823:
+            r["to"] = 19100829
+        if r.get("gw") == 730 and r.get("status") == "colony" and r.get("from") == 19100823:
+            r["from"] = 19100829
+    fixes = {
+        713: [[18950417, 18950523, "Q391189"], [18950523, 18951021, "Q319881"],
+              [18951021, 19451025, "Q137816"], [19451025, None, "Q865"]],
+        7351: [[19050905, 19450815, "Q188712"]],
+    }
+    for code, periods in fixes.items():
+        gi = gw.setdefault(code, {"names": [], "periods": [], "ne": None})
+        gi["periods"] = periods
+
+
 class CShapes:
     def __init__(self, store, data_dir):
         self.store = store
@@ -56,6 +95,7 @@ class CShapes:
         self.rows = d.get("rows", [])
         self.extras = d.get("extras", [])
         self.gw = {int(k): v for k, v in (d.get("gw") or {}).items()}
+        _apply_colony_fixes(self.rows, self.gw)
         self.source = d.get("source")
         marks = {LO}
         for r in self.rows + self.extras:

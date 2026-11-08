@@ -761,6 +761,2499 @@
    ]
   },
   {
+   "id": "bahrain_protectorate",
+   "group": "colonies_misc",
+   "kind": "regime",
+   "as_polity": true,
+   "name_zh": "巴林及其属地（英国保护国）",
+   "name_en": "Bahrain and its Dependencies",
+   "controller": {
+    "qid": "Q17061755",
+    "zh": "巴林及其属地（英国保护国）"
+   },
+   "from": "1886-01-01",
+   "until": "1971-08-15",
+   "geometry": {
+    "admin0_parts": {
+     "a3": [
+      "BHR"
+     ],
+     "bbox": [
+      50.2,
+      25.5,
+      50.9,
+      26.4
+     ]
+    }
+   },
+   "approx": true,
+   "dates_note": "1861、1880、1892 年条约使巴林成为英国保护国；1971-08-15 独立。1886 年以前由底图负责。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/History_of_Bahrain_(1783–1971)",
+    "https://en.wikipedia.org/wiki/Bahrain"
+   ],
+   "note": "范围取 Natural Earth 今国界（含小岛）；CShapes 2.0 在独立前不收录该地区，这里补上殖民/托管政权。"
+  },
+  {
+   "id": "stp_portuguese",
+   "group": "colonies_misc",
+   "kind": "regime",
+   "as_polity": true,
+   "name_zh": "葡属圣多美和普林西比",
+   "name_en": "Portuguese São Tomé and Príncipe",
+   "controller": {
+    "qid": "Q7232692",
+    "zh": "葡属圣多美和普林西比"
+   },
+   "from": "1886-01-01",
+   "until": "1975-07-12",
+   "geometry": {
+    "admin0_parts": {
+     "a3": [
+      "STP"
+     ],
+     "bbox": [
+      6.3,
+      -0.2,
+      7.6,
+      1.8
+     ]
+    }
+   },
+   "approx": true,
+   "dates_note": "葡萄牙殖民地，1975-07-12 独立。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Portuguese_São_Tomé_and_Príncipe"
+   ],
+   "note": "范围取 Natural Earth 今国界（含小岛）；CShapes 2.0 在独立前不收录该地区，这里补上殖民/托管政权。"
+  },
+  {
+   "id": "new_hebrides",
+   "group": "colonies_misc",
+   "kind": "regime",
+   "as_polity": true,
+   "name_zh": "新赫布里底群岛（英法共管）",
+   "name_en": "New Hebrides",
+   "controller": {
+    "qid": "Q752431",
+    "zh": "新赫布里底群岛（英法共管）"
+   },
+   "from": "1907-12-02",
+   "until": "1980-07-30",
+   "geometry": {
+    "admin0_parts": {
+     "a3": [
+      "VUT"
+     ],
+     "bbox": [
+      166.0,
+      -20.5,
+      170.5,
+      -12.9
+     ]
+    }
+   },
+   "approx": true,
+   "dates_note": "1906 年英法共管协定，Wikidata 记为 1907-12-02 成立；1980-07-30 以瓦努阿图独立。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/New_Hebrides"
+   ],
+   "note": "范围取 Natural Earth 今国界（含小岛）；CShapes 2.0 在独立前不收录该地区，这里补上殖民/托管政权。"
+  },
+  {
+   "id": "gilbert_ellice",
+   "group": "colonies_misc",
+   "kind": "regime",
+   "as_polity": true,
+   "name_zh": "吉尔伯特和埃利斯群岛殖民地",
+   "name_en": "Gilbert and Ellice Islands",
+   "controller": {
+    "qid": "Q1050859",
+    "zh": "吉尔伯特和埃利斯群岛殖民地"
+   },
+   "from": "1916-01-12",
+   "until": "1976-10-01",
+   "geometry": {
+    "admin0_parts": {
+     "a3": [
+      "KIR",
+      "TUV"
+     ],
+     "bbox": [
+      172.0,
+      -11.0,
+      180.0,
+      4.0
+     ]
+    }
+   },
+   "approx": true,
+   "dates_note": "1916-01-12 由保护国改为殖民地；1976-10-01 埃利斯群岛（图瓦卢）分出。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Gilbert_and_Ellice_Islands"
+   ],
+   "note": "范围取 Natural Earth 今国界（含小岛）；CShapes 2.0 在独立前不收录该地区，这里补上殖民/托管政权。只画吉尔伯特群岛与埃利斯群岛；巴纳巴、菲尼克斯群岛、莱恩群岛未画。1976 年后到独立前（图瓦卢 1978-10-01、基里巴斯 1979-07-12）没有补。"
+  },
+  {
+   "id": "south_seas_mandate",
+   "group": "colonies_misc",
+   "kind": "regime",
+   "as_polity": true,
+   "name_zh": "南洋群岛（日本委任统治地）",
+   "name_en": "South Seas Mandate",
+   "controller": {
+    "qid": "Q718763",
+    "zh": "南洋群岛（日本委任统治地）"
+   },
+   "from": "1919-06-28",
+   "until": "1947-07-18",
+   "geometry": {
+    "admin0_parts": {
+     "a3": [
+      "FSM",
+      "MHL",
+      "PLW"
+     ],
+     "bbox": [
+      130.0,
+      0.0,
+      173.0,
+      13.0
+     ]
+    }
+   },
+   "approx": true,
+   "dates_note": "1919-06-28 凡尔赛和约把德属密克罗尼西亚交给日本委任统治；1944 年起美军陆续占领（未逐岛画出）；1947-07-18 改为美国托管的太平洋群岛托管地。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/South_Seas_Mandate",
+    "https://en.wikipedia.org/wiki/Trust_Territory_of_the_Pacific_Islands"
+   ],
+   "note": "范围取 Natural Earth 今国界（含小岛）；CShapes 2.0 在独立前不收录该地区，这里补上殖民/托管政权。今北马里亚纳群岛部分未画；马绍尔群岛最北的比卡尔、博卡克环礁未画。"
+  },
+  {
+   "id": "ttpi",
+   "group": "colonies_misc",
+   "kind": "regime",
+   "as_polity": true,
+   "name_zh": "太平洋群岛托管地（美国托管）",
+   "name_en": "Trust Territory of the Pacific Islands",
+   "controller": {
+    "qid": "Q129237",
+    "zh": "太平洋群岛托管地（美国托管）"
+   },
+   "from": "1947-07-18",
+   "until": "1986-10-21",
+   "geometry": {
+    "admin0_parts": {
+     "a3": [
+      "FSM",
+      "MHL",
+      "PLW"
+     ],
+     "bbox": [
+      130.0,
+      0.0,
+      173.0,
+      13.0
+     ]
+    }
+   },
+   "approx": true,
+   "dates_note": "1947-07-18 美国托管协定生效；1986-10-21 马绍尔群岛、1986-11-03 密克罗尼西亚联邦与美国的自由联系条约生效（帕劳 1994-10-01）。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Trust_Territory_of_the_Pacific_Islands"
+   ],
+   "note": "范围取 Natural Earth 今国界（含小岛）；CShapes 2.0 在独立前不收录该地区，这里补上殖民/托管政权。统一到 1986-10-21 结束；之后的帕劳（1986–1994 仍属托管地）没有单独补。"
+  },
+  {
+   "id": "nauru_trust",
+   "group": "colonies_misc",
+   "kind": "regime",
+   "as_polity": true,
+   "name_zh": "瑙鲁托管地",
+   "name_en": "Trust Territory of Nauru",
+   "controller": {
+    "qid": "Q21816219",
+    "zh": "瑙鲁托管地"
+   },
+   "from": "1947-11-01",
+   "until": "1968-01-31",
+   "geometry": {
+    "admin0_parts": {
+     "a3": [
+      "NRU"
+     ],
+     "bbox": [
+      166.8,
+      -0.7,
+      167.1,
+      -0.4
+     ]
+    }
+   },
+   "approx": true,
+   "dates_note": "1947-11-01 联合国托管（澳大利亚、新西兰、英国，澳大利亚管理）；1968-01-31 独立。1920–1947 年的国际联盟委任统治、1942–1945 年日本占领没有补。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Trust_Territory_of_Nauru",
+    "https://en.wikipedia.org/wiki/History_of_Nauru"
+   ],
+   "note": "范围取 Natural Earth 今国界（含小岛）；CShapes 2.0 在独立前不收录该地区，这里补上殖民/托管政权。"
+  },
+  {
+   "id": "seychelles_british",
+   "group": "colonies_misc",
+   "kind": "regime",
+   "as_polity": true,
+   "name_zh": "大英帝国（塞舌尔）",
+   "name_en": "British Empire (Seychelles)",
+   "controller": {
+    "qid": "Q8680",
+    "zh": "大英帝国（塞舌尔）"
+   },
+   "from": "1886-01-01",
+   "until": "1976-06-29",
+   "geometry": {
+    "admin0_parts": {
+     "a3": [
+      "SYC"
+     ],
+     "bbox": [
+      46.0,
+      -10.0,
+      56.5,
+      -3.5
+     ]
+    }
+   },
+   "approx": true,
+   "dates_note": "英国属地：1903-08-31 前为毛里求斯的属地，之后为英国直辖殖民地；1976-06-29 独立。Wikidata 没有单独的「塞舌尔殖民地」条目，这里显示大英帝国。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Seychelles",
+    "https://en.wikipedia.org/wiki/History_of_Seychelles"
+   ],
+   "note": "范围取 Natural Earth 今国界（含小岛）；CShapes 2.0 在独立前不收录该地区，这里补上殖民/托管政权。"
+  },
+  {
+   "id": "kuwait_protectorate",
+   "group": "colonies_misc",
+   "kind": "regime",
+   "as_polity": true,
+   "name_zh": "科威特酋长国（英国保护国）",
+   "name_en": "Sheikhdom of Kuwait",
+   "controller": {
+    "qid": "Q3480281",
+    "zh": "科威特酋长国（英国保护国）"
+   },
+   "from": "1899-01-23",
+   "until": "1961-06-19",
+   "geometry": {
+    "admin0_parts": {
+     "a3": [
+      "KWT"
+     ],
+     "bbox": [
+      46.5,
+      28.5,
+      48.6,
+      30.2
+     ]
+    }
+   },
+   "approx": true,
+   "dates_note": "1899 年 1 月英科协定使科威特成为英国保护国；1961-06-19 英国保护结束、独立。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Sheikhdom_of_Kuwait"
+   ],
+   "note": "范围取 Natural Earth 今国界（含小岛）；CShapes 2.0 在独立前不收录该地区，这里补上殖民/保护国政权。"
+  },
+  {
+   "id": "gilbert_ellice_line",
+   "group": "colonies_misc",
+   "kind": "regime",
+   "as_polity": true,
+   "name_zh": "吉尔伯特和埃利斯群岛殖民地",
+   "name_en": "Gilbert and Ellice Islands (Line Islands)",
+   "controller": {
+    "qid": "Q1050859",
+    "zh": "吉尔伯特和埃利斯群岛殖民地"
+   },
+   "from": "1916-01-12",
+   "until": "1979-07-12",
+   "geometry": {
+    "admin0_parts": {
+     "a3": [
+      "KIR"
+     ],
+     "bbox": [
+      -162.0,
+      -12.0,
+      -150.0,
+      7.0
+     ]
+    }
+   },
+   "approx": true,
+   "dates_note": "1916 年英国兼并范宁岛、华盛顿岛并入吉尔伯特和埃利斯群岛殖民地（圣诞岛 1919 年并入）；1976 年后为吉尔伯特群岛殖民地，1979-07-12 随基里巴斯独立。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Line_Islands",
+    "https://en.wikipedia.org/wiki/Gilbert_and_Ellice_Islands"
+   ],
+   "note": "范围取 Natural Earth 今国界（含小岛）；CShapes 2.0 在独立前不收录该地区，这里补上殖民/保护国政权。只画莱恩群岛（基里巴斯东部）；1976–1979 年的「吉尔伯特群岛殖民地」仍显示同一条目。"
+  },
+  {
+   "id": "windward_islands",
+   "group": "colonies_misc",
+   "kind": "regime",
+   "as_polity": true,
+   "name_zh": "英属向风群岛",
+   "name_en": "British Windward Islands",
+   "controller": {
+    "qid": "Q2660774",
+    "zh": "英属向风群岛"
+   },
+   "from": "1833-01-01",
+   "until": "1940-01-01",
+   "geometry": {
+    "admin0_parts": {
+     "a3": [
+      "LCA",
+      "VCT",
+      "GRD"
+     ],
+     "bbox": [
+      -61.9,
+      11.9,
+      -60.8,
+      14.2
+     ]
+    }
+   },
+   "approx": true,
+   "dates_note": "1833 年设立的英国殖民地行政组合；1940 年多米尼克由背风群岛划入。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/British_Windward_Islands"
+   ],
+   "note": "范围取 Natural Earth 今国界（含小岛）；CShapes 2.0 在独立前不收录该地区，这里补上殖民/保护国政权。"
+  },
+  {
+   "id": "windward_islands_dma",
+   "group": "colonies_misc",
+   "kind": "regime",
+   "as_polity": true,
+   "name_zh": "英属向风群岛",
+   "name_en": "British Windward Islands",
+   "controller": {
+    "qid": "Q2660774",
+    "zh": "英属向风群岛"
+   },
+   "from": "1940-01-01",
+   "until": "1958-01-03",
+   "geometry": {
+    "admin0_parts": {
+     "a3": [
+      "LCA",
+      "VCT",
+      "GRD",
+      "DMA"
+     ],
+     "bbox": [
+      -61.9,
+      11.9,
+      -60.8,
+      15.7
+     ]
+    }
+   },
+   "approx": true,
+   "dates_note": "1940 年起含多米尼克；1958-01-03 并入西印度联邦。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/British_Windward_Islands"
+   ],
+   "note": "范围取 Natural Earth 今国界（含小岛）；CShapes 2.0 在独立前不收录该地区，这里补上殖民/保护国政权。"
+  },
+  {
+   "id": "leeward_islands",
+   "group": "colonies_misc",
+   "kind": "regime",
+   "as_polity": true,
+   "name_zh": "英属背风群岛",
+   "name_en": "British Leeward Islands",
+   "controller": {
+    "qid": "Q1796551",
+    "zh": "英属背风群岛"
+   },
+   "from": "1833-01-01",
+   "until": "1940-01-01",
+   "geometry": {
+    "admin0_parts": {
+     "a3": [
+      "KNA",
+      "ATG",
+      "DMA"
+     ],
+     "bbox": [
+      -63.0,
+      15.1,
+      -61.1,
+      17.8
+     ]
+    }
+   },
+   "approx": true,
+   "dates_note": "1833–1940 年含多米尼克（1872–1956 年称背风群岛联邦殖民地）。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/British_Leeward_Islands"
+   ],
+   "note": "范围取 Natural Earth 今国界（含小岛）；CShapes 2.0 在独立前不收录该地区，这里补上殖民/保护国政权。"
+  },
+  {
+   "id": "leeward_islands2",
+   "group": "colonies_misc",
+   "kind": "regime",
+   "as_polity": true,
+   "name_zh": "英属背风群岛",
+   "name_en": "British Leeward Islands",
+   "controller": {
+    "qid": "Q1796551",
+    "zh": "英属背风群岛"
+   },
+   "from": "1940-01-01",
+   "until": "1958-01-03",
+   "geometry": {
+    "admin0_parts": {
+     "a3": [
+      "KNA",
+      "ATG"
+     ],
+     "bbox": [
+      -63.0,
+      16.9,
+      -61.1,
+      17.8
+     ]
+    }
+   },
+   "approx": true,
+   "dates_note": "1940 年多米尼克划归向风群岛；1958-01-03 并入西印度联邦。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/British_Leeward_Islands"
+   ],
+   "note": "范围取 Natural Earth 今国界（含小岛）；CShapes 2.0 在独立前不收录该地区，这里补上殖民/保护国政权。"
+  },
+  {
+   "id": "west_indies_fed",
+   "group": "colonies_misc",
+   "kind": "regime",
+   "as_polity": true,
+   "name_zh": "西印度联邦",
+   "name_en": "West Indies Federation",
+   "controller": {
+    "qid": "Q652560",
+    "zh": "西印度联邦"
+   },
+   "from": "1958-01-03",
+   "until": "1962-05-31",
+   "geometry": {
+    "admin0_parts": {
+     "a3": [
+      "LCA",
+      "VCT",
+      "GRD",
+      "DMA",
+      "KNA",
+      "ATG"
+     ],
+     "bbox": [
+      -63.0,
+      11.9,
+      -60.8,
+      17.8
+     ]
+    }
+   },
+   "approx": true,
+   "dates_note": "英国在加勒比的殖民地联邦，1958-01-03 至 1962-05-31。只画东加勒比的小岛（牙买加、特立尼达等由底图负责）。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/West_Indies_Federation"
+   ],
+   "note": "范围取 Natural Earth 今国界（含小岛）；CShapes 2.0 在独立前不收录该地区，这里补上殖民/保护国政权。"
+  },
+  {
+   "id": "lca_colony",
+   "group": "colonies_misc",
+   "kind": "regime",
+   "as_polity": true,
+   "name_zh": "圣卢西亚殖民地",
+   "name_en": "Colony of Saint Lucia",
+   "controller": {
+    "qid": "Q15238409",
+    "zh": "圣卢西亚殖民地"
+   },
+   "from": "1962-05-31",
+   "until": "1967-03-01",
+   "geometry": {
+    "admin0_parts": {
+     "a3": [
+      "LCA"
+     ],
+     "bbox": [
+      -61.1,
+      13.6,
+      -60.8,
+      14.2
+     ]
+    }
+   },
+   "approx": true,
+   "dates_note": "西印度联邦解散后为英国直辖殖民地，1967-03-01 成为西印度联系邦。",
+   "sources": [
+    "https://www.wikidata.org/wiki/Q15238409"
+   ],
+   "note": "范围取 Natural Earth 今国界（含小岛）；CShapes 2.0 在独立前不收录该地区，这里补上殖民/保护国政权。"
+  },
+  {
+   "id": "kna_colony",
+   "group": "colonies_misc",
+   "kind": "regime",
+   "as_polity": true,
+   "name_zh": "圣克里斯托弗-尼维斯-安圭拉",
+   "name_en": "Saint Christopher-Nevis-Anguilla",
+   "controller": {
+    "qid": "Q1637975",
+    "zh": "圣克里斯托弗-尼维斯-安圭拉"
+   },
+   "from": "1962-05-31",
+   "until": "1967-02-27",
+   "geometry": {
+    "admin0_parts": {
+     "a3": [
+      "KNA"
+     ],
+     "bbox": [
+      -62.95,
+      17.0,
+      -62.5,
+      17.5
+     ]
+    }
+   },
+   "approx": true,
+   "dates_note": "西印度联邦解散后为英国直辖殖民地，1967 年成为联系邦（之后由现代国界接续）。",
+   "sources": [
+    "https://www.wikidata.org/wiki/Q1637975"
+   ],
+   "note": "范围取 Natural Earth 今国界（含小岛）；CShapes 2.0 在独立前不收录该地区，这里补上殖民/保护国政权。"
+  },
+  {
+   "id": "wias_dma",
+   "group": "colonies_misc",
+   "kind": "regime",
+   "as_polity": true,
+   "name_zh": "西印度联系邦（多米尼克）",
+   "name_en": "West Indies Associated States (Dominica)",
+   "controller": {
+    "qid": "Q7985529",
+    "zh": "西印度联系邦（多米尼克）"
+   },
+   "from": "1967-03-01",
+   "until": "1978-11-03",
+   "geometry": {
+    "admin0_parts": {
+     "a3": [
+      "DMA"
+     ],
+     "bbox": [
+      -61.6,
+      15.1,
+      -61.2,
+      15.7
+     ]
+    }
+   },
+   "approx": true,
+   "dates_note": "1967-03-01 成为与英国自由联系的邦，1978-11-03 独立。1962–1967 年未补。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/West_Indies_Associated_States"
+   ],
+   "note": "范围取 Natural Earth 今国界（含小岛）；CShapes 2.0 在独立前不收录该地区，这里补上殖民/保护国政权。"
+  },
+  {
+   "id": "wias_vct",
+   "group": "colonies_misc",
+   "kind": "regime",
+   "as_polity": true,
+   "name_zh": "西印度联系邦（圣文森特）",
+   "name_en": "West Indies Associated States (Saint Vincent)",
+   "controller": {
+    "qid": "Q7985529",
+    "zh": "西印度联系邦（圣文森特）"
+   },
+   "from": "1969-10-27",
+   "until": "1979-10-27",
+   "geometry": {
+    "admin0_parts": {
+     "a3": [
+      "VCT"
+     ],
+     "bbox": [
+      -61.5,
+      12.5,
+      -61.1,
+      13.4
+     ]
+    }
+   },
+   "approx": true,
+   "dates_note": "1969-10-27 成为联系邦，1979-10-27 独立。1962–1969 年未补。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/West_Indies_Associated_States"
+   ],
+   "note": "范围取 Natural Earth 今国界（含小岛）；CShapes 2.0 在独立前不收录该地区，这里补上殖民/保护国政权。"
+  },
+  {
+   "id": "ww2_fr_zone_libre",
+   "group": "ww2_europe",
+   "kind": "regime",
+   "as_polity": true,
+   "name_zh": "法国非占领区（维希政府直接管辖，「自由区」）",
+   "name_en": "Zone libre (Vichy France)",
+   "controller": {
+    "qid": "Q69808",
+    "zh": "维希法国"
+   },
+   "from": "1940-06-25",
+   "until": "1942-11-11",
+   "geometry": {
+    "polygon": [
+     [
+      5.9,
+      46.14
+     ],
+     [
+      5.83,
+      46.11
+     ],
+     [
+      5.95,
+      46.3
+     ],
+     [
+      6.0,
+      46.37
+     ],
+     [
+      6.06,
+      46.48
+     ],
+     [
+      6.03,
+      46.52
+     ],
+     [
+      5.96,
+      46.58
+     ],
+     [
+      5.91,
+      46.75
+     ],
+     [
+      5.74,
+      46.87
+     ],
+     [
+      5.6,
+      46.98
+     ],
+     [
+      5.48,
+      47.02
+     ],
+     [
+      5.41,
+      46.97
+     ],
+     [
+      5.15,
+      46.93
+     ],
+     [
+      5.02,
+      46.9
+     ],
+     [
+      4.85,
+      46.78
+     ],
+     [
+      4.7,
+      46.71
+     ],
+     [
+      4.4,
+      46.66
+     ],
+     [
+      4.3,
+      46.5
+     ],
+     [
+      4.13,
+      46.42
+     ],
+     [
+      3.98,
+      46.46
+     ],
+     [
+      3.96,
+      46.44
+     ],
+     [
+      3.68,
+      46.47
+     ],
+     [
+      3.36,
+      46.52
+     ],
+     [
+      3.33,
+      46.55
+     ],
+     [
+      3.22,
+      46.67
+     ],
+     [
+      3.04,
+      46.81
+     ],
+     [
+      3.04,
+      46.9
+     ],
+     [
+      2.73,
+      46.97
+     ],
+     [
+      2.37,
+      47.01
+     ],
+     [
+      2.29,
+      47.02
+     ],
+     [
+      2.1,
+      47.12
+     ],
+     [
+      2.07,
+      47.22
+     ],
+     [
+      1.93,
+      47.26
+     ],
+     [
+      1.9,
+      47.27
+     ],
+     [
+      1.55,
+      47.27
+     ],
+     [
+      1.13,
+      47.34
+     ],
+     [
+      1.07,
+      47.33
+     ],
+     [
+      0.99,
+      47.33
+     ],
+     [
+      0.85,
+      47.13
+     ],
+     [
+      0.82,
+      47.04
+     ],
+     [
+      0.8,
+      46.92
+     ],
+     [
+      0.86,
+      46.82
+     ],
+     [
+      0.81,
+      46.79
+     ],
+     [
+      0.65,
+      46.57
+     ],
+     [
+      0.53,
+      46.48
+     ],
+     [
+      0.53,
+      46.28
+     ],
+     [
+      0.5,
+      46.12
+     ],
+     [
+      0.36,
+      46.09
+     ],
+     [
+      0.44,
+      45.99
+     ],
+     [
+      0.47,
+      45.89
+     ],
+     [
+      0.45,
+      45.75
+     ],
+     [
+      0.42,
+      45.48
+     ],
+     [
+      0.38,
+      45.47
+     ],
+     [
+      0.31,
+      45.25
+     ],
+     [
+      0.25,
+      45.13
+     ],
+     [
+      0.19,
+      45.01
+     ],
+     [
+      0.03,
+      44.85
+     ],
+     [
+      -0.05,
+      44.85
+     ],
+     [
+      -0.08,
+      44.69
+     ],
+     [
+      -0.25,
+      44.55
+     ],
+     [
+      -0.21,
+      44.43
+     ],
+     [
+      -0.26,
+      44.29
+     ],
+     [
+      -0.23,
+      44.03
+     ],
+     [
+      -0.38,
+      43.89
+     ],
+     [
+      -0.46,
+      43.76
+     ],
+     [
+      -0.5,
+      43.66
+     ],
+     [
+      -0.65,
+      43.62
+     ],
+     [
+      -0.67,
+      43.55
+     ],
+     [
+      -0.77,
+      43.49
+     ],
+     [
+      -0.92,
+      43.47
+     ],
+     [
+      -0.94,
+      43.4
+     ],
+     [
+      -1.03,
+      43.33
+     ],
+     [
+      -1.09,
+      43.22
+     ],
+     [
+      -1.24,
+      43.16
+     ],
+     [
+      -1.28,
+      43.11
+     ],
+     [
+      -1.3,
+      43.05
+     ],
+     [
+      -1.3,
+      41.0
+     ],
+     [
+      10.0,
+      41.0
+     ],
+     [
+      10.0,
+      46.0
+     ],
+     [
+      7.0,
+      46.6
+     ],
+     [
+      6.3,
+      46.45
+     ],
+     [
+      6.15,
+      46.2
+     ]
+    ],
+    "intersect": {
+     "cshapes": {
+      "gw": [
+       220
+      ],
+      "date": "1940-01-01"
+     }
+    }
+   },
+   "approx": true,
+   "precision": "分界线按沿线城镇连线，约 ±5–15 km",
+   "note": "1940-06-22 停战协定第 2 条：分界线以北、以西由德军占领，以南以东为非占领区，由贝当政府（1940-07-10 起「法兰西国」，驻维希）直接管辖。阿尔萨斯—摩泽尔被德国事实吞并、北部两省归德军驻布鲁塞尔军政府管辖（见 Stanford 底图）；意大利 1940 年只占领芒通等边境小块（未画）。",
+   "dates_note": "分界线 1940-06-25 生效；1942-11-11 德军越过分界线（安东行动）。",
+   "sources": [
+    "https://fr.wikipedia.org/wiki/Ligne_de_d%C3%A9marcation_(France)",
+    "https://en.wikipedia.org/wiki/Zone_libre",
+    "https://en.wikipedia.org/wiki/Armistice_of_22_June_1940",
+    "https://en.wikipedia.org/wiki/Case_Anton"
+   ]
+  },
+  {
+   "id": "ww2_fr_zone_sud",
+   "group": "ww2_europe",
+   "kind": "regime",
+   "as_polity": true,
+   "name_zh": "维希法国（原非占领区，1942-11-11 起德、意军队占领）",
+   "name_en": "Vichy France (former zone libre, occupied from Nov 1942)",
+   "controller": {
+    "qid": "Q69808",
+    "zh": "维希法国"
+   },
+   "from": "1942-11-11",
+   "until": "1944-08-25",
+   "geometry": {
+    "polygon": [
+     [
+      5.9,
+      46.14
+     ],
+     [
+      5.83,
+      46.11
+     ],
+     [
+      5.95,
+      46.3
+     ],
+     [
+      6.0,
+      46.37
+     ],
+     [
+      6.06,
+      46.48
+     ],
+     [
+      6.03,
+      46.52
+     ],
+     [
+      5.96,
+      46.58
+     ],
+     [
+      5.91,
+      46.75
+     ],
+     [
+      5.74,
+      46.87
+     ],
+     [
+      5.6,
+      46.98
+     ],
+     [
+      5.48,
+      47.02
+     ],
+     [
+      5.41,
+      46.97
+     ],
+     [
+      5.15,
+      46.93
+     ],
+     [
+      5.02,
+      46.9
+     ],
+     [
+      4.85,
+      46.78
+     ],
+     [
+      4.7,
+      46.71
+     ],
+     [
+      4.4,
+      46.66
+     ],
+     [
+      4.3,
+      46.5
+     ],
+     [
+      4.13,
+      46.42
+     ],
+     [
+      3.98,
+      46.46
+     ],
+     [
+      3.96,
+      46.44
+     ],
+     [
+      3.68,
+      46.47
+     ],
+     [
+      3.36,
+      46.52
+     ],
+     [
+      3.33,
+      46.55
+     ],
+     [
+      3.22,
+      46.67
+     ],
+     [
+      3.04,
+      46.81
+     ],
+     [
+      3.04,
+      46.9
+     ],
+     [
+      2.73,
+      46.97
+     ],
+     [
+      2.37,
+      47.01
+     ],
+     [
+      2.29,
+      47.02
+     ],
+     [
+      2.1,
+      47.12
+     ],
+     [
+      2.07,
+      47.22
+     ],
+     [
+      1.93,
+      47.26
+     ],
+     [
+      1.9,
+      47.27
+     ],
+     [
+      1.55,
+      47.27
+     ],
+     [
+      1.13,
+      47.34
+     ],
+     [
+      1.07,
+      47.33
+     ],
+     [
+      0.99,
+      47.33
+     ],
+     [
+      0.85,
+      47.13
+     ],
+     [
+      0.82,
+      47.04
+     ],
+     [
+      0.8,
+      46.92
+     ],
+     [
+      0.86,
+      46.82
+     ],
+     [
+      0.81,
+      46.79
+     ],
+     [
+      0.65,
+      46.57
+     ],
+     [
+      0.53,
+      46.48
+     ],
+     [
+      0.53,
+      46.28
+     ],
+     [
+      0.5,
+      46.12
+     ],
+     [
+      0.36,
+      46.09
+     ],
+     [
+      0.44,
+      45.99
+     ],
+     [
+      0.47,
+      45.89
+     ],
+     [
+      0.45,
+      45.75
+     ],
+     [
+      0.42,
+      45.48
+     ],
+     [
+      0.38,
+      45.47
+     ],
+     [
+      0.31,
+      45.25
+     ],
+     [
+      0.25,
+      45.13
+     ],
+     [
+      0.19,
+      45.01
+     ],
+     [
+      0.03,
+      44.85
+     ],
+     [
+      -0.05,
+      44.85
+     ],
+     [
+      -0.08,
+      44.69
+     ],
+     [
+      -0.25,
+      44.55
+     ],
+     [
+      -0.21,
+      44.43
+     ],
+     [
+      -0.26,
+      44.29
+     ],
+     [
+      -0.23,
+      44.03
+     ],
+     [
+      -0.38,
+      43.89
+     ],
+     [
+      -0.46,
+      43.76
+     ],
+     [
+      -0.5,
+      43.66
+     ],
+     [
+      -0.65,
+      43.62
+     ],
+     [
+      -0.67,
+      43.55
+     ],
+     [
+      -0.77,
+      43.49
+     ],
+     [
+      -0.92,
+      43.47
+     ],
+     [
+      -0.94,
+      43.4
+     ],
+     [
+      -1.03,
+      43.33
+     ],
+     [
+      -1.09,
+      43.22
+     ],
+     [
+      -1.24,
+      43.16
+     ],
+     [
+      -1.28,
+      43.11
+     ],
+     [
+      -1.3,
+      43.05
+     ],
+     [
+      -1.3,
+      41.0
+     ],
+     [
+      10.0,
+      41.0
+     ],
+     [
+      10.0,
+      46.0
+     ],
+     [
+      7.0,
+      46.6
+     ],
+     [
+      6.3,
+      46.45
+     ],
+     [
+      6.15,
+      46.2
+     ]
+    ],
+    "intersect": {
+     "cshapes": {
+      "gw": [
+       220
+      ],
+      "date": "1940-01-01"
+     }
+    }
+   },
+   "approx": true,
+   "precision": "分界线按沿线城镇连线，约 ±5–15 km",
+   "note": "1942-11-11 起德军占领原非占领区（改称「南区」），意大利占领罗讷河以东大部和科西嘉（至 1943-09，未单独画出）；维希政府名义上继续管辖，1943-03-01 分界线撤销。1944-08-15 盟军在普罗旺斯登陆，1944-08-25 巴黎解放后由临时政府接管。",
+   "dates_note": "1942-11-11 安东行动；1944-08-25 巴黎解放（各地解放日期不同，以盟军战线层为准）。",
+   "sources": [
+    "https://fr.wikipedia.org/wiki/Ligne_de_d%C3%A9marcation_(France)",
+    "https://en.wikipedia.org/wiki/Zone_libre",
+    "https://en.wikipedia.org/wiki/Armistice_of_22_June_1940",
+    "https://en.wikipedia.org/wiki/Case_Anton"
+   ]
+  },
+  {
+   "id": "byz_constantinople_1453",
+   "group": "europe_19c",
+   "kind": "holdout",
+   "as_polity": true,
+   "name_zh": "拜占庭帝国（君士坦丁堡，近似范围）",
+   "name_en": "Byzantine Empire (Constantinople, approx.)",
+   "controller": {
+    "qid": "Q12544",
+    "zh": "拜占庭帝国"
+   },
+   "from": "1400-01-01",
+   "until": "1453-05-29",
+   "geometry": {
+    "polygon": [
+     [
+      28.45,
+      40.96
+     ],
+     [
+      29.0,
+      40.99
+     ],
+     [
+      29.05,
+      41.12
+     ],
+     [
+      29.12,
+      41.24
+     ],
+     [
+      28.7,
+      41.32
+     ],
+     [
+      28.45,
+      41.2
+     ],
+     [
+      28.45,
+      40.96
+     ]
+    ]
+   },
+   "approx": true,
+   "dates_note": "1453-05-29 奥斯曼军攻陷君士坦丁堡（OpenStax World History Vol.1 §17.1；英文维基「Fall of Constantinople」）。historical-basemaps 1400 年快照把君士坦丁堡画入奥斯曼多边形，这里只标出城区及欧洲一侧近郊（狄奥多西城墙以西约 30 km 内），亚洲一侧此时已属奥斯曼。",
+   "sources": [
+    "https://openstax.org/books/world-history-volume-1/pages/17-1-the-ottomans-and-the-mongols",
+    "https://en.wikipedia.org/wiki/Fall_of_Constantinople"
+   ],
+   "note": "范围为近似（±20 km）；1400 年以前用底图自身的多边形。摩里亚专制国未单独画出。"
+  },
+  {
+   "id": "german_empire_1871",
+   "group": "europe_19c",
+   "kind": "regime",
+   "as_polity": true,
+   "name_zh": "德意志帝国",
+   "name_en": "German Empire",
+   "controller": {
+    "qid": "Q43287",
+    "zh": "德意志帝国"
+   },
+   "from": "1871-01-18",
+   "until": "1878-01-01",
+   "geometry": {
+    "basemap": {
+     "snap": 1878,
+     "name": "Germany"
+    }
+   },
+   "approx": true,
+   "dates_note": "1871-01-18 凡尔赛宫宣告成立德意志帝国（OpenStax World History Vol.2 §7.4）。1815 年快照仍画着普鲁士、巴伐利亚等各邦，1878 年快照起才是统一的德国多边形：这段时间用 1878 年快照的德国范围标出。",
+   "sources": [
+    "https://openstax.org/books/world-history-volume-2/pages/7-4-nationalism-liberalism-conservatism-and-the-political-order",
+    "https://en.wikipedia.org/wiki/Proclamation_of_the_German_Empire"
+   ],
+   "note": "边界取 1878 年快照（含阿尔萨斯-洛林），精度同 historical-basemaps。"
+  },
+  {
+   "id": "kwantung_russia",
+   "group": "europe_19c",
+   "kind": "leased",
+   "as_polity": true,
+   "name_zh": "俄国关东州（旅大租借地）",
+   "name_en": "Russian Dalian (Kwantung Oblast)",
+   "controller": {
+    "qid": "Q7382031",
+    "zh": "俄国关东州"
+   },
+   "from": "1898-03-27",
+   "until": "1905-09-05",
+   "geometry": {
+    "polygon": [
+     [
+      121.0,
+      38.68
+     ],
+     [
+      121.4,
+      38.72
+     ],
+     [
+      121.75,
+      38.82
+     ],
+     [
+      122.1,
+      39.0
+     ],
+     [
+      122.45,
+      39.3
+     ],
+     [
+      122.45,
+      39.45
+     ],
+     [
+      121.55,
+      39.45
+     ],
+     [
+      121.3,
+      39.1
+     ],
+     [
+      121.0,
+      38.68
+     ]
+    ],
+    "intersect": {
+     "cshapes": {
+      "gw": [
+       710
+      ],
+      "date": "1900-01-01"
+     }
+    }
+   },
+   "approx": true,
+   "dates_note": "1898-03-27《旅大租地条约》（Pavlov Agreement）；1905-09-05《朴茨茅斯和约》转让日本（旅顺 1905-01-02 已被日军攻占）。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Russian_Dalian",
+    "https://en.wikipedia.org/wiki/Kwantung_Leased_Territory",
+    "https://openstax.org/books/world-history-volume-2/pages/9-3-colonial-empires"
+   ],
+   "note": "北界按普兰店湾—皮口一线近似（±15 km）。"
+  },
+  {
+   "id": "kwantung_japan",
+   "group": "europe_19c",
+   "kind": "leased",
+   "as_polity": true,
+   "name_zh": "日本关东州（租借地）",
+   "name_en": "Kwantung Leased Territory",
+   "controller": {
+    "qid": "Q678658",
+    "zh": "关东州"
+   },
+   "from": "1905-09-05",
+   "until": "1945-08-22",
+   "geometry": {
+    "polygon": [
+     [
+      121.0,
+      38.68
+     ],
+     [
+      121.4,
+      38.72
+     ],
+     [
+      121.75,
+      38.82
+     ],
+     [
+      122.1,
+      39.0
+     ],
+     [
+      122.45,
+      39.3
+     ],
+     [
+      122.45,
+      39.45
+     ],
+     [
+      121.55,
+      39.45
+     ],
+     [
+      121.3,
+      39.1
+     ],
+     [
+      121.0,
+      38.68
+     ]
+    ],
+    "intersect": {
+     "cshapes": {
+      "gw": [
+       710
+      ],
+      "date": "1900-01-01"
+     }
+    }
+   },
+   "approx": true,
+   "dates_note": "1905-09-05《朴茨茅斯和约》；1945-08-22 苏军进入旅顺、大连。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Russian_Dalian",
+    "https://en.wikipedia.org/wiki/Kwantung_Leased_Territory",
+    "https://openstax.org/books/world-history-volume-2/pages/9-3-colonial-empires"
+   ],
+   "note": "北界按普兰店湾—皮口一线近似（±15 km）。"
+  },
+  {
+   "id": "ccw_ccp_1949_1",
+   "group": "wars_misc",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "共军控制区（1949 年，省级近似）",
+   "name_en": "Communist-held area (1949, province-level approx.)",
+   "controller": {
+    "qid": "Q17427",
+    "zh": "中国共产党"
+   },
+   "from": "1949-01-31",
+   "until": "1949-04-23",
+   "geometry": {
+    "admin1": [
+     "CN-BJ",
+     "CN-TJ",
+     "CN-HE",
+     "CN-SD",
+     "CN-HA",
+     "CN-SX"
+    ]
+   },
+   "approx": true,
+   "dates_note": "1949-01-31 共军进入北平（平津战役结束）；山东、河南、河北、山西大部此前已归共军（太原 1949-04-24）。以省为单位、按省会易手日期近似；省内各地易手时间不一。1949-10-01 起显示中华人民共和国。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Pingjin_campaign",
+    "https://en.wikipedia.org/wiki/Yangtze_River_Crossing_campaign",
+    "https://en.wikipedia.org/wiki/Chinese_Civil_War"
+   ],
+   "note": "精度：省级。东北另见 ccw_manchuria 组。"
+  },
+  {
+   "id": "ccw_ccp_1949_2",
+   "group": "wars_misc",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "共军控制区（1949 年，省级近似）",
+   "name_en": "Communist-held area (1949, province-level approx.)",
+   "controller": {
+    "qid": "Q17427",
+    "zh": "中国共产党"
+   },
+   "from": "1949-04-23",
+   "until": "1949-05-27",
+   "geometry": {
+    "admin1": [
+     "CN-BJ",
+     "CN-TJ",
+     "CN-HE",
+     "CN-SD",
+     "CN-HA",
+     "CN-SX",
+     "CN-JS",
+     "CN-AH"
+    ]
+   },
+   "approx": true,
+   "dates_note": "1949-01-31 共军进入北平（平津战役结束）；山东、河南、河北、山西大部此前已归共军（太原 1949-04-24）；1949-04-23 共军渡江攻占南京。以省为单位、按省会易手日期近似；省内各地易手时间不一。1949-10-01 起显示中华人民共和国。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Pingjin_campaign",
+    "https://en.wikipedia.org/wiki/Yangtze_River_Crossing_campaign",
+    "https://en.wikipedia.org/wiki/Chinese_Civil_War"
+   ],
+   "note": "精度：省级。东北另见 ccw_manchuria 组。"
+  },
+  {
+   "id": "ccw_ccp_1949_3",
+   "group": "wars_misc",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "共军控制区（1949 年，省级近似）",
+   "name_en": "Communist-held area (1949, province-level approx.)",
+   "controller": {
+    "qid": "Q17427",
+    "zh": "中国共产党"
+   },
+   "from": "1949-05-27",
+   "until": "1949-08-26",
+   "geometry": {
+    "admin1": [
+     "CN-BJ",
+     "CN-TJ",
+     "CN-HE",
+     "CN-SD",
+     "CN-HA",
+     "CN-SX",
+     "CN-JS",
+     "CN-AH",
+     "CN-SH",
+     "CN-ZJ",
+     "CN-HB",
+     "CN-JX",
+     "CN-SN"
+    ]
+   },
+   "approx": true,
+   "dates_note": "1949-01-31 共军进入北平（平津战役结束）；山东、河南、河北、山西大部此前已归共军（太原 1949-04-24）；1949-04-23 共军渡江攻占南京；杭州 5-3、武汉 5-16、西安 5-20、南昌 5-22、上海 5-27。以省为单位、按省会易手日期近似；省内各地易手时间不一。1949-10-01 起显示中华人民共和国。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Pingjin_campaign",
+    "https://en.wikipedia.org/wiki/Yangtze_River_Crossing_campaign",
+    "https://en.wikipedia.org/wiki/Chinese_Civil_War"
+   ],
+   "note": "精度：省级。东北另见 ccw_manchuria 组。"
+  },
+  {
+   "id": "ccw_ccp_1949_4",
+   "group": "wars_misc",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "共军控制区（1949 年，省级近似）",
+   "name_en": "Communist-held area (1949, province-level approx.)",
+   "controller": {
+    "qid": "Q17427",
+    "zh": "中国共产党"
+   },
+   "from": "1949-08-26",
+   "until": "1949-09-25",
+   "geometry": {
+    "admin1": [
+     "CN-BJ",
+     "CN-TJ",
+     "CN-HE",
+     "CN-SD",
+     "CN-HA",
+     "CN-SX",
+     "CN-JS",
+     "CN-AH",
+     "CN-SH",
+     "CN-ZJ",
+     "CN-HB",
+     "CN-JX",
+     "CN-SN",
+     "CN-HN",
+     "CN-FJ",
+     "CN-GS"
+    ]
+   },
+   "approx": true,
+   "dates_note": "1949-01-31 共军进入北平（平津战役结束）；山东、河南、河北、山西大部此前已归共军（太原 1949-04-24）；1949-04-23 共军渡江攻占南京；杭州 5-3、武汉 5-16、西安 5-20、南昌 5-22、上海 5-27；长沙 8-4（和平易手）、福州 8-17、兰州 8-26。以省为单位、按省会易手日期近似；省内各地易手时间不一。1949-10-01 起显示中华人民共和国。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Pingjin_campaign",
+    "https://en.wikipedia.org/wiki/Yangtze_River_Crossing_campaign",
+    "https://en.wikipedia.org/wiki/Chinese_Civil_War"
+   ],
+   "note": "精度：省级。东北另见 ccw_manchuria 组。"
+  },
+  {
+   "id": "ccw_ccp_1949_5",
+   "group": "wars_misc",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "共军控制区（1949 年，省级近似）",
+   "name_en": "Communist-held area (1949, province-level approx.)",
+   "controller": {
+    "qid": "Q17427",
+    "zh": "中国共产党"
+   },
+   "from": "1949-09-25",
+   "until": "1949-10-01",
+   "geometry": {
+    "admin1": [
+     "CN-BJ",
+     "CN-TJ",
+     "CN-HE",
+     "CN-SD",
+     "CN-HA",
+     "CN-SX",
+     "CN-JS",
+     "CN-AH",
+     "CN-SH",
+     "CN-ZJ",
+     "CN-HB",
+     "CN-JX",
+     "CN-SN",
+     "CN-HN",
+     "CN-FJ",
+     "CN-GS",
+     "CN-QH",
+     "CN-NX",
+     "CN-XJ"
+    ]
+   },
+   "approx": true,
+   "dates_note": "1949-01-31 共军进入北平（平津战役结束）；山东、河南、河北、山西大部此前已归共军（太原 1949-04-24）；1949-04-23 共军渡江攻占南京；杭州 5-3、武汉 5-16、西安 5-20、南昌 5-22、上海 5-27；长沙 8-4（和平易手）、福州 8-17、兰州 8-26；西宁 9-5、银川 9-23、新疆 9-25 和平易手。以省为单位、按省会易手日期近似；省内各地易手时间不一。1949-10-01 起显示中华人民共和国。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Pingjin_campaign",
+    "https://en.wikipedia.org/wiki/Yangtze_River_Crossing_campaign",
+    "https://en.wikipedia.org/wiki/Chinese_Civil_War"
+   ],
+   "note": "精度：省级。东北另见 ccw_manchuria 组。"
+  },
+  {
+   "id": "korea_rok_south_of_38",
+   "group": "wars_misc",
+   "kind": "holdout",
+   "as_polity": true,
+   "name_zh": "大韩民国（三八线以南、今停战线以北）",
+   "name_en": "Republic of Korea (south of 38th parallel)",
+   "controller": {
+    "qid": "Q884",
+    "zh": "大韩民国"
+   },
+   "from": "1948-08-15",
+   "until": "1950-06-25",
+   "geometry": {
+    "cshapes": {
+     "gw": [
+      731
+     ],
+     "date": "1960-01-01"
+    },
+    "intersect_bbox": [
+     124.0,
+     33.0,
+     131.5,
+     38.0
+    ]
+   },
+   "approx": false,
+   "dates_note": "1948–1950 南北以北纬 38 度线为界（开城、瓮津半岛属大韩民国）；CShapes 对 1948–53 年使用 1953 年停战线。1950-06-25 战争爆发后战线反复移动，本数据不画战时战线。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/38th_parallel_north",
+    "https://en.wikipedia.org/wiki/Korean_Demilitarized_Zone"
+   ],
+   "note": "北纬 38 度线为精确界线。"
+  },
+  {
+   "id": "korea_dprk_north_of_38",
+   "group": "wars_misc",
+   "kind": "holdout",
+   "as_polity": true,
+   "name_zh": "朝鲜民主主义人民共和国（三八线以北、今停战线以南）",
+   "name_en": "DPRK (north of 38th parallel)",
+   "controller": {
+    "qid": "Q423",
+    "zh": "朝鲜民主主义人民共和国"
+   },
+   "from": "1948-09-09",
+   "until": "1950-06-25",
+   "geometry": {
+    "cshapes": {
+     "gw": [
+      732
+     ],
+     "date": "1960-01-01"
+    },
+    "intersect_bbox": [
+     124.0,
+     38.0,
+     131.5,
+     39.5
+    ]
+   },
+   "approx": false,
+   "dates_note": "1948–1950 年三八线以北（含襄阳、杆城一带，停战后归大韩民国）。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/38th_parallel_north",
+    "https://en.wikipedia.org/wiki/Korean_Demilitarized_Zone"
+   ],
+   "note": "北纬 38 度线为精确界线。"
+  },
+  {
+   "id": "cyprus_tr_1974",
+   "group": "wars_misc",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "土耳其占领区（塞浦路斯北部）",
+   "name_en": "Turkish-occupied northern Cyprus",
+   "controller": {
+    "qid": "Q43",
+    "zh": "土耳其"
+   },
+   "from": "1974-08-16",
+   "until": "1975-02-13",
+   "geometry": {
+    "admin0_parts": {
+     "a3": [
+      "CYN"
+     ],
+     "bbox": [
+      32.2,
+      34.9,
+      34.7,
+      35.8
+     ]
+    }
+   },
+   "approx": true,
+   "dates_note": "1974-08-16 第二阶段停火线（阿提拉线）。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Turkish_invasion_of_Cyprus",
+    "https://en.wikipedia.org/wiki/Turkish_Federated_State_of_Cyprus",
+    "https://en.wikipedia.org/wiki/Northern_Cyprus"
+   ],
+   "note": "范围取 Natural Earth 北塞浦路斯（今界）。"
+  },
+  {
+   "id": "cyprus_tfsc",
+   "group": "wars_misc",
+   "kind": "de_facto",
+   "as_polity": true,
+   "name_zh": "塞浦路斯土族邦",
+   "name_en": "Turkish Federated State of Cyprus",
+   "controller": {
+    "qid": "Q784851",
+    "zh": "塞浦路斯土族邦"
+   },
+   "from": "1975-02-13",
+   "until": "1983-11-15",
+   "geometry": {
+    "admin0_parts": {
+     "a3": [
+      "CYN"
+     ],
+     "bbox": [
+      32.2,
+      34.9,
+      34.7,
+      35.8
+     ]
+    }
+   },
+   "approx": true,
+   "dates_note": "1975-02-13 宣布成立。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Turkish_invasion_of_Cyprus",
+    "https://en.wikipedia.org/wiki/Turkish_Federated_State_of_Cyprus",
+    "https://en.wikipedia.org/wiki/Northern_Cyprus"
+   ],
+   "note": "仅土耳其承认。"
+  },
+  {
+   "id": "cyprus_trnc",
+   "group": "wars_misc",
+   "kind": "de_facto",
+   "as_polity": true,
+   "name_zh": "北塞浦路斯土耳其共和国",
+   "name_en": "Turkish Republic of Northern Cyprus",
+   "controller": {
+    "qid": "Q23681",
+    "zh": "北塞浦路斯"
+   },
+   "from": "1983-11-15",
+   "until": null,
+   "geometry": {
+    "admin0_parts": {
+     "a3": [
+      "CYN"
+     ],
+     "bbox": [
+      32.2,
+      34.9,
+      34.7,
+      35.8
+     ]
+    }
+   },
+   "approx": true,
+   "dates_note": "1983-11-15 宣布独立，仅土耳其承认；国际上视为塞浦路斯共和国领土。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Turkish_invasion_of_Cyprus",
+    "https://en.wikipedia.org/wiki/Turkish_Federated_State_of_Cyprus",
+    "https://en.wikipedia.org/wiki/Northern_Cyprus"
+   ],
+   "note": "事实控制，非国际承认。"
+  },
+  {
+   "id": "falklands_arg_1982",
+   "group": "wars_misc",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "阿根廷占领（马岛战争）",
+   "name_en": "Argentine occupation of the Falkland Islands",
+   "controller": {
+    "qid": "Q414",
+    "zh": "阿根廷"
+   },
+   "from": "1982-04-02",
+   "until": "1982-06-14",
+   "geometry": {
+    "admin0_parts": {
+     "a3": [
+      "FLK"
+     ],
+     "bbox": [
+      -62,
+      -53,
+      -57,
+      -50.8
+     ]
+    }
+   },
+   "approx": false,
+   "dates_note": "1982-04-02 阿根廷登陆；1982-06-14 斯坦利港守军投降。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Falklands_War"
+   ],
+   "note": "南乔治亚岛（4-03—4-25）未单独画出。"
+  },
+  {
+   "id": "csa_1861",
+   "group": "europe_19c",
+   "kind": "de_facto",
+   "as_polity": true,
+   "name_zh": "美利坚联盟国",
+   "name_en": "Confederate States of America",
+   "controller": {
+    "qid": "Q81931",
+    "zh": "美利坚联盟国"
+   },
+   "from": "1861-02-08",
+   "until": "1865-05-10",
+   "geometry": {
+    "admin1": [
+     "US-SC",
+     "US-MS",
+     "US-FL",
+     "US-AL",
+     "US-GA",
+     "US-LA",
+     "US-TX",
+     "US-VA",
+     "US-AR",
+     "US-NC",
+     "US-TN"
+    ]
+   },
+   "approx": true,
+   "dates_note": "1861-02-08 蒙哥马利临时宪法成立联盟国；1865-05-10 杰斐逊·戴维斯被俘，联盟国政府瓦解。按 11 个脱离州的今州界近似（弗吉尼亚不含西弗吉尼亚）。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Confederate_States_of_America",
+    "https://en.wikipedia.org/wiki/Origins_of_the_American_Civil_War"
+   ],
+   "note": "未画出联邦军逐年占领的地区（如 1862-04 起的新奥尔良、田纳西西部）；印第安领地、亚利桑那领地等联盟国主张区未画。"
+  },
+  {
+   "id": "nl_french_empire_1810",
+   "group": "europe_19c",
+   "kind": "annexed",
+   "as_polity": true,
+   "name_zh": "法兰西第一帝国（并入的荷兰）",
+   "name_en": "First French Empire (annexed Holland)",
+   "controller": {
+    "qid": "Q71084",
+    "zh": "法兰西第一帝国"
+   },
+   "from": "1810-07-09",
+   "until": "1813-11-30",
+   "geometry": {
+    "basemap": {
+     "snap": 1800,
+     "name": "Batavian Republic"
+    }
+   },
+   "approx": true,
+   "dates_note": "1810-07-09 拿破仑以朗布依埃敕令把荷兰王国并入法兰西帝国；1813-11-30 威廉（后来的威廉一世）在斯赫弗宁根登陆，荷兰恢复独立。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Kingdom_of_Holland",
+    "https://en.wikipedia.org/wiki/Sovereign_Principality_of_the_United_Netherlands"
+   ],
+   "note": "范围取 1800 年快照的巴达维亚共和国多边形（historical-basemaps），精度同底图。"
+  },
+  {
+   "id": "hanover_prussia_1866",
+   "group": "europe_19c",
+   "kind": "annexed",
+   "as_polity": true,
+   "name_zh": "普鲁士王国（汉诺威省）",
+   "name_en": "Kingdom of Prussia (Province of Hanover)",
+   "controller": {
+    "qid": "Q27306",
+    "zh": "普鲁士王国"
+   },
+   "from": "1866-09-20",
+   "until": "1871-01-18",
+   "geometry": {
+    "basemap": {
+     "snap": 1815,
+     "name": "Hanover"
+    }
+   },
+   "approx": true,
+   "dates_note": "普奥战争后，1866-09-20 普鲁士吞并汉诺威王国，设汉诺威省；1871-01-18 起显示德意志帝国。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Kingdom_of_Hanover",
+    "https://en.wikipedia.org/wiki/Province_of_Hanover"
+   ],
+   "note": "范围取 1815 年快照的汉诺威王国多边形，精度同底图。"
+  },
+  {
+   "id": "alsace_france_1815",
+   "group": "europe_19c",
+   "kind": "regime",
+   "as_polity": true,
+   "name_zh": "法国（阿尔萨斯）",
+   "name_en": "France (Alsace)",
+   "controller": {
+    "qid": "Q142",
+    "zh": "法国"
+   },
+   "from": "1815-11-20",
+   "until": "1871-01-18",
+   "geometry": {
+    "admin1": [
+     "FR-67",
+     "FR-68"
+    ]
+   },
+   "approx": true,
+   "dates_note": "1815-11-20 第二次巴黎条约后阿尔萨斯仍属法国，直到 1871 年普法战争后割让（1871-05-10 法兰克福条约）。1815 年快照把斯特拉斯堡一带画进巴登，这里按今上莱茵省、下莱茵省修正。1871-01-18 起由「德意志帝国」控制区接管。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Alsace",
+    "https://en.wikipedia.org/wiki/Treaty_of_Frankfurt_(1871)"
+   ],
+   "note": "底图边界修正；1871-01-18 至 05-10 法理上仍属法国，但已被德军占领。洛林（摩泽尔）部分未修正。"
+  },
+  {
+   "id": "mexico_north_1821",
+   "group": "europe_19c",
+   "kind": "regime",
+   "as_polity": true,
+   "name_zh": "墨西哥（上加利福尼亚、新墨西哥）",
+   "name_en": "Mexico (Alta California, Santa Fe de Nuevo México)",
+   "controller": {
+    "qid": "Q96",
+    "zh": "墨西哥"
+   },
+   "from": "1821-09-28",
+   "until": "1848-02-02",
+   "geometry": {
+    "admin1": [
+     "US-CA",
+     "US-NV",
+     "US-UT",
+     "US-AZ",
+     "US-NM"
+    ]
+   },
+   "approx": true,
+   "dates_note": "1821-09-28 墨西哥独立；1848-02-02《瓜达卢佩-伊达尔戈条约》割让给美国（1846 年起美军已占领加利福尼亚、新墨西哥）。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Alta_California",
+    "https://en.wikipedia.org/wiki/Treaty_of_Guadalupe_Hidalgo",
+    "https://en.wikipedia.org/wiki/Mexican_Cession"
+   ],
+   "note": "按今美国州界近似：不含科罗拉多、怀俄明的割让部分；亚利桑那南部（加兹登购地，1853 年才归美国）在 1848–1853 年未单独画出。"
+  },
+  {
+   "id": "it_occ_france_1942",
+   "group": "ww2_europe_misc",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "意大利占领区（法国东南部）",
+   "name_en": "Italian occupation of France",
+   "controller": {
+    "qid": "Q2570590",
+    "zh": "意大利占领区（法国东南部）"
+   },
+   "from": "1942-11-11",
+   "until": "1943-09-08",
+   "geometry": {
+    "admin1": [
+     "FR-06",
+     "FR-83",
+     "FR-04",
+     "FR-05",
+     "FR-73",
+     "FR-74",
+     "FR-26",
+     "FR-38",
+     "FR-2A",
+     "FR-2B"
+    ]
+   },
+   "approx": true,
+   "dates_note": "1942-11-11 德意军队进占维希法国（安东行动），意大利占领罗讷河以东的普罗旺斯与科西嘉；1943-09-08 意大利停战，德军接管。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Italian_occupation_of_France"
+   ],
+   "note": "按省（département）近似：滨海阿尔卑斯、瓦尔、上普罗旺斯阿尔卑斯、上阿尔卑斯、萨瓦、上萨瓦、德龙、伊泽尔与科西嘉两省；德龙、伊泽尔实际只占东部，土伦 1942-11-27 起由德军控制，未细分。1940-06 至 1942-11 的芒通一带小块占领区（不足一个省）没有画。"
+  },
+  {
+   "id": "johor_1855",
+   "group": "princely_states",
+   "kind": "regime",
+   "as_polity": true,
+   "name_zh": "柔佛（自治苏丹国，英国影响下）",
+   "name_en": "Johor (self-governing, under British influence)",
+   "controller": {
+    "qid": "Q183032",
+    "zh": "柔佛苏丹国"
+   },
+   "from": "1855-03-10",
+   "until": "1885-12-11",
+   "approx": true,
+   "dates_note": "1855-03-10 天猛公取得柔佛大陆统治权；与海峡殖民地关系密切但仍自治；1885-12-11 英柔条约后由英国负责外交。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Johor"
+   ],
+   "note": "范围取 Natural Earth 今一级行政区（大致范围）；底图把该地画在英属马来亚 / 荷属东印度整体之内，这里补上可点击的苏丹国。",
+   "geometry": {
+    "admin1": [
+     "MY-01"
+    ]
+   }
+  },
+  {
+   "id": "johor_1885",
+   "group": "princely_states",
+   "kind": "regime",
+   "as_polity": true,
+   "name_zh": "柔佛苏丹国（英国保护，外交由英国负责）",
+   "name_en": "Sultanate of Johor (British protection, 1885 treaty)",
+   "controller": {
+    "qid": "Q183032",
+    "zh": "柔佛苏丹国"
+   },
+   "from": "1885-12-11",
+   "until": "1914-05-12",
+   "approx": true,
+   "dates_note": "1885-12-11 英柔条约：英国负责外交并提供保护，内政自治；1914-05-12 接受英国总顾问，成为马来属邦。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Johor"
+   ],
+   "note": "范围取 Natural Earth 今一级行政区（大致范围）；底图把该地画在英属马来亚 / 荷属东印度整体之内，这里补上可点击的苏丹国。",
+   "geometry": {
+    "admin1": [
+     "MY-01"
+    ]
+   }
+  },
+  {
+   "id": "johor_1914",
+   "group": "princely_states",
+   "kind": "regime",
+   "as_polity": true,
+   "name_zh": "柔佛苏丹国（英国保护国，马来属邦）",
+   "name_en": "Sultanate of Johor (Unfederated Malay State)",
+   "controller": {
+    "qid": "Q183032",
+    "zh": "柔佛苏丹国"
+   },
+   "from": "1914-05-12",
+   "until": "1942-01-31",
+   "approx": true,
+   "dates_note": "1914-05-12 起为英国保护国（马来属邦）；1942-01-31 日军占领柔佛全境。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Johor",
+    "https://en.wikipedia.org/wiki/Unfederated_Malay_States",
+    "https://en.wikipedia.org/wiki/Japanese_occupation_of_Malaya"
+   ],
+   "note": "范围取 Natural Earth 今一级行政区（大致范围）；底图把该地画在英属马来亚 / 荷属东印度整体之内，这里补上可点击的苏丹国。",
+   "geometry": {
+    "admin1": [
+     "MY-01"
+    ]
+   }
+  },
+  {
+   "id": "perak_1874",
+   "group": "princely_states",
+   "kind": "regime",
+   "as_polity": true,
+   "name_zh": "霹雳苏丹国（英国驻扎官制度）",
+   "name_en": "Sultanate of Perak (British Residential system)",
+   "controller": {
+    "qid": "Q188953",
+    "zh": "霹雳苏丹国"
+   },
+   "from": "1874-01-20",
+   "until": "1895-07-01",
+   "approx": true,
+   "dates_note": "1874-01-20 邦咯条约：接受英国驻扎官，苏丹仍为名义君主；1895-07-01 加入马来联邦。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Pangkor_Treaty_of_1874"
+   ],
+   "note": "范围取 Natural Earth 今一级行政区（大致范围）；底图把该地画在英属马来亚 / 荷属东印度整体之内，这里补上可点击的苏丹国。",
+   "geometry": {
+    "admin1": [
+     "MY-08"
+    ]
+   }
+  },
+  {
+   "id": "perak_1895",
+   "group": "princely_states",
+   "kind": "regime",
+   "as_polity": true,
+   "name_zh": "霹雳苏丹国（英国保护国，马来联邦）",
+   "name_en": "Sultanate of Perak (Federated Malay States)",
+   "controller": {
+    "qid": "Q188953",
+    "zh": "霹雳苏丹国"
+   },
+   "from": "1895-07-01",
+   "until": "1941-12",
+   "approx": true,
+   "dates_note": "1895-07-01 起为马来联邦成员（英国保护国）；1941 年 12 月日军占领。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Federated_Malay_States",
+    "https://en.wikipedia.org/wiki/Japanese_occupation_of_Malaya"
+   ],
+   "note": "范围取 Natural Earth 今一级行政区（大致范围）；底图把该地画在英属马来亚 / 荷属东印度整体之内，这里补上可点击的苏丹国。",
+   "geometry": {
+    "admin1": [
+     "MY-08"
+    ]
+   }
+  },
+  {
+   "id": "selangor_1874",
+   "group": "princely_states",
+   "kind": "regime",
+   "as_polity": true,
+   "name_zh": "雪兰莪苏丹国（英国驻扎官制度）",
+   "name_en": "Sultanate of Selangor (British Residential system)",
+   "controller": {
+    "qid": "Q189710",
+    "zh": "雪兰莪苏丹国"
+   },
+   "from": "1874",
+   "until": "1895-07-01",
+   "approx": true,
+   "dates_note": "1874 年苏丹阿卜杜勒·萨马德接受英国驻扎官（首任驻扎官 1875 年初到任）；1895-07-01 加入马来联邦。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Selangor"
+   ],
+   "note": "范围取 Natural Earth 今一级行政区（大致范围）；底图把该地画在英属马来亚 / 荷属东印度整体之内，这里补上可点击的苏丹国。",
+   "geometry": {
+    "admin1": [
+     "MY-10",
+     "MY-14",
+     "MY-16"
+    ]
+   }
+  },
+  {
+   "id": "selangor_1895",
+   "group": "princely_states",
+   "kind": "regime",
+   "as_polity": true,
+   "name_zh": "雪兰莪苏丹国（英国保护国，马来联邦）",
+   "name_en": "Sultanate of Selangor (Federated Malay States)",
+   "controller": {
+    "qid": "Q189710",
+    "zh": "雪兰莪苏丹国"
+   },
+   "from": "1895-07-01",
+   "until": "1942-01-11",
+   "approx": true,
+   "dates_note": "1895-07-01 起为马来联邦成员；1942-01-11 日军占领吉隆坡。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Federated_Malay_States",
+    "https://en.wikipedia.org/wiki/Selangor",
+    "https://en.wikipedia.org/wiki/Japanese_occupation_of_Malaya"
+   ],
+   "note": "范围取 Natural Earth 今一级行政区（大致范围）；底图把该地画在英属马来亚 / 荷属东印度整体之内，这里补上可点击的苏丹国。",
+   "geometry": {
+    "admin1": [
+     "MY-10",
+     "MY-14",
+     "MY-16"
+    ]
+   }
+  },
+  {
+   "id": "selangor_1942",
+   "group": "princely_states",
+   "kind": "regime",
+   "as_polity": true,
+   "name_zh": "雪兰莪（日本占领下）",
+   "name_en": "Selangor (Japanese occupation)",
+   "controller": {
+    "qid": "Q189710",
+    "zh": "雪兰莪苏丹国"
+   },
+   "from": "1942-01-11",
+   "until": "1945-09-12",
+   "approx": true,
+   "dates_note": "1942-01-11 日军占领吉隆坡；日方另立苏丹（见面板的空位期/对立君主案例）；1945-09-12 日军在新加坡投降。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Selangor",
+    "https://en.wikipedia.org/wiki/Japanese_occupation_of_Malaya"
+   ],
+   "note": "范围取 Natural Earth 今一级行政区（大致范围）；底图把该地画在英属马来亚 / 荷属东印度整体之内，这里补上可点击的苏丹国。",
+   "geometry": {
+    "admin1": [
+     "MY-10",
+     "MY-14",
+     "MY-16"
+    ]
+   }
+  },
+  {
+   "id": "yogya_1830",
+   "group": "princely_states",
+   "kind": "regime",
+   "as_polity": true,
+   "name_zh": "日惹苏丹国（荷属东印度自治土邦）",
+   "name_en": "Sultanate of Yogyakarta (self-governing principality, Dutch East Indies)",
+   "controller": {
+    "qid": "Q2114397",
+    "zh": "日惹苏丹国"
+   },
+   "from": "1830-03-28",
+   "until": "1942-03-08",
+   "approx": true,
+   "dates_note": "1755 年建国；1830 年爪哇战争结束后大片领土被荷兰吞并，作为荷属东印度的自治土邦保留；1942-03-08 荷属东印度投降。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Yogyakarta_Sultanate"
+   ],
+   "note": "范围取 Natural Earth 今一级行政区（大致范围）；底图把该地画在英属马来亚 / 荷属东印度整体之内，这里补上可点击的苏丹国。",
+   "geometry": {
+    "admin1": [
+     "ID-YO"
+    ]
+   }
+  },
+  {
+   "id": "yogya_1942",
+   "group": "princely_states",
+   "kind": "regime",
+   "as_polity": true,
+   "name_zh": "日惹苏丹国（日本占领下）",
+   "name_en": "Sultanate of Yogyakarta (Japanese occupation)",
+   "controller": {
+    "qid": "Q2114397",
+    "zh": "日惹苏丹国"
+   },
+   "from": "1942-03-08",
+   "until": "1945-08-17",
+   "approx": true,
+   "dates_note": "1942-03-08 荷属东印度投降，日本占领；1945-08-17 印度尼西亚宣布独立，苏丹随即宣布日惹归属共和国。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Yogyakarta_Sultanate",
+    "https://en.wikipedia.org/wiki/Japanese_occupation_of_the_Dutch_East_Indies"
+   ],
+   "note": "范围取 Natural Earth 今一级行政区（大致范围）；底图把该地画在英属马来亚 / 荷属东印度整体之内，这里补上可点击的苏丹国。",
+   "geometry": {
+    "admin1": [
+     "ID-YO"
+    ]
+   }
+  },
+  {
+   "id": "ccw_roc_guangdong_1949",
+   "group": "chinese_civil_war",
+   "kind": "holdout",
+   "as_polity": true,
+   "name_zh": "广东（中华民国控制，广州为临时首都）",
+   "name_en": "ROC-held Guangdong (Oct 1949)",
+   "controller": {
+    "qid": "Q865",
+    "zh": "中华民国"
+   },
+   "from": "1949-10-01",
+   "until": "1949-10-14",
+   "geometry": {
+    "admin1": [
+     "CN-GD"
+    ]
+   },
+   "approx": true,
+   "note": "共军 1949-10-14 进入广州（广东战役）；此后粤中、粤西陆续易手，范围与结束日期为近似（以广州失守为界）。不含海南（另见海南岛区域）。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Guangdong_Campaign",
+    "https://zh.wikipedia.org/wiki/%E5%B9%BF%E4%B8%9C%E6%88%98%E5%BD%B9"
+   ]
+  },
+  {
+   "id": "ccw_roc_guangxi_1949",
+   "group": "chinese_civil_war",
+   "kind": "holdout",
+   "as_polity": true,
+   "name_zh": "广西（中华民国控制）",
+   "name_en": "ROC-held Guangxi (Oct–Dec 1949)",
+   "controller": {
+    "qid": "Q865",
+    "zh": "中华民国"
+   },
+   "from": "1949-10-01",
+   "until": "1949-12-04",
+   "geometry": {
+    "admin1": [
+     "CN-GX"
+    ]
+   },
+   "approx": true,
+   "note": "广西战役：共军 1949-11-22 占桂林，12-04 占南宁；以南宁失守为界，范围为近似。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Guangxi_Campaign",
+    "https://zh.wikipedia.org/wiki/%E5%B9%BF%E8%A5%BF%E6%88%98%E5%BD%B9"
+   ]
+  },
+  {
    "id": "sjw_manchuria_1931",
    "group": "sino_japanese_war",
    "kind": "occupied",
@@ -7929,58 +10422,6 @@
       {
        "polygon": [
         [
-         112.6,
-         26.9
-        ],
-        [
-         111.0,
-         26.0
-        ],
-        [
-         110.3,
-         25.3
-        ],
-        [
-         109.4,
-         24.3
-        ],
-        [
-         108.3,
-         22.8
-        ],
-        [
-         107.0,
-         22.0
-        ],
-        [
-         107.4,
-         21.7
-        ],
-        [
-         108.5,
-         22.2
-        ],
-        [
-         109.2,
-         23.4
-        ],
-        [
-         110.4,
-         24.2
-        ],
-        [
-         111.6,
-         25.0
-        ],
-        [
-         113.0,
-         26.5
-        ]
-       ]
-      },
-      {
-       "polygon": [
-        [
          113.0,
          23.4
         ],
@@ -8072,7 +10513,7 @@
     "https://en.wikipedia.org/wiki/North_China_Political_Council"
    ],
    "note": "日军实际控制的是城市与铁路沿线（「点和线」），乡村多为国民革命军游击区与共军敌后根据地；色块为大致范围（±50–150 km）。",
-   "dates_note": "日占区节点：1944-11 至 1945-08：桂柳会战（桂林、柳州 11-10/11，南宁 11-24），12 月打通至法属印度支那的「大陆交通线」；1945-05 起日军自广西逐步撤出（南宁 05-26、柳州 06-30、桂林 07-28 被国民革命军收复，未画）。政权：名义上隶属南京汪精卫政权，实际自治并受日军华北方面军控制。"
+   "dates_note": "日占区节点：1944-11 至 1945-08：桂柳会战的广西走廊另见 sjw_ichigo_guangxi（日军军事占领，不是汪政权行政区域）。政权：名义上隶属南京汪精卫政权，实际自治并受日军华北方面军控制。"
   },
   {
    "id": "sjw_Q696242_1944-11-10_6",
@@ -8413,58 +10854,6 @@
       {
        "polygon": [
         [
-         112.6,
-         26.9
-        ],
-        [
-         111.0,
-         26.0
-        ],
-        [
-         110.3,
-         25.3
-        ],
-        [
-         109.4,
-         24.3
-        ],
-        [
-         108.3,
-         22.8
-        ],
-        [
-         107.0,
-         22.0
-        ],
-        [
-         107.4,
-         21.7
-        ],
-        [
-         108.5,
-         22.2
-        ],
-        [
-         109.2,
-         23.4
-        ],
-        [
-         110.4,
-         24.2
-        ],
-        [
-         111.6,
-         25.0
-        ],
-        [
-         113.0,
-         26.5
-        ]
-       ]
-      },
-      {
-       "polygon": [
-        [
          113.0,
          23.4
         ],
@@ -8556,7 +10945,82 @@
     "https://en.wikipedia.org/wiki/Wang_Jingwei_regime"
    ],
    "note": "日军实际控制的是城市与铁路沿线（「点和线」），乡村多为国民革命军游击区与共军敌后根据地；色块为大致范围（±50–150 km）。",
-   "dates_note": "日占区节点：1944-11 至 1945-08：桂柳会战（桂林、柳州 11-10/11，南宁 11-24），12 月打通至法属印度支那的「大陆交通线」；1945-05 起日军自广西逐步撤出（南宁 05-26、柳州 06-30、桂林 07-28 被国民革命军收复，未画）。政权：1940-03-30 汪精卫在南京成立，1944-11 汪死后由陈公博代理，1945-08-16 宣布解散。"
+   "dates_note": "日占区节点：1944-11 至 1945-08：桂柳会战的广西走廊另见 sjw_ichigo_guangxi（日军军事占领，不是汪政权行政区域）。政权：1940-03-30 汪精卫在南京成立，1944-11 汪死后由陈公博代理，1945-08-16 宣布解散。"
+  },
+  {
+   "id": "sjw_ichigo_guangxi",
+   "group": "sino_japanese_war",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "日军军事占领区（桂柳会战）",
+   "name_en": "Japanese military occupation during the Battle of Guilin–Liuzhou",
+   "controller": {
+    "qid": "Q188712",
+    "zh": "大日本帝国"
+   },
+   "from": "1944-11-10",
+   "until": "1945-08-16",
+   "geometry": {
+    "polygon": [
+     [
+      112.6,
+      26.9
+     ],
+     [
+      111.0,
+      26.0
+     ],
+     [
+      110.3,
+      25.3
+     ],
+     [
+      109.4,
+      24.3
+     ],
+     [
+      108.3,
+      22.8
+     ],
+     [
+      107.0,
+      22.0
+     ],
+     [
+      107.4,
+      21.7
+     ],
+     [
+      108.5,
+      22.2
+     ],
+     [
+      109.2,
+      23.4
+     ],
+     [
+      110.4,
+      24.2
+     ],
+     [
+      111.6,
+      25.0
+     ],
+     [
+      113.0,
+      26.5
+     ]
+    ]
+   },
+   "approx": true,
+   "sources": [
+    "https://en.wikipedia.org/wiki/Battle_of_Guilin–Liuzhou",
+    "https://en.wikipedia.org/wiki/Operation_Ichi-Go",
+    "https://zh.wikipedia.org/wiki/桂柳会战",
+    "https://dhc.westpoint.edu/atlases/（USMA 历史系 Chinese Civil War 地图集：Situation at the End of World War II）"
+   ],
+   "note": "色块为桂柳走廊的大致范围（±50–150 km），不是省界，也不表示乡村全部被占领。",
+   "dates_note": "桂柳会战：1944-11-10 桂林、11-11 柳州、11-24 南宁失守，由日军军事占领，不是汪精卫政权的行政区域。1945-05 起日军自广西逐步撤出（南宁 05-26、柳州 06-30、桂林 07-28 被国民革命军收复），逐城撤退未再细分。"
   },
   {
    "id": "sjw_ccp_sgn",
@@ -9198,656 +11662,6 @@
    "dates_note": "辽沈战役结束（1948-11-02）至中华人民共和国成立（1949-10-01；东北人民政府 1949-08 成立）。"
   },
   {
-   "id": "bahrain_protectorate",
-   "group": "colonies_misc",
-   "kind": "regime",
-   "as_polity": true,
-   "name_zh": "巴林及其属地（英国保护国）",
-   "name_en": "Bahrain and its Dependencies",
-   "controller": {
-    "qid": "Q17061755",
-    "zh": "巴林及其属地（英国保护国）"
-   },
-   "from": "1886-01-01",
-   "until": "1971-08-15",
-   "geometry": {
-    "admin0_parts": {
-     "a3": [
-      "BHR"
-     ],
-     "bbox": [
-      50.2,
-      25.5,
-      50.9,
-      26.4
-     ]
-    }
-   },
-   "approx": true,
-   "dates_note": "1861、1880、1892 年条约使巴林成为英国保护国；1971-08-15 独立。1886 年以前由底图负责。",
-   "sources": [
-    "https://en.wikipedia.org/wiki/History_of_Bahrain_(1783–1971)",
-    "https://en.wikipedia.org/wiki/Bahrain"
-   ],
-   "note": "范围取 Natural Earth 今国界（含小岛）；CShapes 2.0 在独立前不收录该地区，这里补上殖民/托管政权。"
-  },
-  {
-   "id": "stp_portuguese",
-   "group": "colonies_misc",
-   "kind": "regime",
-   "as_polity": true,
-   "name_zh": "葡属圣多美和普林西比",
-   "name_en": "Portuguese São Tomé and Príncipe",
-   "controller": {
-    "qid": "Q7232692",
-    "zh": "葡属圣多美和普林西比"
-   },
-   "from": "1886-01-01",
-   "until": "1975-07-12",
-   "geometry": {
-    "admin0_parts": {
-     "a3": [
-      "STP"
-     ],
-     "bbox": [
-      6.3,
-      -0.2,
-      7.6,
-      1.8
-     ]
-    }
-   },
-   "approx": true,
-   "dates_note": "葡萄牙殖民地，1975-07-12 独立。",
-   "sources": [
-    "https://en.wikipedia.org/wiki/Portuguese_São_Tomé_and_Príncipe"
-   ],
-   "note": "范围取 Natural Earth 今国界（含小岛）；CShapes 2.0 在独立前不收录该地区，这里补上殖民/托管政权。"
-  },
-  {
-   "id": "new_hebrides",
-   "group": "colonies_misc",
-   "kind": "regime",
-   "as_polity": true,
-   "name_zh": "新赫布里底群岛（英法共管）",
-   "name_en": "New Hebrides",
-   "controller": {
-    "qid": "Q752431",
-    "zh": "新赫布里底群岛（英法共管）"
-   },
-   "from": "1907-12-02",
-   "until": "1980-07-30",
-   "geometry": {
-    "admin0_parts": {
-     "a3": [
-      "VUT"
-     ],
-     "bbox": [
-      166.0,
-      -20.5,
-      170.5,
-      -12.9
-     ]
-    }
-   },
-   "approx": true,
-   "dates_note": "1906 年英法共管协定，Wikidata 记为 1907-12-02 成立；1980-07-30 以瓦努阿图独立。",
-   "sources": [
-    "https://en.wikipedia.org/wiki/New_Hebrides"
-   ],
-   "note": "范围取 Natural Earth 今国界（含小岛）；CShapes 2.0 在独立前不收录该地区，这里补上殖民/托管政权。"
-  },
-  {
-   "id": "gilbert_ellice",
-   "group": "colonies_misc",
-   "kind": "regime",
-   "as_polity": true,
-   "name_zh": "吉尔伯特和埃利斯群岛殖民地",
-   "name_en": "Gilbert and Ellice Islands",
-   "controller": {
-    "qid": "Q1050859",
-    "zh": "吉尔伯特和埃利斯群岛殖民地"
-   },
-   "from": "1916-01-12",
-   "until": "1976-10-01",
-   "geometry": {
-    "admin0_parts": {
-     "a3": [
-      "KIR",
-      "TUV"
-     ],
-     "bbox": [
-      172.0,
-      -11.0,
-      180.0,
-      4.0
-     ]
-    }
-   },
-   "approx": true,
-   "dates_note": "1916-01-12 由保护国改为殖民地；1976-10-01 埃利斯群岛（图瓦卢）分出。",
-   "sources": [
-    "https://en.wikipedia.org/wiki/Gilbert_and_Ellice_Islands"
-   ],
-   "note": "范围取 Natural Earth 今国界（含小岛）；CShapes 2.0 在独立前不收录该地区，这里补上殖民/托管政权。只画吉尔伯特群岛与埃利斯群岛；巴纳巴、菲尼克斯群岛、莱恩群岛未画。1976 年后到独立前（图瓦卢 1978-10-01、基里巴斯 1979-07-12）没有补。"
-  },
-  {
-   "id": "south_seas_mandate",
-   "group": "colonies_misc",
-   "kind": "regime",
-   "as_polity": true,
-   "name_zh": "南洋群岛（日本委任统治地）",
-   "name_en": "South Seas Mandate",
-   "controller": {
-    "qid": "Q718763",
-    "zh": "南洋群岛（日本委任统治地）"
-   },
-   "from": "1919-06-28",
-   "until": "1947-07-18",
-   "geometry": {
-    "admin0_parts": {
-     "a3": [
-      "FSM",
-      "MHL",
-      "PLW"
-     ],
-     "bbox": [
-      130.0,
-      0.0,
-      173.0,
-      13.0
-     ]
-    }
-   },
-   "approx": true,
-   "dates_note": "1919-06-28 凡尔赛和约把德属密克罗尼西亚交给日本委任统治；1944 年起美军陆续占领（未逐岛画出）；1947-07-18 改为美国托管的太平洋群岛托管地。",
-   "sources": [
-    "https://en.wikipedia.org/wiki/South_Seas_Mandate",
-    "https://en.wikipedia.org/wiki/Trust_Territory_of_the_Pacific_Islands"
-   ],
-   "note": "范围取 Natural Earth 今国界（含小岛）；CShapes 2.0 在独立前不收录该地区，这里补上殖民/托管政权。今北马里亚纳群岛部分未画；马绍尔群岛最北的比卡尔、博卡克环礁未画。"
-  },
-  {
-   "id": "ttpi",
-   "group": "colonies_misc",
-   "kind": "regime",
-   "as_polity": true,
-   "name_zh": "太平洋群岛托管地（美国托管）",
-   "name_en": "Trust Territory of the Pacific Islands",
-   "controller": {
-    "qid": "Q129237",
-    "zh": "太平洋群岛托管地（美国托管）"
-   },
-   "from": "1947-07-18",
-   "until": "1986-10-21",
-   "geometry": {
-    "admin0_parts": {
-     "a3": [
-      "FSM",
-      "MHL",
-      "PLW"
-     ],
-     "bbox": [
-      130.0,
-      0.0,
-      173.0,
-      13.0
-     ]
-    }
-   },
-   "approx": true,
-   "dates_note": "1947-07-18 美国托管协定生效；1986-10-21 马绍尔群岛、1986-11-03 密克罗尼西亚联邦与美国的自由联系条约生效（帕劳 1994-10-01）。",
-   "sources": [
-    "https://en.wikipedia.org/wiki/Trust_Territory_of_the_Pacific_Islands"
-   ],
-   "note": "范围取 Natural Earth 今国界（含小岛）；CShapes 2.0 在独立前不收录该地区，这里补上殖民/托管政权。统一到 1986-10-21 结束；之后的帕劳（1986–1994 仍属托管地）没有单独补。"
-  },
-  {
-   "id": "nauru_trust",
-   "group": "colonies_misc",
-   "kind": "regime",
-   "as_polity": true,
-   "name_zh": "瑙鲁托管地",
-   "name_en": "Trust Territory of Nauru",
-   "controller": {
-    "qid": "Q21816219",
-    "zh": "瑙鲁托管地"
-   },
-   "from": "1947-11-01",
-   "until": "1968-01-31",
-   "geometry": {
-    "admin0_parts": {
-     "a3": [
-      "NRU"
-     ],
-     "bbox": [
-      166.8,
-      -0.7,
-      167.1,
-      -0.4
-     ]
-    }
-   },
-   "approx": true,
-   "dates_note": "1947-11-01 联合国托管（澳大利亚、新西兰、英国，澳大利亚管理）；1968-01-31 独立。1920–1947 年的国际联盟委任统治、1942–1945 年日本占领没有补。",
-   "sources": [
-    "https://en.wikipedia.org/wiki/Trust_Territory_of_Nauru",
-    "https://en.wikipedia.org/wiki/History_of_Nauru"
-   ],
-   "note": "范围取 Natural Earth 今国界（含小岛）；CShapes 2.0 在独立前不收录该地区，这里补上殖民/托管政权。"
-  },
-  {
-   "id": "seychelles_british",
-   "group": "colonies_misc",
-   "kind": "regime",
-   "as_polity": true,
-   "name_zh": "大英帝国（塞舌尔）",
-   "name_en": "British Empire (Seychelles)",
-   "controller": {
-    "qid": "Q8680",
-    "zh": "大英帝国（塞舌尔）"
-   },
-   "from": "1886-01-01",
-   "until": "1976-06-29",
-   "geometry": {
-    "admin0_parts": {
-     "a3": [
-      "SYC"
-     ],
-     "bbox": [
-      46.0,
-      -10.0,
-      56.5,
-      -3.5
-     ]
-    }
-   },
-   "approx": true,
-   "dates_note": "英国属地：1903-08-31 前为毛里求斯的属地，之后为英国直辖殖民地；1976-06-29 独立。Wikidata 没有单独的「塞舌尔殖民地」条目，这里显示大英帝国。",
-   "sources": [
-    "https://en.wikipedia.org/wiki/Seychelles",
-    "https://en.wikipedia.org/wiki/History_of_Seychelles"
-   ],
-   "note": "范围取 Natural Earth 今国界（含小岛）；CShapes 2.0 在独立前不收录该地区，这里补上殖民/托管政权。"
-  },
-  {
-   "id": "kuwait_protectorate",
-   "group": "colonies_misc",
-   "kind": "regime",
-   "as_polity": true,
-   "name_zh": "科威特酋长国（英国保护国）",
-   "name_en": "Sheikhdom of Kuwait",
-   "controller": {
-    "qid": "Q3480281",
-    "zh": "科威特酋长国（英国保护国）"
-   },
-   "from": "1899-01-23",
-   "until": "1961-06-19",
-   "geometry": {
-    "admin0_parts": {
-     "a3": [
-      "KWT"
-     ],
-     "bbox": [
-      46.5,
-      28.5,
-      48.6,
-      30.2
-     ]
-    }
-   },
-   "approx": true,
-   "dates_note": "1899 年 1 月英科协定使科威特成为英国保护国；1961-06-19 英国保护结束、独立。",
-   "sources": [
-    "https://en.wikipedia.org/wiki/Sheikhdom_of_Kuwait"
-   ],
-   "note": "范围取 Natural Earth 今国界（含小岛）；CShapes 2.0 在独立前不收录该地区，这里补上殖民/保护国政权。"
-  },
-  {
-   "id": "gilbert_ellice_line",
-   "group": "colonies_misc",
-   "kind": "regime",
-   "as_polity": true,
-   "name_zh": "吉尔伯特和埃利斯群岛殖民地",
-   "name_en": "Gilbert and Ellice Islands (Line Islands)",
-   "controller": {
-    "qid": "Q1050859",
-    "zh": "吉尔伯特和埃利斯群岛殖民地"
-   },
-   "from": "1916-01-12",
-   "until": "1979-07-12",
-   "geometry": {
-    "admin0_parts": {
-     "a3": [
-      "KIR"
-     ],
-     "bbox": [
-      -162.0,
-      -12.0,
-      -150.0,
-      7.0
-     ]
-    }
-   },
-   "approx": true,
-   "dates_note": "1916 年英国兼并范宁岛、华盛顿岛并入吉尔伯特和埃利斯群岛殖民地（圣诞岛 1919 年并入）；1976 年后为吉尔伯特群岛殖民地，1979-07-12 随基里巴斯独立。",
-   "sources": [
-    "https://en.wikipedia.org/wiki/Line_Islands",
-    "https://en.wikipedia.org/wiki/Gilbert_and_Ellice_Islands"
-   ],
-   "note": "范围取 Natural Earth 今国界（含小岛）；CShapes 2.0 在独立前不收录该地区，这里补上殖民/保护国政权。只画莱恩群岛（基里巴斯东部）；1976–1979 年的「吉尔伯特群岛殖民地」仍显示同一条目。"
-  },
-  {
-   "id": "windward_islands",
-   "group": "colonies_misc",
-   "kind": "regime",
-   "as_polity": true,
-   "name_zh": "英属向风群岛",
-   "name_en": "British Windward Islands",
-   "controller": {
-    "qid": "Q2660774",
-    "zh": "英属向风群岛"
-   },
-   "from": "1833-01-01",
-   "until": "1940-01-01",
-   "geometry": {
-    "admin0_parts": {
-     "a3": [
-      "LCA",
-      "VCT",
-      "GRD"
-     ],
-     "bbox": [
-      -61.9,
-      11.9,
-      -60.8,
-      14.2
-     ]
-    }
-   },
-   "approx": true,
-   "dates_note": "1833 年设立的英国殖民地行政组合；1940 年多米尼克由背风群岛划入。",
-   "sources": [
-    "https://en.wikipedia.org/wiki/British_Windward_Islands"
-   ],
-   "note": "范围取 Natural Earth 今国界（含小岛）；CShapes 2.0 在独立前不收录该地区，这里补上殖民/保护国政权。"
-  },
-  {
-   "id": "windward_islands_dma",
-   "group": "colonies_misc",
-   "kind": "regime",
-   "as_polity": true,
-   "name_zh": "英属向风群岛",
-   "name_en": "British Windward Islands",
-   "controller": {
-    "qid": "Q2660774",
-    "zh": "英属向风群岛"
-   },
-   "from": "1940-01-01",
-   "until": "1958-01-03",
-   "geometry": {
-    "admin0_parts": {
-     "a3": [
-      "LCA",
-      "VCT",
-      "GRD",
-      "DMA"
-     ],
-     "bbox": [
-      -61.9,
-      11.9,
-      -60.8,
-      15.7
-     ]
-    }
-   },
-   "approx": true,
-   "dates_note": "1940 年起含多米尼克；1958-01-03 并入西印度联邦。",
-   "sources": [
-    "https://en.wikipedia.org/wiki/British_Windward_Islands"
-   ],
-   "note": "范围取 Natural Earth 今国界（含小岛）；CShapes 2.0 在独立前不收录该地区，这里补上殖民/保护国政权。"
-  },
-  {
-   "id": "leeward_islands",
-   "group": "colonies_misc",
-   "kind": "regime",
-   "as_polity": true,
-   "name_zh": "英属背风群岛",
-   "name_en": "British Leeward Islands",
-   "controller": {
-    "qid": "Q1796551",
-    "zh": "英属背风群岛"
-   },
-   "from": "1833-01-01",
-   "until": "1940-01-01",
-   "geometry": {
-    "admin0_parts": {
-     "a3": [
-      "KNA",
-      "ATG",
-      "DMA"
-     ],
-     "bbox": [
-      -63.0,
-      15.1,
-      -61.1,
-      17.8
-     ]
-    }
-   },
-   "approx": true,
-   "dates_note": "1833–1940 年含多米尼克（1872–1956 年称背风群岛联邦殖民地）。",
-   "sources": [
-    "https://en.wikipedia.org/wiki/British_Leeward_Islands"
-   ],
-   "note": "范围取 Natural Earth 今国界（含小岛）；CShapes 2.0 在独立前不收录该地区，这里补上殖民/保护国政权。"
-  },
-  {
-   "id": "leeward_islands2",
-   "group": "colonies_misc",
-   "kind": "regime",
-   "as_polity": true,
-   "name_zh": "英属背风群岛",
-   "name_en": "British Leeward Islands",
-   "controller": {
-    "qid": "Q1796551",
-    "zh": "英属背风群岛"
-   },
-   "from": "1940-01-01",
-   "until": "1958-01-03",
-   "geometry": {
-    "admin0_parts": {
-     "a3": [
-      "KNA",
-      "ATG"
-     ],
-     "bbox": [
-      -63.0,
-      16.9,
-      -61.1,
-      17.8
-     ]
-    }
-   },
-   "approx": true,
-   "dates_note": "1940 年多米尼克划归向风群岛；1958-01-03 并入西印度联邦。",
-   "sources": [
-    "https://en.wikipedia.org/wiki/British_Leeward_Islands"
-   ],
-   "note": "范围取 Natural Earth 今国界（含小岛）；CShapes 2.0 在独立前不收录该地区，这里补上殖民/保护国政权。"
-  },
-  {
-   "id": "west_indies_fed",
-   "group": "colonies_misc",
-   "kind": "regime",
-   "as_polity": true,
-   "name_zh": "西印度联邦",
-   "name_en": "West Indies Federation",
-   "controller": {
-    "qid": "Q652560",
-    "zh": "西印度联邦"
-   },
-   "from": "1958-01-03",
-   "until": "1962-05-31",
-   "geometry": {
-    "admin0_parts": {
-     "a3": [
-      "LCA",
-      "VCT",
-      "GRD",
-      "DMA",
-      "KNA",
-      "ATG"
-     ],
-     "bbox": [
-      -63.0,
-      11.9,
-      -60.8,
-      17.8
-     ]
-    }
-   },
-   "approx": true,
-   "dates_note": "英国在加勒比的殖民地联邦，1958-01-03 至 1962-05-31。只画东加勒比的小岛（牙买加、特立尼达等由底图负责）。",
-   "sources": [
-    "https://en.wikipedia.org/wiki/West_Indies_Federation"
-   ],
-   "note": "范围取 Natural Earth 今国界（含小岛）；CShapes 2.0 在独立前不收录该地区，这里补上殖民/保护国政权。"
-  },
-  {
-   "id": "lca_colony",
-   "group": "colonies_misc",
-   "kind": "regime",
-   "as_polity": true,
-   "name_zh": "圣卢西亚殖民地",
-   "name_en": "Colony of Saint Lucia",
-   "controller": {
-    "qid": "Q15238409",
-    "zh": "圣卢西亚殖民地"
-   },
-   "from": "1962-05-31",
-   "until": "1967-03-01",
-   "geometry": {
-    "admin0_parts": {
-     "a3": [
-      "LCA"
-     ],
-     "bbox": [
-      -61.1,
-      13.6,
-      -60.8,
-      14.2
-     ]
-    }
-   },
-   "approx": true,
-   "dates_note": "西印度联邦解散后为英国直辖殖民地，1967-03-01 成为西印度联系邦。",
-   "sources": [
-    "https://www.wikidata.org/wiki/Q15238409"
-   ],
-   "note": "范围取 Natural Earth 今国界（含小岛）；CShapes 2.0 在独立前不收录该地区，这里补上殖民/保护国政权。"
-  },
-  {
-   "id": "kna_colony",
-   "group": "colonies_misc",
-   "kind": "regime",
-   "as_polity": true,
-   "name_zh": "圣克里斯托弗-尼维斯-安圭拉",
-   "name_en": "Saint Christopher-Nevis-Anguilla",
-   "controller": {
-    "qid": "Q1637975",
-    "zh": "圣克里斯托弗-尼维斯-安圭拉"
-   },
-   "from": "1962-05-31",
-   "until": "1967-02-27",
-   "geometry": {
-    "admin0_parts": {
-     "a3": [
-      "KNA"
-     ],
-     "bbox": [
-      -62.95,
-      17.0,
-      -62.5,
-      17.5
-     ]
-    }
-   },
-   "approx": true,
-   "dates_note": "西印度联邦解散后为英国直辖殖民地，1967 年成为联系邦（之后由现代国界接续）。",
-   "sources": [
-    "https://www.wikidata.org/wiki/Q1637975"
-   ],
-   "note": "范围取 Natural Earth 今国界（含小岛）；CShapes 2.0 在独立前不收录该地区，这里补上殖民/保护国政权。"
-  },
-  {
-   "id": "wias_dma",
-   "group": "colonies_misc",
-   "kind": "regime",
-   "as_polity": true,
-   "name_zh": "西印度联系邦（多米尼克）",
-   "name_en": "West Indies Associated States (Dominica)",
-   "controller": {
-    "qid": "Q7985529",
-    "zh": "西印度联系邦（多米尼克）"
-   },
-   "from": "1967-03-01",
-   "until": "1978-11-03",
-   "geometry": {
-    "admin0_parts": {
-     "a3": [
-      "DMA"
-     ],
-     "bbox": [
-      -61.6,
-      15.1,
-      -61.2,
-      15.7
-     ]
-    }
-   },
-   "approx": true,
-   "dates_note": "1967-03-01 成为与英国自由联系的邦，1978-11-03 独立。1962–1967 年未补。",
-   "sources": [
-    "https://en.wikipedia.org/wiki/West_Indies_Associated_States"
-   ],
-   "note": "范围取 Natural Earth 今国界（含小岛）；CShapes 2.0 在独立前不收录该地区，这里补上殖民/保护国政权。"
-  },
-  {
-   "id": "wias_vct",
-   "group": "colonies_misc",
-   "kind": "regime",
-   "as_polity": true,
-   "name_zh": "西印度联系邦（圣文森特）",
-   "name_en": "West Indies Associated States (Saint Vincent)",
-   "controller": {
-    "qid": "Q7985529",
-    "zh": "西印度联系邦（圣文森特）"
-   },
-   "from": "1969-10-27",
-   "until": "1979-10-27",
-   "geometry": {
-    "admin0_parts": {
-     "a3": [
-      "VCT"
-     ],
-     "bbox": [
-      -61.5,
-      12.5,
-      -61.1,
-      13.4
-     ]
-    }
-   },
-   "approx": true,
-   "dates_note": "1969-10-27 成为联系邦，1979-10-27 独立。1962–1969 年未补。",
-   "sources": [
-    "https://en.wikipedia.org/wiki/West_Indies_Associated_States"
-   ],
-   "note": "范围取 Natural Earth 今国界（含小岛）；CShapes 2.0 在独立前不收录该地区，这里补上殖民/保护国政权。"
-  },
-  {
    "id": "pac_hk",
    "group": "ww2_asia",
    "kind": "occupied",
@@ -10374,1799 +12188,6 @@
     "https://en.wikipedia.org/wiki/Japanese_occupation_of_the_Gilbert_Islands"
    ],
    "dates_note": "日军 1941-12-10 占领马金、塔拉瓦；1943-11-20/23 美军攻占塔拉瓦、马金。"
-  },
-  {
-   "id": "ww2_fr_zone_libre",
-   "group": "ww2_europe",
-   "kind": "regime",
-   "as_polity": true,
-   "name_zh": "法国非占领区（维希政府直接管辖，「自由区」）",
-   "name_en": "Zone libre (Vichy France)",
-   "controller": {
-    "qid": "Q69808",
-    "zh": "维希法国"
-   },
-   "from": "1940-06-25",
-   "until": "1942-11-11",
-   "geometry": {
-    "polygon": [
-     [
-      5.9,
-      46.14
-     ],
-     [
-      5.83,
-      46.11
-     ],
-     [
-      5.95,
-      46.3
-     ],
-     [
-      6.0,
-      46.37
-     ],
-     [
-      6.06,
-      46.48
-     ],
-     [
-      6.03,
-      46.52
-     ],
-     [
-      5.96,
-      46.58
-     ],
-     [
-      5.91,
-      46.75
-     ],
-     [
-      5.74,
-      46.87
-     ],
-     [
-      5.6,
-      46.98
-     ],
-     [
-      5.48,
-      47.02
-     ],
-     [
-      5.41,
-      46.97
-     ],
-     [
-      5.15,
-      46.93
-     ],
-     [
-      5.02,
-      46.9
-     ],
-     [
-      4.85,
-      46.78
-     ],
-     [
-      4.7,
-      46.71
-     ],
-     [
-      4.4,
-      46.66
-     ],
-     [
-      4.3,
-      46.5
-     ],
-     [
-      4.13,
-      46.42
-     ],
-     [
-      3.98,
-      46.46
-     ],
-     [
-      3.96,
-      46.44
-     ],
-     [
-      3.68,
-      46.47
-     ],
-     [
-      3.36,
-      46.52
-     ],
-     [
-      3.33,
-      46.55
-     ],
-     [
-      3.22,
-      46.67
-     ],
-     [
-      3.04,
-      46.81
-     ],
-     [
-      3.04,
-      46.9
-     ],
-     [
-      2.73,
-      46.97
-     ],
-     [
-      2.37,
-      47.01
-     ],
-     [
-      2.29,
-      47.02
-     ],
-     [
-      2.1,
-      47.12
-     ],
-     [
-      2.07,
-      47.22
-     ],
-     [
-      1.93,
-      47.26
-     ],
-     [
-      1.9,
-      47.27
-     ],
-     [
-      1.55,
-      47.27
-     ],
-     [
-      1.13,
-      47.34
-     ],
-     [
-      1.07,
-      47.33
-     ],
-     [
-      0.99,
-      47.33
-     ],
-     [
-      0.85,
-      47.13
-     ],
-     [
-      0.82,
-      47.04
-     ],
-     [
-      0.8,
-      46.92
-     ],
-     [
-      0.86,
-      46.82
-     ],
-     [
-      0.81,
-      46.79
-     ],
-     [
-      0.65,
-      46.57
-     ],
-     [
-      0.53,
-      46.48
-     ],
-     [
-      0.53,
-      46.28
-     ],
-     [
-      0.5,
-      46.12
-     ],
-     [
-      0.36,
-      46.09
-     ],
-     [
-      0.44,
-      45.99
-     ],
-     [
-      0.47,
-      45.89
-     ],
-     [
-      0.45,
-      45.75
-     ],
-     [
-      0.42,
-      45.48
-     ],
-     [
-      0.38,
-      45.47
-     ],
-     [
-      0.31,
-      45.25
-     ],
-     [
-      0.25,
-      45.13
-     ],
-     [
-      0.19,
-      45.01
-     ],
-     [
-      0.03,
-      44.85
-     ],
-     [
-      -0.05,
-      44.85
-     ],
-     [
-      -0.08,
-      44.69
-     ],
-     [
-      -0.25,
-      44.55
-     ],
-     [
-      -0.21,
-      44.43
-     ],
-     [
-      -0.26,
-      44.29
-     ],
-     [
-      -0.23,
-      44.03
-     ],
-     [
-      -0.38,
-      43.89
-     ],
-     [
-      -0.46,
-      43.76
-     ],
-     [
-      -0.5,
-      43.66
-     ],
-     [
-      -0.65,
-      43.62
-     ],
-     [
-      -0.67,
-      43.55
-     ],
-     [
-      -0.77,
-      43.49
-     ],
-     [
-      -0.92,
-      43.47
-     ],
-     [
-      -0.94,
-      43.4
-     ],
-     [
-      -1.03,
-      43.33
-     ],
-     [
-      -1.09,
-      43.22
-     ],
-     [
-      -1.24,
-      43.16
-     ],
-     [
-      -1.28,
-      43.11
-     ],
-     [
-      -1.3,
-      43.05
-     ],
-     [
-      -1.3,
-      41.0
-     ],
-     [
-      10.0,
-      41.0
-     ],
-     [
-      10.0,
-      46.0
-     ],
-     [
-      7.0,
-      46.6
-     ],
-     [
-      6.3,
-      46.45
-     ],
-     [
-      6.15,
-      46.2
-     ]
-    ],
-    "intersect": {
-     "cshapes": {
-      "gw": [
-       220
-      ],
-      "date": "1940-01-01"
-     }
-    }
-   },
-   "approx": true,
-   "precision": "分界线按沿线城镇连线，约 ±5–15 km",
-   "note": "1940-06-22 停战协定第 2 条：分界线以北、以西由德军占领，以南以东为非占领区，由贝当政府（1940-07-10 起「法兰西国」，驻维希）直接管辖。阿尔萨斯—摩泽尔被德国事实吞并、北部两省归德军驻布鲁塞尔军政府管辖（见 Stanford 底图）；意大利 1940 年只占领芒通等边境小块（未画）。",
-   "dates_note": "分界线 1940-06-25 生效；1942-11-11 德军越过分界线（安东行动）。",
-   "sources": [
-    "https://fr.wikipedia.org/wiki/Ligne_de_d%C3%A9marcation_(France)",
-    "https://en.wikipedia.org/wiki/Zone_libre",
-    "https://en.wikipedia.org/wiki/Armistice_of_22_June_1940",
-    "https://en.wikipedia.org/wiki/Case_Anton"
-   ]
-  },
-  {
-   "id": "ww2_fr_zone_sud",
-   "group": "ww2_europe",
-   "kind": "regime",
-   "as_polity": true,
-   "name_zh": "维希法国（原非占领区，1942-11-11 起德、意军队占领）",
-   "name_en": "Vichy France (former zone libre, occupied from Nov 1942)",
-   "controller": {
-    "qid": "Q69808",
-    "zh": "维希法国"
-   },
-   "from": "1942-11-11",
-   "until": "1944-08-25",
-   "geometry": {
-    "polygon": [
-     [
-      5.9,
-      46.14
-     ],
-     [
-      5.83,
-      46.11
-     ],
-     [
-      5.95,
-      46.3
-     ],
-     [
-      6.0,
-      46.37
-     ],
-     [
-      6.06,
-      46.48
-     ],
-     [
-      6.03,
-      46.52
-     ],
-     [
-      5.96,
-      46.58
-     ],
-     [
-      5.91,
-      46.75
-     ],
-     [
-      5.74,
-      46.87
-     ],
-     [
-      5.6,
-      46.98
-     ],
-     [
-      5.48,
-      47.02
-     ],
-     [
-      5.41,
-      46.97
-     ],
-     [
-      5.15,
-      46.93
-     ],
-     [
-      5.02,
-      46.9
-     ],
-     [
-      4.85,
-      46.78
-     ],
-     [
-      4.7,
-      46.71
-     ],
-     [
-      4.4,
-      46.66
-     ],
-     [
-      4.3,
-      46.5
-     ],
-     [
-      4.13,
-      46.42
-     ],
-     [
-      3.98,
-      46.46
-     ],
-     [
-      3.96,
-      46.44
-     ],
-     [
-      3.68,
-      46.47
-     ],
-     [
-      3.36,
-      46.52
-     ],
-     [
-      3.33,
-      46.55
-     ],
-     [
-      3.22,
-      46.67
-     ],
-     [
-      3.04,
-      46.81
-     ],
-     [
-      3.04,
-      46.9
-     ],
-     [
-      2.73,
-      46.97
-     ],
-     [
-      2.37,
-      47.01
-     ],
-     [
-      2.29,
-      47.02
-     ],
-     [
-      2.1,
-      47.12
-     ],
-     [
-      2.07,
-      47.22
-     ],
-     [
-      1.93,
-      47.26
-     ],
-     [
-      1.9,
-      47.27
-     ],
-     [
-      1.55,
-      47.27
-     ],
-     [
-      1.13,
-      47.34
-     ],
-     [
-      1.07,
-      47.33
-     ],
-     [
-      0.99,
-      47.33
-     ],
-     [
-      0.85,
-      47.13
-     ],
-     [
-      0.82,
-      47.04
-     ],
-     [
-      0.8,
-      46.92
-     ],
-     [
-      0.86,
-      46.82
-     ],
-     [
-      0.81,
-      46.79
-     ],
-     [
-      0.65,
-      46.57
-     ],
-     [
-      0.53,
-      46.48
-     ],
-     [
-      0.53,
-      46.28
-     ],
-     [
-      0.5,
-      46.12
-     ],
-     [
-      0.36,
-      46.09
-     ],
-     [
-      0.44,
-      45.99
-     ],
-     [
-      0.47,
-      45.89
-     ],
-     [
-      0.45,
-      45.75
-     ],
-     [
-      0.42,
-      45.48
-     ],
-     [
-      0.38,
-      45.47
-     ],
-     [
-      0.31,
-      45.25
-     ],
-     [
-      0.25,
-      45.13
-     ],
-     [
-      0.19,
-      45.01
-     ],
-     [
-      0.03,
-      44.85
-     ],
-     [
-      -0.05,
-      44.85
-     ],
-     [
-      -0.08,
-      44.69
-     ],
-     [
-      -0.25,
-      44.55
-     ],
-     [
-      -0.21,
-      44.43
-     ],
-     [
-      -0.26,
-      44.29
-     ],
-     [
-      -0.23,
-      44.03
-     ],
-     [
-      -0.38,
-      43.89
-     ],
-     [
-      -0.46,
-      43.76
-     ],
-     [
-      -0.5,
-      43.66
-     ],
-     [
-      -0.65,
-      43.62
-     ],
-     [
-      -0.67,
-      43.55
-     ],
-     [
-      -0.77,
-      43.49
-     ],
-     [
-      -0.92,
-      43.47
-     ],
-     [
-      -0.94,
-      43.4
-     ],
-     [
-      -1.03,
-      43.33
-     ],
-     [
-      -1.09,
-      43.22
-     ],
-     [
-      -1.24,
-      43.16
-     ],
-     [
-      -1.28,
-      43.11
-     ],
-     [
-      -1.3,
-      43.05
-     ],
-     [
-      -1.3,
-      41.0
-     ],
-     [
-      10.0,
-      41.0
-     ],
-     [
-      10.0,
-      46.0
-     ],
-     [
-      7.0,
-      46.6
-     ],
-     [
-      6.3,
-      46.45
-     ],
-     [
-      6.15,
-      46.2
-     ]
-    ],
-    "intersect": {
-     "cshapes": {
-      "gw": [
-       220
-      ],
-      "date": "1940-01-01"
-     }
-    }
-   },
-   "approx": true,
-   "precision": "分界线按沿线城镇连线，约 ±5–15 km",
-   "note": "1942-11-11 起德军占领原非占领区（改称「南区」），意大利占领罗讷河以东大部和科西嘉（至 1943-09，未单独画出）；维希政府名义上继续管辖，1943-03-01 分界线撤销。1944-08-15 盟军在普罗旺斯登陆，1944-08-25 巴黎解放后由临时政府接管。",
-   "dates_note": "1942-11-11 安东行动；1944-08-25 巴黎解放（各地解放日期不同，以盟军战线层为准）。",
-   "sources": [
-    "https://fr.wikipedia.org/wiki/Ligne_de_d%C3%A9marcation_(France)",
-    "https://en.wikipedia.org/wiki/Zone_libre",
-    "https://en.wikipedia.org/wiki/Armistice_of_22_June_1940",
-    "https://en.wikipedia.org/wiki/Case_Anton"
-   ]
-  },
-  {
-   "id": "byz_constantinople_1453",
-   "group": "europe_19c",
-   "kind": "holdout",
-   "as_polity": true,
-   "name_zh": "拜占庭帝国（君士坦丁堡，近似范围）",
-   "name_en": "Byzantine Empire (Constantinople, approx.)",
-   "controller": {
-    "qid": "Q12544",
-    "zh": "拜占庭帝国"
-   },
-   "from": "1400-01-01",
-   "until": "1453-05-29",
-   "geometry": {
-    "polygon": [
-     [
-      28.45,
-      40.96
-     ],
-     [
-      29.0,
-      40.99
-     ],
-     [
-      29.05,
-      41.12
-     ],
-     [
-      29.12,
-      41.24
-     ],
-     [
-      28.7,
-      41.32
-     ],
-     [
-      28.45,
-      41.2
-     ],
-     [
-      28.45,
-      40.96
-     ]
-    ]
-   },
-   "approx": true,
-   "dates_note": "1453-05-29 奥斯曼军攻陷君士坦丁堡（OpenStax World History Vol.1 §17.1；英文维基「Fall of Constantinople」）。historical-basemaps 1400 年快照把君士坦丁堡画入奥斯曼多边形，这里只标出城区及欧洲一侧近郊（狄奥多西城墙以西约 30 km 内），亚洲一侧此时已属奥斯曼。",
-   "sources": [
-    "https://openstax.org/books/world-history-volume-1/pages/17-1-the-ottomans-and-the-mongols",
-    "https://en.wikipedia.org/wiki/Fall_of_Constantinople"
-   ],
-   "note": "范围为近似（±20 km）；1400 年以前用底图自身的多边形。摩里亚专制国未单独画出。"
-  },
-  {
-   "id": "german_empire_1871",
-   "group": "europe_19c",
-   "kind": "regime",
-   "as_polity": true,
-   "name_zh": "德意志帝国",
-   "name_en": "German Empire",
-   "controller": {
-    "qid": "Q43287",
-    "zh": "德意志帝国"
-   },
-   "from": "1871-01-18",
-   "until": "1878-01-01",
-   "geometry": {
-    "basemap": {
-     "snap": 1878,
-     "name": "Germany"
-    }
-   },
-   "approx": true,
-   "dates_note": "1871-01-18 凡尔赛宫宣告成立德意志帝国（OpenStax World History Vol.2 §7.4）。1815 年快照仍画着普鲁士、巴伐利亚等各邦，1878 年快照起才是统一的德国多边形：这段时间用 1878 年快照的德国范围标出。",
-   "sources": [
-    "https://openstax.org/books/world-history-volume-2/pages/7-4-nationalism-liberalism-conservatism-and-the-political-order",
-    "https://en.wikipedia.org/wiki/Proclamation_of_the_German_Empire"
-   ],
-   "note": "边界取 1878 年快照（含阿尔萨斯-洛林），精度同 historical-basemaps。"
-  },
-  {
-   "id": "kwantung_russia",
-   "group": "europe_19c",
-   "kind": "leased",
-   "as_polity": true,
-   "name_zh": "俄国关东州（旅大租借地）",
-   "name_en": "Russian Dalian (Kwantung Oblast)",
-   "controller": {
-    "qid": "Q7382031",
-    "zh": "俄国关东州"
-   },
-   "from": "1898-03-27",
-   "until": "1905-09-05",
-   "geometry": {
-    "polygon": [
-     [
-      121.0,
-      38.68
-     ],
-     [
-      121.4,
-      38.72
-     ],
-     [
-      121.75,
-      38.82
-     ],
-     [
-      122.1,
-      39.0
-     ],
-     [
-      122.45,
-      39.3
-     ],
-     [
-      122.45,
-      39.45
-     ],
-     [
-      121.55,
-      39.45
-     ],
-     [
-      121.3,
-      39.1
-     ],
-     [
-      121.0,
-      38.68
-     ]
-    ],
-    "intersect": {
-     "cshapes": {
-      "gw": [
-       710
-      ],
-      "date": "1900-01-01"
-     }
-    }
-   },
-   "approx": true,
-   "dates_note": "1898-03-27《旅大租地条约》（Pavlov Agreement）；1905-09-05《朴茨茅斯和约》转让日本（旅顺 1905-01-02 已被日军攻占）。",
-   "sources": [
-    "https://en.wikipedia.org/wiki/Russian_Dalian",
-    "https://en.wikipedia.org/wiki/Kwantung_Leased_Territory",
-    "https://openstax.org/books/world-history-volume-2/pages/9-3-colonial-empires"
-   ],
-   "note": "北界按普兰店湾—皮口一线近似（±15 km）。"
-  },
-  {
-   "id": "kwantung_japan",
-   "group": "europe_19c",
-   "kind": "leased",
-   "as_polity": true,
-   "name_zh": "日本关东州（租借地）",
-   "name_en": "Kwantung Leased Territory",
-   "controller": {
-    "qid": "Q678658",
-    "zh": "关东州"
-   },
-   "from": "1905-09-05",
-   "until": "1945-08-22",
-   "geometry": {
-    "polygon": [
-     [
-      121.0,
-      38.68
-     ],
-     [
-      121.4,
-      38.72
-     ],
-     [
-      121.75,
-      38.82
-     ],
-     [
-      122.1,
-      39.0
-     ],
-     [
-      122.45,
-      39.3
-     ],
-     [
-      122.45,
-      39.45
-     ],
-     [
-      121.55,
-      39.45
-     ],
-     [
-      121.3,
-      39.1
-     ],
-     [
-      121.0,
-      38.68
-     ]
-    ],
-    "intersect": {
-     "cshapes": {
-      "gw": [
-       710
-      ],
-      "date": "1900-01-01"
-     }
-    }
-   },
-   "approx": true,
-   "dates_note": "1905-09-05《朴茨茅斯和约》；1945-08-22 苏军进入旅顺、大连。",
-   "sources": [
-    "https://en.wikipedia.org/wiki/Russian_Dalian",
-    "https://en.wikipedia.org/wiki/Kwantung_Leased_Territory",
-    "https://openstax.org/books/world-history-volume-2/pages/9-3-colonial-empires"
-   ],
-   "note": "北界按普兰店湾—皮口一线近似（±15 km）。"
-  },
-  {
-   "id": "ccw_ccp_1949_1",
-   "group": "wars_misc",
-   "kind": "occupied",
-   "as_polity": true,
-   "name_zh": "共军控制区（1949 年，省级近似）",
-   "name_en": "Communist-held area (1949, province-level approx.)",
-   "controller": {
-    "qid": "Q17427",
-    "zh": "中国共产党"
-   },
-   "from": "1949-01-31",
-   "until": "1949-04-23",
-   "geometry": {
-    "admin1": [
-     "CN-BJ",
-     "CN-TJ",
-     "CN-HE",
-     "CN-SD",
-     "CN-HA",
-     "CN-SX"
-    ]
-   },
-   "approx": true,
-   "dates_note": "1949-01-31 共军进入北平（平津战役结束）；山东、河南、河北、山西大部此前已归共军（太原 1949-04-24）。以省为单位、按省会易手日期近似；省内各地易手时间不一。1949-10-01 起显示中华人民共和国。",
-   "sources": [
-    "https://en.wikipedia.org/wiki/Pingjin_campaign",
-    "https://en.wikipedia.org/wiki/Yangtze_River_Crossing_campaign",
-    "https://en.wikipedia.org/wiki/Chinese_Civil_War"
-   ],
-   "note": "精度：省级。东北另见 ccw_manchuria 组。"
-  },
-  {
-   "id": "ccw_ccp_1949_2",
-   "group": "wars_misc",
-   "kind": "occupied",
-   "as_polity": true,
-   "name_zh": "共军控制区（1949 年，省级近似）",
-   "name_en": "Communist-held area (1949, province-level approx.)",
-   "controller": {
-    "qid": "Q17427",
-    "zh": "中国共产党"
-   },
-   "from": "1949-04-23",
-   "until": "1949-05-27",
-   "geometry": {
-    "admin1": [
-     "CN-BJ",
-     "CN-TJ",
-     "CN-HE",
-     "CN-SD",
-     "CN-HA",
-     "CN-SX",
-     "CN-JS",
-     "CN-AH"
-    ]
-   },
-   "approx": true,
-   "dates_note": "1949-01-31 共军进入北平（平津战役结束）；山东、河南、河北、山西大部此前已归共军（太原 1949-04-24）；1949-04-23 共军渡江攻占南京。以省为单位、按省会易手日期近似；省内各地易手时间不一。1949-10-01 起显示中华人民共和国。",
-   "sources": [
-    "https://en.wikipedia.org/wiki/Pingjin_campaign",
-    "https://en.wikipedia.org/wiki/Yangtze_River_Crossing_campaign",
-    "https://en.wikipedia.org/wiki/Chinese_Civil_War"
-   ],
-   "note": "精度：省级。东北另见 ccw_manchuria 组。"
-  },
-  {
-   "id": "ccw_ccp_1949_3",
-   "group": "wars_misc",
-   "kind": "occupied",
-   "as_polity": true,
-   "name_zh": "共军控制区（1949 年，省级近似）",
-   "name_en": "Communist-held area (1949, province-level approx.)",
-   "controller": {
-    "qid": "Q17427",
-    "zh": "中国共产党"
-   },
-   "from": "1949-05-27",
-   "until": "1949-08-26",
-   "geometry": {
-    "admin1": [
-     "CN-BJ",
-     "CN-TJ",
-     "CN-HE",
-     "CN-SD",
-     "CN-HA",
-     "CN-SX",
-     "CN-JS",
-     "CN-AH",
-     "CN-SH",
-     "CN-ZJ",
-     "CN-HB",
-     "CN-JX",
-     "CN-SN"
-    ]
-   },
-   "approx": true,
-   "dates_note": "1949-01-31 共军进入北平（平津战役结束）；山东、河南、河北、山西大部此前已归共军（太原 1949-04-24）；1949-04-23 共军渡江攻占南京；杭州 5-3、武汉 5-16、西安 5-20、南昌 5-22、上海 5-27。以省为单位、按省会易手日期近似；省内各地易手时间不一。1949-10-01 起显示中华人民共和国。",
-   "sources": [
-    "https://en.wikipedia.org/wiki/Pingjin_campaign",
-    "https://en.wikipedia.org/wiki/Yangtze_River_Crossing_campaign",
-    "https://en.wikipedia.org/wiki/Chinese_Civil_War"
-   ],
-   "note": "精度：省级。东北另见 ccw_manchuria 组。"
-  },
-  {
-   "id": "ccw_ccp_1949_4",
-   "group": "wars_misc",
-   "kind": "occupied",
-   "as_polity": true,
-   "name_zh": "共军控制区（1949 年，省级近似）",
-   "name_en": "Communist-held area (1949, province-level approx.)",
-   "controller": {
-    "qid": "Q17427",
-    "zh": "中国共产党"
-   },
-   "from": "1949-08-26",
-   "until": "1949-09-25",
-   "geometry": {
-    "admin1": [
-     "CN-BJ",
-     "CN-TJ",
-     "CN-HE",
-     "CN-SD",
-     "CN-HA",
-     "CN-SX",
-     "CN-JS",
-     "CN-AH",
-     "CN-SH",
-     "CN-ZJ",
-     "CN-HB",
-     "CN-JX",
-     "CN-SN",
-     "CN-HN",
-     "CN-FJ",
-     "CN-GS"
-    ]
-   },
-   "approx": true,
-   "dates_note": "1949-01-31 共军进入北平（平津战役结束）；山东、河南、河北、山西大部此前已归共军（太原 1949-04-24）；1949-04-23 共军渡江攻占南京；杭州 5-3、武汉 5-16、西安 5-20、南昌 5-22、上海 5-27；长沙 8-4（和平易手）、福州 8-17、兰州 8-26。以省为单位、按省会易手日期近似；省内各地易手时间不一。1949-10-01 起显示中华人民共和国。",
-   "sources": [
-    "https://en.wikipedia.org/wiki/Pingjin_campaign",
-    "https://en.wikipedia.org/wiki/Yangtze_River_Crossing_campaign",
-    "https://en.wikipedia.org/wiki/Chinese_Civil_War"
-   ],
-   "note": "精度：省级。东北另见 ccw_manchuria 组。"
-  },
-  {
-   "id": "ccw_ccp_1949_5",
-   "group": "wars_misc",
-   "kind": "occupied",
-   "as_polity": true,
-   "name_zh": "共军控制区（1949 年，省级近似）",
-   "name_en": "Communist-held area (1949, province-level approx.)",
-   "controller": {
-    "qid": "Q17427",
-    "zh": "中国共产党"
-   },
-   "from": "1949-09-25",
-   "until": "1949-10-01",
-   "geometry": {
-    "admin1": [
-     "CN-BJ",
-     "CN-TJ",
-     "CN-HE",
-     "CN-SD",
-     "CN-HA",
-     "CN-SX",
-     "CN-JS",
-     "CN-AH",
-     "CN-SH",
-     "CN-ZJ",
-     "CN-HB",
-     "CN-JX",
-     "CN-SN",
-     "CN-HN",
-     "CN-FJ",
-     "CN-GS",
-     "CN-QH",
-     "CN-NX",
-     "CN-XJ"
-    ]
-   },
-   "approx": true,
-   "dates_note": "1949-01-31 共军进入北平（平津战役结束）；山东、河南、河北、山西大部此前已归共军（太原 1949-04-24）；1949-04-23 共军渡江攻占南京；杭州 5-3、武汉 5-16、西安 5-20、南昌 5-22、上海 5-27；长沙 8-4（和平易手）、福州 8-17、兰州 8-26；西宁 9-5、银川 9-23、新疆 9-25 和平易手。以省为单位、按省会易手日期近似；省内各地易手时间不一。1949-10-01 起显示中华人民共和国。",
-   "sources": [
-    "https://en.wikipedia.org/wiki/Pingjin_campaign",
-    "https://en.wikipedia.org/wiki/Yangtze_River_Crossing_campaign",
-    "https://en.wikipedia.org/wiki/Chinese_Civil_War"
-   ],
-   "note": "精度：省级。东北另见 ccw_manchuria 组。"
-  },
-  {
-   "id": "korea_rok_south_of_38",
-   "group": "wars_misc",
-   "kind": "holdout",
-   "as_polity": true,
-   "name_zh": "大韩民国（三八线以南、今停战线以北）",
-   "name_en": "Republic of Korea (south of 38th parallel)",
-   "controller": {
-    "qid": "Q884",
-    "zh": "大韩民国"
-   },
-   "from": "1948-08-15",
-   "until": "1950-06-25",
-   "geometry": {
-    "cshapes": {
-     "gw": [
-      731
-     ],
-     "date": "1960-01-01"
-    },
-    "intersect_bbox": [
-     124.0,
-     33.0,
-     131.5,
-     38.0
-    ]
-   },
-   "approx": false,
-   "dates_note": "1948–1950 南北以北纬 38 度线为界（开城、瓮津半岛属大韩民国）；CShapes 对 1948–53 年使用 1953 年停战线。1950-06-25 战争爆发后战线反复移动，本数据不画战时战线。",
-   "sources": [
-    "https://en.wikipedia.org/wiki/38th_parallel_north",
-    "https://en.wikipedia.org/wiki/Korean_Demilitarized_Zone"
-   ],
-   "note": "北纬 38 度线为精确界线。"
-  },
-  {
-   "id": "korea_dprk_north_of_38",
-   "group": "wars_misc",
-   "kind": "holdout",
-   "as_polity": true,
-   "name_zh": "朝鲜民主主义人民共和国（三八线以北、今停战线以南）",
-   "name_en": "DPRK (north of 38th parallel)",
-   "controller": {
-    "qid": "Q423",
-    "zh": "朝鲜民主主义人民共和国"
-   },
-   "from": "1948-09-09",
-   "until": "1950-06-25",
-   "geometry": {
-    "cshapes": {
-     "gw": [
-      732
-     ],
-     "date": "1960-01-01"
-    },
-    "intersect_bbox": [
-     124.0,
-     38.0,
-     131.5,
-     39.5
-    ]
-   },
-   "approx": false,
-   "dates_note": "1948–1950 年三八线以北（含襄阳、杆城一带，停战后归大韩民国）。",
-   "sources": [
-    "https://en.wikipedia.org/wiki/38th_parallel_north",
-    "https://en.wikipedia.org/wiki/Korean_Demilitarized_Zone"
-   ],
-   "note": "北纬 38 度线为精确界线。"
-  },
-  {
-   "id": "cyprus_tr_1974",
-   "group": "wars_misc",
-   "kind": "occupied",
-   "as_polity": true,
-   "name_zh": "土耳其占领区（塞浦路斯北部）",
-   "name_en": "Turkish-occupied northern Cyprus",
-   "controller": {
-    "qid": "Q43",
-    "zh": "土耳其"
-   },
-   "from": "1974-08-16",
-   "until": "1975-02-13",
-   "geometry": {
-    "admin0_parts": {
-     "a3": [
-      "CYN"
-     ],
-     "bbox": [
-      32.2,
-      34.9,
-      34.7,
-      35.8
-     ]
-    }
-   },
-   "approx": true,
-   "dates_note": "1974-08-16 第二阶段停火线（阿提拉线）。",
-   "sources": [
-    "https://en.wikipedia.org/wiki/Turkish_invasion_of_Cyprus",
-    "https://en.wikipedia.org/wiki/Turkish_Federated_State_of_Cyprus",
-    "https://en.wikipedia.org/wiki/Northern_Cyprus"
-   ],
-   "note": "范围取 Natural Earth 北塞浦路斯（今界）。"
-  },
-  {
-   "id": "cyprus_tfsc",
-   "group": "wars_misc",
-   "kind": "de_facto",
-   "as_polity": true,
-   "name_zh": "塞浦路斯土族邦",
-   "name_en": "Turkish Federated State of Cyprus",
-   "controller": {
-    "qid": "Q784851",
-    "zh": "塞浦路斯土族邦"
-   },
-   "from": "1975-02-13",
-   "until": "1983-11-15",
-   "geometry": {
-    "admin0_parts": {
-     "a3": [
-      "CYN"
-     ],
-     "bbox": [
-      32.2,
-      34.9,
-      34.7,
-      35.8
-     ]
-    }
-   },
-   "approx": true,
-   "dates_note": "1975-02-13 宣布成立。",
-   "sources": [
-    "https://en.wikipedia.org/wiki/Turkish_invasion_of_Cyprus",
-    "https://en.wikipedia.org/wiki/Turkish_Federated_State_of_Cyprus",
-    "https://en.wikipedia.org/wiki/Northern_Cyprus"
-   ],
-   "note": "仅土耳其承认。"
-  },
-  {
-   "id": "cyprus_trnc",
-   "group": "wars_misc",
-   "kind": "de_facto",
-   "as_polity": true,
-   "name_zh": "北塞浦路斯土耳其共和国",
-   "name_en": "Turkish Republic of Northern Cyprus",
-   "controller": {
-    "qid": "Q23681",
-    "zh": "北塞浦路斯"
-   },
-   "from": "1983-11-15",
-   "until": null,
-   "geometry": {
-    "admin0_parts": {
-     "a3": [
-      "CYN"
-     ],
-     "bbox": [
-      32.2,
-      34.9,
-      34.7,
-      35.8
-     ]
-    }
-   },
-   "approx": true,
-   "dates_note": "1983-11-15 宣布独立，仅土耳其承认；国际上视为塞浦路斯共和国领土。",
-   "sources": [
-    "https://en.wikipedia.org/wiki/Turkish_invasion_of_Cyprus",
-    "https://en.wikipedia.org/wiki/Turkish_Federated_State_of_Cyprus",
-    "https://en.wikipedia.org/wiki/Northern_Cyprus"
-   ],
-   "note": "事实控制，非国际承认。"
-  },
-  {
-   "id": "falklands_arg_1982",
-   "group": "wars_misc",
-   "kind": "occupied",
-   "as_polity": true,
-   "name_zh": "阿根廷占领（马岛战争）",
-   "name_en": "Argentine occupation of the Falkland Islands",
-   "controller": {
-    "qid": "Q414",
-    "zh": "阿根廷"
-   },
-   "from": "1982-04-02",
-   "until": "1982-06-14",
-   "geometry": {
-    "admin0_parts": {
-     "a3": [
-      "FLK"
-     ],
-     "bbox": [
-      -62,
-      -53,
-      -57,
-      -50.8
-     ]
-    }
-   },
-   "approx": false,
-   "dates_note": "1982-04-02 阿根廷登陆；1982-06-14 斯坦利港守军投降。",
-   "sources": [
-    "https://en.wikipedia.org/wiki/Falklands_War"
-   ],
-   "note": "南乔治亚岛（4-03—4-25）未单独画出。"
-  },
-  {
-   "id": "csa_1861",
-   "group": "europe_19c",
-   "kind": "de_facto",
-   "as_polity": true,
-   "name_zh": "美利坚联盟国",
-   "name_en": "Confederate States of America",
-   "controller": {
-    "qid": "Q81931",
-    "zh": "美利坚联盟国"
-   },
-   "from": "1861-02-08",
-   "until": "1865-05-10",
-   "geometry": {
-    "admin1": [
-     "US-SC",
-     "US-MS",
-     "US-FL",
-     "US-AL",
-     "US-GA",
-     "US-LA",
-     "US-TX",
-     "US-VA",
-     "US-AR",
-     "US-NC",
-     "US-TN"
-    ]
-   },
-   "approx": true,
-   "dates_note": "1861-02-08 蒙哥马利临时宪法成立联盟国；1865-05-10 杰斐逊·戴维斯被俘，联盟国政府瓦解。按 11 个脱离州的今州界近似（弗吉尼亚不含西弗吉尼亚）。",
-   "sources": [
-    "https://en.wikipedia.org/wiki/Confederate_States_of_America",
-    "https://en.wikipedia.org/wiki/Origins_of_the_American_Civil_War"
-   ],
-   "note": "未画出联邦军逐年占领的地区（如 1862-04 起的新奥尔良、田纳西西部）；印第安领地、亚利桑那领地等联盟国主张区未画。"
-  },
-  {
-   "id": "nl_french_empire_1810",
-   "group": "europe_19c",
-   "kind": "annexed",
-   "as_polity": true,
-   "name_zh": "法兰西第一帝国（并入的荷兰）",
-   "name_en": "First French Empire (annexed Holland)",
-   "controller": {
-    "qid": "Q71084",
-    "zh": "法兰西第一帝国"
-   },
-   "from": "1810-07-09",
-   "until": "1813-11-30",
-   "geometry": {
-    "basemap": {
-     "snap": 1800,
-     "name": "Batavian Republic"
-    }
-   },
-   "approx": true,
-   "dates_note": "1810-07-09 拿破仑以朗布依埃敕令把荷兰王国并入法兰西帝国；1813-11-30 威廉（后来的威廉一世）在斯赫弗宁根登陆，荷兰恢复独立。",
-   "sources": [
-    "https://en.wikipedia.org/wiki/Kingdom_of_Holland",
-    "https://en.wikipedia.org/wiki/Sovereign_Principality_of_the_United_Netherlands"
-   ],
-   "note": "范围取 1800 年快照的巴达维亚共和国多边形（historical-basemaps），精度同底图。"
-  },
-  {
-   "id": "hanover_prussia_1866",
-   "group": "europe_19c",
-   "kind": "annexed",
-   "as_polity": true,
-   "name_zh": "普鲁士王国（汉诺威省）",
-   "name_en": "Kingdom of Prussia (Province of Hanover)",
-   "controller": {
-    "qid": "Q27306",
-    "zh": "普鲁士王国"
-   },
-   "from": "1866-09-20",
-   "until": "1871-01-18",
-   "geometry": {
-    "basemap": {
-     "snap": 1815,
-     "name": "Hanover"
-    }
-   },
-   "approx": true,
-   "dates_note": "普奥战争后，1866-09-20 普鲁士吞并汉诺威王国，设汉诺威省；1871-01-18 起显示德意志帝国。",
-   "sources": [
-    "https://en.wikipedia.org/wiki/Kingdom_of_Hanover",
-    "https://en.wikipedia.org/wiki/Province_of_Hanover"
-   ],
-   "note": "范围取 1815 年快照的汉诺威王国多边形，精度同底图。"
-  },
-  {
-   "id": "alsace_france_1815",
-   "group": "europe_19c",
-   "kind": "regime",
-   "as_polity": true,
-   "name_zh": "法国（阿尔萨斯）",
-   "name_en": "France (Alsace)",
-   "controller": {
-    "qid": "Q142",
-    "zh": "法国"
-   },
-   "from": "1815-11-20",
-   "until": "1871-01-18",
-   "geometry": {
-    "admin1": [
-     "FR-67",
-     "FR-68"
-    ]
-   },
-   "approx": true,
-   "dates_note": "1815-11-20 第二次巴黎条约后阿尔萨斯仍属法国，直到 1871 年普法战争后割让（1871-05-10 法兰克福条约）。1815 年快照把斯特拉斯堡一带画进巴登，这里按今上莱茵省、下莱茵省修正。1871-01-18 起由「德意志帝国」控制区接管。",
-   "sources": [
-    "https://en.wikipedia.org/wiki/Alsace",
-    "https://en.wikipedia.org/wiki/Treaty_of_Frankfurt_(1871)"
-   ],
-   "note": "底图边界修正；1871-01-18 至 05-10 法理上仍属法国，但已被德军占领。洛林（摩泽尔）部分未修正。"
-  },
-  {
-   "id": "mexico_north_1821",
-   "group": "europe_19c",
-   "kind": "regime",
-   "as_polity": true,
-   "name_zh": "墨西哥（上加利福尼亚、新墨西哥）",
-   "name_en": "Mexico (Alta California, Santa Fe de Nuevo México)",
-   "controller": {
-    "qid": "Q96",
-    "zh": "墨西哥"
-   },
-   "from": "1821-09-28",
-   "until": "1848-02-02",
-   "geometry": {
-    "admin1": [
-     "US-CA",
-     "US-NV",
-     "US-UT",
-     "US-AZ",
-     "US-NM"
-    ]
-   },
-   "approx": true,
-   "dates_note": "1821-09-28 墨西哥独立；1848-02-02《瓜达卢佩-伊达尔戈条约》割让给美国（1846 年起美军已占领加利福尼亚、新墨西哥）。",
-   "sources": [
-    "https://en.wikipedia.org/wiki/Alta_California",
-    "https://en.wikipedia.org/wiki/Treaty_of_Guadalupe_Hidalgo",
-    "https://en.wikipedia.org/wiki/Mexican_Cession"
-   ],
-   "note": "按今美国州界近似：不含科罗拉多、怀俄明的割让部分；亚利桑那南部（加兹登购地，1853 年才归美国）在 1848–1853 年未单独画出。"
-  },
-  {
-   "id": "it_occ_france_1942",
-   "group": "ww2_europe_misc",
-   "kind": "occupied",
-   "as_polity": true,
-   "name_zh": "意大利占领区（法国东南部）",
-   "name_en": "Italian occupation of France",
-   "controller": {
-    "qid": "Q2570590",
-    "zh": "意大利占领区（法国东南部）"
-   },
-   "from": "1942-11-11",
-   "until": "1943-09-08",
-   "geometry": {
-    "admin1": [
-     "FR-06",
-     "FR-83",
-     "FR-04",
-     "FR-05",
-     "FR-73",
-     "FR-74",
-     "FR-26",
-     "FR-38",
-     "FR-2A",
-     "FR-2B"
-    ]
-   },
-   "approx": true,
-   "dates_note": "1942-11-11 德意军队进占维希法国（安东行动），意大利占领罗讷河以东的普罗旺斯与科西嘉；1943-09-08 意大利停战，德军接管。",
-   "sources": [
-    "https://en.wikipedia.org/wiki/Italian_occupation_of_France"
-   ],
-   "note": "按省（département）近似：滨海阿尔卑斯、瓦尔、上普罗旺斯阿尔卑斯、上阿尔卑斯、萨瓦、上萨瓦、德龙、伊泽尔与科西嘉两省；德龙、伊泽尔实际只占东部，土伦 1942-11-27 起由德军控制，未细分。1940-06 至 1942-11 的芒通一带小块占领区（不足一个省）没有画。"
-  },
-  {
-   "id": "johor_1855",
-   "group": "princely_states",
-   "kind": "regime",
-   "as_polity": true,
-   "name_zh": "柔佛（自治苏丹国，英国影响下）",
-   "name_en": "Johor (self-governing, under British influence)",
-   "controller": {
-    "qid": "Q183032",
-    "zh": "柔佛苏丹国"
-   },
-   "from": "1855-03-10",
-   "until": "1885-12-11",
-   "approx": true,
-   "dates_note": "1855-03-10 天猛公取得柔佛大陆统治权；与海峡殖民地关系密切但仍自治；1885-12-11 英柔条约后由英国负责外交。",
-   "sources": [
-    "https://en.wikipedia.org/wiki/Johor"
-   ],
-   "note": "范围取 Natural Earth 今一级行政区（大致范围）；底图把该地画在英属马来亚 / 荷属东印度整体之内，这里补上可点击的苏丹国。",
-   "geometry": {
-    "admin1": [
-     "MY-01"
-    ]
-   }
-  },
-  {
-   "id": "johor_1885",
-   "group": "princely_states",
-   "kind": "regime",
-   "as_polity": true,
-   "name_zh": "柔佛苏丹国（英国保护，外交由英国负责）",
-   "name_en": "Sultanate of Johor (British protection, 1885 treaty)",
-   "controller": {
-    "qid": "Q183032",
-    "zh": "柔佛苏丹国"
-   },
-   "from": "1885-12-11",
-   "until": "1914-05-12",
-   "approx": true,
-   "dates_note": "1885-12-11 英柔条约：英国负责外交并提供保护，内政自治；1914-05-12 接受英国总顾问，成为马来属邦。",
-   "sources": [
-    "https://en.wikipedia.org/wiki/Johor"
-   ],
-   "note": "范围取 Natural Earth 今一级行政区（大致范围）；底图把该地画在英属马来亚 / 荷属东印度整体之内，这里补上可点击的苏丹国。",
-   "geometry": {
-    "admin1": [
-     "MY-01"
-    ]
-   }
-  },
-  {
-   "id": "johor_1914",
-   "group": "princely_states",
-   "kind": "regime",
-   "as_polity": true,
-   "name_zh": "柔佛苏丹国（英国保护国，马来属邦）",
-   "name_en": "Sultanate of Johor (Unfederated Malay State)",
-   "controller": {
-    "qid": "Q183032",
-    "zh": "柔佛苏丹国"
-   },
-   "from": "1914-05-12",
-   "until": "1942-01-31",
-   "approx": true,
-   "dates_note": "1914-05-12 起为英国保护国（马来属邦）；1942-01-31 日军占领柔佛全境。",
-   "sources": [
-    "https://en.wikipedia.org/wiki/Johor",
-    "https://en.wikipedia.org/wiki/Unfederated_Malay_States",
-    "https://en.wikipedia.org/wiki/Japanese_occupation_of_Malaya"
-   ],
-   "note": "范围取 Natural Earth 今一级行政区（大致范围）；底图把该地画在英属马来亚 / 荷属东印度整体之内，这里补上可点击的苏丹国。",
-   "geometry": {
-    "admin1": [
-     "MY-01"
-    ]
-   }
-  },
-  {
-   "id": "perak_1874",
-   "group": "princely_states",
-   "kind": "regime",
-   "as_polity": true,
-   "name_zh": "霹雳苏丹国（英国驻扎官制度）",
-   "name_en": "Sultanate of Perak (British Residential system)",
-   "controller": {
-    "qid": "Q188953",
-    "zh": "霹雳苏丹国"
-   },
-   "from": "1874-01-20",
-   "until": "1895-07-01",
-   "approx": true,
-   "dates_note": "1874-01-20 邦咯条约：接受英国驻扎官，苏丹仍为名义君主；1895-07-01 加入马来联邦。",
-   "sources": [
-    "https://en.wikipedia.org/wiki/Pangkor_Treaty_of_1874"
-   ],
-   "note": "范围取 Natural Earth 今一级行政区（大致范围）；底图把该地画在英属马来亚 / 荷属东印度整体之内，这里补上可点击的苏丹国。",
-   "geometry": {
-    "admin1": [
-     "MY-08"
-    ]
-   }
-  },
-  {
-   "id": "perak_1895",
-   "group": "princely_states",
-   "kind": "regime",
-   "as_polity": true,
-   "name_zh": "霹雳苏丹国（英国保护国，马来联邦）",
-   "name_en": "Sultanate of Perak (Federated Malay States)",
-   "controller": {
-    "qid": "Q188953",
-    "zh": "霹雳苏丹国"
-   },
-   "from": "1895-07-01",
-   "until": "1941-12",
-   "approx": true,
-   "dates_note": "1895-07-01 起为马来联邦成员（英国保护国）；1941 年 12 月日军占领。",
-   "sources": [
-    "https://en.wikipedia.org/wiki/Federated_Malay_States",
-    "https://en.wikipedia.org/wiki/Japanese_occupation_of_Malaya"
-   ],
-   "note": "范围取 Natural Earth 今一级行政区（大致范围）；底图把该地画在英属马来亚 / 荷属东印度整体之内，这里补上可点击的苏丹国。",
-   "geometry": {
-    "admin1": [
-     "MY-08"
-    ]
-   }
-  },
-  {
-   "id": "selangor_1874",
-   "group": "princely_states",
-   "kind": "regime",
-   "as_polity": true,
-   "name_zh": "雪兰莪苏丹国（英国驻扎官制度）",
-   "name_en": "Sultanate of Selangor (British Residential system)",
-   "controller": {
-    "qid": "Q189710",
-    "zh": "雪兰莪苏丹国"
-   },
-   "from": "1874",
-   "until": "1895-07-01",
-   "approx": true,
-   "dates_note": "1874 年苏丹阿卜杜勒·萨马德接受英国驻扎官（首任驻扎官 1875 年初到任）；1895-07-01 加入马来联邦。",
-   "sources": [
-    "https://en.wikipedia.org/wiki/Selangor"
-   ],
-   "note": "范围取 Natural Earth 今一级行政区（大致范围）；底图把该地画在英属马来亚 / 荷属东印度整体之内，这里补上可点击的苏丹国。",
-   "geometry": {
-    "admin1": [
-     "MY-10",
-     "MY-14",
-     "MY-16"
-    ]
-   }
-  },
-  {
-   "id": "selangor_1895",
-   "group": "princely_states",
-   "kind": "regime",
-   "as_polity": true,
-   "name_zh": "雪兰莪苏丹国（英国保护国，马来联邦）",
-   "name_en": "Sultanate of Selangor (Federated Malay States)",
-   "controller": {
-    "qid": "Q189710",
-    "zh": "雪兰莪苏丹国"
-   },
-   "from": "1895-07-01",
-   "until": "1942-01-11",
-   "approx": true,
-   "dates_note": "1895-07-01 起为马来联邦成员；1942-01-11 日军占领吉隆坡。",
-   "sources": [
-    "https://en.wikipedia.org/wiki/Federated_Malay_States",
-    "https://en.wikipedia.org/wiki/Selangor",
-    "https://en.wikipedia.org/wiki/Japanese_occupation_of_Malaya"
-   ],
-   "note": "范围取 Natural Earth 今一级行政区（大致范围）；底图把该地画在英属马来亚 / 荷属东印度整体之内，这里补上可点击的苏丹国。",
-   "geometry": {
-    "admin1": [
-     "MY-10",
-     "MY-14",
-     "MY-16"
-    ]
-   }
-  },
-  {
-   "id": "selangor_1942",
-   "group": "princely_states",
-   "kind": "regime",
-   "as_polity": true,
-   "name_zh": "雪兰莪（日本占领下）",
-   "name_en": "Selangor (Japanese occupation)",
-   "controller": {
-    "qid": "Q189710",
-    "zh": "雪兰莪苏丹国"
-   },
-   "from": "1942-01-11",
-   "until": "1945-09-12",
-   "approx": true,
-   "dates_note": "1942-01-11 日军占领吉隆坡；日方另立苏丹（见面板的空位期/对立君主案例）；1945-09-12 日军在新加坡投降。",
-   "sources": [
-    "https://en.wikipedia.org/wiki/Selangor",
-    "https://en.wikipedia.org/wiki/Japanese_occupation_of_Malaya"
-   ],
-   "note": "范围取 Natural Earth 今一级行政区（大致范围）；底图把该地画在英属马来亚 / 荷属东印度整体之内，这里补上可点击的苏丹国。",
-   "geometry": {
-    "admin1": [
-     "MY-10",
-     "MY-14",
-     "MY-16"
-    ]
-   }
-  },
-  {
-   "id": "yogya_1830",
-   "group": "princely_states",
-   "kind": "regime",
-   "as_polity": true,
-   "name_zh": "日惹苏丹国（荷属东印度自治土邦）",
-   "name_en": "Sultanate of Yogyakarta (self-governing principality, Dutch East Indies)",
-   "controller": {
-    "qid": "Q2114397",
-    "zh": "日惹苏丹国"
-   },
-   "from": "1830-03-28",
-   "until": "1942-03-08",
-   "approx": true,
-   "dates_note": "1755 年建国；1830 年爪哇战争结束后大片领土被荷兰吞并，作为荷属东印度的自治土邦保留；1942-03-08 荷属东印度投降。",
-   "sources": [
-    "https://en.wikipedia.org/wiki/Yogyakarta_Sultanate"
-   ],
-   "note": "范围取 Natural Earth 今一级行政区（大致范围）；底图把该地画在英属马来亚 / 荷属东印度整体之内，这里补上可点击的苏丹国。",
-   "geometry": {
-    "admin1": [
-     "ID-YO"
-    ]
-   }
-  },
-  {
-   "id": "yogya_1942",
-   "group": "princely_states",
-   "kind": "regime",
-   "as_polity": true,
-   "name_zh": "日惹苏丹国（日本占领下）",
-   "name_en": "Sultanate of Yogyakarta (Japanese occupation)",
-   "controller": {
-    "qid": "Q2114397",
-    "zh": "日惹苏丹国"
-   },
-   "from": "1942-03-08",
-   "until": "1945-08-17",
-   "approx": true,
-   "dates_note": "1942-03-08 荷属东印度投降，日本占领；1945-08-17 印度尼西亚宣布独立，苏丹随即宣布日惹归属共和国。",
-   "sources": [
-    "https://en.wikipedia.org/wiki/Yogyakarta_Sultanate",
-    "https://en.wikipedia.org/wiki/Japanese_occupation_of_the_Dutch_East_Indies"
-   ],
-   "note": "范围取 Natural Earth 今一级行政区（大致范围）；底图把该地画在英属马来亚 / 荷属东印度整体之内，这里补上可点击的苏丹国。",
-   "geometry": {
-    "admin1": [
-     "ID-YO"
-    ]
-   }
   }
  ]
 }

@@ -126,7 +126,8 @@ def office(oid: str, date: str | None = None):
         orgs.append({"id": g, "name": _zh_disp(r.get("zh") or r.get("en") or g), "desc": r.get("desc"),
                      "summary": wiki.summary(r.get("zhwiki"), r.get("enwiki"))})
     holders = sorted(o.get("holders", []), key=lambda h: (h.get("from") or {"y": 99999})["y"])
-    return {"id": oid, "name": _zh_disp(o.get("zh") or o.get("en")), "en": o.get("en"), "desc": o.get("desc"),
+    from .modules.leaders import office_label
+    return {"id": oid, "name": office_label(o), "en": o.get("en"), "desc": o.get("desc"),
             "juris": [{"id": s, "name": R.state_name(s)} for s in o.get("juris", [])],
             "summary": wiki.summary(o.get("zhwiki"), o.get("enwiki")), "orgs": orgs,
             "holders": [{"person": R.person_brief(h["p"]), "from": _t(h.get("from")), "to": _t(h.get("to"))} for h in holders],

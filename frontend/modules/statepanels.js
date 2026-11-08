@@ -10,10 +10,12 @@
   const link = (l) => `<a href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.label)}</a>`;
   const span = (a, b) => (a || b ? `${esc(a || "?")} – ${esc(b || "")}` : "");
   // 人物 / 职位 / 阵营的可点击链接
-  const P = (p) => p ? `<a href="#" class="wl" data-person="${esc(p.id)}">${esc(p.name || p.id)}</a>` : "";
-  const O = (o) => `<a href="#" class="wl" data-office="${esc(o.id)}">${esc(o.name || o.id)}</a>`;
-  const B = (b) => `<a href="#" class="wl" data-bloc="${esc(b.id)}">${esc(b.name || b.id)}</a>`;
-  const T = (t) => `<a href="#" class="wl" data-treaty="${esc(t.id)}">${esc(t.name || t.id)}</a>`;
+  const bare = (s) => /^Q\d+(@Q\d+)?$/.test(s || "");
+  const vis = (name, fallback) => (!name || bare(name) ? fallback : name);
+  const P = (p) => p ? `<a href="#" class="wl" data-person="${esc(p.id)}">${esc(vis(p.name, "姓名未记录"))}</a>` : "";
+  const O = (o) => `<a href="#" class="wl" data-office="${esc(o.id)}">${esc(vis(o.name, "职位名称未记录"))}</a>`;
+  const B = (b) => `<a href="#" class="wl" data-bloc="${esc(b.id)}">${esc(vis(b.name, "暂无通用译名"))}</a>`;
+  const T = (t) => `<a href="#" class="wl" data-treaty="${esc(t.id)}">${esc(vis(t.name, "暂无通用译名"))}</a>`;
 
   function wire(root) {
     root.querySelectorAll("[data-person]").forEach((a) => (a.onclick = (e) => { e.preventDefault(); WHA.showPerson(a.dataset.person); }));
@@ -27,8 +29,8 @@
 
   // 候选政权切换（地图区域可能对应多个 Wikidata 政权，例如同名的不同时期政权）
   function altSelector(r) {
-    if (!r.alternatives || r.alternatives.length < 2) return r.state ? `<div class="s">对应 Wikidata 政权：<a href="https://www.wikidata.org/wiki/${esc(r.state.id)}" target="_blank">${esc(r.state.name)}</a>${r.state.desc ? `（${esc(r.state.desc)}）` : ""}</div>` : "";
-    return `<div class="s">对应 Wikidata 政权：<select class="altsel">${r.alternatives.map((a) => `<option value="${esc(a.id)}" ${r.state && a.id === r.state.id ? "selected" : ""}>${esc(a.name)}（${esc(a.method_zh)}）</option>`).join("")}</select></div>`;
+    if (!r.alternatives || r.alternatives.length < 2) return r.state ? `<div class="s">对应 Wikidata 政权：<a href="https://www.wikidata.org/wiki/${esc(r.state.id)}" target="_blank">${esc(vis(r.state.name, "暂无通用译名"))}</a>${r.state.desc ? `（${esc(r.state.desc)}）` : ""}</div>` : "";
+    return `<div class="s">对应 Wikidata 政权：<select class="altsel">${r.alternatives.map((a) => `<option value="${esc(a.id)}" ${r.state && a.id === r.state.id ? "selected" : ""}>${esc(vis(a.name, "暂无通用译名"))}（${esc(a.method_zh)}）</option>`).join("")}</select></div>`;
   }
   function wireAlt(box) {
     const sel = box.querySelector(".altsel");
@@ -143,7 +145,7 @@
 
   WHA.showPerson = (id) => show(`/api/person/${id}`, (p) => `
     <div class="person">${p.img ? `<img class="portrait" src="${esc(p.img)}" alt="">` : ""}
-      <h2>${esc(p.name || p.id)}</h2>${p.en && p.en !== p.name ? `<div class="en">${esc(p.en)}</div>` : ""}
+      <h2>${esc(vis(p.name, "姓名未记录"))}</h2>${p.en && p.en !== p.name ? `<div class="en">${esc(p.en)}</div>` : ""}
       <div class="d">${esc(p.born || "?")} – ${esc(p.died || "")}</div>${p.desc ? `<div class="s">${esc(p.desc)}</div>` : ""}</div>
     ${summaryHtml(p.summary)}
     ${p.party?.length ? `<h4>所属政党</h4>${p.party.map((x) => `<div>${esc(x.name)} ${span(x.from, x.to)}</div>`).join("")}` : ""}
@@ -151,7 +153,7 @@
     <div class="l">${p.links.map(link).join("")}</div><div class="source">来源：Wikidata（CC0）、维基百科（CC BY-SA）</div>`);
 
   WHA.showOffice = (id) => show(`/api/office/${id}`, (o) => `
-    <h2>${esc(o.name)}</h2>${o.en && o.en !== o.name ? `<div class="en">${esc(o.en)}</div>` : ""}${o.desc ? `<div class="s">${esc(o.desc)}</div>` : ""}
+    <h2>${esc(vis(o.name, "职位名称未记录"))}</h2>${o.en && o.en !== o.name ? `<div class="en">${esc(o.en)}</div>` : ""}${o.desc ? `<div class="s">${esc(o.desc)}</div>` : ""}
     <div class="s">管辖：${o.juris.map((x) => esc(x.name)).join("、")}</div>
     ${summaryHtml(o.summary)}
     ${o.orgs.map((g) => `<h4>所领导的机构：${esc(g.name)}</h4>${summaryHtml(g.summary)}`).join("")}
@@ -159,7 +161,7 @@
     <div class="l">${o.links.map(link).join("")}</div><div class="source">来源：Wikidata（P39 / P1001 / P2389，CC0）、维基百科（CC BY-SA）</div>`);
 
   WHA.showBloc = (id) => show(`/api/alliance/${id}?date=${WHA.dateParam()}`, (a) => `
-    <h2>${esc(a.name)}</h2>${a.en && a.en !== a.name ? `<div class="en">${esc(a.en)}</div>` : ""}${a.desc ? `<div class="s">${esc(a.desc)}</div>` : ""}
+    <h2>${esc(vis(a.name, "暂无通用译名"))}</h2>${a.en && a.en !== a.name ? `<div class="en">${esc(a.en)}</div>` : ""}${a.desc ? `<div class="s">${esc(a.desc)}</div>` : ""}
     <div class="d">成立：${esc(a.from || "未记录")} · 解散：${esc(a.to || (a.from ? "未记录（或仍存在）" : "未记录"))}</div>
     ${summaryHtml(a.summary)}
     ${a.leaders.length ? `<h4>领导 / 核心人物（Wikidata 有记录者）</h4>${a.leaders.map((x) => `<div>${esc(x.role)}：${P(x.person)} <span class="d">${span(x.from, x.to)}</span></div>`).join("")}` : '<div class="note">Wikidata 没有记录该阵营的领导人（不作推测）。</div>'}
@@ -169,7 +171,7 @@
     <div class="l">${a.links.map(link).join("")}</div><div class="source">来源：Wikidata（P527 / P710 / P1891 / P463 及 P580/P582 限定，CC0）、维基百科（CC BY-SA）</div>`);
 
   WHA.showTreaty = (id) => show(`/api/treaty/${id}`, (t) => `
-    <h2>${esc(t.name)}</h2>${t.en && t.en !== t.name ? `<div class="en">${esc(t.en)}</div>` : ""}${t.desc ? `<div class="s">${esc(t.desc)}</div>` : ""}
+    <h2>${esc(vis(t.name, "暂无通用译名"))}</h2>${t.en && t.en !== t.name ? `<div class="en">${esc(t.en)}</div>` : ""}${t.desc ? `<div class="s">${esc(t.desc)}</div>` : ""}
     <div class="s">类型：${t.types.map(esc).join("、") || "—"}</div>
     <table class="kv"><tr><th>签订</th><td>${esc(t.signed || "未记录")}</td></tr><tr><th>生效</th><td>${esc(t.effective || "未记录")}</td></tr>
       ${t.start ? `<tr><th>开始</th><td>${esc(t.start)}</td></tr>` : ""}<tr><th>终止</th><td>${esc(t.end || "未记录")}</td></tr>
