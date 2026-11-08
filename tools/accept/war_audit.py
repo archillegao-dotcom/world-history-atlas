@@ -127,18 +127,48 @@ def fronts():
     from shapely.geometry import shape, Point
     out = []
     for why, d, la, lo, want in FRONTS:
-        L = A.get("/api/layers/war_fronts", date=d)
-        inside = any(shape(z["geom"]).contains(Point(lo, la)) for w in L["items"] for z in w["items"] if z["kind"] == "occupied" and z.get("geom"))
-        out.append({"group": "俄乌战争（前线图层）", "case": why, "date": d, "ok": inside == want, "got": inside})
-        print(("PASS " if inside == want else "FAIL ") + f"[俄乌战争（前线图层）] {why} → {inside}", flush=True)
+        try:
+            L = A.get("/api/layers/war_fronts", date=d)
+            inside = any(shape(z["geom"]).contains(Point(lo, la)) for w in L["items"] for z in w["items"] if z["kind"] == "occupied" and z.get("geom"))
+            ok = inside == want
+            got, errors = inside, ([] if ok else [f"点在占领区内={inside}，期望 {want}"])
+        except Exception as e:
+            ok, got, errors = False, None, [repr(e)[:200]]
+        out.append({"group": "俄乌战争（前线图层）", "case": why, "date": d, "ok": ok, "got": got, "errors": errors})
+        print(("PASS " if ok else "FAIL ") + f"[俄乌战争（前线图层）] {why} → {got}{'' if ok else ' ' + str(errors)}", flush=True)
     return out
+
+
+def exit_code(res):
+    """全部有结果且每条 ok 才是 0。没有结果、缺 ok、或任一失败都是 1。"""
+    if not res or any(not r.get("ok") for r in res):
+        return 1
+    return 0
+
+
+def finish(res):
+    groups = {}
+    for r in res:
+        groups.setdefault(r.get("group") or "?", [0, 0])[0 if r.get("ok") else 1] += 1
+    for k, (p, f) in groups.items():
+        print(f"{k}: {p}/{p + f}")
+    fails = [r for r in res if not r.get("ok")]
+    total = len(res)
+    passed = total - len(fails)
+    if total:
+        print(f"TOTAL {passed}/{total} = {passed / total:.1%}")
+    else:
+        print("TOTAL 0/0")
+        print("没有结果，不能当成通过")
+    print(f"FAILURES {len(fails)}")
+    for r in fails:
+        detail = r.get("errors") or r.get("got")
+        tail = "" if detail in (None, [], "") else " " + str(detail)
+        print(f"FAIL [{r.get('group')}] {r.get('case')}{tail}")
+    return exit_code(res)
+
+
 if __name__ == "__main__":
     res = A.run() + fronts()
     json.dump(res, open("logs/war_audit.json", "w"), ensure_ascii=False, indent=1)
-    g = {}
-    for r in res:
-        g.setdefault(r["group"], [0, 0])[0 if r["ok"] else 1] += 1
-    for k, (p, f) in g.items():
-        print(f"{k}: {p}/{p + f}")
-    tp = sum(r["ok"] for r in res)
-    print(f"TOTAL {tp}/{len(res)} = {tp / len(res):.1%}")
+    sys.exit(finish(res))
