@@ -18,11 +18,11 @@ const problems = [];
 async function open(w, h, hash) {
   await page.setViewport({ width: w, height: h, deviceScaleFactor: 1 });
   await page.goto("http://127.0.0.1:8792/?b5=" + Math.random().toString(36).slice(2) + hash, { waitUntil: "networkidle0", timeout: 90000 });
-  await page.waitForFunction(() => document.body.classList.contains("strategy") && document.querySelectorAll(".strategy-label span").length > 0, { timeout: 30000 });
+  await page.waitForFunction(() => document.body.classList.contains("strategy") && document.querySelectorAll("#map .strategy-label span").length > 0, { timeout: 30000 });
   await new Promise((r) => setTimeout(r, 500));
 }
 function labels() {
-  return page.evaluate(() => [...document.querySelectorAll(".strategy-label span")].map((s) => ({
+  return page.evaluate(() => [...document.querySelectorAll("#map .strategy-label span")].map((s) => ({
     t: s.textContent, title: s.getAttribute("title") || "", lat: +s.dataset.lat, lng: +s.dataset.lng,
   })));
 }

@@ -106,7 +106,7 @@
     hp.classList.add("hillshade-pane");
   }
   // Natural Earth 1:50m Shaded Relief，公有领域。水面临时去掉，只把陆地起伏叠在政权颜色上。不是历史国界。
-  L.imageOverlay("assets/ne50m_hillshade.png", [[-78, -180], [78, 180]], {
+  L.imageOverlay("assets/ne50m_hillshade.png?v=2", [[-78, -180], [78, 180]], {
     pane: "hillshade", opacity: 0.92, interactive: false, className: "hillshade-img",
   }).addTo(map);
   let layer = null;
@@ -328,6 +328,29 @@
     if (m) return m[1];
     return s;
   }
+  // 全名放不进范围时，去掉正式名称末尾的地位词。不是另造简称。全名仍在提示里。
+  function tighterName(shown) {
+    const s = String(shown || "");
+    const prot = s.match(/^(.{2,14})保护国$/);
+    if (prot) return prot[1];
+    const king = s.match(/^(.{2,8})(王国|共和国)$/);
+    if (king) return king[1];
+    return s;
+  }
+  let labelProbe = null;
+  function measureLabel(text) {
+    if (!labelProbe) {
+      const hold = document.createElement("div");
+      hold.className = "leaflet-div-icon strategy-label label-probe";
+      hold.style.cssText = "position:absolute;left:-9999px;top:0;visibility:hidden;pointer-events:none";
+      labelProbe = document.createElement("span");
+      hold.appendChild(labelProbe);
+      document.body.appendChild(hold);
+    }
+    labelProbe.textContent = text;
+    const r = labelProbe.getBoundingClientRect();
+    return { w: Math.ceil(r.width), h: Math.ceil(r.height) };
+  }
   function ringHas(lat, lng, ring) {
     let inside = false;
     for (let i = 0, j = ring.length - 1; i < ring.length; j = i++) {
@@ -351,8 +374,8 @@
   function insidePoly(lat, lng, poly) {
     return ringHas(lat, lng, poly.outer) && !poly.holes.some((h) => h && h.length > 2 && ringHas(lat, lng, h));
   }
-  // 名称放在当前画面里、多边形内部的一段上，不用外接矩形中心（那个点会落到海里或别国）。
-  function visibleInterior(outer, holes, view) {
+  // 名称候选点：当前画面里、多边形内部的几段，不用外接矩形中心。
+  function interiorCandidates(outer, holes, view) {
     let minLat = 90, maxLat = -90, minLng = 180, maxLng = -180;
     for (const p of outer) {
       if (p.lat < minLat) minLat = p.lat;
@@ -362,9 +385,9 @@
     }
     const south = Math.max(minLat, view.getSouth()), north = Math.min(maxLat, view.getNorth());
     const west = Math.max(minLng, view.getWest()), east = Math.min(maxLng, view.getEast());
-    if (!(south < north) || !(west < east)) return null;
-    let best = null, bestLen = 0;
-    const lines = 9;
+    if (!(south < north) || !(west < east)) return [];
+    const out = [];
+    const lines = 7;
     for (let i = 0; i < lines; i++) {
       const lat = south + (north - south) * (i + 0.5) / lines;
       const xs = [];
@@ -377,14 +400,17 @@
       xs.sort((p, q) => p - q);
       for (let k = 0; k + 1 < xs.length; k += 2) {
         const a0 = Math.max(xs[k], west), a1 = Math.min(xs[k + 1], east);
-        if (a1 - a0 <= bestLen) continue;
-        const lng = (a0 + a1) / 2;
-        if (holes.some((h) => h && h.length > 2 && ringHas(lat, lng, h))) continue;
-        bestLen = a1 - a0;
-        best = L.latLng(lat, lng);
+        const span = a1 - a0;
+        if (span < 0.2) continue;
+        for (const t of [0.35, 0.5, 0.65]) {
+          const lng = a0 + (a1 - a0) * t;
+          if (holes.some((h) => h && h.length > 2 && ringHas(lat, lng, h))) continue;
+          out.push({ c: L.latLng(lat, lng), span });
+        }
       }
     }
-    return best ? { c: best, span: bestLen } : null;
+    out.sort((a, b) => b.span - a.span);
+    return out.slice(0, 12);
   }
   function boxesOverlap(a, b) {
     return !(a[2] < b[0] || a[0] > b[2] || a[3] < b[1] || a[1] > b[3]);
@@ -400,30 +426,44 @@
     }
     labelLayer.clearLayers();
     if (!strategyOn() || !layer) return;
+    const el = map.getContainer();
+    const sz0 = map.getSize();
+    if ((el.clientWidth !== sz0.x || el.clientHeight !== sz0.y) && !map._whaSizing) {
+      map._whaSizing = true;
+      map.invalidateSize({ pan: false, animate: false });
+      map._whaSizing = false;
+    }
+    if (map._whaSizing) return;
+    map._whaSizing = true;
     const z = map.getZoom();
     const view = map.getBounds();
-    const c0 = map.getCenter();
-    const minSpan = z < 3.2 ? 4 : z < 4.2 ? 1.1 : z < 5.2 ? 0.55 : z < 6.5 ? 0.28 : 0.12;
+    const sz = { x: el.clientWidth, y: el.clientHeight };
+    const narrow = sz.x <= 720;
+    const inset = { l: 8, r: 8, t: narrow ? 18 : 14, b: 10 };
     const items = [];
     layer.eachLayer((l) => {
       const b = l.getBounds?.();
       if (!b || !b.isValid() || !view.intersects(b)) return;
       const p = l.feature.properties;
       const polys = polygonsOf(l);
-      let chosen = null, span = 0;
+      let cands = [];
+      let span = 0;
       if (p.LABEL_X != null && p.LABEL_Y != null) {
         const ll = L.latLng(p.LABEL_Y, p.LABEL_X);
-        if (view.contains(ll) && polys.some((poly) => insidePoly(ll.lat, ll.lng, poly))) { chosen = ll; span = 2; }
+        if (view.contains(ll) && polys.some((poly) => insidePoly(ll.lat, ll.lng, poly))) cands.push({ c: ll, span: 2 });
       }
-      if (!chosen) {
-        for (const poly of polys) {
-          const hit = visibleInterior(poly.outer, poly.holes, view);
-          if (hit && hit.span > span) { chosen = hit.c; span = hit.span; }
+      for (const poly of polys) {
+        for (const hit of interiorCandidates(poly.outer, poly.holes, view)) {
+          cands.push(hit);
+          if (hit.span > span) span = hit.span;
         }
       }
-      if (!chosen || span < minSpan || !view.contains(chosen)) return;
-      const dist = Math.hypot(chosen.lat - c0.lat, (chosen.lng - c0.lng) * 0.65);
-      items.push({ area: span, name: pnameF(p), zone: p.NAME_ZH || "", terr: !!p.TERRITORY, c: chosen, dist });
+      cands.sort((a, b) => b.span - a.span);
+      cands = cands.slice(0, 16);
+      if (!cands.length || span < 0.25) return;
+      const cat = p.TERR_CAT || "";
+      const tier = cat === "unverified" || cat.startsWith("zone_") ? 2 : (p.TERRITORY ? 1 : 0);
+      items.push({ span, name: pnameF(p), zone: p.NAME_ZH || "", terr: !!p.TERRITORY, tier, polys, cands });
     });
     // 占领区若解析成宗主国国名，会和本土抢同一个标签，国名就会标到占领区上。这种区域改用自己的名称。
     const mains = new Set(items.filter((it) => !it.terr).map((it) => it.name));
@@ -433,29 +473,83 @@
         it.name = it.zone;
       } else it.title = it.name;
     }
-    const rank = (it) => Math.pow(Math.max(it.area, 0.2), 0.5) / (1 + it.dist / 8);
-    items.sort((a, b) => rank(b) - rank(a));
-    const cap = z < 3.2 ? 10 : z < 4.2 ? 16 : z < 5.2 ? 24 : z < 6.5 ? 36 : 48;
+    items.sort((a, b) => a.tier - b.tier || b.span - a.span);
     const taken = [];
     const used = new Set();
+    let extra = 0;
+    const extraMax = z < 3.2 ? 6 : 14;
+    const gap = 5;
+    function boxOf(pt, dim) {
+      return [pt.x - dim.w / 2, pt.y - dim.h / 2, pt.x + dim.w / 2, pt.y + dim.h / 2];
+    }
+    function inView(box) {
+      return box[0] >= inset.l && box[1] >= inset.t && box[2] <= sz.x - inset.r && box[3] <= sz.y - inset.b;
+    }
+    function crowded(box) {
+      const b = [box[0] - gap, box[1] - gap, box[2] + gap, box[3] + gap];
+      return taken.some((q) => boxesOverlap(b, q));
+    }
+    function owns(it, ll) {
+      return it.polys.some((poly) => insidePoly(ll.lat, ll.lng, poly));
+    }
+    function inOther(it, ll) {
+      for (const other of items) {
+        if (other !== it && owns(other, ll)) return true;
+      }
+      return false;
+    }
+    // 字心必须在本多边形里。两端可以落在海上，不能落进别国。
+    function insideOwn(box, it) {
+      const midY = (box[1] + box[3]) / 2;
+      const lls = [[(box[0] + box[2]) / 2, midY], [box[0] + 2, midY], [box[2] - 2, midY]]
+        .map(([x, y]) => map.containerPointToLatLng(L.point(x, y)));
+      if (!owns(it, lls[0])) return false;
+      return lls.every((ll) => owns(it, ll) || !inOther(it, ll));
+    }
+    function bestFit(it, shown) {
+      const dim = measureLabel(shown);
+      if (dim.w < 8 || dim.h < 8) return null;
+      const minX = inset.l + dim.w / 2, maxX = sz.x - inset.r - dim.w / 2;
+      const minY = inset.t + dim.h / 2, maxY = sz.y - inset.b - dim.h / 2;
+      if (minX > maxX || minY > maxY) return null;
+      let best = null;
+      for (const cand of it.cands) {
+        const raw = map.latLngToContainerPoint(cand.c);
+        const pt = L.point(Math.max(minX, Math.min(maxX, raw.x)), Math.max(minY, Math.min(maxY, raw.y)));
+        const box = boxOf(pt, dim);
+        if (!inView(box) || crowded(box) || !insideOwn(box, it)) continue;
+        const edge = Math.min(box[0] - inset.l, sz.x - inset.r - box[2], box[1] - inset.t, sz.y - inset.b - box[3]);
+        const score = edge * 3 + cand.span;
+        if (!best || score > best.score) best = { pt, box, score };
+      }
+      return best;
+    }
     for (const it of items) {
-      if (used.size >= cap) break;
-      const shown = shortPolity(it.name);
       if (used.has(it.name)) continue;
-      const pt = map.latLngToContainerPoint(it.c);
-      pt.y -= 12;
-      const wpx = Math.max(52, shown.length * 18);
-      const box = [pt.x - wpx / 2, pt.y - 14, pt.x + wpx / 2, pt.y + 14];
-      if (taken.some((q) => boxesOverlap(box, q))) continue;
-      taken.push(box);
+      if (it.name === "未命名区域") continue;
+      if (it.tier > 0 && extra >= extraMax) continue;
+      const preferred = shortPolity(it.name);
+      const names = [preferred];
+      const tight = tighterName(preferred);
+      if (tight !== preferred) names.push(tight);
+      let placed = null, shown = preferred;
+      for (const name of names) {
+        const fit = bestFit(it, name);
+        if (fit) { placed = fit; shown = name; break; }
+      }
+      if (!placed) continue;
+      if (it.tier > 0) extra++;
+      taken.push(placed.box);
       used.add(it.name);
+      const at = map.containerPointToLatLng(placed.pt);
       const icon = L.divIcon({
         className: "polity-label strategy-label", iconSize: null, iconAnchor: [0, 0],
-        html: `<span data-lat="${it.c.lat.toFixed(3)}" data-lng="${it.c.lng.toFixed(3)}" title="${esc(it.title || it.name)}">${esc(shown)}</span>`,
+        html: `<span data-lat="${at.lat.toFixed(3)}" data-lng="${at.lng.toFixed(3)}" title="${esc(it.title || it.name)}">${esc(shown)}</span>`,
       });
-      L.marker(map.containerPointToLatLng(pt), { icon, pane: "labels", interactive: false, keyboard: false }).addTo(labelLayer);
+      L.marker(map.containerPointToLatLng(placed.pt), { icon, pane: "labels", interactive: false, keyboard: false }).addTo(labelLayer);
     }
     WHA.polityLabelBoxes = taken;
+    map._whaSizing = false;
   }
   WHA.placePolityLabels = placeLabels;
   function scheduleAdmin1() { clearTimeout(adminTimer); adminTimer = setTimeout(loadAdmin1, 240); }

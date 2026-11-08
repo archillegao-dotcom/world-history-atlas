@@ -33,7 +33,7 @@
           (z.note ? `<div style="max-width:320px;white-space:normal"><small>${WHA.esc(z.note)}</small></div>` : "") +
           `<small>来源：${z.sources.map((u) => `<a href="${WHA.esc(u)}" target="_blank" rel="noopener">${WHA.esc(decodeURIComponent(u.replace(/^https?:\/\//, "")).slice(0, 48))}</a>`).join("；")}</small>`;
         const icon = L.divIcon({ className: "zone-label", iconSize: null, iconAnchor: [-6, 8],   // 标签整体右移 6px，标签点本身留给下面的政权多边形
-          html: `<span style="color:${strat ? "#f4efe6" : c};font-weight:600;font-size:12px;text-shadow:${strat ? "0 1px 2px #000,0 0 3px #000" : "0 0 3px #fff,0 0 3px #fff"};white-space:nowrap"><span class="zl-dot" style="color:${c}" title="点开说明">◇</span>${(strat && map.getZoom() < 5) || unnamed ? "" : " " + WHA.esc(z.name) + (z.approx ? "<small>（大致范围）</small>" : "")}</span>` });
+          html: `<span style="color:${strat ? "#f4efe6" : c};font-weight:600;font-size:12px;text-shadow:${strat ? "0 1px 2px #000,0 0 3px #000" : "0 0 3px #fff,0 0 3px #fff"};white-space:nowrap"><span class="zl-dot" style="color:${c}" title="点开说明">◇</span>${strat || unnamed ? "" : " " + WHA.esc(z.name) + (z.approx ? "<small>（大致范围）</small>" : "")}</span>` });
         L.marker([z.label[1], z.label[0]], { icon, keyboard: false, zIndexOffset: 800 }).bindPopup(tip, { maxWidth: 360 })
           // v0.6.1：点到标签（◇ 或文字）时，除弹出说明外也选中标签下方的政权，面板不再留空（1950 科威特）
           .on("click", () => WHA.selectAt(z.label[1], z.label[0])).addTo(group);
