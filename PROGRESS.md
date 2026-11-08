@@ -422,3 +422,7 @@ TNO / 钢铁雄心 IV 风格地图仍在队列里，本批没有做。只参考�
 ## 2026-11-08 综合复验（欧洲/巴黎 07:54–08:06）
 
 在 c1e277d 的 Linux 源码上重跑了 119、满洲 162 个月、阵营 72 个快照，以及 p0_batch2、p0_1941、p0_batch3、p0_batch4、p0_batch5、constitutions、tibet_panel、hillshade_coast、launcher 的 translocation 检查。退出码都是 0。接着对已经用 launcher 打开的 8792 跑了 `packaging/smoke_check.py`，退出码 0。这不是 Mac 或 Windows 打包。浏览器冒烟 `browser_reaudit.mjs` 退出码 0。没有改几何，没有新查书目。对照表在 `docs/REQUIREMENTS_0.6.2.md` 末节。42 条加 T01 仍不是全部完成。没有合并，没有发布。
+
+## 2026-11-08 战争脚本（欧洲/巴黎 08:11）
+
+只跑 `python3 tools/accept/war_audit.py`。进程退出码 0；脚本失败时不改退出码。86 条里 84 条通过，失败仍是 1808 年华沙（面板为普鲁士王国）和 2022-03-15 库皮扬斯克（当天 ISW 快照不含该点）。没有改代码，没有重跑 119。这不是学术史实审计。Task D、打包和史事纪要都没动。
