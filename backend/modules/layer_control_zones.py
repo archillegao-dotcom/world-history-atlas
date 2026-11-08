@@ -12,7 +12,7 @@ from ..registry import LayerModule
 
 KIND_ZH = {"holdout": "残余控制区", "de_facto": "事实独立", "occupied": "军事占领/接管", "armed_presence": "武装存在（非主权控制）",
            "war_zone": "交战区", "leased": "租借地", "annexed": "吞并", "regime": "政权（统一/更替）",
-           "unverified": "范围未核实"}
+           "unverified": "范围未核实", "claim": "声索说明，不是实际控制"}
 
 
 class ControlZonesLayer(LayerModule):
@@ -43,7 +43,7 @@ class ControlZonesLayer(LayerModule):
                         "dates_note": z.get("dates_note"), "note": z.get("note"), "sources": z.get("sources", []),
                         "as_polity": bool(z.get("as_polity")), "label": z["_label"], "geom": z["geom"]})
         return {"items": out, "total": len(out),
-                "note": "实际控制区只覆盖已人工整理的冲突（目前：国共内战结束阶段、西藏 1912–1959）；其他地区没有画不代表没有。只选年份、不选月份时，按这一年的年中判断，不是 1 月 1 日，也不是全年都显示。只写到年的起始日按该年 1 月 1 日，只写到月的结束日维持到该月末。"}
+                "note": "实际控制区只覆盖已人工整理的冲突。西藏1913年起才单列；1950年10月2日以后不把整块涂成已经易手。声索样本是虚线小框，不是边界，也不改底图颜色。其他地区没有画不代表没有。只选年份、不选月份时，按这一年的年中判断。"}
 
 
 MODULE = ControlZonesLayer()

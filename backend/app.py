@@ -227,7 +227,8 @@ def layer_query(mid: str, date: str, request: Request, limit: int | None = Query
 
 @app.get("/api/modules/{mid}")
 def module_query(mid: str, date: str, snap: str | None = None, fid: int | None = None,
-                 span: float | None = None, limit: int | None = Query(None, le=500), state: str | None = None):
+                 span: float | None = None, limit: int | None = Query(None, le=500), state: str | None = None,
+                 lat: float | None = None, lon: float | None = None):
     m = registry.modules.get(mid)
     if not m or m.kind != "panel":
         raise HTTPException(404, f"未知模块 {mid}")
@@ -242,7 +243,7 @@ def module_query(mid: str, date: str, snap: str | None = None, fid: int | None =
         pol = basemaps.polity(s, fid)
         if not pol:
             raise HTTPException(404, "没有这个政权")
-    res = m.query(ctx, pol, d, {"span": span, "limit": limit, "snap": s, "state": state})
+    res = m.query(ctx, pol, d, {"span": span, "limit": limit, "snap": s, "state": state, "lat": lat, "lon": lon})
     return JSONResponse({"module": mid, "date": date, "date_zh": d.label_zh(), "snapshot": s,
                          "polity": pol["props"] if pol else None, **res})
 

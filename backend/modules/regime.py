@@ -129,7 +129,7 @@ class RegimeModule(ContentModule):
         fl, fl_dated, fl_from, fl_src = flag_at(ctx.data_dir, fl_states, dk)
         summ = wiki.summary(st.get("zhwiki"), st.get("enwiki")) if params.get("online", True) else None
         term = lambda x: {"id": x["v"], "name": _zh_disp(x.get("zh") or x.get("en") or x["v"]), "en": x.get("en")}
-        return {"items": [], "total": 1, "kind": "regime",
+        out = {"items": [], "total": 1, "kind": "regime",
                 "state": {"id": st["id"], "name": display_name or _zh_disp(st.get("zh") or st.get("en")), "en": st.get("en"),
                           "desc": st.get("desc"),
                           "from": display_from if display_from is not None else (fmt_time(st.get("from")) if st.get("from") else None),
@@ -149,6 +149,11 @@ class RegimeModule(ContentModule):
                 "definition": wiki.first_sentence(summ["extract"]) if summ else None,
                 "definition_src": summ and {"lang": summ["lang"], "url": summ["url"], "title": summ["title"]},
                 "note": " ".join(x for x in ("政体等字段以 Wikidata 为准；没有时间限定的值单独标出（可能不适用于所选日期）。", extra_note) if x)}
+        if polity and isinstance(polity["props"].get("fid"), int) and polity["props"].get("TERRITORY"):
+            trec = ctx.basemaps.trans.terr[polity["props"]["fid"] - 200000]
+            out["geom_note"] = trec.get("geom_note")
+        from ..ganden import finish_regime
+        return finish_regime(out, polity, date, params)
 
 
 MODULE = RegimeModule()

@@ -83,6 +83,7 @@
     map: null,   // 测试用：Playwright 通过 WHA.map 把经纬度换成屏幕坐标
     // 按坐标选中所在的政权多边形（城市标记、小国标记点击时用）
     selectAt: async (lat, lon) => {
+      state.pick = { lat, lon };
       const r = await api(`/api/locate?date=${dateParam(state.date)}&lat=${lat}&lon=${lon}`).catch(() => null);
       if (r && r.polity && r.snapshot === state.snap) selectPolity(r.polity.fid);
     },
@@ -607,6 +608,7 @@
         // 点到没有对应政权的底图多边形（文化/地区）时，按坐标解析：小岛的底图多边形可能压在殖民地分区之上（如 1950 年圣基茨属英属背风群岛）
         bindHover(l, f);
         l.on("click", async (e) => {
+          state.pick = { lat: e.latlng.lat, lon: e.latlng.lng };
           if (snapNames[state.snap]?.[String(p.fid)]?.qid) return selectPolity(p.fid);
           const r = await api(`/api/locate?date=${dateParam(state.date)}&lat=${e.latlng.lat}&lon=${e.latlng.lng}`).catch(() => null);
           selectPolity(r && r.polity && r.snapshot === state.snap ? r.polity.fid : p.fid);
@@ -638,6 +640,7 @@
       mk.on("click", async (e) => {
         L.DomEvent.stopPropagation(e);
         const ll = mk.getLatLng();
+        state.pick = { lat: ll.lat, lon: ll.lng };
         const r = await api(`/api/locate?date=${dateParam(state.date)}&lat=${ll.lat}&lon=${ll.lng}`).catch(() => null);
         selectPolity(r && r.polity && r.snapshot === state.snap ? r.polity.fid : p.fid);
       });
@@ -853,7 +856,9 @@
     }
     renderTabs();
     $("tabBody").innerHTML = '<div class="empty">加载中…</div>';
-    const q = `date=${dateParam(state.date)}&snap=${state.snap}` + (state.world ? "" : `&fid=${state.fid}`) + (state.stateSel ? `&state=${state.stateSel}` : "");
+    const pick = state.pick;
+    const q = `date=${dateParam(state.date)}&snap=${state.snap}` + (state.world ? "" : `&fid=${state.fid}`) + (state.stateSel ? `&state=${state.stateSel}` : "") +
+      (pick && pick.lat != null ? `&lat=${pick.lat}&lon=${pick.lon}` : "");
     await Promise.all(mods.map(async (m) => {
       try { results[m.id] = await api(`/api/modules/${m.id}?${q}`); } catch (e) { results[m.id] = { items: [], total: 0, note: "出错：" + e.message }; }
       if (seq !== reqSeq) return;

@@ -208,6 +208,8 @@ body.strategy .sw-border { background: #e6e0d4; }
   .mod-constitution .note { font-size: 14px; line-height: 1.55; }
   .mod-constitution .item .t { font-size: 16px; line-height: 1.35; }
   .mod-constitution .s, .mod-constitution .d { font-size: 14px; line-height: 1.5; }
+  .mod-state .note, .mod-state .s, .mod-state .d { font-size: 14px; line-height: 1.5; }
+  .mod-state .terr-box, .mod-state .claim-box { font-size: 14px; line-height: 1.5; }
   .strategy-label span { font-size: 16px; }
   .leaflet-control-attribution { max-width: calc(100vw - 118px); max-height: 2.8em; overflow: auto; font-size: 9px; }
   #eraNote { max-width: calc(100vw - 12px); z-index: 1100; }

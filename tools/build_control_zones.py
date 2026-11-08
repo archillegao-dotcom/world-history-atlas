@@ -64,9 +64,9 @@ def resolve(spec):
         gs += [f["geom"] for f in B.features(b["snap"]).values() if f["props"].get("NAME") == b["name"]]
     if "cshapes" in spec:   # CShapes 2.0 在某日期有效的行（按 gwcode）
         c = spec["cshapes"]
-        import gzip as _gz
         if "cs" not in _cache:
-            _cache["cs"] = json.loads(_gz.decompress((config.DATA_DIR / "cshapes.json.gz").read_bytes()))
+            from backend.datafile import read_json
+            _cache["cs"] = read_json(config.DATA_DIR / "cshapes.json.gz")
         k = int(c["date"].replace("-", ""))
         for r in _cache["cs"]["rows"]:
             if r["gw"] in c["gw"] and r["from"] <= k and (r["to"] is None or k < r["to"]):

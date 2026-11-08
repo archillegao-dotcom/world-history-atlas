@@ -152,7 +152,8 @@ class Transitions:
             nf = OFF_TERR + i
             cut(g)
             feats[nf] = {"props": {"fid": nf, "NAME": t["name"], "NAME_ZH": t.get("name_zh"), "SUBJECTO": t.get("sov_name"),
-                                   "TERRITORY": t["id"], "TERR_CAT": t.get("cat"), "BORDERPRECISION": 3}, "geom": g, "a0": g.area}
+                                   "TERRITORY": t["id"], "TERR_CAT": t.get("cat"), "ZONE": t.get("zone"),
+                                   "BORDERPRECISION": t.get("precision") or (1 if t.get("cat") == "unverified" else 3)}, "geom": g, "a0": g.area}
             origin[nf] = ("terr", i)
         for f in feats.values():
             prepare(f["geom"])

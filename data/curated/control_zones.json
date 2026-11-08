@@ -262,30 +262,67 @@
    ]
   },
   {
-   "id": "tibet_de_facto_1912_1951",
+   "id": "tibet_ganden_1950",
    "group": "tibet",
    "kind": "de_facto",
-   "as_polity": false,
-   "name_zh": "西藏（噶厦政府，事实独立）",
-   "name_en": "Tibet (Ganden Phodrang, de facto independent)",
+   "as_polity": true,
+   "precision": 1,
+   "cat": "zone_de_facto",
+   "name_zh": "甘丹颇章",
+   "name_en": "Ganden Phodrang",
    "controller": {
     "qid": "Q2444884",
-    "zh": "西藏（1912–1951）"
+    "zh": "甘丹颇章"
    },
-   "from": "1912",
-   "until": "1951-05-23",
+   "from": "1950-10-02",
+   "until": "1951-08-09",
    "geometry": {
-    "basemap": {
-     "snap": 1945,
-     "name": "Tibet"
+    "cshapes": {
+     "date": "1950-09-30",
+     "gw": [
+      711
+     ]
     }
    },
    "approx": true,
-   "dates_note": "清朝灭亡后西藏噶厦政府事实独立（Wikidata Q2444884 起于 1912 年）；1951-05-23 签订《十七条协议》，中华人民共和国取得主权（英文维基「Seventeen Point Agreement」）。噶厦政府在协议后继续存在至 1959 年 3 月。",
-   "note": "范围取自 historical-basemaps 1945 年快照的「Tibet」多边形（近似）。",
+   "dates_note": "CShapes 把单独的西藏多边形收到1950年10月1日，下一天整块并进中国。那不是拉萨进驻，也不是《十七条协议》。本块从1950年10月2日沿用结束前的那条轮廓，到1951年8月9日为止（不含当天）。8月9日是新疆骑兵进驻噶大克的档案日期，不是整块易手。",
+   "note": "轮廓是数据集里的旧多边形，精度为大致，不是新测的控制线，也不是历史省界。昌都大致框从1950年10月24日起从这块挖去。",
    "sources": [
-    "https://www.wikidata.org/wiki/Q2444884",
-    "https://en.wikipedia.org/wiki/Seventeen_Point_Agreement"
+    "https://www.xizang.gov.cn/xwzx_406/ztzl_416/gdzt/66zn/dsj/201901/t20190117_51822.html",
+    "https://da.xzdw.gov.cn/dayz/lsjz/201801/t20180108_151175.html"
+   ]
+  },
+  {
+   "id": "tibet_unverified_1951",
+   "group": "tibet",
+   "kind": "unverified",
+   "as_polity": true,
+   "precision": 1,
+   "cat": "unverified",
+   "name_zh": "西藏中部与西部（范围未核实）",
+   "name_en": "Central and western Tibet (extent unverified)",
+   "controller": {
+    "qid": "Q2444884",
+    "zh": "甘丹颇章（职务记录，不是全境实控）"
+   },
+   "from": "1951-08-09",
+   "until": "1959-03-28",
+   "geometry": {
+    "cshapes": {
+     "date": "1950-09-30",
+     "gw": [
+      711
+     ]
+    }
+   },
+   "approx": true,
+   "dates_note": "1951年8月9日进驻噶大克、9月9日拉萨先遣、10月26日拉萨主力，都不能当成这块在同一天全区变色。1951年5月23日是协议签署，第17条写签字后立即生效，第4条写政治制度不予变更。1959年3月28日国务院命令写自即日起解散西藏地方政府，这一天起本块不再单列。灰色表示范围未核实，不是中华人民共和国的实控色。",
+   "note": "仍用1950年10月1日前的数据集轮廓减去昌都大致框。没有逐点历史几何，所以不涂成已证实的全境控制。",
+   "sources": [
+    "https://zh.wikisource.org/zh-hans/%E4%B8%AD%E5%A4%AE%E4%BA%BA%E6%B0%91%E6%94%BF%E5%BA%9C%E5%92%8C%E8%A5%BF%E8%97%8F%E5%9C%B0%E6%96%B9%E6%94%BF%E5%BA%9C%E5%85%B3%E4%BA%8E%E5%92%8C%E5%B9%B3%E8%A7%A3%E6%94%BE%E8%A5%BF%E8%97%8F%E5%8A%9E%E6%B3%95%E7%9A%84%E5%8D%8F%E8%AE%AE",
+    "https://da.xzdw.gov.cn/dayz/lsjz/201801/t20180108_151175.html",
+    "https://www.gov.cn/lssdjt/content_1832698.htm",
+    "https://www.xizang.gov.cn/rsxz/lsyg/202306/t20230607_359663.html"
    ]
   },
   {
@@ -293,14 +330,14 @@
    "group": "tibet",
    "kind": "occupied",
    "as_polity": true,
-   "name_zh": "昌都地区（共军控制）",
-   "name_en": "Chamdo (PLA-controlled)",
+   "name_zh": "昌都大致框（共军控制，不是辖境）",
+   "name_en": "Chamdo rough box (PLA control, not a jurisdiction)",
    "controller": {
     "qid": "Q148",
     "zh": "中华人民共和国"
    },
    "from": "1950-10-24",
-   "until": "1959-03-10",
+   "until": "1959-03-28",
    "geometry": {
     "admin1": [
      "CN-XZ"
@@ -313,11 +350,13 @@
     ]
    },
    "approx": true,
-   "dates_note": "昌都战役 1950-10-06 至 10-24（英文维基「Battle of Chamdo」），此后昌都地区由中华人民共和国设立的昌都解放委员会管理；1959 年 3 月噶厦政府解散后整个西藏由中华人民共和国直接管治，此区域不再单独显示。",
-   "note": "范围按现代西藏自治区东部（约东经 93.6° 以东）近似，大致对应今昌都市。",
+   "dates_note": "昌都战役1950年10月6日开始，10月24日结束。本框从10月24日起，不把10月6日写成整框已占。框是今天西藏自治区东段切出来的，不是1950年的昌都辖境，也不是当天的战线。精度：大致。",
+   "note": "拉萨不在这个框里。1951年5月23日的协议和10月26日进驻拉萨都不改变这个框的起算日。1959年3月28日命令日起不再单列。",
    "sources": [
-    "https://en.wikipedia.org/wiki/Battle_of_Chamdo"
-   ]
+    "https://www.xizang.gov.cn/xwzx_406/ztzl_416/gdzt/66zn/dsj/201901/t20190117_51822.html",
+    "https://da.xzdw.gov.cn/dayz/lsjz/201801/t20180108_151175.html"
+   ],
+   "precision": 1
   },
   {
    "id": "kmt_burma_1950_1961",
@@ -12463,6 +12502,92 @@
      ]
     ]
    }
+  },
+  {
+   "id": "claim_tawang_sample",
+   "group": "tibet",
+   "kind": "claim",
+   "as_polity": false,
+   "name_zh": "达旺样本（声索说明，不是边界）",
+   "name_en": "Tawang sample (claim note, not a border)",
+   "controller": {
+    "qid": null,
+    "zh": "不是控制方"
+   },
+   "from": "1914-07-03",
+   "geometry": {
+    "polygon": [
+     [
+      91.55,
+      27.35
+     ],
+     [
+      92.15,
+      27.35
+     ],
+     [
+      92.15,
+      27.85
+     ],
+     [
+      91.55,
+      27.85
+     ],
+     [
+      91.55,
+      27.35
+     ]
+    ]
+   },
+   "approx": true,
+   "dates_note": "小框只标出样本，不是藏南边界，也不是麦克马洪线。1914年7月3日以前不显示。印度人员1951年2月6日进入达旺，1951年8月写到有效管治。中国声索线南。底图颜色仍是实际控制多边形的颜色。",
+   "note": "不把今天的印度实控倒回1914年以前，也不倒回清朝多边形。",
+   "sources": [
+    "https://www.claudearpi.in/wp-content/uploads/2021/02/2012-Sonia_Shukla_Integratig-Tawang.pdf"
+   ]
+  },
+  {
+   "id": "claim_aksai_sample",
+   "group": "tibet",
+   "kind": "claim",
+   "as_polity": false,
+   "name_zh": "阿克赛钦样本（声索说明，不是边界）",
+   "name_en": "Aksai Chin sample (claim note, not a border)",
+   "controller": {
+    "qid": null,
+    "zh": "不是控制方"
+   },
+   "from": "1947-08-15",
+   "geometry": {
+    "polygon": [
+     [
+      78.5,
+      34.9
+     ],
+     [
+      79.5,
+      34.9
+     ],
+     [
+      79.5,
+      35.5
+     ],
+     [
+      78.5,
+      35.5
+     ],
+     [
+      78.5,
+      34.9
+     ]
+    ]
+   },
+   "approx": true,
+   "dates_note": "小框只标出样本，不是阿克赛钦边界。1947年8月15日底图把这个点画进中国，那是数据集换图，不是当天核实的易手。公路修通的陈述是1957年9月。印度声索。声索不改涂底图。",
+   "note": "1957年9月不是9月1日全区易手。更早的年份不显示这个框。",
+   "sources": [
+    "https://nehruarchive.in/documents/in-the-rajya-sabha-chinese-road-construction-in-ladakh-31-august-1959-z7g9y"
+   ]
   }
  ]
 }

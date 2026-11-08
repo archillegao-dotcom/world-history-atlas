@@ -208,11 +208,13 @@ def snapshot_names(snap: str, date: str | None = None):
         d = _ctx().basemaps.trans.parse(snap)[1]
     else:
         d = HDate(snap if snap != 0 else 1, 0, 0)
+    from .ganden import feature_label
     out = {}
     for fid in _ctx().basemaps.features(snap):
         cands = R.resolve(snap, fid, d)
         c = R.primary(cands, d)
-        lab = _ctx().basemaps.features(snap)[fid]["props"].get("LABEL_ZH")
+        props = _ctx().basemaps.features(snap)[fid]["props"]
+        lab = feature_label(props) or props.get("LABEL_ZH")
         if c and lab:
             out[str(fid)] = {"zh": lab, "qid": c["state"]["id"], "method": c["method"]}
         elif c and c["method"] == "owner":

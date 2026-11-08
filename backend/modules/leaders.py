@@ -311,7 +311,7 @@ class LeadersModule(ContentModule):
                     "history": [{"id": c["id"], "name": _zh_disp(c.get("zh") or c.get("en")), "from": fmt_time(c.get("from")),
                                  "to": fmt_time(c.get("to")) if c.get("to") else None} for c in chain]}
         n = len(heads) + len(offices) + sum(len(c["leaders"]) for c in inter)
-        return {"items": [], "total": n, "kind": "leaders",
+        out = {"items": [], "total": n, "kind": "leaders",
                 "state": {"id": st["id"], "name": _zh_disp(st.get("zh") or st.get("en")), "en": st.get("en"), "desc": st.get("desc")},
                 "alternatives": [{**a, "method_zh": METHOD_ZH.get(a["method"], a["method"])} for a in alts],
                 "merged": [{"id": x["id"], "name": _zh_disp(x.get("zh") or x.get("en"))} for x in group[1:]],
@@ -321,6 +321,8 @@ class LeadersModule(ContentModule):
                                                     and date.y < LEGENDARY_STATE[st["id"]][0] else None)) if x) or None, "territory": terr,
                 "note": "数据来自 Wikidata 的职务记录；没有起止时间的任职记录不显示。" +
                         ("" if n else "这一日期没有找到带时间的任职记录。")}
+        from ..ganden import finish_leaders
+        return finish_leaders(out, polity, date, params)
 
 
 MODULE = LeadersModule()

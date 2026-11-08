@@ -48,6 +48,8 @@
         (t.geom_note ? `<div class="s">${esc(t.geom_note)}</div>` : "") +
         (t.history?.length ? `<div class="s">地位变化（Wikidata）：${t.history.map((x) => `${esc(x.name)} ${span(x.from, x.to)}`).join("；")}</div>` : "") + `</div>`;
     }
+    if (r.claim) h += `<div class="claim-box"><b>声索与实控</b><div class="s">${esc(r.claim)}</div></div>`;
+    if (r.curated_offices?.length) h += `<h4>核对过的职务</h4>` + r.curated_offices.map((x) => `<div class="item"><div class="t">${esc(x.role)}：${esc(x.name)}</div><div class="d">${esc(x.span)}</div><div class="s">${esc(x.note)}</div><div class="src"><a href="${esc(x.src)}" target="_blank" rel="noopener">来源</a></div></div>`).join("");
     if (r.state_note) h += `<div class="note">${esc(r.state_note)}</div>`;
     if (r.merged?.length) h += `<div class="note">同一国家在 Wikidata 中还有以下条目（同名或当时首都相同），其记录一并显示：${r.merged.map((x) => esc(x.name)).join("、")}</div>`;
     // 空位期 / 共治 / 摄政 / 权臣 / 对立君主：该时期实际掌权的人（按本官列出，带角色标签）
@@ -70,7 +72,7 @@
         ${o.holders.map((x) => `<div class="d">${P(x.person)} · ${span(x.from, x.to)}${x.to ? (x.to_note ? `<small>（卸任时间取自${esc(x.to_note)}）</small>` : "") : "（未记录卸任时间）"}</div>` +
           (x.legend ? `<div class="note">${esc(x.legend)}</div>` : "")).join("")}</div>`).join("");
     }
-    if (!r.heads?.length && !r.offices?.length && !r.interregna?.length) h += `<div class="empty">没有找到所选日期的任职记录。</div>`;
+    if (!r.heads?.length && !r.offices?.length && !r.interregna?.length && !r.curated_offices?.length) h += `<div class="empty">没有找到所选日期的任职记录。</div>`;
     if (r.undated_offices?.length) h += `<h4>任期未记录的职位</h4><div class="note">以下职位在 Wikidata 中有任职者，但多数没有记录任期，无法判断所选日期谁在任（点开可看历任者）：</div>` +
       r.undated_offices.map((o) => `<span class="chip">${O(o)} <small>${o.n}人</small></span>`).join(" ");
     h += r.note ? `<div class="note">${esc(r.note)}</div>` : "";
@@ -85,6 +87,8 @@
     box.className = "mod-state";
     let h = altSelector(r);
     const s = r.state;
+    if (r.geom_note) h += `<div class="note">${esc(r.geom_note)}</div>`;
+    if (r.claim) h += `<div class="claim-box"><b>声索与实控</b><div class="s">${esc(r.claim)}</div></div>`;
     if (s) {
       h += `<div class="regime-head">${s.flag ? `<img class="flag" src="${esc(s.flag)}" alt="国旗">` : ""}<div><b>${esc(s.name)}</b>${s.en && s.en !== s.name ? ` <span class="en">${esc(s.en)}</span>` : ""}
         <div class="d">存在：${span(s.from, s.to) || "未记录"}</div>
@@ -98,7 +102,7 @@
       if (r.definition) h += `<div class="def">${esc(r.definition)}<div class="src">——<a href="${esc(r.definition_src.url)}" target="_blank" rel="noopener">${r.definition_src.lang === "zh" ? "中文维基百科" : "English Wikipedia"}「${esc(r.definition_src.title)}」</a>首句</div></div>`;
       const terms = (l) => l.map((x) => `<a href="https://www.wikidata.org/wiki/${esc(x.id)}" target="_blank">${esc(x.name)}</a>`).join("、");
       h += `<table class="kv">
-        <tr><th>政体</th><td>${r.gov_from ? `<small>（取自「${esc(r.gov_from)}」条目）</small>` : ""}${r.gov.length ? terms(r.gov) : r.gov_undated.length ? terms(r.gov_undated) + ' <span class="badge country" title="Wikidata 未注明适用时间">未注明时间</span>' : "—"}</td></tr>
+        <tr><th>政体</th><td>${r.gov_note ? esc(r.gov_note) : (r.gov_from ? `<small>（取自「${esc(r.gov_from)}」条目）</small>` : "") + (r.gov.length ? terms(r.gov) : r.gov_undated.length ? terms(r.gov_undated) + ' <span class="badge country" title="Wikidata 未注明适用时间">未注明时间</span>' : "—")}</td></tr>
         <tr><th>执政党</th><td>${r.parties.length ? r.parties.map((x) => `${esc(x.party)}（${esc(x.role)} ${P(x.person)} 所属${x.dated ? "" : '，<span class="badge country">未注明时间</span>'}）`).join("<br>") : "—"}</td></tr>
         <tr><th>意识形态</th><td>${r.ideology_from && r.ideology.length ? `<small>（取自「${esc(r.ideology_from)}」条目）</small>` : ""}${r.ideology.length ? terms(r.ideology) : "—"}</td></tr>
         <tr><th>首都</th><td>${r.capital.length ? r.capital.map(esc).join("、") : "—"}</td></tr>
