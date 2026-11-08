@@ -88,7 +88,9 @@
     },
     openDetail: (html) => { $("detailBody").innerHTML = html; $("detail").classList.remove("hidden"); $("detailBody").scrollTop = 0; return $("detailBody"); },
   };
-  const panelMods = () => state.meta.modules.filter((m) => (m.kind || "panel") === "panel");
+  const allPanelMods = () => state.meta.modules.filter((m) => (m.kind || "panel") === "panel");
+  // 宪法页只在这一天有正在施行的文本时出现。没请求回来之前不先占一个空标签。
+  const panelMods = () => allPanelMods().filter((m) => m.id !== "constitution" || !!(results.constitution && results.constitution.shown));
   const layerMods = () => state.meta.modules.filter((m) => m.kind === "layer");
 
   // ---------------------------------------------------------------- 地图
@@ -845,14 +847,20 @@
       (p?.PARTOF && p.PARTOF !== p.NAME && p.PARTOF !== p.SUBJECTO ? ` · 属于：${esc(pnameN(p.PARTOF))}` : "") +
       (qidF(p) ? ` · <a href="https://www.wikidata.org/wiki/${qidF(p)}" target="_blank">Wikidata</a>` : "") +
       (p?.BORDERPRECISION ? `<br>边界精度：${{ 1: "大致（1/3）", 2: "中等（2/3）", 3: "较精确（3/3）" }[p.BORDERPRECISION] || p.BORDERPRECISION}` : "");
-    const mods = panelMods();
-    if (!state.tab || !mods.find((m) => m.id === state.tab)) state.tab = mods[0]?.id;
+    const mods = allPanelMods();
+    if (!state.tab || !panelMods().find((m) => m.id === state.tab)) {
+      if (state.tab !== "constitution") state.tab = panelMods()[0]?.id;
+    }
     renderTabs();
     $("tabBody").innerHTML = '<div class="empty">加载中…</div>';
     const q = `date=${dateParam(state.date)}&snap=${state.snap}` + (state.world ? "" : `&fid=${state.fid}`) + (state.stateSel ? `&state=${state.stateSel}` : "");
     await Promise.all(mods.map(async (m) => {
       try { results[m.id] = await api(`/api/modules/${m.id}?${q}`); } catch (e) { results[m.id] = { items: [], total: 0, note: "出错：" + e.message }; }
-      if (seq === reqSeq) { renderTabs(); if (m.id === state.tab) renderBody(); }
+      if (seq !== reqSeq) return;
+      const was = state.tab;
+      if (!panelMods().some((x) => x.id === state.tab)) state.tab = panelMods()[0]?.id;
+      renderTabs();
+      if (m.id === state.tab || was !== state.tab) renderBody();
       // 标题用所选日期解析到的 Wikidata 政权中文名（比按快照年份的名称更准确，如 1948 年 6 月的「中华民国」）；
       // 政权模块一返回就更新，不等其他模块（事件、人物等可能要几秒）
       const rs = m.id === "regime" ? results.regime?.state : null;
