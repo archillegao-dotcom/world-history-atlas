@@ -117,6 +117,9 @@
   const geoCache = {};
 
   const hue = (s) => { let h = 0; for (const c of s || "") h = (h * 31 + c.charCodeAt(0)) >>> 0; return h % 360; };
+  // 甘丹颇章 Q2444884 散列色相 297，英属印度 Q129286 是 305。策略地图饱和度 24% 时邻接几乎同色。只改这一色相，不改几何。92 避开中华民国 36、尼泊尔 3、不丹 182。
+  const HUE_FIX = { Q2444884: 92 };
+  const hueOf = (key) => Object.prototype.hasOwnProperty.call(HUE_FIX, key) ? HUE_FIX[key] : hue(key);
   const strategyOn = () => document.body.classList.contains("strategy");
   // 填色按「当日解析出的政权」（同一政权的多个多边形同色，如 1125 年后的辽朝故地与金朝控制区）；殖民地仍按宗主国
   const styleFor = (f, selected) => {
@@ -124,11 +127,11 @@
     const strat = strategyOn();
     const base = strat ? {
       color: selected ? "#e6d3a1" : "#12100e", weight: selected ? 2.4 : 1.75, opacity: 1,
-      fillColor: n ? `hsl(${hue(colorKey(f.properties, n))}, 24%, ${selected ? 42 : 34}%)` : "#3c433c",
+      fillColor: n ? `hsl(${hueOf(colorKey(f.properties, n))}, 24%, ${selected ? 42 : 34}%)` : "#3c433c",
       fillOpacity: 0.97,
     } : {
       color: selected ? "#8a1c00" : "#6b5a48", weight: selected ? 2.5 : 0.6, opacity: 0.9,
-      fillColor: n ? `hsl(${hue(colorKey(f.properties, n))}, 45%, ${selected ? 62 : 74}%)` : "#ddd6c8",
+      fillColor: n ? `hsl(${hueOf(colorKey(f.properties, n))}, 45%, ${selected ? 62 : 74}%)` : "#ddd6c8",
       fillOpacity: selected ? 0.85 : 0.75,
     };
     // 图层模块（如「阵营地图」）可以通过 WHA.setFillOverride(fn) 改写多边形填色

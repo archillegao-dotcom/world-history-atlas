@@ -39,12 +39,13 @@ def _on(date, a, b):
 def point_note(date, lat, lon) -> str | None:
     """只在样本点、而且只在写明的年份里出现。没有点击坐标时不套到整个印度或中国。"""
     if _in(_LHASA, lat, lon) and _on(date, "1912-01-01", "1912-12-31"):
-        return ("1912年拉萨在底图上仍是中国多边形，点开看到的是中华民国的职务，不是甘丹颇章的摄政。"
-                "CShapes 从1913年1月1日才把西藏单列成一块。这个日期不是甘丹颇章的成立日，也不是当天划定的边界。"
-                "本批不把后来的西藏轮廓回贴到1912年。")
+        return ("已知缺陷：1912年点选拉萨仍落到中华民国，是底图还没有单独几何，不是已经核实这一年由中华民国统治。"
+                "1913年1月1日才被数据集单列。那个日期不是成立日，也不是划定的边界，更不是史实确证的易手日。"
+                "本批不把后来的轮廓回贴到1912年，也不把这个缺陷写成已经修好。")
     if _in(_LHASA, lat, lon) and date.key() >= HDate(1959, 3, 28).key():
-        return ("1959年3月28日起，这块回到中国多边形。国务院命令写「自即日起」解散西藏地方政府，由西藏自治区筹备委员会行使西藏地方政府职权。"
-                "这是命令的生效措辞，不是这一天把每一点都测过。也不是1951年5月23日签署或10月26日进驻拉萨。"
+        return ("1959年3月28日国务院命令写「自即日起」解散西藏地方政府，由西藏自治区筹备委员会行使西藏地方政府职权。"
+                "地图这一天回到中国多边形，只表示命令里的政权废除和管理标识，不是该日全境战线已经测过，也不是每一点的实控确证。"
+                "不是1951年5月23日签署，也不是10月26日进驻拉萨。"
                 "https://www.gov.cn/lssdjt/content_1832698.htm "
                 "https://www.xizang.gov.cn/rsxz/lsyg/202306/t20230607_359663.html")
     if _in(_TAWANG, lat, lon) and _on(date, "1914-07-03", "1951-02-05"):
@@ -82,34 +83,43 @@ def _between(date, a, b):
 def offices_at(date) -> list[dict]:
     rows = []
     if _between(date, "1913-01-01", "1933-12-17"):
-        rows.append({"role": "达赖喇嘛（掌政）", "name": "十三世达赖喇嘛土登嘉措",
+        rows.append({"role": "达赖喇嘛（掌政）", "tag": "掌政", "power": True, "name": "十三世达赖喇嘛土登嘉措",
                      "span": "本图从1913年1月1日列到1933年12月17日",
                      "note": "去世日是1933年12月17日。1895年亲政早于这块多边形，不回写。甘丹颇章作为制度通常从1642年算起，本页只核1912–1951。",
                      "src": "https://www.dalailama.com/the-dalai-lama/events-and-awards/chronology-of-events"})
     elif _between(date, "1933-12-18", "1933-12-31"):
-        rows.append({"role": "掌政", "name": "未记录",
+        rows.append({"role": "掌政", "tag": "未记录", "power": True, "name": "未记录",
                      "span": "1933年12月18日至1933年12月31日",
                      "note": "十三世达赖于1933年12月17日去世。摄政选举月份记到1934年1月，这一天没有核对到在任者。",
                      "src": "https://www.dalailama.com/the-dalai-lama/events-and-awards/chronology-of-events"})
-    if _between(date, "1934-01-01", "1941-12-31"):
-        rows.append({"role": "摄政", "name": "热振活佛",
-                     "span": "1934年1月至1941年",
-                     "note": "1934年1月由民众大会选出，日待考。1941年交卸，月份待考。1941年全年与达扎并列，不挑一个日子。",
+    if _between(date, "1934-01-01", "1940-12-31"):
+        rows.append({"role": "摄政", "tag": "摄政", "power": True, "name": "热振活佛",
+                     "span": "1934年1月（日待考）起，1941年交卸（月份待考）",
+                     "note": "1934年1月由民众大会选出，日待考。1940年及以前不把达扎写成已经摄政。",
                      "src": "https://www.tibetjustice.org/reports/chron.html"})
-    if _between(date, "1941-01-01", "1950-11-16"):
-        rows.append({"role": "摄政", "name": "达扎活佛",
-                     "span": "1941年至1950年11月16日",
-                     "note": "1941年起接摄政，月份待考。汉文全名本批未核到可引用的原文，不另造译名。1950年11月17日起不再写成仍掌政。",
+    elif _between(date, "1941-01-01", "1941-12-31"):
+        rows.append({"role": "摄政", "tag": "摄政", "power": True, "uncertain": True, "name": "热振活佛",
+                     "span": "1934年1月（日待考）起；1941年交卸，月份待考",
+                     "note": "这一天落在交接年。月份未知，不能确定他是否仍在任。和达扎一起出现是日期精度不够，不是两人共治。",
+                     "src": "https://www.tibetjustice.org/reports/chron.html"})
+        rows.append({"role": "摄政", "tag": "摄政", "power": True, "uncertain": True, "name": "达扎活佛",
+                     "span": "1941年接任，月份待考",
+                     "note": "接任月份没有核到，不能确定这一天他是否已经接任。不写成与热振共治。汉文全名待考，不另造译名。",
+                     "src": "https://www.tibetjustice.org/reports/chron.html"})
+    if _between(date, "1942-01-01", "1950-11-16"):
+        rows.append({"role": "摄政", "tag": "摄政", "power": True, "name": "达扎活佛",
+                     "span": "1942年1月1日起按已接任书写，至1950年11月16日",
+                     "note": "1941年的交接月份仍待考，不回写成1月1日已经接任。汉文全名待考，不另造译名。1950年11月17日起不再写成仍掌政。",
                      "src": "https://www.tibetjustice.org/reports/chron.html"})
     if _between(date, "1940-02-22", "1950-11-16"):
-        rows.append({"role": "达赖喇嘛（已坐床，尚未亲政）", "name": "十四世达赖喇嘛丹增嘉措",
+        rows.append({"role": "达赖喇嘛（已坐床，尚未亲政）", "tag": "尚未亲政", "power": False, "name": "十四世达赖喇嘛丹增嘉措",
                      "span": "1940年2月22日坐床至1950年11月16日",
-                     "note": "坐床不是亲政。这一段不把他写成政府首脑，也不借用总统或主席。",
+                     "note": "坐床不是亲政。这一段不把他写成实际掌权者，也不借用总统或主席。",
                      "src": "https://www.dalailama.com/the-dalai-lama/events-and-awards/chronology-of-events"})
     if _between(date, "1950-11-17", "1959-03-27"):
-        rows.append({"role": "达赖喇嘛（亲政）", "name": "十四世达赖喇嘛丹增嘉措",
+        rows.append({"role": "达赖喇嘛（亲政）", "tag": "亲政", "power": True, "name": "十四世达赖喇嘛丹增嘉措",
                      "span": "1950年11月17日起",
-                     "note": "亲政日来自达赖喇嘛办公室年表。1950年12月16日离开拉萨前往亚东，1951年8月17日回到拉萨，职务没有因此中断。1951年8月9日以后，这块不再写成全境仍由他实地控制。",
+                     "note": "亲政日来自达赖喇嘛办公室年表。1950年12月16日离开拉萨前往亚东，1951年8月17日回到拉萨，职务没有因此中断。1951年8月9日以后，旧轮廓不再写成全境仍由他实地控制；那不是说这块无人统治。",
                      "src": "https://www.dalailama.com/the-dalai-lama/events-and-awards/chronology-of-events"})
     return rows
 
@@ -124,7 +134,7 @@ def _phase_note(date, zone) -> str:
     base = ("名称用甘丹颇章，不用现代国家的职务填空。通过、坐床、亲政、去世分开写。"
             "边界是 CShapes 的大致轮廓，精度只表示数据集有一条线，不是实测，也不是历史省界。")
     if zone == ZONE_GAP or (zone != ZONE_RESTORE and date.key() >= HDate(1951, 8, 9).key() and date.key() < HDate(1959, 3, 28).key()):
-        return (base + "1951年8月9日新疆骑兵进驻噶大克以后，这块标成未核实，灰色不是中华人民共和国的实控色。"
+        return (base + GAP_NOTE +
                 "协议1951年5月23日签署，第4条写现行政治制度不予变更，第17条写签字盖章后立即生效，那是法律文本，不是拉萨进驻。"
                 "拉萨先遣1951年9月9日、主力1951年10月26日进驻，都不是全区变色。"
                 "下列职务是地方政府的记录，不等于这块全境仍由他实地控制，也不换成中华人民共和国主席。"
@@ -138,10 +148,16 @@ def _phase_note(date, zone) -> str:
     return base + "1913年1月1日是 CShapes 开始单列的日期，不是成立日。"
 
 
+# 灰色多边形的名称。未知的是几何范围，不是说当时无人统治。
+GAP_NAME = "数据不足（旧轮廓，不是实控重建）"
+GAP_NOTE = ("灰色只表示数据不足：没有逐点历史几何，不知道1951年8月9日以后实控画到哪里。"
+            "8月9日只是新疆骑兵进驻噶大克的日子，一个城镇不能把中西部全区涂成已重建的实控。"
+            "沿用的是更早的数据集轮廓。不是无人统治，也不是中华人民共和国的实控色。")
+
 # 地图上的短标签。面板里仍用完整名称和说明。
 _MAP_LABEL = {
     ZONE_RESTORE: "甘丹颇章",
-    ZONE_GAP: "范围未核实",
+    ZONE_GAP: "数据不足",
     ZONE_CHAMDO: "昌都大致框",
 }
 
@@ -163,6 +179,8 @@ def finish_regime(out: dict, polity, date, params) -> dict:
     props = (polity or {}).get("props") or {}
     zone = props.get("ZONE")
     note = point_note(date, params.get("lat"), params.get("lon"))
+    if note and "样本" in note:
+        note += " 虚线框是样本，不是实际边界。"
     if note:
         out["claim"] = note
     if zone == ZONE_CHAMDO:
@@ -174,9 +192,10 @@ def finish_regime(out: dict, polity, date, params) -> dict:
         return out
     st = out["state"]
     if zone == ZONE_GAP:
-        st["name"] = props.get("NAME_ZH") or "西藏中部与西部（范围未核实）"
-        st["from"] = "1951年8月9日"
+        st["name"] = GAP_NAME
+        st["from"] = "1951年8月9日（不再沿用旧轮廓冒充实控；不是易手日）"
         st["to"] = "1959年3月28日（不含当天）"
+        out["geom_note"] = GAP_NOTE
     else:
         st["name"] = "甘丹颇章"
         st["en"] = "Ganden Phodrang"
@@ -204,6 +223,8 @@ def finish_leaders(out: dict, polity, date, params) -> dict:
     props = (polity or {}).get("props") or {}
     zone = props.get("ZONE")
     note = point_note(date, params.get("lat"), params.get("lon"))
+    if note and "样本" in note:
+        note += " 虚线框是样本，不是实际边界。"
     if note:
         out["claim"] = note
     if zone == ZONE_CHAMDO and out.get("territory"):
@@ -213,18 +234,24 @@ def finish_leaders(out: dict, polity, date, params) -> dict:
             out["territory"]["geom_note"] = (zh + "。" + prev).strip()
     if not applies((out.get("state") or {}).get("id"), zone):
         return out
-    out["curated_offices"] = offices_at(date)
+    rows = offices_at(date)
+    out["curated_offices"] = rows
     out["heads"] = []
     out["offices"] = []
     out["undated_offices"] = []
     out["regents"] = []
     out["eras"] = []
     out["interregna"] = []
+    # 未记录不计入。页签数字和名单是同一批人。
+    out["total"] = sum(1 for r in rows if r.get("name") not in (None, "", "未记录"))
+    if zone == ZONE_GAP and out.get("territory"):
+        out["territory"]["geom_note"] = GAP_NOTE
     if out.get("state"):
         if zone == ZONE_GAP:
-            out["state"]["name"] = props.get("NAME_ZH") or "西藏中部与西部（范围未核实）"
+            out["state"]["name"] = GAP_NAME
         else:
             out["state"]["name"] = "甘丹颇章"
+    prev = (out.get("note") or "").replace("这一日期没有找到带时间的任职记录。", "")
     out["note"] = ("职务只列本批核对过的达赖喇嘛和摄政。没有核对到的噶伦、代本写未记录，不借用中华民国或中华人民共和国的职位来填。"
-                   + (out.get("note") or ""))
+                   + prev)
     return out

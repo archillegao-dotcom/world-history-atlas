@@ -75,6 +75,19 @@ body.strategy #map, body.strategy .leaflet-container {
     #2a3c4e;
 }
 body.strategy #panel { background: #1c2633; color: #e7e1d6; }
+body.strategy .def, body.strategy .wsum, body.strategy .terr-box, body.strategy .claim-box {
+  background: #243140; color: #f3eee4;
+}
+body.strategy .def a, body.strategy .wsum a, body.strategy .claim-box a, body.strategy .src a, body.strategy .note a {
+  color: #f0d48a; overflow-wrap: anywhere;
+}
+body.strategy .src, body.strategy .flag-note, body.strategy .wsum p, body.strategy .def { color: #f3eee4; }
+body.strategy .kv th { color: #d2c6b4; }
+body.strategy .kv td { color: #f3eee4; border-bottom-color: #334155; }
+body.strategy .mod-state h4 { color: #e6c98a; border-bottom-color: #334155; }
+body.strategy .itag { background: #8a5a2b; color: #fff; }
+body.strategy .inter-box { background: #243140; }
+.def a, .wsum a, .claim-box a, .src a, .note a { overflow-wrap: anywhere; }
 body.strategy .panel-head, body.strategy #tabs { border-color: #334155; }
 body.strategy #polityMeta, body.strategy .item .s, body.strategy .item .d { color: #d2c6b4; }
 body.strategy #closePanel, body.strategy .item .t { color: #f3eee4; }
@@ -120,6 +133,7 @@ body.strategy #econHover .eh-year, body.strategy #econHover .eh-note { color: #c
 .sw-occ { background: transparent; border: 2px solid #b02a2a; height: 6px; }
 .sw-front { background: transparent; border-top: 3px dashed #d35400; height: 0; }
 .sw-admin { background: #c9bfae; height: 2px; opacity: .8; }
+.sw-gap { background: #7a7368; }
 #mapKey .k-src { color: #6d6256; font-size: 11px; }
 .hillshade-pane { mix-blend-mode: soft-light; }
 body:not(.strategy) .hillshade-pane { display: none; }
@@ -208,7 +222,7 @@ body.strategy .sw-border { background: #e6e0d4; }
   .mod-constitution .note { font-size: 14px; line-height: 1.55; }
   .mod-constitution .item .t { font-size: 16px; line-height: 1.35; }
   .mod-constitution .s, .mod-constitution .d { font-size: 14px; line-height: 1.5; }
-  .mod-state .note, .mod-state .s, .mod-state .d { font-size: 14px; line-height: 1.5; }
+  .mod-state .note, .mod-state .s, .mod-state .d, .mod-state .def, .mod-state .wsum, .mod-state .src { font-size: 14px; line-height: 1.5; }
   .mod-state .terr-box, .mod-state .claim-box { font-size: 14px; line-height: 1.5; }
   .strategy-label span { font-size: 16px; }
   .leaflet-control-attribution { max-width: calc(100vw - 118px); max-height: 2.8em; overflow: auto; font-size: 9px; }

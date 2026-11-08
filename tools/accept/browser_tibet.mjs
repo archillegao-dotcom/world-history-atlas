@@ -85,19 +85,42 @@ async function text() {
 
 const GRAY = "#7a7368";
 
+function hueOf(fill) {
+  const m = /hsl\(\s*([-\d.]+)/i.exec(fill || "");
+  return m ? Number(m[1]) : null;
+}
+
 await open(1440, 900, "#date=1944-12-01&style=strategy&c=31.2,90.5&z=5");
 await clickMap(29.65, 91.117, "Tibet");
 await tab("领导人");
 let t = await text();
+const leaderCount = await page.evaluate(() => {
+  const b = [...document.querySelectorAll("#tabs button")].find((x) => x.textContent.includes("领导人"));
+  return b ? b.textContent.replace(/\s/g, "") : "";
+});
+if (!/领导人[1-9]/.test(leaderCount)) problems.push("1944 领导人计数仍是0 " + leaderCount);
 if (!t.name.includes("甘丹颇章")) problems.push("1944 标题不是甘丹颇章 " + t.name);
-if (!t.body.includes("达扎活佛") || !t.body.includes("尚未亲政")) problems.push("1944 职务不对");
-if (t.body.includes("毛泽东") || t.body.includes("热振活佛")) problems.push("1944 串了别人的职务");
+if (!t.body.includes("达扎活佛") || !t.body.includes("尚未亲政") || !t.body.includes("实际掌权者") || !t.body.includes("摄政")) problems.push("1944 领导人名单不对");
+if (t.body.includes("毛泽东") || t.body.includes("热振活佛") || t.body.includes("共治")) problems.push("1944 串了别人的职务或写成共治");
 if (!t.meta.includes("大致")) problems.push("1944 精度没有写成大致 " + t.meta);
 if (t.fill === GRAY) problems.push("1944 拉萨被涂成未核实灰");
+const gandenHue = hueOf(t.fill);
 const labels1944 = await page.evaluate(() => [...document.querySelectorAll(".strategy-label span")].map((s) => s.textContent));
 if (!labels1944.includes("甘丹颇章")) problems.push("1944 地图没有标甘丹颇章 " + labels1944.join("|"));
 if (labels1944.includes("西藏")) problems.push("1944 地图仍把这块标成西藏");
-await page.screenshot({ path: "/opt/cursor/artifacts/tibet-desktop-1944-lhasa.png" });
+await page.screenshot({ path: "/opt/cursor/artifacts/tibet-desktop-1944-leaders.png" });
+await clickMap(26.1, 89.8, "India");
+const india = await text();
+const indiaHue = hueOf(india.fill);
+const hueGap = gandenHue == null || indiaHue == null ? 0 : Math.min(Math.abs(gandenHue - indiaHue), 360 - Math.abs(gandenHue - indiaHue));
+if (hueGap < 40) problems.push("甘丹与邻接印度色相仍太近 " + gandenHue + " / " + indiaHue);
+await clickMap(27.7, 85.32, "Nepal");
+const nepal = await text();
+const nepalHue = hueOf(nepal.fill);
+const nepalGap = gandenHue == null || nepalHue == null ? 0 : Math.min(Math.abs(gandenHue - nepalHue), 360 - Math.abs(gandenHue - nepalHue));
+if (nepalGap < 40) problems.push("甘丹与尼泊尔色相仍太近 " + gandenHue + " / " + nepalHue + " " + nepal.name);
+await clickMap(29.65, 91.117, "Tibet");
+await tab("领导人");
 await tab("政权性质");
 t = await text();
 if (t.flag) problems.push("1944 显示了旗图");
@@ -128,13 +151,14 @@ if (!labels1026.includes("昌都大致框")) problems.push("地图没有标昌�
 await clickMap(29.65, 91.117, "unverified");
 await tab("政权性质");
 t = await text();
-if (!t.name.includes("未核实")) problems.push("10月26日拉萨没有标未核实 " + t.name);
+if (!t.name.includes("数据不足")) problems.push("10月26日拉萨没有标数据不足 " + t.name);
+if (!t.body.includes("不是无人统治")) problems.push("10月26日没有写明不是无人统治");
 if (t.fill !== GRAY) problems.push("10月26日拉萨不是灰色 " + t.fill);
 if (t.fill && chamdoFill && t.fill === chamdoFill) problems.push("拉萨灰和昌都同色");
 if (!t.body.includes("10月26日") || !t.body.includes("都不是全区变色")) problems.push("10月26日没有写明不是全区变色");
 if (t.name.includes("中华人民共和国")) problems.push("灰色块标题变成了中华人民共和国");
 const labelsGap = await page.evaluate(() => [...document.querySelectorAll(".strategy-label span")].map((s) => s.textContent));
-if (!labelsGap.includes("范围未核实")) problems.push("灰色块地图没有标范围未核实 " + labelsGap.join("|"));
+if (!labelsGap.includes("数据不足")) problems.push("灰色块地图没有标数据不足 " + labelsGap.join("|"));
 await page.screenshot({ path: "/opt/cursor/artifacts/tibet-desktop-1951-10-26-lhasa.png" });
 
 await open(390, 844, "#date=2000-06-01&style=strategy&c=27.6,91.9&z=7");
@@ -142,8 +166,28 @@ await page.waitForFunction(() => document.querySelector(".leaflet-zones-pane pat
 await page.screenshot({ path: "/opt/cursor/artifacts/tibet-phone-2000-tawang-map.png" });
 await clickMap(27.59, 91.86, "India");
 t = await text();
-if (!t.body.includes("中国声索") || !t.body.includes("实际控制看底图颜色")) problems.push("2000 达旺声索说明不对");
+if (!t.body.includes("中国声索") || !t.body.includes("实际控制看底图颜色") || !t.body.includes("不是实际边界")) problems.push("2000 达旺声索说明不对");
 if (!t.body.includes("不是8月1日整个藏南")) problems.push("2000 达旺没有写明不是整个藏南易手");
+const quote = await page.evaluate(() => {
+  const el = document.querySelector("#tabBody .def");
+  const claim = document.querySelector(".claim-box");
+  const lum = (rgb) => {
+    const m = String(rgb || "").match(/\d+/g);
+    if (!m) return null;
+    const [r, g, b] = m.map(Number);
+    return (r * 299 + g * 587 + b * 114) / 1000;
+  };
+  const cs = el ? getComputedStyle(el) : null;
+  return {
+    def: !!el,
+    gap: cs ? Math.abs(lum(cs.color) - lum(cs.backgroundColor)) : 0,
+    bare: claim ? /https?:\/\//.test(claim.innerText) : true,
+    link: !!(claim && claim.querySelector("a")),
+  };
+});
+if (!quote.def) problems.push("2000 达旺没有政权说明引用");
+if (quote.gap < 80) problems.push("2000 达旺引用对比不足 " + quote.gap);
+if (quote.bare || !quote.link) problems.push("2000 达旺来源仍是裸网址");
 const cover = await page.evaluate(() => {
   const box = document.querySelector(".claim-box") || document.querySelector(".mod-state .note");
   if (!box) return "no-claim";
@@ -164,6 +208,18 @@ else {
   if (!cover.shown) problems.push("窄屏点到的不是面板");
 }
 await page.screenshot({ path: "/opt/cursor/artifacts/tibet-phone-2000-tawang.png" });
+
+await open(390, 844, "#date=1944-12-01&style=strategy&c=31.2,90.5&z=5");
+await clickMap(29.65, 91.117, "Tibet");
+await tab("领导人");
+t = await text();
+if (!t.body.includes("实际掌权者") || !t.body.includes("达扎活佛")) problems.push("窄屏领导人名单不对");
+const phoneCount = await page.evaluate(() => {
+  const b = [...document.querySelectorAll("#tabs button")].find((x) => x.textContent.includes("领导人"));
+  return b ? b.textContent.replace(/\s/g, "") : "";
+});
+if (!/领导人[1-9]/.test(phoneCount)) problems.push("窄屏领导人计数仍是0 " + phoneCount);
+await page.screenshot({ path: "/opt/cursor/artifacts/tibet-phone-1944-leaders.png" });
 
 await browser.close();
 if (problems.length) {

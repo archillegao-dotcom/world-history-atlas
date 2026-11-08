@@ -8,11 +8,12 @@ from __future__ import annotations
 from shapely.geometry import shape
 
 from .. import control_zones as CZ
+from ..ganden import GAP_NAME, GAP_NOTE
 from ..registry import LayerModule
 
 KIND_ZH = {"holdout": "残余控制区", "de_facto": "事实独立", "occupied": "军事占领/接管", "armed_presence": "武装存在（非主权控制）",
            "war_zone": "交战区", "leased": "租借地", "annexed": "吞并", "regime": "政权（统一/更替）",
-           "unverified": "范围未核实", "claim": "声索说明，不是实际控制"}
+           "unverified": "范围未核实", "claim": "声索样本，不是边界，也不是实际控制"}
 
 
 class ControlZonesLayer(LayerModule):
@@ -38,12 +39,18 @@ class ControlZonesLayer(LayerModule):
         for z in self.zones:
             if not CZ.active(z, dk):
                 continue
-            out.append({"id": z["id"], "name": z["name_zh"], "en": z.get("name_en"), "kind": z["kind"], "kind_zh": KIND_ZH.get(z["kind"], z["kind"]),
-                        "controller": z["controller"], "from": z.get("from"), "until": z.get("until"), "approx": bool(z.get("approx")),
-                        "dates_note": z.get("dates_note"), "note": z.get("note"), "sources": z.get("sources", []),
+            ctrl = dict(z["controller"])
+            name, kind_zh, dates_note = z["name_zh"], KIND_ZH.get(z["kind"], z["kind"]), z.get("dates_note")
+            # 灰色块沿用旧轮廓，只说明几何不够，不把进驻一个城镇写成全区实控。
+            if z["id"] == "tibet_unverified_1951":
+                name, kind_zh, dates_note = GAP_NAME, "数据不足，不是无人统治，也不是实控重建", GAP_NOTE
+                ctrl["zh"] = "不指定实控方（数据不足）"
+            out.append({"id": z["id"], "name": name, "en": z.get("name_en"), "kind": z["kind"], "kind_zh": kind_zh,
+                        "controller": ctrl, "from": z.get("from"), "until": z.get("until"), "approx": bool(z.get("approx")),
+                        "dates_note": dates_note, "note": z.get("note"), "sources": z.get("sources", []),
                         "as_polity": bool(z.get("as_polity")), "label": z["_label"], "geom": z["geom"]})
         return {"items": out, "total": len(out),
-                "note": "实际控制区只覆盖已人工整理的冲突。西藏1913年起才单列；1950年10月2日以后不把整块涂成已经易手。声索样本是虚线小框，不是边界，也不改底图颜色。其他地区没有画不代表没有。只选年份、不选月份时，按这一年的年中判断。"}
+                "note": "实际控制区只覆盖已人工整理的冲突。西藏1913年起才单列；1950年10月2日以后不把整块涂成已经易手。灰色表示数据不足，不是无人统治，也不是已经重建的实控线。声索样本是虚线小框，不是边界，也不改底图颜色。其他地区没有画不代表没有。只选年份、不选月份时，按这一年的年中判断。"}
 
 
 MODULE = ControlZonesLayer()
