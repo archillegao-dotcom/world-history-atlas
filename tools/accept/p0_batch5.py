@@ -1,4 +1,4 @@
-"""第五批：1944-12-01 满洲国西缘那块褐色缺口改到蒙疆，两侧仍是满洲国和外蒙古。
+"""1944-12-01 满洲国西缘的空隙标为未核实，不归蒙疆，两侧仍是满洲国和外蒙古。
 用法：WHA_PORT=8792 python3 tools/accept/p0_batch5.py
 """
 import json, os, sys, urllib.parse, urllib.request
@@ -18,10 +18,10 @@ def check(label, cond, got):
         fails.append(label)
 
 D = "1944-12-01"
-# 缺口内部：原 CShapes「China」露出色，现为蒙疆近似范围
-for lat, lon, nm in [(45.40, 118.75, "缺口中"), (45.20, 118.35, "缺口西"), (46.20, 118.30, "缺口北")]:
+# 空隙内部：不写成蒙疆，也不写成底图上的 China
+for lat, lon, nm in [(45.40, 118.75, "空隙中"), (45.20, 118.35, "空隙西"), (46.20, 118.30, "空隙北")]:
     g = poly(D, lat, lon)
-    check(f"{nm}是蒙疆", "蒙疆" in g, g)
+    check(f"{nm}是未核实空隙", "未核实" in g and "蒙疆联合" not in g and "China" not in g, g)
 # 东侧仍是满洲国，北侧仍是外蒙古，腹地和河套、西安没有被吞掉
 for lat, lon, nm, needle in [
     (45.40, 120.40, "满洲国西缘以东", "满洲"),

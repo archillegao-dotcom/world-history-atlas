@@ -356,7 +356,8 @@ class CShapes:
             cut(g)
             fid = OFF_TERR + i
             feats[fid] = {"props": {"fid": fid, "NAME": t["name"], "NAME_ZH": t.get("name_zh"), "SUBJECTO": t.get("sov_name"),
-                                    "TERRITORY": t["id"], "TERR_CAT": t.get("cat"), "BORDERPRECISION": 3}, "geom": g}
+                                    "TERRITORY": t["id"], "TERR_CAT": t.get("cat"),
+                                    "BORDERPRECISION": 1 if t.get("cat") == "unverified" else 3}, "geom": g}
             origin[fid] = ("terr", i)
         self._apply_fronts(k, feats, origin, notes)
         # CShapes 没有覆盖的地区：historical-basemaps 过渡快照裁掉 CShapes 范围后的剩余部分

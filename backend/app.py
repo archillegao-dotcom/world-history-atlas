@@ -177,7 +177,7 @@ def admin1_ref(west: float, south: float, east: float, north: float, zoom: float
         "url": "https://www.naturalearthdata.com/",
         "simplified": True,
         "loaded": ready,
-        "note": "这些线是今天的一级行政区（省、州等），来自 Natural Earth 1:10m（公有领域），画出来之前做了简化。它们不是历史省界，不是古代省界，也不是战时控制线。没有可靠的历史省界数据时不另画线。",
+        "note": "这些线是现代一级行政区参考线（今天的省、州等），来自 Natural Earth 1:10m（公有领域），画出来之前做了简化。它们不是历史省界，不是古代省界，也不是战时控制线。没有可靠的历史省界数据时不另画线。",
     }
 
 

@@ -205,6 +205,8 @@ body.strategy .sw-border { background: #e6e0d4; }
   #timeline { padding: 2px 8px 4px; }
   #panel { width: 100%; max-width: 100%; }
   .strategy-label span { font-size: 16px; }
-  .leaflet-control-attribution { max-height: 2.8em; overflow: auto; font-size: 9px; }
-  #mapKey, #eraNote, #layerCtl { max-width: calc(100vw - 12px); }
+  .leaflet-control-attribution { max-width: calc(100vw - 118px); max-height: 2.8em; overflow: auto; font-size: 9px; }
+  #eraNote { max-width: calc(100vw - 12px); z-index: 1100; }
+  #mapKey { max-width: calc(50vw - 36px); z-index: 1100; }
+  #layerCtl { max-width: calc(50vw - 36px); }
 }

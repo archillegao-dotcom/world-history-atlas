@@ -36,8 +36,9 @@ class RegimeModule(ContentModule):
         if polity is None:
             return {"items": [], "total": 0, "note": "请在地图上点击一个国家/政权。"}
         if not st:
+            from ..territory_info import unverified_note
             return {"items": [], "total": 0, "alternatives": alts,
-                    "note": split_note(params) or "没能把这个地图区域对应到 Wikidata 中当时存在的政权。"}
+                    "note": unverified_note(polity, ctx.basemaps.trans) or split_note(params) or "没能把这个地图区域对应到 Wikidata 中当时存在的政权。"}
         dk = date.key()
 
         def at_date(lst):

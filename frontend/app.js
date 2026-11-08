@@ -133,6 +133,16 @@
     for (const fn of Object.values(fillOverrides)) { const x = fn(f); if (x) o = { ...(o || {}), ...x }; }
     const out = o ? { ...base, ...o, ...(selected ? { color: strat ? "#e6d3a1" : "#8a1c00", weight: strat ? 2.4 : 2.5 } : {}) } : base;
     if (strat && !selected) out.weight = Math.max(out.weight || 0, 1.75);
+    // 近似多边形之间的空隙：灰色虚线，不套用政权色，避免看起来像已经核定的国界
+    if (f.properties.TERR_CAT === "unverified") {
+      return {
+        color: selected ? (strat ? "#e6d3a1" : "#8a1c00") : "#3a342c",
+        weight: selected ? 2.4 : (strat ? 1.5 : 1.1),
+        dashArray: "4 3", opacity: 1,
+        fillColor: strat ? "#7a7368" : "#d2c6b2",
+        fillOpacity: strat ? 0.78 : 0.72,
+      };
+    }
     return out;
   };
   // 多个图层可同时改写填色：按注册顺序叠加（后注册的覆盖前面的同名样式）
@@ -309,6 +319,7 @@
     "印度尼西亚日据时期": "印尼（日据）",
     "蒙疆联合自治政府": "蒙疆",
     "日军军事占领区（桂柳会战）": "桂柳（日军）",
+    "空隙（未核实）（Unverified gap）": "空隙（未核实）",
   };
   function shortPolity(name) {
     const s = String(name || "");
@@ -686,7 +697,7 @@
     if (y < -3000) html = `<b>史前时期（文字出现以前）</b>：地图上是 historical-basemaps 对考古文化与人群分布的粗略复原，不是国家边界（名称标为「文化/地区」）；快照非常稀疏（当前：${yearZh(base)}${state.next != null ? "，下一张：" + yearZh(state.next) : ""}）。Wikidata 中此时期几乎没有精确到年的事件和人物。`;
     else if (y < -500) html += "<br>上古时期：许多日期是估计值，人物生卒年常常只精确到世纪。";
     if (state.date.m && state.date.d) html += "<br>已精确到日：事件列表会把<b>当天</b>发生的事件排在最前（仅限 Wikidata 记录到日的事件）。";
-    if (strategyOn()) html += "<br>策略地图是自绘的深色分区。国名写在该日可见范围里面，全名在提示里。细线是现代行政区，不是历史省界。淡色起伏是 Natural Earth 晕渲（公有领域），只表示现代自然地形，不是历史国界。不是 TNO 官方地图。";
+    if (strategyOn()) html += "<br>策略地图是自绘的深色分区。国名写在该日可见范围里面，全名在提示里。放大后的浅线是现代一级行政区参考线，不是历史省界。淡色起伏是 Natural Earth 晕渲（公有领域），只表示现代自然地形，不是历史国界。不是 TNO 官方地图。";
     const note = $("eraNote");
     const open = note.classList.contains("open");
     note.innerHTML = `<button type="button" id="eraToggle" aria-expanded="${open ? "true" : "false"}">${open ? "收起说明" : "边界说明"}</button>` + (open ? `<div class="era-body">${html}</div>` : "");
@@ -710,7 +721,7 @@
     document.body.classList.toggle("strategy", !!on);
     const btn = $("styleBtn");
     if (btn) { btn.textContent = on ? "普通地图" : "策略地图"; btn.setAttribute("aria-pressed", on ? "true" : "false"); }
-    if (on && !map._whaStratAttr) map._whaStratAttr = map.attributionControl.addAttribution('策略地图为软件自绘。细线：<a href="https://www.naturalearthdata.com/" target="_blank">Natural Earth</a> 现代一级行政区（公有领域），不是历史省界。地形：同一来源的 1:50m 晕渲（公有领域），只表示现代自然起伏');
+    if (on && !map._whaStratAttr) map._whaStratAttr = map.attributionControl.addAttribution('策略地图为软件自绘。细线：<a href="https://www.naturalearthdata.com/" target="_blank">Natural Earth</a> 现代一级行政区参考线（公有领域），不是历史省界。地形：同一来源的 1:50m 晕渲（公有领域），只表示现代自然起伏');
     restyle();
     updateEraNote();
     if (WHA.updateLayers) WHA.updateLayers();
@@ -876,7 +887,7 @@
         <li>事件按事件坐标（或事件地点的坐标）归属；只有国家信息的事件用该国首都坐标近似。</li>
         <li>日级精度只适用于 Wikidata 记录到日的事件；古代多数日期只到年或世纪。</li>
         <li>Wikidata 对欧洲、近现代的覆盖远多于其他地区和古代；“没有记录”不代表“没有发生”。</li>
-        <li>策略地图只改画法。放大后的细线是 Natural Earth 现代一级行政区（公有领域），不是历史省界。仓库里没有可用的地形栅格，所以不画地形。</li>
+        <li>策略地图只改画法。放大后的细线是现代一级行政区参考线（Natural Earth，公有领域），不是历史省界。历史省界没有绘制。淡色起伏是同一来源的 1:50m 晕渲，只表示现代陆地地形，没有海底深浅。</li>
         <li>鼠标停在一个政权上满 5 秒，才显示该年经济数字。只有数据表里正好有这一年才给出数值，否则为「暂无数据」。</li>
       </ul>`;
   }

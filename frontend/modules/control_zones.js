@@ -4,7 +4,7 @@
  */
 (() => {
   "use strict";
-  const COLOR = { holdout: "#1f5fbf", de_facto: "#8a5a00", occupied: "#b02a2a", armed_presence: "#6a3d9a", war_zone: "#d35400" };
+  const COLOR = { holdout: "#1f5fbf", de_facto: "#8a5a00", occupied: "#b02a2a", armed_presence: "#6a3d9a", war_zone: "#d35400", unverified: "#5c564e" };
   let group = null, map = null;
   const fmt = (s) => (s ? s.replace(/^(-?\d+)-(\d+)-(\d+)$/, "$1年$2月$3日").replace(/^(-?\d+)-(\d+)$/, "$1年$2月").replace(/^(-?\d+)$/, "$1年") : "");
 
@@ -20,11 +20,12 @@
         const c = COLOR[z.kind] || "#333";
         const strat = document.body.classList.contains("strategy");
         const hot = z.kind === "occupied" || z.kind === "war_zone" || z.kind === "de_facto";
+        const unnamed = z.kind === "unverified";
         L.geoJSON(z.geom, { pane: "zones", interactive: false,
           style: {
             color: c, weight: strat ? (hot ? 3 : 2.2) : 2,
             dashArray: strat ? (hot ? null : "3 2") : "6 4",
-            fillColor: c, fillOpacity: strat ? (hot ? 0.48 : 0.22) : (z.as_polity ? 0.08 : 0.15),
+            fillColor: c, fillOpacity: unnamed ? 0.05 : (strat ? (hot ? 0.48 : 0.22) : (z.as_polity ? 0.08 : 0.15)),
           } }).addTo(group);
         const tip = `<b>${WHA.esc(z.name)}</b>${z.approx ? "（大致范围）" : ""}<br>${WHA.esc(z.kind_zh)} · 控制方：${WHA.esc(z.controller.zh)}` +
           `<br>${fmt(z.from) || "?"} – ${z.until ? fmt(z.until) : "至今"}` +
@@ -32,7 +33,7 @@
           (z.note ? `<div style="max-width:320px;white-space:normal"><small>${WHA.esc(z.note)}</small></div>` : "") +
           `<small>来源：${z.sources.map((u) => `<a href="${WHA.esc(u)}" target="_blank" rel="noopener">${WHA.esc(decodeURIComponent(u.replace(/^https?:\/\//, "")).slice(0, 48))}</a>`).join("；")}</small>`;
         const icon = L.divIcon({ className: "zone-label", iconSize: null, iconAnchor: [-6, 8],   // 标签整体右移 6px，标签点本身留给下面的政权多边形
-          html: `<span style="color:${strat ? "#f4efe6" : c};font-weight:600;font-size:12px;text-shadow:${strat ? "0 1px 2px #000,0 0 3px #000" : "0 0 3px #fff,0 0 3px #fff"};white-space:nowrap"><span class="zl-dot" style="color:${c}" title="点开说明">◇</span>${strat && map.getZoom() < 5 ? "" : " " + WHA.esc(z.name) + (z.approx ? "<small>（大致范围）</small>" : "")}</span>` });
+          html: `<span style="color:${strat ? "#f4efe6" : c};font-weight:600;font-size:12px;text-shadow:${strat ? "0 1px 2px #000,0 0 3px #000" : "0 0 3px #fff,0 0 3px #fff"};white-space:nowrap"><span class="zl-dot" style="color:${c}" title="点开说明">◇</span>${(strat && map.getZoom() < 5) || unnamed ? "" : " " + WHA.esc(z.name) + (z.approx ? "<small>（大致范围）</small>" : "")}</span>` });
         L.marker([z.label[1], z.label[0]], { icon, keyboard: false, zIndexOffset: 800 }).bindPopup(tip, { maxWidth: 360 })
           // v0.6.1：点到标签（◇ 或文字）时，除弹出说明外也选中标签下方的政权，面板不再留空（1950 科威特）
           .on("click", () => WHA.selectAt(z.label[1], z.label[0])).addTo(group);

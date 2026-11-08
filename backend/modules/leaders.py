@@ -187,8 +187,9 @@ class LeadersModule(ContentModule):
         if polity is None:
             return {"items": [], "total": 0, "note": "请在地图上点击一个国家/政权。"}
         if not st:
+            from ..territory_info import unverified_note
             return {"items": [], "total": 0, "alternatives": alts,
-                    "note": split_note(params) or "没能把这个地图区域对应到 Wikidata 中当时存在的政权（名称不匹配、首都也不在此范围内）。"}
+                    "note": unverified_note(polity, ctx.basemaps.trans) or split_note(params) or "没能把这个地图区域对应到 Wikidata 中当时存在的政权（名称不匹配、首都也不在此范围内）。"}
         dk = date.key()
         # 同一地区当时存在的同名政权（如「中华民国」有 1912–1949 与 1912 至今两个条目）合并显示
         group = [st] + [x for x in params.get("_strong", []) if x["id"] != st["id"]]

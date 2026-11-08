@@ -2,7 +2,7 @@
 
 只用仓库里已有的 Natural Earth 1:10m admin-1（公有领域）。
 第一次请求只解析文件并记下每个多边形的外包范围；真正画线时只简化当前视野里的那一部分。
-这些线是今天的省/州，不是古代或战时省界。没有历史省界数据时不补线。
+这些线是现代一级行政区参考线，不是古代或战时省界。没有历史省界数据时不补线。
 """
 from __future__ import annotations
 
@@ -122,7 +122,7 @@ def query(west: float, south: float, east: float, north: float, zoom: float) -> 
                 "admin": r["admin"],
                 "iso_3166_2": r["code"],
                 "era": "modern",
-                "note": "Natural Earth 1:10m 现代一级行政区，不是历史省界",
+                "note": "Natural Earth 1:10m 现代一级行政区参考线，不是历史省界",
             },
             "geometry": mapping(g),
         })
