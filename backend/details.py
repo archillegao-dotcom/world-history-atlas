@@ -265,6 +265,25 @@ def _stored_summary(r):
             "url": sm.get("url"), "thumb": None}
 
 
+def _country_labels(r, R) -> list:
+    """所属国家跟已经改过的签署方走。后来的国名不再单独出现。"""
+    by_id = {}
+    for p in r.get("parties") or []:
+        label = R.state_name(p["s"])
+        if p.get("note"):
+            label = f"{label}（{p['note']}）"
+        by_id[p["s"]] = label
+        if p.get("later"):
+            by_id[p["later"]] = label
+    out, seen = [], set()
+    for c in r.get("countries") or []:
+        label = by_id.get(c) or R.state_name(c)
+        if label and label not in seen:
+            seen.add(label)
+            out.append(label)
+    return out
+
+
 @router.get("/api/treaty/{tid}")
 def treaty(tid: str, date: str | None = None):
     """条约详情：日期、全部签署方、维基百科摘要（中文优先）、维基文库/全文链接。
@@ -279,9 +298,12 @@ def treaty(tid: str, date: str | None = None):
         raise HTTPException(404, "没有这个条约")
     VIA = {"P1891": "签署方", "P710": "参与方", "P17": "所属国家（P17）", "P1268": "签署人所代表的国家",
            "P1268+P35": "签署人（当时的国家元首）所代表的国家"}
+    from .modules.treaty_time import clip_text
     parties = []
     for p in r.get("parties", []):
         x = {"id": p["s"], "name": R.state_name(p["s"]), "via": VIA.get(p["via"], p["via"])}
+        if p.get("note"):
+            x["note"] = p["note"]
         if p.get("rep"):
             x["rep"] = R.person_brief(p["rep"])
         parties.append(x)
@@ -300,6 +322,18 @@ def treaty(tid: str, date: str | None = None):
                    "url": sm.get("url"), "thumb": None}
     else:
         summary = _stored_summary(r) or wiki.summary(r.get("zhwiki"), r.get("enwiki"))
+    desc = r.get("desc")
+    fix_note = r.get("fix_note")
+    if date:
+        if summary and summary.get("extract"):
+            summary = dict(summary)
+            nxt = clip_text(summary["extract"], date, r)
+            summary["clipped"] = nxt != summary["extract"]
+            summary["extract"] = nxt
+        if desc:
+            desc = clip_text(desc, date, r) or None
+        if fix_note:
+            fix_note = clip_text(fix_note, date, r) or None
     for src in r.get("fix_sources") or []:
         if src and not any(x["url"] == src for x in links):
             links.append({"label": "来源", "url": src})
@@ -310,16 +344,16 @@ def treaty(tid: str, date: str | None = None):
                 "view_status": view["view_status"], "withhold": True, "parties": [], "links": links[:1],
                 "types": [], "summary": None, "has_text": False, "name_mt": False}
     intended = r.get("intended_effective")
-    return {"id": tid, "name": _zh_disp(r.get("zh") or r.get("en")), "en": r.get("en"), "desc": r.get("desc"), "kind": kind_of(r),
+    return {"id": tid, "name": _zh_disp(r.get("zh") or r.get("en")), "en": r.get("en"), "desc": desc, "kind": kind_of(r),
             "types": [t.get("zh") or t.get("en") for t in r.get("types", [])],
             "signed": _t(r.get("signed")), "adopted": _t(r.get("adopted")),
             "effective": _t(r.get("effective")), "intended_effective": _t(intended) if intended else None,
             "start": _t(r.get("start") or r.get("inception")),
             "end": end, "end_hidden": bool(view.get("hide_end")),
             "status": r.get("status"), "status_zh": status_zh, "view_status": view.get("view_status"),
-            "fix_note": r.get("fix_note"), "parties": parties, "others": others,
+            "fix_note": fix_note, "parties": parties, "others": others,
             "summary": summary, "links": links,
             "location": [{"name": _zh_disp(x.get("zh") or x.get("en")), "coord": x.get("coord")} for x in r.get("location", [])],
-            "countries": [R.state_name(c) for c in r.get("countries", [])],
+            "countries": _country_labels(r, R),
             "name_mt": bool(r.get("zh_mt")),
             "has_text": bool(r.get("zhws") or r.get("enws") or r.get("fulltext"))}

@@ -147,6 +147,8 @@ class SpiritsModule(ContentModule):
         from ..zh import fill as zh_fill
         zh_fill(self.recs, ctx.data_dir)
         apply_treaty_fixes(self.recs, ctx.data_dir)
+        from .treaty_time import apply_succession, load_polities
+        apply_succession(self.recs, load_polities(ctx.data_dir))
         self.by_id = {r["id"]: r for r in self.recs}
         self.by_party = collections.defaultdict(list)
         for r in self.recs:
@@ -215,7 +217,10 @@ class SpiritsModule(ContentModule):
                 card = {"id": r["id"], "name": __import__("backend.zh", fromlist=["disp"]).disp(r.get("zh") or r.get("en")), "en": r.get("en"), "kind": kind_of(r),
                         "types": [t.get("zh") or t.get("en") for t in r.get("types", [])][:3],
                         "from": fmt_time(start), "to": fmt_time(end) if end and rec_key(end) is not None and dk >= rec_key(end) else None,
-                        "parties": [R.state_name(p["s"]) for p in r.get("parties", [])][:12],
+                        "parties": [
+                            R.state_name(p["s"]) + (f"（{p['note']}）" if p.get("note") else "")
+                            for p in r.get("parties", [])
+                        ][:12],
                         "n_parties": len(r.get("parties", [])), "via": R.state_name(sid), "via_how": how,
                         "role": None if sid in party_ids else also.get(sid),
                         "status": status, "status_zh": status_zh,

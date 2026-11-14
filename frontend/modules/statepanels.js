@@ -37,7 +37,7 @@
     root.querySelectorAll("[data-treaty]").forEach((a) => (a.onclick = (e) => { e.preventDefault(); WHA.showTreaty(a.dataset.treaty); }));
   }
   const summaryHtml = (s, label) => s ? `<div class="wsum">${s.thumb ? `<img src="${esc(s.thumb)}" alt="">` : ""}
-      <p>${esc(s.extract)}</p>${s.mt && s.orig ? `<details class="s"><summary>英文原文</summary>${esc(s.orig)}</details>` : ""}<div class="src">${s.lang === "src" ? "说明依据：" : (s.mt ? "机器翻译（Argos Translate，离线）自" : "摘要来源：")}<a href="${esc(s.url)}" target="_blank" rel="noopener">${s.lang === "src" ? esc(s.title) : (s.lang === "zh" ? "中文维基百科" : "English Wikipedia") + "「" + esc(s.title) + "」"}</a>${s.lang === "src" ? "" : "（CC BY-SA）"}</div></div>`
+      ${s.extract ? `<p>${esc(s.extract)}</p>` : (s.clipped ? `<p>这一段写的是更晚的事，所选年份还不显示。</p>` : "")}${s.mt && s.orig ? `<details class="s"><summary>英文原文</summary>${esc(s.orig)}</details>` : ""}<div class="src">${s.lang === "src" ? "说明依据：" : (s.mt ? "机器翻译（Argos Translate，离线）自" : "摘要来源：")}<a href="${esc(s.url)}" target="_blank" rel="noopener">${s.lang === "src" ? esc(s.title) : (s.lang === "zh" ? "中文维基百科" : "English Wikipedia") + "「" + esc(s.title) + "」"}</a>${s.lang === "src" ? "" : "（CC BY-SA）"}</div></div>`
     : (label === "" ? "" : `<div class="note">${label || "没有取得维基百科摘要（可能离线，或该条目没有维基百科页面）。"}</div>`);
 
   // 候选政权切换（地图区域可能对应多个 Wikidata 政权，例如同名的不同时期政权）
@@ -213,7 +213,7 @@
     ${t.name_mt ? '<div class="note">条约名称为机器翻译的「译名」（Wikidata 与维基百科都没有中文名称）。</div>' : ""}
     ${summaryHtml(t.summary, t.summary && t.summary.lang === "src" ? "" : undefined)}
     <h4>签署方 / 参与方（${(t.parties || []).length}${t.others ? `；另有 ${t.others} 个签署人或无法对应到政权的签署方` : ""}）</h4>
-    <table class="kv">${(t.parties || []).map((p) => `<tr><td>${esc(p.name)}</td><td class="d">${esc(p.via)}${p.rep ? `：${P(p.rep)}` : ""}</td></tr>`).join("") || "<tr><td>没有写到能对应到当时政权的签署方</td></tr>"}</table>
+    <table class="kv">${(t.parties || []).map((p) => `<tr><td>${esc(p.name)}${p.note ? `（${esc(p.note)}）` : ""}</td><td class="d">${esc(p.via)}${p.rep ? `：${P(p.rep)}` : ""}</td></tr>`).join("") || "<tr><td>没有写到能对应到当时政权的签署方</td></tr>"}</table>
     <div class="l">${(t.links || []).map(link).join("")}</div>${t.has_text ? "" : '<div class="note">没有找到条约原文链接（维基文库 / Wikidata P953）。</div>'}
     <div class="source">来源：各版本页底链接。未单独改过的条目仍来自 Wikidata（CC0）、维基百科（CC BY-SA）、维基文库。</div>`}`);
 })();
