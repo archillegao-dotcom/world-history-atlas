@@ -879,6 +879,36 @@
       (p?.PARTOF && p.PARTOF !== p.NAME && p.PARTOF !== p.SUBJECTO ? ` · 属于：${esc(pnameN(p.PARTOF))}` : "") +
       (qidF(p) ? ` · <a href="https://www.wikidata.org/wiki/${qidF(p)}" target="_blank">Wikidata</a>` : "") +
       (p?.BORDERPRECISION ? `<br>边界精度：${{ 1: "大致（1/3）", 2: "中等（2/3）", 3: "较精确（3/3）" }[p.BORDERPRECISION] || p.BORDERPRECISION}` : "");
+    const statusSeq = seq;
+    const statusPick = state.pick;
+    if (!state.world && statusPick && statusPick.lat != null) {
+      api(`/api/layers/status_layers?date=${dateParam(state.date)}&lat=${statusPick.lat}&lon=${statusPick.lon}&rows=1`).then((res) => {
+        if (statusSeq !== reqSeq) return;
+        const host = $("polityMeta");
+        host.querySelectorAll(".status-rows").forEach((n) => n.remove());
+        const hits = res.hits || [];
+        if (!hits.length) return;
+        const roleName = { control: "实际控制", claim: "主权声索", recognition: "国际承认" };
+        let html = `<div class="status-rows">`;
+        for (const h of hits) {
+          html += `<div class="status-area"><b>${esc(h.name_zh)}</b>`;
+          if (h.precision_zh) html += `<div>${esc(h.precision_zh)}</div>`;
+          for (const role of ["control", "claim", "recognition"]) {
+            const list = (h.rows || []).filter((r) => r.role === role);
+            const body = list.length ? list.map((r) => {
+              const who = r.party && r.party.zh ? `${esc(r.party.zh)}。` : "";
+              const extra = r.point ? ` ${esc(r.point)}` : "";
+              const src = (r.sources || []).map((u) => `<a href="${esc(u)}" target="_blank" rel="noopener">来源</a>`).join(" ");
+              return who + esc(r.text) + extra + (src ? ` ${src}` : "");
+            }).join("<br>") : "无";
+            html += `<div class="status-row"><span class="k">${roleName[role]}</span><br>${body}</div>`;
+          }
+          html += `</div>`;
+        }
+        html += `</div>`;
+        host.insertAdjacentHTML("beforeend", html);
+      }).catch(() => {});
+    }
     const mods = allPanelMods();
     if (!state.tab || !panelMods().find((m) => m.id === state.tab)) {
       if (state.tab !== "constitution") state.tab = panelMods()[0]?.id;

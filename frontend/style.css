@@ -90,6 +90,12 @@ body.strategy .inter-box { background: #243140; }
 .def a, .wsum a, .claim-box a, .src a, .note a { overflow-wrap: anywhere; }
 body.strategy .panel-head, body.strategy #tabs { border-color: #334155; }
 body.strategy #polityMeta, body.strategy .item .s, body.strategy .item .d { color: #d2c6b4; }
+.status-rows { margin-top: 8px; padding-top: 6px; border-top: 1px solid rgba(107, 93, 75, .4); }
+.status-area { margin-bottom: 8px; }
+.status-row { margin: 4px 0; }
+.status-row .k { font-weight: 700; }
+body.strategy .status-rows { border-top-color: rgba(231, 225, 214, .45); }
+body.strategy .status-rows a { color: #f0d48a; }
 body.strategy #closePanel, body.strategy .item .t { color: #f3eee4; }
 body.strategy #tabs button { background: #243140; color: #e7e1d6; border-color: #334155; }
 body.strategy #tabs button.active { background: #1c2633; color: #e6c98a; }
