@@ -236,3 +236,27 @@ body.strategy .sw-border { background: #e6e0d4; }
   #mapKey { max-width: calc(50vw - 36px); z-index: 1100; }
   #layerCtl { max-width: calc(50vw - 36px); }
 }
+
+/* 策略地图把面板文字改成浅色。弹窗单独用深底，避免浅字落在原来的米色底上。 */
+body.strategy .modal-body {
+  background: #1c2633;
+  color: #f3eee4;
+}
+body.strategy .modal-close { color: #f3eee4; }
+body.strategy .modal-body h2,
+body.strategy .modal-body h4,
+body.strategy .modal-body .s,
+body.strategy .modal-body p { color: #f3eee4; }
+body.strategy .modal-body h4 { border-bottom-color: #334155; }
+body.strategy .modal-body .en,
+body.strategy .modal-body .source,
+body.strategy .modal-body .kv th { color: #d2c6b4; }
+body.strategy .modal-body .kv td { color: #f3eee4; border-bottom-color: #334155; }
+body.strategy .modal-body td,
+body.strategy .modal-body th { border-color: #334155; }
+body.strategy .modal-body .wsum,
+body.strategy .modal-body .note { background: #243140; color: #f3eee4; }
+body.strategy .modal-body .wsum p,
+body.strategy .modal-body .src { color: #f3eee4; }
+body.strategy .modal-body a,
+body.strategy .modal-body a.wl { color: #f0d48a; }

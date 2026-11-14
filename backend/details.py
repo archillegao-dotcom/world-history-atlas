@@ -266,9 +266,12 @@ def _stored_summary(r):
 
 
 @router.get("/api/treaty/{tid}")
-def treaty(tid: str):
-    """条约详情：日期、全部签署方、维基百科摘要（中文优先）、维基文库/全文链接。"""
-    from .modules.spirits import STATUS_ZH, kind_of, tend, tstart
+def treaty(tid: str, date: str | None = None):
+    """条约详情：日期、全部签署方、维基百科摘要（中文优先）、维基文库/全文链接。
+
+    带 date 时，尚未签署的版本不返回正文和生效日；还没到的终止日不写出。
+    """
+    from .modules.spirits import STATUS_ZH, kind_of, tend, tstart, view_of
     ctx = _ctx()
     R = resolver(ctx)
     r = ctx.shared.get("treaties", {}).get(tid)
@@ -290,12 +293,32 @@ def treaty(tid: str):
     if r.get("fulltext"):
         links.append({"label": "全文（P953）", "url": r["fulltext"]})
     others = r.get("other_P1891", 0) + r.get("other_P710", 0)
+    view = view_of(r, date)
+    sm = r.get("summary") if isinstance(r.get("summary"), dict) else None
+    if sm and sm.get("src") == "curated" and sm.get("text"):
+        summary = {"lang": "src", "title": "本版说明", "extract": sm.get("text"), "orig": None, "mt": False,
+                   "url": sm.get("url"), "thumb": None}
+    else:
+        summary = _stored_summary(r) or wiki.summary(r.get("zhwiki"), r.get("enwiki"))
+    for src in r.get("fix_sources") or []:
+        if src and not any(x["url"] == src for x in links):
+            links.append({"label": "来源", "url": src})
+    end = None if view.get("hide_end") else _t(tend(r))
+    status_zh = view.get("view_status") or STATUS_ZH.get(r.get("status"))
+    if view.get("withhold"):
+        return {"id": tid, "name": _zh_disp(r.get("zh") or r.get("en")), "en": r.get("en"), "kind": kind_of(r),
+                "view_status": view["view_status"], "withhold": True, "parties": [], "links": links[:1],
+                "types": [], "summary": None, "has_text": False, "name_mt": False}
+    intended = r.get("intended_effective")
     return {"id": tid, "name": _zh_disp(r.get("zh") or r.get("en")), "en": r.get("en"), "desc": r.get("desc"), "kind": kind_of(r),
             "types": [t.get("zh") or t.get("en") for t in r.get("types", [])],
-            "signed": _t(r.get("signed")), "effective": _t(r.get("effective")), "start": _t(r.get("start") or r.get("inception")),
-            "end": _t(tend(r)), "status": r.get("status"), "status_zh": STATUS_ZH.get(r.get("status")),
+            "signed": _t(r.get("signed")), "adopted": _t(r.get("adopted")),
+            "effective": _t(r.get("effective")), "intended_effective": _t(intended) if intended else None,
+            "start": _t(r.get("start") or r.get("inception")),
+            "end": end, "end_hidden": bool(view.get("hide_end")),
+            "status": r.get("status"), "status_zh": status_zh, "view_status": view.get("view_status"),
             "fix_note": r.get("fix_note"), "parties": parties, "others": others,
-            "summary": _stored_summary(r) or wiki.summary(r.get("zhwiki"), r.get("enwiki")), "links": links,
+            "summary": summary, "links": links,
             "location": [{"name": _zh_disp(x.get("zh") or x.get("en")), "coord": x.get("coord")} for x in r.get("location", [])],
             "countries": [R.state_name(c) for c in r.get("countries", [])],
             "name_mt": bool(r.get("zh_mt")),

@@ -32,22 +32,28 @@ def tend(r):
     return r.get("end") or r.get("dissolved")
 
 
-_FIX_FIELDS = ("zh", "en", "desc", "parties", "countries", "signed", "effective", "end",
-                "types", "status", "also_show", "enwiki", "zhwiki", "sl")
+_FIX_FIELDS = ("zh", "en", "desc", "parties", "countries", "signed", "adopted", "effective",
+                "intended_effective", "end", "types", "status", "also_show", "enwiki", "zhwiki", "sl")
 
 
-def apply_treaty_fixes(recs, data_dir):
+def apply_treaty_fixes(recs, data_dir, fixes=None):
     """人工改掉有证据的错译、错归属。只改列出的条目，不重跑机器翻译。
 
     insert=true 的条目是公开文献里有、但这份 Wikidata 导出里没有的文件。不发明 QID。
+    hide=true 的条目不再进入面板。fixes 给定时不读文件，供审计比较修正前后。
     """
-    p = Path(data_dir) / "curated" / "treaty_fixes.json"
-    if not p.exists():
-        return
-    fixes = json.loads(p.read_text(encoding="utf-8"))
+    if fixes is None:
+        p = Path(data_dir) / "curated" / "treaty_fixes.json"
+        if not p.exists():
+            return
+        fixes = json.loads(p.read_text(encoding="utf-8"))
     by = {r.get("id"): r for r in recs if isinstance(r, dict)}
+    dropped = set()
     for tid, fx in fixes.items():
         if tid.startswith("_") or not isinstance(fx, dict):
+            continue
+        if fx.get("hide"):
+            dropped.add(tid)
             continue
         r = by.get(tid)
         if not r:
@@ -60,20 +66,55 @@ def apply_treaty_fixes(recs, data_dir):
             if k in fx:
                 r[k] = fx[k]
         r["zh_mt"] = False
-        if fx.get("drop_mt_summary") and isinstance(r.get("summary"), dict):
+        if fx.get("summary_zh"):
+            r["summary"] = {"text": fx["summary_zh"], "src": "curated", "mt": False,
+                            "url": (fx.get("sources") or [None])[0]}
+            r.pop("zhwiki", None)
+            r.pop("enwiki", None)
+        elif fx.get("drop_mt_summary") and isinstance(r.get("summary"), dict):
             sm = r["summary"]
             sm.pop("text", None)
             sm["mt"] = False
         if fx.get("note"):
             r["fix_note"] = fx["note"]
         r["fix_sources"] = fx.get("sources", [])
+    if dropped:
+        recs[:] = [r for r in recs if r.get("id") not in dropped]
 
 
 STATUS_ZH = {
     "signed_then_effective": "先签署，到记载的生效日才生效",
+    "signed_not_yet_effective": "已签署未生效",
+    "signed_never_effective": "已签署未生效",
     "signed_not_ratified": "已签署，未获批准，不作为生效条约",
     "published_not_ratified": "签署当日公布并付诸实施，没有议会批准",
 }
+
+
+def view_of(r, date_str):
+    """按所选日期决定弹窗里哪些日期和正文可以出现。
+
+    这一版自己的生效日在生效前仍然显示，并标成已签署未生效。
+    还没到的终止日、以及尚未签署的整版正文，不放进当日视图。
+    """
+    if not date_str:
+        return {}
+    from ..timeutil import parse_date
+    dk = parse_date(date_str).key()
+    signed = r.get("signed") or r.get("adopted")
+    sk, ek = rec_key(signed), rec_key(r.get("effective"))
+    end = tend(r)
+    endk = rec_key(end)
+    if sk is not None and dk < sk:
+        return {"withhold": True, "view_status": "所选日期这一版尚未签署"}
+    out = {}
+    if r.get("status") == "signed_never_effective" or (ek is not None and dk < ek):
+        out["view_status"] = "已签署未生效"
+    elif endk is not None and dk > endk:
+        out["view_status"] = "已终止或在缔约方之间被取代"
+    if endk is not None and dk < endk:
+        out["hide_end"] = True
+    return out
 
 
 def kind_of(r) -> str:
@@ -133,7 +174,7 @@ class SpiritsModule(ContentModule):
                 if c["strong"]:
                     group.setdefault(c["state"]["id"], METHOD_ZH.get(c["method"], c["method"]))
         dk = date.key()
-        buckets = {"dated": [], "open": [], "pending": [], "unratified": [], "implemented": []}
+        buckets = {"dated": [], "open": [], "pending": [], "never": [], "unratified": [], "implemented": []}
         seen = set()
         for sid, how in group.items():
             for r in self.by_party.get(sid, []):
@@ -156,25 +197,34 @@ class SpiritsModule(ContentModule):
                     which = "unratified"
                 elif status == "published_not_ratified":
                     which = "implemented"
+                elif status == "signed_never_effective":
+                    which = "never"
                 elif eff and signed and rec_key(eff) is not None and dk < rec_key(eff):
                     which = "pending"
                 elif end is not None:
                     which = "dated"
                 else:
                     which = "open"
+                status_zh = STATUS_ZH.get(status)
+                if which == "pending" and status == "signed_not_yet_effective":
+                    status_zh = "已签署未生效"
+                elif which == "never":
+                    status_zh = "已签署未生效"
+                elif which == "dated" and status == "signed_not_yet_effective":
+                    status_zh = None
                 card = {"id": r["id"], "name": __import__("backend.zh", fromlist=["disp"]).disp(r.get("zh") or r.get("en")), "en": r.get("en"), "kind": kind_of(r),
                         "types": [t.get("zh") or t.get("en") for t in r.get("types", [])][:3],
-                        "from": fmt_time(start), "to": fmt_time(end) if end else None,
+                        "from": fmt_time(start), "to": fmt_time(end) if end and rec_key(end) is not None and dk >= rec_key(end) else None,
                         "parties": [R.state_name(p["s"]) for p in r.get("parties", [])][:12],
                         "n_parties": len(r.get("parties", [])), "via": R.state_name(sid), "via_how": how,
                         "role": None if sid in party_ids else also.get(sid),
-                        "status": status, "status_zh": STATUS_ZH.get(status),
+                        "status": status, "status_zh": status_zh,
                         "sl": r.get("sl") or 0, "_k": a}
                 buckets[which].append(card)
         dated, open_ = buckets["dated"], buckets["open"]
         dated.sort(key=lambda c: -c["_k"])
         open_.sort(key=lambda c: (-c["sl"] if dk - c["_k"] > 50 else -1e6 - c["_k"]))  # 近 50 年内的按时间，其余按知名度
-        for key in ("pending", "unratified", "implemented"):
+        for key in ("pending", "never", "unratified", "implemented"):
             buckets[key].sort(key=lambda c: -c["_k"])
         blocs = []
         act = ctx.shared.get("alliances_active")
@@ -182,15 +232,17 @@ class SpiritsModule(ContentModule):
             for a in act(ctx, date):
                 if set(group) & set(a["members"]):
                     blocs.append({"id": a["id"], "name": a["name"], "n": len(a["members"]), "no_end": a.get("no_end")})
-        for c in dated + open_ + buckets["pending"] + buckets["unratified"] + buckets["implemented"]:
+        for c in dated + open_ + buckets["pending"] + buckets["never"] + buckets["unratified"] + buckets["implemented"]:
             c.pop("_k", None)
-        n = len(dated) + len(open_) + len(blocs) + len(buckets["pending"]) + len(buckets["unratified"]) + len(buckets["implemented"])
+        n = (len(dated) + len(open_) + len(blocs) + len(buckets["pending"]) + len(buckets["never"])
+             + len(buckets["unratified"]) + len(buckets["implemented"]))
         return {"items": [], "total": n, "kind": "spirits", "blocs": blocs, "dated": dated[:60], "open": open_[:60],
-                "pending": buckets["pending"][:20], "unratified": buckets["unratified"][:20], "implemented": buckets["implemented"][:20],
+                "pending": buckets["pending"][:20], "never": buckets["never"][:20],
+                "unratified": buckets["unratified"][:20], "implemented": buckets["implemented"][:20],
                 "n_dated": len(dated), "n_open": len(open_), "matched": [{"id": k, "name": R.state_name(k), "how": v} for k, v in group.items()],
                 "state": st and {"id": st["id"], "name": _zh_disp(st.get("zh") or st.get("en"))},
                 "alternatives": [{**a, "method_zh": METHOD_ZH.get(a["method"], a["method"])} for a in alts],
-                "note": "「未记录终止」只表示没有终止日期，不代表仍然有效。「尚未生效」是已经签署、生效日还没到。「未批准」不作为生效条约。本批核对了四份法国相关文件。斯洛伐克共和国、克罗地亚独立国、汪精卫政权、满洲国、意大利社会共和国的条约缺口没有逐份编目。"}
+                "note": "「未记录终止」只表示没有终止日期，不代表仍然有效。「已签署未生效」是已经签署、生效日还没到，或记载中没有生效。「未批准」不作为生效条约。本批核对了四份法国相关文件。斯洛伐克共和国、克罗地亚独立国、汪精卫政权、满洲国、意大利社会共和国的条约缺口没有逐份编目。"}
 
 
 MODULE = SpiritsModule()

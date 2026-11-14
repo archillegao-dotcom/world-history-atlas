@@ -37,8 +37,8 @@
     root.querySelectorAll("[data-treaty]").forEach((a) => (a.onclick = (e) => { e.preventDefault(); WHA.showTreaty(a.dataset.treaty); }));
   }
   const summaryHtml = (s, label) => s ? `<div class="wsum">${s.thumb ? `<img src="${esc(s.thumb)}" alt="">` : ""}
-      <p>${esc(s.extract)}</p>${s.mt && s.orig ? `<details class="s"><summary>英文原文</summary>${esc(s.orig)}</details>` : ""}<div class="src">${s.mt ? "机器翻译（Argos Translate，离线）自" : "摘要来源："}<a href="${esc(s.url)}" target="_blank" rel="noopener">${s.lang === "zh" ? "中文维基百科" : "English Wikipedia"}「${esc(s.title)}」</a>（CC BY-SA）</div></div>`
-    : `<div class="note">${label || "没有取得维基百科摘要（可能离线，或该条目没有维基百科页面）。"}</div>`;
+      <p>${esc(s.extract)}</p>${s.mt && s.orig ? `<details class="s"><summary>英文原文</summary>${esc(s.orig)}</details>` : ""}<div class="src">${s.lang === "src" ? "说明依据：" : (s.mt ? "机器翻译（Argos Translate，离线）自" : "摘要来源：")}<a href="${esc(s.url)}" target="_blank" rel="noopener">${s.lang === "src" ? esc(s.title) : (s.lang === "zh" ? "中文维基百科" : "English Wikipedia") + "「" + esc(s.title) + "」"}</a>${s.lang === "src" ? "" : "（CC BY-SA）"}</div></div>`
+    : (label === "" ? "" : `<div class="note">${label || "没有取得维基百科摘要（可能离线，或该条目没有维基百科页面）。"}</div>`);
 
   // 候选政权切换（地图区域可能对应多个 Wikidata 政权，例如同名的不同时期政权）
   function altSelector(r) {
@@ -149,7 +149,8 @@
       <div class="d">${c.parties.slice(0, 5).map(esc).join("、")}${c.n_parties > 5 ? " 等" : ""}</div>
       ${c.status_zh ? `<div class="d">${esc(c.status_zh)}</div>` : ""}${c.role ? `<div class="d">${esc(c.role)}</div>` : ""}</div>`;
     if (r.blocs?.length) h += `<h4>同盟 / 阵营</h4><div class="spirit-cards">${r.blocs.map((b) => `<div class="spirit k-同盟" data-bloc="${esc(b.id)}"><div><span class="k">同盟</span><b>${esc(b.name)}</b></div><div class="d">当时 ${b.n} 个成员${b.no_end ? " · 无解散记录" : ""}</div></div>`).join("")}</div>`;
-    if (r.pending?.length) h += `<h4>已签署，尚未生效</h4><div class="spirit-cards">${r.pending.map(card).join("")}</div>`;
+    const awaiting = [...(r.never || []), ...(r.pending || [])];
+    if (awaiting.length) h += `<h4>已签署未生效</h4><div class="spirit-cards">${awaiting.map(card).join("")}</div>`;
     if (r.unratified?.length) h += `<h4>已签署，未批准，不作为生效条约</h4><div class="spirit-cards">${r.unratified.map(card).join("")}</div>`;
     if (r.implemented?.length) h += `<h4>已签署并公布实施，没有议会批准</h4><div class="spirit-cards">${r.implemented.map(card).join("")}</div>`;
     if (r.dated?.length) h += `<h4>有效期内的条约（${r.n_dated}）</h4><div class="spirit-cards">${r.dated.map(card).join("")}</div>`;
@@ -197,18 +198,22 @@
     ${a.treaties?.length ? `<h4>相关条约</h4>${a.treaties.map(T).join("、")}${a.curated ? '<div class="note">Wikidata 中这个同盟条目与上述条约之间没有链接；关联依据为英文维基百科条目，成员取自条约在 Wikidata 中的签署方/参与方。</div>' : ""}` : ""}
     <div class="l">${a.links.map(link).join("")}</div><div class="source">来源：Wikidata（P527 / P710 / P1891 / P463 及 P580/P582 限定，CC0）、维基百科（CC BY-SA）</div>`);
 
-  WHA.showTreaty = (id) => show(`/api/treaty/${id}`, (t) => `
-    <h2>${esc(vis(t.name, "暂无通用译名"))}</h2>${t.en && t.en !== t.name ? `<div class="en">${esc(t.en)}</div>` : ""}${t.desc ? `<div class="s">${esc(t.desc)}</div>` : ""}
-    <div class="s">类型：${t.types.map(esc).join("、") || "—"}</div>
-    <table class="kv"><tr><th>签订</th><td>${esc(t.signed || "未记录")}</td></tr><tr><th>生效</th><td>${esc(t.effective || "未记录")}</td></tr>
+  WHA.showTreaty = (id) => show(`/api/treaty/${encodeURIComponent(id)}?date=${encodeURIComponent(WHA.dateParam())}`, (t) => `
+    <h2>${esc(vis(t.name, "暂无通用译名"))}</h2>${t.en && t.en !== t.name ? `<div class="en">${esc(t.en)}</div>` : ""}${t.view_status ? `<div class="s">${esc(t.view_status)}</div>` : ""}
+    ${t.withhold ? `<div class="note">${esc(t.view_status || "所选日期这一版尚未签署")}</div>` : `${t.desc ? `<div class="s">${esc(t.desc)}</div>` : ""}
+    <div class="s">类型：${(t.types || []).map(esc).join("、") || "—"}</div>
+    <table class="kv"><tr><th>签订</th><td>${esc(t.signed || "未记录")}</td></tr>
+      ${t.adopted ? `<tr><th>通过</th><td>${esc(t.adopted)}</td></tr>` : ""}
+      <tr><th>生效</th><td>${esc(t.effective || "未记录")}</td></tr>
+      ${t.intended_effective ? `<tr><th>预定生效</th><td>${esc(t.intended_effective)}（没有生效）</td></tr>` : ""}
       ${t.status_zh ? `<tr><th>效力</th><td>${esc(t.status_zh)}</td></tr>` : ""}${t.fix_note ? `<tr><th>核对</th><td>${esc(t.fix_note)}</td></tr>` : ""}
-      ${t.start ? `<tr><th>开始</th><td>${esc(t.start)}</td></tr>` : ""}<tr><th>终止</th><td>${esc(t.end || "未记录")}</td></tr>
+      ${t.start ? `<tr><th>开始</th><td>${esc(t.start)}</td></tr>` : ""}<tr><th>终止</th><td>${esc(t.end_hidden ? "所选日期尚未终止或被取代" : (t.end || "未记录"))}</td></tr>
       <tr><th>签订地点</th><td>${esc((t.location || []).map((x) => x.name).join("、") || "未记录")}</td></tr>
       ${t.countries?.length ? `<tr><th>所属国家</th><td>${esc(t.countries.join("、"))}</td></tr>` : ""}</table>
     ${t.name_mt ? '<div class="note">条约名称为机器翻译的「译名」（Wikidata 与维基百科都没有中文名称）。</div>' : ""}
-    ${summaryHtml(t.summary)}
-    <h4>签署方 / 参与方（${t.parties.length}${t.others ? `；另有 ${t.others} 个签署人或无法对应到政权的签署方` : ""}）</h4>
-    <table class="kv">${t.parties.map((p) => `<tr><td>${esc(p.name)}</td><td class="d">${esc(p.via)}${p.rep ? `：${P(p.rep)}` : ""}</td></tr>`).join("") || "<tr><td>Wikidata 没有记录能对应到政权的签署方</td></tr>"}</table>
-    <div class="l">${t.links.map(link).join("")}</div>${t.has_text ? "" : '<div class="note">没有找到条约原文链接（维基文库 / Wikidata P953）。</div>'}
-    <div class="source">来源：Wikidata（CC0）、维基百科（CC BY-SA）、维基文库</div>`);
+    ${summaryHtml(t.summary, t.summary && t.summary.lang === "src" ? "" : undefined)}
+    <h4>签署方 / 参与方（${(t.parties || []).length}${t.others ? `；另有 ${t.others} 个签署人或无法对应到政权的签署方` : ""}）</h4>
+    <table class="kv">${(t.parties || []).map((p) => `<tr><td>${esc(p.name)}</td><td class="d">${esc(p.via)}${p.rep ? `：${P(p.rep)}` : ""}</td></tr>`).join("") || "<tr><td>没有写到能对应到当时政权的签署方</td></tr>"}</table>
+    <div class="l">${(t.links || []).map(link).join("")}</div>${t.has_text ? "" : '<div class="note">没有找到条约原文链接（维基文库 / Wikidata P953）。</div>'}
+    <div class="source">来源：各版本页底链接。未单独改过的条目仍来自 Wikidata（CC0）、维基百科（CC BY-SA）、维基文库。</div>`}`);
 })();
