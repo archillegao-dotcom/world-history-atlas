@@ -17,28 +17,34 @@
     {"name": "MPIDR Population History GIS", "why": "免费范围限于登记后的非商业科研。不放进这个仓库。欧洲省界本批不画。"}
   ],
   "units": [
-    {"sid": "17", "id": "jiangxi", "name": "江西"},
+    {"sid": "17", "id": "jiangxi", "name": "江西", "controls": [{"from": "1949-05-22", "until": "1950-01-01", "nominal": "南京国民政府", "actual": "中国共产党", "note": "1949-05-22南昌易手。省级大致，按省会这一天，不是逐县。未核对《中華民國史事紀要》。", "sources": ["https://en.wikipedia.org/wiki/Chinese_Civil_War"]}]},
     {"sid": "1", "id": "anhui", "name": "安徽"},
-    {"sid": "13", "id": "hubei", "name": "湖北"},
-    {"sid": "14", "id": "hunan", "name": "湖南"},
-    {"sid": "12", "id": "henan", "name": "河南"},
-    {"sid": "32", "id": "zhejiang", "name": "浙江"},
-    {"sid": "23", "id": "shandong", "name": "山东"},
-    {"sid": "5", "id": "fujian", "name": "福建"},
+    {"sid": "13", "id": "hubei", "name": "湖北", "controls": [{"from": "1949-05-16", "until": "1950-01-01", "nominal": "南京国民政府", "actual": "中国共产党", "note": "1949-05-16武汉易手。省级大致，按省会这一天，不是逐县。未核对《中華民國史事紀要》。", "sources": ["https://en.wikipedia.org/wiki/Chinese_Civil_War"]}]},
+    {"sid": "14", "id": "hunan", "name": "湖南", "controls": [{"from": "1949-08-04", "until": "1950-01-01", "nominal": "南京国民政府", "actual": "中国共产党", "note": "1949-08-04长沙起义。省级大致，按省会这一天，不是逐县。未核对《中華民國史事紀要》。", "sources": ["https://en.wikipedia.org/wiki/Chinese_Civil_War"]}]},
+    {"sid": "12", "id": "henan", "name": "河南", "controls": [{"from": "1949-01-31", "until": "1950-01-01", "nominal": "南京国民政府", "actual": "中国共产党", "note": "与已有底图同一省级近似，用1949-01-31。开封的单独日子没有另锁。省级大致，按省会这一天，不是逐县。未核对《中華民國史事紀要》。", "sources": ["https://en.wikipedia.org/wiki/Chinese_Civil_War", "https://en.wikipedia.org/wiki/Pingjin_campaign"]}]},
+    {"sid": "32", "id": "zhejiang", "name": "浙江", "controls": [{"from": "1949-05-03", "until": "1950-01-01", "nominal": "南京国民政府", "actual": "中国共产党", "note": "1949-05-03杭州易手。省级大致，按省会这一天，不是逐县。未核对《中華民國史事紀要》。", "sources": ["https://en.wikipedia.org/wiki/Yangtze_River_Crossing_campaign"]}]},
+    {"sid": "23", "id": "shandong", "name": "山东", "controls": [{"from": "1949-01-31", "until": "1950-01-01", "nominal": "南京国民政府", "actual": "中国共产党", "note": "与已有底图同一省级近似，用北平1949-01-31。济南的单独日子没有另锁。省级大致，按省会这一天，不是逐县。未核对《中華民國史事紀要》。", "sources": ["https://en.wikipedia.org/wiki/Chinese_Civil_War", "https://en.wikipedia.org/wiki/Pingjin_campaign"]}]},
+    {"sid": "5", "id": "fujian", "name": "福建", "controls": [{"from": "1949-08-17", "until": "1950-01-01", "nominal": "南京国民政府", "actual": "中国共产党", "note": "1949-08-17福州易手。省级大致，按省会这一天，不是逐县。未核对《中華民國史事紀要》。", "sources": ["https://en.wikipedia.org/wiki/Chinese_Civil_War"]}]},
     {"sid": "9", "id": "guizhou", "name": "贵州"},
-    {"sid": "22", "id": "shaanxi", "name": "陕西", "line_note": "省内北部与南部的实控分界待考，不画。"},
+    {"sid": "22", "id": "shaanxi", "name": "陕西", "line_note": "省内北部与南部的实控分界待考，不画。", "controls": [{"from": "1949-05-20", "until": "1950-01-01", "nominal": "南京国民政府", "actual": "中国共产党", "note": "1949-05-20西安易手。省内南北分界仍不画。省级大致，按省会这一天，不是逐县。未核对《中華民國史事紀要》。", "sources": ["https://en.wikipedia.org/wiki/Chinese_Civil_War"]}]},
     {"sid": "10", "id": "zhili", "names": [
       {"from": "1912-01-01", "until": "1928-06-28", "name": "直隶", "kind": "省"},
       {"from": "1928-06-28", "until": "1950-01-01", "name": "河北", "kind": "省"}
     ], "line_note": "1914年10月顺天府改京兆。京兆和省的分线这套图没有画。点在北京仍落在这块轮廓里，分线待考。改称河北是1928-06-28。", "sources": ["http://www.wenxue100.com/book_LiShi/172_112.thtml", "https://zh.wikipedia.org/wiki/直隶省"], "controls": [
       {"from": "1916-06-06", "until": "1920-07-14", "nominal": "北京政府", "actual": "皖系", "note": "直皖战争1920-07-14爆发。这一天起不再把北京记成皖系独占。", "sources": ["https://zh.wikipedia.org/wiki/直皖战争"]}
+    ,
+      {"from": "1949-01-31", "until": "1950-01-01", "nominal": "南京国民政府", "actual": "中国共产党", "note": "1949-01-31共军进入北平。河北按这一天，京兆分线仍不画。省级大致，按省会这一天，不是逐县。未核对《中華民國史事紀要》。", "sources": ["https://zh.wikipedia.org/wiki/平津战役", "https://en.wikipedia.org/wiki/Pingjin_campaign"]}
     ]},
     {"sid": "24", "id": "shanxi", "name": "山西", "controls": [
       {"from": "1917-09-01", "until": "1949-04-24", "nominal_until": "1928-06-08", "nominal": "北京政府", "nominal_after": "南京国民政府", "actual": "晋系（阎锡山）", "note": "督军在1917年9月，日待考，按9月1日。1949-04-24太原易手。1930-05中原大战已起，北平的另一政府在9月，6月1日仍只记晋系实控。", "sources": ["https://zh.wikipedia.org/wiki/阎锡山", "https://zh.wikipedia.org/wiki/中原大战"]}
+    ,
+      {"from": "1949-04-24", "until": "1950-01-01", "nominal": "南京国民政府", "actual": "中国共产党", "note": "1949-04-24太原易手。晋系记到这一天，不提前。省级大致，按省会这一天，不是逐县。未核对《中華民國史事紀要》。", "sources": ["https://zh.wikipedia.org/wiki/太原战役", "https://zh.wikipedia.org/wiki/阎锡山"]}
     ]},
     {"sid": "29", "id": "yunnan", "name": "云南", "controls": [
       {"from": "1916-06-06", "until": "1927-02-06", "nominal_until": "1928-06-08", "nominal": "北京政府", "nominal_after": "南京国民政府", "actual": "滇系（唐继尧）", "note": "1927-02-06二六政变后不再记唐继尧。", "sources": ["https://zh.wikipedia.org/wiki/唐继尧"]},
       {"from": "1927-02-06", "until": "1945-10-03", "nominal_until": "1928-06-08", "nominal": "北京政府", "nominal_after": "南京国民政府", "actual": "滇系（龙云）", "note": "1945-10-03解除龙云的职务。省内分界不画。", "sources": ["https://zh.wikipedia.org/wiki/龙云"]}
+    ,
+      {"from": "1949-12-09", "until": "1950-01-01", "nominal": "南京国民政府", "actual": "中国共产党", "note": "1949-12-09卢汉起义。龙云仍记到1945-10-03，中间不补。省级大致，按省会这一天，不是逐县。未核对《中華民國史事紀要》。", "sources": ["https://zh.wikipedia.org/wiki/西南战役"]}
     ]},
     {"sid": "8", "id": "guangxi", "name": "广西", "nominal": [], "controls": [
       {"from": "1916-06-06", "until": "1921-06-01", "nominal": "北京政府与西南护法军政府并记，不择一", "actual": "旧桂系（陆荣廷）", "note": "旧桂系失桂在1921年，月日待考，这一条收到6月1日。", "sources": ["https://zh.wikipedia.org/wiki/桂系"]},
@@ -47,15 +53,23 @@
     {"sid": "7", "id": "guangdong", "name": "广东", "nominal": [], "controls": [
       {"from": "1920-01-01", "until": "1920-08-01", "nominal": "北京政府与西南护法军政府并记，不择一", "actual": "旧桂系驻粤", "note": "粤桂战争在1920年8月，日待考，按8月1日。7月1日仍记旧桂系驻粤。", "sources": ["https://zh.wikipedia.org/wiki/桂系"]},
       {"from": "1925-07-01", "until": "1927-01-01", "nominal": "国民政府", "actual": "国民政府（驻广州）", "note": "广州国民政府1925-07-01成立。1927年迁离广州，这一条收到1927-01-01，不把1月1日写成迁府当日。", "sources": ["https://zh.wikipedia.org/wiki/国民政府"]}
+    ,
+      {"from": "1949-10-14", "until": "1950-01-01", "nominal": "南京国民政府", "actual": "中国共产党", "note": "1949-10-14广州易手。底图1949-10-01起已是中华人民共和国，这一条不改那个日子。省级大致，按省会这一天，不是逐县。未核对《中華民國史事紀要》。", "sources": ["https://zh.wikipedia.org/wiki/广州战役_(1949年)"]}
     ]},
     {"sid": "16", "id": "jiangsu", "name": "江苏", "controls": [
       {"from": "1927-04-18", "until": "1937-12-13", "nominal": "南京国民政府", "actual": "南京国民政府", "note": "1927-04-18定都南京。1937-12-13南京失守，这一天起不再把全省写成政府所在。", "sources": ["https://zh.wikipedia.org/wiki/南京国民政府"]}
+    ,
+      {"from": "1949-04-23", "until": "1950-01-01", "nominal": "南京国民政府", "actual": "中国共产党", "note": "1949-04-23南京易手。省级大致，按省会这一天，不是逐县。未核对《中華民國史事紀要》。", "sources": ["https://zh.wikipedia.org/wiki/渡江战役", "https://en.wikipedia.org/wiki/Yangtze_River_Crossing_campaign"]}
     ]},
     {"sid": "27", "id": "xinjiang", "name": "新疆", "controls": [
       {"from": "1933-04-12", "until": "1944-09-11", "nominal": "南京国民政府", "actual": "盛世才", "note": "1933-04-12兵变。1944-09-11离开新疆。省内分界不画。", "sources": ["https://zh.wikipedia.org/wiki/盛世才"]}
+    ,
+      {"from": "1949-09-25", "until": "1950-01-01", "nominal": "南京国民政府", "actual": "中国共产党", "note": "1949-09-25新疆和平解放。1933-04-12至1944-09-11的盛世才不改。省内分界不画。三区只标县城。省级大致，按省会这一天，不是逐县。未核对《中華民國史事紀要》。", "sources": ["https://zh.wikipedia.org/wiki/三区革命", "https://en.wikipedia.org/wiki/Chinese_Civil_War"]}
     ]},
     {"sid": "25", "id": "sichuan", "name": "四川", "line_note": "省内各部的分界待考，不画。", "controls": [
       {"from": "1935-07-01", "until": "1938-01-20", "nominal": "南京国民政府", "actual": "川军（刘湘）", "note": "只知道1935年主川，按7月1日，不是到任日。1938-01-20刘湘去世。", "sources": ["https://zh.wikipedia.org/wiki/刘湘"]}
+    ,
+      {"from": "1949-12-30", "until": "1950-01-01", "nominal": "南京国民政府", "actual": "中国共产党", "note": "成都战役正文写1949-12-30第一野战军进入成都城。信息框写到12月27日，不把27日写成已经入城。重庆不另切。省级大致，按省会这一天，不是逐县。未核对《中華民國史事紀要》。", "sources": ["https://zh.wikipedia.org/wiki/成都战役", "https://zh.wikipedia.org/wiki/西南战役"]}
     ]},
     {"sid": "4", "id": "fengtian", "names": [
       {"from": "1912-01-01", "until": "1929-01-28", "name": "奉天", "kind": "省"},
@@ -111,6 +125,8 @@
       {"from": "1912-01-01", "until": "1928-10-22", "note": "宁夏1928-10-22才从甘肃划出设省。这套图把后来的轮廓回贴到1912年档，所以更早不画，省界待考。"}
     ], "line_note": "甘肃交出县份的行政交接写在1929-01-01。这条线没有把10月22日和1月1日切成两截。", "sources": ["http://www.wenxue100.com/book_LiShi/172_112.thtml", "http://xzqh.info/lt/read.php?tid=195595"], "controls": [
       {"from": "1933-07-01", "until": "1949-01-01", "nominal": "南京国民政府", "actual": "西北马家（马鸿逵）", "note": "只知道1933年起主政宁夏，按7月1日，不是到任日。1949年离任日待考，这一条收到1948年底。与阿拉善的分界不画。", "sources": ["https://zh.wikipedia.org/wiki/马鸿逵"]}
+    ,
+      {"from": "1949-09-23", "until": "1950-01-01", "nominal": "南京国民政府", "actual": "中国共产党", "note": "1949-09-23银川易手。马鸿逵那一条仍收到1948年底，不改。省级大致，按省会这一天，不是逐县。未核对《中華民國史事紀要》。", "sources": ["https://en.wikipedia.org/wiki/Chinese_Civil_War"]}
     ]},
     {"sid": "21", "id": "qinghai", "name": "青海", "draw": [{"from": "1928-09-17", "until": "1950-01-01"}], "nominal": [
       {"from": "1928-09-17", "until": "1950-01-01", "name": "南京国民政府"}
@@ -118,10 +134,12 @@
       {"from": "1912-01-01", "until": "1928-09-17", "note": "青海1928-09-17才宣布改省。更早的特别区界这套图没有另切，不画，省界待考。"}
     ], "line_note": "西宁道各县1929-01-01才由甘肃交出。这条线没有把这一步切开。", "sources": ["http://www.wenxue100.com/book_LiShi/172_112.thtml", "http://xzqh.info/lt/read.php?tid=195595"], "controls": [
       {"from": "1929-01-01", "until": "1949-01-01", "nominal": "南京国民政府", "actual": "西北马家", "note": "马麒、马麟、马步芳的交接不画成省内界。1949年的离任日待考，收到1948年底。", "sources": ["https://zh.wikipedia.org/wiki/马家军"]}
+    ,
+      {"from": "1949-09-05", "until": "1950-01-01", "nominal": "南京国民政府", "actual": "中国共产党", "note": "1949-09-05西宁易手。西北马家那一条仍收到1948年底，不改。省级大致，按省会这一天，不是逐县。未核对《中華民國史事紀要》。", "sources": ["https://en.wikipedia.org/wiki/Chinese_Civil_War"]}
     ]},
     {"sid": "6", "id": "gansu", "name": "甘肃", "draw": [{"from": "1929-01-01", "until": "1950-01-01"}], "gaps": [
       {"from": "1912-01-01", "until": "1929-01-01", "note": "这套图里的甘肃已经是划出宁夏、青海之后的轮廓。1929-01-01以前不拿它当作当年的甘肃省界。省界待考。"}
-    ], "line_note": "省内马家诸部的分界待考，不把整省写成一家。", "sources": ["http://xzqh.info/lt/read.php?tid=195595"]},
+    ], "line_note": "省内马家诸部的分界待考，不把整省写成一家。", "sources": ["http://xzqh.info/lt/read.php?tid=195595"], "controls": [{"from": "1949-08-26", "until": "1950-01-01", "nominal": "南京国民政府", "actual": "中国共产党", "note": "1949-08-26兰州易手。省内马家分界仍不画。省级大致，按省会这一天，不是逐县。未核对《中華民國史事紀要》。", "sources": ["https://en.wikipedia.org/wiki/Chinese_Civil_War"]}]},
     {"sid": "3", "id": "xikang", "nominal": [
       {"from": "1928-09-17", "until": "1950-01-01", "name": "南京国民政府"}
     ], "names": [
@@ -130,6 +148,8 @@
       {"from": "1939-01-01", "until": "1950-01-01", "name": "西康", "kind": "省"}
     ], "line_note": "1934-12-25行政院议决设西康建省委员会，1935-07-22在雅安成立。1939-01-01省政府在康定成立。1938年划入的宁远、雅州不在这条线上。轮廓和1912年档是同一条线。", "sources": ["https://zh.wikipedia.org/wiki/西康省", "http://www.wenxue100.com/book_LiShi/172_112.thtml"], "controls": [
       {"from": "1935-07-22", "until": "1949-12-09", "nominal": "南京国民政府", "actual": "刘文辉", "note": "1935-07-22建省委员会在雅安成立。省政府1939-01-01。省内分界不画。1949-12-09通电的日子用这一天，不另推到省内每一县。", "sources": ["https://zh.wikipedia.org/wiki/西康省"]}
+    ,
+      {"from": "1949-12-09", "until": "1950-01-01", "nominal": "南京国民政府", "actual": "中国共产党", "note": "沿用这一条已写的1949-12-09。底图没有单独的西康多边形。省级大致，按省会这一天，不是逐县。未核对《中華民國史事紀要》。", "sources": ["https://zh.wikipedia.org/wiki/西康省", "https://zh.wikipedia.org/wiki/西南战役"]}
     ]},
     {"sid": "28", "id": "tibet", "name": "西藏", "draw": [], "gaps": [
       {"from": "1912-01-01", "until": "1950-01-01", "note": "这套图里有西藏轮廓，但不画成行省。甘丹颇章的实控仍按原有记录，不用这条省界覆盖。"}
@@ -139,7 +159,7 @@
     ], "gaps": [
       {"from": "1912-01-01", "until": "1945-10-25", "note": "1945-10-25以前不把这套图里的台湾轮廓画成中国的省。"}
     ], "line_note": "轮廓是数据集里的台湾，不是1945年新测的省界。10月25日是接收日。"},
-    {"sid": "1947-遼寧", "id": "liaoning1947", "name": "辽宁", "draw": [{"from": "1947-06-01", "until": "1950-01-01"}], "nominal": [{"from": "1947-06-01", "until": "1950-01-01", "name": "南京国民政府"}], "line_note": "东北九省。县份调整在1947年6月，日待考，按6月1日。实控待考，不把内战前线画成省界。"},
+    {"sid": "1947-遼寧", "id": "liaoning1947", "name": "辽宁", "draw": [{"from": "1947-06-01", "until": "1950-01-01"}], "nominal": [{"from": "1947-06-01", "until": "1950-01-01", "name": "南京国民政府"}], "line_note": "东北九省。县份调整在1947年6月，日待考，按6月1日。1948-11-02以前实控待考。不把内战前线画成省界。", "controls": [{"from": "1948-11-02", "until": "1950-01-01", "nominal": "南京国民政府", "actual": "中国共产党", "note": "1948-11-02沈阳易手。东北其余八省没有各用自己的省会日，不在这一条里。省级大致，按省会这一天，不是逐县。未核对《中華民國史事紀要》。", "sources": ["https://zh.wikipedia.org/wiki/辽沈战役"]}]},
     {"sid": "1947-吉林", "id": "jilin1947", "name": "吉林", "draw": [{"from": "1947-06-01", "until": "1950-01-01"}], "nominal": [{"from": "1947-06-01", "until": "1950-01-01", "name": "南京国民政府"}], "line_note": "东北九省的吉林，不是1928年以前那块全省轮廓。"},
     {"sid": "1947-黑龍江", "id": "heilongjiang1947", "name": "黑龙江", "draw": [{"from": "1947-06-01", "until": "1950-01-01"}], "nominal": [{"from": "1947-06-01", "until": "1950-01-01", "name": "南京国民政府"}], "line_note": "东北九省的黑龙江。"},
     {"sid": "1947-合江", "id": "hejiang", "name": "合江", "draw": [{"from": "1947-06-01", "until": "1950-01-01"}], "nominal": [{"from": "1947-06-01", "until": "1950-01-01", "name": "南京国民政府"}]},

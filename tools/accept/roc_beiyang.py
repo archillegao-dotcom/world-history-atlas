@@ -192,5 +192,40 @@ titles = [row.get("title") or "" for row in ev.get("items") or []]
 check("1919-06-28 事件栏有拒签", any("拒绝签署" in t for t in titles), titles[:8])
 check("拒签不作为生效条约插进条约栏", not has(names("1919-06-28", 39.9, 116.4), "拒绝签署"), "")
 
+js422 = place("1949-04-22", 32.06, 118.8)
+js423 = place("1949-04-23", 32.06, 118.8)
+check("1949-04-22 江苏实控仍待考", js422["place"]["actual"] == "实控待考", js422["place"])
+check("1949-04-23 江苏实控是中国共产党", js423["place"]["name"] == "江苏" and js423["place"]["actual"] == "中国共产党", js423["place"])
+check("1949-06-01 南京省界实控是中国共产党",
+      place("1949-06-01", 32.06, 118.8)["place"]["actual"] == "中国共产党", "")
+sy1 = place("1948-11-01", 41.794, 123.447)
+sy2 = place("1948-11-02", 41.794, 123.447)
+check("1948-11-01 沈阳实控仍待考", sy1["place"]["actual"] == "实控待考", sy1["place"])
+check("1948-11-02 沈阳实控是中国共产党", sy2["place"]["name"] == "辽宁" and sy2["place"]["actual"] == "中国共产党", sy2["place"])
+dh24 = place("1949-09-24", 43.807, 87.567)
+dh25 = place("1949-09-25", 43.807, 87.567)
+check("1949-09-24 迪化还不是中国共产党", dh24["place"]["actual"] != "中国共产党", dh24["place"])
+check("1949-09-25 迪化实控是中国共产党，盛世才那一条还在",
+      dh25["place"]["actual"] == "中国共产党" and place("1937-07-01", 43.807, 87.567)["place"]["actual"] == "盛世才",
+      dh25["place"])
+sq = place("1944-11-12", 43.807, 87.567)
+check("1944-11-12 新疆有三区，不是全省",
+      any(w["id"] == "sanqu-1944" for w in sq["wars"]) and any(s["id"] == "yining-1944" for s in sq["seats"])
+      and "不是新疆全省" in json.dumps(sq, ensure_ascii=False) and sq["place"]["actual"] == "实控待考",
+      sq["place"])
+km = place("1949-12-10", 25.0389, 102.7183)
+cd = place("1949-12-10", 30.665, 104.069)
+check("1949-12-10 昆明实控是中国共产党", km["place"]["name"] == "云南" and km["place"]["actual"] == "中国共产党", km["place"])
+check("1949-12-10 成都还不是中国共产党", cd["place"]["name"] == "四川" and cd["place"]["actual"] == "实控待考", cd["place"])
+loc = get("/api/locate", date="1949-12-10", lat=25.037, lon=121.565)
+p = loc["polity"]
+ev = get("/api/modules/events", date="1949-12-10", snap=loc["snapshot"], fid=p["fid"])
+titles = [row.get("title") or "" for row in ev.get("items") or []]
+check("1949-12-10 台北事件栏有迁台", "国民政府迁台" in titles, titles[:8])
+loc6 = get("/api/locate", date="1949-12-06", lat=25.037, lon=121.565)
+ev6 = get("/api/modules/events", date="1949-12-06", snap=loc6["snapshot"], fid=loc6["polity"]["fid"])
+titles6 = [row.get("title") or "" for row in ev6.get("items") or []]
+check("1949-12-06 还没有这一条迁台", "国民政府迁台" not in titles6, titles6[:8])
+
 print(f"FAILS {len(fails)}")
 sys.exit(1 if fails else 0)
