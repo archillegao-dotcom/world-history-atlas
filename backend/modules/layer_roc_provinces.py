@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 from .. import roc_admin as ROC
+from .. import roc_beiyang as BY
 from ..registry import LayerModule
 
 
@@ -23,6 +24,7 @@ class RocProvincesLayer(LayerModule):
     def layer_query(self, ctx, date, params):
         day, date_note = ROC.view_day(date)
         items = ROC.features_for(self.pack["units"], day)
+        extra = BY.bundle(ctx.data_dir, day)
         return {
             "items": items,
             "total": len(items),
@@ -32,6 +34,11 @@ class RocProvincesLayer(LayerModule):
             "source_url": self.pack["meta"]["source"]["url"],
             "not_implemented": self.pack["meta"].get("not_this_batch") or [],
             "note": ROC.coverage_note(self.pack["meta"]) + (date_note or ""),
+            "fronts": extra["fronts"],
+            "seats": extra["seats"],
+            "wars": extra["wars"],
+            "county_license": extra["county_license"],
+            "county_url": extra["county_url"],
         }
 
 

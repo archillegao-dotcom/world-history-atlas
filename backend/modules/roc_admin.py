@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 from .. import roc_admin as ROC
+from .. import roc_beiyang as BY
 from ..registry import ContentModule
 
 
@@ -23,6 +24,7 @@ class RocAdminPanel(ContentModule):
         day, date_note = ROC.view_day(date)
         lat, lon = params.get("lat"), params.get("lon")
         place = ROC.place_at(self.pack, lon, lat, day)
+        local = BY.for_province(ctx.data_dir, day, place.get("id"))
         title = place["name"] if place["status"] == "draw" else "省界待考"
         item = {
             "id": place.get("id") or "pending",
@@ -41,6 +43,11 @@ class RocAdminPanel(ContentModule):
             "note": ROC.coverage_note(self.pack["meta"]),
             "license": self.pack["meta"]["source"]["license"],
             "source_url": self.pack["meta"]["source"]["url"],
+            "wars": local["wars"],
+            "fronts": local["fronts"],
+            "seats": local["seats"],
+            "county_license": local["county_license"],
+            "county_url": local["county_url"],
         }
 
 

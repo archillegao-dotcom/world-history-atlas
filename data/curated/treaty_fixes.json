@@ -715,5 +715,113 @@
       "https://www.imorules.com/solas/00_front_matter.html",
       "https://www.imo.org/en/ourwork/iiis/pages/harmonized%20system%20of%20survey%20and%20certification%20%28hssc%29.aspx"
     ]
+  },
+  "curated:roc-1915-shandong": {
+    "insert": true,
+    "zh": "关于山东省之条约",
+    "en": "Treaty respecting the Province of Shantung",
+    "sl": 40,
+    "types": [{"en": "treaty", "zh": "条约"}],
+    "signed": {"y": 1915, "m": 5, "d": 25, "p": 11},
+    "parties": [
+      {"s": "Q13426199", "via": "curated"},
+      {"s": "Q188712", "via": "curated"}
+    ],
+    "countries": ["Q13426199", "Q188712"],
+    "desc": "1915-05-25北京政府与日本签署的两约之一，只这一件，不是二十一条全文都签了字。批准互换日和废止日待考，不把签署日写成生效日，也不把1922-02-04写成这一件的废止日。未能核对《中華民國史事紀要》原文。",
+    "note": "签署日取公开记载的1915-05-25。生效日、废止日待考。未能核对《中華民國史事紀要》原文。",
+    "summary_zh": "1915年5月25日签署。生效日和废止日待考。未能核对《中華民國史事紀要》原文。",
+    "sources": [
+      "https://zh.wikipedia.org/wiki/二十一条",
+      "https://en.wikipedia.org/wiki/Twenty-One_Demands"
+    ]
+  },
+  "curated:roc-1915-manchuria": {
+    "insert": true,
+    "zh": "关于南满洲及东部内蒙古之条约",
+    "en": "Treaty respecting South Manchuria and Eastern Inner Mongolia",
+    "sl": 40,
+    "types": [{"en": "treaty", "zh": "条约"}],
+    "signed": {"y": 1915, "m": 5, "d": 25, "p": 11},
+    "parties": [
+      {"s": "Q13426199", "via": "curated"},
+      {"s": "Q188712", "via": "curated"}
+    ],
+    "countries": ["Q13426199", "Q188712"],
+    "desc": "1915-05-25签署的另一件。不把它和山东那一件并成一份《二十一条》。废止日待考。未能核对《中華民國史事紀要》原文。",
+    "note": "签署日1915-05-25。生效日、废止日待考。未能核对《中華民國史事紀要》原文。",
+    "summary_zh": "1915年5月25日签署。生效日和废止日待考。未能核对《中華民國史事紀要》原文。",
+    "sources": [
+      "https://zh.wikipedia.org/wiki/二十一条",
+      "https://en.wikipedia.org/wiki/Twenty-One_Demands"
+    ]
+  },
+  "Q2659185": {
+    "zh": "九国公约",
+    "en": "Nine-Power Treaty",
+    "parties": [
+      {"s": "Q13426199", "via": "curated"},
+      {"s": "Q30", "via": "curated"},
+      {"s": "Q31", "via": "curated"},
+      {"s": "Q145", "via": "curated"},
+      {"s": "Q174193", "via": "curated"},
+      {"s": "Q70802", "via": "curated"},
+      {"s": "Q142", "via": "curated"},
+      {"s": "Q172579", "via": "curated"},
+      {"s": "Q188712", "via": "curated"},
+      {"s": "Q55", "via": "curated"},
+      {"s": "Q29999", "via": "curated"},
+      {"s": "Q45", "via": "curated"},
+      {"s": "Q167360", "via": "curated"}
+    ],
+    "countries": ["Q13426199", "Q30", "Q31", "Q145", "Q174193", "Q70802", "Q142", "Q172579", "Q188712", "Q55", "Q29999", "Q45", "Q167360"],
+    "desc": "全称是《九国间关于中国事件应适用各原则及政策之条约》。1922-02-06签署。导出里已有签署日。生效日待考，不把1925-08-05写成已经核对。英国、法国、荷兰、葡萄牙补了地图上能对上的政权编号，不是另加国家。未能核对《中華民國史事紀要》原文。",
+    "note": "不另插一条。生效日待考。未能核对《中華民國史事紀要》原文。",
+    "summary_zh": "1922年2月6日签署。生效日待考。未能核对《中華民國史事紀要》原文。",
+    "sources": [
+      "https://www.wikidata.org/wiki/Q2659185",
+      "https://zh.wikipedia.org/wiki/九国公约",
+      "https://en.wikipedia.org/wiki/Nine-Power_Treaty"
+    ]
+  },
+  "curated:roc-1922-shandong": {
+    "insert": true,
+    "zh": "解决山东悬案条约",
+    "en": "Treaty for the Settlement of Outstanding Questions relative to Shantung",
+    "sl": 40,
+    "types": [{"en": "treaty", "zh": "条约"}],
+    "signed": {"y": 1922, "m": 2, "d": 4, "p": 11},
+    "parties": [
+      {"s": "Q13426199", "via": "curated"},
+      {"s": "Q188712", "via": "curated"}
+    ],
+    "countries": ["Q13426199", "Q188712"],
+    "desc": "1922-02-04中国与日本签署。批准书互换日待考，不把某一天写成已经核对。不把它写成1915年山东条约的废止文书已经在这一天生效。未能核对《中華民國史事紀要》原文。",
+    "note": "只写了签署日。互换日待考。未能核对《中華民國史事紀要》原文。",
+    "summary_zh": "1922年2月4日签署。批准书互换日待考。未能核对《中華民國史事紀要》原文。",
+    "sources": [
+      "https://zh.wikipedia.org/wiki/解决山东悬案条约",
+      "https://en.wikipedia.org/wiki/Shandong_Problem"
+    ]
+  },
+  "curated:roc-1924-sino-soviet": {
+    "insert": true,
+    "zh": "中俄解决悬案大纲协定",
+    "en": "Agreement on General Principles for the Settlement of the Questions between the Republic of China and the Soviet Union",
+    "sl": 40,
+    "types": [{"en": "treaty", "zh": "条约"}],
+    "signed": {"y": 1924, "m": 5, "d": 31, "p": 11},
+    "parties": [
+      {"s": "Q13426199", "via": "curated"},
+      {"s": "Q15180", "via": "curated"}
+    ],
+    "countries": ["Q13426199", "Q15180"],
+    "desc": "1924-05-31在北京签署。正文是否写明签字当日生效，本批没有核对，不把5月31日写成生效日。1924-09-20的奉俄协定是另一件，不并进这一件。未能核对《中華民國史事紀要》原文。",
+    "note": "只写了签署日。生效日待考。奉俄协定不并入。未能核对《中華民國史事紀要》原文。",
+    "summary_zh": "1924年5月31日签署。生效日待考。不包含1924年9月20日的奉俄协定。未能核对《中華民國史事紀要》原文。",
+    "sources": [
+      "https://zh.wikipedia.org/wiki/中苏解决悬案大纲协定",
+      "https://en.wikipedia.org/wiki/Sino-Soviet_Agreement"
+    ]
   }
 }
