@@ -823,5 +823,64 @@
       "https://zh.wikipedia.org/wiki/中苏解决悬案大纲协定",
       "https://en.wikipedia.org/wiki/Sino-Soviet_Agreement"
     ]
+  },
+  "curated:roc-1929-khabarovsk": {
+    "insert": true,
+    "zh": "中苏伯力会议议定书",
+    "en": "Khabarovsk Protocol",
+    "sl": 40,
+    "types": [{"en": "treaty", "zh": "条约"}],
+    "signed": {"y": 1929, "m": 12, "d": 20, "p": 11},
+    "parties": [
+      {"s": "Q13426199", "via": "curated"},
+      {"s": "Q15180", "via": "curated"}
+    ],
+    "countries": ["Q13426199", "Q15180"],
+    "desc": "1929-12-20蔡运升在伯力签署《中苏伯力会议议定书》。议定书写自签字日起发生效力。南京国民政府声明不承认，本批不把生效日写成已经核对。未核对《中華民國史事紀要》。",
+    "note": "只写了签署日。议定书自身写签字生效，南京国民政府不承认，生效日不写成已经核对。未核对《中華民國史事紀要》。",
+    "summary_zh": "1929年12月20日签署。议定书写签字生效，南京国民政府不承认。未核对《中華民國史事紀要》。",
+    "sources": [
+      "https://zh.wikipedia.org/wiki/中东路事件"
+    ]
+  },
+  "curated:roc-1932-shanghai-truce": {
+    "insert": true,
+    "zh": "淞沪停战协定",
+    "en": "Shanghai Ceasefire Agreement",
+    "sl": 40,
+    "types": [{"en": "treaty", "zh": "条约"}],
+    "signed": {"y": 1932, "m": 5, "d": 5, "p": 11},
+    "effective": {"y": 1932, "m": 5, "d": 5, "p": 11},
+    "parties": [
+      {"s": "Q13426199", "via": "curated"},
+      {"s": "Q188712", "via": "curated"}
+    ],
+    "countries": ["Q13426199", "Q188712"],
+    "desc": "正式名称是《中日上海停战及日方撤军协定》。1932-05-05在上海英国领事馆签署。中文维基百科所引条文写自签字日起生效。废止日不写成某一天已经核对。未核对《中華民國史事紀要》。",
+    "note": "签署日和条文里的生效日都是1932-05-05。废止日待考。未核对《中華民國史事紀要》。",
+    "summary_zh": "1932年5月5日签署，条文写自签字日起生效。废止日待考。未核对《中華民國史事紀要》。",
+    "sources": [
+      "https://zh.wikipedia.org/wiki/淞沪停战协定"
+    ]
+  },
+  "curated:roc-1933-tanggu": {
+    "insert": true,
+    "zh": "塘沽协定",
+    "en": "Tanggu Truce",
+    "sl": 40,
+    "types": [{"en": "treaty", "zh": "条约"}],
+    "signed": {"y": 1933, "m": 5, "d": 31, "p": 11},
+    "effective": {"y": 1933, "m": 5, "d": 31, "p": 11},
+    "parties": [
+      {"s": "Q13426199", "via": "curated"},
+      {"s": "Q188712", "via": "curated"}
+    ],
+    "countries": ["Q13426199", "Q188712"],
+    "desc": "1933-05-31塘沽签署。中文维基百科所引条文写本协定签字后即发生效力，并写明延庆至芦台一线。高丽营、林亭口、芦台没有县城点。废止日待考。未核对《中華民國史事紀要》。",
+    "note": "签署日和条文里的生效日都是1933-05-31。废止日待考。未核对《中華民國史事紀要》。",
+    "summary_zh": "1933年5月31日签署，条文写签字后即发生效力。废止日待考。未核对《中華民國史事紀要》。",
+    "sources": [
+      "https://zh.wikipedia.org/wiki/塘沽协定"
+    ]
   }
 }
