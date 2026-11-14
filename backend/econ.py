@@ -118,6 +118,38 @@ class EconStore:
                     out[str(fid)] = ov
         return out
 
+    def overlap_one(self, basemaps, snap, fid: int) -> list:
+        """一个多边形对应的现代国家。优先用预先算好的历史快照重叠；
+        CShapes 等没有预计算时，按与 Natural Earth 2011 国界的面积重叠现算，并记下结果。
+        这仍是今天国家的范围，不是当时政权的账。"""
+        pre = self.overlap_for(basemaps, snap).get(str(fid))
+        if pre:
+            return pre
+        if not hasattr(self, "_live_ov"):
+            self._live_ov = {}
+        key = (str(snap), int(fid))
+        if key in self._live_ov:
+            return self._live_ov[key]
+        feat = basemaps.features(snap).get(int(fid))
+        g = feat.get("geom") if feat else None
+        hits = []
+        if g is not None and not g.is_empty and g.area > 0:
+            for fid2, f2 in basemaps.features(2011).items():
+                iso = self.ne_iso.get(str(fid2))
+                g2 = f2.get("geom")
+                if not iso or g2 is None or not g.intersects(g2):
+                    continue
+                inter = g.intersection(g2)
+                if inter.is_empty:
+                    continue
+                share = inter.area / g.area
+                if share >= 0.02:
+                    hits.append([iso, round(float(share), 4)])
+            hits.sort(key=lambda x: -x[1])
+            hits = hits[:8]
+        self._live_ov[key] = hits
+        return hits
+
     def name(self, iso: str) -> str:
         return getattr(self, "zh", {}).get(iso) or (self.mpd.get(iso) or {}).get("name") or iso
 
@@ -127,6 +159,15 @@ class EconStore:
             c = self.mpd.get(iso) or {}
             return c.get({"gdppc": "gdppc", "gdp": "gdp", "pop": "pop_n"}[m["key"]], [])
         return self.wdi.get(m["key"], {}).get(iso, [])
+
+    def exact_at(self, ind: str, iso: str, year: int) -> dict | None:
+        """只返回数据表里正好是这一年的值。不插值，不沿用邻年。"""
+        if ind not in self.indicators:
+            return None
+        for y, v in self.series(ind, iso):
+            if y == year:
+                return {"v": v, "year": year}
+        return None
 
     def at(self, ind: str, iso: str, year: int) -> dict | None:
         m = self.indicators[ind]

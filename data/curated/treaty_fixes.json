@@ -1,0 +1,1179 @@
+{
+  "_doc": "有来源的条约/事件修正。无中文维基、无 Wikidata 中文标签的专名不机译，标「暂无通用译名」加原文。",
+  "Q5035992": {
+    "zh": "Capitulation of Tainan（暂无通用译名）",
+    "desc": "1895-10-21，日军进入台南，台湾民主国结束。这是军事开城，不是与中华民国签订的条约。Wikidata 无中文标签，英文维基无中文跨语言链接。",
+    "parties": [
+      {
+        "s": "Q188712",
+        "via": "curated"
+      },
+      {
+        "s": "Q319881",
+        "via": "curated"
+      }
+    ],
+    "countries": [
+      "Q188712",
+      "Q319881"
+    ],
+    "drop_mt_summary": true,
+    "note": "原数据把英文专名机译成「台南话（译名）」，并用 P17 把当事方记成中华民国 Q865。Q865 的 Wikidata 英文标签是 Taiwan，不是 1895 年的政权。",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Capitulation_of_Tainan",
+      "https://en.wikipedia.org/wiki/Republic_of_Formosa",
+      "https://www.wikidata.org/wiki/Q5035992",
+      "https://zh.wikipedia.org/wiki/%E4%B9%99%E6%9C%AA%E6%88%B0%E7%88%AD"
+    ]
+  },
+  "Q170360": {
+    "zh": "第二次贡比涅停战协定",
+    "en": "Armistice of 22 June 1940",
+    "types": [
+      {
+        "en": "armistice",
+        "zh": "停战协定"
+      }
+    ],
+    "signed": {
+      "y": 1940,
+      "m": 6,
+      "d": 22
+    },
+    "effective": {
+      "y": 1940,
+      "m": 6,
+      "d": 25
+    },
+    "status": "signed_then_effective",
+    "parties": [
+      {
+        "s": "Q70802",
+        "via": "curated"
+      },
+      {
+        "s": "Q7318",
+        "via": "curated"
+      }
+    ],
+    "countries": [
+      "Q70802",
+      "Q7318"
+    ],
+    "also_show": [
+      {
+        "s": "Q69808",
+        "how": "维希政权沿用此文件，不是签署方"
+      },
+      {
+        "s": "Q2748708",
+        "how": "这几日地图上的德军占领区不是签署方；签署方是法兰西第三共和国"
+      }
+    ],
+    "desc": "1940-06-22 在贡比涅签署，签署方是法兰西第三共和国与纳粹德国，不是 7 月 10 日以后的维希政权。生效日是 1940-06-25，所以 6 月 22 日当天尚未生效。",
+    "note": "6 月 22 日只是签署。生效在法意停战协定之后的 6 月 25 日。维希政权不是签署方。",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Armistice_of_22_June_1940",
+      "https://www.wikidata.org/wiki/Q170360"
+    ]
+  },
+  "Q2862273": {
+    "zh": "法国-意大利停战协定",
+    "en": "Franco-Italian Armistice",
+    "types": [
+      {
+        "en": "armistice",
+        "zh": "停战协定"
+      }
+    ],
+    "signed": {
+      "y": 1940,
+      "m": 6,
+      "d": 24
+    },
+    "effective": {
+      "y": 1940,
+      "m": 6,
+      "d": 25
+    },
+    "status": "signed_then_effective",
+    "parties": [
+      {
+        "s": "Q70802",
+        "via": "curated"
+      },
+      {
+        "s": "Q172579",
+        "via": "curated"
+      }
+    ],
+    "countries": [
+      "Q70802",
+      "Q172579"
+    ],
+    "also_show": [
+      {
+        "s": "Q69808",
+        "how": "维希政权沿用此文件，不是签署方"
+      },
+      {
+        "s": "Q2748708",
+        "how": "这几日地图上的德军占领区不是签署方；签署方是法兰西第三共和国"
+      }
+    ],
+    "desc": "1940-06-24 签署，签署方是法兰西第三共和国与意大利王国。1940-06-25 才生效。中文名用 Wikidata 已有标签，不另造译名。",
+    "note": "6 月 24 日已签署、尚未生效。",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Franco-Italian_Armistice",
+      "https://www.wikidata.org/wiki/Q2862273"
+    ]
+  },
+  "curated:paris-protocols-1941": {
+    "insert": true,
+    "zh": "巴黎议定书",
+    "en": "Paris Protocols",
+    "sl": 30,
+    "types": [
+      {
+        "en": "protocol",
+        "zh": "议定书"
+      }
+    ],
+    "signed": {
+      "y": 1941,
+      "m": 5,
+      "d": 28
+    },
+    "status": "signed_not_ratified",
+    "parties": [
+      {
+        "s": "Q69808",
+        "via": "curated"
+      },
+      {
+        "s": "Q7318",
+        "via": "curated"
+      }
+    ],
+    "countries": [
+      "Q69808",
+      "Q7318"
+    ],
+    "enwiki": "Paris Protocols",
+    "desc": "1941 年 5 月 27 日至 28 日由达尔朗与德国代表在巴黎签署的议定书。贝当未批准，不作为生效条约。后来出现的部分军事合作不等于议定书生效。",
+    "note": "导出数据里没有这份文件，故用 curated id，不发明 QID。不把它写成有效条约。",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Paris_Protocols",
+      "https://fr.wikipedia.org/wiki/Protocoles_de_Paris",
+      "https://francearchives.gouv.fr/fr/facomponent/1188ae613c29240f615307da0d7ec11547f85f79"
+    ]
+  },
+  "curated:franco-japanese-indochina-1941-07-29": {
+    "insert": true,
+    "zh": "法日印度支那议定书",
+    "en": "Protocol between France and the Empire of Japan concerning the joint defense of French Indochina",
+    "sl": 30,
+    "types": [
+      {
+        "en": "protocol",
+        "zh": "议定书"
+      }
+    ],
+    "signed": {
+      "y": 1941,
+      "m": 7,
+      "d": 29
+    },
+    "status": "published_not_ratified",
+    "parties": [
+      {
+        "s": "Q69808",
+        "via": "curated"
+      },
+      {
+        "s": "Q188712",
+        "via": "curated"
+      }
+    ],
+    "countries": [
+      "Q69808",
+      "Q188712"
+    ],
+    "desc": "全称《法国和日本帝国关于共同防御法属印度支那的议定书》。1941-07-29 在维希由达尔朗与加藤大使签署，当日公布并付诸实施，没有议会批准。这是议定书，不称作生效条约。",
+    "note": "导出数据里没有这份文件，故用 curated id，不发明 QID。中文简称取已出版的《法日印度支那议定书》，不是新造译名。",
+    "sources": [
+      "http://www.ibiblio.org/pha/monos/147/147app02.html",
+      "https://imtfe.law.virginia.edu/collections/tavenner/10/3/proof-doc-1030-text-protocol-between-france-and-japan"
+    ]
+  },
+  "Q523582": {
+    "hide": true,
+    "batch": 3,
+    "note": "这一条把1914年的签署日和1980年的生效日写在同一条，摘要又写成1974/1978。已按版本拆开，本条不再显示。",
+    "sources": [
+      "https://www.imo.org/en/About/Conventions/Pages/International-Convention-for-the-Safety-of-Life-at-Sea-(SOLAS),-1974.aspx",
+      "https://wwwcdn.imo.org/localresources/en/OurWork/Safety/Documents/SOLAS98final.pdf"
+    ]
+  },
+  "curated:solas-1914": {
+    "insert": true,
+    "batch": 3,
+    "sl": 40,
+    "zh_mt": false,
+    "types": [
+      {
+        "en": "treaty",
+        "zh": "条约"
+      }
+    ],
+    "zh": "1914年国际海上人命安全公约",
+    "en": "International Convention for the Safety of Life at Sea, 1914",
+    "signed": {
+      "y": 1914,
+      "m": 1,
+      "d": 20,
+      "p": 11
+    },
+    "adopted": {
+      "y": 1914,
+      "m": 1,
+      "d": 20,
+      "p": 11
+    },
+    "intended_effective": {
+      "y": 1915,
+      "m": 7,
+      "p": 10
+    },
+    "status": "signed_never_effective",
+    "parties": [],
+    "summary_zh": "1914年1月20日在伦敦通过。预定1915年7月生效，战争爆发后没有生效。与会13国的名单没有逐一核对，标待考。这一条只记这一版。",
+    "desc": "1914年1月20日在伦敦通过。预定1915年7月生效，战争爆发后没有生效。与会13国的名单没有逐一核对，标待考。",
+    "note": "没有生效日。不把后来版本的生效日写到这一条。",
+    "sources": [
+      "https://wwwcdn.imo.org/localresources/en/OurWork/Safety/Documents/SOLAS98final.pdf"
+    ]
+  },
+  "curated:solas-1929": {
+    "insert": true,
+    "batch": 3,
+    "sl": 40,
+    "zh_mt": false,
+    "types": [
+      {
+        "en": "treaty",
+        "zh": "条约"
+      }
+    ],
+    "zh": "1929年国际海上人命安全公约",
+    "en": "International Convention for the Safety of Life at Sea, 1929",
+    "signed": {
+      "y": 1929,
+      "m": 5,
+      "d": 31,
+      "p": 11
+    },
+    "adopted": {
+      "y": 1929,
+      "m": 5,
+      "d": 31,
+      "p": 11
+    },
+    "effective": {
+      "y": 1933,
+      "m": 1,
+      "d": 1,
+      "p": 11
+    },
+    "end": {
+      "y": 1952,
+      "m": 11,
+      "d": 19,
+      "p": 11
+    },
+    "status": "signed_not_yet_effective",
+    "parties": [
+      {
+        "s": "Q41304",
+        "via": "1929年公约序言所列政府"
+      },
+      {
+        "s": "Q408",
+        "via": "1929年公约序言所列政府"
+      },
+      {
+        "s": "Q31",
+        "via": "1929年公约序言所列政府"
+      },
+      {
+        "s": "Q16",
+        "via": "1929年公约序言所列政府"
+      },
+      {
+        "s": "Q35",
+        "via": "1929年公约序言所列政府"
+      },
+      {
+        "s": "Q29",
+        "via": "1929年公约序言所列政府"
+      },
+      {
+        "s": "Q31747",
+        "via": "1929年公约序言所列政府"
+      },
+      {
+        "s": "Q30",
+        "via": "1929年公约序言所列政府"
+      },
+      {
+        "s": "Q33",
+        "via": "1929年公约序言所列政府"
+      },
+      {
+        "s": "Q70802",
+        "via": "1929年公约序言所列政府"
+      },
+      {
+        "s": "Q145",
+        "via": "1929年公约序言所列政府"
+      },
+      {
+        "s": "Q129286",
+        "via": "1929年公约序言所列政府"
+      },
+      {
+        "s": "Q172579",
+        "via": "1929年公约序言所列政府"
+      },
+      {
+        "s": "Q188712",
+        "via": "1929年公约序言所列政府"
+      },
+      {
+        "s": "Q20",
+        "via": "1929年公约序言所列政府"
+      },
+      {
+        "s": "Q55",
+        "via": "1929年公约序言所列政府"
+      },
+      {
+        "s": "Q34",
+        "via": "1929年公约序言所列政府"
+      },
+      {
+        "s": "Q15180",
+        "via": "1929年公约序言所列政府"
+      }
+    ],
+    "summary_zh": "1929年5月31日订于伦敦，一般生效日是1933年1月1日。序言点名18个政府。这一条只记这一版。",
+    "desc": "1929年5月31日订于伦敦，一般生效日是1933年1月1日。序言点名18个政府。德国用当时的魏玛共和国，印度用英属印度，意大利用意大利王国，日本用大日本帝国，法国用法兰西第三共和国，爱尔兰用爱尔兰自由邦。",
+    "note": "终止日取下一版公约的一般生效日，表示缔约方之间被取代，不是每一国的退出文书。未到该日的视图不写出这一天。",
+    "sources": [
+      "https://www.austlii.edu.au/au/other/dfat/treaties/1936/9.html",
+      "https://wwwcdn.imo.org/localresources/en/OurWork/Safety/Documents/SOLAS98final.pdf",
+      "https://www.info.dfat.gov.au/info/treaties/treaties.nsf/3328431b218f8d59ca256ae1000029b8/6deb4e1779d59292ca256bc70005e434?OpenDocument="
+    ]
+  },
+  "curated:solas-1948": {
+    "insert": true,
+    "batch": 3,
+    "sl": 40,
+    "zh_mt": false,
+    "types": [
+      {
+        "en": "treaty",
+        "zh": "条约"
+      }
+    ],
+    "zh": "1948年国际海上人命安全公约",
+    "en": "International Convention for the Safety of Life at Sea, 1948",
+    "signed": {
+      "y": 1948,
+      "m": 6,
+      "d": 10,
+      "p": 11
+    },
+    "adopted": {
+      "y": 1948,
+      "m": 6,
+      "d": 10,
+      "p": 11
+    },
+    "effective": {
+      "y": 1952,
+      "m": 11,
+      "d": 19,
+      "p": 11
+    },
+    "end": {
+      "y": 1965,
+      "m": 5,
+      "d": 26,
+      "p": 11
+    },
+    "status": "signed_not_yet_effective",
+    "parties": [
+      {
+        "s": "Q414",
+        "via": "1948年公约序言所列政府。签署名单未附，是当日签署还是后来接受，标待考。"
+      },
+      {
+        "s": "Q408",
+        "via": "1948-06-10签署。见澳大利亚条约集。"
+      },
+      {
+        "s": "Q31",
+        "via": "1948年公约序言所列政府。签署名单未附，是当日签署还是后来接受，标待考。"
+      },
+      {
+        "s": "Q155",
+        "via": "1948年公约序言所列政府。签署名单未附，是当日签署还是后来接受，标待考。"
+      },
+      {
+        "s": "Q16",
+        "via": "1948年公约序言所列政府。签署名单未附，是当日签署还是后来接受，标待考。"
+      },
+      {
+        "s": "Q298",
+        "via": "1948年公约序言所列政府。签署名单未附，是当日签署还是后来接受，标待考。"
+      },
+      {
+        "s": "Q13426199",
+        "via": "1948年公约序言所列政府。签署名单未附，是当日签署还是后来接受，标待考。"
+      },
+      {
+        "s": "Q35",
+        "via": "1948年公约序言所列政府。签署名单未附，是当日签署还是后来接受，标待考。"
+      },
+      {
+        "s": "Q124943",
+        "via": "1948年公约序言所列政府。签署名单未附，是当日签署还是后来接受，标待考。"
+      },
+      {
+        "s": "Q33",
+        "via": "1948年公约序言所列政府。签署名单未附，是当日签署还是后来接受，标待考。"
+      },
+      {
+        "s": "Q69829",
+        "via": "1948年公约序言所列政府。签署名单未附，是当日签署还是后来接受，标待考。"
+      },
+      {
+        "s": "Q41",
+        "via": "1948年公约序言所列政府。签署名单未附，是当日签署还是后来接受，标待考。"
+      },
+      {
+        "s": "Q189",
+        "via": "1948年公约序言所列政府。签署名单未附，是当日签署还是后来接受，标待考。"
+      },
+      {
+        "s": "Q668",
+        "via": "1948年公约序言所列政府。签署名单未附，是当日签署还是后来接受，标待考。"
+      },
+      {
+        "s": "Q27",
+        "via": "1948年公约序言所列政府。签署名单未附，是当日签署还是后来接受，标待考。"
+      },
+      {
+        "s": "Q38",
+        "via": "1948年公约序言所列政府。签署名单未附，是当日签署还是后来接受，标待考。"
+      },
+      {
+        "s": "Q55",
+        "via": "1948年公约序言所列政府。签署名单未附，是当日签署还是后来接受，标待考。"
+      },
+      {
+        "s": "Q664",
+        "via": "1948年公约序言所列政府。签署名单未附，是当日签署还是后来接受，标待考。"
+      },
+      {
+        "s": "Q20",
+        "via": "1948年公约序言所列政府。签署名单未附，是当日签署还是后来接受，标待考。"
+      },
+      {
+        "s": "Q843",
+        "via": "1948年公约序言所列政府。签署名单未附，是当日签署还是后来接受，标待考。"
+      },
+      {
+        "s": "Q804",
+        "via": "1948年公约序言所列政府。签署名单未附，是当日签署还是后来接受，标待考。"
+      },
+      {
+        "s": "Q5870215",
+        "via": "1948年公约序言所列政府。签署名单未附，是当日签署还是后来接受，标待考。"
+      },
+      {
+        "s": "Q36",
+        "via": "序言写 Republic of Poland。1952年的国号不写在这一条。签署日待考。"
+      },
+      {
+        "s": "Q45",
+        "via": "1948年公约序言所列政府。签署名单未附，是当日签署还是后来接受，标待考。"
+      },
+      {
+        "s": "Q258",
+        "via": "1948年公约序言所列政府。签署名单未附，是当日签署还是后来接受，标待考。"
+      },
+      {
+        "s": "Q34",
+        "via": "1948年公约序言所列政府。签署名单未附，是当日签署还是后来接受，标待考。"
+      },
+      {
+        "s": "Q145",
+        "via": "1948年公约序言所列政府。签署名单未附，是当日签署还是后来接受，标待考。"
+      },
+      {
+        "s": "Q30",
+        "via": "1948年公约序言所列政府。签署名单未附，是当日签署还是后来接受，标待考。"
+      },
+      {
+        "s": "Q15180",
+        "via": "1948年公约序言所列政府。签署名单未附，是当日签署还是后来接受，标待考。"
+      },
+      {
+        "s": "Q1290149",
+        "via": "1948年公约序言所列政府。签署名单未附，是当日签署还是后来接受，标待考。"
+      }
+    ],
+    "summary_zh": "1948年6月10日订于伦敦。一般生效日是1952年11月19日。文本里的1951年1月1日只是接受书提早交存时的条件，该条件没有满足，不是实际生效日。联合国条约集第164卷第113页。这一条只记这一版。",
+    "desc": "1948年6月10日订于伦敦。一般生效日是1952年11月19日。1951年1月1日那个条件没有满足，不是实际生效日。",
+    "note": "终止日是下一版公约开始取代它的日期，只在该日及之后显示。1951年1月1日不是实际生效日。",
+    "sources": [
+      "https://www.austlii.edu.au/au/other/dfat/treaties/1960/1.html",
+      "https://www.info.dfat.gov.au/info/treaties/treaties.nsf/3328431b218f8d59ca256ae1000029b8/6deb4e1779d59292ca256bc70005e434?OpenDocument=",
+      "https://wwwcdn.imo.org/localresources/en/KnowledgeCentre/ConferencesMeetings/SOLASConferenceDocuments/SOLAS%20CONF%20INF.4.pdf",
+      "https://wwwcdn.imo.org/localresources/en/OurWork/Safety/Documents/SOLAS98final.pdf"
+    ]
+  },
+  "curated:solas-1960": {
+    "insert": true,
+    "batch": 3,
+    "sl": 40,
+    "zh_mt": false,
+    "types": [
+      {
+        "en": "treaty",
+        "zh": "条约"
+      }
+    ],
+    "zh": "1960年国际海上人命安全公约",
+    "en": "International Convention for the Safety of Life at Sea, 1960",
+    "signed": {
+      "y": 1960,
+      "m": 6,
+      "d": 17,
+      "p": 11
+    },
+    "adopted": {
+      "y": 1960,
+      "m": 6,
+      "d": 17,
+      "p": 11
+    },
+    "effective": {
+      "y": 1965,
+      "m": 5,
+      "d": 26,
+      "p": 11
+    },
+    "status": "signed_not_yet_effective",
+    "parties": [],
+    "summary_zh": "1960年6月17日通过，一般生效日是1965年5月26日。这是政府间海事协商组织主持的会议，与会55国。缔约方名单没有逐一核对，标待考，所以不挂到某个后来的国家上。这一条只记这一版。",
+    "desc": "1960年6月17日通过，一般生效日是1965年5月26日。缔约方名单没有逐一核对，标待考。",
+    "note": "下一版公约何时在缔约方之间取代这一版，没有单独的退出文书，标待考。不把后一版的生效日写成这一条的终止日。",
+    "sources": [
+      "https://www.info.dfat.gov.au/info/treaties/treaties.nsf/3328431b218f8d59ca256ae1000029b8/6deb4e1779d59292ca256bc70005e434?OpenDocument=",
+      "https://wwwcdn.imo.org/localresources/en/KnowledgeCentre/ConferencesMeetings/SOLASConferenceDocuments/SOLAS%20CONF%20INF.4.pdf",
+      "https://wwwcdn.imo.org/localresources/en/OurWork/Safety/Documents/SOLAS98final.pdf"
+    ]
+  },
+  "curated:solas-1974": {
+    "insert": true,
+    "batch": 3,
+    "sl": 40,
+    "zh_mt": false,
+    "types": [
+      {
+        "en": "treaty",
+        "zh": "条约"
+      }
+    ],
+    "zh": "1974年国际海上人命安全公约",
+    "en": "International Convention for the Safety of Life at Sea, 1974",
+    "signed": {
+      "y": 1974,
+      "m": 11,
+      "d": 1,
+      "p": 11
+    },
+    "adopted": {
+      "y": 1974,
+      "m": 11,
+      "d": 1,
+      "p": 11
+    },
+    "effective": {
+      "y": 1980,
+      "m": 5,
+      "d": 25,
+      "p": 11
+    },
+    "status": "signed_not_yet_effective",
+    "parties": [],
+    "summary_zh": "1974年11月1日通过，1980年5月25日生效。这一版采用默认接受的修正程序。缔约方名单没有逐一核对，标待考。后来的修正案不写进这一条。",
+    "desc": "1974年11月1日通过，1980年5月25日生效。缔约方名单没有逐一核对，标待考。后来的修正案不写进这一条。",
+    "note": "通过日和生效日用国际海事组织公约页。不把这一版的生效日写回较早的版本。",
+    "sources": [
+      "https://www.imo.org/en/About/Conventions/Pages/International-Convention-for-the-Safety-of-Life-at-Sea-(SOLAS),-1974.aspx",
+      "https://www.imorules.com/solas/00_front_matter.html"
+    ]
+  },
+  "curated:solas-1978": {
+    "insert": true,
+    "batch": 3,
+    "sl": 40,
+    "zh_mt": false,
+    "types": [
+      {
+        "en": "protocol",
+        "zh": "议定书"
+      }
+    ],
+    "zh": "1978年海上人命安全公约议定书",
+    "en": "Protocol of 1978 relating to the International Convention for the Safety of Life at Sea, 1974",
+    "signed": {
+      "y": 1978,
+      "m": 2,
+      "d": 17,
+      "p": 11
+    },
+    "adopted": {
+      "y": 1978,
+      "m": 2,
+      "d": 17,
+      "p": 11
+    },
+    "effective": {
+      "y": 1981,
+      "m": 5,
+      "d": 1,
+      "p": 11
+    },
+    "end": {
+      "y": 2000,
+      "m": 2,
+      "d": 3,
+      "p": 11
+    },
+    "status": "signed_not_yet_effective",
+    "parties": [],
+    "summary_zh": "1978年2月17日由油轮安全和防污染会议通过，1981年5月1日生效。它改的是1974年公约的检验和证书，不是另一部公约的全文。缔约方名单标待考。",
+    "desc": "1978年2月17日通过，1981年5月1日生效。缔约方名单标待考。",
+    "note": "终止日是下一份议定书在其缔约方之间取代它的日期，未到该日不显示。",
+    "sources": [
+      "https://www.imorules.com/solas/00_front_matter.html",
+      "https://wwwcdn.imo.org/localresources/en/OurWork/Safety/Documents/SOLAS98final.pdf"
+    ]
+  },
+  "curated:solas-1988": {
+    "insert": true,
+    "batch": 3,
+    "sl": 40,
+    "zh_mt": false,
+    "types": [
+      {
+        "en": "protocol",
+        "zh": "议定书"
+      }
+    ],
+    "zh": "1988年海上人命安全公约议定书",
+    "en": "Protocol of 1988 relating to the International Convention for the Safety of Life at Sea, 1974",
+    "signed": {
+      "y": 1988,
+      "m": 11,
+      "d": 11,
+      "p": 11
+    },
+    "adopted": {
+      "y": 1988,
+      "m": 11,
+      "d": 11,
+      "p": 11
+    },
+    "effective": {
+      "y": 2000,
+      "m": 2,
+      "d": 3,
+      "p": 11
+    },
+    "status": "signed_not_yet_effective",
+    "parties": [],
+    "summary_zh": "1988年11月11日于伦敦通过，引入检验与发证的协调制度，2000年2月3日生效。缔约方名单标待考。这一条只记这一议定书。",
+    "desc": "1988年11月11日于伦敦通过，2000年2月3日生效。缔约方名单标待考。",
+    "note": "在本议定书缔约方之间，生效时取代前一份议定书。缔约方名单标待考。",
+    "sources": [
+      "https://www.imorules.com/solas/00_front_matter.html",
+      "https://www.imo.org/en/ourwork/iiis/pages/harmonized%20system%20of%20survey%20and%20certification%20%28hssc%29.aspx"
+    ]
+  },
+  "curated:roc-1915-shandong": {
+    "insert": true,
+    "zh": "关于山东省之条约",
+    "en": "Treaty respecting the Province of Shantung",
+    "sl": 40,
+    "types": [{"en": "treaty", "zh": "条约"}],
+    "signed": {"y": 1915, "m": 5, "d": 25, "p": 11},
+    "parties": [
+      {"s": "Q13426199", "via": "curated"},
+      {"s": "Q188712", "via": "curated"}
+    ],
+    "countries": ["Q13426199", "Q188712"],
+    "desc": "1915-05-25北京政府与日本签署的两约之一，只这一件，不是二十一条全文都签了字。批准互换日和废止日待考，不把签署日写成生效日，也不把1922-02-04写成这一件的废止日。未能核对《中華民國史事紀要》原文。",
+    "note": "签署日取公开记载的1915-05-25。生效日、废止日待考。未能核对《中華民國史事紀要》原文。",
+    "summary_zh": "1915年5月25日签署。生效日和废止日待考。未能核对《中華民國史事紀要》原文。",
+    "sources": [
+      "https://zh.wikipedia.org/wiki/二十一条",
+      "https://en.wikipedia.org/wiki/Twenty-One_Demands"
+    ]
+  },
+  "curated:roc-1915-manchuria": {
+    "insert": true,
+    "zh": "关于南满洲及东部内蒙古之条约",
+    "en": "Treaty respecting South Manchuria and Eastern Inner Mongolia",
+    "sl": 40,
+    "types": [{"en": "treaty", "zh": "条约"}],
+    "signed": {"y": 1915, "m": 5, "d": 25, "p": 11},
+    "parties": [
+      {"s": "Q13426199", "via": "curated"},
+      {"s": "Q188712", "via": "curated"}
+    ],
+    "countries": ["Q13426199", "Q188712"],
+    "desc": "1915-05-25签署的另一件。不把它和山东那一件并成一份《二十一条》。废止日待考。未能核对《中華民國史事紀要》原文。",
+    "note": "签署日1915-05-25。生效日、废止日待考。未能核对《中華民國史事紀要》原文。",
+    "summary_zh": "1915年5月25日签署。生效日和废止日待考。未能核对《中華民國史事紀要》原文。",
+    "sources": [
+      "https://zh.wikipedia.org/wiki/二十一条",
+      "https://en.wikipedia.org/wiki/Twenty-One_Demands"
+    ]
+  },
+  "Q2659185": {
+    "zh": "九国公约",
+    "en": "Nine-Power Treaty",
+    "parties": [
+      {"s": "Q13426199", "via": "curated"},
+      {"s": "Q30", "via": "curated"},
+      {"s": "Q31", "via": "curated"},
+      {"s": "Q145", "via": "curated"},
+      {"s": "Q174193", "via": "curated"},
+      {"s": "Q70802", "via": "curated"},
+      {"s": "Q142", "via": "curated"},
+      {"s": "Q172579", "via": "curated"},
+      {"s": "Q188712", "via": "curated"},
+      {"s": "Q55", "via": "curated"},
+      {"s": "Q29999", "via": "curated"},
+      {"s": "Q45", "via": "curated"},
+      {"s": "Q167360", "via": "curated"}
+    ],
+    "countries": ["Q13426199", "Q30", "Q31", "Q145", "Q174193", "Q70802", "Q142", "Q172579", "Q188712", "Q55", "Q29999", "Q45", "Q167360"],
+    "desc": "全称是《九国间关于中国事件应适用各原则及政策之条约》。1922-02-06签署。导出里已有签署日。生效日待考，不把1925-08-05写成已经核对。英国、法国、荷兰、葡萄牙补了地图上能对上的政权编号，不是另加国家。未能核对《中華民國史事紀要》原文。",
+    "note": "不另插一条。生效日待考。未能核对《中華民國史事紀要》原文。",
+    "summary_zh": "1922年2月6日签署。生效日待考。未能核对《中華民國史事紀要》原文。",
+    "sources": [
+      "https://www.wikidata.org/wiki/Q2659185",
+      "https://zh.wikipedia.org/wiki/九国公约",
+      "https://en.wikipedia.org/wiki/Nine-Power_Treaty"
+    ]
+  },
+  "curated:roc-1922-shandong": {
+    "insert": true,
+    "zh": "解决山东悬案条约",
+    "en": "Treaty for the Settlement of Outstanding Questions relative to Shantung",
+    "sl": 40,
+    "types": [{"en": "treaty", "zh": "条约"}],
+    "signed": {"y": 1922, "m": 2, "d": 4, "p": 11},
+    "parties": [
+      {"s": "Q13426199", "via": "curated"},
+      {"s": "Q188712", "via": "curated"}
+    ],
+    "countries": ["Q13426199", "Q188712"],
+    "desc": "1922-02-04中国与日本签署。批准书互换日待考，不把某一天写成已经核对。不把它写成1915年山东条约的废止文书已经在这一天生效。未能核对《中華民國史事紀要》原文。",
+    "note": "只写了签署日。互换日待考。未能核对《中華民國史事紀要》原文。",
+    "summary_zh": "1922年2月4日签署。批准书互换日待考。未能核对《中華民國史事紀要》原文。",
+    "sources": [
+      "https://zh.wikipedia.org/wiki/解决山东悬案条约",
+      "https://en.wikipedia.org/wiki/Shandong_Problem"
+    ]
+  },
+  "curated:roc-1924-sino-soviet": {
+    "insert": true,
+    "zh": "中俄解决悬案大纲协定",
+    "en": "Agreement on General Principles for the Settlement of the Questions between the Republic of China and the Soviet Union",
+    "sl": 40,
+    "types": [{"en": "treaty", "zh": "条约"}],
+    "signed": {"y": 1924, "m": 5, "d": 31, "p": 11},
+    "parties": [
+      {"s": "Q13426199", "via": "curated"},
+      {"s": "Q15180", "via": "curated"}
+    ],
+    "countries": ["Q13426199", "Q15180"],
+    "desc": "1924-05-31在北京签署。正文是否写明签字当日生效，本批没有核对，不把5月31日写成生效日。1924-09-20的奉俄协定是另一件，不并进这一件。未能核对《中華民國史事紀要》原文。",
+    "note": "只写了签署日。生效日待考。奉俄协定不并入。未能核对《中華民國史事紀要》原文。",
+    "summary_zh": "1924年5月31日签署。生效日待考。不包含1924年9月20日的奉俄协定。未能核对《中華民國史事紀要》原文。",
+    "sources": [
+      "https://zh.wikipedia.org/wiki/中苏解决悬案大纲协定",
+      "https://en.wikipedia.org/wiki/Sino-Soviet_Agreement"
+    ]
+  },
+  "curated:roc-1929-khabarovsk": {
+    "insert": true,
+    "zh": "中苏伯力会议议定书",
+    "en": "Khabarovsk Protocol",
+    "sl": 40,
+    "types": [{"en": "treaty", "zh": "条约"}],
+    "signed": {"y": 1929, "m": 12, "d": 20, "p": 11},
+    "parties": [
+      {"s": "Q13426199", "via": "curated"},
+      {"s": "Q15180", "via": "curated"}
+    ],
+    "countries": ["Q13426199", "Q15180"],
+    "desc": "1929-12-20蔡运升在伯力签署《中苏伯力会议议定书》。议定书写自签字日起发生效力。南京国民政府声明不承认，本批不把生效日写成已经核对。未核对《中華民國史事紀要》。",
+    "note": "只写了签署日。议定书自身写签字生效，南京国民政府不承认，生效日不写成已经核对。未核对《中華民國史事紀要》。",
+    "summary_zh": "1929年12月20日签署。议定书写签字生效，南京国民政府不承认。未核对《中華民國史事紀要》。",
+    "sources": [
+      "https://zh.wikipedia.org/wiki/中东路事件"
+    ]
+  },
+  "curated:roc-1932-shanghai-truce": {
+    "insert": true,
+    "zh": "淞沪停战协定",
+    "en": "Shanghai Ceasefire Agreement",
+    "sl": 40,
+    "types": [{"en": "treaty", "zh": "条约"}],
+    "signed": {"y": 1932, "m": 5, "d": 5, "p": 11},
+    "effective": {"y": 1932, "m": 5, "d": 5, "p": 11},
+    "parties": [
+      {"s": "Q13426199", "via": "curated"},
+      {"s": "Q188712", "via": "curated"}
+    ],
+    "countries": ["Q13426199", "Q188712"],
+    "desc": "正式名称是《中日上海停战及日方撤军协定》。1932-05-05在上海英国领事馆签署。中文维基百科所引条文写自签字日起生效。废止日不写成某一天已经核对。未核对《中華民國史事紀要》。",
+    "note": "签署日和条文里的生效日都是1932-05-05。废止日待考。未核对《中華民國史事紀要》。",
+    "summary_zh": "1932年5月5日签署，条文写自签字日起生效。废止日待考。未核对《中華民國史事紀要》。",
+    "sources": [
+      "https://zh.wikipedia.org/wiki/淞沪停战协定"
+    ]
+  },
+  "curated:roc-1933-tanggu": {
+    "insert": true,
+    "zh": "塘沽协定",
+    "en": "Tanggu Truce",
+    "sl": 40,
+    "types": [{"en": "treaty", "zh": "条约"}],
+    "signed": {"y": 1933, "m": 5, "d": 31, "p": 11},
+    "effective": {"y": 1933, "m": 5, "d": 31, "p": 11},
+    "parties": [
+      {"s": "Q13426199", "via": "curated"},
+      {"s": "Q188712", "via": "curated"}
+    ],
+    "countries": ["Q13426199", "Q188712"],
+    "desc": "1933-05-31塘沽签署。中文维基百科所引条文写本协定签字后即发生效力，并写明延庆至芦台一线。高丽营、林亭口、芦台没有县城点。废止日待考。未核对《中華民國史事紀要》。",
+    "note": "签署日和条文里的生效日都是1933-05-31。废止日待考。未核对《中華民國史事紀要》。",
+    "summary_zh": "1933年5月31日签署，条文写签字后即发生效力。废止日待考。未核对《中華民國史事紀要》。",
+    "sources": [
+      "https://zh.wikipedia.org/wiki/塘沽协定"
+    ]
+  },
+  "curated:roc-1935-hemei": {
+    "insert": true,
+    "zh": "何梅协定",
+    "en": "He-Umezu Agreement",
+    "sl": 40,
+    "types": [{"en": "treaty", "zh": "条约"}],
+    "signed": {"y": 1935, "m": 7, "d": 6, "p": 11},
+    "parties": [
+      {"s": "Q13426199", "via": "curated"},
+      {"s": "Q188712", "via": "curated"}
+    ],
+    "countries": ["Q13426199", "Q188712"],
+    "desc": "性质有争议。中文维基百科《何梅协定》记1935-06-09梅津提出备忘录，6月11日交正式文本，1935-07-06何应钦以普通信函表示接受。双方没有正式协定手续。国民政府声称何应钦并未正式签字。不把7月6日写成已经生效的正式条约。未核对《中華民國史事紀要》。",
+    "note": "性质有争议：备忘录加7月6日的信函，不是经过批准的正式条约。生效日不写成已经核对。未核对《中華民國史事紀要》。",
+    "summary_zh": "1935年7月6日何应钦复函。性质有争议，没有正式协定手续。未核对《中華民國史事紀要》。",
+    "sources": [
+      "https://zh.wikipedia.org/wiki/何梅协定"
+    ]
+  },
+  "curated:roc-1935-qintu": {
+    "insert": true,
+    "zh": "秦土协定",
+    "en": "Qin-Doihara Agreement",
+    "sl": 40,
+    "types": [{"en": "treaty", "zh": "条约"}],
+    "signed": {"y": 1935, "m": 6, "d": 27, "p": 11},
+    "parties": [
+      {"s": "Q13426199", "via": "curated"},
+      {"s": "Q188712", "via": "curated"}
+    ],
+    "countries": ["Q13426199", "Q188712"],
+    "desc": "性质有争议。中文维基百科《秦土协定》记这是1935年处理张北事件的非正式外交协议，1935-06-27秦德纯与土肥原贤二在北平签订。不把这一天写成已经批准生效。未核对《中華民國史事紀要》。",
+    "note": "性质有争议：非正式协议。只写了1935-06-27。生效日待考。未核对《中華民國史事紀要》。",
+    "summary_zh": "1935年6月27日签订的非正式协议。性质有争议。生效日待考。未核对《中華民國史事紀要》。",
+    "sources": [
+      "https://zh.wikipedia.org/wiki/秦土协定"
+    ]
+  },
+  "curated:roc-1937-sino-soviet": {
+    "insert": true,
+    "zh": "中苏互不侵犯条约",
+    "en": "Sino-Soviet Non-Aggression Treaty",
+    "sl": 40,
+    "types": [{"en": "treaty", "zh": "条约"}],
+    "signed": {"y": 1937, "m": 8, "d": 21, "p": 11},
+    "effective": {"y": 1937, "m": 8, "d": 21, "p": 11},
+    "parties": [
+      {"s": "Q13426199", "via": "curated"},
+      {"s": "Q15180", "via": "curated"}
+    ],
+    "countries": ["Q13426199", "Q15180"],
+    "desc": "中文维基百科《中苏互不侵犯条约》导语写1937-08-20，所引约文写一九三七年八月二十一日订于南京，并写签字之日发生效力。本批按约文的8月21日。废止日不写成某一天已经核对。未核对《中華民國史事紀要》。",
+    "note": "按约文，签署和生效都是1937-08-21。导语另写8月20日。未核对《中華民國史事紀要》。",
+    "summary_zh": "约文写1937年8月21日签字并生效。条目导语写8月20日。未核对《中華民國史事紀要》。",
+    "sources": [
+      "https://zh.wikipedia.org/wiki/中苏互不侵犯条约"
+    ]
+  },
+  "curated:roc-1943-sino-us": {
+    "insert": true,
+    "zh": "中美关于取消美国在华治外法权及处理有关问题条约",
+    "en": "Sino-American Treaty for the Relinquishment of Extraterritorial Rights",
+    "sl": 40,
+    "types": [
+      {
+        "en": "treaty",
+        "zh": "条约"
+      }
+    ],
+    "signed": {
+      "y": 1943,
+      "m": 1,
+      "d": 11,
+      "p": 11
+    },
+    "parties": [
+      {
+        "s": "Q13426199",
+        "via": "curated"
+      },
+      {
+        "s": "Q30",
+        "via": "curated"
+      }
+    ],
+    "countries": [
+      "Q13426199",
+      "Q30"
+    ],
+    "desc": "中文维基百科《中美平等新约》写1943-01-11由魏道明与赫尔在华盛顿签署，美国放弃在华领事裁判权。这条摘录没有写生效日，不补。未核对《中華民國史事紀要》。",
+    "note": "只写1943-01-11签署。生效日摘录没有写。未核对《中華民國史事紀要》。",
+    "summary_zh": "1943年1月11日在华盛顿签署。生效日摘录没有写。未核对《中華民國史事紀要》。",
+    "sources": [
+      "https://zh.wikipedia.org/wiki/中美平等新约"
+    ]
+  },
+  "curated:roc-1943-sino-uk": {
+    "insert": true,
+    "zh": "中英关于取消英国在华治外法权及处理有关特权条约",
+    "en": "Sino-British Treaty for the Relinquishment of Extraterritorial Rights",
+    "sl": 40,
+    "types": [
+      {
+        "en": "treaty",
+        "zh": "条约"
+      }
+    ],
+    "signed": {
+      "y": 1943,
+      "m": 1,
+      "d": 11,
+      "p": 11
+    },
+    "effective": {
+      "y": 1943,
+      "m": 5,
+      "d": 20,
+      "p": 11
+    },
+    "parties": [
+      {
+        "s": "Q13426199",
+        "via": "curated"
+      },
+      {
+        "s": "Q145",
+        "via": "curated"
+      }
+    ],
+    "countries": [
+      "Q13426199",
+      "Q145"
+    ],
+    "desc": "中文维基百科《中英平等新约》写1943-01-11在重庆签署。摘录写正式批准改到1943-05-20，同一天生效。未核对《中華民國史事紀要》。",
+    "note": "签署1943-01-11，生效1943-05-20。未核对《中華民國史事紀要》。",
+    "summary_zh": "1943年1月11日签署，1943年5月20日生效。未核对《中華民國史事紀要》。",
+    "sources": [
+      "https://zh.wikipedia.org/wiki/中英平等新約"
+    ]
+  },
+  "curated:roc-1943-cairo": {
+    "insert": true,
+    "zh": "开罗宣言",
+    "en": "Cairo Communiqué",
+    "sl": 40,
+    "types": [
+      {
+        "en": "declaration",
+        "zh": "宣言"
+      }
+    ],
+    "signed": {
+      "y": 1943,
+      "m": 12,
+      "d": 1,
+      "p": 11
+    },
+    "parties": [
+      {
+        "s": "Q13426199",
+        "via": "curated"
+      },
+      {
+        "s": "Q30",
+        "via": "curated"
+      },
+      {
+        "s": "Q145",
+        "via": "curated"
+      }
+    ],
+    "countries": [
+      "Q13426199",
+      "Q30",
+      "Q145"
+    ],
+    "desc": "中文维基百科《开罗宣言》写1943-11-23至11月27日开会，1943-12-01发表新闻公报。这是公报，不是已经批准的条约，不写生效日。未核对《中華民國史事紀要》。",
+    "note": "1943-12-01发表。会议是11月23日至27日。不是批准的条约，没有生效日。未核对《中華民國史事紀要》。",
+    "summary_zh": "1943年12月1日发表的新闻公报。不是批准的条约。未核对《中華民國史事紀要》。",
+    "sources": [
+      "https://zh.wikipedia.org/wiki/开罗宣言"
+    ]
+  },
+  "curated:roc-1945-sino-soviet": {
+    "insert": true,
+    "zh": "中苏友好同盟条约",
+    "en": "Sino-Soviet Treaty of Friendship and Alliance",
+    "sl": 40,
+    "types": [
+      {
+        "en": "treaty",
+        "zh": "条约"
+      }
+    ],
+    "signed": {
+      "y": 1945,
+      "m": 8,
+      "d": 14,
+      "p": 11
+    },
+    "parties": [
+      {
+        "s": "Q13426199",
+        "via": "curated"
+      },
+      {
+        "s": "Q15180",
+        "via": "curated"
+      }
+    ],
+    "countries": [
+      "Q13426199",
+      "Q15180"
+    ],
+    "desc": "中文维基百科《中苏友好同盟条约》写1945-08-14王世杰与莫洛托夫在莫斯科签订。导语把签约放在8月15日投降之际。生效日摘录没有写成某一天。外蒙古公民投票不在这张图上改界。未核对《中華民國史事紀要》。",
+    "note": "只写1945-08-14签署。导语另及8月15日。生效日不补。不改外蒙古界。未核对《中華民國史事紀要》。",
+    "summary_zh": "1945年8月14日签署。生效日摘录没有写。未核对《中華民國史事紀要》。",
+    "sources": [
+      "https://zh.wikipedia.org/wiki/中苏友好同盟条约"
+    ]
+  },
+  "curated:roc-1945-double-ten": {
+    "insert": true,
+    "zh": "政府与中共代表会谈纪要",
+    "en": "Double Tenth Agreement",
+    "sl": 40,
+    "types": [
+      {
+        "en": "minutes",
+        "zh": "会谈纪要"
+      }
+    ],
+    "signed": {
+      "y": 1945,
+      "m": 10,
+      "d": 10,
+      "p": 11
+    },
+    "status": "signed_never_effective",
+    "parties": [
+      {
+        "s": "Q13426199",
+        "via": "curated"
+      }
+    ],
+    "countries": [
+      "Q13426199"
+    ],
+    "desc": "中文维基百科《双十协定》写1945-10-10签订。另一方是中共代表，不是底图上的另一个政权，不另造多边形。摘录写它没有解决具体问题，不写生效日。未核对《中華民國史事紀要》。",
+    "note": "1945-10-10签署。不作为生效条约。中共代表不另画政权。未核对《中華民國史事紀要》。",
+    "summary_zh": "1945年10月10日的会谈纪要。不写生效日。未核对《中華民國史事紀要》。",
+    "sources": [
+      "https://zh.wikipedia.org/wiki/双十协定"
+    ]
+  },
+  "curated:roc-1928-us-tariff": {
+    "insert": true,
+    "zh": "中美关税条约",
+    "en": "Sino-American Tariff Treaty",
+    "sl": 40,
+    "types": [{"en": "treaty", "zh": "条约"}],
+    "signed": {"y": 1928, "m": 7, "p": 10},
+    "parties": [
+      {"s": "Q13426199", "via": "curated"},
+      {"s": "Q30", "via": "curated"}
+    ],
+    "countries": ["Q13426199", "Q30"],
+    "desc": "改订新约条目写1928年7月7日废约宣言，同月美国与中华民国签订中美关税条约。没有写到日，也不把7月25日写成已经核对的签署日。生效日待考。英国等其余各国只写相继签订，没有逐一写日，不另插。未核对《中華民國史事紀要》。",
+    "note": "只记到1928年7月。日待考，生效日待考。不把7月1日或7月25日写成签署日。未核对《中華民國史事紀要》。",
+    "summary_zh": "1928年7月签订，日待考。生效日待考。未核对《中華民國史事紀要》。",
+    "sources": ["https://zh.wikipedia.org/wiki/改訂新約"]
+  },
+  "curated:roc-1930-jp-tariff": {
+    "insert": true,
+    "zh": "中日关税协定",
+    "en": "Sino-Japanese Tariff Agreement",
+    "sl": 40,
+    "types": [{"en": "treaty", "zh": "条约"}],
+    "signed": {"y": 1930, "m": 5, "d": 6, "p": 11},
+    "parties": [
+      {"s": "Q13426199", "via": "curated"},
+      {"s": "Q188712", "via": "curated"}
+    ],
+    "countries": ["Q13426199", "Q188712"],
+    "desc": "日本外务省史料写1930-05-06重光葵与王正廷在南京签署日华关税协定。约文写昭和五年五月六日南京调印，署名后第十日实施。不另插一个生效日。日文维基百科把中方写成宋子文，与约文和日本外务省史料的王正廷不一致，这里按约文。国史馆藏外交部卷《中日关税协定（四）》，典藏号020-010104-0038，日期1930/05/06，不是《中華民國史事紀要》。未核对《中華民國史事紀要》。",
+    "note": "1930-05-06签署。约文写署名后第十日实施，不另插生效日。未核对《中華民國史事紀要》。",
+    "summary_zh": "1930年5月6日在南京签署。不另插生效日。未核对《中華民國史事紀要》。",
+    "sources": [
+      "https://www.mofa.go.jp/mofaj/annai/honsho/shiryo/shidehara/03_2.html",
+      "https://worldjpn.net/documents/texts/pw/19300507.T1J.html",
+      "https://catalog.digitalarchives.tw/item/00/48/6e/48.html"
+    ]
+  }
+}

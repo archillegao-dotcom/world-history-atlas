@@ -15,7 +15,7 @@ from functools import lru_cache
 from .geolock import locked_lru
 
 from shapely import STRtree, make_valid, prepare
-from shapely.geometry import box, shape
+from shapely.geometry import box, mapping, shape
 from shapely.ops import unary_union
 
 from .datafile import read_json
@@ -25,7 +25,8 @@ from .ww2 import OFF_STAN
 
 OFF_ROW, OFF_EXTRA, OFF_TERR = 300000, 390000, 200000
 LO, HI = 18860101, 20200101
-STATUS_ZH = {"colony": "殖民地", "protectorate": "保护国", "mandate": "托管地", "occupied": "占领区", "independent": "独立国家", "N/A": "地位不明"}
+STATUS_ZH = {"colony": "殖民地", "protectorate": "保护国", "mandate": "托管地", "occupied": "占领区", "independent": "独立国家", "N/A": "地位不明",
+             "roc_province": "中华民国省份（台湾光复后，中央政府尚未迁台）"}
 
 
 def _local_diff(g, tree, geoms):
@@ -47,6 +48,115 @@ def ymd_of(d: HDate) -> int:
     return d.y * 10000 + (d.m or 1) * 100 + (d.d or 1)
 
 
+def _apply_colony_fixes(rows, gw):
+    """签约日、生效日、实控日不一致时，不沿用 CShapes 把整块多边形从签约日标成后来的国家。
+
+    台湾 gw 713：CShapes 殖民地行自 1895-04-17（《马关条约》签署）起，分期原先整段标成日治，
+    名称匹配又会把英文名 Taiwan 的中华民国 Q865 排到日治政权前面。
+    - 1895-04-17 签署，1895-05-08 在烟台换文生效。此前不是日本实控。
+    - 1895-05-23 台湾民主国宣布成立，1895-10-21 台南开城后结束。全岛一块多边形不能表示日军自北向南的推进。
+    - 1895-05-08 至 05-23 没有稳定的新政权，仍标清治时期并在 sources 里说明，不标日本、不标中华民国。
+    - 日治自 1895-10-21 起。中文维基「乙未战争」把战事记到 1895-11-18，此处不把 10-21 写成一切抵抗结束。
+    - 1945-10-25 台北受降（台湾光复）之后才是中华民国。1945-08-15 至 10-24 日本总督府仍在管治，不把投降公告日写成已经移交。
+    - CShapes 殖民地行止于 1945-08-15、独立行起于 1949-12-08（国民政府迁台）。中间若没有多边形，点击会落到别的底图上。
+      这里把殖民地行延长到 1945-10-25，并复用同一条岛屿多边形补上 1945-10-25 至 1949-12-08，不新画海岸线。
+      澎湖不在这条多边形内（约东经 120.05° 以西），不另造。
+    https://en.wikipedia.org/wiki/Treaty_of_Shimonoseki
+    https://en.wikipedia.org/wiki/Republic_of_Formosa
+    https://en.wikipedia.org/wiki/Capitulation_of_Tainan
+    https://zh.wikipedia.org/wiki/乙未戰爭
+    https://en.wikipedia.org/wiki/Retrocession_Day
+
+    朝鲜 gw 730：CShapes 把殖民地行写成 1910-08-23（签署次日）。条约 1910-08-22 签署、1910-08-29 公布生效。
+    https://en.wikipedia.org/wiki/Japan%E2%80%93Korea_Treaty_of_1910
+
+    南桦太 gw 7351：CShapes 行自 1905-09-05（《朴茨茅斯条约》签署）起，但没有分期，只会落到宗主国弱候选。
+    补成大日本帝国。日军 1905 年 7 月已登陆，多边形本身从签约日才有，不另造 7 月的边界。
+    https://en.wikipedia.org/wiki/Treaty_of_Portsmouth
+    https://en.wikipedia.org/wiki/Karafuto_Prefecture
+    """
+    for r in rows:
+        if r.get("gw") == 730 and r.get("status") == "independent" and r.get("to") == 19100823:
+            r["to"] = 19100829
+        if r.get("gw") == 730 and r.get("status") == "colony" and r.get("from") == 19100823:
+            r["from"] = 19100829
+    fixes = {
+        713: [[18950417, 18950523, "Q391189"], [18950523, 18951021, "Q319881"],
+              [18951021, 19451025, "Q137816"], [19451025, None, "Q865"]],
+        7351: [[19050905, 19450815, "Q188712"]],
+    }
+    for code, periods in fixes.items():
+        gi = gw.setdefault(code, {"names": [], "periods": [], "ne": None})
+        gi["periods"] = periods
+    # 台湾岛多边形空档：复用 CShapes 已有的同一块岛屿几何。两条原始行面积相同（约 3.19），范围都是东经 120.05–122.0、北纬 21.93–25.28。
+    col = next((r for r in rows if r.get("gw") == 713 and r.get("status") == "colony" and r.get("to") == 19450815), None)
+    ind = next((r for r in rows if r.get("gw") == 713 and r.get("status") == "independent" and r.get("from") == 19491208), None)
+    if col is not None:
+        col["to"] = 19451025
+    if ind is not None and not any(r.get("gw") == 713 and r.get("from") == 19451025 and r.get("to") == 19491208 for r in rows):
+        gap = dict(ind)
+        gap["geom"] = ind["geom"]
+        gap["i"] = len(rows)
+        gap["from"] = 19451025
+        gap["to"] = 19491208
+        gap["status"] = "roc_province"
+        rows.append(gap)
+    # CShapes 在 1945-08-15 把台湾岛并回中国多边形（gw 710），点选会先命中中国、标成中华民国。
+    # 从这些中国行里挖掉已有的台湾岛几何，让上面的分期行露出来。不新画海岸线。
+    if ind is not None:
+        tw = make_valid(shape(ind["geom"]))
+        for r in list(rows):
+            if r.get("gw") != 710:
+                continue
+            a, b = r.get("from") or 0, r.get("to")
+            if b is not None and b <= 19450815:
+                continue
+            if a >= 19491208 or a < 19450815:
+                continue
+            g = make_valid(shape(r["geom"]))
+            if not g.intersects(tw):
+                continue
+            ng = make_valid(g.difference(tw))
+            if not ng.is_empty:
+                r["geom"] = mapping(ng)
+
+
+def _append_kurils(extras, data_dir):
+    """千岛群岛。CShapes 没有这条岛链的多边形：1930 年择捉、国后点不到任何范围，幌筵落在苏联多边形里。
+
+    海岸取 Natural Earth 1:10m（公有领域）里代表点落在东经 145.2–157.2、北纬 43.2–51.05 的俄罗斯碎块和微型岛，
+    是现代岸线，不是 1930 年的测绘。精度记为大致。
+    1875-05-07 签署、1875-08-22 在东京交换批准书，整链归日本。归属从交换批准书当天起算。
+    这套底图 1886-01-01 才改用 CShapes，岛链从这一天起出现在地图上。
+    https://en.wikipedia.org/wiki/Treaty_of_Saint_Petersburg_(1875)
+    1945-08-18 苏军开始登陆，9 月 1 日登陆国后、色丹，9 月 4 日以后其余小岛也被占领。没有逐岛的每日界线。
+    整链维持日本到 1945-09-04，9 月 5 日起不再画成日本，也不另造苏联疆域。
+    https://en.wikipedia.org/wiki/Invasion_of_the_Kuril_Islands
+    """
+    p = data_dir / "curated" / "geom" / "kuril_islands.geojson"
+    if not p.exists():
+        return
+    import json
+    gj = json.loads(p.read_text(encoding="utf-8"))
+    geom = gj.get("geometry") if isinstance(gj, dict) else None
+    if not geom:
+        return
+    extras.append({
+        "name": "Kuril Islands",
+        "name_zh": "千岛群岛",
+        "label_zh": "千岛群岛",
+        "qid": "Q188712",
+        "from": 18750822,
+        "to": 19450905,
+        "approx": True,
+        "precision": 1,
+        "src": "Natural Earth 1:10m 岸线（公有领域），不是历史测绘。"
+               "https://en.wikipedia.org/wiki/Treaty_of_Saint_Petersburg_(1875) ；"
+               "https://en.wikipedia.org/wiki/Invasion_of_the_Kuril_Islands",
+        "geom": geom,
+    })
+
+
 class CShapes:
     def __init__(self, store, data_dir):
         self.store = store
@@ -56,6 +166,8 @@ class CShapes:
         self.rows = d.get("rows", [])
         self.extras = d.get("extras", [])
         self.gw = {int(k): v for k, v in (d.get("gw") or {}).items()}
+        _apply_colony_fixes(self.rows, self.gw)
+        _append_kurils(self.extras, data_dir)
         self.source = d.get("source")
         marks = {LO}
         for r in self.rows + self.extras:
@@ -161,7 +273,7 @@ class CShapes:
             h = hashlib.sha1()
             here = Path(__file__).parent
             files = [here / "cshapes.py", here / "ww2.py", here / "transitions.py"]
-            for pat in ("cshapes.json*", "ww2_europe.json*", "transitions.json*", "control_zones.json*", "curated/war_fronts_hist.json"):
+            for pat in ("cshapes.json*", "ww2_europe.json*", "transitions.json*", "control_zones.json*", "curated/war_fronts_hist.json", "curated/geom/kuril_islands.geojson"):
                 files += sorted(Path(config.DATA_DIR).glob(pat))
             for f in files:
                 try:
@@ -208,7 +320,8 @@ class CShapes:
                 fid = OFF_ROW + r["i"]
                 feats[fid] = {"props": {"fid": fid, "NAME": r["name"], "CSHAPES": r["gw"], "STATUS": r["status"],
                                         "STATUS_ZH": STATUS_ZH.get(r["status"]), "OWNER": r.get("owner") if r["status"] != "independent" else None,
-                                        "BORDERPRECISION": 3 if r.get("b_def") else 2, "SRC": "CShapes 2.0"},
+                                        # 711 是西藏。那条线是数据集轮廓，不是实测边界，面板按「大致」显示。
+                                        "BORDERPRECISION": 1 if r.get("gw") == 711 else (3 if r.get("b_def") else 2), "SRC": "CShapes 2.0"},
                               "geom": self.row_geom(("r", r["i"]), r)}
                 origin[fid] = ("cs", r["i"])
         def cut(g, keep=()):
@@ -258,8 +371,11 @@ class CShapes:
                 g = self.row_geom(("x", j), e)
                 cut(g)
                 fid = OFF_EXTRA + j
-                feats[fid] = {"props": {"fid": fid, "NAME": e["name"], "NAME_ZH": e.get("name_zh"), "QID": e["qid"], "SRC": e.get("src"),
-                                        "BORDERPRECISION": 2 if e.get("approx") else 3, "APPROX": e.get("approx")}, "geom": g}
+                props = {"fid": fid, "NAME": e["name"], "NAME_ZH": e.get("name_zh"), "QID": e["qid"], "SRC": e.get("src"),
+                         "BORDERPRECISION": e.get("precision") or (2 if e.get("approx") else 3), "APPROX": e.get("approx")}
+                if e.get("label_zh"):
+                    props["LABEL_ZH"] = e["label_zh"]
+                feats[fid] = {"props": props, "geom": g}
                 origin[fid] = ("csx", j)
         # 特殊地位领土（与过渡层同一份数据）
         T = self.store.trans
@@ -281,7 +397,8 @@ class CShapes:
             cut(g)
             fid = OFF_TERR + i
             feats[fid] = {"props": {"fid": fid, "NAME": t["name"], "NAME_ZH": t.get("name_zh"), "SUBJECTO": t.get("sov_name"),
-                                    "TERRITORY": t["id"], "TERR_CAT": t.get("cat"), "BORDERPRECISION": 3}, "geom": g}
+                                    "TERRITORY": t["id"], "TERR_CAT": t.get("cat"), "ZONE": t.get("zone"),
+                                    "BORDERPRECISION": t.get("precision") or (1 if t.get("cat") == "unverified" else 3)}, "geom": g}
             origin[fid] = ("terr", i)
         self._apply_fronts(k, feats, origin, notes)
         # CShapes 没有覆盖的地区：historical-basemaps 过渡快照裁掉 CShapes 范围后的剩余部分

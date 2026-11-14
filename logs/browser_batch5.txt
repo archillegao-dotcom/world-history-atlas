@@ -1,0 +1,1 @@
+{"problems":[],"soviet":{"t":"苏联","title":"苏联","lat":58.89,"lng":43.323},"narrow":{"mapH":677,"barH":118}}

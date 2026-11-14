@@ -117,6 +117,41 @@ def _is_our_server(port, timeout=1.5):
         return False
 
 
+def _our_version():
+    try:
+        sys.path.insert(0, str(Path(__file__).resolve().parent))
+        from backend import config as _cfg
+        return _cfg.APP_VERSION
+    except Exception:  # noqa: BLE001
+        return None
+
+
+def _server_version(port, timeout=1.5):
+    """/api/live/status 的 version（0.6.2 起才有；没有就是旧版本）。"""
+    try:
+        with urllib.request.urlopen(f"http://127.0.0.1:{port}/api/live/status", timeout=timeout) as r:
+            return json.loads(r.read().decode("utf-8")).get("version")
+    except Exception:  # noqa: BLE001
+        return None
+
+
+def _same_version(port):
+    ours = _our_version()
+    return ours is None or _server_version(port) == ours
+
+
+def _stop_server(port, wait=20):
+    try:
+        req = urllib.request.Request(f"http://127.0.0.1:{port}/api/shutdown", data=b"", method="POST",
+                                     headers={"X-WHA-Shutdown": "1"})
+        urllib.request.urlopen(req, timeout=3).read()
+    except Exception:  # noqa: BLE001
+        pass
+    deadline = time.time() + wait
+    while time.time() < deadline and _is_our_server(port, timeout=0.5):
+        time.sleep(0.4)
+
+
 def _pid_alive(pid):
     if not pid or pid <= 0:
         return False
@@ -342,6 +377,12 @@ def main():
         pass
     # 再点一次只打开浏览器，不要再开一个终端窗口。
     existing = _existing_server(info_file)
+    if existing and not _same_version(existing):
+        # v0.6.2：已在运行的是旧版本（如 0.6.1 以前没关掉的终端窗口）。以前这里直接打开旧服务器的网页，
+        # 用户装了新版看到的却是旧版的数据与界面。现在先请旧服务器退出，再启动本版本。
+        print(f"[!] 端口 {existing} 上运行的是旧版本（{_server_version(existing) or '未知'}），先关闭它，再启动 {_our_version()}。", flush=True)
+        _stop_server(existing)
+        existing = None
     if existing:
         url = f"http://localhost:{existing}/"
         print(f"{TITLE} 已在运行：{url}")

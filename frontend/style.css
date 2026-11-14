@@ -2,12 +2,12 @@
 * { box-sizing: border-box; }
 html, body { margin: 0; height: 100%; font-family: -apple-system, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif; color: #222; }
 body { display: flex; flex-direction: column; }
-#topbar { display: flex; align-items: center; gap: 14px; padding: 8px 14px; background: #2b2118; color: #f5ead6; flex-wrap: wrap; }
-.brand { font-size: 19px; font-weight: 700; letter-spacing: 1px; }
+#topbar { display: flex; align-items: center; gap: 8px; padding: 4px 8px; background: #2b2118; color: #f5ead6; flex-wrap: wrap; }
+.brand { font-size: 16px; font-weight: 700; letter-spacing: 1px; }
 .brand span { font-size: 12px; font-weight: 400; opacity: .7; margin-left: 4px; }
 .datebox { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
 .datebox input[type=number] { width: 90px; }
-#topbar input, #topbar select, #topbar button { font: inherit; font-size: 14px; padding: 3px 7px; border-radius: 5px; border: 1px solid #7a6650; background: #fffaf0; color: #222; }
+#topbar input, #topbar select, #topbar button { font: inherit; font-size: 13px; padding: 2px 6px; border-radius: 5px; border: 1px solid #7a6650; background: #fffaf0; color: #222; }
 #topbar button { cursor: pointer; background: #e8d6b4; }
 #topbar button:hover { background: #f5e3c0; }
 #playBtn.playing { background: #c96; color: #fff; }
@@ -39,10 +39,12 @@ main { flex: 1; position: relative; min-height: 0; }
 .badge.country { background: #f3e6f0; color: #7a3368; }
 .empty { color: #888; padding: 20px 4px; font-size: 14px; line-height: 1.6; }
 .source { font-size: 11.5px; color: #998; margin-top: 12px; }
-#eraNote { position: absolute; left: 10px; bottom: 10px; z-index: 900; background: rgba(255,250,240,.93); padding: 7px 10px; border-radius: 6px; font-size: 12.5px; max-width: 520px; line-height: 1.5; box-shadow: 0 1px 5px rgba(0,0,0,.2); }
+#eraNote { position: absolute; left: 8px; bottom: 8px; z-index: 900; background: rgba(255,250,240,.93); padding: 4px 6px; border-radius: 6px; font-size: 12.5px; max-width: min(420px, calc(100vw - 16px)); line-height: 1.45; box-shadow: 0 1px 5px rgba(0,0,0,.2); }
+#eraNote button, #layerCtl button, #mapKey button { font: inherit; cursor: pointer; border: 1px solid #c8b89a; background: #fffaf0; border-radius: 5px; padding: 2px 8px; }
+#eraNote .era-body { margin-top: 4px; }
 #eraNote b { color: #8a3b12; }
-#timeline { background: #2b2118; color: #f5ead6; padding: 6px 18px 4px; }
-#dateLabel { text-align: center; font-size: 17px; font-weight: 700; letter-spacing: 1px; }
+#timeline { background: #2b2118; color: #f5ead6; padding: 2px 12px 2px; }
+#dateLabel { text-align: center; font-size: 15px; font-weight: 700; letter-spacing: 1px; }
 #slider { width: 100%; accent-color: #d9a35b; }
 #ticks { position: relative; height: 16px; font-size: 10.5px; opacity: .75; }
 #ticks span { position: absolute; transform: translateX(-50%); white-space: nowrap; }
@@ -59,8 +61,89 @@ main { flex: 1; position: relative; min-height: 0; }
 .city-dot.cap { width: auto; height: auto; background: none; border: 0; color: #c0161b; font-size: 13px; line-height: 1; text-shadow: 0 0 2px #fff, 0 0 2px #fff; }
 .city-name { margin-left: 3px; font-size: 11.5px; color: #222; font-weight: 600; vertical-align: middle; text-shadow: 0 0 2px #fff, 0 0 3px #fff, 0 0 3px #fff; }
 .city-name.cap { color: #8a0d10; font-size: 12.5px; }
-#layerCtl { position: absolute; top: 10px; left: 54px; z-index: 900; background: rgba(255,250,240,.93); padding: 4px 9px; border-radius: 6px; font-size: 13px; box-shadow: 0 1px 5px rgba(0,0,0,.2); }
+#styleBtn[aria-pressed="true"] { background: #c9a36a; }
+body.strategy #topbar, body.strategy #timeline { background: #1a2330; color: #e8e2d6; }
+body.strategy #topbar input, body.strategy #topbar select, body.strategy #topbar button {
+  background: #2a3646; color: #f2ece2; border-color: #526278;
+}
+body.strategy #topbar button:hover { background: #3a4a5e; }
+body.strategy #styleBtn[aria-pressed="true"] { background: #4d6278; color: #f7f1e4; }
+body.strategy #map, body.strategy .leaflet-container {
+  background:
+    repeating-linear-gradient(0deg, rgba(255,255,255,.035) 0 1px, transparent 1px 64px),
+    repeating-linear-gradient(90deg, rgba(255,255,255,.035) 0 1px, transparent 1px 64px),
+    #2a3c4e;
+}
+body.strategy #panel { background: #1c2633; color: #e7e1d6; }
+body.strategy .def, body.strategy .wsum, body.strategy .terr-box, body.strategy .claim-box {
+  background: #243140; color: #f3eee4;
+}
+body.strategy .def a, body.strategy .wsum a, body.strategy .claim-box a, body.strategy .src a, body.strategy .note a {
+  color: #f0d48a; overflow-wrap: anywhere;
+}
+body.strategy .src, body.strategy .flag-note, body.strategy .wsum p, body.strategy .def { color: #f3eee4; }
+body.strategy .kv th { color: #d2c6b4; }
+body.strategy .kv td { color: #f3eee4; border-bottom-color: #334155; }
+body.strategy .mod-state h4 { color: #e6c98a; border-bottom-color: #334155; }
+body.strategy .itag { background: #8a5a2b; color: #fff; }
+body.strategy .inter-box { background: #243140; }
+.def a, .wsum a, .claim-box a, .src a, .note a { overflow-wrap: anywhere; }
+body.strategy .panel-head, body.strategy #tabs { border-color: #334155; }
+body.strategy #polityMeta, body.strategy .item .s, body.strategy .item .d { color: #d2c6b4; }
+.status-rows { margin-top: 8px; padding-top: 6px; border-top: 1px solid rgba(107, 93, 75, .4); }
+.status-area { margin-bottom: 8px; }
+.status-row { margin: 4px 0; }
+.status-row .k { font-weight: 700; }
+body.strategy .status-rows { border-top-color: rgba(231, 225, 214, .45); }
+body.strategy .status-rows a { color: #f0d48a; }
+body.strategy #closePanel, body.strategy .item .t { color: #f3eee4; }
+body.strategy #tabs button { background: #243140; color: #e7e1d6; border-color: #334155; }
+body.strategy #tabs button.active { background: #1c2633; color: #e6c98a; }
+body.strategy .note { background: #243140; color: #d9d0c2; }
+body.strategy .item { border-bottom-color: #334155; }
+body.strategy .item:hover { background: #243140; }
+body.strategy #eraNote, body.strategy #layerCtl { background: rgba(22, 30, 40, .9); color: #e6e0d4; }
+body.strategy #eraNote { max-width: 340px; }
+body.strategy #eraNote b { color: #e6c98a; }
+body.strategy .city-dot { background: #f4efe6; border-color: #12100e; width: 5px; height: 5px; }
+body.strategy .city-dot.cap { color: #e6c98a; text-shadow: 0 0 2px #000, 0 1px 2px #000; }
+body.strategy .city-name { color: #f7f1e6; text-shadow: 0 0 2px #000, 0 1px 2px #000, 0 0 4px #000; }
+body.strategy .city-name.cap { color: #f3e2b0; }
+.leaflet-div-icon.strategy-label { background: none; border: 0; width: auto !important; height: auto !important; }
+.strategy-label span {
+  display: inline-block; transform: translate(-50%, -50%); white-space: nowrap;
+  font-family: Palatino, "Palatino Linotype", "Songti SC", "Noto Serif CJK SC", serif;
+  font-size: 18px; font-weight: 700; letter-spacing: .03em; color: #f7f1e6;
+  text-shadow: 0 1px 2px #000, 0 0 4px #000, 1px 1px 0 #000;
+  pointer-events: none;
+}
+#econHover { position: fixed; z-index: 850; display: none; width: 340px; max-width: calc(100vw - 16px); padding: 8px 10px; border-radius: 8px; background: rgba(255, 250, 240, .97); color: #24180f; box-shadow: 0 2px 10px rgba(0,0,0,.28); font-size: 12.5px; line-height: 1.45; pointer-events: none; }
+body.strategy #econHover { background: rgba(22, 30, 40, .96); color: #f3eee4; }
+body.strategy #econHover .eh-year, body.strategy #econHover .eh-note { color: #cbbfaa; }
+#econHover.on { display: block; }
+#econHover b { font-size: 14px; }
+#econHover .eh-year { color: #6a5340; margin-bottom: 4px; }
+#econHover .eh-cty { margin-top: 4px; font-weight: 600; }
+#econHover .eh-empty { margin: 3px 0; }
+#econHover .eh-note { color: #6d6256; font-size: 11.5px; }
+#layerCtl { position: absolute; top: 8px; left: 52px; z-index: 900; background: rgba(255,250,240,.93); padding: 3px 6px; border-radius: 6px; font-size: 13px; box-shadow: 0 1px 5px rgba(0,0,0,.2); max-width: calc(100vw - 64px); }
+#layerCtl.collapsed .layer-body { display: none; }
+#layerCtl .layer-body { margin-top: 4px; }
 #layerCtl label { margin-right: 8px; cursor: pointer; }
+#mapKey { position: absolute; top: 8px; right: 8px; z-index: 900; background: rgba(255,250,240,.93); padding: 3px 6px; border-radius: 6px; font-size: 12.5px; max-width: min(280px, calc(100vw - 16px)); box-shadow: 0 1px 5px rgba(0,0,0,.2); }
+#mapKeyBody { display: none; margin-top: 4px; line-height: 1.45; }
+#mapKey.open #mapKeyBody { display: block; }
+#mapKey p { margin: 2px 0; }
+.swatch { display: inline-block; width: 18px; height: 8px; margin-right: 6px; vertical-align: middle; border-radius: 1px; }
+.sw-border { background: #12100e; height: 3px; }
+.sw-occ { background: transparent; border: 2px solid #b02a2a; height: 6px; }
+.sw-front { background: transparent; border-top: 3px dashed #d35400; height: 0; }
+.sw-admin { background: #c9bfae; height: 2px; opacity: .8; }
+.sw-gap { background: #7a7368; }
+#mapKey .k-src { color: #6d6256; font-size: 11px; }
+.hillshade-pane { mix-blend-mode: soft-light; }
+body:not(.strategy) .hillshade-pane { display: none; }
+.leaflet-control-attribution { font-size: 10px; max-width: min(560px, calc(100vw - 12px)); white-space: normal; line-height: 1.3; }
 #updateStatus { font-size: 11.5px; color: #c9b89a; margin-left: auto; }
 /* 每日新闻：正文较长，用常规字重 */
 .mod-news .item .t { font-weight: 500; font-size: 13.5px; line-height: 1.5; }
@@ -129,3 +212,51 @@ a.wl { color: #1a4f8a; text-decoration: none; border-bottom: 1px dotted #1a4f8a;
 /* v0.6.1：点击多边形后浏览器给 SVG 路径画的键盘焦点框（黑色矩形，如 1943 年意占法国外围）——去掉；选中状态已用红色描边表示 */
 .leaflet-container path.leaflet-interactive:focus,
 .leaflet-container .leaflet-interactive:focus { outline: none; }
+body.strategy #eraNote button, body.strategy #layerCtl button, body.strategy #mapKey button { background: #243140; color: #f3eee4; border-color: #526278; }
+body.strategy #mapKey { background: rgba(22, 30, 40, .92); color: #e6e0d4; }
+body.strategy #mapKey .k-src { color: #cbbfaa; }
+body.strategy .sw-border { background: #e6e0d4; }
+@media (max-width: 720px) {
+  html, body { overflow-x: hidden; }
+  .brand span, #updateStatus { display: none; }
+  .datebox input[type=number] { width: 64px; }
+  #topbar { gap: 4px; padding: 3px 6px; }
+  #ticks { display: none; }
+  #timeline { padding: 2px 8px 4px; }
+  #panel { width: 100%; max-width: 100%; z-index: 1200; }
+  #tabs button { font-size: 13px; padding: 5px 8px; white-space: normal; text-align: left; line-height: 1.3; max-width: 100%; }
+  .mod-constitution .note { font-size: 14px; line-height: 1.55; }
+  .mod-constitution .item .t { font-size: 16px; line-height: 1.35; }
+  .mod-constitution .s, .mod-constitution .d { font-size: 14px; line-height: 1.5; }
+  .mod-state .note, .mod-state .s, .mod-state .d, .mod-state .def, .mod-state .wsum, .mod-state .src { font-size: 14px; line-height: 1.5; }
+  .mod-state .terr-box, .mod-state .claim-box { font-size: 14px; line-height: 1.5; }
+  .strategy-label span { font-size: 16px; }
+  .leaflet-control-attribution { max-width: calc(100vw - 118px); max-height: 2.8em; overflow: auto; font-size: 9px; }
+  #eraNote { max-width: calc(100vw - 12px); z-index: 1100; }
+  #mapKey { max-width: calc(50vw - 36px); z-index: 1100; }
+  #layerCtl { max-width: calc(50vw - 36px); }
+}
+
+/* 策略地图把面板文字改成浅色。弹窗单独用深底，避免浅字落在原来的米色底上。 */
+body.strategy .modal-body {
+  background: #1c2633;
+  color: #f3eee4;
+}
+body.strategy .modal-close { color: #f3eee4; }
+body.strategy .modal-body h2,
+body.strategy .modal-body h4,
+body.strategy .modal-body .s,
+body.strategy .modal-body p { color: #f3eee4; }
+body.strategy .modal-body h4 { border-bottom-color: #334155; }
+body.strategy .modal-body .en,
+body.strategy .modal-body .source,
+body.strategy .modal-body .kv th { color: #d2c6b4; }
+body.strategy .modal-body .kv td { color: #f3eee4; border-bottom-color: #334155; }
+body.strategy .modal-body td,
+body.strategy .modal-body th { border-color: #334155; }
+body.strategy .modal-body .wsum,
+body.strategy .modal-body .note { background: #243140; color: #f3eee4; }
+body.strategy .modal-body .wsum p,
+body.strategy .modal-body .src { color: #f3eee4; }
+body.strategy .modal-body a,
+body.strategy .modal-body a.wl { color: #f0d48a; }

@@ -1,0 +1,14 @@
+PASS 缺口中是蒙疆 | 蒙疆联合自治政府（日本扶植）|Mengjiang United Autonomous Government
+PASS 缺口西是蒙疆 | 蒙疆联合自治政府（日本扶植）|Mengjiang United Autonomous Government
+PASS 缺口北是蒙疆 | 蒙疆联合自治政府（日本扶植）|Mengjiang United Autonomous Government
+PASS 满洲国西缘以东 | 满洲国|Manchukuo
+PASS 兴安南 | 满洲国|Manchukuo
+PASS 海拉尔 | 满洲国|Manchukuo
+PASS 赤峰 | 满洲国|Manchukuo
+PASS 承德 | 满洲国|Manchukuo
+PASS 蒙疆腹地 | 蒙疆联合自治政府（日本扶植）|Mengjiang United Autonomous Government
+PASS 外蒙古 | |Mongolia
+PASS 外蒙古南缘 | |Mongolia
+PASS 西安 | |China
+PASS 河套 | |China
+fails=0

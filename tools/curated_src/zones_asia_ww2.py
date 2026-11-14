@@ -95,9 +95,9 @@ Z.append(zone("sjw_manchuria_1931", "日本关东军占领区（中国东北）"
               dates_note="1931-09-18 九一八事变后关东军逐步占领东北：沈阳 09-19、吉林 09-21、齐齐哈尔 11-19、锦州 1932-01-03、哈尔滨 1932-02-05；1932-03-01 成立满洲国。",
               note="范围用 historical-basemaps 1930 年「Manchuria」多边形近似，按完成占领后的范围显示（其间各地失守日期不同）。",
               sources=[WP + "Japanese_invasion_of_Manchuria", WP + "Mukden_incident"]))
-Z.append(zone("sjw_jehol_1933", "满洲国（热河省，1933 年 3 月起）", "Manchukuo (Jehol)", "Q30623", "满洲国", "1933-03-04", "1945-08-19", poly(JEHOL),
-              dates_note="热河作战：日军与满洲国军 1933-02-23 进攻，03-04 承德失守，热河并入满洲国；1945-08 苏联对日作战后满洲国瓦解（溥仪 08-18 宣布退位）。",
-              note="热河省范围为手绘近似（±50 km）。", sources=[WP + "Operation_Nekka", WP + "Rehe_Province"]))
+# 热河不再单独做成第二块满洲国。1933-03-04 起并进 CShapes 补充多边形（tools/build_cshapes.py，
+# 来源 https://en.wikipedia.org/wiki/Battle_of_Rehe ）。单独再画一块会在地图上出现两个满洲国。
+# JEHOL 折线仍用于 1945-08 起的苏军占领东北。
 Z.append(zone("sjw_east_hebei", "冀东防共自治政府", "East Hebei Autonomous Council", "Q707917", "冀东防共自治政府", "1935-11-25", "1938-02-01", poly(EAST_HEBEI),
               dates_note="1935-11-25 殷汝耕在通州成立「冀东防共自治委员会」（12 月改称政府），辖冀东 22 县；1938-02-01 并入中华民国临时政府。",
               note="22 县范围为手绘近似（长城以南、通州以东至山海关）。", sources=[WP + "East_Hebei_Autonomous_Council"]))
@@ -125,8 +125,8 @@ JSTEPS = [  # (from, until, 几何规格, 节点说明, 来源)
      "1944-04 至 08：一号作战第一阶段（豫中会战：郑州 04-22、洛阳 05-25），平汉线贯通；长沙 06-18 失守、衡阳 08-08 失守", [WP + "Operation_Ichi-Go", WP + "Battle_of_Central_Henan"]),
     ("1944-08-08", "1944-11-10", U(poly(CORE_1940), poly(HENAN_1944), poly(HUNAN_1944), poly(CANTON), poly(XIAMEN), poly(SHANTOU), HAINAN),
      "1944-08 至 11：长衡会战后粤汉线北段（长沙、衡阳）", [WP + "Operation_Ichi-Go", WP + "Battle_of_Changsha_(1944)", WP + "Defense_of_Hengyang"]),
-    ("1944-11-10", "1945-08-16", U(poly(CORE_1940), poly(HENAN_1944), poly(HUNAN_1944), poly(GUANGXI_1944), poly(CANTON), poly(XIAMEN), poly(SHANTOU), HAINAN),
-     "1944-11 至 1945-08：桂柳会战（桂林、柳州 11-10/11，南宁 11-24），12 月打通至法属印度支那的「大陆交通线」；1945-05 起日军自广西逐步撤出（南宁 05-26、柳州 06-30、桂林 07-28 被国民革命军收复，未画）",
+    ("1944-11-10", "1945-08-16", U(poly(CORE_1940), poly(HENAN_1944), poly(HUNAN_1944), poly(CANTON), poly(XIAMEN), poly(SHANTOU), HAINAN),
+     "1944-11 至 1945-08：桂柳会战的广西走廊另见 sjw_ichigo_guangxi（日军军事占领，不是汪政权行政区域）",
      [WP + "Operation_Ichi-Go", WP + "Battle_of_Guilin–Liuzhou", USMA.format("Situation at the End of World War II")]),
 ]
 REGIMES = [  # (from, until, 区域框, QID, 名称, 说明, 来源)
@@ -156,6 +156,18 @@ for jf, ju, jg, jlab, jsrc in JSTEPS:
                       note="日军实际控制的是城市与铁路沿线（「点和线」），乡村多为国民革命军游击区与共军敌后根据地；色块为大致范围（±50–150 km）。",
                       sources=SJW_SRC + jsrc + rsrc))
 
+# 桂柳会战走廊：日军军事占领，不是汪精卫政权的省政。
+# 桂林 1944-11-10、柳州 11-11、南宁 11-24 失守。1945-05 起日军撤出的逐城日期不在这一块里细分。
+# https://en.wikipedia.org/wiki/Battle_of_Guilin–Liuzhou
+# https://en.wikipedia.org/wiki/Operation_Ichi-Go
+# https://zh.wikipedia.org/wiki/桂柳会战
+Z.append(zone("sjw_ichigo_guangxi", "日军军事占领区（桂柳会战）", "Japanese military occupation during the Battle of Guilin–Liuzhou",
+              "Q188712", "大日本帝国", "1944-11-10", "1945-08-16", poly(GUANGXI_1944),
+              dates_note="桂柳会战：1944-11-10 桂林、11-11 柳州、11-24 南宁失守，由日军军事占领，不是汪精卫政权的行政区域。1945-05 起日军自广西逐步撤出（南宁 05-26、柳州 06-30、桂林 07-28 被国民革命军收复），逐城撤退未再细分。",
+              note="色块为桂柳走廊的大致范围（±50–150 km），不是省界，也不表示乡村全部被占领。",
+              sources=[WP + "Battle_of_Guilin–Liuzhou", WP + "Operation_Ichi-Go", ZWP + "桂柳会战",
+                       USMA.format("Situation at the End of World War II")]))
+
 # ---- 共军根据地（大致范围，叠加在日占区之上） ----
 SGN = [[106.9, 35.3], [106.5, 36.2], [106.9, 37.0], [107.3, 37.9], [108.0, 37.6], [109.0, 37.6], [109.5, 38.0], [110.6, 38.0], [110.6, 37.3], [110.4, 36.4],
        [110.0, 35.8], [109.2, 35.6], [108.6, 35.2], [107.7, 34.9]]
@@ -184,19 +196,19 @@ ROC_CORRIDOR_1947 = [[119.8, 40.1], [121.0, 40.6], [121.3, 41.3], [122.0, 41.6],
                      [126.7, 43.7], [125.5, 43.6], [124.6, 43.0], [124.1, 42.1], [123.5, 41.4], [123.3, 40.6], [122.3, 40.3], [121.5, 40.0], [120.5, 39.8]]
 ROC_1948 = [[119.8, 40.1], [121.0, 40.6], [121.3, 41.3], [122.0, 41.6], [123.0, 42.0], [123.7, 42.1], [123.6, 41.5], [123.3, 40.9], [122.3, 40.4], [121.5, 40.0], [120.5, 39.8]]
 CHANGCHUN = [[125.1, 43.75], [125.1, 44.05], [125.5, 44.05], [125.5, 43.75]]
-Z.append(zone("ccw_ne_ccp_1946", "东北解放区（共军控制，大致范围）", "CCP-held northern Manchuria", "Q97179246", "东北行政委员会", "1946-06-07", "1947-05-13", NE_CCP_1946,
+Z.append(zone("ccw_ne_ccp_1946", "东北沦陷区（共军控制，大致范围）", "CCP-held northern Manchuria", "Q97179246", "东北行政委员会", "1946-06-07", "1947-05-13", NE_CCP_1946,
               kind="de_facto", group="ccw_manchuria",
               dates_note="苏军撤出后国共争夺东北；1946-06-07 东北停战令后大致以松花江为界：共军控制哈尔滨（1946-04-28 进入）及松花江以北、吉林东部，国民革命军控制长春、沈阳及南满；1946-08 东北各省市行政联合办事处成立（后称东北行政委员会）。",
               note="以松花江为界的手绘近似（±100 km）；国民革命军控制区仍显示为「中华民国」。", sources=[WP + "Chinese_Civil_War", WP + "Siping_campaign", ZWP + "东北行政委员会_(1946年—1949年)"]))
-Z.append(zone("ccw_ne_ccp_1947", "东北解放区（共军控制，大致范围）", "CCP-held Manchuria", "Q97179246", "东北行政委员会", "1947-05-13", "1948-03-13",
+Z.append(zone("ccw_ne_ccp_1947", "东北沦陷区（共军控制，大致范围）", "CCP-held Manchuria", "Q97179246", "东北行政委员会", "1947-05-13", "1948-03-13",
               {"basemap": {"snap": 1930, "name": "Manchuria"}, "minus": {"polygon": ROC_CORRIDOR_1947}}, kind="de_facto", group="ccw_manchuria",
               dates_note="1947 年夏季、秋季、冬季攻势后，国民革命军只控制北宁、中长铁路沿线的长春—四平—沈阳—锦州走廊（四平 1948-03-13 失守）。",
               note="国民革命军控制走廊为沿铁路的手绘近似（宽约 50–100 km）。", sources=[WP + "Chinese_Civil_War", WP + "Liaoshen_campaign"]))
-Z.append(zone("ccw_ne_ccp_1948", "东北解放区（共军控制，大致范围）", "CCP-held Manchuria", "Q97179246", "东北行政委员会", "1948-03-13", "1948-11-02",
+Z.append(zone("ccw_ne_ccp_1948", "东北沦陷区（共军控制，大致范围）", "CCP-held Manchuria", "Q97179246", "东北行政委员会", "1948-03-13", "1948-11-02",
               {"basemap": {"snap": 1930, "name": "Manchuria"}, "minus": {"polygon": ROC_1948, "union": [{"polygon": CHANGCHUN}]}}, kind="de_facto", group="ccw_manchuria",
               dates_note="1948-03 后国民革命军只剩被围的长春（1948-10-19 投降）与沈阳—锦州走廊；辽沈战役锦州 10-15、沈阳 11-02 失守，东北全境由共军控制。",
               sources=[WP + "Liaoshen_campaign", WP + "Siege_of_Changchun"]))
-Z.append(zone("ccw_ne_ccp_1948b", "东北解放区（共军控制）", "CCP-held Manchuria", "Q97179246", "东北行政委员会", "1948-11-02", "1949-10-01", MANCHURIA, kind="de_facto", group="ccw_manchuria",
+Z.append(zone("ccw_ne_ccp_1948b", "东北沦陷区（共军控制）", "CCP-held Manchuria", "Q97179246", "东北行政委员会", "1948-11-02", "1949-10-01", MANCHURIA, kind="de_facto", group="ccw_manchuria",
               dates_note="辽沈战役结束（1948-11-02）至中华人民共和国成立（1949-10-01；东北人民政府 1949-08 成立）。", sources=[WP + "Liaoshen_campaign"]))
 
 # ---- 太平洋战争：东南亚日占区 ----

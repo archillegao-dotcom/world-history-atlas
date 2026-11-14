@@ -64,6 +64,9 @@
     return `${t}（${z?.kind === "culture" ? "文化/地区" : "未对应到当时存在的政权"}）`;
   };
   const qidF = (p) => (p && snapNames[state.snap]?.[String(p.fid)]?.qid) || null;
+  // v0.6.2：颜色按解析出的政权 QID（同一政权的 CShapes 主体、Stanford 按月多边形、底图补块同色，如 1940 年苏联不再两种颜色）；
+  // 底图标明从属于别国的多边形（SUBJECTO 与 NAME 不同，如殖民地）仍用宗主国的颜色
+  const colorKey = (p, n) => (p?.SUBJECTO && p.SUBJECTO !== p.NAME ? p.SUBJECTO : null) || qidF(p) || p?.SUBJECTO || n;
   const pnameN = (n) => { const f = geoCache[state.snap]?.features.find((x) => x.properties.NAME === n); return f ? pnameF(f.properties) : pname(n); };
   const state = { date: { y: 1789, m: 7, d: 14 }, snap: null, next: null, fid: null, world: false, tab: null, playing: null, meta: null };
   const renderers = {};
@@ -80,44 +83,504 @@
     map: null,   // 测试用：Playwright 通过 WHA.map 把经纬度换成屏幕坐标
     // 按坐标选中所在的政权多边形（城市标记、小国标记点击时用）
     selectAt: async (lat, lon) => {
+      state.pick = { lat, lon };
       const r = await api(`/api/locate?date=${dateParam(state.date)}&lat=${lat}&lon=${lon}`).catch(() => null);
       if (r && r.polity && r.snapshot === state.snap) selectPolity(r.polity.fid);
     },
     openDetail: (html) => { $("detailBody").innerHTML = html; $("detail").classList.remove("hidden"); $("detailBody").scrollTop = 0; return $("detailBody"); },
   };
-  const panelMods = () => state.meta.modules.filter((m) => (m.kind || "panel") === "panel");
+  const allPanelMods = () => state.meta.modules.filter((m) => (m.kind || "panel") === "panel");
+  // 点选之后显示「宪法 / 基本法」。请求回来之前不先占一个空标签。页内说明：没有列出不等于没有。
+  const panelMods = () => allPanelMods().filter((m) => m.id !== "constitution" || !!(results.constitution && results.constitution.shown));
   const layerMods = () => state.meta.modules.filter((m) => m.kind === "layer");
 
   // ---------------------------------------------------------------- 地图
-  const map = L.map("map", { worldCopyJump: true, minZoom: 2, maxZoom: 8, zoomSnap: 0.5, attributionControl: true }).setView([30, 20], 2.5);
+  const phone0 = window.matchMedia("(max-width: 720px)").matches;
+  // 打开时地图更大：桌面约看到欧洲到东亚，窄屏先给一块可读的区域。缩小和「全世界」仍在。日期变化不改这里的视角。
+  const map = L.map("map", { worldCopyJump: true, minZoom: 2, maxZoom: 8, zoomSnap: 0.5, attributionControl: true })
+    .setView(phone0 ? [36, 48] : [32, 55], phone0 ? 3 : 3.5);
   WHA.map = map;
   map.attributionControl.setPrefix('<a href="https://leafletjs.com">Leaflet</a>');
   map.attributionControl.addAttribution('边界：<a href="https://github.com/aourednik/historical-basemaps" target="_blank">historical-basemaps</a> (GPL-3.0) · 事件/人物：<a href="https://www.wikidata.org" target="_blank">Wikidata</a> (CC0)');
+  if (!map.getPane("hillshade")) {
+    const hp = map.createPane("hillshade");
+    hp.style.zIndex = 405;
+    hp.style.pointerEvents = "none";
+    hp.classList.add("hillshade-pane");
+  }
+  // Natural Earth 1:50m Shaded Relief，公有领域。水面临时去掉，只把陆地起伏叠在政权颜色上。不是历史国界。
+  L.imageOverlay("assets/ne50m_hillshade.png?v=2", [[-78, -180], [78, 180]], {
+    pane: "hillshade", opacity: 0.92, interactive: false, className: "hillshade-img",
+  }).addTo(map);
   let layer = null;
   const markers = L.layerGroup().addTo(map);
   const geoCache = {};
 
   const hue = (s) => { let h = 0; for (const c of s || "") h = (h * 31 + c.charCodeAt(0)) >>> 0; return h % 360; };
+  // 甘丹颇章 Q2444884 散列色相 297，英属印度 Q129286 是 305。策略地图饱和度 24% 时邻接几乎同色。只改这一色相，不改几何。92 避开中华民国 36、尼泊尔 3、不丹 182。
+  const HUE_FIX = { Q2444884: 92 };
+  const hueOf = (key) => Object.prototype.hasOwnProperty.call(HUE_FIX, key) ? HUE_FIX[key] : hue(key);
+  const strategyOn = () => document.body.classList.contains("strategy");
   // 填色按「当日解析出的政权」（同一政权的多个多边形同色，如 1125 年后的辽朝故地与金朝控制区）；殖民地仍按宗主国
   const styleFor = (f, selected) => {
     const n = f.properties.NAME;
-    const base = {
-      color: selected ? "#8a1c00" : "#6b5a48", weight: selected ? 2.5 : 0.6, opacity: 0.9,
-      fillColor: n ? `hsl(${hue(f.properties.SUBJECTO || qidF(f.properties) || n)}, 45%, ${selected ? 62 : 74}%)` : "#ddd6c8",
+    const strat = strategyOn();
+    // 选中时的红线不画在填色多边形上。填色多边形被裁切、简化之后，描边另用同一圈点。
+    // 若把加粗描边留在这里，尖角的斜接会伸出填色，看起来像另一条边界。
+    const base = strat ? {
+      color: "#12100e", weight: selected ? 0 : 1.75, opacity: 1,
+      fillColor: n ? `hsl(${hueOf(colorKey(f.properties, n))}, 24%, ${selected ? 42 : 34}%)` : "#3c433c",
+      fillOpacity: 0.97,
+    } : {
+      color: "#6b5a48", weight: selected ? 0 : 0.6, opacity: 0.9,
+      fillColor: n ? `hsl(${hueOf(colorKey(f.properties, n))}, 45%, ${selected ? 62 : 74}%)` : "#ddd6c8",
       fillOpacity: selected ? 0.85 : 0.75,
     };
     // 图层模块（如「阵营地图」）可以通过 WHA.setFillOverride(fn) 改写多边形填色
     let o = null;
     for (const fn of Object.values(fillOverrides)) { const x = fn(f); if (x) o = { ...(o || {}), ...x }; }
-    return o ? { ...base, ...o, ...(selected ? { color: "#8a1c00", weight: 2.5 } : {}) } : base;
+    const out = o ? { ...base, ...o, ...(selected ? { weight: 0 } : {}) } : base;
+    if (strat && !selected) out.weight = Math.max(out.weight || 0, 1.75);
+    // 近似多边形之间的空隙：灰色虚线，不套用政权色，避免看起来像已经核定的国界
+    if (f.properties.TERR_CAT === "unverified") {
+      return {
+        color: "#3a342c",
+        weight: selected ? 0 : (strat ? 1.5 : 1.1),
+        dashArray: selected ? null : "4 3", opacity: 1,
+        fillColor: strat ? "#7a7368" : "#d2c6b2",
+        fillOpacity: strat ? 0.78 : 0.72,
+      };
+    }
+    return out;
   };
   // 多个图层可同时改写填色：按注册顺序叠加（后注册的覆盖前面的同名样式）
   const fillOverrides = {};
+
+  // 悬停满 5 秒才查经济。离开、换政权、拖动、缩放、改日期、关图层都取消计时和未返回的请求。
+  const ECON_HOVER_MS = 5000;
+  let hoverSeq = 0, hoverTimer = null, hoverFid = null, hoverAbort = null, hoverTouch = null;
+  function hoverEnd() {
+    hoverSeq++;
+    hoverFid = null;
+    hoverTouch = null;
+    if (hoverTimer) { clearTimeout(hoverTimer); hoverTimer = null; }
+    if (hoverAbort) { hoverAbort.abort(); hoverAbort = null; }
+    const box = $("econHover");
+    if (box) box.classList.remove("on");
+  }
+  function hoverBegin(feature, ev) {
+    const fid = feature?.properties?.fid;
+    if (fid == null) return;
+    const oe = ev && (ev.originalEvent || ev);
+    if (hoverFid === fid && hoverTimer) {
+      if (oe && oe.pointerType && oe.pointerType !== "mouse") hoverTouch = hoverTouch || { x: oe.clientX, y: oe.clientY };
+      return;
+    }
+    hoverEnd();
+    hoverFid = fid;
+    if (oe && oe.pointerType && oe.pointerType !== "mouse") hoverTouch = { x: oe.clientX, y: oe.clientY };
+    const seq = hoverSeq;
+    hoverTimer = setTimeout(() => {
+      hoverTimer = null;
+      if (seq !== hoverSeq) return;
+      hoverFire(feature, ev, seq);
+    }, ECON_HOVER_MS);
+  }
+  function fmtEcon(v, unit) {
+    if (v == null || Number.isNaN(v)) return "暂无数据";
+    const a = Math.abs(v);
+    if (unit === "人") return a >= 1e8 ? (v / 1e8).toFixed(2) + " 亿人" : a >= 1e4 ? (v / 1e4).toFixed(a >= 1e6 ? 0 : 1) + " 万人" : Math.round(v) + " 人";
+    if (unit === "美元" || unit === "国际元") {
+      const u = unit === "美元" ? " 美元" : " 国际元";
+      return a >= 1e12 ? (v / 1e12).toFixed(2) + " 万亿" + u : a >= 1e8 ? (v / 1e8).toFixed(1) + " 亿" + u : Math.round(v).toLocaleString("zh-CN") + u;
+    }
+    return String(Math.round(v * 10) / 10) + (unit ? " " + unit : "");
+  }
+  function placeHover(ev) {
+    const oe = ev && (ev.originalEvent || ev);
+    const box = $("econHover");
+    if (!oe || !box || oe.clientX == null) return;
+    const w = 340, h = box.offsetHeight || 150;
+    let x = oe.clientX + 16, y = oe.clientY + 18;
+    if (x + w > window.innerWidth - 8) x = Math.max(8, oe.clientX - w - 12);
+    if (y + h > window.innerHeight - 8) y = Math.max(8, oe.clientY - h - 12);
+    const ctl = $("layerCtl");
+    if (ctl) {
+      const r = ctl.getBoundingClientRect();
+      if (x < r.right + 6 && x + w > r.left && y < r.bottom + 6 && y + h > r.top) y = Math.min(window.innerHeight - h - 8, r.bottom + 8);
+    }
+    const bar = $("topbar");
+    if (bar) {
+      const r = bar.getBoundingClientRect();
+      if (y < r.bottom + 4) y = r.bottom + 6;
+    }
+    box.style.left = x + "px";
+    box.style.top = y + "px";
+  }
+  function renderHover(feature, data) {
+    const regime = esc(pnameF(feature.properties));
+    const head = `<b>经济数字</b><div class="eh-year">地图上的政权：${regime}。下面不是这个政权自己的统计。</div>`;
+    const foot = `<div class="eh-note">${esc(data.note || "来源只在这里写一次。只有数据表里正好有所选年份才给出全年数字。")}</div>`;
+    if (!data.countries || !data.countries.length) {
+      return head + `<div class="eh-empty">暂无数据</div>` + foot;
+    }
+    const blocks = data.countries.map((c) => {
+      const share = c.share < 0.999 ? `，约占此区域 ${Math.round(c.share * 100)}%` : "";
+      const title = `<div class="eh-cty">现代国家「${esc(c.name)}」范围的序列（${esc(c.iso)}）${share}</div>`;
+      if (!c.values || !c.values.length) return title + `<div class="eh-empty">暂无数据</div>`;
+      return title + c.values.map((v) => `<div class="eh-row">${esc(v.zh)}：${fmtEcon(v.v, v.unit)} · ${esc(String(v.year))} 年</div>`).join("");
+    }).join("");
+    return head + blocks + foot;
+  }
+  function hoverFire(feature, ev, seq) {
+    const box = $("econHover");
+    if (!box) return;
+    placeHover(ev);
+    box.innerHTML = `<b>${esc(pnameF(feature.properties))}</b><div class="eh-wait">正在查 ${esc(String(state.date.y))} 年的经济数字…</div>`;
+    box.classList.add("on");
+    const ac = new AbortController();
+    hoverAbort = ac;
+    const url = `/api/econ_hover?date=${encodeURIComponent(dateParam(state.date))}&snap=${encodeURIComponent(state.snap)}&fid=${feature.properties.fid}`;
+    fetch(url, { signal: ac.signal }).then((r) => { if (!r.ok) throw new Error("http " + r.status); return r.json(); }).then((data) => {
+      if (seq !== hoverSeq) return;
+      box.innerHTML = renderHover(feature, data);
+      placeHover(ev);
+    }).catch((e) => {
+      if (e.name === "AbortError" || seq !== hoverSeq) return;
+      box.innerHTML = `<b>${esc(pnameF(feature.properties))}</b><div class="eh-empty">暂无数据</div>`;
+    });
+  }
+  function hoverBeginAt(lat, lon, ev) {
+    const key = `at:${Number(lat).toFixed(2)},${Number(lon).toFixed(2)}`;
+    const oe = ev && (ev.originalEvent || ev);
+    if (hoverFid === key && hoverTimer) return;
+    hoverEnd();
+    hoverFid = key;
+    if (oe && oe.pointerType && oe.pointerType !== "mouse") hoverTouch = { x: oe.clientX, y: oe.clientY };
+    const seq = hoverSeq;
+    hoverTimer = setTimeout(() => {
+      hoverTimer = null;
+      if (seq !== hoverSeq) return;
+      const box = $("econHover");
+      if (!box) return;
+      placeHover(ev);
+      box.innerHTML = `<div class="eh-wait">正在查 ${esc(String(state.date.y))} 年的经济数字…</div>`;
+      box.classList.add("on");
+      const ac = new AbortController();
+      hoverAbort = ac;
+      fetch(`/api/locate?date=${encodeURIComponent(dateParam(state.date))}&lat=${lat}&lon=${lon}`, { signal: ac.signal })
+        .then((r) => { if (!r.ok) throw new Error("http " + r.status); return r.json(); })
+        .then((loc) => {
+          if (seq !== hoverSeq) return null;
+          const p = loc && loc.polity;
+          if (!p || loc.snapshot !== state.snap) {
+            box.innerHTML = `<div class="eh-empty">暂无数据</div>`;
+            return null;
+          }
+          const f = featByFid(state.snap, p.fid) || { properties: p };
+          return fetch(`/api/econ_hover?date=${encodeURIComponent(dateParam(state.date))}&snap=${encodeURIComponent(state.snap)}&fid=${p.fid}`, { signal: ac.signal })
+            .then((r) => { if (!r.ok) throw new Error("http " + r.status); return r.json(); })
+            .then((data) => ({ f, data }));
+        })
+        .then((got) => {
+          if (!got || seq !== hoverSeq) return;
+          box.innerHTML = renderHover(got.f, got.data);
+          placeHover(ev);
+        })
+        .catch((e) => {
+          if (e.name === "AbortError" || seq !== hoverSeq) return;
+          box.innerHTML = `<div class="eh-empty">暂无数据</div>`;
+        });
+    }, ECON_HOVER_MS);
+  }
+  WHA.hoverBeginAt = hoverBeginAt;
+  WHA.hoverEnd = hoverEnd;
+
+  function bindHover(target, feature) {
+    target.on("mouseover", (e) => hoverBegin(feature, e));
+    target.on("mouseout", hoverEnd);
+    target.on("pointerdown", (e) => {
+      const t = e.originalEvent && e.originalEvent.pointerType;
+      if (t && t !== "mouse") hoverBegin(feature, e);
+    });
+    target.on("pointerup pointercancel", (e) => {
+      const t = e.originalEvent && e.originalEvent.pointerType;
+      if (t && t !== "mouse") hoverEnd();
+    });
+  }
+
+  let labelLayer = null, adminLayer = null, adminTimer = null;
+  // 地图上的短名都是核对过的叫法。括号里的地位说明可以略去，因为全名留在提示里。没有核对过的长名整段显示，不用省略号。
+  const SHORT_NAME = {
+    "法兰西共和国临时政府": "法国临时政府",
+    "法兰西共和国临时政府/盟军控制区（法国）": "法国临时政府",
+    "意大利王国/盟军控制区（意大利社会共和国）": "意王国/盟军",
+    "英军托管下的利比亚": "利比亚（英管）",
+    "苏军控制区（匈牙利）": "苏占匈牙利",
+    "苏军收复区（原东方总督辖区）": "苏军收复区",
+    "苏军与波兰民族解放委员会控制区（原波兰总督府）": "苏军·波兰",
+    "南斯拉夫民族解放运动/苏军控制区（克罗地亚独立国）": "苏军·克罗地亚",
+    "南斯拉夫民族解放运动/苏军控制区（塞尔维亚（德军军事管理区））": "苏军·塞尔维亚",
+    "南斯拉夫民族解放运动/苏军控制区（黑山（意大利军政府））": "苏军·黑山",
+    "第二次世界大战中的法属印度支那": "法属印度支那",
+    "挪威（苏军解放的芬马克）": "芬马克（苏军）",
+    "印度尼西亚日据时期": "印尼（日据）",
+    "蒙疆联合自治政府": "蒙疆",
+    "日军军事占领区（桂柳会战）": "桂柳（日军）",
+    "空隙（未核实）（Unverified gap）": "空隙（未核实）",
+  };
+  function shortPolity(name) {
+    const s = String(name || "");
+    if (SHORT_NAME[s]) return SHORT_NAME[s];
+    const m = s.match(/^([^（(]{2,8})[（(].*(殖民地|保护国|托管地|属地|占领区|解放区|军政府)/);
+    if (m) return m[1];
+    return s;
+  }
+  // 全名放不进范围时，去掉正式名称末尾的地位词。不是另造简称。全名仍在提示里。
+  function tighterName(shown) {
+    const s = String(shown || "");
+    const prot = s.match(/^(.{2,14})保护国$/);
+    if (prot) return prot[1];
+    const king = s.match(/^(.{2,8})(王国|共和国)$/);
+    if (king) return king[1];
+    return s;
+  }
+  let labelProbe = null;
+  function measureLabel(text) {
+    if (!labelProbe) {
+      const hold = document.createElement("div");
+      hold.className = "leaflet-div-icon strategy-label label-probe";
+      hold.style.cssText = "position:absolute;left:-9999px;top:0;visibility:hidden;pointer-events:none";
+      labelProbe = document.createElement("span");
+      hold.appendChild(labelProbe);
+      document.body.appendChild(hold);
+    }
+    labelProbe.textContent = text;
+    const r = labelProbe.getBoundingClientRect();
+    return { w: Math.ceil(r.width), h: Math.ceil(r.height) };
+  }
+  function ringHas(lat, lng, ring) {
+    let inside = false;
+    for (let i = 0, j = ring.length - 1; i < ring.length; j = i++) {
+      const yi = ring[i].lat, xi = ring[i].lng, yj = ring[j].lat, xj = ring[j].lng;
+      if (Math.abs(xi - xj) > 80) continue;
+      if ((yi > lat) !== (yj > lat)) {
+        const x = xi + (xj - xi) * (lat - yi) / ((yj - yi) || 1e-12);
+        if (lng < x) inside = !inside;
+      }
+    }
+    return inside;
+  }
+  function polygonsOf(layer) {
+    const ll = layer.getLatLngs?.();
+    if (!ll || !ll.length) return [];
+    if (typeof ll[0].lat === "number") return [{ outer: ll, holes: [] }];
+    if (ll[0][0] && typeof ll[0][0].lat === "number") return [{ outer: ll[0], holes: ll.slice(1) }];
+    return ll.filter((poly) => poly && poly[0] && poly[0][0] && typeof poly[0][0].lat === "number")
+      .map((poly) => ({ outer: poly[0], holes: poly.slice(1) }));
+  }
+  function insidePoly(lat, lng, poly) {
+    return ringHas(lat, lng, poly.outer) && !poly.holes.some((h) => h && h.length > 2 && ringHas(lat, lng, h));
+  }
+  // 名称候选点：当前画面里、多边形内部的几段，不用外接矩形中心。
+  function interiorCandidates(outer, holes, view) {
+    let minLat = 90, maxLat = -90, minLng = 180, maxLng = -180;
+    for (const p of outer) {
+      if (p.lat < minLat) minLat = p.lat;
+      if (p.lat > maxLat) maxLat = p.lat;
+      if (p.lng < minLng) minLng = p.lng;
+      if (p.lng > maxLng) maxLng = p.lng;
+    }
+    const south = Math.max(minLat, view.getSouth()), north = Math.min(maxLat, view.getNorth());
+    const west = Math.max(minLng, view.getWest()), east = Math.min(maxLng, view.getEast());
+    if (!(south < north) || !(west < east)) return [];
+    const out = [];
+    const lines = 7;
+    for (let i = 0; i < lines; i++) {
+      const lat = south + (north - south) * (i + 0.5) / lines;
+      const xs = [];
+      for (let a = 0, b = outer.length - 1; a < outer.length; b = a++) {
+        const y1 = outer[b].lat, y2 = outer[a].lat;
+        if (Math.abs(outer[a].lng - outer[b].lng) > 80) continue;
+        if ((y1 > lat) === (y2 > lat)) continue;
+        xs.push(outer[b].lng + (outer[a].lng - outer[b].lng) * (lat - y1) / (y2 - y1));
+      }
+      xs.sort((p, q) => p - q);
+      for (let k = 0; k + 1 < xs.length; k += 2) {
+        const a0 = Math.max(xs[k], west), a1 = Math.min(xs[k + 1], east);
+        const span = a1 - a0;
+        if (span < 0.2) continue;
+        for (const t of [0.35, 0.5, 0.65]) {
+          const lng = a0 + (a1 - a0) * t;
+          if (holes.some((h) => h && h.length > 2 && ringHas(lat, lng, h))) continue;
+          out.push({ c: L.latLng(lat, lng), span });
+        }
+      }
+    }
+    out.sort((a, b) => b.span - a.span);
+    return out.slice(0, 12);
+  }
+  function boxesOverlap(a, b) {
+    return !(a[2] < b[0] || a[0] > b[2] || a[3] < b[1] || a[1] > b[3]);
+  }
+  function placeLabels() {
+    if (!labelLayer) {
+      if (!map.getPane("labels")) {
+        const p = map.createPane("labels");
+        p.style.zIndex = 620;
+        p.style.pointerEvents = "none";
+      }
+      labelLayer = L.layerGroup().addTo(map);
+    }
+    labelLayer.clearLayers();
+    if (!strategyOn() || !layer) return;
+    const el = map.getContainer();
+    const sz0 = map.getSize();
+    if ((el.clientWidth !== sz0.x || el.clientHeight !== sz0.y) && !map._whaSizing) {
+      map._whaSizing = true;
+      map.invalidateSize({ pan: false, animate: false });
+      map._whaSizing = false;
+    }
+    if (map._whaSizing) return;
+    map._whaSizing = true;
+    const z = map.getZoom();
+    const view = map.getBounds();
+    const sz = { x: el.clientWidth, y: el.clientHeight };
+    const narrow = sz.x <= 720;
+    const inset = { l: 8, r: 8, t: narrow ? 18 : 14, b: 10 };
+    const items = [];
+    layer.eachLayer((l) => {
+      const b = l.getBounds?.();
+      if (!b || !b.isValid() || !view.intersects(b)) return;
+      const p = l.feature.properties;
+      const polys = polygonsOf(l);
+      let cands = [];
+      let span = 0;
+      if (p.LABEL_X != null && p.LABEL_Y != null) {
+        const ll = L.latLng(p.LABEL_Y, p.LABEL_X);
+        if (view.contains(ll) && polys.some((poly) => insidePoly(ll.lat, ll.lng, poly))) cands.push({ c: ll, span: 2 });
+      }
+      for (const poly of polys) {
+        for (const hit of interiorCandidates(poly.outer, poly.holes, view)) {
+          cands.push(hit);
+          if (hit.span > span) span = hit.span;
+        }
+      }
+      cands.sort((a, b) => b.span - a.span);
+      cands = cands.slice(0, 16);
+      if (!cands.length || span < 0.25) return;
+      const cat = p.TERR_CAT || "";
+      const tier = cat === "unverified" || cat.startsWith("zone_") ? 2 : (p.TERRITORY ? 1 : 0);
+      items.push({ span, name: pnameF(p), zone: p.NAME_ZH || "", terr: !!p.TERRITORY, tier, polys, cands });
+    });
+    // 占领区若解析成宗主国国名，会和本土抢同一个标签，国名就会标到占领区上。这种区域改用自己的名称。
+    const mains = new Set(items.filter((it) => !it.terr).map((it) => it.name));
+    for (const it of items) {
+      if (it.terr && it.zone && it.zone !== it.name && mains.has(it.name)) {
+        it.title = `${it.zone}（${it.name}）`;
+        it.name = it.zone;
+      } else it.title = it.name;
+    }
+    items.sort((a, b) => a.tier - b.tier || b.span - a.span);
+    const taken = [];
+    const used = new Set();
+    let extra = 0;
+    const extraMax = z < 3.2 ? 6 : 14;
+    const gap = 5;
+    function boxOf(pt, dim) {
+      return [pt.x - dim.w / 2, pt.y - dim.h / 2, pt.x + dim.w / 2, pt.y + dim.h / 2];
+    }
+    function inView(box) {
+      return box[0] >= inset.l && box[1] >= inset.t && box[2] <= sz.x - inset.r && box[3] <= sz.y - inset.b;
+    }
+    function crowded(box) {
+      const b = [box[0] - gap, box[1] - gap, box[2] + gap, box[3] + gap];
+      return taken.some((q) => boxesOverlap(b, q));
+    }
+    function owns(it, ll) {
+      return it.polys.some((poly) => insidePoly(ll.lat, ll.lng, poly));
+    }
+    function inOther(it, ll) {
+      for (const other of items) {
+        if (other !== it && owns(other, ll)) return true;
+      }
+      return false;
+    }
+    // 字心必须在本多边形里。两端可以落在海上，不能落进别国。
+    function insideOwn(box, it) {
+      const midY = (box[1] + box[3]) / 2;
+      const lls = [[(box[0] + box[2]) / 2, midY], [box[0] + 2, midY], [box[2] - 2, midY]]
+        .map(([x, y]) => map.containerPointToLatLng(L.point(x, y)));
+      if (!owns(it, lls[0])) return false;
+      return lls.every((ll) => owns(it, ll) || !inOther(it, ll));
+    }
+    function bestFit(it, shown) {
+      const dim = measureLabel(shown);
+      if (dim.w < 8 || dim.h < 8) return null;
+      const minX = inset.l + dim.w / 2, maxX = sz.x - inset.r - dim.w / 2;
+      const minY = inset.t + dim.h / 2, maxY = sz.y - inset.b - dim.h / 2;
+      if (minX > maxX || minY > maxY) return null;
+      let best = null;
+      for (const cand of it.cands) {
+        const raw = map.latLngToContainerPoint(cand.c);
+        const pt = L.point(Math.max(minX, Math.min(maxX, raw.x)), Math.max(minY, Math.min(maxY, raw.y)));
+        const box = boxOf(pt, dim);
+        if (!inView(box) || crowded(box) || !insideOwn(box, it)) continue;
+        const edge = Math.min(box[0] - inset.l, sz.x - inset.r - box[2], box[1] - inset.t, sz.y - inset.b - box[3]);
+        const score = edge * 3 + cand.span;
+        if (!best || score > best.score) best = { pt, box, score };
+      }
+      return best;
+    }
+    for (const it of items) {
+      if (used.has(it.name)) continue;
+      if (it.name === "未命名区域") continue;
+      if (it.tier > 0 && extra >= extraMax) continue;
+      const preferred = shortPolity(it.name);
+      const names = [preferred];
+      const tight = tighterName(preferred);
+      if (tight !== preferred) names.push(tight);
+      let placed = null, shown = preferred;
+      for (const name of names) {
+        const fit = bestFit(it, name);
+        if (fit) { placed = fit; shown = name; break; }
+      }
+      if (!placed) continue;
+      if (it.tier > 0) extra++;
+      taken.push(placed.box);
+      used.add(it.name);
+      const at = map.containerPointToLatLng(placed.pt);
+      const icon = L.divIcon({
+        className: "polity-label strategy-label", iconSize: null, iconAnchor: [0, 0],
+        html: `<span data-lat="${at.lat.toFixed(3)}" data-lng="${at.lng.toFixed(3)}" title="${esc(it.title || it.name)}">${esc(shown)}</span>`,
+      });
+      L.marker(map.containerPointToLatLng(placed.pt), { icon, pane: "labels", interactive: false, keyboard: false }).addTo(labelLayer);
+    }
+    WHA.polityLabelBoxes = taken;
+    map._whaSizing = false;
+  }
+  WHA.placePolityLabels = placeLabels;
+  function scheduleAdmin1() { clearTimeout(adminTimer); adminTimer = setTimeout(loadAdmin1, 240); }
+  function loadAdmin1() {
+    // 今天的一级行政区不再叠到地图上。民国省界由「民国省界」图层按日期另画。
+    if (adminLayer) adminLayer.clearLayers();
+  }
+  map.on("movestart zoomstart", hoverEnd);
+  map.getContainer().addEventListener("pointermove", (e) => {
+    if (!hoverTouch || !hoverTimer || e.pointerType === "mouse") return;
+    if (Math.hypot(e.clientX - hoverTouch.x, e.clientY - hoverTouch.y) > 12) hoverEnd();
+  });
+  function syncTiny() {
+    const pane = map.getPane("tiny");
+    if (pane) pane.style.display = (!strategyOn() || map.getZoom() >= 5) ? "" : "none";
+  }
+  map.on("moveend zoomend", () => { placeLabels(); scheduleAdmin1(); syncTiny(); syncSelectionOutline(); });
 
   let tinyLayer = null;
   // 快速连续换日期时，较早发出的请求可能后返回：只画最后一次请求的快照，否则旧快照的多边形会盖在地图上、点击选中错误的政权
   let snapSeq = 0;
   async function loadSnapshot(snap) {
+    hoverEnd();
     const my = ++snapSeq;
     if (!geoCache[snap]) geoCache[snap] = await api(`/api/basemap/${snap}`);
     await loadNames(snap);
@@ -125,13 +588,15 @@
     const gj = geoCache[snap];
     if (layer) map.removeLayer(layer);
     layer = L.geoJSON(gj, {
-      style: (f) => styleFor(f, state.fid === f.properties.fid && !state.world),
+      style: (f) => styleFor(f, selectedFid(f.properties.fid)),
       onEachFeature: (f, l) => {
         const p = f.properties;
         l.bindTooltip(() => esc(pnameF(p)) + (p.SUBJECTO && p.SUBJECTO !== p.NAME ? `<br><small>从属于：${esc(pnameN(p.SUBJECTO))}</small>` : "") +
           Object.values(WHA.tooltipExtra).map((fn) => fn(p) || "").join(""), { sticky: true });
         // 点到没有对应政权的底图多边形（文化/地区）时，按坐标解析：小岛的底图多边形可能压在殖民地分区之上（如 1950 年圣基茨属英属背风群岛）
+        bindHover(l, f);
         l.on("click", async (e) => {
+          state.pick = { lat: e.latlng.lat, lon: e.latlng.lng };
           if (snapNames[state.snap]?.[String(p.fid)]?.qid) return selectPolity(p.fid);
           const r = await api(`/api/locate?date=${dateParam(state.date)}&lat=${e.latlng.lat}&lon=${e.latlng.lng}`).catch(() => null);
           selectPolity(r && r.polity && r.snapshot === state.snap ? r.polity.fid : p.fid);
@@ -156,12 +621,14 @@
       const p = l.feature.properties;
       if (b.getEast() - b.getWest() > 1.2 || b.getNorth() - b.getSouth() > 1.2) return;
       const c = p.LABEL_X != null ? [p.LABEL_Y, p.LABEL_X] : b.getCenter();
-      const mk = L.circleMarker(c, { pane: "tiny", radius: 5, weight: 1.5, color: "#555", fillColor: styleFor(l.feature, false).fillColor || "#ddd", fillOpacity: 0.9, className: "tiny-polity" });
+      const mk = L.circleMarker(c, { pane: "tiny", radius: strategyOn() ? 6 : 5, weight: 1.5, color: "#555", fillColor: styleFor(l.feature, false).fillColor || "#ddd", fillOpacity: 0.9, className: "tiny-polity" });
       mk.bindTooltip(() => esc(pnameF(p)), { sticky: true });
+      bindHover(mk, l.feature);
       // 按坐标解析（与点地图同一路径）：小岛的底图多边形可能被实际控制区/殖民地分区覆盖（如 1950 年多米尼克属英属向风群岛）
       mk.on("click", async (e) => {
         L.DomEvent.stopPropagation(e);
         const ll = mk.getLatLng();
+        state.pick = { lat: ll.lat, lon: ll.lng };
         const r = await api(`/api/locate?date=${dateParam(state.date)}&lat=${ll.lat}&lon=${ll.lng}`).catch(() => null);
         selectPolity(r && r.polity && r.snapshot === state.snap ? r.polity.fid : p.fid);
       });
@@ -170,12 +637,15 @@
     });
     tinyList.sort((a, b) => b[0] - a[0]).forEach(([, mk]) => tinyLayer.addLayer(mk));
     tinyLayer.addTo(map);
+    syncTiny();
+    placeLabels();
+    scheduleAdmin1();
   }
 
   // 多边形名称按所选日期解析（同一张快照内朝代/政权也会变化，如 900 年快照内唐→后梁）
   let namesKey = null;
   async function loadNames(snap) {
-    const key = `${snap}|${state.date.y}|${state.date.m}`;
+    const key = `${snap}|${state.date.y}|${state.date.m}|${state.date.d}`;
     if (key === namesKey) return;
     namesKey = key;
     snapNames[snap] = await api(`/api/snapshot_names/${snap}?date=${dateParam(state.date)}`).catch(() => ({}));
@@ -214,6 +684,7 @@
 
   let dateSeq = 0;
   async function setDate(dt, { refreshPanel = true } = {}) {
+    hoverEnd();
     const mySeq = ++dateSeq;
     state.date = dt;
     fillDateControls();
@@ -288,8 +759,13 @@
     const want = WHA.initialHash.get("layers");
     const on = want != null ? new Set(want.split(",")) : null;
     for (const m of layerMods()) { layerOn[m.id] = on ? on.has(m.id) : !!m.default_on; layers[m.id]?.init?.(map); }
-    box.innerHTML = "图层：" + layerMods().map((m) => `<label title="${esc(m.description)}"><input type="checkbox" data-id="${m.id}" ${layerOn[m.id] ? "checked" : ""}> ${esc(m.title)}</label>`).join("");
-    box.querySelectorAll("input").forEach((el) => el.addEventListener("change", () => { layerOn[el.dataset.id] = el.checked; layerUser[el.dataset.id] = true; updateLayers(); updateHash(); }));
+    box.classList.add("collapsed");
+    box.innerHTML = `<button type="button" id="layerToggle" aria-expanded="false">图层</button><div class="layer-body">` + layerMods().map((m) => `<label title="${esc(m.description)}"><input type="checkbox" data-id="${m.id}" ${layerOn[m.id] ? "checked" : ""}> ${esc(m.title)}</label>`).join("") + `</div>`;
+    box.querySelector("#layerToggle").addEventListener("click", () => {
+      const closed = box.classList.toggle("collapsed");
+      box.querySelector("#layerToggle").setAttribute("aria-expanded", closed ? "false" : "true");
+    });
+    box.querySelectorAll("input").forEach((el) => el.addEventListener("change", () => { hoverEnd(); layerOn[el.dataset.id] = el.checked; layerUser[el.dataset.id] = true; updateLayers(); updateHash(); }));
     if (want != null) for (const m of layerMods()) layerUser[m.id] = true;   // URL 指定了图层：不自动开关
     map.on("moveend", () => { const before = JSON.stringify(layerOn); autoLayers(); if (JSON.stringify(layerOn) !== before) updateLayers(); });
   }
@@ -308,15 +784,118 @@
     if (y < -3000) html = `<b>史前时期（文字出现以前）</b>：地图上是 historical-basemaps 对考古文化与人群分布的粗略复原，不是国家边界（名称标为「文化/地区」）；快照非常稀疏（当前：${yearZh(base)}${state.next != null ? "，下一张：" + yearZh(state.next) : ""}）。Wikidata 中此时期几乎没有精确到年的事件和人物。`;
     else if (y < -500) html += "<br>上古时期：许多日期是估计值，人物生卒年常常只精确到世纪。";
     if (state.date.m && state.date.d) html += "<br>已精确到日：事件列表会把<b>当天</b>发生的事件排在最前（仅限 Wikidata 记录到日的事件）。";
-    $("eraNote").innerHTML = html;
+    if (strategyOn()) html += "<br>策略地图是自绘的深色分区。国名写在该日可见范围里面，全名在提示里。今天的省界不再画，不是历史省界。1912年至1949年有来源的中国省界按所选日期另画；没有合法年份或地区的标省界待考，不画今天的省界。淡色起伏是 Natural Earth 晕渲（公有领域），只表示现代自然地形，不是历史国界。不是 TNO 官方地图。";
+    const note = $("eraNote");
+    const open = note.classList.contains("open");
+    note.innerHTML = `<button type="button" id="eraToggle" aria-expanded="${open ? "true" : "false"}">${open ? "收起说明" : "边界说明"}</button>` + (open ? `<div class="era-body">${html}</div>` : "");
+    $("eraToggle").onclick = () => { note.classList.toggle("open"); updateEraNote(); };
     const tl = $("transList");
     if (tl) tl.onclick = (e) => { e.preventDefault(); WHA.openDetail("边界过渡修正", `<ul>${state.transitions.map((t) => `<li>${esc(t)}</li>`).join("")}</ul><p class="note">修正规则：Wikidata 中精确到月/日的成立（P571）与解散（P576）日期落在两张快照之间时，从该日期起用下一张快照中对应的范围；特殊地位领土用 Natural Earth 1:10m 范围。</p>`); };
   }
 
   // ---------------------------------------------------------------- 侧边栏
+  // 同日解析到同一政权编号的多边形一并高亮。宗主国回退（method=owner）是单独属地，不并进本土。
+  let selCacheKey = "", selCache = new Set();
+  function selectionSet() {
+    const key = `${state.snap}|${state.fid}|${state.world}|${namesKey}`;
+    if (key === selCacheKey) return selCache;
+    const out = new Set();
+    if (!state.world && state.fid != null) {
+      out.add(state.fid);
+      const names = snapNames[state.snap] || {};
+      const me = names[String(state.fid)];
+      if (me && me.qid && me.method !== "owner") {
+        for (const [id, rec] of Object.entries(names)) {
+          if (rec && rec.qid === me.qid && rec.method !== "owner") out.add(Number(id));
+        }
+      }
+    }
+    selCacheKey = key;
+    selCache = out;
+    return out;
+  }
+  function selectedFid(fid) { return selectionSet().has(fid); }
+
+  let outlineLayer = null;
+  // 描边用填色多边形刚刚画出来的那一圈：已经按当前缩放裁过、简化过。不再另取一套几何。
+  function syncSelectionOutline() {
+    if (!map.getPane("seloutline")) {
+      const pane = map.createPane("seloutline");
+      pane.style.zIndex = 420;
+      pane.style.pointerEvents = "none";
+    }
+    if (outlineLayer) { map.removeLayer(outlineLayer); outlineLayer = null; }
+    if (!layer) return;
+    const strat = strategyOn();
+    const rings = [];
+    let fillSvg = null;
+    layer.eachLayer((l) => {
+      if (!l.feature || !selectedFid(l.feature.properties.fid)) return;
+      if (l._map && l._update) l._update();
+      if (l._path && l._path.ownerSVGElement) fillSvg = l._path.ownerSVGElement;
+      const parts = l._parts || [];
+      for (const part of parts) {
+        if (!part || part.length < 2) continue;
+        rings.push(part);
+      }
+    });
+    if (!rings.length) return;
+    outlineLayer = L.layerGroup().addTo(map);
+    const style = {
+      pane: "seloutline",
+      interactive: false,
+      className: "regime-outline",
+      smoothFactor: 0,
+      noClip: true,
+      stroke: true,
+      color: strat ? "#e6d3a1" : "#8a1c00",
+      weight: strat ? 2.4 : 2.5,
+      opacity: 1,
+      lineJoin: "round",
+      lineCap: "round",
+    };
+    // 每一圈单独描。并成一个多边形时，后面的圈会被当成孔。
+    // 点用填色层已经画出来的像素，不再经纬度转一圈，避免和填色差出一截。
+    for (const part of rings) {
+      const latlngs = part.map((p) => map.layerPointToLatLng(p));
+      const line = L.polyline(latlngs.concat([latlngs[0]]), style);
+      line.addTo(outlineLayer);
+      const pts = part.map((p) => L.point(p.x, p.y));
+      if (pts[0].distanceTo(pts[pts.length - 1]) > 0.5) pts.push(L.point(pts[0].x, pts[0].y));
+      line._parts = [pts];
+      line._pxBounds = L.bounds(pts);
+      if (line._renderer && line._updatePath) line._updatePath();
+    }
+    // 描边自己的 SVG 会把平移取整，和填色那张 SVG 差出零点几个像素。对准同一张变换。
+    const dst = outlineLayer.getLayers()[0] && outlineLayer.getLayers()[0]._renderer && outlineLayer.getLayers()[0]._renderer._container;
+    if (fillSvg && dst) {
+      dst.style.transform = fillSvg.style.transform;
+      const box = fillSvg.getAttribute("viewBox");
+      if (box) dst.setAttribute("viewBox", box);
+      if (fillSvg.getAttribute("width")) dst.setAttribute("width", fillSvg.getAttribute("width"));
+      if (fillSvg.getAttribute("height")) dst.setAttribute("height", fillSvg.getAttribute("height"));
+    }
+  }
   function restyle() {
-    if (layer) layer.eachLayer((l) => l.setStyle && l.setStyle(styleFor(l.feature, state.fid === l.feature.properties.fid && !state.world)));
-    if (tinyLayer) tinyLayer.eachLayer((m) => { const sel = state.fid === m.feature.properties.fid && !state.world; m.setStyle({ fillColor: styleFor(m.feature, false).fillColor || "#ddd", color: sel ? "#8a1c00" : "#555", weight: sel ? 2.5 : 1.5 }); });
+    if (layer) layer.eachLayer((l) => l.setStyle && l.setStyle(styleFor(l.feature, selectedFid(l.feature.properties.fid))));
+    syncSelectionOutline();
+    if (tinyLayer) tinyLayer.eachLayer((m) => {
+      const sel = selectedFid(m.feature.properties.fid);
+      m.setStyle({ fillColor: styleFor(m.feature, false).fillColor || "#ddd", color: sel ? (strategyOn() ? "#e6d3a1" : "#8a1c00") : (strategyOn() ? "#f4efe6" : "#555"), weight: sel ? 2.5 : 1.5 });
+      m.setRadius(strategyOn() ? 5 : 5);
+    });
+    syncTiny();
+    placeLabels();
+  }
+  function applyStrategy(on) {
+    document.body.classList.toggle("strategy", !!on);
+    const btn = $("styleBtn");
+    if (btn) { btn.textContent = on ? "普通地图" : "策略地图"; btn.setAttribute("aria-pressed", on ? "true" : "false"); }
+    if (on && !map._whaStratAttr) map._whaStratAttr = map.attributionControl.addAttribution('策略地图为软件自绘。今天的省界不再画，不是历史省界。1912–1949 年中国省界来自 <a href="https://www.virtualshanghai.net/Data/Tables?ID=198" target="_blank">ENP-China / Virtual Shanghai</a>（CC0），按日期显示。没有这套数据的年份和地区标省界待考。地形：<a href="https://www.naturalearthdata.com/" target="_blank">Natural Earth</a> 1:50m 晕渲（公有领域），只表示现代自然起伏');
+    restyle();
+    updateEraNote();
+    if (WHA.updateLayers) WHA.updateLayers();
+    scheduleAdmin1();
   }
   function closePanel() { $("panel").classList.add("hidden"); state.fid = null; state.world = false; markers.clearLayers(); restyle(); updateHash(); }
 
@@ -327,6 +906,8 @@
     refreshPanelData();
     updateHash();
   }
+  WHA.selectPolity = selectPolity;
+  WHA.linkedFids = () => [...selectionSet()];
 
   let reqSeq = 0;
   const results = {};
@@ -335,21 +916,61 @@
     const f = state.world ? null : featByFid(state.snap, state.fid);
     const p = f?.properties;
     $("polityName").textContent = state.world ? "全世界" : pnameF(p);
+    const linkedN = state.world ? 0 : selectionSet().size;
     $("polityMeta").innerHTML = state.world ? `${dateZh(state.date)} 前后 · 全球范围` :
       `${dateZh(state.date)} · 边界快照 ${yearZh(state.base ?? state.snap)}${String(state.snap).includes("@") ? "（含过渡修正）" : ""}` +
+      (linkedN > 1 ? `<br>同日同一政权编号还有 ${linkedN - 1} 块范围已一并高亮` : "") +
       (p?.NAME && (snapNames[state.snap]?.[String(p.fid)]?.zh || snapNames[state.snap]?.[String(p.fid)]?.title) ? ` · <span class="basename" title="边界数据中该多边形的原名">底图名称：${esc(p.NAME)}</span>` : "") +
       (p?.SUBJECTO && p.SUBJECTO !== p.NAME ? `<br>从属于：${esc(pnameN(p.SUBJECTO))}` : "") +
       (p?.PARTOF && p.PARTOF !== p.NAME && p.PARTOF !== p.SUBJECTO ? ` · 属于：${esc(pnameN(p.PARTOF))}` : "") +
       (qidF(p) ? ` · <a href="https://www.wikidata.org/wiki/${qidF(p)}" target="_blank">Wikidata</a>` : "") +
       (p?.BORDERPRECISION ? `<br>边界精度：${{ 1: "大致（1/3）", 2: "中等（2/3）", 3: "较精确（3/3）" }[p.BORDERPRECISION] || p.BORDERPRECISION}` : "");
-    const mods = panelMods();
-    if (!state.tab || !mods.find((m) => m.id === state.tab)) state.tab = mods[0]?.id;
+    const statusSeq = seq;
+    const statusPick = state.pick;
+    if (!state.world && statusPick && statusPick.lat != null) {
+      api(`/api/layers/status_layers?date=${dateParam(state.date)}&lat=${statusPick.lat}&lon=${statusPick.lon}&rows=1`).then((res) => {
+        if (statusSeq !== reqSeq) return;
+        const host = $("polityMeta");
+        host.querySelectorAll(".status-rows").forEach((n) => n.remove());
+        const hits = res.hits || [];
+        if (!hits.length) return;
+        const roleName = { control: "实际控制", claim: "主权声索", recognition: "国际承认" };
+        let html = `<div class="status-rows">`;
+        for (const h of hits) {
+          html += `<div class="status-area"><b>${esc(h.name_zh)}</b>`;
+          if (h.precision_zh) html += `<div>${esc(h.precision_zh)}</div>`;
+          for (const role of ["control", "claim", "recognition"]) {
+            const list = (h.rows || []).filter((r) => r.role === role);
+            const body = list.length ? list.map((r) => {
+              const who = r.party && r.party.zh ? `${esc(r.party.zh)}。` : "";
+              const extra = r.point ? ` ${esc(r.point)}` : "";
+              const src = (r.sources || []).map((u) => `<a href="${esc(u)}" target="_blank" rel="noopener">来源</a>`).join(" ");
+              return who + esc(r.text) + extra + (src ? ` ${src}` : "");
+            }).join("<br>") : "无";
+            html += `<div class="status-row"><span class="k">${roleName[role]}</span><br>${body}</div>`;
+          }
+          html += `</div>`;
+        }
+        html += `</div>`;
+        host.insertAdjacentHTML("beforeend", html);
+      }).catch(() => {});
+    }
+    const mods = allPanelMods();
+    if (!state.tab || !panelMods().find((m) => m.id === state.tab)) {
+      if (state.tab !== "constitution") state.tab = panelMods()[0]?.id;
+    }
     renderTabs();
     $("tabBody").innerHTML = '<div class="empty">加载中…</div>';
-    const q = `date=${dateParam(state.date)}&snap=${state.snap}` + (state.world ? "" : `&fid=${state.fid}`) + (state.stateSel ? `&state=${state.stateSel}` : "");
+    const pick = state.pick;
+    const q = `date=${dateParam(state.date)}&snap=${state.snap}` + (state.world ? "" : `&fid=${state.fid}`) + (state.stateSel ? `&state=${state.stateSel}` : "") +
+      (pick && pick.lat != null ? `&lat=${pick.lat}&lon=${pick.lon}` : "");
     await Promise.all(mods.map(async (m) => {
       try { results[m.id] = await api(`/api/modules/${m.id}?${q}`); } catch (e) { results[m.id] = { items: [], total: 0, note: "出错：" + e.message }; }
-      if (seq === reqSeq) { renderTabs(); if (m.id === state.tab) renderBody(); }
+      if (seq !== reqSeq) return;
+      const was = state.tab;
+      if (!panelMods().some((x) => x.id === state.tab)) state.tab = panelMods()[0]?.id;
+      renderTabs();
+      if (m.id === state.tab || was !== state.tab) renderBody();
       // 标题用所选日期解析到的 Wikidata 政权中文名（比按快照年份的名称更准确，如 1948 年 6 月的「中华民国」）；
       // 政权模块一返回就更新，不等其他模块（事件、人物等可能要几秒）
       const rs = m.id === "regime" ? results.regime?.state : null;
@@ -478,6 +1099,8 @@
         <li>事件按事件坐标（或事件地点的坐标）归属；只有国家信息的事件用该国首都坐标近似。</li>
         <li>日级精度只适用于 Wikidata 记录到日的事件；古代多数日期只到年或世纪。</li>
         <li>Wikidata 对欧洲、近现代的覆盖远多于其他地区和古代；“没有记录”不代表“没有发生”。</li>
+        <li>策略地图只改画法。今天的省界不再画，不是历史省界。1912年至1949年有来源的中国省界按所选日期另画；没有合法年份或地区的标省界待考，不画今天的省界。淡色起伏是 Natural Earth 1:50m 晕渲，只表示现代陆地地形，没有海底深浅。</li>
+        <li>鼠标停在一个政权上满 5 秒，才显示该年经济数字。只有数据表里正好有这一年才给出数值，否则为「暂无数据」。</li>
       </ul>`;
   }
 
@@ -525,8 +1148,10 @@
     if (h.get("office") && WHA.showOffice) WHA.showOffice(h.get("office"));
     if (h.get("bloc") && WHA.showBloc) WHA.showBloc(h.get("bloc"));
     if (h.get("treaty") && WHA.showTreaty) WHA.showTreaty(h.get("treaty"));
+    if (h.get("org") && WHA.showOrg) WHA.showOrg(h.get("org"));
     // 可选视图参数：#...&c=纬度,经度&z=缩放（便于分享/截图）
     if (h.get("c")) { const [la, lo] = h.get("c").split(",").map(Number); map.setView([la, lo], +(h.get("z") || 4)); }
+    if (h.get("style") === "strategy") applyStrategy(true);
 
     // 事件绑定
     $("slider").addEventListener("input", () => { $("dateLabel").textContent = yearZh(sliderToYear(+$("slider").value)); });
@@ -541,8 +1166,15 @@
     $("playBtn").onclick = togglePlay;
     $("todayBtn").onclick = () => { const t = new Date(); setDate({ y: t.getFullYear(), m: t.getMonth() + 1, d: t.getDate() }); };
     $("worldBtn").onclick = () => { state.world = true; state.fid = null; restyle(); $("panel").classList.remove("hidden"); refreshPanelData(); updateHash(); };
+    $("diploBtn").onclick = () => { if (WHA.showDiplomacy) WHA.showDiplomacy(); };
     $("closePanel").onclick = closePanel;
     $("aboutBtn").onclick = () => $("about").classList.remove("hidden");
+    $("styleBtn").onclick = () => applyStrategy(!strategyOn());
+    $("mapKeyBtn").onclick = () => {
+      const on = $("mapKey").classList.toggle("open");
+      $("mapKeyBtn").setAttribute("aria-expanded", on ? "true" : "false");
+      $("mapKeyBtn").textContent = on ? "收起图例" : "图例";
+    };
     $("detailClose").onclick = () => $("detail").classList.add("hidden");
     $("detail").onclick = (e) => { if (e.target.id === "detail") $("detail").classList.add("hidden"); };
     $("aboutClose").onclick = () => $("about").classList.add("hidden");

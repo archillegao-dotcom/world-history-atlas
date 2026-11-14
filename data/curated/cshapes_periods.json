@@ -7,8 +7,9 @@
   "265": "https://en.wikipedia.org/wiki/East_Germany ; https://en.wikipedia.org/wiki/Soviet_occupation_zone_of_Germany",
   "640": "en.wikipedia: Government of the Grand National Assembly (abolition of sultanate 1922-11-01; republic 1923-10-29)",
   "710": "https://en.wikipedia.org/wiki/Abdication_of_the_Qing_emperor ; https://en.wikipedia.org/wiki/Proclamation_of_the_People%27s_Republic_of_China",
-  "713": "https://en.wikipedia.org/wiki/Taiwan_under_Japanese_rule ; https://en.wikipedia.org/wiki/Retrocession_Day",
-  "730": "https://en.wikipedia.org/wiki/Korean_Empire ; https://en.wikipedia.org/wiki/Japan%E2%80%93Korea_Treaty_of_1910",
+  "713": "https://en.wikipedia.org/wiki/Treaty_of_Shimonoseki ; https://en.wikipedia.org/wiki/Republic_of_Formosa ; https://en.wikipedia.org/wiki/Capitulation_of_Tainan ; https://zh.wikipedia.org/wiki/%E4%B9%99%E6%9C%AA%E6%88%B0%E7%88%AD ; https://en.wikipedia.org/wiki/Retrocession_Day 。1895-04-17签署、05-08生效；05-23至10-21台湾民主国（全岛多边形不表示北向南推进）；10-21起日治（乙未战争中文维基记至11-18）；1945-10-25光复仪式后为中华民国。05-08至05-23无稳定新政权，仍标清治时期。",
+  "7351": "https://en.wikipedia.org/wiki/Treaty_of_Portsmouth ; https://en.wikipedia.org/wiki/Karafuto_Prefecture 。南桦太多边形自1905-09-05签约日起；7月日军已登陆，此处不另造边界。",
+  "730": "https://en.wikipedia.org/wiki/Korean_Empire ; https://en.wikipedia.org/wiki/Japan%E2%80%93Korea_Treaty_of_1910 。1910-08-22签署、1910-08-29公布生效；不用签署次日当作殖民地起点。",
   "731": "https://en.wikipedia.org/wiki/Soviet_Civil_Administration ; https://en.wikipedia.org/wiki/North_Korea",
   "732": "https://en.wikipedia.org/wiki/United_States_Army_Military_Government_in_Korea ; https://en.wikipedia.org/wiki/First_Republic_of_Korea",
   "740": "https://en.wikipedia.org/wiki/Constitution_of_Japan",
@@ -160,6 +161,16 @@
   "713": [
    [
     "1895-04-17",
+    "1895-05-23",
+    "Q391189"
+   ],
+   [
+    "1895-05-23",
+    "1895-10-21",
+    "Q319881"
+   ],
+   [
+    "1895-10-21",
     "1945-10-25",
     "Q137816"
    ],
@@ -167,6 +178,13 @@
     "1945-10-25",
     null,
     "Q865"
+   ]
+  ],
+  "7351": [
+   [
+    "1905-09-05",
+    "1945-08-15",
+    "Q188712"
    ]
   ],
   "730": [

@@ -16,7 +16,7 @@ if not (SEED / "events.json.xz").is_file() or not (SEED / "basemaps" / "index.js
     raise SystemExit("build/seed_data missing — run: python packaging/build.py")
 if not (ROOT / "frontend" / "index.html").is_file():
     raise SystemExit("frontend/index.html missing")
-VERSION = os.environ.get("WHA_VERSION", "0.6.1").lstrip("v") or "0.6.1"
+VERSION = os.environ.get("WHA_VERSION", "0.6.2").lstrip("v") or "0.6.2"
 
 # 分析阶段会 import backend.app。那个导入会装载全部历史数据，这里跳过。
 os.environ["WHA_PYINSTALLER_ANALYZE"] = "1"
