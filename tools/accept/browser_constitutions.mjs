@@ -51,15 +51,29 @@ async function headings() {
 }
 
 async function jump(y, m, d) {
-  await page.click("#yearIn", { clickCount: 3 });
-  await page.type("#yearIn", String(y));
-  await page.select("#monthIn", String(m));
-  await page.select("#dayIn", String(d));
+  await page.evaluate((yy, mm, dd) => {
+    const year = document.querySelector("#yearIn");
+    const month = document.querySelector("#monthIn");
+    const day = document.querySelector("#dayIn");
+    const prevM = month.onchange;
+    const prevD = day.onchange;
+    month.onchange = null;
+    day.onchange = null;
+    year.value = String(yy);
+    month.value = String(mm);
+    day.innerHTML = "";
+    day.add(new Option("（日）", "0"));
+    const dim = new Date(yy, mm, 0).getDate();
+    for (let i = 1; i <= dim; i++) day.add(new Option(`${i}日`, String(i)));
+    day.value = String(dd);
+    month.onchange = prevM;
+    day.onchange = prevD;
+  }, y, m, d);
   await page.click("#goBtn");
   await page.waitForFunction((yy, mm, dd) => {
     const h = new URLSearchParams(location.hash.slice(1)).get("date") || "";
     return h === `${yy}-${String(mm).padStart(2, "0")}-${String(dd).padStart(2, "0")}`;
-  }, { timeout: 20000 }, y, m, d);
+  }, { timeout: 30000 }, y, m, d);
   await new Promise((r) => setTimeout(r, 500));
 }
 

@@ -39,9 +39,14 @@ def _acting(st, chn) -> list[str]:
     now = [r for r in (chn or {}).get("now") or [] if r.get("qid") and not r.get("parallel")]
     if now:
         qids = []
-        for r in now:
-            if r["qid"] not in qids:
-                qids.append(r["qid"])
+        # 同一条链上可以有两个都还没写结束日的政权，例如 1949 年以后的中华人民共和国和中华民国。
+        # 点到的就是其中一行时，只用这一行，避免把另一政权的宪法套过来。
+        if any(r["qid"] == st["id"] for r in now):
+            qids = [st["id"]]
+        else:
+            for r in now:
+                if r["qid"] not in qids:
+                    qids.append(r["qid"])
         umbrella = (chn or {}).get("country")
         if st["id"] != umbrella and st["id"] not in qids:
             qids.append(st["id"])
