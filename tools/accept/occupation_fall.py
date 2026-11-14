@@ -34,11 +34,23 @@ CITIES = [
     ("芜湖", 118.370, 31.342, "1937-12-10"),
     ("济南", 116.998, 36.690, "1937-12-27"),
     ("开封", 114.345, 34.802, "1938-06-06"),
+    ("安庆", 117.037, 30.53782, "1938-06-12"),
+    ("九江", 116.04059, 29.71584, "1938-07-26"),
+    ("南昌", 115.8834, 28.67331, "1939-03-27"),
+    ("宜昌", 111.28472, 30.70323, "1940-06-12"),
+    ("海口", 110.19939, 20.05511, "1939-02-10"),
+    ("汕头", 116.682, 23.354, "1939-06-21"),
+    ("衡阳", 112.56975, 26.93801, "1944-08-08"),
+    ("柳州", 109.26731, 24.30179, "1944-11-11"),
+    ("镇江", 119.45471, 32.19607, "1937-12-08"),
 ]
-# 镇江：镇江县条目写12月8日县城失守，南京保卫战条目写12月6日天谷支队占领镇江。两天没有并成一天。
-WATCH = [
-    ("镇江", 119.455, 32.196, "12月6日和12月8日没有并成一天，不另挖"),
+# 占领收到这一天（不含当天）。当天不得再落在这段占领里。
+ENDED = [
+    ("南宁", 108.29251, 22.80864, "1939-11-24", "1940-11-01"),
+    ("福州", 119.32158, 26.07395, "1941-04-21", "1941-09-03"),
+    ("福州再", 119.32158, 26.07395, "1944-10-04", "1945-05-18"),
 ]
+WATCH = []
 
 raw = lzma.decompress((ROOT / "data/control_zones.json.xz").read_bytes())
 zones = []
@@ -67,11 +79,26 @@ for name, lon, lat, fall in CITIES:
     else:
         print(f"PASS {name} 占领层 {first}")
 
-for name, lon, lat, why in WATCH:
+for name, lon, lat, fall, end in ENDED:
     p = Point(lon, lat)
-    hits = sorted(frm for frm, until, zid, g in zones if g.covers(p) or g.intersects(p))
-    first = hits[0] if hits else "没有占领层"
-    print(f"NOTE {name} 占领层 {first}。{why}")
+    on_fall = []
+    on_end = []
+    for frm, until, zid, g in zones:
+        if not (g.covers(p) or g.intersects(p)):
+            continue
+        # until 不含当天。撤回日当天不得再被盖住。
+        if frm <= fall < (until or "9999"):
+            on_fall.append(frm)
+        if frm <= end < (until or "9999"):
+            on_end.append(f"{frm}→{until} {zid}")
+    if not on_fall:
+        print(f"FAIL {name} {fall} 没有占领层")
+        fails.append(name)
+    elif on_end:
+        print(f"FAIL {name} {end} 仍在占领层 {on_end[0]}")
+        fails.append(name + "-end")
+    else:
+        print(f"PASS {name} {on_fall[0]} 收到 {end}")
 
 # 桂林县城点不在桂柳块里。上面用的是既有检查点。这里只记录，不失败。
 seat = Point(110.164, 25.347)

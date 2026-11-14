@@ -61,6 +61,38 @@ CITIES = [
     ("芜湖", 118.370, 31.342, "1937-12-10"),
     ("济南", 116.998, 36.690, "1937-12-27"),
     ("开封", 114.345, 34.802, "1938-06-06"),
+    # 治所点。九江、镇江的单元格在更晚的色块里，从沦陷日起补到那一块。
+    ("九江", 116.04059, 29.71584, "1938-07-26"),
+    ("镇江", 119.45471, 32.19607, "1937-12-08"),
+]
+# 从沦陷日起另画、并且要写明收到哪一天的单元格。until 为空则收到下一块盖住这里的日期；没有下一块就收到 1945-08-16。
+# 汕头市区落在 1931 年朝阳治所的单元格里。澄海治所也在原来的汕头方框里，两格同一天，不把 3 月 27 日写成已经沦陷。
+JP = {"qid": "Q188712", "zh": "大日本帝国"}
+WANG = {"qid": "Q696242", "zh": "汪精卫政权"}
+REFORM = {"qid": "Q708865", "zh": "中华民国维新政府"}
+GROWTH = [
+    ("安庆", [(117.037, 30.53782)], "1938-06-12", "1940-03-30", REFORM, "中华民国维新政府（安庆）",
+     "怀宁县域。1938-06-12 安庆沦陷。6 月 6 日的色块更早，从那一块移出。1940-03-30 起改记汪精卫政权。"),
+    ("安庆", [(117.037, 30.53782)], "1940-03-30", "1945-08-16", WANG, "汪精卫政权（安庆）",
+     "怀宁县域。1940-03-30 起随华中日占区改记汪精卫政权，收到 1945-08-16。"),
+    ("宜昌", [(111.28472, 30.70323)], "1940-06-12", "1945-08-16", WANG, "汪精卫政权（宜昌）",
+     "宜昌县域。1940-06-12 沦陷。原来的手绘范围没有盖住这个治所，不把邻近县加进来。"),
+    ("海口", [(110.19939, 20.05511)], "1939-02-10", "1940-03-30", JP, "日军占领区（海口）",
+     "海口治所的单元格。1939-02-10 起。琼山和岛上其余县仍从 1939-03-27 的海南块起，不提前。"),
+    ("海口", [(110.19939, 20.05511)], "1940-03-30", "1945-08-16", WANG, "汪精卫政权（海口）",
+     "海口治所的单元格。1940-03-30 起与海南岛其余占领层一样改记汪精卫政权。"),
+    ("汕头", [(116.682, 23.354), (116.72577, 23.48103)], "1939-06-21", "1940-03-30", JP, "日军占领区（汕头）",
+     "汕头市区落在 1931 年朝阳治所的单元格里，澄海治所也在原来的汕头方框里。两格从 1939-06-21 起，不再从 3 月 27 日起。潮安不在这框里。"),
+    ("南宁", [(108.29251, 22.80864)], "1939-11-24", "1940-11-01", JP, "日军军事占领区（南宁）",
+     "邕宁县域。1939-11-24 沦陷。1940 年 10 月撤回，日没有锁，收到 11 月 1 日。1944 年 11 月的第二次占领不在这一格里。"),
+    ("福州", [(119.32158, 26.07395), (119.32122, 26.09425)], "1941-04-21", "1941-09-03", JP, "日军军事占领区（福州）",
+     "福州和闽侯两个治所几乎叠在一起，两格都画。1941-04-21 占领，9 月 3 日撤出。连江、长乐、福清、平潭没有并进来。"),
+    ("福州", [(119.32158, 26.07395), (119.32122, 26.09425)], "1944-10-04", "1945-05-18", JP, "日军军事占领区（福州）",
+     "福州、闽侯两格。1944-10-04 再沦陷，1945-05-18 光复，这一天起不再画。"),
+    ("衡阳", [(112.56975, 26.93801)], "1944-08-08", "1945-08-16", WANG, "汪精卫政权（衡阳）",
+     "衡阳县域。1944-08-08 沦陷。原来的湖南手绘范围没有盖住这个治所。"),
+    ("柳州", [(109.26731, 24.30179)], "1944-11-11", "1945-08-16", JP, "日军军事占领区（柳州）",
+     "1931 年治所仍名马平。1944-11-11 沦陷。桂柳走廊的手绘范围没有盖住这个治所，控制方沿用那一条的日军军事占领，不是汪政权。"),
 ]
 SEA = [(122.8, 31.0), (122.6, 36.3), (120.2, 26.2), (113.8, 21.6)]
 SNAP = 0.03
@@ -357,7 +389,94 @@ def main():
             "sources": src.get("sources") or [],
         })
         print("supplement", name, fall, gap_until, cid)
+    for s in supplements:
+        if s["id"].endswith("_镇江"):
+            s["note"] = (
+                "镇江县域。江苏省志大事年表写1937年12月8日镇江、靖江失陷。"
+                "12月6日天谷支队的说法没有并成这一天。12月14日起并入南京那一块。"
+                + PHRASE + "未核对《中華民國史事紀要》。"
+            )
+            s["dates_note"] = "镇江 1937-12-08 起，收到 1937-12-14。"
+            s["sources"] = [
+                "https://web.archive.org/web/20170809172042/http://www.jssdfz.gov.cn/book/jsz2/FL/FL.html",
+                "http://lyj.jiangsu.gov.cn/art/2021/4/21/art_81813_9762633.html",
+                "https://zenodo.org/records/5721459",
+            ]
+        if s["id"].endswith("_九江"):
+            s["note"] = (
+                "九江县域。1938-07-26 沦陷。1939-03-27 起并入已经盖住这里的占领层，不把 7 月 26 日以前的色块挖开。"
+                + PHRASE + "未核对《中華民國史事紀要》。"
+            )
+            s["sources"] = ["https://zh.wikipedia.org/wiki/武汉会战", "https://zenodo.org/records/5721459"]
     doc["zones"].extend(supplements)
+
+    for name, points, fall, end, controller, name_zh, why in GROWTH:
+        ids = []
+        for lon, lat in points:
+            cid = cell_at(features, tree, lon, lat)
+            if cid and cid not in ids:
+                ids.append(cid)
+        if len(ids) != len(points):
+            print("NO CELL", name, ids)
+            continue
+        for z in converted:
+            if (z.get("from") or "") < fall and any(i in z["geometry"]["roc_counties"] for i in ids):
+                z["geometry"]["roc_counties"] = [i for i in z["geometry"]["roc_counties"] if i not in ids]
+                print("strip", name, z["id"])
+        sid = f"sjw_cell_{'_'.join(i.split(':')[-1] for i in ids)}_{fall}_{name}"
+        if any(z["id"] == sid for z in doc["zones"]):
+            continue
+        supplements_extra = {
+            "id": sid,
+            "group": "sino_japanese_war",
+            "kind": "occupied",
+            "as_polity": True,
+            "name_zh": name_zh,
+            "name_en": name_zh,
+            "controller": controller,
+            "from": fall,
+            "until": end,
+            "geometry": {"roc_counties": ids},
+            "approx": True,
+            "note": f"{why} {PHRASE}未核对《中華民國史事紀要》。",
+            "dates_note": f"{name} {fall} 起，收到 {end}。",
+            "sources": {
+                "安庆": ["https://zh.wikipedia.org/wiki/武汉会战", "https://zenodo.org/records/5721459"],
+                "宜昌": ["https://zh.wikipedia.org/wiki/枣宜会战", "https://zenodo.org/records/5721459"],
+                "海口": ["https://zh.wikipedia.org/wiki/日本侵佔海南島", "https://zenodo.org/records/5721459"],
+                "汕头": [
+                    "https://www.shantou.gov.cn/stszrzyj/zwgk/gzdt/content/post_2449128.html",
+                    "https://daj.shantou.gov.cn/daj/kzda/201506/7f8b9a33ebf04ed8bb12c0cbecc8b78d.shtml",
+                    "https://zenodo.org/records/5721459",
+                ],
+                "南宁": ["https://zh.wikipedia.org/wiki/桂南会战", "https://zenodo.org/records/5721459"],
+                "福州": ["http://fz.fjdsfzw.org.cn/2015-11-19/content_85283.html", "https://zenodo.org/records/5721459"],
+                "衡阳": ["https://zh.wikipedia.org/wiki/衡阳保卫战", "https://zenodo.org/records/5721459"],
+                "柳州": ["https://zh.wikipedia.org/wiki/桂柳会战", "https://zenodo.org/records/5721459"],
+            }[name],
+        }
+        doc["zones"].append(supplements_extra)
+        print("growth", name, fall, end, ids)
+
+    harbin = "mcgd:s417"
+    if harbin in id_of and not any(z["id"] == "ccw_harbin_1946" for z in doc["zones"]):
+        doc["zones"].append({
+            "id": "ccw_harbin_1946",
+            "group": "ccw_manchuria",
+            "kind": "de_facto",
+            "as_polity": True,
+            "name_zh": "共军控制区（哈尔滨）",
+            "name_en": "CCP-held Harbin",
+            "controller": {"qid": "Q17427", "zh": "中国共产党"},
+            "from": "1946-04-28",
+            "until": "1946-06-07",
+            "geometry": {"roc_counties": [harbin]},
+            "approx": True,
+            "note": "滨江县域。1946-04-28 进入哈尔滨。哈尔滨在吉林的滨江，不在黑龙江多边形里，也不把吉林全省提前。1946-06-07 起并入松花江以北的东北沦陷区。大致。县域为治所泰森多边形近似。未核对《中華民國史事紀要》。",
+            "dates_note": "1946-04-28 起，收到 1946-06-07。",
+            "sources": ["http://www.chinadaily.com.cn/dfpd/hlj/2011-04/28/content_12413529.htm", "https://zenodo.org/records/5721459"],
+        })
+        print("added harbin cell")
 
     if not any(z["id"] == "sjw_ccp_central_soviet" for z in doc["zones"]):
         doc["zones"].append({

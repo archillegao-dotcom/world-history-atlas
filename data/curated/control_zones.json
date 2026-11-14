@@ -5402,7 +5402,6 @@
      "mcgd:s434",
      "mcgd:s436",
      "mcgd:s444",
-     "mcgd:s453",
      "mcgd:s461",
      "mcgd:s477",
      "mcgd:s480",
@@ -7058,9 +7057,7 @@
      "mcgd:s118",
      "mcgd:s12",
      "mcgd:s1317",
-     "mcgd:s1327",
      "mcgd:s15",
-     "mcgd:s1517",
      "mcgd:s1823",
      "mcgd:s1825",
      "mcgd:s1828",
@@ -11240,6 +11237,375 @@
     "https://en.wikipedia.org/wiki/Battle_of_Changsha_(1944)",
     "https://en.wikipedia.org/wiki/Defense_of_Hengyang",
     "https://en.wikipedia.org/wiki/Wang_Jingwei_regime"
+   ]
+  },
+  {
+   "id": "sjw_cell_mcgd:s314_1938-07-26_九江",
+   "group": "sino_japanese_war",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "中华民国维新政府（南京，日本扶植）",
+   "name_en": "中华民国维新政府（南京，日本扶植）",
+   "controller": {
+    "qid": "Q708865",
+    "zh": "中华民国维新政府"
+   },
+   "from": "1938-07-26",
+   "until": "1939-03-27",
+   "geometry": {
+    "roc_counties": [
+     "mcgd:s314"
+    ]
+   },
+   "approx": true,
+   "note": "九江县域。1938-07-26 沦陷。1939-03-27 起并入已经盖住这里的占领层，不把 7 月 26 日以前的色块挖开。大致。县域为治所泰森多边形近似。未核对《中華民國史事紀要》。",
+   "dates_note": "九江 1938-07-26 起，收到下一块盖住这里的日期。",
+   "sources": [
+    "https://zh.wikipedia.org/wiki/武汉会战",
+    "https://zenodo.org/records/5721459"
+   ]
+  },
+  {
+   "id": "sjw_cell_mcgd:s1215_1937-12-08_镇江",
+   "group": "sino_japanese_war",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "日军占领区（南京周边）",
+   "name_en": "Japanese-occupied Nanjing area",
+   "controller": {
+    "qid": "Q188712",
+    "zh": "日军占领区"
+   },
+   "from": "1937-12-08",
+   "until": "1937-12-14",
+   "geometry": {
+    "roc_counties": [
+     "mcgd:s1215"
+    ]
+   },
+   "approx": true,
+   "note": "镇江县域。江苏省志大事年表写1937年12月8日镇江、靖江失陷。12月6日天谷支队的说法没有并成这一天。12月14日起并入南京那一块。大致。县域为治所泰森多边形近似。未核对《中華民國史事紀要》。",
+   "dates_note": "镇江 1937-12-08 起，收到 1937-12-14。",
+   "sources": [
+    "https://web.archive.org/web/20170809172042/http://www.jssdfz.gov.cn/book/jsz2/FL/FL.html",
+    "http://lyj.jiangsu.gov.cn/art/2021/4/21/art_81813_9762633.html",
+    "https://zenodo.org/records/5721459"
+   ]
+  },
+  {
+   "id": "sjw_cell_s453_1938-06-12_安庆",
+   "group": "sino_japanese_war",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "中华民国维新政府（安庆）",
+   "name_en": "中华民国维新政府（安庆）",
+   "controller": {
+    "qid": "Q708865",
+    "zh": "中华民国维新政府"
+   },
+   "from": "1938-06-12",
+   "until": "1940-03-30",
+   "geometry": {
+    "roc_counties": [
+     "mcgd:s453"
+    ]
+   },
+   "approx": true,
+   "note": "怀宁县域。1938-06-12 安庆沦陷。6 月 6 日的色块更早，从那一块移出。1940-03-30 起改记汪精卫政权。 大致。县域为治所泰森多边形近似。未核对《中華民國史事紀要》。",
+   "dates_note": "安庆 1938-06-12 起，收到 1940-03-30。",
+   "sources": [
+    "https://zh.wikipedia.org/wiki/武汉会战",
+    "https://zenodo.org/records/5721459"
+   ]
+  },
+  {
+   "id": "sjw_cell_s453_1940-03-30_安庆",
+   "group": "sino_japanese_war",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "汪精卫政权（安庆）",
+   "name_en": "汪精卫政权（安庆）",
+   "controller": {
+    "qid": "Q696242",
+    "zh": "汪精卫政权"
+   },
+   "from": "1940-03-30",
+   "until": "1945-08-16",
+   "geometry": {
+    "roc_counties": [
+     "mcgd:s453"
+    ]
+   },
+   "approx": true,
+   "note": "怀宁县域。1940-03-30 起随华中日占区改记汪精卫政权，收到 1945-08-16。 大致。县域为治所泰森多边形近似。未核对《中華民國史事紀要》。",
+   "dates_note": "安庆 1940-03-30 起，收到 1945-08-16。",
+   "sources": [
+    "https://zh.wikipedia.org/wiki/武汉会战",
+    "https://zenodo.org/records/5721459"
+   ]
+  },
+  {
+   "id": "sjw_cell_s504_1940-06-12_宜昌",
+   "group": "sino_japanese_war",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "汪精卫政权（宜昌）",
+   "name_en": "汪精卫政权（宜昌）",
+   "controller": {
+    "qid": "Q696242",
+    "zh": "汪精卫政权"
+   },
+   "from": "1940-06-12",
+   "until": "1945-08-16",
+   "geometry": {
+    "roc_counties": [
+     "mcgd:s504"
+    ]
+   },
+   "approx": true,
+   "note": "宜昌县域。1940-06-12 沦陷。原来的手绘范围没有盖住这个治所，不把邻近县加进来。 大致。县域为治所泰森多边形近似。未核对《中華民國史事紀要》。",
+   "dates_note": "宜昌 1940-06-12 起，收到 1945-08-16。",
+   "sources": [
+    "https://zh.wikipedia.org/wiki/枣宜会战",
+    "https://zenodo.org/records/5721459"
+   ]
+  },
+  {
+   "id": "sjw_cell_D3060950_1939-02-10_海口",
+   "group": "sino_japanese_war",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "日军占领区（海口）",
+   "name_en": "日军占领区（海口）",
+   "controller": {
+    "qid": "Q188712",
+    "zh": "大日本帝国"
+   },
+   "from": "1939-02-10",
+   "until": "1940-03-30",
+   "geometry": {
+    "roc_counties": [
+     "mcgd:D3060950"
+    ]
+   },
+   "approx": true,
+   "note": "海口治所的单元格。1939-02-10 起。琼山和岛上其余县仍从 1939-03-27 的海南块起，不提前。 大致。县域为治所泰森多边形近似。未核对《中華民國史事紀要》。",
+   "dates_note": "海口 1939-02-10 起，收到 1940-03-30。",
+   "sources": [
+    "https://zh.wikipedia.org/wiki/日本侵佔海南島",
+    "https://zenodo.org/records/5721459"
+   ]
+  },
+  {
+   "id": "sjw_cell_D3060950_1940-03-30_海口",
+   "group": "sino_japanese_war",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "汪精卫政权（海口）",
+   "name_en": "汪精卫政权（海口）",
+   "controller": {
+    "qid": "Q696242",
+    "zh": "汪精卫政权"
+   },
+   "from": "1940-03-30",
+   "until": "1945-08-16",
+   "geometry": {
+    "roc_counties": [
+     "mcgd:D3060950"
+    ]
+   },
+   "approx": true,
+   "note": "海口治所的单元格。1940-03-30 起与海南岛其余占领层一样改记汪精卫政权。 大致。县域为治所泰森多边形近似。未核对《中華民國史事紀要》。",
+   "dates_note": "海口 1940-03-30 起，收到 1945-08-16。",
+   "sources": [
+    "https://zh.wikipedia.org/wiki/日本侵佔海南島",
+    "https://zenodo.org/records/5721459"
+   ]
+  },
+  {
+   "id": "sjw_cell_s1327_s1517_1939-06-21_汕头",
+   "group": "sino_japanese_war",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "日军占领区（汕头）",
+   "name_en": "日军占领区（汕头）",
+   "controller": {
+    "qid": "Q188712",
+    "zh": "大日本帝国"
+   },
+   "from": "1939-06-21",
+   "until": "1940-03-30",
+   "geometry": {
+    "roc_counties": [
+     "mcgd:s1327",
+     "mcgd:s1517"
+    ]
+   },
+   "approx": true,
+   "note": "汕头市区落在 1931 年朝阳治所的单元格里，澄海治所也在原来的汕头方框里。两格从 1939-06-21 起，不再从 3 月 27 日起。潮安不在这框里。 大致。县域为治所泰森多边形近似。未核对《中華民國史事紀要》。",
+   "dates_note": "汕头 1939-06-21 起，收到 1940-03-30。",
+   "sources": [
+    "https://www.shantou.gov.cn/stszrzyj/zwgk/gzdt/content/post_2449128.html",
+    "https://daj.shantou.gov.cn/daj/kzda/201506/7f8b9a33ebf04ed8bb12c0cbecc8b78d.shtml",
+    "https://zenodo.org/records/5721459"
+   ]
+  },
+  {
+   "id": "sjw_cell_s670_1939-11-24_南宁",
+   "group": "sino_japanese_war",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "日军军事占领区（南宁）",
+   "name_en": "日军军事占领区（南宁）",
+   "controller": {
+    "qid": "Q188712",
+    "zh": "大日本帝国"
+   },
+   "from": "1939-11-24",
+   "until": "1940-11-01",
+   "geometry": {
+    "roc_counties": [
+     "mcgd:s670"
+    ]
+   },
+   "approx": true,
+   "note": "邕宁县域。1939-11-24 沦陷。1940 年 10 月撤回，日没有锁，收到 11 月 1 日。1944 年 11 月的第二次占领不在这一格里。 大致。县域为治所泰森多边形近似。未核对《中華民國史事紀要》。",
+   "dates_note": "南宁 1939-11-24 起，收到 1940-11-01。",
+   "sources": [
+    "https://zh.wikipedia.org/wiki/桂南会战",
+    "https://zenodo.org/records/5721459"
+   ]
+  },
+  {
+   "id": "sjw_cell_D3114532_s1284_1941-04-21_福州",
+   "group": "sino_japanese_war",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "日军军事占领区（福州）",
+   "name_en": "日军军事占领区（福州）",
+   "controller": {
+    "qid": "Q188712",
+    "zh": "大日本帝国"
+   },
+   "from": "1941-04-21",
+   "until": "1941-09-03",
+   "geometry": {
+    "roc_counties": [
+     "mcgd:D3114532",
+     "mcgd:s1284"
+    ]
+   },
+   "approx": true,
+   "note": "福州和闽侯两个治所几乎叠在一起，两格都画。1941-04-21 占领，9 月 3 日撤出。连江、长乐、福清、平潭没有并进来。 大致。县域为治所泰森多边形近似。未核对《中華民國史事紀要》。",
+   "dates_note": "福州 1941-04-21 起，收到 1941-09-03。",
+   "sources": [
+    "http://fz.fjdsfzw.org.cn/2015-11-19/content_85283.html",
+    "https://zenodo.org/records/5721459"
+   ]
+  },
+  {
+   "id": "sjw_cell_D3114532_s1284_1944-10-04_福州",
+   "group": "sino_japanese_war",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "日军军事占领区（福州）",
+   "name_en": "日军军事占领区（福州）",
+   "controller": {
+    "qid": "Q188712",
+    "zh": "大日本帝国"
+   },
+   "from": "1944-10-04",
+   "until": "1945-05-18",
+   "geometry": {
+    "roc_counties": [
+     "mcgd:D3114532",
+     "mcgd:s1284"
+    ]
+   },
+   "approx": true,
+   "note": "福州、闽侯两格。1944-10-04 再沦陷，1945-05-18 光复，这一天起不再画。 大致。县域为治所泰森多边形近似。未核对《中華民國史事紀要》。",
+   "dates_note": "福州 1944-10-04 起，收到 1945-05-18。",
+   "sources": [
+    "http://fz.fjdsfzw.org.cn/2015-11-19/content_85283.html",
+    "https://zenodo.org/records/5721459"
+   ]
+  },
+  {
+   "id": "sjw_cell_s538_1944-08-08_衡阳",
+   "group": "sino_japanese_war",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "汪精卫政权（衡阳）",
+   "name_en": "汪精卫政权（衡阳）",
+   "controller": {
+    "qid": "Q696242",
+    "zh": "汪精卫政权"
+   },
+   "from": "1944-08-08",
+   "until": "1945-08-16",
+   "geometry": {
+    "roc_counties": [
+     "mcgd:s538"
+    ]
+   },
+   "approx": true,
+   "note": "衡阳县域。1944-08-08 沦陷。原来的湖南手绘范围没有盖住这个治所。 大致。县域为治所泰森多边形近似。未核对《中華民國史事紀要》。",
+   "dates_note": "衡阳 1944-08-08 起，收到 1945-08-16。",
+   "sources": [
+    "https://zh.wikipedia.org/wiki/衡阳保卫战",
+    "https://zenodo.org/records/5721459"
+   ]
+  },
+  {
+   "id": "sjw_cell_s1509_1944-11-11_柳州",
+   "group": "sino_japanese_war",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "日军军事占领区（柳州）",
+   "name_en": "日军军事占领区（柳州）",
+   "controller": {
+    "qid": "Q188712",
+    "zh": "大日本帝国"
+   },
+   "from": "1944-11-11",
+   "until": "1945-08-16",
+   "geometry": {
+    "roc_counties": [
+     "mcgd:s1509"
+    ]
+   },
+   "approx": true,
+   "note": "1931 年治所仍名马平。1944-11-11 沦陷。桂柳走廊的手绘范围没有盖住这个治所，控制方沿用那一条的日军军事占领，不是汪政权。 大致。县域为治所泰森多边形近似。未核对《中華民國史事紀要》。",
+   "dates_note": "柳州 1944-11-11 起，收到 1945-08-16。",
+   "sources": [
+    "https://zh.wikipedia.org/wiki/桂柳会战",
+    "https://zenodo.org/records/5721459"
+   ]
+  },
+  {
+   "id": "ccw_harbin_1946",
+   "group": "ccw_manchuria",
+   "kind": "de_facto",
+   "as_polity": true,
+   "name_zh": "共军控制区（哈尔滨）",
+   "name_en": "CCP-held Harbin",
+   "controller": {
+    "qid": "Q17427",
+    "zh": "中国共产党"
+   },
+   "from": "1946-04-28",
+   "until": "1946-06-07",
+   "geometry": {
+    "roc_counties": [
+     "mcgd:s417"
+    ]
+   },
+   "approx": true,
+   "note": "滨江县域。1946-04-28 进入哈尔滨。哈尔滨在吉林的滨江，不在黑龙江多边形里，也不把吉林全省提前。1946-06-07 起并入松花江以北的东北沦陷区。大致。县域为治所泰森多边形近似。未核对《中華民國史事紀要》。",
+   "dates_note": "1946-04-28 起，收到 1946-06-07。",
+   "sources": [
+    "http://www.chinadaily.com.cn/dfpd/hlj/2011-04/28/content_12413529.htm",
+    "https://zenodo.org/records/5721459"
    ]
   }
  ]
