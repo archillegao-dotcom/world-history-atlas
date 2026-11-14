@@ -26,12 +26,208 @@
 - 1937-12-10 南京、1938-10-24 武汉的占领层改到沦陷日之后。1949 年省会日写在省界面板上。三区只标三个县城。国民政府迁台是 1949-12-07 的事件。纪要正文没有锁定，写明未核对《中華民國史事紀要》。
 - 杭州：杭州市条目写 1937-12-24 日军占领杭州市。苏州：淞沪会战条目里 11 月 19 日的电话说苏州已为敌占领。青岛：青岛市条目写 1938-01-10 第二次被占。无锡档案写 1937-11-25 晚。常州地方志写 1937-11-29。南京地方志写 12 月 10 日占领芜湖。济南 1937-12-27。这几处从更早的色块里移出，或在更大色块盖住之前另画小框，都标大致，不是县界。镇江仍有 12 月 6 日和 12 月 8 日两说，没有并成一天。开封用《兰封会战》正文的 6 月 6 日凌晨，5 日夜里的攻城不写成已经入城。厦门地方志写 1938-05-13 全岛沦陷，不再把 10 月 21 日写成开始日。
 - 安徽按合肥 1949-01-21 入城。绥远按 1949-09-19 通电。东北九省的吉林按长春 1948-10-19 入城。贵阳 1949-11-15，西南底图从这一天起去掉贵州。广西省会在民国 38 年 10 月迁回南宁，桂系收到 1949-12-04；桂林 1949-11-22 不另切。济南 1948-09-24 起把山东整省标上。开封 1948-10-24，郑州是 1948-10-22。1947 年的黑龙江没有锁到省会日。成都仍是 12 月 30 日。重庆 1949-11-30 只标巴县一天。西康仍是 12 月 9 日。
-- 中美关税条约只记 1928 年 7 月，日待考，不写成 7 月 25 日。中日关税协定按日本外务省史料和约文的 1930-05-06 签署，约文写署名后第十日实施，不另插生效日。国史馆那一卷是外交部档案，不是《中華民國史事紀要》。哈密暴动按 1931-02-27。马仲英 4 月入疆、9 月撤回，日待考。1934-01-12 攻迪化只标这一天。六一六事变只标 1922-06-16 的番禺，不画成全省。四川防区没有逐县来源，只标刘湘驻巴县、刘文辉驻成都，不画多边形。韩复榘从 1930-09-11 宣誓记到 1938-01-24。陈济棠从 1931-05-12 收到 1936-07-01，不把 7 月 1 日写成离粤日。唐继尧、龙云、阎锡山、马家、旧桂系已有的日子没有改。新桂系不从 1925 年连写。旧桂系 1924 年回桂的日子没有锁。
+- 中美关税条约的签署日改成 1928-07-25。见下面「绝版 PDF」一节。中日关税协定按日本外务省史料和约文的 1930-05-06 签署，约文写署名后第十日实施，不另插生效日。国史馆那一卷是外交部档案，不是《中華民國史事紀要》。哈密暴动按 1931-02-27。马仲英 4 月入疆、9 月撤回，日待考。1934-01-12 攻迪化只标这一天。六一六事变只标 1922-06-16 的番禺，不画成全省。四川防区没有逐县来源，只标刘湘驻巴县、刘文辉驻成都，不画多边形。韩复榘从 1930-09-11 宣誓记到 1938-01-24。陈济棠从 1931-05-12 收到 1936-07-01，不把 7 月 1 日写成离粤日。唐继尧、龙云、阎锡山、马家、旧桂系已有的日子没有改。新桂系不从 1925 年连写。旧桂系 1924 年回桂的日子没有锁。
 - 选中政权的红线仍贴着填色多边形已经画出来的那一圈。1912–1949 年按省记录的实际控制，填色改用和虚线同一套 ENP-China 历史省界，按控制方合并。前线、点和线的占领区、陕甘宁、东北那几块方框仍是大致范围，不改成省界。
 - 1915-05-25 两件条约、1919-06-28 拒签、1922-02-04 解决山东悬案条约、1922-02-06 九国公约、1924-05-31 中俄解决悬案大纲协定。签署日用公开记载。生效日、批准互换日、废止日待考。
 - 直皖的开战日和停战日、江浙的开战当日和结束日、第二次直奉在 9 月 15 日之后的逐日位置和结束日。
 
-1928 年以后的册本批没有做。
+1928 年以后的册，目录和绝版 PDF 见下一节。这一批只对过关税条约、九一八的沈阳和吉林，以及下面写明抽过的页。
+
+## 檔案史料文物查詢系統的全宗 127 不是這部書
+
+2026-11-14 23:38（欧洲/巴黎）以訪客身份打開 [全宗號 127 的公開檢索](https://ahonline.drnh.gov.tw/index.php?act=Archive/search/eyJxdWVyeSI6W3siZmllbGQiOiJ6b25nX2lkIiwidmFsdWUiOiIxMjciLCJhdHRyIjoiKyJ9XSwiZG9tY29uZiI6eyJxdWVyeV9oaXN0b3J5X2NvbnRlbnQiOiJibG9jayIsInBvc3RfcXVlcnlfY29udGVudCI6ImJsb2NrIiwiZmFjZXRzYnkiOiJ6b25nX25hbWUiLCJ6b25nX25hbWUiOiJibG9jayIsInllYXJudW0iOiJub25lIiwicGVyc29uIjoibm9uZSIsImxvY2F0aW9uIjoibm9uZSJ9fQ%3D%3D/1-20)。全宗名稱是「抗戰史料」，共 1983 筆，不是《中華民國史事紀要》。系列裡的「抗戰紀要」只有 17 筆，掛在「抗戰史料／外交」下面，也不是這部書。
+
+年代統計裡有 1937 年 378 筆、1938 年 62、1939 年 153、1940 年 483、1941 年 181、1942 年 8、1943 年 16、1944 年 6、1945 年 17、1946 年 4、1947 年 5、1948 年 1。沒有 1949 年。另外還有 1905、1924、1926–1928、1930–1936 和 1951 年以後的零星卷，以及 24 筆沒有年代。
+
+公開頁只給卷名、典藏號、日期和「內容描述」（內容描述通常就是卷名）。抽看的前 20 筆寫「尚未數位化」，提供方式是「原件／新店閱覽室」。1937 年的 20 筆裡只有「文教－流亡學生就讀」（典藏號 127-050100-0029）標成已數位化，提供方式是「數位檔／臺北閱覽室」。訪客點開之後，系統回的是「請於本館台北閱覽室開放時間內到館閱覽數位檔」，沒有正文，也沒有影像。網站的[隱私權及資訊安全政策](https://www.drnh.gov.tw/var/file/3/1003/img/198857288.pdf)只規範網頁引用和個資，不把閱覽室裡的數位檔放成線上全文。
+
+所以這一個全宗不能用來核對鎮江、黑龍江、1938–1944 的淪陷日或 1949 年的省會日，也不把任何一條改成已核對。
+
+## 国史馆网站上的绝版 PDF
+
+页脚 [政府网站资料开放宣告](https://www.drnh.gov.tw/var/file/3/1003/img/10/305653380.pdf) 写：网站上刊载的资料与素材，在著作权保护范围内，按政府资料开放授权条款第 1 版提供。无偿、非专属、可以再授权，不限时间和地域，可以重制、改作、编辑、公开传输。授权不撤回。使用时注明出处。这份宣告不及于专利、商标和机关标志。机关特别声明须经同意才能用的影音、图像、乐谱、专人专案撰文，不在里面。第三人的著作人格权仍然要尊重。绝版《史事紀要》的 PDF 是这个网站上的下载，按这一条用，并注明册、页和目录网址。
+
+[出版品目录](https://www.drnh.gov.tw/p/412-1003-169.php?Lang=zh-tw) 共 160 页。2026-11-15 00:40–01:10（欧洲/巴黎）把这 160 页里书名含「中華民國史事紀要」的条目都打开了。共 253 条目录、168 个不同册名。同一册常常有两条：在售的那条没有附件，标「绝版」的那条有 PDF。168 个册名每一册至少有一条公开 PDF，253 条里 170 条有文件、83 条没有。下表每一册一行，链到有 PDF 的那一条。目录里没有民国 31 年 10 至 12 月。民国 26 年至 38 年其余各册都有。
+
+| 册 | 有 PDF 的目录页 | PDF |
+| --- | --- | --- |
+| 中華民國史事紀要民前18至15年 | https://www.drnh.gov.tw/p/405-1003-12672,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民前14至13年 | https://www.drnh.gov.tw/p/405-1003-13257,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民前12至11年 | https://www.drnh.gov.tw/p/405-1003-12671,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民前10至8年 | https://www.drnh.gov.tw/p/405-1003-13256,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民前7年 | https://www.drnh.gov.tw/p/405-1003-13267,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民前6年 | https://www.drnh.gov.tw/p/405-1003-13265,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民前5年 | https://www.drnh.gov.tw/p/405-1003-13263,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民前4年 | https://www.drnh.gov.tw/p/405-1003-13261,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民前3年 | https://www.drnh.gov.tw/p/405-1003-13259,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民前2年 | https://www.drnh.gov.tw/p/405-1003-12669,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民前1年 | https://www.drnh.gov.tw/p/405-1003-12668,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國元年1至6月 | https://www.drnh.gov.tw/p/405-1003-13464,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國元年7至12月 | https://www.drnh.gov.tw/p/405-1003-13465,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國2年1至6月 | https://www.drnh.gov.tw/p/405-1003-13321,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國2年7至12月 | https://www.drnh.gov.tw/p/405-1003-13322,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國3年1至6月 | https://www.drnh.gov.tw/p/405-1003-13373,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國3年7至12月 | https://www.drnh.gov.tw/p/405-1003-13375,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國4年 | https://www.drnh.gov.tw/p/405-1003-13401,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國5年 | https://www.drnh.gov.tw/p/405-1003-13439,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國6年 | https://www.drnh.gov.tw/p/405-1003-13459,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國7年1至6月 | https://www.drnh.gov.tw/p/405-1003-12674,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國7年7至12月 | https://www.drnh.gov.tw/p/405-1003-13461,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國8年1至6月 | https://www.drnh.gov.tw/p/405-1003-13462,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國9年 | https://www.drnh.gov.tw/p/405-1003-13463,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國10年1至6月 | https://www.drnh.gov.tw/p/405-1003-12676,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國10年7至12月 | https://www.drnh.gov.tw/p/405-1003-13268,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國11年1至6月 | https://www.drnh.gov.tw/p/405-1003-13270,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國11年7至12月 | https://www.drnh.gov.tw/p/405-1003-13272,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國12年1至6月 | https://www.drnh.gov.tw/p/405-1003-13275,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國12年7至12月 | https://www.drnh.gov.tw/p/405-1003-13276,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國13年1至6月 | https://www.drnh.gov.tw/p/405-1003-13278,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國13年7至12月 | https://www.drnh.gov.tw/p/405-1003-13280,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國14年1至6月 | https://www.drnh.gov.tw/p/405-1003-13281,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國14年7至12月 | https://www.drnh.gov.tw/p/405-1003-13282,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國15年 | https://www.drnh.gov.tw/p/405-1003-13284,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國16年1至6月 | https://www.drnh.gov.tw/p/405-1003-13286,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國16年7至12月 | https://www.drnh.gov.tw/p/405-1003-13288,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國17年1至6月 | https://www.drnh.gov.tw/p/405-1003-13289,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國17年7至12月 | https://www.drnh.gov.tw/p/405-1003-13290,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國18年1至4月 | https://www.drnh.gov.tw/p/405-1003-13292,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國18年5至8月 | https://www.drnh.gov.tw/p/405-1003-13293,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國18年9至12月 | https://www.drnh.gov.tw/p/405-1003-13294,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國19年1至6月 | https://www.drnh.gov.tw/p/405-1003-13295,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國20年1至6月 | https://www.drnh.gov.tw/p/405-1003-13296,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國20年7至12月 | https://www.drnh.gov.tw/p/405-1003-13297,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國21年1至6月 | https://www.drnh.gov.tw/p/405-1003-13298,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國22年1至6月 | https://www.drnh.gov.tw/p/405-1003-13300,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國22年7至12月 | https://www.drnh.gov.tw/p/405-1003-13301,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國23年1至6月 | https://www.drnh.gov.tw/p/405-1003-13303,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國23年7至12月 | https://www.drnh.gov.tw/p/405-1003-13304,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國24年1至6月 | https://www.drnh.gov.tw/p/405-1003-13307,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國24年11至12月 | https://www.drnh.gov.tw/p/405-1003-13305,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國25年1至6月 | https://www.drnh.gov.tw/p/405-1003-13308,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國25年7至12月 | https://www.drnh.gov.tw/p/405-1003-13309,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國26年1至6月 | https://www.drnh.gov.tw/p/405-1003-13310,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國26年7至12月 | https://www.drnh.gov.tw/p/405-1003-13312,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國27年1至6月 | https://www.drnh.gov.tw/p/405-1003-13313,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國27年7至12月 | https://www.drnh.gov.tw/p/405-1003-13314,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國28年1至6月 | https://www.drnh.gov.tw/p/405-1003-13315,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國28年7至12月 | https://www.drnh.gov.tw/p/405-1003-13317,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國29年1至6月 | https://www.drnh.gov.tw/p/405-1003-13318,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國29年7至12月 | https://www.drnh.gov.tw/p/405-1003-13320,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國30年1至6月 | https://www.drnh.gov.tw/p/405-1003-13323,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國30年7至12月 | https://www.drnh.gov.tw/p/405-1003-13325,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國31年1至3月 | https://www.drnh.gov.tw/p/405-1003-13326,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國31年4至6月 | https://www.drnh.gov.tw/p/405-1003-13327,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國31年7至9月 | https://www.drnh.gov.tw/p/405-1003-13329,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國32年1至6月 | https://www.drnh.gov.tw/p/405-1003-13331,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國32年7至12月 | https://www.drnh.gov.tw/p/405-1003-13333,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國33年1至3月 | https://www.drnh.gov.tw/p/405-1003-13335,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國33年4至6月 | https://www.drnh.gov.tw/p/405-1003-13336,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國33年7至9月 | https://www.drnh.gov.tw/p/405-1003-13338,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國33年10至12月 | https://www.drnh.gov.tw/p/405-1003-13334,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國34年1至4月 | https://www.drnh.gov.tw/p/405-1003-13341,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國34年5至7月 | https://www.drnh.gov.tw/p/405-1003-13342,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國34年8至9月 | https://www.drnh.gov.tw/p/405-1003-13343,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國34年10至12月 | https://www.drnh.gov.tw/p/405-1003-13339,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國35年1至3月 | https://www.drnh.gov.tw/p/405-1003-13344,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國35年4至6月 | https://www.drnh.gov.tw/p/405-1003-13345,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國35年7至12月 | https://www.drnh.gov.tw/p/405-1003-13346,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國36年1至3月 | https://www.drnh.gov.tw/p/405-1003-13350,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國36年4至6月 | https://www.drnh.gov.tw/p/405-1003-13352,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國36年7至9月 | https://www.drnh.gov.tw/p/405-1003-13354,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國36年10至12月 | https://www.drnh.gov.tw/p/405-1003-13348,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國37年1至6月 | https://www.drnh.gov.tw/p/405-1003-13355,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國37年7至12月 | https://www.drnh.gov.tw/p/405-1003-13357,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國38年1至6月 | https://www.drnh.gov.tw/p/405-1003-13361,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國38年7至9月 | https://www.drnh.gov.tw/p/405-1003-13363,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國38年10至12月 | https://www.drnh.gov.tw/p/405-1003-13359,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國39年1至3月 | https://www.drnh.gov.tw/p/405-1003-13367,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國39年4至6月 | https://www.drnh.gov.tw/p/405-1003-13369,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國39年7至9月 | https://www.drnh.gov.tw/p/405-1003-13371,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國39年10至12月 | https://www.drnh.gov.tw/p/405-1003-13365,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國40年1至6月 | https://www.drnh.gov.tw/p/405-1003-13377,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國40年7至12月 | https://www.drnh.gov.tw/p/405-1003-13379,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國41年1至6月 | https://www.drnh.gov.tw/p/405-1003-13381,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國41年7至12月 | https://www.drnh.gov.tw/p/405-1003-13383,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國42年1至6月 | https://www.drnh.gov.tw/p/405-1003-13384,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國42年7至12月 | https://www.drnh.gov.tw/p/405-1003-13385,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國45年1至6月 | https://www.drnh.gov.tw/p/405-1003-13387,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國45年7至12月 | https://www.drnh.gov.tw/p/405-1003-13389,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國46年1至3月 | https://www.drnh.gov.tw/p/405-1003-13391,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國46年4至6月 | https://www.drnh.gov.tw/p/405-1003-13392,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國46年7至9月 | https://www.drnh.gov.tw/p/405-1003-13393,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國46年10至12月 | https://www.drnh.gov.tw/p/405-1003-12687,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國47年1至3月 | https://www.drnh.gov.tw/p/405-1003-13395,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國47年4至6月 | https://www.drnh.gov.tw/p/405-1003-12688,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國47年7至9月 | https://www.drnh.gov.tw/p/405-1003-12689,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國47年10至12月 | https://www.drnh.gov.tw/p/405-1003-13394,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國48年1至6月 | https://www.drnh.gov.tw/p/405-1003-13397,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國48年7至12月 | https://www.drnh.gov.tw/p/405-1003-13398,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國49年1至6月 | https://www.drnh.gov.tw/p/405-1003-12690,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國49年7至12月 | https://www.drnh.gov.tw/p/405-1003-12691,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國50年1至4月 | https://www.drnh.gov.tw/p/405-1003-12692,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國50年5至8月 | https://www.drnh.gov.tw/p/405-1003-12693,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國50年9至12月 | https://www.drnh.gov.tw/p/405-1003-13404,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國51年1至3月 | https://www.drnh.gov.tw/p/405-1003-13408,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國51年4至6月 | https://www.drnh.gov.tw/p/405-1003-13410,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國51年7至9月 | https://www.drnh.gov.tw/p/405-1003-13412,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國51年10至12月 | https://www.drnh.gov.tw/p/405-1003-13406,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國52年1至6月 | https://www.drnh.gov.tw/p/405-1003-13413,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國52年7至12月 | https://www.drnh.gov.tw/p/405-1003-13416,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國53年1至6月 | https://www.drnh.gov.tw/p/405-1003-13417,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國53年7至12月 | https://www.drnh.gov.tw/p/405-1003-13418,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國54年1至6月 | https://www.drnh.gov.tw/p/405-1003-13420,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國54年7至12月 | https://www.drnh.gov.tw/p/405-1003-13421,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國55年1至6月 | https://www.drnh.gov.tw/p/405-1003-13424,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國55年7至12月 | https://www.drnh.gov.tw/p/405-1003-13425,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國56年1至6月 | https://www.drnh.gov.tw/p/405-1003-13426,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國56年7至12月 | https://www.drnh.gov.tw/p/405-1003-13428,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國57年1至6月 | https://www.drnh.gov.tw/p/405-1003-13430,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國57年7至12月 | https://www.drnh.gov.tw/p/405-1003-13432,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國58年1至6月 | https://www.drnh.gov.tw/p/405-1003-13434,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國58年7至12月 | https://www.drnh.gov.tw/p/405-1003-13436,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國59年1至6月 | https://www.drnh.gov.tw/p/405-1003-13438,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國59年7至12月 | https://www.drnh.gov.tw/p/405-1003-12698,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國60年1至6月 | https://www.drnh.gov.tw/p/405-1003-12699,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國60年7至9月 | https://www.drnh.gov.tw/p/405-1003-12700,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國60年10至12月 | https://www.drnh.gov.tw/p/405-1003-12701,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國61年1至3月 | https://www.drnh.gov.tw/p/405-1003-13442,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國61年4至6月 | https://www.drnh.gov.tw/p/405-1003-13444,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國61年7至9月 | https://www.drnh.gov.tw/p/405-1003-13446,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國61年10至12月 | https://www.drnh.gov.tw/p/405-1003-13441,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國62年1至6月 | https://www.drnh.gov.tw/p/405-1003-13447,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國62年7至12月 | https://www.drnh.gov.tw/p/405-1003-13450,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國63年1至6月 | https://www.drnh.gov.tw/p/405-1003-13451,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國63年7至12月 | https://www.drnh.gov.tw/p/405-1003-13452,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國64年1至4月 | https://www.drnh.gov.tw/p/405-1003-13454,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國64年5至8月 | https://www.drnh.gov.tw/p/405-1003-13455,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國64年9至12月 | https://www.drnh.gov.tw/p/405-1003-12706,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國65年1至6月 | https://www.drnh.gov.tw/p/405-1003-13456,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國65年7至12月 | https://www.drnh.gov.tw/p/405-1003-13458,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國66年1至6月 | https://www.drnh.gov.tw/p/405-1003-12707,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國66年7至12月 | https://www.drnh.gov.tw/p/405-1003-12708,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國67年1至6月 | https://www.drnh.gov.tw/p/405-1003-12709,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國67年7至12月 | https://www.drnh.gov.tw/p/405-1003-12710,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國68年1至6月 | https://www.drnh.gov.tw/p/405-1003-12711,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國68年7至12月 | https://www.drnh.gov.tw/p/405-1003-12712,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國69年1至6月 | https://www.drnh.gov.tw/p/405-1003-12713,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國69年7至12月 | https://www.drnh.gov.tw/p/405-1003-12723,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國70年1至6月 | https://www.drnh.gov.tw/p/405-1003-12724,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國70年7至12月 | https://www.drnh.gov.tw/p/405-1003-12725,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國71年1至6月 | https://www.drnh.gov.tw/p/405-1003-12726,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國71年7至12月 | https://www.drnh.gov.tw/p/405-1003-12727,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國72年1至6月 | https://www.drnh.gov.tw/p/405-1003-12728,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國72年7至12月 | https://www.drnh.gov.tw/p/405-1003-12729,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國73年1至6月 | https://www.drnh.gov.tw/p/405-1003-12730,c169.php?Lang=zh-tw | 有 |
+| 中華民國史事紀要民國73年7至12月 | https://www.drnh.gov.tw/p/405-1003-12731,c169.php?Lang=zh-tw | 有 |
+
+### 这一批对过的页
+
+- 民国十七年七月至十二月，[目录 13290](https://www.drnh.gov.tw/p/404-1003-13290.php?Lang=zh-tw)，印页一八三：民国十七年七月二十五日，宋子文与美国公使马慕瑞在北平签订中美关税新约。图上的签署日从「1928 年 7 月、日待考」改成 1928-07-25。约文写如果在民国十八年一月一日前批准，就在那一天生效，否则从互换批准日起四个月后生效。这一页没有写批准已经完成，不把 1929-01-01 写成已经生效。已核对。
+- 九一八的沈阳、吉林，对的是 Wikimedia Commons 上的初稿《中華民國史事紀要》民国二十年七至九月，不是上表的正篇。正篇目录是 [民国二十年七月至十二月](https://www.drnh.gov.tw/p/405-1003-13297,c169.php?Lang=zh-tw)，这一批没有逐页读。初稿 [Commons 文件](https://commons.wikimedia.org/wiki/File:SSID-11241316_%E4%B8%AD%E8%8F%AF%E6%B0%91%E5%9C%8B%E5%8F%B2%E4%BA%8B%E7%B4%80%E8%A6%81_%E5%88%9D%E7%A8%BF_%E4%B8%AD%E8%8F%AF%E6%B0%91%E5%9C%8B%E4%BA%8C%E5%8D%81%E5%B9%B4%EF%BC%881931%EF%BC%89%E4%B8%83%E8%87%B3%E4%B9%9D%E6%9C%88%E4%BB%BD.pdf) 第 452 页，页眉民国二十年九月十九日，写本日晨完全占领沈阳。第 485 页，页眉九月二十一日，写吉林全城为日军占领。这两天和图上一致，九一八这条里的沈阳、吉林改为已核对。长春仍写九月二十日，没有改。齐齐哈尔、锦州、哈尔滨不在这一册。
+- [民国二十六年七月至十二月](https://www.drnh.gov.tw/p/404-1003-13312.php?Lang=zh-tw) 的 12 月上旬抽读过，镇江沦陷没有写成单独一条。不把镇江收成一天。杭州、苏州、无锡的日子这一册还没有逐条对完，仍写未核对。
+- [民国三十五年四月至六月](https://www.drnh.gov.tw/p/404-1003-13345.php?Lang=zh-tw) 的 PDF 第 100–190 页和第 300–460 页，文字识别里没有齐齐哈尔、哈尔滨、嫩江、黑龙江省。1946 年黑龙江的省会日不改成已核对。
+
+同一批还下载了民国 26 年上半年、27 年上下半年、28 年上半年、33 年 1 至 6 月和 10 至 12 月、35 年 1 至 3 月、37 年上下半年、38 年 7 至 9 月。这些册的正文没有逐日对完，1938–1944 的沦陷日和 1948–1949 的省会日仍写未核对。
 
 ## 几何
 
