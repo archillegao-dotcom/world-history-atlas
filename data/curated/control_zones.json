@@ -11248,17 +11248,11 @@
     ]
    },
    "approx": true,
-   "note": "长沙县域。大致。县域为治所泰森多边形近似。不把沦陷日之前的色块扩到这个治所。未核对《中華民國史事紀要》。",
-   "dates_note": "长沙 1944-06-18 起，收到下一块盖住这里的日期。",
+   "note": "长沙县域。已核對《中華民國史事紀要》民國三十三年四月至六月，印页七二八（PDF 第735页），页眉民国三十三年六月十八日，写长沙沦陷，本日侵占全城，本（十八）日晨日军进攻长沙市街。1944-08-08 起并入下一块。大致。县域为治所泰森多边形近似。",
+   "dates_note": "长沙 1944-06-18 起，收到 1944-08-08。已核對《中華民國史事紀要》印页七二八。",
    "sources": [
-    "https://dhc.westpoint.edu/atlases/（USMA 历史系 Chinese Civil War 地图集：Japanese Occupation, 1940）",
-    "https://dhc.westpoint.edu/atlases/（USMA 历史系 Chinese Civil War 地图集：Situation at the End of World War II）",
-    "https://en.wikipedia.org/wiki/Second_Sino-Japanese_War",
-    "https://en.wikipedia.org/wiki/Japanese-occupied_areas_of_China",
-    "https://en.wikipedia.org/wiki/Operation_Ichi-Go",
-    "https://en.wikipedia.org/wiki/Battle_of_Changsha_(1944)",
-    "https://en.wikipedia.org/wiki/Defense_of_Hengyang",
-    "https://en.wikipedia.org/wiki/Wang_Jingwei_regime"
+    "https://www.drnh.gov.tw/p/404-1003-13336.php?Lang=zh-tw",
+    "https://zenodo.org/records/5721459"
    ]
   },
   {

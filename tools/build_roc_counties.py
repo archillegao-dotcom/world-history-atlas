@@ -413,6 +413,20 @@ def main():
                 "http://lyj.jiangsu.gov.cn/art/2021/4/21/art_81813_9762633.html",
                 "https://zenodo.org/records/5721459",
             ]
+        if s["id"].endswith("_长沙"):
+            s["note"] = (
+                "长沙县域。已核對《中華民國史事紀要》民國三十三年四月至六月，"
+                "印页七二八（PDF 第735页），页眉民国三十三年六月十八日，写长沙沦陷，"
+                "本日侵占全城，本（十八）日晨日军进攻长沙市街。"
+                "1944-08-08 起并入下一块。" + PHRASE
+            )
+            s["dates_note"] = (
+                "长沙 1944-06-18 起，收到 1944-08-08。已核對《中華民國史事紀要》印页七二八。"
+            )
+            s["sources"] = [
+                "https://www.drnh.gov.tw/p/404-1003-13336.php?Lang=zh-tw",
+                "https://zenodo.org/records/5721459",
+            ]
         if s["id"].endswith("_桂林"):
             s["note"] = (
                 "桂林县域。已核對《中華民國史事紀要》民國三十三年十月至十二月，"
