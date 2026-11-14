@@ -33,20 +33,37 @@
       }
       g.nodes.push(n);
     });
+    const actLine = (a) => {
+      const href = a.url ? ` <a href="${esc(a.url)}" target="_blank" rel="noopener">${esc(a.label || "来源")}</a>` : "";
+      return `<div class="s">${esc(a.date || "")} ${esc(a.zh)}${href}</div>`;
+    };
     let html = `<div id="diplomacyTree"><h4>这一天的机构</h4>`;
     const hasSpec = nodes.some((n) => n.kind === "specialized");
     html += hasSpec
-      ? `<div class="note">主要机关按宪章。专门机构以关系协定相连，不是下属。没有写上的专门机构，这一批还没有逐个收录。</div>`
-      : `<div class="note">主要机关按盟约。相关机构不是下属。这一天没有录入决议或判例时，写无记录。</div>`;
+      ? `<div class="note">主要机关按宪章。专门机构以关系协定相连，不是下属。大会决议仅收录部分。点开一行看当天的决议或判例。</div>`
+      : `<div class="note">主要机关按盟约。相关机构不是下属。点开一行看当天的判决或咨询意见。</div>`;
     for (const g of groups) {
       html += `<div class="s">${esc(g.kind)}</div>`;
       for (const n of g.nodes) {
         const acts = n.acts || [];
+        const prev = n.previous && n.previous.acts ? n.previous.acts : [];
+        let detail = "";
+        if (n.acts_note) detail += `<div class="note">${esc(n.acts_note)}</div>`;
+        if (n.same_as_zh) detail += `<div class="s">与外交面板里的${esc(n.same_as_zh)}是同一机构的延续。</div>`;
+        if (acts.length) detail += acts.map(actLine).join("");
+        else {
+          detail += `<div class="note">当日无记录</div>`;
+          if (prev.length) {
+            detail += `<div class="s">最近一条在 ${esc(n.previous.date)}</div>`;
+            detail += prev.map(actLine).join("");
+          }
+        }
         html += `<div class="item" data-node="${esc(n.id)}">
           <div class="t">${esc(n.zh)} <span class="badge">${esc(n.kind_zh || "")}</span></div>
           <div class="d">${esc(n.from || "")}${n.until ? " 至 " + esc(n.until) : ""}</div>
           <div class="s">${esc(n.summary || "")}</div>
-          <div class="s">当日决议或判例：${acts.length ? acts.map((a) => esc(a.zh)).join("；") : "无记录"}</div>
+          <div class="s">当日决议或判例：${acts.length ? acts.map((a) => esc(a.zh)).join("；") : "当日无记录"}</div>
+          <div class="node-acts" style="display:none">${detail}</div>
         </div>`;
       }
     }
@@ -100,6 +117,14 @@
       html += `<div class="l">${(o.sources || []).map(link).join("")}</div>`;
       html += `<div class="source">来源写在上面的链接里。没有链接的句子不当作已经核对。</div>`;
       body.innerHTML = html;
+      body.querySelectorAll("[data-node]").forEach((el) => {
+        el.onclick = (ev) => {
+          if (ev.target.closest("a")) return;
+          const box = el.querySelector(".node-acts");
+          if (!box) return;
+          box.style.display = box.style.display === "block" ? "none" : "block";
+        };
+      });
     }).catch((e) => {
       body.innerHTML = `<div class="empty">加载失败：${esc(e.message)}</div>`;
     });

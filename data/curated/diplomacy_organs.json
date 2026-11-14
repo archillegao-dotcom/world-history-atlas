@@ -133,6 +133,169 @@
           "url": "https://www.un.org/en/about-us/un-system"
         }
       ]
+    },
+    {
+      "id": "fao",
+      "zh": "联合国粮食及农业组织",
+      "en": "Food and Agriculture Organization",
+      "kind": "specialized",
+      "kind_zh": "专门机构",
+      "from": "1946-12-14",
+      "summary": "成为专门机构的日期用关系协定。宪章条款汇编写1946年12月14日。成立日这一批没有另核。",
+      "sources": [
+        {"label": "宪章第57条的实践（1945–1954）", "url": "https://legal.un.org/repertory/art57/english/rep_orig_vol3_art57.pdf"}
+      ]
+    },
+    {
+      "id": "icao",
+      "zh": "国际民用航空组织",
+      "en": "International Civil Aviation Organization",
+      "kind": "specialized",
+      "kind_zh": "专门机构",
+      "from": "1947-05-13",
+      "summary": "关系协定1947年5月13日。成立日这一批没有另核。",
+      "sources": [
+        {"label": "宪章第57条的实践（1945–1954）", "url": "https://legal.un.org/repertory/art57/english/rep_orig_vol3_art57.pdf"}
+      ]
+    },
+    {
+      "id": "imf",
+      "zh": "国际货币基金组织",
+      "en": "International Monetary Fund",
+      "kind": "specialized",
+      "kind_zh": "专门机构",
+      "from": "1947-11-15",
+      "summary": "关系协定1947年11月15日。成立日这一批没有另核。",
+      "sources": [
+        {"label": "宪章第57条的实践（1945–1954）", "url": "https://legal.un.org/repertory/art57/english/rep_orig_vol3_art57.pdf"}
+      ]
+    },
+    {
+      "id": "ibrd",
+      "zh": "世界银行（国际复兴开发银行）",
+      "en": "International Bank for Reconstruction and Development",
+      "kind": "specialized",
+      "kind_zh": "专门机构",
+      "from": "1947-11-15",
+      "summary": "关系协定1947年11月15日。国际金融公司的协定列在1957年，国际开发协会在发展年表里列在1961年，机构名单又写成1960年。两说不单列。成立日这一批没有另核。",
+      "sources": [
+        {"label": "宪章第57条的实践（1945–1954）", "url": "https://legal.un.org/repertory/art57/english/rep_orig_vol3_art57.pdf"},
+        {"label": "专门机构名单", "url": "https://research.un.org/en/docs/unsystem/sa"},
+        {"label": "发展文件年表", "url": "https://research.un.org/en/docs/dev/bydate"}
+      ]
+    },
+    {
+      "id": "upu-un",
+      "zh": "万国邮政联盟",
+      "en": "Universal Postal Union",
+      "kind": "specialized",
+      "kind_zh": "专门机构",
+      "from": "1948-07-01",
+      "same_as": "upu",
+      "same_as_zh": "万国邮政联盟",
+      "summary": "1874年10月9日的条约和1875年7月1日生效，写在外交面板的万国邮政联盟。与联合国的关系协定是1948年7月1日。从这一天起作为专门机构出现在联合国这边，不是另一个组织。",
+      "sources": [
+        {"label": "宪章第57条的实践（1945–1954）", "url": "https://legal.un.org/repertory/art57/english/rep_orig_vol3_art57.pdf"}
+      ]
+    },
+    {
+      "id": "who",
+      "zh": "世界卫生组织",
+      "en": "World Health Organization",
+      "kind": "specialized",
+      "kind_zh": "专门机构",
+      "from": "1948-07-10",
+      "summary": "关系协定1948年7月10日。成立日这一批没有另核。",
+      "sources": [
+        {"label": "宪章第57条的实践（1945–1954）", "url": "https://legal.un.org/repertory/art57/english/rep_orig_vol3_art57.pdf"}
+      ]
+    },
+    {
+      "id": "itu-un",
+      "zh": "国际电信联盟",
+      "en": "International Telecommunication Union",
+      "kind": "specialized",
+      "kind_zh": "专门机构",
+      "from": "1949-01-01",
+      "same_as": "itu",
+      "same_as_zh": "万国电报联盟",
+      "summary": "外交面板仍写万国电报联盟，因为1865年5月17日成立之后，1932年改名的生效日没有打开批准记录。与联合国的关系协定是1949年1月1日。从这一天起作为专门机构出现在联合国这边，是同一机构的延续。",
+      "sources": [
+        {"label": "宪章第57条的实践（1945–1954）", "url": "https://legal.un.org/repertory/art57/english/rep_orig_vol3_art57.pdf"}
+      ]
+    },
+    {
+      "id": "wmo",
+      "zh": "世界气象组织",
+      "en": "World Meteorological Organization",
+      "kind": "specialized",
+      "kind_zh": "专门机构",
+      "from": "1951-12-20",
+      "summary": "关系协定1951年12月20日。成立日这一批没有另核。",
+      "sources": [
+        {"label": "宪章第57条的实践（1945–1954）", "url": "https://legal.un.org/repertory/art57/english/rep_orig_vol3_art57.pdf"}
+      ]
+    },
+    {
+      "id": "imo",
+      "zh": "国际海事组织",
+      "en": "International Maritime Organization",
+      "kind": "specialized",
+      "kind_zh": "专门机构",
+      "from": "1959-07-01",
+      "summary": "关系协定的年份是1959年，日待考，按7月1日列入。成立日这一批没有另核。",
+      "sources": [
+        {"label": "专门机构名单", "url": "https://research.un.org/en/docs/unsystem/sa"},
+        {"label": "发展文件年表", "url": "https://research.un.org/en/docs/dev/bydate"}
+      ]
+    },
+    {
+      "id": "wipo",
+      "zh": "世界知识产权组织",
+      "en": "World Intellectual Property Organization",
+      "kind": "specialized",
+      "kind_zh": "专门机构",
+      "from": "1974-12-17",
+      "summary": "大会第3346（XXIX）号决议1974年12月17日核准关系协定。成立日这一批没有另核。",
+      "sources": [
+        {"label": "专门机构名单", "url": "https://ask.un.org/faq/140935"}
+      ]
+    },
+    {
+      "id": "ifad",
+      "zh": "国际农业发展基金",
+      "en": "International Fund for Agricultural Development",
+      "kind": "specialized",
+      "kind_zh": "专门机构",
+      "from": "1977-07-01",
+      "summary": "关系协定的年份是1977年，日待考，按7月1日列入。成立日这一批没有另核。",
+      "sources": [
+        {"label": "专门机构名单", "url": "https://research.un.org/en/docs/unsystem/sa"}
+      ]
+    },
+    {
+      "id": "unido",
+      "zh": "联合国工业发展组织",
+      "en": "United Nations Industrial Development Organization",
+      "kind": "specialized",
+      "kind_zh": "专门机构",
+      "from": "1985-07-01",
+      "summary": "1966年11月17日大会第2152（XXI）号决议设立。章程1979年4月8日通过。1985年成为专门机构，关系协定年份是1985年，日待考，按7月1日列入这棵树。",
+      "sources": [
+        {"label": "工发组织", "url": "https://research.un.org/en/docs/unsystem/unido"}
+      ]
+    },
+    {
+      "id": "unwto",
+      "zh": "世界旅游组织",
+      "en": "World Tourism Organization",
+      "kind": "specialized",
+      "kind_zh": "专门机构",
+      "from": "2003-12-23",
+      "summary": "大会第58/232号决议2003年12月23日处理与联合国的关系。成立日这一批没有另核。",
+      "sources": [
+        {"label": "专门机构名单", "url": "https://ask.un.org/faq/140935"}
+      ]
     }
   ],
   "league": [

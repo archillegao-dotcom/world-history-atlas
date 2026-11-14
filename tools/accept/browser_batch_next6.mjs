@@ -51,7 +51,7 @@ await page.evaluate(prepareShot);
 await (await page.$("#diplomacyTree")).screenshot({ path: OUT + "/un-tree-1950-06-01.png" });
 
 const league = await openOrg("1927-09-07", "league");
-for (const s of ["大会", "行政院", "秘书处", "常设国际法院", "国际劳工组织", "荷花号案"]) {
+for (const s of ["大会", "行政院", "秘书处", "常设国际法院", "国际劳工组织", "Lotus"]) {
   if (!league.includes(s)) problems.push("国联树缺少 " + s);
 }
 if (league.includes("下属机关") && league.includes("国际劳工组织是国联的下属")) problems.push("劳工组织被写成下属");

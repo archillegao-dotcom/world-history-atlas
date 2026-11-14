@@ -109,10 +109,10 @@ organs = {n["zh"]: n for n in tree["organs"]}
 for name in ("大会", "安全理事会", "经济及社会理事会", "托管理事会", "国际法院", "秘书处"):
     check(f"1950 有{name}", name in organs and organs[name]["kind"] == "principal", organs.get(name, {}).get("kind"))
 check("1950 教科文组织是专门机构", organs.get("联合国教育、科学及文化组织", {}).get("kind") == "specialized", organs.get("联合国教育、科学及文化组织"))
-check("1950 国际法院当日无记录", organs["国际法院"]["acts"] == [] and organs["国际法院"]["acts_label"] == "无记录", organs["国际法院"]["acts_label"])
+check("1950 国际法院当日无记录", organs["国际法院"]["acts"] == [] and organs["国际法院"]["acts_label"] == "当日无记录", organs["国际法院"]["acts_label"])
 check("1994-11-01 托管理事会停止运作", "托管理事会" not in {n["zh"] for n in org("un", "1994-11-01")["organs"]}, "ok")
 icj = {n["zh"]: n for n in org("un", "1949-04-09")["organs"]}["国际法院"]
-check("1949-04-09 科孚海峡案", any("科孚海峡" in a["zh"] for a in icj["acts"]), [a["zh"] for a in icj["acts"]])
+check("1949-04-09 科孚海峡案", any("Corfu" in a["zh"] for a in icj["acts"]), [a["zh"] for a in icj["acts"]])
 
 league = org("league", "1946-04-18")
 check("1946-04-18 国联仍有44国", league["active_count"] == 44 and league["record_count"] == 63, (league["active_count"], league["record_count"]))
@@ -130,7 +130,7 @@ check("1921 罗马尼亚是会员", st(org("league", "1921-06-01"), "罗马尼�
 lt = {n["zh"]: n for n in org("league", "1927-09-07")["organs"]}
 for name in ("大会", "行政院", "秘书处", "常设国际法院", "国际劳工组织"):
     check(f"1927 有{name}", name in lt, sorted(lt))
-check("1927-09-07 荷花号案", any("荷花号" in a["zh"] for a in lt["常设国际法院"]["acts"]), lt["常设国际法院"]["acts"])
+check("1927-09-07 荷花号案", any("Lotus" in a["zh"] for a in lt["常设国际法院"]["acts"]), lt["常设国际法院"]["acts"])
 check("1927 劳工组织不是主要机关", lt["国际劳工组织"]["kind"] == "related", lt["国际劳工组织"]["kind"])
 check("1922-02-14 还没有常设国际法院", "常设国际法院" not in {n["zh"] for n in org("league", "1922-02-14")["organs"]}, "ok")
 check("常设仲裁法院仍是名单不完整", org("pca", "1950-06-01")["incomplete"] is True, org("pca", "1950-06-01")["incomplete"])

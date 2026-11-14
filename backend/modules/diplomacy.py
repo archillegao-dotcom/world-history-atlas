@@ -101,10 +101,12 @@ def _view_status(org: dict, day: str) -> str:
 
 
 class Diplomacy:
-    def __init__(self, orgs: list[dict], organs: dict | None = None):
+    def __init__(self, orgs: list[dict], organs: dict | None = None, acts: dict | None = None, ga_note: str = ""):
         self.orgs = orgs
         self.by_id = {o["id"]: o for o in orgs}
         self.organs = organs or {}
+        self.acts = acts or {}
+        self.ga_note = ga_note
 
     def _name(self, ctx, m: dict, day: str) -> str:
         R = resolver(ctx)
@@ -182,20 +184,45 @@ class Diplomacy:
             "alive": _alive(org, day),
         }
 
+    def _act_public(self, row: dict) -> dict:
+        return {
+            "date": row.get("date") or "",
+            "zh": row.get("zh") or "",
+            "url": row.get("url") or "",
+            "label": row.get("label") or "",
+            "kind": row.get("kind") or "",
+        }
+
     def _organs(self, oid: str, day: str) -> list[dict]:
         out = []
         for node in self.organs.get(oid) or []:
             if not _on(day, node.get("from"), node.get("until")):
                 continue
-            acts = [a for a in (node.get("acts") or []) if a.get("date") == day]
+            rows = self.acts.get(node.get("id"))
+            if rows is None:
+                rows = node.get("acts") or []
+            today = [self._act_public(a) for a in rows if a.get("date") == day]
+            previous = None
+            if not today:
+                earlier = [a for a in rows if a.get("date") and a["date"] < day]
+                if earlier:
+                    last = max(a["date"] for a in earlier)
+                    previous = {
+                        "date": last,
+                        "acts": [self._act_public(a) for a in earlier if a["date"] == last],
+                    }
             out.append({
                 "id": node.get("id"), "zh": node.get("zh"), "en": node.get("en") or "",
                 "kind": node.get("kind"), "kind_zh": node.get("kind_zh") or "",
                 "from": node.get("from"), "until": node.get("until"),
                 "summary": node.get("summary") or "",
                 "sources": node.get("sources") or [],
-                "acts": acts,
-                "acts_label": "无记录" if not acts else "",
+                "same_as": node.get("same_as") or "",
+                "same_as_zh": node.get("same_as_zh") or "",
+                "acts": today,
+                "previous": previous,
+                "acts_label": "当日无记录" if not today else "",
+                "acts_note": self.ga_note if node.get("id") == "ga" else "",
             })
         return out
 
@@ -260,7 +287,15 @@ def load_diplomacy(data_dir) -> Diplomacy:
     path = base / "diplomacy_organs.json"
     if path.exists():
         organs = json.loads(path.read_text(encoding="utf-8"))
-    return Diplomacy(raw.get("orgs") or [], organs)
+    acts = {}
+    ga_note = ""
+    act_path = base / "diplomacy_acts.json"
+    if act_path.exists():
+        blob = json.loads(act_path.read_text(encoding="utf-8"))
+        ga_note = blob.get("ga_note") or ""
+        for key, rows in (blob.get("organs") or {}).items():
+            acts[key] = sorted(rows, key=lambda a: (a.get("date") or "", a.get("zh") or ""))
+    return Diplomacy(raw.get("orgs") or [], organs, acts, ga_note)
 
 
 class DiplomacyModule(ContentModule):
