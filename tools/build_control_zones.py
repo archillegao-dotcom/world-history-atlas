@@ -70,6 +70,8 @@ SLUG = {
     "东北军（张学良）": "dongbei",
     "西北马家（马鸿逵）": "ma-hongkui",
     "西北马家": "ma-qinghai",
+    "韩复榘": "han",
+    "陈济棠": "chen",
 }
 
 

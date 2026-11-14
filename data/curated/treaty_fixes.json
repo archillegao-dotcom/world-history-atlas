@@ -1154,5 +1154,26 @@
     "note": "只记到1928年7月。日待考，生效日待考。不把7月1日或7月25日写成签署日。未核对《中華民國史事紀要》。",
     "summary_zh": "1928年7月签订，日待考。生效日待考。未核对《中華民國史事紀要》。",
     "sources": ["https://zh.wikipedia.org/wiki/改訂新約"]
+  },
+  "curated:roc-1930-jp-tariff": {
+    "insert": true,
+    "zh": "中日关税协定",
+    "en": "Sino-Japanese Tariff Agreement",
+    "sl": 40,
+    "types": [{"en": "treaty", "zh": "条约"}],
+    "signed": {"y": 1930, "m": 5, "d": 6, "p": 11},
+    "parties": [
+      {"s": "Q13426199", "via": "curated"},
+      {"s": "Q188712", "via": "curated"}
+    ],
+    "countries": ["Q13426199", "Q188712"],
+    "desc": "日本外务省史料写1930-05-06重光葵与王正廷在南京签署日华关税协定。约文写昭和五年五月六日南京调印，署名后第十日实施。不另插一个生效日。日文维基百科把中方写成宋子文，与约文和日本外务省史料的王正廷不一致，这里按约文。国史馆藏外交部卷《中日关税协定（四）》，典藏号020-010104-0038，日期1930/05/06，不是《中華民國史事紀要》。未核对《中華民國史事紀要》。",
+    "note": "1930-05-06签署。约文写署名后第十日实施，不另插生效日。未核对《中華民國史事紀要》。",
+    "summary_zh": "1930年5月6日在南京签署。不另插生效日。未核对《中華民國史事紀要》。",
+    "sources": [
+      "https://www.mofa.go.jp/mofaj/annai/honsho/shiryo/shidehara/03_2.html",
+      "https://worldjpn.net/documents/texts/pw/19300507.T1J.html",
+      "https://catalog.digitalarchives.tw/item/00/48/6e/48.html"
+    ]
   }
 }

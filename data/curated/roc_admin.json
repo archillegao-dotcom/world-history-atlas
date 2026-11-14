@@ -21,11 +21,16 @@
     {"sid": "1", "id": "anhui", "name": "安徽", "controls": [{"from": "1949-01-21", "until": "1950-01-01", "nominal": "南京国民政府", "actual": "中国共产党", "note": "合肥市条目写1949-01-21下午部队从东门进入合肥县城。省级大致，按省会这一天，不是逐县。怀宁（安庆）没有另锁。未核对《中華民國史事紀要》。", "sources": ["https://zh.wikipedia.org/wiki/合肥市"]}]},
     {"sid": "13", "id": "hubei", "name": "湖北", "controls": [{"from": "1949-05-16", "until": "1950-01-01", "nominal": "南京国民政府", "actual": "中国共产党", "note": "1949-05-16武汉易手。省级大致，按省会这一天，不是逐县。未核对《中華民國史事紀要》。", "sources": ["https://en.wikipedia.org/wiki/Chinese_Civil_War"]}]},
     {"sid": "14", "id": "hunan", "name": "湖南", "controls": [{"from": "1949-08-04", "until": "1950-01-01", "nominal": "南京国民政府", "actual": "中国共产党", "note": "1949-08-04长沙起义。省级大致，按省会这一天，不是逐县。未核对《中華民國史事紀要》。", "sources": ["https://en.wikipedia.org/wiki/Chinese_Civil_War"]}]},
-    {"sid": "12", "id": "henan", "name": "河南", "controls": [{"from": "1949-01-31", "until": "1950-01-01", "nominal": "南京国民政府", "actual": "中国共产党", "note": "与已有底图同一省级近似，用1949-01-31。开封的单独日子没有另锁。省级大致，按省会这一天，不是逐县。未核对《中華民國史事紀要》。", "sources": ["https://en.wikipedia.org/wiki/Chinese_Civil_War", "https://en.wikipedia.org/wiki/Pingjin_campaign"]}]},
+    {"sid": "12", "id": "henan", "name": "河南", "controls": [{"from": "1948-10-24", "until": "1950-01-01", "nominal": "南京国民政府", "actual": "中国共产党", "note": "开封1948-10-24沦陷。郑州是1948-10-22。1948年6月的一次入城随后撤出，不写成全省易手。省级大致，按省会这一天，不是逐县。未核对《中華民國史事紀要》。", "sources": ["https://zh.wikipedia.org/wiki/%E5%BC%80%E5%B0%81", "http://dangshi.people.com.cn/n1/2020/0110/c85037-31542425.html", "https://zh.wikipedia.org/wiki/%E9%83%91%E5%B7%9E%E6%88%98%E5%BD%B9"]}]},
     {"sid": "32", "id": "zhejiang", "name": "浙江", "controls": [{"from": "1949-05-03", "until": "1950-01-01", "nominal": "南京国民政府", "actual": "中国共产党", "note": "1949-05-03杭州易手。省级大致，按省会这一天，不是逐县。未核对《中華民國史事紀要》。", "sources": ["https://en.wikipedia.org/wiki/Yangtze_River_Crossing_campaign"]}]},
-    {"sid": "23", "id": "shandong", "name": "山东", "controls": [{"from": "1949-01-31", "until": "1950-01-01", "nominal": "南京国民政府", "actual": "中国共产党", "note": "与已有底图同一省级近似，用北平1949-01-31。济南的单独日子没有另锁。省级大致，按省会这一天，不是逐县。未核对《中華民國史事紀要》。", "sources": ["https://en.wikipedia.org/wiki/Chinese_Civil_War", "https://en.wikipedia.org/wiki/Pingjin_campaign"]}]},
+    {"sid": "23", "id": "shandong", "name": "山东", "controls": [
+      {"from": "1930-09-11", "until": "1938-01-24", "nominal": "南京国民政府", "actual": "韩复榘", "note": "1930-09-11宣誓就职。任命是09-05，不把任命日写成已经就职。1938-01-24被处决，这一天起不再记。1937年12月离开济南，日军占领层另画。省级大致，不是逐县。未核对《中華民國史事紀要》。", "sources": ["https://shandong-chorography.org/database/a/section/12/article/291/", "https://zh.wikipedia.org/wiki/%E9%9F%A9%E5%A4%8D%E6%A6%A8"]},
+      {"from": "1948-09-24", "until": "1950-01-01", "nominal": "南京国民政府", "actual": "中国共产党", "note": "济南1948-09-24沦陷。省级大致，按省会这一天，不是逐县。未核对《中華民國史事紀要》。", "sources": ["https://zh.wikipedia.org/wiki/%E6%B5%8E%E5%8D%97%E6%88%98%E5%BD%B9"]}
+    ]},
     {"sid": "5", "id": "fujian", "name": "福建", "controls": [{"from": "1949-08-17", "until": "1950-01-01", "nominal": "南京国民政府", "actual": "中国共产党", "note": "1949-08-17福州易手。省级大致，按省会这一天，不是逐县。未核对《中華民國史事紀要》。", "sources": ["https://en.wikipedia.org/wiki/Chinese_Civil_War"]}]},
-    {"sid": "9", "id": "guizhou", "name": "贵州"},
+    {"sid": "9", "id": "guizhou", "name": "贵州", "controls": [
+      {"from": "1949-11-15", "until": "1950-01-01", "nominal": "南京国民政府", "actual": "中国共产党", "note": "贵阳1949-11-15沦陷。省级大致，按省会这一天，不是逐县。未核对《中華民國史事紀要》。", "sources": ["https://zh.wikipedia.org/wiki/%E8%B4%B5%E9%98%B3%E5%B8%82", "https://zh.wikipedia.org/wiki/西南战役"]}
+    ]},
     {"sid": "22", "id": "shaanxi", "name": "陕西", "line_note": "省内北部与南部的实控分界待考，不画。", "controls": [{"from": "1949-05-20", "until": "1950-01-01", "nominal": "南京国民政府", "actual": "中国共产党", "note": "1949-05-20西安易手。省内南北分界仍不画。省级大致，按省会这一天，不是逐县。未核对《中華民國史事紀要》。", "sources": ["https://en.wikipedia.org/wiki/Chinese_Civil_War"]}]},
     {"sid": "10", "id": "zhili", "names": [
       {"from": "1912-01-01", "until": "1928-06-28", "name": "直隶", "kind": "省"},
@@ -48,11 +53,15 @@
     ]},
     {"sid": "8", "id": "guangxi", "name": "广西", "nominal": [], "controls": [
       {"from": "1916-06-06", "until": "1921-06-01", "nominal": "北京政府与西南护法军政府并记，不择一", "actual": "旧桂系（陆荣廷）", "note": "旧桂系失桂在1921年，月日待考，这一条收到6月1日。", "sources": ["https://zh.wikipedia.org/wiki/桂系"]},
-      {"from": "1930-01-01", "until": "1949-12-01", "nominal": "南京国民政府", "actual": "桂系（李宗仁、白崇禧）", "note": "新桂系回桂的日子各书不一。1930年已在省内，日待考，不把1月1日写成到任日。省内各路不画。", "sources": ["https://zh.wikipedia.org/wiki/桂系", "https://zh.wikipedia.org/wiki/中原大战"]}
+      {"from": "1930-01-01", "until": "1949-12-04", "nominal": "南京国民政府", "actual": "桂系（李宗仁、白崇禧）", "note": "新桂系回桂的日子各书不一。1930年已在省内，日待考，不把1月1日写成到任日。1925年的统一日和1929年失去全省的日子没有锁，不从1925年连写。桂林1949-11-22沦陷。省会在民国38年10月迁回南宁，这一条收到南宁1949-12-04。11月22日到12月4日桂林仍落在全省多边形里。省内各路不画。", "sources": ["https://zh.wikipedia.org/wiki/桂系", "https://zh.wikipedia.org/wiki/中原大战", "https://www.gxdag.org.cn/show/141/2749", "https://zh.wikipedia.org/wiki/%E6%A1%82%E6%9E%97%E5%B8%82"]}
+    ,
+      {"from": "1949-12-04", "until": "1950-01-01", "nominal": "南京国民政府", "actual": "中国共产党", "note": "南宁1949-12-04沦陷。桂林是1949-11-22，省会已在南宁，不把11月22日写成全省。省级大致，不是逐县。未核对《中華民國史事紀要》。", "sources": ["https://www.gxdag.org.cn/show/141/2749", "https://zh.wikipedia.org/wiki/%E6%A1%82%E6%9E%97%E5%B8%82"]}
     ]},
     {"sid": "7", "id": "guangdong", "name": "广东", "nominal": [], "controls": [
       {"from": "1920-01-01", "until": "1920-08-01", "nominal": "北京政府与西南护法军政府并记，不择一", "actual": "旧桂系驻粤", "note": "粤桂战争在1920年8月，日待考，按8月1日。7月1日仍记旧桂系驻粤。", "sources": ["https://zh.wikipedia.org/wiki/桂系"]},
       {"from": "1925-07-01", "until": "1927-01-01", "nominal": "国民政府", "actual": "国民政府（驻广州）", "note": "广州国民政府1925-07-01成立。1927年迁离广州，这一条收到1927-01-01，不把1月1日写成迁府当日。", "sources": ["https://zh.wikipedia.org/wiki/国民政府"]}
+    ,
+      {"from": "1931-05-12", "until": "1936-07-01", "nominal": "南京国民政府", "actual": "陈济棠", "note": "信息框的主席任期只到1932-05-03。条目写他主粤到1936年，两广事变后于1936年7月离粤，日待考。这一条收到1936-07-01，不把7月1日写成离粤日。省级大致，不是逐县。未核对《中華民國史事紀要》。", "sources": ["https://zh.wikipedia.org/wiki/%E9%99%88%E6%B5%8E%E6%A3%A0"]}
     ,
       {"from": "1949-10-14", "until": "1950-01-01", "nominal": "南京国民政府", "actual": "中国共产党", "note": "1949-10-14广州易手。底图1949-10-01起已是中华人民共和国，这一条不改那个日子。省级大致，按省会这一天，不是逐县。未核对《中華民國史事紀要》。", "sources": ["https://zh.wikipedia.org/wiki/广州战役_(1949年)"]}
     ]},
@@ -69,7 +78,7 @@
     {"sid": "25", "id": "sichuan", "name": "四川", "line_note": "省内各部的分界待考，不画。", "controls": [
       {"from": "1935-07-01", "until": "1938-01-20", "nominal": "南京国民政府", "actual": "川军（刘湘）", "note": "只知道1935年主川，按7月1日，不是到任日。1938-01-20刘湘去世。", "sources": ["https://zh.wikipedia.org/wiki/刘湘"]}
     ,
-      {"from": "1949-12-30", "until": "1950-01-01", "nominal": "南京国民政府", "actual": "中国共产党", "note": "成都战役正文写1949-12-30第一野战军进入成都城。信息框写到12月27日，不把27日写成已经入城。重庆不另切。省级大致，按省会这一天，不是逐县。未核对《中華民國史事紀要》。", "sources": ["https://zh.wikipedia.org/wiki/成都战役", "https://zh.wikipedia.org/wiki/西南战役"]}
+      {"from": "1949-12-30", "until": "1950-01-01", "nominal": "南京国民政府", "actual": "中国共产党", "note": "成都战役正文写1949-12-30共军进入成都城。信息框写到12月27日，不把27日写成已经入城。重庆1949-11-30只标巴县一天，不另切全省。12月9日的通电不写成已经进入成都。省级大致，按省会这一天，不是逐县。未核对《中華民國史事紀要》。", "sources": ["https://zh.wikipedia.org/wiki/成都战役", "https://zh.wikipedia.org/wiki/西南战役"]}
     ]},
     {"sid": "4", "id": "fengtian", "names": [
       {"from": "1912-01-01", "until": "1929-01-28", "name": "奉天", "kind": "省"},
@@ -161,7 +170,7 @@
     ], "line_note": "轮廓是数据集里的台湾，不是1945年新测的省界。10月25日是接收日。"},
     {"sid": "1947-遼寧", "id": "liaoning1947", "name": "辽宁", "draw": [{"from": "1947-06-01", "until": "1950-01-01"}], "nominal": [{"from": "1947-06-01", "until": "1950-01-01", "name": "南京国民政府"}], "line_note": "东北九省。县份调整在1947年6月，日待考，按6月1日。1948-11-02以前实控待考。不把内战前线画成省界。", "controls": [{"from": "1948-11-02", "until": "1950-01-01", "nominal": "南京国民政府", "actual": "中国共产党", "note": "1948-11-02沈阳易手。东北其余八省没有各用自己的省会日，不在这一条里。省级大致，按省会这一天，不是逐县。未核对《中華民國史事紀要》。", "sources": ["https://zh.wikipedia.org/wiki/辽沈战役"]}]},
     {"sid": "1947-吉林", "id": "jilin1947", "name": "吉林", "draw": [{"from": "1947-06-01", "until": "1950-01-01"}], "nominal": [{"from": "1947-06-01", "until": "1950-01-01", "name": "南京国民政府"}], "line_note": "东北九省的吉林，不是1928年以前那块全省轮廓。", "controls": [{"from": "1948-10-19", "until": "1950-01-01", "nominal": "南京国民政府", "actual": "中国共产党", "note": "长春围困战条目写1948-10-19军队进入长春。长春和永吉都落在这块九省轮廓里。省级大致，按长春这一天，不是逐县。黑龙江没有另锁。未核对《中華民國史事紀要》。", "sources": ["https://zh.wikipedia.org/wiki/长春围困战"]}]},
-    {"sid": "1947-黑龍江", "id": "heilongjiang1947", "name": "黑龙江", "draw": [{"from": "1947-06-01", "until": "1950-01-01"}], "nominal": [{"from": "1947-06-01", "until": "1950-01-01", "name": "南京国民政府"}], "line_note": "东北九省的黑龙江。"},
+    {"sid": "1947-黑龍江", "id": "heilongjiang1947", "name": "黑龙江", "draw": [{"from": "1947-06-01", "until": "1950-01-01"}], "nominal": [{"from": "1947-06-01", "until": "1950-01-01", "name": "南京国民政府"}], "line_note": "东北九省的黑龙江。齐齐哈尔、哈尔滨不在这一块的省会位置上。打开的记载没有把1947年这一块的省会日锁死，不填实控。"},
     {"sid": "1947-合江", "id": "hejiang", "name": "合江", "draw": [{"from": "1947-06-01", "until": "1950-01-01"}], "nominal": [{"from": "1947-06-01", "until": "1950-01-01", "name": "南京国民政府"}]},
     {"sid": "1947-嫩江", "id": "nenjiang", "name": "嫩江", "draw": [{"from": "1947-06-01", "until": "1950-01-01"}], "nominal": [{"from": "1947-06-01", "until": "1950-01-01", "name": "南京国民政府"}]},
     {"sid": "1947-安東", "id": "andong", "name": "安东", "draw": [{"from": "1947-06-01", "until": "1950-01-01"}], "nominal": [{"from": "1947-06-01", "until": "1950-01-01", "name": "南京国民政府"}]},
