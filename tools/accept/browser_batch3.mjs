@@ -73,7 +73,9 @@ try {
     return { w: p ? p.getAttribute("stroke-width") : null, note, btn };
   });
   check("策略地图加粗边界而不是只换底色", w0 != null && w1.w != null && Number(w1.w) > Number(w0), `before ${w0} after ${w1.w}`);
-  check("说明写明不是历史省界也不是地形", w1.note.includes("不是古代或战时省界") && w1.note.includes("不画地形") && w1.note.includes("不是 TNO"), w1.note.slice(0, 80));
+  if (!w1.note.includes("不是 TNO")) await page.click("#eraToggle");
+  const noteOpen = await page.evaluate(() => document.getElementById("eraNote")?.innerText || "");
+  check("说明写明不是历史省界、省界待考，也不是 TNO", noteOpen.includes("不是历史省界") && noteOpen.includes("省界待考") && noteOpen.includes("不画今天的省界") && noteOpen.includes("不是 TNO"), noteOpen.slice(0, 120));
   check("按钮可切回普通地图", w1.btn === "普通地图", w1.btn);
   await shot(page, "b3-1944-strategy");
 
@@ -84,21 +86,19 @@ try {
       if (label.includes("实际控制区") && !el.checked) el.click();
     }
   });
-  const adminWait = page.waitForResponse((r) => r.url().includes("/api/admin1_ref") && r.ok(), { timeout: 20000 }).catch(() => null);
   const tAdmin = Date.now();
   await page.evaluate(() => WHA.map.setView([24.5, 110.5], 6));
-  await adminWait;
+  await page.waitForFunction(() => document.querySelectorAll(".leaflet-rocprov-pane path").length > 0, { timeout: 20000 });
   await new Promise((r) => setTimeout(r, 400));
   const adminInfo = await page.evaluate(() => {
-    const pane = document.querySelector(".leaflet-admin1-pane");
-    const n = pane ? pane.querySelectorAll("path").length : 0;
-    const note = document.getElementById("eraNote")?.innerText || "";
+    const modern = document.querySelectorAll(".leaflet-admin1-pane path").length;
+    const hist = document.querySelectorAll(".leaflet-rocprov-pane path").length;
     const ctl = document.getElementById("layerCtl")?.getBoundingClientRect();
     const btn = document.getElementById("styleBtn")?.getBoundingClientRect();
-    return { n, note: note.includes("现代"), ctl: ctl && ctl.width > 0 && ctl.top >= 0, btn: btn && btn.top >= 0 };
+    return { modern, hist, ctl: ctl && ctl.width > 0 && ctl.top >= 0, btn: btn && btn.top >= 0 };
   });
-  log(`PERF admin1 visible after ${Date.now() - tAdmin} ms, paths ${adminInfo.n}`);
-  check("放大后画出现代行政区参考线", adminInfo.n > 10, String(adminInfo.n));
+  log(`PERF province lines after ${Date.now() - tAdmin} ms, modern ${adminInfo.modern} hist ${adminInfo.hist}`);
+  check("放大后不画今天的省界，1944年桂林有民国省界", adminInfo.modern === 0 && adminInfo.hist > 0, `modern ${adminInfo.modern} hist ${adminInfo.hist}`);
   check("图层开关和策略按钮仍在画面内", adminInfo.ctl && adminInfo.btn, "");
   await shot(page, "b3-1944-guilin-admin1");
 

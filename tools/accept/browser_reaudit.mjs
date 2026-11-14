@@ -74,12 +74,15 @@ await new Promise((r) => setTimeout(r, 400));
 const z0 = await page.evaluate(() => window.WHA.map.getZoom());
 await page.evaluate(() => window.WHA.map.setView([24.5, 110.5], 6, { animate: false }));
 await new Promise((r) => setTimeout(r, 800));
+await page.waitForFunction(() => document.querySelectorAll(".leaflet-rocprov-pane path").length > 0, { timeout: 20000 }).catch(() => null);
 const zoomed = await page.evaluate(() => ({
   z: window.WHA.map.getZoom(),
   n: document.querySelectorAll(".leaflet-admin1-pane path").length,
+  hist: document.querySelectorAll(".leaflet-rocprov-pane path").length,
 }));
 if (!(zoomed.z > z0)) problems.push("放大没有提高缩放 " + z0 + " -> " + zoomed.z);
-if (zoomed.n < 5) problems.push("放大后没有现代行政区参考线 " + zoomed.n);
+if (zoomed.n !== 0) problems.push("放大后仍画了今天的省界 " + zoomed.n);
+if (zoomed.hist < 1) problems.push("1944年桂林没有民国省界 " + zoomed.hist);
 await page.screenshot({ path: OUT + "/reaudit-desktop-zoom-admin.png" });
 
 await open(390, 844, "#date=1944-12-01&style=strategy&c=32,114&z=4");
@@ -91,8 +94,7 @@ const narrow = await page.evaluate(() => ({
 if (narrow.overflow) problems.push("窄屏横向溢出 " + narrow.sw + "/" + narrow.iw);
 await page.screenshot({ path: OUT + "/reaudit-phone-1944-asia.png" });
 
-await page.click("#yearIn", { clickCount: 3 });
-await page.type("#yearIn", "1950");
+await page.$eval("#yearIn", (el) => { el.value = "1950"; });
 await page.select("#monthIn", "6");
 await page.select("#dayIn", "1");
 await page.click("#goBtn");
@@ -115,9 +117,8 @@ await page.mouse.move(paris.x, paris.y);
 const t0 = Date.now();
 await page.waitForFunction(() => document.getElementById("econHover").classList.contains("on"), { timeout: 8000 });
 const elapsed = Date.now() - t0;
-const hoverText = await page.evaluate(() => document.getElementById("econHover").innerText);
 if (elapsed < 4500) problems.push("经济浮窗早于约 5 秒 " + elapsed);
-if (!/Maddison|暂无数据/.test(hoverText)) problems.push("经济浮窗没有来源或暂无数据");
+await page.waitForFunction(() => /Maddison|暂无数据/.test(document.getElementById("econHover").innerText || ""), { timeout: 8000 });
 await page.screenshot({ path: OUT + "/reaudit-hover-shown.png" });
 await page.mouse.move(20, 20);
 await new Promise((r) => setTimeout(r, 300));

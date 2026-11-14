@@ -69,7 +69,10 @@ SOURCES = [
     {"name": "English Wikipedia — Portal:Current events", "url": "https://en.wikipedia.org/wiki/Portal:Current_events",
      "license": "CC BY-SA 4.0", "use": "每日新闻（1995 年至今，自动更新）"},
     {"name": "Natural Earth", "url": "https://www.naturalearthdata.com/", "license": "Public domain",
-     "use": "2011 年至今的现代国家边界；策略地图里放大后的现代一级行政区参考线（不是历史省界）"},
+     "use": "2011 年至今的现代国家边界，以及控制区和声索样本里已点名的现代地块轮廓。不再拿它的一级行政区线当作历史省界。"},
+    {"name": "ENP-China / Virtual Shanghai — Provinces in Republican China",
+     "url": "https://www.virtualshanghai.net/Data/Tables?ID=198", "license": "CC0 1.0",
+     "use": "1912–1949 年中国省界轮廓。同一编号在各年份档里是同一条线，按建制日期决定画不画。不是今天的省界。"},
     {"name": "QLever (Univ. Freiburg) Wikidata SPARQL", "url": "https://qlever.dev/wikidata", "license": "—",
      "use": "构建数据时查询 Wikidata 的端点"},
     {"name": "ISW/CTP Russian Assessed Control of Terrain", "url": "https://www.arcgis.com/home/item.html?id=963c5626435e49b98ae1db399859d04e",
@@ -165,19 +168,17 @@ def econ_hover(date: str, snap: str, fid: int):
 
 @app.get("/api/admin1_ref")
 def admin1_ref(west: float, south: float, east: float, north: float, zoom: float = 2):
-    """现代一级行政区参考线。不是历史省界。放大到 5 级以下不返回线。"""
-    from .admin1ref import query
-    feats, ready = query(west, south, east, north, zoom)
+    """不再返回今天的一级行政区。有来源的民国省界在民国省界图层里按日期另画。"""
     return {
         "type": "FeatureCollection",
-        "features": feats,
-        "era": "modern",
-        "source": "Natural Earth 1:10m admin-1",
-        "license": "Public domain",
-        "url": "https://www.naturalearthdata.com/",
-        "simplified": True,
-        "loaded": ready,
-        "note": "这些线是现代一级行政区参考线（今天的省、州等），来自 Natural Earth 1:10m（公有领域），画出来之前做了简化。它们不是历史省界，不是古代省界，也不是战时控制线。没有可靠的历史省界数据时不另画线。",
+        "features": [],
+        "era": "none",
+        "source": None,
+        "license": None,
+        "simplified": False,
+        "loaded": False,
+        "zoom": zoom,
+        "note": "不画今天的省界。今天的一级行政区线不是历史省界。有可再分发的民国省界时，按所选日期另画。没有合法数据的年份和地区标省界待考。",
     }
 
 

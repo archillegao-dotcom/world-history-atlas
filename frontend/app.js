@@ -307,7 +307,7 @@
     });
   }
 
-  let labelLayer = null, adminLayer = null, adminSeq = 0, adminTimer = null;
+  let labelLayer = null, adminLayer = null, adminTimer = null;
   // 地图上的短名都是核对过的叫法。括号里的地位说明可以略去，因为全名留在提示里。没有核对过的长名整段显示，不用省略号。
   const SHORT_NAME = {
     "法兰西共和国临时政府": "法国临时政府",
@@ -559,26 +559,9 @@
   }
   WHA.placePolityLabels = placeLabels;
   function scheduleAdmin1() { clearTimeout(adminTimer); adminTimer = setTimeout(loadAdmin1, 240); }
-  async function loadAdmin1() {
-    if (!adminLayer) {
-      if (!map.getPane("admin1")) {
-        const p = map.createPane("admin1");
-        p.style.zIndex = 430;
-        p.style.pointerEvents = "none";
-      }
-      adminLayer = L.geoJSON(null, {
-        pane: "admin1", interactive: false,
-        style: { color: "#c9bfae", weight: 0.65, opacity: 0.42, fill: false },
-      }).addTo(map);
-    }
-    if (!strategyOn() || map.getZoom() < 5) { adminLayer.clearLayers(); return; }
-    const b = map.getBounds();
-    const seq = ++adminSeq;
-    const url = `/api/admin1_ref?west=${b.getWest()}&south=${b.getSouth()}&east=${b.getEast()}&north=${b.getNorth()}&zoom=${map.getZoom()}`;
-    const gj = await api(url).catch(() => null);
-    if (seq !== adminSeq || !strategyOn() || map.getZoom() < 5) return;
-    adminLayer.clearLayers();
-    if (gj && gj.features) adminLayer.addData(gj);
+  function loadAdmin1() {
+    // 今天的一级行政区不再叠到地图上。民国省界由「民国省界」图层按日期另画。
+    if (adminLayer) adminLayer.clearLayers();
   }
   map.on("movestart zoomstart", hoverEnd);
   map.getContainer().addEventListener("pointermove", (e) => {
@@ -799,7 +782,7 @@
     if (y < -3000) html = `<b>史前时期（文字出现以前）</b>：地图上是 historical-basemaps 对考古文化与人群分布的粗略复原，不是国家边界（名称标为「文化/地区」）；快照非常稀疏（当前：${yearZh(base)}${state.next != null ? "，下一张：" + yearZh(state.next) : ""}）。Wikidata 中此时期几乎没有精确到年的事件和人物。`;
     else if (y < -500) html += "<br>上古时期：许多日期是估计值，人物生卒年常常只精确到世纪。";
     if (state.date.m && state.date.d) html += "<br>已精确到日：事件列表会把<b>当天</b>发生的事件排在最前（仅限 Wikidata 记录到日的事件）。";
-    if (strategyOn()) html += "<br>策略地图是自绘的深色分区。国名写在该日可见范围里面，全名在提示里。放大后的浅线是现代一级行政区参考线，不是历史省界。淡色起伏是 Natural Earth 晕渲（公有领域），只表示现代自然地形，不是历史国界。不是 TNO 官方地图。";
+    if (strategyOn()) html += "<br>策略地图是自绘的深色分区。国名写在该日可见范围里面，全名在提示里。今天的省界不再画，不是历史省界。1912年至1949年有来源的中国省界按所选日期另画；没有合法年份或地区的标省界待考，不画今天的省界。淡色起伏是 Natural Earth 晕渲（公有领域），只表示现代自然地形，不是历史国界。不是 TNO 官方地图。";
     const note = $("eraNote");
     const open = note.classList.contains("open");
     note.innerHTML = `<button type="button" id="eraToggle" aria-expanded="${open ? "true" : "false"}">${open ? "收起说明" : "边界说明"}</button>` + (open ? `<div class="era-body">${html}</div>` : "");
@@ -845,7 +828,7 @@
     document.body.classList.toggle("strategy", !!on);
     const btn = $("styleBtn");
     if (btn) { btn.textContent = on ? "普通地图" : "策略地图"; btn.setAttribute("aria-pressed", on ? "true" : "false"); }
-    if (on && !map._whaStratAttr) map._whaStratAttr = map.attributionControl.addAttribution('策略地图为软件自绘。细线：<a href="https://www.naturalearthdata.com/" target="_blank">Natural Earth</a> 现代一级行政区参考线（公有领域），不是历史省界。地形：同一来源的 1:50m 晕渲（公有领域），只表示现代自然起伏');
+    if (on && !map._whaStratAttr) map._whaStratAttr = map.attributionControl.addAttribution('策略地图为软件自绘。今天的省界不再画，不是历史省界。1912–1949 年中国省界来自 <a href="https://www.virtualshanghai.net/Data/Tables?ID=198" target="_blank">ENP-China / Virtual Shanghai</a>（CC0），按日期显示。没有这套数据的年份和地区标省界待考。地形：<a href="https://www.naturalearthdata.com/" target="_blank">Natural Earth</a> 1:50m 晕渲（公有领域），只表示现代自然起伏');
     restyle();
     updateEraNote();
     if (WHA.updateLayers) WHA.updateLayers();
@@ -1053,7 +1036,7 @@
         <li>事件按事件坐标（或事件地点的坐标）归属；只有国家信息的事件用该国首都坐标近似。</li>
         <li>日级精度只适用于 Wikidata 记录到日的事件；古代多数日期只到年或世纪。</li>
         <li>Wikidata 对欧洲、近现代的覆盖远多于其他地区和古代；“没有记录”不代表“没有发生”。</li>
-        <li>策略地图只改画法。放大后的细线是现代一级行政区参考线（Natural Earth，公有领域），不是历史省界。历史省界没有绘制。淡色起伏是同一来源的 1:50m 晕渲，只表示现代陆地地形，没有海底深浅。</li>
+        <li>策略地图只改画法。今天的省界不再画，不是历史省界。1912年至1949年有来源的中国省界按所选日期另画；没有合法年份或地区的标省界待考，不画今天的省界。淡色起伏是 Natural Earth 1:50m 晕渲，只表示现代陆地地形，没有海底深浅。</li>
         <li>鼠标停在一个政权上满 5 秒，才显示该年经济数字。只有数据表里正好有这一年才给出数值，否则为「暂无数据」。</li>
       </ul>`;
   }

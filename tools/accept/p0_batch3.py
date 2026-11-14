@@ -1,4 +1,4 @@
-"""第三批：经济悬停只认所选年份的原值；现代行政区参考线自报身份。
+"""第三批：经济悬停只认所选年份的原值。今天的省界不再从参考线接口返回。
 这是接口测试，不是鼠标点击。用法：WHA_PORT=8792 python3 tools/accept/p0_batch3.py
 """
 import json, os, sys, urllib.parse, urllib.request
@@ -64,13 +64,11 @@ check("接口不把沿用年当成所选年", not values_of(h_carry) and h_carry
 check("说明写明不是当时政权的账", "不是当时政权" in (h_last.get("note") or ""), h_last.get("note", "")[:80])
 
 low = get("/api/admin1_ref", west=100, south=20, east=120, north=40, zoom=3)
-check("缩小到 3 级不返回现代省界", low.get("features") == [] and "不是历史省界" in (low.get("note") or ""), f"n={len(low.get('features') or [])}")
+check("缩小到 3 级不返回今天的省界", low.get("features") == [] and "不是历史省界" in (low.get("note") or "") and "省界待考" in (low.get("note") or ""), f"n={len(low.get('features') or [])}")
 hi = get("/api/admin1_ref", west=110, south=20, east=122, north=35, zoom=6)
 feats = hi.get("features") or []
-check("放大后有现代行政区线且标明现代", 0 < len(feats) <= 360 and all(
-    (f.get("properties") or {}).get("era") == "modern" and "不是历史省界" in ((f.get("properties") or {}).get("note") or "")
-    for f in feats) and hi.get("license") == "Public domain", f"n={len(feats)} license={hi.get('license')}")
-check("参考线说明不是古代或战时省界", "不是古代" in (hi.get("note") or "") and "战时" in (hi.get("note") or ""), hi.get("note", "")[:90])
+check("放大后也不返回今天的省界", feats == [] and "不画今天的省界" in (hi.get("note") or "") and "不是历史省界" in (hi.get("note") or ""), f"n={len(feats)}")
+check("没有合法省界时标省界待考", "省界待考" in (hi.get("note") or ""), hi.get("note", "")[:90])
 
 print(f"FAILS {len(fails)}")
 sys.exit(1 if fails else 0)
