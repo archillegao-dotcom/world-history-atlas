@@ -785,6 +785,7 @@
     else if (y < -500) html += "<br>上古时期：许多日期是估计值，人物生卒年常常只精确到世纪。";
     if (state.date.m && state.date.d) html += "<br>已精确到日：事件列表会把<b>当天</b>发生的事件排在最前（仅限 Wikidata 记录到日的事件）。";
     if (strategyOn()) html += "<br>策略地图是自绘的深色分区。国名写在该日可见范围里面，全名在提示里。今天的省界不再画，不是历史省界。1912年至1949年有来源的中国省界按所选日期另画；没有合法年份或地区的标省界待考，不画今天的省界。淡色起伏是 Natural Earth 晕渲（公有领域），只表示现代自然地形，不是历史国界。不是 TNO 官方地图。";
+    if (strategyOn() && y >= 1912 && y <= 1949) html += "<br>1912年至1949年按县城画出的实际控制是大致，县域为治所泰森多边形近似。治所取 MCGD_Rep 1931 年县城（Christian Henriot，CC BY 4.0），裁在 ENP-China 历史省界和海岸上，不是县界，也不是今天的省界。";
     const note = $("eraNote");
     const open = note.classList.contains("open");
     note.innerHTML = `<button type="button" id="eraToggle" aria-expanded="${open ? "true" : "false"}">${open ? "收起说明" : "边界说明"}</button>` + (open ? `<div class="era-body">${html}</div>` : "");
@@ -891,7 +892,7 @@
     document.body.classList.toggle("strategy", !!on);
     const btn = $("styleBtn");
     if (btn) { btn.textContent = on ? "普通地图" : "策略地图"; btn.setAttribute("aria-pressed", on ? "true" : "false"); }
-    if (on && !map._whaStratAttr) map._whaStratAttr = map.attributionControl.addAttribution('策略地图为软件自绘。今天的省界不再画，不是历史省界。1912–1949 年中国省界来自 <a href="https://www.virtualshanghai.net/Data/Tables?ID=198" target="_blank">ENP-China / Virtual Shanghai</a>（CC0），按日期显示。没有这套数据的年份和地区标省界待考。地形：<a href="https://www.naturalearthdata.com/" target="_blank">Natural Earth</a> 1:50m 晕渲（公有领域），只表示现代自然起伏');
+    if (on && !map._whaStratAttr) map._whaStratAttr = map.attributionControl.addAttribution('策略地图为软件自绘。今天的省界不再画，不是历史省界。1912–1949 年中国省界来自 <a href="https://www.virtualshanghai.net/Data/Tables?ID=198" target="_blank">ENP-China / Virtual Shanghai</a>（CC0），按日期显示。没有这套数据的年份和地区标省界待考。县域为治所泰森多边形近似，治所来自 <a href="https://zenodo.org/records/5721459" target="_blank">MCGD_Rep</a>（Christian Henriot，CC BY 4.0），裁在上述历史省界和海岸上，不是县界。地形：<a href="https://www.naturalearthdata.com/" target="_blank">Natural Earth</a> 1:50m 晕渲（公有领域），只表示现代自然起伏');
     restyle();
     updateEraNote();
     if (WHA.updateLayers) WHA.updateLayers();

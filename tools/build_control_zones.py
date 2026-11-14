@@ -36,6 +36,17 @@ def parts(g):
     return list(g.geoms) if hasattr(g, "geoms") else [g]
 
 
+def county_cells():
+    """1931 治所泰森多边形，已裁在 ENP-China 历史省界上。"""
+    if "counties" not in _cache:
+        p = config.DATA_DIR / "curated" / "geom" / "roc_county_cells.geojson"
+        gj = json.loads(p.read_text(encoding="utf-8"))
+        _cache["counties"] = {
+            f["properties"]["id"]: make_valid(shape(f["geometry"])) for f in gj["features"]
+        }
+    return _cache["counties"]
+
+
 def roc_shapes():
     """ENP-China 历史省界，与虚线图层同一份几何。按省 id 取，不再做第二遍简化。"""
     if "roc" not in _cache:
@@ -230,6 +241,12 @@ def resolve(spec):
         if missing:
             raise SystemExit(f"roc_ids not found: {missing}")
         gs += [table[i] for i in spec["roc_ids"]]
+    if "roc_counties" in spec:
+        table = county_cells()
+        missing = [i for i in spec["roc_counties"] if i not in table]
+        if missing:
+            raise SystemExit(f"roc_counties not found: {missing[:8]}")
+        gs += [table[i] for i in spec["roc_counties"]]
     if not gs:
         raise SystemExit(f"empty geometry: {spec}")
     if spec.get("nosimplify") and len(gs) == 1:

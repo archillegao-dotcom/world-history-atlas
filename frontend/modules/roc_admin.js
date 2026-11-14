@@ -106,7 +106,7 @@
       html += `<div class="s">县城点（不是县界）</div>`;
       html += `<div class="note">${seats.map((s) => WHA.esc(s.label || s.name)).join("、")}。${WHA.esc(seats[0].note || "")}</div>`;
     }
-    html += `<div class="source">省界：ENP-China / Virtual Shanghai（${WHA.esc(r.license || "CC0 1.0")}）。县城点：MCGD_Rep（${WHA.esc(r.county_license || "CC BY 4.0")}），不是县界。</div>`;
+    html += `<div class="source">省界：ENP-China / Virtual Shanghai（${WHA.esc(r.license || "CC0 1.0")}）。县城点：MCGD_Rep（${WHA.esc(r.county_license || "CC BY 4.0")}）。有县域填色的是大致，县域为治所泰森多边形近似，裁在历史省界和海岸上，不是县界。</div>`;
     box.innerHTML = html;
     return box;
   });
