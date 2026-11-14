@@ -11120,6 +11120,32 @@
    ]
   },
   {
+   "id": "ccw_harbin_1946",
+   "group": "ccw_manchuria",
+   "kind": "de_facto",
+   "as_polity": true,
+   "name_zh": "共军控制区（哈尔滨）",
+   "name_en": "CCP-held Harbin",
+   "controller": {
+    "qid": "Q17427",
+    "zh": "中国共产党"
+   },
+   "from": "1946-04-28",
+   "until": "1946-06-07",
+   "geometry": {
+    "roc_counties": [
+     "mcgd:s417"
+    ]
+   },
+   "approx": true,
+   "note": "滨江县域。1946-04-28 进入哈尔滨。哈尔滨在吉林的滨江，不在黑龙江多边形里，也不把吉林全省提前。1946-06-07 起并入松花江以北的东北沦陷区。大致。县域为治所泰森多边形近似。未核对《中華民國史事紀要》。",
+   "dates_note": "1946-04-28 起，收到 1946-06-07。",
+   "sources": [
+    "http://www.chinadaily.com.cn/dfpd/hlj/2011-04/28/content_12413529.htm",
+    "https://zenodo.org/records/5721459"
+   ]
+  },
+  {
    "id": "sjw_cell_mcgd:s874_1937-12-13_南京",
    "group": "sino_japanese_war",
    "kind": "occupied",
@@ -11195,16 +11221,11 @@
     ]
    },
    "approx": true,
-   "note": "徐州县域。大致。县域为治所泰森多边形近似。不把沦陷日之前的色块扩到这个治所。未核对《中華民國史事紀要》。",
-   "dates_note": "徐州 1938-05-19 起，收到下一块盖住这里的日期。",
+   "note": "徐州县域。已核對《中華民國史事紀要》民國二十七年一月至六月，印页四七九（PDF 第483页），页眉民国二十七年五月十八、十九日，写至十时徐州失守。6月6日起并入后面那一块。大致。县域为治所泰森多边形近似。",
+   "dates_note": "徐州 1938-05-19 起，收到 1938-06-06。已核對《中華民國史事紀要》印页四七九。",
    "sources": [
-    "https://dhc.westpoint.edu/atlases/（USMA 历史系 Chinese Civil War 地图集：Japanese Occupation, 1940）",
-    "https://dhc.westpoint.edu/atlases/（USMA 历史系 Chinese Civil War 地图集：Situation at the End of World War II）",
-    "https://en.wikipedia.org/wiki/Second_Sino-Japanese_War",
-    "https://en.wikipedia.org/wiki/Japanese-occupied_areas_of_China",
-    "https://en.wikipedia.org/wiki/Battle_of_Xuzhou",
-    "https://en.wikipedia.org/wiki/Battle_of_Wuhan",
-    "https://en.wikipedia.org/wiki/Provisional_Government_of_the_Republic_of_China_(1937–1940)"
+    "https://www.drnh.gov.tw/p/404-1003-13313.php?Lang=zh-tw",
+    "https://zenodo.org/records/5721459"
    ]
   },
   {
@@ -11258,10 +11279,10 @@
     ]
    },
    "approx": true,
-   "note": "九江县域。1938-07-26 沦陷。1939-03-27 起并入已经盖住这里的占领层，不把 7 月 26 日以前的色块挖开。大致。县域为治所泰森多边形近似。未核对《中華民國史事紀要》。",
-   "dates_note": "九江 1938-07-26 起，收到下一块盖住这里的日期。",
+   "note": "九江县域。已核對《中華民國史事紀要》民國二十七年七月至十二月，印页一五九（PDF 第167页），页眉民国二十七年七月二十五、二十六日，写二十六日九江陷落。1939-03-27 起并入已经盖住这里的占领层。大致。县域为治所泰森多边形近似。",
+   "dates_note": "九江 1938-07-26 起，收到 1939-03-27。已核對《中華民國史事紀要》印页一五九。",
    "sources": [
-    "https://zh.wikipedia.org/wiki/武汉会战",
+    "https://www.drnh.gov.tw/p/404-1003-13314.php?Lang=zh-tw",
     "https://zenodo.org/records/5721459"
    ]
   },
@@ -11579,32 +11600,6 @@
    "dates_note": "柳州 1944-11-11 起，收到 1945-08-16。",
    "sources": [
     "https://zh.wikipedia.org/wiki/桂柳会战",
-    "https://zenodo.org/records/5721459"
-   ]
-  },
-  {
-   "id": "ccw_harbin_1946",
-   "group": "ccw_manchuria",
-   "kind": "de_facto",
-   "as_polity": true,
-   "name_zh": "共军控制区（哈尔滨）",
-   "name_en": "CCP-held Harbin",
-   "controller": {
-    "qid": "Q17427",
-    "zh": "中国共产党"
-   },
-   "from": "1946-04-28",
-   "until": "1946-06-07",
-   "geometry": {
-    "roc_counties": [
-     "mcgd:s417"
-    ]
-   },
-   "approx": true,
-   "note": "滨江县域。1946-04-28 进入哈尔滨。哈尔滨在吉林的滨江，不在黑龙江多边形里，也不把吉林全省提前。1946-06-07 起并入松花江以北的东北沦陷区。大致。县域为治所泰森多边形近似。未核对《中華民國史事紀要》。",
-   "dates_note": "1946-04-28 起，收到 1946-06-07。",
-   "sources": [
-    "http://www.chinadaily.com.cn/dfpd/hlj/2011-04/28/content_12413529.htm",
     "https://zenodo.org/records/5721459"
    ]
   }

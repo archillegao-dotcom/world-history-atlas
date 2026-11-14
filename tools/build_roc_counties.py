@@ -390,6 +390,17 @@ def main():
         })
         print("supplement", name, fall, gap_until, cid)
     for s in supplements:
+        if s["id"].endswith("_徐州"):
+            s["note"] = (
+                "徐州县域。已核對《中華民國史事紀要》民國二十七年一月至六月，"
+                "印页四七九（PDF 第483页），页眉民国二十七年五月十八、十九日，写至十时徐州失守。"
+                "6月6日起并入后面那一块。" + PHRASE
+            )
+            s["dates_note"] = "徐州 1938-05-19 起，收到 1938-06-06。已核對《中華民國史事紀要》印页四七九。"
+            s["sources"] = [
+                "https://www.drnh.gov.tw/p/404-1003-13313.php?Lang=zh-tw",
+                "https://zenodo.org/records/5721459",
+            ]
         if s["id"].endswith("_镇江"):
             s["note"] = (
                 "镇江县域。江苏省志大事年表写1937年12月8日镇江、靖江失陷。"
@@ -404,10 +415,15 @@ def main():
             ]
         if s["id"].endswith("_九江"):
             s["note"] = (
-                "九江县域。1938-07-26 沦陷。1939-03-27 起并入已经盖住这里的占领层，不把 7 月 26 日以前的色块挖开。"
-                + PHRASE + "未核对《中華民國史事紀要》。"
+                "九江县域。已核對《中華民國史事紀要》民國二十七年七月至十二月，"
+                "印页一五九（PDF 第167页），页眉民国二十七年七月二十五、二十六日，写二十六日九江陷落。"
+                "1939-03-27 起并入已经盖住这里的占领层。" + PHRASE
             )
-            s["sources"] = ["https://zh.wikipedia.org/wiki/武汉会战", "https://zenodo.org/records/5721459"]
+            s["dates_note"] = "九江 1938-07-26 起，收到 1939-03-27。已核對《中華民國史事紀要》印页一五九。"
+            s["sources"] = [
+                "https://www.drnh.gov.tw/p/404-1003-13314.php?Lang=zh-tw",
+                "https://zenodo.org/records/5721459",
+            ]
     doc["zones"].extend(supplements)
 
     for name, points, fall, end, controller, name_zh, why in GROWTH:
