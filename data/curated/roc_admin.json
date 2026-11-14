@@ -18,7 +18,7 @@
   ],
   "units": [
     {"sid": "17", "id": "jiangxi", "name": "江西", "controls": [{"from": "1949-05-22", "until": "1950-01-01", "nominal": "南京国民政府", "actual": "中国共产党", "note": "1949-05-22南昌易手。省级大致，按省会这一天，不是逐县。未核对《中華民國史事紀要》。", "sources": ["https://en.wikipedia.org/wiki/Chinese_Civil_War"]}]},
-    {"sid": "1", "id": "anhui", "name": "安徽"},
+    {"sid": "1", "id": "anhui", "name": "安徽", "controls": [{"from": "1949-01-21", "until": "1950-01-01", "nominal": "南京国民政府", "actual": "中国共产党", "note": "合肥市条目写1949-01-21下午部队从东门进入合肥县城。省级大致，按省会这一天，不是逐县。怀宁（安庆）没有另锁。未核对《中華民國史事紀要》。", "sources": ["https://zh.wikipedia.org/wiki/合肥市"]}]},
     {"sid": "13", "id": "hubei", "name": "湖北", "controls": [{"from": "1949-05-16", "until": "1950-01-01", "nominal": "南京国民政府", "actual": "中国共产党", "note": "1949-05-16武汉易手。省级大致，按省会这一天，不是逐县。未核对《中華民國史事紀要》。", "sources": ["https://en.wikipedia.org/wiki/Chinese_Civil_War"]}]},
     {"sid": "14", "id": "hunan", "name": "湖南", "controls": [{"from": "1949-08-04", "until": "1950-01-01", "nominal": "南京国民政府", "actual": "中国共产党", "note": "1949-08-04长沙起义。省级大致，按省会这一天，不是逐县。未核对《中華民國史事紀要》。", "sources": ["https://en.wikipedia.org/wiki/Chinese_Civil_War"]}]},
     {"sid": "12", "id": "henan", "name": "河南", "controls": [{"from": "1949-01-31", "until": "1950-01-01", "nominal": "南京国民政府", "actual": "中国共产党", "note": "与已有底图同一省级近似，用1949-01-31。开封的单独日子没有另锁。省级大致，按省会这一天，不是逐县。未核对《中華民國史事紀要》。", "sources": ["https://en.wikipedia.org/wiki/Chinese_Civil_War", "https://en.wikipedia.org/wiki/Pingjin_campaign"]}]},
@@ -118,7 +118,7 @@
       {"from": "1928-09-17", "until": "1950-01-01", "name": "绥远", "kind": "省"}
     ], "draw": [{"from": "1928-09-17", "until": "1950-01-01"}], "gaps": [
       {"from": "1912-01-01", "until": "1928-09-17", "note": "绥远特别区的设立月日这套图没有切开。1928-09-17以前不画，省界待考。"}
-    ], "sources": ["http://www.wenxue100.com/book_LiShi/172_112.thtml"]},
+    ], "sources": ["http://www.wenxue100.com/book_LiShi/172_112.thtml"], "controls": [{"from": "1949-09-19", "until": "1950-01-01", "nominal": "南京国民政府", "actual": "中国共产党", "note": "绥远起义条目写1949-09-19董其武通电。省级大致，按归绥这一天，不是逐县。未核对《中華民國史事紀要》。", "sources": ["https://zh.wikipedia.org/wiki/绥远起义"]}]},
     {"sid": "20", "id": "ningxia", "name": "宁夏", "draw": [{"from": "1928-10-22", "until": "1950-01-01"}], "nominal": [
       {"from": "1928-10-22", "until": "1950-01-01", "name": "南京国民政府"}
     ], "gaps": [
@@ -160,7 +160,7 @@
       {"from": "1912-01-01", "until": "1945-10-25", "note": "1945-10-25以前不把这套图里的台湾轮廓画成中国的省。"}
     ], "line_note": "轮廓是数据集里的台湾，不是1945年新测的省界。10月25日是接收日。"},
     {"sid": "1947-遼寧", "id": "liaoning1947", "name": "辽宁", "draw": [{"from": "1947-06-01", "until": "1950-01-01"}], "nominal": [{"from": "1947-06-01", "until": "1950-01-01", "name": "南京国民政府"}], "line_note": "东北九省。县份调整在1947年6月，日待考，按6月1日。1948-11-02以前实控待考。不把内战前线画成省界。", "controls": [{"from": "1948-11-02", "until": "1950-01-01", "nominal": "南京国民政府", "actual": "中国共产党", "note": "1948-11-02沈阳易手。东北其余八省没有各用自己的省会日，不在这一条里。省级大致，按省会这一天，不是逐县。未核对《中華民國史事紀要》。", "sources": ["https://zh.wikipedia.org/wiki/辽沈战役"]}]},
-    {"sid": "1947-吉林", "id": "jilin1947", "name": "吉林", "draw": [{"from": "1947-06-01", "until": "1950-01-01"}], "nominal": [{"from": "1947-06-01", "until": "1950-01-01", "name": "南京国民政府"}], "line_note": "东北九省的吉林，不是1928年以前那块全省轮廓。"},
+    {"sid": "1947-吉林", "id": "jilin1947", "name": "吉林", "draw": [{"from": "1947-06-01", "until": "1950-01-01"}], "nominal": [{"from": "1947-06-01", "until": "1950-01-01", "name": "南京国民政府"}], "line_note": "东北九省的吉林，不是1928年以前那块全省轮廓。", "controls": [{"from": "1948-10-19", "until": "1950-01-01", "nominal": "南京国民政府", "actual": "中国共产党", "note": "长春围困战条目写1948-10-19军队进入长春。长春和永吉都落在这块九省轮廓里。省级大致，按长春这一天，不是逐县。黑龙江没有另锁。未核对《中華民國史事紀要》。", "sources": ["https://zh.wikipedia.org/wiki/长春围困战"]}]},
     {"sid": "1947-黑龍江", "id": "heilongjiang1947", "name": "黑龙江", "draw": [{"from": "1947-06-01", "until": "1950-01-01"}], "nominal": [{"from": "1947-06-01", "until": "1950-01-01", "name": "南京国民政府"}], "line_note": "东北九省的黑龙江。"},
     {"sid": "1947-合江", "id": "hejiang", "name": "合江", "draw": [{"from": "1947-06-01", "until": "1950-01-01"}], "nominal": [{"from": "1947-06-01", "until": "1950-01-01", "name": "南京国民政府"}]},
     {"sid": "1947-嫩江", "id": "nenjiang", "name": "嫩江", "draw": [{"from": "1947-06-01", "until": "1950-01-01"}], "nominal": [{"from": "1947-06-01", "until": "1950-01-01", "name": "南京国民政府"}]},

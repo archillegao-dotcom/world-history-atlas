@@ -125,26 +125,28 @@
   const styleFor = (f, selected) => {
     const n = f.properties.NAME;
     const strat = strategyOn();
+    // 选中时的红线不画在填色多边形上。填色多边形被裁切、简化之后，描边另用同一圈点。
+    // 若把加粗描边留在这里，尖角的斜接会伸出填色，看起来像另一条边界。
     const base = strat ? {
-      color: selected ? "#e6d3a1" : "#12100e", weight: selected ? 2.4 : 1.75, opacity: 1,
+      color: "#12100e", weight: selected ? 0 : 1.75, opacity: 1,
       fillColor: n ? `hsl(${hueOf(colorKey(f.properties, n))}, 24%, ${selected ? 42 : 34}%)` : "#3c433c",
       fillOpacity: 0.97,
     } : {
-      color: selected ? "#8a1c00" : "#6b5a48", weight: selected ? 2.5 : 0.6, opacity: 0.9,
+      color: "#6b5a48", weight: selected ? 0 : 0.6, opacity: 0.9,
       fillColor: n ? `hsl(${hueOf(colorKey(f.properties, n))}, 45%, ${selected ? 62 : 74}%)` : "#ddd6c8",
       fillOpacity: selected ? 0.85 : 0.75,
     };
     // 图层模块（如「阵营地图」）可以通过 WHA.setFillOverride(fn) 改写多边形填色
     let o = null;
     for (const fn of Object.values(fillOverrides)) { const x = fn(f); if (x) o = { ...(o || {}), ...x }; }
-    const out = o ? { ...base, ...o, ...(selected ? { color: strat ? "#e6d3a1" : "#8a1c00", weight: strat ? 2.4 : 2.5 } : {}) } : base;
+    const out = o ? { ...base, ...o, ...(selected ? { weight: 0 } : {}) } : base;
     if (strat && !selected) out.weight = Math.max(out.weight || 0, 1.75);
     // 近似多边形之间的空隙：灰色虚线，不套用政权色，避免看起来像已经核定的国界
     if (f.properties.TERR_CAT === "unverified") {
       return {
-        color: selected ? (strat ? "#e6d3a1" : "#8a1c00") : "#3a342c",
-        weight: selected ? 2.4 : (strat ? 1.5 : 1.1),
-        dashArray: "4 3", opacity: 1,
+        color: "#3a342c",
+        weight: selected ? 0 : (strat ? 1.5 : 1.1),
+        dashArray: selected ? null : "4 3", opacity: 1,
         fillColor: strat ? "#7a7368" : "#d2c6b2",
         fillOpacity: strat ? 0.78 : 0.72,
       };
@@ -572,7 +574,7 @@
     const pane = map.getPane("tiny");
     if (pane) pane.style.display = (!strategyOn() || map.getZoom() >= 5) ? "" : "none";
   }
-  map.on("moveend zoomend", () => { placeLabels(); scheduleAdmin1(); syncTiny(); });
+  map.on("moveend zoomend", () => { placeLabels(); scheduleAdmin1(); syncTiny(); syncSelectionOutline(); });
 
   let tinyLayer = null;
   // 快速连续换日期时，较早发出的请求可能后返回：只画最后一次请求的快照，否则旧快照的多边形会盖在地图上、点击选中错误的政权
@@ -814,8 +816,69 @@
   }
   function selectedFid(fid) { return selectionSet().has(fid); }
 
+  let outlineLayer = null;
+  // 描边用填色多边形刚刚画出来的那一圈：已经按当前缩放裁过、简化过。不再另取一套几何。
+  function syncSelectionOutline() {
+    if (!map.getPane("seloutline")) {
+      const pane = map.createPane("seloutline");
+      pane.style.zIndex = 420;
+      pane.style.pointerEvents = "none";
+    }
+    if (outlineLayer) { map.removeLayer(outlineLayer); outlineLayer = null; }
+    if (!layer) return;
+    const strat = strategyOn();
+    const rings = [];
+    let fillSvg = null;
+    layer.eachLayer((l) => {
+      if (!l.feature || !selectedFid(l.feature.properties.fid)) return;
+      if (l._map && l._update) l._update();
+      if (l._path && l._path.ownerSVGElement) fillSvg = l._path.ownerSVGElement;
+      const parts = l._parts || [];
+      for (const part of parts) {
+        if (!part || part.length < 2) continue;
+        rings.push(part);
+      }
+    });
+    if (!rings.length) return;
+    outlineLayer = L.layerGroup().addTo(map);
+    const style = {
+      pane: "seloutline",
+      interactive: false,
+      className: "regime-outline",
+      smoothFactor: 0,
+      noClip: true,
+      stroke: true,
+      color: strat ? "#e6d3a1" : "#8a1c00",
+      weight: strat ? 2.4 : 2.5,
+      opacity: 1,
+      lineJoin: "round",
+      lineCap: "round",
+    };
+    // 每一圈单独描。并成一个多边形时，后面的圈会被当成孔。
+    // 点用填色层已经画出来的像素，不再经纬度转一圈，避免和填色差出一截。
+    for (const part of rings) {
+      const latlngs = part.map((p) => map.layerPointToLatLng(p));
+      const line = L.polyline(latlngs.concat([latlngs[0]]), style);
+      line.addTo(outlineLayer);
+      const pts = part.map((p) => L.point(p.x, p.y));
+      if (pts[0].distanceTo(pts[pts.length - 1]) > 0.5) pts.push(L.point(pts[0].x, pts[0].y));
+      line._parts = [pts];
+      line._pxBounds = L.bounds(pts);
+      if (line._renderer && line._updatePath) line._updatePath();
+    }
+    // 描边自己的 SVG 会把平移取整，和填色那张 SVG 差出零点几个像素。对准同一张变换。
+    const dst = outlineLayer.getLayers()[0] && outlineLayer.getLayers()[0]._renderer && outlineLayer.getLayers()[0]._renderer._container;
+    if (fillSvg && dst) {
+      dst.style.transform = fillSvg.style.transform;
+      const box = fillSvg.getAttribute("viewBox");
+      if (box) dst.setAttribute("viewBox", box);
+      if (fillSvg.getAttribute("width")) dst.setAttribute("width", fillSvg.getAttribute("width"));
+      if (fillSvg.getAttribute("height")) dst.setAttribute("height", fillSvg.getAttribute("height"));
+    }
+  }
   function restyle() {
     if (layer) layer.eachLayer((l) => l.setStyle && l.setStyle(styleFor(l.feature, selectedFid(l.feature.properties.fid))));
+    syncSelectionOutline();
     if (tinyLayer) tinyLayer.eachLayer((m) => {
       const sel = selectedFid(m.feature.properties.fid);
       m.setStyle({ fillColor: styleFor(m.feature, false).fillColor || "#ddd", color: sel ? (strategyOn() ? "#e6d3a1" : "#8a1c00") : (strategyOn() ? "#f4efe6" : "#555"), weight: sel ? 2.5 : 1.5 });

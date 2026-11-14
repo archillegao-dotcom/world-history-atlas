@@ -1137,5 +1137,22 @@
     "sources": [
       "https://zh.wikipedia.org/wiki/双十协定"
     ]
+  },
+  "curated:roc-1928-us-tariff": {
+    "insert": true,
+    "zh": "中美关税条约",
+    "en": "Sino-American Tariff Treaty",
+    "sl": 40,
+    "types": [{"en": "treaty", "zh": "条约"}],
+    "signed": {"y": 1928, "m": 7, "p": 10},
+    "parties": [
+      {"s": "Q13426199", "via": "curated"},
+      {"s": "Q30", "via": "curated"}
+    ],
+    "countries": ["Q13426199", "Q30"],
+    "desc": "改订新约条目写1928年7月7日废约宣言，同月美国与中华民国签订中美关税条约。没有写到日，也不把7月25日写成已经核对的签署日。生效日待考。英国等其余各国只写相继签订，没有逐一写日，不另插。未核对《中華民國史事紀要》。",
+    "note": "只记到1928年7月。日待考，生效日待考。不把7月1日或7月25日写成签署日。未核对《中華民國史事紀要》。",
+    "summary_zh": "1928年7月签订，日待考。生效日待考。未核对《中華民國史事紀要》。",
+    "sources": ["https://zh.wikipedia.org/wiki/改訂新約"]
   }
 }

@@ -22,8 +22,10 @@ async function open(w, h, hash) {
 }
 
 async function jump(y, m, d) {
-  await page.click("#yearIn", { clickCount: 3 });
-  await page.type("#yearIn", String(y));
+  // 年份是 number 框。连点三次不会选中原文，接着打字会接到后面，年份被夹到今年。先选中再打。
+  await page.focus("#yearIn");
+  await page.evaluate(() => document.getElementById("yearIn").select());
+  await page.keyboard.type(String(y));
   await page.select("#monthIn", String(m));
   await page.select("#dayIn", String(d));
   await page.click("#goBtn");
@@ -77,7 +79,8 @@ async function text() {
     flag: !!document.querySelector("#tabBody img.flag"),
     fill: (() => {
       const paths = [...document.querySelectorAll(".leaflet-overlay-pane path.leaflet-interactive")];
-      const sel = paths.find((p) => (p.getAttribute("stroke") || "").toLowerCase() === "#e6d3a1");
+      // 选中时的金线画在单独的描边上，填色多边形线宽是 0。
+      const sel = paths.find((p) => (p.getAttribute("stroke-width") || "") === "0");
       return sel ? (sel.getAttribute("fill") || "").toLowerCase() : "";
     })(),
   }));
