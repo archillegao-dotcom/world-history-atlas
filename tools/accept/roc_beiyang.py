@@ -39,6 +39,15 @@ check("10月20日起这三条线都撤下", not ids_on("1924-10-20"), ids_on("19
 seats = {row["id"] for row in bundle(ROOT / "data", "1925-06-01")["seats"]}
 check("1925-06-01 安次是待考点，不是县界", "anci-gap" in seats and "anci" not in seats, seats)
 check("1925-06-01 没有1920或1924的战线", not ids_on("1925-06-01"), "")
+check("12月24日不画护国点线", "yuehan-1922" not in ids_on("1915-12-25") and "kunming-1915" not in {s["id"] for s in bundle(ROOT / "data", "1915-12-24")["seats"]}, "")
+check("12月25日有昆明点，没有铁路", "kunming-1915" in {s["id"] for s in bundle(ROOT / "data", "1915-12-25")["seats"]} and not ids_on("1915-12-25"), "")
+check("12月26日起不留护国点", "kunming-1915" not in {s["id"] for s in bundle(ROOT / "data", "1915-12-26")["seats"]}, "")
+check("5月12日不画粤汉走廊", "yuehan-1922" not in ids_on("1922-05-12"), "")
+check("5月13日画粤汉走廊", ids_on("1922-05-13") == {"yuehan-1922"}, ids_on("1922-05-13"))
+check("5月14日起不留粤汉走廊", "yuehan-1922" not in ids_on("1922-05-14"), "")
+check("2月3日不画淞沪铁路", not ids_on("1932-02-03"), "")
+check("2月4日只画沪宁和沪杭", ids_on("1932-02-04") == {"huning-1932", "huhang-1932"}, ids_on("1932-02-04"))
+check("2月5日起不留淞沪铁路", not ids_on("1932-02-05"), "")
 
 
 def place(date, lat, lon):
@@ -56,6 +65,18 @@ check("图层在7月18日有京奉走廊", any(f["id"] == "zhiwan-jingfeng" for 
 check("许可字段仍是省界的 CC0", layer.get("license") == "CC0 1.0" and "CHGIS" in (layer.get("note") or ""), layer.get("license"))
 check("1926-07-01 北京实控仍是待考，不写成奉系",
       place("1926-07-01", 39.9042, 116.4074)["place"]["actual"] == "实控待考", "")
+km = place("1915-12-25", 25.067, 102.695)
+check("1915-12-25 昆明实控仍待考，面板有护国",
+      km["place"]["name"] == "云南" and km["place"]["actual"] == "实控待考" and any(w["id"] == "huguo-1915" for w in km["wars"]),
+      km["place"])
+nx = place("1922-05-13", 25.214, 114.3)
+check("1922-05-13 南雄不改全省实控，面板有粤汉",
+      nx["place"]["actual"] == "实控待考" and any(f["id"] == "yuehan-1922" for f in nx["fronts"]) and "不是县界" in json.dumps(nx, ensure_ascii=False),
+      nx["place"])
+sh = place("1932-02-04", 31.233, 121.477)
+check("1932-02-04 上海仍是南京国民政府，并有沪宁",
+      sh["place"]["name"] == "江苏" and sh["place"]["actual"] == "南京国民政府" and any(f["id"] == "huning-1932" for f in sh["fronts"]),
+      sh["place"])
 
 
 def names(date, lat, lon):
