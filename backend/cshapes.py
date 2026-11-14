@@ -121,6 +121,42 @@ def _apply_colony_fixes(rows, gw):
                 r["geom"] = mapping(ng)
 
 
+def _append_kurils(extras, data_dir):
+    """千岛群岛。CShapes 没有这条岛链的多边形：1930 年择捉、国后点不到任何范围，幌筵落在苏联多边形里。
+
+    海岸取 Natural Earth 1:10m（公有领域）里代表点落在东经 145.2–157.2、北纬 43.2–51.05 的俄罗斯碎块和微型岛，
+    是现代岸线，不是 1930 年的测绘。精度记为大致。
+    1875-05-07 签署、1875-08-22 在东京交换批准书，整链归日本。归属从交换批准书当天起算。
+    这套底图 1886-01-01 才改用 CShapes，岛链从这一天起出现在地图上。
+    https://en.wikipedia.org/wiki/Treaty_of_Saint_Petersburg_(1875)
+    1945-08-18 苏军开始登陆，9 月 1 日登陆国后、色丹，9 月 4 日以后其余小岛也被占领。没有逐岛的每日界线。
+    整链维持日本到 1945-09-04，9 月 5 日起不再画成日本，也不另造苏联疆域。
+    https://en.wikipedia.org/wiki/Invasion_of_the_Kuril_Islands
+    """
+    p = data_dir / "curated" / "geom" / "kuril_islands.geojson"
+    if not p.exists():
+        return
+    import json
+    gj = json.loads(p.read_text(encoding="utf-8"))
+    geom = gj.get("geometry") if isinstance(gj, dict) else None
+    if not geom:
+        return
+    extras.append({
+        "name": "Kuril Islands",
+        "name_zh": "千岛群岛",
+        "label_zh": "千岛群岛",
+        "qid": "Q188712",
+        "from": 18750822,
+        "to": 19450905,
+        "approx": True,
+        "precision": 1,
+        "src": "Natural Earth 1:10m 岸线（公有领域），不是历史测绘。"
+               "https://en.wikipedia.org/wiki/Treaty_of_Saint_Petersburg_(1875) ；"
+               "https://en.wikipedia.org/wiki/Invasion_of_the_Kuril_Islands",
+        "geom": geom,
+    })
+
+
 class CShapes:
     def __init__(self, store, data_dir):
         self.store = store
@@ -131,6 +167,7 @@ class CShapes:
         self.extras = d.get("extras", [])
         self.gw = {int(k): v for k, v in (d.get("gw") or {}).items()}
         _apply_colony_fixes(self.rows, self.gw)
+        _append_kurils(self.extras, data_dir)
         self.source = d.get("source")
         marks = {LO}
         for r in self.rows + self.extras:
@@ -236,7 +273,7 @@ class CShapes:
             h = hashlib.sha1()
             here = Path(__file__).parent
             files = [here / "cshapes.py", here / "ww2.py", here / "transitions.py"]
-            for pat in ("cshapes.json*", "ww2_europe.json*", "transitions.json*", "control_zones.json*", "curated/war_fronts_hist.json"):
+            for pat in ("cshapes.json*", "ww2_europe.json*", "transitions.json*", "control_zones.json*", "curated/war_fronts_hist.json", "curated/geom/kuril_islands.geojson"):
                 files += sorted(Path(config.DATA_DIR).glob(pat))
             for f in files:
                 try:
@@ -334,8 +371,11 @@ class CShapes:
                 g = self.row_geom(("x", j), e)
                 cut(g)
                 fid = OFF_EXTRA + j
-                feats[fid] = {"props": {"fid": fid, "NAME": e["name"], "NAME_ZH": e.get("name_zh"), "QID": e["qid"], "SRC": e.get("src"),
-                                        "BORDERPRECISION": 2 if e.get("approx") else 3, "APPROX": e.get("approx")}, "geom": g}
+                props = {"fid": fid, "NAME": e["name"], "NAME_ZH": e.get("name_zh"), "QID": e["qid"], "SRC": e.get("src"),
+                         "BORDERPRECISION": e.get("precision") or (2 if e.get("approx") else 3), "APPROX": e.get("approx")}
+                if e.get("label_zh"):
+                    props["LABEL_ZH"] = e["label_zh"]
+                feats[fid] = {"props": props, "geom": g}
                 origin[fid] = ("csx", j)
         # 特殊地位领土（与过渡层同一份数据）
         T = self.store.trans

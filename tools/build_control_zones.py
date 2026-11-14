@@ -10,6 +10,7 @@ from __future__ import annotations
 
 import gzip
 import json
+import lzma
 import sys
 from pathlib import Path
 
@@ -104,8 +105,12 @@ def main():
         rec["bbox"] = [round(x, 4) for x in g.bounds]
         out.append(rec)
         print(f"{z['id']:32} parts={len(parts(g)):3} area={g.area:8.3f} bbox={rec['bbox']}")
-    with gzip.open(config.DATA_DIR / "control_zones.json.gz", "wt", encoding="utf-8") as fh:
-        json.dump({"zones": out}, fh, ensure_ascii=False, separators=(",", ":"))
+    payload = json.dumps({"zones": out}, ensure_ascii=False, separators=(",", ":")).encode("utf-8")
+    # 运行时优先读同名 .xz。只写 .gz 时，地图仍用旧的 .xz。
+    with gzip.open(config.DATA_DIR / "control_zones.json.gz", "wb") as fh:
+        fh.write(payload)
+    with lzma.open(config.DATA_DIR / "control_zones.json.xz", "wb", preset=9) as fh:
+        fh.write(payload)
     print("zones:", len(out))
 
 

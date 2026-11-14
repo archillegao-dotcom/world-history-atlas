@@ -359,47 +359,109 @@
    "precision": 1
   },
   {
-   "id": "kmt_burma_1950_1961",
+   "id": "kmt_tachileik_1950",
    "group": "chinese_civil_war",
    "kind": "armed_presence",
    "as_polity": false,
-   "name_zh": "国民革命军残部（李弥部）活动区（缅甸掸邦）",
-   "name_en": "KMT remnant forces in Shan State, Burma",
+   "activity_only": true,
+   "name_zh": "云南反共救国军（李弥部）活动点（大其力）",
+   "name_en": "Li Mi remnant activity point at Tachileik",
    "controller": {
     "qid": "Q865",
     "zh": "中华民国（国民革命军残部）"
    },
-   "from": "1950",
+   "from": "1950-01-01",
+   "until": "1950-03-01",
+   "geometry": {
+    "polygon": [
+     [99.87583, 20.43278],
+     [99.91583, 20.43278],
+     [99.91583, 20.47278],
+     [99.87583, 20.47278],
+     [99.87583, 20.43278]
+    ]
+   },
+   "activity_points": [
+    {"name_zh": "大其力", "lat": 20.45278, "lon": 99.89583, "source": "https://en.wikipedia.org/wiki/Tachileik"}
+   ],
+   "approx": true,
+   "dates_note": "英文维基「Kuomintang in Burma」记残部 1949 年 12 月末至 1950 年 1 月初越过边境，驻在景栋邦的大其力。12 月没有可画的范围，从 1950-01-01 起只标这个活动点。到 1950 年 3 月的「景栋城与大其力之间」没有写日，3 月 1 日起改画那一条包络。这不是 3 月 1 日零时的界线。",
+   "note": "活动点，不是疆域，也不是主权。不是云南全省。城镇坐标见英文维基「Tachileik」。昆明不在此范围。云南一侧当日界线未考，不画。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Kuomintang_in_Burma",
+    "https://en.wikipedia.org/wiki/Tachileik",
+    "https://cdn.un.org/unyearbook/yun/pdf/1953/1953_171.pdf"
+   ]
+  },
+  {
+   "id": "kmt_kengtung_tachileik_1950",
+   "group": "chinese_civil_war",
+   "kind": "armed_presence",
+   "as_polity": false,
+   "name_zh": "云南反共救国军（李弥部）活动（景栋—大其力）",
+   "name_en": "Li Mi remnant activity between Kengtung and Tachileik",
+   "controller": {
+    "qid": "Q865",
+    "zh": "中华民国（国民革命军残部）"
+   },
+   "from": "1950-03-01",
+   "until": "1950-07-01",
+   "geometry": {
+    "polygon": [
+     [99.60833, 20.45278],
+     [99.89583, 20.45278],
+     [99.89583, 21.29167],
+     [99.60833, 21.29167],
+     [99.60833, 20.45278]
+    ]
+   },
+   "activity_points": [
+    {"name_zh": "景栋", "lat": 21.29167, "lon": 99.60833, "source": "https://en.wikipedia.org/wiki/Kengtung"},
+    {"name_zh": "大其力", "lat": 20.45278, "lon": 99.89583, "source": "https://en.wikipedia.org/wiki/Tachileik"}
+   ],
+   "approx": true,
+   "dates_note": "英文维基「Kuomintang in Burma」写到 1950 年 3 月时约 1500 人在景栋城与大其力之间，没有 3 月 16 日的分界测绘。包络从 1950-03-01 起显示，表示这个月的记载，不是当天测得的控制线。1950 年 6 月缅甸政府要求离境，随后攻占大其力，7 月改驻孟萨。7 月没有日，1950-07-01 起不再画这条包络。",
+   "note": "武装存在，不是主权，不是疆域。不是云南全省，也不是缅甸北部全部。方框只是景栋与大其力两个城镇坐标的经纬包络，活动点才是有坐标的地点。昆明不在此范围。云南一侧当日界线未考，不画。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Kuomintang_in_Burma",
+    "https://en.wikipedia.org/wiki/Kengtung",
+    "https://en.wikipedia.org/wiki/Tachileik",
+    "https://cdn.un.org/unyearbook/yun/pdf/1953/1953_171.pdf"
+   ]
+  },
+  {
+   "id": "kmt_monghsat_1950_1961",
+   "group": "chinese_civil_war",
+   "kind": "armed_presence",
+   "as_polity": false,
+   "activity_only": true,
+   "name_zh": "云南反共救国军（李弥部）活动点（孟萨）",
+   "name_en": "Li Mi remnant activity point at Mong Hsat",
+   "controller": {
+    "qid": "Q865",
+    "zh": "中华民国（国民革命军残部）"
+   },
+   "from": "1950-07-01",
    "until": "1961-04-17",
    "geometry": {
     "polygon": [
-     [
-      98.7,
-      20.3
-     ],
-     [
-      99.9,
-      20.3
-     ],
-     [
-      99.9,
-      21.5
-     ],
-     [
-      98.7,
-      21.5
-     ],
-     [
-      98.7,
-      20.3
-     ]
+     [99.23, 20.513],
+     [99.27, 20.513],
+     [99.27, 20.553],
+     [99.23, 20.553],
+     [99.23, 20.513]
     ]
    },
+   "activity_points": [
+    {"name_zh": "孟萨", "lat": 20.533, "lon": 99.25, "source": "https://en.wikipedia.org/wiki/Mong_Hsat"}
+   ],
    "approx": true,
-   "dates_note": "起始只写到年，从 1950-01-01 起显示，不是要到年中才出现。1961-04-17 起不再显示。英文维基「Kuomintang in Burma」为辅助。",
-   "note": "武装存在，不是主权。不是云南全省，也不是缅甸北部全部。只画景栋、孟萨一带的大致范围。昆明不在此范围。",
+   "dates_note": "英文维基「Kuomintang in Burma」记 1950 年 7 月在孟萨设新基地，没有日。从 1950-07-01 起只标活动点，不是说当天零时已经进驻。同一页写 1961 年 3 月 31 日至 4 月 17 日台湾撤出约 4400 人。1961-04-17 起不再画。留下的人没有另造范围。1952 年以后在掸邦的扩展没有精确边界，不另画。",
+   "note": "活动点，不是疆域，也不是主权。不是云南全省，也不是缅甸北部全部。孟萨坐标见英文维基「Mong Hsat」。昆明不在此范围。",
    "sources": [
-    "https://en.wikipedia.org/wiki/Kuomintang_in_Burma"
+    "https://en.wikipedia.org/wiki/Kuomintang_in_Burma",
+    "https://en.wikipedia.org/wiki/Mong_Hsat",
+    "https://cdn.un.org/unyearbook/yun/pdf/1953/1953_171.pdf"
    ]
   },
   {

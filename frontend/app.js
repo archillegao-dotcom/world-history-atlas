@@ -603,7 +603,7 @@
     const gj = geoCache[snap];
     if (layer) map.removeLayer(layer);
     layer = L.geoJSON(gj, {
-      style: (f) => styleFor(f, state.fid === f.properties.fid && !state.world),
+      style: (f) => styleFor(f, selectedFid(f.properties.fid)),
       onEachFeature: (f, l) => {
         const p = f.properties;
         l.bindTooltip(() => esc(pnameF(p)) + (p.SUBJECTO && p.SUBJECTO !== p.NAME ? `<br><small>从属于：${esc(pnameN(p.SUBJECTO))}</small>` : "") +
@@ -660,7 +660,7 @@
   // 多边形名称按所选日期解析（同一张快照内朝代/政权也会变化，如 900 年快照内唐→后梁）
   let namesKey = null;
   async function loadNames(snap) {
-    const key = `${snap}|${state.date.y}|${state.date.m}`;
+    const key = `${snap}|${state.date.y}|${state.date.m}|${state.date.d}`;
     if (key === namesKey) return;
     namesKey = key;
     snapNames[snap] = await api(`/api/snapshot_names/${snap}?date=${dateParam(state.date)}`).catch(() => ({}));
@@ -809,10 +809,32 @@
   }
 
   // ---------------------------------------------------------------- 侧边栏
+  // 同日解析到同一政权编号的多边形一并高亮。宗主国回退（method=owner）是单独属地，不并进本土。
+  let selCacheKey = "", selCache = new Set();
+  function selectionSet() {
+    const key = `${state.snap}|${state.fid}|${state.world}|${namesKey}`;
+    if (key === selCacheKey) return selCache;
+    const out = new Set();
+    if (!state.world && state.fid != null) {
+      out.add(state.fid);
+      const names = snapNames[state.snap] || {};
+      const me = names[String(state.fid)];
+      if (me && me.qid && me.method !== "owner") {
+        for (const [id, rec] of Object.entries(names)) {
+          if (rec && rec.qid === me.qid && rec.method !== "owner") out.add(Number(id));
+        }
+      }
+    }
+    selCacheKey = key;
+    selCache = out;
+    return out;
+  }
+  function selectedFid(fid) { return selectionSet().has(fid); }
+
   function restyle() {
-    if (layer) layer.eachLayer((l) => l.setStyle && l.setStyle(styleFor(l.feature, state.fid === l.feature.properties.fid && !state.world)));
+    if (layer) layer.eachLayer((l) => l.setStyle && l.setStyle(styleFor(l.feature, selectedFid(l.feature.properties.fid))));
     if (tinyLayer) tinyLayer.eachLayer((m) => {
-      const sel = state.fid === m.feature.properties.fid && !state.world;
+      const sel = selectedFid(m.feature.properties.fid);
       m.setStyle({ fillColor: styleFor(m.feature, false).fillColor || "#ddd", color: sel ? (strategyOn() ? "#e6d3a1" : "#8a1c00") : (strategyOn() ? "#f4efe6" : "#555"), weight: sel ? 2.5 : 1.5 });
       m.setRadius(strategyOn() ? 5 : 5);
     });
@@ -838,6 +860,8 @@
     refreshPanelData();
     updateHash();
   }
+  WHA.selectPolity = selectPolity;
+  WHA.linkedFids = () => [...selectionSet()];
 
   let reqSeq = 0;
   const results = {};
@@ -846,8 +870,10 @@
     const f = state.world ? null : featByFid(state.snap, state.fid);
     const p = f?.properties;
     $("polityName").textContent = state.world ? "全世界" : pnameF(p);
+    const linkedN = state.world ? 0 : selectionSet().size;
     $("polityMeta").innerHTML = state.world ? `${dateZh(state.date)} 前后 · 全球范围` :
       `${dateZh(state.date)} · 边界快照 ${yearZh(state.base ?? state.snap)}${String(state.snap).includes("@") ? "（含过渡修正）" : ""}` +
+      (linkedN > 1 ? `<br>同日同一政权编号还有 ${linkedN - 1} 块范围已一并高亮` : "") +
       (p?.NAME && (snapNames[state.snap]?.[String(p.fid)]?.zh || snapNames[state.snap]?.[String(p.fid)]?.title) ? ` · <span class="basename" title="边界数据中该多边形的原名">底图名称：${esc(p.NAME)}</span>` : "") +
       (p?.SUBJECTO && p.SUBJECTO !== p.NAME ? `<br>从属于：${esc(pnameN(p.SUBJECTO))}` : "") +
       (p?.PARTOF && p.PARTOF !== p.NAME && p.PARTOF !== p.SUBJECTO ? ` · 属于：${esc(pnameN(p.PARTOF))}` : "") +

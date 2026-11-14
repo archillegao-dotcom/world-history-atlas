@@ -48,7 +48,9 @@ class ControlZonesLayer(LayerModule):
             out.append({"id": z["id"], "name": name, "en": z.get("name_en"), "kind": z["kind"], "kind_zh": kind_zh,
                         "controller": ctrl, "from": z.get("from"), "until": z.get("until"), "approx": bool(z.get("approx")),
                         "dates_note": dates_note, "note": z.get("note"), "sources": z.get("sources", []),
-                        "as_polity": bool(z.get("as_polity")), "label": z["_label"], "geom": z["geom"]})
+                        "as_polity": bool(z.get("as_polity")), "activity_only": bool(z.get("activity_only")),
+                        "activity_points": z.get("activity_points") or [],
+                        "label": z["_label"], "geom": z["geom"]})
         return {"items": out, "total": len(out),
                 "note": "实际控制区只覆盖已人工整理的冲突。西藏1913年起才单列；1950年10月2日以后不把整块涂成已经易手。灰色表示数据不足，不是无人统治，也不是已经重建的实控线。声索样本是虚线小框，不是边界，也不改底图颜色。其他地区没有画不代表没有。只选年份、不选月份时，按这一年的年中判断。"}
 

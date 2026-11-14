@@ -297,3 +297,7 @@ TNO / 钢铁雄心 IV 风格地图。用户 2026-11-03 提出，2026-11-08 再�
 用户在 `c03302f` 上手动运行 Build apps。[run 42478065977](https://github.com/archillegao-dotcom/world-history-atlas/actions/runs/42478065977) 的结论是 `startup_failure`，任务数是 0，没有日志，也没有产物。页面注解：第 35 行 `Unrecognized named-value: 'matrix'`。任务级 `if` 不能读 `matrix`，所以工作流在创建任务之前就停了。这是配置错误。同一仓库在 2026-11-01 和 11-02 用 `macos-15-intel` 与 `windows-latest` 成功打过包，这次没有改这两个 runner，也没有改成付费的大号 runner。
 
 修正：手动运行且 `include_arm64` 为关时，矩阵里只有 Intel。打 tag，或手动勾选，才把 arm64 放进矩阵。发布任务仍然只在 tag 上执行。本地用 actionlint 1.7.7 检查过当前文件，退出码 0；把被拒绝的 `if` 放回去时，它报 `context "matrix" is not allowed here`。还没有新的 zip，没有文件名、大小或 SHA256。不要重跑 42478065977。86 条样本和失败即退出码 1 没有改。没有合并，没有打 tag，没有公开发布。
+
+## 下一版本
+
+2026-11-14 起的十二项验收矩阵写在 `docs/REQUIREMENTS_NEXT.md`。本文件不改写上面已经记下的 0.6.2 核对结果。
