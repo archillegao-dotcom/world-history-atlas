@@ -195,8 +195,13 @@ def main():
         terr.append(rec)
     out = {"events": events, "territories": terr}
     import gzip
+    import lzma
+    payload = json.dumps(out, ensure_ascii=False, separators=(",", ":"))
     with gzip.open(config.DATA_DIR / "transitions.json.gz", "wt", encoding="utf-8") as fh:
-        json.dump(out, fh, ensure_ascii=False, separators=(",", ":"))
+        fh.write(payload)
+    # 运行时优先读同名 .xz。只写 .gz 时，地图仍用旧的 .xz。
+    with lzma.open(config.DATA_DIR / "transitions.json.xz", "wt", preset=9) as fh:
+        fh.write(payload)
     print("events:", len(events), "by kind:", {k: sum(e["kind"] == k for e in events) for k in ("inception", "dissolution")},
           "territories:", len(terr))
     for e in events:

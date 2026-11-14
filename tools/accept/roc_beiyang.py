@@ -250,5 +250,18 @@ cc19 = place("1948-10-19", 43.884, 125.324)
 check("1948-10-18 长春还不是中国共产党", cc18["place"]["actual"] != "中国共产党", cc18["place"])
 check("1948-10-19 长春实控是中国共产党", cc19["place"]["name"] == "吉林" and cc19["place"]["actual"] == "中国共产党", cc19["place"])
 
+words = json.loads((ROOT / "data/curated/roc_beiyang.json").read_text(encoding="utf-8"))
+yangtze = next(w for w in words["wars"] if w.get("id") == "yangtze-1949")
+check("渡江战役两侧写共军", yangtze["sides"] == "共军 / 汤恩伯、白崇禧所部" and "解放军" not in yangtze["sides"], yangtze["sides"])
+sanqu = next(w for w in words["wars"] if w.get("id") == "sanqu-1944")
+check("三区说明写沦陷", "1949-09-25沦陷" in sanqu["note"] and "和平解放" not in sanqu["note"], sanqu["note"][-40:])
+admin = json.loads((ROOT / "data/curated/roc_admin.json").read_text(encoding="utf-8"))
+xinjiang = next(u for u in admin["units"] if u["id"] == "xinjiang")
+xin_note = xinjiang["controls"][-1]["note"]
+check("新疆省界说明写沦陷", "新疆沦陷" in xin_note and "和平解放" not in xin_note and "解放军" not in xin_note, xin_note[:40])
+zones = json.loads((ROOT / "data/curated/control_zones.json").read_text(encoding="utf-8"))["zones"]
+ne_names = [z["name_zh"] for z in zones if z["id"].startswith("ccw_ne_ccp_")]
+check("东北四块写沦陷区", ne_names and all(n.startswith("东北沦陷区") and "解放区" not in n and "解放军" not in n for n in ne_names), ne_names)
+
 print(f"FAILS {len(fails)}")
 sys.exit(1 if fails else 0)

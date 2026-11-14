@@ -64,7 +64,7 @@
     {"sid": "27", "id": "xinjiang", "name": "新疆", "controls": [
       {"from": "1933-04-12", "until": "1944-09-11", "nominal": "南京国民政府", "actual": "盛世才", "note": "1933-04-12兵变。1944-09-11离开新疆。省内分界不画。", "sources": ["https://zh.wikipedia.org/wiki/盛世才"]}
     ,
-      {"from": "1949-09-25", "until": "1950-01-01", "nominal": "南京国民政府", "actual": "中国共产党", "note": "1949-09-25新疆和平解放。1933-04-12至1944-09-11的盛世才不改。省内分界不画。三区只标县城。省级大致，按省会这一天，不是逐县。未核对《中華民國史事紀要》。", "sources": ["https://zh.wikipedia.org/wiki/三区革命", "https://en.wikipedia.org/wiki/Chinese_Civil_War"]}
+      {"from": "1949-09-25", "until": "1950-01-01", "nominal": "南京国民政府", "actual": "中国共产党", "note": "1949-09-25新疆沦陷。1933-04-12至1944-09-11的盛世才不改。省内分界不画。三区只标县城。省级大致，按省会这一天，不是逐县。未核对《中華民國史事紀要》。", "sources": ["https://zh.wikipedia.org/wiki/三区革命", "https://en.wikipedia.org/wiki/Chinese_Civil_War"]}
     ]},
     {"sid": "25", "id": "sichuan", "name": "四川", "line_note": "省内各部的分界待考，不画。", "controls": [
       {"from": "1935-07-01", "until": "1938-01-20", "nominal": "南京国民政府", "actual": "川军（刘湘）", "note": "只知道1935年主川，按7月1日，不是到任日。1938-01-20刘湘去世。", "sources": ["https://zh.wikipedia.org/wiki/刘湘"]}

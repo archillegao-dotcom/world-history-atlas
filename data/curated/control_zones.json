@@ -7,7 +7,7 @@
   "as_polity：true 时该区域在地图上作为一个单独政权多边形参与点击/面板（解析为 controller），false 时只作为叠加层显示。",
   "geometry：几何规格（tools/build_control_zones.py 解析）：admin1（Natural Earth 1:10m 一级行政区 ISO 3166-2 代码）、",
   "  admin0_parts {a3, bbox, max_area}（Natural Earth 1:10m 国家多边形中落在 bbox 内的岛屿部分）、basemap {snap, name}（historical-basemaps 快照多边形）、",
-  "  polygon（手绘近似多边形 [[经度, 纬度], …]）、geojson（相对 data/ 的文件）；可加 intersect_bbox [minx, miny, maxx, maxy] 与 minus（另一个几何规格）。",
+  "  polygon（手绘近似多边形 [[经度, 纬度], …]）、geojson（相对 data/ 的文件）、roc_ids（ENP-China 历史省 id，与虚线省界同一套几何）；可加 intersect_bbox [minx, miny, maxx, maxy] 与 minus（另一个几何规格）。nosimplify 为 true 时不再做第二遍简化。",
   "approx：true 表示范围为近似（地图上标注「大致范围」）；dates_note / note：日期与范围的说明；sources：来源网址（国际学术/百科来源为主，中文资料只作辅助）。",
   "  union [规格, …]：在以上结果上再并入其他几何规格。",
   "geometry 另可用 cshapes {gw:[…], date}（CShapes 2.0 该日期有效的行）与 intersect（与另一几何规格求交）。"
@@ -27,16 +27,12 @@
    "from": "1949-10-01",
    "until": "1949-12-09",
    "geometry": {
-    "admin1": [
-     "CN-SC",
-     "CN-CQ",
-     "CN-GZ",
-     "CN-YN"
-    ]
+    "roc_ids": ["sichuan", "xikang", "guizhou", "yunnan"],
+    "nosimplify": true
    },
    "approx": true,
-   "dates_note": "中华人民共和国 1949-10-01 成立时，西南四省（四川、西康、贵州、云南）仍由中华民国政府控制，重庆 1949 年 11 月下旬前为其陪都/临时首都；共军 1949-11-01 发起西南战役，1949-12-09 云南卢汉、12-11 西康刘文辉等起义，12 月成都战役结束后西南大陆为中华人民共和国控制。云南从1949-12-09起不再放在这块里。四川、重庆、贵州另见下一块，仍显示到1949年12月底。",
-   "note": "范围用现代四川、重庆、贵州、云南省界近似（1949 年的西康省今分属四川与西藏东部）；交战期间实际控制线不断变化。",
+   "dates_note": "中华人民共和国 1949-10-01 成立时，西南四省（四川、西康、贵州、云南）仍由中华民国政府控制，重庆 1949 年 11 月下旬前为其陪都/临时首都；共军 1949-11-01 发起西南战役，1949-12-09 云南卢汉、12-11 西康刘文辉等起义，12 月成都战役结束后西南大陆为中华人民共和国控制。云南从1949-12-09起不再放在这块里。四川、贵州另见下一块，仍显示到1949年12月底。西康从1949-12-09起不放在下一块里。",
+   "note": "范围是 ENP-China 历史省界：四川、西康、贵州、云南。重庆在当时的四川界内，不另用今天的重庆直辖市。不是逐县。",
    "sources": [
     "https://en.wikipedia.org/wiki/Chongqing",
     "https://en.wikipedia.org/wiki/Chengdu_campaign",
@@ -58,15 +54,12 @@
    "from": "1949-12-09",
    "until": "1949-12",
    "geometry": {
-    "admin1": [
-     "CN-SC",
-     "CN-CQ",
-     "CN-GZ"
-    ]
+    "roc_ids": ["sichuan", "guizhou"],
+    "nosimplify": true
    },
    "approx": true,
-   "dates_note": "云南1949-12-09卢汉起义，从这一天起不再放在西南这块里。四川、重庆、贵州仍显示到1949年12月底。成都入城是12月30日，不提前。西康没有单独多边形。",
-   "note": "范围用现代四川、重庆、贵州省界近似。不是逐县控制线。",
+   "dates_note": "云南1949-12-09卢汉起义，从这一天起不再放在西南这块里。四川、贵州仍显示到1949年12月底。成都入城是12月30日，不提前。西康用历史省界，1949-12-09起不放在这块里。",
+   "note": "范围是 ENP-China 历史省界：四川、贵州。不是逐县。",
    "sources": [
     "https://zh.wikipedia.org/wiki/西南战役",
     "https://zh.wikipedia.org/wiki/成都战役",
@@ -2506,199 +2499,7 @@
    ],
    "note": "北界按普兰店湾—皮口一线近似（±15 km）。"
   },
-  {
-   "id": "ccw_ccp_1949_1",
-   "group": "wars_misc",
-   "kind": "occupied",
-   "as_polity": true,
-   "name_zh": "共军控制区（1949 年，省级近似）",
-   "name_en": "Communist-held area (1949, province-level approx.)",
-   "controller": {
-    "qid": "Q17427",
-    "zh": "中国共产党"
-   },
-   "from": "1949-01-31",
-   "until": "1949-04-23",
-   "geometry": {
-    "admin1": [
-     "CN-BJ",
-     "CN-TJ",
-     "CN-HE",
-     "CN-SD",
-     "CN-HA",
-     "CN-SX"
-    ]
-   },
-   "approx": true,
-   "dates_note": "1949-01-31 共军进入北平（平津战役结束）；山东、河南、河北、山西大部此前已归共军（太原 1949-04-24）。以省为单位、按省会易手日期近似；省内各地易手时间不一。1949-10-01 起显示中华人民共和国。",
-   "sources": [
-    "https://en.wikipedia.org/wiki/Pingjin_campaign",
-    "https://en.wikipedia.org/wiki/Yangtze_River_Crossing_campaign",
-    "https://en.wikipedia.org/wiki/Chinese_Civil_War"
-   ],
-   "note": "精度：省级。东北另见 ccw_manchuria 组。"
-  },
-  {
-   "id": "ccw_ccp_1949_2",
-   "group": "wars_misc",
-   "kind": "occupied",
-   "as_polity": true,
-   "name_zh": "共军控制区（1949 年，省级近似）",
-   "name_en": "Communist-held area (1949, province-level approx.)",
-   "controller": {
-    "qid": "Q17427",
-    "zh": "中国共产党"
-   },
-   "from": "1949-04-23",
-   "until": "1949-05-27",
-   "geometry": {
-    "admin1": [
-     "CN-BJ",
-     "CN-TJ",
-     "CN-HE",
-     "CN-SD",
-     "CN-HA",
-     "CN-SX",
-     "CN-JS",
-     "CN-AH"
-    ]
-   },
-   "approx": true,
-   "dates_note": "1949-01-31 共军进入北平（平津战役结束）；山东、河南、河北、山西大部此前已归共军（太原 1949-04-24）；1949-04-23 共军渡江攻占南京。以省为单位、按省会易手日期近似；省内各地易手时间不一。1949-10-01 起显示中华人民共和国。",
-   "sources": [
-    "https://en.wikipedia.org/wiki/Pingjin_campaign",
-    "https://en.wikipedia.org/wiki/Yangtze_River_Crossing_campaign",
-    "https://en.wikipedia.org/wiki/Chinese_Civil_War"
-   ],
-   "note": "精度：省级。东北另见 ccw_manchuria 组。"
-  },
-  {
-   "id": "ccw_ccp_1949_3",
-   "group": "wars_misc",
-   "kind": "occupied",
-   "as_polity": true,
-   "name_zh": "共军控制区（1949 年，省级近似）",
-   "name_en": "Communist-held area (1949, province-level approx.)",
-   "controller": {
-    "qid": "Q17427",
-    "zh": "中国共产党"
-   },
-   "from": "1949-05-27",
-   "until": "1949-08-26",
-   "geometry": {
-    "admin1": [
-     "CN-BJ",
-     "CN-TJ",
-     "CN-HE",
-     "CN-SD",
-     "CN-HA",
-     "CN-SX",
-     "CN-JS",
-     "CN-AH",
-     "CN-SH",
-     "CN-ZJ",
-     "CN-HB",
-     "CN-JX",
-     "CN-SN"
-    ]
-   },
-   "approx": true,
-   "dates_note": "1949-01-31 共军进入北平（平津战役结束）；山东、河南、河北、山西大部此前已归共军（太原 1949-04-24）；1949-04-23 共军渡江攻占南京；杭州 5-3、武汉 5-16、西安 5-20、南昌 5-22、上海 5-27。以省为单位、按省会易手日期近似；省内各地易手时间不一。1949-10-01 起显示中华人民共和国。",
-   "sources": [
-    "https://en.wikipedia.org/wiki/Pingjin_campaign",
-    "https://en.wikipedia.org/wiki/Yangtze_River_Crossing_campaign",
-    "https://en.wikipedia.org/wiki/Chinese_Civil_War"
-   ],
-   "note": "精度：省级。东北另见 ccw_manchuria 组。"
-  },
-  {
-   "id": "ccw_ccp_1949_4",
-   "group": "wars_misc",
-   "kind": "occupied",
-   "as_polity": true,
-   "name_zh": "共军控制区（1949 年，省级近似）",
-   "name_en": "Communist-held area (1949, province-level approx.)",
-   "controller": {
-    "qid": "Q17427",
-    "zh": "中国共产党"
-   },
-   "from": "1949-08-26",
-   "until": "1949-09-25",
-   "geometry": {
-    "admin1": [
-     "CN-BJ",
-     "CN-TJ",
-     "CN-HE",
-     "CN-SD",
-     "CN-HA",
-     "CN-SX",
-     "CN-JS",
-     "CN-AH",
-     "CN-SH",
-     "CN-ZJ",
-     "CN-HB",
-     "CN-JX",
-     "CN-SN",
-     "CN-HN",
-     "CN-FJ",
-     "CN-GS"
-    ]
-   },
-   "approx": true,
-   "dates_note": "1949-01-31 共军进入北平（平津战役结束）；山东、河南、河北、山西大部此前已归共军（太原 1949-04-24）；1949-04-23 共军渡江攻占南京；杭州 5-3、武汉 5-16、西安 5-20、南昌 5-22、上海 5-27；长沙 8-4（和平易手）、福州 8-17、兰州 8-26。以省为单位、按省会易手日期近似；省内各地易手时间不一。1949-10-01 起显示中华人民共和国。",
-   "sources": [
-    "https://en.wikipedia.org/wiki/Pingjin_campaign",
-    "https://en.wikipedia.org/wiki/Yangtze_River_Crossing_campaign",
-    "https://en.wikipedia.org/wiki/Chinese_Civil_War"
-   ],
-   "note": "精度：省级。东北另见 ccw_manchuria 组。"
-  },
-  {
-   "id": "ccw_ccp_1949_5",
-   "group": "wars_misc",
-   "kind": "occupied",
-   "as_polity": true,
-   "name_zh": "共军控制区（1949 年，省级近似）",
-   "name_en": "Communist-held area (1949, province-level approx.)",
-   "controller": {
-    "qid": "Q17427",
-    "zh": "中国共产党"
-   },
-   "from": "1949-09-25",
-   "until": "1949-10-01",
-   "geometry": {
-    "admin1": [
-     "CN-BJ",
-     "CN-TJ",
-     "CN-HE",
-     "CN-SD",
-     "CN-HA",
-     "CN-SX",
-     "CN-JS",
-     "CN-AH",
-     "CN-SH",
-     "CN-ZJ",
-     "CN-HB",
-     "CN-JX",
-     "CN-SN",
-     "CN-HN",
-     "CN-FJ",
-     "CN-GS",
-     "CN-QH",
-     "CN-NX",
-     "CN-XJ"
-    ]
-   },
-   "approx": true,
-   "dates_note": "1949-01-31 共军进入北平（平津战役结束）；山东、河南、河北、山西大部此前已归共军（太原 1949-04-24）；1949-04-23 共军渡江攻占南京；杭州 5-3、武汉 5-16、西安 5-20、南昌 5-22、上海 5-27；长沙 8-4（和平易手）、福州 8-17、兰州 8-26；西宁 9-5、银川 9-23、新疆 9-25 和平易手。以省为单位、按省会易手日期近似；省内各地易手时间不一。1949-10-01 起显示中华人民共和国。",
-   "sources": [
-    "https://en.wikipedia.org/wiki/Pingjin_campaign",
-    "https://en.wikipedia.org/wiki/Yangtze_River_Crossing_campaign",
-    "https://en.wikipedia.org/wiki/Chinese_Civil_War"
-   ],
-   "note": "精度：省级。东北另见 ccw_manchuria 组。"
-  },
-  {
+            {
    "id": "korea_rok_south_of_38",
    "group": "wars_misc",
    "kind": "holdout",
@@ -3365,9 +3166,8 @@
    "from": "1949-10-01",
    "until": "1949-10-14",
    "geometry": {
-    "admin1": [
-     "CN-GD"
-    ]
+    "roc_ids": ["guangdong"],
+    "nosimplify": true
    },
    "approx": true,
    "note": "共军 1949-10-14 进入广州（广东战役）；此后粤中、粤西陆续易手，范围与结束日期为近似（以广州失守为界）。不含海南（另见海南岛区域）。",
@@ -3390,9 +3190,8 @@
    "from": "1949-10-01",
    "until": "1949-12-04",
    "geometry": {
-    "admin1": [
-     "CN-GX"
-    ]
+    "roc_ids": ["guangxi"],
+    "nosimplify": true
    },
    "approx": true,
    "note": "广西战役：共军 1949-11-22 占桂林，12-04 占南宁；以南宁失守为界，范围为近似。",
@@ -11749,7 +11548,7 @@
    "group": "ccw_manchuria",
    "kind": "de_facto",
    "as_polity": true,
-   "name_zh": "东北解放区（共军控制，大致范围）",
+   "name_zh": "东北沦陷区（共军控制，大致范围）",
    "name_en": "CCP-held northern Manchuria",
    "controller": {
     "qid": "Q97179246",
@@ -11825,7 +11624,7 @@
    "group": "ccw_manchuria",
    "kind": "de_facto",
    "as_polity": true,
-   "name_zh": "东北解放区（共军控制，大致范围）",
+   "name_zh": "东北沦陷区（共军控制，大致范围）",
    "name_en": "CCP-held Manchuria",
    "controller": {
     "qid": "Q97179246",
@@ -11928,7 +11727,7 @@
    "group": "ccw_manchuria",
    "kind": "de_facto",
    "as_polity": true,
-   "name_zh": "东北解放区（共军控制，大致范围）",
+   "name_zh": "东北沦陷区（共军控制，大致范围）",
    "name_en": "CCP-held Manchuria",
    "controller": {
     "qid": "Q97179246",
@@ -12024,7 +11823,7 @@
    "group": "ccw_manchuria",
    "kind": "de_facto",
    "as_polity": true,
-   "name_zh": "东北解放区（共军控制）",
+   "name_zh": "东北沦陷区（共军控制）",
    "name_en": "CCP-held Manchuria",
    "controller": {
     "qid": "Q97179246",

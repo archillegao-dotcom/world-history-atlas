@@ -181,6 +181,77 @@ await settle(7);
 await checkCase("2000-06-01 巴黎 z5", "2000-06-01", 48.86, 2.35, 5);
 await checkCase("1944-12-01 南京 z5", "1944-12-01", 32.06, 118.8, 5);
 
+const PROV_TOL = 9;
+async function checkProvince(label, date, lat, lon, zoom, namePart) {
+  await openAt(date, lat, lon, zoom);
+  await page.waitForFunction(() => document.querySelectorAll(".leaflet-rocprov-pane path").length > 3, { timeout: 90000 });
+  await selectAt(lat, lon);
+  await page.evaluate(() => WHA.restyle());
+  const m = await page.evaluate(() => {
+    function screenRings(path) {
+      const ctm = path.getScreenCTM();
+      if (!ctm) return [];
+      const nums = [...path.getAttribute("d").matchAll(/-?\d+(?:\.\d+)?/g)].map((x) => Number(x[0]));
+      const cmds = path.getAttribute("d").match(/[MLZmlz]/g) || [];
+      const rings = [];
+      let ring = [], ni = 0;
+      for (const cmd of cmds) {
+        if (cmd === "M" || cmd === "m") {
+          if (ring.length >= 2) rings.push(ring);
+          const s = new DOMPoint(nums[ni], nums[ni + 1]).matrixTransform(ctm);
+          ni += 2;
+          ring = [[s.x, s.y]];
+        } else if (cmd === "L" || cmd === "l") {
+          const s = new DOMPoint(nums[ni], nums[ni + 1]).matrixTransform(ctm);
+          ni += 2;
+          ring.push([s.x, s.y]);
+        }
+      }
+      if (ring.length >= 2) rings.push(ring);
+      return rings;
+    }
+    const outline = [];
+    document.querySelectorAll("path.regime-outline").forEach((path) => outline.push(...screenRings(path)));
+    const prov = [];
+    document.querySelectorAll(".leaflet-rocprov-pane path").forEach((path) => {
+      const dash = path.getAttribute("stroke-dasharray") || "";
+      if (!dash.startsWith("6")) return;
+      prov.push(...screenRings(path));
+    });
+    const box = WHA.map.getContainer().getBoundingClientRect();
+    const inset = [];
+    for (const ring of outline) {
+      for (const [x, y] of ring) {
+        if (x < box.left + 8 || x > box.right - 8 || y < box.top + 8 || y > box.bottom - 8) continue;
+        inset.push([x, y]);
+      }
+    }
+    return { inset, prov, name: document.getElementById("polityName")?.textContent || "" };
+  });
+  const one = hausdorff([m.inset], m.prov);
+  const sorted = [];
+  for (const [x, y] of m.inset) {
+    let best = Infinity;
+    for (const other of m.prov) {
+      for (let i = 0; i < other.length; i++) {
+        const a = other[i], b = other[(i + 1) % other.length];
+        best = Math.min(best, distPointSeg(x, y, a[0], a[1], b[0], b[1]));
+      }
+    }
+    if (best < Infinity) sorted.push(best);
+  }
+  sorted.sort((a, b) => a - b);
+  const median = sorted.length ? sorted[Math.floor(sorted.length / 2)] : Infinity;
+  const ok = m.inset.length >= 8 && m.prov.length > 0 && one.max <= PROV_TOL && median <= 1 && one.n >= 8 && m.name.includes(namePart);
+  const line = `${ok ? "PASS" : "FAIL"} ${label} 红线贴历史省界 最大 ${one.max.toFixed(2)}px 中位 ${median.toFixed(2)}px 顶点 ${one.n} 名称 ${m.name}`;
+  console.log(line);
+  if (!ok) fails.push(line);
+}
+
+await checkProvince("1930-06-01 太原", "1930-06-01", 37.8706, 112.5489, 6, "晋系");
+await checkProvince("1944-12-01 昆明", "1944-12-01", 25.0389, 102.7183, 6, "滇系");
+await checkProvince("1949-09-26 兰州历史省界", "1949-09-26", 36.06, 103.83, 6, "中国共产党");
+
 await page.evaluate(() => document.getElementById("closePanel").click());
 await page.waitForFunction(() => document.querySelectorAll("path.regime-outline").length === 0, { timeout: 10000 }).catch(() => {});
 const left = await page.evaluate(() => document.querySelectorAll("path.regime-outline").length);

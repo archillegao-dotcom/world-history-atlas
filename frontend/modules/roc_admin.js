@@ -33,7 +33,7 @@
         L.geoJSON(row.geom, {
           pane: "rocprov",
           interactive: false,
-          style: { color: stroke, weight: strat ? 1.15 : 1.35, opacity: 0.9, dashArray: "6 4", fill: false },
+          style: { color: stroke, weight: strat ? 1.15 : 1.35, opacity: 0.9, dashArray: "6 4", fill: false, smoothFactor: 0 },
         }).addTo(group);
         if (!row.actual) continue;
         L.marker([row.label[1], row.label[0]], {

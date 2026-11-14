@@ -364,4 +364,8 @@ CHGIS V6 只供学术研究，禁止商业使用和再分发。全国层是 1820
 
 `regime_outline.mjs` 量到的红线和填色边距离是 0.00 像素，换到屏幕坐标后仍是 0.00 像素：1949-09-26 兰州在缩放 6、4、7，2000-06-01 巴黎缩放 5，1944-12-01 南京缩放 5。取消选择后红线消失。截图：1937-12-20 杭州、1930-06-01 四川、1949-11-20 西南，以及同一手机宽度下选中红线的改前和改后。
 
+## 民国史 历史省界填色（2026-11-14，欧洲/巴黎）
+
+上一批红线贴的是填色边，填色本身仍是 Natural Earth 今天的省界，所以红线和虚线对不上。这一批把 1912–1949 年按省记录的实际控制改用 ENP-China 历史省界，和虚线是同一套几何，按控制方合并。1949-10-01 以前的共军控制区、1949-10-01 起的中华人民共和国、西南和两广的守住区都这样画。军阀整省填色放在占领层前面，后来的占领层仍盖住城池。陕甘宁、东北方框、日军占领走廊不改成省界。1930 年太原、1944 年昆明、1949-09-26 兰州这三处，红线在画面内的顶点要落在虚线省界上。用语：显示出来的「人民解放军」改为「共军」，「东北解放区」改为「东北沦陷区」，新疆那一句「和平解放」改为「沦陷」。引文标题和网址不改。
+
 `next_batch1.py` 至 `next_batch9.py`、`roc_beiyang.py`、`occupation_fall.py`、`p0_batch2.py` 至 `p0_batch5.py`、`p0_1941.py` 失败 0。`p0_1941.py` 22/22。`api_mustpass.py` 119/119。满洲 162 个月 failures=0。阵营 72 个快照、1444 次检查、zones-without-bloc=0。`war_audit.py` 86/86，样本没有改。宪法、西藏面板失败 0。`browser_constitutions.mjs`、`browser_batch3.mjs`、`browser_reaudit.mjs`、`browser_batch_next3.mjs` 至 `browser_batch_next8.mjs`、`browser_roc_beiyang.mjs`、`browser_roc_beiyang2.mjs`、`browser_roc_span.mjs` 至 `browser_roc_span4.mjs`、`regime_outline.mjs` 退出码 0。`browser_tibet.mjs` 第一次超时，是因为年份框是 number，连点三次不会选中原文，打进去的数字接到后面；改成先选中再输入，重跑通过。TNO 没有改。没有合并，没有打 tag，没有公开发布。

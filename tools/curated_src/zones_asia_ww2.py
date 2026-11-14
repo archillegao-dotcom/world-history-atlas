@@ -196,19 +196,19 @@ ROC_CORRIDOR_1947 = [[119.8, 40.1], [121.0, 40.6], [121.3, 41.3], [122.0, 41.6],
                      [126.7, 43.7], [125.5, 43.6], [124.6, 43.0], [124.1, 42.1], [123.5, 41.4], [123.3, 40.6], [122.3, 40.3], [121.5, 40.0], [120.5, 39.8]]
 ROC_1948 = [[119.8, 40.1], [121.0, 40.6], [121.3, 41.3], [122.0, 41.6], [123.0, 42.0], [123.7, 42.1], [123.6, 41.5], [123.3, 40.9], [122.3, 40.4], [121.5, 40.0], [120.5, 39.8]]
 CHANGCHUN = [[125.1, 43.75], [125.1, 44.05], [125.5, 44.05], [125.5, 43.75]]
-Z.append(zone("ccw_ne_ccp_1946", "东北解放区（共军控制，大致范围）", "CCP-held northern Manchuria", "Q97179246", "东北行政委员会", "1946-06-07", "1947-05-13", NE_CCP_1946,
+Z.append(zone("ccw_ne_ccp_1946", "东北沦陷区（共军控制，大致范围）", "CCP-held northern Manchuria", "Q97179246", "东北行政委员会", "1946-06-07", "1947-05-13", NE_CCP_1946,
               kind="de_facto", group="ccw_manchuria",
               dates_note="苏军撤出后国共争夺东北；1946-06-07 东北停战令后大致以松花江为界：共军控制哈尔滨（1946-04-28 进入）及松花江以北、吉林东部，国民革命军控制长春、沈阳及南满；1946-08 东北各省市行政联合办事处成立（后称东北行政委员会）。",
               note="以松花江为界的手绘近似（±100 km）；国民革命军控制区仍显示为「中华民国」。", sources=[WP + "Chinese_Civil_War", WP + "Siping_campaign", ZWP + "东北行政委员会_(1946年—1949年)"]))
-Z.append(zone("ccw_ne_ccp_1947", "东北解放区（共军控制，大致范围）", "CCP-held Manchuria", "Q97179246", "东北行政委员会", "1947-05-13", "1948-03-13",
+Z.append(zone("ccw_ne_ccp_1947", "东北沦陷区（共军控制，大致范围）", "CCP-held Manchuria", "Q97179246", "东北行政委员会", "1947-05-13", "1948-03-13",
               {"basemap": {"snap": 1930, "name": "Manchuria"}, "minus": {"polygon": ROC_CORRIDOR_1947}}, kind="de_facto", group="ccw_manchuria",
               dates_note="1947 年夏季、秋季、冬季攻势后，国民革命军只控制北宁、中长铁路沿线的长春—四平—沈阳—锦州走廊（四平 1948-03-13 失守）。",
               note="国民革命军控制走廊为沿铁路的手绘近似（宽约 50–100 km）。", sources=[WP + "Chinese_Civil_War", WP + "Liaoshen_campaign"]))
-Z.append(zone("ccw_ne_ccp_1948", "东北解放区（共军控制，大致范围）", "CCP-held Manchuria", "Q97179246", "东北行政委员会", "1948-03-13", "1948-11-02",
+Z.append(zone("ccw_ne_ccp_1948", "东北沦陷区（共军控制，大致范围）", "CCP-held Manchuria", "Q97179246", "东北行政委员会", "1948-03-13", "1948-11-02",
               {"basemap": {"snap": 1930, "name": "Manchuria"}, "minus": {"polygon": ROC_1948, "union": [{"polygon": CHANGCHUN}]}}, kind="de_facto", group="ccw_manchuria",
               dates_note="1948-03 后国民革命军只剩被围的长春（1948-10-19 投降）与沈阳—锦州走廊；辽沈战役锦州 10-15、沈阳 11-02 失守，东北全境由共军控制。",
               sources=[WP + "Liaoshen_campaign", WP + "Siege_of_Changchun"]))
-Z.append(zone("ccw_ne_ccp_1948b", "东北解放区（共军控制）", "CCP-held Manchuria", "Q97179246", "东北行政委员会", "1948-11-02", "1949-10-01", MANCHURIA, kind="de_facto", group="ccw_manchuria",
+Z.append(zone("ccw_ne_ccp_1948b", "东北沦陷区（共军控制）", "CCP-held Manchuria", "Q97179246", "东北行政委员会", "1948-11-02", "1949-10-01", MANCHURIA, kind="de_facto", group="ccw_manchuria",
               dates_note="辽沈战役结束（1948-11-02）至中华人民共和国成立（1949-10-01；东北人民政府 1949-08 成立）。", sources=[WP + "Liaoshen_campaign"]))
 
 # ---- 太平洋战争：东南亚日占区 ----
