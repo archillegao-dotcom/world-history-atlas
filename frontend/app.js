@@ -1102,6 +1102,7 @@
     if (h.get("office") && WHA.showOffice) WHA.showOffice(h.get("office"));
     if (h.get("bloc") && WHA.showBloc) WHA.showBloc(h.get("bloc"));
     if (h.get("treaty") && WHA.showTreaty) WHA.showTreaty(h.get("treaty"));
+    if (h.get("org") && WHA.showOrg) WHA.showOrg(h.get("org"));
     // 可选视图参数：#...&c=纬度,经度&z=缩放（便于分享/截图）
     if (h.get("c")) { const [la, lo] = h.get("c").split(",").map(Number); map.setView([la, lo], +(h.get("z") || 4)); }
     if (h.get("style") === "strategy") applyStrategy(true);
@@ -1119,6 +1120,7 @@
     $("playBtn").onclick = togglePlay;
     $("todayBtn").onclick = () => { const t = new Date(); setDate({ y: t.getFullYear(), m: t.getMonth() + 1, d: t.getDate() }); };
     $("worldBtn").onclick = () => { state.world = true; state.fid = null; restyle(); $("panel").classList.remove("hidden"); refreshPanelData(); updateHash(); };
+    $("diploBtn").onclick = () => { if (WHA.showDiplomacy) WHA.showDiplomacy(); };
     $("closePanel").onclick = closePanel;
     $("aboutBtn").onclick = () => $("about").classList.remove("hidden");
     $("styleBtn").onclick = () => applyStrategy(!strategyOn());

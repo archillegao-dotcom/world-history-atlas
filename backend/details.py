@@ -357,3 +357,31 @@ def treaty(tid: str, date: str | None = None):
             "countries": _country_labels(r, R),
             "name_mt": bool(r.get("zh_mt")),
             "has_text": bool(r.get("zhws") or r.get("enws") or r.get("fulltext"))}
+
+
+@router.get("/api/diplomacy")
+def diplomacy_list(date: str):
+    from .app import _date, registry
+    from .modules.diplomacy import view_day
+    m = registry.modules.get("diplomacy")
+    if not m:
+        raise HTTPException(404, "外交面板没有装上")
+    day, grain = view_day(_date(date))
+    return {"date": date, "day": day, "date_note": grain, "orgs": m.data.alive(day)}
+
+
+@router.get("/api/diplomacy/{oid}")
+def diplomacy_one(oid: str, date: str):
+    from .app import _date, ctx, registry
+    from .modules.diplomacy import view_day
+    m = registry.modules.get("diplomacy")
+    if not m:
+        raise HTTPException(404, "外交面板没有装上")
+    day, grain = view_day(_date(date))
+    body = m.data.detail(ctx, oid, day)
+    if not body:
+        raise HTTPException(404, "没有这个组织")
+    body["date"] = date
+    body["day"] = day
+    body["date_note"] = grain
+    return body
