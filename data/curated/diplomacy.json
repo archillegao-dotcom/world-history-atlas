@@ -11,21 +11,77 @@
       "signed": null,
       "effective": "1815-11-20",
       "headquarters": [
-        {"from": "1815-11-20", "text": "没有固定总部。会期依次在亚琛、特罗保、莱巴赫和维罗纳。"}
+        {
+          "from": "1815-11-20",
+          "text": "没有固定总部。会期依次在亚琛、特罗保、莱巴赫和维罗纳。"
+        }
       ],
       "summary": "这不是一个有章程和会员册的国际组织。1815年11月20日巴黎签订的四国同盟写明，四国君主或其大臣按期会商。1818年亚琛会议把法国加进这个会商。1822年维罗纳会议之后，英国不再参加对别国内部的干涉，五国没有再按同一安排开会。没有解散文书。本页只把这一段会议体系算作存续，不把后来的大国协商写成同一个组织。",
       "incomplete": true,
       "list_note": "名单不完整。下面只列同盟条款里的四个主导国，以及1818年加入会商的法国。维也纳会议还有许多别的与会国，没有写成会员。",
       "sources": [
-        {"label": "1815年11月20日四国同盟第六条", "url": "https://en.wikisource.org/wiki/Quadruple_Alliance"},
-        {"label": "会议体系的四次会议", "url": "https://www.encyclopedia.com/history/modern-europe/british-and-irish-history/congress-system"}
+        {
+          "label": "1815年11月20日四国同盟第六条",
+          "url": "https://en.wikisource.org/wiki/Quadruple_Alliance"
+        },
+        {
+          "label": "会议体系的四次会议",
+          "url": "https://www.encyclopedia.com/history/modern-europe/british-and-irish-history/congress-system"
+        }
       ],
       "members": [
-        {"qid": "Q131964", "match": ["Q131964"], "from": "1815-11-20", "track": "dated", "role": "会商国", "note": "奥地利帝国。"},
-        {"qid": "Q174193", "match": ["Q174193", "Q145"], "from": "1815-11-20", "track": "dated", "role": "会商国", "note": "大不列颠及爱尔兰联合王国。"},
-        {"qid": "Q27306", "match": ["Q27306"], "from": "1815-11-20", "track": "dated", "role": "会商国", "note": "普鲁士王国。"},
-        {"qid": "Q34266", "match": ["Q34266", "Q159"], "from": "1815-11-20", "track": "dated", "role": "会商国", "note": "俄罗斯帝国。"},
-        {"qid": "Q207162", "match": ["Q207162"], "from": "1818-11-15", "track": "dated", "role": "会商国", "note": "法国在亚琛会议进入会商。会议9月已经开会，接纳写在11月的议定书里。这里用11月15日，不把9月的开幕写成已经加入。"}
+        {
+          "qid": "Q131964",
+          "match": [
+            "Q131964"
+          ],
+          "from": "1815-11-20",
+          "track": "dated",
+          "role": "会商国",
+          "note": "奥地利帝国。"
+        },
+        {
+          "qid": "Q174193",
+          "match": [
+            "Q174193",
+            "Q145"
+          ],
+          "from": "1815-11-20",
+          "track": "dated",
+          "role": "会商国",
+          "note": "大不列颠及爱尔兰联合王国。"
+        },
+        {
+          "qid": "Q27306",
+          "match": [
+            "Q27306"
+          ],
+          "from": "1815-11-20",
+          "track": "dated",
+          "role": "会商国",
+          "note": "普鲁士王国。"
+        },
+        {
+          "qid": "Q34266",
+          "match": [
+            "Q34266",
+            "Q159"
+          ],
+          "from": "1815-11-20",
+          "track": "dated",
+          "role": "会商国",
+          "note": "俄罗斯帝国。"
+        },
+        {
+          "qid": "Q207162",
+          "match": [
+            "Q207162"
+          ],
+          "from": "1818-11-15",
+          "track": "dated",
+          "role": "会商国",
+          "note": "法国在亚琛会议进入会商。会议9月已经开会，接纳写在11月的议定书里。这里用11月15日，不把9月的开幕写成已经加入。"
+        }
       ]
     },
     {
@@ -39,36 +95,212 @@
       "signed": "1865-05-17",
       "effective": "1865-05-17",
       "headquarters": [
-        {"from": "1865-05-17", "text": "1865年5月17日在巴黎签署。常设局后来设在伯尔尼，设立的日子这一批没有写到日。"}
+        {
+          "from": "1865-05-17",
+          "text": "1865年5月17日在巴黎签署。常设局后来设在伯尔尼，设立的日子这一批没有写到日。"
+        }
       ],
       "summary": "1865年5月17日，20个国家在巴黎签署国际电报公约，成立万国电报联盟。1932年马德里会议另订国际电信公约，要把电报和无线电合成国际电信联盟。那份公约哪一天生效，这一批没有打开批准记录，所以名称仍用万国电报联盟，不把改名日提前。",
       "incomplete": true,
       "list_note": "名单不完整。下面20个是1865年的签署方。后来谁加入、谁退出、德国各邦并入德意志国之后会籍怎么算，这一批没有逐条写入，不把签署方写成此后一直是会员。",
       "sources": [
-        {"label": "国际电信联盟历史页所列20个创始国", "url": "https://www.itu.int/ITU-T/50/history.html"},
-        {"label": "1865年巴黎会议与会名单", "url": "https://search.itu.int/history/HistoryDigitalCollectionDocLibrary/4.1.44.en.100.pdf"}
+        {
+          "label": "国际电信联盟历史页所列20个创始国",
+          "url": "https://www.itu.int/ITU-T/50/history.html"
+        },
+        {
+          "label": "1865年巴黎会议与会名单",
+          "url": "https://search.itu.int/history/HistoryDigitalCollectionDocLibrary/4.1.44.en.100.pdf"
+        }
       ],
       "members": [
-        {"qid": "Q131964", "match": ["Q131964"], "from": "1865-05-17", "track": "founding", "note": "奥地利帝国。1867年的奥匈折中在这次签署之后。"},
-        {"qid": "Q186320", "match": ["Q186320"], "from": "1865-05-17", "track": "founding", "note": "巴登大公国。"},
-        {"qid": "Q154195", "match": ["Q154195"], "from": "1865-05-17", "track": "founding", "note": "巴伐利亚王国。"},
-        {"qid": "Q31", "match": ["Q31"], "from": "1865-05-17", "track": "founding", "note": "比利时。"},
-        {"qid": "Q35", "match": ["Q35"], "from": "1865-05-17", "track": "founding", "note": "丹麦。"},
-        {"qid": "Q71092", "match": ["Q71092", "Q142"], "from": "1865-05-17", "track": "founding", "note": "法兰西第二帝国。"},
-        {"qid": "Q41", "match": ["Q41"], "from": "1865-05-17", "track": "founding", "note": "希腊。"},
-        {"qid": "Q1055", "match": ["Q1055"], "name": "汉堡自由市", "from": "1865-05-17", "track": "founding", "note": "汉堡自由市。"},
-        {"qid": "Q164079", "match": ["Q164079"], "from": "1865-05-17", "track": "founding", "note": "汉诺威王国。"},
-        {"qid": "Q172579", "match": ["Q172579", "Q38"], "from": "1865-05-17", "track": "founding", "note": "意大利王国。"},
-        {"qid": "Q55", "match": ["Q55"], "from": "1865-05-17", "track": "founding", "note": "荷兰。"},
-        {"qid": "Q45", "match": ["Q45"], "from": "1865-05-17", "track": "founding", "note": "葡萄牙。"},
-        {"qid": "Q27306", "match": ["Q27306"], "from": "1865-05-17", "track": "founding", "note": "普鲁士王国。"},
-        {"qid": "Q34266", "match": ["Q34266", "Q159"], "from": "1865-05-17", "track": "founding", "note": "俄罗斯帝国。"},
-        {"qid": "Q153015", "match": ["Q153015"], "from": "1865-05-17", "track": "founding", "note": "萨克森王国。"},
-        {"qid": "Q29", "match": ["Q29"], "from": "1865-05-17", "track": "founding", "note": "西班牙。"},
-        {"qid": "Q62589", "match": ["Q62589", "Q34", "Q20"], "from": "1865-05-17", "track": "founding", "note": "瑞典和挪威算一个签署方。国际电信联盟的与会名单把它们写在一起。"},
-        {"qid": "Q39", "match": ["Q39"], "from": "1865-05-17", "track": "founding", "note": "瑞士。"},
-        {"qid": "Q12560", "match": ["Q12560", "Q43"], "from": "1865-05-17", "track": "founding", "note": "奥斯曼帝国。"},
-        {"qid": "Q159631", "match": ["Q159631"], "from": "1865-05-17", "track": "founding", "note": "符腾堡王国。"}
+        {
+          "qid": "Q131964",
+          "match": [
+            "Q131964"
+          ],
+          "from": "1865-05-17",
+          "track": "founding",
+          "note": "奥地利帝国。1867年的奥匈折中在这次签署之后。"
+        },
+        {
+          "qid": "Q186320",
+          "match": [
+            "Q186320"
+          ],
+          "from": "1865-05-17",
+          "track": "founding",
+          "note": "巴登大公国。"
+        },
+        {
+          "qid": "Q154195",
+          "match": [
+            "Q154195"
+          ],
+          "from": "1865-05-17",
+          "track": "founding",
+          "note": "巴伐利亚王国。"
+        },
+        {
+          "qid": "Q31",
+          "match": [
+            "Q31"
+          ],
+          "from": "1865-05-17",
+          "track": "founding",
+          "note": "比利时。"
+        },
+        {
+          "qid": "Q35",
+          "match": [
+            "Q35"
+          ],
+          "from": "1865-05-17",
+          "track": "founding",
+          "note": "丹麦。"
+        },
+        {
+          "qid": "Q71092",
+          "match": [
+            "Q71092",
+            "Q142"
+          ],
+          "from": "1865-05-17",
+          "track": "founding",
+          "note": "法兰西第二帝国。"
+        },
+        {
+          "qid": "Q41",
+          "match": [
+            "Q41"
+          ],
+          "from": "1865-05-17",
+          "track": "founding",
+          "note": "希腊。"
+        },
+        {
+          "qid": "Q1055",
+          "match": [
+            "Q1055"
+          ],
+          "name": "汉堡自由市",
+          "from": "1865-05-17",
+          "track": "founding",
+          "note": "汉堡自由市。"
+        },
+        {
+          "qid": "Q164079",
+          "match": [
+            "Q164079"
+          ],
+          "from": "1865-05-17",
+          "track": "founding",
+          "note": "汉诺威王国。"
+        },
+        {
+          "qid": "Q172579",
+          "match": [
+            "Q172579",
+            "Q38"
+          ],
+          "from": "1865-05-17",
+          "track": "founding",
+          "note": "意大利王国。"
+        },
+        {
+          "qid": "Q55",
+          "match": [
+            "Q55"
+          ],
+          "from": "1865-05-17",
+          "track": "founding",
+          "note": "荷兰。"
+        },
+        {
+          "qid": "Q45",
+          "match": [
+            "Q45"
+          ],
+          "from": "1865-05-17",
+          "track": "founding",
+          "note": "葡萄牙。"
+        },
+        {
+          "qid": "Q27306",
+          "match": [
+            "Q27306"
+          ],
+          "from": "1865-05-17",
+          "track": "founding",
+          "note": "普鲁士王国。"
+        },
+        {
+          "qid": "Q34266",
+          "match": [
+            "Q34266",
+            "Q159"
+          ],
+          "from": "1865-05-17",
+          "track": "founding",
+          "note": "俄罗斯帝国。"
+        },
+        {
+          "qid": "Q153015",
+          "match": [
+            "Q153015"
+          ],
+          "from": "1865-05-17",
+          "track": "founding",
+          "note": "萨克森王国。"
+        },
+        {
+          "qid": "Q29",
+          "match": [
+            "Q29"
+          ],
+          "from": "1865-05-17",
+          "track": "founding",
+          "note": "西班牙。"
+        },
+        {
+          "qid": "Q62589",
+          "match": [
+            "Q62589",
+            "Q34",
+            "Q20"
+          ],
+          "from": "1865-05-17",
+          "track": "founding",
+          "note": "瑞典和挪威算一个签署方。国际电信联盟的与会名单把它们写在一起。"
+        },
+        {
+          "qid": "Q39",
+          "match": [
+            "Q39"
+          ],
+          "from": "1865-05-17",
+          "track": "founding",
+          "note": "瑞士。"
+        },
+        {
+          "qid": "Q12560",
+          "match": [
+            "Q12560",
+            "Q43"
+          ],
+          "from": "1865-05-17",
+          "track": "founding",
+          "note": "奥斯曼帝国。"
+        },
+        {
+          "qid": "Q159631",
+          "match": [
+            "Q159631"
+          ],
+          "from": "1865-05-17",
+          "track": "founding",
+          "note": "符腾堡王国。"
+        }
       ]
     },
     {
@@ -82,37 +314,225 @@
       "signed": "1874-10-09",
       "effective": "1875-07-01",
       "headquarters": [
-        {"from": "1874-10-09", "text": "伯尔尼。1874年10月9日的条约在这里签署。"}
+        {
+          "from": "1874-10-09",
+          "text": "伯尔尼。1874年10月9日的条约在这里签署。"
+        }
       ],
       "summary": "1874年10月9日在伯尔尼签署《邮政总联盟条约》，1875年7月1日生效。1878年6月1日的公约取代1874年文本，名称改为万国邮政联盟。组织没有另起一个。后来的加入国没有逐一写入。",
       "incomplete": true,
       "list_note": "名单不完整。下面按1874年条约标题里的缔约方，不是今天的会员。万国邮政联盟2019年的新闻稿把奥匈拆成奥地利和匈牙利，数成22国。本页不拆，仍写奥匈帝国。瑞典和挪威在标题里分开列，当时仍是同一个联合。",
       "sources": [
-        {"label": "1874年10月9日伯尔尼条约", "url": "https://avalon.law.yale.edu/19th_century/usmu010.asp"},
-        {"label": "万国邮政联盟2019年对22个创始国的现代名单", "url": "https://www.upu.int/en/news/2019/10/upu-celebrates-145-years-of-service-to-the-world"}
+        {
+          "label": "1874年10月9日伯尔尼条约",
+          "url": "https://avalon.law.yale.edu/19th_century/usmu010.asp"
+        },
+        {
+          "label": "万国邮政联盟2019年对22个创始国的现代名单",
+          "url": "https://www.upu.int/en/news/2019/10/upu-celebrates-145-years-of-service-to-the-world"
+        }
       ],
       "members": [
-        {"qid": "Q1206012", "match": ["Q1206012", "Q183", "Q41304"], "from": "1874-10-09", "track": "founding", "note": "德意志国。不是1949年以后的联邦德国。"},
-        {"qid": "Q28513", "match": ["Q28513", "Q40"], "from": "1874-10-09", "track": "founding", "note": "奥匈帝国，不拆成两个签署方。"},
-        {"qid": "Q31", "match": ["Q31"], "from": "1874-10-09", "track": "founding", "note": "比利时。"},
-        {"qid": "Q35", "match": ["Q35"], "from": "1874-10-09", "track": "founding", "note": "丹麦。"},
-        {"qid": "Q127861", "match": ["Q127861", "Q79"], "from": "1874-10-09", "track": "founding", "note": "埃及赫迪夫领。"},
-        {"qid": "Q29", "match": ["Q29"], "from": "1874-10-09", "track": "founding", "note": "西班牙。"},
-        {"qid": "Q30", "match": ["Q30"], "from": "1874-10-09", "track": "founding", "note": "美国。"},
-        {"qid": "Q70802", "match": ["Q70802", "Q142"], "from": "1874-10-09", "track": "founding", "note": "法兰西第三共和国。"},
-        {"qid": "Q174193", "match": ["Q174193", "Q145"], "from": "1874-10-09", "track": "founding", "note": "大不列颠及爱尔兰联合王国。"},
-        {"qid": "Q41", "match": ["Q41"], "from": "1874-10-09", "track": "founding", "note": "希腊。"},
-        {"qid": "Q172579", "match": ["Q172579", "Q38"], "from": "1874-10-09", "track": "founding", "note": "意大利王国。"},
-        {"qid": "Q32", "match": ["Q32"], "from": "1874-10-09", "track": "founding", "note": "卢森堡。"},
-        {"qid": "Q20", "match": ["Q20"], "from": "1874-10-09", "track": "founding", "note": "条约标题单列挪威。当时仍与瑞典联合，联合到1905年6月7日。"},
-        {"qid": "Q55", "match": ["Q55"], "from": "1874-10-09", "track": "founding", "note": "荷兰。"},
-        {"qid": "Q45", "match": ["Q45"], "from": "1874-10-09", "track": "founding", "note": "葡萄牙。"},
-        {"qid": "Q958291", "match": ["Q958291", "Q218"], "from": "1874-10-09", "track": "founding", "note": "罗马尼亚联合公国。"},
-        {"qid": "Q34266", "match": ["Q34266", "Q159"], "from": "1874-10-09", "track": "founding", "note": "俄罗斯帝国。"},
-        {"qid": "Q684030", "match": ["Q684030"], "name": "塞尔维亚公国", "from": "1874-10-09", "track": "founding", "note": "条约写 Servia。当时是公国，不是后来的王国。"},
-        {"qid": "Q34", "match": ["Q34"], "from": "1874-10-09", "track": "founding", "note": "条约标题单列瑞典。当时仍与挪威联合。"},
-        {"qid": "Q39", "match": ["Q39"], "from": "1874-10-09", "track": "founding", "note": "瑞士。"},
-        {"qid": "Q12560", "match": ["Q12560", "Q43"], "from": "1874-10-09", "track": "founding", "note": "奥斯曼帝国。条约标题写 Turkey。"}
+        {
+          "qid": "Q1206012",
+          "match": [
+            "Q1206012",
+            "Q183",
+            "Q41304"
+          ],
+          "from": "1874-10-09",
+          "track": "founding",
+          "note": "德意志国。不是1949年以后的联邦德国。"
+        },
+        {
+          "qid": "Q28513",
+          "match": [
+            "Q28513",
+            "Q40"
+          ],
+          "from": "1874-10-09",
+          "track": "founding",
+          "note": "奥匈帝国，不拆成两个签署方。"
+        },
+        {
+          "qid": "Q31",
+          "match": [
+            "Q31"
+          ],
+          "from": "1874-10-09",
+          "track": "founding",
+          "note": "比利时。"
+        },
+        {
+          "qid": "Q35",
+          "match": [
+            "Q35"
+          ],
+          "from": "1874-10-09",
+          "track": "founding",
+          "note": "丹麦。"
+        },
+        {
+          "qid": "Q127861",
+          "match": [
+            "Q127861",
+            "Q79"
+          ],
+          "from": "1874-10-09",
+          "track": "founding",
+          "note": "埃及赫迪夫领。"
+        },
+        {
+          "qid": "Q29",
+          "match": [
+            "Q29"
+          ],
+          "from": "1874-10-09",
+          "track": "founding",
+          "note": "西班牙。"
+        },
+        {
+          "qid": "Q30",
+          "match": [
+            "Q30"
+          ],
+          "from": "1874-10-09",
+          "track": "founding",
+          "note": "美国。"
+        },
+        {
+          "qid": "Q70802",
+          "match": [
+            "Q70802",
+            "Q142"
+          ],
+          "from": "1874-10-09",
+          "track": "founding",
+          "note": "法兰西第三共和国。"
+        },
+        {
+          "qid": "Q174193",
+          "match": [
+            "Q174193",
+            "Q145"
+          ],
+          "from": "1874-10-09",
+          "track": "founding",
+          "note": "大不列颠及爱尔兰联合王国。"
+        },
+        {
+          "qid": "Q41",
+          "match": [
+            "Q41"
+          ],
+          "from": "1874-10-09",
+          "track": "founding",
+          "note": "希腊。"
+        },
+        {
+          "qid": "Q172579",
+          "match": [
+            "Q172579",
+            "Q38"
+          ],
+          "from": "1874-10-09",
+          "track": "founding",
+          "note": "意大利王国。"
+        },
+        {
+          "qid": "Q32",
+          "match": [
+            "Q32"
+          ],
+          "from": "1874-10-09",
+          "track": "founding",
+          "note": "卢森堡。"
+        },
+        {
+          "qid": "Q20",
+          "match": [
+            "Q20"
+          ],
+          "from": "1874-10-09",
+          "track": "founding",
+          "note": "条约标题单列挪威。当时仍与瑞典联合，联合到1905年6月7日。"
+        },
+        {
+          "qid": "Q55",
+          "match": [
+            "Q55"
+          ],
+          "from": "1874-10-09",
+          "track": "founding",
+          "note": "荷兰。"
+        },
+        {
+          "qid": "Q45",
+          "match": [
+            "Q45"
+          ],
+          "from": "1874-10-09",
+          "track": "founding",
+          "note": "葡萄牙。"
+        },
+        {
+          "qid": "Q958291",
+          "match": [
+            "Q958291",
+            "Q218"
+          ],
+          "from": "1874-10-09",
+          "track": "founding",
+          "note": "罗马尼亚联合公国。"
+        },
+        {
+          "qid": "Q34266",
+          "match": [
+            "Q34266",
+            "Q159"
+          ],
+          "from": "1874-10-09",
+          "track": "founding",
+          "note": "俄罗斯帝国。"
+        },
+        {
+          "qid": "Q684030",
+          "match": [
+            "Q684030"
+          ],
+          "name": "塞尔维亚公国",
+          "from": "1874-10-09",
+          "track": "founding",
+          "note": "条约写 Servia。当时是公国，不是后来的王国。"
+        },
+        {
+          "qid": "Q34",
+          "match": [
+            "Q34"
+          ],
+          "from": "1874-10-09",
+          "track": "founding",
+          "note": "条约标题单列瑞典。当时仍与挪威联合。"
+        },
+        {
+          "qid": "Q39",
+          "match": [
+            "Q39"
+          ],
+          "from": "1874-10-09",
+          "track": "founding",
+          "note": "瑞士。"
+        },
+        {
+          "qid": "Q12560",
+          "match": [
+            "Q12560",
+            "Q43"
+          ],
+          "from": "1874-10-09",
+          "track": "founding",
+          "note": "奥斯曼帝国。条约标题写 Turkey。"
+        }
       ]
     },
     {
@@ -126,14 +546,23 @@
       "signed": "1899-07-29",
       "effective": "1900-09-04",
       "headquarters": [
-        {"from": "1899-07-29", "text": "海牙。国际事务局设在海牙。和平宫后来才启用，启用日这一批不写入。"}
+        {
+          "from": "1899-07-29",
+          "text": "海牙。国际事务局设在海牙。和平宫后来才启用，启用日这一批不写入。"
+        }
       ],
       "summary": "1899年7月29日《和平解决国际争端公约》在海牙签署，第20条起规定设立常设仲裁法院。美国的批准书于1900年9月4日交存，公约从这一天对已经交存的国家生效。26个签署国里哪些在这一天已经批准，这一批没有逐国核对，所以不列签署国名单。",
       "incomplete": true,
       "list_note": "名单不完整。1899年和1907年公约的缔约国会随加入变化。没有逐国的批准日，就不编名单。",
       "sources": [
-        {"label": "1899年公约，美国国务院历史文件", "url": "https://history.state.gov/historicaldocuments/frus1902app2/d20"},
-        {"label": "1900年9月4日交存与法院的设立", "url": "https://doi.org/10.2307/2192606"}
+        {
+          "label": "1899年公约，美国国务院历史文件",
+          "url": "https://history.state.gov/historicaldocuments/frus1902app2/d20"
+        },
+        {
+          "label": "1900年9月4日交存与法院的设立",
+          "url": "https://doi.org/10.2307/2192606"
+        }
       ],
       "members": []
     },
@@ -148,57 +577,34 @@
       "signed": "1919-06-28",
       "effective": "1920-01-10",
       "headquarters": [
-        {"from": "1920-01-10", "text": "日内瓦。盟约把所在地定在日内瓦。后来从威尔逊宫迁到万国宫，迁址的日子这一批不写入。"}
+        {
+          "from": "1920-01-10",
+          "text": "日内瓦。盟约把所在地定在日内瓦。后来从威尔逊宫迁到万国宫，迁址的日子这一批不写入。"
+        }
       ],
       "summary": "盟约写在1919年6月28日的凡尔赛条约里，1920年1月10日条约生效，联盟从这一天起存在。1946年4月18日大会通过解散决议，写明从这届会议闭会的次日起联盟停止存在，清算除外。联合国页面记为1946年4月20日起不再存在。本页从4月20日起不再把它算作存续。",
-      "incomplete": true,
-      "list_note": "名单不完整。各家表对许多国家的加入日和退出日并不一致，有的把发出通知的日子写成退出日，有的把两年通知期满写成退出日。这一批只写入下面能对上文书的几国，其余不编。没有出现在表里，不等于不是会员。",
+      "incomplete": false,
+      "list_note": "名册按联合国条约集写全：1946年4月18日仍在的44国用括号里的加入日，此前终止的用停止日。通知日用联合国档案馆文书上的日子，两年期满前仍算会员。罗马尼亚的加入日两种记载不一致，标加入日待考。埃及的加入日条约集与另一记载差两个月，中间不择一。爱尔兰自由邦不用条约集印成的1920年。美国和汉志写在盟约附件里，没有成为会员。",
       "sources": [
-        {"label": "联合国：1946年4月20日起联盟不再存在", "url": "https://www.un.org/en/about-us/history-of-the-un/predecessor"},
-        {"label": "1946年4月18日解散决议", "url": "https://www.cambridge.org/core/journals/international-organization/article/abs/1-resolution-for-the-dissolution-of-the-league-of-nations-adopted-by-the-assembly-on-april-18-19461/C2A99D6C4171FBD430EDBE38BADE3C74"},
-        {"label": "1939年12月14日行政院认定苏联不再是会员", "url": "https://history.state.gov/historicaldocuments/frus1933-39/d616"},
-        {"label": "退出通知与两年期限", "url": "https://elibrary.law.psu.edu/psilr/vol10/iss1/3"}
-      ],
-      "members": [
         {
-          "qid": "Q145", "match": ["Q174193", "Q145"],
-          "from": "1920-01-10",
-          "names": [
-            {"qid": "Q174193", "until": "1927-04-12"},
-            {"qid": "Q145", "from": "1927-04-12"}
-          ],
-          "track": "dated", "role": "成员国",
-          "note": "盟约随凡尔赛条约生效。英国是创始会员里的不列颠帝国。1927年4月12日国号改掉「爱尔兰」之前，显示大不列颠及爱尔兰联合王国。爱尔兰自由邦后来另案加入，不写在这一行。"
+          "label": "联合国条约集：国联会员与停止日",
+          "url": "https://treaties.un.org/Pages/Content.aspx?path=DB/LoNOnline/pageIntro_en.xml"
         },
         {
-          "qid": "Q70802", "match": ["Q70802", "Q142"],
-          "from": "1920-01-10", "until": "1940-07-10", "how": "gap",
-          "track": "dated", "role": "成员国",
-          "note": "法兰西第三共和国。1940年7月10日以后，维希曾发退出通知，自由法国后来又撤回。这一批不把任何一方写成已经接过席位。"
+          "label": "国际联盟盟约及附件",
+          "url": "https://www.ungeneva.org/en/about/league-of-nations/covenant"
         },
         {
-          "qid": "Q188712", "match": ["Q188712", "Q17"],
-          "from": "1920-01-10", "notice": "1933-03-25",
-          "uncertain_from": "1935-03-25", "uncertain_until": "1935-03-26",
-          "until": "1935-03-27", "how": "withdraw",
-          "track": "dated", "role": "成员国",
-          "note": "大日本帝国。1933年3月宣布退出。通知日有3月25日和3月27日两种记载。盟约规定满两年才生效，所以1935年3月25日和26日不写成已经退出或仍在通知期内，3月27日起写成已经退出。"
+          "label": "爱尔兰国家档案馆：1923年9月10日加入",
+          "url": "https://nationalarchives.ie/engage-and-learn/exhibitions-and-loans/ireland-at-the-league-of-nations/"
         },
         {
-          "qid": "Q1206012", "match": ["Q1206012", "Q41304", "Q183"],
-          "from": "1926-09-08", "notice": "1933-10-14",
-          "uncertain_from": "1935-10-18", "uncertain_until": "1935-10-21",
-          "until": "1935-10-22", "how": "withdraw",
-          "track": "dated", "role": "成员国",
-          "note": "1926年9月8日大会接纳。1933年10月14日公开宣布退出，10月19日外长致信秘书长。两年期满的日子有10月18日、19日和21日三种算法。10月18日至21日不择一，10月22日起写成已经退出。显示德意志国，不写成后来的联邦德国。"
-        },
-        {
-          "qid": "Q15180", "match": ["Q15180"],
-          "from": "1934-09-18", "until": "1939-12-14", "how": "expel",
-          "track": "dated", "role": "成员国",
-          "note": "1934年9月18日加入。1939年12月14日行政院依据盟约第十六条，认定苏联的行为使它处在联盟之外，因而不再是会员。这是开除，不是它自己发的退出通知。"
+          "label": "1939年12月14日行政院认定苏联不再是会员",
+          "url": "https://history.state.gov/historicaldocuments/frus1933-39/d616"
         }
-      ]
+      ],
+      "members": [],
+      "members_file": "league_members.json"
     },
     {
       "id": "un",
@@ -211,78 +617,39 @@
       "signed": "1945-06-26",
       "effective": "1945-10-24",
       "headquarters": [
-        {"from": "1945-10-24", "until": "1946-01-10", "text": "宪章没有写常设总部。组织已经成立，第一届大会还没有开会。"},
-        {"from": "1946-01-10", "text": "第一届大会1946年1月10日在伦敦开会。常设定在纽约的决议日这一批没有写入，不把1945年10月24日写成已经坐落纽约。"}
+        {
+          "from": "1945-10-24",
+          "until": "1946-01-10",
+          "text": "宪章没有写常设总部。组织已经成立，第一届大会还没有开会。"
+        },
+        {
+          "from": "1946-01-10",
+          "text": "第一届大会1946年1月10日在伦敦开会。常设定在纽约的决议日这一批没有写入，不把1945年10月24日写成已经坐落纽约。"
+        }
       ],
       "summary": "宪章1945年6月26日在旧金山签署，1945年10月24日生效。生效条件包括五个常任理事国都已批准。中国席位在1971年10月25日以前由中华民国的代表占用，大会第2758号决议从这一天起改由中华人民共和国的代表占用。这是同一个席位换代表，不是新增加一个国家。",
-      "incomplete": true,
-      "list_note": "名单不完整。联合国按年公布过加入国，但那一页没有各国交存文书的日子。除了五个常任理事国和中国席位的更换，其余国家不把「某一年加入」写成1月1日。联邦德国、民主德国出现在1973年的新增名单，日本出现在1956年的新增名单，只用来判断那一年之前还没有写入。",
+      "incomplete": false,
+      "list_note": "接纳日用联合国会员事实表和会员页。增长页把创始51国笼统记在1945年；批准书在宪章生效前交存的写1945年10月24日，其后交存的写交存日，所以10月24日当天还不到51国，1945年12月31日这51国都已写入。改名、合并、退出和恢复只采用事实表脚注写了日子的。改名日没有写的，仍用接纳时的名字，并注明后来的叫法。",
       "sources": [
-        {"label": "联合国会员增长（按年，无交存日）", "url": "https://www.un.org/en/about-us/growth-in-un-membership"},
-        {"label": "创始会员与批准次序", "url": "https://research.un.org/en/unmembers/founders"},
-        {"label": "大会第2758号决议，1971年10月25日", "url": "https://ask.un.org/faq/320138"}
-      ],
-      "members": [
         {
-          "qid": "Q865", "match": ["Q865", "Q13426199"],
-          "from": "1945-10-24", "until": "1971-10-25", "how": "replaced",
-          "track": "dated", "role": "中国席位",
-          "note": "五个常任理事国之一。席位上的代表是中华民国。1971年10月25日大会第2758号决议改由中华人民共和国的代表行使这一席位，并写明蒋介石的代表不再占用这个席位。投票76票赞成、35票反对、17票弃权。"
+          "label": "会员增长（按年）",
+          "url": "https://www.un.org/en/about-us/growth-in-un-membership"
         },
         {
-          "qid": "Q148", "match": ["Q148"],
-          "from": "1971-10-25", "hide_before": true,
-          "track": "dated", "role": "中国席位",
-          "note": "同一个中国席位。不是第二个中国会员。大会第2758号决议。"
+          "label": "会员国与接纳日",
+          "url": "https://www.un.org/en/about-us/member-states"
         },
         {
-          "qid": "Q142", "match": ["Q142", "Q783684", "Q69829", "Q70802"],
-          "from": "1945-10-24",
-          "names": [
-            {"qid": "Q783684", "until": "1946-10-27"},
-            {"qid": "Q69829", "from": "1946-10-27", "until": "1958-10-04"},
-            {"qid": "Q142", "from": "1958-10-04"}
-          ],
-          "track": "dated", "role": "成员国",
-          "note": "五个常任理事国之一。1945年10月24日的政权是法兰西共和国临时政府。后来的共和国换名不另算一次加入。"
+          "label": "会员事实表（2025）",
+          "url": "https://www.un.org/sites/un2.un.org/files/un_member_states_2025.pdf"
         },
         {
-          "qid": "Q15180", "match": ["Q15180"],
-          "from": "1945-10-24", "until": "1991-12-26", "how": "gap",
-          "track": "dated", "role": "成员国",
-          "note": "五个常任理事国之一。1991年12月26日以后的席位由谁接续，这一批标待考，不把俄罗斯写成从这一天自动接过。"
-        },
-        {
-          "qid": "Q145", "match": ["Q145", "Q174193"],
-          "from": "1945-10-24",
-          "track": "dated", "role": "成员国",
-          "note": "五个常任理事国之一。"
-        },
-        {
-          "qid": "Q30", "match": ["Q30"],
-          "from": "1945-10-24",
-          "track": "dated", "role": "成员国",
-          "note": "五个常任理事国之一。"
-        },
-        {
-          "qid": "Q17", "match": ["Q17", "Q188712"],
-          "year_listed": 1956,
-          "track": "year",
-          "note": "联合国按年名单把日本写在1956年。交存日未写入。"
-        },
-        {
-          "qid": "Q713750", "match": ["Q713750", "Q183"],
-          "year_listed": 1973,
-          "track": "year",
-          "note": "联合国按年名单把联邦德国写在1973年。交存日未写入。不回填成1945年的会员。"
-        },
-        {
-          "qid": "Q16957", "match": ["Q16957"],
-          "year_listed": 1973,
-          "track": "year",
-          "note": "联合国按年名单把民主德国写在1973年。交存日未写入。"
+          "label": "大会第2758号决议",
+          "url": "https://ask.un.org/faq/320138"
         }
-      ]
+      ],
+      "members": [],
+      "members_file": "un_members.json"
     }
   ]
 }

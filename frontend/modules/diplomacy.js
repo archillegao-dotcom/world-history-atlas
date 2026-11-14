@@ -21,6 +21,39 @@
       ${o.date_note ? `<div class="note">${esc(o.date_note)}</div>` : ""}`;
   }
 
+  function tree(o) {
+    const nodes = o.organs || [];
+    if (!nodes.length) return "";
+    const groups = [];
+    nodes.forEach((n) => {
+      let g = groups.find((x) => x.kind === n.kind_zh);
+      if (!g) {
+        g = { kind: n.kind_zh || "", nodes: [] };
+        groups.push(g);
+      }
+      g.nodes.push(n);
+    });
+    let html = `<div id="diplomacyTree"><h4>这一天的机构</h4>`;
+    const hasSpec = nodes.some((n) => n.kind === "specialized");
+    html += hasSpec
+      ? `<div class="note">主要机关按宪章。专门机构以关系协定相连，不是下属。没有写上的专门机构，这一批还没有逐个收录。</div>`
+      : `<div class="note">主要机关按盟约。相关机构不是下属。这一天没有录入决议或判例时，写无记录。</div>`;
+    for (const g of groups) {
+      html += `<div class="s">${esc(g.kind)}</div>`;
+      for (const n of g.nodes) {
+        const acts = n.acts || [];
+        html += `<div class="item" data-node="${esc(n.id)}">
+          <div class="t">${esc(n.zh)} <span class="badge">${esc(n.kind_zh || "")}</span></div>
+          <div class="d">${esc(n.from || "")}${n.until ? " 至 " + esc(n.until) : ""}</div>
+          <div class="s">${esc(n.summary || "")}</div>
+          <div class="s">当日决议或判例：${acts.length ? acts.map((a) => esc(a.zh)).join("；") : "无记录"}</div>
+        </div>`;
+      }
+    }
+    html += `</div>`;
+    return html;
+  }
+
   function memberTable(rows) {
     if (!rows || !rows.length) return `<div class="note">这一天没有写入会员。</div>`;
     return `<table class="kv"><tr><th>政权</th><th>这一天的资格</th></tr>${rows.map((p) =>
@@ -58,9 +91,12 @@
     const date = WHA.dateParam();
     WHA.api(`/api/diplomacy/${encodeURIComponent(id)}?date=${encodeURIComponent(date)}`).then((o) => {
       let html = head(o);
+      html += tree(o);
       if (o.list_note) html += `<div class="note">${esc(o.list_note)}</div>`;
-      html += `<h4>这一天的资格（${(o.members || []).length}）</h4>`;
-      html += memberTable(o.members);
+      const skip = {"尚未加入": 1, "按年名单尚未加入": 1, "加入日未核": 1};
+      const shown = (o.members || []).filter((p) => !skip[p.status]);
+      html += `<h4>这一天的资格（${o.active_count != null ? o.active_count : shown.length}）</h4>`;
+      html += memberTable(shown);
       html += `<div class="l">${(o.sources || []).map(link).join("")}</div>`;
       html += `<div class="source">来源写在上面的链接里。没有链接的句子不当作已经核对。</div>`;
       body.innerHTML = html;

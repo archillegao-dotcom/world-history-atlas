@@ -44,7 +44,8 @@ async function openOrg(date, id) {
 
 const league = await openOrg("1935-06-01", "league");
 if (!league.includes("国际联盟")) problems.push("没有国际联盟标题");
-if (!league.includes("名单不完整")) problems.push("国联没有写名单不完整");
+if (league.includes("名单不完整")) problems.push("国联名册已写全，不应再标名单不完整");
+if (!league.includes("中华民国")) problems.push("国联没有中国");
 if (!league.includes("已宣布退出，通知期未满")) problems.push("德国资格不对");
 if (!league.includes("大日本帝国")) problems.push("日本没有用当时国号");
 if (!league.includes("德意志国")) problems.push("德国没有用当时国号");
@@ -58,7 +59,7 @@ if (!un.includes("中华人民共和国")) problems.push("1972 没有中华人�
 if (!un.includes("中国席位")) problems.push("没有中国席位");
 if (!un.includes("不再持有这一席位")) problems.push("中华民国的席位变化没有写");
 if (!un.includes("2758")) problems.push("没有第2758号决议");
-if (!un.includes("名单不完整")) problems.push("联合国没有写名单不完整");
+if (un.includes("名单不完整")) problems.push("联合国名册已写全，不应再标名单不完整");
 if (!un.includes("中华民国")) problems.push("1972 没有写出中华民国");
 await page.evaluate(prepareShot);
 await (await page.$("#detailBody")).screenshot({ path: OUT + "/un-1972-06-01.png" });

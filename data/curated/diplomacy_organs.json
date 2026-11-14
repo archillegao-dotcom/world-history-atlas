@@ -1,0 +1,233 @@
+{
+  "un": [
+    {
+      "id": "ga",
+      "zh": "大会",
+      "en": "General Assembly",
+      "kind": "principal",
+      "kind_zh": "主要机关",
+      "from": "1945-10-24",
+      "summary": "宪章第七章以前的机关条款把它列为主要机关。与宪章同一天起存在。第一届会议是1946年1月10日。",
+      "sources": [
+        {
+          "label": "宪章第三条、第四条的机关",
+          "url": "https://www.un.org/en/about-us/un-charter/chapter-3"
+        }
+      ]
+    },
+    {
+      "id": "sc",
+      "zh": "安全理事会",
+      "en": "Security Council",
+      "kind": "principal",
+      "kind_zh": "主要机关",
+      "from": "1945-10-24",
+      "summary": "宪章规定的主要机关。五个常任理事国从宪章生效之日起占有席位。",
+      "sources": [
+        {
+          "label": "宪章中的主要机关",
+          "url": "https://www.un.org/en/about-us/un-charter/chapter-3"
+        }
+      ]
+    },
+    {
+      "id": "ecosoc",
+      "zh": "经济及社会理事会",
+      "en": "Economic and Social Council",
+      "kind": "principal",
+      "kind_zh": "主要机关",
+      "from": "1945-10-24",
+      "summary": "宪章规定的主要机关。",
+      "sources": [
+        {
+          "label": "宪章中的主要机关",
+          "url": "https://www.un.org/en/about-us/un-charter/chapter-3"
+        }
+      ]
+    },
+    {
+      "id": "tc",
+      "zh": "托管理事会",
+      "en": "Trusteeship Council",
+      "kind": "principal",
+      "kind_zh": "主要机关",
+      "from": "1945-10-24",
+      "until": "1994-11-01",
+      "summary": "宪章规定的主要机关。1994年11月1日帕劳独立、最后一块托管地结束之后停止运作。宪章条文没有另写废除。",
+      "sources": [
+        {
+          "label": "托管理事会",
+          "url": "https://www.un.org/en/about-us/trusteeship-council"
+        }
+      ]
+    },
+    {
+      "id": "icj",
+      "zh": "国际法院",
+      "en": "International Court of Justice",
+      "kind": "principal",
+      "kind_zh": "主要机关",
+      "from": "1945-10-24",
+      "summary": "宪章规定的主要机关。规约是宪章的组成部分，同一天生效。法官在1946年选出。",
+      "sources": [
+        {
+          "label": "国际法院",
+          "url": "https://www.icj-cij.org/"
+        }
+      ],
+      "acts": [
+        {
+          "date": "1949-04-09",
+          "zh": "科孚海峡案（实质问题）判决",
+          "note": "法国、英国对阿尔巴尼亚。实质问题的判决在这一天。初步反对意见的判决是1948年3月25日，不是这一条。",
+          "sources": [
+            {
+              "label": "科孚海峡案",
+              "url": "https://www.icj-cij.org/case/1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "secr",
+      "zh": "秘书处",
+      "en": "Secretariat",
+      "kind": "principal",
+      "kind_zh": "主要机关",
+      "from": "1945-10-24",
+      "summary": "宪章规定的主要机关。",
+      "sources": [
+        {
+          "label": "宪章中的主要机关",
+          "url": "https://www.un.org/en/about-us/un-charter/chapter-3"
+        }
+      ]
+    },
+    {
+      "id": "unesco",
+      "zh": "联合国教育、科学及文化组织",
+      "en": "UNESCO",
+      "kind": "specialized",
+      "kind_zh": "专门机构",
+      "from": "1946-12-14",
+      "summary": "独立的专门机构，不是联合国的下属机关。组织公约1945年11月16日签署，1946年11月4日生效。与联合国的关系协定由大会1946年12月14日第50（I）号决议核准，从这一天起写进这棵树。",
+      "sources": [
+        {
+          "label": "联合国系统里的专门机构",
+          "url": "https://www.un.org/en/about-us/un-system"
+        }
+      ]
+    },
+    {
+      "id": "ilo-un",
+      "zh": "国际劳工组织",
+      "en": "International Labour Organization",
+      "kind": "specialized",
+      "kind_zh": "专门机构",
+      "from": "1946-12-14",
+      "summary": "1919年就已经存在，并与国际联盟相关。1946年12月14日与联合国的关系协定生效之后，作为专门机构写在联合国这边。它不是联合国的下属机关，也不是国联的下属机关。",
+      "sources": [
+        {
+          "label": "联合国系统里的专门机构",
+          "url": "https://www.un.org/en/about-us/un-system"
+        }
+      ]
+    }
+  ],
+  "league": [
+    {
+      "id": "assembly",
+      "zh": "大会",
+      "en": "Assembly",
+      "kind": "principal",
+      "kind_zh": "主要机关",
+      "from": "1920-01-10",
+      "until": "1946-04-20",
+      "summary": "盟约规定的机关。第一届会议1920年11月15日在日内瓦开幕。",
+      "sources": [
+        {
+          "label": "国际联盟盟约",
+          "url": "https://www.ungeneva.org/en/about/league-of-nations/covenant"
+        }
+      ]
+    },
+    {
+      "id": "council",
+      "zh": "行政院",
+      "en": "Council",
+      "kind": "principal",
+      "kind_zh": "主要机关",
+      "from": "1920-01-10",
+      "until": "1946-04-20",
+      "summary": "盟约规定的机关。第一次会议1920年1月16日在巴黎。",
+      "sources": [
+        {
+          "label": "国际联盟盟约",
+          "url": "https://www.ungeneva.org/en/about/league-of-nations/covenant"
+        }
+      ]
+    },
+    {
+      "id": "sec",
+      "zh": "秘书处",
+      "en": "Secretariat",
+      "kind": "principal",
+      "kind_zh": "主要机关",
+      "from": "1920-01-10",
+      "until": "1946-04-20",
+      "summary": "盟约规定的机关。首任秘书长是埃里克·德拉蒙德。",
+      "sources": [
+        {
+          "label": "国际联盟盟约",
+          "url": "https://www.ungeneva.org/en/about/league-of-nations/covenant"
+        }
+      ]
+    },
+    {
+      "id": "pcij",
+      "zh": "常设国际法院",
+      "en": "Permanent Court of International Justice",
+      "kind": "related",
+      "kind_zh": "相关机构",
+      "from": "1922-02-15",
+      "until": "1946-04-19",
+      "summary": "不是盟约正文里的主要机关。1922年2月15日在海牙开庭。1946年4月18日国联末届大会之后不再单列。国际法院是后来的联合国机关，不是同一法院改名。",
+      "sources": [
+        {
+          "label": "常设国际法院与国际法院",
+          "url": "https://www.icj-cij.org/history"
+        }
+      ],
+      "acts": [
+        {
+          "date": "1927-09-07",
+          "zh": "荷花号案判决",
+          "note": "法国对土耳其。常设国际法院A辑第10号。",
+          "sources": [
+            {
+              "label": "常设国际法院",
+              "url": "https://www.icj-cij.org/history"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ilo",
+      "zh": "国际劳工组织",
+      "en": "International Labour Organization",
+      "kind": "related",
+      "kind_zh": "相关机构",
+      "from": "1920-01-10",
+      "until": "1946-04-20",
+      "summary": "章程在凡尔赛条约第十三部分，1920年1月10日随条约生效。它与国联相关，不是国联的下属机关。1946年以后改按与联合国的关系协定，写在联合国的专门机构里。",
+      "sources": [
+        {
+          "label": "国际联盟概述",
+          "url": "https://www.ungeneva.org/en/about/league-of-nations/overview"
+        }
+      ]
+    }
+  ]
+}
