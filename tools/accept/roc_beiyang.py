@@ -65,6 +65,18 @@ check("1932-03-01 起不留九一八进占线", "mukden-jl" not in ids_on("1932-
 check("1936-10-09 会宁有红四方面军", "front4-1936" in ids_on("1936-10-09"), "")
 check("1938-10-01 武汉两线在，徐州会战已过",
       {"wuhan-north", "wuhan-east"} <= ids_on("1938-10-01") and "xuzhou-1938" not in ids_on("1938-10-01"), "")
+check("1937-11-26 淞沪还在，12月1日前没有南京线",
+      "songhu-1937" in ids_on("1937-11-26") and "nanjing-1937" not in ids_on("1937-11-30"), "")
+check("1937-12-10 有南京线", "nanjing-1937" in ids_on("1937-12-10"), "")
+check("1937-12-14 起不留南京线", "nanjing-1937" not in ids_on("1937-12-14"), "")
+check("1944-11-15 桂柳在，豫中和长衡已过，南宁还没画",
+      "guiliu-1944" in ids_on("1944-11-15") and "yuzhong-1944" not in ids_on("1944-11-15")
+      and "changheng-1944" not in ids_on("1944-11-15") and "nanning-1944" not in ids_on("1944-11-15"), "")
+check("1944-11-24 南宁线在", "nanning-1944" in ids_on("1944-11-24"), "")
+check("1948-11-01 辽沈还在，淮海未开始",
+      "liaoshen-1948" in ids_on("1948-11-01") and "huaihai-1948" not in ids_on("1948-11-01"), "")
+check("1948-11-15 淮海在，辽沈已过",
+      "huaihai-1948" in ids_on("1948-11-15") and "liaoshen-1948" not in ids_on("1948-11-15"), "")
 
 
 def place(date, lat, lon):
@@ -134,6 +146,14 @@ check("1937-08-20 还看不到中苏互不侵犯条约", not has(names("1937-08-
 check("1937-08-21 看得到中苏互不侵犯条约", has(names("1937-08-21", 32.06, 118.78), "互不侵犯"), "")
 check("1935-06-27 看得到秦土协定", has(names("1935-06-27", 39.9, 116.4), "秦土"), "")
 check("1935-07-06 看得到何梅协定", has(names("1935-07-06", 39.9, 116.4), "何梅"), "")
+check("1943-01-10 还看不到中美新约", not has(names("1943-01-10", 29.56, 106.55), "治外法权"), "")
+check("1943-01-11 看得到中美新约和中英新约",
+      has(names("1943-01-11", 29.56, 106.55), "美国在华") and has(names("1943-01-11", 29.56, 106.55), "英国在华"), "")
+check("1943-05-19 中英新约尚未生效", "已签署未生效" in "".join(names("1943-05-19", 29.56, 106.55)) or has(names("1943-05-19", 29.56, 106.55), "英国在华"), "")
+check("1943-12-01 看得到开罗宣言", has(names("1943-12-01", 29.56, 106.55), "开罗"), "")
+check("1945-08-13 还看不到中苏友好同盟条约", not has(names("1945-08-13", 29.56, 106.55), "友好同盟"), "")
+check("1945-08-14 看得到中苏友好同盟条约", has(names("1945-08-14", 29.56, 106.55), "友好同盟"), "")
+check("1945-10-10 看得到双十协定", has(names("1945-10-10", 29.56, 106.55), "会谈纪要"), "")
 sy = place("1931-11-19", 41.794, 123.447)
 check("1931-11-19 沈阳省界仍在，实控不是奉系独占",
       sy["place"]["name"] == "辽宁" and sy["place"]["actual"] == "实控待考" and any(f["id"] == "mukden-jl" for f in sy["fronts"]),
@@ -145,6 +165,25 @@ wc38 = place("1938-10-01", 30.524, 114.276)
 check("1938-10-01 武昌有武汉会战",
       any(f["id"] == "wuhan-north" for f in wc38["fronts"]) and "不是省界" in json.dumps(wc38, ensure_ascii=False),
       [f["id"] for f in wc38["fronts"]])
+nj = place("1937-12-10", 32.06, 118.8)
+check("1937-12-10 江宁仍是南京国民政府，并有南京保卫战",
+      nj["place"]["name"] == "江苏" and nj["place"]["actual"] == "南京国民政府"
+      and any(f["id"] == "nanjing-1937" for f in nj["fronts"]) and "不是城墙" in json.dumps(nj, ensure_ascii=False),
+      nj["place"])
+gl = place("1944-11-15", 25.347, 110.164)
+check("1944-11-15 桂林仍是桂系，并有桂柳",
+      gl["place"]["name"] == "广西" and "桂系" in (gl["place"]["actual"] or "")
+      and any(f["id"] == "guiliu-1944" for f in gl["fronts"]),
+      gl["place"])
+hh = place("1948-11-15", 34.302, 117.257)
+check("1948-11-15 铜山实控仍待考，并有淮海",
+      hh["place"]["actual"] == "实控待考" and any(f["id"] == "huaihai-1948" for f in hh["fronts"]),
+      hh["place"])
+wx = place("1938-12-01", 32.06, 118.8)
+check("1938-12-01 维新政府只是名义标注",
+      any(w["id"] == "puppet-reform" for w in wx["wars"]) and "不改阵营" in json.dumps(wx, ensure_ascii=False)
+      and wx["place"]["actual"] == "实控待考",
+      wx["place"])
 
 loc = get("/api/locate", date="1919-06-28", lat=39.9, lon=116.4)
 p = loc["polity"]

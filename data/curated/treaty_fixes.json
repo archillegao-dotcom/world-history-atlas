@@ -940,5 +940,202 @@
     "sources": [
       "https://zh.wikipedia.org/wiki/中苏互不侵犯条约"
     ]
+  },
+  "curated:roc-1943-sino-us": {
+    "insert": true,
+    "zh": "中美关于取消美国在华治外法权及处理有关问题条约",
+    "en": "Sino-American Treaty for the Relinquishment of Extraterritorial Rights",
+    "sl": 40,
+    "types": [
+      {
+        "en": "treaty",
+        "zh": "条约"
+      }
+    ],
+    "signed": {
+      "y": 1943,
+      "m": 1,
+      "d": 11,
+      "p": 11
+    },
+    "parties": [
+      {
+        "s": "Q13426199",
+        "via": "curated"
+      },
+      {
+        "s": "Q30",
+        "via": "curated"
+      }
+    ],
+    "countries": [
+      "Q13426199",
+      "Q30"
+    ],
+    "desc": "中文维基百科《中美平等新约》写1943-01-11由魏道明与赫尔在华盛顿签署，美国放弃在华领事裁判权。这条摘录没有写生效日，不补。未核对《中華民國史事紀要》。",
+    "note": "只写1943-01-11签署。生效日摘录没有写。未核对《中華民國史事紀要》。",
+    "summary_zh": "1943年1月11日在华盛顿签署。生效日摘录没有写。未核对《中華民國史事紀要》。",
+    "sources": [
+      "https://zh.wikipedia.org/wiki/中美平等新约"
+    ]
+  },
+  "curated:roc-1943-sino-uk": {
+    "insert": true,
+    "zh": "中英关于取消英国在华治外法权及处理有关特权条约",
+    "en": "Sino-British Treaty for the Relinquishment of Extraterritorial Rights",
+    "sl": 40,
+    "types": [
+      {
+        "en": "treaty",
+        "zh": "条约"
+      }
+    ],
+    "signed": {
+      "y": 1943,
+      "m": 1,
+      "d": 11,
+      "p": 11
+    },
+    "effective": {
+      "y": 1943,
+      "m": 5,
+      "d": 20,
+      "p": 11
+    },
+    "parties": [
+      {
+        "s": "Q13426199",
+        "via": "curated"
+      },
+      {
+        "s": "Q145",
+        "via": "curated"
+      }
+    ],
+    "countries": [
+      "Q13426199",
+      "Q145"
+    ],
+    "desc": "中文维基百科《中英平等新约》写1943-01-11在重庆签署。摘录写正式批准改到1943-05-20，同一天生效。未核对《中華民國史事紀要》。",
+    "note": "签署1943-01-11，生效1943-05-20。未核对《中華民國史事紀要》。",
+    "summary_zh": "1943年1月11日签署，1943年5月20日生效。未核对《中華民國史事紀要》。",
+    "sources": [
+      "https://zh.wikipedia.org/wiki/中英平等新約"
+    ]
+  },
+  "curated:roc-1943-cairo": {
+    "insert": true,
+    "zh": "开罗宣言",
+    "en": "Cairo Communiqué",
+    "sl": 40,
+    "types": [
+      {
+        "en": "declaration",
+        "zh": "宣言"
+      }
+    ],
+    "signed": {
+      "y": 1943,
+      "m": 12,
+      "d": 1,
+      "p": 11
+    },
+    "parties": [
+      {
+        "s": "Q13426199",
+        "via": "curated"
+      },
+      {
+        "s": "Q30",
+        "via": "curated"
+      },
+      {
+        "s": "Q145",
+        "via": "curated"
+      }
+    ],
+    "countries": [
+      "Q13426199",
+      "Q30",
+      "Q145"
+    ],
+    "desc": "中文维基百科《开罗宣言》写1943-11-23至11月27日开会，1943-12-01发表新闻公报。这是公报，不是已经批准的条约，不写生效日。未核对《中華民國史事紀要》。",
+    "note": "1943-12-01发表。会议是11月23日至27日。不是批准的条约，没有生效日。未核对《中華民國史事紀要》。",
+    "summary_zh": "1943年12月1日发表的新闻公报。不是批准的条约。未核对《中華民國史事紀要》。",
+    "sources": [
+      "https://zh.wikipedia.org/wiki/开罗宣言"
+    ]
+  },
+  "curated:roc-1945-sino-soviet": {
+    "insert": true,
+    "zh": "中苏友好同盟条约",
+    "en": "Sino-Soviet Treaty of Friendship and Alliance",
+    "sl": 40,
+    "types": [
+      {
+        "en": "treaty",
+        "zh": "条约"
+      }
+    ],
+    "signed": {
+      "y": 1945,
+      "m": 8,
+      "d": 14,
+      "p": 11
+    },
+    "parties": [
+      {
+        "s": "Q13426199",
+        "via": "curated"
+      },
+      {
+        "s": "Q15180",
+        "via": "curated"
+      }
+    ],
+    "countries": [
+      "Q13426199",
+      "Q15180"
+    ],
+    "desc": "中文维基百科《中苏友好同盟条约》写1945-08-14王世杰与莫洛托夫在莫斯科签订。导语把签约放在8月15日投降之际。生效日摘录没有写成某一天。外蒙古公民投票不在这张图上改界。未核对《中華民國史事紀要》。",
+    "note": "只写1945-08-14签署。导语另及8月15日。生效日不补。不改外蒙古界。未核对《中華民國史事紀要》。",
+    "summary_zh": "1945年8月14日签署。生效日摘录没有写。未核对《中華民國史事紀要》。",
+    "sources": [
+      "https://zh.wikipedia.org/wiki/中苏友好同盟条约"
+    ]
+  },
+  "curated:roc-1945-double-ten": {
+    "insert": true,
+    "zh": "政府与中共代表会谈纪要",
+    "en": "Double Tenth Agreement",
+    "sl": 40,
+    "types": [
+      {
+        "en": "minutes",
+        "zh": "会谈纪要"
+      }
+    ],
+    "signed": {
+      "y": 1945,
+      "m": 10,
+      "d": 10,
+      "p": 11
+    },
+    "status": "signed_never_effective",
+    "parties": [
+      {
+        "s": "Q13426199",
+        "via": "curated"
+      }
+    ],
+    "countries": [
+      "Q13426199"
+    ],
+    "desc": "中文维基百科《双十协定》写1945-10-10签订。另一方是中共代表，不是底图上的另一个政权，不另造多边形。摘录写它没有解决具体问题，不写生效日。未核对《中華民國史事紀要》。",
+    "note": "1945-10-10签署。不作为生效条约。中共代表不另画政权。未核对《中華民國史事紀要》。",
+    "summary_zh": "1945年10月10日的会谈纪要。不写生效日。未核对《中華民國史事紀要》。",
+    "sources": [
+      "https://zh.wikipedia.org/wiki/双十协定"
+    ]
   }
 }
