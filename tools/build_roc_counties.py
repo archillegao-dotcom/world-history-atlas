@@ -501,6 +501,20 @@ def main():
                 "https://www.drnh.gov.tw/p/404-1003-13334.php?Lang=zh-tw",
                 "https://zenodo.org/records/5721459",
             ]
+        if name == "汕头":
+            supplements_extra["note"] = (
+                "汕头市区落在 1931 年朝阳治所的单元格里，澄海治所也在原来的汕头方框里。"
+                "已核對《中華民國史事紀要》民國二十八年一月至六月，印页七二一（PDF 第731页），"
+                "页眉民国二十八年六月二十一日，写日军陷广东汕头，本日在汕头附近登陆，守军退出汕头。"
+                "两格从 1939-06-21 起，不再从 3 月 27 日起。潮安不在这框里。" + PHRASE
+            )
+            supplements_extra["dates_note"] = (
+                "汕头 1939-06-21 起，收到 1940-03-30。已核對《中華民國史事紀要》印页七二一。"
+            )
+            supplements_extra["sources"] = [
+                "https://www.drnh.gov.tw/p/404-1003-13315.php?Lang=zh-tw",
+                "https://zenodo.org/records/5721459",
+            ]
         if name == "海口" and fall == "1939-02-10":
             supplements_extra["note"] = (
                 "海口治所的单元格。已核對《中華民國史事紀要》民國二十八年一月至六月，"
