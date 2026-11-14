@@ -471,6 +471,19 @@ def main():
                 "柳州": ["https://zh.wikipedia.org/wiki/桂柳会战", "https://zenodo.org/records/5721459"],
             }[name],
         }
+        if name == "海口" and fall == "1939-02-10":
+            supplements_extra["note"] = (
+                "海口治所的单元格。已核對《中華民國史事紀要》民國二十八年一月至六月，"
+                "印页二二〇（PDF 第220页），页眉民国二十八年二月十日，写海口于下午三时陷敌。"
+                "琼山和岛上其余县仍从 1939-03-27 的海南块起，不提前。" + PHRASE
+            )
+            supplements_extra["dates_note"] = (
+                "海口 1939-02-10 起，收到 1940-03-30。已核對《中華民國史事紀要》印页二二〇。"
+            )
+            supplements_extra["sources"] = [
+                "https://www.drnh.gov.tw/p/404-1003-13315.php?Lang=zh-tw",
+                "https://zenodo.org/records/5721459",
+            ]
         doc["zones"].append(supplements_extra)
         print("growth", name, fall, end, ids)
 
