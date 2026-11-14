@@ -58,6 +58,13 @@ check("1930-09-01 三条铁路在，桂军入湘已撤",
 check("1935-06-01 有长征，没有中央苏区环",
       "longmarch" in ids_on("1935-06-01") and "soviet-ring" not in ids_on("1935-06-01"), "")
 check("塘沽线在，满洲国规则不靠这条线改省界", "tanggu-line" in ids_on("1933-05-31") and "rehe-1933" not in ids_on("1933-03-05"), "")
+check("1931-11-19 有沈阳至龙江，没有锦州和哈尔滨",
+      {"mukden-jl", "mukden-hlj"} <= ids_on("1931-11-19") and "mukden-jz" not in ids_on("1931-11-19") and "mukden-heb" not in ids_on("1931-11-19"),
+      ids_on("1931-11-19"))
+check("1932-03-01 起不留九一八进占线", "mukden-jl" not in ids_on("1932-03-01"), "")
+check("1936-10-09 会宁有红四方面军", "front4-1936" in ids_on("1936-10-09"), "")
+check("1938-10-01 武汉两线在，徐州会战已过",
+      {"wuhan-north", "wuhan-east"} <= ids_on("1938-10-01") and "xuzhou-1938" not in ids_on("1938-10-01"), "")
 
 
 def place(date, lat, lon):
@@ -123,6 +130,21 @@ check("1929-12-19 还看不到伯力议定书", not has(names("1929-12-19", 39.9
 check("1929-12-20 看得到伯力议定书", has(names("1929-12-20", 39.9, 116.4), "伯力"), "")
 check("1932-05-05 看得到淞沪停战协定", has(names("1932-05-05", 32.06, 118.78), "淞沪停战"), "")
 check("1933-05-31 看得到塘沽协定", has(names("1933-05-31", 39.9, 116.4), "塘沽"), "")
+check("1937-08-20 还看不到中苏互不侵犯条约", not has(names("1937-08-20", 32.06, 118.78), "互不侵犯"), "")
+check("1937-08-21 看得到中苏互不侵犯条约", has(names("1937-08-21", 32.06, 118.78), "互不侵犯"), "")
+check("1935-06-27 看得到秦土协定", has(names("1935-06-27", 39.9, 116.4), "秦土"), "")
+check("1935-07-06 看得到何梅协定", has(names("1935-07-06", 39.9, 116.4), "何梅"), "")
+sy = place("1931-11-19", 41.794, 123.447)
+check("1931-11-19 沈阳省界仍在，实控不是奉系独占",
+      sy["place"]["name"] == "辽宁" and sy["place"]["actual"] == "实控待考" and any(f["id"] == "mukden-jl" for f in sy["fronts"]),
+      sy["place"])
+dh = place("1933-11-12", 43.807, 87.567)
+check("1933-11-12 迪化仍是盛世才",
+      dh["place"]["actual"] == "盛世才" and dh["place"]["nominal"] == "南京国民政府", dh["place"])
+wc38 = place("1938-10-01", 30.524, 114.276)
+check("1938-10-01 武昌有武汉会战",
+      any(f["id"] == "wuhan-north" for f in wc38["fronts"]) and "不是省界" in json.dumps(wc38, ensure_ascii=False),
+      [f["id"] for f in wc38["fronts"]])
 
 loc = get("/api/locate", date="1919-06-28", lat=39.9, lon=116.4)
 p = loc["polity"]
