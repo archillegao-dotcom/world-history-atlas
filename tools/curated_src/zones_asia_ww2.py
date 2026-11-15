@@ -117,7 +117,7 @@ JSTEPS = [  # (from, until, 几何规格, 节点说明, 来源)
     ("1937-08-15", "1937-11-12", poly(NORTH_1937), "1937-08 至 11 上旬：平津（07-29/30）、保定（09-24）、石家庄（10-10）、德州（10-03）", [WP + "Battle_of_Beiping–Tianjin", WP + "Battle_of_Taiyuan"]),
     ("1937-11-12", "1938-06-06", U(poly(NORTH_1938), poly(LOWER_YANGTZE_1937)),
      "1937-11 至 1938-05：太原（11-08）、上海（11-12）、南京（12-13）、杭州（12-24）、济南（12-27）、青岛（1938-01-10）、徐州（05-19）", [WP + "Battle_of_Shanghai", WP + "Battle_of_Nanking", WP + "Battle_of_Xuzhou"]),
-    ("1938-06-06", "1938-10-21", poly(CORE_1938_06), "1938-06 至 10：开封（06-06）、安庆（06-12）、九江（07-26），津浦线贯通", [WP + "Battle_of_Xuzhou", WP + "Battle_of_Wuhan"]),
+    ("1938-06-06", "1938-10-21", poly(CORE_1938_06), "1938-06 至 10：开封（06-06）、安庆（06-13）、九江（07-26），津浦线贯通", [WP + "Battle_of_Xuzhou", WP + "Battle_of_Wuhan"]),
     ("1938-10-21", "1939-03-27", U(poly(CORE_1938_10), poly(CANTON), poly(XIAMEN)), "1938-10 至 1939-03：广州（10-21）、武汉（10-25）、岳阳（11-11）；厦门（1938-05）",
      [WP + "Battle_of_Wuhan", WP + "Canton_Operation", WP + "Battle_of_Amoy"]),
     ("1939-03-27", "1944-04-19", U(poly(CORE_1940), poly(CANTON), poly(XIAMEN), poly(SHANTOU), HAINAN),
