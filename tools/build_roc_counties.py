@@ -529,6 +529,20 @@ def main():
                 "https://www.drnh.gov.tw/p/404-1003-13315.php?Lang=zh-tw",
                 "https://zenodo.org/records/5721459",
             ]
+        if name == "衡阳":
+            supplements_extra["note"] = (
+                "衡阳县域。已核對《中華民國史事紀要》民國三十三年七月至九月，"
+                "印页三九六（PDF 第404页），页眉民国三十三年八月八日，"
+                "标题衡阳经四十七日血战沦陷，写日军本日突入中央银行、第十军军部。"
+                "原来的湖南手绘范围没有盖住这个治所。" + PHRASE
+            )
+            supplements_extra["dates_note"] = (
+                "衡阳 1944-08-08 起，收到 1945-08-16。已核對《中華民國史事紀要》印页三九六。"
+            )
+            supplements_extra["sources"] = [
+                "https://www.drnh.gov.tw/p/404-1003-13338.php?Lang=zh-tw",
+                "https://zenodo.org/records/5721459",
+            ]
         if name == "海口" and fall == "1939-02-10":
             supplements_extra["note"] = (
                 "海口治所的单元格。已核對《中華民國史事紀要》民國二十八年一月至六月，"
