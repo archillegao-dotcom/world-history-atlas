@@ -597,6 +597,38 @@ def main():
         })
         print("added harbin cell")
 
+    jinzhou = ["mcgd:s143", "mcgd:D3064040"]
+    if all(i in id_of for i in jinzhou) and not any(z["id"] == "ccw_jinzhou_1948" for z in doc["zones"]):
+        doc["zones"].append({
+            "id": "ccw_jinzhou_1948",
+            "group": "ccw_manchuria",
+            "kind": "de_facto",
+            "as_polity": True,
+            "name_zh": "共军控制区（锦州）",
+            "name_en": "CCP-held Jinzhou",
+            "controller": {"qid": "Q17427", "zh": "中国共产党"},
+            "from": "1948-10-15",
+            "until": "1948-11-01",
+            "geometry": {"roc_counties": jinzhou},
+            "approx": True,
+            "note": (
+                "1931年锦县治所和锦州点两个单元格，不是锦州周围各县。"
+                "已核對《中華民國史事紀要》民國三十七年七月至十二月，"
+                "印页六五一至六五二（PDF 第658–659页），页眉民国三十七年十月十五日，"
+                "写十四日夜共军突入锦州市区，截至十五日拂晓市内大部为共军侵入，"
+                "范汉杰、卢浚泉被俘，中午战事仍在继续。"
+                "图上从 1948-10-15 起记沦陷，不改到十四日夜。"
+                "这一天以前从东北沦陷区里挖出，不把三月就涂成共军。"
+                "1948-11-01 起并入辽宁。大致。县域为治所泰森多边形近似。"
+            ),
+            "dates_note": "锦州 1948-10-15 起，收到 1948-11-01。已核對《中華民國史事紀要》印页六五一。",
+            "sources": [
+                "https://www.drnh.gov.tw/p/404-1003-13357.php?Lang=zh-tw",
+                "https://zenodo.org/records/5721459",
+            ],
+        })
+        print("added jinzhou cell")
+
     if not any(z["id"] == "sjw_ccp_central_soviet" for z in doc["zones"]):
         doc["zones"].append({
             "id": "sjw_ccp_central_soviet",

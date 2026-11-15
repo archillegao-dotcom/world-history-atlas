@@ -9833,7 +9833,7 @@
     "zh": "东北行政委员会"
    },
    "from": "1948-03-13",
-   "until": "1948-11-02",
+   "until": "1948-11-01",
    "geometry": {
     "basemap": {
      "snap": 1930,
@@ -9906,6 +9906,12 @@
          43.75
         ]
        ]
+      },
+      {
+       "roc_counties": [
+        "mcgd:s143",
+        "mcgd:D3064040"
+       ]
       }
      ]
     }
@@ -9913,9 +9919,10 @@
    "approx": true,
    "sources": [
     "https://en.wikipedia.org/wiki/Liaoshen_campaign",
-    "https://en.wikipedia.org/wiki/Siege_of_Changchun"
+    "https://en.wikipedia.org/wiki/Siege_of_Changchun",
+    "https://www.drnh.gov.tw/p/404-1003-13357.php?Lang=zh-tw"
    ],
-   "dates_note": "1948-03 后国民革命军只剩被围的长春（1948-10-19 投降）与沈阳—锦州走廊；辽沈战役锦州 10-15、沈阳 11-02 失守，东北全境由共军控制。"
+   "dates_note": "1948-03 后国民革命军只剩被围的长春与沈阳—锦州走廊。锦州两个单元格从这块里挖出，10-15 起另画。长春整省仍从 1948-10-19 起。沈阳印页七六八写十一月一日占领，这一块收到 1948-11-01。"
   },
   {
    "id": "ccw_ne_ccp_1948b",
@@ -9928,7 +9935,7 @@
     "qid": "Q97179246",
     "zh": "东北行政委员会"
    },
-   "from": "1948-11-02",
+   "from": "1948-11-01",
    "until": "1949-10-01",
    "geometry": {
     "basemap": {
@@ -9940,7 +9947,7 @@
    "sources": [
     "https://en.wikipedia.org/wiki/Liaoshen_campaign"
    ],
-   "dates_note": "辽沈战役结束（1948-11-02）至中华人民共和国成立（1949-10-01；东北人民政府 1949-08 成立）。"
+   "dates_note": "沈阳 1948-11-01 沦陷（印页七六八）至中华人民共和国成立（1949-10-01；东北人民政府 1949-08 成立）。"
   },
   {
    "id": "pac_hk",
@@ -11621,6 +11628,33 @@
    "dates_note": "柳州 1944-11-11 起，收到 1945-08-16。已核對《中華民國史事紀要》印页四二三。",
    "sources": [
     "https://www.drnh.gov.tw/p/404-1003-13334.php?Lang=zh-tw",
+    "https://zenodo.org/records/5721459"
+   ]
+  },
+  {
+   "id": "ccw_jinzhou_1948",
+   "group": "ccw_manchuria",
+   "kind": "de_facto",
+   "as_polity": true,
+   "name_zh": "共军控制区（锦州）",
+   "name_en": "CCP-held Jinzhou",
+   "controller": {
+    "qid": "Q17427",
+    "zh": "中国共产党"
+   },
+   "from": "1948-10-15",
+   "until": "1948-11-01",
+   "geometry": {
+    "roc_counties": [
+     "mcgd:s143",
+     "mcgd:D3064040"
+    ]
+   },
+   "approx": true,
+   "note": "1931年锦县治所和锦州点两个单元格，不是锦州周围各县。已核對《中華民國史事紀要》民國三十七年七月至十二月，印页六五一至六五二（PDF 第658–659页），页眉民国三十七年十月十五日，写十四日夜共军突入锦州市区，截至十五日拂晓市内大部为共军侵入，范汉杰、卢浚泉被俘，中午战事仍在继续。图上从 1948-10-15 起记沦陷，不改到十四日夜。这一天以前从东北沦陷区里挖出，不把三月就涂成共军。1948-11-01 起并入辽宁。大致。县域为治所泰森多边形近似。",
+   "dates_note": "锦州 1948-10-15 起，收到 1948-11-01。已核對《中華民國史事紀要》印页六五一。",
+   "sources": [
+    "https://www.drnh.gov.tw/p/404-1003-13357.php?Lang=zh-tw",
     "https://zenodo.org/records/5721459"
    ]
   }

@@ -206,12 +206,15 @@ Z.append(zone("ccw_ne_ccp_1947", "东北沦陷区（共军控制，大致范围�
               {"basemap": {"snap": 1930, "name": "Manchuria"}, "minus": {"polygon": ROC_CORRIDOR_1947}}, kind="de_facto", group="ccw_manchuria",
               dates_note="1947 年夏季、秋季、冬季攻势后，国民革命军只控制北宁、中长铁路沿线的长春—四平—沈阳—锦州走廊（四平 1948-03-13 失守）。",
               note="国民革命军控制走廊为沿铁路的手绘近似（宽约 50–100 km）。", sources=[WP + "Chinese_Civil_War", WP + "Liaoshen_campaign"]))
-Z.append(zone("ccw_ne_ccp_1948", "东北沦陷区（共军控制，大致范围）", "CCP-held Manchuria", "Q97179246", "东北行政委员会", "1948-03-13", "1948-11-02",
-              {"basemap": {"snap": 1930, "name": "Manchuria"}, "minus": {"polygon": ROC_1948, "union": [{"polygon": CHANGCHUN}]}}, kind="de_facto", group="ccw_manchuria",
-              dates_note="1948-03 后国民革命军只剩被围的长春（1948-10-19 投降）与沈阳—锦州走廊；辽沈战役锦州 10-15、沈阳 11-02 失守，东北全境由共军控制。",
-              sources=[WP + "Liaoshen_campaign", WP + "Siege_of_Changchun"]))
-Z.append(zone("ccw_ne_ccp_1948b", "东北沦陷区（共军控制）", "CCP-held Manchuria", "Q97179246", "东北行政委员会", "1948-11-02", "1949-10-01", MANCHURIA, kind="de_facto", group="ccw_manchuria",
-              dates_note="辽沈战役结束（1948-11-02）至中华人民共和国成立（1949-10-01；东北人民政府 1949-08 成立）。", sources=[WP + "Liaoshen_campaign"]))
+Z.append(zone("ccw_ne_ccp_1948", "东北沦陷区（共军控制，大致范围）", "CCP-held Manchuria", "Q97179246", "东北行政委员会", "1948-03-13", "1948-11-01",
+              {"basemap": {"snap": 1930, "name": "Manchuria"}, "minus": {"polygon": ROC_1948, "union": [
+                  {"polygon": CHANGCHUN},
+                  {"roc_counties": ["mcgd:s143", "mcgd:D3064040"]},
+              ]}}, kind="de_facto", group="ccw_manchuria",
+              dates_note="1948-03 后国民革命军只剩被围的长春与沈阳—锦州走廊。锦州两个单元格从这块里挖出，10-15 起另画。长春整省仍从 1948-10-19 起。沈阳印页七六八写十一月一日占领，这一块收到 1948-11-01。",
+              sources=[WP + "Liaoshen_campaign", WP + "Siege_of_Changchun", "https://www.drnh.gov.tw/p/404-1003-13357.php?Lang=zh-tw"]))
+Z.append(zone("ccw_ne_ccp_1948b", "东北沦陷区（共军控制）", "CCP-held Manchuria", "Q97179246", "东北行政委员会", "1948-11-01", "1949-10-01", MANCHURIA, kind="de_facto", group="ccw_manchuria",
+              dates_note="沈阳 1948-11-01 沦陷（印页七六八）至中华人民共和国成立（1949-10-01；东北人民政府 1949-08 成立）。", sources=[WP + "Liaoshen_campaign"]))
 
 # ---- 太平洋战争：东南亚日占区 ----
 PAC = [WP + "Japanese_occupation_of_Southeast_Asia" if False else WP + "Greater_East_Asia_Co-Prosperity_Sphere", WP + "Pacific_War"]
