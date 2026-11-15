@@ -529,6 +529,21 @@ def main():
                 "https://www.drnh.gov.tw/p/404-1003-13315.php?Lang=zh-tw",
                 "https://zenodo.org/records/5721459",
             ]
+        if name == "南宁" and fall == "1939-11-24":
+            supplements_extra["note"] = (
+                "邕宁县域。已核對《中華民國史事紀要》民國二十八年七月至十二月，"
+                "印页六一二（PDF 第617页），页眉民国二十八年十一月二十四日，"
+                "标题日军侵陷广西南宁，写本日拂晓日军强渡邕江，苦战至午后南宁遂告不守。"
+                "1940 年 10 月撤回，日没有锁，收到 11 月 1 日。"
+                "1944 年 11 月的第二次占领不在这一格里。" + PHRASE
+            )
+            supplements_extra["dates_note"] = (
+                "南宁 1939-11-24 起，收到 1940-11-01。已核對《中華民國史事紀要》印页六一二。"
+            )
+            supplements_extra["sources"] = [
+                "https://www.drnh.gov.tw/p/404-1003-13317.php?Lang=zh-tw",
+                "https://zenodo.org/records/5721459",
+            ]
         if name == "衡阳":
             supplements_extra["note"] = (
                 "衡阳县域。已核對《中華民國史事紀要》民國三十三年七月至九月，"
