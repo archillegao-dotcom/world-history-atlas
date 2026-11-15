@@ -4,6 +4,7 @@ from __future__ import annotations
 from ..zh import disp as _zh_disp
 
 from ..polity import PolityResolver
+from ..timeutil import rec_key
 
 
 def resolver(ctx) -> PolityResolver:
@@ -33,6 +34,9 @@ def pick_state(ctx, polity, date, params):
         _p = _prefer_ruled(ctx, R, cands, _p, date, params)
     prim = _p["state"] if _p else None
     params["_split"] = R.split_names(cands) if prim is None else []
+    params.pop("_dynasty_before_start", None)
+    if prim and _p and _p.get("method") == "dynasty" and prim.get("from") and date.key() < rec_key(prim["from"]):
+        params["_dynasty_before_start"] = (polity.get("props") or {}).get("NAME")
     pz = prim and (prim.get("zh") or prim.get("en"))
     pm = next((c["method"] for c in cands if c["state"] is prim), None)
     dk = date.key()

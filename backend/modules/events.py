@@ -82,6 +82,11 @@ class EventsModule(ContentModule):
                 "_sort": (bucket, -r.get("sl", 0)),
             })
         out.sort(key=lambda x: x.pop("_sort"))
+        from ..roc_beiyang import events_for
+        day = f"{date.y:04d}-{date.m:02d}-{date.d:02d}" if date.m and date.d else (
+            f"{date.y:04d}-{date.m:02d}-01" if date.m else f"{date.y:04d}-07-01")
+        curated = events_for(ctx.data_dir, day, (polity or {}).get("geom"))
+        out = curated + out
         total = len(out)
         return {"items": out[:limit], "total": total, "note": f"时间窗口：所选日期前后 {span:g} 年，以及当时正在进行中的事件"}
 

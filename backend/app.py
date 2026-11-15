@@ -69,7 +69,10 @@ SOURCES = [
     {"name": "English Wikipedia — Portal:Current events", "url": "https://en.wikipedia.org/wiki/Portal:Current_events",
      "license": "CC BY-SA 4.0", "use": "每日新闻（1995 年至今，自动更新）"},
     {"name": "Natural Earth", "url": "https://www.naturalearthdata.com/", "license": "Public domain",
-     "use": "2011 年至今的现代国家边界"},
+     "use": "2011 年至今的现代国家边界，以及控制区和声索样本里已点名的现代地块轮廓。不再拿它的一级行政区线当作历史省界。"},
+    {"name": "ENP-China / Virtual Shanghai — Provinces in Republican China",
+     "url": "https://www.virtualshanghai.net/Data/Tables?ID=198", "license": "CC0 1.0",
+     "use": "1912–1949 年中国省界轮廓。同一编号在各年份档里是同一条线，按建制日期决定画不画。不是今天的省界。"},
     {"name": "QLever (Univ. Freiburg) Wikidata SPARQL", "url": "https://qlever.dev/wikidata", "license": "—",
      "use": "构建数据时查询 Wikidata 的端点"},
     {"name": "ISW/CTP Russian Assessed Control of Terrain", "url": "https://www.arcgis.com/home/item.html?id=963c5626435e49b98ae1db399859d04e",
@@ -118,6 +121,67 @@ def polity(snap: str, fid: int):
     return {"snapshot": snap, **p["props"]}
 
 
+@app.get("/api/econ_hover")
+def econ_hover(date: str, snap: str, fid: int):
+    """悬停浮窗：只给所选年份在表里正好有的经济数字。不插值，不把邻年或更晚的现代值当成这一年。"""
+    from .econ import FORMER, MEMBER_OF, MPD_URL
+    from .modules._econ_common import store
+    d = _date(date)
+    if not basemaps.valid(snap):
+        raise HTTPException(404, "没有这个快照")
+    S = store(ctx)
+    year = d.y
+    overlaps = sorted(S.overlap_one(basemaps, snap, fid), key=lambda x: -x[1])
+    countries = []
+    for iso, share in overlaps:
+        if share < 0.02:
+            continue
+        values = []
+        for ind in ("mpd_gdppc", "mpd_pop"):
+            meta = S.indicators[ind]
+            r = S.exact_at(ind, iso, year)
+            scope = "现代国家范围内的估计，不是当时政权的账"
+            used = iso
+            if r is None and ind == "mpd_gdppc" and iso in MEMBER_OF:
+                agg = MEMBER_OF[iso]
+                r = S.exact_at(ind, agg, year)
+                if r:
+                    used = agg
+                    scope = f"这是{FORMER[agg][0]}的人均数字，不是该国单独的账；只在数据表正好有这一年时才显示"
+            if not r:
+                continue
+            values.append({
+                "id": ind, "zh": meta["zh"], "unit": meta["unit"], "v": r["v"], "year": r["year"],
+                "iso": used, "source": "Maddison Project Database 2023", "url": MPD_URL,
+                "license": "CC BY 4.0", "scope": scope,
+            })
+        countries.append({"iso": iso, "name": S.name(iso), "share": round(share, 3), "values": values})
+        if len(countries) >= 3:
+            break
+    return {
+        "date": date, "year": year, "annual": True, "fid": fid,
+        "countries": countries,
+        "empty": not any(c["values"] for c in countries),
+        "note": "这是现代国家范围的序列，不是当时政权自己的账，也不是后来某个共和国的统计。来源只在这里写一次：Maddison Project Database 2023（CC BY 4.0）。只有表里正好有所选年份才给出全年数字。",
+    }
+
+
+@app.get("/api/admin1_ref")
+def admin1_ref(west: float, south: float, east: float, north: float, zoom: float = 2):
+    """不再返回今天的一级行政区。有来源的民国省界在民国省界图层里按日期另画。"""
+    return {
+        "type": "FeatureCollection",
+        "features": [],
+        "era": "none",
+        "source": None,
+        "license": None,
+        "simplified": False,
+        "loaded": False,
+        "zoom": zoom,
+        "note": "不画今天的省界。今天的一级行政区线不是历史省界。有可再分发的民国省界时，按所选日期另画。没有合法数据的年份和地区标省界待考。",
+    }
+
+
 @app.get("/api/locate")
 def locate(date: str, lon: float, lat: float):
     d = _date(date)
@@ -141,8 +205,8 @@ def polity_names():
 
 @app.get("/api/live/status")
 def live_status():
-    """每日新闻自动更新状态。"""
-    return scheduler.STATUS
+    """每日新闻自动更新状态（v0.6.2 起附带版本号：启动器据此判断已在运行的是不是同一版本）。"""
+    return {**scheduler.STATUS, "version": config.APP_VERSION}
 
 
 @app.get("/api/modules")
@@ -164,7 +228,8 @@ def layer_query(mid: str, date: str, request: Request, limit: int | None = Query
 
 @app.get("/api/modules/{mid}")
 def module_query(mid: str, date: str, snap: str | None = None, fid: int | None = None,
-                 span: float | None = None, limit: int | None = Query(None, le=500), state: str | None = None):
+                 span: float | None = None, limit: int | None = Query(None, le=500), state: str | None = None,
+                 lat: float | None = None, lon: float | None = None):
     m = registry.modules.get(mid)
     if not m or m.kind != "panel":
         raise HTTPException(404, f"未知模块 {mid}")
@@ -179,7 +244,7 @@ def module_query(mid: str, date: str, snap: str | None = None, fid: int | None =
         pol = basemaps.polity(s, fid)
         if not pol:
             raise HTTPException(404, "没有这个政权")
-    res = m.query(ctx, pol, d, {"span": span, "limit": limit, "snap": s, "state": state})
+    res = m.query(ctx, pol, d, {"span": span, "limit": limit, "snap": s, "state": state, "lat": lat, "lon": lon})
     return JSONResponse({"module": mid, "date": date, "date_zh": d.label_zh(), "snapshot": s,
                          "polity": pol["props"] if pol else None, **res})
 

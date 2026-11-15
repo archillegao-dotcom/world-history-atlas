@@ -180,9 +180,13 @@ def main():
     for z in CZ.load(config.DATA_DIR):
         if not z.get("as_polity"):
             continue
-        rec = {"id": z["controller"]["qid"], "name": z["name_en"], "name_zh": z["name_zh"], "chain": [z["controller"]["qid"]],
-               "geom": z["geom"], "src": "data/curated/control_zones.json", "sov_name": None, "cat": "zone_" + z["kind"],
+        rec = {"id": z["controller"]["qid"], "name": z["name_en"], "name_zh": z["name_zh"],
+               "chain": [z["controller"]["qid"]] if z["controller"].get("qid") else [],
+               "geom": z["geom"], "src": "data/curated/control_zones.json", "sov_name": None,
+               "cat": z.get("cat") or ("zone_" + z["kind"]),
                "zone": z["id"], "from": CZ.parse(z.get("from"))}
+        if z.get("precision"):
+            rec["precision"] = z["precision"]
         if z.get("until"):
             rec["to"] = CZ.parse(z["until"], end=True)
         rec["label"] = f"{z['name_zh']}：{z.get('from')} 起" + (f"，至 {z['until']}" if z.get("until") else "") + \
@@ -191,8 +195,13 @@ def main():
         terr.append(rec)
     out = {"events": events, "territories": terr}
     import gzip
+    import lzma
+    payload = json.dumps(out, ensure_ascii=False, separators=(",", ":"))
     with gzip.open(config.DATA_DIR / "transitions.json.gz", "wt", encoding="utf-8") as fh:
-        json.dump(out, fh, ensure_ascii=False, separators=(",", ":"))
+        fh.write(payload)
+    # 运行时优先读同名 .xz。只写 .gz 时，地图仍用旧的 .xz。
+    with lzma.open(config.DATA_DIR / "transitions.json.xz", "wt", preset=9) as fh:
+        fh.write(payload)
     print("events:", len(events), "by kind:", {k: sum(e["kind"] == k for e in events) for k in ("inception", "dissolution")},
           "territories:", len(terr))
     for e in events:

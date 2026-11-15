@@ -1,0 +1,1 @@
+snapshots=72 occupied-zone-checks=1444 zones-without-bloc=0

@@ -1,0 +1,500 @@
+{
+  "_doc": [
+    "实际控制、主权声索、国际承认分开。from 当日起有效，until 当日起不再有效。",
+    "draw=fill 才在本图层填色；draw=dash 画虚线；draw=war_front 表示实控填色用已有的战争前线，这里不另铺颜色。",
+    "几何 id 对应 data/curated/geom/status_areas.geojson，是 Natural Earth 现代行政界，不是当日控制线。没有几何就不画。",
+    "承认名单会变的，不在这里固化成一份完整国家名单。缺的写待考或未知。"
+  ],
+  "areas": [
+    {
+      "id": "crimea",
+      "name_zh": "克里米亚与塞瓦斯托波尔",
+      "geom": "crimea",
+      "precision_zh": "轮廓是 Natural Earth 的克里米亚与塞瓦斯托波尔现代行政界，不是 2014 年 2 月至 3 月的逐日控制线。",
+      "statements": [
+        {
+          "role": "control",
+          "from": "1991-08-24",
+          "until": "2014-03-18",
+          "party": {"qid": "Q212", "zh": "乌克兰"},
+          "text": "这一层从乌克兰独立宣言日起，到 2014-03-18 之前，把整片行政界记为乌克兰实际控制。2014-02-27 起要地被占，但没有逐日半岛界线，所以不把 2 月 27 日至 3 月 17 日画成整片已经易手。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Declaration_of_Independence_of_Ukraine",
+            "https://en.wikipedia.org/wiki/2014_Russian_annexation_of_Crimea"
+          ]
+        },
+        {
+          "role": "control",
+          "from": "2014-03-18",
+          "party": {"qid": "Q159", "zh": "俄罗斯"},
+          "draw": "war_front",
+          "assessed_by": "war_fronts",
+          "text": "2014-03-18 莫斯科签署接纳条约。本层从这一天起把整片行政界标成俄罗斯实际控制，并与已有战争前线的克里米亚基线同一天。2014-03-21 完成俄罗斯国内批准，不另画一条控制线。2022-02-24 以后，这一点是否仍在评估控制区内，以当日战争前线为准。",
+          "sources": [
+            "https://www.consultant.ru/document/cons_doc_LAW_160398/",
+            "https://en.wikipedia.org/wiki/2014_Russian_annexation_of_Crimea",
+            "https://deepstatemap.live/"
+          ]
+        },
+        {
+          "role": "claim",
+          "from": "1991-08-24",
+          "until": "2014-03-18",
+          "party": {"qid": "Q212", "zh": "乌克兰"},
+          "text": "主权声索为乌克兰。",
+          "sources": ["https://en.wikipedia.org/wiki/Declaration_of_Independence_of_Ukraine"]
+        },
+        {
+          "role": "claim",
+          "from": "2014-03-18",
+          "party": {"qid": "Q212", "zh": "乌克兰"},
+          "draw": "dash",
+          "label": "乌克兰主权声索",
+          "text": "乌克兰的主权声索继续有效。俄罗斯的合并主张不改写这一行。",
+          "sources": [
+            "https://press.un.org/en/2014/ga11493.doc.htm",
+            "https://en.wikipedia.org/wiki/2014_Russian_annexation_of_Crimea"
+          ]
+        },
+        {
+          "role": "claim",
+          "from": "2014-03-18",
+          "party": {"qid": "Q159", "zh": "俄罗斯"},
+          "text": "俄罗斯声称已经按 2014-03-18 的条约并入。这是声索，不是国际承认。",
+          "sources": ["https://www.consultant.ru/document/cons_doc_LAW_160398/"]
+        },
+        {
+          "role": "recognition",
+          "from": "1991-08-24",
+          "until": "2014-03-18",
+          "party": {"qid": "Q212", "zh": "乌克兰"},
+          "text": "这一层把国际承认记为乌克兰。不逐国开列。",
+          "sources": ["https://en.wikipedia.org/wiki/Declaration_of_Independence_of_Ukraine"]
+        },
+        {
+          "role": "recognition",
+          "from": "2014-03-18",
+          "until": "2014-03-27",
+          "text": "接纳条约已经签署，大会这项决议还没有通过。这几天各国的个别表态不逐条收录，标待考。",
+          "sources": ["https://www.consultant.ru/document/cons_doc_LAW_160398/"]
+        },
+        {
+          "role": "recognition",
+          "from": "2014-03-27",
+          "text": "联合国大会第 68/262 号决议于 2014-03-27 以 100 票赞成、11 票反对、58 票弃权通过。决议申明乌克兰在国际承认边界内的领土完整，称 3 月 16 日公投没有效力，并呼吁各国、国际组织和专门机构不承认克里米亚和塞瓦斯托波尔地位的改变。反对票不在这里转写成承认名单。",
+          "sources": [
+            "https://press.un.org/en/2014/ga11493.doc.htm",
+            "https://digitallibrary.un.org/record/767883"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "donbas",
+      "name_zh": "顿涅茨克州与卢甘斯克州",
+      "geom": "donbas_oblasts",
+      "precision_zh": "虚线是今天的州界，只作声索参照。实际控制是 2015-02-18 以后战争前线里的接触线以东，不是两个州全境。",
+      "statements": [
+        {
+          "role": "control",
+          "from": "2014-04",
+          "until": "2015-02-18",
+          "text": "2014 年 4 月到 2015-02-18 没有逐日接触线，不画实控。4 月 1 日不是一份法令日，只表示这个月份起不回贴后来的基线。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Battle_of_Debaltseve",
+            "https://en.wikipedia.org/wiki/Minsk_agreements"
+          ]
+        },
+        {
+          "role": "control",
+          "from": "2015-02-18",
+          "until": "2022-02-24",
+          "party": {"qid": "Q159", "zh": "俄罗斯"},
+          "draw": "war_front",
+          "assessed_by": "war_fronts",
+          "text": "实控只算战争前线基线里的那一部分，大致是 2015-02-18 德巴尔采沃之后到 2022-02-24 之前的接触线以东。不是两个州全境。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Battle_of_Debaltseve",
+            "https://en.wikipedia.org/wiki/Minsk_agreements",
+            "https://deepstatemap.live/"
+          ]
+        },
+        {
+          "role": "claim",
+          "from": "1991-08-24",
+          "until": "2022-02-24",
+          "party": {"qid": "Q212", "zh": "乌克兰"},
+          "text": "乌克兰声索这两个州。",
+          "sources": ["https://en.wikipedia.org/wiki/Declaration_of_Independence_of_Ukraine"]
+        },
+        {
+          "role": "claim",
+          "from": "2015-02-18",
+          "until": "2022-02-24",
+          "party": {"qid": "Q159", "zh": "俄罗斯"},
+          "draw": "dash",
+          "label": "州界是声索参照，不是接触线",
+          "text": "虚线是今天的州界。它大于当时的评估控制区。不把州界写成已经控制的疆域。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Minsk_agreements",
+            "https://deepstatemap.live/"
+          ]
+        },
+        {
+          "role": "recognition",
+          "from": "2015-02-18",
+          "until": "2022-02-21",
+          "text": "这一阶段不把接触线以东记成被普遍承认的俄罗斯领土。个别承认不逐国开列，标待考。",
+          "sources": ["https://en.wikipedia.org/wiki/Minsk_agreements"]
+        },
+        {
+          "role": "recognition",
+          "from": "2022-02-21",
+          "until": "2022-02-24",
+          "text": "联合国大会后来的 ES-11/4 号决议把 2022-02-21 的决定列为应予撤销的地位决定。这里不另编承认国名单。",
+          "sources": ["https://press.un.org/en/2022/ga12458.doc.htm"]
+        }
+      ]
+    },
+    {
+      "id": "ua_four",
+      "name_zh": "顿涅茨克、卢甘斯克、扎波罗热、赫尔松四州",
+      "geom": "four_oblasts",
+      "precision_zh": "2022-09-29 起的虚线是宣布所涉四个州的现代行政界，不是当日评估控制区。实控看战争前线。",
+      "statements": [
+        {
+          "role": "control",
+          "from": "2022-02-24",
+          "draw": "war_front",
+          "assessed_by": "war_fronts",
+          "text": "不把四个州整片写成俄罗斯实际控制。2022-02-24 至 04-02 用 ISW/CTP 评估，04-03 起用 DeepState。灰色区不算控制。",
+          "sources": [
+            "https://www.arcgis.com/home/item.html?id=963c5626435e49b98ae1db399859d04e",
+            "https://deepstatemap.live/",
+            "https://press.un.org/en/2022/ga12458.doc.htm"
+          ]
+        },
+        {
+          "role": "claim",
+          "from": "2022-02-24",
+          "party": {"qid": "Q212", "zh": "乌克兰"},
+          "text": "乌克兰声索这四个州。宣布吞并不改写这一行。",
+          "sources": ["https://press.un.org/en/2022/ga12458.doc.htm"]
+        },
+        {
+          "role": "claim",
+          "from": "2022-09-29",
+          "party": {"qid": "Q159", "zh": "俄罗斯"},
+          "draw": "dash",
+          "label": "宣布的范围，不是实控",
+          "text": "联合国大会 ES-11/4 写的是俄罗斯联邦 2022-09-29 就这四个州的地位作出的决定，并写明这些地区只是部分处于或曾经处于临时军事控制。虚线因此用四个州的行政界，其中包含当时没有控制的土地。这不是实控。",
+          "sources": [
+            "https://press.un.org/en/2022/ga12458.doc.htm",
+            "https://digitallibrary.un.org/record/3990400"
+          ]
+        },
+        {
+          "role": "recognition",
+          "from": "2022-02-24",
+          "until": "2022-10-12",
+          "text": "大会第 ES-11/4 号决议还没有通过。不把宣布写成已经获得承认。",
+          "sources": ["https://press.un.org/en/2022/ga12458.doc.htm"]
+        },
+        {
+          "role": "recognition",
+          "from": "2022-10-12",
+          "text": "联合国大会第 ES-11/4 号决议于 2022-10-12 以 143 票赞成、5 票反对、35 票弃权通过。反对票是白俄罗斯、朝鲜民主主义人民共和国、尼加拉瓜、俄罗斯联邦、叙利亚。决议宣布 9 月 23 日至 27 日的所谓公投和随后试图吞并这四个州没有国际法效力，并要求撤销 2022-02-21 和 2022-09-29 的决定。反对票不是一份完整承认名单。宣布吞并不等于承认。",
+          "sources": [
+            "https://press.un.org/en/2022/ga12458.doc.htm",
+            "https://digitallibrary.un.org/record/3990400"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "abkhazia",
+      "name_zh": "阿布哈兹",
+      "geom": "abkhazia",
+      "precision_zh": "轮廓是 Natural Earth 的阿布哈兹现代行政界，精度大致。2008-08-26 以前不画。",
+      "statements": [
+        {
+          "role": "control",
+          "from": "2008-08-26",
+          "party": {"zh": "阿布哈兹实际当局"},
+          "draw": "fill",
+          "color_kind": "de_facto",
+          "text": "从俄罗斯承认该日起，用这块行政界标实际控制不在格鲁吉亚政府手里。更早的停火线没有收进几何，标待考，不回贴。",
+          "sources": ["https://www.mid.ru/print-country/?COUNTRY_CODE=ab&id=18852"]
+        },
+        {
+          "role": "claim",
+          "from": "2008-08-26",
+          "party": {"qid": "Q230", "zh": "格鲁吉亚"},
+          "draw": "dash",
+          "label": "格鲁吉亚声索",
+          "text": "格鲁吉亚主张主权。这条虚线不是一份边界条约的文本。",
+          "sources": ["https://www.mid.ru/print-country/?COUNTRY_CODE=ab&id=18852"]
+        },
+        {
+          "role": "claim",
+          "from": "2008-08-26",
+          "party": {"zh": "阿布哈兹"},
+          "text": "阿布哈兹方面主张独立。这是声索。",
+          "sources": ["https://www.mid.ru/print-country/?COUNTRY_CODE=ab&id=18852"]
+        },
+        {
+          "role": "recognition",
+          "from": "2008-08-26",
+          "text": "俄罗斯总统于 2008-08-26 签署法令承认阿布哈兹共和国独立。其他国家的承认名单随时间变化，本批不固化，标待考。",
+          "sources": ["https://www.mid.ru/print-country/?COUNTRY_CODE=ab&id=18852"]
+        }
+      ]
+    },
+    {
+      "id": "south_ossetia",
+      "name_zh": "南奥塞梯",
+      "geom": null,
+      "precision_zh": "没有可用轮廓，不画。不把北奥塞梯或什达-卡特利的行政界拿来代替。",
+      "statements": [
+        {
+          "role": "control",
+          "from": "2008-08",
+          "text": "2008 年 8 月战争之后的实际控制线没有收进几何，标待考，不画。8 月 1 日不是停火日。",
+          "sources": ["https://en.wikipedia.org/wiki/Russo-Georgian_War"]
+        },
+        {
+          "role": "claim",
+          "from": "2008-08",
+          "party": {"qid": "Q230", "zh": "格鲁吉亚"},
+          "text": "格鲁吉亚主张主权。范围待考。",
+          "sources": ["https://en.wikipedia.org/wiki/Russo-Georgian_War"]
+        },
+        {
+          "role": "recognition",
+          "from": "2008-08",
+          "text": "俄罗斯承认南奥塞梯的法令日不从阿布哈兹页面套用，标待考。其他国家的承认名单不固化。",
+          "sources": ["https://www.mid.ru/print-country/?COUNTRY_CODE=ab&id=18852"]
+        }
+      ]
+    },
+    {
+      "id": "northern_cyprus",
+      "name_zh": "塞浦路斯北部",
+      "geom": "northern_cyprus",
+      "precision_zh": "轮廓是 Natural Earth 的北塞浦路斯现代范围，与已有控制区同一块，不是 1974 年停火线的逐段重测。",
+      "statements": [
+        {
+          "role": "control",
+          "from": "1974-08-16",
+          "until": "1975-02-13",
+          "party": {"qid": "Q43", "zh": "土耳其"},
+          "text": "1974-08-16 第二阶段停火之后由土耳其控制。填色仍用已有的控制区，这里不另铺一层。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Turkish_invasion_of_Cyprus",
+            "https://en.wikipedia.org/wiki/Northern_Cyprus"
+          ]
+        },
+        {
+          "role": "control",
+          "from": "1975-02-13",
+          "until": "1983-11-15",
+          "party": {"qid": "Q784851", "zh": "塞浦路斯土族邦"},
+          "text": "1975-02-13 宣布成立塞浦路斯土族邦。填色仍用已有的控制区。",
+          "sources": ["https://en.wikipedia.org/wiki/Turkish_Federated_State_of_Cyprus"]
+        },
+        {
+          "role": "control",
+          "from": "1983-11-15",
+          "party": {"qid": "Q23681", "zh": "北塞浦路斯"},
+          "text": "1983-11-15 宣布北塞浦路斯土耳其共和国。填色仍用已有的控制区，这里不另铺一层。",
+          "sources": ["https://en.wikipedia.org/wiki/Northern_Cyprus"]
+        },
+        {
+          "role": "claim",
+          "from": "1974-08-16",
+          "party": {"qid": "Q229", "zh": "塞浦路斯"},
+          "draw": "dash",
+          "label": "塞浦路斯声索",
+          "text": "塞浦路斯共和国主张这片土地。北塞浦路斯方面从 1983-11-15 起主张独立。事实控制不改写塞浦路斯的声索。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/United_Nations_Security_Council_Resolution_541",
+            "https://en.wikipedia.org/wiki/Northern_Cyprus"
+          ]
+        },
+        {
+          "role": "claim",
+          "from": "1983-11-15",
+          "party": {"qid": "Q23681", "zh": "北塞浦路斯"},
+          "text": "北塞浦路斯主张独立。这是声索。",
+          "sources": ["https://en.wikipedia.org/wiki/Northern_Cyprus"]
+        },
+        {
+          "role": "recognition",
+          "from": "1974-08-16",
+          "until": "1983-11-18",
+          "text": "1983-11-18 以前的安理会决议本层不逐条展开，标待考。",
+          "sources": ["https://en.wikipedia.org/wiki/United_Nations_Security_Council_Resolution_541"]
+        },
+        {
+          "role": "recognition",
+          "from": "1983-11-18",
+          "text": "联合国安理会第 541 号决议于 1983-11-18 以 13 票赞成、1 票反对、1 票弃权通过，认为独立宣言在法律上无效，并敦促各国不要承认除塞浦路斯共和国以外的塞浦路斯国家。英文维基该页写明北塞浦路斯只获土耳其承认。其他变化不在这里另编名单。",
+          "sources": ["https://en.wikipedia.org/wiki/United_Nations_Security_Council_Resolution_541"]
+        }
+      ]
+    },
+    {
+      "id": "golan",
+      "name_zh": "戈兰高地",
+      "geom": null,
+      "precision_zh": "没有单独的戈兰轮廓。不用库奈特拉全省代替。不画。",
+      "statements": [
+        {
+          "role": "control",
+          "from": "1967-06",
+          "party": {"qid": "Q801", "zh": "以色列"},
+          "text": "1967 年 6 月战争之后由以色列控制。6 月 1 日不是停火日。停火线几何待考，不画。",
+          "sources": ["https://en.wikipedia.org/wiki/Annexation"]
+        },
+        {
+          "role": "claim",
+          "from": "1967-06",
+          "party": {"qid": "Q858", "zh": "叙利亚"},
+          "text": "叙利亚声索。范围待考。",
+          "sources": ["https://en.wikipedia.org/wiki/United_Nations_Security_Council_Resolution_497"]
+        },
+        {
+          "role": "claim",
+          "from": "1981-12-17",
+          "party": {"qid": "Q801", "zh": "以色列"},
+          "text": "以色列以戈兰高地法把法律、管辖和行政扩到这里。法律的具体公布日未在本条核对到日，承认状况从安理会决议日 1981-12-17 写起。这是声索。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Annexation",
+            "https://en.wikipedia.org/wiki/United_Nations_Security_Council_Resolution_497"
+          ]
+        },
+        {
+          "role": "recognition",
+          "from": "1981-12-17",
+          "until": "2019-03-25",
+          "text": "联合国安理会第 497 号决议于 1981-12-17 一致通过，宣布以色列这项决定无效，没有国际法律效力。",
+          "sources": ["https://en.wikipedia.org/wiki/United_Nations_Security_Council_Resolution_497"]
+        },
+        {
+          "role": "recognition",
+          "from": "2019-03-25",
+          "text": "第 497 号决议仍然宣布该决定无效。美国于 2019-03-25 承认戈兰高地为以色列主权领土；同一来源记联合国秘书长表示地位没有改变。这不是联合国的承认。其他国家不逐一开列。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/United_Nations_Security_Council_Resolution_497",
+            "https://en.wikipedia.org/wiki/Annexation"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "western_sahara",
+      "name_zh": "西撒哈拉",
+      "geom": "western_sahara",
+      "precision_zh": "虚线是 Natural Earth 的西撒哈拉整片轮廓，是双方声索的参照，不是沙墙，也不是实控分界。",
+      "statements": [
+        {
+          "role": "control",
+          "from": "1976-02-27",
+          "text": "摩洛哥控制沙墙以西的大部分，萨赫拉维阿拉伯民主共和国或波利萨里奥控制另一侧。沙墙几何不在数据包里，不填色，分界标待考。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Western_Sahara",
+            "https://en.wikipedia.org/wiki/Sahrawi_Arab_Democratic_Republic"
+          ]
+        },
+        {
+          "role": "claim",
+          "from": "1976-02-27",
+          "party": {"qid": "Q1028", "zh": "摩洛哥"},
+          "draw": "dash",
+          "label": "双方声索，不是实控分界",
+          "text": "摩洛哥声索这片土地。",
+          "sources": ["https://en.wikipedia.org/wiki/Western_Sahara"]
+        },
+        {
+          "role": "claim",
+          "from": "1976-02-27",
+          "party": {"zh": "萨赫拉维阿拉伯民主共和国"},
+          "text": "萨赫拉维阿拉伯民主共和国于 1976-02-27 宣布成立，并声索这片土地。",
+          "sources": ["https://en.wikipedia.org/wiki/Sahrawi_Arab_Democratic_Republic"]
+        },
+        {
+          "role": "recognition",
+          "from": "1976-02-27",
+          "text": "承认名单随时间变化，本批不固化人数，标待考。",
+          "sources": ["https://en.wikipedia.org/wiki/Sahrawi_Arab_Democratic_Republic"]
+        }
+      ]
+    },
+    {
+      "id": "kosovo",
+      "name_zh": "科索沃",
+      "geom": "kosovo",
+      "precision_zh": "轮廓是 Natural Earth 的科索沃现代范围。北部市镇不按今天的市界切开，标待考。",
+      "statements": [
+        {
+          "role": "control",
+          "from": "1999-06-10",
+          "until": "2008-02-17",
+          "text": "1999-06-10 安理会第 1244 号决议把它置于联合国临时行政之下。这不是塞尔维亚的日常管治，也还不是独立。北部不另画。",
+          "sources": ["https://en.wikipedia.org/wiki/International_recognition_of_Kosovo"]
+        },
+        {
+          "role": "control",
+          "from": "2008-02-17",
+          "party": {"qid": "Q1246", "zh": "科索沃"},
+          "text": "2008-02-17 宣布独立之后，由科索沃机构管治。底图若已画成科索沃，这里不另铺填色。北部市镇的实际管治标待考，不按今天的市界切开。",
+          "sources": ["https://en.wikipedia.org/wiki/International_recognition_of_Kosovo"]
+        },
+        {
+          "role": "claim",
+          "from": "1999-06-10",
+          "until": "2008-02-17",
+          "party": {"zh": "南斯拉夫联盟共和国（决议用语）"},
+          "text": "第 1244 号决议重申的是当时的南斯拉夫联盟共和国的领土完整。不把后来的塞尔维亚回填到 1999 年。中间的国家继承日期本层不另写，标待考。",
+          "sources": ["https://en.wikipedia.org/wiki/International_recognition_of_Kosovo"]
+        },
+        {
+          "role": "claim",
+          "from": "2008-02-17",
+          "party": {"qid": "Q403", "zh": "塞尔维亚"},
+          "draw": "dash",
+          "label": "塞尔维亚声索",
+          "text": "塞尔维亚不承认独立，继续声索。",
+          "sources": ["https://en.wikipedia.org/wiki/International_recognition_of_Kosovo"]
+        },
+        {
+          "role": "claim",
+          "from": "2008-02-17",
+          "party": {"qid": "Q1246", "zh": "科索沃"},
+          "text": "科索沃主张独立。这是声索。",
+          "sources": ["https://en.wikipedia.org/wiki/International_recognition_of_Kosovo"]
+        },
+        {
+          "role": "recognition",
+          "from": "1999-06-10",
+          "until": "2008-02-17",
+          "text": "地位由第 1244 号决议下的临时行政处理。不是联合国会员。",
+          "sources": ["https://en.wikipedia.org/wiki/International_recognition_of_Kosovo"]
+        },
+        {
+          "role": "recognition",
+          "from": "2008-02-17",
+          "until": "2010-07-22",
+          "text": "部分国家承认，部分国家不承认。人数不固化，标待考。不是联合国会员。",
+          "sources": ["https://en.wikipedia.org/wiki/International_recognition_of_Kosovo"]
+        },
+        {
+          "role": "recognition",
+          "from": "2010-07-22",
+          "text": "国际法院 2010-07-22 的咨询意见认为 2008-02-17 的独立宣言不违反国际法。这不是承认，也不是联合国会员资格。承认人数仍不固化，标待考。",
+          "sources": ["https://en.wikipedia.org/wiki/International_recognition_of_Kosovo"]
+        }
+      ]
+    }
+  ]
+}

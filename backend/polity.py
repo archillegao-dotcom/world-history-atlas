@@ -122,6 +122,15 @@ class PolityResolver:
                 st["sources"] = st.get("sources", []) + r.get("sources", [])
         self.offices = _load(data_dir / "offices.json.gz", [])
         self.persons = {p["id"]: p for p in _load(data_dir / "persons.json.gz", [])}
+        _ps = data_dir / "curated" / "person_supplements.json"
+        if _ps.exists():
+            for q, r in json.loads(_ps.read_text(encoding="utf-8")).items():
+                if q.startswith("_"):
+                    continue
+                self.persons.setdefault(q, {"id": q})
+                self.persons[q].update({k: v for k, v in r.items() if k != "src"})
+                if r.get("src"):
+                    self.persons[q]["sources"] = self.persons[q].get("sources", []) + [r["src"]]
         self.orgs = {o["id"]: o for o in _load(data_dir / "orgs.json.gz", [])}
         # 中文名补译（data/curated/zh_labels.json：Wikidata 中文标签 / 中文维基条目名）
         from .zh import fill as _zh_fill
@@ -335,7 +344,19 @@ class PolityResolver:
         if not lo <= snap <= hi:
             return []
         f = self.geo.polity(snap, fid)
-        grp = self.dyn["names"].get(f["props"].get("NAME")) if f else None
+        pname = f["props"].get("NAME") if f else None
+        # 底图拼写 Zhoa / Zhou states 是周，不是商。若套用整份「main」朝代，前1046年以前西周尚未开始，
+        # 这块会和 Sinic 一起落到商朝，看起来像两个商。这里只给周的条目，并用底图快照的年份撑住候选，
+        # 避免再沿「取代了商」退回商朝。周灭商的学术年代仍约前1046年，传统纪年（约前1122年）不是依据。
+        # https://en.wikipedia.org/wiki/Western_Zhou
+        # https://en.wikipedia.org/wiki/Xia%E2%80%93Shang%E2%80%93Zhou_Chronology_Project
+        if pname in ("Zhoa", "Zhou states"):
+            return [
+                ["Q1069609", "dynasty", 480, -15000101, -7710101],
+                ["Q307066", "dynasty", 470, -7710101, -2560101],
+                ["Q35216", "dynasty", 460, -10460101, -2560101],
+            ]
+        grp = self.dyn["names"].get(pname) if pname else None
         if not grp:
             return []
         order = (self.dyn["main"] + self.dyn["secondary"]) if grp == "main" else (grp + self.dyn["main"] + self.dyn["secondary"])
@@ -401,12 +422,22 @@ class PolityResolver:
                 continue
             if len(cand) > 3:   # 带整理好的起止日期（CShapes 分期）：以分期为准，不再看 Wikidata 存在期
                 a, b = cand[3], cand[4]
+                if isinstance(a, str):
+                    a = int(a.replace("-", "")) if a else None
+                if isinstance(b, str):
+                    b = int(b.replace("-", "")) if b else None
                 if (a is None or a <= k8) and (b is None or k8 < b):
                     out.append({"state": s, "method": method, "score": score, "strong": method in STRONG, "period": [a, b]})
                 continue
             raw.append((s, method, score))
             if alive(dk, s):
                 out.append({"state": s, "method": method, "score": score, "strong": method in STRONG})
+        # 当天已有整理过分期时，去掉「名称匹配」到另一个政权的候选。
+        # 否则继任者（如日治台湾 Q137816 的 replaced_by = 中华民国 Q865，英文名恰好是 Taiwan）
+        # 会因 superseded() 排到分期政权前面，1941 年的台湾被显示成中华民国。朝鲜日治时期同理。
+        active_periods = {c["state"]["id"] for c in out if c.get("period")}
+        if active_periods:
+            out = [c for c in out if c["method"] != "name" or c["state"]["id"] in active_periods]
         if not any(c["strong"] for c in out):
             seen = {c["state"]["id"] for c in out}
             for s, method, score in raw:
@@ -522,12 +553,19 @@ class PolityResolver:
 
     def state_name(self, qid: str) -> str:
         s = self.states.get(qid) or self.persons.get(qid) or {}
-        return s.get("zh") or s.get("en") or qid
+        n = s.get("zh") or s.get("en")
+        if not n or (n.startswith("Q") and n[1:].isdigit()):
+            return "暂无通用译名"
+        from .zh import disp
+        return disp(n) or "暂无通用译名"
 
     def person_brief(self, pid: str) -> dict:
         p = self.persons.get(pid, {})
         from .zh import disp
-        return {"id": pid, "name": disp(p.get("zh") or p.get("en")) or f"{pid}（未记录姓名）", "en": p.get("en"), "desc": p.get("desc"),
+        shown = disp(p.get("zh") or p.get("en"))
+        if not shown or (shown.startswith("Q") and shown[1:].isdigit()):
+            shown = "姓名未记录"
+        return {"id": pid, "name": shown, "en": p.get("en"), "desc": p.get("desc"),
                 "born": p.get("born"), "died": p.get("died")}
 
 

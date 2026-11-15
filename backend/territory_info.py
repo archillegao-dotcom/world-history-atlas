@@ -43,6 +43,8 @@ CATS = {
     "zone_de_facto": ("事实独立/自治地区", "没有普遍国际承认、但实际自行管治的地区。", "https://en.wikipedia.org/wiki/De_facto"),
     "disputed": ("主权争议地区", "主权归属有争议的地区；联合国将西撒哈拉列为「非自治领土」。地图按 Natural Earth 的「事实控制」画法单独画出，不代表对主权的立场。",
                  "https://en.wikipedia.org/wiki/Political_status_of_Western_Sahara"),
+    "unverified": ("范围未核实", "两块近似多边形之间露出的底图空隙。没有核定控制方，外缘不是测过的边界。具体限制写在几何说明里。",
+                   "https://www.nmgqq.com.cn/quqinggailan/jianzhiyange/xlglm/2022-11-28/25408.html"),
 }
 
 BY_NAME = {
@@ -62,6 +64,21 @@ BY_NAME = {
 SOV_ZH = {"China": "中华人民共和国", "United Kingdom": "英国", "Portugal": "葡萄牙", "France": "法国", "Denmark": "丹麦",
           "Netherlands": "荷兰", "United States of America": "美国", "Australia": "澳大利亚", "New Zealand": "新西兰",
           "Norway": "挪威", "Finland": "芬兰"}
+
+
+def unverified_note(polity, trans) -> str | None:
+    """近似多边形之间的空隙没有对应政权。面板用几何说明，不用「没能对应」代替这段限制。"""
+    props = (polity or {}).get("props") or {}
+    if props.get("TERR_CAT") != "unverified":
+        return None
+    fid = props.get("fid")
+    terr = getattr(trans, "terr", None) or []
+    if not isinstance(fid, int):
+        return None
+    i = fid - 200000  # 与 backend/cshapes.py 的 OFF_TERR 相同
+    if i < 0 or i >= len(terr):
+        return None
+    return terr[i].get("geom_note") or None
 
 
 def info(name: str, cat: str | None = None) -> dict | None:

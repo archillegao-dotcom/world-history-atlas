@@ -1,0 +1,205 @@
+[
+ {
+  "group": "法国",
+  "case": "1938 巴黎=第三共和国",
+  "date": "1938-06-01",
+  "lat": 48.86,
+  "lon": 2.35,
+  "snap": "cs@19380601",
+  "fid": 370003,
+  "poly": "France",
+  "qid": "Q70802",
+  "name": "法兰西第三共和国",
+  "label": "法兰西第三共和国",
+  "flag": "Flag%20of%20France.svg",
+  "chain_now": [
+   "法兰西第三共和国"
+  ],
+  "ok": true,
+  "errors": [],
+  "sec": 10.3
+ },
+ {
+  "group": "法国",
+  "case": "1950 巴黎=第四共和国",
+  "date": "1950-06-01",
+  "lat": 48.86,
+  "lon": 2.35,
+  "snap": "cs@19500517",
+  "fid": 300079,
+  "poly": "France",
+  "qid": "Q69829",
+  "name": "法兰西第四共和国",
+  "label": "法兰西第四共和国",
+  "flag": "Flag%20of%20France.svg",
+  "chain_now": [
+   "法兰西第四共和国"
+  ],
+  "leaders": [
+   "樊尚·奥里奥尔"
+  ],
+  "ok": true,
+  "errors": [],
+  "sec": 1.4
+ },
+ {
+  "group": "法国",
+  "case": "1958-10-03 巴黎=第四共和国",
+  "date": "1958-10-03",
+  "lat": 48.86,
+  "lon": 2.35,
+  "snap": "cs@19581002",
+  "fid": 300079,
+  "poly": "France",
+  "qid": "Q69829",
+  "name": "法兰西第四共和国",
+  "label": "法兰西第四共和国",
+  "flag": "Flag%20of%20France.svg",
+  "chain_now": [
+   "法兰西第四共和国"
+  ],
+  "ok": true,
+  "errors": [],
+  "sec": 1.2
+ },
+ {
+  "group": "法国",
+  "case": "1958-10-05 巴黎=第五共和国",
+  "date": "1958-10-05",
+  "lat": 48.86,
+  "lon": 2.35,
+  "snap": "cs@19581002",
+  "fid": 300079,
+  "poly": "France",
+  "qid": "Q142",
+  "name": "法国",
+  "label": "法国",
+  "flag": "Flag%20of%20France%20%281958%E2%80%931976%29.svg",
+  "chain_now": [
+   "法兰西第五共和国"
+  ],
+  "ok": true,
+  "errors": [],
+  "sec": 0.0
+ },
+ {
+  "group": "法国",
+  "case": "2020 巴黎=第五共和国",
+  "date": "2020-06-01",
+  "lat": 48.86,
+  "lon": 2.35,
+  "snap": "2011@20110101",
+  "fid": 160,
+  "poly": "France",
+  "qid": "Q142",
+  "name": "法国",
+  "label": "法国",
+  "flag": "Flag%20of%20France%20%281976%E2%80%932020%29.svg",
+  "chain_now": [
+   "法兰西第五共和国"
+  ],
+  "leaders": [
+   "埃马纽埃尔·马克龙",
+   "爱德华·菲利普"
+  ],
+  "ok": true,
+  "errors": [],
+  "sec": 0.0
+ },
+ {
+  "group": "二战欧洲",
+  "case": "1940-07-15 巴黎=德占法国",
+  "date": "1940-07-15",
+  "lat": 48.86,
+  "lon": 2.35,
+  "snap": "cs@19400701",
+  "fid": 370000,
+  "poly": "France",
+  "qid": "Q2748708",
+  "name": "纳粹德国占领法国",
+  "label": "纳粹德国占领法国",
+  "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Germany%20%281935%E2%80%931945%29.svg",
+  "chain_now": null,
+  "ok": true,
+  "errors": [],
+  "sec": 0.0
+ },
+ {
+  "group": "二战欧洲",
+  "case": "1940-07-15 维希=维希法国",
+  "date": "1940-07-15",
+  "lat": 46.13,
+  "lon": 3.43,
+  "snap": "cs@19400701",
+  "fid": 200143,
+  "poly": "Zone libre (Vichy France)",
+  "qid": "Q69808",
+  "name": "维希法国",
+  "label": "维希法国",
+  "flag": "Flag%20of%20France.svg",
+  "chain_now": [
+   "法兰西国（维希法国）"
+  ],
+  "ok": true,
+  "errors": [],
+  "sec": 0.0
+ },
+ {
+  "group": "二战欧洲",
+  "case": "1942-12-24 巴黎=德占法国",
+  "date": "1942-12-24",
+  "lat": 48.86,
+  "lon": 2.35,
+  "snap": "cs@19421201",
+  "fid": 370000,
+  "poly": "France",
+  "qid": "Q2748708",
+  "name": "纳粹德国占领法国",
+  "label": "纳粹德国占领法国",
+  "flag": "http://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Germany%20%281935%E2%80%931945%29.svg",
+  "chain_now": null,
+  "ok": true,
+  "errors": [],
+  "sec": 0.0
+ },
+ {
+  "group": "二战欧洲",
+  "case": "1942-12-24 克莱蒙费朗=维希法国",
+  "date": "1942-12-24",
+  "lat": 45.78,
+  "lon": 3.08,
+  "snap": "cs@19421201",
+  "fid": 200144,
+  "poly": "Vichy France (former zone libre, occupied from Nov 1942)",
+  "qid": "Q69808",
+  "name": "维希法国",
+  "label": "维希法国",
+  "flag": "Flag%20of%20France.svg",
+  "chain_now": [
+   "法兰西国（维希法国）"
+  ],
+  "ok": true,
+  "errors": [],
+  "sec": 0.0
+ },
+ {
+  "group": "二战欧洲",
+  "case": "1944-07-15 卡昂=盟军/法国",
+  "date": "1944-07-15",
+  "lat": 49.18,
+  "lon": -0.37,
+  "snap": "cs@19440705",
+  "fid": 381000,
+  "poly": "France (allied_held)",
+  "qid": "Q783684",
+  "name": "法兰西共和国临时政府",
+  "label": "法兰西共和国临时政府/盟军控制区（法国）",
+  "flag": "Flag%20of%20France.svg",
+  "chain_now": [
+   "法兰西国（维希法国）"
+  ],
+  "ok": true,
+  "errors": [],
+  "sec": 0.0
+ }
+]

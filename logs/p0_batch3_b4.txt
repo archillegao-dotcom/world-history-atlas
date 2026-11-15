@@ -1,0 +1,17 @@
+PASS 法国有 Maddison 人均序列 | [1, 1276, 1277]…[2020, 2021, 2022]
+PASS 1050 不在中国原表 | 1050
+PASS 空档年旧规则会插值 | {'v': 1223.211111111111, 'year': 1050, 'interp': [1000, 1090]}
+PASS 空档年悬停规则没有值 | None
+PASS 末年悬停规则有原值 | {'v': 39065.7, 'year': 2022}
+PASS 末年之后一年旧规则可能沿用 | {'v': 39065.7, 'year': 2022, 'carried': True}
+PASS 沿用年悬停规则没有值 | None
+PASS 2011 巴黎能定位 | France
+PASS 2011 北京能定位 | China
+PASS 接口空档年没有任何数值 | {"date": "1050-06-01", "year": 1050, "annual": true, "fid": 300551, "countries": [{"iso": "CHN", "name": "中华人民共和国", "share": 0.997, "values": []}], "empty": true, "note": "这是现代国家范围的序列，不是当时政权自己的账，也不是后来某个共和国的统计。来源只在这里写一次：Maddison Project Data
+PASS 接口末年有数值、年份、单位、来源 | [{"id": "mpd_gdppc", "zh": "人均 GDP（Maddison，2011 年国际元）", "unit": "国际元", "v": 39065.7, "year": 2022, "iso": "FRA", "source": "Maddison Project Database 2023", "url": "https://www.rug.nl/ggdc/historicaldevelopment/maddison/releases/maddison-project-database-2023", "license": "CC BY 4.0", "scope": "现代国
+PASS 接口不把沿用年当成所选年 | {"date": "2023-06-01", "year": 2023, "annual": true, "fid": 300079, "countries": [{"iso": "FRA", "name": "法国", "share": 0.992, "values": []}], "empty": true, "note": "这是现代国家范围的序列，不是当时政权自己的账，也不是后来某个共和国的统计。来源只在这里写一次：Maddison Project Database 
+PASS 说明写明不是当时政权的账 | 这是现代国家范围的序列，不是当时政权自己的账，也不是后来某个共和国的统计。来源只在这里写一次：Maddison Project Database 2023（CC
+PASS 缩小到 3 级不返回现代省界 | n=0
+PASS 放大后有现代行政区线且标明现代 | n=57 license=Public domain
+PASS 参考线说明不是古代或战时省界 | 这些线是今天的一级行政区（省、州等），来自 Natural Earth 1:10m（公有领域），画出来之前做了简化。它们不是历史省界，不是古代省界，也不是战时控制线。没有可靠的历史
+FAILS 0

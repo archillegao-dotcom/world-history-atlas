@@ -1,0 +1,769 @@
+{
+  "_doc": "宪法与基本法（第一批，非中华民国）。按政权 QID 和生效日匹配，不按现代国名回灌。until 不含当天。废止日只在文本确实停止施行时填写。",
+  "kinds": {
+    "formal": "正式宪法",
+    "provisional": "临时宪法/约法",
+    "unwritten": "不成文宪法",
+    "basic_law": "基本法",
+    "imperial": "帝国/钦定宪法",
+    "charter": "宪章",
+    "pending": "类型待考",
+    "related": "相关法律，不是新宪法"
+  },
+  "instruments": [
+    {
+      "id": "fr_1848",
+      "title_zh": "1848年宪法",
+      "title_orig": "Constitution de 1848",
+      "kind": "formal",
+      "adopted": "1848-11-04",
+      "promulgated": "1848-11-04",
+      "effective": "1848-11-04",
+      "repealed": null,
+      "summary_zh": "第二共和国的成文宪法，日期用法国宪法委员会历史页所列的1848年11月4日。1852年1月14日另有一部宪法，本批没有收录那一部，所以这一天起不再把1848年文本当作在行宪法。",
+      "sources": [
+        {"label": "法国宪法委员会：历史上的宪法", "url": "https://www.conseil-constitutionnel.fr/rubrique-principale/les-constitutions-dans-l-histoire"}
+      ],
+      "spans": [{"qid": "Q58326", "from": "1848-11-04", "until": "1852-01-14"}]
+    },
+    {
+      "id": "fr_1875",
+      "title_zh": "1875年宪法性法律",
+      "title_orig": "Lois constitutionnelles de 1875",
+      "kind": "formal",
+      "adopted": null,
+      "promulgated": "1875-02-25",
+      "effective": "1875-02-25",
+      "repealed": null,
+      "summary_zh": "第三共和国没有一部单一宪法典，而是1875年2月24日、2月25日和7月16日三部宪法性法律。本图从2月25日起把这一组视为在行文本，2月24日当天不显示整组。7月10日的宪法性法律只是授权起草新宪法，没有在当天废止这三部法律。7月11日的宪法性法令第1号废止了2月25日法律的第2条，第2号废止了与该法令抵触的条文。本图从7月11日起不再把这三部法律整组写成仍完整在行，也没有逐条标出还剩下哪些。巴黎若点到占领区，不套这三部法律。",
+      "sources": [
+        {"label": "法国宪法委员会：历史上的宪法", "url": "https://www.conseil-constitutionnel.fr/rubrique-principale/les-constitutions-dans-l-histoire"}
+      ],
+      "spans": [
+        {"qid": "Q70802", "from": "1875-02-25", "until": "1940-07-10"},
+        {"qid": "Q69808", "from": "1940-06-25", "until": "1940-07-11"}
+      ]
+    },
+    {
+      "id": "fr_vichy_1940_07_10",
+      "title_zh": "1940年7月10日宪法性法律",
+      "title_orig": "Loi constitutionnelle du 10 juillet 1940",
+      "kind": "pending",
+      "adopted": "1940-07-10",
+      "promulgated": "1940-07-10",
+      "effective": "1940-07-10",
+      "repealed": null,
+      "summary_zh": "国民议会把起草新宪法的权力交给贝当署名下的政府。它要求新宪法保障劳动、家庭和祖国的权利，并由国家批准、由它设立的议会实施。这不是那部新宪法本身，新宪法后来没有按这条颁成。维基文库所转《官方公报》的日期是7月11日，文本落款是7月10日。法国参议院记述当天投票、次日才颁布宪法性法令。1944年8月9日法令第3条点名宣布它无效；第11条写明该法令在大陆随解放适用。这两天都不是维希多边形的结束日。类型待考。只挂在维希政权上。",
+      "sources": [
+        {"label": "维基文库所转1940年7月11日官方公报上的7月10日宪法性法律", "url": "https://fr.wikisource.org/wiki/Loi_constitutionnelle_du_10_juillet_1940"},
+        {"label": "法国参议院：7月10日投票，7月11日颁布宪法性法令", "url": "https://www.senat.fr/connaitre-le-senat/lhistoire-du-senat/dossiers-dhistoire/d38/le-senat-de-1940-a-1944-de-vichy-a-chatelguyon.html"},
+        {"label": "法国政府法律网站：1944年8月9日法令第3条、第11条", "url": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000320215"}
+      ],
+      "spans": [{"qid": "Q69808", "from": "1940-07-10", "until": null}],
+      "phases": [
+        {"from": "1940-07-10", "until": "1944-08-09", "force_zh": "维希政权的授权依据，不是新宪法", "force_note": "形式地位是宪法性法律。它授权颁布新宪法，本身不是那部宪法。"},
+        {"from": "1944-08-09", "until": null, "force_zh": "已被1944年8月9日法令宣布无效", "force_note": "第3条点名宣布无效。第11条写明该法令在大陆领土上随解放适用。这不是把政权切换日当成废止日。"}
+      ]
+    },
+    {
+      "id": "fr_vichy_1940_07_11",
+      "title_zh": "1940年7月11日宪法性法令",
+      "title_orig": "Actes constitutionnels des 11 juillet 1940",
+      "kind": "pending",
+      "adopted": null,
+      "promulgated": "1940-07-11",
+      "effective": "1940-07-11",
+      "repealed": null,
+      "summary_zh": "第1、2、3号都落款7月11日，法国政府法律网站记《官方公报》为7月12日。第1号写明贝当担任国家元首，并废止1875年2月25日法律第2条。第2号规定国家元首的权力，并废止1875年三部法律中与该法令抵触的规定。第3号让议会休会。它们和第10日的授权法律不是同一件事。1944年8月9日法令第3条宣布所有称为宪法性法令的文本无效，适用方式见该法令第11条。类型待考。只挂在维希政权上。",
+      "sources": [
+        {"label": "法国政府法律网站：7月11日宪法性法令第1号，公报7月12日", "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000476688"},
+        {"label": "法国政府法律网站：第2号", "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000671775"},
+        {"label": "法国政府法律网站：第3号", "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000000476689"},
+        {"label": "法国政府法律网站：1944年8月9日法令", "url": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000320215"}
+      ],
+      "spans": [{"qid": "Q69808", "from": "1940-07-11", "until": null}],
+      "phases": [
+        {"from": "1940-07-11", "until": "1944-08-09", "force_zh": "维希政权当日颁布的宪法性法令", "force_note": "与7月10日的授权法律分开。不是一部已经颁成的新宪法。"},
+        {"from": "1944-08-09", "until": null, "force_zh": "已被1944年8月9日法令宣布无效", "force_note": "第3条宣布所有称为宪法性法令的文本无效。第11条写明大陆上随解放适用。"}
+      ]
+    },
+    {
+      "id": "fr_ord_1944",
+      "title_zh": "1944年8月9日恢复共和合法性法令",
+      "title_orig": "Ordonnance du 9 août 1944 relative au rétablissement de la légalité républicaine",
+      "kind": "provisional",
+      "adopted": null,
+      "promulgated": "1944-08-09",
+      "effective": "1944-08-09",
+      "repealed": null,
+      "summary_zh": "临时政府在阿尔及尔发布的法令，宣布维希宪法性法令无效，并恢复共和合法性。它不是1946年10月27日宪法，也不是第五共和国宪法。只在临时政府这个政权下显示，到1946年10月27日宪法生效为止。",
+      "sources": [
+        {"label": "法国政府法律网站：1944年8月9日法令", "url": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000320215"}
+      ],
+      "spans": [{"qid": "Q783684", "from": "1944-08-09", "until": "1946-10-27"}]
+    },
+    {
+      "id": "fr_law_1945",
+      "title_zh": "1945年11月2日宪法性法律",
+      "title_orig": "Loi constitutionnelle du 2 novembre 1945",
+      "kind": "provisional",
+      "adopted": "1945-11-02",
+      "promulgated": "1945-11-02",
+      "effective": "1945-11-02",
+      "repealed": null,
+      "summary_zh": "制宪议会选出之后，用来安排临时政府的宪法性法律。法国宪法委员会把它列在临时政府名下、1946年宪法之前。1944年12月1日还没有这部法律。",
+      "sources": [
+        {"label": "法国宪法委员会：历史上的宪法", "url": "https://www.conseil-constitutionnel.fr/rubrique-principale/les-constitutions-dans-l-histoire"}
+      ],
+      "spans": [{"qid": "Q783684", "from": "1945-11-02", "until": "1946-10-27"}]
+    },
+    {
+      "id": "fr_1946",
+      "title_zh": "1946年10月27日宪法",
+      "title_orig": "Constitution du 27 octobre 1946",
+      "kind": "formal",
+      "adopted": "1946-10-13",
+      "promulgated": "1946-10-27",
+      "effective": "1946-10-27",
+      "repealed": null,
+      "summary_zh": "第四共和国宪法。公民投票在1946年10月13日，宪法委员会所记的宪法日期是10月27日。1944年的临时政府和维希政权都不使用这部宪法。1958年10月4日第五共和国宪法颁布后不再显示。",
+      "sources": [
+        {"label": "法国宪法委员会：1946年宪法", "url": "https://www.conseil-constitutionnel.fr/les-constitutions-dans-l-histoire/constitution-de-1946-ive-republique"}
+      ],
+      "spans": [{"qid": "Q69829", "from": "1946-10-27", "until": "1958-10-04"}]
+    },
+    {
+      "id": "fr_1958",
+      "title_zh": "1958年10月4日宪法",
+      "title_orig": "Constitution du 4 octobre 1958",
+      "kind": "formal",
+      "adopted": "1958-09-28",
+      "promulgated": "1958-10-04",
+      "effective": "1958-10-04",
+      "repealed": null,
+      "summary_zh": "第五共和国宪法。公民投票在1958年9月28日，颁布日是10月4日。10月3日仍显示1946年宪法。官方公报在10月5日，本图跟随宪法委员会所用的10月4日，不提前到公民投票日。",
+      "sources": [
+        {"label": "法国宪法委员会：历史上的宪法", "url": "https://www.conseil-constitutionnel.fr/rubrique-principale/les-constitutions-dans-l-histoire"}
+      ],
+      "spans": [{"qid": "Q200686", "from": "1958-10-04", "until": null}]
+    },
+    {
+      "id": "de_weimar",
+      "title_zh": "魏玛宪法",
+      "title_orig": "Die Verfassung des Deutschen Reichs",
+      "kind": "formal",
+      "adopted": "1919-07-31",
+      "promulgated": "1919-08-11",
+      "effective": "1919-08-14",
+      "repealed": null,
+      "summary_zh": "国民议会1919年7月31日通过，总统8月11日签署。第181条规定自公布之日起生效，德国历史文献写明签署后三日、即8月14日生效。1933年3月24日的授权法没有写明废止这部宪法，第2条只允许政府制定的法律偏离它。欧洲委员会威尼斯委员会的说明写：1933至1945年这部宪法在纸面上没有被正式废止。基本法第140条把1919年8月11日宪法的若干条文收为基本法的一部分。所以本图在纳粹德国期间仍列出它，并分开写效力：不是把它说成当时仍按原文正常实施，也不把授权法写成一部新宪法。本批不自定一个废止日。",
+      "sources": [
+        {"label": "德国历史文献：魏玛宪法，签署后三日生效", "url": "https://germanhistorydocs.org/en/weimar-germany-1918-1933/the-weimar-constitution-august-11-1919"},
+        {"label": "伯尔尼大学：1933年3月24日授权法原文", "url": "https://www.servat.unibe.ch/dns/RGBl_1933_I_141_G_Behebung_Not.html"},
+        {"label": "威尼斯委员会：魏玛宪法在1933至1945年没有被正式废止", "url": "https://docs-venice.coe.int/files/Bicameralism/GER-E.htm"},
+        {"label": "基本法第140条：收进1919年8月11日宪法的若干条文", "url": "https://www.gesetze-im-internet.de/gg/art_140.html"}
+      ],
+      "spans": [
+        {"qid": "Q41304", "from": "1919-08-14", "until": "1933-01-30"},
+        {"qid": "Q7318", "from": "1933-01-30", "until": null}
+      ],
+      "phases": [
+        {"from": "1919-08-14", "until": "1933-02-28", "force_zh": "形式在行", "force_note": "这一段还没有2月28日的停止基本权利的命令，也没有3月24日的授权法。"},
+        {"from": "1933-02-28", "until": "1933-03-24", "force_zh": "形式未废止，列出的基本权利已停止", "force_note": "2月28日的命令依据第48条第2款，把列出的条文在另行通知前停止效力。整部宪法没有因此废止。"},
+        {"from": "1933-03-24", "until": null, "force_zh": "形式未废止，实际被架空", "force_note": "授权法第2条允许偏离宪法，没有废止宪法。不能把这一天之后写成宪法已经废止，也不能写成仍按原文正常实施。"}
+      ]
+    },
+    {
+      "id": "de_fire_1933",
+      "title_zh": "1933年2月28日保护人民与国家令",
+      "title_orig": "Verordnung des Reichspräsidenten zum Schutz von Volk und Staat",
+      "kind": "related",
+      "adopted": null,
+      "promulgated": "1933-02-28",
+      "effective": "1933-02-28",
+      "repealed": null,
+      "summary_zh": "总统依据魏玛宪法第48条第2款发布。第1条把宪法第114、115、117、118、123、124和第153条在另行通知前停止效力。第6条写明自公布之日起生效。这不是一部新宪法，也不是废止整部魏玛宪法。",
+      "sources": [
+        {"label": "伯尔尼大学：1933年2月28日命令原文", "url": "https://www.servat.unibe.ch/dns/RGBl_1933_I_83_VO_Volk_Staat.html"}
+      ],
+      "spans": [{"qid": "Q7318", "from": "1933-02-28", "until": null}]
+    },
+    {
+      "id": "de_enable_1933",
+      "title_zh": "1933年3月24日授权法",
+      "title_orig": "Gesetz zur Behebung der Not von Volk und Reich",
+      "kind": "related",
+      "adopted": "1933-03-23",
+      "promulgated": "1933-03-24",
+      "effective": "1933-03-24",
+      "repealed": null,
+      "summary_zh": "正式名称是《消除人民与国家困境法》。国会3月23日通过，文本日期是3月24日。第5条写明自公布之日起生效，并写明于1937年4月1日失效，或现政府被替换时失效。第1条把立法权扩到政府，第2条允许由此制定的法律偏离宪法，但写明不触及国会和参议院的设置本身，总统权利不受影响。它不是一部新宪法。伯尔尼大学文献库注明后来有延长，页码为1937年公报第105页、1939年第95页、1943年第295页。本批没有逐份打开延长文本，所以不把1937年4月1日写成实际终止日。",
+      "sources": [
+        {"label": "伯尔尼大学：1933年3月24日授权法原文", "url": "https://www.servat.unibe.ch/dns/RGBl_1933_I_141_G_Behebung_Not.html"}
+      ],
+      "spans": [{"qid": "Q7318", "from": "1933-03-24", "until": null}]
+    },
+    {
+      "id": "de_gg",
+      "title_zh": "德意志联邦共和国基本法",
+      "title_orig": "Grundgesetz für die Bundesrepublik Deutschland",
+      "kind": "basic_law",
+      "adopted": "1949-05-08",
+      "promulgated": "1949-05-23",
+      "effective": null,
+      "effective_clause": "于公布当日结束时生效",
+      "effective_clause_orig": "Dieses Grundgesetz tritt mit Ablauf des Tages der Verkündung in Kraft.",
+      "day_grain": "公布日是1949年5月23日。本图只有整日，这一天仍显示条目，并写明生效时刻在当天结束。不把5月23日全天写成尚未生效，也不把5月24日写成法定生效日。",
+      "after_grain": "法定表述仍是公布当日结束时生效。5月24日只是该时刻之后的第一个整日，不是另定的生效日期。",
+      "repealed": null,
+      "summary_zh": "议会委员会1949年5月8日通过，5月23日公布。第145条第2款的原文是于公布当日结束时生效。本图不把5月24日写成法定生效日。它不是纳粹德国或占领当局的宪法，也不用于1949年的东德。两德统一后继续适用于统一的联邦共和国。",
+      "sources": [
+        {"label": "基本法第145条", "url": "https://www.gesetze-im-internet.de/gg/art_145.html"},
+        {"label": "联邦宪法法院：基本法于1949年5月23日结束时生效", "url": "https://www.bundesverfassungsgericht.de/EN/BasicLawLegalBasis/TheBasicLaw/thebasiclaw_node.html"}
+      ],
+      "spans": [
+        {"qid": "Q713750", "from": "1949-05-23", "until": "1990-10-03"},
+        {"qid": "Q183", "from": "1990-10-03", "until": null}
+      ]
+    },
+    {
+      "id": "ddr_1949",
+      "title_zh": "德意志民主共和国1949年宪法",
+      "title_orig": "Verfassung der Deutschen Demokratischen Republik",
+      "kind": "formal",
+      "adopted": "1949-10-07",
+      "promulgated": "1949-10-07",
+      "effective": "1949-10-07",
+      "repealed": "1968-04-06",
+      "summary_zh": "东德成立当日的宪法，只挂在东德政权上，不把联邦德国基本法套到东德。文献汇集写明它由1968年4月6日的宪法废止。1968年文本本批没有收录，所以这一天起不再显示1949年文本。",
+      "sources": [
+        {"label": "德国宪法文献汇集：1949年东德宪法", "url": "https://www.verfassungen.de/ddr/verf49.htm"}
+      ],
+      "spans": [{"qid": "Q16957", "from": "1949-10-07", "until": "1968-04-06"}]
+    },
+    {
+      "id": "jp_meiji",
+      "title_zh": "大日本帝国宪法",
+      "title_orig": "大日本帝国憲法",
+      "kind": "imperial",
+      "adopted": null,
+      "promulgated": "1889-02-11",
+      "effective": "1890-11-29",
+      "repealed": "1947-05-03",
+      "summary_zh": "1889年2月11日公布，1890年11月29日随着第一届帝国议会开院施行。1944年12月1日的大日本帝国仍是这部宪法，不是1947年宪法。1947年5月3日日本国宪法施行，这一天起不再显示。",
+      "sources": [
+        {"label": "日本国立公文书馆：1890年11月29日施行", "url": "https://www.archives.go.jp/ayumi/kobetsu/m23_1890_03.html"}
+      ],
+      "spans": [{"qid": "Q188712", "from": "1890-11-29", "until": "1947-05-03"}]
+    },
+    {
+      "id": "jp_1947",
+      "title_zh": "日本国宪法",
+      "title_orig": "日本国憲法",
+      "kind": "formal",
+      "adopted": null,
+      "promulgated": "1946-11-03",
+      "effective": "1947-05-03",
+      "repealed": null,
+      "summary_zh": "第100条第1款原文是：自公布之日起算，六个月经过之后的那一天起施行。条文里没有写1947年5月3日。e-Gov 把公布日标为昭和二十一年十一月三日，把施行日标为昭和22年5月3日。本图采用法令库所标的施行日，不另把「六个月」推成另一个日子。5月2日仍是大日本帝国宪法。",
+      "sources": [
+        {"label": "e-Gov：日本国宪法，昭和22年5月3日施行", "url": "https://laws.e-gov.go.jp/document?lawid=321CONSTITUTION_19470503_000000000000000"},
+        {"label": "日本法令外国语译：第100条", "url": "https://www.japaneselawtranslation.go.jp/en/laws/view/174/en"}
+      ],
+      "spans": [{"qid": "Q17", "from": "1947-05-03", "until": null}]
+    },
+    {
+      "id": "uk_unwritten",
+      "title_zh": "不成文宪法",
+      "title_orig": "Constitution of the United Kingdom",
+      "kind": "unwritten",
+      "adopted": null,
+      "promulgated": null,
+      "effective": null,
+      "repealed": null,
+      "summary_zh": "联合王国没有一部名为宪法的单一成文法。本批不从后来的制度往回补19世纪的惯例、判决或全部制定法。下面只列已经打开过文本的五部法律。1801年1月1日只是1800年与爱尔兰合并法写明的合并日，不是这套不成文制度的起始日。1688年权利法案和1700年王位继承法早于合并，本批不写它们在英格兰或殖民地当时的效力，只在合并日之后的联合王国条目下注明它们已经存在。1911年和1949年议会法只从各自御准日起列入。资料时段就是各法页面上能核对到的日期。殖民地和占领区不套用。",
+      "sources": [
+        {"label": "英国立法数据库：1688年权利法案", "url": "https://www.legislation.gov.uk/aep/WillandMarSess2/1/2"},
+        {"label": "英国立法数据库：1700年王位继承法", "url": "https://www.legislation.gov.uk/aep/Will3/12-13/2"},
+        {"label": "英国立法数据库：1800年与爱尔兰合并法", "url": "https://www.legislation.gov.uk/apgb/Geo3/39-40/67"},
+        {"label": "英国立法数据库：1911年议会法", "url": "https://www.legislation.gov.uk/ukpga/Geo5/1-2/13"},
+        {"label": "英国立法数据库：1949年议会法", "url": "https://www.legislation.gov.uk/ukpga/Geo6/12-13-14/103"}
+      ],
+      "spans": [
+        {"qid": "Q174193", "from": "1801-01-01", "until": "1922-12-06"},
+        {"qid": "Q145", "from": "1922-12-06", "until": null}
+      ],
+      "parts": [
+        {
+          "id": "uk_bill_1689",
+          "title_zh": "1688年权利法案",
+          "title_orig": "Bill of Rights [1688]",
+          "kind": "charter",
+          "promulgated": null,
+          "effective": null,
+          "since_note": "资料时段：合并日之后才在本页注明。不回推1688年的英格兰。",
+          "summary_zh": "立法数据库的正式名称是1688年权利法案，正文提到1688年2月13日的宣言。本批没有把它的效力范围写成从1688年一直覆盖到后来的联合王国和殖民地。"
+        },
+        {
+          "id": "uk_settlement_1701",
+          "title_zh": "1700年王位继承法",
+          "title_orig": "Act of Settlement (1700)",
+          "kind": "charter",
+          "promulgated": null,
+          "effective": null,
+          "since_note": "资料时段：合并日之后才在本页注明。不回推1700年。",
+          "summary_zh": "立法数据库作1700年。本批只把它当作联合王国不成文制度里核对过的一部制定法，不回推它在1700年的适用范围。"
+        },
+        {
+          "id": "uk_union_1800",
+          "title_zh": "1800年与爱尔兰合并法",
+          "title_orig": "Union with Ireland Act 1800",
+          "kind": "charter",
+          "promulgated": "1800-07-02",
+          "effective": "1801-01-01",
+          "summary_zh": "大不列颠与爱尔兰的合并从1801年1月1日起生效。它是宪法性制定法，不是英国唯一的宪法。"
+        },
+        {
+          "id": "uk_parliament_1911",
+          "title_zh": "1911年议会法",
+          "title_orig": "Parliament Act 1911",
+          "kind": "charter",
+          "promulgated": "1911-08-18",
+          "effective": "1911-08-18",
+          "summary_zh": "限制贵族院拖延立法的制定法。1911年8月17日还不列入，8月18日御准后列入。"
+        },
+        {
+          "id": "uk_parliament_1949",
+          "title_zh": "1949年议会法",
+          "title_orig": "Parliament Act 1949",
+          "kind": "charter",
+          "promulgated": "1949-12-16",
+          "effective": "1949-12-16",
+          "summary_zh": "进一步缩短贵族院拖延期限。1949年12月15日还不列入，12月16日御准后列入。"
+        }
+      ]
+    },
+    {
+      "id": "us_articles",
+      "title_zh": "1777年邦联条例",
+      "title_orig": "Articles of Confederation",
+      "kind": "formal",
+      "adopted": "1777-11-15",
+      "promulgated": null,
+      "effective": "1781-03-01",
+      "repealed": "1789-03-04",
+      "summary_zh": "大陆会议1777年11月15日通过。十三个邦都批准后，1781年3月1日起施行，是当时的宪法。1789年3月4日由现在的宪法取代，不是另有一件废止令。本图在1788年以前东海岸点不到美国多边形，条目仍从1781年3月1日起挂在美国这一政权上。",
+      "sources": [
+        {"label": "美国国家档案：邦联条例", "url": "https://www.archives.gov/milestone-documents/articles-of-confederation"},
+        {"label": "国会图书馆：邦联条例说明", "url": "https://guides.loc.gov/articles-of-confederation/introduction"}
+      ],
+      "spans": [{"qid": "Q30", "from": "1781-03-01", "until": "1789-03-04"}]
+    },
+    {
+      "id": "us_1787",
+      "title_zh": "1787年美国宪法",
+      "title_orig": "Constitution of the United States",
+      "kind": "formal",
+      "adopted": "1787-09-17",
+      "promulgated": null,
+      "effective": "1789-03-04",
+      "repealed": null,
+      "summary_zh": "制宪会议1787年9月17日签署。第九个邦1788年6月21日批准，达到生效所需的九邦。邦联国会把新政府开始运作定在1789年3月4日。没有单独的公布日。修正案不是新的一部宪法，本批不逐条单列。",
+      "sources": [
+        {"label": "美国国家档案：美国宪法", "url": "https://www.archives.gov/milestone-documents/constitution"},
+        {"label": "美国国家档案：联邦政府自1789年3月4日起", "url": "https://www.archives.gov/research/guide-fed-records/groups/011.html"}
+      ],
+      "spans": [{"qid": "Q30", "from": "1789-03-04", "until": null}]
+    },
+    {
+      "id": "ru_1918",
+      "title_zh": "1918年俄罗斯社会主义联邦苏维埃共和国宪法",
+      "title_orig": "Конституция РСФСР 1918 года",
+      "kind": "formal",
+      "adopted": "1918-07-10",
+      "promulgated": null,
+      "effective": "1918-07-10",
+      "repealed": null,
+      "summary_zh": "第五次全俄苏维埃代表大会1918年7月10日通过。本批没有另核公布日，从通过日起列入。地图上的苏维埃俄国到1922年12月30日改标苏联。1925年另有一部俄罗斯宪法，本批没有单列，也不把1918年文本套到苏联多边形上。",
+      "sources": [
+        {"label": "俄罗斯国家杜马：1918年宪法说明", "url": "http://duma.gov.ru/media/files/JmjsZZFeGUi6eNpaokAed00omoZT3g6F.pdf"},
+        {"label": "总统图书馆：俄罗斯宪法沿革", "url": "https://www.prlib.ru/news/2071055"}
+      ],
+      "spans": [{"qid": "Q2305208", "from": "1918-07-10", "until": "1922-12-30"}]
+    },
+    {
+      "id": "su_1924",
+      "title_zh": "1924年苏联宪法",
+      "title_orig": "Конституция СССР 1924 года",
+      "kind": "formal",
+      "adopted": "1924-01-31",
+      "promulgated": null,
+      "effective": "1924-01-31",
+      "repealed": "1936-12-05",
+      "summary_zh": "苏联第二次苏维埃代表大会1924年1月31日通过。1936年12月5日由下一部宪法取代。苏联多边形从1922年12月30日就有，那天这部宪法还没有通过。",
+      "sources": [
+        {"label": "俄罗斯国家杜马：1924年宪法说明", "url": "http://duma.gov.ru/media/files/JmjsZZFeGUi6eNpaokAed00omoZT3g6F.pdf"}
+      ],
+      "spans": [{"qid": "Q15180", "from": "1924-01-31", "until": "1936-12-05"}]
+    },
+    {
+      "id": "su_1936",
+      "title_zh": "1936年苏联宪法",
+      "title_orig": "Конституция СССР 1936 года",
+      "kind": "formal",
+      "adopted": "1936-12-05",
+      "promulgated": null,
+      "effective": "1936-12-05",
+      "repealed": "1977-10-07",
+      "summary_zh": "苏联第八次非常苏维埃代表大会1936年12月5日通过。1977年10月7日由下一部宪法取代。",
+      "sources": [
+        {"label": "俄罗斯国家杜马：1936年宪法说明", "url": "http://duma.gov.ru/media/files/JmjsZZFeGUi6eNpaokAed00omoZT3g6F.pdf"}
+      ],
+      "spans": [{"qid": "Q15180", "from": "1936-12-05", "until": "1977-10-07"}]
+    },
+    {
+      "id": "su_1977",
+      "title_zh": "1977年苏联宪法",
+      "title_orig": "Конституция СССР 1977 года",
+      "kind": "formal",
+      "adopted": "1977-10-07",
+      "promulgated": null,
+      "effective": "1977-10-07",
+      "repealed": "1991-12-26",
+      "summary_zh": "第九届苏联最高苏维埃非常会议1977年10月7日通过。地图上1991年12月25日仍是苏联，12月26日起是俄罗斯。废止日写的是苏联这一政权在图上的结束，不是另有一件废止令。",
+      "sources": [
+        {"label": "俄罗斯国家杜马：1977年宪法说明", "url": "http://duma.gov.ru/media/files/JmjsZZFeGUi6eNpaokAed00omoZT3g6F.pdf"}
+      ],
+      "spans": [{"qid": "Q15180", "from": "1977-10-07", "until": "1991-12-26"}]
+    },
+    {
+      "id": "ru_1993",
+      "title_zh": "1993年俄罗斯联邦宪法",
+      "title_orig": "Конституция Российской Федерации",
+      "kind": "formal",
+      "adopted": "1993-12-12",
+      "promulgated": "1993-12-25",
+      "effective": "1993-12-25",
+      "repealed": null,
+      "summary_zh": "1993年12月12日全民投票通过。联邦委员会写明1993年12月25日官方公布之日起生效。12月12日当天还不列入。修正案不是新的一部宪法。",
+      "sources": [
+        {"label": "俄罗斯联邦委员会：1993年宪法", "url": "http://council.gov.ru/services/constitution/"}
+      ],
+      "spans": [{"qid": "Q159", "from": "1993-12-25", "until": null}]
+    },
+    {
+      "id": "it_statuto",
+      "title_zh": "阿尔贝蒂诺宪章",
+      "title_orig": "Statuto albertino",
+      "kind": "charter",
+      "adopted": null,
+      "promulgated": "1848-03-04",
+      "effective": "1848-05-08",
+      "repealed": "1948-01-01",
+      "summary_zh": "卡洛·阿尔贝托1848年3月4日钦赐给撒丁王国，不是议会通过的宪法。都灵国家档案馆写明1848年5月8日第一届议会开会起完全生效。后来沿用于意大利王国，直到1948年1月1日共和国宪法生效。3月4日当天还不列入。",
+      "sources": [
+        {"label": "都灵国家档案馆：阿尔贝蒂诺宪章", "url": "https://archiviodistatotorino.cultura.gov.it/1848-statuto-albertino-2/"}
+      ],
+      "spans": [
+        {"qid": "Q2577303", "from": "1848-05-08", "until": "1946-06-02"},
+        {"qid": "Q165154", "from": "1848-05-08", "until": "1946-06-02"},
+        {"qid": "Q172579", "from": "1848-05-08", "until": "1946-06-02"},
+        {"qid": "Q38", "from": "1946-06-02", "until": "1948-01-01"}
+      ]
+    },
+    {
+      "id": "it_1948",
+      "title_zh": "1948年意大利共和国宪法",
+      "title_orig": "Costituzione della Repubblica Italiana",
+      "kind": "formal",
+      "adopted": "1947-12-22",
+      "promulgated": "1947-12-27",
+      "effective": "1948-01-01",
+      "repealed": null,
+      "summary_zh": "制宪会议1947年12月22日通过，1947年12月27日公布，1948年1月1日生效。12月27日当天仍是阿尔贝蒂诺宪章。",
+      "sources": [
+        {"label": "意大利法规数据库：共和国宪法", "url": "https://www.normattiva.it/eli/id/1947/12/27/047U0001/CONSOLIDATED"}
+      ],
+      "spans": [{"qid": "Q38", "from": "1948-01-01", "until": null}]
+    },
+    {
+      "id": "es_1931",
+      "title_zh": "1931年西班牙宪法",
+      "title_orig": "Constitución de la República Española de 1931",
+      "kind": "formal",
+      "adopted": "1931-12-09",
+      "promulgated": "1931-12-09",
+      "effective": "1931-12-09",
+      "repealed": null,
+      "summary_zh": "制宪国会1931年12月9日通过。本图只挂在西班牙第二共和国上，列到1939年4月1日这个多边形改标佛朗哥时期。国民军控制区从哪一天起不再适用，没有逐地写入，也不把这部宪法写成被某一天的法令明文废止。",
+      "sources": [
+        {"label": "西班牙众议院：1931年宪法", "url": "https://www.congreso.es/cem/const1931"}
+      ],
+      "spans": [{"qid": "Q178038", "from": "1931-12-09", "until": "1939-04-01"}]
+    },
+    {
+      "id": "es_fuero_trabajo",
+      "title_zh": "劳动宪章",
+      "title_orig": "Fuero del Trabajo",
+      "kind": "basic_law",
+      "adopted": null,
+      "promulgated": "1938-03-09",
+      "effective": "1938-03-10",
+      "repealed": "1978-12-29",
+      "summary_zh": "佛朗哥时期的基本法，不是正式宪法。法令在布尔戈斯落款1938年3月9日，官方公报3月10日刊登。地图上马德里1939年4月1日起才标成佛朗哥时期，这一天起能点到。1978年12月29日宪法生效后不再列入。",
+      "sources": [
+        {"label": "西班牙官方公报：劳动宪章，1938年3月10日", "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-1938-3093"}
+      ],
+      "spans": [
+        {"qid": "Q13474305", "from": "1938-03-10", "until": "1975-11-20"},
+        {"qid": "Q29", "from": "1975-11-20", "until": "1978-12-29"}
+      ]
+    },
+    {
+      "id": "es_cortes_1942",
+      "title_zh": "议会组织法",
+      "title_orig": "Ley Constitutiva de las Cortes",
+      "kind": "basic_law",
+      "adopted": "1942-07-17",
+      "promulgated": "1942-07-17",
+      "effective": "1942-07-19",
+      "repealed": "1978-12-29",
+      "summary_zh": "佛朗哥时期的基本法，不是正式宪法。法令标题是1942年7月17日，官方公报7月19日刊登。1978年12月29日起不再列入。",
+      "sources": [
+        {"label": "西班牙官方公报：1942年7月17日议会法", "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-1942-6528"}
+      ],
+      "spans": [
+        {"qid": "Q13474305", "from": "1942-07-19", "until": "1975-11-20"},
+        {"qid": "Q29", "from": "1975-11-20", "until": "1978-12-29"}
+      ]
+    },
+    {
+      "id": "es_fuero_espanoles",
+      "title_zh": "西班牙人宪章",
+      "title_orig": "Fuero de los Españoles",
+      "kind": "basic_law",
+      "adopted": "1945-07-17",
+      "promulgated": "1945-07-17",
+      "effective": "1945-07-18",
+      "repealed": "1978-12-29",
+      "summary_zh": "佛朗哥时期的基本法，不是正式宪法。法令标题是1945年7月17日，官方公报7月18日刊登。1978年12月29日起不再列入。",
+      "sources": [
+        {"label": "西班牙官方公报：西班牙人宪章", "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-1945-7244"}
+      ],
+      "spans": [
+        {"qid": "Q13474305", "from": "1945-07-18", "until": "1975-11-20"},
+        {"qid": "Q29", "from": "1975-11-20", "until": "1978-12-29"}
+      ]
+    },
+    {
+      "id": "es_referendum_1945",
+      "title_zh": "国民公投法",
+      "title_orig": "Ley de Referéndum Nacional",
+      "kind": "basic_law",
+      "adopted": "1945-10-22",
+      "promulgated": "1945-10-22",
+      "effective": "1945-10-22",
+      "repealed": "1978-12-29",
+      "summary_zh": "佛朗哥时期的基本法，不是正式宪法。日期用1945年10月22日的法令标题。1978年12月29日起不再列入。",
+      "sources": [
+        {"label": "西班牙官方公报：基本法合订本所载1945年10月22日公投法", "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-1967-40312"}
+      ],
+      "spans": [
+        {"qid": "Q13474305", "from": "1945-10-22", "until": "1975-11-20"},
+        {"qid": "Q29", "from": "1975-11-20", "until": "1978-12-29"}
+      ]
+    },
+    {
+      "id": "es_sucesion_1947",
+      "title_zh": "国家元首继承法",
+      "title_orig": "Ley de Sucesión en la Jefatura del Estado",
+      "kind": "basic_law",
+      "adopted": "1947-07-26",
+      "promulgated": "1947-07-26",
+      "effective": "1947-07-27",
+      "repealed": "1978-12-29",
+      "summary_zh": "佛朗哥时期的基本法，不是正式宪法。法令标题是1947年7月26日，官方公报7月27日刊登。公投日没有另写成通过日。1978年12月29日起不再列入。",
+      "sources": [
+        {"label": "西班牙官方公报：国家元首继承法", "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-1947-7395"}
+      ],
+      "spans": [
+        {"qid": "Q13474305", "from": "1947-07-27", "until": "1975-11-20"},
+        {"qid": "Q29", "from": "1975-11-20", "until": "1978-12-29"}
+      ]
+    },
+    {
+      "id": "es_principios_1958",
+      "title_zh": "国民运动原则法",
+      "title_orig": "Ley de Principios del Movimiento Nacional",
+      "kind": "basic_law",
+      "adopted": "1958-05-17",
+      "promulgated": "1958-05-17",
+      "effective": "1958-05-17",
+      "repealed": "1978-12-29",
+      "summary_zh": "佛朗哥时期的基本法，不是正式宪法。日期用1958年5月17日的法令标题。1978年12月29日起不再列入。",
+      "sources": [
+        {"label": "西班牙官方公报：1967年基本法合订本所载1958年5月17日原则法", "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-1967-40312"}
+      ],
+      "spans": [
+        {"qid": "Q13474305", "from": "1958-05-17", "until": "1975-11-20"},
+        {"qid": "Q29", "from": "1975-11-20", "until": "1978-12-29"}
+      ]
+    },
+    {
+      "id": "es_organica_1967",
+      "title_zh": "国家组织法",
+      "title_orig": "Ley Orgánica del Estado",
+      "kind": "basic_law",
+      "adopted": "1967-01-10",
+      "promulgated": "1967-01-10",
+      "effective": "1967-01-11",
+      "repealed": "1978-12-29",
+      "summary_zh": "佛朗哥时期的基本法，不是正式宪法。法令标题是1967年1月10日，官方公报1月11日刊登。公报写明它被1978年12月27日的宪法废止；本图从该宪法12月29日生效这天起不再列入。",
+      "sources": [
+        {"label": "西班牙官方公报：国家组织法", "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-1967-5"}
+      ],
+      "spans": [
+        {"qid": "Q13474305", "from": "1967-01-11", "until": "1975-11-20"},
+        {"qid": "Q29", "from": "1975-11-20", "until": "1978-12-29"}
+      ]
+    },
+    {
+      "id": "es_reforma_1977",
+      "title_zh": "政治改革法",
+      "title_orig": "Ley para la Reforma Política",
+      "kind": "basic_law",
+      "adopted": "1977-01-04",
+      "promulgated": "1977-01-04",
+      "effective": "1977-01-04",
+      "repealed": "1978-12-29",
+      "summary_zh": "佛朗哥去世后的政治改革法，仍是基本法，不是1978年宪法。日期用1977年1月4日。只挂在这一天已经标成西班牙的多边形上。1978年12月29日起不再列入。",
+      "sources": [
+        {"label": "西班牙官方公报：政治改革法", "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1977-165"}
+      ],
+      "spans": [{"qid": "Q29", "from": "1977-01-04", "until": "1978-12-29"}]
+    },
+    {
+      "id": "es_1978",
+      "title_zh": "1978年西班牙宪法",
+      "title_orig": "Constitución Española",
+      "kind": "formal",
+      "adopted": "1978-12-06",
+      "promulgated": "1978-12-27",
+      "effective": "1978-12-29",
+      "repealed": null,
+      "summary_zh": "众议院和参议院1978年10月31日通过文本，12月6日公投。国王1978年12月27日批准，官方公报12月29日公布，同日生效。12月28日仍列基本法，不列这部宪法。",
+      "sources": [
+        {"label": "西班牙官方公报：1978年宪法", "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229"}
+      ],
+      "spans": [{"qid": "Q29", "from": "1978-12-29", "until": null}]
+    },
+    {
+      "id": "cn_1949",
+      "title_zh": "1949年共同纲领",
+      "title_orig": "中国人民政治协商会议共同纲领",
+      "kind": "provisional",
+      "adopted": "1949-09-29",
+      "promulgated": "1949-09-29",
+      "effective": "1949-10-01",
+      "repealed": "1954-09-20",
+      "summary_zh": "中国人民政治协商会议第一届全体会议1949年9月29日通过。全国人大沿革说明：10月1日中央人民政府委员会接受它为施政方针，在1954年宪法以前起临时宪法的作用。类型是临时宪法/约法，不是后来的宪法。只挂在中华人民共和国上。9月29日北京点到的不是这个政权。中华民国不套用。",
+      "sources": [
+        {"label": "中国人大网：宪法沿革", "url": "http://www.npc.gov.cn/npc/c12434/dzlfxzgcl70nlflc/202108/t20210824_313204.html"}
+      ],
+      "spans": [{"qid": "Q148", "from": "1949-10-01", "until": "1954-09-20"}]
+    },
+    {
+      "id": "cn_1954",
+      "title_zh": "1954年9月20日宪法",
+      "title_orig": "中华人民共和国宪法（1954年）",
+      "kind": "formal",
+      "adopted": "1954-09-20",
+      "promulgated": "1954-09-20",
+      "effective": "1954-09-20",
+      "repealed": "1975-01-17",
+      "summary_zh": "第一届全国人民代表大会第一次会议1954年9月20日通过，同日公告公布。1975年1月17日由下一部宪法取代。",
+      "sources": [
+        {"label": "中国人大网：1954年宪法通过并公布", "url": "http://www.npc.gov.cn/npc/c12434/dzlfxzgcl70nlflc/202108/t20210824_313204.html"}
+      ],
+      "spans": [{"qid": "Q148", "from": "1954-09-20", "until": "1975-01-17"}]
+    },
+    {
+      "id": "cn_1975",
+      "title_zh": "1975年1月17日宪法",
+      "title_orig": "中华人民共和国宪法（1975年）",
+      "kind": "formal",
+      "adopted": "1975-01-17",
+      "promulgated": "1975-01-17",
+      "effective": "1975-01-17",
+      "repealed": "1978-03-05",
+      "summary_zh": "第四届全国人民代表大会第一次会议1月13日至17日举行，最后一天通过。1978年3月5日由下一部宪法取代。",
+      "sources": [
+        {"label": "中国人大网：1975年宪法在会议最后一天通过", "url": "http://www.npc.gov.cn/npc/c12434/dzlfxzgcl70nlflc/202108/t20210824_313204.html"}
+      ],
+      "spans": [{"qid": "Q148", "from": "1975-01-17", "until": "1978-03-05"}]
+    },
+    {
+      "id": "cn_1978",
+      "title_zh": "1978年3月5日宪法",
+      "title_orig": "中华人民共和国宪法（1978年）",
+      "kind": "formal",
+      "adopted": "1978-03-05",
+      "promulgated": "1978-03-05",
+      "effective": "1978-03-05",
+      "repealed": "1982-12-04",
+      "summary_zh": "第五届全国人民代表大会第一次会议1978年3月5日通过，同日公布。1979年和1980年的修正不是新的一部宪法，本批不单列。1982年12月4日由现行宪法取代。",
+      "sources": [
+        {"label": "中国人大网：1978年宪法", "url": "http://www.npc.gov.cn/npc/c12434/dzlfxzgcl70nlflc/202108/t20210824_313204.html"}
+      ],
+      "spans": [{"qid": "Q148", "from": "1978-03-05", "until": "1982-12-04"}]
+    },
+    {
+      "id": "cn_1982",
+      "title_zh": "1982年12月4日宪法",
+      "title_orig": "中华人民共和国宪法",
+      "kind": "formal",
+      "adopted": "1982-12-04",
+      "promulgated": "1982-12-04",
+      "effective": "1982-12-04",
+      "repealed": null,
+      "summary_zh": "第五届全国人民代表大会第五次会议1982年12月4日通过，同日全国人民代表大会公告公布施行。后来的宪法修正案改的是这一部，不另立一部宪法。中华民国不套用。",
+      "sources": [
+        {"label": "中国政府网：1982年宪法文本", "url": "https://www.gov.cn/guoqing/2018-03/22/content_5276318.htm"},
+        {"label": "中国人大网：1982年宪法", "url": "http://www.npc.gov.cn/npc/c12434/dzlfxzgcl70nlflc/202108/t20210824_313204.html"}
+      ],
+      "spans": [{"qid": "Q148", "from": "1982-12-04", "until": null}]
+    }
+  ],
+  "gaps": [
+    {
+      "qids": ["Q15180"],
+      "from": "1922-12-30",
+      "until": "1924-01-31",
+      "note": "已核对：这一天苏联已经在图上，1924年1月31日的宪法还没有通过。1918年俄罗斯宪法不套到苏联多边形上。"
+    },
+    {
+      "qids": ["Q159"],
+      "from": "1991-12-26",
+      "until": "1993-12-25",
+      "note": "已核对：1993年12月25日宪法生效前，俄罗斯沿用经修改的1978年俄罗斯苏维埃联邦社会主义共和国宪法。本批没有把那一部单列。总统图书馆提到有这部1978年文本。"
+    },
+    {
+      "qids": ["Q2415901"],
+      "from": "1945-06-05",
+      "until": "1949-05-23",
+      "note": "已核对：盟军占领德国这个多边形不套用后来的基本法。基本法公布日是1949年5月23日，第145条第2款写于当天结束时生效。本图不把5月24日写成法定生效日。"
+    },
+    {
+      "qids": ["Q2748708"],
+      "from": "1940-06-14",
+      "until": "1944-08-26",
+      "note": "已核对：这个多边形是纳粹德国占领法国，不把法国宪法或维希法令写成占领当局的宪法。"
+    },
+    {
+      "qids": ["Q55300"],
+      "from": "1945-05-08",
+      "until": "1949-10-07",
+      "note": "已核对：苏联占领区不是联邦共和国，也不提前使用东德1949年10月7日的宪法。"
+    }
+  ]
+}

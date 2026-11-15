@@ -19,13 +19,17 @@
     WHA.setFillOverride((f) => {
       const c = data.polity_states[String(f.properties.fid)] || [];
       const hit = sets.filter(([, s]) => c.some((q) => s.has(q)));
-      if (!hit.length) return { fillColor: "#e9e6df", fillOpacity: 0.55 };
+      if (!hit.length) {
+        const cl = (data.client_of || {})[String(f.properties.fid)];
+        if (cl && color[cl.bloc]) return { fillColor: color[cl.bloc], fillOpacity: 0.3, weight: 1.2, dashArray: "4 3" };   // 阵营附庸（如维希法国：名义中立、与轴心合作）
+        return { fillColor: "#e9e6df", fillOpacity: 0.55 };
+      }
       return { fillColor: color[hit[0][0].id], fillOpacity: 0.7, weight: hit.length > 1 ? 2 : 0.6 };
     }, "alliances");
     // 图例
     const list = data.alliances.slice(0, 60);
     box.innerHTML = `<b>阵营地图</b> <small>${esc(WHA.dateZh())}</small>
-      <div class="note">勾选要显示的阵营；点名称查看详情。只列出 Wikidata 中有起止时间、且当时至少有 2 个成员的阵营（${data.alliances.length} 个）。</div>
+      <div class="note">勾选要显示的阵营；点名称查看详情。占领区按占领国着色；浅色虚线 = 阵营附庸（如维希法国：名义中立、与轴心合作）。只列出 Wikidata 中有起止时间、且当时至少有 2 个成员的阵营（${data.alliances.length} 个）。</div>
       <div class="alist">${list.map((a) => `<label><input type="checkbox" data-id="${esc(a.id)}" ${chosen.has(a.id) ? "checked" : ""}>
         <span class="sw" style="background:${color[a.id] || "transparent"}"></span><a href="#" data-bloc="${esc(a.id)}">${esc(a.name)}</a> <small>${a.members.length}国${a.no_end ? ' · <span title="Wikidata 没有记录解散时间">无解散记录</span>' : ""}</small></label>`).join("") || '<div class="empty">这一日期没有记录的阵营。</div>'}</div>`;
     box.querySelectorAll("input").forEach((el) => (el.onchange = () => { touched = true; el.checked ? chosen.add(el.dataset.id) : chosen.delete(el.dataset.id); paint(); }));
