@@ -25,7 +25,7 @@
     {"sid": "32", "id": "zhejiang", "name": "浙江", "controls": [{"from": "1949-05-03", "until": "1950-01-01", "nominal": "南京国民政府", "actual": "中国共产党", "note": "1949-05-03杭州易手。省级大致，按省会这一天，不是逐县。未核对《中華民國史事紀要》。", "sources": ["https://en.wikipedia.org/wiki/Yangtze_River_Crossing_campaign"]}]},
     {"sid": "23", "id": "shandong", "name": "山东", "controls": [
       {"from": "1930-09-11", "until": "1938-01-24", "nominal": "南京国民政府", "actual": "韩复榘", "note": "1930-09-11宣誓就职。任命是09-05，不把任命日写成已经就职。1938-01-24被处决，这一天起不再记。1937年12月离开济南，日军占领层另画。省级大致，不是逐县。未核对《中華民國史事紀要》。", "sources": ["https://shandong-chorography.org/database/a/section/12/article/291/", "https://zh.wikipedia.org/wiki/%E9%9F%A9%E5%A4%8D%E6%A6%A8"]},
-      {"from": "1948-09-24", "until": "1950-01-01", "nominal": "南京国民政府", "actual": "中国共产党", "note": "济南1948-09-24沦陷。省级大致，按省会这一天，不是逐县。未核对《中華民國史事紀要》。", "sources": ["https://zh.wikipedia.org/wiki/%E6%B5%8E%E5%8D%97%E6%88%98%E5%BD%B9"]}
+      {"from": "1948-09-24", "until": "1950-01-01", "nominal": "南京国民政府", "actual": "中国共产党", "note": "济南1948-09-24沦陷。已核對《中華民國史事紀要》民國三十七年七月至十二月，印页四六四（PDF 第472页），页眉九月二十四日，写共军自本月十四日起攻济南，本日攻陷济南城，王耀武率部突围，至昌潍被俘。日子不改，不把十四日的外围攻击写成全省已经沦陷。这一页没有县名单。省级大致，按省会这一天，不是逐县。", "sources": ["https://www.drnh.gov.tw/p/404-1003-13357.php?Lang=zh-tw"]}
     ]},
     {"sid": "5", "id": "fujian", "name": "福建", "controls": [{"from": "1949-08-17", "until": "1950-01-01", "nominal": "南京国民政府", "actual": "中国共产党", "note": "1949-08-17福州易手。省级大致，按省会这一天，不是逐县。未核对《中華民國史事紀要》。", "sources": ["https://en.wikipedia.org/wiki/Chinese_Civil_War"]}]},
     {"sid": "9", "id": "guizhou", "name": "贵州", "controls": [
