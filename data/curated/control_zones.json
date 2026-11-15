@@ -3264,7 +3264,7 @@
     "zh": "中华民国"
    },
    "from": "1949-10-01",
-   "until": "1949-10-14",
+   "until": "1949-10-13",
    "geometry": {
     "roc_ids": [
      "guangdong"
@@ -3272,9 +3272,9 @@
     "nosimplify": true
    },
    "approx": true,
-   "note": "共军 1949-10-14 进入广州（广东战役）；此后粤中、粤西陆续易手，范围与结束日期为近似（以广州失守为界）。不含海南（另见海南岛区域）。",
+   "note": "广州1949-10-13沦陷。已核對《中華民國史事紀要》民国三十八年十月至十二月，印页一〇九（PDF 第117页），页眉十月十三日，标题国军撤离广州，广州失陷。写共军十三日晨向广州进迫。不把十四日写成已经入城。此后粤中、粤西陆续易手，范围与结束日期为近似（以广州失守为界）。不含海南（另见海南岛区域）。",
    "sources": [
-    "https://en.wikipedia.org/wiki/Guangdong_Campaign",
+    "https://www.drnh.gov.tw/p/404-1003-13359.php?Lang=zh-tw",
     "https://zh.wikipedia.org/wiki/%E5%B9%BF%E4%B8%9C%E6%88%98%E5%BD%B9"
    ]
   },
