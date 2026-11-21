@@ -1216,6 +1216,102 @@ def main():
         })
         print("added central soviet", len(SOVIET))
 
+    # 纪要写明收复日、而且该县已经在大块里：收到收复日，并从这一天之后的大块里移出。
+    # 跨过收复日的那一块改成单独的县域，控制方沿用那一块。
+    qlabel = {
+        "Q704714": "中华民国临时政府",
+        "Q708865": "中华民国维新政府",
+        "Q188712": "日军占领区",
+        "Q696242": "汪精卫政权",
+        "Q905486": "华北政务委员会",
+    }
+    vol28 = "https://www.drnh.gov.tw/p/404-1003-13317.php?Lang=zh-tw"
+    recovered = [
+        ("武乡", 112.97659, 36.74750, "1939-07-11",
+         "武乡县域。已核對《中華民國史事紀要》民國二十八年七月至十二月，"
+         "印页三七（PDF 第45页），页眉七月十二、十三日。十二日这一条追述十一日克复武乡。"
+         "县在华北大块里，收到一九三九年七月十一日，之后从大块里移出。"),
+        ("襄垣", 113.15479, 36.41955, "1939-07-12",
+         "襄垣县域。已核對《中華民國史事紀要》民國二十八年七月至十二月，"
+         "印页三七（PDF 第45页），页眉七月十二、十三日。十二日这一条写本日晨襄垣克复。"
+         "十三日是财政部另一条。县在华北大块里，收到一九三九年七月十二日。"),
+        ("阳城", 112.49422, 35.50255, "1939-07-25",
+         "阳城县域。已核對《中華民國史事紀要》民國二十八年七月至十二月，"
+         "印页八三（PDF 第91页），页眉七月二十六日，追述二十五日晨克复阳城。"
+         "一九三八年七月那一格仍收到七月三十日。这一次是县在华北大块里，收到一九三九年七月二十五日。"),
+        ("沁水", 112.23888, 35.74570, "1939-07-26",
+         "沁水县域。已核對《中華民國史事紀要》民國二十八年七月至十二月，"
+         "印页八三（PDF 第91页），页眉七月二十六日，写迄二十六日晚克复沁水。"
+         "一九三八年七月那一格仍收到七月三十日。这一次收到一九三九年七月二十六日。"),
+        ("崇阳", 114.0420, 29.5768, "1939-07-25",
+         "崇阳县域。已核對《中華民國史事紀要》民國二十八年七月至十二月，"
+         "印页八四（PDF 第92页），页眉七月二十六日，追述二十五日晚攻克崇阳城。"
+         "一九三八年十一月那一格仍收到十一月十七日。这一次县在华中大块里，收到一九三九年七月二十五日。"),
+        ("林县", 113.85154, 36.02068, "1939-08-02",
+         "林县县域。已核對《中華民國史事紀要》民國二十八年七月至十二月，"
+         "印页一一五（PDF 第122页），页眉八月四、五日，追述二日克复林县。"
+         "县在华北大块里，收到一九三九年八月二日。"),
+        ("来安", 118.46423, 32.44413, "1939-09-05",
+         "来安县域。已核對《中華民國史事紀要》民國二十八年七月至十二月，"
+         "印页二二八（PDF 第234页），页眉九月五日，写本日克复来安县城。"
+         "县在维新政府大块里，收到一九三九年九月五日。"),
+        ("通山", 114.4833, 29.6345, "1939-09-14",
+         "通山县域。已核對《中華民國史事紀要》民國二十八年七月至十二月，"
+         "印页二八八（PDF 第294页），页眉九月十四、十五日。通山这一条在十五日教育部令之前，"
+         "写本日下午三时第三度收复通山县城。十五日是另一条。收到一九三九年九月十四日。"),
+    ]
+    for name, lon, lat, end, why in recovered:
+        cid = cell_at(features, tree, lon, lat)
+        if not cid:
+            print("RECOVERY NO CELL", name)
+            continue
+        spanning = None
+        for z in doc["zones"]:
+            geom = z.get("geometry") or {}
+            ids = geom.get("roc_counties")
+            if not ids or cid not in ids:
+                continue
+            # 只动日军占领层。晋冀鲁豫等根据地 kind 是 de_facto，收复日不从那里移出。
+            if z.get("kind") != "occupied":
+                continue
+            frm = z.get("from") or ""
+            until = z.get("until") or "9999-12-31"
+            if until <= end:
+                continue
+            if frm >= end:
+                geom["roc_counties"] = [i for i in ids if i != cid]
+                print("recovery strip", name, z["id"])
+                continue
+            geom["roc_counties"] = [i for i in ids if i != cid]
+            if spanning is None or frm > (spanning.get("from") or ""):
+                spanning = z
+            print("recovery split", name, z["id"], frm, until)
+        if spanning is None:
+            print("RECOVERY NO SPAN", name)
+            continue
+        qid = (spanning.get("controller") or {}).get("qid") or ""
+        label = f"{qlabel.get(qid, spanning.get('name_zh') or '日军占领区')}（{name}）"
+        sid = f"sjw_cell_{cid}_{end}_{name}"
+        if any(z.get("id") == sid for z in doc["zones"]):
+            continue
+        doc["zones"].append({
+            "id": sid,
+            "group": "sino_japanese_war",
+            "kind": "occupied",
+            "as_polity": True,
+            "name_zh": label,
+            "name_en": label,
+            "controller": spanning["controller"],
+            "from": spanning.get("from"),
+            "until": end,
+            "geometry": {"roc_counties": [cid]},
+            "approx": True,
+            "note": why + PHRASE,
+            "dates_note": f"{name}收到 {end}。已核對《中華民國史事紀要》民國二十八年七月至十二月。追述或本日见原文。",
+            "sources": [vol28, "https://zenodo.org/records/5721459"],
+        })
+        print("recovery cell", name, spanning.get("from"), end, cid, label)
+
     EXTENTS.write_text(json.dumps(extents, ensure_ascii=False, indent=1), encoding="utf-8")
     ZONES.write_text(json.dumps(doc, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
     print("zones", len(doc["zones"]), "extents", len(extents))
