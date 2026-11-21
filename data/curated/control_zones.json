@@ -3793,17 +3793,14 @@
      "mcgd:s1013",
      "mcgd:s1014",
      "mcgd:s1015",
-     "mcgd:s1016",
      "mcgd:s1017",
      "mcgd:s1018",
      "mcgd:s1019",
      "mcgd:s1020",
      "mcgd:s1025",
      "mcgd:s1027",
-     "mcgd:s1045",
      "mcgd:s1048",
      "mcgd:s1049",
-     "mcgd:s1051",
      "mcgd:s1052",
      "mcgd:s1053",
      "mcgd:s1055",
@@ -3944,7 +3941,6 @@
      "mcgd:s1754",
      "mcgd:s1756",
      "mcgd:s1758",
-     "mcgd:s1759",
      "mcgd:s1760",
      "mcgd:s1762",
      "mcgd:s1764",
@@ -4121,17 +4117,14 @@
      "mcgd:s1013",
      "mcgd:s1014",
      "mcgd:s1015",
-     "mcgd:s1016",
      "mcgd:s1017",
      "mcgd:s1018",
      "mcgd:s1019",
      "mcgd:s1020",
      "mcgd:s1025",
      "mcgd:s1027",
-     "mcgd:s1045",
      "mcgd:s1048",
      "mcgd:s1049",
-     "mcgd:s1051",
      "mcgd:s1052",
      "mcgd:s1053",
      "mcgd:s1055",
@@ -4272,7 +4265,6 @@
      "mcgd:s1754",
      "mcgd:s1756",
      "mcgd:s1758",
-     "mcgd:s1759",
      "mcgd:s1760",
      "mcgd:s1762",
      "mcgd:s1764",
@@ -4948,17 +4940,14 @@
      "mcgd:s1013",
      "mcgd:s1014",
      "mcgd:s1015",
-     "mcgd:s1016",
      "mcgd:s1017",
      "mcgd:s1018",
      "mcgd:s1019",
      "mcgd:s1020",
      "mcgd:s1025",
      "mcgd:s1027",
-     "mcgd:s1045",
      "mcgd:s1048",
      "mcgd:s1049",
-     "mcgd:s1051",
      "mcgd:s1052",
      "mcgd:s1053",
      "mcgd:s1055",
@@ -5126,7 +5115,6 @@
      "mcgd:s1754",
      "mcgd:s1756",
      "mcgd:s1758",
-     "mcgd:s1759",
      "mcgd:s1760",
      "mcgd:s1762",
      "mcgd:s1764",
@@ -6093,8 +6081,6 @@
      "mcgd:s530",
      "mcgd:s533",
      "mcgd:s556",
-     "mcgd:s558",
-     "mcgd:s560",
      "mcgd:s575",
      "mcgd:s684"
     ]
@@ -11543,6 +11529,500 @@
    ]
   },
   {
+   "id": "sjw_cell_mcgd:s1016_1938-06-30_晋城",
+   "group": "sino_japanese_war",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "中华民国临时政府（晋城）",
+   "name_en": "中华民国临时政府（晋城）",
+   "controller": {
+    "qid": "Q704714",
+    "zh": "中华民国临时政府"
+   },
+   "from": "1938-06-30",
+   "until": "1938-07-30",
+   "geometry": {
+    "roc_counties": [
+     "mcgd:s1016"
+    ]
+   },
+   "approx": true,
+   "note": "晋城县域。已核對《中華民國史事紀要》民國二十七年七月至十二月，印页二六（PDF 第34页），页眉七月三、四日，四日这一条追述六月三十日攻陷天井关、晋城。印页一八二（PDF 第190页），页眉七月三十日，写本日克复沁水、阳城、晋城。从1937-11-12的华北色块里移出。收到七月三十日。大致。县域为治所泰森多边形近似。",
+   "dates_note": "晋城 1938-06-30 起，收到 1938-07-30。追述，已核對印页二六、一八二。",
+   "sources": [
+    "https://www.drnh.gov.tw/p/404-1003-13314.php?Lang=zh-tw",
+    "https://zenodo.org/records/5721459"
+   ]
+  },
+  {
+   "id": "sjw_cell_mcgd:s1759_1938-07-04_阳城",
+   "group": "sino_japanese_war",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "中华民国临时政府（阳城）",
+   "name_en": "中华民国临时政府（阳城）",
+   "controller": {
+    "qid": "Q704714",
+    "zh": "中华民国临时政府"
+   },
+   "from": "1938-07-04",
+   "until": "1938-07-30",
+   "geometry": {
+    "roc_counties": [
+     "mcgd:s1759"
+    ]
+   },
+   "approx": true,
+   "note": "阳城县域。已核對《中華民國史事紀要》民國二十七年七月至十二月，印页二六（PDF 第34页），页眉七月三、四日，四日这一条写本日复陷阳城。印页一八二（PDF 第190页），页眉七月三十日，写本日克复沁水、阳城、晋城。从1937-11-12的华北色块里移出。收到七月三十日。大致。县域为治所泰森多边形近似。",
+   "dates_note": "阳城 1938-07-04 起，收到 1938-07-30。已核對印页二六、一八二。",
+   "sources": [
+    "https://www.drnh.gov.tw/p/404-1003-13314.php?Lang=zh-tw",
+    "https://zenodo.org/records/5721459"
+   ]
+  },
+  {
+   "id": "sjw_cell_mcgd:s537_1938-07-05_湖口",
+   "group": "sino_japanese_war",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "中华民国维新政府（湖口）",
+   "name_en": "中华民国维新政府（湖口）",
+   "controller": {
+    "qid": "Q708865",
+    "zh": "中华民国维新政府"
+   },
+   "from": "1938-07-05",
+   "until": "1939-03-27",
+   "geometry": {
+    "roc_counties": [
+     "mcgd:s537"
+    ]
+   },
+   "approx": true,
+   "note": "湖口县域。已核對《中華民國史事紀要》民國二十七年七月至十二月，印页三三（PDF 第41页），页眉七月五日，写四日下午突破防线，本日晨湖口陷落。1939-03-27 起并入下一块。大致。县域为治所泰森多边形近似。",
+   "dates_note": "湖口 1938-07-05 起，收到 1939-03-27。已核對印页三三。",
+   "sources": [
+    "https://www.drnh.gov.tw/p/404-1003-13314.php?Lang=zh-tw",
+    "https://zenodo.org/records/5721459"
+   ]
+  },
+  {
+   "id": "sjw_cell_mcgd:s1051_1938-07-07_沁水",
+   "group": "sino_japanese_war",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "中华民国临时政府（沁水）",
+   "name_en": "中华民国临时政府（沁水）",
+   "controller": {
+    "qid": "Q704714",
+    "zh": "中华民国临时政府"
+   },
+   "from": "1938-07-07",
+   "until": "1938-07-30",
+   "geometry": {
+    "roc_counties": [
+     "mcgd:s1051"
+    ]
+   },
+   "approx": true,
+   "note": "沁水县域。已核對《中華民國史事紀要》民國二十七年七月至十二月，印页六五（PDF 第73页），页眉七月七日，写本日第十四师由阳城攻占沁水。印页一八二（PDF 第190页），页眉七月三十日，写本日克复沁水、阳城、晋城。从1937-11-12的华北色块里移出。收到七月三十日。大致。县域为治所泰森多边形近似。",
+   "dates_note": "沁水 1938-07-07 起，收到 1938-07-30。已核對印页六五、一八二。",
+   "sources": [
+    "https://www.drnh.gov.tw/p/404-1003-13314.php?Lang=zh-tw",
+    "https://zenodo.org/records/5721459"
+   ]
+  },
+  {
+   "id": "sjw_cell_mcgd:s1045_1938-07-11_翼城",
+   "group": "sino_japanese_war",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "中华民国临时政府（翼城）",
+   "name_en": "中华民国临时政府（翼城）",
+   "controller": {
+    "qid": "Q704714",
+    "zh": "中华民国临时政府"
+   },
+   "from": "1938-07-11",
+   "until": "1938-08-03",
+   "geometry": {
+    "roc_counties": [
+     "mcgd:s1045"
+    ]
+   },
+   "approx": true,
+   "note": "翼城县域。已核對《中華民國史事紀要》民國二十七年七月至十二月，印页九九（PDF 第107页），页眉七月十一日，写本日陷翼城，我军退守中条山区。印页二一五（PDF 第223页），页眉八月三日，写本日第八十三师攻克翼城。从1937-11-12的华北色块里移出。收到八月三日。大致。县域为治所泰森多边形近似。",
+   "dates_note": "翼城 1938-07-11 起，收到 1938-08-03。已核對印页九九、二一五。",
+   "sources": [
+    "https://www.drnh.gov.tw/p/404-1003-13314.php?Lang=zh-tw",
+    "https://zenodo.org/records/5721459"
+   ]
+  },
+  {
+   "id": "sjw_cell_mcgd:s390_1938-07-26_太湖",
+   "group": "sino_japanese_war",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "中华民国维新政府（太湖）",
+   "name_en": "中华民国维新政府（太湖）",
+   "controller": {
+    "qid": "Q708865",
+    "zh": "中华民国维新政府"
+   },
+   "from": "1938-07-26",
+   "until": "1938-08-27",
+   "geometry": {
+    "roc_counties": [
+     "mcgd:s390"
+    ]
+   },
+   "approx": true,
+   "note": "太湖县域。已核對《中華民國史事紀要》民國二十七年七月至十二月，印页一六一（PDF 第169页），页眉七月二十六日，写二十四日今村支队突破黄泥港，二十五日向太湖猛攻，本日中午太湖失陷。印页三一一（PDF 第319页），页眉八月二十七日，写本日将太湖克复。收到八月二十七日。1938-10-21 起仍并入下一块。大致。县域为治所泰森多边形近似。",
+   "dates_note": "太湖 1938-07-26 起，收到 1938-08-27。已核對印页一六一、三一一。",
+   "sources": [
+    "https://www.drnh.gov.tw/p/404-1003-13314.php?Lang=zh-tw",
+    "https://zenodo.org/records/5721459"
+   ]
+  },
+  {
+   "id": "sjw_cell_mcgd:s399_1938-08-01_宿松",
+   "group": "sino_japanese_war",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "中华民国维新政府（宿松）",
+   "name_en": "中华民国维新政府（宿松）",
+   "controller": {
+    "qid": "Q708865",
+    "zh": "中华民国维新政府"
+   },
+   "from": "1938-08-01",
+   "until": "1938-08-28",
+   "geometry": {
+    "roc_counties": [
+     "mcgd:s399"
+    ]
+   },
+   "approx": true,
+   "note": "宿松县域。已核對《中華民國史事紀要》民國二十七年七月至十二月，印页二〇四（PDF 第212页），页眉八月一日，写本日守军退守独山，宿松遂陷。印页三三三（PDF 第341页），页眉八月二十八日，写克复宿松。收到八月二十八日。1938-10-21 起仍并入下一块。大致。县域为治所泰森多边形近似。",
+   "dates_note": "宿松 1938-08-01 起，收到 1938-08-28。已核對印页二〇四、三三三。",
+   "sources": [
+    "https://www.drnh.gov.tw/p/404-1003-13314.php?Lang=zh-tw",
+    "https://zenodo.org/records/5721459"
+   ]
+  },
+  {
+   "id": "sjw_cell_mcgd:s488_1938-08-02_黄梅",
+   "group": "sino_japanese_war",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "中华民国维新政府（黄梅）",
+   "name_en": "中华民国维新政府（黄梅）",
+   "controller": {
+    "qid": "Q708865",
+    "zh": "中华民国维新政府"
+   },
+   "from": "1938-08-02",
+   "until": "1938-10-21",
+   "geometry": {
+    "roc_counties": [
+     "mcgd:s488"
+    ]
+   },
+   "approx": true,
+   "note": "黄梅县域。已核對《中華民國史事紀要》民國二十七年七月至十二月，印页二一五（PDF 第223页）至印页二一六（PDF 第224页），页眉八月三日，追述迄本月二日止，当晚黄梅县城遂陷。1938-10-21 起并入下一块。大致。县域为治所泰森多边形近似。",
+   "dates_note": "黄梅 1938-08-02 起，收到 1938-10-21。追述，已核對印页二一五、二一六。",
+   "sources": [
+    "https://www.drnh.gov.tw/p/404-1003-13314.php?Lang=zh-tw",
+    "https://zenodo.org/records/5721459"
+   ]
+  },
+  {
+   "id": "sjw_cell_mcgd:s1932_1938-08-24_瑞昌",
+   "group": "sino_japanese_war",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "中华民国维新政府（瑞昌）",
+   "name_en": "中华民国维新政府（瑞昌）",
+   "controller": {
+    "qid": "Q708865",
+    "zh": "中华民国维新政府"
+   },
+   "from": "1938-08-24",
+   "until": "1939-03-27",
+   "geometry": {
+    "roc_counties": [
+     "mcgd:s1932"
+    ]
+   },
+   "approx": true,
+   "note": "瑞昌县域。已核對《中華民國史事紀要》民國二十七年七月至十二月，印页二九四（PDF 第302页），页眉八月二十四日，写东门倾塌，日军冲入城内。印页三〇二（PDF 第310页）再写二十四日攻占瑞昌。1939-03-27 起并入下一块。大致。县域为治所泰森多边形近似。",
+   "dates_note": "瑞昌 1938-08-24 起，收到 1939-03-27。已核對印页二九四、三〇二。",
+   "sources": [
+    "https://www.drnh.gov.tw/p/404-1003-13314.php?Lang=zh-tw",
+    "https://zenodo.org/records/5721459"
+   ]
+  },
+  {
+   "id": "sjw_cell_mcgd:s400_1938-08-28_六安",
+   "group": "sino_japanese_war",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "中华民国维新政府（六安）",
+   "name_en": "中华民国维新政府（六安）",
+   "controller": {
+    "qid": "Q708865",
+    "zh": "中华民国维新政府"
+   },
+   "from": "1938-08-28",
+   "until": "1938-10-21",
+   "geometry": {
+    "roc_counties": [
+     "mcgd:s400"
+    ]
+   },
+   "approx": true,
+   "note": "六安县域。已核對《中華民國史事紀要》民國二十七年七月至十二月，印页三三四（PDF 第342页），页眉八月二十八、二十九日，写本日分三路进攻六安，六安遂陷。印页三三八（PDF 第346页）写二十八日陷六安。收到下一块。大致。县域为治所泰森多边形近似。",
+   "dates_note": "六安 1938-08-28 起，收到 1938-10-21。已核對印页三三四、三三八。",
+   "sources": [
+    "https://www.drnh.gov.tw/p/404-1003-13314.php?Lang=zh-tw",
+    "https://zenodo.org/records/5721459"
+   ]
+  },
+  {
+   "id": "sjw_cell_mcgd:s395_1938-08-29_霍山",
+   "group": "sino_japanese_war",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "中华民国维新政府（霍山）",
+   "name_en": "中华民国维新政府（霍山）",
+   "controller": {
+    "qid": "Q708865",
+    "zh": "中华民国维新政府"
+   },
+   "from": "1938-08-29",
+   "until": "1938-10-21",
+   "geometry": {
+    "roc_counties": [
+     "mcgd:s395"
+    ]
+   },
+   "approx": true,
+   "note": "霍山县域。已核對《中華民國史事紀要》民國二十七年七月至十二月，印页三三八（PDF 第346页），页眉八月二十九日，写本日攻霍山，霍山遂告失守。1938-10-21 起并入下一块。大致。县域为治所泰森多边形近似。",
+   "dates_note": "霍山 1938-08-29 起，收到 1938-10-21。已核對印页三三八。",
+   "sources": [
+    "https://www.drnh.gov.tw/p/404-1003-13314.php?Lang=zh-tw",
+    "https://zenodo.org/records/5721459"
+   ]
+  },
+  {
+   "id": "sjw_cell_mcgd:s246_1938-09-06_广济",
+   "group": "sino_japanese_war",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "中华民国维新政府（广济）",
+   "name_en": "中华民国维新政府（广济）",
+   "controller": {
+    "qid": "Q708865",
+    "zh": "中华民国维新政府"
+   },
+   "from": "1938-09-06",
+   "until": "1938-10-21",
+   "geometry": {
+    "roc_counties": [
+     "mcgd:s246"
+    ]
+   },
+   "approx": true,
+   "note": "广济县域。已核對《中華民國史事紀要》民國二十七年七月至十二月，印页三六二（PDF 第370页），页眉九月六日，写本日突破卓木尖，广济遂告陷落。1938-10-21 起并入下一块。大致。县域为治所泰森多边形近似。",
+   "dates_note": "广济 1938-09-06 起，收到 1938-10-21。已核對印页三六二。",
+   "sources": [
+    "https://www.drnh.gov.tw/p/404-1003-13314.php?Lang=zh-tw",
+    "https://zenodo.org/records/5721459"
+   ]
+  },
+  {
+   "id": "sjw_cell_mcgd:s325_1938-10-24_黄陂",
+   "group": "sino_japanese_war",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "日军占领区（黄陂）",
+   "name_en": "日军占领区（黄陂）",
+   "controller": {
+    "qid": "Q188712",
+    "zh": "日军占领区"
+   },
+   "from": "1938-10-24",
+   "until": "1938-10-25",
+   "geometry": {
+    "roc_counties": [
+     "mcgd:s325"
+    ]
+   },
+   "approx": true,
+   "note": "黄陂县域。已核對《中華民國史事紀要》民國二十七年七月至十二月，印页五八〇（PDF 第588页），页眉十月二十五日，追述本月二十四日侵陷黄陂。1938-10-25 起并入武汉周边那一块。大致。县域为治所泰森多边形近似。",
+   "dates_note": "黄陂 1938-10-24 起，收到 1938-10-25。追述，已核對印页五八〇。",
+   "sources": [
+    "https://www.drnh.gov.tw/p/404-1003-13314.php?Lang=zh-tw",
+    "https://zenodo.org/records/5721459"
+   ]
+  },
+  {
+   "id": "sjw_cell_mcgd:s560_1938-11-04_通山",
+   "group": "sino_japanese_war",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "日军占领区（通山）",
+   "name_en": "日军占领区（通山）",
+   "controller": {
+    "qid": "Q188712",
+    "zh": "日军占领区"
+   },
+   "from": "1938-11-04",
+   "until": "1939-03-27",
+   "geometry": {
+    "roc_counties": [
+     "mcgd:s560"
+    ]
+   },
+   "approx": true,
+   "note": "通山县域。已核對《中華民國史事紀要》民國二十七年七月至十二月，印页六三四（PDF 第642页），页眉十一月四日，写本日通山陷落。从1938-10-25的武汉周边色块里移出。1939-03-27 起并入下一块。大致。县域为治所泰森多边形近似。",
+   "dates_note": "通山 1938-11-04 起，收到 1939-03-27。已核對印页六三四。",
+   "sources": [
+    "https://www.drnh.gov.tw/p/404-1003-13314.php?Lang=zh-tw",
+    "https://zenodo.org/records/5721459"
+   ]
+  },
+  {
+   "id": "sjw_cell_mcgd:s558_1938-11-06_崇阳",
+   "group": "sino_japanese_war",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "日军占领区（崇阳）",
+   "name_en": "日军占领区（崇阳）",
+   "controller": {
+    "qid": "Q188712",
+    "zh": "日军占领区"
+   },
+   "from": "1938-11-06",
+   "until": "1938-11-17",
+   "geometry": {
+    "roc_counties": [
+     "mcgd:s558"
+    ]
+   },
+   "approx": true,
+   "note": "崇阳县域。已核對《中華民國史事紀要》民國二十七年七月至十二月，印页六七四（PDF 第682页），页眉十一月十七、十八日，写本月六日侵占崇阳，这一条写克复崇阳。十八日是长沙大火案另一条。从1938-10-25的武汉周边色块里移出。收到十一月十七日。大致。县域为治所泰森多边形近似。",
+   "dates_note": "崇阳 1938-11-06 起，收到 1938-11-17。已核對印页六七四。",
+   "sources": [
+    "https://www.drnh.gov.tw/p/404-1003-13314.php?Lang=zh-tw",
+    "https://zenodo.org/records/5721459"
+   ]
+  },
+  {
+   "id": "sjw_cell_mcgd:s111_1938-09-06_固始",
+   "group": "sino_japanese_war",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "中华民国维新政府（固始）",
+   "name_en": "中华民国维新政府（固始）",
+   "controller": {
+    "qid": "Q708865",
+    "zh": "中华民国维新政府"
+   },
+   "from": "1938-09-06",
+   "until": "1938-10-21",
+   "geometry": {
+    "roc_counties": [
+     "mcgd:s111"
+    ]
+   },
+   "approx": true,
+   "note": "固始县域。已核對《中華民國史事紀要》民國二十七年七月至十二月，印页六二一（PDF 第629页），页眉十月三十一日，追述九月二日之后，六日陷固始。1938-10-21 起并入下一块。大致。县域为治所泰森多边形近似。",
+   "dates_note": "固始 1938-09-06 起，收到 1938-10-21。追述，已核對印页六二一。",
+   "sources": [
+    "https://www.drnh.gov.tw/p/404-1003-13314.php?Lang=zh-tw",
+    "https://zenodo.org/records/5721459"
+   ]
+  },
+  {
+   "id": "sjw_cell_mcgd:s1869_1938-09-21_罗山",
+   "group": "sino_japanese_war",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "日军占领区（罗山）",
+   "name_en": "日军占领区（罗山）",
+   "controller": {
+    "qid": "Q188712",
+    "zh": "日军占领区"
+   },
+   "from": "1938-09-21",
+   "until": "1938-10-25",
+   "geometry": {
+    "roc_counties": [
+     "mcgd:s1869"
+    ]
+   },
+   "approx": true,
+   "note": "罗山县域。已核對《中華民國史事紀要》民國二十七年七月至十二月，印页六二一（PDF 第629页），页眉十月三十一日，同一段追述九月二十一日罗山被陷。1938-10-25 起并入武汉周边那一块。大致。县域为治所泰森多边形近似。",
+   "dates_note": "罗山 1938-09-21 起，收到 1938-10-25。追述，已核對印页六二一。",
+   "sources": [
+    "https://www.drnh.gov.tw/p/404-1003-13314.php?Lang=zh-tw",
+    "https://zenodo.org/records/5721459"
+   ]
+  },
+  {
+   "id": "sjw_cell_mcgd:s243_1938-10-22_鄂城",
+   "group": "sino_japanese_war",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "日军占领区（鄂城）",
+   "name_en": "日军占领区（鄂城）",
+   "controller": {
+    "qid": "Q188712",
+    "zh": "日军占领区"
+   },
+   "from": "1938-10-22",
+   "until": "1938-10-25",
+   "geometry": {
+    "roc_counties": [
+     "mcgd:s243"
+    ]
+   },
+   "approx": true,
+   "note": "鄂城县域。已核對《中華民國史事紀要》民國二十七年七月至十二月，印页五六二（PDF 第570页），页眉十月二十二日，写本日中午鄂城陷落。1938-10-25 起并入武汉周边那一块。大致。县域为治所泰森多边形近似。",
+   "dates_note": "鄂城 1938-10-22 起，收到 1938-10-25。已核對印页五六二。",
+   "sources": [
+    "https://www.drnh.gov.tw/p/404-1003-13314.php?Lang=zh-tw",
+    "https://zenodo.org/records/5721459"
+   ]
+  },
+  {
+   "id": "sjw_cell_mcgd:s526_1938-11-09_通城",
+   "group": "sino_japanese_war",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "日军占领区（通城）",
+   "name_en": "日军占领区（通城）",
+   "controller": {
+    "qid": "Q188712",
+    "zh": "日军占领区"
+   },
+   "from": "1938-11-09",
+   "until": "1939-03-27",
+   "geometry": {
+    "roc_counties": [
+     "mcgd:s526"
+    ]
+   },
+   "approx": true,
+   "note": "通城县域。已核對《中華民國史事紀要》民國二十七年七月至十二月，印页六四六（PDF 第654页），页眉十一月八、九、十日，写九日日军侵占湖北通城。1931 年治所用湖北这一格，不是安徽同名点。1939-03-27 起并入下一块。大致。县域为治所泰森多边形近似。",
+   "dates_note": "通城 1938-11-09 起，收到 1939-03-27。已核對印页六四六。",
+   "sources": [
+    "https://www.drnh.gov.tw/p/404-1003-13314.php?Lang=zh-tw",
+    "https://zenodo.org/records/5721459"
+   ]
+  },
+  {
    "id": "sjw_cell_mcgd:s314_1938-07-26_九江",
    "group": "sino_japanese_war",
    "kind": "occupied",
@@ -11780,6 +12260,84 @@
    ]
   },
   {
+   "id": "sjw_cell_s1422_1941-04-19_连江",
+   "group": "sino_japanese_war",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "日军军事占领区（连江）",
+   "name_en": "日军军事占领区（连江）",
+   "controller": {
+    "qid": "Q188712",
+    "zh": "大日本帝国"
+   },
+   "from": "1941-04-19",
+   "until": "1941-09-03",
+   "geometry": {
+    "roc_counties": [
+     "mcgd:s1422"
+    ]
+   },
+   "approx": true,
+   "note": "连江县域。已核對《中華民國史事紀要》民國三十年一月至六月，印页四二五（PDF 第432页），页眉四月二十四日，追述十九日下午陷连江、长乐。没有写这两县收到哪一天。结束日用福州这一格的 1941-09-03，结束日待考。大致。县域为治所泰森多边形近似。",
+   "dates_note": "连江 1941-04-19 起，收到 1941-09-03。追述，已核對印页四二五。结束日待考。",
+   "sources": [
+    "https://www.drnh.gov.tw/p/404-1003-13323.php?Lang=zh-tw",
+    "https://zenodo.org/records/5721459"
+   ]
+  },
+  {
+   "id": "sjw_cell_s1282_1941-04-19_长乐",
+   "group": "sino_japanese_war",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "日军军事占领区（长乐）",
+   "name_en": "日军军事占领区（长乐）",
+   "controller": {
+    "qid": "Q188712",
+    "zh": "大日本帝国"
+   },
+   "from": "1941-04-19",
+   "until": "1941-09-03",
+   "geometry": {
+    "roc_counties": [
+     "mcgd:s1282"
+    ]
+   },
+   "approx": true,
+   "note": "长乐县域。已核對《中華民國史事紀要》民國三十年一月至六月，印页四二五（PDF 第432页），页眉四月二十四日，追述十九日下午陷连江、长乐。没有写这两县收到哪一天。结束日用福州这一格的 1941-09-03，结束日待考。大致。县域为治所泰森多边形近似。",
+   "dates_note": "长乐 1941-04-19 起，收到 1941-09-03。追述，已核對印页四二五。结束日待考。",
+   "sources": [
+    "https://www.drnh.gov.tw/p/404-1003-13323.php?Lang=zh-tw",
+    "https://zenodo.org/records/5721459"
+   ]
+  },
+  {
+   "id": "sjw_cell_s917_1938-10-15_惠阳",
+   "group": "sino_japanese_war",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "日军占领区（惠阳）",
+   "name_en": "日军占领区（惠阳）",
+   "controller": {
+    "qid": "Q188712",
+    "zh": "大日本帝国"
+   },
+   "from": "1938-10-15",
+   "until": "1938-11-12",
+   "geometry": {
+    "roc_counties": [
+     "mcgd:s917"
+    ]
+   },
+   "approx": true,
+   "note": "惠阳县域。已核對《中華民國史事紀要》民國二十七年七月至十二月，印页五五五（PDF 第563页），页眉十月二十一日，追述本月十五日惠阳失守。印页六九二（PDF 第700页）写十二日克复惠阳。不在既有大块里，收到十一月十二日。大致。县域为治所泰森多边形近似。",
+   "dates_note": "惠阳 1938-10-15 起，收到 1938-11-12。追述，已核對印页五五五、六九二。",
+   "sources": [
+    "https://www.drnh.gov.tw/p/404-1003-13314.php?Lang=zh-tw",
+    "https://zenodo.org/records/5721459"
+   ]
+  },
+  {
    "id": "sjw_cell_D3114532_s1284_1941-04-22_福州",
    "group": "sino_japanese_war",
    "kind": "occupied",
@@ -11799,7 +12357,7 @@
     ]
    },
    "approx": true,
-   "note": "福州和闽侯两个治所几乎叠在一起，两格都画。已核對《中華民國史事紀要》民國三十年一月至六月，印页四二五（PDF 第432页），页眉四月二十四日，写二十一日另一股在长门登陆，与北股会合犯福州，福州地滨东海，固守不易，我军已于二十二日午后退出。不把二十一日的进犯写成已经退出。连江、长乐同页写十九日陷落，这两县不另画。9 月 3 日撤出。大致。县域为治所泰森多边形近似。",
+   "note": "福州和闽侯两个治所几乎叠在一起，两格都画。已核對《中華民國史事紀要》民國三十年一月至六月，印页四二五（PDF 第432页），页眉四月二十四日，写二十一日另一股在长门登陆，与北股会合犯福州，福州地滨东海，固守不易，我军已于二十二日午后退出。不把二十一日的进犯写成已经退出。连江、长乐同页写十九日陷落，两县另画到九月三日，结束日待考。9 月 3 日撤出。大致。县域为治所泰森多边形近似。",
    "dates_note": "福州 1941-04-22 起，收到 1941-09-03。已核對《中華民國史事紀要》印页四二五。",
    "sources": [
     "https://www.drnh.gov.tw/p/404-1003-13323.php?Lang=zh-tw",
