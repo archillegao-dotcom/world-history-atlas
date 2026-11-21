@@ -712,6 +712,36 @@ def main():
         })
         print("added yangzhou cell")
 
+    tianshui = "mcgd:s742"
+    if tianshui in id_of and not any(z["id"] == "ccw_tianshui_1949" for z in doc["zones"]):
+        doc["zones"].append({
+            "id": "ccw_tianshui_1949",
+            "group": "chinese_civil_war",
+            "kind": "de_facto",
+            "as_polity": True,
+            "name_zh": "共军控制区（天水）",
+            "name_en": "CCP-held Tianshui",
+            "controller": {"qid": "Q17427", "zh": "中国共产党"},
+            "from": "1949-08-02",
+            "until": "1949-08-26",
+            "geometry": {"roc_counties": [tianshui]},
+            "approx": True,
+            "note": (
+                "天水县域，不是西兰公路沿线。"
+                "已核對《中華民國史事紀要》民國三十八年七月至九月，"
+                "印页一六九（PDF 第177页），页眉八月二日，"
+                "写甘肃天水及江西遂川失守，本日天水失守。"
+                "遂川不另画。1949-08-26 起并入甘肃整省。"
+                "大致。县域为治所泰森多边形近似。"
+            ),
+            "dates_note": "天水 1949-08-02 起，收到 1949-08-26。已核對《中華民國史事紀要》印页一六九。",
+            "sources": [
+                "https://www.drnh.gov.tw/p/404-1003-13363.php?Lang=zh-tw",
+                "https://zenodo.org/records/5721459",
+            ],
+        })
+        print("added tianshui cell")
+
     if not any(z["id"] == "sjw_ccp_central_soviet" for z in doc["zones"]):
         doc["zones"].append({
             "id": "sjw_ccp_central_soviet",

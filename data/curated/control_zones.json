@@ -11181,6 +11181,32 @@
    ]
   },
   {
+   "id": "ccw_yangzhou_1949",
+   "group": "chinese_civil_war",
+   "kind": "de_facto",
+   "as_polity": true,
+   "name_zh": "共军控制区（扬州）",
+   "name_en": "CCP-held Yangzhou",
+   "controller": {
+    "qid": "Q17427",
+    "zh": "中国共产党"
+   },
+   "from": "1949-01-23",
+   "until": "1949-04-23",
+   "geometry": {
+    "roc_counties": [
+     "mcgd:s1175"
+    ]
+   },
+   "approx": true,
+   "note": "江都县域，不是扬州周围各县。已核對《中華民國史事紀要》民國三十八年一月至六月，PDF 第240页，页眉一月二十二、二十三日，写二十三日滁县、扬州为共军攻占，国军改在浦镇、瓜洲布防。六合、滁县不另画。1949-04-23 起并入江苏整省。大致。县域为治所泰森多边形近似。",
+   "dates_note": "扬州 1949-01-23 起，收到 1949-04-23。已核對《中華民國史事紀要》PDF 第240页。",
+   "sources": [
+    "https://www.drnh.gov.tw/p/404-1003-13361.php?Lang=zh-tw",
+    "https://zenodo.org/records/5721459"
+   ]
+  },
+  {
    "id": "sjw_cell_mcgd:s874_1937-12-13_南京",
    "group": "sino_japanese_war",
    "kind": "occupied",
@@ -11659,28 +11685,28 @@
    ]
   },
   {
-   "id": "ccw_yangzhou_1949",
+   "id": "ccw_tianshui_1949",
    "group": "chinese_civil_war",
    "kind": "de_facto",
    "as_polity": true,
-   "name_zh": "共军控制区（扬州）",
-   "name_en": "CCP-held Yangzhou",
+   "name_zh": "共军控制区（天水）",
+   "name_en": "CCP-held Tianshui",
    "controller": {
     "qid": "Q17427",
     "zh": "中国共产党"
    },
-   "from": "1949-01-23",
-   "until": "1949-04-23",
+   "from": "1949-08-02",
+   "until": "1949-08-26",
    "geometry": {
     "roc_counties": [
-     "mcgd:s1175"
+     "mcgd:s742"
     ]
    },
    "approx": true,
-   "note": "江都县域，不是扬州周围各县。已核對《中華民國史事紀要》民國三十八年一月至六月，PDF 第240页，页眉一月二十二、二十三日，写二十三日滁县、扬州为共军攻占，国军改在浦镇、瓜洲布防。六合、滁县不另画。1949-04-23 起并入江苏整省。大致。县域为治所泰森多边形近似。",
-   "dates_note": "扬州 1949-01-23 起，收到 1949-04-23。已核對《中華民國史事紀要》PDF 第240页。",
+   "note": "天水县域，不是西兰公路沿线。已核對《中華民國史事紀要》民國三十八年七月至九月，印页一六九（PDF 第177页），页眉八月二日，写甘肃天水及江西遂川失守，本日天水失守。遂川不另画。1949-08-26 起并入甘肃整省。大致。县域为治所泰森多边形近似。",
+   "dates_note": "天水 1949-08-02 起，收到 1949-08-26。已核對《中華民國史事紀要》印页一六九。",
    "sources": [
-    "https://www.drnh.gov.tw/p/404-1003-13361.php?Lang=zh-tw",
+    "https://www.drnh.gov.tw/p/404-1003-13363.php?Lang=zh-tw",
     "https://zenodo.org/records/5721459"
    ]
   }
