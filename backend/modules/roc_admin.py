@@ -1,6 +1,7 @@
 """面板：所选日期的省界、名义所属和实际控制。"""
 from __future__ import annotations
 
+from .. import europe_admin as EU
 from .. import roc_admin as ROC
 from .. import roc_beiyang as BY
 from ..registry import ContentModule
@@ -24,7 +25,15 @@ class RocAdminPanel(ContentModule):
         day, date_note = ROC.view_day(date)
         lat, lon = params.get("lat"), params.get("lon")
         place = ROC.place_at(self.pack, lon, lat, day)
-        local = BY.for_province(ctx.data_dir, day, place.get("id"))
+        europe = False
+        if place["status"] == "none" and lon is not None and lat is not None:
+            eu = EU.place_at(EU.dataset(ctx.data_dir), lon, lat, day)
+            if eu["status"] == "draw":
+                place = eu
+                europe = True
+        local = {"wars": [], "fronts": [], "seats": [], "county_license": "", "county_url": ""}
+        if not europe:
+            local = BY.for_province(ctx.data_dir, day, place.get("id"))
         title = place["name"] if place["status"] == "draw" else "省界待考"
         item = {
             "id": place.get("id") or "pending",
@@ -35,14 +44,23 @@ class RocAdminPanel(ContentModule):
             "links": [{"label": "来源", "url": url} for url in place.get("sources") or []],
             "coord": [lon, lat] if lon is not None and lat is not None else None,
         }
+        if europe:
+            note = "这一层是有来源的欧洲一级行政区。没有几何的地方仍标省界待考。不画今天的省界。"
+            license_name = place.get("license") or ""
+            source_url = (place.get("sources") or [None])[0]
+        else:
+            note = ROC.coverage_note(self.pack["meta"])
+            license_name = self.pack["meta"]["source"]["license"]
+            source_url = self.pack["meta"]["source"]["url"]
         return {
             "items": [item],
             "total": 1,
             "place": place,
             "date_note": date_note,
-            "note": ROC.coverage_note(self.pack["meta"]),
-            "license": self.pack["meta"]["source"]["license"],
-            "source_url": self.pack["meta"]["source"]["url"],
+            "note": note,
+            "license": license_name,
+            "source_url": source_url,
+            "europe": europe,
             "wars": local["wars"],
             "fronts": local["fronts"],
             "seats": local["seats"],

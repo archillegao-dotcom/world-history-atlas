@@ -150,7 +150,11 @@ late = place("1950-06-01", "北京")
 check("1950 北京省界待考", late["status"] == "none" and late["name"] is None and "省界待考" in (late.get("note") or ""), late)
 check("1950 图层没有这套省界", layer("1950-06-01")["total"] == 0, layer("1950-06-01")["total"])
 paris = place("1922-06-01", "巴黎")
-check("1922 巴黎省界待考", paris["status"] == "none" and "省界待考" in (paris.get("note") or "") and "不画今天的省界" in (paris.get("note") or ""), paris)
+check("1922 巴黎是塞纳省",
+      paris["status"] == "draw" and paris.get("name") == "塞纳" and paris.get("kind") == "省"
+      and paris.get("name_src") == "SEINE" and "法兰西岛" not in ((paris.get("name") or "") + (paris.get("name_src") or ""))
+      and "不画今天的省界" in (paris.get("note") or ""),
+      paris)
 
 for zoom in (3, 6):
     ref = get("/api/admin1_ref", west=100, south=20, east=125, north=45, zoom=zoom)
