@@ -269,8 +269,10 @@ def resolve(spec):
 def main():
     cur = json.loads((config.DATA_DIR / "curated" / "control_zones.json").read_text(encoding="utf-8"))
     early, late = province_fill_zones()
+    from backend.roc_garrison import zone_specs
     # 1949 年那五块用的是今天的省界。改由上面的历史省界填色，不再叠在一起。
-    zones = early + [z for z in cur["zones"] if not str(z.get("id", "")).startswith("ccw_ccp_1949_")] + late
+    # 防区县不设 as_polity，不改底图政权，名义所属仍走省界。
+    zones = early + [z for z in cur["zones"] if not str(z.get("id", "")).startswith("ccw_ccp_1949_")] + zone_specs(config.DATA_DIR) + late
     out = []
     for z in zones:
         g = resolve(z["geometry"])

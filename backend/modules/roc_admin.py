@@ -24,6 +24,10 @@ class RocAdminPanel(ContentModule):
         day, date_note = ROC.view_day(date)
         lat, lon = params.get("lat"), params.get("lon")
         place = ROC.place_at(self.pack, lon, lat, day)
+        from .. import roc_garrison as GARRISON
+        county = GARRISON.county_at(ctx.data_dir, lon, lat, day, place.get("id"))
+        if county:
+            place["county"] = county
         local = BY.for_province(ctx.data_dir, day, place.get("id"))
         title = place["name"] if place["status"] == "draw" else "省界待考"
         item = {
