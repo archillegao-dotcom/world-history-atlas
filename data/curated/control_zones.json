@@ -3898,7 +3898,6 @@
      "mcgd:s170",
      "mcgd:s1701",
      "mcgd:s1703",
-     "mcgd:s1705",
      "mcgd:s1706",
      "mcgd:s1710",
      "mcgd:s1712",
@@ -4207,7 +4206,6 @@
      "mcgd:s170",
      "mcgd:s1701",
      "mcgd:s1703",
-     "mcgd:s1705",
      "mcgd:s1706",
      "mcgd:s1710",
      "mcgd:s1712",
@@ -13089,6 +13087,32 @@
    "approx": true,
    "note": "寿县县域。已核對《中華民國史事紀要》民國27年1–6月，印页五三〇（PDF 第534页），页眉六月五日，五日这一条写本日陷寿县。三日侵占的是淮南煤矿，不是县城。收到下一块。大致。县域为治所泰森多边形近似。",
    "dates_note": "寿县 1938-06-05 起，收到 1938-06-06。已核對印页五三〇。",
+   "sources": [
+    "https://www.drnh.gov.tw/p/404-1003-13313.php?Lang=zh-tw",
+    "https://zenodo.org/records/5721459"
+   ]
+  },
+  {
+   "id": "sjw_cell_mcgd:s1705_1938-03-19_峄县",
+   "group": "sino_japanese_war",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "日军占领区（峄县）",
+   "name_en": "日军占领区（峄县）",
+   "controller": {
+    "qid": "Q188712",
+    "zh": "日军占领区"
+   },
+   "from": "1938-03-19",
+   "until": "1938-06-06",
+   "geometry": {
+    "roc_counties": [
+     "mcgd:s1705"
+    ]
+   },
+   "approx": true,
+   "note": "峄县县域。已核對《中華民國史事紀要》民國27年1–6月，印页二七七（PDF 第283页），页眉三月十九日，十九日这一条写本日峄县终告陷落。昨十八日再陷临城，临城是津浦线上的镇，不是一九三一年的河北临城，不画。十七日的滕县不在一九三一年县名册里，不画。收到下一块。大致。县域为治所泰森多边形近似。",
+   "dates_note": "峄县 1938-03-19 起，收到 1938-06-06。已核對印页二七七。",
    "sources": [
     "https://www.drnh.gov.tw/p/404-1003-13313.php?Lang=zh-tw",
     "https://zenodo.org/records/5721459"
