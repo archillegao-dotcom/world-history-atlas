@@ -1056,6 +1056,24 @@
         {"label": "卢森堡官方公报：1868年10月17日宪法", "url": "https://legilux.public.lu/eli/etat/leg/constitution/1868/10/17/n1/jo"}
       ],
       "spans": [{"qid": "Q32", "from": "1868-10-17", "until": null}]
+    },
+    {
+      "id": "no_1814",
+      "title_zh": "1814年挪威王国宪法",
+      "title_orig": "Kongeriket Norges Grunnlov",
+      "kind": "formal",
+      "adopted": "1814-05-16",
+      "promulgated": "1814-05-17",
+      "effective": "1814-05-17",
+      "repealed": null,
+      "summary_zh": "挪威法律数据库在这部法律的页面上写明：制宪会议于1814年5月16日在埃兹沃尔通过，1814年5月17日注明日期并签署。页面没有另写一个生效日，从签署日起列入。后来的修改不是新的一部宪法。瑞典－挪威联盟这个多边形和斯德哥尔摩点到的是同一个政权编号，不把挪威宪法套上去。只挂在1814年5月17日的挪威王国和后来单独的挪威上。",
+      "sources": [
+        {"label": "挪威法律数据库：1814年5月16日通过，5月17日签署", "url": "https://lovdata.no/dokument/NL/lov/1814-05-17"}
+      ],
+      "spans": [
+        {"qid": "Q2597352", "from": "1814-05-17", "until": null},
+        {"qid": "Q20", "from": "1814-05-17", "until": null}
+      ]
     }
   ],
   "gaps": [
