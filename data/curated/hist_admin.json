@@ -1,0 +1,29 @@
+{
+  "retrieved": "2026-11-22",
+  "source": "OpenHistoricalMap",
+  "license": "CC0 1.0",
+  "license_url": "https://www.openhistoricalmap.org/copyright",
+  "feature_total": 336,
+  "counts": {
+    "british_india": 16,
+    "ceylon": 8,
+    "south_asia_other": 1,
+    "portuguese_india": 7,
+    "british_india_princely": 40,
+    "ottoman": 2,
+    "korea": 37,
+    "japan": 13,
+    "taiwan": 1,
+    "indochina": 31,
+    "mainland_sea": 24,
+    "dei": 12,
+    "africa": 41,
+    "arabia": 1,
+    "us_state": 23,
+    "central_asia": 10,
+    "colonial_america": 13,
+    "canada": 11,
+    "mexico": 45
+  },
+  "note": "几何见 geom/hist_admin.geojson。缺口见 hist_admin_pending.json。此文件只记过滤后的数量。"
+}
