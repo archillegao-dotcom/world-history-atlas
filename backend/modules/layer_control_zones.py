@@ -5,6 +5,8 @@ as_polity=true 的区域同时作为单独政权多边形参与点击（见 tool
 """
 from __future__ import annotations
 
+import json
+
 from shapely.geometry import shape
 
 from .. import control_zones as CZ
@@ -51,8 +53,12 @@ class ControlZonesLayer(LayerModule):
                         "as_polity": bool(z.get("as_polity")), "activity_only": bool(z.get("activity_only")),
                         "activity_points": z.get("activity_points") or [],
                         "label": z["_label"], "geom": z["geom"]})
-        return {"items": out, "total": len(out),
-                "note": "实际控制区只覆盖已人工整理的冲突。西藏1913年起才单列；1950年10月2日以后不把整块涂成已经易手。灰色表示数据不足，不是无人统治，也不是已经重建的实控线。声索样本是虚线小框，不是边界，也不改底图颜色。其他地区没有画不代表没有。只选年份、不选月份时，按这一年的年中判断。"}
+        gaps = []
+        gp = ctx.data_dir / "curated" / "separatist_gaps.json"
+        if gp.exists():
+            gaps = json.loads(gp.read_text(encoding="utf-8")).get("items") or []
+        return {"items": out, "total": len(out), "undrawn": gaps,
+                "note": "实际控制区只覆盖已人工整理的冲突。西藏1913年起才单列；1950年10月2日以后不把整块涂成已经易手。灰色表示数据不足，不是无人统治，也不是已经重建的实控线。声索样本是虚线小框，不是边界，也不改底图颜色。其他地区没有画不代表没有。只选年份、不选月份时，按这一年的年中判断。墨西哥革命和俄国内战只标有日子的驻地。没有历史界线的派系写在 undrawn，不画。日本战国不新造大名界。"}
 
 
 MODULE = ControlZonesLayer()

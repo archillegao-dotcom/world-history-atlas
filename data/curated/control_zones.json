@@ -11657,6 +11657,154 @@
     "https://www.drnh.gov.tw/p/404-1003-13334.php?Lang=zh-tw",
     "https://zenodo.org/records/5721459"
    ]
+  },
+  {
+   "id": "mx_villa_juarez_1913",
+   "group": "mexican_revolution",
+   "kind": "armed_presence",
+   "as_polity": false,
+   "activity_only": true,
+   "name_zh": "比利亚部活动点（华雷斯）",
+   "name_en": "Villa activity point at Ciudad Juarez",
+   "controller": {"qid": null, "zh": "比利亚部（不是墨西哥全境）"},
+   "from": "1913-11-15",
+   "until": "1913-11-16",
+   "geometry": {"polygon": [[-106.5069, 31.7194], [-106.4669, 31.7194], [-106.4669, 31.7594], [-106.5069, 31.7594], [-106.5069, 31.7194]]},
+   "activity_points": [{"name_zh": "华雷斯", "lat": 31.7394, "lon": -106.4869, "source": "https://en.wikipedia.org/wiki/Ciudad_Ju%C3%A1rez"}],
+   "approx": true,
+   "dates_note": "1913年11月15日攻占华雷斯。只标这一天。此后是否仍占该城，日期待考，不顺延。",
+   "note": "活动点，不是辖境。守城到哪一天待考。名义所属仍是墨西哥。不画奇瓦瓦州，也不用今天的州界。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Battle_of_Ciudad_Ju%C3%A1rez_(1913)",
+    "https://en.wikipedia.org/wiki/Ciudad_Ju%C3%A1rez"
+   ]
+  },
+  {
+   "id": "mx_villa_chihuahua_1913",
+   "group": "mexican_revolution",
+   "kind": "armed_presence",
+   "as_polity": false,
+   "activity_only": true,
+   "name_zh": "比利亚部活动点（奇瓦瓦城）",
+   "name_en": "Villa activity point at Chihuahua City",
+   "controller": {"qid": null, "zh": "比利亚部（不是墨西哥全境）"},
+   "from": "1913-11-26",
+   "until": "1913-11-27",
+   "geometry": {"polygon": [[-106.1089, 28.6153], [-106.0689, 28.6153], [-106.0689, 28.6553], [-106.1089, 28.6553], [-106.1089, 28.6153]]},
+   "activity_points": [{"name_zh": "奇瓦瓦城", "lat": 28.6353, "lon": -106.0889, "source": "https://en.wikipedia.org/wiki/Chihuahua_City"}],
+   "approx": true,
+   "dates_note": "美国国会图书馆展览写提埃拉布兰卡于1913年11月26日投降，随后攻占奇瓦瓦城。入城是否就在这一天待考，只标这一天，不顺延。",
+   "note": "活动点，不是辖境。守城到哪一天待考。名义所属仍是墨西哥。不画奇瓦瓦州，也不用今天的州界。",
+   "sources": [
+    "https://loc.gov/exhibits/mexican-revolution-and-the-united-states/war-against-huerta.html",
+    "https://en.wikipedia.org/wiki/Chihuahua_City"
+   ]
+  },
+  {
+   "id": "ru_kolchak_omsk",
+   "group": "russian_civil_war",
+   "kind": "armed_presence",
+   "as_polity": false,
+   "activity_only": true,
+   "name_zh": "高尔察克政府驻地（鄂木斯克）",
+   "name_en": "Kolchak seat at Omsk",
+   "controller": {"qid": null, "zh": "高尔察克政府（驻地，不是全俄）"},
+   "from": "1918-11-18",
+   "until": "1919-11-14",
+   "geometry": {"polygon": [[73.3486, 54.9714], [73.3886, 54.9714], [73.3886, 55.0114], [73.3486, 55.0114], [73.3486, 54.9714]]},
+   "activity_points": [{"name_zh": "鄂木斯克", "lat": 54.9914, "lon": 73.3686, "source": "https://en.wikipedia.org/wiki/Omsk"}],
+   "approx": true,
+   "dates_note": "1918年11月18日起他在鄂木斯克被推为最高统治者。1919年11月13日离开，11月14日城被占，这一天起不再标驻地。",
+   "note": "活动点，不是辖境，不是西伯利亚。名义上其他白军领袖承认他为最高统治者。底图上的俄国多边形不改成他的实控。西伯利亚界线待考，不画。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Alexander_Kolchak",
+    "https://en.wikipedia.org/wiki/Omsk"
+   ]
+  },
+  {
+   "id": "ru_denikin_novorossiysk_1920",
+   "group": "russian_civil_war",
+   "kind": "armed_presence",
+   "as_polity": false,
+   "activity_only": true,
+   "name_zh": "邓尼金部活动点（新罗西斯克）",
+   "name_en": "Denikin activity point at Novorossiysk",
+   "controller": {"qid": null, "zh": "邓尼金部（驻地，不是南俄全境）"},
+   "from": "1920-03-26",
+   "until": "1920-03-27",
+   "geometry": {"polygon": [[37.7488, 44.7039], [37.7888, 44.7039], [37.7888, 44.7439], [37.7488, 44.7439], [37.7488, 44.7039]]},
+   "activity_points": [{"name_zh": "新罗西斯克", "lat": 44.7239, "lon": 37.7688, "source": "https://en.wikipedia.org/wiki/Novorossiysk"}],
+   "approx": true,
+   "dates_note": "1920年3月26日夜从新罗西斯克撤离。3月27日红军入城，这一天起不再标。没有他进驻该城的起始日，不往前顺延。",
+   "note": "活动点，不是辖境。名义所属仍是俄国。南俄范围待考，不画，也不用今天的州界。4月4日在克里米亚交卸，不把交卸地画成他的范围。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Evacuation_of_Novorossiysk",
+    "https://en.wikipedia.org/wiki/Anton_Denikin"
+   ]
+  },
+  {
+   "id": "ru_wrangel_sevastopol_1920",
+   "group": "russian_civil_war",
+   "kind": "armed_presence",
+   "as_polity": false,
+   "activity_only": true,
+   "name_zh": "弗兰格尔部驻地（塞瓦斯托波尔）",
+   "name_en": "Wrangel seat at Sevastopol",
+   "controller": {"qid": null, "zh": "弗兰格尔部（驻地，不是克里米亚全境）"},
+   "from": "1920-04-04",
+   "until": "1920-11-15",
+   "geometry": {"polygon": [[33.5054, 44.5967], [33.5454, 44.5967], [33.5454, 44.6367], [33.5054, 44.6367], [33.5054, 44.5967]]},
+   "activity_points": [{"name_zh": "塞瓦斯托波尔", "lat": 44.6167, "lon": 33.5254, "source": "https://en.wikipedia.org/wiki/Sevastopol"}],
+   "approx": true,
+   "dates_note": "1920年4月4日接任。美国驻君士坦丁堡高级专员转述的电报写11月14日下午3时塞瓦斯托波尔已经撤完，他最后离开。这一天仍标驻地，15日起拿掉。其他港口撤到11月16日，不另标。",
+   "note": "活动点，不是辖境，不是克里米亚半岛。名义所属仍是俄国。半岛界线待考，不用今天的行政区。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Anton_Denikin",
+    "https://history.state.gov/historicaldocuments/frus1920v03/d725"
+   ]
+  },
+  {
+   "id": "ru_fer_verkhneudinsk_1920",
+   "group": "russian_civil_war",
+   "kind": "armed_presence",
+   "as_polity": false,
+   "activity_only": true,
+   "name_zh": "远东共和国驻地（上乌金斯克）",
+   "name_en": "Far Eastern Republic seat at Verkhneudinsk",
+   "controller": {"qid": "Q61292", "zh": "远东共和国（驻地，不是宣告的全境）"},
+   "from": "1920-04-06",
+   "until": "1920-10-22",
+   "geometry": {"polygon": [[107.5863, 51.8072], [107.6263, 51.8072], [107.6263, 51.8472], [107.5863, 51.8472], [107.5863, 51.8072]]},
+   "activity_points": [{"name_zh": "上乌金斯克", "lat": 51.8272, "lon": 107.6063, "source": "https://en.wikipedia.org/wiki/Ulan-Ude"}],
+   "approx": true,
+   "dates_note": "1920年4月6日在上乌金斯克宣告。俄文页写10月22日占领赤塔并改作首都。英文页和美国国务院文件只写到10月。10月22日起改标赤塔，不把10月1日写成已经迁都。",
+   "note": "活动点，不是辖境。4月6日大会点名的外贝加尔、阿穆尔、滨海、萨哈林、堪察加是宣告名单，不是当天已经控制的范围，待考，不画。不用今天的州界。名义上是缓冲政权。底图上的俄国多边形不改。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Far_Eastern_Republic",
+    "https://ru.wikipedia.org/wiki/%D0%94%D0%B0%D0%BB%D1%8C%D0%BD%D0%B5%D0%B2%D0%BE%D1%81%D1%82%D0%BE%D1%87%D0%BD%D0%B0%D1%8F_%D1%80%D0%B5%D1%81%D0%BF%D1%83%D0%B1%D0%BB%D0%B8%D0%BA%D0%B0",
+    "https://history.state.gov/historicaldocuments/frus1920v03/d633"
+   ]
+  },
+  {
+   "id": "ru_fer_chita_1920",
+   "group": "russian_civil_war",
+   "kind": "armed_presence",
+   "as_polity": false,
+   "activity_only": true,
+   "name_zh": "远东共和国驻地（赤塔）",
+   "name_en": "Far Eastern Republic seat at Chita",
+   "controller": {"qid": "Q61292", "zh": "远东共和国（驻地，不是宣告的全境）"},
+   "from": "1920-10-22",
+   "until": "1922-11-15",
+   "geometry": {"polygon": [[113.4809, 52.0136], [113.5209, 52.0136], [113.5209, 52.0536], [113.4809, 52.0536], [113.4809, 52.0136]]},
+   "activity_points": [{"name_zh": "赤塔", "lat": 52.0336, "lon": 113.5009, "source": "https://en.wikipedia.org/wiki/Chita,_Zabaykalsky_Krai"}],
+   "approx": true,
+   "dates_note": "俄文页写1920年10月22日占领赤塔并成为首都。1922年11月15日全俄中央执行委员会把它并入俄罗斯苏维埃联邦社会主义共和国，这一天起不再标。",
+   "note": "活动点，不是辖境。五区合并会议从10月28日开到11月11日，不把会议开幕写成新的边界。宣告名单里的各州不画。不用今天的州界。",
+   "sources": [
+    "https://ru.wikipedia.org/wiki/%D0%94%D0%B0%D0%BB%D1%8C%D0%BD%D0%B5%D0%B2%D0%BE%D1%81%D1%82%D0%BE%D1%87%D0%BD%D0%B0%D1%8F_%D1%80%D0%B5%D1%81%D0%BF%D1%83%D0%B1%D0%BB%D0%B8%D0%BA%D0%B0",
+    "https://en.wikipedia.org/wiki/Far_Eastern_Republic"
+   ]
   }
  ]
 }

@@ -1,0 +1,88 @@
+{
+  "note": "这些派系核对过公开记载，但是没有可再分发的历史边界，所以不画。不用今天的州界、省界或行政区代替。名义上的国家仍是底图上的政权。",
+  "items": [
+    {
+      "id": "mx-carranza",
+      "name": "卡兰萨（宪政主义）",
+      "nominal": "墨西哥合众国",
+      "actual": "待考",
+      "why": "1914年12月只写到宪政派撤离墨西哥城、政府设在韦拉克鲁斯，没有进驻日。1915年10月美国承认也只写到月份。塞拉亚是1915年4月6日至15日的战役，不是州界。不把11月1日或12月1日写成进驻，不画范围。",
+      "sources": ["https://en.wikipedia.org/wiki/Mexican_Revolution"]
+    },
+    {
+      "id": "mx-obregon",
+      "name": "奥夫雷贡",
+      "nominal": "墨西哥合众国",
+      "actual": "待考",
+      "why": "1915年4月在塞拉亚击败比利亚，是战役，不是他的辖境。1920年以后站在全国政府一侧。不另画地方实控。",
+      "sources": ["https://en.wikipedia.org/wiki/Mexican_Revolution"]
+    },
+    {
+      "id": "mx-zapata",
+      "name": "萨帕塔",
+      "nominal": "墨西哥合众国",
+      "actual": "待考",
+      "why": "阿亚拉计划只写到1911年11月，没有日，不把11月1日写成发布日。1919年4月10日在奇纳梅卡遇害是一个人的死，不是辖境易手。莫雷洛斯州界是今天的行政区，不拿来当实控。不画。",
+      "sources": ["https://en.wikipedia.org/wiki/Mexican_Revolution"]
+    },
+    {
+      "id": "mx-villa-extent",
+      "name": "比利亚（奇瓦瓦以外的范围）",
+      "nominal": "墨西哥合众国",
+      "actual": "待考",
+      "why": "华雷斯1913年11月15日、奇瓦瓦城1913年11月26日只标攻占当天的活动点。此后守城到哪一天待考，不顺延，也不画奇瓦瓦州。",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Battle_of_Ciudad_Ju%C3%A1rez_(1913)",
+        "https://loc.gov/exhibits/mexican-revolution-and-the-united-states/war-against-huerta.html"
+      ]
+    },
+    {
+      "id": "ru-denikin",
+      "name": "邓尼金",
+      "nominal": "俄国",
+      "actual": "待考",
+      "why": "新罗西斯克只标1920年3月26日撤离当晚。南俄进退没有当日界线，待考，不画，也不用今天的州界。",
+      "sources": ["https://en.wikipedia.org/wiki/Russian_Civil_War"]
+    },
+    {
+      "id": "ru-wrangel",
+      "name": "弗兰格尔",
+      "nominal": "俄国",
+      "actual": "待考",
+      "why": "塞瓦斯托波尔标1920年4月4日接任到11月14日撤离该港。其他港口撤到11月16日，不另标。半岛界线待考，不用今天的行政区，不画。",
+      "sources": ["https://en.wikipedia.org/wiki/Russian_Civil_War"]
+    },
+    {
+      "id": "ru-green",
+      "name": "绿军（马赫诺等）",
+      "nominal": "不把乌克兰人民共和国或苏维埃俄国写成他们的实控",
+      "actual": "待考",
+      "why": "没有稳定界线。叶卡捷琳诺斯拉夫的进出日没有用第二处公开页核对，不画。",
+      "sources": ["https://en.wikipedia.org/wiki/Russian_Civil_War"]
+    },
+    {
+      "id": "ru-fer",
+      "name": "远东共和国",
+      "nominal": "缓冲政权，不是苏维埃俄国的省",
+      "actual": "待考",
+      "why": "上乌金斯克标到1920年10月22日，赤塔标到1922年11月15日。4月6日宣告名单里的各州不是当天的实控，待考，不画，也不用今天的州界。",
+      "sources": ["https://en.wikipedia.org/wiki/Far_Eastern_Republic"]
+    },
+    {
+      "id": "ru-ethnic",
+      "name": "俄国内战中的民族政权",
+      "nominal": "各自的国名，不回填成后来的加盟共和国",
+      "actual": "待考",
+      "why": "爱沙尼亚、拉脱维亚、立陶宛、芬兰、波兰、格鲁吉亚等若底图已有政权多边形，不另画。内部战线待考。",
+      "sources": ["https://en.wikipedia.org/wiki/Russian_Civil_War"]
+    },
+    {
+      "id": "jp-sengoku",
+      "name": "日本战国",
+      "nominal": "不新造",
+      "actual": "未画",
+      "why": "仓库里没有战国大名的实控图层。没有可再分发的历史界线，不新造，也不用今天的县界。",
+      "sources": []
+    }
+  ]
+}
