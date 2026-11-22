@@ -376,6 +376,188 @@ def build_upu(founding: list[dict]) -> tuple[list[dict], dict]:
     return founding + extra, {"added": len(extra), "blank": blank, "kept_founding": len(founding)}
 
 
+def _mem(name, start, note, role="成员国", **extra):
+    row = {
+        "name": name,
+        "from": start,
+        "track": "dated",
+        "hide_before": True,
+        "role": role,
+        "note": note,
+    }
+    row.update(extra)
+    return row
+
+
+def _upsert(data, org, after_id):
+    orgs = data["orgs"]
+    for i, old in enumerate(orgs):
+        if old["id"] == org["id"]:
+            orgs[i] = org
+            return
+    idx = next(i for i, old in enumerate(orgs) if old["id"] == after_id)
+    orgs.insert(idx + 1, org)
+
+
+def early_orgs() -> list[tuple[dict, str]]:
+    """只写入官网上有完整日子的成员。年而没有日的变化写在注里，不设停止日。"""
+    ccnr_states = (
+        "史页写1815年6月9日《维也纳会议最后议定书》附件16B设立委员会，总部美因茨，"
+        "成员是沿岸的巴登、巴伐利亚、黑森、拿骚、普鲁士，以及法国和荷兰。"
+        "1919年6月28日凡尔赛条约这一天起，史页写由德国取代各邦。"
+    )
+    ccnr = {
+        "id": "ccnr",
+        "zh": "莱茵河航运中央委员会",
+        "en": "Central Commission for the Navigation of the Rhine",
+        "type": "organization",
+        "type_zh": "正式国际组织",
+        "from": "1815-06-09",
+        "until": None,
+        "signed": None,
+        "effective": "1815-06-09",
+        "headquarters": [
+            {"from": "1815-06-09", "until": "1919-06-28", "text": "美因茨。1860年迁到曼海姆，史页没有写日，不另设一行。"},
+            {"from": "1919-06-28", "text": "斯特拉斯堡。史页写凡尔赛条约把总部改到这里。"},
+        ],
+        "summary": (
+            "委员会史页写：1815年6月9日《维也纳会议最后议定书》附件16B设立中央委员会，总部在美因茨。"
+            "1868年10月17日曼海姆文件改了航行规则，组织还是这一个。"
+            "1871年《法兰克福条约》之后法国不再是会员，史页没有写日，不设停止日。"
+            "1919年6月28日凡尔赛条约改组委员会，法国回到，瑞士、比利时、英国、意大利加入，德国取代各邦。"
+            "德国和意大利退出的年份，史页写1936年，组织页写意大利是1935年，两说都没有日，不设停止日。"
+            "1945年11月20日复会时的代表团是美国、比利时、英国、荷兰、法国、瑞士。美国1961年离开、英国1993年离开、德国1950年才回来，都只有年，不设停止日或恢复日。"
+        ),
+        "incomplete": True,
+        "list_note": (
+            "只写入史页给了完整日子的成员。没有日的退出、恢复和暂停不设日子，标无。"
+            "各邦在1919年6月28日起由德国取代，这是史页把变化系在凡尔赛条约这一天，不是另一份退出文书。"
+        ),
+        "sources": [
+            {"label": "莱茵河航运中央委员会史", "url": "https://www.ccr-zkr.org/en/history"},
+            {"label": "委员会的成员说明", "url": "https://www.ccr-zkr.org/11030200-en.html"},
+        ],
+        "members": [
+            _mem("Baden", "1815-06-09", ccnr_states, until="1919-06-28", how="replaced"),
+            _mem("Bavaria", "1815-06-09", ccnr_states, until="1919-06-28", how="replaced"),
+            _mem("Hesse（史页未写是哪一个）", "1815-06-09", ccnr_states + "史页只写 Hesse，没有写是哪一个黑森，不挂编号。", until="1919-06-28", how="replaced"),
+            _mem("Nassau", "1815-06-09", ccnr_states, until="1919-06-28", how="replaced"),
+            _mem("Prussia（史页未区分王国和总条目）", "1815-06-09", ccnr_states + "图里同时有普鲁士和普鲁士王国，史页只写 Prussia，不挂编号。", until="1919-06-28", how="replaced"),
+            _mem("France", "1815-06-09", "1815年6月9日起是成员。史页写1871年《法兰克福条约》之后不再是会员，没有写日，不设停止日。1919年6月28日凡尔赛条约写法国回到，前一行没有断开，不另开一行。"),
+            _mem("Netherlands", "1815-06-09", "1815年6月9日起是成员。1919年6月28日以后史页仍把它算在成员里。"),
+            _mem("Germany", "1919-06-28", "史页写凡尔赛条约这一天起德国取代各邦。1936年德国正式退出、1950年才回来，都只有年，不设停止日，所以1936年以后这一行仍显示。"),
+            _mem("Switzerland", "1919-06-28", "史页写凡尔赛条约这一天起瑞士加入。"),
+            _mem("Belgium", "1919-06-28", "史页写凡尔赛条约这一天起比利时加入。"),
+            _mem("United Kingdom", "1919-06-28", "史页写凡尔赛条约这一天起英国加入。组织页写1993年离开，没有写日，不设停止日。"),
+            _mem("Italy", "1919-06-28", "史页写凡尔赛条约这一天起意大利加入。史页写1936年正式退出，组织页写1935年放弃参加。两说都没有日，不择一，不设停止日。"),
+            _mem("United States", "1945-11-20", "史页写1945年11月20日复会时有美国代表团，并写美国在战后是成员、1961年离开。1961年没有写日，不设停止日。"),
+        ],
+    }
+    sign = (
+        "国际计量局米制公约页把这一国列为1875年的最初签署方。页上没有写批准日或生效日，"
+        "所以这一行只是签署方，不写成已经生效的缔约方。"
+    )
+    bipm = {
+        "id": "bipm",
+        "zh": "国际计量局（米制公约）",
+        "en": "International Bureau of Weights and Measures",
+        "type": "organization",
+        "type_zh": "正式国际组织",
+        "from": "1875-05-20",
+        "until": None,
+        "signed": "1875-05-20",
+        "effective": None,
+        "headquarters": [{"from": "1875-05-20", "text": "塞夫尔，布雷特伊馆。"}],
+        "summary": (
+            "米制公约页写：公约1875年5月20日签署，1921年修订，并设立国际计量局。"
+            "公约对各国生效的日子这一页没有写，所以不填生效日。"
+            "最初签署方按该页名单写入，后来的会籍不从签署推断。"
+            "有完整加入日或除名日的，另按国际计量局页面写入。只有年月、没有日的不编。"
+        ),
+        "incomplete": True,
+        "list_note": (
+            "签署方不是生效后的缔约方名单。加入日只采用写到日的官方记载。"
+            "摩洛哥、厄瓜多尔、白俄罗斯、爱沙尼亚、哥斯达黎加等只有年月，不编。"
+            "退出和暂停：除多米尼加的除名日外，这一批没有写到日的记录，标无。"
+        ),
+        "sources": [
+            {"label": "米制公约与最初签署方", "url": "https://www.bipm.org/en/metre-convention"},
+            {"label": "国际计量局会员国", "url": "https://www.bipm.org/en/member-states"},
+            {"label": "多米尼加的批准、除名和再加入", "url": "https://www.bipm.org/en/countries/do"},
+            {"label": "国际计量委员会主席2014年报告", "url": "https://www.bipm.org/documents/20126/17315032/25th-CGPM-Report-of-CIPM-President-EN.pdf/3cf45835-d939-7577-fc8f-cc3f2ae2310b"},
+            {"label": "国际计量委员会主席2018年报告", "url": "https://www.bipm.org/documents/20126/44023306/26th-CGPM-Report-of-CIPM-President-EN.pdf/a1aa6cf7-03ef-64a8-d958-af5a97a773b3"},
+        ],
+        "members": [
+            _mem(name, "1875-05-20", sign, role="签署方")
+            for name in (
+                "Germany", "Argentina", "Austria-Hungary", "Belgium", "Brazil", "Denmark",
+                "Spain", "United States of America", "France", "Italy", "Peru", "Portugal",
+                "Russia", "Sweden and Norway", "Switzerland", "Türkiye", "Venezuela",
+            )
+        ] + [
+            _mem("Dominican Republic", "1954-02-24", "国家页写1954年2月24日首次批准成为会员，2015年1月1日起被除名。", until="2015-01-01", how="removed"),
+            _mem("Dominican Republic", "2026-04-09", "国家页写2026年4月9日再次加入。", hide_before=True),
+            _mem("Tunisia", "2012-02-01", "国际计量委员会主席2014年报告：2012年2月1日加入。原为联系成员。"),
+            _mem("Colombia", "2013-02-06", "国际计量委员会主席2014年报告：2013年2月6日加入。"),
+            _mem("Iraq", "2013-08-20", "国际计量委员会主席2014年报告：2013年8月20日加入。"),
+            _mem("Lithuania", "2015-04-16", "国际计量委员会主席2018年报告：2015年4月16日由联系成员转为公约缔约方。"),
+            _mem("United Arab Emirates", "2015-04-27", "国际计量委员会主席2018年报告：2015年4月27日加入。"),
+            _mem("Slovenia", "2016-03-23", "国际计量委员会主席2018年报告：2016年3月23日由联系成员转为公约缔约方。"),
+            _mem("Montenegro", "2018-01-24", "国际计量委员会主席2018年报告：2018年1月24日由联系成员转为公约缔约方。"),
+            _mem("Ukraine", "2018-08-07", "国际计量委员会主席2018年报告：2018年8月7日由联系成员转为公约缔约方。"),
+            _mem("Peru", "2026-08-11", "会员国页写：秘鲁2026年8月11日加入，成为会员。1875年的签署不写成一直是会员。"),
+            _mem("Azerbaijan", "2026-08-17", "会员国页写：阿塞拜疆2026年8月17日加入米制公约，成为会员。"),
+        ],
+    }
+    ilo_note = "国际劳工组织太平洋新闻（2018年12月，刊在劳工组织网站）写的加入日。"
+    ilo = {
+        "id": "ilo",
+        "zh": "国际劳工组织",
+        "en": "International Labour Organization",
+        "type": "organization",
+        "type_zh": "正式国际组织",
+        "from": "1919-06-28",
+        "until": None,
+        "signed": "1919-06-28",
+        "effective": None,
+        "headquarters": [{"from": "1919-06-28", "text": "1920年起在日内瓦。史页没有写迁入的日子。"}],
+        "summary": (
+            "劳工组织关于页写1919年创立，是凡尔赛条约的一部分。图书馆史页写和约于1919年6月28日通过，劳动条款成为章程。"
+            "章程何时单独生效，这两页没有写成另一个日子，所以不填生效日。"
+            "创始会员要等各国批准和约才成为会员。史页没有逐国批准日，不把1919年6月28日写成大家已经是会员。"
+            "下面只写入写到日的加入。"
+        ),
+        "incomplete": True,
+        "list_note": (
+            "名单不完整。没有完整加入日的不编，包括史页只说1919年有44国、以及只有年的退出。"
+            "章程写退出通知两年后生效。这一批没有打开逐国通知日，退出标无。"
+        ),
+        "sources": [
+            {"label": "国际劳工组织关于页", "url": "https://www.ilo.org/about-ilo"},
+            {"label": "1919年创立说明", "url": "https://webapps.ilo.org/static/english/lib/century/"},
+            {"label": "法律顾问：库克群岛和汤加的加入日", "url": "https://www.ilo.org/about-ilo/organizational-structure-international-labour-office/office-legal-adviser/institutional-governance-and-official-meetings"},
+            {"label": "总干事报告：汤加2016年2月24日成为会员", "url": "https://www.ilo.org/media/199156/download"},
+            {"label": "太平洋新闻里的加入日", "url": "https://www.ilo.org/media/413336/download"},
+            {"label": "乌克兰1954年5月12日成为会员", "url": "https://www.ilo.org/sites/default/files/wcmsp5/groups/public/@europe/@ro-geneva/@sro-budapest/documents/publication/wcms_712299.pdf"},
+        ],
+        "members": [
+            _mem("Ukraine", "1954-05-12", "劳工组织出版物写：乌克兰苏维埃社会主义共和国1954年5月12日按章程第1条第3款成为会员，总干事同日发电通知。"),
+            _mem("Fiji", "1974-04-19", ilo_note),
+            _mem("Papua New Guinea", "1976-05-01", ilo_note),
+            _mem("Solomon Islands", "1984-05-28", ilo_note),
+            _mem("Kiribati", "2000-02-03", ilo_note),
+            _mem("Vanuatu", "2003-05-22", ilo_note),
+            _mem("Samoa", "2005-03-07", ilo_note),
+            _mem("Marshall Islands", "2007-07-03", ilo_note),
+            _mem("Tuvalu", "2008-05-27", ilo_note),
+            _mem("Palau", "2012-05-29", ilo_note),
+            _mem("Cook Islands", "2015-06-12", "法律顾问页写库克群岛2015年6月12日加入。太平洋新闻写同一天。"),
+            _mem("Tonga", "2016-02-24", "总干事2016年2月报告写：接受书2016年2月24日收到，汤加同日成为第187个会员。法律顾问页写同一天。"),
+        ],
+    }
+    return [(ccnr, "concert"), (bipm, "upu"), (ilo, "pca")]
+
+
 def main():
     dip_path = CUR / "diplomacy.json"
     data = json.loads(dip_path.read_text(encoding="utf-8"))
@@ -484,6 +666,13 @@ def main():
         itu_sources.append({"label": "国际电信联盟：南苏丹2011年10月3日加入", "url": itu_url})
     itu["sources"] = itu_sources
 
+    early_stats = {}
+    for org, after in early_orgs():
+        linked = link_polities(org["members"], lambda m: True)
+        org["list_note"] += f"加入日或签署日当天能唯一对上政权编号的有{linked['linked']}行，对不上的{linked['unlinked']}行不挂。"
+        _upsert(data, org, after)
+        early_stats[org["id"]] = linked
+
     concert = by_id["concert"]
     concert["list_note"] = (
         "名单不完整。下面只列同盟条款里的四个主导国，以及1818年加入会商的法国。"
@@ -500,6 +689,7 @@ def main():
     print("signed_only", stats["signed_only"])
     print("upu added", ustats, "link", upu_link)
     print("pca link", pca_link, "itu link", itu_link)
+    print("early", early_stats)
 
 
 if __name__ == "__main__":
