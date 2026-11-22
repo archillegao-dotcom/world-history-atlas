@@ -6,6 +6,7 @@
 from __future__ import annotations
 
 import json
+import re
 
 from ..registry import ContentModule
 from ._state_common import pick_state, resolver
@@ -185,13 +186,17 @@ class Diplomacy:
         }
 
     def _act_public(self, row: dict) -> dict:
-        return {
+        out = {
             "date": row.get("date") or "",
             "zh": row.get("zh") or "",
             "url": row.get("url") or "",
             "label": row.get("label") or "",
             "kind": row.get("kind") or "",
         }
+        for key in ("url2", "label2", "url3", "label3"):
+            if row.get(key):
+                out[key] = row[key]
+        return out
 
     def _organs(self, oid: str, day: str) -> list[dict]:
         out = []
@@ -276,6 +281,62 @@ def _prefer(rows: list[dict]) -> dict | None:
     return rows[0]
 
 
+def _ga_token(zh: str) -> str:
+    match = re.search(r"第(.+?)号决议", zh or "")
+    return match.group(1) if match else ""
+
+
+def _compose_ga(row: dict) -> dict | None:
+    date = row.get("date") or ""
+    if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", date):
+        return None
+    display = (row.get("display") or row.get("symbol") or "").strip()
+    number = re.sub(r"(?i)^A/RES/", "", display).strip()
+    number = number.replace("(", "（").replace(")", "）")
+    title = (row.get("title") or "").strip() or "标题无记录"
+    vote = (row.get("vote_zh") or "").strip() or "无"
+    kind = row.get("library_kind") or ""
+    library_label = "联合国数字图书馆" if kind == "record" else "联合国数字图书馆检索"
+    return {
+        "date": date,
+        "zh": f"第{number}号决议：{title}。表决：{vote}",
+        "url": row.get("doc_url") or "",
+        "label": "联合国正式文件系统",
+        "url2": row.get("library_url") or "",
+        "label2": library_label,
+        "url3": row.get("table_url") or "",
+        "label3": "大会决议表",
+    }
+
+
+def _merge_unga(base, acts: dict) -> None:
+    path = base / "unga_resolutions.json"
+    if not path.exists():
+        return
+    blob = json.loads(path.read_text(encoding="utf-8"))
+    extra = []
+    for row in blob.get("resolutions") or []:
+        act = _compose_ga(row)
+        if act:
+            extra.append(act)
+    kept = []
+    for old in acts.get("ga") or []:
+        token = _ga_token(old.get("zh") or "")
+        day = old.get("date") or ""
+        replaced = False
+        if token:
+            for act in extra:
+                if act["date"] != day:
+                    continue
+                new_token = _ga_token(act["zh"])
+                if new_token == token or new_token.startswith(token):
+                    replaced = True
+                    break
+        if not replaced:
+            kept.append(old)
+    acts["ga"] = sorted(kept + extra, key=lambda a: (a.get("date") or "", a.get("zh") or ""))
+
+
 def load_diplomacy(data_dir) -> Diplomacy:
     base = data_dir / "curated"
     raw = json.loads((base / "diplomacy.json").read_text(encoding="utf-8"))
@@ -295,6 +356,7 @@ def load_diplomacy(data_dir) -> Diplomacy:
         ga_note = blob.get("ga_note") or ""
         for key, rows in (blob.get("organs") or {}).items():
             acts[key] = sorted(rows, key=lambda a: (a.get("date") or "", a.get("zh") or ""))
+    _merge_unga(base, acts)
     return Diplomacy(raw.get("orgs") or [], organs, acts, ga_note)
 
 

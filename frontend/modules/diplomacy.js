@@ -34,7 +34,11 @@
       g.nodes.push(n);
     });
     const actLine = (a) => {
-      const href = a.url ? ` <a href="${esc(a.url)}" target="_blank" rel="noopener">${esc(a.label || "来源")}</a>` : "";
+      const links = [];
+      if (a.url) links.push(`<a href="${esc(a.url)}" target="_blank" rel="noopener">${esc(a.label || "来源")}</a>`);
+      if (a.url2) links.push(`<a href="${esc(a.url2)}" target="_blank" rel="noopener">${esc(a.label2 || "来源")}</a>`);
+      if (a.url3) links.push(`<a href="${esc(a.url3)}" target="_blank" rel="noopener">${esc(a.label3 || "来源")}</a>`);
+      const href = links.length ? " " + links.join(" ") : "";
       return `<div class="s">${esc(a.date || "")} ${esc(a.zh)}${href}</div>`;
     };
     let html = `<div id="diplomacyTree"><h4>这一天的机构</h4>`;
@@ -62,7 +66,7 @@
           <div class="t">${esc(n.zh)} <span class="badge">${esc(n.kind_zh || "")}</span></div>
           <div class="d">${esc(n.from || "")}${n.until ? " 至 " + esc(n.until) : ""}</div>
           <div class="s">${esc(n.summary || "")}</div>
-          <div class="s">当日决议或判例：${acts.length ? acts.map((a) => esc(a.zh)).join("；") : "当日无记录"}</div>
+          <div class="s">当日决议或判例：${acts.length ? (acts.length <= 3 ? acts.map((a) => esc(a.zh)).join("；") : "当日" + acts.length + "项，点开查看") : "当日无记录"}</div>
           <div class="node-acts" style="display:none">${detail}</div>
         </div>`;
       }
