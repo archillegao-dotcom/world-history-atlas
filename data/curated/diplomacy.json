@@ -18,7 +18,7 @@
       ],
       "summary": "这不是一个有章程和会员册的国际组织。1815年11月20日巴黎签订的四国同盟写明，四国君主或其大臣按期会商。1818年亚琛会议把法国加进这个会商。1822年维罗纳会议之后，英国不再参加对别国内部的干涉，五国没有再按同一安排开会。没有解散文书。本页只把这一段会议体系算作存续，不把后来的大国协商写成同一个组织。",
       "incomplete": true,
-      "list_note": "名单不完整。下面只列同盟条款里的四个主导国，以及1818年加入会商的法国。维也纳会议还有许多别的与会国，没有写成会员。",
+      "list_note": "名单不完整。下面只列同盟条款里的四个主导国，以及1818年加入会商的法国。维也纳会议还有许多别的与会国，没有写成会员。加入只多了法国这一条。退出、暂停、继承：无记录。不把1822年维罗纳会议之后英国不再参加对别国内部的干涉写成退出。",
       "sources": [
         {
           "label": "1815年11月20日四国同盟第六条",
@@ -100,9 +100,9 @@
           "text": "1865年5月17日在巴黎签署。常设局后来设在伯尔尼，设立的日子这一批没有写到日。"
         }
       ],
-      "summary": "1865年5月17日，20个国家在巴黎签署国际电报公约，成立万国电报联盟。1932年马德里会议另订国际电信公约，要把电报和无线电合成国际电信联盟。那份公约哪一天生效，这一批没有打开批准记录，所以名称仍用万国电报联盟，不把改名日提前。",
+      "summary": "1865年5月17日，20个国家在巴黎签署国际电报公约，成立万国电报联盟。1932年马德里会议另订国际电信公约。那份公约哪一天生效，这一批没有打开批准记录，所以名称仍用万国电报联盟。南苏丹于2011年10月3日加入。除此之外，后来的加入、退出、暂停和继承没有逐条的官方日子，不编。",
       "incomplete": true,
-      "list_note": "名单不完整。下面20个是1865年的签署方。后来谁加入、谁退出、德国各邦并入德意志国之后会籍怎么算，这一批没有逐条写入，不把签署方写成此后一直是会员。",
+      "list_note": "名单不完整。20个签署方仍是签署方，后来的会籍未核。会员页没有逐国加入日。1992年组织法的批准、接受或加入日不是会籍开始日，不拿来补名单。南苏丹按全权代表大会页面写入2011年10月3日。其余加入、退出、暂停、继承：无记录。",
       "sources": [
         {
           "label": "国际电信联盟历史页所列20个创始国",
@@ -111,6 +111,10 @@
         {
           "label": "1865年巴黎会议与会名单",
           "url": "https://search.itu.int/history/HistoryDigitalCollectionDocLibrary/4.1.44.en.100.pdf"
+        },
+        {
+          "label": "国际电信联盟：南苏丹2011年10月3日加入",
+          "url": "https://www.itu.int/web/pp-18/en/article/itus-evolving-membership"
         }
       ],
       "members": [
@@ -300,6 +304,14 @@
           "from": "1865-05-17",
           "track": "founding",
           "note": "符腾堡王国。"
+        },
+        {
+          "name": "南苏丹",
+          "from": "2011-10-03",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "国际电信联盟全权代表大会页面写：最近加入的会员是南苏丹，2011年10月3日加入。没有另写退出或暂停。"
         }
       ]
     },
@@ -319,9 +331,9 @@
           "text": "伯尔尼。1874年10月9日的条约在这里签署。"
         }
       ],
-      "summary": "1874年10月9日在伯尔尼签署《邮政总联盟条约》，1875年7月1日生效。1878年6月1日的公约取代1874年文本，名称改为万国邮政联盟。组织没有另起一个。后来的加入国没有逐一写入。",
+      "summary": "1874年10月9日在伯尔尼签署《邮政总联盟条约》，1875年7月1日生效。1878年6月1日的公约取代1874年文本，名称改为万国邮政联盟。组织没有另起一个。1875年7月1日及以前的法律地位页用的是现在的国名，不另开一行，1874年的缔约方仍写签署方、后来的会籍未核。比这晚的 member since 另列，名称仍是页上的现称，不改写成当时政权，不配政权编号。这些页没有写退出、暂停、继承，标无。",
       "incomplete": true,
-      "list_note": "名单不完整。下面按1874年条约标题里的缔约方，不是今天的会员。万国邮政联盟2019年的新闻稿把奥匈拆成奥地利和匈牙利，数成22国。本页不拆，仍写奥匈帝国。瑞典和挪威在标题里分开列，当时仍是同一个联合。",
+      "list_note": "1874年条约标题上的缔约方仍在。奥匈帝国不拆。另按法律地位页写入167行，member since 都晚于1875年7月1日。法国页上写1876年1月1日，与缔约日不同，不另开一行，也不改缔约方原行。没有 member since、因而不写入的有：REPUBLIC OF KAZAKHSTAN、REPUBLIC OF KIRIBATI。退出、暂停、继承：这些页没有写，标无。名单仍不完整。",
       "sources": [
         {
           "label": "1874年10月9日伯尔尼条约",
@@ -330,6 +342,14 @@
         {
           "label": "万国邮政联盟2019年对22个创始国的现代名单",
           "url": "https://www.upu.int/en/news/2019/10/upu-celebrates-145-years-of-service-to-the-world"
+        },
+        {
+          "label": "万国邮政联盟会员法律地位页（按国家）",
+          "url": "https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/ssdEn.pdf"
+        },
+        {
+          "label": "南苏丹于2011年10月4日成为会员",
+          "url": "https://www.upu.int/en/news/2011/10/south-sudan-becomes-192nd-member-country"
         }
       ],
       "members": [
@@ -532,6 +552,1342 @@
           "from": "1874-10-09",
           "track": "founding",
           "note": "奥斯曼帝国。条约标题写 Turkey。"
+        },
+        {
+          "name": "ARUBA, CURAÇAO AND SINT MAARTEN（页上现称）",
+          "from": "1877-05-01",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1877-05-01。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/abwEn.pdf"
+        },
+        {
+          "name": "ISLAMIC REPUBLIC OF AFGHANISTAN（页上现称）",
+          "from": "1928-04-01",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1928-04-01。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/afgEn.pdf"
+        },
+        {
+          "name": "REPUBLIC OF ANGOLA（页上现称）",
+          "from": "1977-03-03",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1977-03-03。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/agoEn.pdf"
+        },
+        {
+          "name": "REPUBLIC OF ALBANIA（页上现称）",
+          "from": "1922-03-01",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1922-03-01。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/albEn.pdf"
+        },
+        {
+          "name": "UNITED ARAB EMIRATES（页上现称）",
+          "from": "1973-03-30",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1973-03-30。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/areEn.pdf"
+        },
+        {
+          "name": "ARGENTINE REPUBLIC（页上现称）",
+          "from": "1878-04-01",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1878-04-01。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/argEn.pdf"
+        },
+        {
+          "name": "REPUBLIC OF ARMENIA（页上现称）",
+          "from": "1992-09-14",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1992-09-14。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/armEn.pdf"
+        },
+        {
+          "name": "ANTIGUA AND BARBUDA（页上现称）",
+          "from": "1994-01-20",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1994-01-20。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/atgEn.pdf"
+        },
+        {
+          "name": "AUSTRALIA（页上现称）",
+          "from": "1907-10-01",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1907-10-01。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/ausEn.pdf"
+        },
+        {
+          "name": "REPUBLIC OF AZERBAIJAN（页上现称）",
+          "from": "1993-04-01",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1993-04-01。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/azeEn.pdf"
+        },
+        {
+          "name": "REPUBLIC OF BURUNDI（页上现称）",
+          "from": "1963-04-06",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1963-04-06。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/bdiEn.pdf"
+        },
+        {
+          "name": "REPUBLIC OF BENIN（页上现称）",
+          "from": "1961-04-27",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1961-04-27。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/benEn.pdf"
+        },
+        {
+          "name": "BURKINA FASO（页上现称）",
+          "from": "1963-03-29",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1963-03-29。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/bfaEn.pdf"
+        },
+        {
+          "name": "PEOPLE’S REPUBLIC OF BANGLADESH（页上现称）",
+          "from": "1973-02-07",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1973-02-07。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/bgdEn.pdf"
+        },
+        {
+          "name": "REPUBLIC OF BULGARIA（页上现称）",
+          "from": "1879-07-01",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1879-07-01。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/bgrEn.pdf"
+        },
+        {
+          "name": "KINGDOM OF BAHRAIN（页上现称）",
+          "from": "1973-12-21",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1973-12-21。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/bhrEn.pdf"
+        },
+        {
+          "name": "COMMONWEALTH OF THE BAHAMAS（页上现称）",
+          "from": "1974-04-24",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1974-04-24。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/bhsEn.pdf"
+        },
+        {
+          "name": "BOSNIA AND HERZEGOVINA（页上现称）",
+          "from": "1892-07-01",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1892-07-01。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/bihEn.pdf"
+        },
+        {
+          "name": "REPUBLIC OF BELARUS（页上现称）",
+          "from": "1947-05-13",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1947-05-13。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/blrEn.pdf"
+        },
+        {
+          "name": "BELIZE（页上现称）",
+          "from": "1982-10-01",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1982-10-01。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/blzEn.pdf"
+        },
+        {
+          "name": "PLURINATIONAL STATE OF BOLIVIA（页上现称）",
+          "from": "1886-04-01",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1886-04-01。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/bolEn.pdf"
+        },
+        {
+          "name": "FEDERATIVE REPUBLIC OF BRAZIL（页上现称）",
+          "from": "1877-07-01",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1877-07-01。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/braEn.pdf"
+        },
+        {
+          "name": "BARBADOS（页上现称）",
+          "from": "1967-11-11",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1967-11-11。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/brbEn.pdf"
+        },
+        {
+          "name": "BRUNEI DARUSSALAM（页上现称）",
+          "from": "1985-01-15",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1985-01-15。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/brnEn.pdf"
+        },
+        {
+          "name": "KINGDOM OF BHUTAN（页上现称）",
+          "from": "1969-03-07",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1969-03-07。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/btnEn.pdf"
+        },
+        {
+          "name": "BOTSWANA (REPUBLIC OF)（页上现称）",
+          "from": "1968-01-12",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1968-01-12。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/bwaEn.pdf"
+        },
+        {
+          "name": "CENTRAL AFRICAN REPUBLIC（页上现称）",
+          "from": "1961-06-28",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1961-06-28。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/cafEn.pdf"
+        },
+        {
+          "name": "CANADA（页上现称）",
+          "from": "1878-07-01",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1878-07-01。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/canEn.pdf"
+        },
+        {
+          "name": "REPUBLIC OF CHILE（页上现称）",
+          "from": "1881-04-01",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1881-04-01。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/chlEn.pdf"
+        },
+        {
+          "name": "PEOPLE’S REPUBLIC OF CHINA（页上现称）",
+          "from": "1914-03-01",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1914-03-01。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/chnEn.pdf"
+        },
+        {
+          "name": "REPUBLIC OF CÔTE D’IVOIRE（页上现称）",
+          "from": "1962-05-23",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1962-05-23。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/civEn.pdf"
+        },
+        {
+          "name": "REPUBLIC OF CAMEROON（页上现称）",
+          "from": "1960-07-26",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1960-07-26。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/cmrEn.pdf"
+        },
+        {
+          "name": "DEMOCRATIC REPUBLIC OF CONGO（页上现称）",
+          "from": "1886-01-01",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1886-01-01。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/codEn.pdf"
+        },
+        {
+          "name": "REPUBLIC OF THE CONGO（页上现称）",
+          "from": "1961-07-05",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1961-07-05。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/cogEn.pdf"
+        },
+        {
+          "name": "REPUBLIC OF COLOMBIA（页上现称）",
+          "from": "1881-07-01",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1881-07-01。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/colEn.pdf"
+        },
+        {
+          "name": "UNION OF THE COMOROS（页上现称）",
+          "from": "1976-07-29",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1976-07-29。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/comEn.pdf"
+        },
+        {
+          "name": "REPUBLIC OF CABO VERDE（页上现称）",
+          "from": "1976-09-30",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1976-09-30。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/cpvEn.pdf"
+        },
+        {
+          "name": "REPUBLIC OF COSTA RICA（页上现称）",
+          "from": "1883-01-01",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1883-01-01。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/criEn.pdf"
+        },
+        {
+          "name": "REPUBLIC OF CUBA（页上现称）",
+          "from": "1902-10-04",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1902-10-04。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/cubEn.pdf"
+        },
+        {
+          "name": "REPUBLIC OF CYPRUS（页上现称）",
+          "from": "1961-11-23",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1961-11-23。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/cypEn.pdf"
+        },
+        {
+          "name": "CZECH REPUBLIC（页上现称）",
+          "from": "1920-05-18",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1920-05-18。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/czeEn.pdf"
+        },
+        {
+          "name": "REPUBLIC OF DJIBOUTI（页上现称）",
+          "from": "1978-06-06",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1978-06-06。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/djiEn.pdf"
+        },
+        {
+          "name": "COMMONWEALTH OF DOMINICA（页上现称）",
+          "from": "1980-01-31",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1980-01-31。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/dmaEn.pdf"
+        },
+        {
+          "name": "DOMINICAN REPUBLIC（页上现称）",
+          "from": "1880-10-01",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1880-10-01。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/domEn.pdf"
+        },
+        {
+          "name": "PEOPLE’S DEMOCRATIC REPUBLIC OF ALGERIA（页上现称）",
+          "from": "1907-10-01",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1907-10-01。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/dzaEn.pdf"
+        },
+        {
+          "name": "REPUBLIC OF ECUADOR（页上现称）",
+          "from": "1880-07-01",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1880-07-01。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/ecuEn.pdf"
+        },
+        {
+          "name": "STATE OF ERITREA（页上现称）",
+          "from": "1993-08-19",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1993-08-19。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/eriEn.pdf"
+        },
+        {
+          "name": "REPUBLIC OF ESTONIA（页上现称）",
+          "from": "1922-07-07",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1922-07-07。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/estEn.pdf"
+        },
+        {
+          "name": "FEDERAL DEMOCRATIC REPUBLIC OF ETHIOPIA（页上现称）",
+          "from": "1908-11-01",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1908-11-01。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/ethEn.pdf"
+        },
+        {
+          "name": "REPUBLIC OF FINLAND（页上现称）",
+          "from": "1918-02-12",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1918-02-12。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/finEn.pdf"
+        },
+        {
+          "name": "REPUBLIC OF FIJI（页上现称）",
+          "from": "1971-06-18",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1971-06-18。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/fjiEn.pdf"
+        },
+        {
+          "name": "GABONESE REPUBLIC（页上现称）",
+          "from": "1961-07-17",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1961-07-17。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/gabEn.pdf"
+        },
+        {
+          "name": "GEORGIA（页上现称）",
+          "from": "1993-04-01",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1993-04-01。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/geoEn.pdf"
+        },
+        {
+          "name": "REPUBLIC OF GHANA（页上现称）",
+          "from": "1957-10-10",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1957-10-10。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/ghaEn.pdf"
+        },
+        {
+          "name": "REPUBLIC OF GUINEA（页上现称）",
+          "from": "1959-05-06",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1959-05-06。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/ginEn.pdf"
+        },
+        {
+          "name": "REPUBLIC OF THE GAMBIA（页上现称）",
+          "from": "1974-10-09",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1974-10-09。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/gmbEn.pdf"
+        },
+        {
+          "name": "REPUBLIC OF GUINEA-BISSAU（页上现称）",
+          "from": "1974-05-30",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1974-05-30。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/gnbEn.pdf"
+        },
+        {
+          "name": "REPUBLIC OF EQUATORIAL GUINEA（页上现称）",
+          "from": "1970-07-24",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1970-07-24。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/gnqEn.pdf"
+        },
+        {
+          "name": "GRENADA（页上现称）",
+          "from": "1978-01-30",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1978-01-30。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/grdEn.pdf"
+        },
+        {
+          "name": "REPUBLIC OF GUATEMALA（页上现称）",
+          "from": "1881-08-01",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1881-08-01。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/gtmEn.pdf"
+        },
+        {
+          "name": "CO-OPERATIVE REPUBLIC OF GUYANA（页上现称）",
+          "from": "1967-03-22",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1967-03-22。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/guyEn.pdf"
+        },
+        {
+          "name": "REPUBLIC OF HONDURAS（页上现称）",
+          "from": "1879-04-01",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1879-04-01。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/hndEn.pdf"
+        },
+        {
+          "name": "REPUBLIC OF CROATIA（页上现称）",
+          "from": "1921-12-24",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1921-12-24。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/hrvEn.pdf"
+        },
+        {
+          "name": "REPUBLIC OF HAITI（页上现称）",
+          "from": "1881-07-01",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1881-07-01。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/htiEn.pdf"
+        },
+        {
+          "name": "REPUBLIC OF INDONESIA（页上现称）",
+          "from": "1877-05-01",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1877-05-01。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/idnEn.pdf"
+        },
+        {
+          "name": "REPUBLIC OF INDIA（页上现称）",
+          "from": "1876-07-01",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1876-07-01。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/indEn.pdf"
+        },
+        {
+          "name": "IRELAND（页上现称）",
+          "from": "1923-09-06",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1923-09-06。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/irlEn.pdf"
+        },
+        {
+          "name": "ISLAMIC REPUBLIC OF IRAN（页上现称）",
+          "from": "1877-09-01",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1877-09-01。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/irnEn.pdf"
+        },
+        {
+          "name": "REPUBLIC OF IRAQ（页上现称）",
+          "from": "1929-04-22",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1929-04-22。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/irqEn.pdf"
+        },
+        {
+          "name": "ICELAND（页上现称）",
+          "from": "1919-11-15",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1919-11-15。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/islEn.pdf"
+        },
+        {
+          "name": "STATE OF ISRAEL（页上现称）",
+          "from": "1949-12-24",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1949-12-24。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/isrEn.pdf"
+        },
+        {
+          "name": "JAMAICA（页上现称）",
+          "from": "1963-08-29",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1963-08-29。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/jamEn.pdf"
+        },
+        {
+          "name": "HASHEMITE KINGDOM OF JORDAN（页上现称）",
+          "from": "1947-05-16",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1947-05-16。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/jorEn.pdf"
+        },
+        {
+          "name": "JAPAN（页上现称）",
+          "from": "1877-06-01",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1877-06-01。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/jpnEn.pdf"
+        },
+        {
+          "name": "REPUBLIC OF KENYA（页上现称）",
+          "from": "1964-10-27",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1964-10-27。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/kenEn.pdf"
+        },
+        {
+          "name": "KYRGYZ REPUBLIC（页上现称）",
+          "from": "1993-01-26",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1993-01-26。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/kgzEn.pdf"
+        },
+        {
+          "name": "KINGDOM OF CAMBODIA（页上现称）",
+          "from": "1951-12-21",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1951-12-21。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/khmEn.pdf"
+        },
+        {
+          "name": "SAINT KITTS AND NEVIS（页上现称）",
+          "from": "1988-01-11",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1988-01-11。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/knaEn.pdf"
+        },
+        {
+          "name": "REPUBLIC OF KOREA（页上现称）",
+          "from": "1900-01-01",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1900-01-01。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/korEn.pdf"
+        },
+        {
+          "name": "STATE OF KUWAIT（页上现称）",
+          "from": "1960-02-16",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1960-02-16。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/kwtEn.pdf"
+        },
+        {
+          "name": "LAO PEOPLE’S DEMOCRATIC REPUBLIC（页上现称）",
+          "from": "1952-05-20",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1952-05-20。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/laoEn.pdf"
+        },
+        {
+          "name": "LEBANESE REPUBLIC（页上现称）",
+          "from": "1931-05-12",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1931-05-12。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/lbnEn.pdf"
+        },
+        {
+          "name": "REPUBLIC OF LIBERIA（页上现称）",
+          "from": "1879-04-01",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1879-04-01。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/lbrEn.pdf"
+        },
+        {
+          "name": "STATE OF LIBYA（页上现称）",
+          "from": "1952-06-04",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1952-06-04。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/lbyEn.pdf"
+        },
+        {
+          "name": "SAINT LUCIA（页上现称）",
+          "from": "1980-07-10",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1980-07-10。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/lcaEn.pdf"
+        },
+        {
+          "name": "PRINCIPALITY OF LIECHTENSTEIN（页上现称）",
+          "from": "1962-04-13",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1962-04-13。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/lieEn.pdf"
+        },
+        {
+          "name": "DEMOCRATIC SOCIALIST REPUBLIC OF SRI LANKA（页上现称）",
+          "from": "1949-07-13",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1949-07-13。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/lkaEn.pdf"
+        },
+        {
+          "name": "KINGDOM OF LESOTHO（页上现称）",
+          "from": "1967-09-06",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1967-09-06。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/lsoEn.pdf"
+        },
+        {
+          "name": "REPUBLIC OF LITHUANIA（页上现称）",
+          "from": "1922-01-01",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1922-01-01。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/ltuEn.pdf"
+        },
+        {
+          "name": "REPUBLIC OF LATVIA（页上现称）",
+          "from": "1921-10-01",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1921-10-01。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/lvaEn.pdf"
+        },
+        {
+          "name": "KINGDOM OF MOROCCO（页上现称）",
+          "from": "1920-10-01",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1920-10-01。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/marEn.pdf"
+        },
+        {
+          "name": "PRINCIPALITY OF MONACO（页上现称）",
+          "from": "1955-10-12",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1955-10-12。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/mcoEn.pdf"
+        },
+        {
+          "name": "REPUBLIC OF MOLDOVA（页上现称）",
+          "from": "1992-11-16",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1992-11-16。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/mdaEn.pdf"
+        },
+        {
+          "name": "REPUBLIC OF MADAGASCAR（页上现称）",
+          "from": "1961-11-02",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1961-11-02。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/mdgEn.pdf"
+        },
+        {
+          "name": "REPUBLIC OF MALDIVES（页上现称）",
+          "from": "1967-08-15",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1967-08-15。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/mdvEn.pdf"
+        },
+        {
+          "name": "UNITED MEXICAN STATES（页上现称）",
+          "from": "1879-04-01",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1879-04-01。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/mexEn.pdf"
+        },
+        {
+          "name": "REPUBLIC OF NORTH MACEDONIA（页上现称）",
+          "from": "1993-07-12",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1993-07-12。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/mkdEn.pdf"
+        },
+        {
+          "name": "REPUBLIC OF MALI（页上现称）",
+          "from": "1961-04-21",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1961-04-21。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/mliEn.pdf"
+        },
+        {
+          "name": "REPUBLIC OF MALTA（页上现称）",
+          "from": "1965-05-21",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1965-05-21。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/mltEn.pdf"
+        },
+        {
+          "name": "REPUBLIC OF THE UNION OF MYANMAR（页上现称）",
+          "from": "1949-10-04",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1949-10-04。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/mmrEn.pdf"
+        },
+        {
+          "name": "MONTENEGRO（页上现称）",
+          "from": "2006-07-26",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 2006-07-26。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/mneEn.pdf"
+        },
+        {
+          "name": "MONGOLIA（页上现称）",
+          "from": "1963-08-24",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1963-08-24。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/mngEn.pdf"
+        },
+        {
+          "name": "REPUBLIC OF MOZAMBIQUE（页上现称）",
+          "from": "1978-10-11",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1978-10-11。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/mozEn.pdf"
+        },
+        {
+          "name": "ISLAMIC REPUBLIC OF MAURITANIA（页上现称）",
+          "from": "1967-03-22",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1967-03-22。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/mrtEn.pdf"
+        },
+        {
+          "name": "REPUBLIC OF MAURITIUS（页上现称）",
+          "from": "1969-08-29",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1969-08-29。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/musEn.pdf"
+        },
+        {
+          "name": "REPUBLIC OF MALAWI（页上现称）",
+          "from": "1966-10-25",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1966-10-25。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/mwiEn.pdf"
+        },
+        {
+          "name": "MALAYSIA（页上现称）",
+          "from": "1958-01-17",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1958-01-17。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/mysEn.pdf"
+        },
+        {
+          "name": "REPUBLIC OF NAMIBIA（页上现称）",
+          "from": "1992-04-30",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1992-04-30。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/namEn.pdf"
+        },
+        {
+          "name": "REPUBLIC OF THE NIGER（页上现称）",
+          "from": "1961-06-12",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1961-06-12。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/nerEn.pdf"
+        },
+        {
+          "name": "FEDERAL REPUBLIC OF NIGERIA（页上现称）",
+          "from": "1961-07-10",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1961-07-10。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/ngaEn.pdf"
+        },
+        {
+          "name": "REPUBLIC OF NICARAGUA（页上现称）",
+          "from": "1882-05-01",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1882-05-01。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/nicEn.pdf"
+        },
+        {
+          "name": "NEPAL（页上现称）",
+          "from": "1956-10-11",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1956-10-11。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/nplEn.pdf"
+        },
+        {
+          "name": "NAURU (REPUBLIC OF)（页上现称）",
+          "from": "1969-04-17",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1969-04-17。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/nruEn.pdf"
+        },
+        {
+          "name": "NEW ZEALAND（页上现称）",
+          "from": "1907-10-01",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1907-10-01。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/nzlEn.pdf"
+        },
+        {
+          "name": "SULTANATE OF OMAN（页上现称）",
+          "from": "1971-08-17",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1971-08-17。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/omnEn.pdf"
+        },
+        {
+          "name": "ISLAMIC REPUBLIC OF PAKISTAN（页上现称）",
+          "from": "1947-11-10",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1947-11-10。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/pakEn.pdf"
+        },
+        {
+          "name": "REPUBLIC OF PANAMA（页上现称）",
+          "from": "1904-06-11",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1904-06-11。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/panEn.pdf"
+        },
+        {
+          "name": "PERU (REPUBLIC OF)（页上现称）",
+          "from": "1879-04-01",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1879-04-01。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/perEn.pdf"
+        },
+        {
+          "name": "REPUBLIC OF THE PHILIPPINES（页上现称）",
+          "from": "1922-01-01",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1922-01-01。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/phlEn.pdf"
+        },
+        {
+          "name": "INDEPENDENT STATE OF PAPUA NEW GUINEA（页上现称）",
+          "from": "1976-06-04",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1976-06-04。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/pngEn.pdf"
+        },
+        {
+          "name": "REPUBLIC OF POLAND（页上现称）",
+          "from": "1919-05-01",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1919-05-01。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/polEn.pdf"
+        },
+        {
+          "name": "DEMOCRATIC PEOPLE’S REPUBLIC OF KOREA（页上现称）",
+          "from": "1900-01-01",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1900-01-01。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/prkEn.pdf"
+        },
+        {
+          "name": "REPUBLIC OF PARAGUAY（页上现称）",
+          "from": "1881-07-01",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1881-07-01。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/pryEn.pdf"
+        },
+        {
+          "name": "STATE OF QATAR（页上现称）",
+          "from": "1969-01-31",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1969-01-31。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/qatEn.pdf"
+        },
+        {
+          "name": "REPUBLIC OF RWANDA（页上现称）",
+          "from": "1963-04-06",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1963-04-06。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/rwaEn.pdf"
+        },
+        {
+          "name": "KINGDOM OF SAUDI ARABIA（页上现称）",
+          "from": "1927-01-01",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1927-01-01。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/sauEn.pdf"
+        },
+        {
+          "name": "REPUBLIC OF THE SUDAN（页上现称）",
+          "from": "1956-07-27",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1956-07-27。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/sdnEn.pdf"
+        },
+        {
+          "name": "REPUBLIC OF SENEGAL（页上现称）",
+          "from": "1961-06-14",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1961-06-14。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/senEn.pdf"
+        },
+        {
+          "name": "REPUBLIC OF SINGAPORE（页上现称）",
+          "from": "1966-01-08",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1966-01-08。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/sgpEn.pdf"
+        },
+        {
+          "name": "SOLOMON ISLANDS（页上现称）",
+          "from": "1984-05-04",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1984-05-04。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/slbEn.pdf"
+        },
+        {
+          "name": "REPUBLIC OF SIERRA LEONE（页上现称）",
+          "from": "1962-01-29",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1962-01-29。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/sleEn.pdf"
+        },
+        {
+          "name": "REPUBLIC OF EL SALVADOR（页上现称）",
+          "from": "1879-04-01",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1879-04-01。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/slvEn.pdf"
+        },
+        {
+          "name": "REPUBLIC OF SAN MARINO（页上现称）",
+          "from": "1915-07-01",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1915-07-01。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/smrEn.pdf"
+        },
+        {
+          "name": "FEDERAL REPUBLIC OF SOMALIA（页上现称）",
+          "from": "1959-04-01",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1959-04-01。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/somEn.pdf"
+        },
+        {
+          "name": "REPUBLIC OF SOUTH SUDAN（页上现称）",
+          "from": "2011-10-04",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 2011-10-04。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/ssdEn.pdf 万国邮政联盟2011年10月6日的新闻稿写成员资格于2011年10月4日生效，与这一页相同。"
+        },
+        {
+          "name": "DEMOCRATIC REPUBLIC OF SAO TOME AND PRINCIPE（页上现称）",
+          "from": "1977-08-22",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1977-08-22。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/stpEn.pdf"
+        },
+        {
+          "name": "REPUBLIC OF SURINAME（页上现称）",
+          "from": "1877-05-01",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1877-05-01。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/surEn.pdf"
+        },
+        {
+          "name": "SLOVAK REPUBLIC（页上现称）",
+          "from": "1920-05-18",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1920-05-18。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/svkEn.pdf"
+        },
+        {
+          "name": "REPUBLIC OF SLOVENIA（页上现称）",
+          "from": "1921-12-24",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1921-12-24。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/svnEn.pdf"
+        },
+        {
+          "name": "KINGDOM OF ESWATINI（页上现称）",
+          "from": "1969-11-07",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1969-11-07。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/swzEn.pdf"
+        },
+        {
+          "name": "REPUBLIC OF SEYCHELLES（页上现称）",
+          "from": "1977-10-07",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1977-10-07。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/sycEn.pdf"
+        },
+        {
+          "name": "SYRIAN ARAB REPUBLIC（页上现称）",
+          "from": "1931-05-12",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1931-05-12。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/syrEn.pdf"
+        },
+        {
+          "name": "REPUBLIC OF CHAD（页上现称）",
+          "from": "1961-06-23",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1961-06-23。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/tcdEn.pdf"
+        },
+        {
+          "name": "TOGOLESE REPUBLIC（页上现称）",
+          "from": "1962-03-21",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1962-03-21。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/tgoEn.pdf"
+        },
+        {
+          "name": "KINGDOM OF THAILAND（页上现称）",
+          "from": "1885-07-01",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1885-07-01。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/thaEn.pdf"
+        },
+        {
+          "name": "REPUBLIC OF TAJIKISTAN（页上现称）",
+          "from": "1994-06-09",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1994-06-09。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/tjkEn.pdf"
+        },
+        {
+          "name": "TURKMENISTAN（页上现称）",
+          "from": "1993-01-26",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1993-01-26。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/tkmEn.pdf"
+        },
+        {
+          "name": "DEMOCRATIC REPUBLIC OF TIMOR-LESTE（页上现称）",
+          "from": "2003-11-28",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 2003-11-28。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/tlsEn.pdf"
+        },
+        {
+          "name": "KINGDOM OF TONGA（页上现称）",
+          "from": "1972-01-26",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1972-01-26。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/tonEn.pdf"
+        },
+        {
+          "name": "REPUBLIC OF TRINIDAD AND TOBAGO（页上现称）",
+          "from": "1963-06-15",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1963-06-15。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/ttoEn.pdf"
+        },
+        {
+          "name": "REPUBLIC OF TUNISIA（页上现称）",
+          "from": "1888-07-01",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1888-07-01。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/tunEn.pdf"
+        },
+        {
+          "name": "TUVALU（页上现称）",
+          "from": "1981-02-03",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1981-02-03。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/tuvEn.pdf"
+        },
+        {
+          "name": "UNITED REPUBLIC OF TANZANIA（页上现称）",
+          "from": "1963-03-29",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1963-03-29。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/tzaEn.pdf"
+        },
+        {
+          "name": "REPUBLIC OF UGANDA（页上现称）",
+          "from": "1964-02-13",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1964-02-13。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/ugaEn.pdf"
+        },
+        {
+          "name": "UKRAINE（页上现称）",
+          "from": "1947-05-13",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1947-05-13。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/ukrEn.pdf"
+        },
+        {
+          "name": "EASTERN REPUBLIC OF URUGUAY（页上现称）",
+          "from": "1880-07-01",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1880-07-01。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/uryEn.pdf"
+        },
+        {
+          "name": "REPUBLIC OF UZBEKISTAN（页上现称）",
+          "from": "1994-02-24",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1994-02-24。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/uzbEn.pdf"
+        },
+        {
+          "name": "VATICAN CITY STATE（页上现称）",
+          "from": "1929-06-01",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1929-06-01。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/vatEn.pdf"
+        },
+        {
+          "name": "SAINT VINCENT AND THE GRENADINES（页上现称）",
+          "from": "1981-02-03",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1981-02-03。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/vctEn.pdf"
+        },
+        {
+          "name": "BOLIVARIAN REPUBLIC OF VENEZUELA（页上现称）",
+          "from": "1880-01-01",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1880-01-01。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/venEn.pdf"
+        },
+        {
+          "name": "SOCIALIST REPUBLIC OF VIET NAM（页上现称）",
+          "from": "1951-10-20",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1951-10-20。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/vnmEn.pdf"
+        },
+        {
+          "name": "REPUBLIC OF VANUATU（页上现称）",
+          "from": "1982-07-16",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1982-07-16。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/vutEn.pdf"
+        },
+        {
+          "name": "INDEPENDENT STATE OF SAMOA（页上现称）",
+          "from": "1989-08-09",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1989-08-09。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/wsmEn.pdf"
+        },
+        {
+          "name": "REPUBLIC OF YEMEN（页上现称）",
+          "from": "1930-01-01",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1930-01-01。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/yemEn.pdf"
+        },
+        {
+          "name": "REPUBLIC OF SOUTH AFRICA（页上现称）",
+          "from": "1893-01-01",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1893-01-01。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/zafEn.pdf"
+        },
+        {
+          "name": "REPUBLIC OF ZAMBIA（页上现称）",
+          "from": "1967-03-22",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1967-03-22。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/zmbEn.pdf"
+        },
+        {
+          "name": "REPUBLIC OF ZIMBABWE（页上现称）",
+          "from": "1981-07-31",
+          "track": "dated",
+          "hide_before": true,
+          "role": "成员国",
+          "note": "万国邮政联盟法律地位页写 UPU member since 1981-07-31。页上用现在的国名，没有写当时政权，也没有写退出、暂停、继承。不配政权编号。 https://www.upu.int/UPU/media/upu/files/aboutUpu/acts/10-memberCountriesLegalSituation/zweEn.pdf"
         }
       ]
     },
@@ -551,20 +1907,29 @@
           "text": "海牙。国际事务局设在海牙。和平宫后来才启用，启用日这一批不写入。"
         }
       ],
-      "summary": "1899年7月29日《和平解决国际争端公约》在海牙签署，第20条起规定设立常设仲裁法院。美国的批准书于1900年9月4日交存，公约从这一天对已经交存的国家生效。26个签署国里哪些在这一天已经批准，这一批没有逐国核对，所以不列签署国名单。",
+      "summary": "1899年7月29日《和平解决国际争端公约》在海牙签署，第20条起规定设立常设仲裁法院。保存机关是荷兰政府。公约对已经交存批准书的国家从1900年9月4日起生效。缔约方按保存机关表的生效日写入。只有签署、生效栏空白的，不写成缔约方。法院网页和保存机关的生效日不一致时标加入日待考，不择一。读到的退出栏和终止栏都是空的，不编退出。表上没有暂停栏，标无。名称用表上的写法，不改成当时的国名，也不配政权编号。",
       "incomplete": true,
-      "list_note": "名单不完整。1899年和1907年公约的缔约国会随加入变化。没有逐国的批准日，就不编名单。",
+      "list_note": "这一批写入132行，仍标名单不完整。奥匈、瑞典和挪威联合的终止栏是空的，后继行出现后标席位待考，不是退出文书。捷克斯洛伐克的行名写到1993-01-01为止，会籍不自动传给后继。已签署而生效栏空白、因而不写入的有：Ecuador（1907）、Greece（1907）、Iran（1907）、Italy（1907）、Peru（1907）、Türkiye（1907）、Uruguay（1907）、Venezuela（1907）。法院页有、保存机关这两张表没有对上的，不写入：无。生效日两说、标了加入日待考的有：Serbia 1899 2001-09-07/2006-06-05。属地延伸不单列。暂停无记录。",
       "sources": [
+        {
+          "label": "1899年公约缔约方（荷兰保存机关）",
+          "url": "https://verdragenbank.overheid.nl/en/Treaty/Details/002330_p.html"
+        },
+        {
+          "label": "1907年公约缔约方（荷兰保存机关）",
+          "url": "https://verdragenbank.overheid.nl/en/Treaty/Details/003316_p.html"
+        },
+        {
+          "label": "常设仲裁法院缔约方页",
+          "url": "https://pca-cpa.org/en/about/introduction/contracting-parties/"
+        },
         {
           "label": "1899年公约，美国国务院历史文件",
           "url": "https://history.state.gov/historicaldocuments/frus1902app2/d20"
-        },
-        {
-          "label": "1900年9月4日交存与法院的设立",
-          "url": "https://doi.org/10.2307/2192606"
         }
       ],
-      "members": []
+      "members": [],
+      "members_file": "pca_members.json"
     },
     {
       "id": "league",
