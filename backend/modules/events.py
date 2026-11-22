@@ -83,9 +83,11 @@ class EventsModule(ContentModule):
             })
         out.sort(key=lambda x: x.pop("_sort"))
         from ..roc_beiyang import events_for
+        from ..roc_shiji import event_items
         day = f"{date.y:04d}-{date.m:02d}-{date.d:02d}" if date.m and date.d else (
             f"{date.y:04d}-{date.m:02d}-01" if date.m else f"{date.y:04d}-07-01")
-        curated = events_for(ctx.data_dir, day, (polity or {}).get("geom"))
+        geom = (polity or {}).get("geom")
+        curated = event_items(ctx.data_dir, day, geom) + events_for(ctx.data_dir, day, geom)
         out = curated + out
         total = len(out)
         return {"items": out[:limit], "total": total, "note": f"时间窗口：所选日期前后 {span:g} 年，以及当时正在进行中的事件"}
