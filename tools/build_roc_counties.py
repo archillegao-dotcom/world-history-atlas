@@ -1312,6 +1312,119 @@ def main():
         })
         print("recovery cell", name, spanning.get("from"), end, cid, label)
 
+    # 民国三十一、三十二年。只在原页写明失陷日和收复日，且不在既有大块里时另画。
+    # 收到收复日。没有收复日、也不落入后来的大块，不画。
+    vol31a = "https://www.drnh.gov.tw/p/404-1003-13326.php?Lang=zh-tw"
+    fresh = [
+        ("博罗", 114.27849, 23.14947, "1942-01-25", "1942-01-30",
+         "博罗县域。已核對《中華民國史事紀要》民國三十一年一月至三月，"
+         "印页二五四（PDF 第262页），页眉一月二十九日，追述二十五日晨由石龙、增城分犯博罗，傍晚博罗沦陷。"
+         "印页二五八（PDF 第266页），页眉一月三十日，写本日午后克复博罗城。"
+         "印页三〇三（PDF 第311页），页眉二月四日，追述三十一日攻克博罗。史事纪要内记载不一。"
+         "地图用较早且写本日的一月三十日。收到一月三十日。不在既有大块里。"
+         "二月四日页写博罗复陷，没有锁到一天，不另画。"),
+        ("惠阳", 114.42324, 23.08459, "1942-02-05", "1942-02-07",
+         "惠阳县域。已核對《中華民國史事紀要》民國三十一年一月至三月，"
+         "印页三六一（PDF 第369页），页眉二月九日，追述五日晨侵入惠阳城内，七日上午三时克复。"
+         "印页四一九（PDF 第427页），页眉二月十三日，写五日拂晓窜入惠阳城，本周惠阳与博罗同时克复。"
+         "五日两处一致。收到二月七日。一九三八年十月那一格仍收到十一月十二日。不在既有大块里。"),
+        ("赤溪", 112.98666, 21.98475, "1942-03-22", "1942-03-23",
+         "赤溪县域。已核對《中華民國史事紀要》民國三十一年一月至三月，"
+         "印页七七二（PDF 第780页），页眉三月二十六、二十七日，"
+         "写二十二日晨向赤溪附近登陆，窜入县城，二十三日晨八时将该城完全克复。"
+         "十七日只写向中山县境沿海进犯，不画中山。收到三月二十三日。不在既有大块里。"),
+        ("永康", 120.0272, 28.9022, "1942-05-22", "1942-08-31",
+         "永康县域。已核對《中華民國史事紀要》民國三十一年四月至六月，"
+         "印页四八七（PDF 第495页），页眉五月二十四日，写二十二日侵入永康城内。"
+         "民國三十一年七月至九月，印页五四五（PDF 第552页），页眉九月二日，"
+         "追述八月三十一日午克复永康、武义。武义的失陷日没有锁，不画武义。"
+         "收到八月三十一日。不在既有大块里。"),
+    ]
+    for name, lon, lat, fall, end, why in fresh:
+        cid = cell_at(features, tree, lon, lat)
+        if not cid:
+            print("FRESH NO CELL", name)
+            continue
+        sid = f"sjw_cell_{cid}_{fall}_{name}"
+        if any(z.get("id") == sid for z in doc["zones"]):
+            continue
+        doc["zones"].append({
+            "id": sid,
+            "group": "sino_japanese_war",
+            "kind": "occupied",
+            "as_polity": True,
+            "name_zh": f"日军占领区（{name}）",
+            "name_en": f"日军占领区（{name}）",
+            "controller": JP,
+            "from": fall,
+            "until": end,
+            "geometry": {"roc_counties": [cid]},
+            "approx": True,
+            "note": why + PHRASE,
+            "dates_note": f"{name} {fall} 起，收到 {end}。已核對《中華民國史事紀要》。",
+            "sources": [vol31a, "https://zenodo.org/records/5721459"],
+        })
+        print("fresh cell", name, fall, end, cid)
+
+    # 县已在大块里，纪要写了收复日：收到那一天，之后从大块里移出。
+    vol31b = "https://www.drnh.gov.tw/p/404-1003-13327.php?Lang=zh-tw"
+    recovered_later = [
+        ("罗山", 114.53985, 32.19885, "1942-05-17",
+         "罗山县域。已核對《中華民國史事紀要》民國三十一年四月至六月，"
+         "印页五四六（PDF 第554页），页眉五月二十八日，追述十七日晨分路向罗山围击，"
+         "一举攻抵城关，残敌突围西窜，该城完全克复。"
+         "县在汪精卫政权大块里，收到一九四二年五月十七日。一九三八年九月那一格仍收到十月二十五日。"),
+    ]
+    for name, lon, lat, end, why in recovered_later:
+        cid = cell_at(features, tree, lon, lat)
+        if not cid:
+            print("LATER NO CELL", name)
+            continue
+        spanning = None
+        for z in doc["zones"]:
+            geom = z.get("geometry") or {}
+            ids = geom.get("roc_counties")
+            if not ids or cid not in ids:
+                continue
+            if z.get("kind") != "occupied":
+                continue
+            frm = z.get("from") or ""
+            until = z.get("until") or "9999-12-31"
+            if until <= end:
+                continue
+            geom["roc_counties"] = [i for i in ids if i != cid]
+            if frm >= end:
+                print("later strip", name, z["id"])
+                continue
+            if spanning is None or frm > (spanning.get("from") or ""):
+                spanning = z
+            print("later split", name, z["id"], frm, until)
+        if spanning is None:
+            print("LATER NO SPAN", name)
+            continue
+        qid = (spanning.get("controller") or {}).get("qid") or ""
+        label = f"{qlabel.get(qid, spanning.get('name_zh') or '日军占领区')}（{name}）"
+        sid = f"sjw_cell_{cid}_{end}_{name}"
+        if any(z.get("id") == sid for z in doc["zones"]):
+            continue
+        doc["zones"].append({
+            "id": sid,
+            "group": "sino_japanese_war",
+            "kind": "occupied",
+            "as_polity": True,
+            "name_zh": label,
+            "name_en": label,
+            "controller": spanning["controller"],
+            "from": spanning.get("from"),
+            "until": end,
+            "geometry": {"roc_counties": [cid]},
+            "approx": True,
+            "note": why + PHRASE,
+            "dates_note": f"{name}收到 {end}。已核對《中華民國史事紀要》民國三十一年四月至六月。追述见原文。",
+            "sources": [vol31b, "https://zenodo.org/records/5721459"],
+        })
+        print("later cell", name, spanning.get("from"), end, cid, label)
+
     EXTENTS.write_text(json.dumps(extents, ensure_ascii=False, indent=1), encoding="utf-8")
     ZONES.write_text(json.dumps(doc, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
     print("zones", len(doc["zones"]), "extents", len(extents))

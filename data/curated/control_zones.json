@@ -7187,7 +7187,6 @@
      "mcgd:s1839",
      "mcgd:s1859",
      "mcgd:s1868",
-     "mcgd:s1869",
      "mcgd:s1872",
      "mcgd:s1925",
      "mcgd:s1926",
@@ -7816,7 +7815,6 @@
      "mcgd:s1865",
      "mcgd:s1866",
      "mcgd:s1868",
-     "mcgd:s1869",
      "mcgd:s1872",
      "mcgd:s1875",
      "mcgd:s1925",
@@ -8457,7 +8455,6 @@
      "mcgd:s1865",
      "mcgd:s1866",
      "mcgd:s1868",
-     "mcgd:s1869",
      "mcgd:s1872",
      "mcgd:s1875",
      "mcgd:s1925",
@@ -9108,7 +9105,6 @@
      "mcgd:s1865",
      "mcgd:s1866",
      "mcgd:s1868",
-     "mcgd:s1869",
      "mcgd:s1872",
      "mcgd:s1875",
      "mcgd:s1925",
@@ -12608,6 +12604,136 @@
    "dates_note": "通山收到 1939-09-14。已核對《中華民國史事紀要》民國二十八年七月至十二月。追述或本日见原文。",
    "sources": [
     "https://www.drnh.gov.tw/p/404-1003-13317.php?Lang=zh-tw",
+    "https://zenodo.org/records/5721459"
+   ]
+  },
+  {
+   "id": "sjw_cell_mcgd:s1547_1942-01-25_博罗",
+   "group": "sino_japanese_war",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "日军占领区（博罗）",
+   "name_en": "日军占领区（博罗）",
+   "controller": {
+    "qid": "Q188712",
+    "zh": "大日本帝国"
+   },
+   "from": "1942-01-25",
+   "until": "1942-01-30",
+   "geometry": {
+    "roc_counties": [
+     "mcgd:s1547"
+    ]
+   },
+   "approx": true,
+   "note": "博罗县域。已核對《中華民國史事紀要》民國三十一年一月至三月，印页二五四（PDF 第262页），页眉一月二十九日，追述二十五日晨由石龙、增城分犯博罗，傍晚博罗沦陷。印页二五八（PDF 第266页），页眉一月三十日，写本日午后克复博罗城。印页三〇三（PDF 第311页），页眉二月四日，追述三十一日攻克博罗。史事纪要内记载不一。地图用较早且写本日的一月三十日。收到一月三十日。不在既有大块里。二月四日页写博罗复陷，没有锁到一天，不另画。大致。县域为治所泰森多边形近似。",
+   "dates_note": "博罗 1942-01-25 起，收到 1942-01-30。已核對《中華民國史事紀要》。",
+   "sources": [
+    "https://www.drnh.gov.tw/p/404-1003-13326.php?Lang=zh-tw",
+    "https://zenodo.org/records/5721459"
+   ]
+  },
+  {
+   "id": "sjw_cell_mcgd:s917_1942-02-05_惠阳",
+   "group": "sino_japanese_war",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "日军占领区（惠阳）",
+   "name_en": "日军占领区（惠阳）",
+   "controller": {
+    "qid": "Q188712",
+    "zh": "大日本帝国"
+   },
+   "from": "1942-02-05",
+   "until": "1942-02-07",
+   "geometry": {
+    "roc_counties": [
+     "mcgd:s917"
+    ]
+   },
+   "approx": true,
+   "note": "惠阳县域。已核對《中華民國史事紀要》民國三十一年一月至三月，印页三六一（PDF 第369页），页眉二月九日，追述五日晨侵入惠阳城内，七日上午三时克复。印页四一九（PDF 第427页），页眉二月十三日，写五日拂晓窜入惠阳城，本周惠阳与博罗同时克复。五日两处一致。收到二月七日。一九三八年十月那一格仍收到十一月十二日。不在既有大块里。大致。县域为治所泰森多边形近似。",
+   "dates_note": "惠阳 1942-02-05 起，收到 1942-02-07。已核對《中華民國史事紀要》。",
+   "sources": [
+    "https://www.drnh.gov.tw/p/404-1003-13326.php?Lang=zh-tw",
+    "https://zenodo.org/records/5721459"
+   ]
+  },
+  {
+   "id": "sjw_cell_mcgd:s1821_1942-03-22_赤溪",
+   "group": "sino_japanese_war",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "日军占领区（赤溪）",
+   "name_en": "日军占领区（赤溪）",
+   "controller": {
+    "qid": "Q188712",
+    "zh": "大日本帝国"
+   },
+   "from": "1942-03-22",
+   "until": "1942-03-23",
+   "geometry": {
+    "roc_counties": [
+     "mcgd:s1821"
+    ]
+   },
+   "approx": true,
+   "note": "赤溪县域。已核對《中華民國史事紀要》民國三十一年一月至三月，印页七七二（PDF 第780页），页眉三月二十六、二十七日，写二十二日晨向赤溪附近登陆，窜入县城，二十三日晨八时将该城完全克复。十七日只写向中山县境沿海进犯，不画中山。收到三月二十三日。不在既有大块里。大致。县域为治所泰森多边形近似。",
+   "dates_note": "赤溪 1942-03-22 起，收到 1942-03-23。已核對《中華民國史事紀要》。",
+   "sources": [
+    "https://www.drnh.gov.tw/p/404-1003-13326.php?Lang=zh-tw",
+    "https://zenodo.org/records/5721459"
+   ]
+  },
+  {
+   "id": "sjw_cell_mcgd:s1467_1942-05-22_永康",
+   "group": "sino_japanese_war",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "日军占领区（永康）",
+   "name_en": "日军占领区（永康）",
+   "controller": {
+    "qid": "Q188712",
+    "zh": "大日本帝国"
+   },
+   "from": "1942-05-22",
+   "until": "1942-08-31",
+   "geometry": {
+    "roc_counties": [
+     "mcgd:s1467"
+    ]
+   },
+   "approx": true,
+   "note": "永康县域。已核對《中華民國史事紀要》民國三十一年四月至六月，印页四八七（PDF 第495页），页眉五月二十四日，写二十二日侵入永康城内。民國三十一年七月至九月，印页五四五（PDF 第552页），页眉九月二日，追述八月三十一日午克复永康、武义。武义的失陷日没有锁，不画武义。收到八月三十一日。不在既有大块里。大致。县域为治所泰森多边形近似。",
+   "dates_note": "永康 1942-05-22 起，收到 1942-08-31。已核對《中華民國史事紀要》。",
+   "sources": [
+    "https://www.drnh.gov.tw/p/404-1003-13326.php?Lang=zh-tw",
+    "https://zenodo.org/records/5721459"
+   ]
+  },
+  {
+   "id": "sjw_cell_mcgd:s1869_1942-05-17_罗山",
+   "group": "sino_japanese_war",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "汪精卫政权（罗山）",
+   "name_en": "汪精卫政权（罗山）",
+   "controller": {
+    "qid": "Q696242",
+    "zh": "汪精卫政权"
+   },
+   "from": "1940-03-30",
+   "until": "1942-05-17",
+   "geometry": {
+    "roc_counties": [
+     "mcgd:s1869"
+    ]
+   },
+   "approx": true,
+   "note": "罗山县域。已核對《中華民國史事紀要》民國三十一年四月至六月，印页五四六（PDF 第554页），页眉五月二十八日，追述十七日晨分路向罗山围击，一举攻抵城关，残敌突围西窜，该城完全克复。县在汪精卫政权大块里，收到一九四二年五月十七日。一九三八年九月那一格仍收到十月二十五日。大致。县域为治所泰森多边形近似。",
+   "dates_note": "罗山收到 1942-05-17。已核對《中華民國史事紀要》民國三十一年四月至六月。追述见原文。",
+   "sources": [
+    "https://www.drnh.gov.tw/p/404-1003-13327.php?Lang=zh-tw",
     "https://zenodo.org/records/5721459"
    ]
   }
