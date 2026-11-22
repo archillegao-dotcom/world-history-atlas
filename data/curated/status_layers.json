@@ -16,7 +16,10 @@
           "role": "control",
           "from": "1991-08-24",
           "until": "2014-03-18",
-          "party": {"qid": "Q212", "zh": "乌克兰"},
+          "party": {
+            "qid": "Q212",
+            "zh": "乌克兰"
+          },
           "text": "这一层从乌克兰独立宣言日起，到 2014-03-18 之前，把整片行政界记为乌克兰实际控制。2014-02-27 起要地被占，但没有逐日半岛界线，所以不把 2 月 27 日至 3 月 17 日画成整片已经易手。",
           "sources": [
             "https://en.wikipedia.org/wiki/Declaration_of_Independence_of_Ukraine",
@@ -26,7 +29,10 @@
         {
           "role": "control",
           "from": "2014-03-18",
-          "party": {"qid": "Q159", "zh": "俄罗斯"},
+          "party": {
+            "qid": "Q159",
+            "zh": "俄罗斯"
+          },
           "draw": "war_front",
           "assessed_by": "war_fronts",
           "text": "2014-03-18 莫斯科签署接纳条约。本层从这一天起把整片行政界标成俄罗斯实际控制，并与已有战争前线的克里米亚基线同一天。2014-03-21 完成俄罗斯国内批准，不另画一条控制线。2022-02-24 以后，这一点是否仍在评估控制区内，以当日战争前线为准。",
@@ -40,14 +46,22 @@
           "role": "claim",
           "from": "1991-08-24",
           "until": "2014-03-18",
-          "party": {"qid": "Q212", "zh": "乌克兰"},
+          "party": {
+            "qid": "Q212",
+            "zh": "乌克兰"
+          },
           "text": "主权声索为乌克兰。",
-          "sources": ["https://en.wikipedia.org/wiki/Declaration_of_Independence_of_Ukraine"]
+          "sources": [
+            "https://en.wikipedia.org/wiki/Declaration_of_Independence_of_Ukraine"
+          ]
         },
         {
           "role": "claim",
           "from": "2014-03-18",
-          "party": {"qid": "Q212", "zh": "乌克兰"},
+          "party": {
+            "qid": "Q212",
+            "zh": "乌克兰"
+          },
           "draw": "dash",
           "label": "乌克兰主权声索",
           "text": "乌克兰的主权声索继续有效。俄罗斯的合并主张不改写这一行。",
@@ -59,24 +73,36 @@
         {
           "role": "claim",
           "from": "2014-03-18",
-          "party": {"qid": "Q159", "zh": "俄罗斯"},
+          "party": {
+            "qid": "Q159",
+            "zh": "俄罗斯"
+          },
           "text": "俄罗斯声称已经按 2014-03-18 的条约并入。这是声索，不是国际承认。",
-          "sources": ["https://www.consultant.ru/document/cons_doc_LAW_160398/"]
+          "sources": [
+            "https://www.consultant.ru/document/cons_doc_LAW_160398/"
+          ]
         },
         {
           "role": "recognition",
           "from": "1991-08-24",
           "until": "2014-03-18",
-          "party": {"qid": "Q212", "zh": "乌克兰"},
+          "party": {
+            "qid": "Q212",
+            "zh": "乌克兰"
+          },
           "text": "这一层把国际承认记为乌克兰。不逐国开列。",
-          "sources": ["https://en.wikipedia.org/wiki/Declaration_of_Independence_of_Ukraine"]
+          "sources": [
+            "https://en.wikipedia.org/wiki/Declaration_of_Independence_of_Ukraine"
+          ]
         },
         {
           "role": "recognition",
           "from": "2014-03-18",
           "until": "2014-03-27",
           "text": "接纳条约已经签署，大会这项决议还没有通过。这几天各国的个别表态不逐条收录，标待考。",
-          "sources": ["https://www.consultant.ru/document/cons_doc_LAW_160398/"]
+          "sources": [
+            "https://www.consultant.ru/document/cons_doc_LAW_160398/"
+          ]
         },
         {
           "role": "recognition",
@@ -109,7 +135,10 @@
           "role": "control",
           "from": "2015-02-18",
           "until": "2022-02-24",
-          "party": {"qid": "Q159", "zh": "俄罗斯"},
+          "party": {
+            "qid": "Q159",
+            "zh": "俄罗斯"
+          },
           "draw": "war_front",
           "assessed_by": "war_fronts",
           "text": "实控只算战争前线基线里的那一部分，大致是 2015-02-18 德巴尔采沃之后到 2022-02-24 之前的接触线以东。不是两个州全境。",
@@ -123,15 +152,23 @@
           "role": "claim",
           "from": "1991-08-24",
           "until": "2022-02-24",
-          "party": {"qid": "Q212", "zh": "乌克兰"},
+          "party": {
+            "qid": "Q212",
+            "zh": "乌克兰"
+          },
           "text": "乌克兰声索这两个州。",
-          "sources": ["https://en.wikipedia.org/wiki/Declaration_of_Independence_of_Ukraine"]
+          "sources": [
+            "https://en.wikipedia.org/wiki/Declaration_of_Independence_of_Ukraine"
+          ]
         },
         {
           "role": "claim",
           "from": "2015-02-18",
           "until": "2022-02-24",
-          "party": {"qid": "Q159", "zh": "俄罗斯"},
+          "party": {
+            "qid": "Q159",
+            "zh": "俄罗斯"
+          },
           "draw": "dash",
           "label": "州界是声索参照，不是接触线",
           "text": "虚线是今天的州界。它大于当时的评估控制区。不把州界写成已经控制的疆域。",
@@ -145,14 +182,18 @@
           "from": "2015-02-18",
           "until": "2022-02-21",
           "text": "这一阶段不把接触线以东记成被普遍承认的俄罗斯领土。个别承认不逐国开列，标待考。",
-          "sources": ["https://en.wikipedia.org/wiki/Minsk_agreements"]
+          "sources": [
+            "https://en.wikipedia.org/wiki/Minsk_agreements"
+          ]
         },
         {
           "role": "recognition",
           "from": "2022-02-21",
           "until": "2022-02-24",
           "text": "联合国大会后来的 ES-11/4 号决议把 2022-02-21 的决定列为应予撤销的地位决定。这里不另编承认国名单。",
-          "sources": ["https://press.un.org/en/2022/ga12458.doc.htm"]
+          "sources": [
+            "https://press.un.org/en/2022/ga12458.doc.htm"
+          ]
         }
       ]
     },
@@ -177,14 +218,22 @@
         {
           "role": "claim",
           "from": "2022-02-24",
-          "party": {"qid": "Q212", "zh": "乌克兰"},
+          "party": {
+            "qid": "Q212",
+            "zh": "乌克兰"
+          },
           "text": "乌克兰声索这四个州。宣布吞并不改写这一行。",
-          "sources": ["https://press.un.org/en/2022/ga12458.doc.htm"]
+          "sources": [
+            "https://press.un.org/en/2022/ga12458.doc.htm"
+          ]
         },
         {
           "role": "claim",
           "from": "2022-09-29",
-          "party": {"qid": "Q159", "zh": "俄罗斯"},
+          "party": {
+            "qid": "Q159",
+            "zh": "俄罗斯"
+          },
           "draw": "dash",
           "label": "宣布的范围，不是实控",
           "text": "联合国大会 ES-11/4 写的是俄罗斯联邦 2022-09-29 就这四个州的地位作出的决定，并写明这些地区只是部分处于或曾经处于临时军事控制。虚线因此用四个州的行政界，其中包含当时没有控制的土地。这不是实控。",
@@ -198,7 +247,9 @@
           "from": "2022-02-24",
           "until": "2022-10-12",
           "text": "大会第 ES-11/4 号决议还没有通过。不把宣布写成已经获得承认。",
-          "sources": ["https://press.un.org/en/2022/ga12458.doc.htm"]
+          "sources": [
+            "https://press.un.org/en/2022/ga12458.doc.htm"
+          ]
         },
         {
           "role": "recognition",
@@ -220,33 +271,48 @@
         {
           "role": "control",
           "from": "2008-08-26",
-          "party": {"zh": "阿布哈兹实际当局"},
+          "party": {
+            "zh": "阿布哈兹实际当局"
+          },
           "draw": "fill",
           "color_kind": "de_facto",
           "text": "从俄罗斯承认该日起，用这块行政界标实际控制不在格鲁吉亚政府手里。更早的停火线没有收进几何，标待考，不回贴。",
-          "sources": ["https://www.mid.ru/print-country/?COUNTRY_CODE=ab&id=18852"]
+          "sources": [
+            "https://www.mid.ru/print-country/?COUNTRY_CODE=ab&id=18852"
+          ]
         },
         {
           "role": "claim",
           "from": "2008-08-26",
-          "party": {"qid": "Q230", "zh": "格鲁吉亚"},
+          "party": {
+            "qid": "Q230",
+            "zh": "格鲁吉亚"
+          },
           "draw": "dash",
           "label": "格鲁吉亚声索",
           "text": "格鲁吉亚主张主权。这条虚线不是一份边界条约的文本。",
-          "sources": ["https://www.mid.ru/print-country/?COUNTRY_CODE=ab&id=18852"]
+          "sources": [
+            "https://www.mid.ru/print-country/?COUNTRY_CODE=ab&id=18852"
+          ]
         },
         {
           "role": "claim",
           "from": "2008-08-26",
-          "party": {"zh": "阿布哈兹"},
+          "party": {
+            "zh": "阿布哈兹"
+          },
           "text": "阿布哈兹方面主张独立。这是声索。",
-          "sources": ["https://www.mid.ru/print-country/?COUNTRY_CODE=ab&id=18852"]
+          "sources": [
+            "https://www.mid.ru/print-country/?COUNTRY_CODE=ab&id=18852"
+          ]
         },
         {
           "role": "recognition",
           "from": "2008-08-26",
           "text": "俄罗斯总统于 2008-08-26 签署法令承认阿布哈兹共和国独立。其他国家的承认名单随时间变化，本批不固化，标待考。",
-          "sources": ["https://www.mid.ru/print-country/?COUNTRY_CODE=ab&id=18852"]
+          "sources": [
+            "https://www.mid.ru/print-country/?COUNTRY_CODE=ab&id=18852"
+          ]
         }
       ]
     },
@@ -254,26 +320,45 @@
       "id": "south_ossetia",
       "name_zh": "南奥塞梯",
       "geom": null,
-      "precision_zh": "没有可用轮廓，不画。不把北奥塞梯或什达-卡特利的行政界拿来代替。",
+      "precision_zh": "没有可用轮廓，不画。不把北奥塞梯或什达-卡特利的行政界拿来代替。又对过 Natural Earth 1:10m，仍然没有南奥塞梯单元。",
       "statements": [
         {
           "role": "control",
           "from": "2008-08",
-          "text": "2008 年 8 月战争之后的实际控制线没有收进几何，标待考，不画。8 月 1 日不是停火日。",
-          "sources": ["https://en.wikipedia.org/wiki/Russo-Georgian_War"]
+          "text": "2008 年 8 月战争之后的实际控制线没有收进几何，标待考，不画。8 月 1 日不是停火日。什达-卡特利全区不能代替南奥塞梯。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Russo-Georgian_War"
+          ]
         },
         {
           "role": "claim",
           "from": "2008-08",
-          "party": {"qid": "Q230", "zh": "格鲁吉亚"},
+          "party": {
+            "qid": "Q230",
+            "zh": "格鲁吉亚"
+          },
           "text": "格鲁吉亚主张主权。范围待考。",
-          "sources": ["https://en.wikipedia.org/wiki/Russo-Georgian_War"]
+          "sources": [
+            "https://en.wikipedia.org/wiki/Russo-Georgian_War"
+          ]
         },
         {
           "role": "recognition",
           "from": "2008-08",
-          "text": "俄罗斯承认南奥塞梯的法令日不从阿布哈兹页面套用，标待考。其他国家的承认名单不固化。",
-          "sources": ["https://www.mid.ru/print-country/?COUNTRY_CODE=ab&id=18852"]
+          "until": "2008-08-26",
+          "text": "英文维基把俄罗斯承认南奥塞梯记在 2008-08-26。8 月 26 日以前不写成已经承认。边界待考。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/International_recognition_of_Abkhazia_and_South_Ossetia"
+          ]
+        },
+        {
+          "role": "recognition",
+          "from": "2008-08-26",
+          "text": "英文维基把俄罗斯承认南奥塞梯和阿布哈兹都记在 2008-08-26。不从阿布哈兹外交部页面套法令号。边界仍待考。其他国家的承认名单不固化。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/International_recognition_of_Abkhazia_and_South_Ossetia",
+            "https://en.wikipedia.org/wiki/Russo-Georgian_War"
+          ]
         }
       ]
     },
@@ -287,7 +372,10 @@
           "role": "control",
           "from": "1974-08-16",
           "until": "1975-02-13",
-          "party": {"qid": "Q43", "zh": "土耳其"},
+          "party": {
+            "qid": "Q43",
+            "zh": "土耳其"
+          },
           "text": "1974-08-16 第二阶段停火之后由土耳其控制。填色仍用已有的控制区，这里不另铺一层。",
           "sources": [
             "https://en.wikipedia.org/wiki/Turkish_invasion_of_Cyprus",
@@ -298,21 +386,34 @@
           "role": "control",
           "from": "1975-02-13",
           "until": "1983-11-15",
-          "party": {"qid": "Q784851", "zh": "塞浦路斯土族邦"},
+          "party": {
+            "qid": "Q784851",
+            "zh": "塞浦路斯土族邦"
+          },
           "text": "1975-02-13 宣布成立塞浦路斯土族邦。填色仍用已有的控制区。",
-          "sources": ["https://en.wikipedia.org/wiki/Turkish_Federated_State_of_Cyprus"]
+          "sources": [
+            "https://en.wikipedia.org/wiki/Turkish_Federated_State_of_Cyprus"
+          ]
         },
         {
           "role": "control",
           "from": "1983-11-15",
-          "party": {"qid": "Q23681", "zh": "北塞浦路斯"},
+          "party": {
+            "qid": "Q23681",
+            "zh": "北塞浦路斯"
+          },
           "text": "1983-11-15 宣布北塞浦路斯土耳其共和国。填色仍用已有的控制区，这里不另铺一层。",
-          "sources": ["https://en.wikipedia.org/wiki/Northern_Cyprus"]
+          "sources": [
+            "https://en.wikipedia.org/wiki/Northern_Cyprus"
+          ]
         },
         {
           "role": "claim",
           "from": "1974-08-16",
-          "party": {"qid": "Q229", "zh": "塞浦路斯"},
+          "party": {
+            "qid": "Q229",
+            "zh": "塞浦路斯"
+          },
           "draw": "dash",
           "label": "塞浦路斯声索",
           "text": "塞浦路斯共和国主张这片土地。北塞浦路斯方面从 1983-11-15 起主张独立。事实控制不改写塞浦路斯的声索。",
@@ -324,22 +425,31 @@
         {
           "role": "claim",
           "from": "1983-11-15",
-          "party": {"qid": "Q23681", "zh": "北塞浦路斯"},
+          "party": {
+            "qid": "Q23681",
+            "zh": "北塞浦路斯"
+          },
           "text": "北塞浦路斯主张独立。这是声索。",
-          "sources": ["https://en.wikipedia.org/wiki/Northern_Cyprus"]
+          "sources": [
+            "https://en.wikipedia.org/wiki/Northern_Cyprus"
+          ]
         },
         {
           "role": "recognition",
           "from": "1974-08-16",
           "until": "1983-11-18",
           "text": "1983-11-18 以前的安理会决议本层不逐条展开，标待考。",
-          "sources": ["https://en.wikipedia.org/wiki/United_Nations_Security_Council_Resolution_541"]
+          "sources": [
+            "https://en.wikipedia.org/wiki/United_Nations_Security_Council_Resolution_541"
+          ]
         },
         {
           "role": "recognition",
           "from": "1983-11-18",
           "text": "联合国安理会第 541 号决议于 1983-11-18 以 13 票赞成、1 票反对、1 票弃权通过，认为独立宣言在法律上无效，并敦促各国不要承认除塞浦路斯共和国以外的塞浦路斯国家。英文维基该页写明北塞浦路斯只获土耳其承认。其他变化不在这里另编名单。",
-          "sources": ["https://en.wikipedia.org/wiki/United_Nations_Security_Council_Resolution_541"]
+          "sources": [
+            "https://en.wikipedia.org/wiki/United_Nations_Security_Council_Resolution_541"
+          ]
         }
       ]
     },
@@ -352,21 +462,34 @@
         {
           "role": "control",
           "from": "1967-06",
-          "party": {"qid": "Q801", "zh": "以色列"},
-          "text": "1967 年 6 月战争之后由以色列控制。6 月 1 日不是停火日。停火线几何待考，不画。",
-          "sources": ["https://en.wikipedia.org/wiki/Annexation"]
+          "party": {
+            "qid": "Q801",
+            "zh": "以色列"
+          },
+          "text": "1967 年 6 月战争之后由以色列控制。6 月 1 日不是停火日。停火线几何待考，不画。库奈特拉全省和以色列北方区都比以色列控制的戈兰大，不用它们代替。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Annexation"
+          ]
         },
         {
           "role": "claim",
           "from": "1967-06",
-          "party": {"qid": "Q858", "zh": "叙利亚"},
+          "party": {
+            "qid": "Q858",
+            "zh": "叙利亚"
+          },
           "text": "叙利亚声索。范围待考。",
-          "sources": ["https://en.wikipedia.org/wiki/United_Nations_Security_Council_Resolution_497"]
+          "sources": [
+            "https://en.wikipedia.org/wiki/United_Nations_Security_Council_Resolution_497"
+          ]
         },
         {
           "role": "claim",
           "from": "1981-12-17",
-          "party": {"qid": "Q801", "zh": "以色列"},
+          "party": {
+            "qid": "Q801",
+            "zh": "以色列"
+          },
           "text": "以色列以戈兰高地法把法律、管辖和行政扩到这里。法律的具体公布日未在本条核对到日，承认状况从安理会决议日 1981-12-17 写起。这是声索。",
           "sources": [
             "https://en.wikipedia.org/wiki/Annexation",
@@ -378,7 +501,9 @@
           "from": "1981-12-17",
           "until": "2019-03-25",
           "text": "联合国安理会第 497 号决议于 1981-12-17 一致通过，宣布以色列这项决定无效，没有国际法律效力。",
-          "sources": ["https://en.wikipedia.org/wiki/United_Nations_Security_Council_Resolution_497"]
+          "sources": [
+            "https://en.wikipedia.org/wiki/United_Nations_Security_Council_Resolution_497"
+          ]
         },
         {
           "role": "recognition",
@@ -409,24 +534,35 @@
         {
           "role": "claim",
           "from": "1976-02-27",
-          "party": {"qid": "Q1028", "zh": "摩洛哥"},
+          "party": {
+            "qid": "Q1028",
+            "zh": "摩洛哥"
+          },
           "draw": "dash",
           "label": "双方声索，不是实控分界",
           "text": "摩洛哥声索这片土地。",
-          "sources": ["https://en.wikipedia.org/wiki/Western_Sahara"]
+          "sources": [
+            "https://en.wikipedia.org/wiki/Western_Sahara"
+          ]
         },
         {
           "role": "claim",
           "from": "1976-02-27",
-          "party": {"zh": "萨赫拉维阿拉伯民主共和国"},
+          "party": {
+            "zh": "萨赫拉维阿拉伯民主共和国"
+          },
           "text": "萨赫拉维阿拉伯民主共和国于 1976-02-27 宣布成立，并声索这片土地。",
-          "sources": ["https://en.wikipedia.org/wiki/Sahrawi_Arab_Democratic_Republic"]
+          "sources": [
+            "https://en.wikipedia.org/wiki/Sahrawi_Arab_Democratic_Republic"
+          ]
         },
         {
           "role": "recognition",
           "from": "1976-02-27",
           "text": "承认名单随时间变化，本批不固化人数，标待考。",
-          "sources": ["https://en.wikipedia.org/wiki/Sahrawi_Arab_Democratic_Republic"]
+          "sources": [
+            "https://en.wikipedia.org/wiki/Sahrawi_Arab_Democratic_Republic"
+          ]
         }
       ]
     },
@@ -441,58 +577,2031 @@
           "from": "1999-06-10",
           "until": "2008-02-17",
           "text": "1999-06-10 安理会第 1244 号决议把它置于联合国临时行政之下。这不是塞尔维亚的日常管治，也还不是独立。北部不另画。",
-          "sources": ["https://en.wikipedia.org/wiki/International_recognition_of_Kosovo"]
+          "sources": [
+            "https://en.wikipedia.org/wiki/International_recognition_of_Kosovo"
+          ]
         },
         {
           "role": "control",
           "from": "2008-02-17",
-          "party": {"qid": "Q1246", "zh": "科索沃"},
+          "party": {
+            "qid": "Q1246",
+            "zh": "科索沃"
+          },
           "text": "2008-02-17 宣布独立之后，由科索沃机构管治。底图若已画成科索沃，这里不另铺填色。北部市镇的实际管治标待考，不按今天的市界切开。",
-          "sources": ["https://en.wikipedia.org/wiki/International_recognition_of_Kosovo"]
+          "sources": [
+            "https://en.wikipedia.org/wiki/International_recognition_of_Kosovo"
+          ]
         },
         {
           "role": "claim",
           "from": "1999-06-10",
           "until": "2008-02-17",
-          "party": {"zh": "南斯拉夫联盟共和国（决议用语）"},
+          "party": {
+            "zh": "南斯拉夫联盟共和国（决议用语）"
+          },
           "text": "第 1244 号决议重申的是当时的南斯拉夫联盟共和国的领土完整。不把后来的塞尔维亚回填到 1999 年。中间的国家继承日期本层不另写，标待考。",
-          "sources": ["https://en.wikipedia.org/wiki/International_recognition_of_Kosovo"]
+          "sources": [
+            "https://en.wikipedia.org/wiki/International_recognition_of_Kosovo"
+          ]
         },
         {
           "role": "claim",
           "from": "2008-02-17",
-          "party": {"qid": "Q403", "zh": "塞尔维亚"},
+          "party": {
+            "qid": "Q403",
+            "zh": "塞尔维亚"
+          },
           "draw": "dash",
           "label": "塞尔维亚声索",
           "text": "塞尔维亚不承认独立，继续声索。",
-          "sources": ["https://en.wikipedia.org/wiki/International_recognition_of_Kosovo"]
+          "sources": [
+            "https://en.wikipedia.org/wiki/International_recognition_of_Kosovo"
+          ]
         },
         {
           "role": "claim",
           "from": "2008-02-17",
-          "party": {"qid": "Q1246", "zh": "科索沃"},
+          "party": {
+            "qid": "Q1246",
+            "zh": "科索沃"
+          },
           "text": "科索沃主张独立。这是声索。",
-          "sources": ["https://en.wikipedia.org/wiki/International_recognition_of_Kosovo"]
+          "sources": [
+            "https://en.wikipedia.org/wiki/International_recognition_of_Kosovo"
+          ]
         },
         {
           "role": "recognition",
           "from": "1999-06-10",
           "until": "2008-02-17",
           "text": "地位由第 1244 号决议下的临时行政处理。不是联合国会员。",
-          "sources": ["https://en.wikipedia.org/wiki/International_recognition_of_Kosovo"]
+          "sources": [
+            "https://en.wikipedia.org/wiki/International_recognition_of_Kosovo"
+          ]
         },
         {
           "role": "recognition",
           "from": "2008-02-17",
           "until": "2010-07-22",
           "text": "部分国家承认，部分国家不承认。人数不固化，标待考。不是联合国会员。",
-          "sources": ["https://en.wikipedia.org/wiki/International_recognition_of_Kosovo"]
+          "sources": [
+            "https://en.wikipedia.org/wiki/International_recognition_of_Kosovo"
+          ]
         },
         {
           "role": "recognition",
           "from": "2010-07-22",
           "text": "国际法院 2010-07-22 的咨询意见认为 2008-02-17 的独立宣言不违反国际法。这不是承认，也不是联合国会员资格。承认人数仍不固化，标待考。",
-          "sources": ["https://en.wikipedia.org/wiki/International_recognition_of_Kosovo"]
+          "sources": [
+            "https://en.wikipedia.org/wiki/International_recognition_of_Kosovo"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kashmir_india",
+      "name_zh": "印度管治的查谟-克什米尔与拉达克",
+      "geom": "kashmir_india",
+      "precision_zh": "轮廓是 Natural Earth 今天的查谟-克什米尔联邦属地和拉达克，大致对应印度管治范围。不含锡亚琴那一块，不含阿克赛钦。不是 1949 年卡拉奇协定的停火线，不回贴到 1971 年以前。2019-10-31 才拆成两个联邦属地，内部界不另画。",
+      "statements": [
+        {
+          "role": "control",
+          "from": "1947-10-26",
+          "until": "1972-07-02",
+          "text": "1947-10-26 有加入书。1949-01-01 停火，1949-07-27 卡拉奇协定才写出停火线。1971-12-17 停火后的阵地，到 1972-07-02 西姆拉协定才写成控制线。今天的行政界是后来的线，不回贴，不填色。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Instrument_of_Accession_(Jammu_and_Kashmir)",
+            "https://www.mea.gov.in/bilateral-documents.htm?dtl/5252/Agreement+relating+to+Ceasefire+Line+in+JampK=",
+            "https://en.wikipedia.org/wiki/Simla_Agreement"
+          ]
+        },
+        {
+          "role": "control",
+          "from": "1972-07-02",
+          "party": {
+            "qid": "Q668",
+            "zh": "印度"
+          },
+          "draw": "fill",
+          "color_kind": "de_facto",
+          "text": "从西姆拉协定签署日起，用今天的印度管治轮廓标实际控制，大致。这不是国际边界，也不是 1949 年的停火线。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Simla_Agreement"
+          ]
+        },
+        {
+          "role": "claim",
+          "from": "1947-10-26",
+          "party": {
+            "qid": "Q668",
+            "zh": "印度"
+          },
+          "text": "印度声索整片查谟-克什米尔。土邦界和阿克赛钦不在这块轮廓里，不画。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Instrument_of_Accession_(Jammu_and_Kashmir)"
+          ]
+        },
+        {
+          "role": "claim",
+          "from": "1947-10-26",
+          "until": "1972-07-02",
+          "party": {
+            "qid": "Q843",
+            "zh": "巴基斯坦"
+          },
+          "text": "巴基斯坦也声索这片地方。今天的行政界还不拿来画虚线。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Simla_Agreement"
+          ]
+        },
+        {
+          "role": "claim",
+          "from": "1972-07-02",
+          "party": {
+            "qid": "Q843",
+            "zh": "巴基斯坦"
+          },
+          "draw": "dash",
+          "label": "巴基斯坦声索，不是控制线",
+          "text": "虚线是今天的印度管治轮廓，用作巴基斯坦声索的参照。西姆拉协定写明控制线不妨害任何一方的既定立场。这不是实控。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Simla_Agreement"
+          ]
+        },
+        {
+          "role": "recognition",
+          "from": "1948-08-13",
+          "text": "联合国印巴委员会 1948-08-13 的决议要求停火，并写到公民投票。投票没有举行。联合国没有把这里承认为一个新国家。印巴双方的主张都写在声索里，不把控制线写成国际承认的边界。",
+          "sources": [
+            "https://www.mea.gov.in/bilateral-documents.htm?dtl/5252/Agreement+relating+to+Ceasefire+Line+in+JampK=",
+            "https://en.wikipedia.org/wiki/Simla_Agreement"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kashmir_pakistan",
+      "name_zh": "巴基斯坦管治的阿扎德克什米尔与吉尔吉特-巴尔蒂斯坦",
+      "geom": "kashmir_pakistan",
+      "precision_zh": "轮廓是 Natural Earth 今天的阿扎德克什米尔和吉尔吉特-巴尔蒂斯坦，大致。不是 1949 年停火线。1963 年中巴协定所涉的那片在这份图上落在新疆一侧，不在这块里，不画。",
+      "statements": [
+        {
+          "role": "control",
+          "from": "1947-10-26",
+          "until": "1972-07-02",
+          "text": "1947 年 11 月吉尔吉特的当地变故，不把今天的整块界线回贴到那一天。1949 年停火线没有收进几何。1972-07-02 以前不填色。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Karachi_Agreement",
+            "https://en.wikipedia.org/wiki/Simla_Agreement"
+          ]
+        },
+        {
+          "role": "control",
+          "from": "1972-07-02",
+          "party": {
+            "qid": "Q843",
+            "zh": "巴基斯坦"
+          },
+          "draw": "fill",
+          "color_kind": "de_facto",
+          "text": "从西姆拉协定签署日起，用今天的巴基斯坦管治轮廓标实际控制，大致。这不是国际边界。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Simla_Agreement"
+          ]
+        },
+        {
+          "role": "claim",
+          "from": "1947-10-26",
+          "party": {
+            "qid": "Q843",
+            "zh": "巴基斯坦"
+          },
+          "text": "巴基斯坦声索查谟-克什米尔，包括这块。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Simla_Agreement"
+          ]
+        },
+        {
+          "role": "claim",
+          "from": "1947-10-26",
+          "until": "1972-07-02",
+          "party": {
+            "qid": "Q668",
+            "zh": "印度"
+          },
+          "text": "印度也声索这块。今天的行政界还不拿来画虚线。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Instrument_of_Accession_(Jammu_and_Kashmir)"
+          ]
+        },
+        {
+          "role": "claim",
+          "from": "1972-07-02",
+          "party": {
+            "qid": "Q668",
+            "zh": "印度"
+          },
+          "draw": "dash",
+          "label": "印度声索，不是控制线",
+          "text": "虚线是今天的巴基斯坦管治轮廓，用作印度声索的参照。不是实控。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Simla_Agreement"
+          ]
+        },
+        {
+          "role": "recognition",
+          "from": "1948-08-13",
+          "text": "与印度管治的那一侧同一套写法：联合国没有把这里承认为一个新国家，也不把控制线写成已经承认的边界。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Simla_Agreement"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "siachen",
+      "name_zh": "锡亚琴冰川",
+      "geom": "siachen",
+      "precision_zh": "轮廓是 Natural Earth 单列的锡亚琴冰川，大致。不是 1984-04-13 的阵地线，也不是盐岭全线。",
+      "statements": [
+        {
+          "role": "control",
+          "from": "1949-07-27",
+          "until": "1984-04-13",
+          "text": "卡拉奇协定写停火线向北到冰川，这一段没有按后来的阵地划定。不把今天的冰川轮廓回贴，不填色。",
+          "sources": [
+            "https://www.mea.gov.in/bilateral-documents.htm?dtl/5252/Agreement+relating+to+Ceasefire+Line+in+JampK=",
+            "https://en.wikipedia.org/wiki/Operation_Meghdoot"
+          ]
+        },
+        {
+          "role": "control",
+          "from": "1984-04-13",
+          "party": {
+            "qid": "Q668",
+            "zh": "印度"
+          },
+          "draw": "fill",
+          "color_kind": "de_facto",
+          "text": "1984-04-13 印度发动梅格杜特行动，占领冰川。填色用这块现代轮廓，大致，不是当日阵地线。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Operation_Meghdoot",
+            "https://www.thehindu.com/news/national/siachen-40-years-of-op-meghdoot/article68069363.ece"
+          ]
+        },
+        {
+          "role": "claim",
+          "from": "1949-07-27",
+          "party": {
+            "qid": "Q668",
+            "zh": "印度"
+          },
+          "text": "印度按加入书和卡拉奇协定「向北到冰川」的写法声索。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Operation_Meghdoot"
+          ]
+        },
+        {
+          "role": "claim",
+          "from": "1949-07-27",
+          "until": "1984-04-13",
+          "party": {
+            "qid": "Q843",
+            "zh": "巴基斯坦"
+          },
+          "text": "巴基斯坦对冰川的主张与印度不同。1984-04-13 以前不画虚线。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Operation_Meghdoot"
+          ]
+        },
+        {
+          "role": "claim",
+          "from": "1984-04-13",
+          "party": {
+            "qid": "Q843",
+            "zh": "巴基斯坦"
+          },
+          "draw": "dash",
+          "label": "巴基斯坦声索，不是阵地线",
+          "text": "虚线是冰川轮廓的参照，不是实控，也不是盐岭。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Operation_Meghdoot"
+          ]
+        },
+        {
+          "role": "recognition",
+          "from": "1949-07-27",
+          "text": "没有把冰川划给一方的联合国决议收进本层。实控不等于声索。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Operation_Meghdoot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "west_bank",
+      "name_zh": "约旦河西岸",
+      "geom": "west_bank",
+      "precision_zh": "轮廓是 Natural Earth 的现代河西岸，大致对应 1949 年停战线以内的这一片，不是停战线的重测。东耶路撒冷不在这块里。不拿以色列耶路撒冷区来代替，那个区同时包含西耶路撒冷。",
+      "statements": [
+        {
+          "role": "control",
+          "from": "1948-05-15",
+          "until": "1949-04-03",
+          "text": "1948 年战争期间各城不是同一天易手。约旦河西岸停战协定还没有签，不填色。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/1949_Armistice_Agreements"
+          ]
+        },
+        {
+          "role": "control",
+          "from": "1949-04-03",
+          "until": "1967-06-07",
+          "party": {
+            "qid": "Q810",
+            "zh": "约旦"
+          },
+          "draw": "fill",
+          "color_kind": "de_facto",
+          "text": "1949-04-03 约旦与以色列的停战协定之后，由约旦控制。1950-04-24 约旦把它并入自己的管辖。填色是现代轮廓，大致，不是逐村的停战线。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/1949_Armistice_Agreements",
+            "https://en.wikipedia.org/wiki/Jordanian_annexation_of_the_West_Bank"
+          ]
+        },
+        {
+          "role": "control",
+          "from": "1967-06-07",
+          "text": "1967-06-07 前后以色列军队进入东耶路撒冷旧城和河西岸。各城不是同一天。1995-09-28 的奥斯陆二号协议把地区分成 A、B、C 类，几何不在数据包里。不把整片涂成一方，不填色。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Six-Day_War",
+            "https://en.wikipedia.org/wiki/Oslo_II_Accord"
+          ]
+        },
+        {
+          "role": "claim",
+          "from": "1950-04-24",
+          "until": "1988-08-01",
+          "party": {
+            "qid": "Q810",
+            "zh": "约旦"
+          },
+          "text": "1950-04-24 约旦宣布管辖。1988-07-31 侯赛因国王宣布切断与河西岸的法律和行政联系，从 1988-08-01 起这条声索不再写。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Jordanian_annexation_of_the_West_Bank"
+          ]
+        },
+        {
+          "role": "claim",
+          "from": "1988-11-15",
+          "party": {
+            "qid": "Q219060",
+            "zh": "巴勒斯坦"
+          },
+          "draw": "dash",
+          "label": "巴勒斯坦声索，不是 A/B/C 分区",
+          "text": "1988-11-15 巴勒斯坦独立宣言声索 1967 年以来被占领的巴勒斯坦领土，包括河西岸。虚线是现代轮廓，不是实控，也不是 A、B、C 类分区。东耶路撒冷不在虚线里。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Palestinian_Declaration_of_Independence",
+            "https://press.un.org/en/2012/ga11317.doc.htm"
+          ]
+        },
+        {
+          "role": "claim",
+          "from": "1967-06-07",
+          "party": {
+            "qid": "Q801",
+            "zh": "以色列"
+          },
+          "text": "以色列军事控制不等于把整片河西岸写成已经并入。1980-07-30 的耶路撒冷法律不覆盖这块轮廓，因为东耶路撒冷不在里面。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Six-Day_War",
+            "https://en.wikipedia.org/wiki/United_Nations_Security_Council_Resolution_478"
+          ]
+        },
+        {
+          "role": "recognition",
+          "from": "1949-04-03",
+          "until": "1967-11-22",
+          "text": "停战协定写明分界线不是政治边界。不把约旦的管治写成各国已经承认的最终边界。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/1949_Armistice_Agreements"
+          ]
+        },
+        {
+          "role": "recognition",
+          "from": "1967-11-22",
+          "until": "2012-11-29",
+          "text": "安理会第 242 号决议于 1967-11-22 通过，强调不能以战争取得领土，并要求以色列军队从 1967 年冲突中占领的领土撤出。这不是联合国会员资格。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/United_Nations_Security_Council_Resolution_242"
+          ]
+        },
+        {
+          "role": "recognition",
+          "from": "2012-11-29",
+          "text": "大会第 67/19 号决议于 2012-11-29 以 138 票赞成、9 票反对、41 票弃权通过，给予巴勒斯坦非会员观察员国地位。决议序言写截至当时有 132 个会员国给予承认。这个数字不延续到以后。不是联合国会员。反对票不转写成一份完整名单。",
+          "sources": [
+            "https://press.un.org/en/2012/ga11317.doc.htm",
+            "https://documents.un.org/doc/undoc/gen/n12/479/74/pdf/n1247974.pdf"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gaza",
+      "name_zh": "加沙地带",
+      "geom": "gaza",
+      "precision_zh": "轮廓是 Natural Earth 的现代加沙地带，大致，不是 1949 年停战线的重测。",
+      "statements": [
+        {
+          "role": "control",
+          "from": "1948-05-15",
+          "until": "1949-02-24",
+          "text": "埃及与以色列的停战协定还没有签。1948 年战争期间不把整片填成一方。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/1949_Armistice_Agreements"
+          ]
+        },
+        {
+          "role": "control",
+          "from": "1949-02-24",
+          "until": "1967-06-10",
+          "party": {
+            "qid": "Q79",
+            "zh": "埃及"
+          },
+          "draw": "fill",
+          "color_kind": "de_facto",
+          "text": "1949-02-24 停战协定之后由埃及管治。埃及没有把加沙正式并入。6 月 5 日至 6 月 9 日的逐日界线没有收进几何，1967-06-10 起不再标埃及。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/1949_Armistice_Agreements"
+          ]
+        },
+        {
+          "role": "control",
+          "from": "1967-06-10",
+          "until": "2005-09-12",
+          "party": {
+            "qid": "Q801",
+            "zh": "以色列"
+          },
+          "draw": "fill",
+          "color_kind": "de_facto",
+          "text": "1967 年 6 月战争之后由以色列军事占领。军事占领不是主权。2005-09-12 起不再把带内标成以色列驻军，这一天用的是英文维基对撤离完成日的记载。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Six-Day_War",
+            "https://en.wikipedia.org/wiki/Israeli_disengagement_from_the_Gaza_Strip"
+          ]
+        },
+        {
+          "role": "control",
+          "from": "2005-09-12",
+          "until": "2007-06-15",
+          "text": "带内定居点和军队已经撤离。以色列仍控制边界、空域和海域。带内白天的管治不涂成整片一方，不填色。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Israeli_disengagement_from_the_Gaza_Strip"
+          ]
+        },
+        {
+          "role": "control",
+          "from": "2007-06-15",
+          "until": "2023-10-07",
+          "party": {
+            "zh": "哈马斯"
+          },
+          "draw": "fill",
+          "color_kind": "de_facto",
+          "text": "2007-06-15 前后哈马斯控制带内。以色列仍控制边界、空域和海域。填色只表示带内的事实管治，不是主权，也不是边界已经交给哈马斯。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Battle_of_Gaza_(2007)"
+          ]
+        },
+        {
+          "role": "control",
+          "from": "2023-10-07",
+          "text": "2023-10-07 以后战事改变带内控制。没有逐日界线，不填色，标待考。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Gaza_war"
+          ]
+        },
+        {
+          "role": "claim",
+          "from": "1988-11-15",
+          "party": {
+            "qid": "Q219060",
+            "zh": "巴勒斯坦"
+          },
+          "draw": "dash",
+          "label": "巴勒斯坦声索，不是实控",
+          "text": "1988-11-15 的宣言包括加沙。虚线不是实控。哈马斯的事实管治不改写这一行。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Palestinian_Declaration_of_Independence"
+          ]
+        },
+        {
+          "role": "claim",
+          "from": "1967-06-10",
+          "until": "2005-09-12",
+          "party": {
+            "qid": "Q801",
+            "zh": "以色列"
+          },
+          "text": "这一段的以色列是军事占领，不是把加沙写成以色列主权领土。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Six-Day_War"
+          ]
+        },
+        {
+          "role": "recognition",
+          "from": "1949-02-24",
+          "until": "1967-11-22",
+          "text": "停战分界线不是政治边界。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/1949_Armistice_Agreements"
+          ]
+        },
+        {
+          "role": "recognition",
+          "from": "1967-11-22",
+          "until": "2012-11-29",
+          "text": "安理会第 242 号决议于 1967-11-22 通过。这不是联合国会员资格。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/United_Nations_Security_Council_Resolution_242"
+          ]
+        },
+        {
+          "role": "recognition",
+          "from": "2012-11-29",
+          "text": "大会第 67/19 号决议于 2012-11-29 以 138 票赞成、9 票反对、41 票弃权通过，给予非会员观察员国地位。不是联合国会员。序言里的 132 国不延续到以后。",
+          "sources": [
+            "https://press.un.org/en/2012/ga11317.doc.htm"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "taiwan",
+      "name_zh": "台湾、澎湖与金门",
+      "geom": "taiwan",
+      "precision_zh": "轮廓是 Natural Earth 的台湾现代范围，含本岛、澎湖和金门，大致，不是 1945 年的测绘。马祖不在这块里，岸线见马祖这一层。南海岛礁不在这块里。底图已经画出政权颜色，这里不另铺实控填色。",
+      "statements": [
+        {
+          "role": "control",
+          "from": "1945-10-25",
+          "party": {
+            "qid": "Q865",
+            "zh": "中华民国"
+          },
+          "text": "1945-10-25 台北受降仪式之后，台湾、澎湖由中华民国管治。金门不在这次受降里，它落在这块轮廓中，沿用已有控制区，不把 10 月 25 日写成金门易手。马祖不在这块轮廓里。中华人民共和国没有控制这片土地。不另铺填色。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Retrocession_Day",
+            "https://en.wikipedia.org/wiki/Kinmen"
+          ]
+        },
+        {
+          "role": "claim",
+          "from": "1945-10-25",
+          "until": "1949-10-01",
+          "party": {
+            "qid": "Q865",
+            "zh": "中华民国"
+          },
+          "text": "这一层只写台湾、澎湖、金门。中华人民共和国还没有成立。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Retrocession_Day"
+          ]
+        },
+        {
+          "role": "claim",
+          "from": "1949-10-01",
+          "party": {
+            "qid": "Q865",
+            "zh": "中华民国"
+          },
+          "text": "中华民国继续管治这块轮廓里的土地，并声索大陆。大陆声索不在这块轮廓里，不画。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Retrocession_Day"
+          ]
+        },
+        {
+          "role": "claim",
+          "from": "1949-10-01",
+          "party": {
+            "qid": "Q148",
+            "zh": "中华人民共和国"
+          },
+          "draw": "dash",
+          "label": "中华人民共和国声索，不是实控",
+          "text": "中华人民共和国声索台湾、澎湖、金门、马祖。虚线只盖到这份轮廓里的台湾、澎湖、金门。马祖没有几何，不另造。这不是实控。",
+          "sources": [
+            "https://digitallibrary.un.org/record/192054",
+            "https://en.wikipedia.org/wiki/United_Nations_General_Assembly_Resolution_2758"
+          ]
+        },
+        {
+          "role": "recognition",
+          "from": "1945-10-25",
+          "until": "1952-04-28",
+          "text": "旧金山和约还没有生效。各国对台湾地位的表态不逐一开列，标待考。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Treaty_of_San_Francisco"
+          ]
+        },
+        {
+          "role": "recognition",
+          "from": "1952-04-28",
+          "until": "1971-10-25",
+          "text": "旧金山和约 1952-04-28 生效。日本放弃台湾和澎湖，约文没有写交给哪一方。中国在联合国的席位此时仍由中华民国的代表行使。这不是各国对台湾领土地位的完整名单，标待考。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Treaty_of_San_Francisco",
+            "https://en.wikipedia.org/wiki/United_Nations_General_Assembly_Resolution_2758"
+          ]
+        },
+        {
+          "role": "recognition",
+          "from": "1971-10-25",
+          "text": "联合国大会第 2758 号决议于 1971-10-25 通过，承认中华人民共和国政府的代表是中国在联合国的唯一合法代表，并驱逐蒋介石的代表。决议正文没有写台湾的领土地位。双边建交名单不逐国开列，标待考。",
+          "sources": [
+            "https://digitallibrary.un.org/record/192054",
+            "https://en.wikipedia.org/wiki/United_Nations_General_Assembly_Resolution_2758"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "falklands",
+      "name_zh": "福克兰群岛",
+      "geom": "falklands",
+      "precision_zh": "轮廓是 Natural Earth 的福克兰群岛现代岸线，不含南乔治亚。大致，不是 1833 年的测绘。",
+      "statements": [
+        {
+          "role": "control",
+          "from": "1833-01-03",
+          "until": "1982-04-02",
+          "party": {
+            "qid": "Q145",
+            "zh": "英国"
+          },
+          "draw": "fill",
+          "color_kind": "de_facto",
+          "text": "英文维基把英国重新驻守记在 1833 年 1 月。本层从 1 月 3 日起填色。1 月 2 日舰只到达不另画成已经换防。南乔治亚不在这块里。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/History_of_the_Falkland_Islands",
+            "https://en.wikipedia.org/wiki/Falklands_War"
+          ]
+        },
+        {
+          "role": "control",
+          "from": "1982-04-02",
+          "until": "1982-06-14",
+          "party": {
+            "qid": "Q414",
+            "zh": "阿根廷"
+          },
+          "draw": "fill",
+          "color_kind": "de_facto",
+          "text": "1982-04-02 阿根廷登陆。1982-06-14 斯坦利港守军投降，这一天起不再标阿根廷。南乔治亚 4 月 3 日至 4 月 25 日不在这块轮廓里，不画。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Falklands_War"
+          ]
+        },
+        {
+          "role": "control",
+          "from": "1982-06-14",
+          "party": {
+            "qid": "Q145",
+            "zh": "英国"
+          },
+          "draw": "fill",
+          "color_kind": "de_facto",
+          "text": "1982-06-14 起再标英国实控。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Falklands_War"
+          ]
+        },
+        {
+          "role": "claim",
+          "from": "1833-01-03",
+          "until": "1982-04-02",
+          "party": {
+            "qid": "Q414",
+            "zh": "阿根廷"
+          },
+          "draw": "dash",
+          "label": "阿根廷声索，不是实控",
+          "text": "阿根廷声索这些岛屿。虚线不是实控。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Falklands_War"
+          ]
+        },
+        {
+          "role": "claim",
+          "from": "1982-04-02",
+          "until": "1982-06-14",
+          "party": {
+            "qid": "Q145",
+            "zh": "英国"
+          },
+          "draw": "dash",
+          "label": "英国声索，不是这几个星期的实控",
+          "text": "英国的主权主张在占领期间仍然写着。登陆不是国际承认。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Falklands_War"
+          ]
+        },
+        {
+          "role": "claim",
+          "from": "1982-06-14",
+          "party": {
+            "qid": "Q414",
+            "zh": "阿根廷"
+          },
+          "draw": "dash",
+          "label": "阿根廷声索，不是实控",
+          "text": "投降以后阿根廷的声索还在。实控改回英国，不改写这一行。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Falklands_War"
+          ]
+        },
+        {
+          "role": "recognition",
+          "from": "1833-01-03",
+          "until": "1965-12-16",
+          "text": "主权有争议。各国表态不逐一开列，标待考。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/History_of_the_Falkland_Islands"
+          ]
+        },
+        {
+          "role": "recognition",
+          "from": "1965-12-16",
+          "text": "联合国大会第 2065 号决议于 1965-12-16 通过，请英国和阿根廷谈判。决议没有把主权判给阿根廷，也没有取消英国的管治。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/United_Nations_General_Assembly_Resolution_2065"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kuril_south",
+      "name_zh": "北方四岛",
+      "geom": "kuril_south",
+      "precision_zh": "从已有千岛岸线里取出代表点在北纬 45.4 度以南的碎块。这个纬度落在择捉和得抚两截之间的空档，用来分开碎块，不是勘界。现代岸线，大致。不含得抚以北。日本声索的不是整条千岛。",
+      "statements": [
+        {
+          "role": "control",
+          "from": "1945-09-05",
+          "until": "1991-12-26",
+          "party": {
+            "qid": "Q15180",
+            "zh": "苏联"
+          },
+          "draw": "fill",
+          "color_kind": "de_facto",
+          "text": "与已有底图一致：1945-09-04 这些岛仍记日本，9 月 5 日起不再画成日本。没有逐岛每日界线。填色只到择捉及以南，大致。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Invasion_of_the_Kuril_Islands",
+            "https://en.wikipedia.org/wiki/Kuril_Islands_dispute"
+          ]
+        },
+        {
+          "role": "control",
+          "from": "1991-12-26",
+          "party": {
+            "qid": "Q159",
+            "zh": "俄罗斯"
+          },
+          "draw": "fill",
+          "color_kind": "de_facto",
+          "text": "1991-12-26 起记俄罗斯实际控制。不把苏联时期改写成俄罗斯。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Kuril_Islands_dispute"
+          ]
+        },
+        {
+          "role": "claim",
+          "from": "1945-09-05",
+          "party": {
+            "qid": "Q17",
+            "zh": "日本"
+          },
+          "draw": "dash",
+          "label": "日本声索北方四岛，不是整条千岛",
+          "text": "日本声索齿舞、色丹、国后、择捉。1951-09-08 旧金山和约写日本放弃千岛群岛，1952-04-28 生效，苏联不是缔约方。日本的立场是这四岛不在所放弃的千岛之内。这是声索，不是实控。得抚以北不在虚线里。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Kuril_Islands_dispute",
+            "https://en.wikipedia.org/wiki/Treaty_of_San_Francisco"
+          ]
+        },
+        {
+          "role": "claim",
+          "from": "1945-09-05",
+          "until": "1991-12-26",
+          "party": {
+            "qid": "Q15180",
+            "zh": "苏联"
+          },
+          "text": "苏联把这些岛视为千岛的一部分。这是主张。实控填色已经画出，这里不另铺一层。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Kuril_Islands_dispute"
+          ]
+        },
+        {
+          "role": "claim",
+          "from": "1991-12-26",
+          "party": {
+            "qid": "Q159",
+            "zh": "俄罗斯"
+          },
+          "text": "俄罗斯继续把这些岛视为本国领土。实控不等于日本已经放弃声索。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Kuril_Islands_dispute"
+          ]
+        },
+        {
+          "role": "recognition",
+          "from": "1945-09-05",
+          "until": "1956-10-19",
+          "text": "没有把这四岛判给一方的联合国决议收进本层。各国单独表态不固化，标待考。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Kuril_Islands_dispute"
+          ]
+        },
+        {
+          "role": "recognition",
+          "from": "1956-10-19",
+          "text": "1956-10-19 日苏联合宣言写和平条约后再把齿舞、色丹交还日本。没有交还，也不包括国后和择捉。齿舞、色丹的岸线碎块另有一层，这里仍不把它们画成已经交还。其余国家的表态仍标待考。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Soviet%E2%80%93Japanese_Joint_Declaration_of_1956"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "paracel",
+      "name_zh": "西沙群岛",
+      "geom": "paracel",
+      "precision_zh": "轮廓是 Natural Earth 的西沙群岛现代岛形，不是海疆线，也不是九段线。",
+      "statements": [
+        {
+          "role": "control",
+          "from": "1951-09-08",
+          "until": "1974-01-20",
+          "text": "旧金山和约写日本放弃西沙，没有写交给谁。1956 年以后永兴岛与珊瑚岛群不是同一方驻守。不把整群填成一方，标待考。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Treaty_of_San_Francisco",
+            "https://en.wikipedia.org/wiki/Battle_of_the_Paracel_Islands"
+          ]
+        },
+        {
+          "role": "control",
+          "from": "1974-01-20",
+          "party": {
+            "qid": "Q148",
+            "zh": "中华人民共和国"
+          },
+          "draw": "fill",
+          "color_kind": "de_facto",
+          "text": "1974-01-19 至 01-20 西沙海战之后，由中华人民共和国控制这份轮廓里的岛礁。1 月 19 日不写成整群已经易手。填色是岛形，不是海域。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Battle_of_the_Paracel_Islands"
+          ]
+        },
+        {
+          "role": "claim",
+          "from": "1951-09-08",
+          "party": {
+            "qid": "Q148",
+            "zh": "中华人民共和国"
+          },
+          "text": "中华人民共和国声索西沙。1974-01-20 以前这还不是整群的实控。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Battle_of_the_Paracel_Islands"
+          ]
+        },
+        {
+          "role": "claim",
+          "from": "1951-09-08",
+          "party": {
+            "qid": "Q865",
+            "zh": "中华民国"
+          },
+          "text": "中华民国也声索。1974 年以后的实控不改写成中华民国。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Battle_of_the_Paracel_Islands"
+          ]
+        },
+        {
+          "role": "claim",
+          "from": "1974-01-20",
+          "party": {
+            "zh": "越南"
+          },
+          "draw": "dash",
+          "label": "越南声索，不是实控",
+          "text": "1974 年作战的对方是越南共和国。1975-04-30 以后越南方面的声索继续，国名沿革不另切一条虚线。这不是实控，也不是海域。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Battle_of_the_Paracel_Islands"
+          ]
+        },
+        {
+          "role": "recognition",
+          "from": "1951-09-08",
+          "text": "和约只写日本放弃，没有写交给谁。各国表态不逐一开列，标待考。不是联合国把西沙判给一方。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Treaty_of_San_Francisco"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spratly",
+      "name_zh": "南沙群岛岛礁",
+      "geom": "spratly",
+      "precision_zh": "轮廓是 Natural Earth 画出的部分南沙岛礁，大约东经 114 至 116 度、北纬 9.7 至 11.1 度。不是九段线，不是整个南海，不含黄岩岛。各礁占领方不同，整群不填色。",
+      "statements": [
+        {
+          "role": "control",
+          "from": "1951-09-08",
+          "text": "旧金山和约写日本放弃南沙群岛。太平岛由中华民国控制，其他岛礁另有驻军。整群不填成一方，标待考。九段线没有收进几何，不画。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Treaty_of_San_Francisco",
+            "https://en.wikipedia.org/wiki/Spratly_Islands",
+            "https://en.wikipedia.org/wiki/Taiping_Island"
+          ]
+        },
+        {
+          "role": "claim",
+          "from": "1951-09-08",
+          "draw": "dash",
+          "label": "多方声索，不是实控，不是九段线",
+          "text": "中华人民共和国、中华民国、越南、菲律宾、马来西亚声索岛礁或附近海域。文莱的主张主要在海域。虚线只是这些岛礁的参照，不是任何一方的实控，也不是九段线。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Spratly_Islands",
+            "https://en.wikipedia.org/wiki/Treaty_of_San_Francisco"
+          ]
+        },
+        {
+          "role": "recognition",
+          "from": "1951-09-08",
+          "text": "和约没有指定接受方。没有把整群判给一国的决议收进本层。各国表态标待考，不固化。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Treaty_of_San_Francisco"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "alsace_lorraine",
+      "name_zh": "阿尔萨斯-洛林",
+      "geom": "alsace_lorraine",
+      "precision_zh": "轮廓是今天的下莱茵省、上莱茵省和摩泽尔省，大致对应 1871 年割让之后法国后来设回的三省。贝尔福不在上莱茵省里，1871 年也没有割让。孚日省的萨勒、希尔梅克一带当时被割，不在这三省里，不另画，标待考。不是法兰克福条约附图的重绘。",
+      "statements": [
+        {
+          "role": "control",
+          "from": "1871-05-10",
+          "until": "1918-11-11",
+          "party": {
+            "qid": "Q43287",
+            "zh": "德意志帝国"
+          },
+          "draw": "fill",
+          "color_kind": "de_facto",
+          "text": "1871-05-10《法兰克福条约》签署。美国国务院历史文件的注记写条约 5 月 20 日生效，不另画一条线。填色到 1918-11-11 当天不再标德国：停战日法军还没有进入。",
+          "sources": [
+            "https://history.state.gov/historicaldocuments/frus1919Parisv13/ch12subch5",
+            "https://en.wikipedia.org/wiki/Treaty_of_Frankfurt_(1871)",
+            "https://avalon.law.yale.edu/imt/partiii.asp"
+          ]
+        },
+        {
+          "role": "control",
+          "from": "1918-11-11",
+          "until": "1918-11-22",
+          "text": "停战日到法军进入斯特拉斯堡之间，各县不是同一天。不填色。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Alsace%E2%80%93Lorraine"
+          ]
+        },
+        {
+          "role": "control",
+          "from": "1918-11-22",
+          "until": "1940-06-22",
+          "party": {
+            "qid": "Q70802",
+            "zh": "法兰西第三共和国"
+          },
+          "draw": "fill",
+          "color_kind": "de_facto",
+          "text": "1918-11-22 法军进入斯特拉斯堡。这不是每个县的日子，大致。第 51 条把恢复主权写成自停战日起，条约 1919-06-28 签署、1920-01-10 生效。实控填色不代替生效日。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Alsace%E2%80%93Lorraine",
+            "https://avalon.law.yale.edu/imt/partiii.asp",
+            "https://history.state.gov/historicaldocuments/frus1919Parisv13/ch12subch5"
+          ]
+        },
+        {
+          "role": "control",
+          "from": "1940-06-22",
+          "until": "1945-02-09",
+          "text": "停战以后德国实际管治阿尔萨斯和摩泽尔，但没有正式吞并。整片不填色。科尔马口袋记到 1945-02-09，各地收复不是同一天，这一段标待考。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Alsace%E2%80%93Lorraine",
+            "https://en.wikipedia.org/wiki/Colmar_Pocket"
+          ]
+        },
+        {
+          "role": "control",
+          "from": "1945-02-09",
+          "party": {
+            "qid": "Q142",
+            "zh": "法国"
+          },
+          "draw": "fill",
+          "color_kind": "de_facto",
+          "text": "1945-02-09 科尔马口袋结束之后再标法国管治，大致。临时政府和第四共和国的交接点不另画。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Colmar_Pocket"
+          ]
+        },
+        {
+          "role": "claim",
+          "from": "1871-05-10",
+          "until": "1918-11-11",
+          "party": {
+            "qid": "Q142",
+            "zh": "法国"
+          },
+          "draw": "dash",
+          "label": "法国的主张，不是这几十年的实控",
+          "text": "割让之后法国仍视之为应予收回的领土。虚线不是 1871 年至 1918 年的实控。",
+          "sources": [
+            "https://history.state.gov/historicaldocuments/frus1919Parisv13/ch12subch5"
+          ]
+        },
+        {
+          "role": "claim",
+          "from": "1871-05-10",
+          "until": "1919-06-28",
+          "party": {
+            "qid": "Q43287",
+            "zh": "德意志帝国"
+          },
+          "text": "法兰克福条约上的割让。1919-06-28 凡尔赛条约签署，当天起不再把德国写成唯一的法理依据。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Treaty_of_Frankfurt_(1871)"
+          ]
+        },
+        {
+          "role": "claim",
+          "from": "1919-06-28",
+          "party": {
+            "qid": "Q142",
+            "zh": "法国"
+          },
+          "text": "第 51 条写这些领土自 1918-11-11 起恢复法国主权。条约 1920-01-10 才生效。签署不是生效。1940 年至 1945 年的德国管治不改写这一行，因为那不是公开的吞并条约。",
+          "sources": [
+            "https://avalon.law.yale.edu/imt/partiii.asp",
+            "https://history.state.gov/historicaldocuments/frus1919Parisv13/ch12subch5"
+          ]
+        },
+        {
+          "role": "recognition",
+          "from": "1871-05-10",
+          "until": "1920-01-10",
+          "text": "法兰克福条约是 1871 年以后的法理依据。凡尔赛条约 1920-01-10 生效。生效前不写成条约已经生效。",
+          "sources": [
+            "https://history.state.gov/historicaldocuments/frus1919Parisv13/ch12subch5"
+          ]
+        },
+        {
+          "role": "recognition",
+          "from": "1920-01-10",
+          "until": "1940-06-22",
+          "text": "条约已经生效，法理记为法国。",
+          "sources": [
+            "https://avalon.law.yale.edu/imt/partiii.asp"
+          ]
+        },
+        {
+          "role": "recognition",
+          "from": "1940-06-22",
+          "until": "1945-02-09",
+          "text": "德国的实际管治没有写成被各国承认的吞并。有没有个别承认，标待考，不固化。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Alsace%E2%80%93Lorraine"
+          ]
+        },
+        {
+          "role": "recognition",
+          "from": "1945-02-09",
+          "text": "再记为法国。不把 1940 年的管治写成一条被承认的新边界。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Colmar_Pocket"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "aksai",
+      "name_zh": "阿克赛钦",
+      "geom": null,
+      "precision_zh": "没有阿克赛钦的边界几何。已有控制区里的小框只是样本，不是边界。不把新疆全区或拉达克全区拿来代替。不画。",
+      "statements": [
+        {
+          "role": "control",
+          "from": "1947-08-15",
+          "until": "1957-09",
+          "text": "1947-08-15 底图换图不是当天核实的易手。公路的陈述见 1957 年 9 月。这一段不写成整片已经易手，标待考，不画。",
+          "sources": [
+            "https://nehruarchive.in/documents/in-the-rajya-sabha-chinese-road-construction-in-ladakh-31-august-1959-z7g9y"
+          ]
+        },
+        {
+          "role": "control",
+          "from": "1957-09",
+          "party": {
+            "qid": "Q148",
+            "zh": "中华人民共和国"
+          },
+          "text": "尼赫鲁 1959-08-31 在联邦院谈到中国在拉达克修路，路是 1957 年 9 月。9 月 1 日不是全区易手。1962 年战争之后仍由中国控制。边界不画，标待考。",
+          "sources": [
+            "https://nehruarchive.in/documents/in-the-rajya-sabha-chinese-road-construction-in-ladakh-31-august-1959-z7g9y",
+            "https://en.wikipedia.org/wiki/Aksai_Chin"
+          ]
+        },
+        {
+          "role": "claim",
+          "from": "1947-08-15",
+          "party": {
+            "qid": "Q668",
+            "zh": "印度"
+          },
+          "text": "印度声索阿克赛钦。线不画。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Aksai_Chin"
+          ]
+        },
+        {
+          "role": "claim",
+          "from": "1957-09",
+          "party": {
+            "qid": "Q148",
+            "zh": "中华人民共和国"
+          },
+          "text": "中国实际控制不等于印度放弃声索。中国方面视其为新疆。声索和实控分开写。边界不画。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Aksai_Chin"
+          ]
+        },
+        {
+          "role": "recognition",
+          "from": "1947-08-15",
+          "text": "没有把阿克赛钦判给一方的条约收进本层。边界待考。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Aksai_Chin"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "south_tibet",
+      "name_zh": "藏南",
+      "geom": null,
+      "precision_zh": "没有麦克马洪线的几何。达旺小框只是样本，不是藏南边界。不把今天的阿鲁纳恰尔邦整省倒回去。不画。",
+      "statements": [
+        {
+          "role": "control",
+          "from": "1914-07-03",
+          "until": "1951-02-06",
+          "text": "1914-07-03 是西姆拉会议文件上的日子。1951-02-06 以前不把达旺写成印度已经管治，更不把整片藏南画成一方。标待考，不画。",
+          "sources": [
+            "https://www.claudearpi.in/wp-content/uploads/2021/02/2012-Sonia_Shukla_Integratig-Tawang.pdf",
+            "https://en.wikipedia.org/wiki/McMahon_Line"
+          ]
+        },
+        {
+          "role": "control",
+          "from": "1951-02-06",
+          "party": {
+            "qid": "Q668",
+            "zh": "印度"
+          },
+          "text": "印度人员 1951-02-06 进入达旺。这不是整片今天的阿鲁纳恰尔在同一天易手。其余地方的管治日标待考，不画省界。",
+          "sources": [
+            "https://www.claudearpi.in/wp-content/uploads/2021/02/2012-Sonia_Shukla_Integratig-Tawang.pdf"
+          ]
+        },
+        {
+          "role": "claim",
+          "from": "1914-07-03",
+          "until": "1949-10-01",
+          "party": {
+            "qid": "Q865",
+            "zh": "中华民国"
+          },
+          "text": "中华民国不把麦克马洪线当成已经划定的国界。线不画。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/McMahon_Line"
+          ]
+        },
+        {
+          "role": "claim",
+          "from": "1914-07-03",
+          "party": {
+            "zh": "印度"
+          },
+          "text": "印度把线南视为己方。1914 年的印度还不是 1947 年的共和国，这里用印度称呼这条主张的延续，不把 1947 年的国界倒回 1914 年。线不画。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/McMahon_Line"
+          ]
+        },
+        {
+          "role": "claim",
+          "from": "1949-10-01",
+          "party": {
+            "qid": "Q148",
+            "zh": "中华人民共和国"
+          },
+          "text": "中华人民共和国主张线南为藏南。这是声索。不画。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/McMahon_Line"
+          ]
+        },
+        {
+          "role": "recognition",
+          "from": "1914-07-03",
+          "text": "没有三方都批准并收进本层的边界条约。西姆拉文件上的中国代表是否有全权，本层不另作判决，标待考。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/McMahon_Line"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "saar",
+      "name_zh": "萨尔",
+      "geom": null,
+      "precision_zh": "今天的萨尔州界不能当作 1920 年萨尔盆地或 1947 年保护区的边界。不画。",
+      "statements": [
+        {
+          "role": "control",
+          "from": "1920-01-10",
+          "until": "1935-03-01",
+          "text": "凡尔赛条约 1920-01-10 生效。萨尔盆地由国际联盟行政，煤矿归法国。盆地界没有收进几何，不画，标待考。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Territory_of_the_Saar_Basin"
+          ]
+        },
+        {
+          "role": "control",
+          "from": "1935-03-01",
+          "until": "1947-12-15",
+          "party": {
+            "zh": "德国"
+          },
+          "text": "1935-01-13 公投，1935-03-01 归还德国。1945 年以后的占领分界不在本层另画，标待考。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Territory_of_the_Saar_Basin"
+          ]
+        },
+        {
+          "role": "control",
+          "from": "1947-12-15",
+          "until": "1957-01-01",
+          "party": {
+            "zh": "萨尔保护领"
+          },
+          "text": "1947-12-15 萨尔宪法。法国的保护关系不是并入法国。边界不画。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Saar_Protectorate"
+          ]
+        },
+        {
+          "role": "control",
+          "from": "1957-01-01",
+          "party": {
+            "qid": "Q183",
+            "zh": "德国"
+          },
+          "text": "1956-10-27《萨尔条约》，1957-01-01 加入联邦德国。这一天起不再单列。边界仍然不画。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Saar_Protectorate"
+          ]
+        },
+        {
+          "role": "claim",
+          "from": "1920-01-10",
+          "until": "1935-03-01",
+          "party": {
+            "qid": "Q142",
+            "zh": "法国"
+          },
+          "text": "法国取得煤矿，不是把萨尔盆地写成法国的一省。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Territory_of_the_Saar_Basin"
+          ]
+        },
+        {
+          "role": "claim",
+          "from": "1920-01-10",
+          "party": {
+            "qid": "Q183",
+            "zh": "德国"
+          },
+          "text": "德国主张这块地方应当回归。1935-03-01 以前这是主张，不是已经收回。1955-10-23 的公投否决了欧洲章程，不把章程写成已经生效。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Saar_Protectorate"
+          ]
+        },
+        {
+          "role": "recognition",
+          "from": "1920-01-10",
+          "until": "1935-03-01",
+          "text": "国际联盟的行政不是法国的吞并，也不是德国的日常管治。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Territory_of_the_Saar_Basin"
+          ]
+        },
+        {
+          "role": "recognition",
+          "from": "1947-12-15",
+          "until": "1957-01-01",
+          "text": "保护领不是法国的一省。1955-10-23 公投否决欧洲章程。个别国家的承认不逐一开列，标待考。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Saar_Protectorate"
+          ]
+        },
+        {
+          "role": "recognition",
+          "from": "1957-01-01",
+          "text": "1957-01-01 起作为联邦德国的一部分。本层不再单列承认问题。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Saar_Protectorate"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "danzig",
+      "name_zh": "但泽自由市",
+      "geom": null,
+      "precision_zh": "没有自由市的边界几何。不拿今天的格但斯克市或波美拉尼亚省代替。不画。",
+      "statements": [
+        {
+          "role": "control",
+          "from": "1920-11-15",
+          "until": "1939-09-01",
+          "party": {
+            "zh": "但泽自由市"
+          },
+          "text": "1920-11-15 自由市成立。市界不画，标待考。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Free_City_of_Danzig",
+            "https://en.wikipedia.org/wiki/Treaty_of_Versailles"
+          ]
+        },
+        {
+          "role": "control",
+          "from": "1939-09-01",
+          "until": "1945-08-02",
+          "party": {
+            "qid": "Q7318",
+            "zh": "纳粹德国"
+          },
+          "text": "1939-09-01 德国军队进入并宣布合并。这是占领加上单方宣布，不是已经得到各国承认的边界。市界仍不画。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Free_City_of_Danzig"
+          ]
+        },
+        {
+          "role": "control",
+          "from": "1945-08-02",
+          "party": {
+            "qid": "Q36",
+            "zh": "波兰"
+          },
+          "text": "波茨坦议定书 1945-08-02 把但泽交给波兰行政。最终和约的日子本层不另写，标待考。不画。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Potsdam_Agreement"
+          ]
+        },
+        {
+          "role": "claim",
+          "from": "1920-11-15",
+          "until": "1939-09-01",
+          "party": {
+            "qid": "Q36",
+            "zh": "波兰"
+          },
+          "text": "波兰有港口和外交上的权利。自由市不是波兰的一省。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Free_City_of_Danzig"
+          ]
+        },
+        {
+          "role": "claim",
+          "from": "1939-09-01",
+          "until": "1945-08-02",
+          "party": {
+            "qid": "Q7318",
+            "zh": "纳粹德国"
+          },
+          "text": "德国宣布合并。这是主张，不是国际承认。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Free_City_of_Danzig"
+          ]
+        },
+        {
+          "role": "recognition",
+          "from": "1920-11-15",
+          "until": "1939-09-01",
+          "text": "自由市来自凡尔赛条约，不是德国或波兰的普通省份。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Treaty_of_Versailles"
+          ]
+        },
+        {
+          "role": "recognition",
+          "from": "1939-09-01",
+          "text": "1939-09-01 的合并没有写成被各国接受。1945-08-02 以后是波兰行政。市界待考，不画。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Free_City_of_Danzig",
+            "https://en.wikipedia.org/wiki/Potsdam_Agreement"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nagorno_karabakh",
+      "name_zh": "纳戈尔诺-卡拉巴赫",
+      "geom": null,
+      "precision_zh": "没有原自治州或 1994 年实际控制线的几何。不把今天的阿塞拜疆各区拼成一块。不画。",
+      "statements": [
+        {
+          "role": "control",
+          "from": "1991-09-02",
+          "until": "1994-05-12",
+          "text": "1991-09-02 当地宣布共和国，1991-12-10 公投。1994-05-05 比什凯克议定书，停火实施是 1994-05-12。停火线不在数据包里。不填色，标待考。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Nagorno-Karabakh",
+            "https://en.wikipedia.org/wiki/Bishkek_Protocol"
+          ]
+        },
+        {
+          "role": "control",
+          "from": "1994-05-12",
+          "until": "2020-11-10",
+          "text": "停火之后亚美尼亚一侧还控制着原自治州以外的地区。那些界没有收进几何，不把某一县界拿来代替，不填色。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Bishkek_Protocol"
+          ]
+        },
+        {
+          "role": "control",
+          "from": "2020-11-10",
+          "until": "2023-09-20",
+          "text": "2020-11-09 签署、11 月 10 日起生效的声明改变了部分地区。交还时间表没有画成多边形，标待考。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/2020_Nagorno-Karabakh_ceasefire_agreement"
+          ]
+        },
+        {
+          "role": "control",
+          "from": "2023-09-20",
+          "until": "2024-01-01",
+          "text": "2023-09-19 阿塞拜疆发动军事行动，9 月 20 日停火。界线仍不画，标待考。",
+          "sources": [
+            "https://www.reuters.com/world/asia-pacific/nagorno-karabakh-republic-will-cease-exist-jan-1-2024-nagorno-karabakh-2023-09-28/"
+          ]
+        },
+        {
+          "role": "control",
+          "from": "2024-01-01",
+          "party": {
+            "qid": "Q227",
+            "zh": "阿塞拜疆"
+          },
+          "text": "2023-09-28 的法令写当地机构自 2024-01-01 停止。边界几何仍然没有，不画。实控记为阿塞拜疆，范围待考。",
+          "sources": [
+            "https://www.reuters.com/world/asia-pacific/nagorno-karabakh-republic-will-cease-exist-jan-1-2024-nagorno-karabakh-2023-09-28/"
+          ]
+        },
+        {
+          "role": "claim",
+          "from": "1991-09-02",
+          "until": "2024-01-01",
+          "party": {
+            "zh": "纳戈尔诺-卡拉巴赫"
+          },
+          "text": "当地主张独立。亚美尼亚有没有正式承认，本层不写成已经承认，标待考。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Political_status_of_Nagorno-Karabakh"
+          ]
+        },
+        {
+          "role": "claim",
+          "from": "1991-09-02",
+          "party": {
+            "qid": "Q227",
+            "zh": "阿塞拜疆"
+          },
+          "text": "阿塞拜疆主张主权。1994 年至 2020 年的事实控制不改写这一行。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Nagorno-Karabakh"
+          ]
+        },
+        {
+          "role": "recognition",
+          "from": "1991-09-02",
+          "until": "2024-01-01",
+          "text": "没有联合国会员国承认。俄罗斯也没有承认。相互承认的名单不固化，标待考。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Political_status_of_Nagorno-Karabakh"
+          ]
+        },
+        {
+          "role": "recognition",
+          "from": "2024-01-01",
+          "text": "当地机构按法令停止。这不是一份新的国际边界条约。范围仍待考。",
+          "sources": [
+            "https://www.reuters.com/world/asia-pacific/nagorno-karabakh-republic-will-cease-exist-jan-1-2024-nagorno-karabakh-2023-09-28/"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "transnistria",
+      "name_zh": "德涅斯特河左岸",
+      "geom": null,
+      "precision_zh": "Natural Earth 里名叫德涅斯特河左岸的单元盖不住蒂拉斯波尔和本德尔，不用它。停火线不画。",
+      "statements": [
+        {
+          "role": "control",
+          "from": "1990-09-02",
+          "until": "1992-07-21",
+          "text": "1990-09-02 宣布德涅斯特河左岸共和国。1992 年战事没有逐日界线，不填色，标待考。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Transnistria",
+            "https://en.wikipedia.org/wiki/Transnistria_War"
+          ]
+        },
+        {
+          "role": "control",
+          "from": "1992-07-21",
+          "party": {
+            "zh": "德涅斯特河左岸实际当局"
+          },
+          "text": "1992-07-21 停火协定之后，实际控制不在摩尔多瓦政府手里。停火线几何待考，不画。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Transnistria_War"
+          ]
+        },
+        {
+          "role": "claim",
+          "from": "1990-09-02",
+          "party": {
+            "qid": "Q217",
+            "zh": "摩尔多瓦"
+          },
+          "text": "摩尔多瓦主张主权。事实控制不改写这一行。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Transnistria"
+          ]
+        },
+        {
+          "role": "claim",
+          "from": "1990-09-02",
+          "party": {
+            "zh": "德涅斯特河左岸"
+          },
+          "text": "当地主张独立。这是声索。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Transnistria"
+          ]
+        },
+        {
+          "role": "recognition",
+          "from": "1990-09-02",
+          "text": "没有联合国会员国承认。俄罗斯也没有承认，不从阿布哈兹的承认法令套过来。其他实体之间的相互承认不固化，标待考。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Transnistria"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "matsu",
+      "name_zh": "马祖列岛",
+      "geom": "matsu",
+      "precision_zh": "轮廓是 Natural Earth 1:10m 微型岛里，代表点落在东经 119.85–120.55、北纬 25.9–26.42 的碎块，与已有控制区同一范围。现代岸线，大致，不是 1949 年的测绘。实控填色仍用已有控制区，这里不另铺一层。",
+      "statements": [
+        {
+          "role": "control",
+          "from": "1949-10-01",
+          "party": {"qid": "Q865", "zh": "中华民国"},
+          "text": "国共内战后由中华民国控制连江县这些岛屿。不把 1945-10-25 的台北受降写成马祖易手。不另铺填色。",
+          "sources": ["https://en.wikipedia.org/wiki/Matsu_Islands"]
+        },
+        {
+          "role": "claim",
+          "from": "1949-10-01",
+          "party": {"qid": "Q865", "zh": "中华民国"},
+          "text": "中华民国管治这些岛屿。",
+          "sources": ["https://en.wikipedia.org/wiki/Matsu_Islands"]
+        },
+        {
+          "role": "claim",
+          "from": "1949-10-01",
+          "party": {"qid": "Q148", "zh": "中华人民共和国"},
+          "draw": "dash",
+          "label": "中华人民共和国声索，不是实控",
+          "text": "中华人民共和国声索马祖。虚线是这些小岛的现代岸线，不是实控。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Matsu_Islands",
+            "https://digitallibrary.un.org/record/192054"
+          ]
+        },
+        {
+          "role": "recognition",
+          "from": "1949-10-01",
+          "until": "1971-10-25",
+          "text": "与台湾这一层相同：1971-10-25 以前不把第 2758 号决议提前写上。各国对马祖的单独表态不逐一开列，标待考。",
+          "sources": ["https://en.wikipedia.org/wiki/United_Nations_General_Assembly_Resolution_2758"]
+        },
+        {
+          "role": "recognition",
+          "from": "1971-10-25",
+          "text": "第 2758 号决议没有写马祖的领土地位。双边建交名单不逐岛开列，标待考。",
+          "sources": [
+            "https://digitallibrary.un.org/record/192054",
+            "https://en.wikipedia.org/wiki/United_Nations_General_Assembly_Resolution_2758"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "south_georgia",
+      "name_zh": "南乔治亚",
+      "geom": "south_georgia",
+      "precision_zh": "轮廓是 Natural Earth 里南乔治亚一侧的现代岸线，不含南桑威奇。西经 32 度只分开现成碎块，不是勘界。大致。",
+      "statements": [
+        {
+          "role": "control",
+          "from": "1908-09-01",
+          "until": "1982-04-03",
+          "party": {"qid": "Q145", "zh": "英国"},
+          "draw": "fill",
+          "color_kind": "de_facto",
+          "text": "1775 年库克登陆声称归属，不把现代岸线回贴到那一天。1908-07-21 敕令写明自福克兰群岛政府公报公布后，南乔治亚成为福克兰群岛属地。公报日期是 1908-09-01。本层从公布日起填色。",
+          "sources": [
+            "https://laws.gov.gs/wp-content/uploads/2024/03/LETTERS-PATENT-21-July-1908.pdf",
+            "https://www.spri.cam.ac.uk/museum/exhibitions/southgeorgia/"
+          ]
+        },
+        {
+          "role": "control",
+          "from": "1982-04-03",
+          "until": "1982-04-25",
+          "party": {"qid": "Q414", "zh": "阿根廷"},
+          "draw": "fill",
+          "color_kind": "de_facto",
+          "text": "1982-04-03 阿根廷占领南乔治亚。1982-04-25 守军投降，这一天起不再标阿根廷。南桑威奇不在这块里。",
+          "sources": ["https://en.wikipedia.org/wiki/Invasion_of_South_Georgia"]
+        },
+        {
+          "role": "control",
+          "from": "1982-04-25",
+          "party": {"qid": "Q145", "zh": "英国"},
+          "draw": "fill",
+          "color_kind": "de_facto",
+          "text": "1982-04-25 起再标英国实控。",
+          "sources": ["https://en.wikipedia.org/wiki/Invasion_of_South_Georgia"]
+        },
+        {
+          "role": "claim",
+          "from": "1908-09-01",
+          "until": "1982-04-03",
+          "party": {"qid": "Q414", "zh": "阿根廷"},
+          "draw": "dash",
+          "label": "阿根廷声索，不是实控",
+          "text": "阿根廷声索南乔治亚。虚线不是实控，也不含南桑威奇。",
+          "sources": ["https://en.wikipedia.org/wiki/Invasion_of_South_Georgia"]
+        },
+        {
+          "role": "claim",
+          "from": "1982-04-03",
+          "until": "1982-04-25",
+          "party": {"qid": "Q145", "zh": "英国"},
+          "draw": "dash",
+          "label": "英国声索，不是这几周的实控",
+          "text": "占领期间英国的主权主张还在。登陆不是国际承认。",
+          "sources": ["https://en.wikipedia.org/wiki/Invasion_of_South_Georgia"]
+        },
+        {
+          "role": "claim",
+          "from": "1982-04-25",
+          "party": {"qid": "Q414", "zh": "阿根廷"},
+          "draw": "dash",
+          "label": "阿根廷声索，不是实控",
+          "text": "投降以后阿根廷的声索还在。实控改回英国。",
+          "sources": ["https://en.wikipedia.org/wiki/Invasion_of_South_Georgia"]
+        },
+        {
+          "role": "recognition",
+          "from": "1908-09-01",
+          "until": "1965-12-16",
+          "text": "主权有争议。各国表态不逐一开列，标待考。",
+          "sources": ["https://laws.gov.gs/wp-content/uploads/2024/03/LETTERS-PATENT-21-July-1908.pdf"]
+        },
+        {
+          "role": "recognition",
+          "from": "1965-12-16",
+          "text": "大会第 2065 号决议要求英国和阿根廷谈判，没有把南乔治亚的主权判给阿根廷。",
+          "sources": ["https://en.wikipedia.org/wiki/United_Nations_General_Assembly_Resolution_2065"]
+        }
+      ]
+    },
+    {
+      "id": "habomai_shikotan",
+      "name_zh": "齿舞与色丹",
+      "geom": "habomai_shikotan",
+      "precision_zh": "从已有千岛岸线里取出代表点在北纬 43.95 度以南的碎块。色丹约 43.80 度，国后约 44.10 度，中间没有碎块。这个纬度只分开现成碎块，不是勘界。现代岸线，大致。不含国后、择捉。",
+      "statements": [
+        {
+          "role": "control",
+          "from": "1945-09-05",
+          "until": "1991-12-26",
+          "party": {"qid": "Q15180", "zh": "苏联"},
+          "text": "实控与北方四岛同一条：1945-09-05 起苏联。填色在北方四岛那一层，这里不另铺。",
+          "sources": ["https://en.wikipedia.org/wiki/Kuril_Islands_dispute"]
+        },
+        {
+          "role": "control",
+          "from": "1991-12-26",
+          "party": {"qid": "Q159", "zh": "俄罗斯"},
+          "text": "1991-12-26 起俄罗斯实际控制。不另铺填色。",
+          "sources": ["https://en.wikipedia.org/wiki/Kuril_Islands_dispute"]
+        },
+        {
+          "role": "claim",
+          "from": "1945-09-05",
+          "until": "1956-10-19",
+          "party": {"qid": "Q17", "zh": "日本"},
+          "text": "日本声索齿舞、色丹，也声索国后、择捉。1956-10-19 以前不把宣言还没写的交还提前画出来。",
+          "sources": ["https://en.wikipedia.org/wiki/Kuril_Islands_dispute"]
+        },
+        {
+          "role": "claim",
+          "from": "1956-10-19",
+          "party": {"qid": "Q17", "zh": "日本"},
+          "draw": "dash",
+          "label": "1956年点名的齿舞、色丹，没有交还",
+          "text": "1956-10-19 日苏联合宣言写和平条约后再把齿舞、色丹交还日本。没有交还。虚线只盖这些碎块，不是国后、择捉，也不是已经交还。",
+          "sources": ["https://en.wikipedia.org/wiki/Soviet%E2%80%93Japanese_Joint_Declaration_of_1956"]
+        },
+        {
+          "role": "recognition",
+          "from": "1945-09-05",
+          "until": "1956-10-19",
+          "text": "没有把齿舞、色丹判给一方的联合国决议收进本层。标待考。",
+          "sources": ["https://en.wikipedia.org/wiki/Kuril_Islands_dispute"]
+        },
+        {
+          "role": "recognition",
+          "from": "1956-10-19",
+          "text": "联合宣言不是已经交还，也没有包括国后和择捉。其余国家的表态仍标待考。",
+          "sources": ["https://en.wikipedia.org/wiki/Soviet%E2%80%93Japanese_Joint_Declaration_of_1956"]
+        }
+      ]
+    },
+    {
+      "id": "gibraltar",
+      "name_zh": "直布罗陀",
+      "geom": "gibraltar",
+      "precision_zh": "轮廓是 Natural Earth 的现代直布罗陀，大致。它含后来占用的地峡，不是 1713 年乌得勒支条约里的城镇和城堡。地峡不另画一条分界。",
+      "statements": [
+        {
+          "role": "control",
+          "from": "1704-08-04",
+          "until": "1713-07-13",
+          "party": {"qid": "Q145", "zh": "英国"},
+          "text": "1704-08-04 英荷军队攻占。乌得勒支条约还没签。不把现代轮廓里的地峡写成这一天已经划定，不填色。",
+          "sources": ["https://en.wikipedia.org/wiki/Capture_of_Gibraltar"]
+        },
+        {
+          "role": "control",
+          "from": "1713-07-13",
+          "party": {"qid": "Q145", "zh": "英国"},
+          "draw": "fill",
+          "color_kind": "de_facto",
+          "text": "1713-07-13《乌得勒支条约》把直布罗陀的城镇、城堡、港口和炮台让给英国。填色用现代轮廓，含地峡，大致，不是条约附图。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Treaty_of_Utrecht",
+            "https://en.wikipedia.org/wiki/Gibraltar"
+          ]
+        },
+        {
+          "role": "claim",
+          "from": "1713-07-13",
+          "party": {"qid": "Q29", "zh": "西班牙"},
+          "draw": "dash",
+          "label": "西班牙声索，不是实控",
+          "text": "西班牙继续声索。虚线是现代轮廓，不是 1713 年的城镇线，也不是实控。",
+          "sources": ["https://en.wikipedia.org/wiki/Status_of_Gibraltar"]
+        },
+        {
+          "role": "claim",
+          "from": "1713-07-13",
+          "party": {"qid": "Q145", "zh": "英国"},
+          "text": "英国依据乌得勒支条约主张主权。地峡不在该约的让与文句里，不把地峡写成条约已经写明的范围。",
+          "sources": ["https://en.wikipedia.org/wiki/Treaty_of_Utrecht"]
+        },
+        {
+          "role": "recognition",
+          "from": "1713-07-13",
+          "until": "1967-12-19",
+          "text": "条约是英国所说的法理依据。西班牙不接受这已消灭自己的声索。各国表态不逐一开列，标待考。",
+          "sources": ["https://en.wikipedia.org/wiki/Treaty_of_Utrecht"]
+        },
+        {
+          "role": "recognition",
+          "from": "1967-12-19",
+          "text": "大会第 2353（XXII）号决议于 1967-12-19 通过，认为当年 9 月 10 日的公民投票不符合此前决议，并请英国和西班牙谈判。决议没有把主权判给西班牙，也没有取消英国的管治。",
+          "sources": ["https://en.wikipedia.org/wiki/United_Nations_General_Assembly_Resolution_2353"]
+        }
+      ]
+    },
+    {
+      "id": "senkaku",
+      "name_zh": "钓鱼台列岛",
+      "geom": "senkaku",
+      "precision_zh": "轮廓是 Natural Earth 微型岛里鱼钓岛一带和赤尾屿的现代岸线，大致。不用冲绳县界，不画海域，也不是 1895 年的测绘。",
+      "statements": [
+        {
+          "role": "control",
+          "from": "1895-01-14",
+          "until": "1945-09-02",
+          "party": {"qid": "Q17", "zh": "日本"},
+          "draw": "fill",
+          "color_kind": "de_facto",
+          "text": "1895-01-14 日本内阁决定把这些无人岛编入冲绳县。填色是现代岛形，不是海域。",
+          "sources": ["https://en.wikipedia.org/wiki/Senkaku_Islands_dispute"]
+        },
+        {
+          "role": "control",
+          "from": "1945-09-02",
+          "until": "1972-05-15",
+          "party": {"qid": "Q30", "zh": "美国"},
+          "draw": "fill",
+          "color_kind": "de_facto",
+          "text": "1945-09-02 起不记成日本的日常管治。旧金山和约第三条把北纬 29 度以南的南西诸岛置于美国管理，1952-04-28 生效。这不是把主权判给美国。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Treaty_of_San_Francisco",
+            "https://en.wikipedia.org/wiki/Okinawa_Reversion_Agreement"
+          ]
+        },
+        {
+          "role": "control",
+          "from": "1972-05-15",
+          "party": {"qid": "Q17", "zh": "日本"},
+          "draw": "fill",
+          "color_kind": "de_facto",
+          "text": "1972-05-15《冲绳返还协定》生效，施政权回到日本。美国表示不对最终主权采取立场。实控是日本，不是主权判决。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Okinawa_Reversion_Agreement",
+            "https://en.wikipedia.org/wiki/Senkaku_Islands_dispute"
+          ]
+        },
+        {
+          "role": "claim",
+          "from": "1895-01-14",
+          "party": {"qid": "Q17", "zh": "日本"},
+          "text": "日本主张这些岛屿属于冲绳。美国管理的那一段不改写这一主张。",
+          "sources": ["https://en.wikipedia.org/wiki/Senkaku_Islands_dispute"]
+        },
+        {
+          "role": "claim",
+          "from": "1971-06-11",
+          "until": "1971-12-30",
+          "party": {"qid": "Q865", "zh": "中华民国"},
+          "draw": "dash",
+          "label": "中华民国声索，不是实控",
+          "text": "英文维基把中华民国公开主张钓鱼台记在 1971-06-11。本层用这一天。中华人民共和国的声明还没出。虚线不是实控。",
+          "sources": ["https://en.wikipedia.org/wiki/Senkaku_Islands_dispute"]
+        },
+        {
+          "role": "claim",
+          "from": "1971-12-30",
+          "party": {"qid": "Q865", "zh": "中华民国"},
+          "draw": "dash",
+          "label": "两岸声索，不是实控",
+          "text": "中华民国的声索继续。虚线不是实控，也不是海域。",
+          "sources": ["https://en.wikipedia.org/wiki/Senkaku_Islands_dispute"]
+        },
+        {
+          "role": "claim",
+          "from": "1971-12-30",
+          "party": {"qid": "Q148", "zh": "中华人民共和国"},
+          "draw": "dash",
+          "label": "两岸声索，不是实控",
+          "text": "1971-12-30 中华人民共和国外交部声明主张钓鱼岛。这是声索。1972-05-15 的施政权返还不改写这一行。",
+          "sources": ["https://en.wikipedia.org/wiki/Senkaku_Islands_dispute"]
+        },
+        {
+          "role": "recognition",
+          "from": "1895-01-14",
+          "until": "1972-05-15",
+          "text": "没有把这些岛屿判给一方的联合国决议收进本层。美国的管理不是主权承认。各国表态标待考。",
+          "sources": ["https://en.wikipedia.org/wiki/Senkaku_Islands_dispute"]
+        },
+        {
+          "role": "recognition",
+          "from": "1972-05-15",
+          "text": "返还的是施政权。美国表明不对最终主权采取立场。这不是联合国的判决。两岸的声索不逐条改写成承认名单，标待考。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Okinawa_Reversion_Agreement",
+            "https://en.wikipedia.org/wiki/Senkaku_Islands_dispute"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dokdo",
+      "name_zh": "独岛／竹岛",
+      "geom": "dokdo",
+      "precision_zh": "轮廓是 Natural Earth 这一处微型岛的现代岸线，大致。不用韩国或日本的国界，不画海域。",
+      "statements": [
+        {
+          "role": "control",
+          "from": "1905-02-22",
+          "until": "1945-09-02",
+          "party": {"qid": "Q17", "zh": "日本"},
+          "draw": "fill",
+          "color_kind": "de_facto",
+          "text": "1905-02-22 日本以内阁决定和岛根县告示把竹岛编入。填色是现代岛形。更早的捕鱼不画成疆界。",
+          "sources": ["https://en.wikipedia.org/wiki/Liancourt_Rocks_dispute"]
+        },
+        {
+          "role": "control",
+          "from": "1945-09-02",
+          "until": "1952-01-18",
+          "text": "盟军占领期间，旧金山和约没有点名这些岛礁。不把这一段填成日本或韩国，标待考。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Treaty_of_San_Francisco",
+            "https://en.wikipedia.org/wiki/Liancourt_Rocks_dispute"
+          ]
+        },
+        {
+          "role": "control",
+          "from": "1952-01-18",
+          "party": {"qid": "Q884", "zh": "大韩民国"},
+          "draw": "fill",
+          "color_kind": "de_facto",
+          "text": "1952-01-18 李承晚线把独岛划在韩国一侧。此后由大韩民国实际控制。驻守日子各说不完全相同，不另择一天，标大致。",
+          "sources": ["https://en.wikipedia.org/wiki/Liancourt_Rocks_dispute"]
+        },
+        {
+          "role": "claim",
+          "from": "1905-02-22",
+          "until": "1952-01-18",
+          "party": {"qid": "Q17", "zh": "日本"},
+          "text": "日本主张竹岛。1945-09-02 至 1952-01-18 不填实控，这条主张也不画虚线。",
+          "sources": ["https://en.wikipedia.org/wiki/Liancourt_Rocks_dispute"]
+        },
+        {
+          "role": "claim",
+          "from": "1952-01-18",
+          "party": {"qid": "Q17", "zh": "日本"},
+          "draw": "dash",
+          "label": "日本声索，不是实控",
+          "text": "日本继续主张竹岛。虚线不是 1952-01-18 以后的实控。",
+          "sources": ["https://en.wikipedia.org/wiki/Liancourt_Rocks_dispute"]
+        },
+        {
+          "role": "claim",
+          "from": "1948-08-15",
+          "party": {"qid": "Q884", "zh": "大韩民国"},
+          "text": "大韩民国主张独岛。1948-08-15 国家成立，不把这一天写成已经进驻。",
+          "sources": ["https://en.wikipedia.org/wiki/Liancourt_Rocks_dispute"]
+        },
+        {
+          "role": "recognition",
+          "from": "1905-02-22",
+          "until": "1952-04-28",
+          "text": "旧金山和约 1952-04-28 生效。约文放弃朝鲜，但没有点名这些岛礁。双方解释相反。不把和约写成已经判给一方，标待考。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Treaty_of_San_Francisco",
+            "https://en.wikipedia.org/wiki/Liancourt_Rocks_dispute"
+          ]
+        },
+        {
+          "role": "recognition",
+          "from": "1952-04-28",
+          "text": "和约已经生效，仍然没有点名这些岛礁。没有联合国把它们判给一方的决议收进本层。各国表态不固化，标待考。",
+          "sources": ["https://en.wikipedia.org/wiki/Liancourt_Rocks_dispute"]
         }
       ]
     }
