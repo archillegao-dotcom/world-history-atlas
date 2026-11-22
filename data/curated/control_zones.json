@@ -11657,6 +11657,69 @@
     "https://www.drnh.gov.tw/p/404-1003-13334.php?Lang=zh-tw",
     "https://zenodo.org/records/5721459"
    ]
+  },
+  {
+   "id": "mx_villa_juarez_1913",
+   "group": "mexican_revolution",
+   "kind": "armed_presence",
+   "as_polity": false,
+   "activity_only": true,
+   "name_zh": "比利亚部活动点（华雷斯）",
+   "name_en": "Villa activity point at Ciudad Juarez",
+   "controller": {"qid": null, "zh": "比利亚部（不是墨西哥全境）"},
+   "from": "1913-11-15",
+   "until": "1913-11-16",
+   "geometry": {"polygon": [[-106.5069, 31.7194], [-106.4669, 31.7194], [-106.4669, 31.7594], [-106.5069, 31.7594], [-106.5069, 31.7194]]},
+   "activity_points": [{"name_zh": "华雷斯", "lat": 31.7394, "lon": -106.4869, "source": "https://en.wikipedia.org/wiki/Ciudad_Ju%C3%A1rez"}],
+   "approx": true,
+   "dates_note": "1913年11月15日攻占华雷斯。只标这一天。此后是否仍占该城，日期待考，不顺延。",
+   "note": "活动点，不是辖境。守城到哪一天待考。名义所属仍是墨西哥。不画奇瓦瓦州，也不用今天的州界。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Battle_of_Ciudad_Ju%C3%A1rez_(1913)",
+    "https://en.wikipedia.org/wiki/Ciudad_Ju%C3%A1rez"
+   ]
+  },
+  {
+   "id": "mx_villa_chihuahua_1913",
+   "group": "mexican_revolution",
+   "kind": "armed_presence",
+   "as_polity": false,
+   "activity_only": true,
+   "name_zh": "比利亚部活动点（奇瓦瓦城）",
+   "name_en": "Villa activity point at Chihuahua City",
+   "controller": {"qid": null, "zh": "比利亚部（不是墨西哥全境）"},
+   "from": "1913-11-26",
+   "until": "1913-11-27",
+   "geometry": {"polygon": [[-106.1089, 28.6153], [-106.0689, 28.6153], [-106.0689, 28.6553], [-106.1089, 28.6553], [-106.1089, 28.6153]]},
+   "activity_points": [{"name_zh": "奇瓦瓦城", "lat": 28.6353, "lon": -106.0889, "source": "https://en.wikipedia.org/wiki/Chihuahua_City"}],
+   "approx": true,
+   "dates_note": "美国国会图书馆展览写提埃拉布兰卡于1913年11月26日投降，随后攻占奇瓦瓦城。入城是否就在这一天待考，只标这一天，不顺延。",
+   "note": "活动点，不是辖境。守城到哪一天待考。名义所属仍是墨西哥。不画奇瓦瓦州，也不用今天的州界。",
+   "sources": [
+    "https://loc.gov/exhibits/mexican-revolution-and-the-united-states/war-against-huerta.html",
+    "https://en.wikipedia.org/wiki/Chihuahua_City"
+   ]
+  },
+  {
+   "id": "ru_kolchak_omsk",
+   "group": "russian_civil_war",
+   "kind": "armed_presence",
+   "as_polity": false,
+   "activity_only": true,
+   "name_zh": "高尔察克政府驻地（鄂木斯克）",
+   "name_en": "Kolchak seat at Omsk",
+   "controller": {"qid": null, "zh": "高尔察克政府（驻地，不是全俄）"},
+   "from": "1918-11-18",
+   "until": "1919-11-14",
+   "geometry": {"polygon": [[73.3486, 54.9714], [73.3886, 54.9714], [73.3886, 55.0114], [73.3486, 55.0114], [73.3486, 54.9714]]},
+   "activity_points": [{"name_zh": "鄂木斯克", "lat": 54.9914, "lon": 73.3686, "source": "https://en.wikipedia.org/wiki/Omsk"}],
+   "approx": true,
+   "dates_note": "1918年11月18日起他在鄂木斯克被推为最高统治者。1919年11月13日离开，11月14日城被占，这一天起不再标驻地。",
+   "note": "活动点，不是辖境，不是西伯利亚。名义上其他白军领袖承认他为最高统治者。底图上的俄国多边形不改成他的实控。西伯利亚界线待考，不画。",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Alexander_Kolchak",
+    "https://en.wikipedia.org/wiki/Omsk"
+   ]
   }
  ]
 }
