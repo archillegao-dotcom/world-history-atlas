@@ -945,6 +945,22 @@
         {"label": "Constitute Project：2017年泰王国宪法前言", "url": "https://www.constituteproject.org/constitution/Thailand_2017?lang=en"}
       ],
       "spans": [{"qid": "Q869", "from": "2017-04-06", "until": null}]
+    },
+    {
+      "id": "pl_1997",
+      "title_zh": "1997年波兰共和国宪法",
+      "title_orig": "Konstytucja Rzeczypospolitej Polskiej",
+      "kind": "formal",
+      "adopted": "1997-04-02",
+      "promulgated": null,
+      "effective": "1997-10-17",
+      "repealed": null,
+      "summary_zh": "议会法律数据库的标题是1997年4月2日的波兰共和国宪法，发布机关是国民大会。同一记录把 announcementDate 写成1997-04-02，把 entryIntoForce 和 validFrom 写成1997-10-17，状态是现行。Constitute 文本第243条写自公布之日起三个月期满生效，本图采用数据库给出的生效日，不自己把三个月折成另一个日子，也不把 announcementDate 改称为公布日。1992年小宪法和1952年宪法的沿用本批没有打开。",
+      "sources": [
+        {"label": "波兰议会法律数据库：1997年第78卷第483项，生效日1997-10-17", "url": "https://api.sejm.gov.pl/eli/acts/DU/1997/483"},
+        {"label": "Constitute Project：波兰宪法第243条", "url": "https://www.constituteproject.org/constitution/Poland_2009?lang=en"}
+      ],
+      "spans": [{"qid": "Q36", "from": "1997-10-17", "until": null}]
     }
   ],
   "gaps": [
@@ -1061,6 +1077,12 @@
       "from": "1947-08-15",
       "until": "1950-01-26",
       "note": "已核对：印度宪法第394条把开始施行日定为1950年1月26日。这一天以前的印度联邦不提前列整部宪法。"
+    },
+    {
+      "qids": ["Q36"],
+      "from": "1989-12-31",
+      "until": "1997-10-17",
+      "note": "已核对：1997年宪法的生效日是10月17日。这一天以前第三共和国沿用的1952年宪法和1992年小宪法本批没有打开。"
     }
   ]
 }
