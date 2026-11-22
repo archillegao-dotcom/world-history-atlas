@@ -54,7 +54,7 @@ def norm(name: str) -> str:
     text = unicodedata.normalize("NFKD", name)
     text = "".join(ch for ch in text if not unicodedata.combining(ch))
     text = text.lower().replace("’", "'").replace("'", "")
-    text = re.sub(r"[^a-z0-9]+", " ", text).strip()
+    text = re.sub(r"[^a-z0-9\u4e00-\u9fff]+", " ", text).strip()
     aliases = {
         "austria hungary": "austria hungary",
         "kingdom of sweden and norway": "sweden norway",
@@ -247,6 +247,98 @@ def build_pca() -> tuple[list[dict], dict]:
     return members, stats
 
 
+def _dk(day: str) -> float:
+    y, m, d = (int(x) for x in day.split("-"))
+    return y + (m - 1) / 12 + d / 372
+
+
+def _covers(rec: dict | None, day: str, start: bool) -> bool:
+    if not rec or not rec.get("y"):
+        return not start
+    y, m, d = rec["y"], rec.get("m") or 0, rec.get("d") or 0
+    p = rec.get("p") or 9
+    yy, mm, dd = (int(x) for x in day.split("-"))
+    if start:
+        if p >= 11 and m and d:
+            return (y, m, d) <= (yy, mm, dd)
+        if p == 10 and m:
+            return (y, m) < (yy, mm)
+        return y < yy
+    if p >= 11 and m and d:
+        return (yy, mm, dd) < (y, m, d)
+    if p == 10 and m:
+        return (yy, mm) < (y, m)
+    return yy < y
+
+
+def _labels(state: dict) -> set[str]:
+    raw = [state.get("en") or "", state.get("zh") or ""] + list(state.get("aliases") or [])
+    return {norm(x) for x in raw if norm(x)}
+
+
+def link_polities(members: list[dict], pred) -> dict:
+    """只在加入日当天名称唯一、存续盖住这一天时挂编号。政权链当天只有一个非并立政权时，用那一行。"""
+    import lzma
+    states = json.loads(lzma.open(ROOT / "data" / "states.json.xz").read())
+    chains = json.loads((CUR / "regime_chains.json").read_text(encoding="utf-8")).get("chains") or {}
+    by_q = {}
+    for cq, chain in chains.items():
+        by_q.setdefault(cq, cq)
+        for row in chain.get("rows") or []:
+            if row.get("qid"):
+                by_q.setdefault(row["qid"], cq)
+    linked = skipped = 0
+    for member in members:
+        if not pred(member):
+            continue
+        official = member.get("name") or ""
+        official = official.replace("（页上现称）", "").replace("（表上名称）", "")
+        key = norm(official)
+        day = member.get("from") or ""
+        if not key or not day:
+            continue
+        hits = []
+        for state in states:
+            if key not in _labels(state):
+                continue
+            if _covers(state.get("from"), day, True) and _covers(state.get("to"), day, False):
+                hits.append(state)
+        qid = ""
+        basis = ""
+        if len(hits) == 1:
+            state = hits[0]
+            cq = by_q.get(state["id"])
+            if cq:
+                dk = _dk(day)
+                now = []
+                for row in chains[cq].get("rows") or []:
+                    if row.get("parallel"):
+                        continue
+                    a = _dk(row["from"]) if row.get("from") else None
+                    b = _dk(row["to"]) if row.get("to") else None
+                    if (a is None or a <= dk) and (b is None or dk < b) and row.get("qid"):
+                        now.append(row)
+                if len(now) == 1:
+                    qid = now[0]["qid"]
+                    basis = f"加入日当天政权链只有{now[0].get('zh') or qid}。{now[0].get('src') or ''}"
+            else:
+                qid = state["id"]
+                basis = f"加入日当天名称与这一行相同、而且存续盖住这一天的政权只有{state.get('zh') or state.get('en') or qid}。"
+        if qid:
+            member["qid"] = qid
+            member["match"] = [qid]
+            note = member.get("note") or ""
+            tag = "编号："
+            if tag not in note:
+                member["note"] = note + tag + basis
+            linked += 1
+        else:
+            member.pop("qid", None)
+            member.pop("match", None)
+            skipped += 1
+    return {"linked": linked, "unlinked": skipped}
+
+
 def build_upu(founding: list[dict]) -> tuple[list[dict], dict]:
     founding = [m for m in founding if "页上现称" not in (m.get("name") or "")]
     extra = []
@@ -290,6 +382,7 @@ def main():
     by_id = {org["id"]: org for org in data["orgs"]}
 
     members, stats = build_pca()
+    pca_link = link_polities(members, lambda m: True)
     (CUR / "pca_members.json").write_text(
         json.dumps({"members": members}, ensure_ascii=False, indent=2) + "\n",
         encoding="utf-8",
@@ -319,6 +412,7 @@ def main():
         "生效日两说、标了加入日待考的有："
         + ("、".join(stats["conflicts"]) if stats["conflicts"] else "无")
         + "。属地延伸不单列。暂停无记录。"
+        f"加入日当天能唯一对上政权编号的有{pca_link['linked']}行，对不上的{pca_link['unlinked']}行不挂。"
     )
     pca["sources"] = [
         {"label": "1899年公约缔约方（荷兰保存机关）", "url": "https://verdragenbank.overheid.nl/en/Treaty/Details/002330_p.html"},
@@ -329,6 +423,7 @@ def main():
 
     upu = by_id["upu"]
     merged, ustats = build_upu(upu.get("members") or [])
+    upu_link = link_polities(merged, lambda m: "页上现称" in (m.get("name") or ""))
     upu["members"] = merged
     upu["incomplete"] = True
     upu["summary"] = (
@@ -345,6 +440,7 @@ def main():
         "没有 member since、因而不写入的有："
         + "、".join(ustats["blank"])
         + "。退出、暂停、继承：这些页没有写，标无。名单仍不完整。"
+        f"加入日当天能唯一对上政权编号的有{upu_link['linked']}行，对不上的{upu_link['unlinked']}行不挂。"
     )
     sources = list(upu.get("sources") or [])
     extra_src = [
@@ -368,11 +464,14 @@ def main():
             "note": "国际电信联盟全权代表大会页面写：最近加入的会员是南苏丹，2011年10月3日加入。没有另写退出或暂停。",
         })
     itu["incomplete"] = True
+    itu_link = link_polities(itu.get("members") or [], lambda m: m.get("name") == "南苏丹")
     itu["list_note"] = (
         "名单不完整。20个签署方仍是签署方，后来的会籍未核。"
         "会员页没有逐国加入日。1992年组织法的批准、接受或加入日不是会籍开始日，不拿来补名单。"
         "南苏丹按全权代表大会页面写入2011年10月3日。"
+        "会员页、会员地位页和文书范本都没有逐国加入日。1992年组织法的批准日不是加入日，不拿来当会籍开始。"
         "其余加入、退出、暂停、继承：无记录。"
+        f"南苏丹挂上编号{itu_link['linked']}行，对不上则不挂。"
     )
     itu["summary"] = (
         "1865年5月17日，20个国家在巴黎签署国际电报公约，成立万国电报联盟。"
@@ -399,7 +498,8 @@ def main():
     print("only_page", stats["only_page"])
     print("only_dep", stats["only_dep"])
     print("signed_only", stats["signed_only"])
-    print("upu added", ustats)
+    print("upu added", ustats, "link", upu_link)
+    print("pca link", pca_link, "itu link", itu_link)
 
 
 if __name__ == "__main__":
