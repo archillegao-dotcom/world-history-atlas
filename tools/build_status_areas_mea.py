@@ -40,6 +40,9 @@ SPECS = {
         "YE-SD", "YE-HJ", "YE-JA", "YE-HU", "YE-TA", "YE-MA", "YE-SN",
         "YE-RA", "YE-BA", "YE-AM", "YE-IB", "YE-MW", "YE-DH", "YE-SA",
     ]),
+    # 今天的英属印度洋领地，即仍由英国管治的查戈斯，不是 1976 年归还塞舌尔的那些岛。
+    "chagos": ("admin0", ["IOT"]),
+    "mayotte": ("admin1", ["FR-YT"]),
 }
 
 

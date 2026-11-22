@@ -4,7 +4,7 @@
     "实际控制、主权声索、国际承认分开。from 当日起有效，until 当日起不再有效。",
     "draw=fill 才填色；draw=dash 才画虚线。没有 draw 的只在点选或按区域查询里出现，不在地图上铺颜色。",
     "几何在 data/curated/geom/status_areas_mea.geojson，是 Natural Earth 1:10m 公有领域的现代行政界。标了大致的不是当日控制线。没有几何的不画。",
-    "不收录克什米尔、阿克赛钦、西撒哈拉、北塞浦路斯、科索沃、巴勒斯坦、戈兰、千岛、福克兰、阿布哈兹、南奥塞梯、德涅斯特、纳卡、台澎金马、南海、萨尔、但泽、阿尔萨斯-洛林。"
+    "西撒哈拉自 1976-02-27、北塞浦路斯自 1974-08-16 已在 status_layers.json。这里只补更早的空档，不改那个文件。不收录克什米尔、阿克赛钦、科索沃、巴勒斯坦、戈兰、千岛、福克兰、阿布哈兹、南奥塞梯、德涅斯特、纳卡、台澎金马、南海、萨尔、但泽、阿尔萨斯-洛林。"
   ],
   "areas": [
     {
@@ -1448,6 +1448,254 @@
           "sources": [
             "https://en.wikipedia.org/wiki/Hatay_State",
             "https://www.archontology.org/nations/turkey/hatay/01_polity.php"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "western_sahara_to_1976",
+      "name_zh": "西撒哈拉（1976-02-27 以前）",
+      "geom": "western_sahara",
+      "precision_zh": "虚线用的是已有的 Natural Earth 西撒哈拉整片轮廓，只补 1976-02-27 以前的空档。不是绿色进军的路线，也不是后来的沙墙。1976-02-27 起的三层仍在另一份数据里，这里不再重复。",
+      "statements": [
+        {
+          "role": "control",
+          "from": "1975-11-06",
+          "until": "1975-11-14",
+          "text": "1975-11-06 摩洛哥组织绿色进军。这一周西班牙仍是管理国，进军没有变成一条可画的控制线，不填色。",
+          "sources": ["https://en.wikipedia.org/wiki/Green_March"]
+        },
+        {
+          "role": "control",
+          "from": "1975-11-14",
+          "until": "1976-02-27",
+          "text": "1975-11-14 马德里协定约定西班牙在 1976 年 2 月底前撤出，由摩洛哥和毛里塔尼亚分区管理。西班牙实际撤出是 1976-02-26。分区界线不在数据包里，不填色。",
+          "sources": ["https://en.wikipedia.org/wiki/Madrid_Accords"]
+        },
+        {
+          "role": "claim",
+          "from": "1975-11-14",
+          "until": "1976-02-27",
+          "party": {"zh": "摩洛哥"},
+          "draw": "dash",
+          "label": "马德里协定所涉范围，不是实控",
+          "text": "摩洛哥根据马德里协定主张管理这片土地的一部分。虚线是整片西撒哈拉，大于后来划给摩洛哥的那一区。",
+          "sources": ["https://en.wikipedia.org/wiki/Madrid_Accords"]
+        },
+        {
+          "role": "claim",
+          "from": "1975-11-14",
+          "until": "1976-02-27",
+          "party": {"zh": "毛里塔尼亚"},
+          "text": "毛里塔尼亚同样根据马德里协定主张南部。南北分界不画。萨赫拉维阿拉伯民主共和国要到 1976-02-27 才宣布成立，这之前不把它写成声索方。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Madrid_Accords",
+            "https://en.wikipedia.org/wiki/Sahrawi_Arab_Democratic_Republic"
+          ]
+        },
+        {
+          "role": "recognition",
+          "from": "1975-11-14",
+          "until": "1976-02-27",
+          "text": "联合国没有承认马德里协定完成了主权转移。西班牙在撤出以前仍被写成管理国。承认名单不在这里开列，标待考。",
+          "sources": ["https://en.wikipedia.org/wiki/Madrid_Accords"]
+        }
+      ]
+    },
+    {
+      "id": "northern_cyprus_july1974",
+      "name_zh": "塞浦路斯北部（1974-08-16 以前）",
+      "geom": null,
+      "precision_zh": "1974-08-16 以后的三层和轮廓已在另一份数据里。7 月 20 日到 8 月 15 日的战斗线不是后来的停火范围，不把那块轮廓套回来。不画。",
+      "statements": [
+        {
+          "role": "control",
+          "from": "1974-07-20",
+          "until": "1974-08-16",
+          "party": {"zh": "土耳其"},
+          "text": "1974-07-20 土耳其出兵。7 月 22 日第一次停火，8 月 14 日再进攻，8 月 16 日第二阶段停火。这三周的地面线没有收进几何，不画。8 月 16 日起改由已有的那一层表示。",
+          "sources": ["https://en.wikipedia.org/wiki/Turkish_invasion_of_Cyprus"]
+        },
+        {
+          "role": "claim",
+          "from": "1974-07-20",
+          "until": "1974-08-16",
+          "party": {"zh": "塞浦路斯"},
+          "text": "塞浦路斯共和国的主权声索不因出兵而消失。范围不画。",
+          "sources": ["https://en.wikipedia.org/wiki/Turkish_invasion_of_Cyprus"]
+        },
+        {
+          "role": "recognition",
+          "from": "1974-07-20",
+          "until": "1974-08-16",
+          "text": "安理会在出兵当天要求停火。这不是承认土耳其获得主权。决议编号不从后来的 541 号往回套。",
+          "sources": ["https://en.wikipedia.org/wiki/Turkish_invasion_of_Cyprus"]
+        }
+      ]
+    },
+    {
+      "id": "chagos",
+      "name_zh": "查戈斯群岛",
+      "geom": "chagos",
+      "precision_zh": "轮廓是 Natural Earth 的英属印度洋领地，也就是今天仍由英国管治的查戈斯，含迪戈加西亚。不是 1965 年还包含、1976 年归还塞舌尔的那几个岛。岛形是现代海岸，标大致。",
+      "statements": [
+        {
+          "role": "control",
+          "from": "1965-11-08",
+          "until": "2025-05-22",
+          "party": {"zh": "英国"},
+          "text": "1965-11-08 设立英属印度洋领地，由英国管治。迪戈加西亚的基地由英美使用，使用不等于美国主权。不另铺填色。",
+          "sources": [
+            "https://assets.publishing.service.gov.uk/media/682f25afc054883884bff42a/CS%5FMauritius%5F1.2025%5FAgreement%5FChagos%5FDiego%5FGarcia.pdf",
+            "https://www.bbc.co.uk/news/articles/c04x1lg1lygo",
+            "https://en.wikipedia.org/wiki/Agreement_concerning_the_Chagos_Archipelago_including_Diego_Garcia"
+          ]
+        },
+        {
+          "role": "control",
+          "from": "2025-05-22",
+          "party": {"zh": "英国"},
+          "text": "2025-05-22 的英毛协定尚未生效，实际管治仍记英国。2026 年 11 月仍未见生效，之后的变化标待考。不另铺填色。",
+          "sources": [
+            "https://assets.publishing.service.gov.uk/media/682f25afc054883884bff42a/CS%5FMauritius%5F1.2025%5FAgreement%5FChagos%5FDiego%5FGarcia.pdf",
+            "https://www.bbc.co.uk/news/articles/c04x1lg1lygo"
+          ]
+        },
+        {
+          "role": "claim",
+          "from": "1968-03-12",
+          "until": "2025-05-22",
+          "party": {"zh": "毛里求斯"},
+          "draw": "dash",
+          "label": "毛里求斯声索",
+          "text": "毛里求斯自 1968-03-12 独立起主张查戈斯属于自己。虚线不是实际控制。",
+          "sources": ["https://en.wikipedia.org/wiki/Chagos_Archipelago"]
+        },
+        {
+          "role": "claim",
+          "from": "2025-05-22",
+          "party": {"zh": "毛里求斯"},
+          "draw": "dash",
+          "label": "毛里求斯声索，不是已生效的移交",
+          "text": "2025-05-22 签署的协定写毛里求斯拥有主权，但协定自己写明尚未生效。虚线不是已经移交的界线。",
+          "sources": [
+            "https://assets.publishing.service.gov.uk/media/682f25afc054883884bff42a/CS%5FMauritius%5F1.2025%5FAgreement%5FChagos%5FDiego%5FGarcia.pdf",
+            "https://en.wikipedia.org/wiki/Chagos_Archipelago"
+          ]
+        },
+        {
+          "role": "recognition",
+          "from": "1965-11-08",
+          "until": "2019-02-25",
+          "text": "这一阶段没有国际法院意见，也没有后来的大会决议。英国继续管治。",
+          "sources": ["https://www.icj-cij.org/case/169"]
+        },
+        {
+          "role": "recognition",
+          "from": "2019-02-25",
+          "until": "2019-05-22",
+          "text": "国际法院 2019-02-25 的咨询意见认为英国拆出查戈斯的行为违法，脱殖没有完成。咨询意见不是判决，也不等于已经移交。",
+          "sources": ["https://www.icj-cij.org/case/169"]
+        },
+        {
+          "role": "recognition",
+          "from": "2019-05-22",
+          "until": "2025-05-22",
+          "text": "联合国大会第 73/295 号决议于 2019-05-22 通过，要求英国在六个月内无条件撤出。决议没有在六个月后自动改变实际控制。",
+          "sources": ["https://en.wikipedia.org/wiki/United_Nations_General_Assembly_Resolution_73/295"]
+        },
+        {
+          "role": "recognition",
+          "from": "2025-05-22",
+          "text": "英毛协定于 2025-05-22 签署，文本写毛里求斯拥有包括迪戈加西亚在内的主权，但扉页写明尚未生效，生效要等双方完成国内程序并互换通知。2026 年 4 月英国实施法案未及通过。签署不是承认已经完成移交。",
+          "sources": [
+            "https://assets.publishing.service.gov.uk/media/682f25afc054883884bff42a/CS%5FMauritius%5F1.2025%5FAgreement%5FChagos%5FDiego%5FGarcia.pdf",
+            "https://www.bbc.co.uk/news/articles/c04x1lg1lygo"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mayotte",
+      "name_zh": "马约特",
+      "geom": "mayotte",
+      "precision_zh": "轮廓是 Natural Earth 的马约特省界，大致是该岛，不是整个科摩罗。现代海岸，标大致。",
+      "statements": [
+        {
+          "role": "control",
+          "from": "1975-07-06",
+          "party": {"zh": "法国"},
+          "text": "1975-07-06 科摩罗宣布独立，法国继续管治马约特。1976-02-08 和 04-11 的公投、2011-03-31 成为法国海外省，都是法国国内的地位，不改成科摩罗已经控制。不另铺填色。",
+          "sources": ["https://en.wikipedia.org/wiki/Mayotte"]
+        },
+        {
+          "role": "claim",
+          "from": "1975-07-06",
+          "party": {"zh": "科摩罗"},
+          "draw": "dash",
+          "label": "科摩罗声索，不是法国的省界改属",
+          "text": "科摩罗主张马约特是其四岛之一。虚线只是该岛，不是科摩罗全境。法国的管治不取消这一声索。",
+          "sources": ["https://en.wikipedia.org/wiki/Mayotte"]
+        },
+        {
+          "role": "recognition",
+          "from": "1975-07-06",
+          "until": "1976-10-21",
+          "text": "大会第 31/4 号决议还没有通过。1976-02-06 法国否决了安理会里要求取消公投的草案。否决不是联合国承认法国的主权主张。",
+          "sources": ["https://en.wikipedia.org/wiki/Mayotte"]
+        },
+        {
+          "role": "recognition",
+          "from": "1976-10-21",
+          "text": "联合国大会第 31/4 号决议于 1976-10-21 通过，宣布 1976 年 2 月 8 日和 4 月 11 日的公投无效，并要求法国撤出。决议没有约束力，法国不接受。此后直到 1990 年代中期大会又通过同类决议。2011-03-31 马约特成为法国第 101 个省，科摩罗的声索仍在。这不是实际控制已经易手。",
+          "sources": [
+            "https://mandates.un.org/mandate/A/RES/31/4",
+            "https://en.wikipedia.org/wiki/Mayotte"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sabah_lease",
+      "name_zh": "沙巴（1878 年租让争议）",
+      "geom": null,
+      "precision_zh": "菲律宾主张的是 1878 年协议里从潘达桑河到锡布库河的东岸，不是今天整个沙巴州。没有这条河界的许可轮廓。不用整州代替。不画。",
+      "statements": [
+        {
+          "role": "control",
+          "from": "1963-09-16",
+          "party": {"zh": "马来西亚"},
+          "text": "1963-09-16 沙巴加入马来西亚，实际管治在马来西亚。2013 年拉哈达图事件以后马来西亚停止按 1878 年协议付款。付款停止不是菲律宾取得控制。不画。",
+          "sources": ["https://en.wikipedia.org/wiki/North_Borneo_dispute"]
+        },
+        {
+          "role": "claim",
+          "from": "1878-01-22",
+          "until": "1963-09-16",
+          "text": "1878-01-22 苏禄苏丹与奥弗贝克、登特的协议用了 pajakkan。一方译成永久租让，一方译成割让。协议范围是东岸，不是后来的整个北婆罗洲。这条河界不画。",
+          "sources": ["https://en.wikipedia.org/wiki/North_Borneo_dispute"]
+        },
+        {
+          "role": "claim",
+          "from": "1963-09-16",
+          "party": {"zh": "菲律宾"},
+          "text": "菲律宾以苏禄苏丹继承者的名义保持对东沙巴的休眠声索。马来西亚把 1878 年协议看成割让，并把 1963 年的加入看成居民自决。两边都不是整州已经划定的线。",
+          "sources": ["https://en.wikipedia.org/wiki/North_Borneo_dispute"]
+        },
+        {
+          "role": "claim",
+          "from": "1963-09-16",
+          "party": {"zh": "马来西亚"},
+          "text": "马来西亚主张沙巴是联邦的一州。这是声索，也是它的实际管治。不把整州画成菲律宾的声索范围。",
+          "sources": ["https://en.wikipedia.org/wiki/North_Borneo_dispute"]
+        },
+        {
+          "role": "recognition",
+          "from": "1963-09-16",
+          "text": "国际承认的国家是马来西亚，沙巴不是另一个主权。2022 年仲裁把 1878 年协议写成私人租赁并判赔偿，那不是联合国承认菲律宾拥有东沙巴。法国法院后来的撤销程序不在这里择一，标待考。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/North_Borneo_dispute",
+            "https://queritius.com/the-iconic-case-of-the-heirs-of-the-sultan-of-sulu-vs-malaysia/"
           ]
         }
       ]
