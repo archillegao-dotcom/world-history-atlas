@@ -3,7 +3,7 @@
   "source": "OpenHistoricalMap",
   "license": "CC0 1.0",
   "license_url": "https://www.openhistoricalmap.org/copyright",
-  "feature_total": 444,
+  "feature_total": 453,
   "counts": {
     "british_india": 19,
     "ceylon": 8,
@@ -19,7 +19,7 @@
     "dei": 12,
     "africa": 41,
     "arabia": 1,
-    "us_state": 33,
+    "us_state": 42,
     "central_asia": 10,
     "colonial_america": 13,
     "canada": 11,
