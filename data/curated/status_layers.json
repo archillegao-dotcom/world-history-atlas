@@ -320,7 +320,7 @@
       "id": "south_ossetia",
       "name_zh": "南奥塞梯",
       "geom": null,
-      "precision_zh": "没有可用轮廓，不画。不把北奥塞梯或什达-卡特利的行政界拿来代替。",
+      "precision_zh": "没有可用轮廓，不画。不把北奥塞梯或什达-卡特利的行政界拿来代替。又对过 Natural Earth 1:10m，仍然没有南奥塞梯单元。",
       "statements": [
         {
           "role": "control",
@@ -2374,6 +2374,234 @@
           "from": "1956-10-19",
           "text": "联合宣言不是已经交还，也没有包括国后和择捉。其余国家的表态仍标待考。",
           "sources": ["https://en.wikipedia.org/wiki/Soviet%E2%80%93Japanese_Joint_Declaration_of_1956"]
+        }
+      ]
+    },
+    {
+      "id": "gibraltar",
+      "name_zh": "直布罗陀",
+      "geom": "gibraltar",
+      "precision_zh": "轮廓是 Natural Earth 的现代直布罗陀，大致。它含后来占用的地峡，不是 1713 年乌得勒支条约里的城镇和城堡。地峡不另画一条分界。",
+      "statements": [
+        {
+          "role": "control",
+          "from": "1704-08-04",
+          "until": "1713-07-13",
+          "party": {"qid": "Q145", "zh": "英国"},
+          "text": "1704-08-04 英荷军队攻占。乌得勒支条约还没签。不把现代轮廓里的地峡写成这一天已经划定，不填色。",
+          "sources": ["https://en.wikipedia.org/wiki/Capture_of_Gibraltar"]
+        },
+        {
+          "role": "control",
+          "from": "1713-07-13",
+          "party": {"qid": "Q145", "zh": "英国"},
+          "draw": "fill",
+          "color_kind": "de_facto",
+          "text": "1713-07-13《乌得勒支条约》把直布罗陀的城镇、城堡、港口和炮台让给英国。填色用现代轮廓，含地峡，大致，不是条约附图。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Treaty_of_Utrecht",
+            "https://en.wikipedia.org/wiki/Gibraltar"
+          ]
+        },
+        {
+          "role": "claim",
+          "from": "1713-07-13",
+          "party": {"qid": "Q29", "zh": "西班牙"},
+          "draw": "dash",
+          "label": "西班牙声索，不是实控",
+          "text": "西班牙继续声索。虚线是现代轮廓，不是 1713 年的城镇线，也不是实控。",
+          "sources": ["https://en.wikipedia.org/wiki/Status_of_Gibraltar"]
+        },
+        {
+          "role": "claim",
+          "from": "1713-07-13",
+          "party": {"qid": "Q145", "zh": "英国"},
+          "text": "英国依据乌得勒支条约主张主权。地峡不在该约的让与文句里，不把地峡写成条约已经写明的范围。",
+          "sources": ["https://en.wikipedia.org/wiki/Treaty_of_Utrecht"]
+        },
+        {
+          "role": "recognition",
+          "from": "1713-07-13",
+          "until": "1967-12-19",
+          "text": "条约是英国所说的法理依据。西班牙不接受这已消灭自己的声索。各国表态不逐一开列，标待考。",
+          "sources": ["https://en.wikipedia.org/wiki/Treaty_of_Utrecht"]
+        },
+        {
+          "role": "recognition",
+          "from": "1967-12-19",
+          "text": "大会第 2353（XXII）号决议于 1967-12-19 通过，认为当年 9 月 10 日的公民投票不符合此前决议，并请英国和西班牙谈判。决议没有把主权判给西班牙，也没有取消英国的管治。",
+          "sources": ["https://en.wikipedia.org/wiki/United_Nations_General_Assembly_Resolution_2353"]
+        }
+      ]
+    },
+    {
+      "id": "senkaku",
+      "name_zh": "钓鱼台列岛",
+      "geom": "senkaku",
+      "precision_zh": "轮廓是 Natural Earth 微型岛里鱼钓岛一带和赤尾屿的现代岸线，大致。不用冲绳县界，不画海域，也不是 1895 年的测绘。",
+      "statements": [
+        {
+          "role": "control",
+          "from": "1895-01-14",
+          "until": "1945-09-02",
+          "party": {"qid": "Q17", "zh": "日本"},
+          "draw": "fill",
+          "color_kind": "de_facto",
+          "text": "1895-01-14 日本内阁决定把这些无人岛编入冲绳县。填色是现代岛形，不是海域。",
+          "sources": ["https://en.wikipedia.org/wiki/Senkaku_Islands_dispute"]
+        },
+        {
+          "role": "control",
+          "from": "1945-09-02",
+          "until": "1972-05-15",
+          "party": {"qid": "Q30", "zh": "美国"},
+          "draw": "fill",
+          "color_kind": "de_facto",
+          "text": "1945-09-02 起不记成日本的日常管治。旧金山和约第三条把北纬 29 度以南的南西诸岛置于美国管理，1952-04-28 生效。这不是把主权判给美国。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Treaty_of_San_Francisco",
+            "https://en.wikipedia.org/wiki/Okinawa_Reversion_Agreement"
+          ]
+        },
+        {
+          "role": "control",
+          "from": "1972-05-15",
+          "party": {"qid": "Q17", "zh": "日本"},
+          "draw": "fill",
+          "color_kind": "de_facto",
+          "text": "1972-05-15《冲绳返还协定》生效，施政权回到日本。美国表示不对最终主权采取立场。实控是日本，不是主权判决。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Okinawa_Reversion_Agreement",
+            "https://en.wikipedia.org/wiki/Senkaku_Islands_dispute"
+          ]
+        },
+        {
+          "role": "claim",
+          "from": "1895-01-14",
+          "party": {"qid": "Q17", "zh": "日本"},
+          "text": "日本主张这些岛屿属于冲绳。美国管理的那一段不改写这一主张。",
+          "sources": ["https://en.wikipedia.org/wiki/Senkaku_Islands_dispute"]
+        },
+        {
+          "role": "claim",
+          "from": "1971-06-11",
+          "until": "1971-12-30",
+          "party": {"qid": "Q865", "zh": "中华民国"},
+          "draw": "dash",
+          "label": "中华民国声索，不是实控",
+          "text": "英文维基把中华民国公开主张钓鱼台记在 1971-06-11。本层用这一天。中华人民共和国的声明还没出。虚线不是实控。",
+          "sources": ["https://en.wikipedia.org/wiki/Senkaku_Islands_dispute"]
+        },
+        {
+          "role": "claim",
+          "from": "1971-12-30",
+          "party": {"qid": "Q865", "zh": "中华民国"},
+          "draw": "dash",
+          "label": "两岸声索，不是实控",
+          "text": "中华民国的声索继续。虚线不是实控，也不是海域。",
+          "sources": ["https://en.wikipedia.org/wiki/Senkaku_Islands_dispute"]
+        },
+        {
+          "role": "claim",
+          "from": "1971-12-30",
+          "party": {"qid": "Q148", "zh": "中华人民共和国"},
+          "draw": "dash",
+          "label": "两岸声索，不是实控",
+          "text": "1971-12-30 中华人民共和国外交部声明主张钓鱼岛。这是声索。1972-05-15 的施政权返还不改写这一行。",
+          "sources": ["https://en.wikipedia.org/wiki/Senkaku_Islands_dispute"]
+        },
+        {
+          "role": "recognition",
+          "from": "1895-01-14",
+          "until": "1972-05-15",
+          "text": "没有把这些岛屿判给一方的联合国决议收进本层。美国的管理不是主权承认。各国表态标待考。",
+          "sources": ["https://en.wikipedia.org/wiki/Senkaku_Islands_dispute"]
+        },
+        {
+          "role": "recognition",
+          "from": "1972-05-15",
+          "text": "返还的是施政权。美国表明不对最终主权采取立场。这不是联合国的判决。两岸的声索不逐条改写成承认名单，标待考。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Okinawa_Reversion_Agreement",
+            "https://en.wikipedia.org/wiki/Senkaku_Islands_dispute"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dokdo",
+      "name_zh": "独岛／竹岛",
+      "geom": "dokdo",
+      "precision_zh": "轮廓是 Natural Earth 这一处微型岛的现代岸线，大致。不用韩国或日本的国界，不画海域。",
+      "statements": [
+        {
+          "role": "control",
+          "from": "1905-02-22",
+          "until": "1945-09-02",
+          "party": {"qid": "Q17", "zh": "日本"},
+          "draw": "fill",
+          "color_kind": "de_facto",
+          "text": "1905-02-22 日本以内阁决定和岛根县告示把竹岛编入。填色是现代岛形。更早的捕鱼不画成疆界。",
+          "sources": ["https://en.wikipedia.org/wiki/Liancourt_Rocks_dispute"]
+        },
+        {
+          "role": "control",
+          "from": "1945-09-02",
+          "until": "1952-01-18",
+          "text": "盟军占领期间，旧金山和约没有点名这些岛礁。不把这一段填成日本或韩国，标待考。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Treaty_of_San_Francisco",
+            "https://en.wikipedia.org/wiki/Liancourt_Rocks_dispute"
+          ]
+        },
+        {
+          "role": "control",
+          "from": "1952-01-18",
+          "party": {"qid": "Q884", "zh": "大韩民国"},
+          "draw": "fill",
+          "color_kind": "de_facto",
+          "text": "1952-01-18 李承晚线把独岛划在韩国一侧。此后由大韩民国实际控制。驻守日子各说不完全相同，不另择一天，标大致。",
+          "sources": ["https://en.wikipedia.org/wiki/Liancourt_Rocks_dispute"]
+        },
+        {
+          "role": "claim",
+          "from": "1905-02-22",
+          "until": "1952-01-18",
+          "party": {"qid": "Q17", "zh": "日本"},
+          "text": "日本主张竹岛。1945-09-02 至 1952-01-18 不填实控，这条主张也不画虚线。",
+          "sources": ["https://en.wikipedia.org/wiki/Liancourt_Rocks_dispute"]
+        },
+        {
+          "role": "claim",
+          "from": "1952-01-18",
+          "party": {"qid": "Q17", "zh": "日本"},
+          "draw": "dash",
+          "label": "日本声索，不是实控",
+          "text": "日本继续主张竹岛。虚线不是 1952-01-18 以后的实控。",
+          "sources": ["https://en.wikipedia.org/wiki/Liancourt_Rocks_dispute"]
+        },
+        {
+          "role": "claim",
+          "from": "1948-08-15",
+          "party": {"qid": "Q884", "zh": "大韩民国"},
+          "text": "大韩民国主张独岛。1948-08-15 国家成立，不把这一天写成已经进驻。",
+          "sources": ["https://en.wikipedia.org/wiki/Liancourt_Rocks_dispute"]
+        },
+        {
+          "role": "recognition",
+          "from": "1905-02-22",
+          "until": "1952-04-28",
+          "text": "旧金山和约 1952-04-28 生效。约文放弃朝鲜，但没有点名这些岛礁。双方解释相反。不把和约写成已经判给一方，标待考。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Treaty_of_San_Francisco",
+            "https://en.wikipedia.org/wiki/Liancourt_Rocks_dispute"
+          ]
+        },
+        {
+          "role": "recognition",
+          "from": "1952-04-28",
+          "text": "和约已经生效，仍然没有点名这些岛礁。没有联合国把它们判给一方的决议收进本层。各国表态不固化，标待考。",
+          "sources": ["https://en.wikipedia.org/wiki/Liancourt_Rocks_dispute"]
         }
       ]
     }

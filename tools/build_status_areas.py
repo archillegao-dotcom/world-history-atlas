@@ -40,6 +40,7 @@ SPECS = {
     # 含台湾本岛、澎湖、金门。马祖纬度超出这块国家轮廓，不在这里。
     "taiwan": ("admin0", ["TWN"]),
     "falklands": ("admin0", ["FLK"]),
+    "gibraltar": ("admin0", ["GIB"]),
     "paracel": ("admin1", ["CN-X01~"]),
     "spratly": ("admin0", ["PGA"]),
     # 今下莱茵、上莱茵、摩泽尔。贝尔福不在上莱茵省。孚日省被割的两个县不在这里。
@@ -114,6 +115,31 @@ def kuril_south():
     return out
 
 
+def minor_in(bb, min_parts):
+    parts = []
+    for f in features("ne_10m_minor_islands.geojson"):
+        for p in _parts(shape(f["geometry"])):
+            if bb.contains(p.representative_point()):
+                parts.append(p)
+    if len(parts) < min_parts:
+        raise SystemExit(f"minor islands in {bb.bounds} : {len(parts)}")
+    return make_valid(unary_union(parts))
+
+
+def senkaku():
+    """钓鱼台列岛。只取微型岛，不用冲绳县界。
+
+    范围盖住鱼钓岛一带和赤尾屿：东经 123.45–124.70，北纬 25.70–25.98。
+    现代岸线，不是 1895 年的测绘，也不画海域。
+    """
+    return minor_in(box(123.45, 25.70, 124.70, 25.98), 4)
+
+
+def dokdo():
+    """独岛／竹岛。只取这一处微型岛，不用韩国或日本的国界。"""
+    return minor_in(box(131.80, 37.20, 131.95, 37.30), 1)
+
+
 def features(name):
     return json.loads((RAW / name).read_text(encoding="utf-8"))["features"]
 
@@ -170,6 +196,8 @@ def main():
         ("matsu", matsu(), "Natural Earth 1:10m minor islands in the Matsu bbox"),
         ("south_georgia", south_georgia(), "Natural Earth 1:10m SGS fragments west of 32W"),
         ("habomai_shikotan", habomai_shikotan(), "Natural Earth 1:10m Kuril fragments south of 43.95N"),
+        ("senkaku", senkaku(), "Natural Earth 1:10m minor islands, Senkaku/Diaoyu cluster"),
+        ("dokdo", dokdo(), "Natural Earth 1:10m minor island, Liancourt Rocks"),
     ):
         rp = geom.representative_point()
         out.append({

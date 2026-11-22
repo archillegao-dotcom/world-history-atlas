@@ -191,6 +191,32 @@ h = hit("2000-06-01", 43.80, 146.74)
 check("2000 色丹写没有交还且实控俄罗斯", "没有交还" in text(rows(h, "habomai_shikotan", "claim")) and "俄罗斯" in text(rows(h, "habomai_shikotan", "control")), text(rows(h, "habomai_shikotan", "claim")))
 check("2000 国后不落入齿舞色丹", not any(x["id"] == "habomai_shikotan" for x in hit("2000-06-01", 44.10, 145.83)), "kunashir")
 
+# 直布罗陀：条约日才填；现代轮廓含地峡；2353 不判主权
+h = hit("1713-07-12", 36.14, -5.35)
+check("1713-07-12 直布罗陀还不填", "不填色" in text(rows(h, "gibraltar", "control")), text(rows(h, "gibraltar", "control")))
+h = hit("1713-07-13", 36.14, -5.35)
+check("1713-07-13 直布罗陀实控英国、西班牙声索不是实控", "英国" in text(rows(h, "gibraltar", "control")) and "西班牙" in text(rows(h, "gibraltar", "claim")) and "不是实控" in text(rows(h, "gibraltar", "claim")), text(rows(h, "gibraltar", "claim")))
+h = hit("1967-12-19", 36.14, -5.35)
+check("1967-12-19 直布罗陀写 2353 且没有判给西班牙", "2353" in text(rows(h, "gibraltar", "recognition")) and "没有把主权判给西班牙" in text(rows(h, "gibraltar", "recognition")), text(rows(h, "gibraltar", "recognition")))
+
+# 钓鱼台：1972 以前实控不是日本；两岸声索从各自的日子起；不把那霸算进去
+h = hit("1960-06-01", 25.765, 123.528)
+check("1960 钓鱼台实控美国不是日本日常管治", "美国" in text(rows(h, "senkaku", "control")) and "不记成日本的日常管治" in text(rows(h, "senkaku", "control")), text(rows(h, "senkaku", "control")))
+h = hit("1971-06-11", 25.765, 123.528)
+check("1971-06-11 中华民国已声索、中华人民共和国声明还没出", "中华民国" in text(rows(h, "senkaku", "claim")) and "声明还没出" in text(rows(h, "senkaku", "claim")), text(rows(h, "senkaku", "claim")))
+h = hit("1972-05-15", 25.765, 123.528)
+c, cl = text(rows(h, "senkaku", "control")), text(rows(h, "senkaku", "claim"))
+check("1972-05-15 钓鱼台实控日本、两岸声索不是实控", "回到日本" in c and "中华民国" in cl and "中华人民共和国" in cl and "不是实控" in cl, c + " || " + cl)
+check("1972 那霸不落入钓鱼台", not any(x["id"] == "senkaku" for x in hit("1972-05-15", 26.21, 127.68)), "naha")
+
+# 独岛／竹岛
+h = hit("1940-06-01", 37.24, 131.86)
+check("1940 独岛实控日本", "日本" in text(rows(h, "dokdo", "control")), text(rows(h, "dokdo", "control")))
+h = hit("1950-06-01", 37.24, 131.86)
+check("1950 独岛不填并标待考", "待考" in text(rows(h, "dokdo", "control")) and "dokdo-control" not in ids("1950-06-01", "dokdo"), text(rows(h, "dokdo", "control")))
+h = hit("1952-01-18", 37.24, 131.86)
+check("1952-01-18 独岛实控大韩民国、日本声索不是此后的实控", "大韩民国" in text(rows(h, "dokdo", "control")) and "以后的实控" in text(rows(h, "dokdo", "claim")) and "日本" in text(rows(h, "dokdo", "claim")), text(rows(h, "dokdo", "claim")))
+
 print(f"FAILS {len(fails)}")
 for f in fails:
     print(" -", f)
