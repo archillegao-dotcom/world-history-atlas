@@ -3,9 +3,9 @@
   "source": "OpenHistoricalMap",
   "license": "CC0 1.0",
   "license_url": "https://www.openhistoricalmap.org/copyright",
-  "feature_total": 336,
+  "feature_total": 417,
   "counts": {
-    "british_india": 16,
+    "british_india": 19,
     "ceylon": 8,
     "south_asia_other": 1,
     "portuguese_india": 7,
@@ -23,7 +23,8 @@
     "central_asia": 10,
     "colonial_america": 13,
     "canada": 11,
-    "mexico": 45
+    "mexico": 45,
+    "brazil": 78
   },
   "note": "几何见 geom/hist_admin.geojson。缺口见 hist_admin_pending.json。此文件只记过滤后的数量。"
 }
