@@ -81,7 +81,9 @@
       <tr><th>建制</th><td>${WHA.esc(pending ? "—" : (p.kind || "—"))}</td></tr>
       <tr><th>名义所属</th><td>${WHA.esc(p.nominal || "—")}</td></tr>
       <tr><th>实际控制</th><td>${WHA.esc(p.actual || (pending ? "—" : "实控待考"))}</td></tr>
+      ${p.county ? `<tr><th>县域实控</th><td>${WHA.esc(p.county.name)}：${WHA.esc(p.county.actual)}${p.county.confidence ? "（" + WHA.esc(p.county.confidence) + "）" : ""}</td></tr>` : ""}
     </table>`;
+    if (p.county && p.county.note) html += `<div class="note">${WHA.esc(p.county.note)}</div>`;
     if (p.scheme) html += `<div class="s">${WHA.esc(p.scheme)}</div>`;
     if (p.note) html += `<div class="note">${WHA.esc(p.note)}</div>`;
     if (p.line_note && p.line_note !== p.note) html += `<div class="note">${WHA.esc(p.line_note)}</div>`;
