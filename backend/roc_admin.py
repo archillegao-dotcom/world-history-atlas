@@ -71,6 +71,8 @@ def dataset(data_dir) -> dict:
     base = data_dir / "curated"
     rules = json.loads((base / "roc_admin.json").read_text(encoding="utf-8"))
     geoms = json.loads((base / "roc_admin_geom.json").read_text(encoding="utf-8"))
+    faction_path = base / "roc_faction_counties.json"
+    faction = json.loads(faction_path.read_text(encoding="utf-8")) if faction_path.exists() else None
     by_sid = {row["sid"]: row for row in geoms["units"]}
     units = []
     for unit in rules["units"]:
@@ -82,7 +84,7 @@ def dataset(data_dir) -> dict:
         unit["label"] = geom["label"]
         unit["_shape"] = shape(geom["geom"])
         units.append(unit)
-    _CACHE = {"meta": rules, "units": units}
+    _CACHE = {"meta": rules, "units": units, "faction": faction}
     return _CACHE
 
 
@@ -134,6 +136,39 @@ def locate(units, lon: float, lat: float, day: str):
     if gaps:
         return gaps[0], "gap"
     return None, "none"
+
+
+def _county_at(pack: dict, prov_id: str | None, lon: float, lat: float, day: str):
+    """点落到 1931 年治所泰森格。只在山西、广西两省里找最近的治所。"""
+    faction = pack.get("faction")
+    if not faction or prov_id not in ("shanxi", "guangxi"):
+        return None
+    best = None
+    best_d = 1e9
+    counties = faction["counties"]
+    for cid in faction["by_province"].get(prov_id) or []:
+        cell = counties[cid]
+        dx = cell["lon"] - lon
+        dy = cell["lat"] - lat
+        dist = dx * dx + dy * dy
+        if dist < best_d:
+            best_d = dist
+            best = cell
+    if best is None or best_d > 4:
+        return None
+    for span in best["spans"]:
+        if _on(day, span.get("from"), span.get("until")):
+            return {
+                "id": best["id"],
+                "name": best["name"],
+                "actual": span.get("actual"),
+                "certainty": span.get("certainty"),
+                "from": span.get("from"),
+                "until": span.get("until"),
+                "note": span.get("note") or "",
+                "sources": span.get("sources") or [],
+            }
+    return None
 
 
 def _sources(unit: dict, control) -> list[str]:
@@ -188,11 +223,22 @@ def place_at(pack, lon: float | None, lat: float | None, day: str) -> dict:
         }
     named = _name(unit, day)
     control = _control(unit, day)
+    county = _county_at(pack, unit.get("id"), lon, lat, day)
     bits = [shared]
     if unit.get("line_note"):
         bits.append(unit["line_note"])
     if control and control.get("note"):
         bits.append(control["note"])
+    if county:
+        bits.append(
+            f"县域：{county['name']}（1931年治所）。实际控制：{county['actual']}。"
+            f"标{county['certainty']}。{county['from']}起至{county['until']}。"
+            f"{county['note']}"
+        )
+    sources = _sources(unit, control)
+    for src in (county or {}).get("sources") or []:
+        if src not in sources:
+            sources.append(src)
     return {
         "status": "draw",
         "id": unit["id"],
@@ -200,9 +246,10 @@ def place_at(pack, lon: float | None, lat: float | None, day: str) -> dict:
         "kind": named.get("kind") or "",
         "nominal": _nominal(unit, day, control),
         "actual": control.get("actual") if control else ACTUAL_PENDING,
+        "county": county,
         "scheme": unit.get("scheme") or "",
         "line_note": unit.get("line_note") or "",
-        "sources": _sources(unit, control),
+        "sources": sources,
         "note": "".join(bits),
     }
 
@@ -220,6 +267,7 @@ def coverage_note(meta: dict) -> str:
         "护国只标了1915-12-25的昆明县城点。1922年向赣的粤汉铁路收到6月17日。"
         "护法、第一次直奉、1926–1928北伐、1930年中原大战、蒋桂、中东路、热河、塘沽停战线、淞沪停战线、闽变、两广、西安、中央苏区、长征和冀东画了大致线，来源写明未核对《中華民國史事紀要》。"
         "这些线不是县界，也不是辖境。"
+        "晋系和新桂系的填色用1931年治所县域，标大致或待考，不代替名义所属。"
         "九一八后的进占线收到1932-03-01，不改满洲国期间不画东北三省的规则。"
         "1938年10月有武汉会战的大致前线。"
         "1937年12月有南京保卫战的大致线，1944年11月有桂柳会战的大致线，1948年11月有淮海战役的大致线。"

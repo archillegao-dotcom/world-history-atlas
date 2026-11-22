@@ -59,6 +59,8 @@ def roc_shapes():
 
 # 这两条如果整省另画，会盖住已经核对过的首都点：1920 年北京的五色旗、1935 年南京的青天白日满地红。
 SKIP_FILL = {"南京国民政府", "皖系"}
+# 这两支改用 1931 年县域填色，不再整省一块。见 data/curated/roc_faction_counties.json。
+COUNTY_FILL = {"晋系（阎锡山）", "桂系（李宗仁、白崇禧）"}
 CCP_ACTUAL = "中国共产党"
 PRC_FROM, PRC_UNTIL = "1949-10-01", "1950-01-01"
 # 台湾另有底图多边形。西藏不拿这套行省轮廓覆盖甘丹颇章。
@@ -98,7 +100,7 @@ def _pieces(rules):
     for unit in rules["units"]:
         for control in unit.get("controls") or []:
             actual = control.get("actual")
-            if not actual or actual in SKIP_FILL:
+            if not actual or actual in SKIP_FILL or actual in COUNTY_FILL:
                 continue
             for a0, b0 in _draw_spans(unit):
                 a, b = max(control["from"], a0), min(control["until"], b0)
@@ -125,6 +127,36 @@ def _slices(pieces):
             else:
                 merged.append((actual, a, b, ids))
     return merged
+
+
+def faction_county_zones():
+    """晋系、新桂系按 1931 年县域填色。待考的县不在这些名单里。"""
+    path = config.DATA_DIR / "curated" / "roc_faction_counties.json"
+    data = json.loads(path.read_text(encoding="utf-8"))
+    notes = data["notes"]
+    out = []
+    for fill in data["fills"]:
+        noted = notes[fill["note"]]
+        out.append({
+            "id": fill["id"],
+            "group": "roc_warlord",
+            "kind": "de_facto",
+            "as_polity": True,
+            "name_zh": fill["name_zh"],
+            "name_en": "County control, 1931 seats",
+            "controller": {"qid": f"rocact:{fill['slug']}", "zh": fill["actual"]},
+            "from": fill["from"],
+            "until": fill["until"],
+            "geometry": {"roc_counties": fill["counties"]},
+            "approx": True,
+            "dates_note": (
+                f"{fill['from']} 起至 {fill['until']}。{len(fill['counties'])} 个 1931 年县域。"
+                f"标{fill['certainty']}。名义所属仍在省界面板，不写在这一层。"
+            ),
+            "note": noted["note"] + " 大致。县域为治所泰森多边形近似。",
+            "sources": noted["sources"],
+        })
+    return out
 
 
 def province_fill_zones():
@@ -269,6 +301,7 @@ def resolve(spec):
 def main():
     cur = json.loads((config.DATA_DIR / "curated" / "control_zones.json").read_text(encoding="utf-8"))
     early, late = province_fill_zones()
+    early.extend(faction_county_zones())
     # 1949 年那五块用的是今天的省界。改由上面的历史省界填色，不再叠在一起。
     zones = early + [z for z in cur["zones"] if not str(z.get("id", "")).startswith("ccw_ccp_1949_")] + late
     out = []
