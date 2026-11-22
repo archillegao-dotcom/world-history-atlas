@@ -206,10 +206,10 @@ class Diplomacy:
             rows = self.acts.get(node.get("id"))
             if rows is None:
                 rows = node.get("acts") or []
-            today = [self._act_public(a) for a in rows if a.get("date") == day]
+            today = [self._act_public(a) for a in rows if _act_on_day(a, day)]
             previous = None
             if not today:
-                earlier = [a for a in rows if a.get("date") and a["date"] < day]
+                earlier = [a for a in rows if _single_day(a) and a["date"] < day]
                 if earlier:
                     last = max(a["date"] for a in earlier)
                     previous = {
@@ -281,6 +281,22 @@ def _prefer(rows: list[dict]) -> dict | None:
     return rows[0]
 
 
+def _single_day(row: dict) -> bool:
+    if row.get("dates") or row.get("date_from"):
+        return False
+    return bool(re.fullmatch(r"\d{4}-\d{2}-\d{2}", row.get("date") or ""))
+
+
+def _act_on_day(row: dict, day: str) -> bool:
+    dates = row.get("dates") or []
+    if dates:
+        return day in dates
+    start, end = row.get("date_from") or "", row.get("date_until") or ""
+    if start and end:
+        return start <= day <= end
+    return row.get("date") == day
+
+
 def _ga_token(zh: str) -> str:
     match = re.search(r"第(.+?)号决议", zh or "")
     return match.group(1) if match else ""
@@ -288,7 +304,13 @@ def _ga_token(zh: str) -> str:
 
 def _compose_ga(row: dict) -> dict | None:
     date = row.get("date") or ""
-    if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", date):
+    span = (row.get("date_span") or "").strip()
+    dates = [d for d in (row.get("dates") or []) if re.fullmatch(r"\d{4}-\d{2}-\d{2}", d or "")]
+    date_from = row.get("date_from") or ""
+    date_until = row.get("date_until") or ""
+    single = bool(re.fullmatch(r"\d{4}-\d{2}-\d{2}", date))
+    ranged = bool(date_from and date_until and date_from <= date_until)
+    if not single and not dates and not ranged:
         return None
     display = (row.get("display") or row.get("symbol") or "").strip()
     number = re.sub(r"(?i)^A/RES/", "", display).strip()
@@ -297,9 +319,18 @@ def _compose_ga(row: dict) -> dict | None:
     vote = (row.get("vote_zh") or "").strip() or "无"
     kind = row.get("library_kind") or ""
     library_label = "联合国数字图书馆" if kind == "record" else "联合国数字图书馆检索"
-    return {
-        "date": date,
-        "zh": f"第{number}号决议：{title}。表决：{vote}",
+    if ranged and not span:
+        span = f"{date_from} 至 {date_until}"
+    if dates and not span and not single:
+        span = "、".join(dates)
+    when = span if (ranged or (dates and not single)) else ""
+    zh = f"第{number}号决议：{title}。"
+    if when:
+        zh += f"通过日期：{when}。"
+    zh += f"表决：{vote}"
+    act = {
+        "date": when or date,
+        "zh": zh,
         "url": row.get("doc_url") or "",
         "label": "联合国正式文件系统",
         "url2": row.get("library_url") or "",
@@ -307,6 +338,12 @@ def _compose_ga(row: dict) -> dict | None:
         "url3": row.get("table_url") or "",
         "label3": "大会决议表",
     }
+    if ranged:
+        act["date_from"] = date_from
+        act["date_until"] = date_until
+    elif dates and not single:
+        act["dates"] = dates
+    return act
 
 
 def _merge_unga(base, acts: dict) -> None:

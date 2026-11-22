@@ -88,28 +88,69 @@ def valid_iso(year: int, month: int, day: int) -> str | None:
     return f"{year:04d}-{month:02d}-{day:02d}"
 
 
-def parse_date(text: str) -> tuple[str | None, str, str]:
-    """返回 (iso 或空, 原因, 日期原文)。多个日期或区间不猜单日。"""
-    if re.search(r"\d{1,2}\s+[A-Za-z]{3,9}\.?\s*[-–—]\s*\d{1,2}\s+[A-Za-z]{3,9}", text or ""):
-        raw = re.sub(r"\s+", " ", (text or "").replace("\n", " ")).strip()
-        return None, "通过日期是区间，不写成单日", raw
-    found = list(DATE_RE.finditer(text or ""))
+def classify_dates(text: str) -> dict:
+    """单日、表上写明的多日，或同一句里的区间。不把多日收成其中一天。"""
+    raw = re.sub(r"\s+", " ", (text or "").replace("\n", " ")).strip()
+    cross = re.search(
+        r"(\d{1,2})\s+([A-Za-z]{3,9})\.?\s*[-–—]\s*(\d{1,2})\s+([A-Za-z]{3,9})\.?\s*(\d{4})",
+        raw,
+    )
+    if cross:
+        mon1 = MONTHS.get(cross.group(2).lower())
+        mon2 = MONTHS.get(cross.group(4).lower())
+        year = int(cross.group(5))
+        if mon1 and mon2:
+            start = valid_iso(year, mon1, int(cross.group(1)))
+            end = valid_iso(year, mon2, int(cross.group(3)))
+            if start and end and start <= end:
+                return {
+                    "kind": "range",
+                    "date_from": start,
+                    "date_until": end,
+                    "date_span": f"{start} 至 {end}",
+                    "date_raw": cross.group(0),
+                }
+        return {"kind": "none", "date_raw": raw, "why": "通过日期是区间，无法换算"}
+    found = list(DATE_RE.finditer(raw))
     if not found:
-        return None, "通过日期无记录", ""
-    if len(found) > 1:
-        raw = "；".join(m.group(0) for m in found)
-        return None, "通过日期不止一个，不选取单日", raw
-    match = found[0]
-    raw = match.group(0)
-    mon = MONTHS.get(match.group(3).lower())
-    if not mon:
-        return None, "月份无记录", raw
-    if match.group(2):
-        return None, "通过日期是区间，不写成单日", raw
-    iso = valid_iso(int(match.group(4)), mon, int(match.group(1)))
-    if not iso:
-        return None, "通过日期无法换算", raw
-    return iso, "", raw
+        return {"kind": "none", "date_raw": "", "why": "通过日期无记录"}
+    if len(found) == 1 and found[0].group(2):
+        match = found[0]
+        mon = MONTHS.get(match.group(3).lower())
+        year = int(match.group(4))
+        start = valid_iso(year, mon, int(match.group(1))) if mon else None
+        end = valid_iso(year, mon, int(match.group(2))) if mon else None
+        if start and end and start <= end:
+            return {
+                "kind": "range",
+                "date_from": start,
+                "date_until": end,
+                "date_span": f"{start} 至 {end}",
+                "date_raw": match.group(0),
+            }
+        return {"kind": "none", "date_raw": match.group(0), "why": "通过日期是区间，无法换算"}
+    dates: list[str] = []
+    for match in found:
+        if match.group(2):
+            return {"kind": "none", "date_raw": raw, "why": "通过日期无法换算"}
+        mon = MONTHS.get(match.group(3).lower())
+        iso = valid_iso(int(match.group(4)), mon, int(match.group(1))) if mon else None
+        if not iso:
+            return {"kind": "none", "date_raw": raw, "why": "通过日期无法换算"}
+        if iso not in dates:
+            dates.append(iso)
+    if len(dates) == 1:
+        return {"kind": "single", "date": dates[0], "date_raw": found[0].group(0)}
+    dates.sort()
+    return {"kind": "dates", "dates": dates, "date_span": "、".join(dates), "date_raw": raw}
+
+
+def parse_date(text: str) -> tuple[str | None, str, str]:
+    """返回 (单日 iso 或空, 原因, 日期原文)。多日和区间不收成单日。"""
+    info = classify_dates(text)
+    if info.get("kind") == "single":
+        return info["date"], "", info.get("date_raw") or ""
+    return None, info.get("why") or "通过日期不是单日", info.get("date_raw") or ""
 
 
 def vote_zh(lines: list[str]) -> tuple[str, str]:
@@ -212,7 +253,10 @@ def parse_rows(page_html: str, session_kind: str, session: str, table_url: str) 
             if DATE_RE.search(text):
                 date_cell = text
                 break
-        iso, why, date_raw = parse_date(date_cell)
+        classified = classify_dates(date_cell)
+        iso = classified.get("date") or ""
+        date_raw = classified.get("date_raw") or ""
+        why = classified.get("why") or ""
         title = ""
         if texts:
             last = re.sub(r"\s+", " ", texts[-1].replace("\n", " ")).strip()
@@ -228,15 +272,22 @@ def parse_rows(page_html: str, session_kind: str, session: str, table_url: str) 
             "display": display if display.upper().startswith("A/RES/") else symbol,
             "date": iso or "",
             "date_raw": date_raw,
+            "date_span": classified.get("date_span") or "",
+            "dates": classified.get("dates") or [],
+            "date_from": classified.get("date_from") or "",
+            "date_until": classified.get("date_until") or "",
             "title": title,
             "vote_raw": vote_raw,
-            "vote_zh": vote if iso else vote,
+            "vote_zh": vote,
             "meeting": meeting_of(date_cell),
             "doc_url": absolute_doc(href),
             "library_url": "",
             "library_kind": "",
             "table_url": table_url,
         }
+        if classified.get("kind") in ("range", "dates"):
+            kept.append(row)
+            continue
         if not iso:
             row["gap"] = why or "通过日期无记录"
             gaps.append({
