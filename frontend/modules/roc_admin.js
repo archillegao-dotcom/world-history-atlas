@@ -87,7 +87,8 @@
     if (p.line_note && p.line_note !== p.note) html += `<div class="note">${WHA.esc(p.line_note)}</div>`;
     const links = (p.sources || []).map((url) => `<a href="${WHA.esc(url)}" target="_blank" rel="noopener">来源</a>`).join(" ");
     if (links) html += `<div class="l">${links}</div>`;
-    const wars = r.wars || [];
+    const wars = r.europe ? [] : (r.wars || []);
+    if (!r.europe) {
     html += `<div class="s">内战</div>`;
     if (!wars.length) html += `<div class="note">这一天、这个省没有在画的内战。</div>`;
     for (const war of wars) {
@@ -106,7 +107,12 @@
       html += `<div class="s">县城点（不是县界）</div>`;
       html += `<div class="note">${seats.map((s) => WHA.esc(s.label || s.name)).join("、")}。${WHA.esc(seats[0].note || "")}</div>`;
     }
-    html += `<div class="source">省界：ENP-China / Virtual Shanghai（${WHA.esc(r.license || "CC0 1.0")}）。县城点：MCGD_Rep（${WHA.esc(r.county_license || "CC BY 4.0")}）。有县域填色的是大致，县域为治所泰森多边形近似，裁在历史省界和海岸上，不是县界。</div>`;
+    }
+    if (r.europe) {
+      html += `<div class="source">欧洲一级行政区，许可：${WHA.esc(r.license || "见来源")}。没有合法几何的地方仍标省界待考。不画今天的省界。</div>`;
+    } else {
+      html += `<div class="source">省界：ENP-China / Virtual Shanghai（${WHA.esc(r.license || "CC0 1.0")}）。县城点：MCGD_Rep（${WHA.esc(r.county_license || "CC BY 4.0")}）。有县域填色的是大致，县域为治所泰森多边形近似，裁在历史省界和海岸上，不是县界。</div>`;
+    }
     box.innerHTML = html;
     return box;
   });
