@@ -3,14 +3,14 @@
   "source": "OpenHistoricalMap CC0；美国州和领地补 Newberry Atlas（现行许可 CC0，见国会图书馆 2018487899）",
   "license": "CC0 1.0",
   "license_url": "https://www.openhistoricalmap.org/copyright",
-  "feature_total": 785,
+  "feature_total": 832,
   "counts": {
     "british_india": 26,
     "ceylon": 8,
     "south_asia_other": 1,
     "portuguese_india": 7,
     "british_india_princely": 40,
-    "ottoman": 2,
+    "ottoman": 7,
     "korea": 37,
     "japan": 13,
     "taiwan": 1,
@@ -26,7 +26,11 @@
     "mexico": 45,
     "brazil": 78,
     "argentina": 17,
-    "australia": 11
+    "australia": 11,
+    "new_spain": 28,
+    "viceroyalty_plata": 3,
+    "viceroyalty_granada": 5,
+    "viceroyalty_peru": 6
   },
   "not_used": [
     "IPUMS NHGIS：条款写明未经许可不得再分发，不收。",
