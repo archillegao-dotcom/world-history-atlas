@@ -1339,8 +1339,18 @@ def main():
          "民國三十一年七月至九月，印页五四五（PDF 第552页），页眉九月二日，"
          "追述八月三十一日午克复永康、武义。武义的失陷日没有锁，不画武义。"
          "收到八月三十一日。不在既有大块里。"),
+        ("华容", 112.66824, 29.55590, "1943-03-10", "1943-03-20",
+         "华容县域。已核對《中華民國史事紀要》民國三十二年一月至六月，"
+         "印页六一三（PDF 第620页），页眉三月二十、二十一日。"
+         "华容这一条在二十一日驻苏大使那一条之前，写本月十日华容失陷，"
+         "十九日午冲入县城东北角，本日城外东北高地支援，终于克复华容县城。"
+         "本日是二十日。注里的三月二十一日是《中央日报》的出版日。"
+         "十九日午只写入东北角，不把这一天写成已经克复。收到三月二十日。不在既有大块里。"),
     ]
-    for name, lon, lat, fall, end, why in fresh:
+    zenodo = "https://zenodo.org/records/5721459"
+    for item in fresh:
+        name, lon, lat, fall, end, why = item[:6]
+        sources = item[6] if len(item) > 6 else [vol31a, zenodo]
         cid = cell_at(features, tree, lon, lat)
         if not cid:
             print("FRESH NO CELL", name)
@@ -1362,7 +1372,7 @@ def main():
             "approx": True,
             "note": why + PHRASE,
             "dates_note": f"{name} {fall} 起，收到 {end}。已核對《中華民國史事紀要》。",
-            "sources": [vol31a, "https://zenodo.org/records/5721459"],
+            "sources": sources,
         })
         print("fresh cell", name, fall, end, cid)
 
