@@ -33,7 +33,7 @@ def tend(r):
 
 
 _FIX_FIELDS = ("zh", "en", "desc", "parties", "countries", "signed", "adopted", "effective",
-                "intended_effective", "end", "types", "status", "also_show", "enwiki", "zhwiki", "sl")
+                "intended_effective", "end", "inception", "types", "status", "also_show", "enwiki", "zhwiki", "sl")
 
 
 def apply_treaty_fixes(recs, data_dir, fixes=None):
@@ -63,7 +63,11 @@ def apply_treaty_fixes(recs, data_dir, fixes=None):
             recs.append(r)
             by[tid] = r
         for k in _FIX_FIELDS:
-            if k in fx:
+            if k not in fx:
+                continue
+            if fx[k] is None:
+                r.pop(k, None)
+            else:
                 r[k] = fx[k]
         r["zh_mt"] = False
         if fx.get("summary_zh"):

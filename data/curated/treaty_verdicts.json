@@ -1,0 +1,30 @@
+{
+  "_doc": "打开过公开来源、确认不是数据错误的待核项。verified_ok 只勾销列出的问题类型。没有写在这里的，仍待核。",
+  "Q1248976": {
+    "long_gap": {
+      "verdict": "verified_ok",
+      "note": "1978年8月22日通过，8月23日开放签署，1996年11月6日按第49条第1款生效。十八年是批准过程，不是两个版本写进同一条。",
+      "sources": [
+        "https://treaties.un.org/pages/ViewDetails.aspx?src=TREATY&mtdsg_no=XXIII-2&chapter=23&clang=_en"
+      ]
+    }
+  },
+  "Q2858485": {
+    "long_gap": {
+      "verdict": "verified_ok",
+      "note": "2009-05-15通过，生效条件2023-06-26满足，公约于2025-06-26生效。间隔是生效条件，不是两个版本。",
+      "sources": [
+        "https://www.mofa.go.jp/press/release/pressite_000001_01397.html"
+      ]
+    }
+  },
+  "Q7124649": {
+    "long_gap": {
+      "verdict": "verified_ok",
+      "note": "1949-06-18通过。联合国条约集写明1967-09-14生效，即九个指定国家批准登记后六个月。间隔是批准条件。",
+      "sources": [
+        "https://treaties.un.org/doc/Publication/UNTS/Volume%20605/volume-605-I-8768-English.pdf"
+      ]
+    }
+  }
+}
