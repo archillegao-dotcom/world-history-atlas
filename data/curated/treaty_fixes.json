@@ -721,13 +721,32 @@
     "zh": "关于山东省之条约",
     "en": "Treaty respecting the Province of Shantung",
     "sl": 40,
-    "types": [{"en": "treaty", "zh": "条约"}],
-    "signed": {"y": 1915, "m": 5, "d": 25, "p": 11},
-    "parties": [
-      {"s": "Q13426199", "via": "curated"},
-      {"s": "Q188712", "via": "curated"}
+    "types": [
+      {
+        "en": "treaty",
+        "zh": "条约"
+      }
     ],
-    "countries": ["Q13426199", "Q188712"],
+    "signed": {
+      "y": 1915,
+      "m": 5,
+      "d": 25,
+      "p": 11
+    },
+    "parties": [
+      {
+        "s": "Q13426199",
+        "via": "curated"
+      },
+      {
+        "s": "Q188712",
+        "via": "curated"
+      }
+    ],
+    "countries": [
+      "Q13426199",
+      "Q188712"
+    ],
     "desc": "1915-05-25北京政府与日本签署的两约之一，只这一件，不是二十一条全文都签了字。批准互换日和废止日待考，不把签署日写成生效日，也不把1922-02-04写成这一件的废止日。未能核对《中華民國史事紀要》原文。",
     "note": "签署日取公开记载的1915-05-25。生效日、废止日待考。未能核对《中華民國史事紀要》原文。",
     "summary_zh": "1915年5月25日签署。生效日和废止日待考。未能核对《中華民國史事紀要》原文。",
@@ -741,13 +760,32 @@
     "zh": "关于南满洲及东部内蒙古之条约",
     "en": "Treaty respecting South Manchuria and Eastern Inner Mongolia",
     "sl": 40,
-    "types": [{"en": "treaty", "zh": "条约"}],
-    "signed": {"y": 1915, "m": 5, "d": 25, "p": 11},
-    "parties": [
-      {"s": "Q13426199", "via": "curated"},
-      {"s": "Q188712", "via": "curated"}
+    "types": [
+      {
+        "en": "treaty",
+        "zh": "条约"
+      }
     ],
-    "countries": ["Q13426199", "Q188712"],
+    "signed": {
+      "y": 1915,
+      "m": 5,
+      "d": 25,
+      "p": 11
+    },
+    "parties": [
+      {
+        "s": "Q13426199",
+        "via": "curated"
+      },
+      {
+        "s": "Q188712",
+        "via": "curated"
+      }
+    ],
+    "countries": [
+      "Q13426199",
+      "Q188712"
+    ],
     "desc": "1915-05-25签署的另一件。不把它和山东那一件并成一份《二十一条》。废止日待考。未能核对《中華民國史事紀要》原文。",
     "note": "签署日1915-05-25。生效日、废止日待考。未能核对《中華民國史事紀要》原文。",
     "summary_zh": "1915年5月25日签署。生效日和废止日待考。未能核对《中華民國史事紀要》原文。",
@@ -760,21 +798,74 @@
     "zh": "九国公约",
     "en": "Nine-Power Treaty",
     "parties": [
-      {"s": "Q13426199", "via": "curated"},
-      {"s": "Q30", "via": "curated"},
-      {"s": "Q31", "via": "curated"},
-      {"s": "Q145", "via": "curated"},
-      {"s": "Q174193", "via": "curated"},
-      {"s": "Q70802", "via": "curated"},
-      {"s": "Q142", "via": "curated"},
-      {"s": "Q172579", "via": "curated"},
-      {"s": "Q188712", "via": "curated"},
-      {"s": "Q55", "via": "curated"},
-      {"s": "Q29999", "via": "curated"},
-      {"s": "Q45", "via": "curated"},
-      {"s": "Q167360", "via": "curated"}
+      {
+        "s": "Q13426199",
+        "via": "curated"
+      },
+      {
+        "s": "Q30",
+        "via": "curated"
+      },
+      {
+        "s": "Q31",
+        "via": "curated"
+      },
+      {
+        "s": "Q145",
+        "via": "curated"
+      },
+      {
+        "s": "Q174193",
+        "via": "curated"
+      },
+      {
+        "s": "Q70802",
+        "via": "curated"
+      },
+      {
+        "s": "Q142",
+        "via": "curated"
+      },
+      {
+        "s": "Q172579",
+        "via": "curated"
+      },
+      {
+        "s": "Q188712",
+        "via": "curated"
+      },
+      {
+        "s": "Q55",
+        "via": "curated"
+      },
+      {
+        "s": "Q29999",
+        "via": "curated"
+      },
+      {
+        "s": "Q45",
+        "via": "curated"
+      },
+      {
+        "s": "Q167360",
+        "via": "curated"
+      }
     ],
-    "countries": ["Q13426199", "Q30", "Q31", "Q145", "Q174193", "Q70802", "Q142", "Q172579", "Q188712", "Q55", "Q29999", "Q45", "Q167360"],
+    "countries": [
+      "Q13426199",
+      "Q30",
+      "Q31",
+      "Q145",
+      "Q174193",
+      "Q70802",
+      "Q142",
+      "Q172579",
+      "Q188712",
+      "Q55",
+      "Q29999",
+      "Q45",
+      "Q167360"
+    ],
     "desc": "全称是《九国间关于中国事件应适用各原则及政策之条约》。1922-02-06签署。导出里已有签署日。生效日待考，不把1925-08-05写成已经核对。英国、法国、荷兰、葡萄牙补了地图上能对上的政权编号，不是另加国家。未能核对《中華民國史事紀要》原文。",
     "note": "不另插一条。生效日待考。未能核对《中華民國史事紀要》原文。",
     "summary_zh": "1922年2月6日签署。生效日待考。未能核对《中華民國史事紀要》原文。",
@@ -789,13 +880,32 @@
     "zh": "解决山东悬案条约",
     "en": "Treaty for the Settlement of Outstanding Questions relative to Shantung",
     "sl": 40,
-    "types": [{"en": "treaty", "zh": "条约"}],
-    "signed": {"y": 1922, "m": 2, "d": 4, "p": 11},
-    "parties": [
-      {"s": "Q13426199", "via": "curated"},
-      {"s": "Q188712", "via": "curated"}
+    "types": [
+      {
+        "en": "treaty",
+        "zh": "条约"
+      }
     ],
-    "countries": ["Q13426199", "Q188712"],
+    "signed": {
+      "y": 1922,
+      "m": 2,
+      "d": 4,
+      "p": 11
+    },
+    "parties": [
+      {
+        "s": "Q13426199",
+        "via": "curated"
+      },
+      {
+        "s": "Q188712",
+        "via": "curated"
+      }
+    ],
+    "countries": [
+      "Q13426199",
+      "Q188712"
+    ],
     "desc": "1922-02-04中国与日本签署。批准书互换日待考，不把某一天写成已经核对。不把它写成1915年山东条约的废止文书已经在这一天生效。未能核对《中華民國史事紀要》原文。",
     "note": "只写了签署日。互换日待考。未能核对《中華民國史事紀要》原文。",
     "summary_zh": "1922年2月4日签署。批准书互换日待考。未能核对《中華民國史事紀要》原文。",
@@ -809,13 +919,32 @@
     "zh": "中俄解决悬案大纲协定",
     "en": "Agreement on General Principles for the Settlement of the Questions between the Republic of China and the Soviet Union",
     "sl": 40,
-    "types": [{"en": "treaty", "zh": "条约"}],
-    "signed": {"y": 1924, "m": 5, "d": 31, "p": 11},
-    "parties": [
-      {"s": "Q13426199", "via": "curated"},
-      {"s": "Q15180", "via": "curated"}
+    "types": [
+      {
+        "en": "treaty",
+        "zh": "条约"
+      }
     ],
-    "countries": ["Q13426199", "Q15180"],
+    "signed": {
+      "y": 1924,
+      "m": 5,
+      "d": 31,
+      "p": 11
+    },
+    "parties": [
+      {
+        "s": "Q13426199",
+        "via": "curated"
+      },
+      {
+        "s": "Q15180",
+        "via": "curated"
+      }
+    ],
+    "countries": [
+      "Q13426199",
+      "Q15180"
+    ],
     "desc": "1924-05-31在北京签署。正文是否写明签字当日生效，本批没有核对，不把5月31日写成生效日。1924-09-20的奉俄协定是另一件，不并进这一件。未能核对《中華民國史事紀要》原文。",
     "note": "只写了签署日。生效日待考。奉俄协定不并入。未能核对《中華民國史事紀要》原文。",
     "summary_zh": "1924年5月31日签署。生效日待考。不包含1924年9月20日的奉俄协定。未能核对《中華民國史事紀要》原文。",
@@ -829,13 +958,32 @@
     "zh": "中苏伯力会议议定书",
     "en": "Khabarovsk Protocol",
     "sl": 40,
-    "types": [{"en": "treaty", "zh": "条约"}],
-    "signed": {"y": 1929, "m": 12, "d": 20, "p": 11},
-    "parties": [
-      {"s": "Q13426199", "via": "curated"},
-      {"s": "Q15180", "via": "curated"}
+    "types": [
+      {
+        "en": "treaty",
+        "zh": "条约"
+      }
     ],
-    "countries": ["Q13426199", "Q15180"],
+    "signed": {
+      "y": 1929,
+      "m": 12,
+      "d": 20,
+      "p": 11
+    },
+    "parties": [
+      {
+        "s": "Q13426199",
+        "via": "curated"
+      },
+      {
+        "s": "Q15180",
+        "via": "curated"
+      }
+    ],
+    "countries": [
+      "Q13426199",
+      "Q15180"
+    ],
     "desc": "1929-12-20蔡运升在伯力签署《中苏伯力会议议定书》。议定书写自签字日起发生效力。南京国民政府声明不承认，本批不把生效日写成已经核对。未核对《中華民國史事紀要》。",
     "note": "只写了签署日。议定书自身写签字生效，南京国民政府不承认，生效日不写成已经核对。未核对《中華民國史事紀要》。",
     "summary_zh": "1929年12月20日签署。议定书写签字生效，南京国民政府不承认。未核对《中華民國史事紀要》。",
@@ -848,14 +996,38 @@
     "zh": "淞沪停战协定",
     "en": "Shanghai Ceasefire Agreement",
     "sl": 40,
-    "types": [{"en": "treaty", "zh": "条约"}],
-    "signed": {"y": 1932, "m": 5, "d": 5, "p": 11},
-    "effective": {"y": 1932, "m": 5, "d": 5, "p": 11},
-    "parties": [
-      {"s": "Q13426199", "via": "curated"},
-      {"s": "Q188712", "via": "curated"}
+    "types": [
+      {
+        "en": "treaty",
+        "zh": "条约"
+      }
     ],
-    "countries": ["Q13426199", "Q188712"],
+    "signed": {
+      "y": 1932,
+      "m": 5,
+      "d": 5,
+      "p": 11
+    },
+    "effective": {
+      "y": 1932,
+      "m": 5,
+      "d": 5,
+      "p": 11
+    },
+    "parties": [
+      {
+        "s": "Q13426199",
+        "via": "curated"
+      },
+      {
+        "s": "Q188712",
+        "via": "curated"
+      }
+    ],
+    "countries": [
+      "Q13426199",
+      "Q188712"
+    ],
     "desc": "正式名称是《中日上海停战及日方撤军协定》。1932-05-05在上海英国领事馆签署。中文维基百科所引条文写自签字日起生效。废止日不写成某一天已经核对。未核对《中華民國史事紀要》。",
     "note": "签署日和条文里的生效日都是1932-05-05。废止日待考。未核对《中華民國史事紀要》。",
     "summary_zh": "1932年5月5日签署，条文写自签字日起生效。废止日待考。未核对《中華民國史事紀要》。",
@@ -868,14 +1040,38 @@
     "zh": "塘沽协定",
     "en": "Tanggu Truce",
     "sl": 40,
-    "types": [{"en": "treaty", "zh": "条约"}],
-    "signed": {"y": 1933, "m": 5, "d": 31, "p": 11},
-    "effective": {"y": 1933, "m": 5, "d": 31, "p": 11},
-    "parties": [
-      {"s": "Q13426199", "via": "curated"},
-      {"s": "Q188712", "via": "curated"}
+    "types": [
+      {
+        "en": "treaty",
+        "zh": "条约"
+      }
     ],
-    "countries": ["Q13426199", "Q188712"],
+    "signed": {
+      "y": 1933,
+      "m": 5,
+      "d": 31,
+      "p": 11
+    },
+    "effective": {
+      "y": 1933,
+      "m": 5,
+      "d": 31,
+      "p": 11
+    },
+    "parties": [
+      {
+        "s": "Q13426199",
+        "via": "curated"
+      },
+      {
+        "s": "Q188712",
+        "via": "curated"
+      }
+    ],
+    "countries": [
+      "Q13426199",
+      "Q188712"
+    ],
     "desc": "1933-05-31塘沽签署。中文维基百科所引条文写本协定签字后即发生效力，并写明延庆至芦台一线。高丽营、林亭口、芦台没有县城点。废止日待考。未核对《中華民國史事紀要》。",
     "note": "签署日和条文里的生效日都是1933-05-31。废止日待考。未核对《中華民國史事紀要》。",
     "summary_zh": "1933年5月31日签署，条文写签字后即发生效力。废止日待考。未核对《中華民國史事紀要》。",
@@ -888,13 +1084,32 @@
     "zh": "何梅协定",
     "en": "He-Umezu Agreement",
     "sl": 40,
-    "types": [{"en": "treaty", "zh": "条约"}],
-    "signed": {"y": 1935, "m": 7, "d": 6, "p": 11},
-    "parties": [
-      {"s": "Q13426199", "via": "curated"},
-      {"s": "Q188712", "via": "curated"}
+    "types": [
+      {
+        "en": "treaty",
+        "zh": "条约"
+      }
     ],
-    "countries": ["Q13426199", "Q188712"],
+    "signed": {
+      "y": 1935,
+      "m": 7,
+      "d": 6,
+      "p": 11
+    },
+    "parties": [
+      {
+        "s": "Q13426199",
+        "via": "curated"
+      },
+      {
+        "s": "Q188712",
+        "via": "curated"
+      }
+    ],
+    "countries": [
+      "Q13426199",
+      "Q188712"
+    ],
     "desc": "性质有争议。中文维基百科《何梅协定》记1935-06-09梅津提出备忘录，6月11日交正式文本，1935-07-06何应钦以普通信函表示接受。双方没有正式协定手续。国民政府声称何应钦并未正式签字。不把7月6日写成已经生效的正式条约。未核对《中華民國史事紀要》。",
     "note": "性质有争议：备忘录加7月6日的信函，不是经过批准的正式条约。生效日不写成已经核对。未核对《中華民國史事紀要》。",
     "summary_zh": "1935年7月6日何应钦复函。性质有争议，没有正式协定手续。未核对《中華民國史事紀要》。",
@@ -907,13 +1122,32 @@
     "zh": "秦土协定",
     "en": "Qin-Doihara Agreement",
     "sl": 40,
-    "types": [{"en": "treaty", "zh": "条约"}],
-    "signed": {"y": 1935, "m": 6, "d": 27, "p": 11},
-    "parties": [
-      {"s": "Q13426199", "via": "curated"},
-      {"s": "Q188712", "via": "curated"}
+    "types": [
+      {
+        "en": "treaty",
+        "zh": "条约"
+      }
     ],
-    "countries": ["Q13426199", "Q188712"],
+    "signed": {
+      "y": 1935,
+      "m": 6,
+      "d": 27,
+      "p": 11
+    },
+    "parties": [
+      {
+        "s": "Q13426199",
+        "via": "curated"
+      },
+      {
+        "s": "Q188712",
+        "via": "curated"
+      }
+    ],
+    "countries": [
+      "Q13426199",
+      "Q188712"
+    ],
     "desc": "性质有争议。中文维基百科《秦土协定》记这是1935年处理张北事件的非正式外交协议，1935-06-27秦德纯与土肥原贤二在北平签订。不把这一天写成已经批准生效。未核对《中華民國史事紀要》。",
     "note": "性质有争议：非正式协议。只写了1935-06-27。生效日待考。未核对《中華民國史事紀要》。",
     "summary_zh": "1935年6月27日签订的非正式协议。性质有争议。生效日待考。未核对《中華民國史事紀要》。",
@@ -926,14 +1160,38 @@
     "zh": "中苏互不侵犯条约",
     "en": "Sino-Soviet Non-Aggression Treaty",
     "sl": 40,
-    "types": [{"en": "treaty", "zh": "条约"}],
-    "signed": {"y": 1937, "m": 8, "d": 21, "p": 11},
-    "effective": {"y": 1937, "m": 8, "d": 21, "p": 11},
-    "parties": [
-      {"s": "Q13426199", "via": "curated"},
-      {"s": "Q15180", "via": "curated"}
+    "types": [
+      {
+        "en": "treaty",
+        "zh": "条约"
+      }
     ],
-    "countries": ["Q13426199", "Q15180"],
+    "signed": {
+      "y": 1937,
+      "m": 8,
+      "d": 21,
+      "p": 11
+    },
+    "effective": {
+      "y": 1937,
+      "m": 8,
+      "d": 21,
+      "p": 11
+    },
+    "parties": [
+      {
+        "s": "Q13426199",
+        "via": "curated"
+      },
+      {
+        "s": "Q15180",
+        "via": "curated"
+      }
+    ],
+    "countries": [
+      "Q13426199",
+      "Q15180"
+    ],
     "desc": "中文维基百科《中苏互不侵犯条约》导语写1937-08-20，所引约文写一九三七年八月二十一日订于南京，并写签字之日发生效力。本批按约文的8月21日。废止日不写成某一天已经核对。未核对《中華民國史事紀要》。",
     "note": "按约文，签署和生效都是1937-08-21。导语另写8月20日。未核对《中華民國史事紀要》。",
     "summary_zh": "约文写1937年8月21日签字并生效。条目导语写8月20日。未核对《中華民國史事紀要》。",
@@ -1143,30 +1401,70 @@
     "zh": "中美关税条约",
     "en": "Sino-American Tariff Treaty",
     "sl": 40,
-    "types": [{"en": "treaty", "zh": "条约"}],
-    "signed": {"y": 1928, "m": 7, "d": 25, "p": 11},
-    "parties": [
-      {"s": "Q13426199", "via": "curated"},
-      {"s": "Q30", "via": "curated"}
+    "types": [
+      {
+        "en": "treaty",
+        "zh": "条约"
+      }
     ],
-    "countries": ["Q13426199", "Q30"],
+    "signed": {
+      "y": 1928,
+      "m": 7,
+      "d": 25,
+      "p": 11
+    },
+    "parties": [
+      {
+        "s": "Q13426199",
+        "via": "curated"
+      },
+      {
+        "s": "Q30",
+        "via": "curated"
+      }
+    ],
+    "countries": [
+      "Q13426199",
+      "Q30"
+    ],
     "desc": "《中華民國史事紀要》民國十七年七月至十二月印页一八三记民國十七年七月二十五日宋子文与美国公使馬慕瑞在北平签订中美关税新约。约文写若在民國十八年一月一日前批准，即于是日生效，否则按互换批准日起四个月后生效。这一页没有写批准已经完成，不把一九二九年一月一日写成已经生效。英国等其余各国没有逐一写日，不另插。已核對《中華民國史事紀要》。",
     "note": "1928-07-25在北平签署。生效日仍按约文的条件，没有另插。已核對《中華民國史事紀要》民國十七年七月至十二月，印页一八三。",
     "summary_zh": "1928年7月25日在北平签署。已核對《中華民國史事紀要》印页一八三。生效日仍按约文条件，不另插。",
-    "sources": ["https://www.drnh.gov.tw/p/404-1003-13290.php?Lang=zh-tw"]
+    "sources": [
+      "https://www.drnh.gov.tw/p/404-1003-13290.php?Lang=zh-tw"
+    ]
   },
   "curated:roc-1930-jp-tariff": {
     "insert": true,
     "zh": "中日关税协定",
     "en": "Sino-Japanese Tariff Agreement",
     "sl": 40,
-    "types": [{"en": "treaty", "zh": "条约"}],
-    "signed": {"y": 1930, "m": 5, "d": 6, "p": 11},
-    "parties": [
-      {"s": "Q13426199", "via": "curated"},
-      {"s": "Q188712", "via": "curated"}
+    "types": [
+      {
+        "en": "treaty",
+        "zh": "条约"
+      }
     ],
-    "countries": ["Q13426199", "Q188712"],
+    "signed": {
+      "y": 1930,
+      "m": 5,
+      "d": 6,
+      "p": 11
+    },
+    "parties": [
+      {
+        "s": "Q13426199",
+        "via": "curated"
+      },
+      {
+        "s": "Q188712",
+        "via": "curated"
+      }
+    ],
+    "countries": [
+      "Q13426199",
+      "Q188712"
+    ],
     "desc": "日本外务省史料写1930-05-06重光葵与王正廷在南京签署日华关税协定。约文写昭和五年五月六日南京调印，署名后第十日实施。不另插一个生效日。日文维基百科把中方写成宋子文，与约文和日本外务省史料的王正廷不一致，这里按约文。国史馆藏外交部卷《中日关税协定（四）》，典藏号020-010104-0038，日期1930/05/06，不是《中華民國史事紀要》。未核对《中華民國史事紀要》。",
     "note": "1930-05-06签署。约文写署名后第十日实施，不另插生效日。未核对《中華民國史事紀要》。",
     "summary_zh": "1930年5月6日在南京签署。不另插生效日。未核对《中華民國史事紀要》。",
@@ -1179,18 +1477,40 @@
   "Q1963613": {
     "batch": "2026-11-22",
     "signed": null,
-    "adopted": {"y": 2010, "m": 10, "d": 29, "p": 11},
-    "effective": {"y": 2014, "m": 10, "d": 12, "p": 11},
+    "adopted": {
+      "y": 2010,
+      "m": 10,
+      "d": 29,
+      "p": 11
+    },
+    "effective": {
+      "y": 2014,
+      "m": 10,
+      "d": 12,
+      "p": 11
+    },
     "status": "signed_then_effective",
     "summary_zh": "《生物多样性公约》关于获取遗传资源和公正公平分享其利用所产生惠益的名古屋议定书。2010年10月29日在名古屋通过，2014年10月12日生效。缔约方名单仍只有日本，没有按保存机关名册补全。",
     "note": "通过日和生效日按生物多样性公约秘书处。导出里另有一个更晚的签署日，已去掉。",
-    "sources": ["https://www.cbd.int/abs/about"]
+    "sources": [
+      "https://www.cbd.int/abs/about"
+    ]
   },
   "Q8034909": {
     "batch": "2026-11-22",
     "signed": null,
-    "adopted": {"y": 1977, "m": 6, "d": 20, "p": 11},
-    "effective": {"y": 1979, "m": 7, "d": 11, "p": 11},
+    "adopted": {
+      "y": 1977,
+      "m": 6,
+      "d": 20,
+      "p": 11
+    },
+    "effective": {
+      "y": 1979,
+      "m": 7,
+      "d": 11,
+      "p": 11
+    },
     "parties": [],
     "countries": [],
     "status": "signed_then_effective",
@@ -1204,17 +1524,39 @@
   "Q135010681": {
     "batch": "2026-11-22",
     "signed": null,
-    "adopted": {"y": 2014, "m": 6, "d": 27, "p": 11},
+    "adopted": {
+      "y": 2014,
+      "m": 6,
+      "d": 27,
+      "p": 11
+    },
     "note": "非盟条约页写明通过日。导出里更晚的签署日与该页的签署记录不符，已去掉。生效仍沿用原数据的年份，月日未按状态表核对，不写成具体一天。缔约方不改。",
-    "sources": ["https://au.int/en/treaties/african-union-convention-cyber-security-and-personal-data-protection"]
+    "sources": [
+      "https://au.int/en/treaties/african-union-convention-cyber-security-and-personal-data-protection"
+    ]
   },
   "Q610272": {
     "batch": "2026-11-22",
     "zh": "1864年日内瓦公约",
     "en": "Geneva Convention of 1864",
-    "signed": {"y": 1864, "m": 8, "d": 22, "p": 11},
-    "adopted": {"y": 1864, "m": 8, "d": 22, "p": 11},
-    "effective": {"y": 1865, "m": 6, "d": 22, "p": 11},
+    "signed": {
+      "y": 1864,
+      "m": 8,
+      "d": 22,
+      "p": 11
+    },
+    "adopted": {
+      "y": 1864,
+      "m": 8,
+      "d": 22,
+      "p": 11
+    },
+    "effective": {
+      "y": 1865,
+      "m": 6,
+      "d": 22,
+      "p": 11
+    },
     "inception": null,
     "parties": [],
     "countries": [],
@@ -1233,50 +1575,123 @@
     "sl": 40,
     "zh": "1949年日内瓦第一公约",
     "en": "Geneva Convention (I) of 1949",
-    "types": [{"en": "treaty", "zh": "条约"}],
-    "adopted": {"y": 1949, "m": 8, "d": 12, "p": 11},
-    "effective": {"y": 1950, "m": 10, "d": 21, "p": 11},
+    "types": [
+      {
+        "en": "treaty",
+        "zh": "条约"
+      }
+    ],
+    "adopted": {
+      "y": 1949,
+      "m": 8,
+      "d": 12,
+      "p": 11
+    },
+    "effective": {
+      "y": 1950,
+      "m": 10,
+      "d": 21,
+      "p": 11
+    },
     "parties": [],
     "countries": [],
     "status": "signed_then_effective",
     "summary_zh": "1949年8月12日在日内瓦通过的改善战地武装部队伤者病者境遇公约，1950年10月21日生效。这一条只记1949年这一版。缔约方名单待核，不把开会地或保存机关写成唯一缔约方。",
     "note": "从原来混在1864年条目里的1949年通过日和1950年生效日拆出。不补缔约方。",
-    "sources": ["https://ihl-databases.icrc.org/en/ihl-treaties/gci-1949"]
+    "sources": [
+      "https://ihl-databases.icrc.org/en/ihl-treaties/gci-1949"
+    ]
   },
   "Q112183": {
     "batch": "2026-11-22",
-    "signed": {"y": 1802, "m": 3, "d": 25, "p": 11},
+    "signed": {
+      "y": 1802,
+      "m": 3,
+      "d": 25,
+      "p": 11
+    },
     "parties": [
-      {"s": "Q58296", "via": "curated"},
-      {"s": "Q174193", "via": "curated"},
-      {"s": "Q29", "via": "curated"},
-      {"s": "Q188553", "via": "curated"}
+      {
+        "s": "Q58296",
+        "via": "curated"
+      },
+      {
+        "s": "Q174193",
+        "via": "curated"
+      },
+      {
+        "s": "Q29",
+        "via": "curated"
+      },
+      {
+        "s": "Q188553",
+        "via": "curated"
+      }
     ],
-    "countries": ["Q58296", "Q174193", "Q29", "Q188553"],
+    "countries": [
+      "Q58296",
+      "Q174193",
+      "Q29",
+      "Q188553"
+    ],
     "summary_zh": "1802年3月25日在亚眠签署。约文的当事方是法兰西共和国、西班牙国王、巴达维亚共和国，以及大不列颠及爱尔兰联合王国国王。已结束的大不列颠王国、以及后来的国名，不写在签署方里。",
     "note": "约文写明四方。大不列颠王国已于1801年1月1日结束。",
-    "sources": ["https://en.wikisource.org/wiki/Treaty_of_Amiens"]
+    "sources": [
+      "https://en.wikisource.org/wiki/Treaty_of_Amiens"
+    ]
   },
   "Q233688": {
     "batch": "2026-11-22",
     "parties": [
-      {"s": "Q131964", "via": "curated"},
-      {"s": "Q174193", "via": "curated"},
-      {"s": "Q27306", "via": "curated"},
-      {"s": "Q34266", "via": "curated"},
-      {"s": "Q207162", "via": "curated"}
+      {
+        "s": "Q131964",
+        "via": "curated"
+      },
+      {
+        "s": "Q174193",
+        "via": "curated"
+      },
+      {
+        "s": "Q27306",
+        "via": "curated"
+      },
+      {
+        "s": "Q34266",
+        "via": "curated"
+      },
+      {
+        "s": "Q207162",
+        "via": "curated"
+      }
     ],
-    "countries": ["Q131964", "Q174193", "Q27306", "Q34266", "Q207162"],
+    "countries": [
+      "Q131964",
+      "Q174193",
+      "Q27306",
+      "Q34266",
+      "Q207162"
+    ],
     "note": "1815年11月20日时法兰西第一帝国已经结束。政权表里当时还在、且是该帝国在表内的后继的，是波旁复辟。不把表外的编号算成另一个后继。",
-    "sources": ["https://www.wikidata.org/wiki/Q233688"]
+    "sources": [
+      "https://www.wikidata.org/wiki/Q233688"
+    ]
   },
   "Q2657887": {
     "batch": "2026-11-22",
     "parties": [
-      {"s": "Q12560", "via": "curated"},
-      {"s": "Q174193", "via": "curated"}
+      {
+        "s": "Q12560",
+        "via": "curated"
+      },
+      {
+        "s": "Q174193",
+        "via": "curated"
+      }
     ],
-    "countries": ["Q12560", "Q174193"],
+    "countries": [
+      "Q12560",
+      "Q174193"
+    ],
     "note": "1838年的英土条约。大不列颠王国已于1801年1月1日结束，其在政权表里的后继是大不列颠及爱尔兰联合王国。今天的英国条目要从1921年才开始，不写在1838年。",
     "sources": [
       "https://www.legislation.gov.uk/apgb/Geo3/39-40/67/contents"
@@ -1285,25 +1700,899 @@
   "Q3823095": {
     "batch": "2026-11-22",
     "parties": [
-      {"s": "Q27306", "via": "curated"},
-      {"s": "Q186096", "via": "curated"}
+      {
+        "s": "Q27306",
+        "via": "curated"
+      },
+      {
+        "s": "Q186096",
+        "via": "curated"
+      }
     ],
-    "countries": ["Q27306", "Q186096"],
+    "countries": [
+      "Q27306",
+      "Q186096"
+    ],
     "note": "1713年10月6日。勃兰登堡-普鲁士在政权表里终于1701年，表内后继只有1701年1月18日起的普鲁士王国。俄国一方仍是俄罗斯沙皇国。",
-    "sources": ["https://www.wikidata.org/wiki/Q3823095"]
+    "sources": [
+      "https://www.wikidata.org/wiki/Q3823095"
+    ]
   },
   "Q1248976": {
     "batch": "2026-11-22",
-    "adopted": {"y": 1978, "m": 8, "d": 22, "p": 11},
-    "signed": {"y": 1978, "m": 8, "d": 23, "p": 11},
-    "effective": {"y": 1996, "m": 11, "d": 6, "p": 11},
+    "adopted": {
+      "y": 1978,
+      "m": 8,
+      "d": 22,
+      "p": 11
+    },
+    "signed": {
+      "y": 1978,
+      "m": 8,
+      "d": 23,
+      "p": 11
+    },
+    "effective": {
+      "y": 1996,
+      "m": 11,
+      "d": 6,
+      "p": 11
+    },
     "note": "1978年8月22日通过，8月23日开放签署，1996年11月6日生效。间隔是批准过程，不是两个版本写在一条里。",
-    "sources": ["https://treaties.un.org/pages/ViewDetails.aspx?src=TREATY&mtdsg_no=XXIII-2&chapter=23&clang=_en"]
+    "sources": [
+      "https://treaties.un.org/pages/ViewDetails.aspx?src=TREATY&mtdsg_no=XXIII-2&chapter=23&clang=_en"
+    ]
   },
   "Q686455": {
     "batch": "2026-11-22",
-    "effective": {"y": 1988, "m": 0, "d": 0, "p": 9},
+    "effective": {
+      "y": 1988,
+      "m": 0,
+      "d": 0,
+      "p": 9
+    },
     "note": "联合国环境规划署臭氧秘书处写明该公约于1988年生效。月日未在该页核对，不写成具体一天。",
-    "sources": ["https://ozone.unep.org/treaties/vienna-convention"]
+    "sources": [
+      "https://ozone.unep.org/treaties/vienna-convention"
+    ]
+  },
+  "Q211674": {
+    "batch": "2026-11-22-b",
+    "parties": [
+      {
+        "s": "Q142",
+        "via": "P1891"
+      },
+      {
+        "s": "Q174193",
+        "via": "curated"
+      }
+    ],
+    "countries": [
+      "Q142",
+      "Q174193"
+    ],
+    "note": "签署日早于政权表里「英国」的1921-12-06，也早于爱尔兰自由邦的1922-12-06。该日存在的是大不列颠及爱尔兰联合王国。只改这一方，不写「后来由英国继承」，因为后继不只有英国。不另找签署方。",
+    "sources": [
+      "https://www.legislation.gov.uk/apgb/Geo3/39-40/67/contents",
+      "https://www.legislation.gov.uk/ukpga/Geo5Sess2/13/1/contents"
+    ]
+  },
+  "Q217398": {
+    "batch": "2026-11-22-b",
+    "parties": [
+      {
+        "s": "Q142",
+        "via": "P1891"
+      },
+      {
+        "s": "Q174193",
+        "via": "curated"
+      },
+      {
+        "s": "Q148",
+        "via": "P1891"
+      },
+      {
+        "s": "Q183",
+        "via": "P1891"
+      },
+      {
+        "s": "Q29",
+        "via": "P1891"
+      },
+      {
+        "s": "Q31",
+        "via": "P1891"
+      },
+      {
+        "s": "Q38",
+        "via": "P1891"
+      },
+      {
+        "s": "Q39",
+        "via": "P1891"
+      },
+      {
+        "s": "Q948",
+        "via": "P1891"
+      }
+    ],
+    "countries": [
+      "Q142",
+      "Q174193",
+      "Q148",
+      "Q183",
+      "Q29",
+      "Q31",
+      "Q38",
+      "Q39",
+      "Q948"
+    ],
+    "note": "签署日早于政权表里「英国」的1921-12-06，也早于爱尔兰自由邦的1922-12-06。该日存在的是大不列颠及爱尔兰联合王国。只改这一方，不写「后来由英国继承」，因为后继不只有英国。不另找签署方。",
+    "sources": [
+      "https://www.legislation.gov.uk/apgb/Geo3/39-40/67/contents",
+      "https://www.legislation.gov.uk/ukpga/Geo5Sess2/13/1/contents"
+    ]
+  },
+  "Q238262": {
+    "batch": "2026-11-22-b",
+    "parties": [
+      {
+        "s": "Q174193",
+        "via": "curated"
+      },
+      {
+        "s": "Q8733",
+        "via": "P1891"
+      }
+    ],
+    "countries": [
+      "Q174193",
+      "Q8733"
+    ],
+    "note": "签署日早于政权表里「英国」的1921-12-06，也早于爱尔兰自由邦的1922-12-06。该日存在的是大不列颠及爱尔兰联合王国。只改这一方，不写「后来由英国继承」，因为后继不只有英国。不另找签署方。",
+    "sources": [
+      "https://www.legislation.gov.uk/apgb/Geo3/39-40/67/contents",
+      "https://www.legislation.gov.uk/ukpga/Geo5Sess2/13/1/contents"
+    ]
+  },
+  "Q328499": {
+    "batch": "2026-11-22-b",
+    "parties": [
+      {
+        "s": "Q12560",
+        "via": "P1891"
+      },
+      {
+        "s": "Q174193",
+        "via": "curated"
+      }
+    ],
+    "countries": [
+      "Q12560",
+      "Q174193"
+    ],
+    "note": "签署日早于政权表里「英国」的1921-12-06，也早于爱尔兰自由邦的1922-12-06。该日存在的是大不列颠及爱尔兰联合王国。只改这一方，不写「后来由英国继承」，因为后继不只有英国。不另找签署方。",
+    "sources": [
+      "https://www.legislation.gov.uk/apgb/Geo3/39-40/67/contents",
+      "https://www.legislation.gov.uk/ukpga/Geo5Sess2/13/1/contents"
+    ]
+  },
+  "Q156556": {
+    "batch": "2026-11-22-b",
+    "parties": [
+      {
+        "s": "Q174193",
+        "via": "curated"
+      },
+      {
+        "s": "Q34",
+        "via": "P1891"
+      },
+      {
+        "s": "Q756617",
+        "via": "P1891"
+      }
+    ],
+    "countries": [
+      "Q174193",
+      "Q34",
+      "Q756617"
+    ],
+    "note": "签署日早于政权表里「英国」的1921-12-06，也早于爱尔兰自由邦的1922-12-06。该日存在的是大不列颠及爱尔兰联合王国。只改这一方，不写「后来由英国继承」，因为后继不只有英国。不另找签署方。",
+    "sources": [
+      "https://www.legislation.gov.uk/apgb/Geo3/39-40/67/contents",
+      "https://www.legislation.gov.uk/ukpga/Geo5Sess2/13/1/contents"
+    ]
+  },
+  "Q705537": {
+    "batch": "2026-11-22-b",
+    "parties": [
+      {
+        "s": "Q174193",
+        "via": "curated"
+      },
+      {
+        "s": "Q43287",
+        "via": "P1891"
+      },
+      {
+        "s": "Q8680",
+        "via": "P710"
+      }
+    ],
+    "countries": [
+      "Q174193",
+      "Q43287",
+      "Q8680"
+    ],
+    "note": "签署日早于政权表里「英国」的1921-12-06，也早于爱尔兰自由邦的1922-12-06。该日存在的是大不列颠及爱尔兰联合王国。只改这一方，不写「后来由英国继承」，因为后继不只有英国。不另找签署方。",
+    "sources": [
+      "https://www.legislation.gov.uk/apgb/Geo3/39-40/67/contents",
+      "https://www.legislation.gov.uk/ukpga/Geo5Sess2/13/1/contents"
+    ]
+  },
+  "Q2287308": {
+    "batch": "2026-11-22-b",
+    "parties": [
+      {
+        "s": "Q12560",
+        "via": "P1891"
+      },
+      {
+        "s": "Q142",
+        "via": "P1891"
+      },
+      {
+        "s": "Q174193",
+        "via": "curated"
+      },
+      {
+        "s": "Q34266",
+        "via": "P1891"
+      }
+    ],
+    "countries": [
+      "Q12560",
+      "Q142",
+      "Q174193",
+      "Q34266"
+    ],
+    "note": "签署日早于政权表里「英国」的1921-12-06，也早于爱尔兰自由邦的1922-12-06。该日存在的是大不列颠及爱尔兰联合王国。只改这一方，不写「后来由英国继承」，因为后继不只有英国。不另找签署方。",
+    "sources": [
+      "https://www.legislation.gov.uk/apgb/Geo3/39-40/67/contents",
+      "https://www.legislation.gov.uk/ukpga/Geo5Sess2/13/1/contents"
+    ]
+  },
+  "Q2996241": {
+    "batch": "2026-11-22-b",
+    "parties": [
+      {
+        "s": "Q174193",
+        "via": "curated"
+      }
+    ],
+    "countries": [
+      "Q174193"
+    ],
+    "note": "签署日早于政权表里「英国」的1921-12-06，也早于爱尔兰自由邦的1922-12-06。该日存在的是大不列颠及爱尔兰联合王国。只改这一方，不写「后来由英国继承」，因为后继不只有英国。不另找签署方。",
+    "sources": [
+      "https://www.legislation.gov.uk/apgb/Geo3/39-40/67/contents",
+      "https://www.legislation.gov.uk/ukpga/Geo5Sess2/13/1/contents"
+    ]
+  },
+  "Q700363": {
+    "batch": "2026-11-22-b",
+    "parties": [
+      {
+        "s": "Q12560",
+        "via": "P1891"
+      },
+      {
+        "s": "Q131964",
+        "via": "P1891"
+      },
+      {
+        "s": "Q142",
+        "via": "P1891"
+      },
+      {
+        "s": "Q174193",
+        "via": "curated"
+      },
+      {
+        "s": "Q27306",
+        "via": "P1891"
+      },
+      {
+        "s": "Q34266",
+        "via": "P1891"
+      }
+    ],
+    "countries": [
+      "Q12560",
+      "Q131964",
+      "Q142",
+      "Q174193",
+      "Q27306",
+      "Q34266"
+    ],
+    "note": "签署日早于政权表里「英国」的1921-12-06，也早于爱尔兰自由邦的1922-12-06。该日存在的是大不列颠及爱尔兰联合王国。只改这一方，不写「后来由英国继承」，因为后继不只有英国。不另找签署方。",
+    "sources": [
+      "https://www.legislation.gov.uk/apgb/Geo3/39-40/67/contents",
+      "https://www.legislation.gov.uk/ukpga/Geo5Sess2/13/1/contents"
+    ]
+  },
+  "Q700848": {
+    "batch": "2026-11-22-b",
+    "parties": [
+      {
+        "s": "Q174193",
+        "via": "curated"
+      }
+    ],
+    "countries": [
+      "Q174193"
+    ],
+    "note": "签署日早于政权表里「英国」的1921-12-06，也早于爱尔兰自由邦的1922-12-06。该日存在的是大不列颠及爱尔兰联合王国。只改这一方，不写「后来由英国继承」，因为后继不只有英国。不另找签署方。",
+    "sources": [
+      "https://www.legislation.gov.uk/apgb/Geo3/39-40/67/contents",
+      "https://www.legislation.gov.uk/ukpga/Geo5Sess2/13/1/contents"
+    ]
+  },
+  "Q745728": {
+    "batch": "2026-11-22-b",
+    "parties": [
+      {
+        "s": "Q174193",
+        "via": "curated"
+      },
+      {
+        "s": "Q869",
+        "via": "P17"
+      }
+    ],
+    "countries": [
+      "Q174193",
+      "Q869"
+    ],
+    "note": "签署日早于政权表里「英国」的1921-12-06，也早于爱尔兰自由邦的1922-12-06。该日存在的是大不列颠及爱尔兰联合王国。只改这一方，不写「后来由英国继承」，因为后继不只有英国。不另找签署方。",
+    "sources": [
+      "https://www.legislation.gov.uk/apgb/Geo3/39-40/67/contents",
+      "https://www.legislation.gov.uk/ukpga/Geo5Sess2/13/1/contents"
+    ]
+  },
+  "Q1016779": {
+    "batch": "2026-11-22-b",
+    "parties": [
+      {
+        "s": "Q1155700",
+        "via": "P17"
+      },
+      {
+        "s": "Q174193",
+        "via": "curated"
+      }
+    ],
+    "countries": [
+      "Q1155700",
+      "Q174193"
+    ],
+    "note": "签署日早于政权表里「英国」的1921-12-06，也早于爱尔兰自由邦的1922-12-06。该日存在的是大不列颠及爱尔兰联合王国。只改这一方，不写「后来由英国继承」，因为后继不只有英国。不另找签署方。",
+    "sources": [
+      "https://www.legislation.gov.uk/apgb/Geo3/39-40/67/contents",
+      "https://www.legislation.gov.uk/ukpga/Geo5Sess2/13/1/contents"
+    ]
+  },
+  "Q11136035": {
+    "batch": "2026-11-22-b",
+    "parties": [
+      {
+        "s": "Q174193",
+        "via": "curated"
+      }
+    ],
+    "countries": [
+      "Q174193"
+    ],
+    "note": "签署日早于政权表里「英国」的1921-12-06，也早于爱尔兰自由邦的1922-12-06。该日存在的是大不列颠及爱尔兰联合王国。只改这一方，不写「后来由英国继承」，因为后继不只有英国。不另找签署方。",
+    "sources": [
+      "https://www.legislation.gov.uk/apgb/Geo3/39-40/67/contents",
+      "https://www.legislation.gov.uk/ukpga/Geo5Sess2/13/1/contents"
+    ]
+  },
+  "Q4060496": {
+    "batch": "2026-11-22-b",
+    "parties": [
+      {
+        "s": "Q142",
+        "via": "P1891"
+      },
+      {
+        "s": "Q174193",
+        "via": "curated"
+      },
+      {
+        "s": "Q172579",
+        "via": "P1891"
+      },
+      {
+        "s": "Q191",
+        "via": "P1891"
+      },
+      {
+        "s": "Q211",
+        "via": "P1891"
+      },
+      {
+        "s": "Q33",
+        "via": "P1891"
+      },
+      {
+        "s": "Q34",
+        "via": "P1891"
+      },
+      {
+        "s": "Q36",
+        "via": "P1891"
+      },
+      {
+        "s": "Q41304",
+        "via": "P1891"
+      },
+      {
+        "s": "Q756617",
+        "via": "P1891"
+      }
+    ],
+    "countries": [
+      "Q142",
+      "Q174193",
+      "Q172579",
+      "Q191",
+      "Q211",
+      "Q33",
+      "Q34",
+      "Q36",
+      "Q41304",
+      "Q756617"
+    ],
+    "note": "签署日早于政权表里「英国」的1921-12-06，也早于爱尔兰自由邦的1922-12-06。该日存在的是大不列颠及爱尔兰联合王国。只改这一方，不写「后来由英国继承」，因为后继不只有英国。不另找签署方。",
+    "sources": [
+      "https://www.legislation.gov.uk/apgb/Geo3/39-40/67/contents",
+      "https://www.legislation.gov.uk/ukpga/Geo5Sess2/13/1/contents"
+    ]
+  },
+  "Q2915092": {
+    "batch": "2026-11-22-b",
+    "parties": [
+      {
+        "s": "Q174193",
+        "via": "curated"
+      }
+    ],
+    "countries": [
+      "Q174193"
+    ],
+    "note": "签署日早于政权表里「英国」的1921-12-06，也早于爱尔兰自由邦的1922-12-06。该日存在的是大不列颠及爱尔兰联合王国。只改这一方，不写「后来由英国继承」，因为后继不只有英国。不另找签署方。",
+    "sources": [
+      "https://www.legislation.gov.uk/apgb/Geo3/39-40/67/contents",
+      "https://www.legislation.gov.uk/ukpga/Geo5Sess2/13/1/contents"
+    ]
+  },
+  "Q1591801": {
+    "batch": "2026-11-22-b",
+    "parties": [
+      {
+        "s": "Q174193",
+        "via": "curated"
+      },
+      {
+        "s": "Q30",
+        "via": "P17"
+      }
+    ],
+    "countries": [
+      "Q174193",
+      "Q30"
+    ],
+    "note": "签署日早于政权表里「英国」的1921-12-06，也早于爱尔兰自由邦的1922-12-06。该日存在的是大不列颠及爱尔兰联合王国。只改这一方，不写「后来由英国继承」，因为后继不只有英国。不另找签署方。",
+    "sources": [
+      "https://www.legislation.gov.uk/apgb/Geo3/39-40/67/contents",
+      "https://www.legislation.gov.uk/ukpga/Geo5Sess2/13/1/contents"
+    ]
+  },
+  "Q2718109": {
+    "batch": "2026-11-22-b",
+    "parties": [
+      {
+        "s": "Q174193",
+        "via": "curated"
+      },
+      {
+        "s": "Q30",
+        "via": "P17"
+      }
+    ],
+    "countries": [
+      "Q174193",
+      "Q30"
+    ],
+    "note": "签署日早于政权表里「英国」的1921-12-06，也早于爱尔兰自由邦的1922-12-06。该日存在的是大不列颠及爱尔兰联合王国。只改这一方，不写「后来由英国继承」，因为后继不只有英国。不另找签署方。",
+    "sources": [
+      "https://www.legislation.gov.uk/apgb/Geo3/39-40/67/contents",
+      "https://www.legislation.gov.uk/ukpga/Geo5Sess2/13/1/contents"
+    ]
+  },
+  "Q2518953": {
+    "batch": "2026-11-22-b",
+    "parties": [
+      {
+        "s": "Q174193",
+        "via": "curated"
+      },
+      {
+        "s": "Q45",
+        "via": "P17"
+      }
+    ],
+    "countries": [
+      "Q174193",
+      "Q45"
+    ],
+    "note": "签署日早于政权表里「英国」的1921-12-06，也早于爱尔兰自由邦的1922-12-06。该日存在的是大不列颠及爱尔兰联合王国。只改这一方，不写「后来由英国继承」，因为后继不只有英国。不另找签署方。",
+    "sources": [
+      "https://www.legislation.gov.uk/apgb/Geo3/39-40/67/contents",
+      "https://www.legislation.gov.uk/ukpga/Geo5Sess2/13/1/contents"
+    ]
+  },
+  "Q123691912": {
+    "batch": "2026-11-22-b",
+    "parties": [
+      {
+        "s": "Q174193",
+        "via": "curated"
+      },
+      {
+        "s": "Q30",
+        "via": "P17"
+      },
+      {
+        "s": "Q717",
+        "via": "P17"
+      }
+    ],
+    "countries": [
+      "Q174193",
+      "Q30",
+      "Q717"
+    ],
+    "note": "签署日早于政权表里「英国」的1921-12-06，也早于爱尔兰自由邦的1922-12-06。该日存在的是大不列颠及爱尔兰联合王国。只改这一方，不写「后来由英国继承」，因为后继不只有英国。不另找签署方。",
+    "sources": [
+      "https://www.legislation.gov.uk/apgb/Geo3/39-40/67/contents",
+      "https://www.legislation.gov.uk/ukpga/Geo5Sess2/13/1/contents"
+    ]
+  },
+  "Q4763611": {
+    "batch": "2026-11-22-b",
+    "parties": [
+      {
+        "s": "Q174193",
+        "via": "curated"
+      }
+    ],
+    "countries": [
+      "Q174193"
+    ],
+    "note": "签署日早于政权表里「英国」的1921-12-06，也早于爱尔兰自由邦的1922-12-06。该日存在的是大不列颠及爱尔兰联合王国。只改这一方，不写「后来由英国继承」，因为后继不只有英国。不另找签署方。",
+    "sources": [
+      "https://www.legislation.gov.uk/apgb/Geo3/39-40/67/contents",
+      "https://www.legislation.gov.uk/ukpga/Geo5Sess2/13/1/contents"
+    ]
+  },
+  "Q4763685": {
+    "batch": "2026-11-22-b",
+    "parties": [
+      {
+        "s": "Q174193",
+        "via": "curated"
+      },
+      {
+        "s": "Q2305208",
+        "via": "P1891"
+      }
+    ],
+    "countries": [
+      "Q174193",
+      "Q2305208"
+    ],
+    "note": "签署日早于政权表里「英国」的1921-12-06，也早于爱尔兰自由邦的1922-12-06。该日存在的是大不列颠及爱尔兰联合王国。只改这一方，不写「后来由英国继承」，因为后继不只有英国。不另找签署方。",
+    "sources": [
+      "https://www.legislation.gov.uk/apgb/Geo3/39-40/67/contents",
+      "https://www.legislation.gov.uk/ukpga/Geo5Sess2/13/1/contents"
+    ]
+  },
+  "Q3536718": {
+    "batch": "2026-11-22-b",
+    "parties": [
+      {
+        "s": "Q1028",
+        "via": "P1891"
+      },
+      {
+        "s": "Q174193",
+        "via": "curated"
+      }
+    ],
+    "countries": [
+      "Q1028",
+      "Q174193"
+    ],
+    "note": "签署日早于政权表里「英国」的1921-12-06，也早于爱尔兰自由邦的1922-12-06。该日存在的是大不列颠及爱尔兰联合王国。只改这一方，不写「后来由英国继承」，因为后继不只有英国。不另找签署方。",
+    "sources": [
+      "https://www.legislation.gov.uk/apgb/Geo3/39-40/67/contents",
+      "https://www.legislation.gov.uk/ukpga/Geo5Sess2/13/1/contents"
+    ]
+  },
+  "Q4784054": {
+    "batch": "2026-11-22-b",
+    "parties": [
+      {
+        "s": "Q174193",
+        "via": "curated"
+      }
+    ],
+    "countries": [
+      "Q174193"
+    ],
+    "note": "签署日早于政权表里「英国」的1921-12-06，也早于爱尔兰自由邦的1922-12-06。该日存在的是大不列颠及爱尔兰联合王国。只改这一方，不写「后来由英国继承」，因为后继不只有英国。不另找签署方。",
+    "sources": [
+      "https://www.legislation.gov.uk/apgb/Geo3/39-40/67/contents",
+      "https://www.legislation.gov.uk/ukpga/Geo5Sess2/13/1/contents"
+    ]
+  },
+  "Q11625327": {
+    "batch": "2026-11-22-b",
+    "parties": [
+      {
+        "s": "Q142",
+        "via": "P1891"
+      },
+      {
+        "s": "Q174193",
+        "via": "curated"
+      },
+      {
+        "s": "Q155",
+        "via": "P1891"
+      },
+      {
+        "s": "Q29",
+        "via": "P1891"
+      },
+      {
+        "s": "Q39",
+        "via": "P1891"
+      },
+      {
+        "s": "Q45",
+        "via": "P1891"
+      },
+      {
+        "s": "Q774",
+        "via": "P1891"
+      },
+      {
+        "s": "Q948",
+        "via": "P1891"
+      }
+    ],
+    "countries": [
+      "Q142",
+      "Q174193",
+      "Q155",
+      "Q29",
+      "Q39",
+      "Q45",
+      "Q774",
+      "Q948"
+    ],
+    "note": "签署日早于政权表里「英国」的1921-12-06，也早于爱尔兰自由邦的1922-12-06。该日存在的是大不列颠及爱尔兰联合王国。只改这一方，不写「后来由英国继承」，因为后继不只有英国。不另找签署方。",
+    "sources": [
+      "https://www.legislation.gov.uk/apgb/Geo3/39-40/67/contents",
+      "https://www.legislation.gov.uk/ukpga/Geo5Sess2/13/1/contents"
+    ]
+  },
+  "Q6709815": {
+    "batch": "2026-11-22-b",
+    "parties": [
+      {
+        "s": "Q174193",
+        "via": "curated"
+      }
+    ],
+    "countries": [
+      "Q174193"
+    ],
+    "note": "签署日早于政权表里「英国」的1921-12-06，也早于爱尔兰自由邦的1922-12-06。该日存在的是大不列颠及爱尔兰联合王国。只改这一方，不写「后来由英国继承」，因为后继不只有英国。不另找签署方。",
+    "sources": [
+      "https://www.legislation.gov.uk/apgb/Geo3/39-40/67/contents",
+      "https://www.legislation.gov.uk/ukpga/Geo5Sess2/13/1/contents"
+    ]
+  },
+  "Q96859583": {
+    "batch": "2026-11-22-b",
+    "parties": [
+      {
+        "s": "Q174193",
+        "via": "curated"
+      },
+      {
+        "s": "Q869",
+        "via": "P17"
+      }
+    ],
+    "countries": [
+      "Q174193",
+      "Q869"
+    ],
+    "note": "签署日早于政权表里「英国」的1921-12-06，也早于爱尔兰自由邦的1922-12-06。该日存在的是大不列颠及爱尔兰联合王国。只改这一方，不写「后来由英国继承」，因为后继不只有英国。不另找签署方。",
+    "sources": [
+      "https://www.legislation.gov.uk/apgb/Geo3/39-40/67/contents",
+      "https://www.legislation.gov.uk/ukpga/Geo5Sess2/13/1/contents"
+    ]
+  },
+  "Q96860427": {
+    "batch": "2026-11-22-b",
+    "parties": [
+      {
+        "s": "Q174193",
+        "via": "curated"
+      },
+      {
+        "s": "Q869",
+        "via": "P17"
+      }
+    ],
+    "countries": [
+      "Q174193",
+      "Q869"
+    ],
+    "note": "签署日早于政权表里「英国」的1921-12-06，也早于爱尔兰自由邦的1922-12-06。该日存在的是大不列颠及爱尔兰联合王国。只改这一方，不写「后来由英国继承」，因为后继不只有英国。不另找签署方。",
+    "sources": [
+      "https://www.legislation.gov.uk/apgb/Geo3/39-40/67/contents",
+      "https://www.legislation.gov.uk/ukpga/Geo5Sess2/13/1/contents"
+    ]
+  },
+  "Q10875137": {
+    "batch": "2026-11-22-b",
+    "parties": [
+      {
+        "s": "Q13426199",
+        "via": "P1891"
+      },
+      {
+        "s": "Q174193",
+        "via": "curated"
+      }
+    ],
+    "countries": [
+      "Q13426199",
+      "Q174193"
+    ],
+    "note": "签署日早于政权表里「英国」的1921-12-06，也早于爱尔兰自由邦的1922-12-06。该日存在的是大不列颠及爱尔兰联合王国。只改这一方，不写「后来由英国继承」，因为后继不只有英国。不另找签署方。",
+    "sources": [
+      "https://www.legislation.gov.uk/apgb/Geo3/39-40/67/contents",
+      "https://www.legislation.gov.uk/ukpga/Geo5Sess2/13/1/contents"
+    ]
+  },
+  "Q11498864": {
+    "batch": "2026-11-22-b",
+    "parties": [
+      {
+        "s": "Q142",
+        "via": "P1268"
+      },
+      {
+        "s": "Q174193",
+        "via": "curated"
+      },
+      {
+        "s": "Q17",
+        "via": "P1268"
+      },
+      {
+        "s": "Q30",
+        "via": "P1268"
+      },
+      {
+        "s": "Q55",
+        "via": "P1268"
+      }
+    ],
+    "countries": [
+      "Q142",
+      "Q174193",
+      "Q17",
+      "Q30",
+      "Q55"
+    ],
+    "note": "签署日早于政权表里「英国」的1921-12-06，也早于爱尔兰自由邦的1922-12-06。该日存在的是大不列颠及爱尔兰联合王国。只改这一方，不写「后来由英国继承」，因为后继不只有英国。不另找签署方。",
+    "sources": [
+      "https://www.legislation.gov.uk/apgb/Geo3/39-40/67/contents",
+      "https://www.legislation.gov.uk/ukpga/Geo5Sess2/13/1/contents"
+    ]
+  },
+  "Q761454": {
+    "batch": "2026-11-22-b",
+    "signed": {
+      "y": 1888,
+      "m": 10,
+      "d": 29,
+      "p": 11
+    },
+    "effective": {
+      "y": 1888,
+      "m": 12,
+      "d": 22,
+      "p": 11
+    },
+    "status": "signed_then_effective",
+    "parties": [
+      {
+        "s": "Q174193",
+        "via": "curated"
+      },
+      {
+        "s": "Q43287",
+        "via": "curated"
+      },
+      {
+        "s": "Q28513",
+        "via": "curated"
+      },
+      {
+        "s": "Q29",
+        "via": "curated"
+      },
+      {
+        "s": "Q70802",
+        "via": "curated"
+      },
+      {
+        "s": "Q172579",
+        "via": "curated"
+      },
+      {
+        "s": "Q29999",
+        "via": "curated"
+      },
+      {
+        "s": "Q34266",
+        "via": "curated"
+      },
+      {
+        "s": "Q12560",
+        "via": "curated"
+      }
+    ],
+    "countries": [
+      "Q174193",
+      "Q43287",
+      "Q28513",
+      "Q29",
+      "Q70802",
+      "Q172579",
+      "Q29999",
+      "Q34266",
+      "Q12560"
+    ],
+    "summary_zh": "1888年10月29日在君士坦丁堡签署，1888年12月22日一般生效。约文序言的缔约方是大不列颠及爱尔兰联合王国、德意志帝国、奥匈帝国、西班牙、法兰西第三共和国、意大利王国、荷兰王国、俄罗斯帝国和奥斯曼帝国。导出里的1988-10-29是签署月日被错写成一百年后。缔约方不沿用1923年才开始的土耳其。",
+    "note": "签署日和一般生效日按澳大利亚条约集。苏伊士运河管理局确认1888年10月29日签署。不把后来的政治安排写成这一条的生效日。",
+    "sources": [
+      "https://www.austlii.edu.au/cgi-bin/viewdoc/au/other/dfat/treaties/1901/127.html",
+      "https://www.suezcanal.gov.eg/English/About/CanalTreatiesAndDecrees/Pages/ConstantinopleConvention.aspx"
+    ]
   }
 }
