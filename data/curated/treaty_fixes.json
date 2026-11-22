@@ -4214,5 +4214,127 @@
     "sources": [
       "https://treaties.un.org/doc/Publication/UNTS/Volume%20605/volume-605-I-8768-English.pdf"
     ]
+  },
+  "Q18451379": {
+    "batch": "2026-11-22-i",
+    "adopted": {
+      "y": 1921,
+      "m": 11,
+      "d": 11,
+      "p": 11
+    },
+    "effective": {
+      "y": 1922,
+      "m": 11,
+      "d": 20,
+      "p": 11
+    },
+    "status": "signed_then_effective",
+    "note": "确定准许使用未成年人为扒碳工或司炉工的最低年龄公约。1921-11-11通过，1922-11-20生效。名单不补。",
+    "sources": [
+      "https://treaties.un.org/doc/Publication/Cumulative%20Index/UNTS%20Volume%20No%202801-2850/cumindex.chrono.en.pdf"
+    ]
+  },
+  "Q6024660": {
+    "batch": "2026-11-22-i",
+    "adopted": {
+      "y": 1957,
+      "m": 6,
+      "d": 26,
+      "p": 11
+    },
+    "effective": {
+      "y": 1959,
+      "m": 6,
+      "d": 2,
+      "p": 11
+    },
+    "status": "signed_then_effective",
+    "note": "土著和部落人口公约。1957-06-26通过，1959-06-02生效。名单不补。",
+    "sources": [
+      "https://treaties.un.org/doc/Publication/UNTS/Volume%20328/volume-328-I-4738-English.pdf"
+    ]
+  },
+  "Q5165698": {
+    "batch": "2026-11-22-i",
+    "adopted": {
+      "y": 1939,
+      "m": 6,
+      "d": 27,
+      "p": 11
+    },
+    "effective": {
+      "y": 1948,
+      "m": 7,
+      "d": 8,
+      "p": 11
+    },
+    "status": "signed_then_effective",
+    "note": "1939年土著工人书面雇佣合同公约。1939-06-27通过，1948-07-08生效。名单不补。",
+    "sources": [
+      "https://treaties.un.org/Pages/showDetails.aspx?objid=08000002801608f8"
+    ]
+  },
+  "Q7884200": {
+    "batch": "2026-11-22-i",
+    "adopted": {
+      "y": 1934,
+      "m": 6,
+      "d": 23,
+      "p": 11
+    },
+    "effective": {
+      "y": 1938,
+      "m": 6,
+      "d": 10,
+      "p": 11
+    },
+    "status": "signed_then_effective",
+    "note": "1934年失业津贴公约。1934-06-23通过，1938-06-10生效。名单不补。",
+    "sources": [
+      "https://treaties.un.org/doc/Publication/Cumulative%20Index/UNTS%20Volume%20No%20901-950/cumindex.chrono.en.pdf",
+      "https://history.state.gov/historicaldocuments/frus1919Parisv13/ch22subsubch2"
+    ]
+  },
+  "Q7303111": {
+    "batch": "2026-11-22-i",
+    "adopted": {
+      "y": 1936,
+      "m": 6,
+      "d": 20,
+      "p": 11
+    },
+    "effective": {
+      "y": 1939,
+      "m": 9,
+      "d": 8,
+      "p": 11
+    },
+    "status": "signed_then_effective",
+    "note": "1936年招募土著工人公约。1936-06-20通过，1939-09-08生效。名单不补。",
+    "sources": [
+      "https://treaties.un.org/doc/Publication/Cumulative%20Index/UNTS%20Volume%20No%20901-950/cumindex.chrono.en.pdf",
+      "https://history.state.gov/historicaldocuments/frus1919Parisv13/ch22subsubch2"
+    ]
+  },
+  "Q7251332": {
+    "batch": "2026-11-22-i",
+    "adopted": {
+      "y": 1929,
+      "m": 0,
+      "d": 0,
+      "p": 9
+    },
+    "effective": {
+      "y": 1932,
+      "m": 4,
+      "d": 1,
+      "p": 11
+    },
+    "status": "signed_then_effective",
+    "note": "1929年码头工人防止事故公约。生效日是1932-04-01。通过年是1929，日未在所用名册里写明，不补日。名单不补。",
+    "sources": [
+      "https://history.state.gov/historicaldocuments/frus1919Parisv13/ch22subsubch2"
+    ]
   }
 }
