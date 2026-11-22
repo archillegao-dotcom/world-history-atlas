@@ -50,6 +50,29 @@ check("名义所属仍写在说明里", "名义" in (ko.get("note") or ""), ko.g
 _, after = ids("1919-11-14")
 check("11月14日鄂木斯克驻地拿掉", "ru_kolchak_omsk" not in after, after)
 
+_, den = ids("1920-03-26")
+check("3月26日有新罗西斯克活动点", "ru_denikin_novorossiysk_1920" in den, den)
+_, den2 = ids("1920-03-27")
+check("3月27日不留新罗西斯克", "ru_denikin_novorossiysk_1920" not in den2, den2)
+
+pack, wr = ids("1920-11-14")
+check("11月14日仍标塞瓦斯托波尔", "ru_wrangel_sevastopol_1920" in wr, wr)
+w = next(i for i in pack["items"] if i["id"] == "ru_wrangel_sevastopol_1920")
+check("塞瓦斯托波尔不是半岛", w.get("activity_only") and "不是克里米亚半岛" in (w.get("note") or ""), w.get("note"))
+_, wr2 = ids("1920-11-15")
+check("11月15日拿掉塞瓦斯托波尔", "ru_wrangel_sevastopol_1920" not in wr2, wr2)
+_, wr0 = ids("1920-04-03")
+check("4月3日还没有弗兰格尔驻地", "ru_wrangel_sevastopol_1920" not in wr0, wr0)
+
+_, fer = ids("1920-04-06")
+check("4月6日有上乌金斯克驻地", "ru_fer_verkhneudinsk_1920" in fer, fer)
+_, fer2 = ids("1920-10-22")
+check("10月22日改标赤塔", "ru_fer_verkhneudinsk_1920" not in fer2 and "ru_fer_chita_1920" in fer2, fer2)
+_, fer3 = ids("1922-11-14")
+check("11月14日赤塔仍在", "ru_fer_chita_1920" in fer3, fer3)
+_, fer4 = ids("1922-11-15")
+check("11月15日远东共和国驻地拿掉", "ru_fer_chita_1920" not in fer4, fer4)
+
 undrawn = {i["id"] for i in pack.get("undrawn") or []}
 for key in ("mx-carranza", "mx-zapata", "mx-obregon", "ru-denikin", "ru-wrangel", "ru-green", "ru-fer", "ru-ethnic", "jp-sengoku"):
     check(f"未画清单有{key}", key in undrawn, sorted(undrawn))
