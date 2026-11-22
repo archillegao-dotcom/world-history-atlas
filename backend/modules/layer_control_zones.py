@@ -41,6 +41,9 @@ class ControlZonesLayer(LayerModule):
                 continue
             ctrl = dict(z["controller"])
             name, kind_zh, dates_note = z["name_zh"], KIND_ZH.get(z["kind"], z["kind"]), z.get("dates_note")
+            # 伪政权名义辖区用当年省界或县名单，虚线，不改底图颜色，也不是日军占领线。
+            if str(z["id"]).startswith("puppet_nom_"):
+                kind_zh = "名义辖区，不是日军占领线"
             # 灰色块沿用旧轮廓，只说明几何不够，不把进驻一个城镇写成全区实控。
             if z["id"] == "tibet_unverified_1951":
                 name, kind_zh, dates_note = GAP_NAME, "数据不足，不是无人统治，也不是实控重建", GAP_NOTE
@@ -52,7 +55,7 @@ class ControlZonesLayer(LayerModule):
                         "activity_points": z.get("activity_points") or [],
                         "label": z["_label"], "geom": z["geom"]})
         return {"items": out, "total": len(out),
-                "note": "实际控制区只覆盖已人工整理的冲突。西藏1913年起才单列；1950年10月2日以后不把整块涂成已经易手。灰色表示数据不足，不是无人统治，也不是已经重建的实控线。声索样本是虚线小框，不是边界，也不改底图颜色。其他地区没有画不代表没有。只选年份、不选月份时，按这一年的年中判断。"}
+                "note": "实际控制区只覆盖已人工整理的冲突。西藏1913年起才单列；1950年10月2日以后不把整块涂成已经易手。灰色表示数据不足，不是无人统治，也不是已经重建的实控线。声索样本和伪政权名义辖区是虚线，不是日军占领线，也不改底图颜色。其他地区没有画不代表没有。只选年份、不选月份时，按这一年的年中判断。"}
 
 
 MODULE = ControlZonesLayer()
