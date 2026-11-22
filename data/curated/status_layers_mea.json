@@ -481,8 +481,8 @@
     {
       "id": "halaib",
       "name_zh": "哈拉伊卜三角",
-      "geom": null,
-      "precision_zh": "没有三角区的轮廓。不用红海省或红海州代替。不画。比尔泰维勒是另一块，不并进来。",
+      "geom": "halaib",
+      "precision_zh": "虚线来自 OpenStreetMap 关系 4081614（ODbL），是今天标出的三角区，大致对应 1899 年北纬 22 度线以北、1902 年行政安排交给苏丹一侧的那一块。不是 1902 年的测绘，也不是 1992 年 12 月的进军线。比尔泰维勒不在里面。不填实控。",
       "statements": [
         {
           "role": "claim",
@@ -496,15 +496,25 @@
           "from": "1902-11-04",
           "until": "1956-01-01",
           "party": {"zh": "英埃共管苏丹"},
-          "text": "1902-11-04 的行政安排把三角区交给共管苏丹管理。这不是埃及在条文里放弃主权。1956 年以前不写成苏丹共和国。",
-          "sources": ["https://www.meforum.org/middle-east-quarterly/hot-spot-egypt-and-sudan-wrangle-over-halayib"]
+          "draw": "dash",
+          "label": "三角区声索范围，大致，不是进军线",
+          "text": "1902-11-04 的行政安排把三角区交给共管苏丹管理。这不是埃及在条文里放弃主权。1956 年以前不写成苏丹共和国。虚线是这块争议范围，不是当天的控制线。",
+          "sources": [
+            "https://www.meforum.org/middle-east-quarterly/hot-spot-egypt-and-sudan-wrangle-over-halayib",
+            "https://www.openstreetmap.org/relation/4081614",
+            "https://www.openstreetmap.org/copyright"
+          ]
         },
         {
           "role": "claim",
           "from": "1956-01-01",
           "party": {"zh": "苏丹"},
-          "text": "苏丹独立后沿 1902 年行政界主张三角区。与埃及的 1899 年线不是同一条。",
+          "draw": "dash",
+          "label": "三角区声索范围，大致，不是进军线",
+          "text": "苏丹独立后沿 1902 年行政界主张三角区。与埃及的 1899 年线不是同一条。虚线不是实控。",
           "sources": [
+            "https://www.openstreetmap.org/relation/4081614",
+            "https://www.openstreetmap.org/copyright",
             "https://www.meforum.org/middle-east-quarterly/hot-spot-egypt-and-sudan-wrangle-over-halayib",
             "https://en.wikipedia.org/wiki/Halaib_Triangle"
           ]
@@ -513,14 +523,14 @@
           "role": "control",
           "from": "1902-11-04",
           "until": "1992-12-09",
-          "text": "1902 年以后长期由苏丹一侧行政。中间的驻军进退不逐次重写。1992-12-09 以前不写成埃及已经占领。不画。",
+          "text": "1902 年以后长期由苏丹一侧行政。中间的驻军进退不逐次重写。1992-12-09 以前不写成埃及已经占领。虚线只是声索范围，不填实控。",
           "sources": ["https://www.meforum.org/middle-east-quarterly/hot-spot-egypt-and-sudan-wrangle-over-halayib"]
         },
         {
           "role": "control",
           "from": "1992-12-09",
           "party": {"zh": "埃及"},
-          "text": "苏丹于 1992 年底向安理会申诉，称埃及军队在 12 月 9 日前后切断哈拉伊卜通往苏丹港的路。本层没有埃及进驻公报，不把这一天写成整个三角区已经占领完成。此后行政在埃及一侧，苏丹仍声索，标大致，不画。",
+          "text": "苏丹于 1992 年底向安理会申诉，称埃及军队在 12 月 9 日前后切断哈拉伊卜通往苏丹港的路。本层没有埃及进驻公报，不把这一天写成整个三角区已经占领完成。此后行政在埃及一侧，苏丹仍声索，标大致。不填实控。",
           "sources": [
             "https://www.meforum.org/middle-east-quarterly/hot-spot-egypt-and-sudan-wrangle-over-halayib",
             "https://en.wikipedia.org/wiki/Halaib_Triangle"

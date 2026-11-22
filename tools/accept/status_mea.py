@@ -118,7 +118,10 @@ check("朱巴不是阿卜耶伊层", all(x["id"] != "abyei" for x in hit("2011-0
 
 ha = area("2000-06-01", "halaib")
 hat = text(ha["rows"])
-check("2000 哈拉伊卜不画，1899 与 1902 两条线", ha["probe"] is None and "不画" in hat and "1899" in hat and "1902" in hat and "大致" in hat, hat[:200])
+check("2000 哈拉伊卜有大致虚线、不填实控", ha["probe"] is not None and "1899" in hat and "1902" in hat and "大致" in hat and "不填实控" in hat, hat[:220])
+check("2000 哈拉伊卜只有声索虚线", ids_of("2000-06-01", "halaib") == ["halaib-claim"], ids_of("2000-06-01", "halaib"))
+check("2000 三角区内点能点到，开罗点不到", any(x["id"] == "halaib" for x in hit("2000-06-01", 22.22, 36.63)) and all(x["id"] != "halaib" for x in hit("2000-06-01", 30.04, 31.24)), "hit")
+check("1902-11-03 三角区虚线还没开始", "halaib-claim" not in ids_of("1902-11-03", "halaib"), ids_of("1902-11-03", "halaib"))
 
 # 南苏丹：自治不等于独立
 h = hit("1980-06-01", 4.859, 31.582)
