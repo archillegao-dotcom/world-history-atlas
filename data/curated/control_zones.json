@@ -12262,6 +12262,84 @@
    ]
   },
   {
+   "id": "sjw_cell_mcgd:s578_1944-09-06_零陵",
+   "group": "sino_japanese_war",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "日军军事占领区（零陵）",
+   "name_en": "日军军事占领区（零陵）",
+   "controller": {
+    "qid": "Q188712",
+    "zh": "大日本帝国"
+   },
+   "from": "1944-09-06",
+   "until": "1944-11-10",
+   "geometry": {
+    "roc_counties": [
+     "mcgd:s578"
+    ]
+   },
+   "approx": true,
+   "note": "零陵县域。已核對《中華民國史事紀要》民國三十三年七月至九月，印页六六四（PDF 第672页），页眉九月七日，标题湖南零陵失陷。正文写至九月六日乘夜攻入零陵，本（七）日各军突围，王甲本力战殉国。攻入是六日。1944-11-10 起并入桂柳走廊。大致。县域为治所泰森多边形近似。",
+   "dates_note": "零陵 1944-09-06 起，收到 1944-11-10。已核對印页六六四。",
+   "sources": [
+    "https://www.drnh.gov.tw/p/404-1003-13338.php?Lang=zh-tw",
+    "https://zenodo.org/records/5721459"
+   ]
+  },
+  {
+   "id": "sjw_cell_mcgd:s1554_1944-11-03_荔浦",
+   "group": "sino_japanese_war",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "日军军事占领区（荔浦）",
+   "name_en": "日军军事占领区（荔浦）",
+   "controller": {
+    "qid": "Q188712",
+    "zh": "大日本帝国"
+   },
+   "from": "1944-11-03",
+   "until": "1944-11-10",
+   "geometry": {
+    "roc_counties": [
+     "mcgd:s1554"
+    ]
+   },
+   "approx": true,
+   "note": "荔浦县域。已核對《中華民國史事紀要》民國三十三年十月至十二月，印页三七五（PDF 第383页），页眉十一月九日。桂林本日为日军突入，这一天不改。同页追述本月三日第三师攻陷荔浦。1944-11-10 起并入桂柳走廊。大致。县域为治所泰森多边形近似。",
+   "dates_note": "荔浦 1944-11-03 起，收到 1944-11-10。追述，已核對印页三七五。",
+   "sources": [
+    "https://www.drnh.gov.tw/p/404-1003-13334.php?Lang=zh-tw",
+    "https://zenodo.org/records/5721459"
+   ]
+  },
+  {
+   "id": "sjw_cell_mcgd:s1148_1944-11-03_阳朔",
+   "group": "sino_japanese_war",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "日军军事占领区（阳朔）",
+   "name_en": "日军军事占领区（阳朔）",
+   "controller": {
+    "qid": "Q188712",
+    "zh": "大日本帝国"
+   },
+   "from": "1944-11-03",
+   "until": "1944-11-10",
+   "geometry": {
+    "roc_counties": [
+     "mcgd:s1148"
+    ]
+   },
+   "approx": true,
+   "note": "阳朔县域。已核對《中華民國史事紀要》民國三十三年十月至十二月，印页三七五（PDF 第383页），页眉十一月九日，追述本月三日第十三师团进占阳朔。桂林仍是十一月九日。1944-11-10 起并入桂柳走廊。大致。县域为治所泰森多边形近似。",
+   "dates_note": "阳朔 1944-11-03 起，收到 1944-11-10。追述，已核對印页三七五。",
+   "sources": [
+    "https://www.drnh.gov.tw/p/404-1003-13334.php?Lang=zh-tw",
+    "https://zenodo.org/records/5721459"
+   ]
+  },
+  {
    "id": "sjw_cell_s453_1938-06-13_安庆",
    "group": "sino_japanese_war",
    "kind": "occupied",
@@ -12626,6 +12704,33 @@
    "dates_note": "柳州 1944-11-11 起，收到 1945-08-16。已核對《中華民國史事紀要》印页四二三。",
    "sources": [
     "https://www.drnh.gov.tw/p/404-1003-13334.php?Lang=zh-tw",
+    "https://zenodo.org/records/5721459"
+   ]
+  },
+  {
+   "id": "sjw_cell_s670_1944-11-24_南宁",
+   "group": "sino_japanese_war",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "日军军事占领区（南宁）",
+   "name_en": "日军军事占领区（南宁）",
+   "controller": {
+    "qid": "Q188712",
+    "zh": "大日本帝国"
+   },
+   "from": "1944-11-24",
+   "until": "1945-05-27",
+   "geometry": {
+    "roc_counties": [
+     "mcgd:s670"
+    ]
+   },
+   "approx": true,
+   "note": "邕宁县域。一九三九年那一格仍收到 1940-10-29。已核對《中華民國史事紀要》民國三十三年十月至十二月，印页七一六（PDF 第724页），写第六方面军第二十三军先于十一月二十四日攻入广西南宁。收复已核對《中華民國史事紀要》民國三十四年五月至七月，印页二九七（PDF 第299页），页眉六月三日，注写第六十四军一五六师于五月廿七日克南宁。这一格收到五月二十七日，不含当天。不在桂柳走廊那一块里。大致。县域为治所泰森多边形近似。",
+   "dates_note": "南宁 1944-11-24 起，收到 1945-05-27。攻入已核對印页七一六，克复已核對印页二九七。追述。",
+   "sources": [
+    "https://www.drnh.gov.tw/p/404-1003-13334.php?Lang=zh-tw",
+    "https://www.drnh.gov.tw/p/404-1003-13342.php?Lang=zh-tw",
     "https://zenodo.org/records/5721459"
    ]
   },
