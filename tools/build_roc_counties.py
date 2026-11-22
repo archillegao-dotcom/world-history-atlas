@@ -1081,6 +1081,81 @@ def main():
         doc["zones"].append(supplements_extra)
         print("growth", name, fall, end, ids)
 
+    # 民国三十八至三十五年。只收看过原页、日子钉在一天、收得到收复日或既有整省的县。
+    # 1949-10-01 的中华人民共和国填色不在这里改。
+    ccw_cells = [
+        (
+            "ccw_xiangyang_1949", "mcgd:s528", "襄阳", "1949-01-10", "1949-05-15",
+            "襄阳县域，不是襄樊一带各县。樊城不是一九三一年的县。"
+            "已核對《中華民國史事紀要》民國三十八年一月至六月，"
+            "印页一二八（PDF 第136页），页眉一月十日，"
+            "标题「湖北省襄樊為中共軍攻陷」。原文标题保留。"
+            "这一天记沦陷。1949-05-15 起并入湖北整省。"
+            "大致。县域为治所泰森多边形近似。",
+            "襄阳 1949-01-10 起，收到 1949-05-15。已核對印页一二八。",
+            "https://www.drnh.gov.tw/p/405-1003-13361,c169.php?Lang=zh-tw",
+        ),
+        (
+            "ccw_tianjin_1949", "mcgd:s195", "天津", "1949-01-15", "1949-01-31",
+            "天津县域。"
+            "已核對《中華民國史事紀要》民國三十八年一月至六月，"
+            "印页一八一（PDF 第189页），页眉一月十五、十六日。"
+            "标题「天津為中共軍攻陷」。正文写十四日晨起猛攻，巷战二十九小时，"
+            "陈长捷被俘，天津遂陷。注引天津《大公报》民国三十八年一月十五日。"
+            "十六日是同页后一条，不是入城日。七日是外围进犯，不写成已经入城。"
+            "这一天记沦陷。1949-01-31 起并入河北整省。"
+            "大致。县域为治所泰森多边形近似。",
+            "天津 1949-01-15 起，收到 1949-01-31。已核對印页一八一。",
+            "https://www.drnh.gov.tw/p/405-1003-13361,c169.php?Lang=zh-tw",
+        ),
+        (
+            "ccw_guanghua_1949", "mcgd:s449", "光化", "1949-01-17", "1949-05-15",
+            "光化县域。原文写老河口。一九三一年县名是光化，治所即老河口。"
+            "已核對《中華民國史事紀要》民國三十八年一月至六月，"
+            "印页一九九（PDF 第207页），页眉一月十七日，"
+            "标题「塘沽及老河口為中共軍攻陷」。"
+            "正文写塘沽本日为中共军攻陷，国军第十七兵团海道撤离。"
+            "塘沽不是一九三一年的县，不另画。"
+            "这一天记沦陷。1949-05-15 起并入湖北整省。"
+            "大致。县域为治所泰森多边形近似。",
+            "光化 1949-01-17 起，收到 1949-05-15。已核對印页一九九。",
+            "https://www.drnh.gov.tw/p/405-1003-13361,c169.php?Lang=zh-tw",
+        ),
+        (
+            "ccw_xianyang_1949", "mcgd:s826", "咸阳", "1949-05-18", "1949-05-20",
+            "咸阳县域。"
+            "已核對《中華民國史事紀要》民國三十八年一月至六月，"
+            "印页六〇六（PDF 第614页），页眉五月十八、十九日。"
+            "正文写本月十八日下午共军陷咸阳，十九日共军渡渭河进攻西安。"
+            "同页「湖北咸宁亦告沦陷」没有另写日子，而且湖北整省已从五月十五日起，不另画。"
+            "这一天记沦陷。1949-05-20 起并入陕西整省。"
+            "大致。县域为治所泰森多边形近似。",
+            "咸阳 1949-05-18 起，收到 1949-05-20。已核對印页六〇六。",
+            "https://www.drnh.gov.tw/p/405-1003-13361,c169.php?Lang=zh-tw",
+        ),
+    ]
+    for zid, cid, name, fall, end, note, dates_note, src in ccw_cells:
+        if cid not in id_of or any(z.get("id") == zid for z in doc["zones"]):
+            print("skip ccw", name, cid in id_of)
+            continue
+        doc["zones"].append({
+            "id": zid,
+            "group": "chinese_civil_war",
+            "kind": "de_facto",
+            "as_polity": True,
+            "name_zh": f"共军控制区（{name}）",
+            "name_en": f"CCP-held {name}",
+            "controller": {"qid": "Q17427", "zh": "中国共产党"},
+            "from": fall,
+            "until": end,
+            "geometry": {"roc_counties": [cid]},
+            "approx": True,
+            "note": note,
+            "dates_note": dates_note,
+            "sources": [src, "https://zenodo.org/records/5721459"],
+        })
+        print("ccw cell", name, fall, end, cid)
+
     harbin = "mcgd:s417"
     if harbin in id_of and not any(z["id"] == "ccw_harbin_1946" for z in doc["zones"]):
         doc["zones"].append({
