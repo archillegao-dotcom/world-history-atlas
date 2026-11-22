@@ -1010,6 +1010,52 @@
         {"label": "加拿大司法部尾注：1982年宪法法于1982年4月17日生效", "url": "https://laws-lois.justice.gc.ca/eng/const/endNotes.html"}
       ],
       "spans": [{"qid": "Q16", "from": "1982-04-17", "until": null}]
+    },
+    {
+      "id": "ie_1922",
+      "title_zh": "1922年爱尔兰自由邦宪法",
+      "title_orig": "Constitution of the Irish Free State (Saorstát Eireann)",
+      "kind": "formal",
+      "adopted": null,
+      "promulgated": null,
+      "effective": null,
+      "effective_clause": "于英王公告发出之日施行；公告最迟在1922年12月6日",
+      "repealed": null,
+      "summary_zh": "第83条写明：制宪会议和英国议会通过并采用这部宪法，应由英王公告宣布，越快越好，最迟不晚于1922年12月6日；宪法自该公告发出之日起施行。打开的文本没有印出公告实际发出的日子。本图从条文所写的最迟日列入，不把12月6日写成公告上的日期。1937年宪法写明自1937年12月29日起施行，这一天起不再列这一部。只挂在爱尔兰自由邦上。",
+      "sources": [
+        {"label": "爱尔兰法令汇编：1922年自由邦宪法第83条", "url": "https://www.irishstatutebook.ie/eli/1922/act/1/enacted/en/print.html"}
+      ],
+      "spans": [{"qid": "Q31747", "from": "1922-12-06", "until": "1937-12-29"}]
+    },
+    {
+      "id": "ie_1937",
+      "title_zh": "1937年爱尔兰宪法",
+      "title_orig": "Constitution of Ireland",
+      "kind": "formal",
+      "adopted": "1937-07-01",
+      "promulgated": null,
+      "effective": "1937-12-29",
+      "repealed": null,
+      "summary_zh": "法令汇编首页写明：人民于1937年7月1日制定，自1937年12月29日起施行。12月28日地图上仍是爱尔兰自由邦，列1922年宪法。12月29日起列这一部。后来的修正不是新的一部宪法。",
+      "sources": [
+        {"label": "爱尔兰法令汇编：1937年7月1日制定，1937年12月29日起施行", "url": "https://www.irishstatutebook.ie/eli/cons/en/html"}
+      ],
+      "spans": [{"qid": "Q27", "from": "1937-12-29", "until": null}]
+    },
+    {
+      "id": "lu_1868",
+      "title_zh": "1868年卢森堡宪法",
+      "title_orig": "Constitution du Grand-Duché de Luxembourg",
+      "kind": "formal",
+      "adopted": null,
+      "promulgated": "1868-10-17",
+      "effective": "1868-10-17",
+      "repealed": null,
+      "summary_zh": "官方公报所载文本落款「Au Loo, le 17 octobre 1868」，由国王兼大公纪尧姆签署。打开的这一页没有另写一条更晚的生效句，从落款日起列入。后来的修改不是新的一部宪法。",
+      "sources": [
+        {"label": "卢森堡官方公报：1868年10月17日宪法", "url": "https://legilux.public.lu/eli/etat/leg/constitution/1868/10/17/n1/jo"}
+      ],
+      "spans": [{"qid": "Q32", "from": "1868-10-17", "until": null}]
     }
   ],
   "gaps": [
@@ -1095,7 +1141,7 @@
       "qids": ["Q34"],
       "from": null,
       "until": null,
-      "note": "已核对：瑞典议会网站有政府组织法的公布令 Kungörelse (1974:152)。打开的汇订本写明政府组织法、王位继承法、出版自由法和表达自由法是王国的根本法。汇订本没有印出1974年文本的原生效日，本批不写一个日子。"
+      "note": "已核对：瑞典议会文本库的政府组织法公布令是 Kungörelse (1974:152)，签发日写1974-02-28。汇订本里能读到的生效句是后来修正的（1977、1980、2011、2015），没有印出1974年文本自己的原生效日。1809年政府组织法这一页也没有。本批不写1975年1月1日。"
     },
     {
       "qids": ["Q31"],
