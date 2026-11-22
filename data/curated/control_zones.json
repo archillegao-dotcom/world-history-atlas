@@ -12404,6 +12404,110 @@
    ]
   },
   {
+   "id": "sjw_cell_s1726_1940-02-04_上林",
+   "group": "sino_japanese_war",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "日军军事占领区（上林）",
+   "name_en": "日军军事占领区（上林）",
+   "controller": {
+    "qid": "Q188712",
+    "zh": "大日本帝国"
+   },
+   "from": "1940-02-04",
+   "until": "1940-02-12",
+   "geometry": {
+    "roc_counties": [
+     "mcgd:s1726"
+    ]
+   },
+   "approx": true,
+   "note": "上林县域。已核對《中華民國史事紀要》民國二十九年一月至六月，印页一九八至一九九（PDF 第206–207页），页眉二月十二日。写四日敌复侵入上林，九日是上林附近，不把九日写成县城。同页写本日克复上林、宾阳、武鸣。收到二月十二日。宾阳十一日入城，失陷日没有锁到一天，不另画。大致。县域为治所泰森多边形近似。",
+   "dates_note": "上林 1940-02-04 起，收到 1940-02-12。已核對印页一九八、一九九。",
+   "sources": [
+    "https://www.drnh.gov.tw/p/404-1003-13318.php?Lang=zh-tw",
+    "https://zenodo.org/records/5721459"
+   ]
+  },
+  {
+   "id": "sjw_cell_s715_1940-02-08_武鸣",
+   "group": "sino_japanese_war",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "日军军事占领区（武鸣）",
+   "name_en": "日军军事占领区（武鸣）",
+   "controller": {
+    "qid": "Q188712",
+    "zh": "大日本帝国"
+   },
+   "from": "1940-02-08",
+   "until": "1940-02-12",
+   "geometry": {
+    "roc_counties": [
+     "mcgd:s715"
+    ]
+   },
+   "approx": true,
+   "note": "武鸣县域。已核對《中華民國史事紀要》民國二十九年一月至六月，印页一九九（PDF 第207页），页眉二月十二日，写八日武鸣失陷，本日在武鸣的日军被击退，同页写克复上林、宾阳、武鸣。收到二月十二日。大致。县域为治所泰森多边形近似。",
+   "dates_note": "武鸣 1940-02-08 起，收到 1940-02-12。已核對印页一九九。",
+   "sources": [
+    "https://www.drnh.gov.tw/p/404-1003-13318.php?Lang=zh-tw",
+    "https://zenodo.org/records/5721459"
+   ]
+  },
+  {
+   "id": "sjw_cell_s902_1940-02-03_五原",
+   "group": "sino_japanese_war",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "日军占领区（五原）",
+   "name_en": "日军占领区（五原）",
+   "controller": {
+    "qid": "Q188712",
+    "zh": "大日本帝国"
+   },
+   "from": "1940-02-03",
+   "until": "1940-03-21",
+   "geometry": {
+    "roc_counties": [
+     "mcgd:s902"
+    ]
+   },
+   "approx": true,
+   "note": "五原县域。已核對《中華民國史事紀要》民國二十九年一月至六月，印页一八〇（PDF 第188页），页眉二月三、四日。三日这一条写本日日军攻陷五原。印页一九九（PDF 第207页）写上月二十八日连陷五原、临河，史事纪要内记载不一，地图用写了本日的二月三日。印页三五三（PDF 第361页），页眉三月二十一日，写二月三日陷五原、四日陷临河，本日下午五时克复五原城。印页四六〇（PDF 第468页）写至四月一日三度克复，史事纪要内记载不一，地图用写了本日的三月二十一日。不在大块里。大致。县域为治所泰森多边形近似。",
+   "dates_note": "五原 1940-02-03 起，收到 1940-03-21。已核對印页一八〇、三五三。一月二十八日、四月一日记载不一。",
+   "sources": [
+    "https://www.drnh.gov.tw/p/404-1003-13318.php?Lang=zh-tw",
+    "https://zenodo.org/records/5721459"
+   ]
+  },
+  {
+   "id": "sjw_cell_s1316_1940-02-04_临河",
+   "group": "sino_japanese_war",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "日军占领区（临河）",
+   "name_en": "日军占领区（临河）",
+   "controller": {
+    "qid": "Q188712",
+    "zh": "大日本帝国"
+   },
+   "from": "1940-02-04",
+   "until": "1940-02-12",
+   "geometry": {
+    "roc_counties": [
+     "mcgd:s1316"
+    ]
+   },
+   "approx": true,
+   "note": "临河县域。已核對《中華民國史事紀要》民國二十九年一月至六月，印页一八〇至一八一（PDF 第188–189页），页眉二月三、四日。四日这一条写昨（三）日陷五原，本日攻陷临河。印页一九九（PDF 第207页）写上月二十八日连陷，又写本日克复临河。失陷日用写了本日的二月四日，史事纪要内记载不一。收到二月十二日。印页四三〇（PDF 第438页）也写二月十二日收复临河。不在大块里。大致。县域为治所泰森多边形近似。",
+   "dates_note": "临河 1940-02-04 起，收到 1940-02-12。已核對印页一八一、一九九。一月二十八日记载不一。",
+   "sources": [
+    "https://www.drnh.gov.tw/p/404-1003-13318.php?Lang=zh-tw",
+    "https://zenodo.org/records/5721459"
+   ]
+  },
+  {
    "id": "sjw_cell_mcgd:s797_1939-07-11_武乡",
    "group": "sino_japanese_war",
    "kind": "occupied",
