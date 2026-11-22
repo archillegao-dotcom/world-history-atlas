@@ -4121,5 +4121,98 @@
       "d": 7,
       "p": 11
     }
+  },
+  "Q24883309": {
+    "batch": "2026-11-22-h",
+    "adopted": {
+      "y": 1980,
+      "m": 10,
+      "d": 10,
+      "p": 11
+    },
+    "effective": {
+      "y": 1983,
+      "m": 12,
+      "d": 2,
+      "p": 11
+    },
+    "status": "signed_then_effective",
+    "note": "燃烧武器议定书。1980-10-10在日内瓦通过，1981-04-10开放签署，1983-12-02生效。名单不补。",
+    "sources": [
+      "https://treaties.unoda.org/t/ccw_p3",
+      "https://treaties.un.org/pages/ViewDetails.aspx?chapter=26&mtdsg_no=XXVI-2&src=TREATY"
+    ],
+    "signed": {
+      "y": 1981,
+      "m": 4,
+      "d": 10,
+      "p": 11
+    }
+  },
+  "Q501371": {
+    "batch": "2026-11-22-h",
+    "adopted": {
+      "y": 2006,
+      "m": 9,
+      "d": 8,
+      "p": 11
+    },
+    "effective": {
+      "y": 2009,
+      "m": 3,
+      "d": 21,
+      "p": 11
+    },
+    "status": "signed_then_effective",
+    "note": "中亚无核武器区条约。2006-09-08订于塞米巴拉金斯克，2009-03-21生效。名单不补。",
+    "sources": [
+      "https://treaties.un.org/Pages/showDetails.aspx?clang=_en&objid=080000028023b006"
+    ],
+    "signed": {
+      "y": 2006,
+      "m": 9,
+      "d": 8,
+      "p": 11
+    }
+  },
+  "Q18451380": {
+    "batch": "2026-11-22-h",
+    "adopted": {
+      "y": 1920,
+      "m": 7,
+      "d": 9,
+      "p": 11
+    },
+    "effective": {
+      "y": 1921,
+      "m": 9,
+      "d": 27,
+      "p": 11
+    },
+    "status": "signed_then_effective",
+    "note": "确定准许儿童在海上工作的最低年龄公约。1920-07-09在热那亚通过，1921-09-27生效。名单不补。",
+    "sources": [
+      "https://treaties.un.org/doc/Publication/UNTS/Volume%2038/volume-38-I-590-English.pdf"
+    ]
+  },
+  "Q7124649": {
+    "batch": "2026-11-22-h",
+    "adopted": {
+      "y": 1949,
+      "m": 6,
+      "d": 18,
+      "p": 11
+    },
+    "effective": {
+      "y": 1967,
+      "m": 9,
+      "d": 14,
+      "p": 11
+    },
+    "status": "signed_then_effective",
+    "note": "1949年海员有薪休假公约（修订）。1949-06-18通过，1967-09-14生效。间隔是第13条的批准条件。名单不补。",
+    "sources": [
+      "https://treaties.un.org/doc/Publication/UNTS/Volume%20605/volume-605-I-8768-English.pdf"
+    ]
   }
 }
