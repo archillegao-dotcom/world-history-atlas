@@ -3215,5 +3215,136 @@
     "sources": [
       "https://treaties.un.org/pages/showDetails.aspx?objid=08000002801611d8"
     ]
+  },
+  "Q8037131": {
+    "batch": "2026-11-22-e",
+    "adopted": {
+      "y": 1999,
+      "m": 6,
+      "d": 17,
+      "p": 11
+    },
+    "effective": {
+      "y": 2000,
+      "m": 11,
+      "d": 19,
+      "p": 11
+    },
+    "parties": [],
+    "countries": [],
+    "status": "signed_then_effective",
+    "summary_zh": "国际劳工组织第182号公约。1999年6月17日在日内瓦通过，2000年11月19日生效。保存机关是国际劳工局局长。导出只把开会地瑞士写成缔约方，名单不补。",
+    "note": "通过日和生效日按联合国条约集登记号37245。不补缔约方。",
+    "sources": [
+      "https://treaties.un.org/Pages/showDetails.aspx?clang=_en&objid=080000028008ccbd"
+    ]
+  },
+  "Q3924287": {
+    "batch": "2026-11-22-e",
+    "adopted": {
+      "y": 2000,
+      "m": 11,
+      "d": 15,
+      "p": 11
+    },
+    "signed": {
+      "y": 2000,
+      "m": 12,
+      "d": 12,
+      "p": 11
+    },
+    "effective": {
+      "y": 2003,
+      "m": 12,
+      "d": 25,
+      "p": 11
+    },
+    "status": "signed_then_effective",
+    "summary_zh": "打击贩运人口特别是妇女和儿童的议定书。2000年11月15日大会通过，2000年12月12日在巴勒莫开放签署，2003年12月25日按第17条生效。缔约方名单不补。",
+    "note": "日期按联合国条约集登记号39574和联合国毒品和犯罪问题办公室的说明。",
+    "sources": [
+      "https://treaties.un.org/Pages/showDetails.aspx?clang=_en&objid=0800000280051ba9",
+      "https://www.unodc.org/unodc/en/treaties/ctoc/signatures.html"
+    ]
+  },
+  "Q15991251": {
+    "batch": "2026-11-22-e",
+    "adopted": {
+      "y": 1986,
+      "m": 9,
+      "d": 26,
+      "p": 11
+    },
+    "effective": {
+      "y": 1986,
+      "m": 10,
+      "d": 27,
+      "p": 11
+    },
+    "parties": [],
+    "countries": [],
+    "status": "signed_then_effective",
+    "summary_zh": "及早通报核事故公约。1986年9月26日在维也纳通过，1986年10月27日生效。保存机关是原子能机构总干事。导出只把开会地奥地利写成缔约方，名单不补。",
+    "note": "日期按国际原子能机构和联合国条约集登记号24404。",
+    "sources": [
+      "https://www.iaea.org/topics/nuclear-safety-conventions/convention-early-notification-nuclear-accident",
+      "https://treaties.un.org/pages/showDetails.aspx?objid=08000002800cf3c9"
+    ]
+  },
+  "Q331592": {
+    "batch": "2026-11-22-e",
+    "adopted": {
+      "y": 1994,
+      "m": 6,
+      "d": 17,
+      "p": 11
+    },
+    "signed": {
+      "y": 1994,
+      "m": 9,
+      "d": 20,
+      "p": 11
+    },
+    "effective": {
+      "y": 1996,
+      "m": 10,
+      "d": 24,
+      "p": 11
+    },
+    "status": "signed_then_effective",
+    "summary_zh": "核安全公约。1994年6月17日在维也纳通过，1994年9月20日开放签署，1996年10月24日生效。缔约方名单不补。",
+    "note": "通过日和生效日按国际原子能机构。开放签署日按联合国条约集登记号33545。",
+    "sources": [
+      "https://www.iaea.org/topics/nuclear-safety-conventions/convention-nuclear-safety",
+      "https://treaties.un.org/Pages/showDetails.aspx?objid=08000002800a52b4"
+    ]
+  },
+  "Q584586": {
+    "batch": "2026-11-22-e",
+    "adopted": {
+      "y": 1972,
+      "m": 10,
+      "d": 20,
+      "p": 11
+    },
+    "signed": {
+      "y": 1972,
+      "m": 10,
+      "d": 20,
+      "p": 11
+    },
+    "effective": {
+      "y": 1977,
+      "m": 7,
+      "d": 15,
+      "p": 11
+    },
+    "status": "signed_then_effective",
+    "summary_zh": "1972年国际海上避碰规则公约。1972年10月20日在伦敦通过，1977年7月15日生效。缔约方名单不补。",
+    "note": "日期按国际海事组织和联合国条约集登记号15824。",
+    "sources": [
+      "https://www.imo.org/en/about/conventions/pages/colreg.aspx",
+      "https://treaties.un.org/pages/showDetails.aspx?objid=08000002800fcf87"
+    ]
   }
 }
