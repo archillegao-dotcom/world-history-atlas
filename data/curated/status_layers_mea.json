@@ -1699,6 +1699,249 @@
           ]
         }
       ]
+    },
+    {
+      "id": "abu_musa_tunbs",
+      "name_zh": "阿布穆萨与大小通布岛",
+      "geom": null,
+      "precision_zh": "三座岛没有带名字的 Natural Earth 轮廓。不把霍尔木兹海峡或阿联酋、伊朗的省界拿来代替。不画。",
+      "statements": [
+        {
+          "role": "control",
+          "from": "1971-11-30",
+          "until": "1992-04",
+          "party": {"zh": "伊朗"},
+          "text": "1971-11-30 伊朗进占大通布、小通布，并按前一天与沙迦统治者的备忘录登上阿布穆萨。备忘录是共管安排，不是阿联酋放弃该岛。通布两岛没有这种备忘录。4 月 1 日不是 1992 年改共管的日子。不画。",
+          "sources": ["https://en.wikipedia.org/wiki/Seizure_of_Abu_Musa_and_the_Greater_and_Lesser_Tunbs"]
+        },
+        {
+          "role": "control",
+          "from": "1992-04",
+          "party": {"zh": "伊朗"},
+          "text": "1992 年 4 月伊朗把阿布穆萨也收为单独管治，沙迦人员离开。4 月 1 日不是公告日。三岛此后都在伊朗实际控制下。不画。",
+          "sources": ["https://en.wikipedia.org/wiki/Abu_Musa"]
+        },
+        {
+          "role": "claim",
+          "from": "1971-11-30",
+          "party": {"zh": "阿拉伯联合酋长国"},
+          "text": "阿联酋主张三岛。1971-12-02 建国以前，通布属哈伊马角、阿布穆萨属沙迦。建国不取消这项声索。",
+          "sources": ["https://en.wikipedia.org/wiki/Seizure_of_Abu_Musa_and_the_Greater_and_Lesser_Tunbs"]
+        },
+        {
+          "role": "claim",
+          "from": "1971-11-30",
+          "party": {"zh": "伊朗"},
+          "text": "伊朗主张三岛本来属于自己。这是声索。共管备忘录不写成已经得到普遍承认。",
+          "sources": ["https://en.wikipedia.org/wiki/Abu_Musa"]
+        },
+        {
+          "role": "recognition",
+          "from": "1971-11-30",
+          "text": "没有联合国决议把三岛判给伊朗或阿联酋。个别表态不编成承认名单，标待考。",
+          "sources": ["https://en.wikipedia.org/wiki/Abu_Musa"]
+        }
+      ]
+    },
+    {
+      "id": "bakassi",
+      "name_zh": "巴卡西半岛",
+      "geom": null,
+      "precision_zh": "没有半岛轮廓。不用十字河州或喀麦隆西南区整片代替。不画。",
+      "statements": [
+        {
+          "role": "control",
+          "from": "1960-10-01",
+          "until": "2008-08-14",
+          "party": {"zh": "尼日利亚"},
+          "text": "尼日利亚长期实际管治半岛。2002-10-10 国际法院把主权判给喀麦隆之后，尼日利亚仍留到 2008-08-14 才完成移交。法律归属和撤军不是同一天。不画。",
+          "sources": [
+            "https://www.icj-cij.org/case/94",
+            "https://en.wikipedia.org/wiki/Bakassi"
+          ]
+        },
+        {
+          "role": "control",
+          "from": "2008-08-14",
+          "party": {"zh": "喀麦隆"},
+          "text": "2008-08-14 尼日利亚完成撤军，此后记喀麦隆实际控制。不画半岛。",
+          "sources": ["https://en.wikipedia.org/wiki/Bakassi"]
+        },
+        {
+          "role": "claim",
+          "from": "1960-10-01",
+          "until": "2002-10-10",
+          "party": {"zh": "尼日利亚"},
+          "text": "移交以前尼日利亚主张半岛。这是声索，和它的实际管治叠在一起。",
+          "sources": ["https://en.wikipedia.org/wiki/Bakassi"]
+        },
+        {
+          "role": "claim",
+          "from": "1960-10-01",
+          "party": {"zh": "喀麦隆"},
+          "text": "喀麦隆依据 1913 年英德协定主张半岛。2002-10-10 国际法院支持喀麦隆。判决日不是撤军日。",
+          "sources": ["https://www.icj-cij.org/case/94"]
+        },
+        {
+          "role": "recognition",
+          "from": "2002-10-10",
+          "until": "2008-08-14",
+          "text": "国际法院 2002-10-10 的判决确定主权在喀麦隆。2006-06-12 格林特里协定安排移交。到 2008-08-14 以前，承认的是喀麦隆的主权，实际控制仍是尼日利亚。",
+          "sources": [
+            "https://www.icj-cij.org/case/94",
+            "https://en.wikipedia.org/wiki/Bakassi"
+          ]
+        },
+        {
+          "role": "recognition",
+          "from": "2008-08-14",
+          "text": "撤军完成后，主权和实际控制都在喀麦隆。本层不再把这里写成未决争议。",
+          "sources": ["https://en.wikipedia.org/wiki/Bakassi"]
+        }
+      ]
+    },
+    {
+      "id": "essequibo",
+      "name_zh": "圭亚那埃塞奎博",
+      "geom": null,
+      "precision_zh": "委内瑞拉声索的是埃塞奎博河以西。圭亚那的区界有的跨河，不能拼成这片。不画。",
+      "statements": [
+        {
+          "role": "control",
+          "from": "1966-05-26",
+          "party": {"zh": "圭亚那"},
+          "text": "1966-05-26 圭亚那独立，河西仍由圭亚那管治。2023 年委内瑞拉的公投没有变成实际控制。不画。",
+          "sources": ["https://en.wikipedia.org/wiki/Guyana%E2%80%93Venezuela_territorial_dispute"]
+        },
+        {
+          "role": "claim",
+          "from": "1966-02-17",
+          "party": {"zh": "委内瑞拉"},
+          "text": "1966-02-17 日内瓦协定把 1899 年裁决留下的争议继续交给双方处理。委内瑞拉主张河西，并认为 1899-10-03 的裁决无效。河线不画。",
+          "sources": ["https://en.wikipedia.org/wiki/Geneva_Agreement_(1966)"]
+        },
+        {
+          "role": "claim",
+          "from": "1966-05-26",
+          "party": {"zh": "圭亚那"},
+          "text": "圭亚那主张 1899 年裁决划定的边界有效，河西是本国领土。",
+          "sources": ["https://en.wikipedia.org/wiki/Guyana%E2%80%93Venezuela_territorial_dispute"]
+        },
+        {
+          "role": "recognition",
+          "from": "1966-05-26",
+          "until": "2018-03-29",
+          "text": "各国一般按圭亚那的管治来往。这不是一项把河西判给圭亚那的新裁决。国际法院此案尚未起诉。",
+          "sources": ["https://www.icj-cij.org/case/171"]
+        },
+        {
+          "role": "recognition",
+          "from": "2018-03-29",
+          "text": "圭亚那于 2018-03-29 向国际法院起诉。法院后来确认有管辖权，但截至 2026-11 还没有就 1899 年裁决是否有效作出实体判决。不把审理中的案子写成已经判完。",
+          "sources": [
+            "https://www.icj-cij.org/case/171",
+            "https://en.wikipedia.org/wiki/Guyana%E2%80%93Venezuela_territorial_dispute"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tamil_eelam",
+      "name_zh": "泰米尔伊拉姆",
+      "geom": null,
+      "precision_zh": "猛虎组织的控制区随年份伸缩，北部和东部省界不是控制线。不画。",
+      "statements": [
+        {
+          "role": "control",
+          "from": "1983-07-23",
+          "until": "2009-05-19",
+          "party": {"zh": "泰米尔伊拉姆猛虎解放组织"},
+          "text": "1983-07-23 黑色七月之后内战持续到 2009-05-18 猛虎组织的常规武装结束。控制区没有一条可以按年回放的界线，不画。5 月 18 日仍算在战争期内，5 月 19 日起不再记。",
+          "sources": ["https://en.wikipedia.org/wiki/Sri_Lankan_civil_war"]
+        },
+        {
+          "role": "claim",
+          "from": "1983-07-23",
+          "until": "2009-05-19",
+          "party": {"zh": "泰米尔伊拉姆猛虎解放组织"},
+          "text": "猛虎组织声索北部和东部为泰米尔伊拉姆。省界大于它任何一年实际保住的土地。",
+          "sources": ["https://en.wikipedia.org/wiki/Tamil_Eelam"]
+        },
+        {
+          "role": "claim",
+          "from": "1983-07-23",
+          "party": {"zh": "斯里兰卡"},
+          "text": "斯里兰卡主张全国主权。内战和猛虎组织的声索不取消这一行。",
+          "sources": ["https://en.wikipedia.org/wiki/Sri_Lankan_civil_war"]
+        },
+        {
+          "role": "recognition",
+          "from": "1983-07-23",
+          "until": "2009-05-19",
+          "text": "没有国家承认泰米尔伊拉姆。它不是联合国会员。",
+          "sources": ["https://en.wikipedia.org/wiki/Tamil_Eelam"]
+        },
+        {
+          "role": "control",
+          "from": "2009-05-19",
+          "party": {"zh": "斯里兰卡"},
+          "text": "2009-05-18 以后政府控制原战区。不追画当年的控制线。",
+          "sources": ["https://en.wikipedia.org/wiki/Sri_Lankan_civil_war"]
+        }
+      ]
+    },
+    {
+      "id": "kuwait_1990",
+      "name_zh": "科威特（1990–1991 伊拉克占领）",
+      "geom": "kuwait",
+      "precision_zh": "轮廓是 Natural Earth 的科威特，大致就是 1990 年被占领的国家范围，不是逐日前线。2 月 26 日收复的是首都，不是一条新国界。",
+      "statements": [
+        {
+          "role": "control",
+          "from": "1990-08-02",
+          "until": "1991-02-27",
+          "party": {"zh": "伊拉克"},
+          "draw": "fill",
+          "color_kind": "occupied",
+          "text": "1990-08-02 伊拉克入侵并占领科威特。1991-02-26 科威特城被收复，这一天仍记在占领期内。2 月 27 日起不再把全国画成伊拉克占领。2 月 28 日停火不另作一条控制线。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Iraqi_invasion_of_Kuwait",
+            "https://en.wikipedia.org/wiki/United_Nations_Security_Council_Resolution_660"
+          ]
+        },
+        {
+          "role": "claim",
+          "from": "1990-08-02",
+          "until": "1991-02-27",
+          "party": {"zh": "科威特"},
+          "draw": "dash",
+          "label": "科威特主权仍在，不是伊拉克的省",
+          "text": "科威特的主权声索没有中断。虚线是被占领的国家范围，不是伊拉克已经得到承认的省界。",
+          "sources": ["https://en.wikipedia.org/wiki/United_Nations_Security_Council_Resolution_662"]
+        },
+        {
+          "role": "claim",
+          "from": "1990-08-08",
+          "until": "1991-02-27",
+          "party": {"zh": "伊拉克"},
+          "text": "1990-08-08 伊拉克宣布把科威特合并为第十九省。这是合并声称，不是国际承认，也不是 8 月 2 日入侵当天就已经宣布的。",
+          "sources": ["https://en.wikipedia.org/wiki/United_Nations_Security_Council_Resolution_662"]
+        },
+        {
+          "role": "recognition",
+          "from": "1990-08-02",
+          "until": "1990-08-09",
+          "text": "安理会第 660 号决议于 1990-08-02 通过，要求伊拉克立即撤军。合并决议还没有通过。",
+          "sources": ["https://en.wikipedia.org/wiki/United_Nations_Security_Council_Resolution_660"]
+        },
+        {
+          "role": "recognition",
+          "from": "1990-08-09",
+          "until": "1991-02-27",
+          "text": "安理会第 662 号决议于 1990-08-09 通过，宣布 8 月 8 日的合并完全无效。占领不成为主权。",
+          "sources": ["https://en.wikipedia.org/wiki/United_Nations_Security_Council_Resolution_662"]
+        }
+      ]
     }
   ]
 }
