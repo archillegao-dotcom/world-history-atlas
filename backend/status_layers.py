@@ -1,7 +1,11 @@
 """实际控制 / 主权声索 / 国际承认。
 
-每条陈述有日期和来源。几何只引用 data/curated/geom/status_areas.geojson
-里的 Natural Earth 行政轮廓，或者标明交给已有的战争前线。没有轮廓的不画。
+每条陈述有日期和来源。几何引用 data/curated/geom/status_areas.geojson
+以及同目录的 status_areas_*.geojson。轮廓是 Natural Earth 行政界，
+或者标明交给已有的战争前线。没有轮廓的不画。
+
+中东、非洲、南亚这一批写在 data/curated/status_layers_mea.json，
+不并进 status_layers.json，避免和另一路争议区改同一个文件。
 """
 from __future__ import annotations
 
@@ -23,25 +27,44 @@ ROLES = ("control", "claim", "recognition")
 _front_cache: dict[float, object] = {}
 
 
+def _json_paths(directory, first_name, pattern):
+    paths = []
+    first = directory / first_name
+    if first.exists():
+        paths.append(first)
+    if directory.exists():
+        paths += sorted(p for p in directory.glob(pattern) if p.is_file() and p.resolve() != first.resolve())
+    return paths
+
+
 def load(data_dir):
-    doc = _read(data_dir / "curated" / "status_layers.json")
-    gj = _read(data_dir / "curated" / "geom" / "status_areas.geojson")
+    curated = data_dir / "curated"
+    docs = [_read(p) for p in _json_paths(curated, "status_layers.json", "status_layers_*.json")]
     geoms = {}
-    for f in gj.get("features") or []:
-        gid = (f.get("properties") or {}).get("id")
-        if not gid:
-            continue
-        g = make_valid(shape(f["geometry"]))
-        p = g.representative_point()
-        geoms[gid] = {"geom": g, "probe": [round(p.x, 4), round(p.y, 4)], "geojson": f["geometry"]}
+    for path in _json_paths(curated / "geom", "status_areas.geojson", "status_areas_*.geojson"):
+        gj = _read(path)
+        for f in gj.get("features") or []:
+            gid = (f.get("properties") or {}).get("id")
+            if not gid:
+                continue
+            if gid in geoms:
+                raise RuntimeError(f"duplicate status geometry {gid}")
+            g = make_valid(shape(f["geometry"]))
+            p = g.representative_point()
+            geoms[gid] = {"geom": g, "probe": [round(p.x, 4), round(p.y, 4)], "geojson": f["geometry"]}
     areas = []
-    for a in doc.get("areas") or []:
-        rec = dict(a)
-        g = geoms.get(a.get("geom"))
-        rec["_geom"] = g
-        if a.get("geom") and g is None:
-            raise RuntimeError(f"status area {a.get('id')} missing geometry {a.get('geom')}")
-        areas.append(rec)
+    seen = set()
+    for doc in docs:
+        for a in doc.get("areas") or []:
+            if a.get("id") in seen:
+                raise RuntimeError(f"duplicate status area {a.get('id')}")
+            seen.add(a.get("id"))
+            rec = dict(a)
+            g = geoms.get(a.get("geom"))
+            rec["_geom"] = g
+            if a.get("geom") and g is None:
+                raise RuntimeError(f"status area {a.get('id')} missing geometry {a.get('geom')}")
+            areas.append(rec)
     return areas
 
 

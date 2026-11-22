@@ -1,0 +1,2146 @@
+{
+  "_doc": [
+    "中东、非洲、南亚这一批。与 status_layers.json 分开，避免和另一路争议区抢同一个文件。",
+    "实际控制、主权声索、国际承认分开。from 当日起有效，until 当日起不再有效。",
+    "draw=fill 才填色；draw=dash 才画虚线。没有 draw 的只在点选或按区域查询里出现，不在地图上铺颜色。",
+    "几何在 data/curated/geom/status_areas_mea.geojson，是 Natural Earth 1:10m 公有领域的现代行政界。标了大致的不是当日控制线。没有几何的不画。",
+    "西撒哈拉自 1976-02-27、北塞浦路斯自 1974-08-16 已在 status_layers.json。这里只补更早的空档，不改那个文件。不收录克什米尔、阿克赛钦、科索沃、巴勒斯坦、戈兰、千岛、福克兰、阿布哈兹、南奥塞梯、德涅斯特、纳卡、台澎金马、南海、萨尔、但泽、阿尔萨斯-洛林。"
+  ],
+  "areas": [
+    {
+      "id": "somaliland",
+      "name_zh": "索马里兰",
+      "geom": "somaliland",
+      "precision_zh": "轮廓是 Natural Earth 的索马里兰，注记为有争议。它大致沿前英属索马里兰的范围，不是 1991 年以后与邦特兰在苏尔、萨纳格的逐月控制线。东部不另切，标大致。",
+      "statements": [
+        {
+          "role": "control",
+          "from": "1960-06-26",
+          "until": "1960-07-01",
+          "party": {"zh": "索马里兰国"},
+          "text": "1960-06-26 英国结束保护，索马里兰独立。1960-07-01 与前意属索马里合并。这五天不另铺填色。",
+          "sources": [
+            "https://recognition.somalilandgov.com/history/",
+            "https://en.wikipedia.org/wiki/International_recognition_of_Somaliland"
+          ]
+        },
+        {
+          "role": "claim",
+          "from": "1960-06-26",
+          "until": "1960-07-01",
+          "party": {"zh": "索马里兰国"},
+          "text": "这五天的主权是刚独立的索马里兰国，不是 1991 年以后的事实共和国，也还不是索马里共和国。",
+          "sources": ["https://recognition.somalilandgov.com/history/"]
+        },
+        {
+          "role": "recognition",
+          "from": "1960-06-26",
+          "until": "1960-07-01",
+          "text": "索马里兰政府写这五天有 35 国致贺。没有一份可核对的原始名单，承认国数标待考。不把后来的说法回填成已经核实。",
+          "sources": [
+            "https://recognition.somalilandgov.com/history/",
+            "https://en.wikipedia.org/wiki/International_recognition_of_Somaliland"
+          ]
+        },
+        {
+          "role": "control",
+          "from": "1960-07-01",
+          "until": "1991-05-18",
+          "party": {"zh": "索马里共和国"},
+          "text": "1960-07-01 起并入索马里共和国。1988 年以后的战事没有逐月界线，不把这片提前画成 1991 年的事实共和国。",
+          "sources": ["https://en.wikipedia.org/wiki/Somaliland"]
+        },
+        {
+          "role": "claim",
+          "from": "1960-07-01",
+          "until": "1991-05-18",
+          "party": {"zh": "索马里共和国"},
+          "text": "这一阶段的主权声索是索马里共和国。",
+          "sources": ["https://en.wikipedia.org/wiki/Somaliland"]
+        },
+        {
+          "role": "recognition",
+          "from": "1960-07-01",
+          "until": "1991-05-18",
+          "text": "国际承认的是索马里共和国。这里不是另一个会员。",
+          "sources": ["https://en.wikipedia.org/wiki/Somaliland"]
+        },
+        {
+          "role": "control",
+          "from": "1991-05-18",
+          "party": {"zh": "索马里兰"},
+          "draw": "fill",
+          "color_kind": "de_facto",
+          "text": "1991-05-18 布尔奥大会撤销与索马里的联合，实际管治沿前保护地。东部与邦特兰的分界不在这片填色里切开，标大致。",
+          "sources": [
+            "https://recognition.somalilandgov.com/history/",
+            "https://en.wikipedia.org/wiki/Somaliland"
+          ]
+        },
+        {
+          "role": "claim",
+          "from": "1991-05-18",
+          "party": {"zh": "索马里"},
+          "draw": "dash",
+          "label": "索马里声索，不是实控分界",
+          "text": "索马里继续主张这片土地属于索马里。虚线不是与邦特兰的控制线。",
+          "sources": ["https://en.wikipedia.org/wiki/International_recognition_of_Somaliland"]
+        },
+        {
+          "role": "claim",
+          "from": "1991-05-18",
+          "party": {"zh": "索马里兰"},
+          "text": "索马里兰主张恢复 1960 年那五天的主权。这是声索。",
+          "sources": ["https://recognition.somalilandgov.com/history/"]
+        },
+        {
+          "role": "recognition",
+          "from": "1991-05-18",
+          "until": "2020-07",
+          "text": "这一阶段没有联合国会员国正式承认。不是联合国会员。7 月 1 日不是后来代表处的揭牌日。",
+          "sources": ["https://en.wikipedia.org/wiki/International_recognition_of_Somaliland"]
+        },
+        {
+          "role": "recognition",
+          "from": "2020-07",
+          "until": "2025-12-26",
+          "text": "2020 年 7 月索马里兰与台湾互设代表处。7 月 1 日不是揭牌日。这不等于联合国会员式的承认，标待考。此日之前没有联合国会员国正式承认。",
+          "sources": ["https://en.wikipedia.org/wiki/International_recognition_of_Somaliland"]
+        },
+        {
+          "role": "recognition",
+          "from": "2025-12-26",
+          "text": "以色列于 2025-12-26 承认索马里兰。这是单个会员国的承认，不是联合国会籍，也不是非盟的承认。其他国家的反对不逐一开列。美国在 2026 年初仍写一个索马里政策；更晚的口头说法不写成承认。",
+          "sources": ["https://en.wikipedia.org/wiki/International_recognition_of_Somaliland"]
+        }
+      ]
+    },
+    {
+      "id": "eritrea_pre1993",
+      "name_zh": "厄立特里亚（1993 年前）",
+      "geom": "eritrea",
+      "precision_zh": "轮廓是 Natural Earth 的今厄立特里亚，用来大致表示前意大利殖民地的范围，不是 1952 年的测绘。1998 年以后巴德梅一带的争议线不写回 1952–1991，这一段标大致。",
+      "statements": [
+        {
+          "role": "control",
+          "from": "1952-09-15",
+          "until": "1962-11-14",
+          "party": {"zh": "厄立特里亚联邦政府"},
+          "draw": "fill",
+          "color_kind": "de_facto",
+          "text": "1952-09-15 联邦生效。厄立特里亚有自己的议会和政府，主权在埃塞俄比亚皇帝。填色是这块范围的自治，不是埃塞俄比亚的普通一省。11 月 14 日与 15 日哪一天取消自治，记载不一致，这一行只到 11 月 13 日。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Eritrea_(1952%E2%80%931962)",
+            "https://www.africa.upenn.edu/Country_Specific/erit_outline.html"
+          ]
+        },
+        {
+          "role": "control",
+          "from": "1962-11-14",
+          "until": "1962-11-16",
+          "text": "取消自治有 11 月 14 日和 15 日两种记载，不择一。这两天不填色。",
+          "sources": ["https://en.wikipedia.org/wiki/Eritrea_(1952%E2%80%931962)"]
+        },
+        {
+          "role": "control",
+          "from": "1962-11-16",
+          "until": "1991-05-24",
+          "party": {"zh": "埃塞俄比亚"},
+          "text": "联邦取消后，埃塞俄比亚把这里当作一省。人民解放阵线后来控制乡村和若干城镇，没有逐月界线，不把今国境填成任何一方已经全部占有。不填色。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Eritrea_(1952%E2%80%931962)",
+            "https://www.africa.upenn.edu/Country_Specific/erit_outline.html"
+          ]
+        },
+        {
+          "role": "control",
+          "from": "1991-05-24",
+          "until": "1993-05-24",
+          "party": {"zh": "厄立特里亚人民解放阵线"},
+          "draw": "fill",
+          "color_kind": "de_facto",
+          "text": "1991-05-24 解放阵线进入阿斯马拉。到 1993-05-24 正式独立以前，这是事实管治，不是已经加入联合国。",
+          "sources": ["https://www.africa.upenn.edu/Country_Specific/erit_outline.html"]
+        },
+        {
+          "role": "claim",
+          "from": "1952-09-15",
+          "until": "1962-11-14",
+          "party": {"zh": "埃塞俄比亚"},
+          "text": "联合国大会 1950-12-02 第 390 A(V) 号决议规定的联邦：对外主权在埃塞俄比亚皇帝，内部自治在厄立特里亚。这不是并成普通省。",
+          "sources": ["https://en.wikipedia.org/wiki/Eritrea_(1952%E2%80%931962)"]
+        },
+        {
+          "role": "claim",
+          "from": "1962-11-16",
+          "until": "1991-05-24",
+          "party": {"zh": "埃塞俄比亚"},
+          "draw": "dash",
+          "label": "埃塞俄比亚声索的范围，不是游击区",
+          "text": "埃塞俄比亚主张这里是它的一省。虚线是今轮廓的大致范围，不是战场线，也不包含一份 1962 年的界约。",
+          "sources": ["https://en.wikipedia.org/wiki/Eritrea_(1952%E2%80%931962)"]
+        },
+        {
+          "role": "claim",
+          "from": "1991-05-24",
+          "until": "1993-05-24",
+          "party": {"zh": "厄立特里亚人民解放阵线"},
+          "text": "解放阵线主张由公投决定独立。埃塞俄比亚过渡政府同意举行公投。这还不等于 5 月 24 日以前已经是会员国。",
+          "sources": ["https://www.africa.upenn.edu/Country_Specific/erit_outline.html"]
+        },
+        {
+          "role": "recognition",
+          "from": "1952-09-15",
+          "until": "1962-11-14",
+          "text": "地位来自 1950-12-02 大会第 390 A(V) 号决议，1952-09-15 生效。不是单独的联合国会员。",
+          "sources": ["https://en.wikipedia.org/wiki/Eritrea_(1952%E2%80%931962)"]
+        },
+        {
+          "role": "recognition",
+          "from": "1962-11-16",
+          "until": "1993-05-24",
+          "text": "联合国没有另通过一项决议承认取消联邦。各国是否逐一抗议，不编名单，标待考。不是联合国会员。",
+          "sources": ["https://www.africa.upenn.edu/Country_Specific/erit_outline.html"]
+        },
+        {
+          "role": "recognition",
+          "from": "1993-05-24",
+          "until": "1993-05-28",
+          "text": "公投于 1993-04-23 至 04-25 举行。1993-05-24 宣布独立。大会接纳是 05-28，这几天还不是会员。本层不再填色。",
+          "sources": [
+            "https://www.africa.upenn.edu/Country_Specific/erit_outline.html",
+            "https://digitallibrary.un.org/record/197307"
+          ]
+        },
+        {
+          "role": "recognition",
+          "from": "1993-05-28",
+          "text": "联合国大会第 47/230 号决议于 1993-05-28 未经表决通过，接纳厄立特里亚为会员。独立日是 1993-05-24。本层不再把这里画成 1993 年前的争议填色。",
+          "sources": ["https://digitallibrary.un.org/record/197307"]
+        }
+      ]
+    },
+    {
+      "id": "biafra",
+      "name_zh": "比夫拉",
+      "geom": null,
+      "precision_zh": "没有 1967 年东区的轮廓。不用今天的尼日利亚各州拼一块。不画。",
+      "statements": [
+        {
+          "role": "control",
+          "from": "1967-05-30",
+          "until": "1970-01-15",
+          "party": {"zh": "比夫拉"},
+          "text": "1967-05-30 东区宣布独立。战争从 1967-07-06 打到 1970-01-15 投降。控制区不断缩小，没有逐月界线，不画。",
+          "sources": ["https://en.wikipedia.org/wiki/Republic_of_Biafra"]
+        },
+        {
+          "role": "claim",
+          "from": "1967-05-30",
+          "until": "1970-01-15",
+          "party": {"zh": "比夫拉"},
+          "text": "比夫拉声索的是当时的东区。今阿比亚、阿南布拉等州不是 1967 年的东区，不拿来代替。",
+          "sources": ["https://en.wikipedia.org/wiki/Republic_of_Biafra"]
+        },
+        {
+          "role": "claim",
+          "from": "1967-05-30",
+          "until": "1970-01-15",
+          "party": {"zh": "尼日利亚"},
+          "text": "尼日利亚主张领土完整。非洲统一组织站在这一边。",
+          "sources": ["https://en.wikipedia.org/wiki/Republic_of_Biafra"]
+        },
+        {
+          "role": "recognition",
+          "from": "1967-05-30",
+          "until": "1970-01-15",
+          "text": "正式承认且记载一致的是坦桑尼亚、赞比亚、科特迪瓦、加蓬。海地常被写进名单，本层没有打开海地政府文件，不把它算成已核实。不是联合国会员。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Republic_of_Biafra",
+            "https://www.tandfonline.com/doi/full/10.1080/23311886.2026.2738258"
+          ]
+        },
+        {
+          "role": "control",
+          "from": "1970-01-15",
+          "party": {"zh": "尼日利亚"},
+          "text": "1970-01-15 比夫拉投降，分离结束。不画东区。",
+          "sources": ["https://en.wikipedia.org/wiki/Republic_of_Biafra"]
+        },
+        {
+          "role": "recognition",
+          "from": "1970-01-15",
+          "text": "分离实体结束。国际承认的仍是尼日利亚。",
+          "sources": ["https://en.wikipedia.org/wiki/Republic_of_Biafra"]
+        }
+      ]
+    },
+    {
+      "id": "katanga",
+      "name_zh": "加丹加",
+      "geom": "katanga",
+      "precision_zh": "轮廓是 Natural Earth 里拆省前的加丹加省，大致对应 1960 年的省，不是 2015 年以后的上加丹加，也不是脱离派逐月控制线。北部反对脱离的地区不另画，标大致。",
+      "statements": [
+        {
+          "role": "control",
+          "from": "1960-07-11",
+          "until": "1963-01-21",
+          "party": {"zh": "加丹加分离当局"},
+          "text": "1960-07-11 宣布脱离。北部巴卢巴人地区反对，分离当局没有稳住全省。1963-01-14 有结束脱离的宣布，01-15 冲伯致信，01-21 联合国进入科卢韦齐。不把其中一天写成全省已经换手，也不填色。",
+          "sources": [
+            "https://www.crisp.be/en/catalogue/1664-katanga-secession.html",
+            "https://archive.nytimes.com/www.nytimes.com/library/world/africa/630116tshombe.html",
+            "https://en.wikipedia.org/wiki/State_of_Katanga"
+          ]
+        },
+        {
+          "role": "claim",
+          "from": "1960-07-11",
+          "until": "1963-01-21",
+          "party": {"zh": "加丹加"},
+          "draw": "dash",
+          "label": "加丹加声索的省，不是实控",
+          "text": "分离当局声索当时的加丹加省。虚线大于它稳定控制的地区。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/State_of_Katanga",
+            "https://www.crisp.be/en/catalogue/1664-katanga-secession.html"
+          ]
+        },
+        {
+          "role": "claim",
+          "from": "1960-07-11",
+          "until": "1963-01-21",
+          "party": {"zh": "刚果（利奥波德维尔）"},
+          "text": "中央政府主张加丹加仍是刚果的一省。",
+          "sources": ["https://en.wikipedia.org/wiki/State_of_Katanga"]
+        },
+        {
+          "role": "recognition",
+          "from": "1960-07-11",
+          "until": "1963-01-21",
+          "text": "没有国家正式承认加丹加独立。比利时等的实际支持不写成承认。不是联合国会员。",
+          "sources": ["https://www.crisp.be/en/catalogue/1664-katanga-secession.html"]
+        },
+        {
+          "role": "control",
+          "from": "1963-01-21",
+          "party": {"zh": "刚果（利奥波德维尔）"},
+          "text": "1963-01-21 联合国进入最后据点科卢韦齐。分离当局的省界虚线从这一天起不再画。",
+          "sources": ["https://en.wikipedia.org/wiki/State_of_Katanga"]
+        }
+      ]
+    },
+    {
+      "id": "south_sudan_pre2011",
+      "name_zh": "南苏丹（2011 年前）",
+      "geom": "south_sudan",
+      "precision_zh": "轮廓是 Natural Earth 的南苏丹，大致对应 1956 年南方各省和 2005 年全面和平协议里的南方，不是 2011 年新测的界。阿卜耶伊不在这片里。卡菲亚金吉等争议段标大致。",
+      "statements": [
+        {
+          "role": "control",
+          "from": "1956-01-01",
+          "until": "1972-02-27",
+          "party": {"zh": "苏丹"},
+          "text": "苏丹独立时南方是苏丹的一部分。第一次内战的控制线没有收进几何，不画。",
+          "sources": ["https://en.wikipedia.org/wiki/Addis_Ababa_Agreement_(1972)"]
+        },
+        {
+          "role": "control",
+          "from": "1972-02-27",
+          "until": "1983-06-05",
+          "party": {"zh": "苏丹南方自治区"},
+          "draw": "fill",
+          "color_kind": "de_facto",
+          "text": "1972-02-27 亚的斯亚贝巴协定建立南方自治。1983-06-05 是自治被拆成三个区的常用日期，本层没有核对法令原文。填色是自治区的大致范围，不是独立国家。",
+          "sources": ["https://en.wikipedia.org/wiki/Addis_Ababa_Agreement_(1972)"]
+        },
+        {
+          "role": "control",
+          "from": "1983-06-05",
+          "until": "2005-07-09",
+          "text": "自治结束后第二次内战。苏丹人民解放运动的控制区没有逐月界线，不填色。",
+          "sources": ["https://en.wikipedia.org/wiki/Comprehensive_Peace_Agreement"]
+        },
+        {
+          "role": "control",
+          "from": "2005-07-09",
+          "until": "2011-07-09",
+          "party": {"zh": "苏丹南方政府"},
+          "draw": "fill",
+          "color_kind": "de_facto",
+          "text": "全面和平协议 2005-01-09 签署，南方政府从 2005-07-09 的过渡期起管治南方。仍是苏丹的一部分。阿卜耶伊不在这片填色里。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Comprehensive_Peace_Agreement",
+            "https://www.un.org/en/about-us/member-states/south-sudan"
+          ]
+        },
+        {
+          "role": "claim",
+          "from": "1972-02-27",
+          "until": "1983-06-05",
+          "party": {"zh": "苏丹"},
+          "draw": "dash",
+          "label": "仍属苏丹，不是独立国界",
+          "text": "南方自治没有取消苏丹的主权。虚线只标出自治区的大致范围。",
+          "sources": ["https://en.wikipedia.org/wiki/Addis_Ababa_Agreement_(1972)"]
+        },
+        {
+          "role": "claim",
+          "from": "2005-01-09",
+          "until": "2011-07-09",
+          "party": {"zh": "苏丹"},
+          "draw": "dash",
+          "label": "仍属苏丹，自决尚未完成",
+          "text": "协议给南方的是自决，不是签署当天独立。阿卜耶伊另有安排，不写进南方公投。",
+          "sources": ["https://en.wikipedia.org/wiki/Comprehensive_Peace_Agreement"]
+        },
+        {
+          "role": "recognition",
+          "from": "2005-07-09",
+          "until": "2011-07-09",
+          "text": "南方政府不是联合国会员。国际承认的国家仍是苏丹。",
+          "sources": ["https://www.un.org/en/about-us/member-states/south-sudan"]
+        },
+        {
+          "role": "recognition",
+          "from": "2011-07-09",
+          "until": "2011-07-14",
+          "text": "2011-07-09 正式脱离。大会接纳是 07-14。这几天已经独立，还不是会员。本层不再填色。",
+          "sources": ["https://www.un.org/en/about-us/member-states/south-sudan"]
+        },
+        {
+          "role": "recognition",
+          "from": "2011-07-14",
+          "text": "联合国大会于 2011-07-14 接纳南苏丹为会员。独立日是 2011-07-09。本层不再把这里画成 2011 年前的自治区。",
+          "sources": ["https://www.un.org/en/about-us/member-states/south-sudan"]
+        }
+      ]
+    },
+    {
+      "id": "abyei",
+      "name_zh": "阿卜耶伊",
+      "geom": null,
+      "precision_zh": "没有常设仲裁法院 2009 年裁决界的轮廓。不用南科尔多凡或北加扎勒代替。不画。",
+      "statements": [
+        {
+          "role": "control",
+          "from": "2005-01-09",
+          "until": "2011-05-21",
+          "text": "2005 年协议把阿卜耶伊列为特殊安排，公投没有举行。2011-05-20 苏丹武装部队开始进攻，21 日进入城镇。20 日不写成已经占领城镇。这以前的驻军分界不画。",
+          "sources": [
+            "https://news.un.org/en/story/2011/05/375942",
+            "https://www.smallarmssurvey.org/sites/default/files/HSBA-Crisis-in-Abyei-2-June-2011.pdf"
+          ]
+        },
+        {
+          "role": "control",
+          "from": "2011-05-21",
+          "until": "2011-06-27",
+          "party": {"zh": "苏丹武装部队"},
+          "text": "2011-05-21 起苏丹军队占据阿卜耶伊镇。安理会关于安全部队的决议还没有通过。民事管辖不画，标待考。",
+          "sources": [
+            "https://news.un.org/en/story/2011/05/375942",
+            "https://www.smallarmssurvey.org/sites/default/files/HSBA-Crisis-in-Abyei-2-June-2011.pdf"
+          ]
+        },
+        {
+          "role": "control",
+          "from": "2011-06-27",
+          "party": {"zh": "苏丹武装部队"},
+          "text": "2011-06-27 安理会第 1990 号决议部署联阿安全部队。苏丹军队 5 月 21 日已经进入城镇。民事管辖和后来的进退不画，标待考。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/United_Nations_Security_Council_Resolution_1990",
+            "https://news.un.org/en/story/2011/05/375942"
+          ]
+        },
+        {
+          "role": "claim",
+          "from": "2005-01-09",
+          "party": {"zh": "苏丹"},
+          "text": "苏丹主张阿卜耶伊。2009-07-22 常设仲裁法院的终局裁决缩小了范围，并把黑格里格等油田划在外面。裁决是界线，不是把主权判给南方。",
+          "sources": ["https://unmis.unmissions.org/en/unmis-0/22-july-abyei-arbitration-final-award-rendered"]
+        },
+        {
+          "role": "claim",
+          "from": "2005-01-09",
+          "party": {"zh": "苏丹人民解放运动"},
+          "text": "苏丹人民解放运动主张阿卜耶伊的居民另行决定归属。2011-07-09 南方独立没有把阿卜耶伊带进南苏丹。",
+          "sources": [
+            "https://unmis.unmissions.org/en/unmis-0/22-july-abyei-arbitration-final-award-rendered",
+            "https://news.un.org/en/story/2011/05/375942"
+          ]
+        },
+        {
+          "role": "recognition",
+          "from": "2009-07-22",
+          "text": "2009-07-22 的裁决约束协议双方如何划界。它没有成为联合国把阿卜耶伊判给某一方的决议。单独公投没有举行。",
+          "sources": ["https://unmis.unmissions.org/en/unmis-0/22-july-abyei-arbitration-final-award-rendered"]
+        }
+      ]
+    },
+    {
+      "id": "halaib",
+      "name_zh": "哈拉伊卜三角",
+      "geom": "halaib",
+      "precision_zh": "虚线来自 OpenStreetMap 关系 4081614（ODbL），是今天标出的三角区，大致对应 1899 年北纬 22 度线以北、1902 年行政安排交给苏丹一侧的那一块。不是 1902 年的测绘，也不是 1992 年 12 月的进军线。比尔泰维勒不在里面。不填实控。",
+      "statements": [
+        {
+          "role": "claim",
+          "from": "1899-01-19",
+          "party": {"zh": "埃及"},
+          "text": "1899-01-19 英埃共管协定把边界放在北纬 22 度。埃及据此主张三角区在埃及一侧。这是声索。",
+          "sources": ["https://www.meforum.org/middle-east-quarterly/hot-spot-egypt-and-sudan-wrangle-over-halayib"]
+        },
+        {
+          "role": "claim",
+          "from": "1902-11-04",
+          "until": "1956-01-01",
+          "party": {"zh": "英埃共管苏丹"},
+          "draw": "dash",
+          "label": "三角区声索范围，大致，不是进军线",
+          "text": "1902-11-04 的行政安排把三角区交给共管苏丹管理。这不是埃及在条文里放弃主权。1956 年以前不写成苏丹共和国。虚线是这块争议范围，不是当天的控制线。",
+          "sources": [
+            "https://www.meforum.org/middle-east-quarterly/hot-spot-egypt-and-sudan-wrangle-over-halayib",
+            "https://www.openstreetmap.org/relation/4081614",
+            "https://www.openstreetmap.org/copyright"
+          ]
+        },
+        {
+          "role": "claim",
+          "from": "1956-01-01",
+          "party": {"zh": "苏丹"},
+          "draw": "dash",
+          "label": "三角区声索范围，大致，不是进军线",
+          "text": "苏丹独立后沿 1902 年行政界主张三角区。与埃及的 1899 年线不是同一条。虚线不是实控。",
+          "sources": [
+            "https://www.openstreetmap.org/relation/4081614",
+            "https://www.openstreetmap.org/copyright",
+            "https://www.meforum.org/middle-east-quarterly/hot-spot-egypt-and-sudan-wrangle-over-halayib",
+            "https://en.wikipedia.org/wiki/Halaib_Triangle"
+          ]
+        },
+        {
+          "role": "control",
+          "from": "1902-11-04",
+          "until": "1992-12-09",
+          "text": "1902 年以后长期由苏丹一侧行政。中间的驻军进退不逐次重写。1992-12-09 以前不写成埃及已经占领。虚线只是声索范围，不填实控。",
+          "sources": ["https://www.meforum.org/middle-east-quarterly/hot-spot-egypt-and-sudan-wrangle-over-halayib"]
+        },
+        {
+          "role": "control",
+          "from": "1992-12-09",
+          "party": {"zh": "埃及"},
+          "text": "苏丹于 1992 年底向安理会申诉，称埃及军队在 12 月 9 日前后切断哈拉伊卜通往苏丹港的路。本层没有埃及进驻公报，不把这一天写成整个三角区已经占领完成。此后行政在埃及一侧，苏丹仍声索，标大致。不填实控。",
+          "sources": [
+            "https://www.meforum.org/middle-east-quarterly/hot-spot-egypt-and-sudan-wrangle-over-halayib",
+            "https://en.wikipedia.org/wiki/Halaib_Triangle"
+          ]
+        },
+        {
+          "role": "recognition",
+          "from": "1899-01-19",
+          "text": "没有一项联合国决议把三角区判给埃及或苏丹。两国的声索不互相取消。",
+          "sources": ["https://en.wikipedia.org/wiki/Halaib_Triangle"]
+        }
+      ]
+    },
+    {
+      "id": "krg_core",
+      "name_zh": "伊拉克库尔德地区（杜胡克、埃尔比勒、苏莱曼尼亚）",
+      "geom": "krg_core",
+      "precision_zh": "轮廓是 Natural Earth 的杜胡克、埃尔比勒、苏莱曼尼亚三省，大致是长期由地区政府管治的核心。不含基尔库克，也不含宪法第 140 条的争议领土。不是逐月控制线。",
+      "statements": [
+        {
+          "role": "control",
+          "from": "1991-04-05",
+          "until": "1992-05-19",
+          "text": "安理会第 688 号决议是 1991-04-05，要求停止镇压并开放人道援助。它没有建立国家。禁飞区里的行政还没有经选举产生，不填色。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/United_Nations_Security_Council_Resolution_688",
+            "https://www.parliament.krd/english/about-parliament/history-of-parliament"
+          ]
+        },
+        {
+          "role": "control",
+          "from": "1992-05-19",
+          "until": "1992-07-15",
+          "text": "1992-05-19 举行议会选举。议会在 1992-07-15 前召开。选举日当天不填成已经有一套政府。",
+          "sources": ["https://www.parliament.krd/english/about-parliament/history-of-parliament"]
+        },
+        {
+          "role": "control",
+          "from": "1992-07-15",
+          "until": "1994-05-01",
+          "party": {"zh": "库尔德斯坦地区政府"},
+          "draw": "fill",
+          "color_kind": "de_facto",
+          "text": "1992-07-15 起国民议会开会，三省由这一套行政管治。1994 年 5 月两党开战，5 月 1 日不是第一枪。填色只到 4 月 30 日。",
+          "sources": ["https://www.parliament.krd/english/about-parliament/history-of-parliament"]
+        },
+        {
+          "role": "control",
+          "from": "1994-05-01",
+          "until": "2006-05-01",
+          "text": "库尔德民主党与爱国联盟分区管治。1996-08-31 民主党在伊拉克军队协助下进入埃尔比勒。内部分界不把三省界画成一条控制线，不填色。2006 年 5 月统一内阁，5 月 1 日不是就职日。",
+          "sources": [
+            "https://www.parliament.krd/english/about-parliament/history-of-parliament",
+            "https://en.wikipedia.org/wiki/Iraqi_Kurdistan"
+          ]
+        },
+        {
+          "role": "control",
+          "from": "2006-05-01",
+          "party": {"zh": "库尔德斯坦地区政府"},
+          "draw": "fill",
+          "color_kind": "de_facto",
+          "text": "2006 年 5 月统一内阁以后，三省再次作为同一个地区政府的大致范围。5 月 1 日不是就职日，标大致。基尔库克不在这片里。2014 年至 2017-10-16 地区政府曾管治基尔库克，不把基尔库克省画进来。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Iraqi_Kurdistan",
+            "https://en.wikipedia.org/wiki/2017_Kurdistan_Region_independence_referendum"
+          ]
+        },
+        {
+          "role": "claim",
+          "from": "1992-07-15",
+          "party": {"zh": "伊拉克"},
+          "text": "伊拉克主张对全境的主权。地区政府管治这三省，不是另一个主权国家。第 140 条争议领土不在这片轮廓里，范围待考。",
+          "sources": ["https://www.constituteproject.org/constitution/Iraq_2005"]
+        },
+        {
+          "role": "claim",
+          "from": "2017-09-25",
+          "party": {"zh": "库尔德斯坦地区政府"},
+          "text": "2017-09-25 地区政府举行独立公投。伊拉克联邦政府拒绝。公投没有变成独立，也不改写这三省仍在伊拉克之内。",
+          "sources": ["https://en.wikipedia.org/wiki/2017_Kurdistan_Region_independence_referendum"]
+        },
+        {
+          "role": "recognition",
+          "from": "1991-04-05",
+          "until": "2005-10-15",
+          "text": "第 688 号决议不是承认独立。这一阶段没有联合国会员式的承认。",
+          "sources": ["https://en.wikipedia.org/wiki/United_Nations_Security_Council_Resolution_688"]
+        },
+        {
+          "role": "recognition",
+          "from": "2005-10-15",
+          "text": "2005-10-15 公投通过的伊拉克宪法第 117 条承认库尔德斯坦地区及其既有权力是联邦的一个地区。这是联邦组成部分，不是独立国家。2017 年公投没有获得联合国承认。",
+          "sources": [
+            "https://www.constituteproject.org/constitution/Iraq_2005",
+            "https://en.wikipedia.org/wiki/2017_Kurdistan_Region_independence_referendum"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "yemen_south",
+      "name_zh": "也门南部（原民主也门一侧）",
+      "geom": "yemen_south",
+      "precision_zh": "轮廓是今天的阿登、拉赫季、阿比扬、舍卜沃、哈德拉毛、马赫拉。大致落在 1967–1990 年民主也门一侧。1998 年才设、横跨旧界的达利阿省不在里面。不是 1967 年的测绘，标大致。",
+      "statements": [
+        {
+          "role": "control",
+          "from": "1967-11-30",
+          "until": "1990-05-22",
+          "party": {"zh": "南也门"},
+          "text": "1967-11-30 南也门独立。1970-11-30 改称也门民主人民共和国。到 1990-05-22 统一以前，这是该国的大致范围，不是后来内战的控制线。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/South_Yemen",
+            "https://en.wikipedia.org/wiki/Yemeni_unification"
+          ]
+        },
+        {
+          "role": "claim",
+          "from": "1967-11-30",
+          "until": "1990-05-22",
+          "party": {"zh": "南也门"},
+          "draw": "dash",
+          "label": "原民主也门范围，大致",
+          "text": "虚线是六个今省拼出的大致范围，不含达利阿。不是 1994 年的战线。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/South_Yemen",
+            "https://worldstatesmen.org/Yemen.html"
+          ]
+        },
+        {
+          "role": "recognition",
+          "from": "1967-11-30",
+          "until": "1990-05-22",
+          "text": "南也门是单独的联合国会员。1990-05-22 与北也门合并成一个也门，南也门的席位不再单独存在。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Yemeni_unification",
+            "https://worldstatesmen.org/Yemen.html"
+          ]
+        },
+        {
+          "role": "control",
+          "from": "1994-05-21",
+          "until": "1994-07-08",
+          "party": {"zh": "也门民主共和国"},
+          "text": "1994-05-21 南部宣布也门民主共和国。1994-07-07 亚丁被占，脱离结束。7 月 7 日仍记在脱离期内，7 月 8 日起不再记。这几周没有守住 1967 年的全部范围，不填色。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Yemeni_unification",
+            "https://worldstatesmen.org/Yemen.html"
+          ]
+        },
+        {
+          "role": "claim",
+          "from": "1994-05-21",
+          "until": "1994-07-08",
+          "party": {"zh": "也门民主共和国"},
+          "draw": "dash",
+          "label": "1994 年脱离声索，不是实控",
+          "text": "声索指向原南部。虚线不是当时已经守住的土地。",
+          "sources": ["https://en.wikipedia.org/wiki/Yemeni_unification"]
+        },
+        {
+          "role": "recognition",
+          "from": "1994-05-21",
+          "until": "1994-07-08",
+          "text": "1994 年的也门民主共和国没有获得国际承认。联合国席位仍是一个也门。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Yemeni_unification",
+            "https://worldstatesmen.org/Yemen.html"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "yemen_north",
+      "name_zh": "也门北部（原阿拉伯也门共和国一侧）",
+      "geom": "yemen_north",
+      "precision_zh": "轮廓是除南部六省和达利阿以外的也门省界，大致对应原阿拉伯也门共和国。达利阿横跨旧界，不在里面。标大致。",
+      "statements": [
+        {
+          "role": "control",
+          "from": "1962-09-26",
+          "until": "1967-11-30",
+          "text": "1962-09-26 共和派政变以后，与王党的控制区分界没有收进几何，不画。不因为后来的省界就把北部涂成已经统一。",
+          "sources": ["https://en.wikipedia.org/wiki/North_Yemen_civil_war"]
+        },
+        {
+          "role": "control",
+          "from": "1967-11-30",
+          "until": "1990-05-22",
+          "party": {"zh": "阿拉伯也门共和国"},
+          "text": "与南也门并立到 1990-05-22。1970 年以前北部是否还有王党控制区，日子记载不一致，不另画，标待考。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Yemeni_unification",
+            "https://worldstatesmen.org/Yemen.html"
+          ]
+        },
+        {
+          "role": "claim",
+          "from": "1967-11-30",
+          "until": "1990-05-22",
+          "party": {"zh": "阿拉伯也门共和国"},
+          "draw": "dash",
+          "label": "原北也门范围，大致",
+          "text": "虚线是与民主也门相对的国家范围，不含达利阿。不是内战接触线。",
+          "sources": ["https://en.wikipedia.org/wiki/Yemeni_unification"]
+        },
+        {
+          "role": "recognition",
+          "from": "1967-11-30",
+          "until": "1990-05-22",
+          "text": "阿拉伯也门共和国是联合国会员。1990-05-22 起与南方合并为一个也门。",
+          "sources": ["https://worldstatesmen.org/Yemen.html"]
+        }
+      ]
+    },
+    {
+      "id": "yemen_war",
+      "name_zh": "也门内战各方",
+      "geom": "yemen",
+      "precision_zh": "虚线是今天的也门国境，只表示各方都在这个国家的名义下说话。不是胡塞武装、国际承认政府或南方过渡委员会的控制线。达利阿不单独判给原北方或原南方。",
+      "statements": [
+        {
+          "role": "control",
+          "from": "2014-09-21",
+          "text": "2014-09-21 胡塞武装进入萨那。2015-03-26 沙特等开始军事干预。亚丁后来在国际承认政府与南方过渡委员会之间易手。全国分界没有收进几何，不填色。2022 年以后各城由谁日常管治，不外推，标待考。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Houthi_takeover_in_Yemen",
+            "https://en.wikipedia.org/wiki/Yemeni_civil_war_(2014%E2%80%93present)"
+          ]
+        },
+        {
+          "role": "claim",
+          "from": "2014-09-21",
+          "party": {"zh": "也门国际承认政府"},
+          "draw": "dash",
+          "label": "内战各方声索的国家范围，不是控制线",
+          "text": "国际承认政府主张代表也门全国。虚线不是它控制的地区。",
+          "sources": ["https://en.wikipedia.org/wiki/Yemeni_civil_war_(2014%E2%80%93present)"]
+        },
+        {
+          "role": "claim",
+          "from": "2014-09-21",
+          "party": {"zh": "胡塞武装"},
+          "text": "胡塞武装在萨那行使事实权力，并主张自己的政权。这不是一条已核实的全国控制线，也不是另一个被承认的国家。",
+          "sources": ["https://en.wikipedia.org/wiki/Houthi_takeover_in_Yemen"]
+        },
+        {
+          "role": "claim",
+          "from": "2017-05-11",
+          "party": {"zh": "南方过渡委员会"},
+          "text": "南方过渡委员会 2017-05-11 成立，主张南部利益。不把 1967 年的六省填成它的控制区。实际控制随时段变化，标待考。",
+          "sources": ["https://en.wikipedia.org/wiki/Southern_Transitional_Council"]
+        },
+        {
+          "role": "recognition",
+          "from": "2014-09-21",
+          "until": "2022-04-07",
+          "text": "联合国席位仍是一个也门。胡塞当局和南方过渡委员会都不是另一个主权国家。",
+          "sources": ["https://en.wikipedia.org/wiki/Yemeni_civil_war_(2014%E2%80%93present)"]
+        },
+        {
+          "role": "recognition",
+          "from": "2022-04-07",
+          "text": "2022-04-07 总统领导委员会成立，仍是一个也门的总统安排。不把胡塞当局或南方过渡委员会写成被联合国承认为另一个国家。地面分界继续待考。",
+          "sources": ["https://en.wikipedia.org/wiki/Presidential_Leadership_Council"]
+        }
+      ]
+    },
+    {
+      "id": "lebanon_civil_war",
+      "name_zh": "黎巴嫩内战各方",
+      "geom": null,
+      "precision_zh": "贝鲁特绿线、巴勒斯坦武装、叙利亚军队、以军和长枪党等的控制区都没有收进几何。不画。",
+      "statements": [
+        {
+          "role": "control",
+          "from": "1975-04-13",
+          "until": "1976-06",
+          "text": "1975-04-13 内战开始。各武装的街区没有界线，不画。6 月 1 日不是叙利亚大举进入的法令日。",
+          "sources": ["https://en.wikipedia.org/wiki/Lebanese_Civil_War"]
+        },
+        {
+          "role": "control",
+          "from": "1976-06",
+          "until": "1978-03-19",
+          "party": {"zh": "叙利亚军队"},
+          "text": "1976 年 6 月叙利亚军队大举进入。10 月利雅得和开罗会议以后以阿拉伯威慑部队名义留驻。驻地不画。6 月 1 日不是入境日。",
+          "sources": ["https://en.wikipedia.org/wiki/Lebanese_Civil_War"]
+        },
+        {
+          "role": "control",
+          "from": "1978-03-19",
+          "until": "1982-06-06",
+          "text": "安理会第 425、426 号决议于 1978-03-19 通过，部署联黎部队。以色列没有从此永久占领南部。各派和叙利亚军队的分界仍不画。",
+          "sources": ["https://en.wikipedia.org/wiki/United_Nations_Security_Council_Resolution_425"]
+        },
+        {
+          "role": "control",
+          "from": "1982-06-06",
+          "until": "1985-06",
+          "party": {"zh": "以色列"},
+          "text": "1982-06-06 以色列入侵。1985 年 6 月撤到南部安全带。安全带的逐段界线不画。6 月 1 日不是完成日。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Lebanese_Civil_War",
+            "https://en.wikipedia.org/wiki/Israeli_occupation_of_Southern_Lebanon"
+          ]
+        },
+        {
+          "role": "control",
+          "from": "1985-06",
+          "until": "1990-10-13",
+          "text": "以军留在南部安全带，叙利亚军队和其他武装仍在别处。1989-10-22 塔伊夫协议没有在当天划出控制线。1990-10-13 叙利亚军队攻入奥恩控制的地区，内战通常记到这一天。各方区域不画。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Taif_Agreement",
+            "https://en.wikipedia.org/wiki/Lebanese_Civil_War"
+          ]
+        },
+        {
+          "role": "control",
+          "from": "1990-10-13",
+          "until": "2000-05-24",
+          "party": {"zh": "以色列"},
+          "text": "内战结束后，以色列仍控制南部安全带，直到 2000-05-24 撤出。安全带不画。",
+          "sources": ["https://en.wikipedia.org/wiki/Israeli_occupation_of_Southern_Lebanon"]
+        },
+        {
+          "role": "claim",
+          "from": "1975-04-13",
+          "until": "2000-05-24",
+          "party": {"zh": "黎巴嫩"},
+          "text": "黎巴嫩共和国的主权声索没有因为占领或民兵控制而取消。没有单独轮廓，不画虚线。",
+          "sources": ["https://en.wikipedia.org/wiki/Taif_Agreement"]
+        },
+        {
+          "role": "recognition",
+          "from": "1978-03-19",
+          "until": "2000-05-24",
+          "text": "第 425 号决议要求以色列撤出，并部署联黎部队。它没有承认任何民兵或占领区为另一个国家。",
+          "sources": ["https://en.wikipedia.org/wiki/United_Nations_Security_Council_Resolution_425"]
+        },
+        {
+          "role": "recognition",
+          "from": "2000-05-24",
+          "text": "2000-05-24 以色列撤出南部安全带。联合国在 2000-06-16 确认撤出。这一天起不再记为以色列控制。民兵区域不另画。",
+          "sources": ["https://en.wikipedia.org/wiki/Israeli_occupation_of_Southern_Lebanon"]
+        }
+      ]
+    },
+    {
+      "id": "syria_civil_war",
+      "name_zh": "叙利亚内战各方",
+      "geom": null,
+      "precision_zh": "有公开地图的时点没有收进本数据包的多边形。不用今天的省界代替接触线。不画。",
+      "statements": [
+        {
+          "role": "control",
+          "from": "2011-03-15",
+          "until": "2014-06-29",
+          "party": {"zh": "叙利亚政府"},
+          "text": "2011-03-15 是抗议浪潮的常用起点，不是一条控制线。政府仍掌握国家机构。武装分界不画。",
+          "sources": ["https://en.wikipedia.org/wiki/Syrian_civil_war"]
+        },
+        {
+          "role": "control",
+          "from": "2014-06-29",
+          "until": "2016-12-22",
+          "text": "2014-06-29 伊斯兰国宣布哈里发国，在叙利亚占有土地。范围不是全国，本层没有它的多边形，不画。",
+          "sources": ["https://en.wikipedia.org/wiki/Syrian_civil_war"]
+        },
+        {
+          "role": "control",
+          "from": "2016-12-22",
+          "until": "2019-03-23",
+          "party": {"zh": "叙利亚政府"},
+          "text": "2016-12-22 东阿勒颇撤离完成，政府收复该城。这不是阿勒颇全省。伊德利卜、东北部和土耳其军队的口袋都不画。",
+          "sources": ["https://en.wikipedia.org/wiki/Aleppo_offensive_(November%E2%80%93December_2016)"]
+        },
+        {
+          "role": "control",
+          "from": "2019-03-23",
+          "until": "2019-10-09",
+          "text": "2019-03-23 叙利亚民主力量宣布在巴古兹结束伊斯兰国的成片领土。零星武装还在。东北部由民主力量管治的范围不画。",
+          "sources": ["https://en.wikipedia.org/wiki/Battle_of_Baghuz_Fawqani"]
+        },
+        {
+          "role": "control",
+          "from": "2019-10-09",
+          "until": "2024-12-08",
+          "text": "2019-10-09 土耳其开始和平之泉行动，沿边界夺取一条地带。地带的宽度不画。政府、叙利亚民主力量、土耳其支持的武装和伊德利卜的沙姆解放组织同时存在，分界待考。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Operation_Peace_Spring",
+            "https://www.congress.gov/crs_external_products/RL/HTML/RL33487.web.html"
+          ]
+        },
+        {
+          "role": "control",
+          "from": "2024-12-08",
+          "until": "2025-01",
+          "text": "2024-12-08 阿萨德离开大马士革，反对派武装进入首都。当天不是全国已经由一个当局统一控制。民主力量等仍在东部。不画。1 月 1 日不是后来的胜利会议日。",
+          "sources": ["https://www.congress.gov/crs_external_products/RL/HTML/RL33487.web.html"]
+        },
+        {
+          "role": "control",
+          "from": "2025-01",
+          "until": "2026-05",
+          "party": {"zh": "叙利亚过渡政府"},
+          "text": "2025 年 1 月的胜利会议推举艾哈迈德·沙拉为过渡总统，并宣布解散沙姆解放组织和各武装派别。1 月 1 日不是会议日。2025-03-10 与叙利亚民主力量有整合协议，没有在当天完成。欧洲庇护局写到 2026 年 5 月初：政府控制国土的大部分，苏韦达的大片、哈塞克的哈塞克和卡米什利一带、以及阿勒颇省的科巴尼仍在外。这些例外没有多边形，不画。5 月 1 日不是那份地图的日期。",
+          "sources": [
+            "https://www.congress.gov/crs_external_products/RL/HTML/RL33487.web.html",
+            "https://www.euaa.europa.eu/syria-country-focus/111-territorial-control"
+          ]
+        },
+        {
+          "role": "control",
+          "from": "2026-05",
+          "text": "2026 年 5 月以后的变化，本层没有收进可公开核对的界线，标待考，不画。5 月 1 日不是新的分界日。",
+          "sources": ["https://www.euaa.europa.eu/syria-country-focus/111-territorial-control"]
+        },
+        {
+          "role": "claim",
+          "from": "2011-03-15",
+          "party": {"zh": "叙利亚"},
+          "text": "各方多半主张代表叙利亚这个国家，而不是把国土正式分成几个被承认的主权。声索不等于实控。没有轮廓，不画虚线。",
+          "sources": ["https://en.wikipedia.org/wiki/Syrian_civil_war"]
+        },
+        {
+          "role": "recognition",
+          "from": "2011-03-15",
+          "until": "2024-12-08",
+          "text": "联合国席位在这一阶段仍是叙利亚国家。伊斯兰国、叙利亚民主力量和沙姆解放组织都不是被承认为另一个主权国家。哪一个代表团占着席位，不在这里改写成领土承认。",
+          "sources": ["https://www.congress.gov/crs_external_products/RL/HTML/RL33487.web.html"]
+        },
+        {
+          "role": "recognition",
+          "from": "2024-12-08",
+          "text": "2024-12-08 以后的过渡机构是叙利亚国家的政府更迭。欧洲庇护局和美国国会研究处都没有把它写成国土被承认为几个国家。2026 年 5 月以后的承认变化标待考。",
+          "sources": [
+            "https://www.congress.gov/crs_external_products/RL/HTML/RL33487.web.html",
+            "https://www.euaa.europa.eu/syria-country-focus/111-territorial-control"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "libya_governments",
+      "name_zh": "利比亚两个政府",
+      "geom": "libya",
+      "precision_zh": "虚线是利比亚的国家范围。两边都主张代表这个国家，不是东西分治的界线。实控分界不画。",
+      "statements": [
+        {
+          "role": "control",
+          "from": "2014-08",
+          "text": "2014 年 8 月起，的黎波里的国民代表大会与图卜鲁克的代表院同时存在。8 月 1 日不是一份法令日。此后民族团结政府、国民统一政府和东部机构先后出现。地面分界不画，不填色。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Libyan_civil_war_(2014%E2%80%932020)",
+            "https://studies.aljazeera.net/en/reports/libya%E2%80%99s-zero-sum-politics-and-defiance-legitimacy-%E2%80%93-part-1"
+          ]
+        },
+        {
+          "role": "claim",
+          "from": "2014-08",
+          "party": {"zh": "利比亚的的黎波里方面"},
+          "draw": "dash",
+          "label": "两边都声索代表利比亚，不是分界",
+          "text": "的黎波里一方主张自己是利比亚政府。虚线是国家范围，不是它控制的地区。",
+          "sources": ["https://en.wikipedia.org/wiki/Libyan_civil_war_(2014%E2%80%932020)"]
+        },
+        {
+          "role": "claim",
+          "from": "2014-08",
+          "party": {"zh": "利比亚代表院"},
+          "text": "代表院及其在东部的安排也主张代表利比亚。这不是把东部划成另一个国家。",
+          "sources": ["https://en.wikipedia.org/wiki/Libyan_civil_war_(2014%E2%80%932020)"]
+        },
+        {
+          "role": "recognition",
+          "from": "2014-08",
+          "until": "2015-12-23",
+          "text": "国际承认的是利比亚这个国家，不是两块主权。安理会第 2259 号决议还没有通过。斯基拉特协议是 2015-12-17。这以前哪国承认哪一套政府，不编名单，标待考。",
+          "sources": ["https://en.wikipedia.org/wiki/United_Nations_Security_Council_Resolution_2259"]
+        },
+        {
+          "role": "recognition",
+          "from": "2015-12-23",
+          "until": "2021-03-15",
+          "text": "安理会第 2259 号决议于 2015-12-23 支持民族团结政府为唯一合法政府。这是承认一套政府，不是把国土划给两个主权者。2016-03-30 该政府到达的黎波里，不是全国已经在它手里。东部武装的实控仍待考。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/United_Nations_Security_Council_Resolution_2259",
+            "https://en.wikipedia.org/wiki/Government_of_National_Accord"
+          ]
+        },
+        {
+          "role": "recognition",
+          "from": "2021-03-15",
+          "until": "2022-03-01",
+          "text": "2021 年 3 月国民统一政府就职。3 月 10 日的信任表决和 3 月 15 日的就职都有记载，本层从就职日写名义上的统一政府。不把东部实控写成已经结束。",
+          "sources": ["https://en.wikipedia.org/wiki/Government_of_National_Unity_(Libya)"]
+        },
+        {
+          "role": "recognition",
+          "from": "2022-03-01",
+          "text": "2022-03-01 代表院通过对另一套政府的信任。2 月的任命不写成这一天以前已经就职。的黎波里不接受。本层没有收进安理会改认东部政府的决议，不把东部写成已经被联合国承认。2022 年以后的人事更替标待考。实控分界仍不画。",
+          "sources": ["https://en.wikipedia.org/wiki/Government_of_National_Stability"]
+        }
+      ]
+    },
+    {
+      "id": "siachen",
+      "name_zh": "锡亚琴冰川",
+      "geom": null,
+      "precision_zh": "没有冰川和实际地面位置线的轮廓。不把拉达克或克什米尔全境拿来代替。不画。",
+      "statements": [
+        {
+          "role": "control",
+          "from": "1972-07-02",
+          "until": "1984-04-13",
+          "text": "1972-07-02 西姆拉协定把控制线写到 NJ9842，再向北只写到冰川，没有划定。这一段不画成任何一方的实控。这里不是克什米尔全境。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Simla_Agreement",
+            "https://en.wikipedia.org/wiki/Siachen_conflict"
+          ]
+        },
+        {
+          "role": "control",
+          "from": "1984-04-13",
+          "party": {"zh": "印度"},
+          "text": "1984-04-13 印军发动 Meghdoot 行动，控制主冰川和萨尔托罗山脊。巴基斯坦在西侧谷地。这里不是克什米尔全境。实际地面位置线没有收进几何，不画。2003 年 11 月的停火不改变谁站在哪一侧，11 月 1 日不是公报日。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Operation_Meghdoot",
+            "https://en.wikipedia.org/wiki/Siachen_conflict"
+          ]
+        },
+        {
+          "role": "claim",
+          "from": "1972-07-02",
+          "party": {"zh": "印度"},
+          "text": "印度主张 NJ9842 以北、包括锡亚琴在内的这一段。不是把整个克什米尔写成已经解决。",
+          "sources": ["https://en.wikipedia.org/wiki/Siachen_conflict"]
+        },
+        {
+          "role": "claim",
+          "from": "1972-07-02",
+          "party": {"zh": "巴基斯坦"},
+          "text": "巴基斯坦主张这一段。西姆拉协定没有把冰川判给任何一方。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Simla_Agreement",
+            "https://en.wikipedia.org/wiki/Siachen_conflict"
+          ]
+        },
+        {
+          "role": "recognition",
+          "from": "1972-07-02",
+          "text": "没有条约或联合国决议承认印度或巴基斯坦对锡亚琴的主权。停火不是承认。",
+          "sources": ["https://en.wikipedia.org/wiki/Siachen_conflict"]
+        }
+      ]
+    },
+    {
+      "id": "bd_enclaves",
+      "name_zh": "印孟飞地（2015 年前）",
+      "geom": null,
+      "precision_zh": "飞地小于 1:10m 底图能分开的程度。不画。不把西孟加拉或朗布尔整片当成飞地。",
+      "statements": [
+        {
+          "role": "claim",
+          "from": "1947-08-15",
+          "until": "1971-12-16",
+          "text": "1947 年分治留下飞地。东侧的法理归属是巴基斯坦，不是后来的孟加拉国。1971-03-26 至 12-15 日战争期间的管辖标待考。没有轮廓，不画。",
+          "sources": ["https://www.mea.gov.in/Uploads/PublicationDocs/24529_LBA_MEA_Booklet_final.pdf"]
+        },
+        {
+          "role": "claim",
+          "from": "1971-12-16",
+          "until": "2015-08-01",
+          "party": {"zh": "印度与孟加拉国"},
+          "text": "法理上，111 块印度飞地在孟加拉国境内，51 块孟加拉国飞地在印度境内。面积分别是 17160.63 英亩和 7110.02 英亩。主权仍是飞地所属国，不是包围它的国家。",
+          "sources": [
+            "https://www.mea.gov.in/Uploads/PublicationDocs/24529_LBA_MEA_Booklet_final.pdf",
+            "https://mea.gov.in/lok-sabha.htm?dtl%2F29207%2FQUESTION_NO901_EXCHANGE_OF_ENCLAVES="
+          ]
+        },
+        {
+          "role": "control",
+          "from": "1971-12-16",
+          "until": "2015-08-01",
+          "text": "印度外交部说明，飞地深在对方境内，本国实际上进不去，交换是把已经存在的事实变成法律。所以午夜交接以前，实际进出更接近包围它的国家，法理归属仍是飞地所属国。不画。",
+          "sources": ["https://www.mea.gov.in/Uploads/PublicationDocs/24529_LBA_MEA_Booklet_final.pdf"]
+        },
+        {
+          "role": "recognition",
+          "from": "1974-05-16",
+          "until": "2015-06-06",
+          "text": "1974-05-16 两国签署陆地边界协定。2011-09-06 的议定书在 2015-06-06 交换批准书以前还没有按这次交换生效。飞地在法律上还没有过户。",
+          "sources": ["https://www.mea.gov.in/Uploads/PublicationDocs/24529_LBA_MEA_Booklet_final.pdf"]
+        },
+        {
+          "role": "recognition",
+          "from": "2015-06-06",
+          "until": "2015-08-01",
+          "text": "2015-06-06 交换批准书。双方信函规定飞地在 2015-07-31 午夜移交。6 月 6 日当天还没有过户。",
+          "sources": [
+            "https://mea.gov.in/lok-sabha.htm?dtl%2F29207%2FQUESTION_NO901_EXCHANGE_OF_ENCLAVES=",
+            "https://www.mea.gov.in/press-releases.htm?dtl%2F26048%2FExchange+of+enclaves+between+India+and+Bangladesh="
+          ]
+        },
+        {
+          "role": "control",
+          "from": "2015-08-01",
+          "text": "自 2015-07-31 午夜起，111 块原印度飞地归孟加拉国，51 块原孟加拉国飞地归印度。飞地这一层不再把它们写成境外飞地。不利占有地的亩数在同一份协定里，同样不画。",
+          "sources": ["https://www.mea.gov.in/press-releases.htm?dtl%2F26048%2FExchange+of+enclaves+between+India+and+Bangladesh="]
+        },
+        {
+          "role": "claim",
+          "from": "2015-08-01",
+          "text": "过户以后，这些地块的主权跟所在国走。不再是飞地声索。",
+          "sources": ["https://mea.gov.in/lok-sabha.htm?dtl%2F29207%2FQUESTION_NO901_EXCHANGE_OF_ENCLAVES="]
+        }
+      ]
+    },
+    {
+      "id": "ogaden",
+      "name_zh": "奥加登",
+      "geom": null,
+      "precision_zh": "没有奥加登的轮廓。埃塞俄比亚索马里州比历史上的奥加登大，不用整州代替。不画。",
+      "statements": [
+        {
+          "role": "control",
+          "from": "1960-07-01",
+          "until": "1977-07-13",
+          "party": {"zh": "埃塞俄比亚"},
+          "text": "战争以前由埃塞俄比亚管治。索马里的政治主张没有变成地面控制。不画。",
+          "sources": ["https://en.wikipedia.org/wiki/Ogaden_War"]
+        },
+        {
+          "role": "control",
+          "from": "1977-07-13",
+          "until": "1978-03-23",
+          "party": {"zh": "索马里"},
+          "text": "1977-07-13 起索马里军队进入奥加登。西索马里解放阵线不是被承认的第二个国家。1978-03-09 索马里决定撤军。埃塞俄比亚宣布收复最后的边境哨所是 03-23。3 月 9 日到 22 日不写成已经全部易手。最大占领线不画。",
+          "sources": [
+            "https://history.state.gov/historicaldocuments/frus1977-80v17p1/d72",
+            "https://en.wikipedia.org/wiki/Ogaden_War"
+          ]
+        },
+        {
+          "role": "control",
+          "from": "1978-03-23",
+          "party": {"zh": "埃塞俄比亚"},
+          "text": "1978-03-23 埃塞俄比亚宣布收复边境。此后的地面控制记为埃塞俄比亚。索马里州的今界不拿来填色。",
+          "sources": ["https://en.wikipedia.org/wiki/Ogaden_War"]
+        },
+        {
+          "role": "claim",
+          "from": "1960-07-01",
+          "until": "1978-03-09",
+          "party": {"zh": "索马里"},
+          "text": "索马里主张索马里人居住的奥加登。具体宪法条款本层没有逐条核对，标待考。1978-03-09 的撤军声明仍要求自决，没有在当天写放弃声索。",
+          "sources": [
+            "https://history.state.gov/historicaldocuments/frus1977-80v17p1/d72",
+            "https://en.wikipedia.org/wiki/Ogaden_War"
+          ]
+        },
+        {
+          "role": "claim",
+          "from": "1960-07-01",
+          "party": {"zh": "埃塞俄比亚"},
+          "text": "埃塞俄比亚主张主权。战争没有被承认为并入索马里。",
+          "sources": ["https://en.wikipedia.org/wiki/Ogaden_War"]
+        },
+        {
+          "role": "claim",
+          "from": "1978-03-09",
+          "party": {"zh": "索马里"},
+          "text": "撤军声明要求在自决基础上谈判，没有写放弃主张。2012 年临时宪法是否还写大索马里，本层没有逐条核对，标待考。",
+          "sources": ["https://history.state.gov/historicaldocuments/frus1977-80v17p1/d72"]
+        },
+        {
+          "role": "recognition",
+          "from": "1977-07-13",
+          "text": "索马里的军事占领没有被承认为主权转移。国际承认的主权仍在埃塞俄比亚。",
+          "sources": ["https://en.wikipedia.org/wiki/Ogaden_War"]
+        }
+      ]
+    },
+    {
+      "id": "aouzou",
+      "name_zh": "奥祖地带",
+      "geom": null,
+      "precision_zh": "没有这条狭长地带的轮廓。不用提贝斯提省代替。不画。1935 年法意协定没有生效，不把它写成边界已经改过。",
+      "statements": [
+        {
+          "role": "control",
+          "from": "1973",
+          "until": "1994-05-30",
+          "party": {"zh": "利比亚"},
+          "text": "联合国观察团的记述是 1973 年起利比亚占领这条地带。1 月 1 日不是进占日。1987 年 8 月双方在奥祖一带的进退有反复，不把某一天写成已经最终易手。撤军完成以前仍记利比亚行政。不画。",
+          "sources": ["https://peacekeeping.un.org/sites/default/files/past/unasogB.htm"]
+        },
+        {
+          "role": "control",
+          "from": "1994-05-30",
+          "party": {"zh": "乍得"},
+          "text": "1994-04-04 的苏尔特协议规定撤军于 04-15 开始，05-30 零时结束。双方在 05-30 签署联合声明，确认撤军完成，联合国奥祖观察团见证。从这一天起记乍得控制。",
+          "sources": [
+            "https://peacekeeping.un.org/sites/default/files/past/unasogB.htm",
+            "https://www.icj-cij.org/case/83"
+          ]
+        },
+        {
+          "role": "claim",
+          "from": "1973",
+          "until": "1994-02-03",
+          "party": {"zh": "利比亚"},
+          "text": "利比亚主张这条地带。国际法院 1994-02-03 判决以前，这只是声索。",
+          "sources": ["https://www.icj-cij.org/case/83"]
+        },
+        {
+          "role": "claim",
+          "from": "1973",
+          "party": {"zh": "乍得"},
+          "text": "乍得主张按 1955-08-10 法国与利比亚的友好睦邻条约划界。法院 1994-02-03 以 16 票对 1 票支持这条线。2 月 3 日是法律上的界，不是当天已经撤军。",
+          "sources": ["https://www.icj-cij.org/case/83"]
+        },
+        {
+          "role": "recognition",
+          "from": "1994-02-03",
+          "until": "1994-05-30",
+          "text": "1994-02-03 的判决确定边界在乍得一侧。利比亚的行政维持到 05-30。法律归属和实际撤出不是同一天。3 月双方表示遵守判决，不另设 3 月 1 日的线。",
+          "sources": [
+            "https://www.icj-cij.org/case/83",
+            "https://peacekeeping.un.org/sites/default/files/past/unasogB.htm"
+          ]
+        },
+        {
+          "role": "recognition",
+          "from": "1994-05-30",
+          "text": "撤军联合声明和安理会第 915 号决议设立的观察团，把 1994-02-03 的判决落到地面。此后不把这条地带写成利比亚领土。",
+          "sources": ["https://peacekeeping.un.org/sites/default/files/past/unasogB.htm"]
+        }
+      ]
+    },
+    {
+      "id": "timor_leste_1975",
+      "name_zh": "东帝汶（1975–2002）",
+      "geom": "timor_leste",
+      "precision_zh": "轮廓是 Natural Earth 的东帝汶，大致就是前葡属帝汶，含欧库西。不是 1975 年的战场线，标大致。",
+      "statements": [
+        {
+          "role": "control",
+          "from": "1975-11-28",
+          "until": "1975-12-07",
+          "party": {"zh": "东帝汶独立革命阵线"},
+          "text": "1975-11-28 革阵单方面宣布独立。8 月内战以后葡萄牙总督已移到阿陶罗。这九天不是已经稳定控制全境，不填色。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/East_Timor_(province)",
+            "https://www.worldstatesmen.org/East_Timor.html"
+          ]
+        },
+        {
+          "role": "control",
+          "from": "1975-12-07",
+          "until": "1999-09-20",
+          "party": {"zh": "印度尼西亚"},
+          "draw": "fill",
+          "color_kind": "occupied",
+          "text": "1975-12-07 印尼入侵帝力。此后印尼占领并在 1976-07-17 把它设为省。山里的抵抗不另画。填色是领地轮廓，不是逐村控制。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/East_Timor_(province)",
+            "https://www.worldstatesmen.org/East_Timor.html"
+          ]
+        },
+        {
+          "role": "control",
+          "from": "1999-09-20",
+          "until": "1999-10-25",
+          "party": {"zh": "东帝汶国际部队"},
+          "draw": "fill",
+          "color_kind": "de_facto",
+          "text": "安理会第 1264 号决议于 1999-09-15 授权国际部队。部队 09-20 部署。这是稳定局势，还不是 10-25 的联合国过渡行政。",
+          "sources": ["https://www.worldstatesmen.org/East_Timor.html"]
+        },
+        {
+          "role": "control",
+          "from": "1999-10-25",
+          "until": "2002-05-20",
+          "party": {"zh": "联合国东帝汶过渡行政当局"},
+          "draw": "fill",
+          "color_kind": "de_facto",
+          "text": "安理会第 1272 号决议于 1999-10-25 设立过渡行政当局，管到 2002-05-20 独立。这不是印尼的省，也还不是主权国家。",
+          "sources": ["https://en.wikipedia.org/wiki/United_Nations_Security_Council_Resolution_1272"]
+        },
+        {
+          "role": "claim",
+          "from": "1975-11-28",
+          "until": "1999-10-25",
+          "party": {"zh": "葡萄牙"},
+          "draw": "dash",
+          "label": "葡萄牙的管理权，不是印尼省界",
+          "text": "联合国仍把葡萄牙视为管理国。革阵 1975-11-28 的宣布没有得到葡萄牙承认。虚线是前葡属领地的大致范围。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/East_Timor_(province)",
+            "https://en.wikipedia.org/wiki/United_Nations_Security_Council_Resolution_384"
+          ]
+        },
+        {
+          "role": "claim",
+          "from": "1976-07-17",
+          "until": "1999-10-19",
+          "party": {"zh": "印度尼西亚"},
+          "text": "印尼于 1976-07-17 立法并入，称为东帝汶省。1999-10-19 印尼撤销这项立法。并入是声索，不是联合国的承认。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/East_Timor_(province)",
+            "https://www.worldstatesmen.org/East_Timor.html"
+          ]
+        },
+        {
+          "role": "recognition",
+          "from": "1975-12-22",
+          "until": "1999-08-30",
+          "text": "安理会第 384 号决议于 1975-12-22 要求印尼撤出，并维持葡萄牙的管理国地位。第 389 号决议是 1976-04-22。澳大利亚 1979 年的承认是个别国家的行为，不是联合国的承认。不是印尼的合法省份。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/United_Nations_Security_Council_Resolution_384",
+            "https://en.wikipedia.org/wiki/East_Timor_(province)"
+          ]
+        },
+        {
+          "role": "recognition",
+          "from": "1999-08-30",
+          "until": "2002-05-20",
+          "text": "1999-08-30 公投拒绝自治、选择分离。随后由国际部队和过渡行政当局管理。还不是独立会员。",
+          "sources": ["https://www.worldstatesmen.org/East_Timor.html"]
+        },
+        {
+          "role": "recognition",
+          "from": "2002-05-20",
+          "until": "2002-09-27",
+          "text": "2002-05-20 独立。联合国会员是 09-27。这期间不再填成过渡行政。",
+          "sources": ["https://www.worldstatesmen.org/East_Timor.html"]
+        },
+        {
+          "role": "recognition",
+          "from": "2002-09-27",
+          "text": "2002-09-27 东帝汶成为联合国会员。独立日是 2002-05-20。本层不再把 1975–2002 年的占领或过渡行政画在这里。",
+          "sources": [
+            "https://www.worldstatesmen.org/East_Timor.html",
+            "https://en.wikipedia.org/wiki/United_Nations_Security_Council_Resolution_1272"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hatay_1938",
+      "name_zh": "哈塔伊（1938–1939）",
+      "geom": null,
+      "precision_zh": "今土耳其哈塔伊省不是 1938 年的亚历山大勒塔桑贾克。不把省界套回 1938 年。不画。",
+      "statements": [
+        {
+          "role": "control",
+          "from": "1938-09-02",
+          "until": "1939-06-29",
+          "party": {"zh": "哈塔伊国"},
+          "text": "1938-09-02 桑贾克议会把名称定为哈塔伊国。9 月 7 日宪法文本生效，内部事务称独立。法国和土耳其的军队仍在。这不是已经并入土耳其。不画。",
+          "sources": [
+            "https://www.archontology.org/nations/turkey/hatay/01_polity.php",
+            "https://en.wikipedia.org/wiki/Hatay_State"
+          ]
+        },
+        {
+          "role": "control",
+          "from": "1939-06-29",
+          "until": "1939-07-23",
+          "text": "1939-06-23 法土协定同意把哈塔伊交给土耳其。06-29 哈塔伊议会表决加入并解散。土耳其设省的法律 07-07 通过、07-11 公布。法军离开、移交完成是 07-23。6 月 29 日到 7 月 22 日不写成法国当局已经走完，也不填色。",
+          "sources": [
+            "https://www.archontology.org/nations/turkey/hatay/01_polity.php",
+            "https://en.wikipedia.org/wiki/Hatay_State"
+          ]
+        },
+        {
+          "role": "control",
+          "from": "1939-07-23",
+          "party": {"zh": "土耳其"},
+          "text": "1939-07-23 起记为土耳其实际控制。今省界含后来划入的区，不拿来画 1939 年的范围。",
+          "sources": ["https://en.wikipedia.org/wiki/Hatay_State"]
+        },
+        {
+          "role": "claim",
+          "from": "1938-09-02",
+          "until": "1939-06-29",
+          "party": {"zh": "哈塔伊国"},
+          "text": "哈塔伊国主张自己是脱离桑贾克安排的实体。叙利亚当时在法国委任统治下，委任统治当局不承认这种分离为叙利亚的自愿割让。",
+          "sources": ["https://en.wikipedia.org/wiki/Hatay_State"]
+        },
+        {
+          "role": "claim",
+          "from": "1939-06-23",
+          "party": {"zh": "土耳其"},
+          "text": "1939-06-23 的法土协定把边界划在哈塔伊归土耳其的一侧。议会表决和法军撤离是另外两天。",
+          "sources": [
+            "https://www.archontology.org/nations/turkey/hatay/01_polity.php",
+            "https://www.turkdunyasiansiklopedisi.gov.tr/detay/11324/Hatay-Devleti-%2802.09.1938-29.06.1939%29"
+          ]
+        },
+        {
+          "role": "recognition",
+          "from": "1938-09-02",
+          "until": "1939-07-23",
+          "text": "哈塔伊国是法国与土耳其之间的过渡安排，不是联合国会员。国际联盟 1937 年的桑贾克安排不在这里逐条展开。",
+          "sources": ["https://www.archontology.org/nations/turkey/hatay/01_polity.php"]
+        },
+        {
+          "role": "recognition",
+          "from": "1939-07-23",
+          "text": "移交完成后，土耳其把它视为本国省份。独立后的叙利亚是否仍以正式法律主张哈塔伊，公开记载不一致，标待考。不画今省界。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Hatay_State",
+            "https://www.archontology.org/nations/turkey/hatay/01_polity.php"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "western_sahara_to_1976",
+      "name_zh": "西撒哈拉（1976-02-27 以前）",
+      "geom": "western_sahara",
+      "precision_zh": "虚线用的是已有的 Natural Earth 西撒哈拉整片轮廓，只补 1976-02-27 以前的空档。不是绿色进军的路线，也不是后来的沙墙。1976-02-27 起的三层仍在另一份数据里，这里不再重复。",
+      "statements": [
+        {
+          "role": "control",
+          "from": "1975-11-06",
+          "until": "1975-11-14",
+          "text": "1975-11-06 摩洛哥组织绿色进军。这一周西班牙仍是管理国，进军没有变成一条可画的控制线，不填色。",
+          "sources": ["https://en.wikipedia.org/wiki/Green_March"]
+        },
+        {
+          "role": "control",
+          "from": "1975-11-14",
+          "until": "1976-02-27",
+          "text": "1975-11-14 马德里协定约定西班牙在 1976 年 2 月底前撤出，由摩洛哥和毛里塔尼亚分区管理。西班牙实际撤出是 1976-02-26。分区界线不在数据包里，不填色。",
+          "sources": ["https://en.wikipedia.org/wiki/Madrid_Accords"]
+        },
+        {
+          "role": "claim",
+          "from": "1975-11-14",
+          "until": "1976-02-27",
+          "party": {"zh": "摩洛哥"},
+          "draw": "dash",
+          "label": "马德里协定所涉范围，不是实控",
+          "text": "摩洛哥根据马德里协定主张管理这片土地的一部分。虚线是整片西撒哈拉，大于后来划给摩洛哥的那一区。",
+          "sources": ["https://en.wikipedia.org/wiki/Madrid_Accords"]
+        },
+        {
+          "role": "claim",
+          "from": "1975-11-14",
+          "until": "1976-02-27",
+          "party": {"zh": "毛里塔尼亚"},
+          "text": "毛里塔尼亚同样根据马德里协定主张南部。南北分界不画。萨赫拉维阿拉伯民主共和国要到 1976-02-27 才宣布成立，这之前不把它写成声索方。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Madrid_Accords",
+            "https://en.wikipedia.org/wiki/Sahrawi_Arab_Democratic_Republic"
+          ]
+        },
+        {
+          "role": "recognition",
+          "from": "1975-11-14",
+          "until": "1976-02-27",
+          "text": "联合国没有承认马德里协定完成了主权转移。西班牙在撤出以前仍被写成管理国。承认名单不在这里开列，标待考。",
+          "sources": ["https://en.wikipedia.org/wiki/Madrid_Accords"]
+        }
+      ]
+    },
+    {
+      "id": "northern_cyprus_july1974",
+      "name_zh": "塞浦路斯北部（1974-08-16 以前）",
+      "geom": null,
+      "precision_zh": "1974-08-16 以后的三层和轮廓已在另一份数据里。7 月 20 日到 8 月 15 日的战斗线不是后来的停火范围，不把那块轮廓套回来。不画。",
+      "statements": [
+        {
+          "role": "control",
+          "from": "1974-07-20",
+          "until": "1974-08-16",
+          "party": {"zh": "土耳其"},
+          "text": "1974-07-20 土耳其出兵。7 月 22 日第一次停火，8 月 14 日再进攻，8 月 16 日第二阶段停火。这三周的地面线没有收进几何，不画。8 月 16 日起改由已有的那一层表示。",
+          "sources": ["https://en.wikipedia.org/wiki/Turkish_invasion_of_Cyprus"]
+        },
+        {
+          "role": "claim",
+          "from": "1974-07-20",
+          "until": "1974-08-16",
+          "party": {"zh": "塞浦路斯"},
+          "text": "塞浦路斯共和国的主权声索不因出兵而消失。范围不画。",
+          "sources": ["https://en.wikipedia.org/wiki/Turkish_invasion_of_Cyprus"]
+        },
+        {
+          "role": "recognition",
+          "from": "1974-07-20",
+          "until": "1974-08-16",
+          "text": "安理会在出兵当天要求停火。这不是承认土耳其获得主权。决议编号不从后来的 541 号往回套。",
+          "sources": ["https://en.wikipedia.org/wiki/Turkish_invasion_of_Cyprus"]
+        }
+      ]
+    },
+    {
+      "id": "chagos",
+      "name_zh": "查戈斯群岛",
+      "geom": "chagos",
+      "precision_zh": "轮廓是 Natural Earth 的英属印度洋领地，也就是今天仍由英国管治的查戈斯，含迪戈加西亚。不是 1965 年还包含、1976 年归还塞舌尔的那几个岛。岛形是现代海岸，标大致。",
+      "statements": [
+        {
+          "role": "control",
+          "from": "1965-11-08",
+          "until": "2025-05-22",
+          "party": {"zh": "英国"},
+          "text": "1965-11-08 设立英属印度洋领地，由英国管治。迪戈加西亚的基地由英美使用，使用不等于美国主权。不另铺填色。",
+          "sources": [
+            "https://assets.publishing.service.gov.uk/media/682f25afc054883884bff42a/CS%5FMauritius%5F1.2025%5FAgreement%5FChagos%5FDiego%5FGarcia.pdf",
+            "https://www.bbc.co.uk/news/articles/c04x1lg1lygo",
+            "https://en.wikipedia.org/wiki/Agreement_concerning_the_Chagos_Archipelago_including_Diego_Garcia"
+          ]
+        },
+        {
+          "role": "control",
+          "from": "2025-05-22",
+          "party": {"zh": "英国"},
+          "text": "2025-05-22 的英毛协定尚未生效，实际管治仍记英国。2026 年 11 月仍未见生效，之后的变化标待考。不另铺填色。",
+          "sources": [
+            "https://assets.publishing.service.gov.uk/media/682f25afc054883884bff42a/CS%5FMauritius%5F1.2025%5FAgreement%5FChagos%5FDiego%5FGarcia.pdf",
+            "https://www.bbc.co.uk/news/articles/c04x1lg1lygo"
+          ]
+        },
+        {
+          "role": "claim",
+          "from": "1968-03-12",
+          "until": "2025-05-22",
+          "party": {"zh": "毛里求斯"},
+          "draw": "dash",
+          "label": "毛里求斯声索",
+          "text": "毛里求斯自 1968-03-12 独立起主张查戈斯属于自己。虚线不是实际控制。",
+          "sources": ["https://en.wikipedia.org/wiki/Chagos_Archipelago"]
+        },
+        {
+          "role": "claim",
+          "from": "2025-05-22",
+          "party": {"zh": "毛里求斯"},
+          "draw": "dash",
+          "label": "毛里求斯声索，不是已生效的移交",
+          "text": "2025-05-22 签署的协定写毛里求斯拥有主权，但协定自己写明尚未生效。虚线不是已经移交的界线。",
+          "sources": [
+            "https://assets.publishing.service.gov.uk/media/682f25afc054883884bff42a/CS%5FMauritius%5F1.2025%5FAgreement%5FChagos%5FDiego%5FGarcia.pdf",
+            "https://en.wikipedia.org/wiki/Chagos_Archipelago"
+          ]
+        },
+        {
+          "role": "recognition",
+          "from": "1965-11-08",
+          "until": "2019-02-25",
+          "text": "这一阶段没有国际法院意见，也没有后来的大会决议。英国继续管治。",
+          "sources": ["https://www.icj-cij.org/case/169"]
+        },
+        {
+          "role": "recognition",
+          "from": "2019-02-25",
+          "until": "2019-05-22",
+          "text": "国际法院 2019-02-25 的咨询意见认为英国拆出查戈斯的行为违法，脱殖没有完成。咨询意见不是判决，也不等于已经移交。",
+          "sources": ["https://www.icj-cij.org/case/169"]
+        },
+        {
+          "role": "recognition",
+          "from": "2019-05-22",
+          "until": "2025-05-22",
+          "text": "联合国大会第 73/295 号决议于 2019-05-22 通过，要求英国在六个月内无条件撤出。决议没有在六个月后自动改变实际控制。",
+          "sources": ["https://en.wikipedia.org/wiki/United_Nations_General_Assembly_Resolution_73/295"]
+        },
+        {
+          "role": "recognition",
+          "from": "2025-05-22",
+          "text": "英毛协定于 2025-05-22 签署，文本写毛里求斯拥有包括迪戈加西亚在内的主权，但扉页写明尚未生效，生效要等双方完成国内程序并互换通知。2026 年 4 月英国实施法案未及通过。签署不是承认已经完成移交。",
+          "sources": [
+            "https://assets.publishing.service.gov.uk/media/682f25afc054883884bff42a/CS%5FMauritius%5F1.2025%5FAgreement%5FChagos%5FDiego%5FGarcia.pdf",
+            "https://www.bbc.co.uk/news/articles/c04x1lg1lygo"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mayotte",
+      "name_zh": "马约特",
+      "geom": "mayotte",
+      "precision_zh": "轮廓是 Natural Earth 的马约特省界，大致是该岛，不是整个科摩罗。现代海岸，标大致。",
+      "statements": [
+        {
+          "role": "control",
+          "from": "1975-07-06",
+          "party": {"zh": "法国"},
+          "text": "1975-07-06 科摩罗宣布独立，法国继续管治马约特。1976-02-08 和 04-11 的公投、2011-03-31 成为法国海外省，都是法国国内的地位，不改成科摩罗已经控制。不另铺填色。",
+          "sources": ["https://en.wikipedia.org/wiki/Mayotte"]
+        },
+        {
+          "role": "claim",
+          "from": "1975-07-06",
+          "party": {"zh": "科摩罗"},
+          "draw": "dash",
+          "label": "科摩罗声索，不是法国的省界改属",
+          "text": "科摩罗主张马约特是其四岛之一。虚线只是该岛，不是科摩罗全境。法国的管治不取消这一声索。",
+          "sources": ["https://en.wikipedia.org/wiki/Mayotte"]
+        },
+        {
+          "role": "recognition",
+          "from": "1975-07-06",
+          "until": "1976-10-21",
+          "text": "大会第 31/4 号决议还没有通过。1976-02-06 法国否决了安理会里要求取消公投的草案。否决不是联合国承认法国的主权主张。",
+          "sources": ["https://en.wikipedia.org/wiki/Mayotte"]
+        },
+        {
+          "role": "recognition",
+          "from": "1976-10-21",
+          "text": "联合国大会第 31/4 号决议于 1976-10-21 通过，宣布 1976 年 2 月 8 日和 4 月 11 日的公投无效，并要求法国撤出。决议没有约束力，法国不接受。此后直到 1990 年代中期大会又通过同类决议。2011-03-31 马约特成为法国第 101 个省，科摩罗的声索仍在。这不是实际控制已经易手。",
+          "sources": [
+            "https://mandates.un.org/mandate/A/RES/31/4",
+            "https://en.wikipedia.org/wiki/Mayotte"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sabah_lease",
+      "name_zh": "沙巴（1878 年租让争议）",
+      "geom": null,
+      "precision_zh": "菲律宾主张的是 1878 年协议里从潘达桑河到锡布库河的东岸，不是今天整个沙巴州。没有这条河界的许可轮廓。不用整州代替。不画。",
+      "statements": [
+        {
+          "role": "control",
+          "from": "1963-09-16",
+          "party": {"zh": "马来西亚"},
+          "text": "1963-09-16 沙巴加入马来西亚，实际管治在马来西亚。2013 年拉哈达图事件以后马来西亚停止按 1878 年协议付款。付款停止不是菲律宾取得控制。不画。",
+          "sources": ["https://en.wikipedia.org/wiki/North_Borneo_dispute"]
+        },
+        {
+          "role": "claim",
+          "from": "1878-01-22",
+          "until": "1963-09-16",
+          "text": "1878-01-22 苏禄苏丹与奥弗贝克、登特的协议用了 pajakkan。一方译成永久租让，一方译成割让。协议范围是东岸，不是后来的整个北婆罗洲。这条河界不画。",
+          "sources": ["https://en.wikipedia.org/wiki/North_Borneo_dispute"]
+        },
+        {
+          "role": "claim",
+          "from": "1963-09-16",
+          "party": {"zh": "菲律宾"},
+          "text": "菲律宾以苏禄苏丹继承者的名义保持对东沙巴的休眠声索。马来西亚把 1878 年协议看成割让，并把 1963 年的加入看成居民自决。两边都不是整州已经划定的线。",
+          "sources": ["https://en.wikipedia.org/wiki/North_Borneo_dispute"]
+        },
+        {
+          "role": "claim",
+          "from": "1963-09-16",
+          "party": {"zh": "马来西亚"},
+          "text": "马来西亚主张沙巴是联邦的一州。这是声索，也是它的实际管治。不把整州画成菲律宾的声索范围。",
+          "sources": ["https://en.wikipedia.org/wiki/North_Borneo_dispute"]
+        },
+        {
+          "role": "recognition",
+          "from": "1963-09-16",
+          "text": "国际承认的国家是马来西亚，沙巴不是另一个主权。2022 年仲裁把 1878 年协议写成私人租赁并判赔偿，那不是联合国承认菲律宾拥有东沙巴。法国法院后来的撤销程序不在这里择一，标待考。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/North_Borneo_dispute",
+            "https://queritius.com/the-iconic-case-of-the-heirs-of-the-sultan-of-sulu-vs-malaysia/"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "abu_musa_tunbs",
+      "name_zh": "阿布穆萨与大小通布岛",
+      "geom": null,
+      "precision_zh": "三座岛没有带名字的 Natural Earth 轮廓。不把霍尔木兹海峡或阿联酋、伊朗的省界拿来代替。不画。",
+      "statements": [
+        {
+          "role": "control",
+          "from": "1971-11-30",
+          "until": "1992-04",
+          "party": {"zh": "伊朗"},
+          "text": "1971-11-30 伊朗进占大通布、小通布，并按前一天与沙迦统治者的备忘录登上阿布穆萨。备忘录是共管安排，不是阿联酋放弃该岛。通布两岛没有这种备忘录。4 月 1 日不是 1992 年改共管的日子。不画。",
+          "sources": ["https://en.wikipedia.org/wiki/Seizure_of_Abu_Musa_and_the_Greater_and_Lesser_Tunbs"]
+        },
+        {
+          "role": "control",
+          "from": "1992-04",
+          "party": {"zh": "伊朗"},
+          "text": "1992 年 4 月伊朗把阿布穆萨也收为单独管治，沙迦人员离开。4 月 1 日不是公告日。三岛此后都在伊朗实际控制下。不画。",
+          "sources": ["https://en.wikipedia.org/wiki/Abu_Musa"]
+        },
+        {
+          "role": "claim",
+          "from": "1971-11-30",
+          "party": {"zh": "阿拉伯联合酋长国"},
+          "text": "阿联酋主张三岛。1971-12-02 建国以前，通布属哈伊马角、阿布穆萨属沙迦。建国不取消这项声索。",
+          "sources": ["https://en.wikipedia.org/wiki/Seizure_of_Abu_Musa_and_the_Greater_and_Lesser_Tunbs"]
+        },
+        {
+          "role": "claim",
+          "from": "1971-11-30",
+          "party": {"zh": "伊朗"},
+          "text": "伊朗主张三岛本来属于自己。这是声索。共管备忘录不写成已经得到普遍承认。",
+          "sources": ["https://en.wikipedia.org/wiki/Abu_Musa"]
+        },
+        {
+          "role": "recognition",
+          "from": "1971-11-30",
+          "text": "没有联合国决议把三岛判给伊朗或阿联酋。个别表态不编成承认名单，标待考。",
+          "sources": ["https://en.wikipedia.org/wiki/Abu_Musa"]
+        }
+      ]
+    },
+    {
+      "id": "bakassi",
+      "name_zh": "巴卡西半岛",
+      "geom": null,
+      "precision_zh": "没有半岛轮廓。不用十字河州或喀麦隆西南区整片代替。不画。",
+      "statements": [
+        {
+          "role": "control",
+          "from": "1960-10-01",
+          "until": "2008-08-14",
+          "party": {"zh": "尼日利亚"},
+          "text": "尼日利亚长期实际管治半岛。2002-10-10 国际法院把主权判给喀麦隆之后，尼日利亚仍留到 2008-08-14 才完成移交。法律归属和撤军不是同一天。不画。",
+          "sources": [
+            "https://www.icj-cij.org/case/94",
+            "https://en.wikipedia.org/wiki/Bakassi"
+          ]
+        },
+        {
+          "role": "control",
+          "from": "2008-08-14",
+          "party": {"zh": "喀麦隆"},
+          "text": "2008-08-14 尼日利亚完成撤军，此后记喀麦隆实际控制。不画半岛。",
+          "sources": ["https://en.wikipedia.org/wiki/Bakassi"]
+        },
+        {
+          "role": "claim",
+          "from": "1960-10-01",
+          "until": "2002-10-10",
+          "party": {"zh": "尼日利亚"},
+          "text": "移交以前尼日利亚主张半岛。这是声索，和它的实际管治叠在一起。",
+          "sources": ["https://en.wikipedia.org/wiki/Bakassi"]
+        },
+        {
+          "role": "claim",
+          "from": "1960-10-01",
+          "party": {"zh": "喀麦隆"},
+          "text": "喀麦隆依据 1913 年英德协定主张半岛。2002-10-10 国际法院支持喀麦隆。判决日不是撤军日。",
+          "sources": ["https://www.icj-cij.org/case/94"]
+        },
+        {
+          "role": "recognition",
+          "from": "2002-10-10",
+          "until": "2008-08-14",
+          "text": "国际法院 2002-10-10 的判决确定主权在喀麦隆。2006-06-12 格林特里协定安排移交。到 2008-08-14 以前，承认的是喀麦隆的主权，实际控制仍是尼日利亚。",
+          "sources": [
+            "https://www.icj-cij.org/case/94",
+            "https://en.wikipedia.org/wiki/Bakassi"
+          ]
+        },
+        {
+          "role": "recognition",
+          "from": "2008-08-14",
+          "text": "撤军完成后，主权和实际控制都在喀麦隆。本层不再把这里写成未决争议。",
+          "sources": ["https://en.wikipedia.org/wiki/Bakassi"]
+        }
+      ]
+    },
+    {
+      "id": "essequibo",
+      "name_zh": "圭亚那埃塞奎博",
+      "geom": null,
+      "precision_zh": "委内瑞拉声索的是埃塞奎博河以西。圭亚那的区界有的跨河，不能拼成这片。不画。",
+      "statements": [
+        {
+          "role": "control",
+          "from": "1966-05-26",
+          "party": {"zh": "圭亚那"},
+          "text": "1966-05-26 圭亚那独立，河西仍由圭亚那管治。2023 年委内瑞拉的公投没有变成实际控制。不画。",
+          "sources": ["https://en.wikipedia.org/wiki/Guyana%E2%80%93Venezuela_territorial_dispute"]
+        },
+        {
+          "role": "claim",
+          "from": "1966-02-17",
+          "party": {"zh": "委内瑞拉"},
+          "text": "1966-02-17 日内瓦协定把 1899 年裁决留下的争议继续交给双方处理。委内瑞拉主张河西，并认为 1899-10-03 的裁决无效。河线不画。",
+          "sources": ["https://en.wikipedia.org/wiki/Geneva_Agreement_(1966)"]
+        },
+        {
+          "role": "claim",
+          "from": "1966-05-26",
+          "party": {"zh": "圭亚那"},
+          "text": "圭亚那主张 1899 年裁决划定的边界有效，河西是本国领土。",
+          "sources": ["https://en.wikipedia.org/wiki/Guyana%E2%80%93Venezuela_territorial_dispute"]
+        },
+        {
+          "role": "recognition",
+          "from": "1966-05-26",
+          "until": "2018-03-29",
+          "text": "各国一般按圭亚那的管治来往。这不是一项把河西判给圭亚那的新裁决。国际法院此案尚未起诉。",
+          "sources": ["https://www.icj-cij.org/case/171"]
+        },
+        {
+          "role": "recognition",
+          "from": "2018-03-29",
+          "text": "圭亚那于 2018-03-29 向国际法院起诉。法院后来确认有管辖权，但截至 2026-11 还没有就 1899 年裁决是否有效作出实体判决。不把审理中的案子写成已经判完。",
+          "sources": [
+            "https://www.icj-cij.org/case/171",
+            "https://en.wikipedia.org/wiki/Guyana%E2%80%93Venezuela_territorial_dispute"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tamil_eelam",
+      "name_zh": "泰米尔伊拉姆",
+      "geom": null,
+      "precision_zh": "猛虎组织的控制区随年份伸缩，北部和东部省界不是控制线。不画。",
+      "statements": [
+        {
+          "role": "control",
+          "from": "1983-07-23",
+          "until": "2009-05-19",
+          "party": {"zh": "泰米尔伊拉姆猛虎解放组织"},
+          "text": "1983-07-23 黑色七月之后内战持续到 2009-05-18 猛虎组织的常规武装结束。控制区没有一条可以按年回放的界线，不画。5 月 18 日仍算在战争期内，5 月 19 日起不再记。",
+          "sources": ["https://en.wikipedia.org/wiki/Sri_Lankan_civil_war"]
+        },
+        {
+          "role": "claim",
+          "from": "1983-07-23",
+          "until": "2009-05-19",
+          "party": {"zh": "泰米尔伊拉姆猛虎解放组织"},
+          "text": "猛虎组织声索北部和东部为泰米尔伊拉姆。省界大于它任何一年实际保住的土地。",
+          "sources": ["https://en.wikipedia.org/wiki/Tamil_Eelam"]
+        },
+        {
+          "role": "claim",
+          "from": "1983-07-23",
+          "party": {"zh": "斯里兰卡"},
+          "text": "斯里兰卡主张全国主权。内战和猛虎组织的声索不取消这一行。",
+          "sources": ["https://en.wikipedia.org/wiki/Sri_Lankan_civil_war"]
+        },
+        {
+          "role": "recognition",
+          "from": "1983-07-23",
+          "until": "2009-05-19",
+          "text": "没有国家承认泰米尔伊拉姆。它不是联合国会员。",
+          "sources": ["https://en.wikipedia.org/wiki/Tamil_Eelam"]
+        },
+        {
+          "role": "control",
+          "from": "2009-05-19",
+          "party": {"zh": "斯里兰卡"},
+          "text": "2009-05-18 以后政府控制原战区。不追画当年的控制线。",
+          "sources": ["https://en.wikipedia.org/wiki/Sri_Lankan_civil_war"]
+        }
+      ]
+    },
+    {
+      "id": "kuwait_1990",
+      "name_zh": "科威特（1990–1991 伊拉克占领）",
+      "geom": "kuwait",
+      "precision_zh": "轮廓是 Natural Earth 的科威特，大致就是 1990 年被占领的国家范围，不是逐日前线。2 月 26 日收复的是首都，不是一条新国界。",
+      "statements": [
+        {
+          "role": "control",
+          "from": "1990-08-02",
+          "until": "1991-02-27",
+          "party": {"zh": "伊拉克"},
+          "draw": "fill",
+          "color_kind": "occupied",
+          "text": "1990-08-02 伊拉克入侵并占领科威特。1991-02-26 科威特城被收复，这一天仍记在占领期内。2 月 27 日起不再把全国画成伊拉克占领。2 月 28 日停火不另作一条控制线。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Iraqi_invasion_of_Kuwait",
+            "https://en.wikipedia.org/wiki/United_Nations_Security_Council_Resolution_660"
+          ]
+        },
+        {
+          "role": "claim",
+          "from": "1990-08-02",
+          "until": "1991-02-27",
+          "party": {"zh": "科威特"},
+          "draw": "dash",
+          "label": "科威特主权仍在，不是伊拉克的省",
+          "text": "科威特的主权声索没有中断。虚线是被占领的国家范围，不是伊拉克已经得到承认的省界。",
+          "sources": ["https://en.wikipedia.org/wiki/United_Nations_Security_Council_Resolution_662"]
+        },
+        {
+          "role": "claim",
+          "from": "1990-08-08",
+          "until": "1991-02-27",
+          "party": {"zh": "伊拉克"},
+          "text": "1990-08-08 伊拉克宣布把科威特合并为第十九省。这是合并声称，不是国际承认，也不是 8 月 2 日入侵当天就已经宣布的。",
+          "sources": ["https://en.wikipedia.org/wiki/United_Nations_Security_Council_Resolution_662"]
+        },
+        {
+          "role": "recognition",
+          "from": "1990-08-02",
+          "until": "1990-08-09",
+          "text": "安理会第 660 号决议于 1990-08-02 通过，要求伊拉克立即撤军。合并决议还没有通过。",
+          "sources": ["https://en.wikipedia.org/wiki/United_Nations_Security_Council_Resolution_660"]
+        },
+        {
+          "role": "recognition",
+          "from": "1990-08-09",
+          "until": "1991-02-27",
+          "text": "安理会第 662 号决议于 1990-08-09 通过，宣布 8 月 8 日的合并完全无效。占领不成为主权。",
+          "sources": ["https://en.wikipedia.org/wiki/United_Nations_Security_Council_Resolution_662"]
+        }
+      ]
+    },
+    {
+      "id": "western_sahara_front",
+      "name_zh": "西撒哈拉沙墙两侧",
+      "geom": null,
+      "precision_zh": "整片声索虚线已在另一份数据里。摩洛哥实控区、沙墙和波利萨里奥一侧没有公有领域轮廓。不把整片填成任何一方。不画。",
+      "statements": [
+        {
+          "role": "control",
+          "from": "1976-02-27",
+          "until": "1979-08-05",
+          "text": "1976-02-27 以后摩洛哥管治北部，毛里塔尼亚管治南部的西提里斯。波利萨里奥在沙漠里另有活动区。三条范围都没有收进几何，不画。",
+          "sources": ["https://en.wikipedia.org/wiki/Western_Sahara_War"]
+        },
+        {
+          "role": "control",
+          "from": "1979-08-05",
+          "text": "1979-08-05 毛里塔尼亚放弃西提里斯。摩洛哥随后进入原毛里塔尼亚区。沙墙在 1980 年代分段修筑，墙西多为摩洛哥实际控制，墙东多为波利萨里奥。1 月 1 日不是开工日。沙墙不是国界，没有公有领域轮廓，不画。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Western_Sahara_War",
+            "https://en.wikipedia.org/wiki/Moroccan_Western_Sahara_Wall"
+          ]
+        },
+        {
+          "role": "claim",
+          "from": "1976-02-27",
+          "until": "1979-08-05",
+          "party": {"zh": "毛里塔尼亚"},
+          "text": "毛里塔尼亚声索并管治南部。1979-08-05 起放弃。这不是联合国划定的边界。",
+          "sources": ["https://en.wikipedia.org/wiki/Western_Sahara_War"]
+        },
+        {
+          "role": "claim",
+          "from": "1976-02-27",
+          "party": {"zh": "摩洛哥"},
+          "text": "摩洛哥声索整片。沙墙以西的实际控制不等于整片已经归属摩洛哥。",
+          "sources": ["https://en.wikipedia.org/wiki/Moroccan_Western_Sahara_Wall"]
+        },
+        {
+          "role": "claim",
+          "from": "1976-02-27",
+          "party": {"zh": "波利萨里奥阵线"},
+          "text": "波利萨里奥和萨赫拉维阿拉伯民主共和国声索整片，实际控制主要在后来的沙墙以东。声索不是实控。",
+          "sources": ["https://en.wikipedia.org/wiki/Moroccan_Western_Sahara_Wall"]
+        },
+        {
+          "role": "recognition",
+          "from": "1979-08-05",
+          "text": "毛里塔尼亚放弃南部，不等于联合国已经把西撒哈拉判给摩洛哥或萨赫拉维阿拉伯民主共和国。承认人数不固化，标待考。",
+          "sources": ["https://en.wikipedia.org/wiki/Western_Sahara_War"]
+        }
+      ]
+    },
+    {
+      "id": "golan_disengagement",
+      "name_zh": "戈兰脱离接触线",
+      "geom": null,
+      "precision_zh": "戈兰的三层已在另一份数据里，并且没有单独轮廓。1974 年脱离接触线也不在公有领域数据里。不用库奈特拉全省代替。不画。",
+      "statements": [
+        {
+          "role": "control",
+          "from": "1967-06-10",
+          "until": "1974-05-31",
+          "party": {"zh": "以色列"},
+          "text": "1967-06-10 停火以后以色列控制的范围大于 1974 年脱离接触之后留下的部分，包括后来交还的库奈特拉。6 月 10 日以前的逐日线不画。",
+          "sources": ["https://en.wikipedia.org/wiki/Agreement_on_Disengagement_between_Israel_and_Syria"]
+        },
+        {
+          "role": "control",
+          "from": "1974-05-31",
+          "party": {"zh": "以色列"},
+          "text": "1974-05-31 以叙脱离接触协定。以色列撤到协定线，叙利亚收回库奈特拉一带，中间由联合国脱离接触观察员部队隔开。这条线没有公有领域轮廓，不画。以色列在线西的控制不是主权。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Agreement_on_Disengagement_between_Israel_and_Syria",
+            "https://en.wikipedia.org/wiki/United_Nations_Security_Council_Resolution_350"
+          ]
+        },
+        {
+          "role": "claim",
+          "from": "1974-05-31",
+          "party": {"zh": "叙利亚"},
+          "text": "叙利亚声索包括以色列仍控制的戈兰。脱离接触不是边界条约。",
+          "sources": ["https://en.wikipedia.org/wiki/Agreement_on_Disengagement_between_Israel_and_Syria"]
+        },
+        {
+          "role": "recognition",
+          "from": "1974-05-31",
+          "text": "安理会第 350 号决议于 1974-05-31 设立联合国脱离接触观察员部队。这不是把戈兰判给以色列。1981 年的第 497 号决议仍在另一份数据里，这里不重复。",
+          "sources": ["https://en.wikipedia.org/wiki/United_Nations_Security_Council_Resolution_350"]
+        }
+      ]
+    },
+    {
+      "id": "cyprus_buffer",
+      "name_zh": "塞浦路斯缓冲区",
+      "geom": null,
+      "precision_zh": "1974-08-16 以后的北部实控已在另一份数据里。联合国缓冲区夹在双方之间，不是北塞浦路斯的领土，也没有公有领域的逐段线。不画。",
+      "statements": [
+        {
+          "role": "control",
+          "from": "1974-08-16",
+          "text": "1974-08-16 第二阶段停火之后，联合国驻塞部队隔开双方。缓冲区不归北塞浦路斯，也不归塞浦路斯政府的日常管治。宽度不固定，不画。",
+          "sources": ["https://en.wikipedia.org/wiki/United_Nations_Buffer_Zone_in_Cyprus"]
+        },
+        {
+          "role": "claim",
+          "from": "1974-08-16",
+          "party": {"zh": "塞浦路斯"},
+          "text": "塞浦路斯共和国的主权声索覆盖全岛，包括缓冲区和北部。缓冲区的存在不改写这一声索。",
+          "sources": ["https://en.wikipedia.org/wiki/United_Nations_Buffer_Zone_in_Cyprus"]
+        },
+        {
+          "role": "recognition",
+          "from": "1974-08-16",
+          "text": "缓冲区是停火安排，不是国际边界，也不是承认北塞浦路斯。安理会第 541 号决议仍在另一份数据里。",
+          "sources": ["https://en.wikipedia.org/wiki/United_Nations_Buffer_Zone_in_Cyprus"]
+        }
+      ]
+    },
+    {
+      "id": "kafia_kingi",
+      "name_zh": "卡菲亚金吉",
+      "geom": null,
+      "precision_zh": "没有这块飞地的轮廓。不用南达尔富尔或西加扎勒河整州代替。不画。阿卜耶伊是另一块，不并进来。",
+      "statements": [
+        {
+          "role": "control",
+          "from": "1956-01-01",
+          "party": {"zh": "苏丹"},
+          "text": "苏丹实际行政这块与中非共和国交界的地方。1960 年有把它从加扎勒河改划到达尔富尔的记载，法令日没有核到，不写成 1 月 1 日。2011-07-09 南苏丹独立没有改变这里的实际行政。不画。",
+          "sources": ["https://en.wikipedia.org/wiki/Kafia_Kingi"]
+        },
+        {
+          "role": "claim",
+          "from": "2005-01-09",
+          "party": {"zh": "苏丹人民解放运动"},
+          "text": "2005-01-09 的全面和平协议把边界写成 1956-01-01 的省界。南方据此主张卡菲亚金吉属于加扎勒河一侧。这是声索，不是已经移交。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Kafia_Kingi",
+            "https://en.wikipedia.org/wiki/Comprehensive_Peace_Agreement"
+          ]
+        },
+        {
+          "role": "claim",
+          "from": "2011-07-09",
+          "party": {"zh": "南苏丹"},
+          "text": "2011-07-09 起由南苏丹继承这项按 1956 年省界的声索。苏丹仍主张按后来的行政归属。两边都没有划定的线可画。",
+          "sources": ["https://en.wikipedia.org/wiki/Kafia_Kingi"]
+        },
+        {
+          "role": "recognition",
+          "from": "2005-01-09",
+          "text": "协议没有把卡菲亚金吉单独判给任何一方，也没有公投或国际法院判决。国际承认的两国边界在这里仍未划定，标待考。",
+          "sources": ["https://en.wikipedia.org/wiki/Kafia_Kingi"]
+        }
+      ]
+    },
+    {
+      "id": "ilemi",
+      "name_zh": "伊勒米三角",
+      "geom": null,
+      "precision_zh": "1914 年巡逻线、后来的红线和肯尼亚实际巡逻的范围不是同一条。没有公有领域轮廓。不画。",
+      "statements": [
+        {
+          "role": "control",
+          "from": "1963-12-12",
+          "party": {"zh": "肯尼亚"},
+          "text": "1963-12-12 肯尼亚独立后继续在三角区一侧实际行政。殖民时期的巡逻线更早，具体走到哪一条没有收进几何。不画。",
+          "sources": ["https://en.wikipedia.org/wiki/Ilemi_Triangle"]
+        },
+        {
+          "role": "claim",
+          "from": "1956-01-01",
+          "until": "2011-07-09",
+          "party": {"zh": "苏丹"},
+          "text": "苏丹主张三角区。它和肯尼亚实际行政的范围不是同一条线。不画。",
+          "sources": ["https://en.wikipedia.org/wiki/Ilemi_Triangle"]
+        },
+        {
+          "role": "claim",
+          "from": "2011-07-09",
+          "party": {"zh": "南苏丹"},
+          "text": "2011-07-09 以后常把苏丹的主张写成改由南苏丹提出。是否自动继承，本层没有核到一份双方文件，标待考。肯尼亚的实际行政不因此改变。",
+          "sources": ["https://en.wikipedia.org/wiki/Ilemi_Triangle"]
+        },
+        {
+          "role": "claim",
+          "from": "1963-12-12",
+          "party": {"zh": "肯尼亚"},
+          "text": "肯尼亚把实际行政的一侧视为自己的范围。这和苏丹或南苏丹的声索不是同一条线。",
+          "sources": ["https://en.wikipedia.org/wiki/Ilemi_Triangle"]
+        },
+        {
+          "role": "recognition",
+          "from": "1963-12-12",
+          "text": "没有条约或联合国决议把伊勒米三角判给肯尼亚、苏丹或南苏丹。埃塞俄比亚是否仍对整片提出声索，没有核到现行官方文件，标待考，不写成已经放弃。",
+          "sources": ["https://en.wikipedia.org/wiki/Ilemi_Triangle"]
+        }
+      ]
+    }
+  ]
+}
