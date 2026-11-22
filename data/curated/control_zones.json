@@ -7559,7 +7559,6 @@
      "mcgd:s1858",
      "mcgd:s1862",
      "mcgd:s1871",
-     "mcgd:s1873",
      "mcgd:s1874",
      "mcgd:s1876",
      "mcgd:s1877",
@@ -7568,10 +7567,7 @@
      "mcgd:s1934",
      "mcgd:s1939",
      "mcgd:s194",
-     "mcgd:s1940",
-     "mcgd:s1945",
      "mcgd:s195",
-     "mcgd:s1960",
      "mcgd:s200",
      "mcgd:s201",
      "mcgd:s202",
@@ -7752,7 +7748,6 @@
      "mcgd:s1061",
      "mcgd:s1074",
      "mcgd:s108",
-     "mcgd:s109",
      "mcgd:s1102",
      "mcgd:s1104",
      "mcgd:s1106",
@@ -7827,16 +7822,13 @@
      "mcgd:s1930",
      "mcgd:s1931",
      "mcgd:s1932",
-     "mcgd:s1935",
      "mcgd:s1936",
      "mcgd:s1941",
-     "mcgd:s1943",
      "mcgd:s1944",
      "mcgd:s1949",
      "mcgd:s1950",
      "mcgd:s1952",
      "mcgd:s1953",
-     "mcgd:s1954",
      "mcgd:s1955",
      "mcgd:s1959",
      "mcgd:s198",
@@ -12032,6 +12024,240 @@
    "sources": [
     "https://web.archive.org/web/20170809172042/http://www.jssdfz.gov.cn/book/jsz2/FL/FL.html",
     "http://lyj.jiangsu.gov.cn/art/2021/4/21/art_81813_9762633.html",
+    "https://zenodo.org/records/5721459"
+   ]
+  },
+  {
+   "id": "sjw_cell_mcgd:s1940_1944-04-23_郑州",
+   "group": "sino_japanese_war",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "华北政务委员会（郑州）",
+   "name_en": "华北政务委员会（郑州）",
+   "controller": {
+    "qid": "Q10905486",
+    "zh": "华北政务委员会"
+   },
+   "from": "1944-04-23",
+   "until": "1944-08-08",
+   "geometry": {
+    "roc_counties": [
+     "mcgd:s1940"
+    ]
+   },
+   "approx": true,
+   "note": "郑县县域。已核對《中華民國史事紀要》民國三十三年四月至六月，印页一九九（PDF 第207页），页眉四月二十三日，写固守郑州之暂编第一旅于本（二十三）日二时奉令突围转进，日军遂陷郑州。同页写本月二十日向郑州展开攻势，不把二十日写成已经陷落。1944-08-08 起并入下一块。大致。县域为治所泰森多边形近似。",
+   "dates_note": "郑州 1944-04-23 起，收到 1944-08-08。已核對印页一九九。",
+   "sources": [
+    "https://www.drnh.gov.tw/p/404-1003-13336.php?Lang=zh-tw",
+    "https://zenodo.org/records/5721459"
+   ]
+  },
+  {
+   "id": "sjw_cell_mcgd:s1960_1944-04-23_密县",
+   "group": "sino_japanese_war",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "华北政务委员会（密县）",
+   "name_en": "华北政务委员会（密县）",
+   "controller": {
+    "qid": "Q10905486",
+    "zh": "华北政务委员会"
+   },
+   "from": "1944-04-23",
+   "until": "1944-08-08",
+   "geometry": {
+    "roc_counties": [
+     "mcgd:s1960"
+    ]
+   },
+   "approx": true,
+   "note": "密县县域。已核對《中華民國史事紀要》民國三十三年四月至六月，印页一九九（PDF 第207页），页眉四月二十三日，标题写日军侵占郑州、密县。正文写至本日进攻密县外围，战至九时许第二十三师突围。1944-08-08 起并入下一块。大致。县域为治所泰森多边形近似。",
+   "dates_note": "密县 1944-04-23 起，收到 1944-08-08。已核對印页一九九。",
+   "sources": [
+    "https://www.drnh.gov.tw/p/404-1003-13336.php?Lang=zh-tw",
+    "https://zenodo.org/records/5721459"
+   ]
+  },
+  {
+   "id": "sjw_cell_mcgd:s1943_1944-05-01_许昌",
+   "group": "sino_japanese_war",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "汪精卫政权（许昌）",
+   "name_en": "汪精卫政权（许昌）",
+   "controller": {
+    "qid": "Q696242",
+    "zh": "汪精卫政权"
+   },
+   "from": "1944-05-01",
+   "until": "1944-08-08",
+   "geometry": {
+    "roc_counties": [
+     "mcgd:s1943"
+    ]
+   },
+   "approx": true,
+   "note": "许昌县域。已核對《中華民國史事紀要》民國三十三年四月至六月，印页二六〇（PDF 第268页），页眉五月一日，标题许昌陷落，写日军本日先轰炸，再以战车与步兵突入城内，许昌随之陷落。1944-08-08 起并入下一块。大致。县域为治所泰森多边形近似。",
+   "dates_note": "许昌 1944-05-01 起，收到 1944-08-08。已核對印页二六〇。",
+   "sources": [
+    "https://www.drnh.gov.tw/p/404-1003-13336.php?Lang=zh-tw",
+    "https://zenodo.org/records/5721459"
+   ]
+  },
+  {
+   "id": "sjw_cell_mcgd:s1954_1944-05-02_临颍",
+   "group": "sino_japanese_war",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "汪精卫政权（临颍）",
+   "name_en": "汪精卫政权（临颍）",
+   "controller": {
+    "qid": "Q696242",
+    "zh": "汪精卫政权"
+   },
+   "from": "1944-05-02",
+   "until": "1944-08-08",
+   "geometry": {
+    "roc_counties": [
+     "mcgd:s1954"
+    ]
+   },
+   "approx": true,
+   "note": "临颍县域。已核對《中華民國史事紀要》民國三十三年四月至六月，印页二九六（PDF 第304页），页眉五月五日，追述攻陷许昌之后二日继陷临颍。许昌陷落是五月一日。1944-08-08 起并入下一块。大致。县域为治所泰森多边形近似。",
+   "dates_note": "临颍 1944-05-02 起，收到 1944-08-08。追述，已核對印页二九六。",
+   "sources": [
+    "https://www.drnh.gov.tw/p/404-1003-13336.php?Lang=zh-tw",
+    "https://zenodo.org/records/5721459"
+   ]
+  },
+  {
+   "id": "sjw_cell_mcgd:s109_1944-05-03_襄城",
+   "group": "sino_japanese_war",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "汪精卫政权（襄城）",
+   "name_en": "汪精卫政权（襄城）",
+   "controller": {
+    "qid": "Q696242",
+    "zh": "汪精卫政权"
+   },
+   "from": "1944-05-03",
+   "until": "1944-08-08",
+   "geometry": {
+    "roc_counties": [
+     "mcgd:s109"
+    ]
+   },
+   "approx": true,
+   "note": "襄城县域。已核對《中華民國史事紀要》民國三十三年四月至六月，印页二九六（PDF 第304页），页眉五月五日，追述三日再陷襄城。同页写猛攻郏县，不把郏县写成已经陷落。1944-08-08 起并入下一块。大致。县域为治所泰森多边形近似。",
+   "dates_note": "襄城 1944-05-03 起，收到 1944-08-08。追述，已核對印页二九六。",
+   "sources": [
+    "https://www.drnh.gov.tw/p/404-1003-13336.php?Lang=zh-tw",
+    "https://zenodo.org/records/5721459"
+   ]
+  },
+  {
+   "id": "sjw_cell_mcgd:s1935_1944-05-04_临汝",
+   "group": "sino_japanese_war",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "汪精卫政权（临汝）",
+   "name_en": "汪精卫政权（临汝）",
+   "controller": {
+    "qid": "Q696242",
+    "zh": "汪精卫政权"
+   },
+   "from": "1944-05-04",
+   "until": "1944-08-08",
+   "geometry": {
+    "roc_counties": [
+     "mcgd:s1935"
+    ]
+   },
+   "approx": true,
+   "note": "临汝县域。已核對《中華民國史事紀要》民國三十三年四月至六月，印页二九六（PDF 第304页），页眉五月五日，追述四日陷临汝。同页写分股向宝丰、临汝突进，宝丰没有写陷。1944-08-08 起并入下一块。大致。县域为治所泰森多边形近似。",
+   "dates_note": "临汝 1944-05-04 起，收到 1944-08-08。追述，已核對印页二九六。",
+   "sources": [
+    "https://www.drnh.gov.tw/p/404-1003-13336.php?Lang=zh-tw",
+    "https://zenodo.org/records/5721459"
+   ]
+  },
+  {
+   "id": "sjw_cell_mcgd:s1873_1944-05-14_宜阳",
+   "group": "sino_japanese_war",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "华北政务委员会（宜阳）",
+   "name_en": "华北政务委员会（宜阳）",
+   "controller": {
+    "qid": "Q10905486",
+    "zh": "华北政务委员会"
+   },
+   "from": "1944-05-14",
+   "until": "1944-08-08",
+   "geometry": {
+    "roc_counties": [
+     "mcgd:s1873"
+    ]
+   },
+   "approx": true,
+   "note": "宜阳县域。已核對《中華民國史事紀要》民國三十三年四月至六月，印页四三〇（PDF 第438页），页眉五月二十一日，追述本月十四日陷宜阳。同页十六日陷韩城，韩城对不上一九三一年河南的县，不画。1944-08-08 起并入下一块。大致。县域为治所泰森多边形近似。",
+   "dates_note": "宜阳 1944-05-14 起，收到 1944-08-08。追述，已核對印页四三〇。",
+   "sources": [
+    "https://www.drnh.gov.tw/p/404-1003-13336.php?Lang=zh-tw",
+    "https://zenodo.org/records/5721459"
+   ]
+  },
+  {
+   "id": "sjw_cell_mcgd:s1945_1944-05-17_洛宁",
+   "group": "sino_japanese_war",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "华北政务委员会（洛宁）",
+   "name_en": "华北政务委员会（洛宁）",
+   "controller": {
+    "qid": "Q10905486",
+    "zh": "华北政务委员会"
+   },
+   "from": "1944-05-17",
+   "until": "1944-08-08",
+   "geometry": {
+    "roc_counties": [
+     "mcgd:s1945"
+    ]
+   },
+   "approx": true,
+   "note": "洛宁县域。已核對《中華民國史事紀要》民國三十三年四月至六月，印页四三〇（PDF 第438页），页眉五月二十一日，追述本月十七日陷洛宁。同页十八日陷陕县、二十日攻入卢氏。陕县不在既有大块里，卢氏没有一九三一年治所，都不画。1944-08-08 起并入下一块。大致。县域为治所泰森多边形近似。",
+   "dates_note": "洛宁 1944-05-17 起，收到 1944-08-08。追述，已核對印页四三〇。",
+   "sources": [
+    "https://www.drnh.gov.tw/p/404-1003-13336.php?Lang=zh-tw",
+    "https://zenodo.org/records/5721459"
+   ]
+  },
+  {
+   "id": "sjw_cell_mcgd:s437_1944-06-06_湘阴",
+   "group": "sino_japanese_war",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "汪精卫政权（湘阴）",
+   "name_en": "汪精卫政权（湘阴）",
+   "controller": {
+    "qid": "Q696242",
+    "zh": "汪精卫政权"
+   },
+   "from": "1944-06-06",
+   "until": "1944-08-08",
+   "geometry": {
+    "roc_counties": [
+     "mcgd:s437"
+    ]
+   },
+   "approx": true,
+   "note": "湘阴县域。已核對《中華民國史事紀要》民國三十三年四月至六月，印页六四六（PDF 第653页），页眉六月六日，标题日军分陷湘阴、益阳、古港等地，正文写迄本（六）日一部陷芦林潭、湘阴。益阳正文写分犯，不把标题的分陷写成已经陷落。芦林潭、古港不是县。1944-08-08 起并入下一块。大致。县域为治所泰森多边形近似。",
+   "dates_note": "湘阴 1944-06-06 起，收到 1944-08-08。已核對印页六四六。",
+   "sources": [
+    "https://www.drnh.gov.tw/p/404-1003-13336.php?Lang=zh-tw",
     "https://zenodo.org/records/5721459"
    ]
   },
