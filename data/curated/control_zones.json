@@ -12610,6 +12610,33 @@
     "https://www.drnh.gov.tw/p/404-1003-13317.php?Lang=zh-tw",
     "https://zenodo.org/records/5721459"
    ]
+  },
+  {
+   "id": "shiji2936_ningxia_1929",
+   "group": "roc_warlord",
+   "kind": "de_facto",
+   "as_polity": true,
+   "name_zh": "马仲英部（宁夏）",
+   "name_en": "Ma Zhongying (Ningxia)",
+   "controller": {
+    "qid": "Q2661303",
+    "zh": "马仲英部"
+   },
+   "from": "1929-04-14",
+   "until": "1929-05-05",
+   "geometry": {
+    "roc_counties": [
+     "mcgd:s1718"
+    ]
+   },
+   "approx": true,
+   "note": "宁夏县域，1931年治所名宁夏，不是全省。已核對《中華民國史事紀要》民國十八年一月至四月，印页一一〇八（PDF 第1114页），页眉民国十八年四月十四日，写回、蒙回教徒联合叛变，本日攻陷宁夏省首府宁夏市，省主席门致中退守城外。收复已核對民國十八年五月至八月，印页五一（PDF 第59页），页眉五月七日，写四月十一日西北民军司令马仲英占据宁朔，十四日攻陷宁夏，国民政府接冯玉祥报告门致中于五日收复宁夏。五日写在十四日之后、页眉是五月七日，是五月五日。收到五月五日，不含当天。宁朔没有收复日，不另画。大致。县域为治所泰森多边形近似。",
+   "dates_note": "宁夏 1929-04-14 起，收到 1929-05-05。陷城已核對印页一一〇八，收复已核對印页五一。",
+   "sources": [
+    "https://www.drnh.gov.tw/p/405-1003-13292,c169.php?Lang=zh-tw",
+    "https://www.drnh.gov.tw/p/405-1003-13293,c169.php?Lang=zh-tw",
+    "https://zenodo.org/records/5721459"
+   ]
   }
  ]
 }
