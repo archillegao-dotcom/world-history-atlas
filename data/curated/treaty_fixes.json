@@ -3882,5 +3882,244 @@
       "d": 17,
       "p": 11
     }
+  },
+  "Q15991257": {
+    "batch": "2026-11-22-g",
+    "adopted": {
+      "y": 1986,
+      "m": 9,
+      "d": 26,
+      "p": 11
+    },
+    "effective": {
+      "y": 1987,
+      "m": 2,
+      "d": 26,
+      "p": 11
+    },
+    "status": "signed_then_effective",
+    "note": "核事故或辐射紧急援助公约。1986-09-26通过，1987-02-26生效。名单不补。",
+    "sources": [
+      "https://www.iaea.org/topics/nuclear-safety-conventions/convention-assistance-case-nuclear-accident-or-radiological-emergency"
+    ]
+  },
+  "Q5166306": {
+    "batch": "2026-11-22-g",
+    "adopted": {
+      "y": 1992,
+      "m": 3,
+      "d": 17,
+      "p": 11
+    },
+    "effective": {
+      "y": 2000,
+      "m": 4,
+      "d": 19,
+      "p": 11
+    },
+    "status": "signed_then_effective",
+    "note": "工业事故越境影响公约。1992-03-17订于赫尔辛基，2000-04-19生效。名单不补。",
+    "sources": [
+      "https://treaties.un.org/Pages/ViewDetails.aspx?chapter=27&clang=_en&mtdsg_no=XXVII-6&src=TREATY"
+    ],
+    "signed": {
+      "y": 1992,
+      "m": 3,
+      "d": 17,
+      "p": 11
+    }
+  },
+  "Q2498994": {
+    "batch": "2026-11-22-g",
+    "adopted": {
+      "y": 1974,
+      "m": 12,
+      "d": 13,
+      "p": 11
+    },
+    "effective": {
+      "y": 1987,
+      "m": 4,
+      "d": 28,
+      "p": 11
+    },
+    "status": "signed_then_effective",
+    "note": "雅典公约。1974-12-13订于雅典，1987-04-28生效。名单不补。",
+    "sources": [
+      "https://treaties.un.org/pages/showdetails.aspx?objid=08000002800cdbb3"
+    ],
+    "signed": {
+      "y": 1974,
+      "m": 12,
+      "d": 13,
+      "p": 11
+    }
+  },
+  "Q26220908": {
+    "batch": "2026-11-22-g",
+    "adopted": {
+      "y": 1948,
+      "m": 3,
+      "d": 6,
+      "p": 11
+    },
+    "effective": {
+      "y": 1958,
+      "m": 3,
+      "d": 17,
+      "p": 11
+    },
+    "status": "signed_then_effective",
+    "note": "国际海事组织公约。1948-03-06在日内瓦通过，1958-03-17生效。名单不补。",
+    "sources": [
+      "https://www.imo.org/en/about/conventions/pages/convention-on-the-international-maritime-organization.aspx",
+      "https://treaties.un.org/Pages/ViewDetails.aspx?chapter=12&clang=_en&mtdsg_no=XII-1&src=TREATY"
+    ],
+    "signed": {
+      "y": 1948,
+      "m": 3,
+      "d": 6,
+      "p": 11
+    },
+    "summary_zh": "1948年3月6日在日内瓦通过，1958年3月17日生效。这一条只记公约本身。缔约方名单不补。"
+  },
+  "Q26221588": {
+    "batch": "2026-11-22-g",
+    "adopted": {
+      "y": 2001,
+      "m": 3,
+      "d": 23,
+      "p": 11
+    },
+    "effective": {
+      "y": 2008,
+      "m": 11,
+      "d": 21,
+      "p": 11
+    },
+    "status": "signed_then_effective",
+    "note": "燃油污染损害民事责任公约。2001-03-23通过，2008-11-21生效。名单不补。",
+    "sources": [
+      "https://www.imo.org/en/about/conventions/pages/international-convention-on-civil-liability-for-bunker-oil-pollution-damage-%28bunker%29.aspx"
+    ]
+  },
+  "Q3003043": {
+    "batch": "2026-11-22-g",
+    "adopted": {
+      "y": 1954,
+      "m": 5,
+      "d": 12,
+      "p": 11
+    },
+    "effective": {
+      "y": 1958,
+      "m": 7,
+      "d": 26,
+      "p": 11
+    },
+    "status": "signed_then_effective",
+    "note": "1954年防止海洋石油污染国际公约。1954-05-12订于伦敦，1958-07-26生效。名单不补。",
+    "sources": [
+      "https://verdragenbank.overheid.nl/en/Treaty/Details/008122"
+    ],
+    "signed": {
+      "y": 1954,
+      "m": 5,
+      "d": 12,
+      "p": 11
+    }
+  },
+  "Q2858485": {
+    "batch": "2026-11-22-g",
+    "adopted": {
+      "y": 2009,
+      "m": 5,
+      "d": 15,
+      "p": 11
+    },
+    "effective": {
+      "y": 2025,
+      "m": 6,
+      "d": 26,
+      "p": 11
+    },
+    "status": "signed_then_effective",
+    "note": "香港拆船公约。2009-05-15通过，2025-06-26生效。生效条件在2023-06-26满足，24个月后生效。名单不另补。",
+    "sources": [
+      "https://www.imo.org/en/about/conventions/pages/the-hong-kong-international-convention-for-the-safe-and-environmentally-sound-recycling-of-ships.aspx",
+      "https://www.mofa.go.jp/press/release/pressite_000001_01397.html"
+    ]
+  },
+  "Q5638831": {
+    "batch": "2026-11-22-g",
+    "adopted": {
+      "y": 1965,
+      "m": 11,
+      "d": 15,
+      "p": 11
+    },
+    "effective": {
+      "y": 1969,
+      "m": 2,
+      "d": 10,
+      "p": 11
+    },
+    "status": "signed_then_effective",
+    "note": "海牙送达公约。1965-11-15订立，1969-02-10生效。名单不补。",
+    "sources": [
+      "https://www.justice.gov/sites/default/files/civil/legacy/2014/08/08/Hague%20Service%20Convention%20text.pdf"
+    ],
+    "signed": {
+      "y": 1965,
+      "m": 11,
+      "d": 15,
+      "p": 11
+    }
+  },
+  "Q7251938": {
+    "batch": "2026-11-22-g",
+    "adopted": {
+      "y": 1995,
+      "m": 10,
+      "d": 13,
+      "p": 11
+    },
+    "effective": {
+      "y": 1998,
+      "m": 7,
+      "d": 30,
+      "p": 11
+    },
+    "status": "signed_then_effective",
+    "note": "激光致盲武器议定书。1995-10-13通过，1998-07-30生效。名单不补。",
+    "sources": [
+      "https://treaties.un.org/Pages/ViewDetails.aspx?chapter=26&clang=_en&mtdsg_no=XXVI-2-a&src=TREATY"
+    ]
+  },
+  "Q84851395": {
+    "batch": "2026-11-22-g",
+    "adopted": {
+      "y": 2018,
+      "m": 12,
+      "d": 20,
+      "p": 11
+    },
+    "effective": {
+      "y": 2020,
+      "m": 9,
+      "d": 12,
+      "p": 11
+    },
+    "status": "signed_then_effective",
+    "note": "联合国调解所产生的国际和解协议公约。2018-12-20通过，2019-08-07在新加坡开放签署，2020-09-12生效。名单不补。",
+    "sources": [
+      "https://treaties.un.org/Pages/ViewDetails.aspx?chapter=22&clang=_en&mtdsg_no=XXII-4&src=TREATY"
+    ],
+    "signed": {
+      "y": 2019,
+      "m": 8,
+      "d": 7,
+      "p": 11
+    }
   }
 }

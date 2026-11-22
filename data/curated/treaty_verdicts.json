@@ -8,5 +8,14 @@
         "https://treaties.un.org/pages/ViewDetails.aspx?src=TREATY&mtdsg_no=XXIII-2&chapter=23&clang=_en"
       ]
     }
+  },
+  "Q2858485": {
+    "long_gap": {
+      "verdict": "verified_ok",
+      "note": "2009-05-15通过，生效条件2023-06-26满足，公约于2025-06-26生效。间隔是生效条件，不是两个版本。",
+      "sources": [
+        "https://www.mofa.go.jp/press/release/pressite_000001_01397.html"
+      ]
+    }
   }
 }
