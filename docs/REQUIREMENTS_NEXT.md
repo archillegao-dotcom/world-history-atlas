@@ -403,3 +403,5 @@ CHGIS V6 只供学术研究，禁止商业使用和再分发。全国层是 1820
 `occupation_fall.py`、`roc_beiyang.py`、`next_batch7.py`、`p0_batch2.py` 失败 0。`api_mustpass.py` 119/119。满洲 162 个月 failures=0。阵营 72 个快照、1713 次检查、zones-without-bloc=0。`war_audit.py` 86/86，样本没有改。TNO 没有改。没有合并，没有打 tag，没有公开发布。
 
 随后抽读四册绝版 PDF 的页眉，不是逐页。民国三十四年八月至九月、十月至十二月抽到的页没有上党或太原周边的县。民国十四年一月至六月 PDF 第10页是元月一日的凡例，不是广西各县。民国元年一月至六月 PDF 第10页是元月一日的凡例，没有阎锡山的县名单。这些页不入库。民国十八年一月至四月的下载文件损坏，没有打开。又跑 `occupation_fall.py`、`roc_beiyang.py`、`api_mustpass.py` 119/119、满洲 162 个月 failures=0、阵营 72 个快照 zones-without-bloc=0、`war_audit.py` 86/86。没有合并，没有公开发布。
+
+大名一县入库。民国二十六年七月至十二月印页六四八（PDF 第656页），页眉十一月二十一日，写本日大名失陷。威县、临清、莘县只是转进方向，不画。从 1937-11-21 收到 1945-08-16，结束日不是这一页写的。太原会战必经县、1949 年太原周边和广西各县、1930 年护党救国军，抽到的页没有县名单。回归再跑仍是 `occupation_fall`、`roc_beiyang` 失败 0，`api_mustpass` 119/119，满洲 162 个月 failures=0，阵营 72 个快照、1785 次检查、zones-without-bloc=0，`war_audit` 86/86。

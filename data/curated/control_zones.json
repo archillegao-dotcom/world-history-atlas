@@ -4054,7 +4054,6 @@
      "mcgd:s510",
      "mcgd:s511",
      "mcgd:s532",
-     "mcgd:s534",
      "mcgd:s536",
      "mcgd:s539",
      "mcgd:s542",
@@ -12400,6 +12399,32 @@
    "dates_note": "柳州 1944-11-11 起，收到 1945-08-16。已核對《中華民國史事紀要》印页四二三。",
    "sources": [
     "https://www.drnh.gov.tw/p/404-1003-13334.php?Lang=zh-tw",
+    "https://zenodo.org/records/5721459"
+   ]
+  },
+  {
+   "id": "sjw_cell_s534_1937-11-21_大名",
+   "group": "sino_japanese_war",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "日军占领区（大名）",
+   "name_en": "日军占领区（大名）",
+   "controller": {
+    "qid": "Q188712",
+    "zh": "大日本帝国"
+   },
+   "from": "1937-11-21",
+   "until": "1945-08-16",
+   "geometry": {
+    "roc_counties": [
+     "mcgd:s534"
+    ]
+   },
+   "approx": true,
+   "note": "大名县域。已核對《中華民國史事紀要》民國二十六年七月至十二月，印页六四八（PDF 第656页），页眉十一月二十一日，写本日大名失陷，刘汝明部经威县同临清、莘县方面转进。只把大名写成这一天陷落。威县、临清、莘县是转进方向，不画。结束日没有另页，收到1945-08-16，不是收复日。大致。县域为治所泰森多边形近似。",
+   "dates_note": "大名 1937-11-21 起，收到 1945-08-16。已核對印页六四八。结束日不是这一页写的。",
+   "sources": [
+    "https://www.drnh.gov.tw/p/404-1003-13312.php?Lang=zh-tw",
     "https://zenodo.org/records/5721459"
    ]
   },
