@@ -169,6 +169,28 @@ for name, date, needle in (
 nk = area("2024-01-01", "nagorno_karabakh")
 check("2024-01-01 纳卡机构停止、实控记阿塞拜疆、仍然不画", nk["probe"] is None and "阿塞拜疆" in text(nk["rows"]) and "2024-01-01" in text(nk["rows"]), text(nk["rows"])[:180])
 
+# 马祖：不在台湾轮廓里，但有自己的岸线和声索虚线
+h = hit("2020-06-01", 26.16, 119.95)
+check("2020 南竿命中马祖、不是台湾层", [x["id"] for x in h] == ["matsu"], [x["id"] for x in h])
+check("2020 马祖声索是中华人民共和国且不是实控", "中华人民共和国" in text(rows(h, "matsu", "claim")) and "不是实控" in text(rows(h, "matsu", "claim")), text(rows(h, "matsu", "claim")))
+check("2020 马祖有虚线、没有第二层实控填色", "matsu-claim" in ids("2020-06-01", "matsu") and "matsu-control" not in ids("2020-06-01", "matsu"), ids("2020-06-01", "matsu"))
+check("1949-09-30 马祖这一层还没开始", area("1949-09-30", "matsu")["rows"] == [], "before")
+
+# 南乔治亚：不含南桑威奇；4 月 25 日投降当天不再标阿根廷
+h = hit("1982-04-01", -54.45, -36.70)
+check("1982-04-01 南乔治亚实控英国且从公报日算", "英国" in text(rows(h, "south_georgia", "control")) and "1908-09-01" in text(rows(h, "south_georgia", "control")), text(rows(h, "south_georgia", "control")))
+h = hit("1982-04-03", -54.45, -36.70)
+check("1982-04-03 南乔治亚实控阿根廷", "阿根廷" in text(rows(h, "south_georgia", "control")), text(rows(h, "south_georgia", "control")))
+h = hit("1982-04-25", -54.45, -36.70)
+check("1982-04-25 南乔治亚回到英国且 2065 没有判给阿根廷", "英国" in text(rows(h, "south_georgia", "control")) and "没有把南乔治亚的主权判给阿根廷" in text(rows(h, "south_georgia", "recognition")), text(rows(h, "south_georgia", "recognition")))
+check("南桑威奇不落入南乔治亚", not any(x["id"] == "south_georgia" for x in hit("1982-04-10", -59.45, -27.35)), "sandwich")
+
+# 齿舞、色丹：国后不在这块里；1956 年以前不画交还虚线
+check("1950 色丹不画交还虚线", "habomai_shikotan-claim" not in ids("1950-06-01", "habomai") and "不另铺" in text(rows(hit("1950-06-01", 43.80, 146.74), "habomai_shikotan", "control")), "1950")
+h = hit("2000-06-01", 43.80, 146.74)
+check("2000 色丹写没有交还且实控俄罗斯", "没有交还" in text(rows(h, "habomai_shikotan", "claim")) and "俄罗斯" in text(rows(h, "habomai_shikotan", "control")), text(rows(h, "habomai_shikotan", "claim")))
+check("2000 国后不落入齿舞色丹", not any(x["id"] == "habomai_shikotan" for x in hit("2000-06-01", 44.10, 145.83)), "kunashir")
+
 print(f"FAILS {len(fails)}")
 for f in fails:
     print(" -", f)

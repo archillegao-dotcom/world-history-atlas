@@ -1145,7 +1145,7 @@
       "id": "taiwan",
       "name_zh": "台湾、澎湖与金门",
       "geom": "taiwan",
-      "precision_zh": "轮廓是 Natural Earth 的台湾现代范围，含本岛、澎湖和金门，大致，不是 1945 年的测绘。马祖不在这块里。南海岛礁不在这块里。底图已经画出政权颜色，这里不另铺实控填色。",
+      "precision_zh": "轮廓是 Natural Earth 的台湾现代范围，含本岛、澎湖和金门，大致，不是 1945 年的测绘。马祖不在这块里，岸线见马祖这一层。南海岛礁不在这块里。底图已经画出政权颜色，这里不另铺实控填色。",
       "statements": [
         {
           "role": "control",
@@ -1154,7 +1154,7 @@
             "qid": "Q865",
             "zh": "中华民国"
           },
-          "text": "1945-10-25 台北受降仪式之后，台湾、澎湖由中华民国管治。金门不在这次受降里，它落在这块轮廓中，沿用已有控制区，不把 10 月 25 日写成金门易手。马祖不在轮廓里。中华人民共和国没有控制这片土地。不另铺填色。",
+          "text": "1945-10-25 台北受降仪式之后，台湾、澎湖由中华民国管治。金门不在这次受降里，它落在这块轮廓中，沿用已有控制区，不把 10 月 25 日写成金门易手。马祖不在这块轮廓里。中华人民共和国没有控制这片土地。不另铺填色。",
           "sources": [
             "https://en.wikipedia.org/wiki/Retrocession_Day",
             "https://en.wikipedia.org/wiki/Kinmen"
@@ -1246,7 +1246,7 @@
           },
           "draw": "fill",
           "color_kind": "de_facto",
-          "text": "英文维基把英国重新驻守记在 1833 年 1 月。本层从 1 月 3 日起填色。1 月 2 日舰只到达不另画成已经换防。南乔治亚不在轮廓里。",
+          "text": "英文维基把英国重新驻守记在 1833 年 1 月。本层从 1 月 3 日起填色。1 月 2 日舰只到达不另画成已经换防。南乔治亚不在这块里。",
           "sources": [
             "https://en.wikipedia.org/wiki/History_of_the_Falkland_Islands",
             "https://en.wikipedia.org/wiki/Falklands_War"
@@ -1432,7 +1432,7 @@
         {
           "role": "recognition",
           "from": "1956-10-19",
-          "text": "1956-10-19 日苏联合宣言写和平条约后再把齿舞、色丹交还日本。没有交还，也不包括国后和择捉。轮廓没有把齿舞、色丹切开，不画成交还。其余国家的表态仍标待考。",
+          "text": "1956-10-19 日苏联合宣言写和平条约后再把齿舞、色丹交还日本。没有交还，也不包括国后和择捉。齿舞、色丹的岸线碎块另有一层，这里仍不把它们画成已经交还。其余国家的表态仍标待考。",
           "sources": [
             "https://en.wikipedia.org/wiki/Soviet%E2%80%93Japanese_Joint_Declaration_of_1956"
           ]
@@ -2189,6 +2189,191 @@
           "sources": [
             "https://en.wikipedia.org/wiki/Transnistria"
           ]
+        }
+      ]
+    },
+    {
+      "id": "matsu",
+      "name_zh": "马祖列岛",
+      "geom": "matsu",
+      "precision_zh": "轮廓是 Natural Earth 1:10m 微型岛里，代表点落在东经 119.85–120.55、北纬 25.9–26.42 的碎块，与已有控制区同一范围。现代岸线，大致，不是 1949 年的测绘。实控填色仍用已有控制区，这里不另铺一层。",
+      "statements": [
+        {
+          "role": "control",
+          "from": "1949-10-01",
+          "party": {"qid": "Q865", "zh": "中华民国"},
+          "text": "国共内战后由中华民国控制连江县这些岛屿。不把 1945-10-25 的台北受降写成马祖易手。不另铺填色。",
+          "sources": ["https://en.wikipedia.org/wiki/Matsu_Islands"]
+        },
+        {
+          "role": "claim",
+          "from": "1949-10-01",
+          "party": {"qid": "Q865", "zh": "中华民国"},
+          "text": "中华民国管治这些岛屿。",
+          "sources": ["https://en.wikipedia.org/wiki/Matsu_Islands"]
+        },
+        {
+          "role": "claim",
+          "from": "1949-10-01",
+          "party": {"qid": "Q148", "zh": "中华人民共和国"},
+          "draw": "dash",
+          "label": "中华人民共和国声索，不是实控",
+          "text": "中华人民共和国声索马祖。虚线是这些小岛的现代岸线，不是实控。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Matsu_Islands",
+            "https://digitallibrary.un.org/record/192054"
+          ]
+        },
+        {
+          "role": "recognition",
+          "from": "1949-10-01",
+          "until": "1971-10-25",
+          "text": "与台湾这一层相同：1971-10-25 以前不把第 2758 号决议提前写上。各国对马祖的单独表态不逐一开列，标待考。",
+          "sources": ["https://en.wikipedia.org/wiki/United_Nations_General_Assembly_Resolution_2758"]
+        },
+        {
+          "role": "recognition",
+          "from": "1971-10-25",
+          "text": "第 2758 号决议没有写马祖的领土地位。双边建交名单不逐岛开列，标待考。",
+          "sources": [
+            "https://digitallibrary.un.org/record/192054",
+            "https://en.wikipedia.org/wiki/United_Nations_General_Assembly_Resolution_2758"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "south_georgia",
+      "name_zh": "南乔治亚",
+      "geom": "south_georgia",
+      "precision_zh": "轮廓是 Natural Earth 里南乔治亚一侧的现代岸线，不含南桑威奇。西经 32 度只分开现成碎块，不是勘界。大致。",
+      "statements": [
+        {
+          "role": "control",
+          "from": "1908-09-01",
+          "until": "1982-04-03",
+          "party": {"qid": "Q145", "zh": "英国"},
+          "draw": "fill",
+          "color_kind": "de_facto",
+          "text": "1775 年库克登陆声称归属，不把现代岸线回贴到那一天。1908-07-21 敕令写明自福克兰群岛政府公报公布后，南乔治亚成为福克兰群岛属地。公报日期是 1908-09-01。本层从公布日起填色。",
+          "sources": [
+            "https://laws.gov.gs/wp-content/uploads/2024/03/LETTERS-PATENT-21-July-1908.pdf",
+            "https://www.spri.cam.ac.uk/museum/exhibitions/southgeorgia/"
+          ]
+        },
+        {
+          "role": "control",
+          "from": "1982-04-03",
+          "until": "1982-04-25",
+          "party": {"qid": "Q414", "zh": "阿根廷"},
+          "draw": "fill",
+          "color_kind": "de_facto",
+          "text": "1982-04-03 阿根廷占领南乔治亚。1982-04-25 守军投降，这一天起不再标阿根廷。南桑威奇不在这块里。",
+          "sources": ["https://en.wikipedia.org/wiki/Invasion_of_South_Georgia"]
+        },
+        {
+          "role": "control",
+          "from": "1982-04-25",
+          "party": {"qid": "Q145", "zh": "英国"},
+          "draw": "fill",
+          "color_kind": "de_facto",
+          "text": "1982-04-25 起再标英国实控。",
+          "sources": ["https://en.wikipedia.org/wiki/Invasion_of_South_Georgia"]
+        },
+        {
+          "role": "claim",
+          "from": "1908-09-01",
+          "until": "1982-04-03",
+          "party": {"qid": "Q414", "zh": "阿根廷"},
+          "draw": "dash",
+          "label": "阿根廷声索，不是实控",
+          "text": "阿根廷声索南乔治亚。虚线不是实控，也不含南桑威奇。",
+          "sources": ["https://en.wikipedia.org/wiki/Invasion_of_South_Georgia"]
+        },
+        {
+          "role": "claim",
+          "from": "1982-04-03",
+          "until": "1982-04-25",
+          "party": {"qid": "Q145", "zh": "英国"},
+          "draw": "dash",
+          "label": "英国声索，不是这几周的实控",
+          "text": "占领期间英国的主权主张还在。登陆不是国际承认。",
+          "sources": ["https://en.wikipedia.org/wiki/Invasion_of_South_Georgia"]
+        },
+        {
+          "role": "claim",
+          "from": "1982-04-25",
+          "party": {"qid": "Q414", "zh": "阿根廷"},
+          "draw": "dash",
+          "label": "阿根廷声索，不是实控",
+          "text": "投降以后阿根廷的声索还在。实控改回英国。",
+          "sources": ["https://en.wikipedia.org/wiki/Invasion_of_South_Georgia"]
+        },
+        {
+          "role": "recognition",
+          "from": "1908-09-01",
+          "until": "1965-12-16",
+          "text": "主权有争议。各国表态不逐一开列，标待考。",
+          "sources": ["https://laws.gov.gs/wp-content/uploads/2024/03/LETTERS-PATENT-21-July-1908.pdf"]
+        },
+        {
+          "role": "recognition",
+          "from": "1965-12-16",
+          "text": "大会第 2065 号决议要求英国和阿根廷谈判，没有把南乔治亚的主权判给阿根廷。",
+          "sources": ["https://en.wikipedia.org/wiki/United_Nations_General_Assembly_Resolution_2065"]
+        }
+      ]
+    },
+    {
+      "id": "habomai_shikotan",
+      "name_zh": "齿舞与色丹",
+      "geom": "habomai_shikotan",
+      "precision_zh": "从已有千岛岸线里取出代表点在北纬 43.95 度以南的碎块。色丹约 43.80 度，国后约 44.10 度，中间没有碎块。这个纬度只分开现成碎块，不是勘界。现代岸线，大致。不含国后、择捉。",
+      "statements": [
+        {
+          "role": "control",
+          "from": "1945-09-05",
+          "until": "1991-12-26",
+          "party": {"qid": "Q15180", "zh": "苏联"},
+          "text": "实控与北方四岛同一条：1945-09-05 起苏联。填色在北方四岛那一层，这里不另铺。",
+          "sources": ["https://en.wikipedia.org/wiki/Kuril_Islands_dispute"]
+        },
+        {
+          "role": "control",
+          "from": "1991-12-26",
+          "party": {"qid": "Q159", "zh": "俄罗斯"},
+          "text": "1991-12-26 起俄罗斯实际控制。不另铺填色。",
+          "sources": ["https://en.wikipedia.org/wiki/Kuril_Islands_dispute"]
+        },
+        {
+          "role": "claim",
+          "from": "1945-09-05",
+          "until": "1956-10-19",
+          "party": {"qid": "Q17", "zh": "日本"},
+          "text": "日本声索齿舞、色丹，也声索国后、择捉。1956-10-19 以前不把宣言还没写的交还提前画出来。",
+          "sources": ["https://en.wikipedia.org/wiki/Kuril_Islands_dispute"]
+        },
+        {
+          "role": "claim",
+          "from": "1956-10-19",
+          "party": {"qid": "Q17", "zh": "日本"},
+          "draw": "dash",
+          "label": "1956年点名的齿舞、色丹，没有交还",
+          "text": "1956-10-19 日苏联合宣言写和平条约后再把齿舞、色丹交还日本。没有交还。虚线只盖这些碎块，不是国后、择捉，也不是已经交还。",
+          "sources": ["https://en.wikipedia.org/wiki/Soviet%E2%80%93Japanese_Joint_Declaration_of_1956"]
+        },
+        {
+          "role": "recognition",
+          "from": "1945-09-05",
+          "until": "1956-10-19",
+          "text": "没有把齿舞、色丹判给一方的联合国决议收进本层。标待考。",
+          "sources": ["https://en.wikipedia.org/wiki/Kuril_Islands_dispute"]
+        },
+        {
+          "role": "recognition",
+          "from": "1956-10-19",
+          "text": "联合宣言不是已经交还，也没有包括国后和择捉。其余国家的表态仍标待考。",
+          "sources": ["https://en.wikipedia.org/wiki/Soviet%E2%80%93Japanese_Joint_Declaration_of_1956"]
         }
       ]
     }
