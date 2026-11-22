@@ -1170,7 +1170,7 @@
           "from": "1977-07-13",
           "until": "1978-03-23",
           "party": {"zh": "索马里"},
-          "text": "1977-07-13 起索马里军队进入奥加登。1978-03-09 索马里决定撤军。埃塞俄比亚宣布收复最后的边境哨所是 03-23。3 月 9 日到 22 日不写成已经全部易手。最大占领线不画。",
+          "text": "1977-07-13 起索马里军队进入奥加登。西索马里解放阵线不是被承认的第二个国家。1978-03-09 索马里决定撤军。埃塞俄比亚宣布收复最后的边境哨所是 03-23。3 月 9 日到 22 日不写成已经全部易手。最大占领线不画。",
           "sources": [
             "https://history.state.gov/historicaldocuments/frus1977-80v17p1/d72",
             "https://en.wikipedia.org/wiki/Ogaden_War"
@@ -1940,6 +1940,124 @@
           "until": "1991-02-27",
           "text": "安理会第 662 号决议于 1990-08-09 通过，宣布 8 月 8 日的合并完全无效。占领不成为主权。",
           "sources": ["https://en.wikipedia.org/wiki/United_Nations_Security_Council_Resolution_662"]
+        }
+      ]
+    },
+    {
+      "id": "western_sahara_front",
+      "name_zh": "西撒哈拉沙墙两侧",
+      "geom": null,
+      "precision_zh": "整片声索虚线已在另一份数据里。摩洛哥实控区、沙墙和波利萨里奥一侧没有公有领域轮廓。不把整片填成任何一方。不画。",
+      "statements": [
+        {
+          "role": "control",
+          "from": "1976-02-27",
+          "until": "1979-08-05",
+          "text": "1976-02-27 以后摩洛哥管治北部，毛里塔尼亚管治南部的西提里斯。波利萨里奥在沙漠里另有活动区。三条范围都没有收进几何，不画。",
+          "sources": ["https://en.wikipedia.org/wiki/Western_Sahara_War"]
+        },
+        {
+          "role": "control",
+          "from": "1979-08-05",
+          "text": "1979-08-05 毛里塔尼亚放弃西提里斯。摩洛哥随后进入原毛里塔尼亚区。沙墙在 1980 年代分段修筑，墙西多为摩洛哥实际控制，墙东多为波利萨里奥。1 月 1 日不是开工日。沙墙不是国界，没有公有领域轮廓，不画。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Western_Sahara_War",
+            "https://en.wikipedia.org/wiki/Moroccan_Western_Sahara_Wall"
+          ]
+        },
+        {
+          "role": "claim",
+          "from": "1976-02-27",
+          "until": "1979-08-05",
+          "party": {"zh": "毛里塔尼亚"},
+          "text": "毛里塔尼亚声索并管治南部。1979-08-05 起放弃。这不是联合国划定的边界。",
+          "sources": ["https://en.wikipedia.org/wiki/Western_Sahara_War"]
+        },
+        {
+          "role": "claim",
+          "from": "1976-02-27",
+          "party": {"zh": "摩洛哥"},
+          "text": "摩洛哥声索整片。沙墙以西的实际控制不等于整片已经归属摩洛哥。",
+          "sources": ["https://en.wikipedia.org/wiki/Moroccan_Western_Sahara_Wall"]
+        },
+        {
+          "role": "claim",
+          "from": "1976-02-27",
+          "party": {"zh": "波利萨里奥阵线"},
+          "text": "波利萨里奥和萨赫拉维阿拉伯民主共和国声索整片，实际控制主要在后来的沙墙以东。声索不是实控。",
+          "sources": ["https://en.wikipedia.org/wiki/Moroccan_Western_Sahara_Wall"]
+        },
+        {
+          "role": "recognition",
+          "from": "1979-08-05",
+          "text": "毛里塔尼亚放弃南部，不等于联合国已经把西撒哈拉判给摩洛哥或萨赫拉维阿拉伯民主共和国。承认人数不固化，标待考。",
+          "sources": ["https://en.wikipedia.org/wiki/Western_Sahara_War"]
+        }
+      ]
+    },
+    {
+      "id": "golan_disengagement",
+      "name_zh": "戈兰脱离接触线",
+      "geom": null,
+      "precision_zh": "戈兰的三层已在另一份数据里，并且没有单独轮廓。1974 年脱离接触线也不在公有领域数据里。不用库奈特拉全省代替。不画。",
+      "statements": [
+        {
+          "role": "control",
+          "from": "1967-06-10",
+          "until": "1974-05-31",
+          "party": {"zh": "以色列"},
+          "text": "1967-06-10 停火以后以色列控制的范围大于 1974 年脱离接触之后留下的部分，包括后来交还的库奈特拉。6 月 10 日以前的逐日线不画。",
+          "sources": ["https://en.wikipedia.org/wiki/Agreement_on_Disengagement_between_Israel_and_Syria"]
+        },
+        {
+          "role": "control",
+          "from": "1974-05-31",
+          "party": {"zh": "以色列"},
+          "text": "1974-05-31 以叙脱离接触协定。以色列撤到协定线，叙利亚收回库奈特拉一带，中间由联合国脱离接触观察员部队隔开。这条线没有公有领域轮廓，不画。以色列在线西的控制不是主权。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Agreement_on_Disengagement_between_Israel_and_Syria",
+            "https://en.wikipedia.org/wiki/United_Nations_Security_Council_Resolution_350"
+          ]
+        },
+        {
+          "role": "claim",
+          "from": "1974-05-31",
+          "party": {"zh": "叙利亚"},
+          "text": "叙利亚声索包括以色列仍控制的戈兰。脱离接触不是边界条约。",
+          "sources": ["https://en.wikipedia.org/wiki/Agreement_on_Disengagement_between_Israel_and_Syria"]
+        },
+        {
+          "role": "recognition",
+          "from": "1974-05-31",
+          "text": "安理会第 350 号决议于 1974-05-31 设立联合国脱离接触观察员部队。这不是把戈兰判给以色列。1981 年的第 497 号决议仍在另一份数据里，这里不重复。",
+          "sources": ["https://en.wikipedia.org/wiki/United_Nations_Security_Council_Resolution_350"]
+        }
+      ]
+    },
+    {
+      "id": "cyprus_buffer",
+      "name_zh": "塞浦路斯缓冲区",
+      "geom": null,
+      "precision_zh": "1974-08-16 以后的北部实控已在另一份数据里。联合国缓冲区夹在双方之间，不是北塞浦路斯的领土，也没有公有领域的逐段线。不画。",
+      "statements": [
+        {
+          "role": "control",
+          "from": "1974-08-16",
+          "text": "1974-08-16 第二阶段停火之后，联合国驻塞部队隔开双方。缓冲区不归北塞浦路斯，也不归塞浦路斯政府的日常管治。宽度不固定，不画。",
+          "sources": ["https://en.wikipedia.org/wiki/United_Nations_Buffer_Zone_in_Cyprus"]
+        },
+        {
+          "role": "claim",
+          "from": "1974-08-16",
+          "party": {"zh": "塞浦路斯"},
+          "text": "塞浦路斯共和国的主权声索覆盖全岛，包括缓冲区和北部。缓冲区的存在不改写这一声索。",
+          "sources": ["https://en.wikipedia.org/wiki/United_Nations_Buffer_Zone_in_Cyprus"]
+        },
+        {
+          "role": "recognition",
+          "from": "1974-08-16",
+          "text": "缓冲区是停火安排，不是国际边界，也不是承认北塞浦路斯。安理会第 541 号决议仍在另一份数据里。",
+          "sources": ["https://en.wikipedia.org/wiki/United_Nations_Buffer_Zone_in_Cyprus"]
         }
       ]
     }

@@ -273,6 +273,13 @@ check("2020 埃塞奎博不画，圭亚那管治、委内瑞拉声索，判决�
 ee = area("1995-06-01", "tamil_eelam")
 check("1995 泰米尔伊拉姆不画且没有国家承认", ee["probe"] is None and "不画" in text(ee["rows"]) and "没有国家承认" in text(ee["rows"]), text(ee["rows"])[:140])
 check("2009-05-19 泰米尔战争层的实控改为斯里兰卡", "斯里兰卡" in text([r for r in area("2009-05-19", "tamil_eelam")["rows"] if r["role"] == "control"]), "eelam end")
+wsf = area("1985-06-01", "western_sahara_front")
+check("1985 西撒哈拉沙墙两侧不画，毛里塔尼亚已放弃", wsf["probe"] is None and "不画" in text(wsf["rows"]) and "沙墙" in text(wsf["rows"]) and "毛里塔尼亚" in text(wsf["rows"]) and not any((r.get("party") or {}).get("zh") == "毛里塔尼亚" and (r.get("until") or "9999") > "1985" for r in wsf["rows"] if r["role"] == "claim" and (r.get("party") or {}).get("zh") == "毛里塔尼亚"), text(wsf["rows"])[:160])
+check("1978 西撒哈拉南部仍有毛里塔尼亚", "毛里塔尼亚" in text(area("1978-06-01", "western_sahara_front")["rows"]), "mau")
+gd = area("1976-06-01", "golan_disengagement")
+check("1976 戈兰脱离接触不画，写 350", gd["probe"] is None and "不画" in text(gd["rows"]) and "350" in text(gd["rows"]) and "库奈特拉" in text(gd["rows"]), text(gd["rows"])[:160])
+cb = area("1990-06-01", "cyprus_buffer")
+check("1990 塞浦路斯缓冲区不画，不是北塞浦路斯领土", cb["probe"] is None and "不画" in text(cb["rows"]) and "不归北塞浦路斯" in text(cb["rows"]), text(cb["rows"])[:140])
 check("锡亚琴不写成克什米尔全境", "不是克什米尔全境" in text(area("1990-06-01", "siachen")["rows"]), "siachen scope")
 check("1990 锡亚琴实控写印度", "印度" in text(area("1990-06-01", "siachen")["rows"]) and "巴基斯坦" in text(area("1990-06-01", "siachen")["rows"]), "siachen parties")
 
