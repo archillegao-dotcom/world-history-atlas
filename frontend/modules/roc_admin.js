@@ -81,6 +81,7 @@
       <tr><th>建制</th><td>${WHA.esc(pending ? "—" : (p.kind || "—"))}</td></tr>
       <tr><th>名义所属</th><td>${WHA.esc(p.nominal || "—")}</td></tr>
       <tr><th>实际控制</th><td>${WHA.esc(p.actual || (pending ? "—" : "实控待考"))}</td></tr>
+      ${p.county ? `<tr><th>县域实控</th><td>${WHA.esc(p.county.name)}（1931年）${WHA.esc(p.county.actual)}，${WHA.esc(p.county.certainty)}。${WHA.esc(p.county.from)} 起至 ${WHA.esc(p.county.until)}。</td></tr>` : ""}
     </table>`;
     if (p.scheme) html += `<div class="s">${WHA.esc(p.scheme)}</div>`;
     if (p.note) html += `<div class="note">${WHA.esc(p.note)}</div>`;
