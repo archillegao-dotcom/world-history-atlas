@@ -90,6 +90,8 @@ SOURCES = [
     {"name": "GBHGIS Administrative Counties of England and Wales, 1911",
      "url": "https://purl.stanford.edu/wb643sv2814", "license": "CC BY-SA 4.0",
      "use": "1911-04-02 至 1921-06-19 的英格兰和威尔士行政郡。不是今天的郡，也不提前用到 1889 年。"},
+    {"name": "swehist（Johan Junkka）", "url": "https://doi.org/10.5281/zenodo.23396621",
+     "license": "CC BY 4.0", "use": "瑞典历史省，约 1686–1990。由下级单元归并。1991 年起不用。斯德哥尔摩城不在省多边形里。"},
     {"name": "QLever (Univ. Freiburg) Wikidata SPARQL", "url": "https://qlever.dev/wikidata", "license": "—",
      "use": "构建数据时查询 Wikidata 的端点"},
     {"name": "ISW/CTP Russian Assessed Control of Terrain", "url": "https://www.arcgis.com/home/item.html?id=963c5626435e49b98ae1db399859d04e",
