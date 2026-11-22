@@ -93,7 +93,7 @@ SOURCES = [
     {"name": "swehist（Johan Junkka）", "url": "https://doi.org/10.5281/zenodo.23396621",
      "license": "CC BY 4.0", "use": "瑞典历史省，约 1686–1990。由下级单元归并。1991 年起不用。斯德哥尔摩城不在省多边形里。"},
     {"name": "OpenHistoricalMap", "url": "https://www.openhistoricalmap.org/",
-     "license": "CC0", "use": "带起止日期的欧洲一级区划。关系上另标了非 CC0 许可的不收。含 1871–1918 年德意志各邦和阿尔萨斯-洛林、比利时省、1970–2006 年丹麦县、奥地利部分州。"},
+     "license": "CC0", "use": "带起止日期的欧洲一级区划。关系上另标了非 CC0 许可的不收。含 1871–1918 年德意志各邦和阿尔萨斯-洛林、比利时省、1970–2006 年丹麦县、奥地利部分州，以及 1918–1938 年捷克斯洛伐克的地。"},
     {"name": "QLever (Univ. Freiburg) Wikidata SPARQL", "url": "https://qlever.dev/wikidata", "license": "—",
      "use": "构建数据时查询 Wikidata 的端点"},
     {"name": "ISW/CTP Russian Assessed Control of Terrain", "url": "https://www.arcgis.com/home/item.html?id=963c5626435e49b98ae1db399859d04e",
