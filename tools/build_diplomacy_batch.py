@@ -718,22 +718,35 @@ def main():
             "role": "成员国",
             "note": "1994年活动报告写：塔吉克斯坦共和国于1994年4月28日交存《内罗毕公约》加入书后成为会员。退出、暂停无记录。",
         },
+        {"name": "Azerbaijani Republic", "from": "1992-04-10", "track": "dated", "hide_before": True, "role": "成员国", "note": "1992年活动报告第2.1节：阿塞拜疆共和国1992年4月10日交存《内罗毕公约》加入书后成为会员。"},
+        {"name": "Republic of Estonia", "from": "1992-04-22", "track": "dated", "hide_before": True, "role": "成员国", "note": "1992年活动报告第2.1节：爱沙尼亚共和国1992年4月22日成为会员。"},
+        {"name": "Republic of Croatia", "from": "1992-06-03", "track": "dated", "hide_before": True, "role": "成员国", "note": "1992年活动报告第2.1节：克罗地亚共和国1992年6月3日成为会员。"},
+        {"name": "Republic of Slovenia", "from": "1992-06-16", "track": "dated", "hide_before": True, "role": "成员国", "note": "1992年活动报告第2.1节：斯洛文尼亚共和国1992年6月16日成为会员。"},
+        {"name": "Republic of Armenia", "from": "1992-06-30", "track": "dated", "hide_before": True, "role": "成员国", "note": "1992年活动报告第2.1节：亚美尼亚共和国1992年6月30日成为会员。"},
+        {"name": "Republic of Uzbekistan", "from": "1992-07-10", "track": "dated", "hide_before": True, "role": "成员国", "note": "1992年活动报告第2.1节：乌兹别克斯坦共和国1992年7月10日成为会员。"},
+        {"name": "Republic of Moldova", "from": "1992-10-20", "track": "dated", "hide_before": True, "role": "成员国", "note": "1992年活动报告第2.1节：摩尔多瓦共和国1992年10月20日成为会员。"},
+        {"name": "Republic of Bosnia and Herzegovina", "from": "1992-10-20", "track": "dated", "hide_before": True, "role": "成员国", "note": "1992年活动报告第2.1节：波斯尼亚和黑塞哥维那共和国1992年10月20日成为会员。"},
+        {"name": "Republic of Georgia", "from": "1993-01-07", "track": "dated", "hide_before": True, "role": "成员国", "note": "1993年活动报告第2.1节：格鲁吉亚共和国1993年1月7日成为会员。"},
+        {"name": "Republic of Kazakhstan", "from": "1993-02-23", "track": "dated", "hide_before": True, "role": "成员国", "note": "1993年活动报告第2.1节：哈萨克斯坦共和国1993年2月23日成为会员。"},
+        {"name": "The Former Yugoslav Republic of Macedonia", "from": "1993-05-04", "track": "dated", "hide_before": True, "role": "成员国", "note": "1993年活动报告第2.1节：前南斯拉夫的马其顿共和国1993年5月4日成为会员。报告用的是当时的名称。"},
+        {"name": "Turkmenistan", "from": "1993-05-07", "track": "dated", "hide_before": True, "role": "成员国", "note": "1993年活动报告第2.1节：土库曼斯坦1993年5月7日成为会员。"},
     ]
-    have_from = {m.get("from") for m in itu.get("members") or []}
+    have_key = {(m.get("name"), m.get("from")) for m in itu.get("members") or []}
     for row in extra_itu:
-        if row["from"] not in have_from:
+        if (row["name"], row["from"]) not in have_key:
             itu.setdefault("members", []).append(row)
     itu["incomplete"] = True
     itu_link = link_polities(
         itu.get("members") or [],
-        lambda m: m.get("from") in {"2011-10-03", "1994-01-20", "1994-04-28"},
+        lambda m: m.get("track") == "dated",
     )
     itu["list_note"] = (
         "名单不完整。20个签署方仍是签署方，后来的会籍未核，编号是1865年5月17日当时的政权。"
-        "1994年活动报告只写了两个新会员的加入日：吉尔吉斯1994-01-20，塔吉克斯坦1994-04-28。"
-        "南苏丹按全权代表大会页面写入2011年10月3日。"
-        "会员页和1992年组织法的批准日都不是加入日，其余加入、退出、暂停、继承无记录。"
-        f"这三行里挂上编号{itu_link['linked']}行，对不上的不挂。"
+        "1992年活动报告写了八个新会员，其中前苏联和前南斯拉夫的新国家是阿塞拜疆、爱沙尼亚、克罗地亚、斯洛文尼亚、亚美尼亚、乌兹别克斯坦、摩尔多瓦、波黑。"
+        "1993年活动报告里属于这两组的是格鲁吉亚、哈萨克斯坦、前南斯拉夫的马其顿共和国、土库曼斯坦。捷克、斯洛伐克不是这两组，不写进这一批。"
+        "1994年活动报告写吉尔吉斯1994-01-20、塔吉克斯坦1994-04-28。南苏丹是2011年10月3日。"
+        "这两份报告的成为会员名单里没有俄罗斯、乌克兰、白俄罗斯、拉脱维亚、立陶宛，不写继承。其余加入、退出、暂停无记录。"
+        f"有加入日的行里挂上编号{itu_link['linked']}行，对不上的不挂。"
     )
     itu["summary"] = (
         "1865年5月17日，20个国家在巴黎签署国际电报公约，成立万国电报联盟。"
@@ -745,6 +758,8 @@ def main():
     for label, url in (
         ("国际电信联盟：南苏丹2011年10月3日加入", "https://www.itu.int/web/pp-18/en/article/itus-evolving-membership"),
         ("1994年活动报告：吉尔吉斯和塔吉克斯坦的加入日", "https://search.itu.int/history/HistoryDigitalCollectionDocLibrary/2.145.62.en.100.pdf"),
+        ("1992年活动报告：新会员", "https://search.itu.int/history/HistoryDigitalCollectionDocLibrary/2.143.62.en.100.pdf"),
+        ("1993年活动报告：新会员", "https://search.itu.int/history/HistoryDigitalCollectionDocLibrary/2.144.62.en.100.pdf"),
     ):
         if url not in {s["url"] for s in itu_sources}:
             itu_sources.append({"label": label, "url": url})
