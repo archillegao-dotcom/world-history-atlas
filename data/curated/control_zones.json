@@ -6546,7 +6546,6 @@
      "mcgd:s1247",
      "mcgd:s1249",
      "mcgd:s1251",
-     "mcgd:s1252",
      "mcgd:s1253",
      "mcgd:s1255",
      "mcgd:s1257",
@@ -7258,13 +7257,11 @@
      "mcgd:s424",
      "mcgd:s432",
      "mcgd:s433",
-     "mcgd:s434",
      "mcgd:s436",
      "mcgd:s439",
      "mcgd:s440",
      "mcgd:s444",
      "mcgd:s458",
-     "mcgd:s461",
      "mcgd:s465",
      "mcgd:s475",
      "mcgd:s477",
@@ -7272,7 +7269,6 @@
      "mcgd:s483",
      "mcgd:s485",
      "mcgd:s488",
-     "mcgd:s490",
      "mcgd:s497",
      "mcgd:s500",
      "mcgd:s503",
@@ -7282,7 +7278,6 @@
      "mcgd:s530",
      "mcgd:s533",
      "mcgd:s537",
-     "mcgd:s551",
      "mcgd:s556",
      "mcgd:s575",
      "mcgd:s6",
@@ -7419,7 +7414,6 @@
      "mcgd:s1247",
      "mcgd:s1249",
      "mcgd:s1251",
-     "mcgd:s1252",
      "mcgd:s1253",
      "mcgd:s1255",
      "mcgd:s1257",
@@ -7896,13 +7890,11 @@
      "mcgd:s424",
      "mcgd:s432",
      "mcgd:s433",
-     "mcgd:s434",
      "mcgd:s436",
      "mcgd:s439",
      "mcgd:s440",
      "mcgd:s444",
      "mcgd:s458",
-     "mcgd:s461",
      "mcgd:s465",
      "mcgd:s475",
      "mcgd:s477",
@@ -7910,7 +7902,6 @@
      "mcgd:s483",
      "mcgd:s485",
      "mcgd:s488",
-     "mcgd:s490",
      "mcgd:s497",
      "mcgd:s500",
      "mcgd:s503",
@@ -7920,7 +7911,6 @@
      "mcgd:s530",
      "mcgd:s533",
      "mcgd:s537",
-     "mcgd:s551",
      "mcgd:s556",
      "mcgd:s575",
      "mcgd:s6",
@@ -8059,7 +8049,6 @@
      "mcgd:s1247",
      "mcgd:s1249",
      "mcgd:s1251",
-     "mcgd:s1252",
      "mcgd:s1253",
      "mcgd:s1255",
      "mcgd:s1257",
@@ -8538,7 +8527,6 @@
      "mcgd:s424",
      "mcgd:s432",
      "mcgd:s433",
-     "mcgd:s434",
      "mcgd:s436",
      "mcgd:s437",
      "mcgd:s439",
@@ -8546,7 +8534,6 @@
      "mcgd:s444",
      "mcgd:s454",
      "mcgd:s458",
-     "mcgd:s461",
      "mcgd:s465",
      "mcgd:s471",
      "mcgd:s475",
@@ -8555,7 +8542,6 @@
      "mcgd:s483",
      "mcgd:s485",
      "mcgd:s488",
-     "mcgd:s490",
      "mcgd:s491",
      "mcgd:s497",
      "mcgd:s500",
@@ -8567,7 +8553,6 @@
      "mcgd:s533",
      "mcgd:s537",
      "mcgd:s547",
-     "mcgd:s551",
      "mcgd:s553",
      "mcgd:s556",
      "mcgd:s575",
@@ -8710,7 +8695,6 @@
      "mcgd:s1247",
      "mcgd:s1249",
      "mcgd:s1251",
-     "mcgd:s1252",
      "mcgd:s1253",
      "mcgd:s1255",
      "mcgd:s1257",
@@ -9189,7 +9173,6 @@
      "mcgd:s424",
      "mcgd:s432",
      "mcgd:s433",
-     "mcgd:s434",
      "mcgd:s436",
      "mcgd:s437",
      "mcgd:s439",
@@ -9197,7 +9180,6 @@
      "mcgd:s444",
      "mcgd:s454",
      "mcgd:s458",
-     "mcgd:s461",
      "mcgd:s465",
      "mcgd:s471",
      "mcgd:s475",
@@ -9206,7 +9188,6 @@
      "mcgd:s483",
      "mcgd:s485",
      "mcgd:s488",
-     "mcgd:s490",
      "mcgd:s491",
      "mcgd:s497",
      "mcgd:s500",
@@ -9218,7 +9199,6 @@
      "mcgd:s533",
      "mcgd:s537",
      "mcgd:s547",
-     "mcgd:s551",
      "mcgd:s553",
      "mcgd:s556",
      "mcgd:s575",
@@ -12508,6 +12488,33 @@
    ]
   },
   {
+   "id": "sjw_cell_s1134_1939-12-21_龙州",
+   "group": "sino_japanese_war",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "日军军事占领区（龙州）",
+   "name_en": "日军军事占领区（龙州）",
+   "controller": {
+    "qid": "Q188712",
+    "zh": "大日本帝国"
+   },
+   "from": "1939-12-21",
+   "until": "1940-10-28",
+   "geometry": {
+    "roc_counties": [
+     "mcgd:s1134"
+    ]
+   },
+   "approx": true,
+   "note": "龙州县域。已核對《中華民國史事紀要》民国二十八年七月至十二月，印页七二五（PDF 第739页），页眉十二月二十一日，写本日黄昏日军分别侵陷龙州与镇南关。镇南关不是县，不另画。收复见民国二十九年七月至十二月，印页四八三（PDF 第490页），页眉十月二十六、二十八日。二十八日这一条写昨（二十七）日晚出击，本日晨五时三十分将龙州全部克复。收到一九四〇年十月二十八日。同页明江、绥渌也写克复，失陷日没有锁到一天，也不在大块里，不另画。大致。县域为治所泰森多边形近似。",
+   "dates_note": "龙州 1939-12-21 起，收到 1940-10-28。已核對印页七二五、四八三。",
+   "sources": [
+    "https://www.drnh.gov.tw/p/404-1003-13317.php?Lang=zh-tw",
+    "https://www.drnh.gov.tw/p/404-1003-13320.php?Lang=zh-tw",
+    "https://zenodo.org/records/5721459"
+   ]
+  },
+  {
    "id": "sjw_cell_mcgd:s797_1939-07-11_武乡",
    "group": "sino_japanese_war",
    "kind": "occupied",
@@ -12712,6 +12719,136 @@
    "dates_note": "通山收到 1939-09-14。已核對《中華民國史事紀要》民國二十八年七月至十二月。追述或本日见原文。",
    "sources": [
     "https://www.drnh.gov.tw/p/404-1003-13317.php?Lang=zh-tw",
+    "https://zenodo.org/records/5721459"
+   ]
+  },
+  {
+   "id": "sjw_cell_mcgd:s490_1940-10-18_奉新",
+   "group": "sino_japanese_war",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "汪精卫政权（奉新）",
+   "name_en": "汪精卫政权（奉新）",
+   "controller": {
+    "qid": "Q696242",
+    "zh": "汪精卫政权"
+   },
+   "from": "1940-03-30",
+   "until": "1940-10-18",
+   "geometry": {
+    "roc_counties": [
+     "mcgd:s490"
+    ]
+   },
+   "approx": true,
+   "note": "奉新县域。已核對《中華民國史事紀要》民國二十九年七月至十二月，印页四五四（PDF 第461页），页眉十月十八日，写本日围攻赣北奉新，攻入城内，午后三时正式攻克。县在华中大块里，收到一九四〇年十月十八日，之后从大块里移出。大致。县域为治所泰森多边形近似。",
+   "dates_note": "奉新收到 1940-10-18。已核對印页四五四。",
+   "sources": [
+    "https://www.drnh.gov.tw/p/404-1003-13320.php?Lang=zh-tw",
+    "https://zenodo.org/records/5721459"
+   ]
+  },
+  {
+   "id": "sjw_cell_mcgd:s461_1940-10-19_郎溪",
+   "group": "sino_japanese_war",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "汪精卫政权（郎溪）",
+   "name_en": "汪精卫政权（郎溪）",
+   "controller": {
+    "qid": "Q696242",
+    "zh": "汪精卫政权"
+   },
+   "from": "1940-03-30",
+   "until": "1940-10-19",
+   "geometry": {
+    "roc_counties": [
+     "mcgd:s461"
+    ]
+   },
+   "approx": true,
+   "note": "郎溪县域。已核對《中華民國史事紀要》民國二十九年七月至十二月，印页四六一（PDF 第469页），页眉十月十九日，写本日晚进迫城郊，午夜冲入城内，郎溪县城遂告克复。滆山同页克复，不是一九三一年的县，不另画。县在占领大块里，收到一九四〇年十月十九日。大致。县域为治所泰森多边形近似。",
+   "dates_note": "郎溪收到 1940-10-19。已核對印页四六一。",
+   "sources": [
+    "https://www.drnh.gov.tw/p/404-1003-13320.php?Lang=zh-tw",
+    "https://zenodo.org/records/5721459"
+   ]
+  },
+  {
+   "id": "sjw_cell_mcgd:s434_1940-11-21_蒙城",
+   "group": "sino_japanese_war",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "汪精卫政权（蒙城）",
+   "name_en": "汪精卫政权（蒙城）",
+   "controller": {
+    "qid": "Q696242",
+    "zh": "汪精卫政权"
+   },
+   "from": "1940-03-30",
+   "until": "1940-11-21",
+   "geometry": {
+    "roc_counties": [
+     "mcgd:s434"
+    ]
+   },
+   "approx": true,
+   "note": "蒙城县域。已核對《中華民國史事紀要》民國二十九年七月至十二月，印页五九一（PDF 第598页），页眉十一月二十一日，写安徽省蒙城本日为国军克复。县在大块里，收到一九四〇年十一月二十一日。大致。县域为治所泰森多边形近似。",
+   "dates_note": "蒙城收到 1940-11-21。已核對印页五九一。",
+   "sources": [
+    "https://www.drnh.gov.tw/p/404-1003-13320.php?Lang=zh-tw",
+    "https://zenodo.org/records/5721459"
+   ]
+  },
+  {
+   "id": "sjw_cell_mcgd:s551_1940-11-21_涡阳",
+   "group": "sino_japanese_war",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "汪精卫政权（涡阳）",
+   "name_en": "汪精卫政权（涡阳）",
+   "controller": {
+    "qid": "Q696242",
+    "zh": "汪精卫政权"
+   },
+   "from": "1940-03-30",
+   "until": "1940-11-21",
+   "geometry": {
+    "roc_counties": [
+     "mcgd:s551"
+    ]
+   },
+   "approx": true,
+   "note": "涡阳县域。已核對《中華民國史事紀要》民國二十九年七月至十二月，印页五九一（PDF 第598页），页眉十一月二十一日，写盘据皖北涡阳的日军溃走，涡阳亦为华军克复。县在大块里，收到一九四〇年十一月二十一日。大致。县域为治所泰森多边形近似。",
+   "dates_note": "涡阳收到 1940-11-21。已核對印页五九一。",
+   "sources": [
+    "https://www.drnh.gov.tw/p/404-1003-13320.php?Lang=zh-tw",
+    "https://zenodo.org/records/5721459"
+   ]
+  },
+  {
+   "id": "sjw_cell_mcgd:s1252_1941-12-19_陵川",
+   "group": "sino_japanese_war",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "华北政务委员会（陵川）",
+   "name_en": "华北政务委员会（陵川）",
+   "controller": {
+    "qid": "Q10905486",
+    "zh": "华北政务委员会"
+   },
+   "from": "1940-03-30",
+   "until": "1941-12-19",
+   "geometry": {
+    "roc_counties": [
+     "mcgd:s1252"
+    ]
+   },
+   "approx": true,
+   "note": "陵川县域。已核對《中華民國史事紀要》民國三十年七月至十二月，印页六九九（PDF 第706页），页眉十二月三十日，写的是本月战况：十五日入陵川城，十九日午后将陵川城完全克复。县已在华北占领大块里，收到一九四一年十二月十九日，之后从大块里移出。晋冀鲁豫边区那一层不动。大致。县域为治所泰森多边形近似。",
+   "dates_note": "陵川收到 1941-12-19。已核對印页六九九。十五日入城是大块里的再入，不另开口。",
+   "sources": [
+    "https://www.drnh.gov.tw/p/404-1003-13325.php?Lang=zh-tw",
     "https://zenodo.org/records/5721459"
    ]
   }
