@@ -66,8 +66,15 @@ class ConstitutionModule(ContentModule):
         p = ctx.data_dir / "curated" / "constitutions.json"
         raw = json.loads(p.read_text(encoding="utf-8"))
         self.kinds = raw.get("kinds") or {}
-        self.instruments = raw.get("instruments") or []
-        self.gaps = raw.get("gaps") or []
+        self.instruments = list(raw.get("instruments") or [])
+        self.gaps = list(raw.get("gaps") or [])
+        # 后加的国家放在独立文件里，避免和别的批次改同一份 constitutions.json。
+        extra = ctx.data_dir / "curated" / "constitutions_ext"
+        if extra.is_dir():
+            for fp in sorted(extra.glob("*.json")):
+                doc = json.loads(fp.read_text(encoding="utf-8"))
+                self.instruments.extend(doc.get("instruments") or [])
+                self.gaps.extend(doc.get("gaps") or [])
         self.covered = set()
         for it in self.instruments:
             for sp in it.get("spans") or []:

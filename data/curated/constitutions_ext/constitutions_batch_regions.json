@@ -1,0 +1,782 @@
+{
+  "_doc": "第二批：非洲、中东、南亚东南亚、拉美其余国家、东欧（不含另一批正在做的中华民国、土耳其、奥地利、普鲁士、波兰、印度、巴西、墨西哥、阿根廷、伊朗、埃及、韩国/朝鲜、越南、泰国、瑞典、荷兰、比利时、瑞士、加拿大、澳大利亚）。只挂在点选时实际解析到的政权 QID 上。until 不含当天。生效日只写已打开文本里的日子。比较宪法项目年表（Elkins, Ginsburg, Melton 2026, Chronology v6）只到年，用来说明有过更替，不拿它填某一天。",
+  "instruments": [
+    {
+      "id": "ext_pk_1973",
+      "title_zh": "1973年巴基斯坦宪法",
+      "title_orig": "Constitution of the Islamic Republic of Pakistan",
+      "kind": "formal",
+      "adopted": null,
+      "promulgated": null,
+      "effective": "1973-08-14",
+      "repealed": null,
+      "summary_zh": "已打开的英文本写明：于一千九百七十三年八月十四日生效，或由总统以官方公报提前指定的日子生效，该日称为 commencing day。本批没有打开提前指定的公报，所以从条文所写的1973年8月14日起列入。8月13日还不列入。比较宪法项目年表把1973年记为新宪法的颁布年，并把1977年、1999年记为中止、1985年、2002年记为恢复。中止和恢复没有写到日，本图不另选一天把条目撤下，也不把中止写成这部宪法已经废止。1956年和1962年的文本本批没有打开到日。",
+      "sources": [
+        {"label": "Constitute：巴基斯坦1973年宪法（2018年修订本）生效条文", "url": "https://www.constituteproject.org/constitution/Pakistan_2018?lang=en"},
+        {"label": "Elkins, Ginsburg, Melton 2026：宪法事件年表第6版（只到年）", "url": "https://comparativeconstitutionsproject.org/download-data/"}
+      ],
+      "spans": [{"qid": "Q843", "from": "1973-08-14", "until": null}],
+      "phases": [
+        {"from": "1973-08-14", "until": null, "force_zh": "文本所定生效日之后列入", "force_note": "条文允许总统提前指定生效日。提前指定的公报没有打开。年表所记的中止和恢复没有写到日，不另选一天撤下。"}
+      ]
+    },
+    {
+      "id": "ext_bd_1972",
+      "title_zh": "1972年孟加拉国宪法",
+      "title_orig": "Constitution of the People's Republic of Bangladesh",
+      "kind": "formal",
+      "adopted": null,
+      "promulgated": null,
+      "effective": "1972-12-16",
+      "repealed": null,
+      "summary_zh": "已打开的英文本写明：可称为《孟加拉人民共和国宪法》，于1972年12月16日生效，该日称为 commencement。12月15日还不列入。比较宪法项目年表把1972年记为新宪法，并把1982年记为中止、1986年记为恢复。中止和恢复没有写到日，本图不另选一天撤下。独立宣言的日期写在附表里，不是这部宪法的生效日。",
+      "sources": [
+        {"label": "Constitute：孟加拉国1972年宪法（2018年修订本）生效条文", "url": "https://www.constituteproject.org/constitution/Bangladesh_2018?lang=en"},
+        {"label": "Elkins, Ginsburg, Melton 2026：宪法事件年表第6版（只到年）", "url": "https://comparativeconstitutionsproject.org/download-data/"}
+      ],
+      "spans": [{"qid": "Q902", "from": "1972-12-16", "until": null}]
+    },
+    {
+      "id": "ext_ng_1999",
+      "title_zh": "1999年尼日利亚宪法",
+      "title_orig": "Constitution of the Federal Republic of Nigeria 1999",
+      "kind": "formal",
+      "adopted": null,
+      "promulgated": null,
+      "effective": "1999-05-29",
+      "repealed": null,
+      "summary_zh": "已打开的英文本第319节写明可称为1999年《尼日利亚联邦共和国宪法》，第320节写明于1999年5月29日生效。5月28日还不列入。只挂在这一天地图上的尼日利亚，不挂到英国。1960年和1963年的文本，以及年表所记的中止，本批没有打开到日。",
+      "sources": [
+        {"label": "Constitute：尼日利亚1999年宪法（2023年修订本）第319、320节", "url": "https://www.constituteproject.org/constitution/Nigeria_2023?lang=en"}
+      ],
+      "spans": [{"qid": "Q1033", "from": "1999-05-29", "until": null}]
+    },
+    {
+      "id": "ext_my_1957",
+      "title_zh": "1957年马来亚联合邦宪法",
+      "title_orig": "Constitution of Malaysia",
+      "kind": "formal",
+      "adopted": null,
+      "promulgated": null,
+      "effective": null,
+      "repealed": null,
+      "summary_zh": "定义条款把 Merdeka Day 写为1957年8月31日，把 Malaysia Day 写为1963年9月16日。第4条写明：独立日之后制定的、与这部宪法抵触的法律，抵触的部分无效。已打开的条文没有另写一句整部生效日。本图从文本定义的独立日起列入马来亚联合邦，从文本定义的马来西亚日起改列入马来西亚。比较宪法项目年表在1957年之后没有再记一部新宪法。1948年2月1日地图上已是马来亚联合邦，这一天还不列入。",
+      "sources": [
+        {"label": "Constitute：马来西亚1957年宪法（2025年修订本）第4条与定义条款", "url": "https://www.constituteproject.org/constitution/Malaysia_2025?lang=en"},
+        {"label": "Elkins, Ginsburg, Melton 2026：宪法事件年表第6版（只到年）", "url": "https://comparativeconstitutionsproject.org/download-data/"}
+      ],
+      "spans": [
+        {"qid": "Q1479726", "from": "1957-08-31", "until": "1963-09-16"},
+        {"qid": "Q833", "from": "1963-09-16", "until": null}
+      ]
+    },
+    {
+      "id": "ext_no_1814",
+      "title_zh": "挪威王国宪法",
+      "title_orig": "Kongeriket Norges Grunnlov",
+      "kind": "formal",
+      "adopted": null,
+      "promulgated": null,
+      "effective": null,
+      "repealed": null,
+      "summary_zh": "Constitute 页面标题是 Norway 1814（2016年修订）。已打开的英文本没有写5月17日，也没有另写生效日，所以日期栏留空。比较宪法项目年表在其样本里对挪威只记修正，没有记一部新宪法。1905年6月6日奥斯陆点到的是瑞典，这部宪法不挂到瑞典，也不挂到瑞典－挪威联盟。1905年10月25日奥斯陆点到的是挪威，从这一天起列入。10月25日是地图上的政权切换日，不是从文本里读出的制定日。",
+      "sources": [
+        {"label": "Constitute：挪威1814年宪法（2016年修订本）", "url": "https://www.constituteproject.org/constitution/Norway_2016?lang=en"},
+        {"label": "Elkins, Ginsburg, Melton 2026：宪法事件年表第6版（只到年）", "url": "https://comparativeconstitutionsproject.org/download-data/"}
+      ],
+      "spans": [{"qid": "Q20", "from": "1905-10-25", "until": null}]
+    },
+    {
+      "id": "ext_dk_1915",
+      "title_zh": "1915年丹麦王国宪法",
+      "title_orig": "Danmarks Riges Grundlov",
+      "kind": "formal",
+      "adopted": null,
+      "promulgated": "1915-06-06",
+      "effective": null,
+      "repealed": null,
+      "summary_zh": "1953年宪法文本写明：上一届国会是依1915年6月6日的《丹麦王国宪法》选出的，该法于1920年9月10日修订。1920年是修订，不是另一部宪法。1953年6月5日的文本起，不再把1915年文本列为在行宪法。1866年另有一部宪法，本批没有打开，所以不把1915年往回写成从1849年一直在行。",
+      "sources": [
+        {"label": "Constitute：丹麦1953年宪法中对1915年6月6日宪法的指称", "url": "https://www.constituteproject.org/constitution/Denmark_1953?lang=en"}
+      ],
+      "spans": [{"qid": "Q35", "from": "1915-06-06", "until": "1953-06-05"}]
+    },
+    {
+      "id": "ext_dk_1953",
+      "title_zh": "1953年丹麦王国宪法",
+      "title_orig": "Danmarks Riges Grundlov",
+      "kind": "formal",
+      "adopted": null,
+      "promulgated": "1953-06-05",
+      "effective": null,
+      "repealed": null,
+      "summary_zh": "已打开的英文本在结尾把自己标为1953年6月5日的《丹麦王国宪法》。没有另找到一句更晚的生效日，本图从文本所标的这一天起列入。6月4日仍列1915年宪法。比较宪法项目年表把1953年记为新宪法的颁布年，其后没有再记新宪法。",
+      "sources": [
+        {"label": "Constitute：丹麦1953年宪法文本结尾", "url": "https://www.constituteproject.org/constitution/Denmark_1953?lang=en"},
+        {"label": "Elkins, Ginsburg, Melton 2026：宪法事件年表第6版（只到年）", "url": "https://comparativeconstitutionsproject.org/download-data/"}
+      ],
+      "spans": [{"qid": "Q35", "from": "1953-06-05", "until": null}]
+    },
+    {
+      "id": "ext_fi_1919",
+      "title_zh": "1919年芬兰宪法",
+      "title_orig": "Suomen hallitusmuoto",
+      "kind": "formal",
+      "adopted": null,
+      "promulgated": "1919-07-17",
+      "effective": null,
+      "repealed": null,
+      "summary_zh": "2000年宪法第131条把所废止的文件写为1919年7月17日的《芬兰宪法》。这是后一部宪法给它的日期，1919年文本自己的生效条款本批没有另打开。2000年3月1日起由新宪法废止，不再列入。同条还废止1928年1月13日的议会法和1922年11月25日的两部宪法性法律，本批不把它们各算成一部新宪法。",
+      "sources": [
+        {"label": "Constitute：芬兰宪法第131条", "url": "https://www.constituteproject.org/constitution/Finland_2018?lang=en"}
+      ],
+      "spans": [{"qid": "Q33", "from": "1919-07-17", "until": "2000-03-01"}]
+    },
+    {
+      "id": "ext_fi_2000",
+      "title_zh": "芬兰宪法",
+      "title_orig": "Suomen perustuslaki",
+      "kind": "formal",
+      "adopted": null,
+      "promulgated": null,
+      "effective": "2000-03-01",
+      "repealed": null,
+      "summary_zh": "第130条写明：本宪法于2000年3月1日生效。2月29日仍列1919年宪法。比较宪法项目年表把颁布年记为1999年，生效日以第130条为准，不提前到1999年。",
+      "sources": [
+        {"label": "Constitute：芬兰宪法第130条", "url": "https://www.constituteproject.org/constitution/Finland_2018?lang=en"},
+        {"label": "Elkins, Ginsburg, Melton 2026：宪法事件年表第6版（只到年）", "url": "https://comparativeconstitutionsproject.org/download-data/"}
+      ],
+      "spans": [{"qid": "Q33", "from": "2000-03-01", "until": null}]
+    },
+    {
+      "id": "ext_gr_1952",
+      "title_zh": "1952年希腊宪法",
+      "title_orig": "Σύνταγμα της Ελλάδος (1952)",
+      "kind": "formal",
+      "adopted": null,
+      "promulgated": "1952-01-01",
+      "effective": null,
+      "repealed": null,
+      "summary_zh": "1975年宪法在过渡条款里把它称为1952年1月1日的宪法。1952年文本自己的条款本批没有打开。比较宪法项目年表把1968年记为另一部新宪法的颁布年，没有写到日。本图从1968年1月1日起不再列入1952年文本，这一天不是从文本里读出的废止日。1968年到1975年6月11日之前不另编标题。",
+      "sources": [
+        {"label": "Constitute：希腊1975年宪法对1952年1月1日宪法的指称", "url": "https://www.constituteproject.org/constitution/Greece_2019?lang=en"},
+        {"label": "Elkins, Ginsburg, Melton 2026：宪法事件年表第6版（只到年）", "url": "https://comparativeconstitutionsproject.org/download-data/"}
+      ],
+      "spans": [{"qid": "Q41", "from": "1952-01-01", "until": "1968-01-01"}]
+    },
+    {
+      "id": "ext_gr_1975",
+      "title_zh": "1975年希腊宪法",
+      "title_orig": "Σύνταγμα της Ελλάδος",
+      "kind": "formal",
+      "adopted": null,
+      "promulgated": null,
+      "effective": "1975-06-11",
+      "repealed": null,
+      "summary_zh": "第120条写明：本宪法由第五届修订议会通过，由议长签署，由共和国临时总统以命令在政府公报公布，并由内阁副署，于1975年6月11日生效。6月10日还不列入。比较宪法项目年表把1975年记为新宪法，其后没有再记新宪法。",
+      "sources": [
+        {"label": "Constitute：希腊1975年宪法第120条", "url": "https://www.constituteproject.org/constitution/Greece_2019?lang=en"}
+      ],
+      "spans": [{"qid": "Q41", "from": "1975-06-11", "until": null}]
+    },
+    {
+      "id": "ext_pt_1976",
+      "title_zh": "1976年葡萄牙共和国宪法",
+      "title_orig": "Constituição da República Portuguesa",
+      "kind": "formal",
+      "adopted": "1976-04-02",
+      "promulgated": null,
+      "effective": "1976-04-25",
+      "repealed": null,
+      "summary_zh": "序言写明制宪会议于1976年4月2日全体会议通过。第296条写明宪法日期为制宪会议通过日4月2日，并于1976年4月25日生效。4月24日还不列入。比较宪法项目年表把1974年记为中止、1976年记为新宪法。1933年文本本批没有打开到日。",
+      "sources": [
+        {"label": "Constitute：葡萄牙1976年宪法序言与第296条", "url": "https://www.constituteproject.org/constitution/Portugal_2005?lang=en"}
+      ],
+      "spans": [{"qid": "Q45", "from": "1976-04-25", "until": null}]
+    },
+    {
+      "id": "ext_hu_2012",
+      "title_zh": "匈牙利基本法",
+      "title_orig": "Magyarország Alaptörvénye",
+      "kind": "basic_law",
+      "adopted": null,
+      "promulgated": null,
+      "effective": "2012-01-01",
+      "repealed": null,
+      "summary_zh": "结束条款写明《匈牙利基本法》于2012年1月1日生效，并由国民议会依据1949年第20号法律的相应条款通过。已打开的英文本没有写通过的日历日。同页写1949年第20号法律在2011年12月31日仍被引用为当时有效的宪法；1949年文本的生效条款本批没有打开，所以不单列，12月31日还不列入基本法。比较宪法项目年表把颁布年记为2011年，生效日以基本法文本为准。",
+      "sources": [
+        {"label": "Constitute：匈牙利基本法（2016年修订本）结束条款", "url": "https://www.constituteproject.org/constitution/Hungary_2016?lang=en"},
+        {"label": "Elkins, Ginsburg, Melton 2026：宪法事件年表第6版（只到年）", "url": "https://comparativeconstitutionsproject.org/download-data/"}
+      ],
+      "spans": [{"qid": "Q28", "from": "2012-01-01", "until": null}]
+    },
+    {
+      "id": "ext_cz_1993",
+      "title_zh": "捷克共和国宪法",
+      "title_orig": "Ústava České republiky",
+      "kind": "formal",
+      "adopted": null,
+      "promulgated": null,
+      "effective": "1993-01-01",
+      "repealed": null,
+      "summary_zh": "第113条写明：本宪法于1993年1月1日生效。只挂在这一天地图上的捷克，不挂回捷克斯洛伐克。捷克斯洛伐克1920、1948、1960年宪法的生效日本批没有打开。",
+      "sources": [
+        {"label": "Constitute：捷克共和国宪法第113条", "url": "https://www.constituteproject.org/constitution/Czech_Republic_2013?lang=en"}
+      ],
+      "spans": [{"qid": "Q213", "from": "1993-01-01", "until": null}]
+    },
+    {
+      "id": "ext_ro_1965",
+      "title_zh": "1965年8月21日罗马尼亚宪法",
+      "title_orig": "Constituția României din 21 august 1965",
+      "kind": "formal",
+      "adopted": null,
+      "promulgated": "1965-08-21",
+      "effective": null,
+      "repealed": null,
+      "summary_zh": "1991年宪法（2003年修订本）写明：本宪法经全民公投通过之日起生效，同日1965年8月21日的宪法全部废止。公投的日历日没有写在已打开的文本里。比较宪法项目年表把1991年记为新宪法的颁布年。本图从1965年8月21日起列入，从1991年1月1日起不再列入。1月1日不是废止日，只是因为公投日没有写到某一天，所以不把1991年里的任何一天标成仍在行或已经换成新宪法。",
+      "sources": [
+        {"label": "Constitute：罗马尼亚1991年宪法（2003年修订本）对1965年8月21日宪法的废止表述", "url": "https://www.constituteproject.org/constitution/Romania_2003?lang=en"},
+        {"label": "Elkins, Ginsburg, Melton 2026：宪法事件年表第6版（只到年）", "url": "https://comparativeconstitutionsproject.org/download-data/"}
+      ],
+      "spans": [
+        {"qid": "Q842794", "from": "1965-08-21", "until": "1989-12-22"},
+        {"qid": "Q218", "from": "1989-12-22", "until": "1991-01-01"}
+      ]
+    },
+    {
+      "id": "ext_ve_1999",
+      "title_zh": "1999年委内瑞拉玻利瓦尔共和国宪法",
+      "title_orig": "Constitución de la República Bolivariana de Venezuela",
+      "kind": "formal",
+      "adopted": "1999-12-15",
+      "promulgated": "1999-12-20",
+      "effective": null,
+      "repealed": null,
+      "summary_zh": "文本结尾写明：1999年12月15日经全民公投通过，1999年12月20日由全国制宪大会在加拉加斯公布。没有另写一个更晚的生效日。本图从公布日列入，公投当天还不列入。比较宪法项目年表把1999年记为新宪法，其后的修改不另立一部。",
+      "sources": [
+        {"label": "Constitute：委内瑞拉1999年宪法（2009年修订本）结尾", "url": "https://www.constituteproject.org/constitution/Venezuela_2009?lang=en"}
+      ],
+      "spans": [{"qid": "Q717", "from": "1999-12-20", "until": null}]
+    },
+    {
+      "id": "ext_cu_1976",
+      "title_zh": "1976年2月24日古巴宪法",
+      "title_orig": "Constitución de la República de Cuba de 24 de febrero de 1976",
+      "kind": "formal",
+      "adopted": null,
+      "promulgated": "1976-02-24",
+      "effective": null,
+      "repealed": null,
+      "summary_zh": "2019年宪法的最后条款把它称为1976年2月24日的古巴共和国宪法，并写明予以废止，包括1978、1992和2002年的修改。2019年文本写：经认证后，自在共和国官方公报公布之日起生效。公布的日历日没有写在已打开的文本里。页首写全民公投日为2019年2月24日。本图从1976年2月24日起列入，从2019年2月24日起不再列入。2月24日不是从公报读出的废止日。",
+      "sources": [
+        {"label": "Constitute：古巴2019年宪法最后条款及页首公投日", "url": "https://www.constituteproject.org/constitution/Cuba_2019?lang=en"}
+      ],
+      "spans": [{"qid": "Q241", "from": "1976-02-24", "until": "2019-02-24"}]
+    },
+    {
+      "id": "ext_za_1996",
+      "title_zh": "1996年南非共和国宪法",
+      "title_orig": "Constitution of the Republic of South Africa, 1996",
+      "kind": "formal",
+      "adopted": "1996-05-08",
+      "promulgated": "1996-12-18",
+      "effective": "1997-02-04",
+      "repealed": null,
+      "summary_zh": "司法部所刊英文本首页写明：制宪会议1996年5月8日通过，1996年10月11日修正；1996年12月10日批准；1996年12月18日公布；生效日是1997年2月4日，另有条文另定日期的除外。2月3日还不列入。Constitute 上的文本只写由总统以公告指定生效日、不得晚于1997年7月1日，没有写出2月4日。2月4日采用司法部文本首页。1961、1983、1993年文本的生效日本批没有打开。",
+      "sources": [
+        {"label": "南非司法部：1996年宪法英文本首页（批准、公布、生效）", "url": "https://www.justice.gov.za/legislation/constitution/SAConstitution-web-eng.pdf"},
+        {"label": "Constitute：1996年宪法写明生效日由总统公告指定、不得晚于1997年7月1日", "url": "https://www.constituteproject.org/constitution/South_Africa_2012?lang=en"}
+      ],
+      "spans": [{"qid": "Q258", "from": "1997-02-04", "until": null}]
+    },
+    {
+      "id": "ext_et_1995",
+      "title_zh": "埃塞俄比亚联邦民主共和国宪法",
+      "title_orig": "Constitution of the Federal Democratic Republic of Ethiopia",
+      "kind": "formal",
+      "adopted": "1994-12-08",
+      "promulgated": "1995-08-21",
+      "effective": "1995-08-21",
+      "repealed": null,
+      "summary_zh": "《联邦公报》1995年第1号公告（Proclamation No. 1/1995）写明：各族经选出的代表于1994年12月8日批准这部宪法；宪法自1995年8月21日起完全生效；该公告亦于1995年8月21日生效，落款亚的斯亚贝巴同日。8月20日地图上仍是过渡政府，不列入。1931、1955、1987年文本的生效日本批没有打开。",
+      "sources": [
+        {"label": "埃塞俄比亚联邦公报1995年第1号：宪法生效公告（使馆所刊PDF）", "url": "https://ethiopianembassy.be/wp-content/uploads/Constitution-of-the-FDRE.pdf"},
+        {"label": "Constitute：序言写1994年12月8日通过", "url": "https://www.constituteproject.org/constitution/Ethiopia_1994?lang=en"}
+      ],
+      "spans": [{"qid": "Q115", "from": "1995-08-21", "until": null}]
+    },
+    {
+      "id": "ext_tr_1924",
+      "title_zh": "1924年土耳其共和国宪法",
+      "title_orig": "Teşkilâtı Esasiye Kanunu",
+      "kind": "formal",
+      "adopted": "1924-04-20",
+      "promulgated": null,
+      "effective": null,
+      "repealed": null,
+      "summary_zh": "宪法法院所刊文本写明：法律第491号，接受日20/4/1340（1924）。第105条写明本法律自公布之日起生效。页面没有另写一个公历公布日。本图从页面所标接受日列入，不把公布日另编成下一天。1961年7月9日的宪法起不再列入。只挂在土耳其共和国，不挂到奥斯曼帝国。",
+      "sources": [
+        {"label": "土耳其宪法法院：1924年宪法，接受日与第105条", "url": "https://www.anayasa.gov.tr/tr/mevzuat/onceki-anayasalar/1924-anayasasi/"}
+      ],
+      "spans": [{"qid": "Q43", "from": "1924-04-20", "until": "1961-07-09"}]
+    },
+    {
+      "id": "ext_tr_1961",
+      "title_zh": "1961年土耳其共和国宪法",
+      "title_orig": "Türkiye Cumhuriyeti Anayasası",
+      "kind": "formal",
+      "adopted": "1961-07-09",
+      "promulgated": null,
+      "effective": null,
+      "repealed": null,
+      "summary_zh": "宪法法院所刊文本写明：法律第334号，接受日9/7/1961。第157条写明：经全民投票接受后成为土耳其共和国宪法，并与投票结果一并立即在官方公报公布；关于大国民议会组成、选举和开会的条款自该公布起生效，其余条款在大国民议会选出后按临时条款生效。页末有未加标题的“19 Temmuz 1961”，本批不把它写成生效日。1982年宪法的官方公报日期是1982年11月9日，从那一天起不再列1961年文本。",
+      "sources": [
+        {"label": "土耳其宪法法院：1961年宪法，接受日与第157条", "url": "https://www.anayasa.gov.tr/tr/mevzuat/onceki-anayasalar/1961-anayasasi/"}
+      ],
+      "spans": [{"qid": "Q43", "from": "1961-07-09", "until": "1982-11-09"}]
+    },
+    {
+      "id": "ext_tr_1982",
+      "title_zh": "1982年土耳其共和国宪法",
+      "title_orig": "Türkiye Cumhuriyeti Anayasası",
+      "kind": "formal",
+      "adopted": "1982-10-18",
+      "promulgated": "1982-11-09",
+      "effective": "1982-11-09",
+      "repealed": null,
+      "summary_zh": "宪法法院所刊现行文本写明：法律第2709号，接受日18/10/1982，刊于1982年11月9日《官方公报》第17863号（增刊）。Constitute 英文本写明：关于行政和司法的所列条款，自宪法经全民投票通过并在官方公报公布之日起生效。本图从公报日期列入。11月8日仍列1961年宪法。后来的修正不是新的一部宪法。",
+      "sources": [
+        {"label": "土耳其宪法法院：1982年宪法，接受日与公报日期", "url": "https://www.anayasa.gov.tr/tr/mevzuat/anayasa/"},
+        {"label": "Constitute：1982年宪法临时条款中的公报生效表述", "url": "https://www.constituteproject.org/constitution/Turkey_2017?lang=en"}
+      ],
+      "spans": [{"qid": "Q43", "from": "1982-11-09", "until": null}]
+    },
+    {
+      "id": "ext_in_1950",
+      "title_zh": "印度宪法",
+      "title_orig": "Constitution of India",
+      "kind": "formal",
+      "adopted": null,
+      "promulgated": null,
+      "effective": "1950-01-26",
+      "repealed": null,
+      "summary_zh": "立法部所刊《印度宪法》第394条写明：本条和列出的若干条立即生效，其余条款于1950年1月26日生效，该日称为本宪法的 commencement。立即生效的那一天，已打开的页面没有写成公历日期，所以不写1949年11月26日。1月25日地图上仍是印度联邦，不列入。从1月26日起只挂在印度。",
+      "sources": [
+        {"label": "印度立法部：宪法第394条（政府文件库PDF）", "url": "https://cdnbbsr.s3waas.gov.in/s380537a945c7aaa788ccfcdf1b99b5d8f/uploads/2023/05/2023050195.pdf"}
+      ],
+      "spans": [{"qid": "Q668", "from": "1950-01-26", "until": null}]
+    },
+    {
+      "id": "ext_kr_1987",
+      "title_zh": "大韩民国宪法",
+      "title_orig": "대한민국헌법",
+      "kind": "formal",
+      "adopted": "1987-10-29",
+      "promulgated": null,
+      "effective": "1988-02-25",
+      "repealed": null,
+      "summary_zh": "国家法令信息中心写明：现行《大韩民国宪法》［施行 1988. 2. 25.］［宪法第10号，1987. 10. 29.，全部修订］。1987年10月29日是全部修订的日期，不是施行日。1988年2月24日还不列入。1948年宪法的施行日没有出现在已打开的这一页上，所以不写。",
+      "sources": [
+        {"label": "韩国国家法令信息中心：大韩民国宪法，施行日与全部修订日", "url": "https://www.law.go.kr/lsInfoP.do?lsiSeq=61603&efYd=19880225"}
+      ],
+      "spans": [{"qid": "Q884", "from": "1988-02-25", "until": null}]
+    },
+    {
+      "id": "ext_lb_1926",
+      "title_zh": "1926年黎巴嫩宪法",
+      "title_orig": "Constitution du Liban",
+      "kind": "formal",
+      "adopted": null,
+      "promulgated": null,
+      "effective": null,
+      "repealed": null,
+      "summary_zh": "Constitute 页面标题是 Lebanon 1926（2004年修订）。第101条写明：自1926年9月1日起，大黎巴嫩国称为黎巴嫩共和国。这是国名条款，不是整部文本的生效条款。已打开的英文本没有另写整部生效日，所以日期栏留空。比较宪法项目年表对黎巴嫩只记修正，没有记一部新宪法。1944年8月15日贝鲁特点到的是维希法国，这部宪法不挂到法国。1944年11月22日点到的是黎巴嫩，从这一天起列入。11月22日是地图上的政权日，不是从文本里读出的制定日。",
+      "sources": [
+        {"label": "Constitute：黎巴嫩1926年宪法第101条", "url": "https://www.constituteproject.org/constitution/Lebanon_2004?lang=en"},
+        {"label": "Elkins, Ginsburg, Melton 2026：宪法事件年表第6版（只到年）", "url": "https://comparativeconstitutionsproject.org/download-data/"}
+      ],
+      "spans": [{"qid": "Q822", "from": "1944-11-22", "until": null}]
+    }
+  ],
+  "gaps": [
+    {
+      "qids": ["Q12560"],
+      "from": null,
+      "until": null,
+      "note": "已核对奥斯曼帝国。宪法法院所刊《基本法》标题写7 zilhicce 1293（1876）。页面只把公历年写在括号里，没有写公历的月和日，所以不把12月23日编成生效日。"
+    },
+    {
+      "qids": ["Q43"],
+      "from": "1923-10-29",
+      "until": "1924-04-20",
+      "note": "已核对。1924年宪法的接受日在法院页面上写作20/4/1340（1924），这一天还没到。1921年文本本批没有打开。"
+    },
+    {
+      "qids": ["Q2949827"],
+      "from": null,
+      "until": null,
+      "note": "已核对。这一段是大国民议会政府。1924年宪法不套到这里。1921年组织法的生效日本批没有打开。"
+    },
+    {
+      "qids": ["Q155"],
+      "from": null,
+      "until": null,
+      "note": "已核对巴西。Constitute 页面标题是1988年宪法。已打开的英文本写制宪会议颁布这部宪法，但没有写1988年10月5日。不编这个日子。"
+    },
+    {
+      "qids": ["Q414"],
+      "from": null,
+      "until": null,
+      "note": "已核对阿根廷。官方文本库写这部宪法于1853年通过，并经1860、1866、1898、1957、1994年改革；刊布它的第24430号法律于1994年12月15日通过、1995年1月3日公布。1853年的月和日没有写在已打开的文本里。1994年改革文本写自公布次日起生效，并写1994年8月24日宣誓，没有把宣誓日写成生效日。不编1853年5月1日。"
+    },
+    {
+      "qids": ["Q63158027", "Q107258515", "Q794"],
+      "from": null,
+      "until": null,
+      "note": "已核对伊朗。1979年宪法英文本写的公投是1979年3月29日和30日，那是伊斯兰共和国政体的公投，不是宪法文本自己的通过日。宪法通过日和1906年文本的生效日，本批没有在已打开的页面里见到公历日期。"
+    },
+    {
+      "qids": ["Q124943", "Q3087763", "Q170468", "Q79"],
+      "from": null,
+      "until": null,
+      "note": "已核对埃及。Constitute 有2012年文本和2014年文本（2019年修订）。已打开的英文本没有写1923年、1971年或2014年的生效日。不编这些日子。"
+    },
+    {
+      "qids": ["Q705044", "Q423"],
+      "from": null,
+      "until": null,
+      "note": "已核对朝鲜。1948年和1972年宪法的生效日没有在已打开的官方或 Constitute 文本里见到。地图上的政权切换日不写成宪法生效日。"
+    },
+    {
+      "qids": ["Q172640", "Q881"],
+      "from": null,
+      "until": null,
+      "note": "已核对越南。1946、1959、1980、1992年宪法的生效日没有在已打开的文本里见到。1946年11月9日河内点到的是法兰西第四共和国，不把越南宪法套到法国。"
+    },
+    {
+      "qids": ["Q1775277"],
+      "from": null,
+      "until": null,
+      "note": "已核对。第394条把宪法的 commencement 写为1950年1月26日，这一天地图上才是印度。立即生效的若干条没有写出公历日期，所以不把1949年11月26日编进去，也不把整部宪法列在印度联邦上。"
+    },
+    {
+      "qids": ["Q884"],
+      "from": "1948-08-15",
+      "until": "1988-02-25",
+      "note": "已核对。现行宪法的施行日是1988年2月25日，这一天还没到。1948年宪法的施行日没有出现在已打开的国家法令信息中心页面上。"
+    },
+    {
+      "qids": ["Q484104"],
+      "from": null,
+      "until": null,
+      "note": "已核对。这一段是驻朝鲜美国陆军军政厅。1988年2月25日施行的大韩民国宪法不套到这里。1948年宪法的施行日没有打开。"
+    },
+    {
+      "qids": ["Q928"],
+      "from": null,
+      "until": null,
+      "note": "已核对菲律宾。1935年和1987年宪法的官方公报页面没有打开。已打开的 Constitute 英文本写1987年宪法经全民投票批准后立即生效，但没有写投票日。不编1935年或1987年的日期。"
+    },
+    {
+      "qids": ["Q212056", "Q711"],
+      "from": null,
+      "until": null,
+      "note": "已核对蒙古。Constitute 页面标题是1992年宪法。已打开的英文本没有写生效日。不编1992年1月13日或2月12日。"
+    },
+    {
+      "qids": ["Q193619"],
+      "from": null,
+      "until": null,
+      "note": "已核对南非联邦。1909年南非法（1909年9月20日御准）第4条把联合日留给枢密院公告指定，不得晚于该法通过后一年；第5、6条写明该法在所指定的那一天起生效。公告本批没有打开，所以不把1910年5月31日写成法定生效日，也不把1996年宪法套到联邦这一段。"
+    },
+    {
+      "qids": ["Q258"],
+      "from": "1961-05-31",
+      "until": "1997-02-04",
+      "note": "已核对。司法部文本把1996年宪法的生效日写为1997年2月4日，这一天还没到。1961、1983、1993年文本的生效日没有打开，所以不列出标题。"
+    },
+    {
+      "qids": ["Q207521", "Q328478", "Q828005", "Q940821", "Q332071"],
+      "from": null,
+      "until": null,
+      "note": "已核对埃塞俄比亚这一段。1995年8月21日的宪法只挂在当天起的埃塞俄比亚，不套到帝国、意属东非、德格、人民民主共和国或过渡政府。比较宪法项目年表把1931、1955、1974、1976、1987年记为新文本，把1991年记为临时文本。这些文本的生效日本批没有打开。"
+    },
+    {
+      "qids": ["Q5440850"],
+      "from": null,
+      "until": null,
+      "note": "已核对。这一天地图上是尼日利亚联邦，不是1999年5月29日以后的尼日利亚。1960年宪法的生效日本批没有打开，所以不列出标题。不套用英国不成文宪法。"
+    },
+    {
+      "qids": ["Q1033"],
+      "from": "1963-10-01",
+      "until": "1999-05-29",
+      "note": "已核对。1999年宪法第320节写明1999年5月29日生效，这一天还没到。1963年以后的文本和年表所记的中止，生效日没有打开。"
+    },
+    {
+      "qids": ["Q117"],
+      "from": null,
+      "until": null,
+      "note": "已核对加纳。Constitute 页面标题是1992年宪法。已打开的文本提到1960、1969、1979年宪法被中止或废除，并写有1966年2月24日、1972年1月13日、1979年6月4日、1981年12月31日，但没有写1992年文本的生效日，所以不列出标题。比较宪法项目年表把1957、1960、1969、1979、1992年记为新文本，把1982年记为临时文本。"
+    },
+    {
+      "qids": ["Q6392538", "Q114"],
+      "from": null,
+      "until": null,
+      "note": "已核对肯尼亚。第263条写明：于总统公布之日生效，或于公投结果在公报公布之日起十四日届满时生效，以较早者为准。两个日子都没有写在已打开的文本里。比较宪法项目年表把1963年和2010年记为新宪法。不列出标题。"
+    },
+    {
+      "qids": ["Q262"],
+      "from": null,
+      "until": null,
+      "note": "已核对阿尔及利亚。比较宪法项目年表把1963、1976、1989、2020年记为新宪法，把1965年记为中止，把1996年记为恢复。已打开的2020年文本没有写生效日，所以不列出标题。独立前点到法国时，不把阿尔及利亚宪法套到法国。"
+    },
+    {
+      "qids": ["Q1028", "Q12183875"],
+      "from": null,
+      "until": null,
+      "note": "已核对摩洛哥。2011年文本写明废止1996年10月7日敕令公布的修订宪法。2011年文本自己的生效日没有写在已打开的段落里。比较宪法项目年表把1962、1970、1972、2011年记为新宪法。不列出标题。"
+    },
+    {
+      "qids": ["Q948"],
+      "from": null,
+      "until": null,
+      "note": "已核对突尼斯。2022年文本写明自独立选举机关宣布公投最终结果、并由总统签署公布之日起生效，并把公投日写为2022年7月25日。宣布结果的日子没有写在已打开的文本里。比较宪法项目年表还把1959、2014年记为新宪法，把1956、1957、2011年记为临时文本。不列出标题。"
+    },
+    {
+      "qids": ["Q1041"],
+      "from": null,
+      "until": null,
+      "note": "已核对塞内加尔。Constitute 页面标题是2001年宪法（2016年修订）。已打开的文本没有写生效日。比较宪法项目年表把1960、1963、2001年记为新宪法。不列出标题。"
+    },
+    {
+      "qids": ["Q851"],
+      "from": null,
+      "until": null,
+      "note": "已核对沙特阿拉伯。Constitute 页面标题是1992年基本法。已打开的英文本没有写生效日。比较宪法项目年表把1992年记为新文本。不把它写成一部正式宪法，也不编一个生效日。"
+    },
+    {
+      "qids": ["Q146720", "Q149805", "Q796"],
+      "from": null,
+      "until": null,
+      "note": "已核对伊拉克。2005年文本写法律在官方公报公布之日起生效，除非另有规定，但没有把这部宪法自己的生效日写出来。比较宪法项目年表把2005年记为新宪法，并把1958、1964、1970、1990、2004年记为临时文本。这些日子本批没有打开。不列出标题。"
+    },
+    {
+      "qids": ["Q146885", "Q858", "Q131404661"],
+      "from": null,
+      "until": null,
+      "note": "已核对叙利亚。2012年文本第157条写明在官方公报公布，并自获通过之日起生效。获通过的日历日没有写在已打开的文本里。比较宪法项目年表把1950、1953、1973、2012年记为新宪法，把2025年记为中止和临时宪章。不列出标题。"
+    },
+    {
+      "qids": ["Q822"],
+      "from": null,
+      "until": "1944-11-22",
+      "note": "已核对。这一天还没有把1926年宪法列在黎巴嫩政权上。第101条只写1926年9月1日的国名，整部生效日没有打开。更早点到法国或维希时，不套用黎巴嫩宪法。"
+    },
+    {
+      "qids": ["Q801"],
+      "from": null,
+      "until": null,
+      "note": "已核对以色列。已打开的 Constitute 汇编从《议会基本法》（1958）起分列各部基本法，包括1992年《人的尊严与自由基本法》。这不是一部写明生效日的单一宪法。比较宪法项目年表把1949年记为临时安排、1958年记为新文本。不把某一部基本法的生效日编成某一天。"
+    },
+    {
+      "qids": ["Q810"],
+      "from": null,
+      "until": null,
+      "note": "已核对约旦。现行文本写明废止1946年12月7日颁布的约旦宪法及其修正。1952年文本自己的生效日没有写在已打开的条文里。比较宪法项目年表把1946年和1952年记为新宪法。不把1946年文本一直列到今天，也不编1952年的生效日。"
+    },
+    {
+      "qids": ["Q2006542"],
+      "from": null,
+      "until": null,
+      "note": "已核对。这一天地图上是巴基斯坦自治领。1956年宪法的生效日本批没有打开。1973年宪法从1973年8月14日起才列入，并且只挂在巴基斯坦，不挂在自治领这一段。"
+    },
+    {
+      "qids": ["Q843"],
+      "from": "1956-03-23",
+      "until": "1973-08-14",
+      "note": "已核对。1973年宪法写明1973年8月14日生效，这一天还没到。1956年和1962年文本的生效日没有打开。"
+    },
+    {
+      "qids": ["Q902"],
+      "from": "1971-03-26",
+      "until": "1972-12-16",
+      "note": "已核对。1972年宪法写明1972年12月16日生效，这一天还没到。独立宣言写在附表里，不把它当成宪法的生效日。"
+    },
+    {
+      "qids": ["Q2670092", "Q854", "Q918153"],
+      "from": null,
+      "until": null,
+      "note": "已核对斯里兰卡。Constitute 页面标题是1978年宪法。已打开的文本没有写生效日。比较宪法项目年表把1972年和1978年记为新宪法。英属锡兰不套用后来的宪法。"
+    },
+    {
+      "qids": ["Q252"],
+      "from": null,
+      "until": null,
+      "note": "已核对印度尼西亚。Constitute 页面标题是1945年宪法，并标为1959年恢复、2002年修订。已打开的文本没有写1945年8月18日或1959年7月5日。比较宪法项目年表把1945、1949年记为新文本，把1950年记为临时文本，把1959年记为恢复。不列出标题。"
+    },
+    {
+      "qids": ["Q928"],
+      "from": null,
+      "until": null,
+      "note": "已核对菲律宾。1987年文本写明经为该目的举行的全民投票以多数批准后立即生效，并取代以前的全部宪法。投票日没有写在已打开的文本里。比较宪法项目年表把1973、1987年记为新宪法，把1986年记为临时文本。不列出标题。"
+    },
+    {
+      "qids": ["Q836"],
+      "from": null,
+      "until": null,
+      "note": "已核对缅甸。Constitute 页面标题是2008年宪法。已打开的文本没有写生效日。比较宪法项目年表把1962、1974、2008年记为新文本，把1988年记为中止。英属缅甸不套用后来的宪法。"
+    },
+    {
+      "qids": ["Q1479726"],
+      "from": "1948-02-01",
+      "until": "1957-08-31",
+      "note": "已核对。定义条款里的独立日是1957年8月31日，这一天还没到。1957年以前的安排本批没有另开文本。"
+    },
+    {
+      "qids": ["Q298"],
+      "from": null,
+      "until": null,
+      "note": "已核对智利。Constitute 有1925年文本和1980年文本（2021年修订本）。两份已打开的文本都没有把1925年9月18日或1981年3月11日写成生效日。比较宪法项目年表把1833、1925、1980年记为新宪法。不列出标题。"
+    },
+    {
+      "qids": ["Q739"],
+      "from": null,
+      "until": null,
+      "note": "已核对哥伦比亚。已打开的1991年文本把1991年7月4日写为特别委员会开会的日子，不是宪法生效日。比较宪法项目年表把1886年和1991年记为新宪法。不列出标题。"
+    },
+    {
+      "qids": ["Q419"],
+      "from": null,
+      "until": null,
+      "note": "已核对秘鲁。过渡条款写明：一经民主制宪国会通过，即按宪法性法律规定的公投结果生效；一经公布，即取代1979年宪法。公投和公布的日历日没有写在已打开的文本里。比较宪法项目年表把1933、1979、1993年记为新宪法。不列出标题。"
+    },
+    {
+      "qids": ["Q5848651"],
+      "from": null,
+      "until": null,
+      "note": "已核对。这一天地图上是委内瑞拉合众国。1999年宪法从1999年12月20日公布日起才列入，并且只挂在委内瑞拉。更早各部的生效日没有打开。"
+    },
+    {
+      "qids": ["Q717"],
+      "from": null,
+      "until": "1999-12-20",
+      "note": "已核对。1999年宪法文本写12月15日公投、12月20日公布。这一天还没到公布日。1961年文本的生效日没有打开。"
+    },
+    {
+      "qids": ["Q14905932"],
+      "from": null,
+      "until": null,
+      "note": "已核对。这一天地图上是古巴共和国。1940年宪法和1959年的安排，生效日本批没有打开。1976年2月24日的宪法只挂在后来的古巴政权上。"
+    },
+    {
+      "qids": ["Q241"],
+      "from": null,
+      "until": "1976-02-24",
+      "note": "已核对。1976年宪法由2019年文本标为1976年2月24日。这一天还没到。1959年到这一天之前的根本法，生效日没有打开。"
+    },
+    {
+      "qids": ["Q241"],
+      "from": "2019-02-24",
+      "until": null,
+      "note": "已核对。2019年文本写经认证后自官方公报公布之日起生效。公布日没有写在已打开的文本里。页首写公投日为2019年2月24日。本图从这一天起不再列1976年文本，也不把公投日写成2019年文本的生效日。"
+    },
+    {
+      "qids": ["Q600018", "Q940741", "Q16410"],
+      "from": null,
+      "until": null,
+      "note": "已核对匈牙利这一段。基本法写1949年第20号法律在2011年12月31日仍被引用，但1949年文本的生效条款没有打开，所以不把1949年8月20日写成生效日，也不在这些政权上列出标题。比较宪法项目年表把1919、1920、1946、1949年记为新文本。"
+    },
+    {
+      "qids": ["Q28"],
+      "from": "1989-10-23",
+      "until": "2012-01-01",
+      "note": "已核对。基本法写明2012年1月1日生效，这一天还没到。它同时写1949年第20号法律在2011年12月31日仍被引用。1949年文本没有打开，所以这一天不列出标题。"
+    },
+    {
+      "qids": ["Q33946"],
+      "from": null,
+      "until": null,
+      "note": "已核对捷克斯洛伐克。比较宪法项目年表把1918年记为临时文本，把1920、1948、1960年记为新宪法。生效日本批没有打开。1993年1月1日的捷克宪法只挂在捷克，不套回这一政权。"
+    },
+    {
+      "qids": ["Q203493", "Q2685298"],
+      "from": null,
+      "until": null,
+      "note": "已核对罗马尼亚这一段。1991年文本点名废止的是1965年8月21日宪法。1923、1938、1948、1952年文本的生效日本批没有打开。"
+    },
+    {
+      "qids": ["Q842794"],
+      "from": "1965-08-21",
+      "until": "1989-12-22",
+      "note": "已核对。1965年8月21日宪法从文本所标的这一天起列入。若这一天没有列出，只说明日期还没到。"
+    },
+    {
+      "qids": ["Q218"],
+      "from": "1991-01-01",
+      "until": null,
+      "note": "已核对。1991年文本写明经全民公投通过之日起生效，同日废止1965年8月21日宪法。公投日没有写在已打开的文本里。比较宪法项目年表把颁布年记为1991年。1991年1月1日起不把任何一天标成旧宪法仍在行，也不编一个新宪法的生效日。"
+    },
+    {
+      "qids": ["Q815731", "Q147909", "Q121932", "Q219"],
+      "from": null,
+      "until": null,
+      "note": "已核对保加利亚。1991年文本的过渡条款提到1971年5月18日通过的宪法。1991年文本自己的生效日没有写在已打开的段落里。比较宪法项目年表把1879、1947、1971、1991年记为新宪法。不列出标题。"
+    },
+    {
+      "qids": ["Q15102440", "Q191077", "Q83286", "Q838261", "Q37024"],
+      "from": null,
+      "until": null,
+      "note": "已核对南斯拉夫及其后的联盟。比较宪法项目年表把1921、1931、1946、1953、1963、1974、1992年记为新宪法，把1929年记为中止。生效日本批没有打开。不把后来的塞尔维亚宪法套到这些政权上。"
+    },
+    {
+      "qids": ["Q265824"],
+      "from": null,
+      "until": null,
+      "note": "已核对。这一天地图上是希腊第二共和国。1975年6月11日的宪法还没有，也不往回套用。1925、1926、1927年文本的生效日本批没有打开。"
+    },
+    {
+      "qids": ["Q41"],
+      "from": null,
+      "until": "1952-01-01",
+      "note": "已核对。1975年文本所称的1952年1月1日宪法从那一天起才列入。更早的1844、1864年文本本批没有打开。"
+    },
+    {
+      "qids": ["Q41"],
+      "from": "1968-01-01",
+      "until": "1975-06-11",
+      "note": "已核对。1952年文本从1968年1月1日起不再列入，因为年表把1968年记为新宪法的颁布年，日子没有打开。1975年宪法第120条写明1975年6月11日生效，这一天还没到。1968年和1974年的文本本批没有打开。"
+    },
+    {
+      "qids": ["Q45670", "Q167360", "Q824489"],
+      "from": null,
+      "until": null,
+      "note": "已核对葡萄牙这一段。1976年宪法写明1976年4月2日通过、4月25日生效，只挂在那一天以后的葡萄牙。1822、1826、1838、1911、1933年文本的生效日本批没有打开。年表把1926、1974年记为中止。"
+    },
+    {
+      "qids": ["Q45"],
+      "from": "1974-04-25",
+      "until": "1976-04-25",
+      "note": "已核对。1976年宪法第296条写明1976年4月25日生效，这一天还没到。1974年4月25日以后、生效日以前的安排，本批没有打开另一部根本法。"
+    },
+    {
+      "qids": ["Q35"],
+      "from": null,
+      "until": "1915-06-06",
+      "note": "已核对丹麦。1953年文本提到1849年6月5日以前已经存在的规则，并写明1915年6月6日的宪法。1849年和1866年文本本批没有打开，所以这一天不列出标题。1915年6月6日起才列1915年宪法。"
+    },
+    {
+      "qids": ["Q20"],
+      "from": null,
+      "until": "1905-10-25",
+      "note": "已核对。挪威王国宪法从地图点到挪威的1905年10月25日起列入。更早奥斯陆若点到瑞典或瑞典－挪威联盟，不套用这部宪法。文本没有写5月17日。"
+    },
+    {
+      "qids": ["Q33"],
+      "from": "1917-12-06",
+      "until": "1919-07-17",
+      "note": "已核对。2000年宪法把1919年7月17日的宪法列为后来废止的文件。这一天还没到7月17日，所以不列入。"
+    }
+  ]
+}
