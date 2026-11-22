@@ -2060,6 +2060,87 @@
           "sources": ["https://en.wikipedia.org/wiki/United_Nations_Buffer_Zone_in_Cyprus"]
         }
       ]
+    },
+    {
+      "id": "kafia_kingi",
+      "name_zh": "卡菲亚金吉",
+      "geom": null,
+      "precision_zh": "没有这块飞地的轮廓。不用南达尔富尔或西加扎勒河整州代替。不画。阿卜耶伊是另一块，不并进来。",
+      "statements": [
+        {
+          "role": "control",
+          "from": "1956-01-01",
+          "party": {"zh": "苏丹"},
+          "text": "苏丹实际行政这块与中非共和国交界的地方。1960 年有把它从加扎勒河改划到达尔富尔的记载，法令日没有核到，不写成 1 月 1 日。2011-07-09 南苏丹独立没有改变这里的实际行政。不画。",
+          "sources": ["https://en.wikipedia.org/wiki/Kafia_Kingi"]
+        },
+        {
+          "role": "claim",
+          "from": "2005-01-09",
+          "party": {"zh": "苏丹人民解放运动"},
+          "text": "2005-01-09 的全面和平协议把边界写成 1956-01-01 的省界。南方据此主张卡菲亚金吉属于加扎勒河一侧。这是声索，不是已经移交。",
+          "sources": [
+            "https://en.wikipedia.org/wiki/Kafia_Kingi",
+            "https://en.wikipedia.org/wiki/Comprehensive_Peace_Agreement"
+          ]
+        },
+        {
+          "role": "claim",
+          "from": "2011-07-09",
+          "party": {"zh": "南苏丹"},
+          "text": "2011-07-09 起由南苏丹继承这项按 1956 年省界的声索。苏丹仍主张按后来的行政归属。两边都没有划定的线可画。",
+          "sources": ["https://en.wikipedia.org/wiki/Kafia_Kingi"]
+        },
+        {
+          "role": "recognition",
+          "from": "2005-01-09",
+          "text": "协议没有把卡菲亚金吉单独判给任何一方，也没有公投或国际法院判决。国际承认的两国边界在这里仍未划定，标待考。",
+          "sources": ["https://en.wikipedia.org/wiki/Kafia_Kingi"]
+        }
+      ]
+    },
+    {
+      "id": "ilemi",
+      "name_zh": "伊勒米三角",
+      "geom": null,
+      "precision_zh": "1914 年巡逻线、后来的红线和肯尼亚实际巡逻的范围不是同一条。没有公有领域轮廓。不画。",
+      "statements": [
+        {
+          "role": "control",
+          "from": "1963-12-12",
+          "party": {"zh": "肯尼亚"},
+          "text": "1963-12-12 肯尼亚独立后继续在三角区一侧实际行政。殖民时期的巡逻线更早，具体走到哪一条没有收进几何。不画。",
+          "sources": ["https://en.wikipedia.org/wiki/Ilemi_Triangle"]
+        },
+        {
+          "role": "claim",
+          "from": "1956-01-01",
+          "until": "2011-07-09",
+          "party": {"zh": "苏丹"},
+          "text": "苏丹主张三角区。它和肯尼亚实际行政的范围不是同一条线。不画。",
+          "sources": ["https://en.wikipedia.org/wiki/Ilemi_Triangle"]
+        },
+        {
+          "role": "claim",
+          "from": "2011-07-09",
+          "party": {"zh": "南苏丹"},
+          "text": "2011-07-09 以后常把苏丹的主张写成改由南苏丹提出。是否自动继承，本层没有核到一份双方文件，标待考。肯尼亚的实际行政不因此改变。",
+          "sources": ["https://en.wikipedia.org/wiki/Ilemi_Triangle"]
+        },
+        {
+          "role": "claim",
+          "from": "1963-12-12",
+          "party": {"zh": "肯尼亚"},
+          "text": "肯尼亚把实际行政的一侧视为自己的范围。这和苏丹或南苏丹的声索不是同一条线。",
+          "sources": ["https://en.wikipedia.org/wiki/Ilemi_Triangle"]
+        },
+        {
+          "role": "recognition",
+          "from": "1963-12-12",
+          "text": "没有条约或联合国决议把伊勒米三角判给肯尼亚、苏丹或南苏丹。埃塞俄比亚是否仍对整片提出声索，没有核到现行官方文件，标待考，不写成已经放弃。",
+          "sources": ["https://en.wikipedia.org/wiki/Ilemi_Triangle"]
+        }
+      ]
     }
   ]
 }
