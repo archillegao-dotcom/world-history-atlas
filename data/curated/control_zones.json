@@ -3796,7 +3796,6 @@
      "mcgd:s1048",
      "mcgd:s1049",
      "mcgd:s1052",
-     "mcgd:s1053",
      "mcgd:s1055",
      "mcgd:s1057",
      "mcgd:s1064",
@@ -4058,8 +4057,6 @@
      "mcgd:s786",
      "mcgd:s787",
      "mcgd:s788",
-     "mcgd:s795",
-     "mcgd:s796",
      "mcgd:s797",
      "mcgd:s798",
      "mcgd:s799",
@@ -4107,7 +4104,6 @@
      "mcgd:s1048",
      "mcgd:s1049",
      "mcgd:s1052",
-     "mcgd:s1053",
      "mcgd:s1055",
      "mcgd:s1057",
      "mcgd:s1064",
@@ -4133,6 +4129,7 @@
      "mcgd:s1233",
      "mcgd:s1235",
      "mcgd:s1239",
+     "mcgd:s1241",
      "mcgd:s1243",
      "mcgd:s1245",
      "mcgd:s1247",
@@ -4369,8 +4366,6 @@
      "mcgd:s786",
      "mcgd:s787",
      "mcgd:s788",
-     "mcgd:s795",
-     "mcgd:s796",
      "mcgd:s797",
      "mcgd:s798",
      "mcgd:s799",
@@ -12372,7 +12367,7 @@
    ]
   },
   {
-   "id": "sjw_cell_mcgd:s1241_1938-02-04_福山",
+   "id": "sjw_cell_mcgd:s1241_1937-11-19_福山",
    "group": "sino_japanese_war",
    "kind": "occupied",
    "as_polity": true,
@@ -12382,18 +12377,18 @@
     "qid": "Q188712",
     "zh": "日军占领区"
    },
-   "from": "1938-02-04",
-   "until": "1938-06-06",
+   "from": "1937-11-19",
+   "until": "1937-12-14",
    "geometry": {
     "roc_counties": [
      "mcgd:s1241"
     ]
    },
    "approx": true,
-   "note": "福山县域。已核對《中華民國史事紀要》民國27年1–6月，印页一五一（PDF 第158页），页眉二月四日，四日这一条写本日分陷烟台和蒙阴。烟台用1931年福山治所。收到下一块。大致。县域为治所泰森多边形近似。",
-   "dates_note": "福山 1938-02-04 起，收到 1938-06-06。已核對印页一五一。",
+   "note": "福山县域。已核對《中華民國史事紀要》民國26年7–12月，印页六六八（PDF 第676页），页眉十一月十九日，十九日这一条写本日烟台为日军占领，守军向西撤退。烟台用1931年福山治所。民国二十七年一月至六月印页一五一（PDF 第158页）又写二月四日本日分陷烟台和蒙阴。史事纪要内记载不一。地图用较早且写本日的十一月十九日。蒙阴仍用二月四日。收到下一块。大致。县域为治所泰森多边形近似。",
+   "dates_note": "福山 1937-11-19 起，收到 1937-12-14。已核對印页六六八。",
    "sources": [
-    "https://www.drnh.gov.tw/p/404-1003-13313.php?Lang=zh-tw",
+    "https://www.drnh.gov.tw/p/404-1003-13312.php?Lang=zh-tw",
     "https://zenodo.org/records/5721459"
    ]
   },
@@ -12617,15 +12612,15 @@
     "zh": "日军占领区"
    },
    "from": "1938-02-17",
-   "until": "1938-06-06",
+   "until": "1938-03-03",
    "geometry": {
     "roc_counties": [
      "mcgd:s66"
     ]
    },
    "approx": true,
-   "note": "新乡县域。已核對《中華民國史事紀要》民國27年1–6月，印页二一二（PDF 第219页），页眉二月二十七日，追述十七日新乡陷落。辉县同页没有单独锁到一天，不画。修武、博爱、沁阳、济源写十九日至二十二日相继不守，没有锁成一天，不画。收到下一块。大致。县域为治所泰森多边形近似。",
-   "dates_note": "新乡 1938-02-17 起，收到 1938-06-06。已核對印页二一二。",
+   "note": "新乡县域。已核對《中華民國史事紀要》民國27年1–6月，印页二一二（PDF 第219页），页眉二月二十七日，追述十七日新乡陷落。印页二三三（PDF 第239页），页眉三月三日，写本日收复卫辉、新乡。收到三月三日。卫辉没有单独的失陷日，不另画。辉县没有锁到一天。修武、博爱、沁阳、济源写十九日至二十二日，不画。收到下一块。大致。县域为治所泰森多边形近似。",
+   "dates_note": "新乡 1938-02-17 起，收到 1938-03-03。已核對印页二一二。",
    "sources": [
     "https://www.drnh.gov.tw/p/404-1003-13313.php?Lang=zh-tw",
     "https://zenodo.org/records/5721459"
@@ -12860,6 +12855,110 @@
    "approx": true,
    "note": "彭泽县域。已核對《中華民國史事紀要》民國27年1–6月，印页六〇二（PDF 第606页），页眉六月二十九日，二十九日这一条写本日彭泽失守。马当是要塞，不另画。收到下一块。大致。县域为治所泰森多边形近似。",
    "dates_note": "彭泽 1938-06-29 起，收到 1939-03-27。已核對印页六〇二。",
+   "sources": [
+    "https://www.drnh.gov.tw/p/404-1003-13313.php?Lang=zh-tw",
+    "https://zenodo.org/records/5721459"
+   ]
+  },
+  {
+   "id": "sjw_cell_mcgd:s1053_1938-02-17_汾阳",
+   "group": "sino_japanese_war",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "日军占领区（汾阳）",
+   "name_en": "日军占领区（汾阳）",
+   "controller": {
+    "qid": "Q188712",
+    "zh": "日军占领区"
+   },
+   "from": "1938-02-17",
+   "until": "1938-06-06",
+   "geometry": {
+    "roc_counties": [
+     "mcgd:s1053"
+    ]
+   },
+   "approx": true,
+   "note": "汾阳县域。已核對《中華民國史事紀要》民國27年1–6月，印页二一三（PDF 第220页），页眉二月二十八日，追述十七日陷汾阳。碛口镇、军渡不是县。收到下一块。大致。县域为治所泰森多边形近似。",
+   "dates_note": "汾阳 1938-02-17 起，收到 1938-06-06。已核對印页二一三。",
+   "sources": [
+    "https://www.drnh.gov.tw/p/404-1003-13313.php?Lang=zh-tw",
+    "https://zenodo.org/records/5721459"
+   ]
+  },
+  {
+   "id": "sjw_cell_mcgd:s795_1938-02-24_中阳",
+   "group": "sino_japanese_war",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "日军占领区（中阳）",
+   "name_en": "日军占领区（中阳）",
+   "controller": {
+    "qid": "Q188712",
+    "zh": "日军占领区"
+   },
+   "from": "1938-02-24",
+   "until": "1938-06-06",
+   "geometry": {
+    "roc_counties": [
+     "mcgd:s795"
+    ]
+   },
+   "approx": true,
+   "note": "中阳县域。已核對《中華民國史事紀要》民國27年1–6月，印页二一三（PDF 第220页），页眉二月二十八日，追述二十四日陷中阳。收到下一块。大致。县域为治所泰森多边形近似。",
+   "dates_note": "中阳 1938-02-24 起，收到 1938-06-06。已核對印页二一三。",
+   "sources": [
+    "https://www.drnh.gov.tw/p/404-1003-13313.php?Lang=zh-tw",
+    "https://zenodo.org/records/5721459"
+   ]
+  },
+  {
+   "id": "sjw_cell_mcgd:s796_1938-02-26_离石",
+   "group": "sino_japanese_war",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "日军占领区（离石）",
+   "name_en": "日军占领区（离石）",
+   "controller": {
+    "qid": "Q188712",
+    "zh": "日军占领区"
+   },
+   "from": "1938-02-26",
+   "until": "1938-06-06",
+   "geometry": {
+    "roc_counties": [
+     "mcgd:s796"
+    ]
+   },
+   "approx": true,
+   "note": "离石县域。已核對《中華民國史事紀要》民國27年1–6月，印页二一三（PDF 第220页），页眉二月二十八日，追述二十六日再陷离石。收到下一块。大致。县域为治所泰森多边形近似。",
+   "dates_note": "离石 1938-02-26 起，收到 1938-06-06。已核對印页二一三。",
+   "sources": [
+    "https://www.drnh.gov.tw/p/404-1003-13313.php?Lang=zh-tw",
+    "https://zenodo.org/records/5721459"
+   ]
+  },
+  {
+   "id": "sjw_cell_mcgd:s1141_1938-05-07_阜宁",
+   "group": "sino_japanese_war",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "中华民国维新政府（阜宁）",
+   "name_en": "中华民国维新政府（阜宁）",
+   "controller": {
+    "qid": "Q708865",
+    "zh": "中华民国维新政府"
+   },
+   "from": "1938-05-07",
+   "until": "1938-06-06",
+   "geometry": {
+    "roc_counties": [
+     "mcgd:s1141"
+    ]
+   },
+   "approx": true,
+   "note": "阜宁县域。已核對《中華民國史事紀要》民國27年1–6月，印页四四八（PDF 第452页），页眉五月七日，七日这一条写至本日陷阜宁。四月二十四日是由东台北窜，不把东台写成同日陷落。收到下一块。大致。县域为治所泰森多边形近似。",
+   "dates_note": "阜宁 1938-05-07 起，收到 1938-06-06。已核對印页四四八。",
    "sources": [
     "https://www.drnh.gov.tw/p/404-1003-13313.php?Lang=zh-tw",
     "https://zenodo.org/records/5721459"
