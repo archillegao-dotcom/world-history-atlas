@@ -41,7 +41,8 @@ def point_note(date, lat, lon) -> str | None:
     if _in(_LHASA, lat, lon) and _on(date, "1912-01-01", "1912-12-31"):
         return ("已知缺陷：1912年点选拉萨仍落到中华民国，是底图还没有单独几何，不是已经核实这一年由中华民国统治。"
                 "1913年1月1日才被数据集单列。那个日期不是成立日，也不是划定的边界，更不是史实确证的易手日。"
-                "本批不把后来的轮廓回贴到1912年，也不把这个缺陷写成已经修好。")
+                "本批不把后来的轮廓回贴到1912年，也不把这个缺陷写成已经修好。"
+                "川军撤出拉萨的日子待考，不把1913年1月1日写成撤军日，也不画这一年的县界。")
     if _in(_LHASA, lat, lon) and date.key() >= HDate(1959, 3, 28).key():
         return ("1959年3月28日国务院命令写「自即日起」解散西藏地方政府，由西藏自治区筹备委员会行使西藏地方政府职权。"
                 "地图这一天回到中国多边形，只表示命令里的政权废除和管理标识，不是该日全境战线已经测过，也不是每一点的实控确证。"
@@ -78,6 +79,79 @@ def point_note(date, lat, lon) -> str | None:
 
 def _between(date, a, b):
     return _on(date, a, b)
+
+
+# 班禅额尔德尼。职务和拉萨掌政分开。扎什伦布辖境没有可画的历史线，不画。
+_SRC_PANCHEN_9 = "https://case.edu/artsci/tibet/sites/default/files/2022-06/Religious%20Conflict%20in%20the%20Traditional%20Tibetan%20State.pdf"
+_SRC_PANCHEN_9B = "https://publications.efeo.fr/en/livres/802_the-ninth-panchen-lama-1883-1937"
+_SRC_PANCHEN_DEATH = "https://il.china-embassy.gov.cn/eng/zt/xzwt/200409/t20040921_2354383.htm"
+_SRC_PANCHEN_10 = "https://en.wikipedia.org/wiki/Choekyi_Gyaltsen,_10th_Panchen_Lama"
+_SRC_PANCHEN_10B = "http://eng.tibet.cn/eng/index/xzgs/201901/t20190128_6491804.html"
+
+
+def _panchen_rows(date) -> list[dict]:
+    rows = []
+    common = "扎什伦布的辖境待考，不画。这个职务不是拉萨的掌政。"
+    if _between(date, "1913-01-01", "1923-12-21"):
+        rows.append({"role": "班禅额尔德尼（在寺）", "tag": "在寺", "power": False,
+                     "name": "九世班禅额尔德尼土登曲吉尼玛",
+                     "span": "本图从1913年1月1日列到1923年12月21日",
+                     "note": "人在扎什伦布。离寺日有1923年12月22日夜和12月26日两种记载，这一天还在前一种记载之前。" + common,
+                     "src": _SRC_PANCHEN_9 + " " + _SRC_PANCHEN_9B})
+    elif _between(date, "1923-12-22", "1923-12-26"):
+        rows.append({"role": "班禅额尔德尼", "tag": "离寺日待考", "power": False, "uncertain": True,
+                     "name": "九世班禅额尔德尼土登曲吉尼玛",
+                     "span": "1923年12月22日至12月26日",
+                     "note": "离寺日待考。一种记载写12月22日夜离开，另一种写12月26日的令文。这一天不能确定人是否已经离寺。这是同一人的日期冲突，不是两位班禅。" + common,
+                     "src": _SRC_PANCHEN_9B + " " + _SRC_PANCHEN_9})
+    elif _between(date, "1923-12-27", "1937-12-01"):
+        note = "12月26日以后，两种记载都是人已经离寺。1937年12月1日死于玉树结古。人在内地，不是拉萨的实控。"
+        if _between(date, "1924-02-01", "1924-02-29"):
+            note += "扎什伦布寺产的管理员在1924年2月就任，日待考。卸任日也待考，不把他列成一直在任。"
+        elif date.key() >= HDate(1924, 3, 1).key():
+            note += "1924年2月以后按月份记载，噶厦已派德康堪钦罗桑丹增管理寺产。卸任日待考，不单列成在任者。"
+        note += common
+        rows.append({"role": "班禅额尔德尼（离藏）", "tag": "离藏", "power": False,
+                     "name": "九世班禅额尔德尼土登曲吉尼玛",
+                     "span": "1923年12月27日至1937年12月1日",
+                     "note": note, "src": _SRC_PANCHEN_9 + " " + _SRC_PANCHEN_DEATH + " " + _SRC_PANCHEN_9B})
+    elif _between(date, "1937-12-02", "1949-06-01"):
+        rows.append({"role": "班禅额尔德尼", "tag": "转世未定", "power": False,
+                     "name": "未记录",
+                     "span": "1937年12月2日至1949年6月1日",
+                     "note": "九世于1937年12月1日去世。转世有拉萨方面和九世随从各自的候选人，不写成已经坐床。" + common,
+                     "src": _SRC_PANCHEN_DEATH + " " + _SRC_PANCHEN_10})
+    elif _between(date, "1949-06-02", "1949-06-03"):
+        rows.append({"role": "班禅额尔德尼", "tag": "认定日待考", "power": False, "uncertain": True,
+                     "name": "十世班禅额尔德尼确吉坚赞",
+                     "span": "1949年6月2日至6月3日",
+                     "note": "认定令的日期有6月2日和6月3日两种记载。这一天不能确定令文是否已经发出。坐床日另有6月11日和8月10日两种记载，地点都写成塔尔寺，不是扎什伦布。人不在拉萨。" + common,
+                     "src": _SRC_PANCHEN_DEATH + " " + _SRC_PANCHEN_10 + " " + _SRC_PANCHEN_10B})
+    elif _between(date, "1949-06-04", "1959-03-27"):
+        rows.append({"role": "班禅额尔德尼（认定，人在青海）", "tag": "人在青海", "power": False,
+                     "name": "十世班禅额尔德尼确吉坚赞",
+                     "span": "1949年6月4日起，坐床日仍待考",
+                     "note": "6月2日与6月3日两种记载，到这一天认定都已经发出。坐床日仍待考，不写成6月4日已经坐床。人在青海。" + common,
+                     "src": _SRC_PANCHEN_DEATH + " " + _SRC_PANCHEN_10 + " " + _SRC_PANCHEN_10B})
+    return rows
+
+
+def frontier_note(date) -> str:
+    """邻区分界只写有没有线。没有历史几何的不画，也不用今天的行政区代替。"""
+    parts = [
+        "与邻区的分界：底图轮廓是数据集的线，精度大致，不是实测县界。",
+        "川边、西康的省界是另一套图，不拿来当东界。东界待考，不画。",
+        "青海马家与这块的停战线待考，不画。玉树结古不写成拉萨的实控。",
+        "英属印度一侧：1914年7月3日的麦克马洪线是声索文本，不是实控线，本图不画。藏南、阿克赛钦只在样本点按日期写。",
+    ]
+    if date.key() < HDate(1914, 7, 3).key():
+        parts.append("这一天还没有1914年7月3日的那份文本。不把后来的声索回写。")
+    elif date.key() < HDate(1918, 1, 1).key():
+        parts.append("1918年康区停战的日子和县界都待考，不把1918年1月1日写成停战日，也不画线。")
+    else:
+        parts.append("1918年以后昌都一带有派官的记载，县界仍待考。1950年10月的战事不回写成更早的实控。")
+    parts.append("https://en.wikipedia.org/wiki/Simla_Convention https://zh.wikipedia.org/wiki/西康省 https://zh.wikipedia.org/wiki/马家军")
+    return "".join(parts)
 
 
 def offices_at(date) -> list[dict]:
@@ -121,6 +195,7 @@ def offices_at(date) -> list[dict]:
                      "span": "1950年11月17日起",
                      "note": "亲政日来自达赖喇嘛办公室年表。1950年12月16日离开拉萨前往亚东，1951年8月17日回到拉萨，职务没有因此中断。1951年8月9日以后，旧轮廓不再写成全境仍由他实地控制；那不是说这块无人统治。",
                      "src": "https://www.dalailama.com/the-dalai-lama/events-and-awards/chronology-of-events"})
+    rows.extend(_panchen_rows(date))
     return rows
 
 
@@ -132,7 +207,8 @@ _FLAG = ("雪山狮子旗的启用日待考。不把没有日期的文件写成1
 
 def _phase_note(date, zone) -> str:
     base = ("名称用甘丹颇章，不用现代国家的职务填空。通过、坐床、亲政、去世分开写。"
-            "边界是 CShapes 的大致轮廓，精度只表示数据集有一条线，不是实测，也不是历史省界。")
+            "边界是 CShapes 的大致轮廓，精度只表示数据集有一条线，不是实测，也不是历史省界。"
+            + frontier_note(date))
     if zone == ZONE_GAP or (zone != ZONE_RESTORE and date.key() >= HDate(1951, 8, 9).key() and date.key() < HDate(1959, 3, 28).key()):
         return (base + GAP_NOTE +
                 "协议1951年5月23日签署，第4条写现行政治制度不予变更，第17条写签字盖章后立即生效，那是法律文本，不是拉萨进驻。"
@@ -252,6 +328,6 @@ def finish_leaders(out: dict, polity, date, params) -> dict:
         else:
             out["state"]["name"] = "甘丹颇章"
     prev = (out.get("note") or "").replace("这一日期没有找到带时间的任职记录。", "")
-    out["note"] = ("职务只列本批核对过的达赖喇嘛和摄政。没有核对到的噶伦、代本写未记录，不借用中华民国或中华人民共和国的职位来填。"
+    out["note"] = ("职务只列本批核对过的达赖喇嘛、班禅额尔德尼和摄政。没有核对到的噶伦、代本写未记录，不借用中华民国或中华人民共和国的职位来填。"
                    + prev)
     return out
