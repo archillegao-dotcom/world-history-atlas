@@ -693,34 +693,61 @@ def main():
     upu["sources"] = sources
 
     itu = by_id["itu"]
-    if not any(m.get("from") == "2011-10-03" and "南苏丹" in (m.get("name") or "") for m in itu.get("members") or []):
-        itu.setdefault("members", []).append({
+    extra_itu = [
+        {
             "name": "南苏丹",
             "from": "2011-10-03",
             "track": "dated",
             "hide_before": True,
             "role": "成员国",
             "note": "国际电信联盟全权代表大会页面写：最近加入的会员是南苏丹，2011年10月3日加入。没有另写退出或暂停。",
-        })
+        },
+        {
+            "name": "Kyrgyz Republic",
+            "from": "1994-01-20",
+            "track": "dated",
+            "hide_before": True,
+            "role": "成员国",
+            "note": "1994年活动报告写：吉尔吉斯共和国于1994年1月20日交存《内罗毕公约》加入书后成为会员。退出、暂停无记录。",
+        },
+        {
+            "name": "Republic of Tajikistan",
+            "from": "1994-04-28",
+            "track": "dated",
+            "hide_before": True,
+            "role": "成员国",
+            "note": "1994年活动报告写：塔吉克斯坦共和国于1994年4月28日交存《内罗毕公约》加入书后成为会员。退出、暂停无记录。",
+        },
+    ]
+    have_from = {m.get("from") for m in itu.get("members") or []}
+    for row in extra_itu:
+        if row["from"] not in have_from:
+            itu.setdefault("members", []).append(row)
     itu["incomplete"] = True
-    itu_link = link_polities(itu.get("members") or [], lambda m: m.get("name") == "南苏丹")
+    itu_link = link_polities(
+        itu.get("members") or [],
+        lambda m: m.get("from") in {"2011-10-03", "1994-01-20", "1994-04-28"},
+    )
     itu["list_note"] = (
-        "名单不完整。20个签署方仍是签署方，后来的会籍未核。"
-        "会员页没有逐国加入日。1992年组织法的批准、接受或加入日不是会籍开始日，不拿来补名单。"
+        "名单不完整。20个签署方仍是签署方，后来的会籍未核，编号是1865年5月17日当时的政权。"
+        "1994年活动报告只写了两个新会员的加入日：吉尔吉斯1994-01-20，塔吉克斯坦1994-04-28。"
         "南苏丹按全权代表大会页面写入2011年10月3日。"
-        "会员页、会员地位页和文书范本都没有逐国加入日。1992年组织法的批准日不是加入日，不拿来当会籍开始。"
-        "其余加入、退出、暂停、继承：无记录。"
-        f"南苏丹挂上编号{itu_link['linked']}行，对不上则不挂。"
+        "会员页和1992年组织法的批准日都不是加入日，其余加入、退出、暂停、继承无记录。"
+        f"这三行里挂上编号{itu_link['linked']}行，对不上的不挂。"
     )
     itu["summary"] = (
         "1865年5月17日，20个国家在巴黎签署国际电报公约，成立万国电报联盟。"
-        "1932年马德里会议另订国际电信公约。那份公约哪一天生效，这一批没有打开批准记录，所以名称仍用万国电报联盟。"
-        "南苏丹于2011年10月3日加入。除此之外，后来的加入、退出、暂停和继承没有逐条的官方日子，不编。"
+        "1932年马德里会议另订国际电信公约。改名生效日没有写到日，名称仍用万国电报联盟。"
+        "1994年活动报告写吉尔吉斯1月20日、塔吉克斯坦4月28日成为会员。南苏丹2011年10月3日加入。"
+        "其余后来的加入、退出、暂停和继承没有逐条的官方日子，不编。"
     )
     itu_sources = list(itu.get("sources") or [])
-    itu_url = "https://www.itu.int/web/pp-18/en/article/itus-evolving-membership"
-    if itu_url not in {s["url"] for s in itu_sources}:
-        itu_sources.append({"label": "国际电信联盟：南苏丹2011年10月3日加入", "url": itu_url})
+    for label, url in (
+        ("国际电信联盟：南苏丹2011年10月3日加入", "https://www.itu.int/web/pp-18/en/article/itus-evolving-membership"),
+        ("1994年活动报告：吉尔吉斯和塔吉克斯坦的加入日", "https://search.itu.int/history/HistoryDigitalCollectionDocLibrary/2.145.62.en.100.pdf"),
+    ):
+        if url not in {s["url"] for s in itu_sources}:
+            itu_sources.append({"label": label, "url": url})
     itu["sources"] = itu_sources
 
     early_stats = {}
