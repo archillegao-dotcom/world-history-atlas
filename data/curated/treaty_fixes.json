@@ -3346,5 +3346,541 @@
       "https://www.imo.org/en/about/conventions/pages/colreg.aspx",
       "https://treaties.un.org/pages/showDetails.aspx?objid=08000002800fcf87"
     ]
+  },
+  "Q3544307": {
+    "batch": "2026-11-22-f",
+    "adopted": {
+      "y": 1951,
+      "m": 6,
+      "d": 29,
+      "p": 11
+    },
+    "effective": {
+      "y": 1953,
+      "m": 5,
+      "d": 23,
+      "p": 11
+    },
+    "status": "signed_then_effective",
+    "note": "同工同酬公约。1951-06-29通过，1953-05-23生效。名单不补。",
+    "sources": [
+      "https://treaties.un.org/pages/showDetails.aspx?objid=080000028014f5a2"
+    ]
+  },
+  "Q664756": {
+    "batch": "2026-11-22-f",
+    "adopted": {
+      "y": 1958,
+      "m": 6,
+      "d": 25,
+      "p": 11
+    },
+    "effective": {
+      "y": 1960,
+      "m": 6,
+      "d": 15,
+      "p": 11
+    },
+    "status": "signed_then_effective",
+    "note": "消除就业和职业歧视公约。1958-06-25通过，1960-06-15生效。名单不补。",
+    "sources": [
+      "https://treaties.un.org/pages/showDetails.aspx?objid=080000028013b03f"
+    ]
+  },
+  "Q5500710": {
+    "batch": "2026-11-22-f",
+    "adopted": {
+      "y": 1948,
+      "m": 7,
+      "d": 9,
+      "p": 11
+    },
+    "effective": {
+      "y": 1950,
+      "m": 7,
+      "d": 4,
+      "p": 11
+    },
+    "status": "signed_then_effective",
+    "note": "结社自由及组织权公约。1948-07-09通过，1950-07-04生效。名单不补。",
+    "sources": [
+      "https://treaties.un.org/pages/showDetails.aspx?objid=080000028015a947"
+    ]
+  },
+  "Q331499": {
+    "batch": "2026-11-22-f",
+    "adopted": {
+      "y": 1988,
+      "m": 12,
+      "d": 19,
+      "p": 11
+    },
+    "effective": {
+      "y": 1990,
+      "m": 11,
+      "d": 11,
+      "p": 11
+    },
+    "status": "signed_then_effective",
+    "note": "禁止非法贩运麻醉药品和精神药物公约。1988-12-19通过，1988-12-20开放签署，1990-11-11生效。名单不补。",
+    "sources": [
+      "https://treaties.un.org/Pages/showDetails.aspx?objid=0800000280007fbf"
+    ],
+    "signed": {
+      "y": 1988,
+      "m": 12,
+      "d": 20,
+      "p": 11
+    }
+  },
+  "Q5166243": {
+    "batch": "2026-11-22-f",
+    "adopted": {
+      "y": 1954,
+      "m": 9,
+      "d": 28,
+      "p": 11
+    },
+    "effective": {
+      "y": 1960,
+      "m": 6,
+      "d": 6,
+      "p": 11
+    },
+    "status": "signed_then_effective",
+    "note": "无国籍人地位公约。1954-09-28通过并开放签署，1960-06-06生效。名单不补。",
+    "sources": [
+      "https://treaties.un.org/pages/showDetails.aspx?objid=0800000280032b94"
+    ],
+    "signed": {
+      "y": 1954,
+      "m": 9,
+      "d": 28,
+      "p": 11
+    }
+  },
+  "Q3445362": {
+    "batch": "2026-11-22-f",
+    "adopted": {
+      "y": 2000,
+      "m": 5,
+      "d": 25,
+      "p": 11
+    },
+    "effective": {
+      "y": 2002,
+      "m": 2,
+      "d": 12,
+      "p": 11
+    },
+    "status": "signed_then_effective",
+    "note": "儿童卷入武装冲突任择议定书。2000-05-25通过，2002-02-12生效。名单不补。",
+    "sources": [
+      "https://treaties.un.org/pages/ViewDetails.aspx?chapter=4&clang=_en&mtdsg_no=IV-11-b&src=TREATY"
+    ]
+  },
+  "Q2009498": {
+    "batch": "2026-11-22-f",
+    "adopted": {
+      "y": 1958,
+      "m": 4,
+      "d": 29,
+      "p": 11
+    },
+    "effective": {
+      "y": 1962,
+      "m": 9,
+      "d": 30,
+      "p": 11
+    },
+    "status": "signed_then_effective",
+    "note": "公海公约。1958-04-29订于日内瓦，1962-09-30生效。名单不补。",
+    "sources": [
+      "https://treaties.un.org/Pages/showDetails.aspx?objid=080000028003327e"
+    ],
+    "signed": {
+      "y": 1958,
+      "m": 4,
+      "d": 29,
+      "p": 11
+    }
+  },
+  "Q15991239": {
+    "batch": "2026-11-22-f",
+    "adopted": {
+      "y": 1970,
+      "m": 12,
+      "d": 16,
+      "p": 11
+    },
+    "effective": {
+      "y": 1971,
+      "m": 10,
+      "d": 14,
+      "p": 11
+    },
+    "status": "signed_then_effective",
+    "note": "制止非法劫持航空器公约。1970-12-16订于海牙，1971-10-14生效。名单不补。",
+    "sources": [
+      "https://www.un.org/en/ga/sixth/63/Terrorism_Table_63rd.pdf"
+    ],
+    "signed": {
+      "y": 1970,
+      "m": 12,
+      "d": 16,
+      "p": 11
+    }
+  },
+  "Q2996322": {
+    "batch": "2026-11-22-f",
+    "adopted": {
+      "y": 1997,
+      "m": 12,
+      "d": 15,
+      "p": 11
+    },
+    "effective": {
+      "y": 2001,
+      "m": 5,
+      "d": 23,
+      "p": 11
+    },
+    "status": "signed_then_effective",
+    "note": "制止恐怖主义爆炸公约。1997-12-15通过，1998-01-12开放签署，2001-05-23生效。名单不补。",
+    "sources": [
+      "https://treaties.un.org/Pages/ViewDetails.aspx?chapter=18&clang=_en&mtdsg_no=XVIII-9&src=TREATY"
+    ],
+    "signed": {
+      "y": 1998,
+      "m": 1,
+      "d": 12,
+      "p": 11
+    }
+  },
+  "Q2622307": {
+    "batch": "2026-11-22-f",
+    "adopted": {
+      "y": 1993,
+      "m": 5,
+      "d": 29,
+      "p": 11
+    },
+    "effective": {
+      "y": 1995,
+      "m": 5,
+      "d": 1,
+      "p": 11
+    },
+    "status": "signed_then_effective",
+    "note": "跨国收养方面保护儿童及合作公约。1993-05-29订于海牙，1995-05-01生效。名单不补。",
+    "sources": [
+      "https://treaties.un.org/Pages/showDetails.aspx?clang=_en&objid=08000002800ac2f9"
+    ],
+    "signed": {
+      "y": 1993,
+      "m": 5,
+      "d": 29,
+      "p": 11
+    }
+  },
+  "Q1783465": {
+    "batch": "2026-11-22-f",
+    "adopted": {
+      "y": 2001,
+      "m": 11,
+      "d": 2,
+      "p": 11
+    },
+    "effective": {
+      "y": 2009,
+      "m": 1,
+      "d": 2,
+      "p": 11
+    },
+    "status": "signed_then_effective",
+    "note": "水下文化遗产保护公约。2001-11-02在巴黎通过，2009-01-02生效。名单不补。",
+    "sources": [
+      "https://www.unesco.org/en/legal-affairs/convention-protection-underwater-cultural-heritage"
+    ]
+  },
+  "Q331611": {
+    "batch": "2026-11-22-f",
+    "adopted": {
+      "y": 1979,
+      "m": 11,
+      "d": 13,
+      "p": 11
+    },
+    "effective": {
+      "y": 1983,
+      "m": 3,
+      "d": 16,
+      "p": 11
+    },
+    "status": "signed_then_effective",
+    "note": "远距离越境空气污染公约。1979-11-13订于日内瓦，1983-03-16生效。名单不补。",
+    "sources": [
+      "https://treaties.un.org/Pages/ViewDetails.aspx?chapter=27&clang=_en&mtdsg_no=XXVII-1&src=TREATY"
+    ],
+    "signed": {
+      "y": 1979,
+      "m": 11,
+      "d": 13,
+      "p": 11
+    }
+  },
+  "Q7099020": {
+    "batch": "2026-11-22-f",
+    "adopted": {
+      "y": 2000,
+      "m": 5,
+      "d": 25,
+      "p": 11
+    },
+    "effective": {
+      "y": 2002,
+      "m": 1,
+      "d": 18,
+      "p": 11
+    },
+    "status": "signed_then_effective",
+    "note": "买卖儿童、儿童卖淫和儿童色情制品任择议定书。2000-05-25通过，2002-01-18生效。名单不补。",
+    "sources": [
+      "https://treaties.un.org/Pages/ViewDetails.aspx?chapter=4&clang=_en&mtdsg_no=IV-11-c&src=TREATY"
+    ]
+  },
+  "Q7099025": {
+    "batch": "2026-11-22-f",
+    "adopted": {
+      "y": 2006,
+      "m": 12,
+      "d": 13,
+      "p": 11
+    },
+    "effective": {
+      "y": 2008,
+      "m": 5,
+      "d": 3,
+      "p": 11
+    },
+    "status": "signed_then_effective",
+    "note": "残疾人权利公约任择议定书。2006-12-13通过，2007-03-30开放签署，2008-05-03生效。名单不补。",
+    "sources": [
+      "https://treaties.un.org/Pages/ViewDetails.aspx?chapter=4&clang=_en&mtdsg_no=IV-15-a&src=TREATY"
+    ],
+    "signed": {
+      "y": 2007,
+      "m": 3,
+      "d": 30,
+      "p": 11
+    }
+  },
+  "Q15991243": {
+    "batch": "2026-11-22-f",
+    "adopted": {
+      "y": 1973,
+      "m": 12,
+      "d": 14,
+      "p": 11
+    },
+    "effective": {
+      "y": 1977,
+      "m": 2,
+      "d": 20,
+      "p": 11
+    },
+    "status": "signed_then_effective",
+    "note": "防止和惩处侵害应受国际保护人员公约。1973-12-14开放签署，1977-02-20生效。名单不补。",
+    "sources": [
+      "https://treaties.un.org/Pages/ViewDetails.aspx?chapter=18&clang=_en&mtdsg_no=XVIII-7&src=TREATY"
+    ],
+    "signed": {
+      "y": 1973,
+      "m": 12,
+      "d": 14,
+      "p": 11
+    }
+  },
+  "Q5166294": {
+    "batch": "2026-11-22-f",
+    "adopted": {
+      "y": 1968,
+      "m": 11,
+      "d": 26,
+      "p": 11
+    },
+    "effective": {
+      "y": 1970,
+      "m": 11,
+      "d": 11,
+      "p": 11
+    },
+    "status": "signed_then_effective",
+    "note": "战争罪及危害人类罪不适用法定时效公约。1968-11-26通过，1968-12-16开放签署，1970-11-11生效。名单不补。",
+    "sources": [
+      "https://treaties.un.org/Pages/ViewDetails.aspx?chapter=4&clang=_en&mtdsg_no=IV-6&src=TREATY"
+    ],
+    "signed": {
+      "y": 1968,
+      "m": 12,
+      "d": 16,
+      "p": 11
+    }
+  },
+  "Q5166287": {
+    "batch": "2026-11-22-f",
+    "adopted": {
+      "y": 1958,
+      "m": 4,
+      "d": 29,
+      "p": 11
+    },
+    "effective": {
+      "y": 1966,
+      "m": 3,
+      "d": 20,
+      "p": 11
+    },
+    "status": "signed_then_effective",
+    "note": "捕鱼及养护公海生物资源公约。1958-04-29订于日内瓦，1966-03-20生效。名单不补。",
+    "sources": [
+      "https://treaties.un.org/Pages/showDetails.aspx?objid=0800000280033dff"
+    ],
+    "signed": {
+      "y": 1958,
+      "m": 4,
+      "d": 29,
+      "p": 11
+    }
+  },
+  "Q7251927": {
+    "batch": "2026-11-22-f",
+    "adopted": {
+      "y": 2000,
+      "m": 11,
+      "d": 15,
+      "p": 11
+    },
+    "effective": {
+      "y": 2004,
+      "m": 1,
+      "d": 28,
+      "p": 11
+    },
+    "status": "signed_then_effective",
+    "note": "打击陆、海、空偷运移民议定书。2000-11-15通过并开放签署，2004-01-28生效。名单不补。",
+    "sources": [
+      "https://treaties.un.org/Pages/showDetails.aspx?clang=_en&objid=0800000280051314"
+    ],
+    "signed": {
+      "y": 2000,
+      "m": 11,
+      "d": 15,
+      "p": 11
+    }
+  },
+  "Q15991215": {
+    "batch": "2026-11-22-f",
+    "adopted": {
+      "y": 2005,
+      "m": 4,
+      "d": 13,
+      "p": 11
+    },
+    "effective": {
+      "y": 2007,
+      "m": 7,
+      "d": 7,
+      "p": 11
+    },
+    "status": "signed_then_effective",
+    "note": "制止核恐怖主义行为国际公约。2005-04-13通过，2005-05-23开放签署，2007-07-07生效。名单不补。",
+    "sources": [
+      "https://treaties.un.org/Pages/showDetails.aspx?clang=_en&objid=0800000280057ab0"
+    ],
+    "signed": {
+      "y": 2005,
+      "m": 5,
+      "d": 23,
+      "p": 11
+    }
+  },
+  "Q4116333": {
+    "batch": "2026-11-22-f",
+    "adopted": {
+      "y": 1962,
+      "m": 11,
+      "d": 7,
+      "p": 11
+    },
+    "effective": {
+      "y": 1964,
+      "m": 12,
+      "d": 9,
+      "p": 11
+    },
+    "status": "signed_then_effective",
+    "note": "关于婚姻的同意、结婚最低年龄及婚姻登记的公约。大会1962-11-07决定开放签署，存缴页记1962-12-10，1964-12-09生效。名单不补。",
+    "sources": [
+      "https://treaties.un.org/Pages/ViewDetails.aspx?chapter=16&mtdsg_no=XVI-3&src=TREATY"
+    ],
+    "signed": {
+      "y": 1962,
+      "m": 12,
+      "d": 10,
+      "p": 11
+    }
+  },
+  "Q1352119": {
+    "batch": "2026-11-22-f",
+    "adopted": {
+      "y": 1980,
+      "m": 5,
+      "d": 20,
+      "p": 11
+    },
+    "effective": {
+      "y": 1982,
+      "m": 4,
+      "d": 7,
+      "p": 11
+    },
+    "status": "signed_then_effective",
+    "note": "南极海洋生物资源养护公约。1980-05-20订于堪培拉，1982-04-07生效。名单不补。",
+    "sources": [
+      "https://treaties.un.org/Pages/showDetails.aspx?clang=_en&objid=08000002800dc364"
+    ],
+    "signed": {
+      "y": 1980,
+      "m": 5,
+      "d": 20,
+      "p": 11
+    }
+  },
+  "Q5166302": {
+    "batch": "2026-11-22-f",
+    "adopted": {
+      "y": 1992,
+      "m": 3,
+      "d": 17,
+      "p": 11
+    },
+    "effective": {
+      "y": 1996,
+      "m": 10,
+      "d": 6,
+      "p": 11
+    },
+    "status": "signed_then_effective",
+    "note": "保护和使用越境水道和国际湖泊公约。1992-03-17订于赫尔辛基，1996-10-06生效。名单不补。",
+    "sources": [
+      "https://treaties.un.org/pages/ViewDetails.aspx?chapter=27&clang=_en&mtdsg_no=XXVII-5&src=TREATY"
+    ],
+    "signed": {
+      "y": 1992,
+      "m": 3,
+      "d": 17,
+      "p": 11
+    }
   }
 }
