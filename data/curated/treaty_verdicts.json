@@ -1,0 +1,12 @@
+{
+  "_doc": "打开过公开来源、确认不是数据错误的待核项。verified_ok 只勾销列出的问题类型。没有写在这里的，仍待核。",
+  "Q1248976": {
+    "long_gap": {
+      "verdict": "verified_ok",
+      "note": "1978年8月22日通过，8月23日开放签署，1996年11月6日按第49条第1款生效。十八年是批准过程，不是两个版本写进同一条。",
+      "sources": [
+        "https://treaties.un.org/pages/ViewDetails.aspx?src=TREATY&mtdsg_no=XXIII-2&chapter=23&clang=_en"
+      ]
+    }
+  }
+}

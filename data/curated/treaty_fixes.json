@@ -1175,5 +1175,135 @@
       "https://worldjpn.net/documents/texts/pw/19300507.T1J.html",
       "https://catalog.digitalarchives.tw/item/00/48/6e/48.html"
     ]
+  },
+  "Q1963613": {
+    "batch": "2026-11-22",
+    "signed": null,
+    "adopted": {"y": 2010, "m": 10, "d": 29, "p": 11},
+    "effective": {"y": 2014, "m": 10, "d": 12, "p": 11},
+    "status": "signed_then_effective",
+    "summary_zh": "《生物多样性公约》关于获取遗传资源和公正公平分享其利用所产生惠益的名古屋议定书。2010年10月29日在名古屋通过，2014年10月12日生效。缔约方名单仍只有日本，没有按保存机关名册补全。",
+    "note": "通过日和生效日按生物多样性公约秘书处。导出里另有一个更晚的签署日，已去掉。",
+    "sources": ["https://www.cbd.int/abs/about"]
+  },
+  "Q8034909": {
+    "batch": "2026-11-22",
+    "signed": null,
+    "adopted": {"y": 1977, "m": 6, "d": 20, "p": 11},
+    "effective": {"y": 1979, "m": 7, "d": 11, "p": 11},
+    "parties": [],
+    "countries": [],
+    "status": "signed_then_effective",
+    "summary_zh": "国际劳工组织第148号公约。1977年6月20日通过，1979年7月11日生效。保存机关是国际劳工局局长。导出里的生效日属于另一公约，开会地点瑞士也被写成唯一缔约方。缔约方名单待核，不补。",
+    "note": "日期按联合国条约集第1141卷登记号17906。不补缔约方。",
+    "sources": [
+      "https://treaties.un.org/pages/showDetails.aspx?objid=08000002800fd93a",
+      "https://treaties.un.org/doc/Publication/UNTS/Volume%201141/volume-1141-I-17906-English.pdf"
+    ]
+  },
+  "Q135010681": {
+    "batch": "2026-11-22",
+    "signed": null,
+    "adopted": {"y": 2014, "m": 6, "d": 27, "p": 11},
+    "note": "非盟条约页写明通过日。导出里更晚的签署日与该页的签署记录不符，已去掉。生效仍沿用原数据的年份，月日未按状态表核对，不写成具体一天。缔约方不改。",
+    "sources": ["https://au.int/en/treaties/african-union-convention-cyber-security-and-personal-data-protection"]
+  },
+  "Q610272": {
+    "batch": "2026-11-22",
+    "zh": "1864年日内瓦公约",
+    "en": "Geneva Convention of 1864",
+    "signed": {"y": 1864, "m": 8, "d": 22, "p": 11},
+    "adopted": {"y": 1864, "m": 8, "d": 22, "p": 11},
+    "effective": {"y": 1865, "m": 6, "d": 22, "p": 11},
+    "inception": null,
+    "parties": [],
+    "countries": [],
+    "status": "signed_then_effective",
+    "summary_zh": "改善战地武装部队伤者境遇的1864年日内瓦公约。1864年8月22日在日内瓦通过，1865年6月22日交换批准书后生效。这一条只记这一版。后来的各版另条。红十字国际委员会列出12个签署国，本批没有逐一挂到政权表，名单待核。",
+    "note": "只保留1864年这一版的通过日和交换批准日。后来版本的生效日已从这一条去掉。",
+    "sources": [
+      "https://ihl-databases.icrc.org/en/ihl-treaties/gc-1864",
+      "https://ihl-databases.icrc.org/en/ihl-treaties/gc-1864/state-parties",
+      "https://en.wikisource.org/wiki/First_Geneva_Convention_(1864)"
+    ]
+  },
+  "curated:gci-1949": {
+    "insert": true,
+    "batch": "2026-11-22",
+    "sl": 40,
+    "zh": "1949年日内瓦第一公约",
+    "en": "Geneva Convention (I) of 1949",
+    "types": [{"en": "treaty", "zh": "条约"}],
+    "adopted": {"y": 1949, "m": 8, "d": 12, "p": 11},
+    "effective": {"y": 1950, "m": 10, "d": 21, "p": 11},
+    "parties": [],
+    "countries": [],
+    "status": "signed_then_effective",
+    "summary_zh": "1949年8月12日在日内瓦通过的改善战地武装部队伤者病者境遇公约，1950年10月21日生效。这一条只记1949年这一版。缔约方名单待核，不把开会地或保存机关写成唯一缔约方。",
+    "note": "从原来混在1864年条目里的1949年通过日和1950年生效日拆出。不补缔约方。",
+    "sources": ["https://ihl-databases.icrc.org/en/ihl-treaties/gci-1949"]
+  },
+  "Q112183": {
+    "batch": "2026-11-22",
+    "signed": {"y": 1802, "m": 3, "d": 25, "p": 11},
+    "parties": [
+      {"s": "Q58296", "via": "curated"},
+      {"s": "Q174193", "via": "curated"},
+      {"s": "Q29", "via": "curated"},
+      {"s": "Q188553", "via": "curated"}
+    ],
+    "countries": ["Q58296", "Q174193", "Q29", "Q188553"],
+    "summary_zh": "1802年3月25日在亚眠签署。约文的当事方是法兰西共和国、西班牙国王、巴达维亚共和国，以及大不列颠及爱尔兰联合王国国王。已结束的大不列颠王国、以及后来的国名，不写在签署方里。",
+    "note": "约文写明四方。大不列颠王国已于1801年1月1日结束。",
+    "sources": ["https://en.wikisource.org/wiki/Treaty_of_Amiens"]
+  },
+  "Q233688": {
+    "batch": "2026-11-22",
+    "parties": [
+      {"s": "Q131964", "via": "curated"},
+      {"s": "Q174193", "via": "curated"},
+      {"s": "Q27306", "via": "curated"},
+      {"s": "Q34266", "via": "curated"},
+      {"s": "Q207162", "via": "curated"}
+    ],
+    "countries": ["Q131964", "Q174193", "Q27306", "Q34266", "Q207162"],
+    "note": "1815年11月20日时法兰西第一帝国已经结束。政权表里当时还在、且是该帝国在表内的后继的，是波旁复辟。不把表外的编号算成另一个后继。",
+    "sources": ["https://www.wikidata.org/wiki/Q233688"]
+  },
+  "Q2657887": {
+    "batch": "2026-11-22",
+    "parties": [
+      {"s": "Q12560", "via": "curated"},
+      {"s": "Q174193", "via": "curated"}
+    ],
+    "countries": ["Q12560", "Q174193"],
+    "note": "1838年的英土条约。大不列颠王国已于1801年1月1日结束，其在政权表里的后继是大不列颠及爱尔兰联合王国。今天的英国条目要从1921年才开始，不写在1838年。",
+    "sources": [
+      "https://www.legislation.gov.uk/apgb/Geo3/39-40/67/contents"
+    ]
+  },
+  "Q3823095": {
+    "batch": "2026-11-22",
+    "parties": [
+      {"s": "Q27306", "via": "curated"},
+      {"s": "Q186096", "via": "curated"}
+    ],
+    "countries": ["Q27306", "Q186096"],
+    "note": "1713年10月6日。勃兰登堡-普鲁士在政权表里终于1701年，表内后继只有1701年1月18日起的普鲁士王国。俄国一方仍是俄罗斯沙皇国。",
+    "sources": ["https://www.wikidata.org/wiki/Q3823095"]
+  },
+  "Q1248976": {
+    "batch": "2026-11-22",
+    "adopted": {"y": 1978, "m": 8, "d": 22, "p": 11},
+    "signed": {"y": 1978, "m": 8, "d": 23, "p": 11},
+    "effective": {"y": 1996, "m": 11, "d": 6, "p": 11},
+    "note": "1978年8月22日通过，8月23日开放签署，1996年11月6日生效。间隔是批准过程，不是两个版本写在一条里。",
+    "sources": ["https://treaties.un.org/pages/ViewDetails.aspx?src=TREATY&mtdsg_no=XXIII-2&chapter=23&clang=_en"]
+  },
+  "Q686455": {
+    "batch": "2026-11-22",
+    "effective": {"y": 1988, "m": 0, "d": 0, "p": 9},
+    "note": "联合国环境规划署臭氧秘书处写明该公约于1988年生效。月日未在该页核对，不写成具体一天。",
+    "sources": ["https://ozone.unep.org/treaties/vienna-convention"]
   }
 }
