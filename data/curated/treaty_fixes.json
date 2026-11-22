@@ -1779,7 +1779,7 @@
     ]
   },
   "Q217398": {
-    "batch": "2026-11-22-b",
+    "batch": "2026-11-22-c",
     "parties": [
       {
         "s": "Q142",
@@ -1794,8 +1794,8 @@
         "via": "P1891"
       },
       {
-        "s": "Q183",
-        "via": "P1891"
+        "s": "Q1206012",
+        "via": "curated"
       },
       {
         "s": "Q29",
@@ -1822,17 +1822,19 @@
       "Q142",
       "Q174193",
       "Q148",
-      "Q183",
+      "Q1206012",
       "Q29",
       "Q31",
       "Q38",
       "Q39",
       "Q948"
     ],
-    "note": "签署日早于政权表里「英国」的1921-12-06，也早于爱尔兰自由邦的1922-12-06。该日存在的是大不列颠及爱尔兰联合王国。只改这一方，不写「后来由英国继承」，因为后继不只有英国。不另找签署方。",
+    "note": "签署日早于政权表里「英国」的1921-12-06，也早于爱尔兰自由邦的1922-12-06。该日存在的是大不列颠及爱尔兰联合王国。只改这一方，不写「后来由英国继承」，因为后继不只有英国。不另找签署方。 签署日联邦德国尚未开始（基本法1949年5月23日生效）。政权表里该日还在的前身只有德意志国。不写「后来由德国继承」，因为同日的后继还有民主德国。不另找签署方。",
     "sources": [
       "https://www.legislation.gov.uk/apgb/Geo3/39-40/67/contents",
-      "https://www.legislation.gov.uk/ukpga/Geo5Sess2/13/1/contents"
+      "https://www.legislation.gov.uk/ukpga/Geo5Sess2/13/1/contents",
+      "https://www.gesetze-im-internet.de/gg/art_145.html",
+      "https://www.wikidata.org/wiki/Q1206012"
     ]
   },
   "Q238262": {
@@ -2593,6 +2595,500 @@
     "sources": [
       "https://www.austlii.edu.au/cgi-bin/viewdoc/au/other/dfat/treaties/1901/127.html",
       "https://www.suezcanal.gov.eg/English/About/CanalTreatiesAndDecrees/Pages/ConstantinopleConvention.aspx"
+    ]
+  },
+  "Q163244": {
+    "batch": "2026-11-22-c",
+    "parties": [
+      {
+        "s": "Q1206012",
+        "via": "curated"
+      }
+    ],
+    "countries": [
+      "Q1206012"
+    ],
+    "note": "签署日联邦德国尚未开始（基本法1949年5月23日生效）。政权表里该日还在的前身只有德意志国。不写「后来由德国继承」，因为同日的后继还有民主德国。不另找签署方。",
+    "sources": [
+      "https://www.gesetze-im-internet.de/gg/art_145.html",
+      "https://www.wikidata.org/wiki/Q1206012"
+    ]
+  },
+  "Q584617": {
+    "batch": "2026-11-22-c",
+    "parties": [
+      {
+        "s": "Q12560",
+        "via": "P1891"
+      },
+      {
+        "s": "Q159",
+        "via": "P1891"
+      },
+      {
+        "s": "Q1206012",
+        "via": "curated"
+      },
+      {
+        "s": "Q219",
+        "via": "P1891"
+      },
+      {
+        "s": "Q236",
+        "via": "P1891"
+      },
+      {
+        "s": "Q28513",
+        "via": "P1891"
+      },
+      {
+        "s": "Q38",
+        "via": "P1891"
+      },
+      {
+        "s": "Q403",
+        "via": "P1891"
+      },
+      {
+        "s": "Q41",
+        "via": "P1891"
+      }
+    ],
+    "countries": [
+      "Q12560",
+      "Q159",
+      "Q1206012",
+      "Q219",
+      "Q236",
+      "Q28513",
+      "Q38",
+      "Q403",
+      "Q41"
+    ],
+    "note": "签署日联邦德国尚未开始（基本法1949年5月23日生效）。政权表里该日还在的前身只有德意志国。不写「后来由德国继承」，因为同日的后继还有民主德国。不另找签署方。",
+    "sources": [
+      "https://www.gesetze-im-internet.de/gg/art_145.html",
+      "https://www.wikidata.org/wiki/Q1206012"
+    ]
+  },
+  "Q126413": {
+    "batch": "2026-11-22-c",
+    "parties": [
+      {
+        "s": "Q1206012",
+        "via": "curated"
+      }
+    ],
+    "countries": [
+      "Q1206012"
+    ],
+    "note": "签署日联邦德国尚未开始（基本法1949年5月23日生效）。政权表里该日还在的前身只有德意志国。不写「后来由德国继承」，因为同日的后继还有民主德国。不另找签署方。",
+    "sources": [
+      "https://www.gesetze-im-internet.de/gg/art_145.html",
+      "https://www.wikidata.org/wiki/Q1206012"
+    ]
+  },
+  "Q684311": {
+    "batch": "2026-11-22-c",
+    "parties": [
+      {
+        "s": "Q170174",
+        "via": "curated"
+      }
+    ],
+    "countries": [
+      "Q170174"
+    ],
+    "note": "签署日梵蒂冈城国尚未开始（拉特兰条约1929年2月11日）。政权表里该日还在的前身只有教皇国。不另找签署方。",
+    "sources": [
+      "https://www.vatican.va/roman_curia/secretariat_state/archivio/documents/rc_seg-st_19290211_patti-lateranensi_it.html",
+      "https://www.wikidata.org/wiki/Q170174"
+    ]
+  },
+  "Q695215": {
+    "batch": "2026-11-22-c",
+    "parties": [
+      {
+        "s": "Q1206012",
+        "via": "curated"
+      }
+    ],
+    "countries": [
+      "Q1206012"
+    ],
+    "note": "签署日联邦德国尚未开始（基本法1949年5月23日生效）。政权表里该日还在的前身只有德意志国。不写「后来由德国继承」，因为同日的后继还有民主德国。不另找签署方。",
+    "sources": [
+      "https://www.gesetze-im-internet.de/gg/art_145.html",
+      "https://www.wikidata.org/wiki/Q1206012"
+    ]
+  },
+  "Q788050": {
+    "batch": "2026-11-22-c",
+    "parties": [
+      {
+        "s": "Q170174",
+        "via": "curated"
+      }
+    ],
+    "countries": [
+      "Q170174"
+    ],
+    "note": "签署日梵蒂冈城国尚未开始（拉特兰条约1929年2月11日）。政权表里该日还在的前身只有教皇国。不另找签署方。",
+    "sources": [
+      "https://www.vatican.va/roman_curia/secretariat_state/archivio/documents/rc_seg-st_19290211_patti-lateranensi_it.html",
+      "https://www.wikidata.org/wiki/Q170174"
+    ]
+  },
+  "Q516642": {
+    "batch": "2026-11-22-c",
+    "parties": [
+      {
+        "s": "Q1206012",
+        "via": "curated"
+      },
+      {
+        "s": "Q30",
+        "via": "P17"
+      }
+    ],
+    "countries": [
+      "Q1206012",
+      "Q30"
+    ],
+    "note": "签署日联邦德国尚未开始（基本法1949年5月23日生效）。政权表里该日还在的前身只有德意志国。不写「后来由德国继承」，因为同日的后继还有民主德国。不另找签署方。",
+    "sources": [
+      "https://www.gesetze-im-internet.de/gg/art_145.html",
+      "https://www.wikidata.org/wiki/Q1206012"
+    ]
+  },
+  "Q573331": {
+    "batch": "2026-11-22-c",
+    "parties": [
+      {
+        "s": "Q1206012",
+        "via": "curated"
+      }
+    ],
+    "countries": [
+      "Q1206012"
+    ],
+    "note": "签署日联邦德国尚未开始（基本法1949年5月23日生效）。政权表里该日还在的前身只有德意志国。不写「后来由德国继承」，因为同日的后继还有民主德国。不另找签署方。",
+    "sources": [
+      "https://www.gesetze-im-internet.de/gg/art_145.html",
+      "https://www.wikidata.org/wiki/Q1206012"
+    ]
+  },
+  "Q2600616": {
+    "batch": "2026-11-22-c",
+    "parties": [
+      {
+        "s": "Q170174",
+        "via": "curated"
+      }
+    ],
+    "countries": [
+      "Q170174"
+    ],
+    "note": "签署日梵蒂冈城国尚未开始（拉特兰条约1929年2月11日）。政权表里该日还在的前身只有教皇国。不另找签署方。",
+    "sources": [
+      "https://www.vatican.va/roman_curia/secretariat_state/archivio/documents/rc_seg-st_19290211_patti-lateranensi_it.html",
+      "https://www.wikidata.org/wiki/Q170174"
+    ]
+  },
+  "Q1627409": {
+    "batch": "2026-11-22-c",
+    "parties": [
+      {
+        "s": "Q170174",
+        "via": "curated"
+      }
+    ],
+    "countries": [
+      "Q170174"
+    ],
+    "note": "签署日梵蒂冈城国尚未开始（拉特兰条约1929年2月11日）。政权表里该日还在的前身只有教皇国。不另找签署方。",
+    "sources": [
+      "https://www.vatican.va/roman_curia/secretariat_state/archivio/documents/rc_seg-st_19290211_patti-lateranensi_it.html",
+      "https://www.wikidata.org/wiki/Q170174"
+    ]
+  },
+  "Q668645": {
+    "batch": "2026-11-22-c",
+    "parties": [
+      {
+        "s": "Q1206012",
+        "via": "curated"
+      }
+    ],
+    "countries": [
+      "Q1206012"
+    ],
+    "note": "签署日联邦德国尚未开始（基本法1949年5月23日生效）。政权表里该日还在的前身只有德意志国。不写「后来由德国继承」，因为同日的后继还有民主德国。不另找签署方。",
+    "sources": [
+      "https://www.gesetze-im-internet.de/gg/art_145.html",
+      "https://www.wikidata.org/wiki/Q1206012"
+    ]
+  },
+  "Q1456414": {
+    "batch": "2026-11-22-c",
+    "parties": [
+      {
+        "s": "Q170174",
+        "via": "curated"
+      }
+    ],
+    "countries": [
+      "Q170174"
+    ],
+    "note": "签署日梵蒂冈城国尚未开始（拉特兰条约1929年2月11日）。政权表里该日还在的前身只有教皇国。不另找签署方。",
+    "sources": [
+      "https://www.vatican.va/roman_curia/secretariat_state/archivio/documents/rc_seg-st_19290211_patti-lateranensi_it.html",
+      "https://www.wikidata.org/wiki/Q170174"
+    ]
+  },
+  "Q444823": {
+    "batch": "2026-11-22-c",
+    "parties": [
+      {
+        "s": "Q1206012",
+        "via": "curated"
+      }
+    ],
+    "countries": [
+      "Q1206012"
+    ],
+    "note": "签署日联邦德国尚未开始（基本法1949年5月23日生效）。政权表里该日还在的前身只有德意志国。不写「后来由德国继承」，因为同日的后继还有民主德国。不另找签署方。",
+    "sources": [
+      "https://www.gesetze-im-internet.de/gg/art_145.html",
+      "https://www.wikidata.org/wiki/Q1206012"
+    ]
+  },
+  "Q1748198": {
+    "batch": "2026-11-22-c",
+    "parties": [
+      {
+        "s": "Q170174",
+        "via": "curated"
+      }
+    ],
+    "countries": [
+      "Q170174"
+    ],
+    "note": "签署日梵蒂冈城国尚未开始（拉特兰条约1929年2月11日）。政权表里该日还在的前身只有教皇国。不另找签署方。",
+    "sources": [
+      "https://www.vatican.va/roman_curia/secretariat_state/archivio/documents/rc_seg-st_19290211_patti-lateranensi_it.html",
+      "https://www.wikidata.org/wiki/Q170174"
+    ]
+  },
+  "Q1566410": {
+    "batch": "2026-11-22-c",
+    "parties": [
+      {
+        "s": "Q170174",
+        "via": "curated"
+      }
+    ],
+    "countries": [
+      "Q170174"
+    ],
+    "note": "签署日梵蒂冈城国尚未开始（拉特兰条约1929年2月11日）。政权表里该日还在的前身只有教皇国。不另找签署方。",
+    "sources": [
+      "https://www.vatican.va/roman_curia/secretariat_state/archivio/documents/rc_seg-st_19290211_patti-lateranensi_it.html",
+      "https://www.wikidata.org/wiki/Q170174"
+    ]
+  },
+  "Q3536834": {
+    "batch": "2026-11-22-c",
+    "parties": [
+      {
+        "s": "Q170174",
+        "via": "curated"
+      }
+    ],
+    "countries": [
+      "Q170174"
+    ],
+    "note": "签署日梵蒂冈城国尚未开始（拉特兰条约1929年2月11日）。政权表里该日还在的前身只有教皇国。不另找签署方。",
+    "sources": [
+      "https://www.vatican.va/roman_curia/secretariat_state/archivio/documents/rc_seg-st_19290211_patti-lateranensi_it.html",
+      "https://www.wikidata.org/wiki/Q170174"
+    ]
+  },
+  "Q7837023": {
+    "batch": "2026-11-22-c",
+    "parties": [
+      {
+        "s": "Q170174",
+        "via": "curated"
+      }
+    ],
+    "countries": [
+      "Q170174"
+    ],
+    "note": "签署日梵蒂冈城国尚未开始（拉特兰条约1929年2月11日）。政权表里该日还在的前身只有教皇国。不另找签署方。",
+    "sources": [
+      "https://www.vatican.va/roman_curia/secretariat_state/archivio/documents/rc_seg-st_19290211_patti-lateranensi_it.html",
+      "https://www.wikidata.org/wiki/Q170174"
+    ]
+  },
+  "Q1172638": {
+    "batch": "2026-11-22-c",
+    "parties": [
+      {
+        "s": "Q170174",
+        "via": "curated"
+      }
+    ],
+    "countries": [
+      "Q170174"
+    ],
+    "note": "签署日梵蒂冈城国尚未开始（拉特兰条约1929年2月11日）。政权表里该日还在的前身只有教皇国。不另找签署方。",
+    "sources": [
+      "https://www.vatican.va/roman_curia/secretariat_state/archivio/documents/rc_seg-st_19290211_patti-lateranensi_it.html",
+      "https://www.wikidata.org/wiki/Q170174"
+    ]
+  },
+  "Q3997892": {
+    "batch": "2026-11-22-c",
+    "parties": [
+      {
+        "s": "Q170174",
+        "via": "curated"
+      }
+    ],
+    "countries": [
+      "Q170174"
+    ],
+    "note": "签署日梵蒂冈城国尚未开始（拉特兰条约1929年2月11日）。政权表里该日还在的前身只有教皇国。不另找签署方。",
+    "sources": [
+      "https://www.vatican.va/roman_curia/secretariat_state/archivio/documents/rc_seg-st_19290211_patti-lateranensi_it.html",
+      "https://www.wikidata.org/wiki/Q170174"
+    ]
+  },
+  "Q675857": {
+    "batch": "2026-11-22-c",
+    "parties": [
+      {
+        "s": "Q170174",
+        "via": "curated"
+      }
+    ],
+    "countries": [
+      "Q170174"
+    ],
+    "note": "签署日梵蒂冈城国尚未开始（拉特兰条约1929年2月11日）。政权表里该日还在的前身只有教皇国。不另找签署方。",
+    "sources": [
+      "https://www.vatican.va/roman_curia/secretariat_state/archivio/documents/rc_seg-st_19290211_patti-lateranensi_it.html",
+      "https://www.wikidata.org/wiki/Q170174"
+    ]
+  },
+  "Q37769412": {
+    "batch": "2026-11-22-c",
+    "parties": [
+      {
+        "s": "Q1206012",
+        "via": "curated"
+      },
+      {
+        "s": "Q36",
+        "via": "P1891"
+      }
+    ],
+    "countries": [
+      "Q1206012",
+      "Q36"
+    ],
+    "note": "签署日联邦德国尚未开始（基本法1949年5月23日生效）。政权表里该日还在的前身只有德意志国。不写「后来由德国继承」，因为同日的后继还有民主德国。不另找签署方。",
+    "sources": [
+      "https://www.gesetze-im-internet.de/gg/art_145.html",
+      "https://www.wikidata.org/wiki/Q1206012"
+    ]
+  },
+  "Q19240565": {
+    "batch": "2026-11-22-c",
+    "parties": [
+      {
+        "s": "Q1206012",
+        "via": "curated"
+      },
+      {
+        "s": "Q30",
+        "via": "P1891"
+      }
+    ],
+    "countries": [
+      "Q1206012",
+      "Q30"
+    ],
+    "note": "签署日联邦德国尚未开始（基本法1949年5月23日生效）。政权表里该日还在的前身只有德意志国。不写「后来由德国继承」，因为同日的后继还有民主德国。不另找签署方。",
+    "sources": [
+      "https://www.gesetze-im-internet.de/gg/art_145.html",
+      "https://www.wikidata.org/wiki/Q1206012"
+    ]
+  },
+  "Q28496658": {
+    "batch": "2026-11-22-c",
+    "parties": [
+      {
+        "s": "Q1206012",
+        "via": "curated"
+      }
+    ],
+    "countries": [
+      "Q1206012"
+    ],
+    "note": "签署日联邦德国尚未开始（基本法1949年5月23日生效）。政权表里该日还在的前身只有德意志国。不写「后来由德国继承」，因为同日的后继还有民主德国。不另找签署方。",
+    "sources": [
+      "https://www.gesetze-im-internet.de/gg/art_145.html",
+      "https://www.wikidata.org/wiki/Q1206012"
+    ]
+  },
+  "Q88538775": {
+    "batch": "2026-11-22-c",
+    "parties": [
+      {
+        "s": "Q1206012",
+        "via": "curated"
+      },
+      {
+        "s": "Q33",
+        "via": "P17"
+      }
+    ],
+    "countries": [
+      "Q1206012",
+      "Q33"
+    ],
+    "note": "签署日联邦德国尚未开始（基本法1949年5月23日生效）。政权表里该日还在的前身只有德意志国。不写「后来由德国继承」，因为同日的后继还有民主德国。不另找签署方。",
+    "sources": [
+      "https://www.gesetze-im-internet.de/gg/art_145.html",
+      "https://www.wikidata.org/wiki/Q1206012"
+    ]
+  },
+  "Q331520": {
+    "batch": "2026-11-22-c",
+    "adopted": {
+      "y": 1994,
+      "m": 6,
+      "d": 17,
+      "p": 11
+    },
+    "signed": {
+      "y": 1994,
+      "m": 10,
+      "d": 14,
+      "p": 11
+    },
+    "effective": {
+      "y": 1996,
+      "m": 12,
+      "d": 26,
+      "p": 11
+    },
+    "status": "signed_then_effective",
+    "note": "1994年6月17日通过，1994年10月14日在巴黎开放签署，1996年12月26日按第36条第1款生效。导出的缔约方只有法国，是国家字段，不是签署国名单，不补。",
+    "sources": [
+      "https://treaties.un.org/pages/ViewDetails.aspx?src=TREATY&mtdsg_no=XXVII-10&chapter=27&clang=_en"
     ]
   }
 }
