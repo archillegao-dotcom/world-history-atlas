@@ -900,6 +900,51 @@
         {"label": "韩国法令信息中心：宪法，1987年10月29日全部修订，1988年2月25日施行", "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=61603&chrClsCd=010202&urlMode=engLsInfoR&viewCls=engLsInfoR"}
       ],
       "spans": [{"qid": "Q884", "from": "1988-02-25", "until": null}]
+    },
+    {
+      "id": "in_1950",
+      "title_zh": "印度宪法",
+      "title_orig": "Constitution of India",
+      "kind": "formal",
+      "adopted": "1949-11-26",
+      "promulgated": null,
+      "effective": "1950-01-26",
+      "repealed": null,
+      "summary_zh": "制宪会议文本写明1949年11月26日通过。第394条写明所列若干条立即生效，其余条文自1950年1月26日起生效，并把这一天称为这部宪法的开始施行日。本图从这一天起、在地图标成印度的政权上列入整部。立即生效的少数条文不单独提前整部列入。后来的修正不是新的一部宪法。",
+      "sources": [
+        {"label": "Constitute Project：印度宪法第394条，1950年1月26日开始施行", "url": "https://www.constituteproject.org/constitution/India_2016?lang=en"}
+      ],
+      "spans": [{"qid": "Q668", "from": "1950-01-26", "until": null}]
+    },
+    {
+      "id": "th_interim_2014",
+      "title_zh": "泰王国临时宪法（2014年）",
+      "title_orig": "Constitution of the Kingdom of Thailand (Interim), B.E. 2557",
+      "kind": "provisional",
+      "adopted": null,
+      "promulgated": "2014-07-22",
+      "effective": "2014-07-22",
+      "repealed": "2017-04-06",
+      "summary_zh": "日期用2017年宪法前言所写：佛历2557年7月22日颁布的临时宪法，自2017年宪法颁布之日起被取代。本批没有另打开临时宪法自己的生效条款，从它所写的颁布日起列入，到2017年4月6日为止。1932年以来更早的各部宪法本批没有打开。",
+      "sources": [
+        {"label": "Constitute Project：2017年泰国宪法前言所记临时宪法颁布日", "url": "https://www.constituteproject.org/constitution/Thailand_2017?lang=en"}
+      ],
+      "spans": [{"qid": "Q869", "from": "2014-07-22", "until": "2017-04-06"}]
+    },
+    {
+      "id": "th_2017",
+      "title_zh": "泰王国宪法（2017年）",
+      "title_orig": "Constitution of the Kingdom of Thailand, B.E. 2560",
+      "kind": "formal",
+      "adopted": null,
+      "promulgated": "2017-04-06",
+      "effective": "2017-04-06",
+      "repealed": null,
+      "summary_zh": "前言把颁布日写成佛历2560年、阳历4月6日，并写明自颁布之日起取代佛历2557年7月22日颁布的临时宪法。本图从2017年4月6日起列入。",
+      "sources": [
+        {"label": "Constitute Project：2017年泰王国宪法前言", "url": "https://www.constituteproject.org/constitution/Thailand_2017?lang=en"}
+      ],
+      "spans": [{"qid": "Q869", "from": "2017-04-06", "until": null}]
     }
   ],
   "gaps": [
@@ -1004,6 +1049,18 @@
       "from": null,
       "until": null,
       "note": "已核对：澳大利亚联邦立法登记册把《澳大利亚联邦宪法法》的制定日标为1900年7月9日，并标为现行。同一登记把“在行”的起始写成1900年1月1日，早于制定日，本批不采用。指定生效日的公告本批没有打开，所以不写1901年1月1日。"
+    },
+    {
+      "qids": ["Q869"],
+      "from": null,
+      "until": "2014-07-22",
+      "note": "已核对：2014年7月22日以前的泰国宪法，包括1932年的文本，本批没有打开。"
+    },
+    {
+      "qids": ["Q1775277"],
+      "from": "1947-08-15",
+      "until": "1950-01-26",
+      "note": "已核对：印度宪法第394条把开始施行日定为1950年1月26日。这一天以前的印度联邦不提前列整部宪法。"
     }
   ]
 }
