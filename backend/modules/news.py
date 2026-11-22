@@ -54,9 +54,18 @@ class NewsModule(ContentModule):
         return {"records": n, "days": days}
 
     def query(self, ctx, polity, date, params):
-        if date.y < FIRST_YEAR:
-            return {"items": [], "total": 0, "note": f"每日新闻数据从 {FIRST_YEAR} 年开始；更早的历史请看「事件」标签。"}
         limit = int(params.get("limit") or 120)
+        from ..roc_shiji import coverage_note, news_items
+        geom = (polity or {}).get("geom")
+        shiji = news_items(ctx.data_dir, date, geom, limit)
+        if date.y < FIRST_YEAR:
+            note = f"维基百科时事从 {FIRST_YEAR} 年开始。"
+            extra = coverage_note(date)
+            if extra:
+                note += extra
+            elif not shiji:
+                note += "更早的历史请看「事件」标签。"
+            return {"items": shiji[:limit], "total": len(shiji), "note": note}
         days = self.year(date.y)
         if date.m and date.d:
             keys = [f"{date.y:04d}-{date.m:02d}-{date.d:02d}"]
