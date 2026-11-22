@@ -732,6 +732,348 @@
         {"label": "中国人大网：1982年宪法", "url": "http://www.npc.gov.cn/npc/c12434/dzlfxzgcl70nlflc/202108/t20210824_313204.html"}
       ],
       "spans": [{"qid": "Q148", "from": "1982-12-04", "until": null}]
+    },
+    {
+      "id": "roc_provisional_1912",
+      "title_zh": "中华民国临时约法",
+      "title_orig": "中華民國臨時約法",
+      "kind": "provisional",
+      "adopted": "1912-03-08",
+      "promulgated": "1912-03-11",
+      "effective": "1912-03-11",
+      "repealed": "1914-05-01",
+      "summary_zh": "临时参议院起草，国父年谱记到三月八日全案告终、由参议院宣布，公布记在三月十一日。维基文库所转公布令落款中华民国元年三月十一日，附则写自公布之日施行，并写明临时政府组织大纲于施行之日废止。1914年约法第68条写明临时约法于该约法施行之日废止。只挂在中华民国这个政权上。日本扶植的政权不套用。",
+      "sources": [
+        {"label": "国父年谱：三月八日全案告终，三月十一日公布", "url": "https://sunology.culture.tw/detail/c730e283a8a15f7f9f1b6fbbae06f75f/"},
+        {"label": "维基文库：临时约法公布令与附则", "url": "https://zh.wikisource.org/zh-hans/%E4%B8%AD%E8%8F%AF%E6%B0%91%E5%9C%8B%E8%87%A8%E6%99%82%E7%B4%84%E6%B3%95"}
+      ],
+      "spans": [{"qid": "Q13426199", "from": "1912-03-11", "until": "1914-05-01"}]
+    },
+    {
+      "id": "roc_compact_1914",
+      "title_zh": "中华民国约法",
+      "title_orig": "中華民國約法",
+      "kind": "provisional",
+      "adopted": null,
+      "promulgated": "1914-05-01",
+      "effective": "1914-05-01",
+      "repealed": null,
+      "summary_zh": "约法会议议决，大总统令落款中华民国三年五月一日。第64条写明宪法未施行以前，本约法的效力与宪法等。第68条写明自公布之日施行，并写明元年三月十一日的临时约法于施行之日废止。1916年恢复临时约法的命令本批没有打开，所以1914年5月1日到1923年10月10日这一段不能写成已经逐日证明持续有效，也不另写一个恢复日。1923年宪法的转录页把文本日期写成10月10日，本图从这一天起改列那一部，不把10月10日写成1914年约法条文里写明的废止日。只挂在中华民国上。",
+      "sources": [
+        {"label": "维基文库：1914年中华民国约法", "url": "https://zh.wikisource.org/zh-hans/%E4%B8%AD%E8%8F%AF%E6%B0%91%E5%9C%8B%E7%B4%84%E6%B3%95"}
+      ],
+      "spans": [{"qid": "Q13426199", "from": "1914-05-01", "until": "1923-10-10"}],
+      "phases": [
+        {"from": "1914-05-01", "until": "1923-10-10", "force_zh": "公布当日施行；此后至1923年10月10日未逐日核对", "force_note": "第68条只写到公布当日。1916年恢复令没有打开，这一段不写成已经证明每天都仍有效。"}
+      ]
+    },
+    {
+      "id": "roc_tutelage_1931",
+      "title_zh": "中华民国训政时期约法",
+      "title_orig": "中華民國訓政時期約法",
+      "kind": "provisional",
+      "adopted": "1931-05-12",
+      "promulgated": "1931-06-01",
+      "effective": "1931-06-01",
+      "repealed": null,
+      "summary_zh": "国民会议民国二十年五月十二日制定，六月一日国民政府公布。第89条写明自公布之日施行。1947年12月25日起本图改列宪法，不把这一天写成约法文本里写明的废止日。大陆多边形上的中华民国，以及1945年10月25日起地图上的台湾中华民国，都列这一部，列到宪法施行日。日本扶植的政权不套用。",
+      "sources": [
+        {"label": "维基文库：训政时期约法", "url": "https://zh.wikisource.org/wiki/%E4%B8%AD%E8%8F%AF%E6%B0%91%E5%9C%8B%E8%A8%93%E6%94%BF%E6%99%82%E6%9C%9F%E7%B4%84%E6%B3%95"}
+      ],
+      "spans": [
+        {"qid": "Q13426199", "from": "1931-06-01", "until": "1947-12-25"},
+        {"qid": "Q865", "from": "1945-10-25", "until": "1947-12-25"}
+      ]
+    },
+    {
+      "id": "roc_1947",
+      "title_zh": "中华民国宪法",
+      "title_orig": "中華民國憲法",
+      "kind": "formal",
+      "adopted": "1946-12-25",
+      "promulgated": "1947-01-01",
+      "effective": "1947-12-25",
+      "repealed": null,
+      "summary_zh": "维基文库版本信息写：制宪国民大会民国三十五年十二月二十五日通过，三十六年一月一日国民政府令公布，刊公报第2715号，三十六年十二月二十五日施行。全国法规资料库的公布日期是民国三十六年一月一日。第175条只写施行准备程序由制定宪法的国民大会议定，条文里没有写1947年12月25日。同日公布的准备程序写明于一月一日公布，也没有写十二月二十五日。增修条文改的是这一部，不另立一部宪法。中华人民共和国不套用。日本扶植的政权不套用。",
+      "sources": [
+        {"label": "全国法规资料库：中华民国宪法，公布日期民国三十六年一月一日", "url": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=A0000001"},
+        {"label": "维基文库：中华民国宪法版本信息", "url": "https://zh.wikisource.org/zh-hans/%E4%B8%AD%E8%8F%AF%E6%B0%91%E5%9C%8B%E6%86%B2%E6%B3%95"},
+        {"label": "维基文库：宪法实施之准备程序，公报第2715号", "url": "https://zh.wikisource.org/zh-hans/%E6%86%B2%E6%B3%95%E5%AF%A6%E6%96%BD%E4%B9%8B%E6%BA%96%E5%82%99%E7%A8%8B%E5%BA%8F"}
+      ],
+      "spans": [
+        {"qid": "Q13426199", "from": "1947-12-25", "until": null},
+        {"qid": "Q865", "from": "1947-12-25", "until": null}
+      ]
+    },
+    {
+      "id": "pr_1850",
+      "title_zh": "1850年普鲁士宪法",
+      "title_orig": "Verfassungsurkunde für den Preußischen Staat",
+      "kind": "imperial",
+      "adopted": null,
+      "promulgated": "1850-01-31",
+      "effective": "1850-01-31",
+      "repealed": "1920-11-30",
+      "summary_zh": "钦定宪法，文献页题为1850年1月31日的普鲁士国家宪法文书。前言提到1848年12月5日的文本，本批没有把那一部单列。页首写明由1920年11月30日的宪法废止，并写1918年11月的命令只是部分废止，那些命令本批没有逐条打开。1871年以后地图上的柏林、柯尼斯堡点到的是德意志帝国，不把这部普鲁士宪法套到帝国上。",
+      "sources": [
+        {"label": "德国宪法文献：1850年普鲁士宪法", "url": "https://www.verfassungen.de/preussen/preussen50.htm"}
+      ],
+      "spans": [{"qid": "Q27306", "from": "1850-01-31", "until": "1920-11-30"}]
+    },
+    {
+      "id": "de_reich_1871",
+      "title_zh": "1871年德意志帝国宪法",
+      "title_orig": "Gesetz betreffend die Verfassung des Deutschen Reiches",
+      "kind": "imperial",
+      "adopted": null,
+      "promulgated": "1871-04-16",
+      "effective": "1871-04-16",
+      "repealed": null,
+      "summary_zh": "文献页题为1871年4月16日关于德意志帝国宪法的法律。页首写明由1919年8月11日帝国宪法第178条废止。本图从魏玛宪法在本文件里的生效日、即1919年8月14日起不再显示，不另推一个废止时刻。普通帝国法律十四日后生效的规则是这部宪法对后来法律的规定，本批不把它套到这部宪法自己的生效日上。只挂在德意志帝国上，不套到普鲁士王国。",
+      "sources": [
+        {"label": "德国宪法文献：1871年帝国宪法", "url": "https://www.verfassungen.de/de67-18/verfassung71.htm"}
+      ],
+      "spans": [{"qid": "Q43287", "from": "1871-04-16", "until": "1919-08-14"}]
+    },
+    {
+      "id": "at_bvg",
+      "title_zh": "奥地利联邦宪法",
+      "title_orig": "Bundes-Verfassungsgesetz",
+      "kind": "formal",
+      "adopted": null,
+      "promulgated": null,
+      "effective": "1945-12-19",
+      "repealed": null,
+      "summary_zh": "法律信息系统的汇订本把 Stammfassung 标为 BGBl. Nr. 1/1930（重新公布）。1920年原始通过日本批没有打开，不写1920年10月1日。同页说明：为记录起见，把全部条文重新完全生效的日期定为1945年12月19日；1945年5月1日是否已经重新生效仍有争议。本批跟随这个记录日期，不选5月1日。1934年5月宪法本批没有打开。不挂到奥匈帝国这一个多边形上，也不挂到1945年5月维也纳点到的苏联占领区编号上。",
+      "sources": [
+        {"label": "奥地利法律信息系统：联邦宪法，1945年12月19日的记录日期", "url": "https://www.ris.bka.gv.at/GeltendeFassung.wxe?Abfrage=Bundesnormen&Gesetzesnummer=10000138"}
+      ],
+      "spans": [
+        {"qid": "Q596239", "from": "1945-12-19", "until": "1955-07-27"},
+        {"qid": "Q40", "from": "1955-07-27", "until": null}
+      ]
+    },
+    {
+      "id": "nl_1815",
+      "title_zh": "荷兰王国宪法",
+      "title_orig": "Grondwet voor het Koninkrijk der Nederlanden",
+      "kind": "formal",
+      "adopted": null,
+      "promulgated": "1815-08-24",
+      "effective": "1815-08-24",
+      "repealed": null,
+      "summary_zh": "政府法律网站的标题是1815年8月24日的荷兰王国宪法，并标明现行汇订文本仍有效。后来的修改不是新的一部宪法，本批不单列。1815年的荷兰联合王国和后来的荷兰王国都挂这一部。比利时不套用。",
+      "sources": [
+        {"label": "荷兰政府法律网站：1815年8月24日宪法", "url": "https://wetten.overheid.nl/BWBR0001840/2023-02-22"}
+      ],
+      "spans": [
+        {"qid": "Q15864", "from": "1815-08-24", "until": null},
+        {"qid": "Q29999", "from": "1815-08-24", "until": null}
+      ]
+    },
+    {
+      "id": "mx_1917",
+      "title_zh": "1917年墨西哥合众国政治宪法",
+      "title_orig": "Constitución Política de los Estados Unidos Mexicanos",
+      "kind": "formal",
+      "adopted": null,
+      "promulgated": "1917-02-05",
+      "effective": "1917-02-05",
+      "repealed": null,
+      "summary_zh": "众议院页面把制宪国会辩论记为1916年11月21日至1917年1月31日，原始公布写在1917年2月5日《联邦官方日报》，2月6日有勘误。本批从2月5日的公布日起列入，不把勘误日写成另一个生效日。页面标的是现行文本。后来的修正不是新的一部宪法。1824年和1857年宪法本批没有打开。",
+      "sources": [
+        {"label": "墨西哥众议院：1917年宪法，原始公布1917年2月5日", "url": "https://www.diputados.gob.mx/LeyesBiblio/ref/cpeum.htm"}
+      ],
+      "spans": [{"qid": "Q96", "from": "1917-02-05", "until": null}]
+    },
+    {
+      "id": "kr_1987",
+      "title_zh": "大韩民国宪法",
+      "title_orig": "Constitution of the Republic of Korea",
+      "kind": "formal",
+      "adopted": null,
+      "promulgated": "1987-10-29",
+      "effective": "1988-02-25",
+      "repealed": null,
+      "summary_zh": "韩国法令信息中心英文本标为宪法第10号，1987年10月29日全部修订，1988年2月25日施行。全部修订是新的一部，不是在旧文本上改几个字。1948年宪法和此前几次全部修订本批没有打开，不把这一部提前列入。朝鲜不套用。",
+      "sources": [
+        {"label": "韩国法令信息中心：宪法，1987年10月29日全部修订，1988年2月25日施行", "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=61603&chrClsCd=010202&urlMode=engLsInfoR&viewCls=engLsInfoR"}
+      ],
+      "spans": [{"qid": "Q884", "from": "1988-02-25", "until": null}]
+    },
+    {
+      "id": "in_1950",
+      "title_zh": "印度宪法",
+      "title_orig": "Constitution of India",
+      "kind": "formal",
+      "adopted": "1949-11-26",
+      "promulgated": null,
+      "effective": "1950-01-26",
+      "repealed": null,
+      "summary_zh": "制宪会议文本写明1949年11月26日通过。第394条写明所列若干条立即生效，其余条文自1950年1月26日起生效，并把这一天称为这部宪法的开始施行日。本图从这一天起、在地图标成印度的政权上列入整部。立即生效的少数条文不单独提前整部列入。后来的修正不是新的一部宪法。",
+      "sources": [
+        {"label": "Constitute Project：印度宪法第394条，1950年1月26日开始施行", "url": "https://www.constituteproject.org/constitution/India_2016?lang=en"}
+      ],
+      "spans": [{"qid": "Q668", "from": "1950-01-26", "until": null}]
+    },
+    {
+      "id": "th_interim_2014",
+      "title_zh": "泰王国临时宪法（2014年）",
+      "title_orig": "Constitution of the Kingdom of Thailand (Interim), B.E. 2557",
+      "kind": "provisional",
+      "adopted": null,
+      "promulgated": "2014-07-22",
+      "effective": "2014-07-22",
+      "repealed": "2017-04-06",
+      "summary_zh": "日期用2017年宪法前言所写：佛历2557年7月22日颁布的临时宪法，自2017年宪法颁布之日起被取代。本批没有另打开临时宪法自己的生效条款，从它所写的颁布日起列入，到2017年4月6日为止。1932年以来更早的各部宪法本批没有打开。",
+      "sources": [
+        {"label": "Constitute Project：2017年泰国宪法前言所记临时宪法颁布日", "url": "https://www.constituteproject.org/constitution/Thailand_2017?lang=en"}
+      ],
+      "spans": [{"qid": "Q869", "from": "2014-07-22", "until": "2017-04-06"}]
+    },
+    {
+      "id": "th_2017",
+      "title_zh": "泰王国宪法（2017年）",
+      "title_orig": "Constitution of the Kingdom of Thailand, B.E. 2560",
+      "kind": "formal",
+      "adopted": null,
+      "promulgated": "2017-04-06",
+      "effective": "2017-04-06",
+      "repealed": null,
+      "summary_zh": "前言把颁布日写成佛历2560年、阳历4月6日，并写明自颁布之日起取代佛历2557年7月22日颁布的临时宪法。本图从2017年4月6日起列入。",
+      "sources": [
+        {"label": "Constitute Project：2017年泰王国宪法前言", "url": "https://www.constituteproject.org/constitution/Thailand_2017?lang=en"}
+      ],
+      "spans": [{"qid": "Q869", "from": "2017-04-06", "until": null}]
+    },
+    {
+      "id": "pl_1997",
+      "title_zh": "1997年波兰共和国宪法",
+      "title_orig": "Konstytucja Rzeczypospolitej Polskiej",
+      "kind": "formal",
+      "adopted": "1997-04-02",
+      "promulgated": null,
+      "effective": "1997-10-17",
+      "repealed": null,
+      "summary_zh": "议会法律数据库的标题是1997年4月2日的波兰共和国宪法，发布机关是国民大会。同一记录把 announcementDate 写成1997-04-02，把 entryIntoForce 和 validFrom 写成1997-10-17，状态是现行。Constitute 文本第243条写自公布之日起三个月期满生效，本图采用数据库给出的生效日，不自己把三个月折成另一个日子，也不把 announcementDate 改称为公布日。1992年小宪法和1952年宪法的沿用本批没有打开。",
+      "sources": [
+        {"label": "波兰议会法律数据库：1997年第78卷第483项，生效日1997-10-17", "url": "https://api.sejm.gov.pl/eli/acts/DU/1997/483"},
+        {"label": "Constitute Project：波兰宪法第243条", "url": "https://www.constituteproject.org/constitution/Poland_2009?lang=en"}
+      ],
+      "spans": [{"qid": "Q36", "from": "1997-10-17", "until": null}]
+    },
+    {
+      "id": "roc_1923",
+      "title_zh": "1923年中华民国宪法",
+      "title_orig": "中華民國憲法",
+      "kind": "formal",
+      "adopted": null,
+      "promulgated": "1923-10-10",
+      "effective": null,
+      "repealed": null,
+      "summary_zh": "维基文库转录页把宪法会议和文本日期写成中华民国十二年十月十日，并写明收录于十二年十月十八日《政府公报》第2728号。条文从序言开始，没有另写施行日。第141条写非依本章修正程序，无论何种事变永不失其效力。1947年未完成的《中华民国宪法史料》目录写「十二年十月一日公布」，与这一页的十月十日、十月十八日公报不一致，本批不采用十月一日。1931年6月1日起改列训政时期约法，不把这一天写成第141条已经被废止。1916年恢复令没有打开。只挂在中华民国上。",
+      "sources": [
+        {"label": "维基文库：曹锟宪法，文本日期十二年十月十日，公报十二年十月十八日", "url": "https://zh.wikisource.org/wiki/%E6%9B%B9%E9%8C%95%E6%86%B2%E6%B3%95"}
+      ],
+      "spans": [{"qid": "Q13426199", "from": "1923-10-10", "until": "1931-06-01"}],
+      "phases": [
+        {"from": "1923-10-10", "until": "1931-06-01", "force_zh": "转录页写10月10日；条文未写施行日", "force_note": "第141条写非依修正程序不失效力。本图从训政约法公布日起不再列这一部，不把那一天写成废止日。"}
+      ]
+    },
+    {
+      "id": "ca_1867",
+      "title_zh": "1867年宪法法",
+      "title_orig": "Constitution Act, 1867",
+      "kind": "formal",
+      "adopted": null,
+      "promulgated": "1867-03-29",
+      "effective": "1867-07-01",
+      "repealed": null,
+      "summary_zh": "司法部汇订本所载法律日期是1867年3月29日。条文把联合日留给公告指定。汇订本尾注写明：1867年7月1日由1867年5月22日的公告指定。1982年宪法法没有废止这一部，两部同时列出。",
+      "sources": [
+        {"label": "加拿大司法部：1867年宪法法，日期1867年3月29日", "url": "https://laws-lois.justice.gc.ca/eng/const/page-1.html"},
+        {"label": "加拿大司法部尾注：1867年7月1日由5月22日公告指定", "url": "https://laws-lois.justice.gc.ca/eng/const/endNotes.html"}
+      ],
+      "spans": [{"qid": "Q16", "from": "1867-07-01", "until": null}]
+    },
+    {
+      "id": "ca_1982",
+      "title_zh": "1982年宪法法",
+      "title_orig": "Constitution Act, 1982",
+      "kind": "formal",
+      "adopted": null,
+      "promulgated": null,
+      "effective": "1982-04-17",
+      "repealed": null,
+      "summary_zh": "司法部汇订本尾注写明《1982年宪法法》于1982年4月17日生效。它没有废止1867年宪法法。这一页没有另打开1982年文本的生效条款原文，日期用尾注所写的生效日。",
+      "sources": [
+        {"label": "加拿大司法部尾注：1982年宪法法于1982年4月17日生效", "url": "https://laws-lois.justice.gc.ca/eng/const/endNotes.html"}
+      ],
+      "spans": [{"qid": "Q16", "from": "1982-04-17", "until": null}]
+    },
+    {
+      "id": "ie_1922",
+      "title_zh": "1922年爱尔兰自由邦宪法",
+      "title_orig": "Constitution of the Irish Free State (Saorstát Eireann)",
+      "kind": "formal",
+      "adopted": null,
+      "promulgated": null,
+      "effective": null,
+      "effective_clause": "于英王公告发出之日施行；公告最迟在1922年12月6日",
+      "repealed": null,
+      "summary_zh": "第83条写明：制宪会议和英国议会通过并采用这部宪法，应由英王公告宣布，越快越好，最迟不晚于1922年12月6日；宪法自该公告发出之日起施行。打开的文本没有印出公告实际发出的日子。本图从条文所写的最迟日列入，不把12月6日写成公告上的日期。1937年宪法写明自1937年12月29日起施行，这一天起不再列这一部。只挂在爱尔兰自由邦上。",
+      "sources": [
+        {"label": "爱尔兰法令汇编：1922年自由邦宪法第83条", "url": "https://www.irishstatutebook.ie/eli/1922/act/1/enacted/en/print.html"}
+      ],
+      "spans": [{"qid": "Q31747", "from": "1922-12-06", "until": "1937-12-29"}]
+    },
+    {
+      "id": "ie_1937",
+      "title_zh": "1937年爱尔兰宪法",
+      "title_orig": "Constitution of Ireland",
+      "kind": "formal",
+      "adopted": "1937-07-01",
+      "promulgated": null,
+      "effective": "1937-12-29",
+      "repealed": null,
+      "summary_zh": "法令汇编首页写明：人民于1937年7月1日制定，自1937年12月29日起施行。12月28日地图上仍是爱尔兰自由邦，列1922年宪法。12月29日起列这一部。后来的修正不是新的一部宪法。",
+      "sources": [
+        {"label": "爱尔兰法令汇编：1937年7月1日制定，1937年12月29日起施行", "url": "https://www.irishstatutebook.ie/eli/cons/en/html"}
+      ],
+      "spans": [{"qid": "Q27", "from": "1937-12-29", "until": null}]
+    },
+    {
+      "id": "lu_1868",
+      "title_zh": "1868年卢森堡宪法",
+      "title_orig": "Constitution du Grand-Duché de Luxembourg",
+      "kind": "formal",
+      "adopted": null,
+      "promulgated": "1868-10-17",
+      "effective": "1868-10-17",
+      "repealed": null,
+      "summary_zh": "官方公报所载文本落款「Au Loo, le 17 octobre 1868」，由国王兼大公纪尧姆签署。打开的这一页没有另写一条更晚的生效句，从落款日起列入。后来的修改不是新的一部宪法。",
+      "sources": [
+        {"label": "卢森堡官方公报：1868年10月17日宪法", "url": "https://legilux.public.lu/eli/etat/leg/constitution/1868/10/17/n1/jo"}
+      ],
+      "spans": [{"qid": "Q32", "from": "1868-10-17", "until": null}]
+    },
+    {
+      "id": "no_1814",
+      "title_zh": "1814年挪威王国宪法",
+      "title_orig": "Kongeriket Norges Grunnlov",
+      "kind": "formal",
+      "adopted": "1814-05-16",
+      "promulgated": "1814-05-17",
+      "effective": "1814-05-17",
+      "repealed": null,
+      "summary_zh": "挪威法律数据库在这部法律的页面上写明：制宪会议于1814年5月16日在埃兹沃尔通过，1814年5月17日注明日期并签署。页面没有另写一个生效日，从签署日起列入。后来的修改不是新的一部宪法。瑞典－挪威联盟这个多边形和斯德哥尔摩点到的是同一个政权编号，不把挪威宪法套上去。只挂在1814年5月17日的挪威王国和后来单独的挪威上。",
+      "sources": [
+        {"label": "挪威法律数据库：1814年5月16日通过，5月17日签署", "url": "https://lovdata.no/dokument/NL/lov/1814-05-17"}
+      ],
+      "spans": [
+        {"qid": "Q2597352", "from": "1814-05-17", "until": null},
+        {"qid": "Q20", "from": "1814-05-17", "until": null}
+      ]
     }
   ],
   "gaps": [
@@ -764,6 +1106,90 @@
       "from": "1945-05-08",
       "until": "1949-10-07",
       "note": "已核对：苏联占领区不是联邦共和国，也不提前使用东德1949年10月7日的宪法。"
+    },
+    {
+      "qids": ["Q708865", "Q696242", "Q704714"],
+      "from": null,
+      "until": null,
+      "note": "已核对：这是日本扶植的政权。不套中华民国的约法或宪法。它们自己的组织法本批没有打开。"
+    },
+    {
+      "qids": ["Q96"],
+      "from": null,
+      "until": "1917-02-05",
+      "note": "已核对：1917年2月5日以前的墨西哥宪法本批没有打开。不把1917年文本提前列入。"
+    },
+    {
+      "qids": ["Q884"],
+      "from": "1948-08-15",
+      "until": "1988-02-25",
+      "note": "已核对：1948年宪法和此后、1987年全部修订以前的文本本批没有打开。1988年2月25日以前不列现行宪法。"
+    },
+    {
+      "qids": ["Q28513"],
+      "from": null,
+      "until": null,
+      "note": "已核对：奥匈帝国这一个多边形没有拆开奥地利和匈牙利。1867年十二月宪法本批没有打开，不把后来的奥地利联邦宪法套到帝国上。"
+    },
+    {
+      "qids": ["Q518101", "Q176495"],
+      "from": null,
+      "until": null,
+      "note": "已核对：1920年联邦宪法的原始公布日和1934年5月宪法本批没有打开。不把1945年12月19日以后采用的文本提前套到第一共和国或联邦国。"
+    },
+    {
+      "qids": ["Q596239"],
+      "from": "1945-04-27",
+      "until": "1945-12-19",
+      "note": "已核对：法律信息系统写明5月1日是否重新生效仍有争议，记录上采用的完全生效日是1945年12月19日。这一天以前不列联邦宪法。"
+    },
+    {
+      "qids": ["Q27306"],
+      "from": null,
+      "until": "1850-01-31",
+      "note": "已核对：1848年12月5日的文本只在1850年钦定宪法的前言里被提到，本批没有单列。"
+    },
+    {
+      "qids": ["Q43287"],
+      "from": null,
+      "until": "1871-04-16",
+      "note": "已核对：北德意志邦联宪法本批没有打开。1871年4月16日以前不列帝国宪法。"
+    },
+    {
+      "qids": ["Q34"],
+      "from": null,
+      "until": null,
+      "note": "已核对：瑞典议会文本库的政府组织法公布令是 Kungörelse (1974:152)，签发日写1974-02-28。汇订本里能读到的生效句是后来修正的（1977、1980、2011、2015），没有印出1974年文本自己的原生效日。1809年政府组织法这一页也没有。本批不写1975年1月1日。"
+    },
+    {
+      "qids": ["Q31"],
+      "from": null,
+      "until": null,
+      "note": "已核对：比利时参议院网站刊有现行宪法。打开的页面没有写1831年的通过日或生效日，本批不补一个日子。"
+    },
+    {
+      "qids": ["Q408"],
+      "from": null,
+      "until": null,
+      "note": "已核对：澳大利亚联邦立法登记册把《澳大利亚联邦宪法法》的制定日标为1900年7月9日，并标为现行。同一登记把“在行”的起始写成1900年1月1日，早于制定日，本批不采用。指定生效日的公告本批没有打开，所以不写1901年1月1日。"
+    },
+    {
+      "qids": ["Q869"],
+      "from": null,
+      "until": "2014-07-22",
+      "note": "已核对：2014年7月22日以前的泰国宪法，包括1932年的文本，本批没有打开。"
+    },
+    {
+      "qids": ["Q1775277"],
+      "from": "1947-08-15",
+      "until": "1950-01-26",
+      "note": "已核对：印度宪法第394条把开始施行日定为1950年1月26日。这一天以前的印度联邦不提前列整部宪法。"
+    },
+    {
+      "qids": ["Q36"],
+      "from": "1989-12-31",
+      "until": "1997-10-17",
+      "note": "已核对：1997年宪法的生效日是10月17日。这一天以前第三共和国沿用的1952年宪法和1992年小宪法本批没有打开。"
     }
   ]
 }
