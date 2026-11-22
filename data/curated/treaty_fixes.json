@@ -3090,5 +3090,130 @@
     "sources": [
       "https://treaties.un.org/pages/ViewDetails.aspx?src=TREATY&mtdsg_no=XXVII-10&chapter=27&clang=_en"
     ]
+  },
+  "Q1197271": {
+    "batch": "2026-11-22-d",
+    "parties": [
+      {
+        "s": "Q188712",
+        "via": "curated"
+      },
+      {
+        "s": "Q34266",
+        "via": "P710"
+      }
+    ],
+    "countries": [
+      "Q188712",
+      "Q34266"
+    ],
+    "note": "签署日在大日本帝国期间。日本国宪法1946年11月3日公布，第100条规定自公布满六个月施行，即1947年5月3日。第二尚氏是琉球王统，不是这些条约里的日本一方。只改这一方。",
+    "sources": [
+      "https://www.ndl.go.jp/constitution/e/etc/c01.html",
+      "https://www.wikidata.org/wiki/Q188712"
+    ]
+  },
+  "Q11505225": {
+    "batch": "2026-11-22-d",
+    "parties": [
+      {
+        "s": "Q188712",
+        "via": "curated"
+      },
+      {
+        "s": "Q96",
+        "via": "P17"
+      }
+    ],
+    "countries": [
+      "Q188712",
+      "Q96"
+    ],
+    "note": "签署日在大日本帝国期间。日本国宪法1946年11月3日公布，第100条规定自公布满六个月施行，即1947年5月3日。第二尚氏是琉球王统，不是这些条约里的日本一方。只改这一方。",
+    "sources": [
+      "https://www.ndl.go.jp/constitution/e/etc/c01.html",
+      "https://www.wikidata.org/wiki/Q188712"
+    ]
+  },
+  "Q11524926": {
+    "batch": "2026-11-22-d",
+    "parties": [
+      {
+        "s": "Q188712",
+        "via": "curated"
+      }
+    ],
+    "countries": [
+      "Q188712"
+    ],
+    "note": "签署日在大日本帝国期间。日本国宪法1946年11月3日公布，第100条规定自公布满六个月施行，即1947年5月3日。第二尚氏是琉球王统，不是这些条约里的日本一方。只改这一方。",
+    "sources": [
+      "https://www.ndl.go.jp/constitution/e/etc/c01.html",
+      "https://www.wikidata.org/wiki/Q188712"
+    ]
+  },
+  "Q15931852": {
+    "batch": "2026-11-22-d",
+    "parties": [
+      {
+        "s": "Q188712",
+        "via": "P1268"
+      },
+      {
+        "s": "Q8733",
+        "via": "P1268"
+      }
+    ],
+    "countries": [
+      "Q188712",
+      "Q8733"
+    ],
+    "note": "签署日在大日本帝国期间。日本国宪法1946年11月3日公布，第100条规定自公布满六个月施行，即1947年5月3日。第二尚氏是琉球王统，不是这些条约里的日本一方。只改这一方。",
+    "sources": [
+      "https://www.ndl.go.jp/constitution/e/etc/c01.html",
+      "https://www.wikidata.org/wiki/Q188712"
+    ]
+  },
+  "Q86742269": {
+    "batch": "2026-11-22-d",
+    "parties": [
+      {
+        "s": "Q188712",
+        "via": "P1268"
+      },
+      {
+        "s": "Q414",
+        "via": "P1268"
+      }
+    ],
+    "countries": [
+      "Q188712",
+      "Q414"
+    ],
+    "note": "签署日在大日本帝国期间。日本国宪法1946年11月3日公布，第100条规定自公布满六个月施行，即1947年5月3日。第二尚氏是琉球王统，不是这些条约里的日本一方。只改这一方。",
+    "sources": [
+      "https://www.ndl.go.jp/constitution/e/etc/c01.html",
+      "https://www.wikidata.org/wiki/Q188712"
+    ]
+  },
+  "Q5467510": {
+    "batch": "2026-11-22-d",
+    "adopted": {
+      "y": 1930,
+      "m": 6,
+      "d": 28,
+      "p": 11
+    },
+    "effective": {
+      "y": 1932,
+      "m": 5,
+      "d": 1,
+      "p": 11
+    },
+    "status": "signed_then_effective",
+    "note": "1930年6月28日在日内瓦通过，1932年5月1日按第28条生效。缔约方名单仍空，不补。",
+    "sources": [
+      "https://treaties.un.org/pages/showDetails.aspx?objid=08000002801611d8"
+    ]
   }
 }
