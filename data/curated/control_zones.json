@@ -3392,7 +3392,6 @@
    "until": "1937-10-28",
    "geometry": {
     "roc_counties": [
-     "mcgd:s1161",
      "mcgd:s1163",
      "mcgd:s1174"
     ]
@@ -3449,7 +3448,6 @@
      "mcgd:s767",
      "mcgd:s768",
      "mcgd:s770",
-     "mcgd:s774",
      "mcgd:s775",
      "mcgd:s777",
      "mcgd:s780",
@@ -3558,7 +3556,6 @@
     "roc_counties": [
      "mcgd:s1181",
      "mcgd:s14",
-     "mcgd:s144",
      "mcgd:s145",
      "mcgd:s146",
      "mcgd:s147",
@@ -3791,14 +3788,11 @@
     "roc_counties": [
      "mcgd:s101",
      "mcgd:s1013",
-     "mcgd:s1014",
      "mcgd:s1015",
      "mcgd:s1017",
      "mcgd:s1018",
-     "mcgd:s1019",
      "mcgd:s1020",
      "mcgd:s1025",
-     "mcgd:s1027",
      "mcgd:s1048",
      "mcgd:s1049",
      "mcgd:s1052",
@@ -3808,7 +3802,6 @@
      "mcgd:s1064",
      "mcgd:s1068",
      "mcgd:s1076",
-     "mcgd:s1088",
      "mcgd:s1122",
      "mcgd:s1126",
      "mcgd:s1128",
@@ -3829,7 +3822,6 @@
      "mcgd:s1233",
      "mcgd:s1235",
      "mcgd:s1239",
-     "mcgd:s1241",
      "mcgd:s1243",
      "mcgd:s1245",
      "mcgd:s1247",
@@ -3860,17 +3852,14 @@
      "mcgd:s1464",
      "mcgd:s147",
      "mcgd:s1470",
-     "mcgd:s1494",
      "mcgd:s1496",
      "mcgd:s152",
      "mcgd:s153",
-     "mcgd:s1536",
      "mcgd:s154",
      "mcgd:s1546",
      "mcgd:s155",
      "mcgd:s156",
      "mcgd:s157",
-     "mcgd:s1570",
      "mcgd:s158",
      "mcgd:s159",
      "mcgd:s1594",
@@ -3918,7 +3907,6 @@
      "mcgd:s1717",
      "mcgd:s1719",
      "mcgd:s172",
-     "mcgd:s1721",
      "mcgd:s1723",
      "mcgd:s1724",
      "mcgd:s1725",
@@ -3940,7 +3928,6 @@
      "mcgd:s1752",
      "mcgd:s1754",
      "mcgd:s1756",
-     "mcgd:s1758",
      "mcgd:s1760",
      "mcgd:s1762",
      "mcgd:s1764",
@@ -3954,10 +3941,8 @@
      "mcgd:s180",
      "mcgd:s1801",
      "mcgd:s181",
-     "mcgd:s1816",
      "mcgd:s183",
      "mcgd:s1850",
-     "mcgd:s1856",
      "mcgd:s195",
      "mcgd:s200",
      "mcgd:s201",
@@ -4061,7 +4046,6 @@
      "mcgd:s561",
      "mcgd:s569",
      "mcgd:s60",
-     "mcgd:s66",
      "mcgd:s72",
      "mcgd:s73",
      "mcgd:s74",
@@ -4115,14 +4099,11 @@
     "roc_counties": [
      "mcgd:s101",
      "mcgd:s1013",
-     "mcgd:s1014",
      "mcgd:s1015",
      "mcgd:s1017",
      "mcgd:s1018",
-     "mcgd:s1019",
      "mcgd:s1020",
      "mcgd:s1025",
-     "mcgd:s1027",
      "mcgd:s1048",
      "mcgd:s1049",
      "mcgd:s1052",
@@ -4132,7 +4113,6 @@
      "mcgd:s1064",
      "mcgd:s1068",
      "mcgd:s1076",
-     "mcgd:s1088",
      "mcgd:s1122",
      "mcgd:s1126",
      "mcgd:s1128",
@@ -4153,7 +4133,6 @@
      "mcgd:s1233",
      "mcgd:s1235",
      "mcgd:s1239",
-     "mcgd:s1241",
      "mcgd:s1243",
      "mcgd:s1245",
      "mcgd:s1247",
@@ -4184,17 +4163,14 @@
      "mcgd:s1464",
      "mcgd:s147",
      "mcgd:s1470",
-     "mcgd:s1494",
      "mcgd:s1496",
      "mcgd:s152",
      "mcgd:s153",
-     "mcgd:s1536",
      "mcgd:s154",
      "mcgd:s1546",
      "mcgd:s155",
      "mcgd:s156",
      "mcgd:s157",
-     "mcgd:s1570",
      "mcgd:s158",
      "mcgd:s159",
      "mcgd:s1594",
@@ -4242,7 +4218,6 @@
      "mcgd:s1717",
      "mcgd:s1719",
      "mcgd:s172",
-     "mcgd:s1721",
      "mcgd:s1723",
      "mcgd:s1724",
      "mcgd:s1725",
@@ -4264,7 +4239,6 @@
      "mcgd:s1752",
      "mcgd:s1754",
      "mcgd:s1756",
-     "mcgd:s1758",
      "mcgd:s1760",
      "mcgd:s1762",
      "mcgd:s1764",
@@ -4278,10 +4252,8 @@
      "mcgd:s180",
      "mcgd:s1801",
      "mcgd:s181",
-     "mcgd:s1816",
      "mcgd:s183",
      "mcgd:s1850",
-     "mcgd:s1856",
      "mcgd:s195",
      "mcgd:s200",
      "mcgd:s201",
@@ -4385,7 +4357,6 @@
      "mcgd:s561",
      "mcgd:s569",
      "mcgd:s60",
-     "mcgd:s66",
      "mcgd:s72",
      "mcgd:s73",
      "mcgd:s74",
@@ -4451,7 +4422,6 @@
      "mcgd:s1183",
      "mcgd:s1189",
      "mcgd:s1199",
-     "mcgd:s1201",
      "mcgd:s1217",
      "mcgd:s1458",
      "mcgd:s1479",
@@ -4554,10 +4524,11 @@
    },
    "approx": true,
    "sources": [
-    "https://zh.wikipedia.org/wiki/青岛市"
+    "https://www.drnh.gov.tw/p/404-1003-13313.php?Lang=zh-tw",
+    "https://zenodo.org/records/5721459"
    ],
-   "note": "大致范围，不是县界。青岛市条目写1938-01-10日本第二次侵占青岛，随后归临时政府。胶县县城点。未核对《中華民國史事紀要》。 大致。县域为治所泰森多边形近似。",
-   "dates_note": "1938-01-10起。此前从11月12日和12月14日的华北色块里挖出。"
+   "note": "青岛周边。已核對《中華民國史事紀要》民國二十七年一月至六月，印页一五一（PDF 第158页），页眉二月四日，追述一月十日占领青岛后分兵北上、西进。日子仍是 1938-01-10。大致。县域为治所泰森多边形近似。",
+   "dates_note": "青岛 1938-01-10 起。已核對印页一五一追述一月十日。"
   },
   {
    "id": "sjw_Q188712_1937-12-14_nanjing",
@@ -10922,11 +10893,11 @@
    },
    "approx": true,
    "sources": [
-    "https://daj.wuxi.gov.cn/doc/2014/07/10/2425350.shtml",
-    "https://daj.wuxi.gov.cn/doc/2016/09/21/2425484.shtml"
+    "https://www.drnh.gov.tw/p/404-1003-13312.php?Lang=zh-tw",
+    "https://zenodo.org/records/5721459"
    ],
-   "note": "大致范围，不是县界。无锡档案写1937-11-25晚沦陷。只把无锡县城从11月12日的华中色块里移出。苏州、常州不在这框里。未核对《中華民國史事紀要》。 大致。县域为治所泰森多边形近似。",
-   "dates_note": "1937-11-25起，收到1938-03-28，与当时盖住这里的华中色块同一天结束。"
+   "note": "无锡县域。已核對《中華民國史事紀要》民國二十六年七月至十二月，印页六八四（PDF 第692页），页眉十一月二十五日，写本日无锡、长兴失守。印页六九一（PDF 第699页）追述二十五日无锡失陷。收到后面那一块。大致。县域为治所泰森多边形近似。",
+   "dates_note": "无锡 1937-11-25 起。已核對印页六八四。"
   },
   {
    "id": "sjw_Q188712_1937-11-29_changzhou",
@@ -10948,10 +10919,11 @@
    },
    "approx": true,
    "sources": [
-    "https://fzg.changzhou.gov.cn/html/fzg/1970/QMHQODDK_0813/21206.html"
+    "https://www.drnh.gov.tw/p/404-1003-13312.php?Lang=zh-tw",
+    "https://zenodo.org/records/5721459"
    ],
-   "note": "大致范围，不是县界。常州地方志写1937-11-29沦陷。12月14日起并入更大的占领层，不把那一天挖开。无锡、镇江不在这框里。未核对《中華民國史事紀要》。 大致。县域为治所泰森多边形近似。",
-   "dates_note": "1937-11-29起，收到1937-12-14。"
+   "note": "武进县域。纪要写武进（常州）。已核對《中華民國史事紀要》民國二十六年七月至十二月，印页六九一（PDF 第699页），页眉十一月二十八、二十九日，二十九日这一条写本日正午日军第十六师团进占武进（常州），继向丹阳推进。丹阳只写进犯，不另画。大致。县域为治所泰森多边形近似。",
+   "dates_note": "常州 1937-11-29 起。已核對印页六九一。"
   },
   {
    "id": "sjw_Q188712_1937-12-10_wuhu",
@@ -12032,6 +12004,864 @@
    "sources": [
     "https://web.archive.org/web/20170809172042/http://www.jssdfz.gov.cn/book/jsz2/FL/FL.html",
     "http://lyj.jiangsu.gov.cn/art/2021/4/21/art_81813_9762633.html",
+    "https://zenodo.org/records/5721459"
+   ]
+  },
+  {
+   "id": "sjw_cell_mcgd:s908_1937-09-14_广灵",
+   "group": "sino_japanese_war",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "日军占领区（广灵）",
+   "name_en": "日军占领区（广灵）",
+   "controller": {
+    "qid": "Q188712",
+    "zh": "日军占领区"
+   },
+   "from": "1937-09-14",
+   "until": "1937-10-28",
+   "geometry": {
+    "roc_counties": [
+     "mcgd:s908"
+    ]
+   },
+   "approx": true,
+   "note": "广灵县域。已核對《中華民國史事紀要》民國26年7–12月，印页四四〇（PDF 第448页），页眉九月十七日，追述十四日广灵失守。同页写十三日大同沦陷，大同仍是十三日。收到下一块。大致。县域为治所泰森多边形近似。",
+   "dates_note": "广灵 1937-09-14 起，收到 1937-10-28。已核對印页四四〇。",
+   "sources": [
+    "https://www.drnh.gov.tw/p/404-1003-13312.php?Lang=zh-tw",
+    "https://zenodo.org/records/5721459"
+   ]
+  },
+  {
+   "id": "sjw_cell_mcgd:s1161_1937-09-12_商都",
+   "group": "sino_japanese_war",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "蒙古军政府（商都）",
+   "name_en": "蒙古军政府（商都）",
+   "controller": {
+    "qid": "Q85883982",
+    "zh": "蒙古军政府"
+   },
+   "from": "1937-09-12",
+   "until": "1937-10-28",
+   "geometry": {
+    "roc_counties": [
+     "mcgd:s1161"
+    ]
+   },
+   "approx": true,
+   "note": "商都县域。已核對《中華民國史事紀要》民國26年7–12月，印页四五八（PDF 第466页），页眉九月二十五日，追述本月十二日商都失陷。同段十日德化是察绥的德化，不是福建德化，不画。南壕堑不是县。收到下一块。大致。县域为治所泰森多边形近似。",
+   "dates_note": "商都 1937-09-12 起，收到 1937-10-28。已核對印页四五八。",
+   "sources": [
+    "https://www.drnh.gov.tw/p/404-1003-13312.php?Lang=zh-tw",
+    "https://zenodo.org/records/5721459"
+   ]
+  },
+  {
+   "id": "sjw_cell_mcgd:s144_1937-09-28_定县",
+   "group": "sino_japanese_war",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "日军占领区（定县）",
+   "name_en": "日军占领区（定县）",
+   "controller": {
+    "qid": "Q188712",
+    "zh": "日军占领区"
+   },
+   "from": "1937-09-28",
+   "until": "1937-11-12",
+   "geometry": {
+    "roc_counties": [
+     "mcgd:s144"
+    ]
+   },
+   "approx": true,
+   "note": "定县县域。已核對《中華民國史事紀要》民國26年7–12月，印页四八一（PDF 第489页），页眉九月二十八日，写本日位于石家庄及保定间之定县遭日军侵陷。同页追述二十四日攻陷保定，保定仍用写本日的九月二十二日。收到下一块。大致。县域为治所泰森多边形近似。",
+   "dates_note": "定县 1937-09-28 起，收到 1937-11-12。已核對印页四八一。",
+   "sources": [
+    "https://www.drnh.gov.tw/p/404-1003-13312.php?Lang=zh-tw",
+    "https://zenodo.org/records/5721459"
+   ]
+  },
+  {
+   "id": "sjw_cell_mcgd:s1414_1937-10-15_归绥",
+   "group": "sino_japanese_war",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "日军占领区（归绥）",
+   "name_en": "日军占领区（归绥）",
+   "controller": {
+    "qid": "Q188712",
+    "zh": "日军占领区"
+   },
+   "from": "1937-10-15",
+   "until": "1937-10-28",
+   "geometry": {
+    "roc_counties": [
+     "mcgd:s1414"
+    ]
+   },
+   "approx": true,
+   "note": "归绥县域。已核對《中華民國史事紀要》民國26年7–12月，印页五五一（PDF 第559页），页眉十月十六日，写昨（十五）日归绥失陷。同页标题写侵陷包头与固阳，正文只写续攻包头，包头、固阳不画。收到下一块。大致。县域为治所泰森多边形近似。",
+   "dates_note": "归绥 1937-10-15 起，收到 1937-10-28。已核對印页五五一。",
+   "sources": [
+    "https://www.drnh.gov.tw/p/404-1003-13312.php?Lang=zh-tw",
+    "https://zenodo.org/records/5721459"
+   ]
+  },
+  {
+   "id": "sjw_cell_mcgd:s211_1937-10-12_赵县",
+   "group": "sino_japanese_war",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "日军占领区（赵县）",
+   "name_en": "日军占领区（赵县）",
+   "controller": {
+    "qid": "Q188712",
+    "zh": "日军占领区"
+   },
+   "from": "1937-10-12",
+   "until": "1937-11-12",
+   "geometry": {
+    "roc_counties": [
+     "mcgd:s211"
+    ]
+   },
+   "approx": true,
+   "note": "赵县县域。已核對《中華民國史事紀要》民國26年7–12月，印页五四九（PDF 第557页），页眉十月十五日，追述十二日陷赵县、柏乡。收到下一块。大致。县域为治所泰森多边形近似。",
+   "dates_note": "赵县 1937-10-12 起，收到 1937-11-12。已核對印页五四九。",
+   "sources": [
+    "https://www.drnh.gov.tw/p/404-1003-13312.php?Lang=zh-tw",
+    "https://zenodo.org/records/5721459"
+   ]
+  },
+  {
+   "id": "sjw_cell_mcgd:s208_1937-10-12_柏乡",
+   "group": "sino_japanese_war",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "日军占领区（柏乡）",
+   "name_en": "日军占领区（柏乡）",
+   "controller": {
+    "qid": "Q188712",
+    "zh": "日军占领区"
+   },
+   "from": "1937-10-12",
+   "until": "1937-11-12",
+   "geometry": {
+    "roc_counties": [
+     "mcgd:s208"
+    ]
+   },
+   "approx": true,
+   "note": "柏乡县域。已核對《中華民國史事紀要》民國26年7–12月，印页五四九（PDF 第557页），页眉十月十五日，追述十二日陷赵县、柏乡。收到下一块。大致。县域为治所泰森多边形近似。",
+   "dates_note": "柏乡 1937-10-12 起，收到 1937-11-12。已核對印页五四九。",
+   "sources": [
+    "https://www.drnh.gov.tw/p/404-1003-13312.php?Lang=zh-tw",
+    "https://zenodo.org/records/5721459"
+   ]
+  },
+  {
+   "id": "sjw_cell_mcgd:s212_1937-10-14_内丘",
+   "group": "sino_japanese_war",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "日军占领区（内丘）",
+   "name_en": "日军占领区（内丘）",
+   "controller": {
+    "qid": "Q188712",
+    "zh": "日军占领区"
+   },
+   "from": "1937-10-14",
+   "until": "1937-11-12",
+   "geometry": {
+    "roc_counties": [
+     "mcgd:s212"
+    ]
+   },
+   "approx": true,
+   "note": "内丘县域。已核對《中華民國史事紀要》民國26年7–12月，印页五四九（PDF 第557页），页眉十月十五日，追述十四日进占内邱、任县。1931 年治所写作内丘。收到下一块。大致。县域为治所泰森多边形近似。",
+   "dates_note": "内丘 1937-10-14 起，收到 1937-11-12。已核對印页五四九。",
+   "sources": [
+    "https://www.drnh.gov.tw/p/404-1003-13312.php?Lang=zh-tw",
+    "https://zenodo.org/records/5721459"
+   ]
+  },
+  {
+   "id": "sjw_cell_mcgd:s214_1937-10-14_任县",
+   "group": "sino_japanese_war",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "日军占领区（任县）",
+   "name_en": "日军占领区（任县）",
+   "controller": {
+    "qid": "Q188712",
+    "zh": "日军占领区"
+   },
+   "from": "1937-10-14",
+   "until": "1937-11-12",
+   "geometry": {
+    "roc_counties": [
+     "mcgd:s214"
+    ]
+   },
+   "approx": true,
+   "note": "任县县域。已核對《中華民國史事紀要》民國26年7–12月，印页五四九（PDF 第557页），页眉十月十五日，追述十四日进占内邱、任县。收到下一块。大致。县域为治所泰森多边形近似。",
+   "dates_note": "任县 1937-10-14 起，收到 1937-11-12。已核對印页五四九。",
+   "sources": [
+    "https://www.drnh.gov.tw/p/404-1003-13312.php?Lang=zh-tw",
+    "https://zenodo.org/records/5721459"
+   ]
+  },
+  {
+   "id": "sjw_cell_mcgd:s374_1937-10-15_邢台",
+   "group": "sino_japanese_war",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "日军占领区（邢台）",
+   "name_en": "日军占领区（邢台）",
+   "controller": {
+    "qid": "Q188712",
+    "zh": "日军占领区"
+   },
+   "from": "1937-10-15",
+   "until": "1937-11-12",
+   "geometry": {
+    "roc_counties": [
+     "mcgd:s374"
+    ]
+   },
+   "approx": true,
+   "note": "邢台县域。已核對《中華民國史事紀要》民國26年7–12月，印页五四九（PDF 第557页），页眉十月十五日，写本日日军侵陷顺德。这一条在平汉线上，是1931年的邢台，不是广东顺德。收到下一块。大致。县域为治所泰森多边形近似。",
+   "dates_note": "邢台 1937-10-15 起，收到 1937-11-12。已核對印页五四九。",
+   "sources": [
+    "https://www.drnh.gov.tw/p/404-1003-13312.php?Lang=zh-tw",
+    "https://zenodo.org/records/5721459"
+   ]
+  },
+  {
+   "id": "sjw_cell_mcgd:s1201_1937-11-19_常熟",
+   "group": "sino_japanese_war",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "日军占领区（常熟）",
+   "name_en": "日军占领区（常熟）",
+   "controller": {
+    "qid": "Q188712",
+    "zh": "日军占领区"
+   },
+   "from": "1937-11-19",
+   "until": "1938-03-28",
+   "geometry": {
+    "roc_counties": [
+     "mcgd:s1201"
+    ]
+   },
+   "approx": true,
+   "note": "常熟县域。已核對《中華民國史事紀要》民國26年7–12月，印页六八四（PDF 第692页），页眉十一月二十五日，追述本月十九日日军进陷常熟、苏州。苏州仍是十九日。收到下一块。大致。县域为治所泰森多边形近似。",
+   "dates_note": "常熟 1937-11-19 起，收到 1938-03-28。已核對印页六八四。",
+   "sources": [
+    "https://www.drnh.gov.tw/p/404-1003-13312.php?Lang=zh-tw",
+    "https://zenodo.org/records/5721459"
+   ]
+  },
+  {
+   "id": "sjw_cell_mcgd:s1061_1937-11-25_长兴",
+   "group": "sino_japanese_war",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "日军占领区（长兴）",
+   "name_en": "日军占领区（长兴）",
+   "controller": {
+    "qid": "Q188712",
+    "zh": "日军占领区"
+   },
+   "from": "1937-11-25",
+   "until": "1937-12-14",
+   "geometry": {
+    "roc_counties": [
+     "mcgd:s1061"
+    ]
+   },
+   "approx": true,
+   "note": "长兴县域。已核對《中華民國史事紀要》民國26年7–12月，印页六八四（PDF 第692页），页眉十一月二十五日，写本日无锡、长兴失守。印页六九〇（PDF 第698页）页眉十一月二十八日，又写本日长兴失守，并写二十五日侵佔长兴。史事纪要内记载不一。地图用较早且写本日的十一月二十五日。收到下一块。大致。县域为治所泰森多边形近似。",
+   "dates_note": "长兴 1937-11-25 起，收到 1937-12-14。已核對印页六八四。",
+   "sources": [
+    "https://www.drnh.gov.tw/p/404-1003-13312.php?Lang=zh-tw",
+    "https://zenodo.org/records/5721459"
+   ]
+  },
+  {
+   "id": "sjw_cell_mcgd:s534_1937-11-11_大名",
+   "group": "sino_japanese_war",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "日军占领区（大名）",
+   "name_en": "日军占领区（大名）",
+   "controller": {
+    "qid": "Q188712",
+    "zh": "日军占领区"
+   },
+   "from": "1937-11-11",
+   "until": "1937-11-12",
+   "geometry": {
+    "roc_counties": [
+     "mcgd:s534"
+    ]
+   },
+   "approx": true,
+   "note": "大名县域。已核對《中華民國史事紀要》民國26年7–12月，印页六四七（PDF 第655页），页眉十一月十一日，十一日这一条写平汉线上日军侵陷大名。收到下一块。大致。县域为治所泰森多边形近似。",
+   "dates_note": "大名 1937-11-11 起，收到 1937-11-12。已核對印页六四七。",
+   "sources": [
+    "https://www.drnh.gov.tw/p/404-1003-13312.php?Lang=zh-tw",
+    "https://zenodo.org/records/5721459"
+   ]
+  },
+  {
+   "id": "sjw_cell_mcgd:s1758_1938-01-04_曲阜",
+   "group": "sino_japanese_war",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "日军占领区（曲阜）",
+   "name_en": "日军占领区（曲阜）",
+   "controller": {
+    "qid": "Q188712",
+    "zh": "日军占领区"
+   },
+   "from": "1938-01-04",
+   "until": "1938-06-06",
+   "geometry": {
+    "roc_counties": [
+     "mcgd:s1758"
+    ]
+   },
+   "approx": true,
+   "note": "曲阜县域。已核對《中華民國史事紀要》民國27年1–6月，印页一二（PDF 第20页），页眉一月四日，四日这一条写日军本日中午陷曲阜，并入据孔庙。收到下一块。大致。县域为治所泰森多边形近似。",
+   "dates_note": "曲阜 1938-01-04 起，收到 1938-06-06。已核對印页一二。",
+   "sources": [
+    "https://www.drnh.gov.tw/p/404-1003-13313.php?Lang=zh-tw",
+    "https://zenodo.org/records/5721459"
+   ]
+  },
+  {
+   "id": "sjw_cell_mcgd:s1721_1938-02-04_蒙阴",
+   "group": "sino_japanese_war",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "日军占领区（蒙阴）",
+   "name_en": "日军占领区（蒙阴）",
+   "controller": {
+    "qid": "Q188712",
+    "zh": "日军占领区"
+   },
+   "from": "1938-02-04",
+   "until": "1938-06-06",
+   "geometry": {
+    "roc_counties": [
+     "mcgd:s1721"
+    ]
+   },
+   "approx": true,
+   "note": "蒙阴县域。已核對《中華民國史事紀要》民國27年1–6月，印页一五一（PDF 第158页），页眉二月四日，四日这一条写本日两支日军分陷烟台和蒙阴。同页写一月十日占领青岛，青岛仍是一月十日。收到下一块。大致。县域为治所泰森多边形近似。",
+   "dates_note": "蒙阴 1938-02-04 起，收到 1938-06-06。已核對印页一五一。",
+   "sources": [
+    "https://www.drnh.gov.tw/p/404-1003-13313.php?Lang=zh-tw",
+    "https://zenodo.org/records/5721459"
+   ]
+  },
+  {
+   "id": "sjw_cell_mcgd:s1241_1938-02-04_福山",
+   "group": "sino_japanese_war",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "日军占领区（福山）",
+   "name_en": "日军占领区（福山）",
+   "controller": {
+    "qid": "Q188712",
+    "zh": "日军占领区"
+   },
+   "from": "1938-02-04",
+   "until": "1938-06-06",
+   "geometry": {
+    "roc_counties": [
+     "mcgd:s1241"
+    ]
+   },
+   "approx": true,
+   "note": "福山县域。已核對《中華民國史事紀要》民國27年1–6月，印页一五一（PDF 第158页），页眉二月四日，四日这一条写本日分陷烟台和蒙阴。烟台用1931年福山治所。收到下一块。大致。县域为治所泰森多边形近似。",
+   "dates_note": "福山 1938-02-04 起，收到 1938-06-06。已核對印页一五一。",
+   "sources": [
+    "https://www.drnh.gov.tw/p/404-1003-13313.php?Lang=zh-tw",
+    "https://zenodo.org/records/5721459"
+   ]
+  },
+  {
+   "id": "sjw_cell_mcgd:s236_1938-02-02_凤阳",
+   "group": "sino_japanese_war",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "中华民国维新政府（凤阳）",
+   "name_en": "中华民国维新政府（凤阳）",
+   "controller": {
+    "qid": "Q708865",
+    "zh": "中华民国维新政府"
+   },
+   "from": "1938-02-02",
+   "until": "1938-06-06",
+   "geometry": {
+    "roc_counties": [
+     "mcgd:s236"
+    ]
+   },
+   "approx": true,
+   "note": "凤阳县域。已核對《中華民國史事紀要》民國27年1–6月，印页一六三（PDF 第170页），页眉二月十日，追述本月二日分陷凤阳及定远。九日的蚌埠、十日的临淮关不是另县，不另画。收到下一块。大致。县域为治所泰森多边形近似。",
+   "dates_note": "凤阳 1938-02-02 起，收到 1938-06-06。已核對印页一六三。",
+   "sources": [
+    "https://www.drnh.gov.tw/p/404-1003-13313.php?Lang=zh-tw",
+    "https://zenodo.org/records/5721459"
+   ]
+  },
+  {
+   "id": "sjw_cell_mcgd:s238_1938-02-02_定远",
+   "group": "sino_japanese_war",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "中华民国维新政府（定远）",
+   "name_en": "中华民国维新政府（定远）",
+   "controller": {
+    "qid": "Q708865",
+    "zh": "中华民国维新政府"
+   },
+   "from": "1938-02-02",
+   "until": "1938-06-06",
+   "geometry": {
+    "roc_counties": [
+     "mcgd:s238"
+    ]
+   },
+   "approx": true,
+   "note": "定远县域。已核對《中華民國史事紀要》民國27年1–6月，印页一六三（PDF 第170页），页眉二月十日，追述本月二日分陷凤阳及定远。收到下一块。大致。县域为治所泰森多边形近似。",
+   "dates_note": "定远 1938-02-02 起，收到 1938-06-06。已核對印页一六三。",
+   "sources": [
+    "https://www.drnh.gov.tw/p/404-1003-13313.php?Lang=zh-tw",
+    "https://zenodo.org/records/5721459"
+   ]
+  },
+  {
+   "id": "sjw_cell_mcgd:s235_1938-02-04_怀远",
+   "group": "sino_japanese_war",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "中华民国维新政府（怀远）",
+   "name_en": "中华民国维新政府（怀远）",
+   "controller": {
+    "qid": "Q708865",
+    "zh": "中华民国维新政府"
+   },
+   "from": "1938-02-04",
+   "until": "1938-06-06",
+   "geometry": {
+    "roc_counties": [
+     "mcgd:s235"
+    ]
+   },
+   "approx": true,
+   "note": "怀远县域。已核對《中華民國史事紀要》民國27年1–6月，印页一六三（PDF 第170页），页眉二月十日，追述四日再陷怀远。收到下一块。大致。县域为治所泰森多边形近似。",
+   "dates_note": "怀远 1938-02-04 起，收到 1938-06-06。已核對印页一六三。",
+   "sources": [
+    "https://www.drnh.gov.tw/p/404-1003-13313.php?Lang=zh-tw",
+    "https://zenodo.org/records/5721459"
+   ]
+  },
+  {
+   "id": "sjw_cell_mcgd:s69_1938-02-12_汤阴",
+   "group": "sino_japanese_war",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "中华民国临时政府（汤阴）",
+   "name_en": "中华民国临时政府（汤阴）",
+   "controller": {
+    "qid": "Q704714",
+    "zh": "中华民国临时政府"
+   },
+   "from": "1938-02-12",
+   "until": "1938-06-06",
+   "geometry": {
+    "roc_counties": [
+     "mcgd:s69"
+    ]
+   },
+   "approx": true,
+   "note": "汤阴县域。已核對《中華民國史事紀要》民國27年1–6月，印页二一一（PDF 第218页），页眉二月二十七日，追述本月十二日陷汤阴、淇县。收到下一块。大致。县域为治所泰森多边形近似。",
+   "dates_note": "汤阴 1938-02-12 起，收到 1938-06-06。已核對印页二一一。",
+   "sources": [
+    "https://www.drnh.gov.tw/p/404-1003-13313.php?Lang=zh-tw",
+    "https://zenodo.org/records/5721459"
+   ]
+  },
+  {
+   "id": "sjw_cell_mcgd:s1874_1938-02-12_淇县",
+   "group": "sino_japanese_war",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "中华民国临时政府（淇县）",
+   "name_en": "中华民国临时政府（淇县）",
+   "controller": {
+    "qid": "Q704714",
+    "zh": "中华民国临时政府"
+   },
+   "from": "1938-02-12",
+   "until": "1938-06-06",
+   "geometry": {
+    "roc_counties": [
+     "mcgd:s1874"
+    ]
+   },
+   "approx": true,
+   "note": "淇县县域。已核對《中華民國史事紀要》民國27年1–6月，印页二一一（PDF 第218页），页眉二月二十七日，追述本月十二日陷汤阴、淇县。收到下一块。大致。县域为治所泰森多边形近似。",
+   "dates_note": "淇县 1938-02-12 起，收到 1938-06-06。已核對印页二一一。",
+   "sources": [
+    "https://www.drnh.gov.tw/p/404-1003-13313.php?Lang=zh-tw",
+    "https://zenodo.org/records/5721459"
+   ]
+  },
+  {
+   "id": "sjw_cell_mcgd:s1014_1938-02-17_黎城",
+   "group": "sino_japanese_war",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "日军占领区（黎城）",
+   "name_en": "日军占领区（黎城）",
+   "controller": {
+    "qid": "Q188712",
+    "zh": "日军占领区"
+   },
+   "from": "1938-02-17",
+   "until": "1938-06-06",
+   "geometry": {
+    "roc_counties": [
+     "mcgd:s1014"
+    ]
+   },
+   "approx": true,
+   "note": "黎城县域。已核對《中華民國史事紀要》民國27年1–6月，印页二一二（PDF 第219页），页眉二月二十七日，追述二月十三日起的东路：十七日陷黎城。东阳关不是县。收到下一块。大致。县域为治所泰森多边形近似。",
+   "dates_note": "黎城 1938-02-17 起，收到 1938-06-06。已核對印页二一二。",
+   "sources": [
+    "https://www.drnh.gov.tw/p/404-1003-13313.php?Lang=zh-tw",
+    "https://zenodo.org/records/5721459"
+   ]
+  },
+  {
+   "id": "sjw_cell_mcgd:s1856_1938-02-20_长治",
+   "group": "sino_japanese_war",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "日军占领区（长治）",
+   "name_en": "日军占领区（长治）",
+   "controller": {
+    "qid": "Q188712",
+    "zh": "日军占领区"
+   },
+   "from": "1938-02-20",
+   "until": "1938-06-06",
+   "geometry": {
+    "roc_counties": [
+     "mcgd:s1856"
+    ]
+   },
+   "approx": true,
+   "note": "长治县域。已核對《中華民國史事紀要》民國27年1–6月，印页二一二（PDF 第219页），页眉二月二十七日，追述二十日陷长治。收到下一块。大致。县域为治所泰森多边形近似。",
+   "dates_note": "长治 1938-02-20 起，收到 1938-06-06。已核對印页二一二。",
+   "sources": [
+    "https://www.drnh.gov.tw/p/404-1003-13313.php?Lang=zh-tw",
+    "https://zenodo.org/records/5721459"
+   ]
+  },
+  {
+   "id": "sjw_cell_mcgd:s1816_1938-02-27_临汾",
+   "group": "sino_japanese_war",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "日军占领区（临汾）",
+   "name_en": "日军占领区（临汾）",
+   "controller": {
+    "qid": "Q188712",
+    "zh": "日军占领区"
+   },
+   "from": "1938-02-27",
+   "until": "1938-06-06",
+   "geometry": {
+    "roc_counties": [
+     "mcgd:s1816"
+    ]
+   },
+   "approx": true,
+   "note": "临汾县域。已核對《中華民國史事紀要》民國27年1–6月，印页二一二（PDF 第219页），页眉二月二十七日，写本日陷临汾。收到下一块。大致。县域为治所泰森多边形近似。",
+   "dates_note": "临汾 1938-02-27 起，收到 1938-06-06。已核對印页二一二。",
+   "sources": [
+    "https://www.drnh.gov.tw/p/404-1003-13313.php?Lang=zh-tw",
+    "https://zenodo.org/records/5721459"
+   ]
+  },
+  {
+   "id": "sjw_cell_mcgd:s66_1938-02-17_新乡",
+   "group": "sino_japanese_war",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "日军占领区（新乡）",
+   "name_en": "日军占领区（新乡）",
+   "controller": {
+    "qid": "Q188712",
+    "zh": "日军占领区"
+   },
+   "from": "1938-02-17",
+   "until": "1938-06-06",
+   "geometry": {
+    "roc_counties": [
+     "mcgd:s66"
+    ]
+   },
+   "approx": true,
+   "note": "新乡县域。已核對《中華民國史事紀要》民國27年1–6月，印页二一二（PDF 第219页），页眉二月二十七日，追述十七日新乡陷落。辉县同页没有单独锁到一天，不画。修武、博爱、沁阳、济源写十九日至二十二日相继不守，没有锁成一天，不画。收到下一块。大致。县域为治所泰森多边形近似。",
+   "dates_note": "新乡 1938-02-17 起，收到 1938-06-06。已核對印页二一二。",
+   "sources": [
+    "https://www.drnh.gov.tw/p/404-1003-13313.php?Lang=zh-tw",
+    "https://zenodo.org/records/5721459"
+   ]
+  },
+  {
+   "id": "sjw_cell_mcgd:s1570_1938-02-13_平遥",
+   "group": "sino_japanese_war",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "日军占领区（平遥）",
+   "name_en": "日军占领区（平遥）",
+   "controller": {
+    "qid": "Q188712",
+    "zh": "日军占领区"
+   },
+   "from": "1938-02-13",
+   "until": "1938-06-06",
+   "geometry": {
+    "roc_counties": [
+     "mcgd:s1570"
+    ]
+   },
+   "approx": true,
+   "note": "平遥县域。已核對《中華民國史事紀要》民國27年1–6月，印页二四一（PDF 第247页），页眉三月八日，追述二月十三日陷平遥。收到下一块。大致。县域为治所泰森多边形近似。",
+   "dates_note": "平遥 1938-02-13 起，收到 1938-06-06。已核對印页二四一。",
+   "sources": [
+    "https://www.drnh.gov.tw/p/404-1003-13313.php?Lang=zh-tw",
+    "https://zenodo.org/records/5721459"
+   ]
+  },
+  {
+   "id": "sjw_cell_mcgd:s1088_1938-02-16_介休",
+   "group": "sino_japanese_war",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "日军占领区（介休）",
+   "name_en": "日军占领区（介休）",
+   "controller": {
+    "qid": "Q188712",
+    "zh": "日军占领区"
+   },
+   "from": "1938-02-16",
+   "until": "1938-06-06",
+   "geometry": {
+    "roc_counties": [
+     "mcgd:s1088"
+    ]
+   },
+   "approx": true,
+   "note": "介休县域。已核對《中華民國史事紀要》民國27年1–6月，印页二四一（PDF 第247页），页眉三月八日，追述二月十六日陷介休、孝义。收到下一块。大致。县域为治所泰森多边形近似。",
+   "dates_note": "介休 1938-02-16 起，收到 1938-06-06。已核對印页二四一。",
+   "sources": [
+    "https://www.drnh.gov.tw/p/404-1003-13313.php?Lang=zh-tw",
+    "https://zenodo.org/records/5721459"
+   ]
+  },
+  {
+   "id": "sjw_cell_mcgd:s1494_1938-02-16_孝义",
+   "group": "sino_japanese_war",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "日军占领区（孝义）",
+   "name_en": "日军占领区（孝义）",
+   "controller": {
+    "qid": "Q188712",
+    "zh": "日军占领区"
+   },
+   "from": "1938-02-16",
+   "until": "1938-06-06",
+   "geometry": {
+    "roc_counties": [
+     "mcgd:s1494"
+    ]
+   },
+   "approx": true,
+   "note": "孝义县域。已核對《中華民國史事紀要》民國27年1–6月，印页二四一（PDF 第247页），页眉三月八日，追述二月十六日陷介休、孝义。收到下一块。大致。县域为治所泰森多边形近似。",
+   "dates_note": "孝义 1938-02-16 起，收到 1938-06-06。已核對印页二四一。",
+   "sources": [
+    "https://www.drnh.gov.tw/p/404-1003-13313.php?Lang=zh-tw",
+    "https://zenodo.org/records/5721459"
+   ]
+  },
+  {
+   "id": "sjw_cell_mcgd:s1536_1938-02-26_灵石",
+   "group": "sino_japanese_war",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "日军占领区（灵石）",
+   "name_en": "日军占领区（灵石）",
+   "controller": {
+    "qid": "Q188712",
+    "zh": "日军占领区"
+   },
+   "from": "1938-02-26",
+   "until": "1938-06-06",
+   "geometry": {
+    "roc_counties": [
+     "mcgd:s1536"
+    ]
+   },
+   "approx": true,
+   "note": "灵石县域。已核對《中華民國史事紀要》民國27年1–6月，印页二四一（PDF 第247页），页眉三月八日，追述二月二十六日陷灵石、霍县。收到下一块。大致。县域为治所泰森多边形近似。",
+   "dates_note": "灵石 1938-02-26 起，收到 1938-06-06。已核對印页二四一。",
+   "sources": [
+    "https://www.drnh.gov.tw/p/404-1003-13313.php?Lang=zh-tw",
+    "https://zenodo.org/records/5721459"
+   ]
+  },
+  {
+   "id": "sjw_cell_mcgd:s1019_1938-02-26_霍县",
+   "group": "sino_japanese_war",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "日军占领区（霍县）",
+   "name_en": "日军占领区（霍县）",
+   "controller": {
+    "qid": "Q188712",
+    "zh": "日军占领区"
+   },
+   "from": "1938-02-26",
+   "until": "1938-06-06",
+   "geometry": {
+    "roc_counties": [
+     "mcgd:s1019"
+    ]
+   },
+   "approx": true,
+   "note": "霍县县域。已核對《中華民國史事紀要》民國27年1–6月，印页二四一（PDF 第247页），页眉三月八日，追述二月二十六日陷灵石、霍县。收到下一块。大致。县域为治所泰森多边形近似。",
+   "dates_note": "霍县 1938-02-26 起，收到 1938-06-06。已核對印页二四一。",
+   "sources": [
+    "https://www.drnh.gov.tw/p/404-1003-13313.php?Lang=zh-tw",
+    "https://zenodo.org/records/5721459"
+   ]
+  },
+  {
+   "id": "sjw_cell_mcgd:s1027_1938-03-05_河津",
+   "group": "sino_japanese_war",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "日军占领区（河津）",
+   "name_en": "日军占领区（河津）",
+   "controller": {
+    "qid": "Q188712",
+    "zh": "日军占领区"
+   },
+   "from": "1938-03-05",
+   "until": "1938-06-06",
+   "geometry": {
+    "roc_counties": [
+     "mcgd:s1027"
+    ]
+   },
+   "approx": true,
+   "note": "河津县域。已核對《中華民國史事紀要》民國27年1–6月，印页二四一（PDF 第247页），页眉三月八日，追述五日陷河津。禹门不是县。同页写本日陷永济。永济治所不在既有日占大块里，没有收复日，不画。收到下一块。大致。县域为治所泰森多边形近似。",
+   "dates_note": "河津 1938-03-05 起，收到 1938-06-06。已核對印页二四一。",
+   "sources": [
+    "https://www.drnh.gov.tw/p/404-1003-13313.php?Lang=zh-tw",
+    "https://zenodo.org/records/5721459"
+   ]
+  },
+  {
+   "id": "sjw_cell_mcgd:s1878_1938-05-24_兰封",
+   "group": "sino_japanese_war",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "中华民国临时政府（兰封）",
+   "name_en": "中华民国临时政府（兰封）",
+   "controller": {
+    "qid": "Q704714",
+    "zh": "中华民国临时政府"
+   },
+   "from": "1938-05-24",
+   "until": "1938-05-27",
+   "geometry": {
+    "roc_counties": [
+     "mcgd:s1878"
+    ]
+   },
+   "approx": true,
+   "note": "兰封县域。已核對《中華民國史事紀要》民國27年1–6月，印页四八八（PDF 第492页），页眉五月二十五日，追述至二十四日已陷兰封。印页四九四（PDF 第498页），页眉五月二十七日，写本日八十八师入兰封城，城内日军溃退。收到五月二十七日。收到下一块。大致。县域为治所泰森多边形近似。",
+   "dates_note": "兰封 1938-05-24 起，收到 1938-05-27。已核對印页四八八。",
+   "sources": [
+    "https://www.drnh.gov.tw/p/404-1003-13313.php?Lang=zh-tw",
+    "https://zenodo.org/records/5721459"
+   ]
+  },
+  {
+   "id": "sjw_cell_mcgd:s774_1938-06-05_偏关",
+   "group": "sino_japanese_war",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "蒙古联盟自治政府（偏关）",
+   "name_en": "蒙古联盟自治政府（偏关）",
+   "controller": {
+    "qid": "Q11621245",
+    "zh": "蒙古联盟自治政府"
+   },
+   "from": "1938-06-05",
+   "until": "1938-06-07",
+   "geometry": {
+    "roc_counties": [
+     "mcgd:s774"
+    ]
+   },
+   "approx": true,
+   "note": "偏关县域。已核對《中華民國史事紀要》民國27年1–6月，印页五三〇（PDF 第534页），页眉六月五日，五日这一条写本日偏关陷落。印页五三六（PDF 第540页），页眉六月七日，写侵华日军于五日陷偏关，本日晨弃守，我军收复偏关。收到六月七日。收到下一块。大致。县域为治所泰森多边形近似。",
+   "dates_note": "偏关 1938-06-05 起，收到 1938-06-07。已核對印页五三〇。",
+   "sources": [
+    "https://www.drnh.gov.tw/p/404-1003-13313.php?Lang=zh-tw",
+    "https://zenodo.org/records/5721459"
+   ]
+  },
+  {
+   "id": "sjw_cell_mcgd:s1927_1938-06-29_彭泽",
+   "group": "sino_japanese_war",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "中华民国维新政府（彭泽）",
+   "name_en": "中华民国维新政府（彭泽）",
+   "controller": {
+    "qid": "Q708865",
+    "zh": "中华民国维新政府"
+   },
+   "from": "1938-06-29",
+   "until": "1939-03-27",
+   "geometry": {
+    "roc_counties": [
+     "mcgd:s1927"
+    ]
+   },
+   "approx": true,
+   "note": "彭泽县域。已核對《中華民國史事紀要》民國27年1–6月，印页六〇二（PDF 第606页），页眉六月二十九日，二十九日这一条写本日彭泽失守。马当是要塞，不另画。收到下一块。大致。县域为治所泰森多边形近似。",
+   "dates_note": "彭泽 1938-06-29 起，收到 1939-03-27。已核對印页六〇二。",
+   "sources": [
+    "https://www.drnh.gov.tw/p/404-1003-13313.php?Lang=zh-tw",
     "https://zenodo.org/records/5721459"
    ]
   },
