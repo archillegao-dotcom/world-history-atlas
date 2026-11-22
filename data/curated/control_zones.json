@@ -12965,6 +12965,136 @@
    ]
   },
   {
+   "id": "sjw_cell_mcgd:s1459_1937-11-02_寿阳",
+   "group": "sino_japanese_war",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "日军占领区（寿阳）",
+   "name_en": "日军占领区（寿阳）",
+   "controller": {
+    "qid": "Q188712",
+    "zh": "日军占领区"
+   },
+   "from": "1937-11-02",
+   "until": "1937-11-12",
+   "geometry": {
+    "roc_counties": [
+     "mcgd:s1459"
+    ]
+   },
+   "approx": true,
+   "note": "寿阳县域。已核對《中華民國史事紀要》民國26年7–12月，印页五九二（PDF 第600页），页眉十一月二日，二日这一条写本日寿阳、昔阳失陷。娘子关、平定、阳泉只写先后失陷，没有锁成一天，不画。阳泉不是一九三一年的县。收到下一块。大致。县域为治所泰森多边形近似。",
+   "dates_note": "寿阳 1937-11-02 起，收到 1937-11-12。已核對印页五九二。",
+   "sources": [
+    "https://www.drnh.gov.tw/p/404-1003-13312.php?Lang=zh-tw",
+    "https://zenodo.org/records/5721459"
+   ]
+  },
+  {
+   "id": "sjw_cell_mcgd:s785_1937-11-02_昔阳",
+   "group": "sino_japanese_war",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "日军占领区（昔阳）",
+   "name_en": "日军占领区（昔阳）",
+   "controller": {
+    "qid": "Q188712",
+    "zh": "日军占领区"
+   },
+   "from": "1937-11-02",
+   "until": "1937-11-12",
+   "geometry": {
+    "roc_counties": [
+     "mcgd:s785"
+    ]
+   },
+   "approx": true,
+   "note": "昔阳县域。已核對《中華民國史事紀要》民國26年7–12月，印页五九二（PDF 第600页），页眉十一月二日，二日这一条写本日寿阳、昔阳失陷。收到下一块。大致。县域为治所泰森多边形近似。",
+   "dates_note": "昔阳 1937-11-02 起，收到 1937-11-12。已核對印页五九二。",
+   "sources": [
+    "https://www.drnh.gov.tw/p/404-1003-13312.php?Lang=zh-tw",
+    "https://zenodo.org/records/5721459"
+   ]
+  },
+  {
+   "id": "sjw_cell_mcgd:s95_1938-06-04_尉氏",
+   "group": "sino_japanese_war",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "日军占领区（尉氏）",
+   "name_en": "日军占领区（尉氏）",
+   "controller": {
+    "qid": "Q188712",
+    "zh": "日军占领区"
+   },
+   "from": "1938-06-04",
+   "until": "1944-04-19",
+   "geometry": {
+    "roc_counties": [
+     "mcgd:s95"
+    ]
+   },
+   "approx": true,
+   "note": "尉氏县域。已核對《中華民國史事紀要》民國27年1–6月，印页五二九（PDF 第533页），页眉六月四日，四日这一条写同日晚侵陷中牟南方之尉氏县城。开封仍是六月六日。收到下一块。大致。县域为治所泰森多边形近似。",
+   "dates_note": "尉氏 1938-06-04 起，收到 1944-04-19。已核對印页五二九。",
+   "sources": [
+    "https://www.drnh.gov.tw/p/404-1003-13313.php?Lang=zh-tw",
+    "https://zenodo.org/records/5721459"
+   ]
+  },
+  {
+   "id": "sjw_cell_mcgd:s302_1938-06-04_凤台",
+   "group": "sino_japanese_war",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "中华民国维新政府（凤台）",
+   "name_en": "中华民国维新政府（凤台）",
+   "controller": {
+    "qid": "Q708865",
+    "zh": "中华民国维新政府"
+   },
+   "from": "1938-06-04",
+   "until": "1938-06-06",
+   "geometry": {
+    "roc_counties": [
+     "mcgd:s302"
+    ]
+   },
+   "approx": true,
+   "note": "凤台县域。已核對《中華民國史事紀要》民國27年1–6月，印页五三〇（PDF 第534页），页眉六月五日，追述四日淮河岸的凤台失守。正阳关是关，不另画。蒙城只写附近发动，不画。收到下一块。大致。县域为治所泰森多边形近似。",
+   "dates_note": "凤台 1938-06-04 起，收到 1938-06-06。已核對印页五三〇。",
+   "sources": [
+    "https://www.drnh.gov.tw/p/404-1003-13313.php?Lang=zh-tw",
+    "https://zenodo.org/records/5721459"
+   ]
+  },
+  {
+   "id": "sjw_cell_mcgd:s301_1938-06-05_寿县",
+   "group": "sino_japanese_war",
+   "kind": "occupied",
+   "as_polity": true,
+   "name_zh": "中华民国维新政府（寿县）",
+   "name_en": "中华民国维新政府（寿县）",
+   "controller": {
+    "qid": "Q708865",
+    "zh": "中华民国维新政府"
+   },
+   "from": "1938-06-05",
+   "until": "1938-06-06",
+   "geometry": {
+    "roc_counties": [
+     "mcgd:s301"
+    ]
+   },
+   "approx": true,
+   "note": "寿县县域。已核對《中華民國史事紀要》民國27年1–6月，印页五三〇（PDF 第534页），页眉六月五日，五日这一条写本日陷寿县。三日侵占的是淮南煤矿，不是县城。收到下一块。大致。县域为治所泰森多边形近似。",
+   "dates_note": "寿县 1938-06-05 起，收到 1938-06-06。已核對印页五三〇。",
+   "sources": [
+    "https://www.drnh.gov.tw/p/404-1003-13313.php?Lang=zh-tw",
+    "https://zenodo.org/records/5721459"
+   ]
+  },
+  {
    "id": "sjw_cell_s453_1938-06-13_安庆",
    "group": "sino_japanese_war",
    "kind": "occupied",
