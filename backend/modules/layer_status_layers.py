@@ -17,7 +17,7 @@ class StatusLayersLayer(LayerModule):
     default_on = True
     description = "把实际控制、主权声索和国际承认分成三行。实控沿用战争前线或单独填色，声索是虚线，不改策略地图配色。"
     frontend = "modules/status_layers.js"
-    source = "data/curated/status_layers.json；轮廓为 Natural Earth 1:10m 公有领域行政界，或已有的战争前线"
+    source = "data/curated/status_layers.json 与 status_layers_mea.json；轮廓为 Natural Earth 1:10m 公有领域行政界，或已有的战争前线"
 
     def load(self, ctx):
         self.areas = SL.load(ctx.data_dir)
