@@ -2,8 +2,8 @@
   "retrieved": "2026-11-22",
   "source": "OpenHistoricalMap CC0；美国州和领地补 Newberry Atlas（现行许可 CC0，见国会图书馆 2018487899）",
   "license": "CC0 1.0",
-  "license_url": "https://publications.newberry.org/ahcb/downloads/united_states.html",
-  "feature_total": 682,
+  "license_url": "https://www.openhistoricalmap.org/copyright",
+  "feature_total": 704,
   "counts": {
     "british_india": 26,
     "ceylon": 8,
@@ -22,10 +22,11 @@
     "us_state": 264,
     "central_asia": 10,
     "colonial_america": 13,
-    "canada": 11,
+    "canada": 22,
     "mexico": 45,
     "brazil": 78,
-    "argentina": 17
+    "argentina": 17,
+    "australia": 11
   },
   "not_used": [
     "IPUMS NHGIS：条款写明未经许可不得再分发，不收。",
